@@ -2,9 +2,49 @@
 
 I find it productive and valuable to write down my thinking as I go along.
 
+## 20261012
+
+So I now have a working todo-mail pipeline in * [plaiground/session/0dd1a71d](https://kjelloh.github.io/plaiground/session/0dd1a71d/session.html)
+
+Question is now how I consolidate into this repo?
+
+* Should I run the scripts from the root folder in this repo to test they actually work outside the session folder where they are developed?
+* Maybe I should just copy in the baked chimes now in the session folder (The final result)?
+  * And then add and commit them here?
+  * That is the easy way (and have it done)
+  * But then any re-run of the pipe-line has to be done in the session folder?
+* On the other hand, if I run the scripts from scratch here I get a new domain folder with ALL the todo-mails also here.
+  * And these are NOT to be version controlled not added to this git repo.
+
+So where am the eml-to-domain processing live?
+
+* For now it lives in the plaiground session where they were developed and test out.
+* But there they are NOT backed up.
+  * Also, it is an obscure location (session/0dd1a71d, who remembers that?)
+
+DARN! I now realize that the repo is 'chime' which is confusing
+
+* The URL to todo-mails index as 'chimes' will contain chime/chime/index.md
+* That does not look good?
+* Still, my idea of having a kjelloh/chime git repo kind-of make sense?
+  * It can be seen as my own chimes?
+  * But then what are the sub-domains?
+  * Should I consider chime/todo?
+  * Or chime/from_mail?
+  * Or chime/sharedplanet/todo?
+  * Or what?
+
+It seems maybe I should add the picked todo-mail domain entries as 'from_mail'?
+
+* I can copy the baked chime folder from plaiground sesssion.
+* Then do domain_to_domain to diff and pick all from chime to from_mail?
+* Then link from_mail from index, README or some suitable location?
+* Then add to the git repo, commit and push to Github?
+  * Not Github Pages will generate web pages for all my form_mail domain entries! 
+
 ## 20261005
 
-I now whant to try out the new eml-to-entry mechanism developed in plaiground.
+I now want to try out the new eml-to-entry mechanism developed in plaiground.
 
 * [plaiground/session/0dd1a71d](https://kjelloh.github.io/plaiground/session/0dd1a71d/session.html)
 * [eml_to_domain — user manual](https://kjelloh.github.io/plaiground/session/0dd1a71d/eml_to_domain/)

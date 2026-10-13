@@ -18,6 +18,30 @@ I now added machinery from [kjelloh.github.io/plaiground/session/0dd1a71d](https
 * I expect I have to tweak it to work in some general form at the top folder of this repo.
 * The goal is to 'import' selected entries from my todo-mails to the chime domain as markdown.
 
+So I got the [test_on_todo_mails](../test_on_todo_mails.py) to work.
+
+* It creates 'chimes (for now named 'test_chime') WITH intra-linking
+* And those links are NOT updated by the domain_to_domain mechanism!
+
+**SIGH!!* - There you have it for vibe coding!
+
+* WHen I vibe-coded this with Claude I lacked insight into how the parts of the machinery needs to interact.
+* And Claude has simply zero understanding of the consequences of the solutions it implements.
+* That is, it does what it is told - but it fails to 'understand' what 'extras' needs to be added.
+
+OK, so can I fix domain_to_domain to process the intra-links?
+
+* Maybe it is as simple as to recognize intra-links and do a text-replace in the processing?
+* I have the links in the test_chime named after this domain.
+
+```sh
+[Todo: Consider T-slot cut router bits for designs and builds in wood where T-slot fastening could be an option?](../69edf934/test_chime.md)
+```
+
+* So I need to match this pattern to detect 'test_chime' as source domain and replace with target domain.
+
+DARN! This is SOOO CONVOLUTED!!
+
 ## 20261012
 
 So I now have a working todo-mail pipeline in * [plaiground/session/0dd1a71d](https://kjelloh.github.io/plaiground/session/0dd1a71d/session.html)

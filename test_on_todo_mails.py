@@ -18,7 +18,6 @@ def run(*args, **kwargs) -> None:
     print(f"\n$ {' '.join(str(a) for a in args)}", flush=True)
     subprocess.run([sys.executable, *map(str, args)], check=True, **kwargs)
 
-
 def main() -> None:
 
     parser = argparse.ArgumentParser()
@@ -43,18 +42,18 @@ def main() -> None:
     # eml-files to domain '_mail'
     run(EMLS_TO_DOMAIN, EML_DIR, SITE_REPO, "--domain", "_mail")
 
-    if not (SITE_REPO / "_chime").is_dir():
-        # Fresh target domain '_chime'
-        run(DOMAIN_TO_DOMAIN, "init", SITE_REPO, "_mail", "_chime")
+    if not (SITE_REPO / "test_chime").is_dir():
+        # Fresh target domain 'test_chime'
+        run(DOMAIN_TO_DOMAIN, "init", SITE_REPO, "_mail", "test_chime")
 
     with PICK.open("w", encoding="utf-8") as pick:
-        run(DOMAIN_TO_DOMAIN, "diff", SITE_REPO, "_mail", "_chime", "--ignore", IGNORE, stdout=pick)
+        run(DOMAIN_TO_DOMAIN, "diff", SITE_REPO, "_mail", "test_chime", "--ignore", IGNORE, stdout=pick)
     if PICK.read_text(encoding="utf-8").strip():
-        run(DOMAIN_TO_DOMAIN, "add", SITE_REPO, "_mail", "_chime", "--pick", PICK)
+        run(DOMAIN_TO_DOMAIN, "add", SITE_REPO, "_mail", "test_chime", "--pick", PICK)
     else:
         print("Nothing new to add to chime.")
 
-    run(UPDATE_DOMAIN, "intralink", SITE_REPO, "_chime")
+    run(UPDATE_DOMAIN, "intralink", SITE_REPO, "test_chime")
 
     run(TO_SITE, SITE_REPO)  # serves the site until you press Ctrl-C
 

@@ -1,8 +1,15 @@
 # Ignore python temporary files
 __pycache__/
 
+# Ignore local temp folders and files
+_mail
+_chime
+_pick.md
+
 # Ignore to_site.py generated artefacts
+_staged_site
 .jekyll/
+public_html/
 
 #Ignore any log-files (probably genearted for development trace...)
 *.log

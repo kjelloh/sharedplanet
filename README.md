@@ -1,3 +1,3 @@
-# chime
+# sharedplanet
 
 * [index](index.md)

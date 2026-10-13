@@ -1,4 +1,4 @@
-# chime
+# sharedplanet
 
 ## from_mail.py
 

@@ -2,6 +2,17 @@
 
 I find it productive and valuable to write down my thinking as I go along.
 
+## 20261013
+
+So I have now renamed this repo from 'chime' to 'sharedplanet'.
+
+* In this way I can have a 'chime' being one domain and not confuse with the repo name
+
+Also, I can use 'sharedplanet' as a tag or indicator that what is in this repo is for ALL on this planet to take in, use a,d share alike.
+
+* [Also see the seed for SharedPlanetBusiness](https://kjelloh.github.io/sharedplanetbusiness/)
+* [Also see the seed for SharedPlanetCitizen](https://kjelloh.github.io/sharedplanetcitizen/)
+
 ## 20261012
 
 So I now have a working todo-mail pipeline in * [plaiground/session/0dd1a71d](https://kjelloh.github.io/plaiground/session/0dd1a71d/session.html)

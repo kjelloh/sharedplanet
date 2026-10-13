@@ -13,6 +13,11 @@ Also, I can use 'sharedplanet' as a tag or indicator that what is in this repo i
 * [Also see the seed for SharedPlanetBusiness](https://kjelloh.github.io/sharedplanetbusiness/)
 * [Also see the seed for SharedPlanetCitizen](https://kjelloh.github.io/sharedplanetcitizen/)
 
+I now added machinery from [kjelloh.github.io/plaiground/session/0dd1a71d](https://kjelloh.github.io/plaiground/session/0dd1a71d/session)
+
+* I expect I have to tweak it to work in some general form at the top folder of this repo.
+* The goal is to 'import' selected entries from my todo-mails to the chime domain as markdown.
+
 ## 20261012
 
 So I now have a working todo-mail pipeline in * [plaiground/session/0dd1a71d](https://kjelloh.github.io/plaiground/session/0dd1a71d/session.html)

@@ -4,6 +4,10 @@ I find it productive and valuable to write down my thinking as I go along.
 
 ## 20261015
 
+Final note: Now when I have added chimes to git the folder is 1,7 GB while chimes are around 826 MB.
+
+* This is because .git stores the whole version controlled database.
+
 I now took the plunge and added all chimes I created from my selected todo-mails.
 
 * My todo-mails has been my goto way of writing down ideas, investigations and proposals of thinks to think more about.

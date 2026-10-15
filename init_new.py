@@ -43,7 +43,10 @@ def ensure_entry_folder(
             .replace("<", r"&lt;")
             .replace(">", r"&gt;")
         )        
-        file_path.write_text(f"# {escaped_heading}\n\n", encoding="utf-8")
+        file_path.write_text(
+            f"# {escaped_heading}"
+            f"\n\n```#{short_hash}```",
+            encoding="utf-8")
 
     return file_path, created
 

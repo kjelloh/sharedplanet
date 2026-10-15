@@ -48,7 +48,7 @@ from html_to_markdown import convert as html_to_markdown_convert
 
 # The line holding the date of the entry's state (see module docstring).
 AS_OF_FORMAT = "%Y-%m-%d %H:%M"
-AS_OF_RE = re.compile(r"^\*As of (?P<date>\d{4}-\d{2}-\d{2} \d{2}:\d{2})\*$")
+AS_OF_RE = re.compile(r"\*As of (?P<date>\d{4}-\d{2}-\d{2} \d{2}:\d{2})\*$")
 
 # The mail's text/plain body, kept verbatim next to the entry. Not named
 # after the domain: once written it is an ordinary file linked from the
@@ -212,7 +212,7 @@ def eml_file_to_entry(eml_path: Path, base_dir: Path, domain: str) -> Path:
 
         with entry_path.open("a", encoding="utf-8") as f:
             if candidate_date is not None:
-                f.write(f"{as_of_line(candidate_date)}\n\n")
+                f.write(f" {as_of_line(candidate_date)}\n\n")
             if plain_text is not None:
                 f.write(f"{MAIL_PLAIN_TEXT_LINK}\n\n")
             # Mail content routinely contains "{{" / "{%" (C++ brace-init,

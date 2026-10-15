@@ -7,7 +7,7 @@
 {% raw %}
 It seems I could benefit from actually document my "inventory" of different Ac power adapters that outputs DC I can use to power stuff in my electronics lab (or else where)?
 
-==&gt; Also see "Todo: Consider to record the data for my TS100 soldering iron so I can DIY power supply and other accessories for it?"
+==&gt; Also see "[Todo: Consider to record the data for my TS100 soldering iron so I can DIY power supply and other accessories for it?](../864b9dc4/chime.md)"
 
 1) Consider my low power Apple and other small device power adaptors?
 
@@ -17,7 +17,7 @@ TODO: What are the DC output connector of each power adaptor?
 
 2) Consider my lap top AC power adaptors?
 
-==&gt; Also see "Todo: Consider to record the data for my TS100 soldering iron so I can DIY power supply and other accessories for it?"
+==&gt; Also see "[Todo: Consider to record the data for my TS100 soldering iron so I can DIY power supply and other accessories for it?](../864b9dc4/chime.md)"
 
 TODO: What are the DC output connector of each power adaptor?
 

@@ -7,9 +7,9 @@
 {% raw %}
 It seems it could be a good idea to invest in a vacuum cleaner to be permanently mounted for dust extraction from my indoor shed?
 
-==&gt; Also see “Todo: Indoor Shed Dust Extraction - Consider to use sewer pipes for the fixed piping of the dust extraction system?"
+==&gt; Also see “[Todo: Indoor Shed Dust Extraction - Consider to use sewer pipes for the fixed piping of the dust extraction system?](../9ddf7757/chime.md)"
 
-==&gt; Also see “Todo: Indoor Shed - Consider to design a dust extraction system that fits all my machines?”
+==&gt; Also see “[Todo: Indoor Shed - Consider to design a dust extraction system that fits all my machines?](../3941d780/chime.md)”
 
 -1) It seems my old Miele S326 i is rated as 1200W?
 

@@ -7,7 +7,7 @@
 {% raw %}
 Today I discovered that “softness” of sponges for silk screen printing is specified using the durometer index which I previously learned is used to specify skate wheel grippy-ness.
 
-==&gt; Also see “Todo: Power Feeder - Consuder to base a power feeder design on wheels from casters?"
+==&gt; Also see “[Todo: Power Feeder - Consuder to base a power feeder design on wheels from casters?](../52436c2e/chime.md)"
 
 1) Consider the wikipedia page on Shore durometer to measure “hardness” of (elastic?) materials (<https://en.wikipedia.org/wiki/Shore_durometer>)?
 

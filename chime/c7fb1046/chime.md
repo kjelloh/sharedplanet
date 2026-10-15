@@ -7,9 +7,9 @@
 {% raw %}
 It seems the company 96boards has some interesting Single Board Computers aimed at being used as IoT AI boards for developing Neural Network based solutions?
 
-==&gt; Also see “Todo: Programming AI - Consider to experiment with Intel Movidius™ Neural Compute Stick?”
+==&gt; Also see “[Todo: Programming AI - Consider to experiment with Intel Movidius™ Neural Compute Stick?](../e3628fb5/chime.md)”
 
-==&gt; Also see “Todo: Consider to make my own personal Guru Neural Network that makes me act so that I stay placed in a meaningful balance between order and chaos?"
+==&gt; Also see “[Todo: Consider to make my own personal Guru Neural Network that makes me act so that I stay placed in a meaningful balance between order and chaos?](../f2c489a5/chime.md)"
 
 1) The 96boards seems to live here ([https://www.96boards.ai](https://www.96boards.ai/))?
 

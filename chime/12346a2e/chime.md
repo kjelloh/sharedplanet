@@ -7,7 +7,7 @@
 {% raw %}
 Maybe I can use the web shop of US based EV West (e.g., used by Jehu Garcia) to understand what products are available for electric vehicles?
 
-==&gt; Also see "Todo: Mobile 1kWh Battery - Consider to build a LiPo 1 kWh mobile battery power bank from Jehu Garcia DIY kits?"
+==&gt; Also see "[Todo: Mobile 1kWh Battery - Consider to build a LiPo 1 kWh mobile battery power bank from Jehu Garcia DIY kits?](../125f437d/chime.md)"
 
 1) The EV West home site seems to be here (<https://evwest.com/catalog/> )?
 

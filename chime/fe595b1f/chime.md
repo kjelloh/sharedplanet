@@ -7,11 +7,11 @@
 {% raw %}
 I seem to at least made some small progress in my skills of handling indoor painting wit an "off sewer" paint work station but that more practice is required?
 
-==&gt; Also see "Todo: Consider I still suck at handling paint (how my test run of pouring paint from and to the paint bucket and cleaning the tools revealed many shortcomings in skill, tools and work space)?"
+==&gt; Also see "[Todo: Consider I still suck at handling paint (how my test run of pouring paint from and to the paint bucket and cleaning the tools revealed many shortcomings in skill, tools and work space)?](../4244383c/chime.md)"
 
-==&gt; Also see "Todo: Indoor Painting - Consider to make a stainless steel mini sink into a paint tool cleaning station?"
+==&gt; Also see "[Todo: Indoor Painting - Consider to make a stainless steel mini sink into a paint tool cleaning station?](../d94e387f/chime.md)"
 
-==&gt; Also see "Todo: Consider why I am so terrified to start painting my walls and how I may overcome it and also become confident and gain the competence to do it well?"
+==&gt; Also see "[Todo: Consider why I am so terrified to start painting my walls and how I may overcome it and also become confident and gain the competence to do it well?](../1846949d/chime.md)"
 
 1) Consider where I am after having brought home new tools and stuff for my wall paining project paint work station?
 

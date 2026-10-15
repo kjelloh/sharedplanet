@@ -7,7 +7,7 @@
 {% raw %}
 It seems it could be time and also good learning to build a custom desktop computer workstation?
 
-==&gt; Also see “Todo: Consider to actually build a hackintosh?"
+==&gt; Also see “[Todo: Consider to actually build a hackintosh?](../8e525424/chime.md)"
 
 -4) It seems I should go for an AMD 580 graphics card for a Hackintosh build (<https://youtu.be/KXBSJ5NW9FA?t=202>)?
 

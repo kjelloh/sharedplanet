@@ -7,7 +7,7 @@
 {% raw %}
 I was intrigued by the Mui Lab calm wood interface that looks like a piece of wood until you touch it and a shine-through pixel display shows up through the wood. How does it work and can I build something like it myself?
 
-==&gt; Also see “Todo: Consider to understand "projected capacitive sensors" for capacitive touch screens and track pads?"
+==&gt; Also see “[Todo: Consider to understand "projected capacitive sensors" for capacitive touch screens and track pads?](../055f2632/chime.md)"
 
 1) It seems the Mui calm interface lives here (<https://mui.jp/#en>)?
 
@@ -100,7 +100,7 @@ Mui display uses 7 pixels height for small fonts with widths between 4 to 7 pixe
 
 4) Consider to try my touch-screen PCB developer kit with some wood surface to see if touch detection is still possible?
 
-==&gt; Also see “Todo: Consider to understand "projected capacitive sensors" for capacitive touch screens and track pads?"
+==&gt; Also see “[Todo: Consider to understand "projected capacitive sensors" for capacitive touch screens and track pads?](../055f2632/chime.md)"
 
 TODO: Set up the touch PCB development kit with an Arduino and select some wood veneers to try out what may work?
 

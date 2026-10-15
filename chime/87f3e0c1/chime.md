@@ -7,7 +7,7 @@
 {% raw %}
 I want ways to experiment with parsing C++ for tooling and possibly extension with Tha.
 
-==&gt; Also see "Todo: Consider to try out Neovim with the Tree-sitter playground and syntax highlighting?"
+==&gt; Also see "[Todo: Consider to try out Neovim with the Tree-sitter playground and syntax highlighting?](../9ab7f675/chime.md)"
 
 1) Consider this youtube video "Tree-sitter - a new parsing system for programming tools by Max Brunsfeld" about the Tree-Sitter goal and inner workings (<https://youtu.be/Jes3bD6P0To> )?
 

@@ -13,7 +13,7 @@ Could ut be a good idea to really understand how to implement file system drives
 
 -1) Consider we can use this knowledge to intercept Windows 10 file system to detect unused OS files (and remove them)?
 
-==&gt; Also see “Todo: Consider to make a Windows 10 binary file monitor to detect what files not used and can be removed to shrink Windows 10 disk footprint?"
+==&gt; Also see “[Todo: Consider to make a Windows 10 binary file monitor to detect what files not used and can be removed to shrink Windows 10 disk footprint?](../a3fef307/chime.md)"
 
 1) Consider how we can implement a Drive on Windows 10?
 

@@ -13,7 +13,7 @@ Could it be a good idea to try and write a seed for a Shared Planet Manifesto?
 
 2) Consider to base this manifesto on general manifesto knowledge?
 
-==&gt; See ”Todo: Manifesto - Consider to find good source on how to write and evolve a Manifesto?"
+==&gt; See ”[Todo: Manifesto - Consider to find good source on how to write and evolve a Manifesto?](../6885d6b7/chime.md)"
 
 3) Consider to list some statements that should be in the Shared Planet Manifesto?
 

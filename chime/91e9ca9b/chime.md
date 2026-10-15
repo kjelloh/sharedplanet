@@ -7,11 +7,11 @@
 {% raw %}
 If only we had a good IMAP server e-mail parser we could do some fun stuff with all my Todo-mails (and possibly other IMAP relates stuff)?
 
-==&gt; Also see “Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?"
+==&gt; Also see “[Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?](../4234851e/chime.md)"
 
-==&gt; Also See “Todo: Programming - Consider to make an application that processes Todo: mails and generates a cross referenced HTML document?”
+==&gt; Also See “[Todo: Programming - Consider to make an application that processes Todo: mails and generates a cross referenced HTML document?](../9f8b1177/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to make an application that synchronises Mail-Todo:s with in-app Todo:s?”
+==&gt; Also see “[Todo: Programming - Consider to make an application that synchronises Mail-Todo:s with in-app Todo:s?](../42890ccc/chime.md)”
 
 1) Consider to try out Embarcadero RAD Studio specific solutions?
 

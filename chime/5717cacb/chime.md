@@ -9,7 +9,7 @@ Could it be a good idea to try and implement a Darwinet Node as a ”include &lt
 
 1) Consider a MIV design based on the Elm architecture?
 
-==&gt; See ”Todo: Meta Value Model - Consider to have an Elm application use a Darwinet synchronized Meta Value Model as "Model"?”
+==&gt; See ”[Todo: Meta Value Model - Consider to have an Elm application use a Darwinet synchronized Meta Value Model as "Model"?](../6ba174a5/chime.md)”
 
 init_value
 
@@ -99,9 +99,9 @@ subscriptions update view
 
 ==&gt; Also see ”Todo: Darwinet - Consider a design that allows parts of the Confluent Persistent MIV to distributed on nodes in the network (storing locally only whats locally required pr fits in memory)?"
 
-==&gt; Also see ”Todo: Design Darwinet photo-augmented map application to find distributed data storage algorithm”
+==&gt; Also see ”[Todo: Design Darwinet photo-augmented map application to find distributed data storage algorithm](../6dbe336d/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - Consider to study multiple CPU memory cache algorithms to compare them with Darwinet delta synchronization issues?"
+==&gt; Also see ”[Todo: Darwinet - Consider to study multiple CPU memory cache algorithms to compare them with Darwinet delta synchronization issues?](../ffa22305/chime.md)"
 
 …
 

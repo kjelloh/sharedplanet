@@ -5,11 +5,11 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider to try and understand the DT Swiss MTB Rims - naming and available proerties?"
+==&gt; Also see "[Todo: Consider to try and understand the DT Swiss MTB Rims - naming and available proerties?](../2d38d241/chime.md)"
 
-==&gt; Also see "Todo: Consider to document my "Engineers Dream MTB Build" with where to buy, cost and weight of all the parts?"
+==&gt; Also see "[Todo: Consider to document my "Engineers Dream MTB Build" with where to buy, cost and weight of all the parts?](../ac7cfa9c/chime.md)"
 
-==&gt; Also see "Todo: Consider to choose an Onyx back hub to go with the Pinion Gearbox drive train?"
+==&gt; Also see "[Todo: Consider to choose an Onyx back hub to go with the Pinion Gearbox drive train?](../02cda35d/chime.md)"
 
 0) Consider my actual order of Rim, spokes and nipples?
 

@@ -7,15 +7,15 @@
 {% raw %}
 What can we find out and what products are available to actually build an "earth ship" house hold water harvest and supply?
 
-==&gt; Also see "Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+==&gt; Also see "[Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?](../bd86eed6/chime.md)"
 
-==&gt; Also see "Todo: Eget Hus - Överväg att ha flera separata vattensystem för olika behov i huset för att effektivisera (minimera) vatten och energiförbrukning?"
+==&gt; Also see "[Todo: Eget Hus - Överväg att ha flera separata vattensystem för olika behov i huset för att effektivisera (minimera) vatten och energiförbrukning?](../0736f74e/chime.md)"
 
-==&gt; Also see "Todo: Consider to delve into the visualizations made by Adam Nieman (Carbon Visuals), e.g. the "All water on earth into a ball" image?"
+==&gt; Also see "[Todo: Consider to delve into the visualizations made by Adam Nieman (Carbon Visuals), e.g. the "All water on earth into a ball" image?](../89430cbd/chime.md)"
 
-==&gt; Also see "Todo: Research - Consider to understand and build a sea water desalination system from aquarium water filtering equipment?"
+==&gt; Also see "[Todo: Research - Consider to understand and build a sea water desalination system from aquarium water filtering equipment?](../357ae8f8/chime.md)"
 
-==&gt; Also see "Todo: Consider to design and implement a thermo electric generator to harvest energy from shower waste water?"
+==&gt; Also see "[Todo: Consider to design and implement a thermo electric generator to harvest energy from shower waste water?](../b800c082/chime.md)"
 
 1) Consider the filtering technologies overview by Katadyn company (<https://www.katadyn.com/us/us/water-know-how/types-of-filters> )?
 

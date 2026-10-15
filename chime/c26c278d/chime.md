@@ -7,7 +7,7 @@
 {% raw %}
 So, what can I learn from cloning and delving into the EOS (C++?) open source libraries?
 
-==&gt; Also see “Todo: Consider to document how to install and maintain C++ Boost libraries in Xcode and OS X?”
+==&gt; Also see “[Todo: Consider to document how to install and maintain C++ Boost libraries in Xcode and OS X?](../49f65c96/chime.md)”
 
 1) The EOS GitHub library seems to live here (<https://github.com/EOSIO/eos>)?
 
@@ -79,7 +79,7 @@ So, what can I learn from cloning and delving into the EOS (C++?) open source li
 
 ==&gt; I then seemed to be able to use “brew upgrade” to get lastest boost (1.67)?
 
-==&gt; Also see “Todo: Consider to document how to install and maintain C++ Boost libraries in Xcode and OS X?"
+==&gt; Also see “[Todo: Consider to document how to install and maintain C++ Boost libraries in Xcode and OS X?](../49f65c96/chime.md)"
 
 > Kjell-Olovs-MacBook-Pro-2014:build kjell-olovhogdahl$ brew upgrade boost  
 > Updating Homebrew...  

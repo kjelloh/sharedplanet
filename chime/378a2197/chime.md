@@ -7,15 +7,15 @@
 {% raw %}
 So, where can I buy metal to good prices in Stockholm or get delivered to me to a good price?
 
-==&gt; Also see “Todo: Consider to list potential maker cnc and 3d print openbuilds and other parts web-shops?"
+==&gt; Also see “[Todo: Consider to list potential maker cnc and 3d print openbuilds and other parts web-shops?](../76d04894/chime.md)"
 
 -1) Consider to go ahead and experiment with simple welding using available metal materials I can buy and experiment with?
 
-==&gt; Also see “Todo: Welding in apartment - Consider to implement a Battery Bank to provide the current required by a Welder (to be able to use low current mains)?”
+==&gt; Also see “[Todo: Welding in apartment - Consider to implement a Battery Bank to provide the current required by a Welder (to be able to use low current mains)?](../fe56153c/chime.md)”
 
-==&gt; Also see “Todo: Maker Space - Överväg att köpa Everlast PowerArc 200ST TIG/STick svets från leverantör i Umeå?"
+==&gt; Also see “[Todo: Maker Space - Överväg att köpa Everlast PowerArc 200ST TIG/STick svets från leverantör i Umeå?](../f13979dd/chime.md)"
 
-==&gt; Also see “Todo: Cordless Tool Batteries - Consider to buy batteries from different cordless platforms and disassembly them to compare them? “
+==&gt; Also see “[Todo: Cordless Tool Batteries - Consider to buy batteries from different cordless platforms and disassembly them to compare them?](../25a870b0/chime.md) “
 
 ==&gt; Consider to buy some very cheap Inverter welder to start experiment with welding (preferably TIG “inert gas” welding to reduce fumes in my apartment)?
 

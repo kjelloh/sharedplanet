@@ -7,7 +7,7 @@
 {% raw %}
 Det verkar som om man renar vatten från färgrester med kemikalier som orsakar så kallad “flockning”?
 
-==&gt; Se även “Todo: Research - Consider to try out drenching electronics in deionised water?"
+==&gt; Se även “[Todo: Research - Consider to try out drenching electronics in deionised water?](../7ccc969d/chime.md)"
 
 -8) Överväg att studera detta dokument om fällning och kemikalier i svenska vattenreningsverk (<https://www.researchgate.net/profile/Sara_Hallin/publication/275041621_Aktivslamanlaggningar_-_suspenderad_biomassa/links/55311bc40cf20ea0a070f282/Aktivslamanlaeggningar-suspenderad-biomassa.pdf>)?
 

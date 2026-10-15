@@ -7,7 +7,7 @@
 {% raw %}
 It seems the Haskel library Servant kind of confirms we are on the right track being types as meta-values defining sets of possible “creatbale” defacto values?
 
-==&gt; Also see “Todo: Tha model - Consider the meta-layers of Tha repeating the f: meta -&gt; meta pattern bears strong resemblance to higher order lambda systems expressed as System F?"
+==&gt; Also see “[Todo: Tha model - Consider the meta-layers of Tha repeating the f: meta -&gt; meta pattern bears strong resemblance to higher order lambda systems expressed as System F?](../50f86570/chime.md)"
 
 1) The Haskel servant library tutorial seems to live here (<http://haskell-servant.readthedocs.io/en/stable/tutorial/index.html>)?
 

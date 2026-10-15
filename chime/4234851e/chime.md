@@ -7,9 +7,9 @@
 {% raw %}
 Could we imagine ways to use existing asynchronous call-back mechanisms in C++ and turn them into something we may program using the Reactive Observable model?
 
-==&gt; Also see “Todo: Programming - Consider to make an application that processes Todo: mails and generates a cross referenced HTML document?”
+==&gt; Also see “[Todo: Programming - Consider to make an application that processes Todo: mails and generates a cross referenced HTML document?](../9f8b1177/chime.md)”
 
-==&gt; Also see “Todo: C++ - Consider to investigate and try out good ways to read and parse e-mail messages from an IMAP Server?"
+==&gt; Also see “[Todo: C++ - Consider to investigate and try out good ways to read and parse e-mail messages from an IMAP Server?](../91e9ca9b/chime.md)"
 
 1) Consider to understand the Reactive Observable Model and how it relates to
 

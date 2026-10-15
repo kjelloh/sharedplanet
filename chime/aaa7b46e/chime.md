@@ -7,11 +7,11 @@
 {% raw %}
 I have a mac Pro 2014 "trash can" and like information on how to maintain it.
 
-==&gt; Also see "Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?"
+==&gt; Also see "[Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?](../64d58572/chime.md)"
 
-==&gt; Also see "Todo: mac pro 2013 - Consider to understand the DDR3 memory system on the Mac Pro "Trashcan"?"
+==&gt; Also see "[Todo: mac pro 2013 - Consider to understand the DDR3 memory system on the Mac Pro "Trashcan"?](../65d23643/chime.md)"
 
-==&gt; Also see "Todo: Mac Pro 2013 - Consider to understand the system architecture of the Apple Mac Pro 6.1 "Trashcan"?"
+==&gt; Also see "[Todo: Mac Pro 2013 - Consider to understand the system architecture of the Apple Mac Pro 6.1 "Trashcan"?](../fa664541/chime.md)"
 
 1) Consider youtube video "When was your 2013 Mac Pro actually made?" (<https://youtu.be/jRcxkHIVH60> )?
 
@@ -82,7 +82,7 @@ I have a mac Pro 2014 "trash can" and like information on how to maintain it.
 
 4) Consider this mac Rumors article on SSD to nvme adapters for Mac Pro (<https://forums.macrumors.com/threads/upgrading-2013-2015-macbook-pro-ssd-to-m-2-nvme.2034976/> )?
 
-==&gt; Also see "Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?"
+==&gt; Also see "[Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?](../64d58572/chime.md)"
 
 > *"4 - The M.2 to Apple "gumstick" adapters - the good and the fake ​*
 

@@ -7,7 +7,7 @@
 {% raw %}
 It seems it is time to step-up my protection against creating in unhealthy particles or chemicals?
 
-==&gt; Also see “Todo: Consider to choose efficient, comfortable and good looking woodworking protection (face mask, eye protection etc.)?"
+==&gt; Also see “[Todo: Consider to choose efficient, comfortable and good looking woodworking protection (face mask, eye protection etc.)?](../3984a510/chime.md)"
 
 1) Consider the wikipedia page on Respiratory Protective Equipment, RPE (<https://en.wikipedia.org/wiki/Respiratory_protective_equipment>)?
 

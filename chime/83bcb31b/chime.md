@@ -7,7 +7,7 @@
 {% raw %}
 It seems Elm language uses a form for its documentation that is very good and concise?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to define built-in value compositions using syntax Value&lt;level 2,1,0&gt; and members as_function, as_value, as_text?"
+==&gt; Also see ”[Todo: Meta Value Model - Consider to define built-in value compositions using syntax Value&lt;level 2,1,0&gt; and members as_function, as_value, as_text?](../5830e388/chime.md)"
 
 1) Consider the documentation of the Set type (<http://package.elm-lang.org/packages/elm-lang/core/latest/Set#Set>)?
 
@@ -75,7 +75,7 @@ Identifier&lt;n&gt;
 
 ==&gt; Consider to document the basic composition member functions?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to define built-in value compositions using syntax Value&lt;level 2,1,0&gt; and members as_function, as_value, as_text?"
+==&gt; Also see ”[Todo: Meta Value Model - Consider to define built-in value compositions using syntax Value&lt;level 2,1,0&gt; and members as_function, as_value, as_text?](../5830e388/chime.md)"
 
 Identifier&lt;n&gt;
 

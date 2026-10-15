@@ -7,7 +7,7 @@
 {% raw %}
 I watched a tip on how to brew a good french brew coffee and just got the idea that perhaps we can flocculate the coffee particles out of the coffee?
 
-==&gt; Also see “Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+==&gt; Also see “[Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?](../bd86eed6/chime.md)"
 
 1) The youtube video “The Ultimate French Press Technique” seems to live here (<https://www.youtube.com/watch?v=st571DYYTR8>)?
 

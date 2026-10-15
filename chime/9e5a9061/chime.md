@@ -7,13 +7,13 @@
 {% raw %}
 So, what can we learn from noting that it seems we know at the run-time entry point what platform we are running on and thus what User Interface we can and should use?
 
-==&gt; Also see “Todo: Programming - Consider to provide Tris with a default GUI front-end for all major platforms (Windows, Linux, MacOS)?”
+==&gt; Also see “[Todo: Programming - Consider to provide Tris with a default GUI front-end for all major platforms (Windows, Linux, MacOS)?](../1bf3ffe9/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to understand the different C++ options to develop Windows Desktop Application GUI on different platforms (Windows 7, 8.1, 10)?”
+==&gt; Also see “[Todo: Programming - Consider to understand the different C++ options to develop Windows Desktop Application GUI on different platforms (Windows 7, 8.1, 10)?](../935c2ee3/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to design a C++ console application source and environment setup that will cross compile on Windows, MacOS and Linux?”
+==&gt; Also see “[Todo: Programming - Consider to design a C++ console application source and environment setup that will cross compile on Windows, MacOS and Linux?](../fa0d7ffa/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to design a good way to connect business logic code to callback to Windows handle message pump"
+==&gt; Also see “[Todo: Programming - Consider to design a good way to connect business logic code to callback to Windows handle message pump](../80cbd53f/chime.md)"
 
 1) Consider the run-time entry point actually defines the Ux domain (i.e., if “we” are a console or windows application and on what platform we are running)?
 

@@ -7,13 +7,13 @@
 {% raw %}
 I want to wrap my brain around what quantum experiments actually can be said to reveal to us about how reality "works"
 
-==&gt; Also see "Todo: Consider to delve into the "Delayed-choice quantum eraser" experiment and what this can tell us about "Reality"?"
+==&gt; Also see "[Todo: Consider to delve into the "Delayed-choice quantum eraser" experiment and what this can tell us about "Reality"?](../9c652717/chime.md)"
 
-==&gt; Also see "Todo: Consider if the "quantum measurement" is in fact when some part of the universe becomes "about" the quantum system?"
+==&gt; Also see "[Todo: Consider if the "quantum measurement" is in fact when some part of the universe becomes "about" the quantum system?](../7766df00/chime.md)"
 
-==&gt; Also see "Todo: If we accept the many-world model of quantum theory, what then stops us from assuming each observation creates a new now but in fact a new past, now and future?"
+==&gt; Also see "[Todo: If we accept the many-world model of quantum theory, what then stops us from assuming each observation creates a new now but in fact a new past, now and future?](../544c78e2/chime.md)"
 
-==&gt; Also see "Todo: Consider to follow up on lead in youtube video "Why Everything You Thought You Knew About Quantum Physics is Different - with Philip Ball"?"
+==&gt; Also see "[Todo: Consider to follow up on lead in youtube video "Why Everything You Thought You Knew About Quantum Physics is Different - with Philip Ball"?](../2d1c0a84/chime.md)"
 
 1) Consider Sabine Hossenfelder youtube video "Why is quantum mechanics weird? The bomb experiment" (<https://youtu.be/RhIf3Q_m0FQ> )?
 

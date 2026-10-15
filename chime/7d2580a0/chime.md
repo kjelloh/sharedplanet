@@ -7,35 +7,35 @@
 {% raw %}
 It seems to me to be a good metaphor to investigate when act-in-faith to a truth that losses traction in a transformed reality that it is like when the coyote runs off a cliff into thin air and there is a delay between him continue running and the moment he realises he has lost all contact with the ground and starts falling.
 
-==&gt; Also see "Todo: Programming - Consider if it is possible to infer actor rules of a self organising complex system with an emergent behaviour isomorphic to some studied system or computation (e.g., through deep learning and Tha meta tier modelling)?"
+==&gt; Also see "[Todo: Programming - Consider if it is possible to infer actor rules of a self organising complex system with an emergent behaviour isomorphic to some studied system or computation (e.g., through deep learning and Tha meta tier modelling)?](../466285e0/chime.md)"
 
-==&gt; Also see "Todo: Consider AI driven dating apps reveals their inability to deal with emergent behaviour (as so far they can only infer existing there-ought-to-be drives; Not emerging ones)?"
+==&gt; Also see "[Todo: Consider AI driven dating apps reveals their inability to deal with emergent behaviour (as so far they can only infer existing there-ought-to-be drives; Not emerging ones)?](../f983f243/chime.md)"
 
-==&gt; Also see "Todo: Consider deeper insight, enlightenment, growing up, transformational experiences, are all examples of an inferred or emergent meta-pattern (a pattern about patterns)?"
+==&gt; Also see "[Todo: Consider deeper insight, enlightenment, growing up, transformational experiences, are all examples of an inferred or emergent meta-pattern (a pattern about patterns)?](../43a26709/chime.md)"
 
-==&gt; Also see "Todo: Emdividualism - Consider to define an Emdividual as the emergent dividual to act-in-faith to an selected applicable subsets of truth-webs?"
+==&gt; Also see "[Todo: Emdividualism - Consider to define an Emdividual as the emergent dividual to act-in-faith to an selected applicable subsets of truth-webs?](../938707e9/chime.md)"
 
-==&gt; Also see "Todo: Use this TED talk about emergent patterns in climate change both for SPC and idea about social emergences"
+==&gt; Also see "[Todo: Use this TED talk about emergent patterns in climate change both for SPC and idea about social emergences](../566bc5f0/chime.md)"
 
-==&gt; Also see "Todo: Watch the 2014 TED talk about the emergent patterns of climate change"
+==&gt; Also see "[Todo: Watch the 2014 TED talk about the emergent patterns of climate change](../1a1e7794/chime.md)"
 
-==&gt; Also see "Todo: Consider the term "Emdividualism" for the -ism of Emergent Dividuals?"
+==&gt; Also see "[Todo: Consider the term "Emdividualism" for the -ism of Emergent Dividuals?](../cbaa1ed9/chime.md)"
 
-==&gt; Also see "Todo: If Society is an emergent self organizing "social organism", then what "story" should we tell to have the most beneficial society emerge?"
+==&gt; Also see "[Todo: If Society is an emergent self organizing "social organism", then what "story" should we tell to have the most beneficial society emerge?](../8a874839/chime.md)"
 
-==&gt; Also see "Todo: Describe and name the "second enlightenment" view of our role as emergent divids in emergent societies"
+==&gt; Also see "[Todo: Describe and name the "second enlightenment" view of our role as emergent divids in emergent societies](../cc99a7cb/chime.md)"
 
-==&gt; Also see "Todo: Write about economic systems as emergent from gene, meme and law induced actions"
+==&gt; Also see "[Todo: Write about economic systems as emergent from gene, meme and law induced actions](../d170f6a3/chime.md)"
 
-==&gt; Also see "Todo: Write about society as emergent from simple rules (the ant society model)"
+==&gt; Also see "[Todo: Write about society as emergent from simple rules (the ant society model)](../1c7007da/chime.md)"
 
-==&gt; Also see "Todo: Consider humans are Social Emergence Programmers i.e., Conscious Ants?"
+==&gt; Also see "[Todo: Consider humans are Social Emergence Programmers i.e., Conscious Ants?](../d6bbc47c/chime.md)"
 
-==&gt; Also see "Todo: Consider the day ants became self conscious?"
+==&gt; Also see "[Todo: Consider the day ants became self conscious?](../691f70bf/chime.md)"
 
-==&gt; Also see "Todo: Blogentry - "The Magic in Five Ants being more than Four Elephants""
+==&gt; Also see "[Todo: Blogentry - "The Magic in Five Ants being more than Four Elephants"](../394ea9ed/chime.md)"
 
-==&gt; Also see "Todo: Follow up on "crazy ants" enabling scouting ants to affect direction"
+==&gt; Also see "[Todo: Follow up on "crazy ants" enabling scouting ants to affect direction](../9120e9e2/chime.md)"
 
 > *So the idea here is that we can use this metaphor to try and identify "truths" that has been "true" in some part reality in that they have had actual traction and good "outcome" but now has spun off the cliff only those who "run" has not realised it yet.*
 

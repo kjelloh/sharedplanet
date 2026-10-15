@@ -7,7 +7,7 @@
 {% raw %}
 I want to make my open source application "Cratchit" be able to generate a Tax Returns form for my company as file to be uploaded to the Swedish tax agency.
 
-==&gt; Also see "Todo: Consider how I may declare my personal Sales TAX form to Swedish tax agency using their file upload service?"
+==&gt; Also see "[Todo: Consider how I may declare my personal Sales TAX form to Swedish tax agency using their file upload service?](../91a9d499/chime.md)"
 
 1) It seems the main information i need is provided in a zip-file that I can download from here (<https://skatteverket.se/download/18.96cca41179bad4b1aac351/1642600897155/Nyheter_from_beskattningsperiod_2021P4.zip> )?
 

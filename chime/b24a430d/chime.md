@@ -29,7 +29,7 @@ I really like what Macro Reps on youtube shows and uses so it seems like a good 
 
 ![](<Screen Shot 2018-04-18 at 22.27.51.png>)
 
-==&gt; See “Todo: Consider to study Rotary Controllers for servo motors and what we can use them for?"
+==&gt; See “[Todo: Consider to study Rotary Controllers for servo motors and what we can use them for?](../fc55f824/chime.md)"
 
 ==&gt; Consider “” ([New CNC Machine EP01: Spindle Motor and YL620 Variable Frequency Drive](https://www.youtube.com/watch?v=vpN3VO5IHjA))?
 

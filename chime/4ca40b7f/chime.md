@@ -7,7 +7,7 @@
 {% raw %}
 I want to enable people to leverage the information in youtube videos by providing means to get spoken information into written text for search and linkage of topic discussions.
 
-==&gt; Also see "Todo: Consider to delve into the work of Taiwan "Digital Minister" Audrey Tang as referred to by Tristan Harris on youtube interview by Rebel Wisdom? "
+==&gt; Also see "[Todo: Consider to delve into the work of Taiwan "Digital Minister" Audrey Tang as referred to by Tristan Harris on youtube interview by Rebel Wisdom?](../736514b7/chime.md) "
 
 1) Consider the API to youtube transcriptions?
 

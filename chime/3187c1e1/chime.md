@@ -7,7 +7,7 @@
 {% raw %}
 What robotic leg actuator designs are there and how can we build and use them fro interesting drive projects?
 
-==&gt; Also see "Todo: Power Feeder - Consider to use a cycloidal gear box and multicopter brushless motor as for high torque robotic actuators to drive wood through a table saw?"
+==&gt; Also see "[Todo: Power Feeder - Consider to use a cycloidal gear box and multicopter brushless motor as for high torque robotic actuators to drive wood through a table saw?](../cc8427d2/chime.md)"
 
 1) Consider the wikipedia article on the Cycloidal Drive (<https://en.wikipedia.org/wiki/Cycloidal_drive> )?
 

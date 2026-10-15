@@ -7,17 +7,17 @@
 {% raw %}
 It seems it could be valuable to follow up on my intuition that Dispatching in programming is in fact an indexing (selection) based on pattern matching (in addition to the term and type indexing in type theory)?
 
-==&gt; Also see “Todo: Meh and Tha and Type Theory and Systems - Consider to delve deeper into Type Theory and the Lambda Cube to understand how we may think about Meh and Tha?"
+==&gt; Also see “[Todo: Meh and Tha and Type Theory and Systems - Consider to delve deeper into Type Theory and the Lambda Cube to understand how we may think about Meh and Tha?](../77f52160/chime.md)"
 
-==&gt; Also see “Todo: Type Systems - Consider Strange Loop talk "Type Systems - The Good, Bad and Ugly" by Paul Snively and Amanda Laucher as having good leads into good and bad type systems and the need for a better programming language?”
+==&gt; Also see “[Todo: Type Systems - Consider Strange Loop talk "Type Systems - The Good, Bad and Ugly" by Paul Snively and Amanda Laucher as having good leads into good and bad type systems and the need for a better programming language?](../9b0ab729/chime.md)”
 
-==&gt; Also see “Todo: Cratchit Book Keeping - Consider to implement a C++ book keeping application using Tha modelling, Elm Idion and Immer Immutable data Struictures asynchronously synchronising with REST Web service (FortKnox) and IPFS file system?"
+==&gt; Also see “[Todo: Cratchit Book Keeping - Consider to implement a C++ book keeping application using Tha modelling, Elm Idion and Immer Immutable data Struictures asynchronously synchronising with REST Web service (FortKnox) and IPFS file system?](../7c6907a4/chime.md)"
 
-==&gt; Also see “Todo: Tha - Consider to name the "Meta stack model" the Tha model and define what this model implies and used?”
+==&gt; Also see “[Todo: Tha - Consider to name the "Meta stack model" the Tha model and define what this model implies and used?](../2927db2a/chime.md)”
 
-==&gt; Also see “Todo: Tha C++ - Consider to discover the C++ meta-layer objects by viewing C++ code as meta-layer expressions expressed in Haskel syntax?”
+==&gt; Also see “[Todo: Tha C++ - Consider to discover the C++ meta-layer objects by viewing C++ code as meta-layer expressions expressed in Haskel syntax?](../f03f3b43/chime.md)”
 
-==&gt; Also see “Todo: Tha - Consider Haskel "kind values" are in fact Tha meta-2 values?”
+==&gt; Also see “[Todo: Tha - Consider Haskel "kind values" are in fact Tha meta-2 values?](../bba1c0c9/chime.md)”
 
 1) Consider in what ways we can argue that Dispatching is a selection based on an index that is a pattern?
 

@@ -7,11 +7,11 @@
 {% raw %}
 It seems you can design dices so that if you order them according to the probability the left dice will "beat" the right one is NOT a transitive property?
 
-==&gt; Also see "Todo: Consider to question Sam Harris notion of "Bad" to "Good" model to navigate the moral space from "Temkin's Paradox" made by Larry Temkin that moral judgement may not be transitive?"
+==&gt; Also see "[Todo: Consider to question Sam Harris notion of "Bad" to "Good" model to navigate the moral space from "Temkin's Paradox" made by Larry Temkin that moral judgement may not be transitive?](../46f870ba/chime.md)"
 
-==&gt; Also see “Todo: Consider to follow up on the Larry Temkin "Temkin's Paradox" that moral judgement can't assume transitive "better than" function?”
+==&gt; Also see “[Todo: Consider to follow up on the Larry Temkin "Temkin's Paradox" that moral judgement can't assume transitive "better than" function?](../11ad9189/chime.md)”
 
-==&gt; Also see "Todo: Consider the web shop "Maths Gear" as a good source for interesting things to own (and as a source of good presents to give away)?"
+==&gt; Also see "[Todo: Consider the web shop "Maths Gear" as a good source for interesting things to own (and as a source of good presents to give away)?](../d1174946/chime.md)"
 
 1) Consider the example described in the youtube video "What Happens When Maths Goes Wrong? - with Matt Parker" here (<https://youtu.be/6JwEYamjXpA?t=2171> )?
 

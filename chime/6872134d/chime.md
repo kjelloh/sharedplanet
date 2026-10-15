@@ -7,7 +7,7 @@
 {% raw %}
 Consider it is a good idea to find out and document the “best” way to install and use the C++ Boost Libraries with Visual Studio C++ projects?
 
-==&gt; Also see “Todo: Programming - It seems C++ boost for Visual Studio is available using NuGet package manager?”
+==&gt; Also see “[Todo: Programming - It seems C++ boost for Visual Studio is available using NuGet package manager?](../ed3ed911/chime.md)”
 
 ==&gt; Note: NuGet Boost Package does NOT seem to be a good idea?
 

@@ -7,7 +7,7 @@
 {% raw %}
 I still want to implement a C++ Elm architecture in craychit and possibly other C++ programs.
 
-==&gt; Also see "Todo: Consider The Elm Architecture (TEA) based Github project "TeaGameLibrary"?"
+==&gt; Also see "[Todo: Consider The Elm Architecture (TEA) based Github project "TeaGameLibrary"?](../aaf4c309/chime.md)"
 
 1) Consider the 'Elm Workshop' walk through of the Elm architecture (<https://sporto.github.io/elm-workshop/03-tea/01-intro.html> )?
 
@@ -17,7 +17,7 @@ I still want to implement a C++ Elm architecture in craychit and possibly other 
 
 ==&gt; Consider the Github Project "TeaGameLibrary" (https://github.com/elipmoc/TeaGameLibrary/tree/master )?
 
-==&gt; See "Todo: Consider The Elm Architecture (TEA) based Github project "TeaGameLibrary"?"
+==&gt; See "[Todo: Consider The Elm Architecture (TEA) based Github project "TeaGameLibrary"?](../aaf4c309/chime.md)"
 
 ...
 

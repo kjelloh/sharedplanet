@@ -7,9 +7,9 @@
 {% raw %}
 Could it be possible to analyse and categorise my raw video footage for youtube videos using some existing good deep learning networks?
 
-==&gt; Also see “Todo: Consider to find video editing tools to 1) Save only raw footage go good quality and 2) Automate video cutting using pre-defined story-line templates”  
-==&gt; Also see “Todo: Consider video editor software that allows composition of the tools operations (for automated edits)?”  
-==&gt; Also see “Todo: Consider to investigate if I can use FFmpeg cross platform tool to make my youtube video editing more efficient?"
+==&gt; Also see “[Todo: Consider to find video editing tools to 1) Save only raw footage go good quality and 2) Automate video cutting using pre-defined story-line templates](../a7ecba69/chime.md)”  
+==&gt; Also see “[Todo: Consider video editor software that allows composition of the tools operations (for automated edits)?](../9f6856fe/chime.md)”  
+==&gt; Also see “[Todo: Consider to investigate if I can use FFmpeg cross platform tool to make my youtube video editing more efficient?](../b86026cb/chime.md)"
 
 1) What networks exist to categorise videos according to content?
 

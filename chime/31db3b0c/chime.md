@@ -7,11 +7,11 @@
 {% raw %}
 Could it be possible to modify my Einhell 2025 table saw to use a brushless outrunner motor instead?
 
-==&gt; Also see “Todo: Consider to document and understand brushless motors physics (torque, kv value...)?"
+==&gt; Also see “[Todo: Consider to document and understand brushless motors physics (torque, kv value...)?](../85bc3a7b/chime.md)"
 
-==&gt; Also see “Todo: Consider to study Rotary Controllers for servo motors and what we can use them for?”
+==&gt; Also see “[Todo: Consider to study Rotary Controllers for servo motors and what we can use them for?](../fc55f824/chime.md)”
 
-==&gt; Also see “Todo: Consider to follow up on components and products used and described on the Macro Reps youtube channel?"
+==&gt; Also see “[Todo: Consider to follow up on components and products used and described on the Macro Reps youtube channel?](../b24a430d/chime.md)"
 
 1) Consider the Chineese outrunner motor N5065 (<https://www.aliexpress.com/item/Brushless-Outrunner-Motor-N5065-270KV-1665W-For-DIY-Electric-Skate-Board/32795443468.html>)?
 

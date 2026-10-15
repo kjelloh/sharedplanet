@@ -7,7 +7,7 @@
 {% raw %}
 So, what can we learn by trying out a project structure with parallel folders for the different aspects of a software project?
 
-==&gt; Also see “Todo: Multi-Ux Cross Platform Programming - Consider the run-time entry point actually defines the Ux domain (and thus we know at compile time what Ux to instantiate at runtime)?”
+==&gt; Also see “[Todo: Multi-Ux Cross Platform Programming - Consider the run-time entry point actually defines the Ux domain (and thus we know at compile time what Ux to instantiate at runtime)?](../9e5a9061/chime.md)”
 
 1) Consider too what degree this structure works conveniently for different IDE:s?
 

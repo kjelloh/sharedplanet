@@ -7,39 +7,39 @@
 {% raw %}
 It seems it could be a good idea to start listing web-shops that I can potentially use to buy maker materials and parts I can use to build stuff in my maker space?
 
-==&gt; Also see “Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?”
+==&gt; Also see “[Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?](../9e71efd1/chime.md)”
 
-==&gt; Also see “Todo: Consider to check out Chineese Min company that sell those mini screwdriver, soldering iron and oscilloscope that Macro Reps done reviews on?"
+==&gt; Also see “[Todo: Consider to check out Chineese Min company that sell those mini screwdriver, soldering iron and oscilloscope that Macro Reps done reviews on?](../d50b728f/chime.md)"
 
-==&gt; Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from Accu web shop)?”
+==&gt; Also see “[Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from Accu web shop)?](../872a6397/chime.md)”
 
-==&gt; Also see “Todo: Motion Control - Consider to experiment with the Trinamic TMC160xx MotionCookie micro controller?”
+==&gt; Also see “[Todo: Motion Control - Consider to experiment with the Trinamic TMC160xx MotionCookie micro controller?](../4789f12b/chime.md)”
 
-==&gt; Also see “Todo: DIY - Consider to build a power feeder for my table saw module?”
+==&gt; Also see “[Todo: DIY - Consider to build a power feeder for my table saw module?](../10c92e8a/chime.md)”
 
-==&gt; Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from Accu web shop)?”
+==&gt; Also see “[Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from Accu web shop)?](../872a6397/chime.md)”
 
-==&gt; Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from ratRig provider)?”
+==&gt; Also see “[Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from ratRig provider)?](../65915dfb/chime.md)”
 
-==&gt; Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from Conrad web-shop parts?”
+==&gt; Also see “[Todo: Table Saw Power Feeder - Consider to design a Power Feeder from Conrad web-shop parts?](../9001ef5d/chime.md)”
 
-==&gt; Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from self balancing electric skateboard or cycle wheel?"
+==&gt; Also see “[Todo: Table Saw Power Feeder - Consider to design a Power Feeder from self balancing electric skateboard or cycle wheel?](../ec2c8971/chime.md)"
 
-==&gt; Also see “Todo: Table Saw Power Feeder + Table Saw Rip Fence - Consider Adafruit CNC and Robot parts?”
+==&gt; Also see “[Todo: Table Saw Power Feeder + Table Saw Rip Fence - Consider Adafruit CNC and Robot parts?](../4cabff46/chime.md)”
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence using igus low profile linear guide system?”
+==&gt; Also see “[Todo: Consider to build a table saw rip fence using igus low profile linear guide system?](../7726fcfe/chime.md)”
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence using a threaded rod in an Incra T-slot?”
+==&gt; Also see “[Todo: Consider to build a table saw rip fence using a threaded rod in an Incra T-slot?](../bf959e20/chime.md)”
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence from aluminum profiles and accessories (from motedis web shop)?”
+==&gt; Also see “[Todo: Consider to build a table saw rip fence from aluminum profiles and accessories (from motedis web shop)?](../fec8d369/chime.md)”
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence from CNC machine parts (from swedish JBCNC web shop)?”
+==&gt; Also see “[Todo: Consider to build a table saw rip fence from CNC machine parts (from swedish JBCNC web shop)?](../58c1cf0e/chime.md)”
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence from wood working tool vendors (from Deutch Fine Tools web shop)? “
+==&gt; Also see “[Todo: Consider to build a table saw rip fence from wood working tool vendors (from Deutch Fine Tools web shop)?](../7a2b9660/chime.md) “
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence from wood working tool vendors (from Swedish woodworking web shop)? “
+==&gt; Also see “[Todo: Consider to build a table saw rip fence from wood working tool vendors (from Swedish woodworking web shop)?](../2a031392/chime.md) “
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence using 3D printed parts (e.g., thingiverse models)?"
+==&gt; Also see “[Todo: Consider to build a table saw rip fence using 3D printed parts (e.g., thingiverse models)?](../33791f93/chime.md)"
 
 1) Consider electronics web-shops?
 

@@ -11,7 +11,7 @@ So, what initiatives are there out there for developing Audio processing applica
 
 2) Consider Cycling74 MAX graphical platform (<https://cycling74.com/products/max/#.WLK5tRhPqEI>)?
 
-==&gt; Also see ”Todo: Consider to check out Max graphical programming environment from cycling74 for audio and video modules?”
+==&gt; Also see ”[Todo: Consider to check out Max graphical programming environment from cycling74 for audio and video modules?](../134ccede/chime.md)”
 
 ![](<Patch inside Cycling74 Max Framework.tiff>)
 

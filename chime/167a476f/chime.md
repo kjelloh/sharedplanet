@@ -21,7 +21,7 @@ Consider the first function we need of Trudelutt is to share one mp3 file and be
 
 ==&gt; Do we need to synchronize clocks (or does the internal clocks of Nodes run synchronously already)?
 
-==&gt; Also See ”Todo: Programming - Consider to understand the NTP (network Time Protocol) and how to use it with available C++ open source code?"
+==&gt; Also See ”[Todo: Programming - Consider to understand the NTP (network Time Protocol) and how to use it with available C++ open source code?](../ccb00ad7/chime.md)"
 
 ==&gt; Consider we need a synchronisation accuracy down to at least 50 ms ()?
 

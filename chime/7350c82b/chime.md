@@ -7,9 +7,9 @@
 {% raw %}
 It seems it would be a good idea to learn and document my journey into the command line Windows 10 - What exists in windows 10 command line world; How does it work
 
-==&gt; Also See “Todo: Programming - Consider to document and understand the basics of MacOS usage and configuration?"
+==&gt; Also See “[Todo: Programming - Consider to document and understand the basics of MacOS usage and configuration?](../b0cbddee/chime.md)"
 
-==&gt; Also See “Todo: Programming - Consider to document and understand the basics of Linux OS usage and configuration?”
+==&gt; Also See “[Todo: Programming - Consider to document and understand the basics of Linux OS usage and configuration?](../dd94bc79/chime.md)”
 
 ==&gt; Windows 10 Native Linux updated in “Todo: Windows 10 Linux - Consider to try out Windows 10 distribution of Linux (running Linux natively in Windows 10)?"
 

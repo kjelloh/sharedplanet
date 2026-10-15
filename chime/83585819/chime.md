@@ -7,7 +7,7 @@
 {% raw %}
 So, I spent the last days to listen to Sam Harris and Jordan B. Person as well as studying Gödels incompleteness theorems, Penrose non-computable consciousness and Temkins intransitive Moral in trying to make sense of our human reality.
 
-==&gt; Also see “Todo: Consider to question Sam Harris notion of "Bad" to "Good" model to navigate the moral space from "Temkin's Paradox" made by Larry Temkin that moral judgement may not be transitive?”
+==&gt; Also see “[Todo: Consider to question Sam Harris notion of "Bad" to "Good" model to navigate the moral space from "Temkin's Paradox" made by Larry Temkin that moral judgement may not be transitive?](../46f870ba/chime.md)”
 
 1) Consider to document the youtube videos I find interesting to understand these concepts?
 

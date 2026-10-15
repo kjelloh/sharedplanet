@@ -7,9 +7,9 @@
 {% raw %}
 Could we imagine to make a component that is able to interface with e-services user interfaces to navigate, trigger services and ”sniff” for user data output (e.g. skatteverkets e-services, Facebook client, cooperation user interfaces)?
 
-==&gt; Also see ”Todo: Darwinet - Design a mechanism to synch. Web-info with Darwinet stored data”  
-==&gt; Also see ”Todo: Write an app that auto-enters invoices on Nordea web-bank page”  
-==&gt; Also see ”Todo: API-fy Web page user interfaces to enable programatic access”
+==&gt; Also see ”[Todo: Darwinet - Design a mechanism to synch. Web-info with Darwinet stored data](../7c517b26/chime.md)”  
+==&gt; Also see ”[Todo: Write an app that auto-enters invoices on Nordea web-bank page](../3d0ac5d8/chime.md)”  
+==&gt; Also see ”[Todo: API-fy Web page user interfaces to enable programatic access](../7842208f/chime.md)”
 
 1) Consider to ”sniff” Skatteverkets e-servies to automate fetching of tax declaration data and optionally send finalized declaration digitally to skatteverket?
 

@@ -7,11 +7,11 @@
 {% raw %}
 Just for fun, consider to acquire the mini screw driver, soldering iron and oscilloscope from the Chinese MIN company?
 
-==&gt; Also see “Todo: Consider to list potential maker cnc and 3d print openbuilds and other parts web-shops?”
+==&gt; Also see “[Todo: Consider to list potential maker cnc and 3d print openbuilds and other parts web-shops?](../76d04894/chime.md)”
 
-==&gt; Also see “Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?”
+==&gt; Also see “[Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?](../9e71efd1/chime.md)”
 
-==&gt; Also see “Todo: Electronic Lab - Consider to find a good enough lab power supply?"
+==&gt; Also see “[Todo: Electronic Lab - Consider to find a good enough lab power supply?](../68506fdb/chime.md)"
 
 1) The Chinese MIN company seems to sell their products on Banggood (<https://www.banggood.com/brands-MINI-b-741.html>)?
 

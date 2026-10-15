@@ -7,7 +7,7 @@
 {% raw %}
 Det är nog dags att ta kontakt med ISOTimber i Östersund och ta reda på vad det skulle kosta att anlita dem för konstruktionsmaterial till mitt trähus?
 
-==&gt; Se även "Todo: Bygga eget hus - Anteckna det jag hittat på nätet som kan hjälpa mig bygga ett trähus?"
+==&gt; Se även "[Todo: Bygga eget hus - Anteckna det jag hittat på nätet som kan hjälpa mig bygga ett trähus?](../4a994944/chime.md)"
 
 > 3) Överväg att kolla upp ISOTimber i Östersund som gör träkonstruktioner för husbygge utan plastskikt och bara “trä och luft” ([https://isotimber.se](https://isotimber.se/) )?
 

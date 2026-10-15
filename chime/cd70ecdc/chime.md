@@ -37,7 +37,7 @@ Could we imagine an IDE that acts like a “programmer on a chat” in that it w
 
 6) Consider to follow up on other Todo: “Dream IDE” notes?
 
-==&gt; See “Todo: Programming - Consider to enable the "Dream IDE" to understand and help the programmer to comply with "Concepts" (e.g. Input Iterator Concept)”
+==&gt; See “[Todo: Programming - Consider to enable the "Dream IDE" to understand and help the programmer to comply with "Concepts" (e.g. Input Iterator Concept)](../df3bdffe/chime.md)”
 
 …
 

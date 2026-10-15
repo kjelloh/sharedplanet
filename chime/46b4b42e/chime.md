@@ -7,7 +7,7 @@
 {% raw %}
 It seems it could be fun to do some research on my own on wind turbines using a brushless drone propeller motor and some home made wind tunnel and MPPT controller?
 
-==&gt; Also see “Todo: DIY MPPT - Consider to study, understand and try out building my own Maximum Power Point Tracker (MPPT) Lithium Ion battery charging manager?"
+==&gt; Also see “[Todo: DIY MPPT - Consider to study, understand and try out building my own Maximum Power Point Tracker (MPPT) Lithium Ion battery charging manager?](../63dd4add/chime.md)"
 
 1) Consider to buy a drone propeller brushless motor (<http://www.skyrc.com/X2205E_Motor>)?
 

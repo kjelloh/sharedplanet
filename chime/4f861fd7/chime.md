@@ -7,7 +7,7 @@
 {% raw %}
 How much power do I actually consume to live a comfortable life?
 
-==&gt; Also see "Todo: Private Economy - Consider to understand my electric bill (what are the different fees and tariffs I pay)?"
+==&gt; Also see "[Todo: Private Economy - Consider to understand my electric bill (what are the different fees and tariffs I pay)?](../43470125/chime.md)"
 
 -1) Consider the abstract of what I have found out so far?
 

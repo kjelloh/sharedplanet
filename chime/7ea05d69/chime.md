@@ -7,7 +7,7 @@
 {% raw %}
 It seems Indium Tin Oxide is worth transparent and conductive so they can be used in the making of transparent touch screen overlays?
 
-=&gt;= Also see “Todo: Mui Lab Wood Surface Calm Interface - Consider to investigate, understand and possibly DIY the wood capacitive touch screen display developed by Mui Lab (CES 2019 award)?"
+=&gt;= Also see “[Todo: Mui Lab Wood Surface Calm Interface - Consider to investigate, understand and possibly DIY the wood capacitive touch screen display developed by Mui Lab (CES 2019 award)?](../ac0e9ad5/chime.md)"
 
 1) Consider this video that seems to indicate that at least resistive touch screens uses transparent metal compounds like Indium Tin Oxide for conduction (<https://youtu.be/wKuqNuzM1oM?t=49>)?
 

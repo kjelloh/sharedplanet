@@ -7,7 +7,7 @@
 {% raw %}
 Så, vad finns för information på nätet för att beräkna solcellsbehov samt köpa produkter?
 
-==&gt; Se även ”Todo: Mörkö - Överväg att köpa extra portabla solpaneler (egna) samt monetär med MC4 kontakter till befintlig anläggning?"
+==&gt; Se även ”[Todo: Mörkö - Överväg att köpa extra portabla solpaneler (egna) samt monetär med MC4 kontakter till befintlig anläggning?](../792a0c4b/chime.md)"
 
 -5) Överväg att hitta ställen att köpa DC-särkingar för DIN-skena och andra 12V produkter anpassade för solcellsanläggning?
 

@@ -7,17 +7,17 @@
 {% raw %}
 Could it be a good idea to design a calendar user interface with interconnected gears with revolutions representing passing of time and gear teeth are hours, days, weeks, years, 10 years on the lifetime gear?
 
-==&gt; Also see “Todo: Programming - Consider to visualise a calendar as spirals of days within spirals of weeks within spirals of months within spiral of years?”
+==&gt; Also see “[Todo: Programming - Consider to visualise a calendar as spirals of days within spirals of weeks within spirals of months within spiral of years?](../c1eee518/chime.md)”
 
-==&gt; Also see “Todo: Consider to make the Todo-App (Owl&Bells) focus on Jordan B. Petersson teaching about creating micro-adjustments (have user performs actions) that reduce pain by aiming at tuning life for optimal honesty (virtue or truth)?
+==&gt; Also see “[Todo: Consider to make the Todo-App (Owl&Bells) focus on Jordan B. Petersson teaching about creating micro-adjustments (have user performs actions) that reduce pain by aiming at tuning life for optimal honesty (virtue or truth)?](../5057914f/chime.md)
 
 “
 
-==&gt; Also see “Todo: Programming - Consider to study existing Todo/Task application idioms and relate them to Owls&Bells attention-scheduling idiom?”
+==&gt; Also see “[Todo: Programming - Consider to study existing Todo/Task application idioms and relate them to Owls&Bells attention-scheduling idiom?](../9c245a3b/chime.md)”
 
-==&gt; Also see “Todo: Consider to propose a religion-free Calendar for the society-of-the-future?”
+==&gt; Also see “[Todo: Consider to propose a religion-free Calendar for the society-of-the-future?](../40efe336/chime.md)”
 
-==&gt; Also see “Todo: Consider to make a calendar app that "talks" by using recordings made by oneself, friends or strangers?
+==&gt; Also see “[Todo: Consider to make a calendar app that "talks" by using recordings made by oneself, friends or strangers?](../46a523dc/chime.md)
 
 “
 

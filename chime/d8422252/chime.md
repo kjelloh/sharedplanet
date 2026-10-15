@@ -7,11 +7,11 @@
 {% raw %}
 Consider we really would like a C++ editor to understand Identifier relations and never break them?
 
-==&gt; Also see “Todo: Programming - Consider to elaborate on some cool features of the "Dream IDE" for C++ programming?"
+==&gt; Also see “[Todo: Programming - Consider to elaborate on some cool features of the "Dream IDE" for C++ programming?](../2b512b4c/chime.md)"
 
-==&gt; Also see “Todo: Dream C++ IDE - Consider a cut-and-paste function that adapts source code to the paste location (e.g. inline versus external definition of member methods)?”
+==&gt; Also see “[Todo: Dream C++ IDE - Consider a cut-and-paste function that adapts source code to the paste location (e.g. inline versus external definition of member methods)?](../caf49b74/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?"
+==&gt; Also see “[Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?](../92b081ea/chime.md)"
 
 1) Consider copy-paste of a class should render a pasted class withs its own name?
 

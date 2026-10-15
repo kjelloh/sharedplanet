@@ -7,7 +7,7 @@
 {% raw %}
 I may need to be able to produce three phase hight electrical power for things like saw mills and other power machines when I build my off grid house.
 
-==&gt; Also see "Todo: Consider a band saw mill I can purchase to cut timber into lumber for my house build adventure?"
+==&gt; Also see "[Todo: Consider a band saw mill I can purchase to cut timber into lumber for my house build adventure?](../c9f3b8c1/chime.md)"
 
 ![](PastedGraphic-21.png)
 

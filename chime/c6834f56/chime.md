@@ -31,7 +31,7 @@ It seems Fusion uses so called “Post Processors” to generate CNC specific co
 
 3) Consider to capture a list of CNC machine vendors supported by Autodesk post processors and save as a CSV list for future use?
 
-==&gt; Also see “Todo: Consider to document how I made screen shots of a vendor drop down list and used online OCR and OS X to turn it into a CSV list of vendor names?”
+==&gt; Also see “[Todo: Consider to document how I made screen shots of a vendor drop down list and used online OCR and OS X to turn it into a CSV list of vendor names?](../89a8f9d3/chime.md)”
 
 ## Attachments
 

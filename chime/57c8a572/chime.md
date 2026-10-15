@@ -7,21 +7,21 @@
 {% raw %}
 It seems I could benefit from actually start losting URL:s to good sources of wood working tools and accessories?
 
-==&gt; Also see “Todo: Consider to list potential maker cnc and 3d print openbuilds and other parts web-shops?”
+==&gt; Also see “[Todo: Consider to list potential maker cnc and 3d print openbuilds and other parts web-shops?](../76d04894/chime.md)”
 
-==&gt; Also see “Todo: Consider to list URL:s to power tool vendors for easy access to current available sortiment for tools to make stuff?”
+==&gt; Also see “[Todo: Consider to list URL:s to power tool vendors for easy access to current available sortiment for tools to make stuff?](../1369da69/chime.md)”
 
-==&gt; Also see “Todo: Cordless Brushless Tools - Consider to save good URL:s and information on available Cordless Brushless power tool systems?"
+==&gt; Also see “[Todo: Cordless Brushless Tools - Consider to save good URL:s and information on available Cordless Brushless power tool systems?](../8f812263/chime.md)"
 
-==&gt; Also see “Todo: Consider to understand Cyanoacrylate (superglue) brands, usage and accelerators for wood working and other applications?”
+==&gt; Also see “[Todo: Consider to understand Cyanoacrylate (superglue) brands, usage and accelerators for wood working and other applications?](../70da9ffe/chime.md)”
 
-==&gt; Also see “Todo: Consider machines (dowelling jointer), tools or jigs to drill accurate and quick dowel holes for wood joinery?”
+==&gt; Also see “[Todo: Consider machines (dowelling jointer), tools or jigs to drill accurate and quick dowel holes for wood joinery?](../7a8fdbd8/chime.md)”
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence from wood working tool vendors (from Deutch Fine Tools web shop)? “
+==&gt; Also see “[Todo: Consider to build a table saw rip fence from wood working tool vendors (from Deutch Fine Tools web shop)?](../7a2b9660/chime.md) “
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence from wood working tool vendors (from Swedish woodworking web shop)? “
+==&gt; Also see “[Todo: Consider to build a table saw rip fence from wood working tool vendors (from Swedish woodworking web shop)?](../2a031392/chime.md) “
 
-==&gt; Also see “Todo: Consider to choose efficient, comfortable and good looking woodworking protection (face mask, eye protection etc.)?”
+==&gt; Also see “[Todo: Consider to choose efficient, comfortable and good looking woodworking protection (face mask, eye protection etc.)?](../3984a510/chime.md)”
 
 1) Consider UK based “Benchdogs” as praised by Peter Millard on youtube ([https://benchdogs.co.uk](https://benchdogs.co.uk/))?
 

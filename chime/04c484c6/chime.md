@@ -7,13 +7,13 @@
 {% raw %}
 It seems I should be able to desing and build wall storage from consoles that rests on floor but fastens to T-slot in roof mouldings?
 
-==&gt; Also see "Todo: Consider to design and build flexible and removable wall storage shelves?"
+==&gt; Also see "[Todo: Consider to design and build flexible and removable wall storage shelves?](../8f64ff40/chime.md)"
 
-==&gt; Also see "Todo: Consider a roof moulding with routed T-slot and sliding wing-nut fastened mount for nylon thread hanging of paintings?"
+==&gt; Also see "[Todo: Consider a roof moulding with routed T-slot and sliding wing-nut fastened mount for nylon thread hanging of paintings?](../972441a9/chime.md)"
 
-==&gt; Also see "Todo: Consider T-slot cut router bits for designs and builds in wood where T-slot fastening could be an option?"
+==&gt; Also see "[Todo: Consider T-slot cut router bits for designs and builds in wood where T-slot fastening could be an option?](../69edf934/chime.md)"
 
-==&gt; Also see "Todo: Home Storage - Consider a BOM for different flexible home storage solutions on wheels (optionally on walls)?"
+==&gt; Also see "[Todo: Home Storage - Consider a BOM for different flexible home storage solutions on wheels (optionally on walls)?](../157c1410/chime.md)"
 
 1) Consider what I need to learn and enable me to do to build this prototype T-slot roof moulding fastened floor resting wall storage shelve system?
 

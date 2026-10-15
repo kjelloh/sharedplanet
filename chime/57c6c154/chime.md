@@ -60,7 +60,7 @@ NOTE: Some are soft start though thermistors (which is NOT what I want)?
 
 2) Consider to use my Triac module as discussed in “Todo: Einhell 2025 - Consider to try and use a Power Control to regulate the saw speed (and apply manual soft start)?”?
 
-==&gt; See “Todo: Einhell 2025 - Consider to try and use a Power Control to regulate the saw speed (and apply manual soft start)?”
+==&gt; See “[Todo: Einhell 2025 - Consider to try and use a Power Control to regulate the saw speed (and apply manual soft start)?](../0e09e3ed/chime.md)”
 
 …
 

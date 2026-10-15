@@ -7,11 +7,11 @@
 {% raw %}
 I want to make an iPad based teleprompter so I need some way to mount it to my Manfrotto Tripod camera head :)
 
-==&gt; Also see "Todo: Build my own teleprompter :)"
+==&gt; Also see "[Todo: Build my own teleprompter :)](../2ed17157/chime.md)"
 
-==&gt; Also see "Todo: Consider to write a teleprompter app for Android (Chrome)?"
+==&gt; Also see "[Todo: Consider to write a teleprompter app for Android (Chrome)?](../5d76445d/chime.md)"
 
-==&gt; Also see "Todo: Consider we can use the glass from foto frames to build a 3D printer enclosure and a Phone/Tablet based Teleprompter?"
+==&gt; Also see "[Todo: Consider we can use the glass from foto frames to build a 3D printer enclosure and a Phone/Tablet based Teleprompter?](../48e4e2ce/chime.md)"
 
 ==&gt; Also see ""
 

@@ -5,7 +5,7 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Welding in apartment - Consider to implement a Battery Bank to provide the current required by a Welder (to be able to use low current mains)?"
+==&gt; Also see "[Todo: Welding in apartment - Consider to implement a Battery Bank to provide the current required by a Welder (to be able to use low current mains)?](../fe56153c/chime.md)"
 
 1) Consider this youtube video "Li-ion Battery Powered Welder, Battery Powered Stick Welder, Cordless Inverter Welder, MMA Welder" promoting this startup in china (<https://youtu.be/9naUKgBEwbw> )?
 

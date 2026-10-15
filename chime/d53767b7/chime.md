@@ -7,9 +7,9 @@
 {% raw %}
 Could it be a good idea to buy cheap IEKA PE plastic kitchen cutting boards?
 
-==&gt; Also see “Todo: Consider to learn about hot glue and glue guns (to decide on what first glue gun and glue to purchase)?”
+==&gt; Also see “[Todo: Consider to learn about hot glue and glue guns (to decide on what first glue gun and glue to purchase)?](../61f5d812/chime.md)”
 
-==&gt; Also see “Todo: Consider to understand Cyanoacrylate (superglue) brands, usage and accelerators for wood working and other applications?"
+==&gt; Also see “[Todo: Consider to understand Cyanoacrylate (superglue) brands, usage and accelerators for wood working and other applications?](../70da9ffe/chime.md)"
 
 1) Consider this IKEA PE kitchen cutting board (<https://www.ikea.com/us/en/catalog/products/90202268/>)?
 

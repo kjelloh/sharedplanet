@@ -9,7 +9,7 @@ It seems we really need to be careful on how to implement the mechanism to provi
 
 1) Consider all functions are pure (which means function body environment must capture any external environment values when defined)?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to document Meta Value Model "basic" member values using the Elm language documentation form?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider to document Meta Value Model "basic" member values using the Elm language documentation form?](../83bcb31b/chime.md)”
 
 ==&gt; Consider a function modeled at some depth into the Meta Value Model instance?
 

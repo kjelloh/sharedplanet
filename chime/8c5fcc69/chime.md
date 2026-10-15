@@ -7,13 +7,13 @@
 {% raw %}
 Is there any options out there to enable building my own thunderbolt 2 or 3 external device for things like video compression?
 
-==&gt; Also see "Todo: Consider to understand the USB-C connector and the protocols Thunderbolt, DisplayPort, USB and PCI Express it supports transfer of?"
+==&gt; Also see "[Todo: Consider to understand the USB-C connector and the protocols Thunderbolt, DisplayPort, USB and PCI Express it supports transfer of?](../0eb2cde1/chime.md)"
 
-==&gt; Also see "Todo: mac Pro 2013 - Consider to understand the Thunderbolt 2 connector and protocol abilities?"
+==&gt; Also see "[Todo: mac Pro 2013 - Consider to understand the Thunderbolt 2 connector and protocol abilities?](../e6803f7b/chime.md)"
 
-==&gt; Also see "Todo: Consider how to correctly connect my Apple LED Cinema Display 27" (mid 2010) to computers with different external ports (e.g., MAC Pro 2013 USB-3 and Thunderbolt 2 or future USB-C and USB4 ports)?"
+==&gt; Also see "[Todo: Consider how to correctly connect my Apple LED Cinema Display 27" (mid 2010) to computers with different external ports (e.g., MAC Pro 2013 USB-3 and Thunderbolt 2 or future USB-C and USB4 ports)?](../7a90d20d/chime.md)"
 
-==&gt; Also see "Todo: Consider an external PCIe enclosure over Thunderbolt 3 to create an external M.2 NVMe SSD storage?"
+==&gt; Also see "[Todo: Consider an external PCIe enclosure over Thunderbolt 3 to create an external M.2 NVMe SSD storage?](../d695139e/chime.md)"
 
 1) Consider the $36 Atomic Pi with an x86 intel atomic cpu on board (<https://dlidirect.com/products/atomic-pi> )?
 

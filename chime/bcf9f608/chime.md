@@ -7,11 +7,11 @@
 {% raw %}
 Jag kom på häromdagen att jag behöver ett sätt att hantera sopor i huset (lämpligen källsortering kombinerat med någon form av komprimering så att sopor tar liten plats till dess det är dags att frakta dem till återvinning)?
 
-==&gt; Se också "Todo: Eget Hus - Överväg att ha flera separata vattensystem för olika behov i huset för att effektivisera (minimera) vatten och energiförbrukning?"  
-==&gt; Se också "Todo: Eget Hus - Överväg tre "Drömhus" (På häll i skog, på klippa över "hav" och Vid sjö)?"  
-==&gt; Se också "Todo: Bygga eget hus - Anteckna det jag hittat på nätet som kan hjälpa mig bygga ett trähus?"  
-==&gt; Se också "Todo: Bygga eget hus - Försök förstå det där med fastighetsavgift och fastighetsskatt?"  
-==&gt; Se också "Todo: Gå en knuttimringskurs (timra eget hus?) :)"
+==&gt; Se också "[Todo: Eget Hus - Överväg att ha flera separata vattensystem för olika behov i huset för att effektivisera (minimera) vatten och energiförbrukning?](../0736f74e/chime.md)"  
+==&gt; Se också "[Todo: Eget Hus - Överväg tre "Drömhus" (På häll i skog, på klippa över "hav" och Vid sjö)?](../ea75d78f/chime.md)"  
+==&gt; Se också "[Todo: Bygga eget hus - Anteckna det jag hittat på nätet som kan hjälpa mig bygga ett trähus?](../4a994944/chime.md)"  
+==&gt; Se också "[Todo: Bygga eget hus - Försök förstå det där med fastighetsavgift och fastighetsskatt?](../abb95fb7/chime.md)"  
+==&gt; Se också "[Todo: Gå en knuttimringskurs (timra eget hus?) :)](../c50294d0/chime.md)"
 
 1) Överväg om det finns ett miljö-tolerant sätt att elda upp vissa sopor (trä, bomull etc.)?
 

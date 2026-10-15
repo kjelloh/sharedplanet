@@ -7,7 +7,7 @@
 {% raw %}
 Consider it could be a way forward to discover what the C++ meta-layer ”objects” actually looks like by viewing C++ code as meta-layer expressons in the type system expressed using Haskel syntax?
 
-==&gt; Also see ”Todo: Programming - Consider this talk "Abusing C# More - Jon Skeet" as fun insights to Text encoding clash with Source Code Processing (also applicable to C++)?"
+==&gt; Also see ”[Todo: Programming - Consider this talk "Abusing C# More - Jon Skeet" as fun insights to Text encoding clash with Source Code Processing (also applicable to C++)?](../2034404b/chime.md)"
 
 1) Consider what Haskel Syntax View of C++ declarations and definitions would reveal to us?
 
@@ -96,7 +96,7 @@ T t; // Note: template is a function object that takes a captured environment (f
 > return 0;  
 > }
 
-==&gt; Also see ”Todo: Programming - Consider this talk "Abusing C# More - Jon Skeet" as fun insights to Text encoding clash with Source Code Processing (also applicable to C++)?”
+==&gt; Also see ”[Todo: Programming - Consider this talk "Abusing C# More - Jon Skeet" as fun insights to Text encoding clash with Source Code Processing (also applicable to C++)?](../2034404b/chime.md)”
 
 ==&gt; It seems in C++ characters not in the source code set is replaced with white spaces which breaks the identifier into a syntax error?
 

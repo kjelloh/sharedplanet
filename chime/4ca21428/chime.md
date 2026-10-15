@@ -7,15 +7,15 @@
 {% raw %}
 It seems we really need to pin down how Tha should model function kind, type, value and call?
 
-==&gt; Also see “Todo: Tha in C++ - Consider we can implement Tha meta-value stack in C++ by "laying it down" (each meta-value layer becomes a C++ value, types, kind, template stack)?"
+==&gt; Also see “[Todo: Tha in C++ - Consider we can implement Tha meta-value stack in C++ by "laying it down" (each meta-value layer becomes a C++ value, types, kind, template stack)?](../4cab98ed/chime.md)"
 
-==&gt; Also see “Todo: Tha functions - Consider to define the Tha model of functions in terms of closures?”
+==&gt; Also see “[Todo: Tha functions - Consider to define the Tha model of functions in terms of closures?](../6a6173c5/chime.md)”
 
-==&gt; Also see “Todo: C++ - Consider to describe function overloading as meta-functions that returns functions based on call signature?”
+==&gt; Also see “[Todo: C++ - Consider to describe function overloading as meta-functions that returns functions based on call signature?](../0ebdcf57/chime.md)”
 
-==&gt; Also see “Todo: Meta Value Model - Consider to remember how it was Captain Picard that put me on track to Elm Repl and generic function modelling?"
+==&gt; Also see “[Todo: Meta Value Model - Consider to remember how it was Captain Picard that put me on track to Elm Repl and generic function modelling?](../4adcd5f4/chime.md)"
 
-==&gt; Also see “Todo: Tha function types - Consider we can actually extend normal value-functions to also allow type-functions and kind-functions?"
+==&gt; Also see “[Todo: Tha function types - Consider we can actually extend normal value-functions to also allow type-functions and kind-functions?](../e4335466/chime.md)"
 
 1) Consider Tha function algebra as three operate operations?
 
@@ -63,7 +63,7 @@ It seems we really need to pin down how Tha should model function kind, type, va
 
 4) Consider if C++ class template is in fact in Tha a meta-2 based function
 
-==&gt; Also see “Todo: Tha and Algebra Semantic Shifting - Consider re-using a language existing algebraic semantics on meta-levels is in fact a way to enable reflection using value-semantics on types and kinds?”
+==&gt; Also see “[Todo: Tha and Algebra Semantic Shifting - Consider re-using a language existing algebraic semantics on meta-levels is in fact a way to enable reflection using value-semantics on types and kinds?](../4f87d7a4/chime.md)”
 
 ==&gt; Consider the “normal” C++ algebraic semantics (value, type, kind, template)
 

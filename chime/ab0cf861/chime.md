@@ -15,7 +15,7 @@ It seems we should design (model) the Meh Repl based on the understanding we gai
 
 2) Consider how we can apply the Elm-run-time idiom in Darwinet?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider what we can learn from the Elm language for Meta Value Model design, REPL application and scripting abilities?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider what we can learn from the Elm language for Meta Value Model design, REPL application and scripting abilities?](../308aee14/chime.md)”
 
 init
 

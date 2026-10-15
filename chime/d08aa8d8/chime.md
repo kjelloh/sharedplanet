@@ -7,7 +7,7 @@
 {% raw %}
 It seems I have some intuitive feeling that I may be able to design and build a special keyboard for source code input?
 
-==&gt; Also see “Todo: Consider to build the DIY ibm-like old-style tactile switches keyboard as indicated by Snazzy Lab youtube video?”
+==&gt; Also see “[Todo: Consider to build the DIY ibm-like old-style tactile switches keyboard as indicated by Snazzy Lab youtube video?](../f61ed67e/chime.md)”
 
 1) Consider a multiple-key-press “Piano Chord” approach to enter source code?
 

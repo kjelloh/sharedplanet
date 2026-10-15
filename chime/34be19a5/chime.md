@@ -7,7 +7,7 @@
 {% raw %}
 It seems we have been correct all along that there is a strong relation between structure construct and structure fold. It comes from fold and construct operating on the same structure and defined in category theory as a catamorhism?
 
-==&gt; Also see “Todo: Tha - Consider that the fold operations of a structured type is a catamorphism of its constructors (fold deconstructs the structure that the constructor constructs)?”
+==&gt; Also see “[Todo: Tha - Consider that the fold operations of a structured type is a catamorphism of its constructors (fold deconstructs the structure that the constructor constructs)?](../f9a38985/chime.md)”
 
 1) Consider to leverage that folds are catamorphisms to have the C++ protocol library define serialisation as a fold on the protocol frame data structure?
 

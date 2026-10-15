@@ -7,7 +7,7 @@
 {% raw %}
 What can I design and build to be able to rip cut material in width below the current lower level of 210 mm?
 
-==&gt; Also see “Todo: Consider to understand and remember the distinction between Melamine (hard plastic) and Melanin (natural skin pigment)"
+==&gt; Also see “[Todo: Consider to understand and remember the distinction between Melamine (hard plastic) and Melanin (natural skin pigment)](../27a03fac/chime.md)"
 
 1) Consider a design where I can flip down a 200 or 300 mm Melamine board to rest against current fence and in effect get a new fence with a distance to the blade as low as 10 mm?
 

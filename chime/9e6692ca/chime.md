@@ -7,9 +7,9 @@
 {% raw %}
 It seems we can get leads into what 2019 graphics cards are actually doing (and how) by following the leads provided in an evaluation of the AMD radeon VII vs Nvidia RTX 2080?
 
-==&gt; Also see "Todo: Consider ways we can imagine to make components and functionality of graphical work tool-chains to become compassable by (make graphical operations compose to) the end user?"
+==&gt; Also see "[Todo: Consider ways we can imagine to make components and functionality of graphical work tool-chains to become compassable by (make graphical operations compose to) the end user?](../5450fa0f/chime.md)"
 
-==&gt; Also see "Todo: Consider we should actually be tempted to re-think current computers with centralised CPUs and instead imagine high performance tasks to be moved closer to the data in a pipe of data processing?"
+==&gt; Also see "[Todo: Consider we should actually be tempted to re-think current computers with centralised CPUs and instead imagine high performance tasks to be moved closer to the data in a pipe of data processing?](../407960b6/chime.md)"
 
 1) Consider the leads we can follow up on in this youtube video “Bad News for the Radeon VII...” (<https://www.youtube.com/watch?v=RF-Tp91tUHI&t=300s> )?
 

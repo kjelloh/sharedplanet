@@ -9,26 +9,26 @@ Maybe I can turn the Adafruit PyBadge into the digital personal coach and deity 
 
 &lt;deity&gt;
 
-==&gt; Also see "Todo: Consider to make my own personal Guru Neural Network that makes me act so that I stay placed in a meaningful balance between order and chaos?"
+==&gt; Also see "[Todo: Consider to make my own personal Guru Neural Network that makes me act so that I stay placed in a meaningful balance between order and chaos?](../f2c489a5/chime.md)"
 
-==&gt; Also see "Todo: Programming - Consider to elaborate on what "life simplifier" applications we can create from building blocks like "digital worlds", "digital diety", darwinet and cross platform GUI:s?"
+==&gt; Also see "[Todo: Programming - Consider to elaborate on what "life simplifier" applications we can create from building blocks like "digital worlds", "digital diety", darwinet and cross platform GUI:s?](../5d9a73b2/chime.md)"
 
-==&gt; Also see “Todo: Play with the idea of a self learning Deity application for beneficial "drive creation”"  
-==&gt; Also see “Todo: Consider to model a virtual secretary to schedule focal points to attend to our desires”  
-==&gt; Also see “Todo: Programming - Consider to study existing Todo/Task application idioms and relate them to Owls&Bells attention-scheduling idiom?”  
-==&gt; Also see “Todo: Application - Consider to write a Virtual Coach that uses state-machines in e-mails to get things going?”
+==&gt; Also see “[Todo: Play with the idea of a self learning Deity application for beneficial "drive creation”](../8ac500a9/chime.md)"  
+==&gt; Also see “[Todo: Consider to model a virtual secretary to schedule focal points to attend to our desires](../484aeb9e/chime.md)”  
+==&gt; Also see “[Todo: Programming - Consider to study existing Todo/Task application idioms and relate them to Owls&Bells attention-scheduling idiom?](../9c245a3b/chime.md)”  
+==&gt; Also see “[Todo: Application - Consider to write a Virtual Coach that uses state-machines in e-mails to get things going?](../5f02cf44/chime.md)”
 
 &lt;maze navigation login&gt;
 
-==&gt; Also see "Todo: Consider to discuss the idea that User+Password may actually be replaced with a single "password" where the first part identifies who and the second allows authorization?"
+==&gt; Also see "[Todo: Consider to discuss the idea that User+Password may actually be replaced with a single "password" where the first part identifies who and the second allows authorization?](../4dd4a67d/chime.md)"
 
-==&gt; Also see "Todo: Programming - Consider a PIN replacement input with four steps of image selections?"
+==&gt; Also see "[Todo: Programming - Consider a PIN replacement input with four steps of image selections?](../b59fd1d1/chime.md)"
 
 &lt;Emdividual ID&gt;
 
-==&gt; Also see "Todo: Suggest an SPC QR-code pin!"
+==&gt; Also see "[Todo: Suggest an SPC QR-code pin!](../421566ec/chime.md)"
 
-==&gt; Also see "Todo: Write about SPC Darwinet app reading SPC-pin and showing citizen information!"
+==&gt; Also see "[Todo: Write about SPC Darwinet app reading SPC-pin and showing citizen information!](../5570e4d1/chime.md)"
 
 1) Consider in what way my digital personal deity (coach) can be hosted on the Adafruit Pybadge?
 
@@ -62,9 +62,9 @@ Maybe I can turn the Adafruit PyBadge into the digital personal coach and deity 
 
 2) Consider to make the PyBadge into my Shared Planet Citizen QR Id displayer?
 
-==&gt; Also see "Todo: Suggest an SPC QR-code pin!"
+==&gt; Also see "[Todo: Suggest an SPC QR-code pin!](../421566ec/chime.md)"
 
-==&gt; Also see "Todo: Write about SPC Darwinet app reading SPC-pin and showing citizen information!"
+==&gt; Also see "[Todo: Write about SPC Darwinet app reading SPC-pin and showing citizen information!](../5570e4d1/chime.md)"
 
 > *The idea here is that with my digital deity being hosted in a badge with a front facing, easy to read, display, it can also be used to expose some QR code that identifies me as some Shared Planet Citizen emdividual? So that when I am at a conference I can create me an Emdividual identity for that conference (an exposed "role") and have it be a sub-dividual of my darwinet physical entity?*
 

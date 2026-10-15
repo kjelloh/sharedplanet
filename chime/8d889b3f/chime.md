@@ -7,11 +7,11 @@
 {% raw %}
 It seems we can measure the flow of fluids by send out ultrasonic sound with and against the flow and measure the delay between the two echos (and thus determine the flow rate)?
 
-==&gt; Also see “Todo: Consider to design and build a U-tube pressure gauge to measure sufficient flow through my Oneida dust cyclone (&gt; 24 l/m)”
+==&gt; Also see “[Todo: Consider to design and build a U-tube pressure gauge to measure sufficient flow through my Oneida dust cyclone (&gt; 24 l/m)](../dd0946a0/chime.md)”
 
-==&gt; Also see “Todo: Dust Extraction - Consider my Oneida Dust Extractor Cyclone requires a minimum air flow of 24 litres per second?”
+==&gt; Also see “[Todo: Dust Extraction - Consider my Oneida Dust Extractor Cyclone requires a minimum air flow of 24 litres per second?](../b64b8e98/chime.md)”
 
-==&gt; Also see “Todo: DIY Vacuum - Consider to use a EDF (Electric Ducted Fan) brushless unit as the "impeller" unit to get efficient air suction?"
+==&gt; Also see “[Todo: DIY Vacuum - Consider to use a EDF (Electric Ducted Fan) brushless unit as the "impeller" unit to get efficient air suction?](../adc05dd4/chime.md)"
 
 1) Consider this youtube video “SthlmHW #20: "Hardware in 2019"” describing an ultrasonic water flow sensor (<https://www.youtube.com/watch?v=lIpqP-bnpvc>)?
 

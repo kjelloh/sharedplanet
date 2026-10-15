@@ -7,7 +7,7 @@
 {% raw %}
 Could it be a good, fun and learning experience to try to find, buy and use a PC (USB connected) Oscilloscope?
 
-==&gt; Also see “Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?”
+==&gt; Also see “[Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?](../9e71efd1/chime.md)”
 
 1) Consider a Linux based Oscilloscope based on PicoScope PC USB Oscilloscopes (<https://www.picotech.com/products/oscilloscope>)?
 

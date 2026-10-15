@@ -7,7 +7,7 @@
 {% raw %}
 Consider it would be a good idea to keep an updated documentation on the Meta Lisp language while it is being manifested as in the Meta Value Model Repl?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to compare our "Meta Lisp Repl" with other language Repl available online?"
+==&gt; Also see ”[Todo: Meta Value Model - Consider to compare our "Meta Lisp Repl" with other language Repl available online?](../c507033a/chime.md)"
 
 1) Consider to differentiate between the evaluation rule of the Meta Value Model and the added rules of the Repl?
 

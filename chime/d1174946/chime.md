@@ -7,7 +7,7 @@
 {% raw %}
 After having ordered a set of Grime Dice from Maths gear I thought it could prove valuable to remember this web shop for future shopping for "fun things" and presents?
 
-==&gt; Also see "Todo: Consider how it is possible to create a closed loop of probability relations between dices that is NOT transitive (so called Non Transitive Dices)?"
+==&gt; Also see "[Todo: Consider how it is possible to create a closed loop of probability relations between dices that is NOT transitive (so called Non Transitive Dices)?](../858f5d44/chime.md)"
 
 1) The web shop "Math Gears" seems to live here (<https://mathsgear.co.uk> )?
 

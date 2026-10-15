@@ -7,16 +7,16 @@
 {% raw %}
 Youtube proposed a youtube video about The Bunkie CNC part prefab self-assembly cabins and I felt it could be worth checking in on this way of building houses again.
 
-==&gt; Also see "Todo: Consider to build a WikiHouse (open source CNC micro factory produced house)?"
+==&gt; Also see "[Todo: Consider to build a WikiHouse (open source CNC micro factory produced house)?](../2ae81711/chime.md)"
 
-==&gt; Also see "Todo: Consider to contribute to WikiHouse by modelling it as a Tha and store and share data in a Darwinet Interplanetary Tha Model (IPFS style)?"
+==&gt; Also see "[Todo: Consider to contribute to WikiHouse by modelling it as a Tha and store and share data in a Darwinet Interplanetary Tha Model (IPFS style)?](../659da0bb/chime.md)"
 
-==&gt; Also see “Todo: Consider an art-project where citizens self organize to build a Wikihouse?”
+==&gt; Also see “[Todo: Consider an art-project where citizens self organize to build a Wikihouse?](../f39c11ad/chime.md)”
 
-==&gt; Also see “Todo: Consider to propose immigration housing using Wikihouse based new villages?”  
-==&gt; Also see “Todo: Follow up and learn about WikiHouse - Open Source house building”  
-==&gt; Also see “Todo: Consider to evaluate the idea of the economy-of-the-future on how well it creates incitements to go with Wikihouse?”  
-==&gt; Also see “Todo: Darwinet - Consider to design a domain for WikiHouse projects?”
+==&gt; Also see “[Todo: Consider to propose immigration housing using Wikihouse based new villages?](../557d5379/chime.md)”  
+==&gt; Also see “[Todo: Follow up and learn about WikiHouse - Open Source house building](../eaec0e9b/chime.md)”  
+==&gt; Also see “[Todo: Consider to evaluate the idea of the economy-of-the-future on how well it creates incitements to go with Wikihouse?](../fd1fd39c/chime.md)”  
+==&gt; Also see “[Todo: Darwinet - Consider to design a domain for WikiHouse projects?](../0d7012ac/chime.md)”
 
 1) Consider this youtube video "Bunkie prefab cabin uses joinery & assembly of furniture design" (<https://www.youtube.com/watch?v=e4h8hPX9rNw> )?
 
@@ -50,16 +50,16 @@ Youtube proposed a youtube video about The Bunkie CNC part prefab self-assembly 
 
 5) Consider to compare The Bunkie cabin design with the crowd sourced Wikihouse project that also relies on parts cut on a CNC?
 
-==&gt; Also see "Todo: Consider to build a WikiHouse (open source CNC micro factory produced house)?"
+==&gt; Also see "[Todo: Consider to build a WikiHouse (open source CNC micro factory produced house)?](../2ae81711/chime.md)"
 
-==&gt; Also see "Todo: Consider to contribute to WikiHouse by modelling it as a Tha and store and share data in a Darwinet Interplanetary Tha Model (IPFS style)?"
+==&gt; Also see "[Todo: Consider to contribute to WikiHouse by modelling it as a Tha and store and share data in a Darwinet Interplanetary Tha Model (IPFS style)?](../659da0bb/chime.md)"
 
-==&gt; Also see “Todo: Consider an art-project where citizens self organize to build a Wikihouse?”
+==&gt; Also see “[Todo: Consider an art-project where citizens self organize to build a Wikihouse?](../f39c11ad/chime.md)”
 
-==&gt; Also see “Todo: Consider to propose immigration housing using Wikihouse based new villages?”  
-==&gt; Also see “Todo: Follow up and learn about WikiHouse - Open Source house building”  
-==&gt; Also see “Todo: Consider to evaluate the idea of the economy-of-the-future on how well it creates incitements to go with Wikihouse?”  
-==&gt; Also see “Todo: Darwinet - Consider to design a domain for WikiHouse projects?”
+==&gt; Also see “[Todo: Consider to propose immigration housing using Wikihouse based new villages?](../557d5379/chime.md)”  
+==&gt; Also see “[Todo: Follow up and learn about WikiHouse - Open Source house building](../eaec0e9b/chime.md)”  
+==&gt; Also see “[Todo: Consider to evaluate the idea of the economy-of-the-future on how well it creates incitements to go with Wikihouse?](../fd1fd39c/chime.md)”  
+==&gt; Also see “[Todo: Darwinet - Consider to design a domain for WikiHouse projects?](../0d7012ac/chime.md)”
 
 ...
 

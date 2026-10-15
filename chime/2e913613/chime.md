@@ -7,7 +7,7 @@
 {% raw %}
 I did not like the experience of recording voice over in FCPX so it seems to be time to try out Audacity for comparison.
 
-==&gt; Also see "Todo: Consider to document my installation experience of Audacity for Mac on my Mac Pro 2013?"
+==&gt; Also see "[Todo: Consider to document my installation experience of Audacity for Mac on my Mac Pro 2013?](../47c14537/chime.md)"
 
 1) It seems Audacity comes with a help entry on recording with an USB audio interface (<https://manual.audacityteam.org/man/usb_recording.html> )?
 

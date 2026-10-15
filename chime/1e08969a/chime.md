@@ -5,9 +5,9 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider to try and buy a Toyota Mirai to get hold of the Fuel cell to use to power my off-grid house?"
+==&gt; Also see "[Todo: Consider to try and buy a Toyota Mirai to get hold of the Fuel cell to use to power my off-grid house?](../d02087ce/chime.md)"
 
-==&gt; Also see "Todo: House Build - Consider to use the Hydrogen energy storage system RE8760 developed by "Nilsson Energy AB"?"
+==&gt; Also see "[Todo: House Build - Consider to use the Hydrogen energy storage system RE8760 developed by "Nilsson Energy AB"?](../2efef0d7/chime.md)"
 
 1) It seems PowerCellution sells as small as 5 kW fule cells in 19" rack format (<https://powercellution.com/power-generation-system-5> )?
 

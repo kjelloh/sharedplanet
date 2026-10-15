@@ -11,7 +11,7 @@ It seems like a good idea to delve into RxCpp design and semantics to get more u
 
 ==&gt; At 50:00 it seems he defines the contract of ”receivers” to behave as ”three-track-functions” (they accept {value, completion, error/excpetion} in Scot Wlaschin termonology)?
 
-==&gt; See ”Todo: Programming - Consider to understand Monoids and Monads using the "Railway Oriented Programming" model?”
+==&gt; See ”[Todo: Programming - Consider to understand Monoids and Monads using the "Railway Oriented Programming" model?](../e359b4d0/chime.md)”
 
 ==&gt; BUT: RxCpp does not model this as Monad that lifts function to take this triple, instead they chain objects of type receiver that provide the function triple {on_value, on_termination, on_error}?
 

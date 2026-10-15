@@ -7,7 +7,7 @@
 {% raw %}
 Maybe I can design and build wall shelf system (console style) fastened in roof moulding T-track?
 
-==&gt; Also see "Todo: Consider a roof moulding with routed T-slot and sliding wing-nut fastened mount for nylon thread hanging of paintings?"
+==&gt; Also see "[Todo: Consider a roof moulding with routed T-slot and sliding wing-nut fastened mount for nylon thread hanging of paintings?](../972441a9/chime.md)"
 
 1) Consider a design of two perpendicular wood consoles fastened in T-slot in roof moulding and resting on wood "soles"?
 

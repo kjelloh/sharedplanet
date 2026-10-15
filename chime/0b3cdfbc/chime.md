@@ -7,7 +7,7 @@
 {% raw %}
 I want to compile C++20 with Clang using Gny libstdc++ on Linux.
 
-==&gt; Also see "Todo: Consider to document how I installed unofficial (PPA) g++-11 on my Linux Mint 20.2 Cinnamon (macOS Paralells virtual machine)"
+==&gt; Also see "[Todo: Consider to document how I installed unofficial (PPA) g++-11 on my Linux Mint 20.2 Cinnamon (macOS Paralells virtual machine)](../dea7bb7d/chime.md)"
 
 1) It seems I can use "apt install" from a PPA to get g++-13 installed as the latest gcc and libstdc++ release?
 

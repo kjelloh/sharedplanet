@@ -9,7 +9,7 @@ Could we imagine to present to the C++ standard committee a proposal on how to c
 
 1) Consider to state the problem of correctly express Text “meaning” and “Representation”?
 
-==&gt; See “Todo: Programming - Consider to design a String "type" that bridges text "meaning" and text encoding?”
+==&gt; See “[Todo: Programming - Consider to design a String "type" that bridges text "meaning" and text encoding?](../0ada7e65/chime.md)”
 
 2) Consider to relate Text processing to contemporary discussion on C++ extensions like ranges, concepts and GPL?
 
@@ -41,7 +41,7 @@ Could we imagine to present to the C++ standard committee a proposal on how to c
 
 5) Consider to relate en enhanced Text Processing Idiom with the Value Semantics proposed (discussed) by John Lakos
 
-==&gt; See “Todo: Programming - Consider to find an enhanced C++ String representation and manipulation with a proper value semantics and view abstraction?”
+==&gt; See “[Todo: Programming - Consider to find an enhanced C++ String representation and manipulation with a proper value semantics and view abstraction?](../ba28d3a5/chime.md)”
 
 ==&gt; Explicitly see "Consider what we can say about string value semantics by referring to John Lakos proposal of value semantics (<http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2479.pdf>)?"
 

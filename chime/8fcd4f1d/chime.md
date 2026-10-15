@@ -7,13 +7,13 @@
 {% raw %}
 It seems we may define all Tha infer operations as matching operations between binding lists?
 
-==&gt; Also see “Todo: Tha - Consider to define mtea-2 value "inferred" that constructs generic meta-1 value (they apply pattern matching to define meta-0 values)?”
+==&gt; Also see “[Todo: Tha - Consider to define mtea-2 value "inferred" that constructs generic meta-1 value (they apply pattern matching to define meta-0 values)?](../bde9b9a8/chime.md)”
 
-==&gt; Also see ”Todo: Meta Value Model - Consider in Meh we define meta-1 name "a" as a generic (any) type to be inferred from (Haskel and Elm style)?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider in Meh we define meta-1 name "a" as a generic (any) type to be inferred from (Haskel and Elm style)?](../9e687519/chime.md)”
 
-==&gt; Also see ”Todo: Meta Value Model - Consider mechanisms to create and apply pattern matching using existing model meta-values and explicit UML-like model patterns?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider mechanisms to create and apply pattern matching using existing model meta-values and explicit UML-like model patterns?](../a6a889cc/chime.md)”
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to implement a value-to-meta-value-contract matching ability as implemented by Clojure.spec?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider to implement a value-to-meta-value-contract matching ability as implemented by Clojure.spec?](../c40aa5b0/chime.md)”
 
 1) Consider what inference operations we can implement just based on &#91;binding&#93; -&gt; &#91;binding&#93; operations?
 

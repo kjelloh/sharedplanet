@@ -7,11 +7,11 @@
 {% raw %}
 Would it be a good idea to try and write an app with which one can record. share and cooperate to create and rehearse choir pieces?
 
-==&gt; Also see “Todo: Programming - Consider to study Myrehearsal-app vs the Trudelutt-app for crowd-source choir?”
+==&gt; Also see “[Todo: Programming - Consider to study Myrehearsal-app vs the Trudelutt-app for crowd-source choir?](../f5ec8937/chime.md)”
 
-==&gt; Also see “Todo: Study ScorX web-scores and playback/mixer for choirs”
+==&gt; Also see “[Todo: Study ScorX web-scores and playback/mixer for choirs](../d8f0175c/chime.md)”
 
-==&gt; Also see “Todo: Consider to define Trudelutt to practice in overlapping pieces of the song"
+==&gt; Also see “[Todo: Consider to define Trudelutt to practice in overlapping pieces of the song](../5be93dbe/chime.md)"
 
 1) Consider to base the app on SDL mixer (<http://jcatki.no-ip.org:8080/SDL_mixer/>)?
 

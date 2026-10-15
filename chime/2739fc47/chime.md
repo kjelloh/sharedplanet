@@ -7,7 +7,7 @@
 {% raw %}
 Inspired by the talk ”The Pure Functional Web by Bodil Stokke” (<https://www.youtube.com/watch?v=fLsTPHDWoF0>) it seems to me Darwinet could adopt the Elm/React model/update/view immutable approach for turning Deltas into new MIV states and then use State-diffs to report to clients?
 
-==&gt; Also see ”Todo: Darwinet - Consider to apply the Elm language Model, Update, View architecture for Darwinet MIV, Update View?"
+==&gt; Also see ”[Todo: Darwinet - Consider to apply the Elm language Model, Update, View architecture for Darwinet MIV, Update View?](../0b500d20/chime.md)"
 
 1) Consider the Darwinet MIV to behave like update: Action -&gt; State -&gt; State (where Action is the Delta and State is the MIV state)?
 

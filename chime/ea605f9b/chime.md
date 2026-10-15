@@ -7,9 +7,9 @@
 {% raw %}
 Could we imagine it is possible to make a dedicated DAW “computer” that boots really quickly and runs some commercially available DAW and plug ins?
 
-==&gt; Also see “Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?”
+==&gt; Also see “[Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?](../38120215/chime.md)”
 
-==&gt; Also see “Todo: Darwinet Meta Value Model - Consider to implement a MIV in a "include &lt;os&gt;" bootable microservice?"
+==&gt; Also see “[Todo: Darwinet Meta Value Model - Consider to implement a MIV in a "include &lt;os&gt;" bootable microservice?](../5717cacb/chime.md)"
 
 1) Consider what operating systems we can use for different commercial DAWs?
 

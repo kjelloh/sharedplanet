@@ -5,9 +5,9 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider to understand European concealed hinges - how to mount and where to buy?"
+==&gt; Also see "[Todo: Consider to understand European concealed hinges - how to mount and where to buy?](../17a052c1/chime.md)"
 
-==&gt; Also see "Todo: Consider to buy Blüm (IKEA compatible) hinges from Swedish web shop Theofilis?"
+==&gt; Also see "[Todo: Consider to buy Blüm (IKEA compatible) hinges from Swedish web shop Theofilis?](../9e3bde05/chime.md)"
 
 0) It seems Blum is atcually NOT spelled with the german 'ü'!!
 

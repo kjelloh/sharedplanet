@@ -5,7 +5,7 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider Stefan Molyneux "Universally Preferable Behaviour" as addressed by Stephen Woodford and in relation to the Emdividual model of self?"
+==&gt; Also see "[Todo: Consider Stefan Molyneux "Universally Preferable Behaviour" as addressed by Stephen Woodford and in relation to the Emdividual model of self?](../72aa7318/chime.md)"
 
 1) The youtube video "Stefan Molyneux Vs. Rationality Rules: A Philosopher's Critique by Gary Edwards and Adam Friended" seems to live here (<https://www.youtube.com/watch?v=s0hs8gHNRNk> )?
 

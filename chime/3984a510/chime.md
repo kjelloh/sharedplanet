@@ -7,9 +7,9 @@
 {% raw %}
 It seems I should buy some efficient still comfortable protection so I can work in my maker space more safely?
 
-==&gt; Also see “Todo: Consider safety respirator classification and products (to be used to protect against breathing in dust or chemicals)?"
+==&gt; Also see “[Todo: Consider safety respirator classification and products (to be used to protect against breathing in dust or chemicals)?](../e2008a10/chime.md)"
 
-==&gt; Also see ”Todo: Consider to research on the possibility to make Respiratory Protection based on cyclone dust separation?"
+==&gt; Also see ”[Todo: Consider to research on the possibility to make Respiratory Protection based on cyclone dust separation?](../acc6a8ea/chime.md)"
 
 1) Consider RZ face masks (<https://rzmask.com/collections/m2-mask>)?
 

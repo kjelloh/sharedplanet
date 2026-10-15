@@ -7,7 +7,7 @@
 {% raw %}
 It seems to me it should be possible to actually build tools to perform small metal casting at home?
 
-==&gt; Also see “Todo: Consider to buy Nichrome (heat wire) on Bauhaus (as heat thread for Proxxon 230)?"
+==&gt; Also see “[Todo: Consider to buy Nichrome (heat wire) on Bauhaus (as heat thread for Proxxon 230)?](../8b8b0fcb/chime.md)"
 
 1) Consider to build a small metal furnace?
 

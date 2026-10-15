@@ -7,7 +7,7 @@
 {% raw %}
 It seems we can learn from existing Type Theory and Systems to understand more about how we may design the Meh and Tha for data modelling and Type System implementation?
 
-==&gt; Also see ”Todo: Type Systems - Consider Strange Loop talk "Type Systems - The Good, Bad and Ugly" by Paul Snively and Amanda Laucher as having good leads into good and bad type systems and the need for a better programming language?”
+==&gt; Also see ”[Todo: Type Systems - Consider Strange Loop talk "Type Systems - The Good, Bad and Ugly" by Paul Snively and Amanda Laucher as having good leads into good and bad type systems and the need for a better programming language?](../9b0ab729/chime.md)”
 
 1) Consider this page on the Lambda Cube (<http://www.rbjones.com/rbjpub/logic/cl/tlc001.htm>)?
 

@@ -7,7 +7,7 @@
 {% raw %}
 It seems we should be able to take the design of an ordinary planer but add a second parallel plane where the cutting wheel is and design a mechanism so that the wood can also be pressed towards the cutting wheel plane for jointing)?
 
-==&gt; Also see “Todo: Consider to use a hand planer fo a combined jointer planer power tool design (mounted to a modified jig or table as numerous youtube videos show)?"
+==&gt; Also see “[Todo: Consider to use a hand planer fo a combined jointer planer power tool design (mounted to a modified jig or table as numerous youtube videos show)?](../4733cf4b/chime.md)"
 
 -1) Consider to not forget to check out the tool Pär Moritz has sitting in his basement?
 

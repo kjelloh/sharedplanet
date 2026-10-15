@@ -7,7 +7,7 @@
 {% raw %}
 Could it be fun to try to blog about the idea of using decltype on overloaded functions to implement Meta Functions?
 
-==&gt; Also see ”Todo: C++ - Consider to write blog post about meta functions and their ability to process value, type and template parameters?"
+==&gt; Also see ”[Todo: C++ - Consider to write blog post about meta functions and their ability to process value, type and template parameters?](../db529659/chime.md)"
 
 1) Consider to write C++ projects to experiment with this concept?
 

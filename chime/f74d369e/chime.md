@@ -7,7 +7,7 @@
 {% raw %}
 Maybe we can imagine a mechanism to have an "above" jig saw and a "below" blade support move together to enable straight blade supported jig saw cuts?
 
-==&gt; Also see "Todo: Consider a motorised hand held saw like a European push saw or a Japanese nokogiri pull saw (e.g. the double blade Ryoba saw)?"
+==&gt; Also see "[Todo: Consider a motorised hand held saw like a European push saw or a Japanese nokogiri pull saw (e.g. the double blade Ryoba saw)?](../eb9bd655/chime.md)"
 
 1) Consider the idea of a jig saw based miter saw station with underside blade support moving with the saw?
 

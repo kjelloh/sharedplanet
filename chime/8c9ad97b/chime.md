@@ -65,7 +65,7 @@ Server Receive: EBCDIC 278 (Sw/Fin) —&gt; ASCII IEC 646 (swedish 7-bit ASCII)
 
 4) Consider to propose possible BOM (Byte order Mark) to add possible encode-aware message extension?
 
-==&gt; See “Todo: Programming - Consider to note that Character-set encoding is a special but strong part of Protocol Message Encodings?"
+==&gt; See “[Todo: Programming - Consider to note that Character-set encoding is a special but strong part of Protocol Message Encodings?](../11a55529/chime.md)"
 
 …
 

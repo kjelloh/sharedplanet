@@ -7,7 +7,7 @@
 {% raw %}
 Could it be that we model reality to enable us to reason about the things we care about?
 
-==&gt; Also see "Todo: Consider to reverse engineer the "woke culture" model of reality from anarchist Vaush youtube video "What is Gender Abolitionism?"?"
+==&gt; Also see "[Todo: Consider to reverse engineer the "woke culture" model of reality from anarchist Vaush youtube video "What is Gender Abolitionism?"?](../25d1187c/chime.md)"
 
 1) Consider to reflect on different model of reality and how they fit this observation that each model is honed to enable reasoning about the things those holding the model for true cares about?
 

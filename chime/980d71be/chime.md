@@ -7,13 +7,13 @@
 {% raw %}
 I want to be able to create videos using Tha based functional composing of video clips and transformations.
 
-==&gt; Also see "Todo: Consider to switch from JoyShare Media Cutter to LosslessCut for my video recording tool chain to pre-cut recorded video to store only what I can use?"
+==&gt; Also see "[Todo: Consider to switch from JoyShare Media Cutter to LosslessCut for my video recording tool chain to pre-cut recorded video to store only what I can use?](../0aeb0321/chime.md)"
 
-==&gt; Also see "Todo: Consider to try out "Joyoshare Media Cutter for Mac" and see if I can use it to do lossless cut-down of raw video to reduce video I actually keep for video editing?"
+==&gt; Also see "[Todo: Consider to try out "Joyoshare Media Cutter for Mac" and see if I can use it to do lossless cut-down of raw video to reduce video I actually keep for video editing?](../b60f33b5/chime.md)"
 
-==&gt; Also see "Todo: Consider to find video editing tools to 1) Save only raw footage go good quality and 2) Automate video cutting using pre-defined story-line templates"
+==&gt; Also see "[Todo: Consider to find video editing tools to 1) Save only raw footage go good quality and 2) Automate video cutting using pre-defined story-line templates](../a7ecba69/chime.md)"
 
-==&gt; Also see "Todo: consider to understand video rendering, streaming, encoding, compressing and persistent storage?"
+==&gt; Also see "[Todo: consider to understand video rendering, streaming, encoding, compressing and persistent storage?](../59007d05/chime.md)"
 
 1) Consider Open Source CLI controlled and HTML5 (Javascript) based video editor "Editly" on GitHub (<https://github.com/mifi/editly> )?
 

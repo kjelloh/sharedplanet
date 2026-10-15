@@ -7,7 +7,7 @@
 {% raw %}
 It seems I am getting closer to actually consider to design and build my own power wall (from used power cells like Li Ion 18650)?
 
-==&gt; Also see “Todo: DIY power wall - Consider to try out 18650 Lithium Ion power tool cells?”
+==&gt; Also see “[Todo: DIY power wall - Consider to try out 18650 Lithium Ion power tool cells?](../09ec236d/chime.md)”
 
 1) Consider this youtube video with good leads to forums, components and information on how to build a power wall (<https://www.youtube.com/watch?v=Md4l9bFDOtc>)?
 

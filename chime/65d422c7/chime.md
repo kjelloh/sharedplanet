@@ -7,7 +7,7 @@
 {% raw %}
 Could it be a good idea to try and parse an OASYS SNG-file to understand what requirements we should have on the tag-path based decoding library (that we consider to call musca)?
 
-==&gt; See “Todo: Programming - Consider to implement the tag-path based encode and decode idiom as a C++ library?"
+==&gt; See “[Todo: Programming - Consider to implement the tag-path based encode and decode idiom as a C++ library?](../1e42a087/chime.md)"
 
 1) This seem to be a good file to start with?
 

@@ -7,23 +7,23 @@
 {% raw %}
 It seems we should be able to make a digital piano from the keyboard and hammers of an acoustic piano together with digital components?
 
-==&gt; Also see “Todo: Consider to build a digital piano from a micro computer and a VST plug-in digital Piano?”
+==&gt; Also see “[Todo: Consider to build a digital piano from a micro computer and a VST plug-in digital Piano?](../9b52c6ce/chime.md)”
 
-==&gt; Also see “Todo: Piano - Consider to get to the bottom of Transducer (Yamaha Transacousting or Kawai ATX-f) pianos?”
+==&gt; Also see “[Todo: Piano - Consider to get to the bottom of Transducer (Yamaha Transacousting or Kawai ATX-f) pianos?](../155906e8/chime.md)”
 
-==&gt; Also see “Todo: Consider to investigate using electric guitar pickups on piano strings?”
+==&gt; Also see “[Todo: Consider to investigate using electric guitar pickups on piano strings?](../0321e89b/chime.md)”
 
-==&gt; Also see “Todo: Bygg ett stage-piano “
+==&gt; Also see “[Todo: Bygg ett stage-piano](../eda07e01/chime.md) “
 
 ==&gt; Also see “Todo: <http://www.pianocenter.se>”
 
-==&gt; Also see ”Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?"
+==&gt; Also see ”[Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?](../38120215/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to delve into the Faust DSP language echo-system from the talk "FAUST DSP language ecosystem meets JUCE" by Stephane Letz?”
+==&gt; Also see ”[Todo: Programming - Consider to delve into the Faust DSP language echo-system from the talk "FAUST DSP language ecosystem meets JUCE" by Stephane Letz?](../45deb608/chime.md)”
 
-==&gt; Also see ”Todo: C++ - Consider to check out Juce talks on youtube?”
+==&gt; Also see ”[Todo: C++ - Consider to check out Juce talks on youtube?](../2eafc8aa/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?"
+==&gt; Also see ”[Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?](../f38fc1c2/chime.md)"
 
 1) Consider to get hold of an acoustic piano and take the keyboard and hammer mechanism from it?
 
@@ -55,7 +55,7 @@ NOTE: Check that the CPU board has GOOD AUDIO!
 
 ==&gt; It seems the tracker products (e.g., the free T6-daw) can execute on a Raspberry Pi?
 
-==&gt; See ”Todo: C++ Juce - Consider to try Juce on Rasperry Pi (and make possible to program my own cool audio devices)?"
+==&gt; See ”[Todo: C++ Juce - Consider to try Juce on Rasperry Pi (and make possible to program my own cool audio devices)?](../ae25a0db/chime.md)"
 
 4) Consider to install and use a Virtual Instrument Player application on the board?
 
@@ -63,13 +63,13 @@ NOTE: Check that the CPU board has GOOD AUDIO!
 
 5) Consider to develop an VST player using the Juce development framework (<https://juce.com>)?
 
-==&gt; Also see ”Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?"
+==&gt; Also see ”[Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?](../38120215/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to delve into the Faust DSP language echo-system from the talk "FAUST DSP language ecosystem meets JUCE" by Stephane Letz?”
+==&gt; Also see ”[Todo: Programming - Consider to delve into the Faust DSP language echo-system from the talk "FAUST DSP language ecosystem meets JUCE" by Stephane Letz?](../45deb608/chime.md)”
 
-==&gt; Also see ”Todo: C++ - Consider to check out Juce talks on youtube?”
+==&gt; Also see ”[Todo: C++ - Consider to check out Juce talks on youtube?](../2eafc8aa/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?"
+==&gt; Also see ”[Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?](../f38fc1c2/chime.md)"
 
 ==&gt; Consider to follow up on leads to Juce based software from this list of awarded projects (<https://juce.com/award>)?
 
@@ -81,7 +81,7 @@ NOTE: Check that the CPU board has GOOD AUDIO!
 
 6) Consider to build a piano body and use a transducer to have the sound come from a wooden soundboard?
 
-==&gt; Also see “Todo: Piano - Consider to get to the bottom of Transducer (Yamaha Transacousting or Kawai ATX-f) pianos?”
+==&gt; Also see “[Todo: Piano - Consider to get to the bottom of Transducer (Yamaha Transacousting or Kawai ATX-f) pianos?](../155906e8/chime.md)”
 
 …
 

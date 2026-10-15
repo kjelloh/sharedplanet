@@ -7,13 +7,13 @@
 {% raw %}
 I can’t stop wondering what it is we are picking up emotionally when we experience that someone seems to be speaking “word sallad”.
 
-==&gt; Also see “Todo: Consider to understand the arguments for Intelligent design vs Creationism and to what degree this model of reality somehow enables us to better interact with it?"
+==&gt; Also see “[Todo: Consider to understand the arguments for Intelligent design vs Creationism and to what degree this model of reality somehow enables us to better interact with it?](../d0a3a29a/chime.md)"
 
 1) Consider if detection of “Word Sallad” is an indication that the one speaking is not in contact with the true reality?
 
 ==&gt; Consider this atheist youtube vlog “Jordan Peterson or Word Salad with Matt Dillahunty, James Boone, Eric Murphy and GMS” (<https://www.youtube.com/watch?v=Mzu5hV92NHo> )?
 
-==&gt; Also see “Todo: Consider to understand the arguments for Intelligent design vs Creationism and to what degree this model of reality somehow enables us to better interact with it?"
+==&gt; Also see “[Todo: Consider to understand the arguments for Intelligent design vs Creationism and to what degree this model of reality somehow enables us to better interact with it?](../d0a3a29a/chime.md)"
 
 > *It seems in this video the panel atheists self identifying as rationalists and anti-theist based on religion being just wishful thinking, should be careful with using detection of “word sallad” as any argument to reason with? But they happily goes along playing this game of trying to distinguish quotes by Jordan B Peterson and Deepak Chopra from the output of a random word sallad generator. It seems clear from watching this video that the joy they feel from mocking these thinkers based on how incomprehensible it is to them, they take as somehow meaning these thinkers are saying just rubbish?*
 

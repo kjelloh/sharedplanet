@@ -9,7 +9,7 @@ Consider to argue that the notion of not accepting (be zero-tolerance of) someth
 
 ==&gt; Also se “Todo: Skriv på engelska om att "Förnuftet spelar strutfotboll”?"
 
-==&gt; Also see “Todo_ Consider to write about how intelligent non-rational (truth-as-an-act) thinking actually is?”
+==&gt; Also see “[Todo_ Consider to write about how intelligent non-rational (truth-as-an-act) thinking actually is?](../f808b2c3/chime.md)”
 
 1) Argue that Zero Tolerance towards something demands an attitude that one has control to eliminate the unwanted - which we almost never have?
 

@@ -7,9 +7,9 @@
 {% raw %}
 Could it be a good idea to have the Tha View (The client) mutations being applied to a Transient Tha Copy before melding resulting state back to the persistent Tha?
 
-==&gt; Also see ”Todo: Tha Repl - Consider to document the different mechanisms of the Elm idiom run-time system as we have designed them for the Repl (and possibly for the Darwinet View run-time)?"
+==&gt; Also see ”[Todo: Tha Repl - Consider to document the different mechanisms of the Elm idiom run-time system as we have designed them for the Repl (and possibly for the Darwinet View run-time)?](../fe957eb2/chime.md)"
 
-==&gt; Also see ”Todo: Darwinet run-time - It seems wee need to understand how the run-time handles the state branching?"
+==&gt; Also see ”[Todo: Darwinet run-time - It seems wee need to understand how the run-time handles the state branching?](../3a7098de/chime.md)"
 
 1) Consider in this way we may allow the View to control at which states to meld mutations made by the client back to the viewed Tha?
 

@@ -7,7 +7,7 @@
 {% raw %}
 So, What list of URL:s to brands of power tools can we create for easy access to a good current survey of power tool sortiment to select from when buying power tools?
 
-==&gt; Also see “Todo: Cordless Brushless Tools - Consider to save good URL:s and information on available Cordless Brushless power tool systems?"
+==&gt; Also see “[Todo: Cordless Brushless Tools - Consider to save good URL:s and information on available Cordless Brushless power tool systems?](../8f812263/chime.md)"
 
 1) Consider to create a list of URL:s to brand web pages where to find their soritment of power tools?
 

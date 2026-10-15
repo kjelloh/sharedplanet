@@ -7,7 +7,7 @@
 {% raw %}
 Consider we use the name “Tha” and symbol (ث) fo the meta model where each higher level contains Sets of items below and morphisms between sets on same level?
 
-==&gt; Also see “Todo: C++ Tha in space and time - Consider a Tha-model distributed in time versus in space corresponds to imperative instructions (time) operating on data structures (space)?"
+==&gt; Also see “[Todo: C++ Tha in space and time - Consider a Tha-model distributed in time versus in space corresponds to imperative instructions (time) operating on data structures (space)?](../7d253e7a/chime.md)"
 
 1) Consider to actually define what the levels models?
 
@@ -25,39 +25,39 @@ Consider we use the name “Tha” and symbol (ث) fo the meta model where each 
 
 ==&gt; Consider a Tha-Model of C++?
 
-==&gt; See “Todo Tha C++ - Consider ways to defines "class" meta-3 value using C++ syntax?”
+==&gt; See “[Todo Tha C++ - Consider ways to defines "class" meta-3 value using C++ syntax?](../fbd06a51/chime.md)”
 
-==&gt; See “Todo Tha C++ - Consider we want to be able to write meta-lambdas (to conveniently inject anonymous meta-code)?”
+==&gt; See “[Todo Tha C++ - Consider we want to be able to write meta-lambdas (to conveniently inject anonymous meta-code)?](../f88077d0/chime.md)”
 
-==&gt; See “Todo: C++ Meh - Consider to list the C++ keywords that are the actual Type System Operators on different Meta-layers?”
+==&gt; See “[Todo: C++ Meh - Consider to list the C++ keywords that are the actual Type System Operators on different Meta-layers?](../1c67d70d/chime.md)”
 
-==&gt; See “Todo: C++ Meta - Consider to write a blog post and Lightning talk on Herb Sutter Metaclass proposal using Tha model?”
+==&gt; See “[Todo: C++ Meta - Consider to write a blog post and Lightning talk on Herb Sutter Metaclass proposal using Tha model?](../ec963a37/chime.md)”
 
-==&gt; See “Todo: C++ Tha - Consider to assume we have a small set of STL containers available to compose meta-values in the model?”
+==&gt; See “[Todo: C++ Tha - Consider to assume we have a small set of STL containers available to compose meta-values in the model?](../de988379/chime.md)”
 
-==&gt; See “Todo: C++ Tha - Consider we should be able to create Sum, Product and Function "Sets" on all meta-levels?”
+==&gt; See “[Todo: C++ Tha - Consider we should be able to create Sum, Product and Function "Sets" on all meta-levels?](../b41bdac8/chime.md)”
 
-==&gt; See “Todo: C++ Tha - What can we learn by applying Set +,\* and Exponential on each meta-level of the Tha meta model?”
+==&gt; See “[Todo: C++ Tha - What can we learn by applying Set +,\\* and Exponential on each meta-level of the Tha meta model?](../ab703745/chime.md)”
 
-==&gt; See “Todo: Darwinet Repl - Consider we may decorate the Meh Repl with a meta-processor (Cling C++ Repl style) to implement repl commands separate from the Meh language Tha mutations?”
+==&gt; See “[Todo: Darwinet Repl - Consider we may decorate the Meh Repl with a meta-processor (Cling C++ Repl style) to implement repl commands separate from the Meh language Tha mutations?](../b2e9849f/chime.md)”
 
-==&gt; See “Todo: Tha - Consider possible ways to implement the Tha persistent data structure using existing C++ immutable data structures?”
+==&gt; See “[Todo: Tha - Consider possible ways to implement the Tha persistent data structure using existing C++ immutable data structures?](../b642f272/chime.md)”
 
-==&gt; See “Todo: Tha - There seems to be something we miss in modelling C++ in Tha?”
+==&gt; See “[Todo: Tha - There seems to be something we miss in modelling C++ in Tha?](../15cba893/chime.md)”
 
-==&gt; See “Todo: Tha and C++ value categories - Consider how we can express C++ value categories (rvalue, lvalue, xvalue, prvalue) in Tha model?”
+==&gt; See “[Todo: Tha and C++ value categories - Consider how we can express C++ value categories (rvalue, lvalue, xvalue, prvalue) in Tha model?](../2bf45a85/chime.md)”
 
-==&gt; See “Todo: Tha C++ - Consider a way to enable Tha kinds to mutate constructors and destructors on instantiated class types (although the constructor does not know the name of later binding)?”
+==&gt; See “[Todo: Tha C++ - Consider a way to enable Tha kinds to mutate constructors and destructors on instantiated class types (although the constructor does not know the name of later binding)?](../f2d996ba/chime.md)”
 
-==&gt; See “Todo: Tha C++ - Consider to discover the C++ meta-layer objects by viewing C++ code as meta-layer expressions expressed in Haskel syntax?”
+==&gt; See “[Todo: Tha C++ - Consider to discover the C++ meta-layer objects by viewing C++ code as meta-layer expressions expressed in Haskel syntax?](../f03f3b43/chime.md)”
 
-==&gt; See “Todo: Tha C++ - Consider we should be able to handle exceptions also in meta-code executions (meta Cpp is stack-full)?”
+==&gt; See “[Todo: Tha C++ - Consider we should be able to handle exceptions also in meta-code executions (meta Cpp is stack-full)?](../4379f653/chime.md)”
 
-==&gt; See “Todo: Tha in C++ - Consider we can implement Tha meta-value stack in C++ by "laying it down" (each meta-value layer becomes a C++ value, types, kind, template stack)?”
+==&gt; See “[Todo: Tha in C++ - Consider we can implement Tha meta-value stack in C++ by "laying it down" (each meta-value layer becomes a C++ value, types, kind, template stack)?](../4cab98ed/chime.md)”
 
 ==&gt; See “Todo: Tha Meh Repl - Consider what immutable (persistent) C++ data structure to use for the Tha instance?”
 
-==&gt; See “Todo: Tha, Elm and Immer - Consider the C++ Immer immutable data structures based text editor "ewig" is in fact implementing the Elm model, view, update?”
+==&gt; See “[Todo: Tha, Elm and Immer - Consider the C++ Immer immutable data structures based text editor "ewig" is in fact implementing the Elm model, view, update?](../5a0eb296/chime.md)”
 
 ==&gt; Consider a Tha-model of Final Cut Pro application and GUI?
 

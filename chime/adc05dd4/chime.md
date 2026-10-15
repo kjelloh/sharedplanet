@@ -7,17 +7,17 @@
 {% raw %}
 It seems I should be able to use Electric Ducted Fans designed for RC models as the engine to such air for a vacuum design?
 
-==&gt; Also see “Todo: Indoor Shed Dust Extraction - Consider to use sewer pipes for the fixed piping of the dust extraction system?"
+==&gt; Also see “[Todo: Indoor Shed Dust Extraction - Consider to use sewer pipes for the fixed piping of the dust extraction system?](../9ddf7757/chime.md)"
 
-==&gt; Also see “Todo: DIY Dust Extraction - Consider to 3D print an impeller based brushless out runner motor driven vacuum module?”
+==&gt; Also see “[Todo: DIY Dust Extraction - Consider to 3D print an impeller based brushless out runner motor driven vacuum module?](../9dec1d98/chime.md)”
 
-==&gt; Also see “Todo: Indoor Shed - Consider silent vacuum cleaners for dust extraction trough my dust extraction pipe and Oneida cyclone?”
+==&gt; Also see “[Todo: Indoor Shed - Consider silent vacuum cleaners for dust extraction trough my dust extraction pipe and Oneida cyclone?](../3de4d27b/chime.md)”
 
-==&gt; Also see “Todo: Indoor Shed - Consider to design a dust extraction system that fits all my machines?”
+==&gt; Also see “[Todo: Indoor Shed - Consider to design a dust extraction system that fits all my machines?](../3941d780/chime.md)”
 
-==&gt; Also see “Todo: Consider available Computational Fluid Dynamics (CFD) software to use to simulate things like wind turbines and dust and coagulant extraction and cyclone separators?”
+==&gt; Also see “[Todo: Consider available Computational Fluid Dynamics (CFD) software to use to simulate things like wind turbines and dust and coagulant extraction and cyclone separators?](../e37366fb/chime.md)”
 
-==&gt; Also see “Todo: DIY Tools - Consider to 3D print a hand sander block with dust extraction and Abranet sanding sheets?"
+==&gt; Also see “[Todo: DIY Tools - Consider to 3D print a hand sander block with dust extraction and Abranet sanding sheets?](../628ec91c/chime.md)"
 
 1) Consider this youtube video “” on using an Electric Ducted Fan to build a radio controlled “tower rocket” (<https://www.youtube.com/watch?v=RMeEh5OUaDs&t=283s>)?
 
@@ -41,7 +41,7 @@ It seems I should be able to use Electric Ducted Fans designed for RC models as 
 
 3) Consider a design where I can mount the EDF inside the 50 mm sewer pipes I have used for the dust extraction system in my indoor shed?
 
-==&gt; Also see “Todo: Indoor Shed Dust Extraction - Consider to use sewer pipes for the fixed piping of the dust extraction system?"
+==&gt; Also see “[Todo: Indoor Shed Dust Extraction - Consider to use sewer pipes for the fixed piping of the dust extraction system?](../9ddf7757/chime.md)"
 
 ==&gt; Consider if I can mount the EDF inside such a sewer pipe I can easily expand the dust extraction system with more thus by just add more EDF-inside-pipe units?
 

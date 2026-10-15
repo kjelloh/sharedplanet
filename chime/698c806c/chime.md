@@ -31,7 +31,7 @@ I really would like to know how much current battery power tools requires to be 
 
 4) Consider available 18650 cells that I may use to build my own battery packs of the Makita Circular saw?
 
-==&gt; Also see “Todo: Consider to investigate the Power Tool (&gt;20A peak) Li Ion battery cost per Wh for different options (brand packs, 18650 cells...)?”
+==&gt; Also see “[Todo: Consider to investigate the Power Tool (&gt;20A peak) Li Ion battery cost per Wh for different options (brand packs, 18650 cells...)?](../a848561f/chime.md)”
 
 …
 

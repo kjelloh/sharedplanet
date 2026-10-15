@@ -15,7 +15,7 @@ Tine seem to be an Open source (possibly Samsung Supported?) operating system fo
 
 3) Consider to compare this with aiming for Windows 10 IoT Core on Raspberry Pi?
 
-==&gt; See “Todo: Programming - Consider to delve into what we can do with Raspberry Pi and Windows 10 IoT?”
+==&gt; See “[Todo: Programming - Consider to delve into what we can do with Raspberry Pi and Windows 10 IoT?](../2a144f7b/chime.md)”
 
 ...
 

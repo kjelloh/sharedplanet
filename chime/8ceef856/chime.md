@@ -7,7 +7,7 @@
 {% raw %}
 I stumbled over these two videos and thought that I can dig out some interesting leads and information regarding the Mac Pro platform (Xeon E5 + RX79 chipset).
 
-==&gt; Also see "Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?"
+==&gt; Also see "[Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?](../64d58572/chime.md)"
 
 1) Consider to document the leads and information in the youtube video "Mac Rehab 2018: From 4 to 10 Cores, and from 12 to 64 GB of Ram" (<https://www.youtube.com/watch?v=Lx3JGKJN0A0> )?
 

@@ -7,9 +7,9 @@
 {% raw %}
 It seems we should be able to model C++ compilation into executable code into layers of transformations and if all these transformations are correctly remembered we could deign a much better IDE for C++ development?
 
-==&gt; Also see ”Todo: Programming - Consider to find a way to manually edit a C++ file into a "Pandora View" of that file transformed into byte code?”
+==&gt; Also see ”[Todo: Programming - Consider to find a way to manually edit a C++ file into a "Pandora View" of that file transformed into byte code?](../54157cbf/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?"
+==&gt; Also See ”[Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?](../92b081ea/chime.md)"
 
 1) Consider all transform layers we can identity to compile a C++ File into target ”machine code” (real CPU or virtual CPU e.g. LLVM byte code)?
 

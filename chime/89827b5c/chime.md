@@ -7,7 +7,7 @@
 {% raw %}
 What happens to value hierarchies if value comparison is non transitive so that you can strive for higher and higher values and still end up at something with a lower value?
 
-==&gt; Also see "Todo: Consider how it is possible to create a closed loop of probability relations between dices that is NOT transitive (so called Non Transitive Dices)?"
+==&gt; Also see "[Todo: Consider how it is possible to create a closed loop of probability relations between dices that is NOT transitive (so called Non Transitive Dices)?](../858f5d44/chime.md)"
 
 > *So the idea here is to investigate and discuss what we can say about value hierarchies if the tiers of "higher" values is not ordered in a transitive way. Meaning, you can value thing B higher than thing A and then thing C higher than thing B and still end up with thing C having lower value than thing A.*
 

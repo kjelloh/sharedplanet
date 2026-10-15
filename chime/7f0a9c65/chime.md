@@ -7,11 +7,11 @@
 {% raw %}
 I am interested in exploring "emotional truth" as our drive to discover and act on all kind of best-fit models (truth) about reality and humor and laughter is in this sense especially interesting.
 
-==&gt; Also see "Todo: Consider that Scott Adams actually published a Trojan Horse tweet carrying a "contaminated truth" that seems related to the idea along those lines I had back in 2015?"
+==&gt; Also see "[Todo: Consider that Scott Adams actually published a Trojan Horse tweet carrying a "contaminated truth" that seems related to the idea along those lines I had back in 2015?](../5348606a/chime.md)"
 
-==&gt; Also see "Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?"
+==&gt; Also see "[Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?](../f19cbf05/chime.md)"
 
-==&gt; Also see "Todo: Consider that Laughter is our reward system to have us bridge painful truth we do NOT want to trust to truth we actually should start trusting?"
+==&gt; Also see "[Todo: Consider that Laughter is our reward system to have us bridge painful truth we do NOT want to trust to truth we actually should start trusting?](../eda30b89/chime.md)"
 
 1) Consider the clip "The Left Has No Humor (Matt Taibbi & Bret Weinstein)" where Bret Weinstein seems to quiet clearly state Laughter is about revealed truth "on the fringe of consciousness" (<https://youtu.be/9fDc2oxg_FE?t=253> )?
 

@@ -9,7 +9,7 @@ It seems there should be a set of methods built in to any OS to easily capture o
 
 ==&gt; Also see “Todo: Consider to document different ways to capture or grab screenshots in OS X, Linux and Windows 10?"
 
-==&gt; Also see “Todo: Consider to upgrade my Todo email creation process and tools to use?”
+==&gt; Also see “[Todo: Consider to upgrade my Todo email creation process and tools to use?](../e69b0da7/chime.md)”
 
 1) Consider to use OS X built in screen grab tool (<https://support.apple.com/sv-se/HT201361>)?
 

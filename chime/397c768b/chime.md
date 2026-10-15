@@ -7,49 +7,49 @@
 {% raw %}
 It seems it can be valuable to try and document some of the experiences I have from migrating to my Mac Pro 2013?
 
-==&gt; Also see "Todo: Mac Pro - Consider to document the installation and use of PreSonus Audiobox iTwo software Universal Control Universal Control v3.1.0.53214 for Mojave?"
+==&gt; Also see "[Todo: Mac Pro - Consider to document the installation and use of PreSonus Audiobox iTwo software Universal Control Universal Control v3.1.0.53214 for Mojave?](../9a6fe4dc/chime.md)"
 
 ==&gt; Also see "Todo: Resilio Sync Pro/Home - Consider to consolidate my private Resilio Sync Home cloud of files?"
 
 ==&gt; Also see “Todo: Sync Pro - Consider to document the administration experience of creating my private cloud of shared files using Sync Pro?”
 
-==&gt; Also see "Todo: Fusion 360 transition - Consider to document how I (as forced to by Autodesk) transitioned from Apple Store subscription to Autodesk own subscripiton?"
+==&gt; Also see "[Todo: Fusion 360 transition - Consider to document how I (as forced to by Autodesk) transitioned from Apple Store subscription to Autodesk own subscripiton?](../920b975e/chime.md)"
 
-==&gt; Also see "Todo: Mac Pro 2013 - Consider to understand the system architecture of the Apple Mac Pro 6.1 "Trashcan"?"
+==&gt; Also see "[Todo: Mac Pro 2013 - Consider to understand the system architecture of the Apple Mac Pro 6.1 "Trashcan"?](../fa664541/chime.md)"
 
-==&gt; Also see "Todo: Mac Pro 2013 - Consider to understand the Dual AMD D700 graphics cards in the Mac pro 2013?"
+==&gt; Also see "[Todo: Mac Pro 2013 - Consider to understand the Dual AMD D700 graphics cards in the Mac pro 2013?](../0b3ff437/chime.md)"
 
-==&gt; Also see "Todo: Mac Pro 2013 - Consider to research and document the Apple Mac Pro 2013 System Architecture?"
+==&gt; Also see "[Todo: Mac Pro 2013 - Consider to research and document the Apple Mac Pro 2013 System Architecture?](../c7228f3f/chime.md)"
 
-==&gt; Also see "Todo: mac pro 2013 - Consider to understand the DDR3 memory system on the Mac Pro "Trashcan"?"
+==&gt; Also see "[Todo: mac pro 2013 - Consider to understand the DDR3 memory system on the Mac Pro "Trashcan"?](../65d23643/chime.md)"
 
-==&gt; Also see "Todo: mac Pro 2013 - Consider to understand the Thunderbolt 2 connector and protocol abilities?"
+==&gt; Also see "[Todo: mac Pro 2013 - Consider to understand the Thunderbolt 2 connector and protocol abilities?](../e6803f7b/chime.md)"
 
-==&gt; Also see "Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?"
+==&gt; Also see "[Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?](../64d58572/chime.md)"
 
-==&gt; Also see "Todo: "Why I bought a new 2013 Mac Pro in 2019!""
+==&gt; Also see "[Todo: "Why I bought a new 2013 Mac Pro in 2019!"](../61d6cdde/chime.md)"
 
-==&gt; Also see "Todo: Consider to document and understand the technical specs of my Macbook Pro mid 2014 lap-top (e.g., what ports it has and how to interface external devices through these ports)?"
+==&gt; Also see "[Todo: Consider to document and understand the technical specs of my Macbook Pro mid 2014 lap-top (e.g., what ports it has and how to interface external devices through these ports)?](../0bf142e5/chime.md)"
 
-==&gt; Also see "Todo: Buy a Mac Pro - Consider to list URL:s for keeping a watch for a Mc Pro that sits my needs and to the right price and quality?"
+==&gt; Also see "[Todo: Buy a Mac Pro - Consider to list URL:s for keeping a watch for a Mc Pro that sits my needs and to the right price and quality?](../ac5fd412/chime.md)"
 
-==&gt; Also see "Todo: Consider how to correctly connect my Apple LED Cinema Display 27" (mid 2010) to computers with different external ports (e.g., MAC Pro 2013 USB-3 and Thunderbolt 2 or future USB-C and USB4 ports)?"
+==&gt; Also see "[Todo: Consider how to correctly connect my Apple LED Cinema Display 27" (mid 2010) to computers with different external ports (e.g., MAC Pro 2013 USB-3 and Thunderbolt 2 or future USB-C and USB4 ports)?](../7a90d20d/chime.md)"
 
-==&gt; Also see "Todo: Consider Level1Techs take on the Mac Pro 2013 and a Xeon E5 RX79 chipset PC vs an i7700 RX99 chipset one? "
+==&gt; Also see "[Todo: Consider Level1Techs take on the Mac Pro 2013 and a Xeon E5 RX79 chipset PC vs an i7700 RX99 chipset one?](../8ceef856/chime.md) "
 
-==&gt; Also see "Todo: Consider to build a desktop computer workstation (to replace my macbook Pro 2014)?"
+==&gt; Also see "[Todo: Consider to build a desktop computer workstation (to replace my macbook Pro 2014)?](../6dd6232b/chime.md)"
 
-==&gt; Also see "Todo: Consider to buy an Apple Mac pro (Quite and reliable although expensive)?"
+==&gt; Also see "[Todo: Consider to buy an Apple Mac pro (Quite and reliable although expensive)?](../53eae359/chime.md)"
 
-==&gt; Also see "Todo: Consider to compare my MacBook Pro Mid 2014 with possible upgrades (including the Latte Panda Alpha SBC Hackintosh)?"
+==&gt; Also see "[Todo: Consider to compare my MacBook Pro Mid 2014 with possible upgrades (including the Latte Panda Alpha SBC Hackintosh)?](../5b960642/chime.md)"
 
-==&gt; Also see "Todo: Consider to research and document the possible CPU upgrades possible for the Mac Pro 6.1 (late 2013) "trash can" desktop computer"
+==&gt; Also see "[Todo: Consider to research and document the possible CPU upgrades possible for the Mac Pro 6.1 (late 2013) "trash can" desktop computer](../152425d5/chime.md)"
 
-==&gt; Also see "Todo: Consider to research and understand GPUs for Deep Learning and graphics rendering performance and get a grip of how useful the Mac Pro 6.1 and the D700 graphics card is in real life for these applications?"
+==&gt; Also see "[Todo: Consider to research and understand GPUs for Deep Learning and graphics rendering performance and get a grip of how useful the Mac Pro 6.1 and the D700 graphics card is in real life for these applications?](../53bcc29d/chime.md)"
 
-==&gt; Also see "Todo: Consider to sell my Macbook Pro Retina mid 2014 laptop?"
+==&gt; Also see "[Todo: Consider to sell my Macbook Pro Retina mid 2014 laptop?](../1eca96a3/chime.md)"
 
-==&gt; Also see "Todo: Consider to try out C++14-based Apple Metal 2 programming on my Mac Pro D700 graphics?"
+==&gt; Also see "[Todo: Consider to try out C++14-based Apple Metal 2 programming on my Mac Pro D700 graphics?](../29998ffc/chime.md)"
 
 190809
 
@@ -76,7 +76,7 @@ SUCCESS: I now have Parallels 13.3.2 running on my existing license on my Mac Pr
 
 190726
 
-==&gt; Also see "Todo: Mac Pro - Consider to document the installation and use of PreSonus Audiobox iTwo software Universal Control Universal Control v3.1.0.53214 for Mojave?"
+==&gt; Also see "[Todo: Mac Pro - Consider to document the installation and use of PreSonus Audiobox iTwo software Universal Control Universal Control v3.1.0.53214 for Mojave?](../9a6fe4dc/chime.md)"
 
 + I downloaded and installed the software "Universal Control v3.1.0.53214" for my PreSonus AudioBox iTwo (<https://www.presonus.com/products/AudioBox-iTwo-Studio/downloads> )
 

@@ -7,7 +7,7 @@
 {% raw %}
 Could it be fun to actually physically build the year-week-day scheduler using RFID on wheels to detect and show schedule on a display?
 
-==&gt; Also see “Todo: Programming - Consider to visualise a calendar as gear of days within gear of weeks within gear of months within gear of years within gear of 10 years and life?”
+==&gt; Also see “[Todo: Programming - Consider to visualise a calendar as gear of days within gear of weeks within gear of months within gear of years within gear of 10 years and life?](../4815abe6/chime.md)”
 
 1) Consider a design with a year-wheel/gear with 365 RFID tags?
 

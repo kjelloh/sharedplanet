@@ -27,7 +27,7 @@ Consider it to be a good and fun idea to have virtual machines (e.g. Windows 10 
 
 ==&gt; GCC/CLang may be used with different Editors, build-envitronments and debuggers?
 
-==&gt; See ”Todo: Programming - Consider to study contemporary available IDEs for C++ programming?”
+==&gt; See ”[Todo: Programming - Consider to study contemporary available IDEs for C++ programming?](../9c1df47d/chime.md)”
 
 …
 
@@ -83,7 +83,7 @@ Side ideas:
 
 a) Consider to test out Docker (Container-based application execution)?
 
-==&gt; See ”Todo: Software - Consider to follow up on pointers to platform build, automate and manage made by Parallels 11?”
+==&gt; See ”[Todo: Software - Consider to follow up on pointers to platform build, automate and manage made by Parallels 11?](../e5e82d39/chime.md)”
 
 ==&gt; No, Docker is a server (or cloud based) service (it,s not possible to build Docker Containers locally)
 

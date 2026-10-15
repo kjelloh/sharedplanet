@@ -5,17 +5,17 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider a home "Confession Cam" system setup for me to quickly and easy make "Confessional Recordings" to use in Youtube project videos or just for my own "figuring out" and life assessment (observations) and planning process?"
+==&gt; Also see "[Todo: Consider a home "Confession Cam" system setup for me to quickly and easy make "Confessional Recordings" to use in Youtube project videos or just for my own "figuring out" and life assessment (observations) and planning process?](../790540bc/chime.md)"
 
-==&gt; Also see "Todo: Consider the threads and dimension of my Microphone Boom Stand and Camera mount screw hole are 5/8" 27 TPI and 1/4" 20 TPI (With Manfrotto tripod head mount 3/8" 16 TPI) ?"
+==&gt; Also see "[Todo: Consider the threads and dimension of my Microphone Boom Stand and Camera mount screw hole are 5/8" 27 TPI and 1/4" 20 TPI (With Manfrotto tripod head mount 3/8" 16 TPI) ?](../8d0b368f/chime.md)"
 
-==&gt; Also see "Todo: Consider the available 3D printable Manfrotto camera mounts for my DIY Teleprompter triped mount?"
+==&gt; Also see "[Todo: Consider the available 3D printable Manfrotto camera mounts for my DIY Teleprompter triped mount?](../ffc78e36/chime.md)"
 
-==&gt; Also see "Todo: Consider to automate chocolate tempering for truffle making (e.g., use a thermal camera for contactless temperature reading)?"
+==&gt; Also see "[Todo: Consider to automate chocolate tempering for truffle making (e.g., use a thermal camera for contactless temperature reading)?](../cbb8e0e5/chime.md)"
 
-==&gt; Also see "Todo: DIY - Consider to 3D print and design a Mobile Phone Camera document scan rig (to capture drawings and documents)?"
+==&gt; Also see "[Todo: DIY - Consider to 3D print and design a Mobile Phone Camera document scan rig (to capture drawings and documents)?](../a98338a5/chime.md)"
 
-==&gt; Also see "Todo: Consider to use my "Camera Incident" on Korsika to introduce a talk on protectionism?"
+==&gt; Also see "[Todo: Consider to use my "Camera Incident" on Korsika to introduce a talk on protectionism?](../edebf85a/chime.md)"
 
 1) Consider youtube video "Raspberry Pi High Quality Camera Review w/ interchangeable lenses" (<https://youtu.be/_Oh7sITnwMU> )?
 

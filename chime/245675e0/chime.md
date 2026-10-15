@@ -7,7 +7,7 @@
 {% raw %}
 Could it be fun to build a protocol analyser based on my idea for a general C++ library for serialised composites?
 
-==&gt; Also see “Todo: Maker CPU Boards - Consider to check out the Udoo x86 series of Arduino compatible board?"
+==&gt; Also see “[Todo: Maker CPU Boards - Consider to check out the Udoo x86 series of Arduino compatible board?](../ebe17b8f/chime.md)"
 
 1) Consider what micro controller to use as the base of the protocol analyser?
 

@@ -7,17 +7,17 @@
 {% raw %}
 It seems for convenience we would need some antonym to the prefix ”Meta” to refer to the realisation or manifestation of a Meta information?
 
-==&gt; Also see ”Todo: Meta Layers - Consider what we can say about the relationship between the meta-layers of programming languages?”
+==&gt; Also see ”[Todo: Meta Layers - Consider what we can say about the relationship between the meta-layers of programming languages?](../b6285590/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to compare my Meta Value Levels model of C++ with the standard Reflection Proposal? "
+==&gt; Also see ”[Todo: Programming - Consider to compare my Meta Value Levels model of C++ with the standard Reflection Proposal?](../267b326a/chime.md) "
 
-==&gt; Also see ”Todo: C++ - Consider to describe function overloading as meta-functions that returns functions based on call signature?"
+==&gt; Also see ”[Todo: C++ - Consider to describe function overloading as meta-functions that returns functions based on call signature?](../0ebdcf57/chime.md)"
 
-==&gt; Also see ”Todo: Darwinet - Consider the general relation between Meta-values and values (e.g., consider meta-value atom, record, array to be general)?”
+==&gt; Also see ”[Todo: Darwinet - Consider the general relation between Meta-values and values (e.g., consider meta-value atom, record, array to be general)?](../3bcffda8/chime.md)”
 
-==&gt; Also see ”Todo: C++ - Consider to write blog post about meta functions and their ability to process value, type and template parameters?”
+==&gt; Also see ”[Todo: C++ - Consider to write blog post about meta functions and their ability to process value, type and template parameters?](../db529659/chime.md)”
 
-==&gt; Also see ”Todo: Consider to refactor encoding-aware string types as "dimension aware" meta-data?”
+==&gt; Also see ”[Todo: Consider to refactor encoding-aware string types as "dimension aware" meta-data?](../97702e7d/chime.md)”
 
 1) Consider to use the ”Facto” as a prefix to mean ”Real” as in De Facto meaning ”in reality”?
 

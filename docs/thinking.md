@@ -4,7 +4,15 @@ I find it productive and valuable to write down my thinking as I go along.
 
 ## 20261015
 
-Described and committed the fix to write and read 'As of' date with a space after now written index hash.
+I now took the plunge and added all chimes I created from my selected todo-mails.
+
+* My todo-mails has been my goto way of writing down ideas, investigations and proposals of thinks to think more about.
+* FINGERS CROSSED I have not added something sensitive or compromising?
+* Living on the edge...
+
+I realised I had forgotten to intralink - so now I have done it.
+
+Before that I described and committed the fix to write and read 'As of' date with a space after now written index hash.
 
 ## 20261014
 

@@ -7,11 +7,11 @@
 {% raw %}
 Could it be a good idea to study and understand the Elm architecture and see if this is what we want to apply for MIV views?
 
-==&gt; Also see ”Todo: Darwinet - Consider to design Deltas as "Actions" and have update: Action -&gt; State -&gt; State and view: State -&gt; State -&gt; GUI (Elm/React style)?"
+==&gt; Also see ”[Todo: Darwinet - Consider to design Deltas as "Actions" and have update: Action -&gt; State -&gt; State and view: State -&gt; State -&gt; GUI (Elm/React style)?](../2739fc47/chime.md)"
 
-==&gt; Also see ”Todo: Darwinet - Consider the MIV is actually immutable (each delta creates a new MIV) making Darwinet suitable for a function composition design?”
+==&gt; Also see ”[Todo: Darwinet - Consider the MIV is actually immutable (each delta creates a new MIV) making Darwinet suitable for a function composition design?](../99684f2f/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - It seems Darwinet Deltas are in fact the same thing as "Conflict-free replicated data type" or CFRD?”
+==&gt; Also see ”[Todo: Darwinet - It seems Darwinet Deltas are in fact the same thing as "Conflict-free replicated data type" or CFRD?](../36f0b5ab/chime.md)”
 
 1) Consider this talk to be a good one on Elm language and architecture (28:40 into <https://www.youtube.com/watch?v=XJ9ckqCMiKk>)?
 

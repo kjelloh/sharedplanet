@@ -7,7 +7,7 @@
 {% raw %}
 It seems it could be a good idea to invest in and try out the augmented reality glasses “Magic leap”?
 
-==&gt; Also see “Todo: Consider to build heads up protection glasses that can project maker space sensor information directly into the eyes?”
+==&gt; Also see “[Todo: Consider to build heads up protection glasses that can project maker space sensor information directly into the eyes?](../add926ac/chime.md)”
 
 1) Consider Tested youtube review “Tested: Magic Leap One Augmented Reality Headset!” of the Magic Leap glasses (<https://www.youtube.com/watch?v=Vrq2akzdFq8&t=1200s>)?
 

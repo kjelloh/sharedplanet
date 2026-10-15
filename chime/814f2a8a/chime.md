@@ -7,9 +7,9 @@
 {% raw %}
 I get the feeling it would be very productive and inspiring to try to understand the Monoid and Monad ”functional styyle” programmng concepts and how to apply them in C++ programming?
 
-==&gt; Also see ”Todo: Programming - Consider to study and understand Functional Programming (e.g. Haskel) ”Monads”"
+==&gt; Also see ”[Todo: Programming - Consider to study and understand Functional Programming (e.g. Haskel) ”Monads”](../3267f141/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to follow up on C++ talk on "Flow Interface" builders and monads?”
+==&gt; Also see ”[Todo: Programming - Consider to follow up on C++ talk on "Flow Interface" builders and monads?](../d0331bf6/chime.md)”
 
 1) It seems mathematically a monoid is a binary operation on a set of values with at least one identity value such that operation returns the other value (<https://en.wikipedia.org/wiki/Identity_element>)
 

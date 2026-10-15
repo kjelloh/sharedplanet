@@ -7,7 +7,7 @@
 {% raw %}
 It seems the value of pattern matching pops up both in value and type inference, but also in model compliance detection (e.g., as in Clojure.spec patterns) and text -&gt; value parsers and value - &gt; text compilers?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to implement a value-to-meta-value-contract matching ability as implemented by Clojure.spec?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider to implement a value-to-meta-value-contract matching ability as implemented by Clojure.spec?](../c40aa5b0/chime.md)”
 
 1) Consider what pattern mechanisms we need for value inference?
 
@@ -201,7 +201,7 @@ meta-1: define each nth&lt;struct {var1 typeA, var2 typeB}&gt;(n) = nth&lt;array
 
 **==&gt; Consider to confirm this with the Clojure.spec documentation?**
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to implement a value-to-meta-value-contract matching ability as implemented by Clojure.spec?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider to implement a value-to-meta-value-contract matching ability as implemented by Clojure.spec?](../c40aa5b0/chime.md)”
 
 5) Consider patterns that defined patterns that define conditional match (predicates)?
 

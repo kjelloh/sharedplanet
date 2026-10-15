@@ -25,17 +25,17 @@ Found this funny bullwhip generator (<http://sebpearce.com/bullshit/>) on Facebo
 
 5) Consider to base the transformer on target statements made by ”Religion of the future” (Unger), Syntheism (Bard/Södergård), Atheism 2.0 (Botton)?
 
-==&gt; See ”Todo: Study Dawkins and state his thoughts as a Religion”
+==&gt; See ”[Todo: Study Dawkins and state his thoughts as a Religion](../b6b44202/chime.md)”
 
-==&gt; See ”Todo: Write about that religion of the future must take of from existing belief systems”
+==&gt; See ”[Todo: Write about that religion of the future must take of from existing belief systems](../88b62c86/chime.md)”
 
-==&gt; See ”Todo: Consider a news channel that uses fictive novel characters to report news”
+==&gt; See ”[Todo: Consider a news channel that uses fictive novel characters to report news](../c647f27f/chime.md)”
 
-==&gt; See ”Todo: Write about freeing yourself from your Ego is actually belittlement and comparable to closing borders to immigrants”
+==&gt; See ”[Todo: Write about freeing yourself from your Ego is actually belittlement and comparable to closing borders to immigrants](../89d596cd/chime.md)”
 
-==&gt; See ”Todo: Write about how a philosophical approach to argue for richer life is not the way to go”
+==&gt; See ”[Todo: Write about how a philosophical approach to argue for richer life is not the way to go](../9634045f/chime.md)”
 
-==&gt; See ”Todo: Evolve the Religion of the Future as an app that regularly updated to a new version”
+==&gt; See ”[Todo: Evolve the Religion of the Future as an app that regularly updated to a new version](../17e57ac9/chime.md)”
 
 6) Co sider to have this as a function in the ”Religion-of-the-future” app?
 

@@ -7,13 +7,13 @@
 {% raw %}
 I like the idea of putting together my own modular cell phone solution and the SIM7100 or simmular 4G Modules may be the way to get started?
 
-==&gt; Also see "Todo: DIY Mobile Phone - Consider to follow up on MegaPhone, the FPGA and mini-PCIe cellular modem paired Commodore C64 compatible open source mobile phone?"
+==&gt; Also see "[Todo: DIY Mobile Phone - Consider to follow up on MegaPhone, the FPGA and mini-PCIe cellular modem paired Commodore C64 compatible open source mobile phone?](../73de01fd/chime.md)"
 
-==&gt; Also see "Todo: Consider to replace all my web-connections with one 4G mobile broadband?"
+==&gt; Also see "[Todo: Consider to replace all my web-connections with one 4G mobile broadband?](../86181b2d/chime.md)"
 
 ==&gt; Also see "Todo: Consider to learn about the Mobile Modem APN settings and its relevance to Swedbank Mobile Connection for test?"
 
-==&gt; Also see "Todo: Could a small effective mobile router "puck" be the next evolutionary step in smartphone and pad branch trajectory?"
+==&gt; Also see "[Todo: Could a small effective mobile router "puck" be the next evolutionary step in smartphone and pad branch trajectory?](../7878a0c3/chime.md)"
 
 1) Consider DIY Projects to make Voice Calls using a DIY GSM System?
 

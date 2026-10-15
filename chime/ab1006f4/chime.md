@@ -7,7 +7,7 @@
 {% raw %}
 It seems Meshroom is an open source program that implements “Photogrammetry” to reconstruct points in 3D space from a set of 2D images of the object?
 
-==&gt; Also see “Todo: Consider to design and build an automated 3D scanner using the open source Meshroom application?"
+==&gt; Also see “[Todo: Consider to design and build an automated 3D scanner using the open source Meshroom application?](../190d4669/chime.md)"
 
 1) Consider this youtube video “How to 3D Photoscan Easy and Free!” that shows how to make a 3D mesh from an object photographed from a lot of angels (<https://youtu.be/k4NTf0hMjtY>)?
 

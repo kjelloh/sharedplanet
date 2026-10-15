@@ -5,7 +5,7 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider the youtube video "Function Composition in Programming Languages - Conor Hoekstra - CppNorth 2023" for function composition intuition?"
+==&gt; Also see "[Todo: Consider the youtube video "Function Composition in Programming Languages - Conor Hoekstra - CppNorth 2023" for function composition intuition?](../308ff5c6/chime.md)"
 
 1) Consider the comments in youtube video "More Functional C++?" (<https://youtu.be/iTEK8SjE0w4> )?
 

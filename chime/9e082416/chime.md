@@ -5,9 +5,9 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Wall Painting - Consider to what degree the NCS Colour System is a colur coding system I can use to define colour of paint I buy from different vendors?"
+==&gt; Also see "[Todo: Wall Painting - Consider to what degree the NCS Colour System is a colur coding system I can use to define colour of paint I buy from different vendors?](../eb03bfc9/chime.md)"
 
-==&gt; Also see "Todo: Consider to document how I have painted my Apartment?"
+==&gt; Also see "[Todo: Consider to document how I have painted my Apartment?](../5fa12dff/chime.md)"
 
 1) Consider what I can learn from performing the NCS tutorial on their home site (<https://education.ncscolour.com> )?
 

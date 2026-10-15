@@ -7,11 +7,11 @@
 {% raw %}
 It seems that perhaps my first wall to paint is my bedroom wall towards the balcony?
 
-==&gt; Also see "Todo: Consider to plan and predict a cost for renovating my apartment so I can sell it?"
+==&gt; Also see "[Todo: Consider to plan and predict a cost for renovating my apartment so I can sell it?](../c91a7bcc/chime.md)"
 
-==&gt; Also see "Todo: Consider a water percolation based paint brush and rollers cleaning process?"
+==&gt; Also see "[Todo: Consider a water percolation based paint brush and rollers cleaning process?](../a5417baf/chime.md)"
 
-==&gt; Also see "Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+==&gt; Also see "[Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?](../bd86eed6/chime.md)"
 
 1) Consider this youtube video "DIY How to Paint like a Pro Series A to Z" (<https://www.youtube.com/watch?v=2eUxz_or2Qs> )?
 

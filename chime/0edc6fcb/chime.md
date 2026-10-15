@@ -7,7 +7,7 @@
 {% raw %}
 I am tempted to fix bugs in freecad myself and wonder if I can use freecad from the nix package manager to get a functioning build environment?
 
-==&gt; Also see "Consider to document my nix package manager installation on macOS apple silicone?"
+==&gt; Also see "[Consider to document my nix package manager installation on macOS apple silicone?](../d69dfb9b/chime.md)"
 
 1) Consider to try the nix package manager provided freecad 1.0 (<https://search.nixos.org/packages?channel=24.11&show=freecad&from=0&size=50&sort=relevance&type=packages&query=freecad> )?
 

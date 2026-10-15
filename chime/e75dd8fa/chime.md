@@ -7,19 +7,19 @@
 {% raw %}
 I need i CAD program to aid my "build stuff" activities and FreeCad may still be my best option?
 
-==&gt; Also see "Todo: FreeCad Cheat Sheet - Consider the recommendations by youtube viewer on "best" way to start a sketch and configure for landing GUI?"
+==&gt; Also see "[Todo: FreeCad Cheat Sheet - Consider the recommendations by youtube viewer on "best" way to start a sketch and configure for landing GUI?](../1f350516/chime.md)"
 
-==&gt; Also see "Todo: Consider to document how I tried to build FreeCad from Github latest branch on mac OS?"
+==&gt; Also see "[Todo: Consider to document how I tried to build FreeCad from Github latest branch on mac OS?](../f3c139e0/chime.md)"
 
-==&gt; Also see "Todo: Consider to study and try out the 2D CAD application LibreCAD, a fork of QCAD (as a companion to 3D CAD FreeCAD)?"
+==&gt; Also see "[Todo: Consider to study and try out the 2D CAD application LibreCAD, a fork of QCAD (as a companion to 3D CAD FreeCAD)?](../68befbb5/chime.md)"
 
-==&gt; Also see "Todo: Consider to study and try out the Open Source 2D CAD application QCAD (NOT CuteCAD as a companion to 3D CAD FreeCAD)?"
+==&gt; Also see "[Todo: Consider to study and try out the Open Source 2D CAD application QCAD (NOT CuteCAD as a companion to 3D CAD FreeCAD)?](../de7df97a/chime.md)"
 
-==&gt; Also see "Todo: Consider to study and try out the 2D CAD application CuteCAD (as a companion to 3D CAD FreeCAD)?"
+==&gt; Also see "[Todo: Consider to study and try out the 2D CAD application CuteCAD (as a companion to 3D CAD FreeCAD)?](../94bbf7b0/chime.md)"
 
-==&gt; Also see "Todo: Build House - Consider to really give FreeCad a try to see if I can rely on it to design, model and produce plans using it BIM style?"
+==&gt; Also see "[Todo: Build House - Consider to really give FreeCad a try to see if I can rely on it to design, model and produce plans using it BIM style?](../999eb1b9/chime.md)"
 
-==&gt; Also see "Todo: Consider to check out Open Source FreeCAD tool for 3D Design?"
+==&gt; Also see "[Todo: Consider to check out Open Source FreeCAD tool for 3D Design?](../d7e80328/chime.md)"
 
 1) Consider my experience to install Freecad with Homebrew on MacOS 12.6.8?
 

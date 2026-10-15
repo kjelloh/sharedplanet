@@ -7,7 +7,7 @@
 {% raw %}
 I found a "Type Systems - The Good, Bad and Ugly" by Paul Snively and Amanda Laucher and it seems like a good idea to use it as leads into understanding what a type system is and what a good, bad and ugly type system is?
 
-==&gt; Also see ”Todo: Meh and Tha and Type Theory and Systems - Consider to delve deeper into Type Theory and the Lambda Cube to understand how we may think about Meh and Tha?"
+==&gt; Also see ”[Todo: Meh and Tha and Type Theory and Systems - Consider to delve deeper into Type Theory and the Lambda Cube to understand how we may think about Meh and Tha?](../77f52160/chime.md)"
 
 1) The talk ”Type Systems - The Good, Bad and Ugly" by Paul Snively and Amanda Laucher” seems to live here (<https://www.youtube.com/watch?v=SWTWkYbcWU0>)?
 

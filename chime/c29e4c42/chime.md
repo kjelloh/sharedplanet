@@ -9,7 +9,7 @@ So, here we go again manually configuring a computer to be able to operate in so
 
 ==&gt; Also see ""
 
-==&gt; Also see "Todo: Consider to document how to correctly make Python work on OS X preferably with VSCode?"
+==&gt; Also see "[Todo: Consider to document how to correctly make Python work on OS X preferably with VSCode?](../0f655ce8/chime.md)"
 
 1) Consider to document the steps I actually turned out going down to have Python running on my Mac Pro?
 

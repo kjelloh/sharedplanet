@@ -7,7 +7,7 @@
 {% raw %}
 Could it be a good idea to implement a C++ library that provides a mechanism with which C++ source code may compile-time detect and apply knowledge about the build tool-chain and target platform?
 
-==&gt; Also see “Todo: Programming - Consider to implement a set of Data Model Investigator services as a C++ library?”
+==&gt; Also see “[Todo: Programming - Consider to implement a set of Data Model Investigator services as a C++ library?](../da551771/chime.md)”
 
 1) Consider a good name for this compile-time build tool chain and target identification library?
 

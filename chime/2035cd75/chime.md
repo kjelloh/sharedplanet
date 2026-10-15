@@ -7,7 +7,7 @@
 {% raw %}
 Listening to a talk (<https://www.youtube.com/watch?v=I7IdS-PbEgI&feature=youtu.be>) by Lee Byron, the autor of immutable.js, I realize that Tries are in fact a Composite with nodes having a key-path of sub-ranges of an index (Index Trie) or of a hash value (A Hash Trie).
 
-==&gt; Also see "Todo: Darwinet - Consider Javascript React with immutable.js or Mori actually kind-of already implemented Darwinet immutable MIV and delta history mechanisms?"
+==&gt; Also see "[Todo: Darwinet - Consider Javascript React with immutable.js or Mori actually kind-of already implemented Darwinet immutable MIV and delta history mechanisms?](../d6548533/chime.md)"
 
 1) Consider to enable the ibi library to conveniently create paths into both index and hash Tries?
 

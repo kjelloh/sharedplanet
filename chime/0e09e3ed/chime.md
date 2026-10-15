@@ -7,9 +7,9 @@
 {% raw %}
 Consider it could be interesting and good education to design and build a power (speed) control for my Einhell 2025 table saw?
 
-==&gt; Also see ”Todo: Einhell Bordssåg - Kolla upp om motorn är en universalmotor (alltså en allströmsmotor med borstar)?”
+==&gt; Also see ”[Todo: Einhell Bordssåg - Kolla upp om motorn är en universalmotor (alltså en allströmsmotor med borstar)?](../0a98a37e/chime.md)”
 
-==&gt; Also see ”Todo: Einhell 2025 - Consider to document data about my table saw and possible ascessories?"
+==&gt; Also see ”[Todo: Einhell 2025 - Consider to document data about my table saw and possible ascessories?](../1d4fcb9a/chime.md)"
 
 1) Consider the Conrad Power Control 2760VA (<https://www.conrad.com/ce/en/product/191343/Power-controller-Component-Conrad-Components-191343-230-Vac?ref=list>)?
 

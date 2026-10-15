@@ -7,7 +7,7 @@
 {% raw %}
 I have broken my ZAG-K additional stop used to reference new holes 32 mm from an existing hole and I have trouble finding a vendor that sells them!
 
-==&gt; Also see "Todo: Consider to document how I can use the Mafell Duo Doweler to build an IKEA PAX closet frame clone?"
+==&gt; Also see "[Todo: Consider to document how I can use the Mafell Duo Doweler to build an IKEA PAX closet frame clone?](../27999873/chime.md)"
 
 -1) I ended up order a set of ZAG from <https://www.mikestoolshop.at> for nearly 500 SEK!!
 

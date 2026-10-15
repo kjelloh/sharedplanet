@@ -7,7 +7,7 @@
 {% raw %}
 Could it be possible to use the ultra silent pumps for CPU cooling to circulate the nutrient solution in a home hydroponic gardening system?
 
-==&gt; Also see “Todo: Consider to design home-agricultural system based on encapsuled plant-house?”
+==&gt; Also see “[Todo: Consider to design home-agricultural system based on encapsuled plant-house?](../4aeb7d2b/chime.md)”
 
 1) Consider pumps from Alphacool (<https://www.alphacool.com>)?
 

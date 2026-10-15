@@ -7,7 +7,7 @@
 {% raw %}
 I have used and want to use more "teal" like colours in my home decoration.
 
-> ==&gt; Also see "Todo: Consider to document how I have painted my Apartment?"
+> ==&gt; Also see "[Todo: Consider to document how I have painted my Apartment?](../5fa12dff/chime.md)"
 
 1) Consider the Swedish youtube video "FIN FÄRG TILL VÄGGARNA: Så hittar du den perfekta blågröna färgen att måla väggar med" (<https://youtu.be/1xISgWIz3-4> )?
 

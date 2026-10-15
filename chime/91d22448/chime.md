@@ -7,7 +7,7 @@
 {% raw %}
 It seems we may be able to build a 3D scanner by using cheap re-used laptop web-cams, some single board computer and open source MeshRoom?
 
-==&gt; Also see “Todo: Consider to check out Meshroom to use it for 3D scanning of objects (to be used in CAD and CAM)?"
+==&gt; Also see “[Todo: Consider to check out Meshroom to use it for 3D scanning of objects (to be used in CAD and CAM)?](../ab1006f4/chime.md)"
 
 1) Consider where to buy the re-used laptop web-cams?
 

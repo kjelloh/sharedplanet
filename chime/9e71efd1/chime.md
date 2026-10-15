@@ -7,7 +7,7 @@
 {% raw %}
 It seems it is time to start looking for an Oscilloscope to The ITfied electronics lab?
 
-==&gt; Also see “Todo: Electronic Lab - Consider to find a good enough lab power supply?"
+==&gt; Also see “[Todo: Electronic Lab - Consider to find a good enough lab power supply?](../68506fdb/chime.md)"
 
 1) Consider to identify what oscilloscope you tubers I watch are using?
 

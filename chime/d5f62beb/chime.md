@@ -7,7 +7,7 @@
 {% raw %}
 I want to compile C++ code version 20 with clang but want to link with gnu libstdc++ instead och llvm libc++ as the latter lacks in c++20 support compared to the former.
 
-==&gt; Also see "Todo: Consider to document how I installed unofficial (PPA) g++-11 on my Linux Mint 20.2 Cinnamon (macOS Paralells virtual machine)"
+==&gt; Also see "[Todo: Consider to document how I installed unofficial (PPA) g++-11 on my Linux Mint 20.2 Cinnamon (macOS Paralells virtual machine)](../dea7bb7d/chime.md)"
 
 1) It seems in Linux the works?
 

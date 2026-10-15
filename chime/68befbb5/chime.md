@@ -7,9 +7,9 @@
 {% raw %}
 Studying QCAD (as mentioned in youtube video by FreeCAD developer Yorik van Havre) I found the application LibreCAD, a fork of QCAD, and thought it worth exploring?
 
-==&gt; Also see "Todo: Build House - Consider to really give FreeCad a try to see if I can rely on it to design, model and produce plans using it BIM style?"
+==&gt; Also see "[Todo: Build House - Consider to really give FreeCad a try to see if I can rely on it to design, model and produce plans using it BIM style?](../999eb1b9/chime.md)"
 
-==&gt; Also see "Todo: Consider to study and try out the Open Source 2D CAD application QCAD (NOT CuteCAD as a companion to 3D CAD FreeCAD)?"
+==&gt; Also see "[Todo: Consider to study and try out the Open Source 2D CAD application QCAD (NOT CuteCAD as a companion to 3D CAD FreeCAD)?](../de7df97a/chime.md)"
 
 1) It seems LibreCAD lives on this web site (<https://librecad.org> )?
 

@@ -7,9 +7,9 @@
 {% raw %}
 So, what 2D graphical frameworks exists and what do I have to do to use them cross platform for application nations with GUI frontends?
 
-==&gt; Also see “Todo: Programming - Consider to study the C++ standard proposal for a 2D graphics standard front-end library?"
+==&gt; Also see “[Todo: Programming - Consider to study the C++ standard proposal for a 2D graphics standard front-end library?](../676c7b21/chime.md)"
 
-==&gt; Also see “Todo: C++ Teaching - Consider to enable tutorials to select a UI that is either Textual (Console-ial), 2D Graphical or 3D-graphical through some rudimentary Open Source library developed for that purpose?”
+==&gt; Also see “[Todo: C++ Teaching - Consider to enable tutorials to select a UI that is either Textual (Console-ial), 2D Graphical or 3D-graphical through some rudimentary Open Source library developed for that purpose?](../4ebea9b2/chime.md)”
 
 …
 

@@ -5,7 +5,7 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider to design a "Makers Search Engine" that can scrub the web for CAD files and provide search on measurements and physical properties (mechanical function)?"
+==&gt; Also see "[Todo: Consider to design a "Makers Search Engine" that can scrub the web for CAD files and provide search on measurements and physical properties (mechanical function)?](../b32f00c9/chime.md)"
 
 1) Consider the Dewalt has models with 43 mm collars (<https://www.dewalt.se/powertools/productdetails/catno/DCD991P2/> )?
 

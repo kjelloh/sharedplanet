@@ -7,7 +7,7 @@
 {% raw %}
 Maybe the quality of Garcias kits are now good enough to bet on them as a base for my Mobile chargeable battery banks?
 
-==&gt; Also see "Todo: Consider to delve into Electric Vehicle products by studying US based EV West web shop?"
+==&gt; Also see "[Todo: Consider to delve into Electric Vehicle products by studying US based EV West web shop?](../12346a2e/chime.md)"
 
 1) Consider to assemble an "Abstract" of products and parts I need to buy to assemble a DIY 1 kWh battery pack as Proof of Concept?
 

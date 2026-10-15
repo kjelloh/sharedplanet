@@ -7,7 +7,7 @@
 {% raw %}
 Exercism seems like a good community and tools to enange in learning how to program and now v3 is out and is potentially even better?
 
-==&gt; Also see "Todo: Programming - Consider to try out <http://exercism.io/languages/cpp>"
+==&gt; Also see "[Todo: Programming - Consider to try out <http://exercism.io/languages/cpp>](../c4f0f1ae/chime.md)"
 
 1) Exercism seems to live here (<https://exercism.org/dashboard> )?
 

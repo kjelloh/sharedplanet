@@ -5,9 +5,9 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: C++ Elm Idiom - Consider this is actually better described as a Single Atom Architecture (Clojure and React terminology)?"
+==&gt; Also see "[Todo: C++ Elm Idiom - Consider this is actually better described as a Single Atom Architecture (Clojure and React terminology)?](../164356bc/chime.md)"
 
-==&gt; Also see “Todo: Tha, Elm and Immer - Consider the C++ Immer immutable data structures based text editor "ewig" is in fact implementing the Elm model, view, update?
+==&gt; Also see “[Todo: Tha, Elm and Immer - Consider the C++ Immer immutable data structures based text editor "ewig" is in fact implementing the Elm model, view, update?](../5a0eb296/chime.md)
 
 1) Consider the youtube video "BEST WAY to make Desktop Applications in C++" as a template to get started with ImGui (<https://youtu.be/vWXrFetSH8w?list=LL> )?
 

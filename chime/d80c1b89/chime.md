@@ -5,7 +5,7 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see “Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?”
+==&gt; Also see “[Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?](../ca0cdb46/chime.md)”
 
 1) Consider this site showing composite piano action parts (<http://www.pianodisc.eu/en/products/wng-wessell-nickel-gross/wng-parts/design.html>)?
 

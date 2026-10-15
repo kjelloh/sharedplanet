@@ -7,9 +7,9 @@
 {% raw %}
 I want to build a house you can move as modules that fit on standard EU pallets.
 
-==&gt; Also see "Todo: House Build - Consider if I can live in a Tiny House on trailer (e.g. from Swedish Treesign) placed on my property while I build my permanent house?"
+==&gt; Also see "[Todo: House Build - Consider if I can live in a Tiny House on trailer (e.g. from Swedish Treesign) placed on my property while I build my permanent house?](../cbcdb2ec/chime.md)"
 
-==&gt; Also see "Todo: House Build - Consider if I can live in a Tiny House on trailer (e.g. from Swedish Treesign) placed on my property while I build my permanent house?"
+==&gt; Also see "[Todo: House Build - Consider if I can live in a Tiny House on trailer (e.g. from Swedish Treesign) placed on my property while I build my permanent house?](../cbcdb2ec/chime.md)"
 
 > *The idea here is to actually use a trailer designed for Tiny House builds but make the house come together from parts that fit on standard EU pallets.*
 

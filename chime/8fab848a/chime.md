@@ -7,7 +7,7 @@
 {% raw %}
 It seems I should delve a little deeper into Martin-Löf Type Theory to better understand what Type Theory folks are talking about and if and how I can leverage this knowledge into the design of Tha?
 
-==&gt; Also see "Todo: C++ Tha - Consider we need to add Π (dependent function return type) and Σ (dependent pairs) to be able to cope with C++ types as meta shifted semantics?"
+==&gt; Also see "[Todo: C++ Tha - Consider we need to add Π (dependent function return type) and Σ (dependent pairs) to be able to cope with C++ types as meta shifted semantics?](../c55a8ec4/chime.md)"
 
 -1) Consider I have so far missed that SIGMA and PI are SORTs that creates Kinds that in turn creates one single type?
 

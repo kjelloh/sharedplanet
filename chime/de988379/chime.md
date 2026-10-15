@@ -7,7 +7,7 @@
 {% raw %}
 It seems we need some way of composing meta-values to enable us to declare and define the C++ language compositions class, struct, union, enum, namespace?
 
-==&gt; Also see “Todo: Tha function types - Consider we can actually extend normal value-functions to also allow type-functions and kind-functions?”
+==&gt; Also see “[Todo: Tha function types - Consider we can actually extend normal value-functions to also allow type-functions and kind-functions?](../e4335466/chime.md)”
 
 1) Consider we assume we can use selected containers from STL to compose with meta-values?
 

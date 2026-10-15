@@ -7,7 +7,7 @@
 {% raw %}
 I want to discover if I may be tempted to generate LaTeX files as a cross platform document output (as an alternative to RTF or HTML)?
 
-==&gt; Also see "Todo: Consider to document my installation of Linux Mint pdflatex LaTeX document generation platform using the apt-get package manager?"
+==&gt; Also see "[Todo: Consider to document my installation of Linux Mint pdflatex LaTeX document generation platform using the apt-get package manager?](../08a22b9e/chime.md)"
 
 1) This seems to be the console output of my successful Brew package manager installation of?
 

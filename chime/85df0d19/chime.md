@@ -7,10 +7,10 @@
 {% raw %}
 I want to understand the information the ColourPIn SE App is showing for read colours.
 
-==&gt; Also see "Todo: Consider to understand the NCS (Natural Colour System) basics from the short tutorial on their site?"
+==&gt; Also see "[Todo: Consider to understand the NCS (Natural Colour System) basics from the short tutorial on their site?](../9e082416/chime.md)"
 
-==&gt; Also see "Todo: Consider colour design tool chains Image -&gt; RGB -&gt; NCS colour codes on moodboards"  
-==&gt; Also see "Todo: Consider to design a DIY "Color Reader" that can tell the NCS code of a surface like a wall, a fabric or some other (non glossy?) surface like the "NCS Colourpin SE"?"
+==&gt; Also see "[Todo: Consider colour design tool chains Image -&gt; RGB -&gt; NCS colour codes on moodboards](../d709381d/chime.md)"  
+==&gt; Also see "[Todo: Consider to design a DIY "Color Reader" that can tell the NCS code of a surface like a wall, a fabric or some other (non glossy?) surface like the "NCS Colourpin SE"?](../5d2946e4/chime.md)"
 
 1) Consider the information the ColourPIN SE app gives for scanned colours?
 

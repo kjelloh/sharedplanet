@@ -7,8 +7,8 @@
 {% raw %}
 Could it be that we have approached the problem of string encoding and string manipulation from the wrong end? What it we need to separate encoding and representation (transfer) from value semantics and views (using)?
 
-==&gt; See “Todo: Programming - Consider to implement Encoding Aware String types based on C++ Template runtime zero-overhead Metafunctionality?”  
-==&gt; See “Todo: Consider to refactor encoding-aware string types as "dimension aware" meta-data?”  
+==&gt; See “[Todo: Programming - Consider to implement Encoding Aware String types based on C++ Template runtime zero-overhead Metafunctionality?](../3c9f09f2/chime.md)”  
+==&gt; See “[Todo: Consider to refactor encoding-aware string types as "dimension aware" meta-data?](../97702e7d/chime.md)”  
 ==&gt; See “Todo: Testbench - Consider to use the icu-project C++ library for UTF string conversions?”
 
 1) Consider current strings lacks a layer of indirection to process their “meaning” (they only expose a raw representation interface)?

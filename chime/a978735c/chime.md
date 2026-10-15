@@ -7,35 +7,35 @@
 {% raw %}
 I really need to find a better waste water logistics solution for my paint wash up station (it just takes to long and is to cumbersome to wash up and dispense with water between containers)
 
-==&gt; Also see "Todo: paint work and wash up station - Consider to document my progress of making me a "off sewage" paint work space and wash up station?"
+==&gt; Also see "[Todo: paint work and wash up station - Consider to document my progress of making me a "off sewage" paint work space and wash up station?](../da922025/chime.md)"
 
-==&gt; Also see "Todo: Consider a water percolation based paint brush and rollers cleaning process?"
+==&gt; Also see "[Todo: Consider a water percolation based paint brush and rollers cleaning process?](../a5417baf/chime.md)"
 
-==&gt; Also see "Todo: Consider a rotating water dispenser spiral tube for a paint roller percolation cleaner design?"
+==&gt; Also see "[Todo: Consider a rotating water dispenser spiral tube for a paint roller percolation cleaner design?](../e5df80c3/chime.md)"
 
-==&gt; Also see "Todo: Indoor Painting - Consider to make a stainless steel mini sink into a paint tool cleaning station?"
+==&gt; Also see "[Todo: Indoor Painting - Consider to make a stainless steel mini sink into a paint tool cleaning station?](../d94e387f/chime.md)"
 
-==&gt; Also see "Todo: Consider to plan how to paint the wall towards the balcony in my bedroom using suitable tools and procedures?"
+==&gt; Also see "[Todo: Consider to plan how to paint the wall towards the balcony in my bedroom using suitable tools and procedures?](../f54a6bf2/chime.md)"
 
-==&gt; Also see "Todo: Consider to put wall-paint in bag-in-box reusable wine bags or similar with easy to operate dispenser tap? "
+==&gt; Also see "[Todo: Consider to put wall-paint in bag-in-box reusable wine bags or similar with easy to operate dispenser tap?](../2479c8bc/chime.md) "
 
-==&gt; Also see "Todo: Consider to put wall-paint in some soap or epoxy pump dispensers or similar with easy to operate dispenser tap? "
+==&gt; Also see "[Todo: Consider to put wall-paint in some soap or epoxy pump dispensers or similar with easy to operate dispenser tap?](../1c1dab61/chime.md) "
 
-==&gt; Also see "Todo: Wall Painting - Consider my thoughts and observations after the second actual paint job (including wash up)?"
+==&gt; Also see "[Todo: Wall Painting - Consider my thoughts and observations after the second actual paint job (including wash up)?](../6e40552a/chime.md)"
 
-==&gt; Also see "Todo: Wall Paining - Consider I make slow progress with better paint work station equipment but I have yet to practice more to actually put any paint on the wall?"
+==&gt; Also see "[Todo: Wall Paining - Consider I make slow progress with better paint work station equipment but I have yet to practice more to actually put any paint on the wall?](../fe595b1f/chime.md)"
 
-==&gt; Also see "Todo: Consider I still suck at handling paint (how my test run of pouring paint from and to the paint bucket and cleaning the tools revealed many shortcomings in skill, tools and work space)?"
+==&gt; Also see "[Todo: Consider I still suck at handling paint (how my test run of pouring paint from and to the paint bucket and cleaning the tools revealed many shortcomings in skill, tools and work space)?](../4244383c/chime.md)"
 
-==&gt; Also see "Todo: Consider why I am so terrified to start painting my walls and how I may overcome it and also become confident and gain the competence to do it well?"
+==&gt; Also see "[Todo: Consider why I am so terrified to start painting my walls and how I may overcome it and also become confident and gain the competence to do it well?](../1846949d/chime.md)"
 
-==&gt; Also see "Todo: Hydroponic Gardening - Consider to use ultra silent stare pumps for computer cooling to circulate the nutrient solution?"
+==&gt; Also see "[Todo: Hydroponic Gardening - Consider to use ultra silent stare pumps for computer cooling to circulate the nutrient solution?](../1c215304/chime.md)"
 
-==&gt; Also see "Todo: Maker Space - Consider a Paint Boot retractable inside cover (to enable boot space to be retractable and reusable for other work)?"
+==&gt; Also see "[Todo: Maker Space - Consider a Paint Boot retractable inside cover (to enable boot space to be retractable and reusable for other work)?](../f12a4af5/chime.md)"
 
-==&gt; Also see "Todo: Maker Space Spray Gun - Consider the Graco cordless airless spray gun and similar to buy and use for my indoor paint boot?"
+==&gt; Also see "[Todo: Maker Space Spray Gun - Consider the Graco cordless airless spray gun and similar to buy and use for my indoor paint boot?](../db5a8082/chime.md)"
 
-==&gt; Also see "Todo: Consider to make an adapter for using my Makita 18V power tool batteries to power other projects?"
+==&gt; Also see "[Todo: Consider to make an adapter for using my Makita 18V power tool batteries to power other projects?](../b40daa94/chime.md)"
 
 1) Consider the youtube video "Peristaltic Pump || DIY or Buy" (<https://www.youtube.com/watch?v=AMiXme4bMUk> )?
 
@@ -69,7 +69,7 @@ I really need to find a better waste water logistics solution for my paint wash 
 
 2) Consider to experiment and evaluate using using syringes and a Peristaltic Pump to move waste water around on my current paint wash up station?
 
-==&gt; Also see "Todo: Consider to make an adapter for using my Makita 18V power tool batteries to power other projects?"
+==&gt; Also see "[Todo: Consider to make an adapter for using my Makita 18V power tool batteries to power other projects?](../b40daa94/chime.md)"
 
 ==&gt; Consider Kjell & Company (<https://www.kjell.com/se/sortiment/el-verktyg/elektronik/elektromekanik/motorer/luxorparts-vatskepump-peristaltisk-p90782> )?
 
@@ -85,9 +85,9 @@ I really need to find a better waste water logistics solution for my paint wash 
 
 3) Consider to vacuum form a pump house from acrylic sheets (build an electric heated vacuum mould for acrylic sheet forming)?
 
-==&gt; Also see "Todo: Consider to make my own electrically heated vacuum mould for acrylic sheet forming?"
+==&gt; Also see "[Todo: Consider to make my own electrically heated vacuum mould for acrylic sheet forming?](../b35ce423/chime.md)"
 
-==&gt; Also see "Todo: Consider what I need to make my own Chocolate moulds for truffles?"
+==&gt; Also see "[Todo: Consider what I need to make my own Chocolate moulds for truffles?](../5d0278e4/chime.md)"
 
 ...
 

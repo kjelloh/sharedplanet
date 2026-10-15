@@ -7,13 +7,13 @@
 {% raw %}
 Would it now be nice to extend current approach of having Mail-Todo:s with a richer Todo application interface and operations?
 
-==&gt; Also see “Todo: Make the Todo-focus-app although the Force Layout is not yet in place”
+==&gt; Also see “[Todo: Make the Todo-focus-app although the Force Layout is not yet in place](../09088181/chime.md)”
 
-==&gt; Also See “Todo: Consider to make the Todo-mentor app relate Todos and generate force-directed graphs”
+==&gt; Also See “[Todo: Consider to make the Todo-mentor app relate Todos and generate force-directed graphs](../257904c6/chime.md)”
 
-==&gt; Also see “Todo: Application - Consider to write a Virtual Coach that uses state-machines in e-mails to get things going?”
+==&gt; Also see “[Todo: Application - Consider to write a Virtual Coach that uses state-machines in e-mails to get things going?](../5f02cf44/chime.md)”
 
-==&gt; Also See “Todo: buy a server for virtual secretary "
+==&gt; Also See “[Todo: buy a server for virtual secretary](../22505f9f/chime.md) "
 
 1) The application should be able to have an internal representation of Todo:s to be able to work asynchronously with mail-Todo:s (i.e. offline)
 

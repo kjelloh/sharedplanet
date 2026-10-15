@@ -5,9 +5,9 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Darwinet - Consider to delve into the Typescript CRTD library "Collabs" to follow up on the latest research and state of "shared state" technologies and knowledge?"
+==&gt; Also see "[Todo: Darwinet - Consider to delve into the Typescript CRTD library "Collabs" to follow up on the latest research and state of "shared state" technologies and knowledge?](../aaf15dcd/chime.md)"
 
-==&gt; Also see "Todo: Programming - Consider to check out the C++ Immutable Data Structures Library "Immer" and possibly if to use it with Darwinet implementation?"
+==&gt; Also see "[Todo: Programming - Consider to check out the C++ Immutable Data Structures Library "Immer" and possibly if to use it with Darwinet implementation?](../eae8d897/chime.md)"
 
 1) It seems Collabs lives on Github here (<https://github.com/composablesys/collabs> )?
 

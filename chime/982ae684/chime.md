@@ -7,7 +7,7 @@
 {% raw %}
 If I can mount a tow bar on a Tesla model S I can reduce the cost of my car buy by buying a used 2016 model Tesla S for between 300 - 400 000 SEK?
 
-==&gt; Also see "Todo: It seems I should aim at buying a used Tesla Model 3 with tow bar for up to 930 kg on trailer (as my B drivers license allows me to tow max 750 kg anyways)?"
+==&gt; Also see "[Todo: It seems I should aim at buying a used Tesla Model 3 with tow bar for up to 930 kg on trailer (as my B drivers license allows me to tow max 750 kg anyways)?](../4b28f26d/chime.md)"
 
 1) Consider this product (<https://torkliftcentral.com/trailer-hitches/rear-mounted-receiver-hitches/ecohitch/tesla/2012-2016-tesla-model-s-ecohitch-stealth> )?
 

@@ -7,7 +7,7 @@
 {% raw %}
 I still find that keeping my LLVM and Clang++ up-to-date on my macOS requires me to delve into opaque procedures with unclear result but at least using Brew I can just try the approach I documented to work last time so I do this on this time around again :)
 
-==&gt; Also see "Todo: Consider to document how (and where) my brew upgrade llvm from 16.0.2 to 16.0.6 went?"
+==&gt; Also see "[Todo: Consider to document how (and where) my brew upgrade llvm from 16.0.2 to 16.0.6 went?](../b93f6a23/chime.md)"
 
 1) It seems I should be able to do (<https://formulae.brew.sh/formula/llvm> )?
 

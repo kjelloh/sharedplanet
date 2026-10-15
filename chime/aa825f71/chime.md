@@ -7,7 +7,7 @@
 {% raw %}
 I need more information to decide if I want to build and move to MåBraByn in Robertfors municipality.
 
-==&gt; Also see "Todo: House Build - Consider the Umeå municipal initiative "Energieffektivt byggande i kallt klimat"
+==&gt; Also see "[Todo: House Build - Consider the Umeå municipal initiative "Energieffektivt byggande i kallt klimat](../ea9f5d75/chime.md)"
 
 1) Consider this article on "Villa Falk" (<https://www.umea.se/umeakommun/byggaboochmiljo/energiochuppvarmning/projektochnatverk/energieffektivtbyggandeikalltklimat/villafalk.4.774fe05812efd4e09598000821.html> )?
 

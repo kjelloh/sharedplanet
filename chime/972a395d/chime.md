@@ -7,7 +7,7 @@
 {% raw %}
 I suspect I differ from "typical" C++ presenters in that they often explain in textual form while I understand things better in visual form.
 
-==&gt; Also see "Todo: C++ std::function - Consider why I can't instantiate a std::function from std::to_string (hint - can't resolve overloaded functions and std::to_string is overloaded)?"
+==&gt; Also see "[Todo: C++ std::function - Consider why I can't instantiate a std::function from std::to_string (hint - can't resolve overloaded functions and std::to_string is overloaded)?](../0402780a/chime.md)"
 
 1) Consider to "visualise" the youtube presentation "Monoids, Monads, and Applicative Functors: Repeated Software Patterns - David Sankel - CppCon 2020" to better suit how I like to understand things (<https://youtu.be/giWCdQ7fnQU> )?
 

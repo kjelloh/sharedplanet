@@ -7,7 +7,7 @@
 {% raw %}
 It seems I should be able to build a vacuum module for my indoor shed dust extraction system that is based on a 3D printed impeller driven by a brushless out-runner motor?
 
-==&gt; Also see “Todo: DIY Dust Cyclone - Consider to understand Dyson vacuum to design a good dust cyclone separator?"
+==&gt; Also see “[Todo: DIY Dust Cyclone - Consider to understand Dyson vacuum to design a good dust cyclone separator?](../18c5550c/chime.md)"
 
 1) Consider this thingiverse impeller model that seems to be designed for a brushless out runner motor (<https://www.thingiverse.com/thing:590416>)?
 

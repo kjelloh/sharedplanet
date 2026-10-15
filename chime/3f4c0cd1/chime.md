@@ -7,7 +7,7 @@
 {% raw %}
 It seems to me that an alternative way to model time (to explain what time “is”) is that it is “something” that is consumed when change happens in space?
 
-==&gt; Also see “Todo: Consider the feeling of "Meaning" is strongly related to the evolved feeling of reward when we consume time to put our surroundings into the best possible state and motion?"
+==&gt; Also see “[Todo: Consider the feeling of "Meaning" is strongly related to the evolved feeling of reward when we consume time to put our surroundings into the best possible state and motion?](../317b2628/chime.md)"
 
 1) Consider time is a currency-like entity that is consumed to produce, or transformed into, change in the state of space?
 

@@ -7,7 +7,7 @@
 {% raw %}
 I like thinking in abstractions like function composition and this video seems like good food for though :)
 
-==&gt; Also see "Todo: Consider codereport youtube video "More Functional C++?" that comments on Björn Fahler code::dive talk "Moar Functional with C++23 - Björn Fahller - code::dive 2023"?"
+==&gt; Also see "[Todo: Consider codereport youtube video "More Functional C++?" that comments on Björn Fahler code::dive talk "Moar Functional with C++23 - Björn Fahller - code::dive 2023"?](../d9e911ad/chime.md)"
 
 1) Consider the youtube video "Function Composition in Programming Languages - Conor Hoekstra - CppNorth 2023" (<https://youtu.be/JELcdZLre3s> )?
 

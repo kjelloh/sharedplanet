@@ -7,7 +7,7 @@
 {% raw %}
 Could it be possible to design and build my own indoor hydroponic garden for vegetables all year round?
 
-==&gt; Also see “Todo: Hydroponic Gardening - Consider to use ultra silent stare pumps for computer cooling to circulate the nutrient solution?”
+==&gt; Also see “[Todo: Hydroponic Gardening - Consider to use ultra silent stare pumps for computer cooling to circulate the nutrient solution?](../1c215304/chime.md)”
 
 1) Consider to study the products of this company (<http://www.opcomfarm.com>)?
 

@@ -7,11 +7,11 @@
 {% raw %}
 It seems the ”Digital World” ide of mine for User Interfaces and Programming Environments can in fact be modelled, expressed and understood using Category Theory and Functors and Monads?
 
-==&gt; Also see ”Todo: Programming - Consider to follow up on C++ talk on "Flow Interface" builders and monads?”
+==&gt; Also see ”[Todo: Programming - Consider to follow up on C++ talk on "Flow Interface" builders and monads?](../d0331bf6/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to study and understand Functional Programming (e.g. Haskel) "Monads”"
+==&gt; Also see ”[Todo: Programming - Consider to study and understand Functional Programming (e.g. Haskel) "Monads”](../3267f141/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to understand C++ Monoid and Monad concepts?”
+==&gt; Also see ”[Todo: Programming - Consider to understand C++ Monoid and Monad concepts?](../814f2a8a/chime.md)”
 
 1) Consider a transformation from one ”Digital World” to another maps perfectly as a Functor-defined mapping of a source category into a target category?
 

@@ -7,7 +7,7 @@
 {% raw %}
 It seems the Power Supply Modules/Units and USB Power Meeter modules from AliExpress RD Company could be interesting to buy and use?
 
-==&gt; Also see “Todo: Electronic Lab - Consider to find a good enough lab power supply?"
+==&gt; Also see “[Todo: Electronic Lab - Consider to find a good enough lab power supply?](../68506fdb/chime.md)"
 
 1) Consider this is where RD lives on AliExpress (<https://rdtech.aliexpress.com/store/923042>)?
 

@@ -7,11 +7,11 @@
 {% raw %}
 It just came to my mind that it would be possible to define a C++ object that, on construction, stores an ID which is a hash of its adress and value. It would seem such an object could be made so that it is not possible to create a valid copy (the copy would have another ID and thus be a totally other object, not a clone)? Consider to elaboprate on this idea and if we can see usage of such objects to track "identity" (e.g., for electronic currency or IRL object representations)?
 
-==&gt; Also see "Todo: Consider to compare physical and digital identity?"  
-==&gt; Also see "Todo: Darwinet - Consider to relate Darwinet Identity Authorization mechanism to existing web-intiatives for this?"  
-==&gt; Also see "Todo: Consider to write about IRL-Single-Identity versus Digital-Multiple-Identity mapping of services? "  
-==&gt; Also see "Todo: Consider to note and write down typical "Digital Identity" inconveniences?"  
-==&gt; Also see "Todo: Compare Darwinet with other digital identity synchronisation services like IFTT"
+==&gt; Also see "[Todo: Consider to compare physical and digital identity?](../6bcea7be/chime.md)"  
+==&gt; Also see "[Todo: Darwinet - Consider to relate Darwinet Identity Authorization mechanism to existing web-intiatives for this?](../5f7240ed/chime.md)"  
+==&gt; Also see "[Todo: Consider to write about IRL-Single-Identity versus Digital-Multiple-Identity mapping of services?](../3602bb47/chime.md) "  
+==&gt; Also see "[Todo: Consider to note and write down typical "Digital Identity" inconveniences?](../d046947f/chime.md)"  
+==&gt; Also see "[Todo: Compare Darwinet with other digital identity synchronisation services like IFTT](../71f42c55/chime.md)"
 
 1) Consider how such an object should implement construction, assignment, move and equal operator?
 

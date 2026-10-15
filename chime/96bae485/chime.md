@@ -7,7 +7,7 @@
 {% raw %}
 It seems it could be a good idea to see what Microsoft REST SDK C++ library on GitHub can do?
 
-==&gt; Also see “Todo: Consider to document how to install and maintain C++ Boost libraries in Xcode and OS X?"
+==&gt; Also see “[Todo: Consider to document how to install and maintain C++ Boost libraries in Xcode and OS X?](../49f65c96/chime.md)"
 
 -1) Consider to use only brew-installed libraries (and thus only brew-cellar search paths in Xcode)?
 

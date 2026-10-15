@@ -7,7 +7,7 @@
 {% raw %}
 Could it be fun and informative to get hold of batteries from different power tool vendors and study them for difference and similarities?
 
-==&gt; Also see “Todo: Cordless Brushless Tools - Consider to save good URL:s and information on available Cordless Brushless power tool systems?"
+==&gt; Also see “[Todo: Cordless Brushless Tools - Consider to save good URL:s and information on available Cordless Brushless power tool systems?](../8f812263/chime.md)"
 
 1) Consider links to known vendor batteries (and chargers)?
 

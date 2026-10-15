@@ -7,7 +7,7 @@
 {% raw %}
 It seems to make good choices on what external storage I can connect to the Mac Pro I need to understand the Thunderbolt 2 connections and protocol?
 
-==&gt; Also see "Todo: Consider to understand the USB-C connector and the protocols Thunderbolt, DisplayPort, USB and PCI Express it supports transfer of?"
+==&gt; Also see "[Todo: Consider to understand the USB-C connector and the protocols Thunderbolt, DisplayPort, USB and PCI Express it supports transfer of?](../0eb2cde1/chime.md)"
 
 -1) Consider to document the current "bottom line" regarding my options for external storage for my Mac Pro 2013?
 

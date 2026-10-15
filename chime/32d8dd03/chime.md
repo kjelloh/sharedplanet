@@ -7,7 +7,7 @@
 {% raw %}
 It seems it will serve us well to really understand how we should evaluate the parser created AST using the Tha as the environment?
 
-==&gt; Also see ”Todo: Meh - Consider to define the non terminal (AST nodes) and terminal (AST leafs) symbols of the Meh grammar?"
+==&gt; Also see ”[Todo: Meh - Consider to define the non terminal (AST nodes) and terminal (AST leafs) symbols of the Meh grammar?](../9bc437b4/chime.md)"
 
 1) Consider to study github project ”Lisp in C++” (<https://github.com/klmr/lisp.cpp>)?
 

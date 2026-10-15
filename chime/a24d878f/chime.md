@@ -7,7 +7,7 @@
 {% raw %}
 Could it be worth the initial learning curve (and become boost dependent) to try to implement the Meh parser using Boost Spirit Qi?
 
-==&gt; Also see ”Todo: Meta Value Model - It seems to parse and evaluate Meh expressions I really need to get a grip on s-expressions explicitly and grammar parsing i general?"
+==&gt; Also see ”[Todo: Meta Value Model - It seems to parse and evaluate Meh expressions I really need to get a grip on s-expressions explicitly and grammar parsing i general?](../2f41063b/chime.md)"
 
 1) Consider this Boost X3 example with a complete Grammar C++ X3 based Repl including an AST and AST printer (<https://github.com/djowel/spirit_x3/blob/master/example/x3/calc5.cpp>)
 

@@ -7,7 +7,7 @@
 {% raw %}
 Consider it could be a good idea to use the analogy of Money as ”work energy” to explain what financial services are all about (i.e. not about using money to get wok done)?
 
-==&gt; Also see ”Todo: About Money and new Currencies - Consider the two tracks of 1) Understanding Money as "work energy" and 2) Designs of Currencies that have us do the "right" work?"
+==&gt; Also see ”[Todo: About Money and new Currencies - Consider the two tracks of 1) Understanding Money as "work energy" and 2) Designs of Currencies that have us do the "right" work?](../c08de4d3/chime.md)"
 
 1) Consider saving money on a bank account to get interest is like letting someone else to use your ”work energy” as long as they return more energy than they borrowed?
 

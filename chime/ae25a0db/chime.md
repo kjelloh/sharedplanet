@@ -7,11 +7,11 @@
 {% raw %}
 Could it be feasible to learn how to run C++ Juce applications on a Raspberry Pi and thus be able to program my own audio devices?
 
-==&gt; Also see ”Todo: Programming - Consider to delve into the Faust DSP language echo-system from the talk "FAUST DSP language ecosystem meets JUCE" by Stephane Letz?”
+==&gt; Also see ”[Todo: Programming - Consider to delve into the Faust DSP language echo-system from the talk "FAUST DSP language ecosystem meets JUCE" by Stephane Letz?](../45deb608/chime.md)”
 
-==&gt; Also see ”Todo: C++ - Consider to check out Juce talks on youtube?”
+==&gt; Also see ”[Todo: C++ - Consider to check out Juce talks on youtube?](../2eafc8aa/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?”
+==&gt; Also see ”[Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?](../f38fc1c2/chime.md)”
 
 1) Consider this article ”Building Juce applications on the Raspberry Pi” describing how to build C++ Juce Apps for Rapberry Pi (<https://github.com/rec/echomesh/blob/master/documentation/Building%20Juce%20applications%20on%20the%20Raspberry%20Pi.md>)?
 
@@ -19,7 +19,7 @@ Could it be feasible to learn how to run C++ Juce applications on a Raspberry Pi
 
 2) Consider to find alternative frameworks to develop Audio Applications on the Raspberry Pi?
 
-==&gt; Also see ”Todo: Audio Programming - Consider to follow up on existing frameworks for developing audio processing applications?"
+==&gt; Also see ”[Todo: Audio Programming - Consider to follow up on existing frameworks for developing audio processing applications?](../479acc46/chime.md)"
 
 …
 

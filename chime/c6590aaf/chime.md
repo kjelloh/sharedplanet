@@ -7,9 +7,9 @@
 {% raw %}
 If I can build FreeCad I may be able to strip it down to a simple-to-use version for my own needs to 3D print and design my house?
 
-==&gt; Also see "Todo: Consider to document how (and where) my brew upgrade gcc to gcc13 went?"
+==&gt; Also see "[Todo: Consider to document how (and where) my brew upgrade gcc to gcc13 went?](../508d1c88/chime.md)"
 
-==&gt; Also see "Todo: Consider to document how I tried to build FreeCad from Github latest branch on mac OS?"
+==&gt; Also see "[Todo: Consider to document how I tried to build FreeCad from Github latest branch on mac OS?](../f3c139e0/chime.md)"
 
 1) This seems to be the current instructions on how to build FreeCad using Docker (<https://wiki.freecad.org/Compile_on_Docker> )?
 

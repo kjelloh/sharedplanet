@@ -7,9 +7,9 @@
 {% raw %}
 Are there some simple faux or sponge painting techniques I can try out on my home walls to paint them so they appear more "alive" (not so flat and dull)?
 
-==&gt; Also see "Todo: Wall Painting - Consider to use Lime Wash (Swedish Kalkfärg) on my tv-room wall to get a more "alive" texture?"
+==&gt; Also see "[Todo: Wall Painting - Consider to use Lime Wash (Swedish Kalkfärg) on my tv-room wall to get a more "alive" texture?](../841c8fe8/chime.md)"
 
-==&gt; Also see "Todo: Wall Painting - Consider to what degree the NCS Colour System is a colur coding system I can use to define colour of paint I buy from different vendors?"
+==&gt; Also see "[Todo: Wall Painting - Consider to what degree the NCS Colour System is a colur coding system I can use to define colour of paint I buy from different vendors?](../eb03bfc9/chime.md)"
 
 1) Consider my existing wall paper in the room actually has a "spongy" pattern applied to them?
 

@@ -5,7 +5,7 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider to document my installation of macOS mactex LaTeX document generation platform using the Brew package manager?"
+==&gt; Also see "[Todo: Consider to document my installation of macOS mactex LaTeX document generation platform using the Brew package manager?](../4a568246/chime.md)"
 
 1) This seems to be my successful apt-get install of pdflatex framework on my Ubuntu Mint virtual machine?
 

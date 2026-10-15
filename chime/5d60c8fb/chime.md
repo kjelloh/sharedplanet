@@ -7,7 +7,7 @@
 {% raw %}
 I want to try a higher quality Ryoba (Kataba?) saw to see what the difference is from my most appreciated and well used Wisen Ryoba saw.
 
-==&gt; Also see "Todo: Consider a motorised hand held saw like a European push saw or a Japanese nokogiri pull saw (e.g. the double blade Ryoba saw)?"
+==&gt; Also see "[Todo: Consider a motorised hand held saw like a European push saw or a Japanese nokogiri pull saw (e.g. the double blade Ryoba saw)?](../eb9bd655/chime.md)"
 
 -1) I ordered the Hishika Industris 240 mm Ryoba Rip and Cut saw (<https://www.rubank.se/en/ryoba-saw-240mm-long> )
 

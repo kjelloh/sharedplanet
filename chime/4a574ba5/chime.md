@@ -27,7 +27,7 @@ Can we imagine a C++ build environment to detect libraries and interfaces in sou
 
 2) Consider to compare with the Eclipse Plugin that uses this algorithm to view template/constexpr instantiations?
 
-==&gt; See “Todo: C++ - Consider to study template specialisation to understand it better"
+==&gt; See “[Todo: C++ - Consider to study template specialisation to understand it better](../27273c2c/chime.md)"
 
 ==&gt; At 9:20 in (<https://www.youtube.com/watch?v=ltfmBUAmePE>) he shows a cool feature showing a (Strongly Connected Component, SCC?) graph of the generated println?
 

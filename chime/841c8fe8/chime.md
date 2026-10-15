@@ -7,9 +7,9 @@
 {% raw %}
 Maybe painting with some modern lime wash paint is the way to go on my tv room walls (as it is also currently in fashion)?
 
-==&gt; Also see "Todo: Wall Painting - Consider to delve into sponge and faux painting options to optionally try out to have my painted walls look more "alive"?"
+==&gt; Also see "[Todo: Wall Painting - Consider to delve into sponge and faux painting options to optionally try out to have my painted walls look more "alive"?](../e4b81404/chime.md)"
 
-==&gt; Also see "Todo: Wall Painting - Consider to what degree the NCS Colour System is a colur coding system I can use to define colour of paint I buy from different vendors?"
+==&gt; Also see "[Todo: Wall Painting - Consider to what degree the NCS Colour System is a colur coding system I can use to define colour of paint I buy from different vendors?](../eb03bfc9/chime.md)"
 
 1) Consider wikipedia on Lime Wash (<https://en.wikipedia.org/wiki/Whitewash> )?
 

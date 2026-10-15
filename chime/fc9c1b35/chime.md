@@ -7,7 +7,7 @@
 {% raw %}
 I stumbled on a talk by Carin Meier on ”chemical computing” that inspired me to follow up on this idea to program algorithms using ”molecules” of functions and data that ”react” eventually leaving a stable ”solution”. Great Scott - this seems to be a way to introduce and leverage emergence as a component to solve problems?
 
-==&gt; Also see "Todo: Programming - Consider if it is possible to infer actor rules of a self organising complex system with an emergent behaviour isomorphic to some studied system or computation (e.g., through deep learning and Tha meta tier modelling)?"
+==&gt; Also see "[Todo: Programming - Consider if it is possible to infer actor rules of a self organising complex system with an emergent behaviour isomorphic to some studied system or computation (e.g., through deep learning and Tha meta tier modelling)?](../466285e0/chime.md)"
 
 1) Consider the talk ”"Unconventional Programming with Chemical Computing" by Carin Meier” that inspired me (<https://www.youtube.com/watch?v=cHoYNStQOEc>)?
 

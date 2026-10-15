@@ -7,7 +7,7 @@
 {% raw %}
 Could it be a good idea to understand C++ types (any language types) in terms of Product, Sum and Exponential types with named or indexed members?
 
-==&gt; Also see “Todo: Darwinet Meh - Consider to study the Julia lisp-based language as inspiration and incorporation when designing the Meh language for the Darwinet Tha model?"
+==&gt; Also see “[Todo: Darwinet Meh - Consider to study the Julia lisp-based language as inspiration and incorporation when designing the Meh language for the Darwinet Tha model?](../faf4ad4f/chime.md)"
 
 1) Consider C++ Product Types?
 

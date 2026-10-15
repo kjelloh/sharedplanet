@@ -7,7 +7,7 @@
 {% raw %}
 I need some trusted way to design and build an electrical power storage system.
 
-==&gt; Also see "Todo: Consider to follow SOK "power wall" Battery modules for future off-grid electrical system?"
+==&gt; Also see "[Todo: Consider to follow SOK "power wall" Battery modules for future off-grid electrical system?](../d063e166/chime.md)"
 
 1) This seems to be the home of Jakiper batteries (<https://jakiperbattery.com> )?
 

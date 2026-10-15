@@ -7,7 +7,7 @@
 {% raw %}
 I would like to use my Tesla Y as a power bank.
 
-==&gt; Also see "Todo: Consider ISO 15118-2 that defines the messaging protocol between electric vehicle (EV) and Electric Vehicle Supply Equipment (ESVE)?"
+==&gt; Also see "[Todo: Consider ISO 15118-2 that defines the messaging protocol between electric vehicle (EV) and Electric Vehicle Supply Equipment (ESVE)?](../11183dfe/chime.md)"
 
 1) Consider the USA (AliExpress?) available "Tesla V2L Discharge Device 2KW/4KW" shown in youtube video "This V2L Adapter uses Tesla's High Voltage Battery to Power Anything / Can Power Another Tesla Too!" (<https://youtu.be/fikgI4XdCgY> )
 

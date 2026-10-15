@@ -7,7 +7,7 @@
 {% raw %}
 It seems I still have not succeeded to get Python to install and behave correctly on my OS X machine (and thus it also fails to work with VSCode)?
 
-==&gt; Also see “Todo: Python Programming - Consider to learn Python and try Web scraping and IMAP mail fetching using Python Scripts?”
+==&gt; Also see “[Todo: Python Programming - Consider to learn Python and try Web scraping and IMAP mail fetching using Python Scripts?](../ee3f1eb2/chime.md)”
 
 1) It seems after installing Python extension to VSCode my python installation is even worse than before?
 

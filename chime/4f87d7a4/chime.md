@@ -7,7 +7,7 @@
 {% raw %}
 Could we express the idea to be able to evaluate programming language algebra semantics on meta-values is in fact a way to “shift down” the types system to get to use value-semantics on types and kinds?
 
-==&gt; Also see “Todo: Tha - Consider to understand the relation between a programming language algebraic semantics (values and operations) and the Tha meta-value model (type system)?"
+==&gt; Also see “[Todo: Tha - Consider to understand the relation between a programming language algebraic semantics (values and operations) and the Tha meta-value model (type system)?](../70efe8d2/chime.md)"
 
 1) Consider to decide what terms to use to describe this idea of algebra-semantics-shifting?
 

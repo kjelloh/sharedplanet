@@ -7,9 +7,9 @@
 {% raw %}
 Could we imagine to actually experiment with training a neural network to classify my company book keeping vouchers to use as a base for automation of registration?
 
-==&gt; Also see “Todo: Programming AI - Consider to experiment with Intel Movidius™ Neural Compute Stick?”
+==&gt; Also see “[Todo: Programming AI - Consider to experiment with Intel Movidius™ Neural Compute Stick?](../e3628fb5/chime.md)”
 
-==&gt; Also see “Todo: Personal AI - Consider to use the AI Single Board Computers from 96boards.ai as the base to build my personal AI?”
+==&gt; Also see “[Todo: Personal AI - Consider to use the AI Single Board Computers from 96boards.ai as the base to build my personal AI?](../c7fb1046/chime.md)”
 
 1) Consider to decide on ways to train some neural network on all the vouchers I have stored for book keeping of my company?
 

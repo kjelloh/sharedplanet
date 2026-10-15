@@ -7,7 +7,7 @@
 {% raw %}
 So, what can we learn by investigating what a Wh cost for different power tool (&gt;20A discharge ability?) battery options?
 
-==&gt; Also see “Todo: Consider to measure Makita 18V tools max discharge current?"
+==&gt; Also see “[Todo: Consider to measure Makita 18V tools max discharge current?](../698c806c/chime.md)"
 
 1) Consider the sale prices at verktygsvaruhuset (<https://www.verktygsvaruhuset.se/?utm_campaign=cmp_774857&utm_medium=email&utm_source=getanewsletter>)?
 
@@ -53,7 +53,7 @@ So, what can we learn by investigating what a Wh cost for different power tool (
 
 ==&gt; So, can I use cells with lesser max discharge current and still get defined performance from my Makita tools?
 
-==&gt; Also see “Todo: Consider to measure Makita 18V tools max discharge current?”
+==&gt; Also see “[Todo: Consider to measure Makita 18V tools max discharge current?](../698c806c/chime.md)”
 
 ==&gt; Compare 8 pack of Samsung ICR18650-26-8 (<https://www.conrad.se/?websale8=conrad-swe&pi=1410108&rdeocl=1&rdetpl=desktop_productpage&rdebox=box3>)?
 

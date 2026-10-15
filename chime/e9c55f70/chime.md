@@ -7,7 +7,7 @@
 {% raw %}
 I want a first-principle "good" front fork suspension for my bicycle and find the friction of air forks are simply to large for my taste (am I wrong)?
 
-==&gt; Also see "Todo: Consider that my "dream" bicycle suspension fork is an upside down coil fork?"
+==&gt; Also see "[Todo: Consider that my "dream" bicycle suspension fork is an upside down coil fork?](../04ce9da2/chime.md)"
 
 1) Consider this youtube video "Fork seal drag and why you should service your MTB suspension" where they state the seal "drag" to be 13 pounds unserviced (<https://youtu.be/7t3EpdZgpNQ> )?
 

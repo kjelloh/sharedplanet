@@ -7,11 +7,11 @@
 {% raw %}
 Watching a Juce talk on JIT-compiled C++ using the Pro-Jucer IDE I got inspired to use leads in this talk to explain all the phases the exists to turn C++ source code into the executable that are actually processed by the CPU on the target machine?
 
-==&gt; Also see ”Todo: Programming - Consider a source-file-system for c++ that exposes a "representation-view" of representation-invariant (e.g. AST-graph) c++ translation units? ”
+==&gt; Also see ”[Todo: Programming - Consider a source-file-system for c++ that exposes a "representation-view" of representation-invariant (e.g. AST-graph) c++ translation units?](../91d7816a/chime.md) ”
 
-==&gt; Also see ”Todo: Programming - Consider to define transform of C++ code into executable code as a stack-of-transformations?”
+==&gt; Also see ”[Todo: Programming - Consider to define transform of C++ code into executable code as a stack-of-transformations?](../a2b1e6e4/chime.md)”
 
-==&gt; Also see ”Todo: programming - Consider to implement a C++ open source library to compile-time identify the build tool chain and target platform?"
+==&gt; Also see ”[Todo: programming - Consider to implement a C++ open source library to compile-time identify the build tool chain and target platform?](../9cdf6484/chime.md)"
 
 1) The Juce talk ”Behind the Scenes of the Pro-Jucer Live-Build Engine” by Stefan Gränitz about this seem to live here (<https://www.youtube.com/watch?v=x2GnSXlSpwk>)?
 

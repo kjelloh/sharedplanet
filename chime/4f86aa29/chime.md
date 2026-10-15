@@ -7,17 +7,17 @@
 {% raw %}
 It seems I am homing in on some possible ways to get my private data stored externally of my computer and also have it backed up and weeded out of old data (cleaned from dead data)?
 
-==&gt; Also see "Todo: Consider an external PCIe enclosure over Thunderbolt 3 to create an external M.2 NVMe SSD storage?"
+==&gt; Also see "[Todo: Consider an external PCIe enclosure over Thunderbolt 3 to create an external M.2 NVMe SSD storage?](../d695139e/chime.md)"
 
-==&gt; Also see "Todo: Consider we would like to have programmable hardware near RAM, CPU, GPU and SSD so that we can in run time move compression algorithms close to data to be stream-processed?"
+==&gt; Also see "[Todo: Consider we would like to have programmable hardware near RAM, CPU, GPU and SSD so that we can in run time move compression algorithms close to data to be stream-processed?](../9cdfae3b/chime.md)"
 
-==&gt; Also see "Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?"
+==&gt; Also see "[Todo: mac Pro 2013 PCIe SSD - Consider the Amfeltec Angleshark Carrier Board to expand existing SSD with two standard M.2 SSD slots?](../64d58572/chime.md)"
 
-==&gt; Also see "Todo: Consider to study and understand SSD S.M.A.R.T status data logging and interpretation (e.g., by using the command line smartmon tools)?"
+==&gt; Also see "[Todo: Consider to study and understand SSD S.M.A.R.T status data logging and interpretation (e.g., by using the command line smartmon tools)?](../4eb77f14/chime.md)"
 
-==&gt; Also see "Todo: Consider how to correctly connect my Apple LED Cinema Display 27" (mid 2010) to computers with different external ports (e.g., MAC Pro 2013 USB-3 and Thunderbolt 2 or future USB-C and USB4 ports)?"
+==&gt; Also see "[Todo: Consider how to correctly connect my Apple LED Cinema Display 27" (mid 2010) to computers with different external ports (e.g., MAC Pro 2013 USB-3 and Thunderbolt 2 or future USB-C and USB4 ports)?](../7a90d20d/chime.md)"
 
-==&gt; Also see "Todo: Consider to understand the USB-C connector and the protocols Thunderbolt, DisplayPort, USB and PCI Express it supports transfer of?"
+==&gt; Also see "[Todo: Consider to understand the USB-C connector and the protocols Thunderbolt, DisplayPort, USB and PCI Express it supports transfer of?](../0eb2cde1/chime.md)"
 
 1) Consider to speculate on my requirements to evolve and maintain my digital life data separated from any computer I happen to work on?
 

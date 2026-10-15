@@ -7,9 +7,9 @@
 {% raw %}
 Nope, I still don't have the skill nor the tools or the work station to confidently nor effectively handle paint or clean the tools!
 
-==&gt; Also see "Todo: Consider why I am so terrified to start painting my walls and how I may overcome it and also become confident and gain the competence to do it well?"
+==&gt; Also see "[Todo: Consider why I am so terrified to start painting my walls and how I may overcome it and also become confident and gain the competence to do it well?](../1846949d/chime.md)"
 
-==&gt; Also see "Todo: Indoor Painting - Consider to make a stainless steel mini sink into a paint tool cleaning station?"
+==&gt; Also see "[Todo: Indoor Painting - Consider to make a stainless steel mini sink into a paint tool cleaning station?](../d94e387f/chime.md)"
 
 1) Consider what I learned when practicing pouring paint and cleaning my tools at my paint work station?
 

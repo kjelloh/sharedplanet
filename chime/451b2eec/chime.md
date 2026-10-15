@@ -5,17 +5,17 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider the Raspberry Pi 12 MP HQ Camera?"
+==&gt; Also see "[Todo: Consider the Raspberry Pi 12 MP HQ Camera?](../2e1c3d40/chime.md)"
 
-==&gt; Also see "Todo: Consider to check out the "Foldscope" - The paper microscope. A cardboard based super cheap but still seemingly capable microscope with a mission to provide scientific exploration capabilities to the whole world?"
+==&gt; Also see "[Todo: Consider to check out the "Foldscope" - The paper microscope. A cardboard based super cheap but still seemingly capable microscope with a mission to provide scientific exploration capabilities to the whole world?](../34bb8c49/chime.md)"
 
-==&gt; Also see "Todo: Electronics Lab - Consider to buy a trinocular electronics work microscope?"
+==&gt; Also see "[Todo: Electronics Lab - Consider to buy a trinocular electronics work microscope?](../a1573e77/chime.md)"
 
-==&gt; Also see "Todo: Consider to document a wish-list for components for my Electronics lab?"
+==&gt; Also see "[Todo: Consider to document a wish-list for components for my Electronics lab?](../777764dd/chime.md)"
 
-==&gt; Also see "Todo: Electronics Lab - Consider to buy a trinocular electronics work microscope?"
+==&gt; Also see "[Todo: Electronics Lab - Consider to buy a trinocular electronics work microscope?](../a1573e77/chime.md)"
 
-==&gt; Also see "Todo: Consider to follow up on components and products used and described on the Macro Reps youtube channel?"
+==&gt; Also see "[Todo: Consider to follow up on components and products used and described on the Macro Reps youtube channel?](../b24a430d/chime.md)"
 
 -1) Consider the bottom line of what I think I know about mounting a the Raspberry Pi HQ camera to a trinocular electronics work microscope?
 

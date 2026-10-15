@@ -7,7 +7,7 @@
 {% raw %}
 It seems my project of using my spice glass jars as wall mounted screw storage will require me to try and hot glue the jar caps to wood as fasteners (and then I need a glue gun and glue to try out)?
 
-==&gt; Also see “Todo: Hot Melt Adhesive System - Consider to compare 3M or TechSil Hot Glue Gun Systems (Hot and Low melt)?"
+==&gt; Also see “[Todo: Hot Melt Adhesive System - Consider to compare 3M or TechSil Hot Glue Gun Systems (Hot and Low melt)?](../1793b731/chime.md)"
 
 -1) Consider the abstract of what I have learned about Glue guns and glue sticks?
 

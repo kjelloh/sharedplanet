@@ -7,7 +7,7 @@
 {% raw %}
 I have been thinking about how to design a machine that can use the same cutting wheel both in “planer” and “jointer” configuration and got the idea that perhaps we can do a first try with a hand planer?
 
-==&gt; Also see “Todo: Consider a combined jointer planer power tool design (same cutting wheel but wood pressed towards to joint it or pressed to a parallel plane to plane)?”
+==&gt; Also see “[Todo: Consider a combined jointer planer power tool design (same cutting wheel but wood pressed towards to joint it or pressed to a parallel plane to plane)?](../beed8030/chime.md)”
 
 1) Consider what hand planers I can choose from and how much they cost?
 

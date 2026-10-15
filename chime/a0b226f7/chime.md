@@ -23,7 +23,7 @@ Could it be a good core idea to centralize Shared Planet Businesses round a ”S
 
 4) Consider to write the Manifest so that it may be part of ”Suffering reduction” business approaches?
 
-==&gt; See ”Todo: Manifest - Consider to write a manifest for a "Suffer Less" Grocery Store for the future?”  
+==&gt; See ”[Todo: Manifest - Consider to write a manifest for a "Suffer Less" Grocery Store for the future?](../fd16fd9e/chime.md)”  
 …
 
 …

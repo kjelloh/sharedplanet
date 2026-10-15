@@ -7,23 +7,23 @@
 {% raw %}
 Could it be a good idea to implement the tag-path based encode and decode of modelled data structures as services of a C++ library?
 
-==&gt; Also see ”Todo: Programming - Consider tag-path-based encoding and decoding to allow for both implicit and explicit value encodings"
+==&gt; Also see ”[Todo: Programming - Consider tag-path-based encoding and decoding to allow for both implicit and explicit value encodings](../7293f565/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider different Generator or Iterator design of general Protocol Message encode decode library?"
+==&gt; Also see ”[Todo: Programming - Consider different Generator or Iterator design of general Protocol Message encode decode library?](../d214f257/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to design lazy (two-pass) Protocol Message Encoding and Decoding using tagged-range-ASTs?"
+==&gt; Also see ”[Todo: Programming - Consider to design lazy (two-pass) Protocol Message Encoding and Decoding using tagged-range-ASTs?](../42b8afaf/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to analyze the Protocol Encode/Decode Engine by thinking about the components we want to be able to re-use/change?”
+==&gt; Also see ”[Todo: Programming - Consider to analyze the Protocol Encode/Decode Engine by thinking about the components we want to be able to re-use/change?](../61674531/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to note that Character-set encoding is a special but strong part of Protocol Message Encodings?"
+==&gt; Also see ”[Todo: Programming - Consider to note that Character-set encoding is a special but strong part of Protocol Message Encodings?](../11a55529/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to play with the term "Codec" for a name on the C++ object that uses a Protocol Data Model to encode and decode to and from serialized form of protocol messages?"
+==&gt; Also see ”[Todo: Programming - Consider to play with the term "Codec" for a name on the C++ object that uses a Protocol Data Model to encode and decode to and from serialized form of protocol messages?](../d7f10143/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to compare Googles protobuf with my initiate for a tag.-path based encoder/decoder library?"
+==&gt; Also see ”[Todo: Programming - Consider to compare Googles protobuf with my initiate for a tag.-path based encoder/decoder library?](../38ff5841/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to implement a C++ library that provides services that applies tag-path based encoder/decoder idiom to encode packages for popular package managers (e.g. chocolate, NuGet, apt and brew)?"
+==&gt; Also see ”[Todo: Programming - Consider to implement a C++ library that provides services that applies tag-path based encoder/decoder idiom to encode packages for popular package managers (e.g. chocolate, NuGet, apt and brew)?](../26072468/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to wrap tag-path based encoding/decoding into stream operator &gt;&gt; and &lt;&lt;?"
+==&gt; Also see ”[Todo: Programming - Consider to wrap tag-path based encoding/decoding into stream operator &gt;&gt; and &lt;&lt;?](../60ad2d21/chime.md)"
 
 1) Consider a good name for such a library?
 

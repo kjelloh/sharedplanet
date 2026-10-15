@@ -9,7 +9,7 @@ So, what can we learn by deconstructing C++ language into meta-layers of mechani
 
 1) Consider to compare with recognized meta-value basic pattern?
 
-==&gt; See ”Todo: Darwinet - Consider the general relation between Meta-values and values (e.g., consider meta-value atom, record, array to be general)?”
+==&gt; See ”[Todo: Darwinet - Consider the general relation between Meta-values and values (e.g., consider meta-value atom, record, array to be general)?](../3bcffda8/chime.md)”
 
 > // Basic meta-value constructs  
 > /\*

@@ -23,9 +23,9 @@ Could it be possible to implement some Neural Network to engage with me and make
 
 2) Consider what hardware I can use to run my Neural Network?
 
-==&gt; Also see “Todo: Programming AI - Consider to experiment with Intel Movidius™ Neural Compute Stick?”
+==&gt; Also see “[Todo: Programming AI - Consider to experiment with Intel Movidius™ Neural Compute Stick?](../e3628fb5/chime.md)”
 
-==&gt; Also see “Todo: Personal AI - Consider to use the AI Single Board Computers from 96boards.ai as the base to build my personal AI?”
+==&gt; Also see “[Todo: Personal AI - Consider to use the AI Single Board Computers from 96boards.ai as the base to build my personal AI?](../c7fb1046/chime.md)”
 
 ==&gt; Consider to use the HiKey 960 SBC for my personal AI (<http://www.lenovator.com/product/80.html>)?
 

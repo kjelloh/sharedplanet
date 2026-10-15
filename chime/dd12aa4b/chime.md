@@ -7,15 +7,15 @@
 {% raw %}
 I stumbled on a youtube video showing how to use T-slot cutting router bits to create T-slots in wood for wood cutting jig designs.
 
-==&gt; Also see "Todo: Consider what aluminium profiles and T-tracks that fits Festool "standard" clamps (for DIY workbench builds)?"
+==&gt; Also see "[Todo: Consider what aluminium profiles and T-tracks that fits Festool "standard" clamps (for DIY workbench builds)?](../cd4a0f49/chime.md)"
 
-==&gt; Also see "Todo: Consider the "Bosch Rexroth Silver Aluminium Strut, 30 x 30 mm, 8mm Groove , 2000mm Length" as T-track (T-slot) fastener for my compact living sliding workspace wall?"
+==&gt; Also see "[Todo: Consider the "Bosch Rexroth Silver Aluminium Strut, 30 x 30 mm, 8mm Groove , 2000mm Length" as T-track (T-slot) fastener for my compact living sliding workspace wall?](../32fc493f/chime.md)"
 
-==&gt; Also see "Todo: Consider a roof moulding with T-slot that can act as fastener and support for floor resting shelves consoles or sides?"
+==&gt; Also see "[Todo: Consider a roof moulding with T-slot that can act as fastener and support for floor resting shelves consoles or sides?](../04c484c6/chime.md)"
 
-==&gt; Also see "Todo: Consider a T-slot 10mm wide, 5mm deep with 6mm groove would fit a "standard" M6 hex bolt head or nut?"
+==&gt; Also see "[Todo: Consider a T-slot 10mm wide, 5mm deep with 6mm groove would fit a "standard" M6 hex bolt head or nut?](../c4df6861/chime.md)"
 
-==&gt; Also see "Todo: Consider to build a table saw rip fence using a threaded rod in an Incra T-slot?"
+==&gt; Also see "[Todo: Consider to build a table saw rip fence using a threaded rod in an Incra T-slot?](../bf959e20/chime.md)"
 
 1) This seems to be the youtube video “DIY T-Tracks For Amazing Jigs & Tools” by Eric Sorensen (<https://www.youtube.com/watch?v=nqI5nhj05Ys>)?
 
@@ -43,7 +43,7 @@ Consider to remember this option of routing T-slots in wood for fastening using 
 
 3) Consider a T-slot that accepts a "standard" M6 bolt head?
 
-==&gt; Also see "Todo: Consider a T-slot 10mm wide, 5mm deep with 6mm groove would fit a "standard" M6 hex bolt head or nut?"
+==&gt; Also see "[Todo: Consider a T-slot 10mm wide, 5mm deep with 6mm groove would fit a "standard" M6 hex bolt head or nut?](../c4df6861/chime.md)"
 
 ![](<IMG_4739 2.jpeg>)
 
@@ -55,7 +55,7 @@ Consider to remember this option of routing T-slots in wood for fastening using 
 
 4) Consider a T-slot that accepts a festool clamp?
 
-==&gt; Also see "Todo: Consider what aluminium profiles and T-tracks that fits Festool "standard" clamps (for DIY workbench builds)?"
+==&gt; Also see "[Todo: Consider what aluminium profiles and T-tracks that fits Festool "standard" clamps (for DIY workbench builds)?](../cd4a0f49/chime.md)"
 
 > *It seems the body of the slot needs to be 12 mm wide and 7,5 mm high (4040 V-slot aluminium extrusion measurement)?*
 

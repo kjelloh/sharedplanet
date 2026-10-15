@@ -378,9 +378,9 @@ t3 is the client's timestamp of the response packet reception.&#91;1&#93;:19
 
 ==&gt; Or, what names have we decided to give those libraries?
 
-==&gt; Also see ”Todo: Programming - Consider to implement the "Protocol Stack" as a C++ Library providing tag-path based encoding and decoding and stacked protocol state machine engines?”
+==&gt; Also see ”[Todo: Programming - Consider to implement the "Protocol Stack" as a C++ Library providing tag-path based encoding and decoding and stacked protocol state machine engines?](../871e8ee0/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to implement the tag-path based encode and decode idiom as a C++ library?"
+==&gt; Also see ”[Todo: Programming - Consider to implement the tag-path based encode and decode idiom as a C++ library?](../1e42a087/chime.md)"
 
 ...
 

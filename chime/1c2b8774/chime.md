@@ -7,15 +7,15 @@
 {% raw %}
 Could it be a good idea to look into how a Darwinet domain combined with appropriate applications could work as a replacement (or alternative) for existing package managers?
 
-==&gt; See ”Todo: Programming - Consider to understand and document how to create and distribute a chocolatey package using tree command tool as working example)?”
+==&gt; See ”[Todo: Programming - Consider to understand and document how to create and distribute a chocolatey package using tree command tool as working example)?](../3f3b7f08/chime.md)”
 
-==&gt; See ”Todo: Programming - Consider a tool to 3D visualise Network Data Synchronisation (e.g. Linux package managing and Windows Installer)?”
+==&gt; See ”[Todo: Programming - Consider a tool to 3D visualise Network Data Synchronisation (e.g. Linux package managing and Windows Installer)?](../a620351e/chime.md)”
 
-==&gt; See ”Todo: Programming - Consider to distribute the tree command line tool through the package managers of each of the major platforms (chocolatey, apt and brew)?”
+==&gt; See ”[Todo: Programming - Consider to distribute the tree command line tool through the package managers of each of the major platforms (chocolatey, apt and brew)?](../319515e2/chime.md)”
 
-==&gt; See ”Todo: Programming - Consider to implement a C++ library that provides services that applies tag-path based encoder/decoder idiom to encode packages for popular package managers (e.g. chocolate, NuGet, apt and brew)?”
+==&gt; See ”[Todo: Programming - Consider to implement a C++ library that provides services that applies tag-path based encoder/decoder idiom to encode packages for popular package managers (e.g. chocolate, NuGet, apt and brew)?](../26072468/chime.md)”
 
-==&gt; See ”Todo: Programming - It seems C++ boost for Visual Studio is available using NuGet package manager?"
+==&gt; See ”[Todo: Programming - It seems C++ boost for Visual Studio is available using NuGet package manager?](../ed3ed911/chime.md)"
 
 1) Consider such domain to be able to synchronize installed packages on all nodes that are a member of the domain?
 
@@ -71,13 +71,13 @@ File System ==&gt; Transaction {d,d,d,d,d} ==&gt; File System
 
 4) Consider to base the Darwinet Design on the ”Digital World” idiom (domain, sub-domain and tools are ”worlds”)?
 
-==&gt; See ”Todo: Programming - Consider to implement a C++ library that provides "Digital World" entity and object interaction services?”
+==&gt; See ”[Todo: Programming - Consider to implement a C++ library that provides "Digital World" entity and object interaction services?](../8c288a05/chime.md)”
 
-==&gt; See ”Todo: Darwinet - Consider to apply the "digital worlds" idiom to administrate what gets synced and viewed where and when?”
+==&gt; See ”[Todo: Darwinet - Consider to apply the "digital worlds" idiom to administrate what gets synced and viewed where and when?](../b136e3eb/chime.md)”
 
-==&gt; See ”Todo: Programming - Consider to design views of tool-defined "Digital Worlds" populated with entities (tool operations) that understands objects (data, scripts and files defined by these tools)? ”
+==&gt; See ”[Todo: Programming - Consider to design views of tool-defined "Digital Worlds" populated with entities (tool operations) that understands objects (data, scripts and files defined by these tools)?](../67a9247c/chime.md) ”
 
-==&gt; See ”Todo: Programming - Consider to elaborate on what "life simplifier" applications we can create from building blocks like "digital worlds", "digital diety", darwinet and cross platform GUI:s?”
+==&gt; See ”[Todo: Programming - Consider to elaborate on what "life simplifier" applications we can create from building blocks like "digital worlds", "digital diety", darwinet and cross platform GUI:s?](../5d9a73b2/chime.md)”
 
 ...
 

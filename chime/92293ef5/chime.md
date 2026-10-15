@@ -7,13 +7,13 @@
 {% raw %}
 I think I am now ready to start buying external drive(s) ensured that I can have them backed up with Apple Time Machine?
 
-==&gt; Also see “Todo: Consider an external PCIe enclosure over Thunderbolt 3 to create an external M.2 NVMe SSD storage?”
+==&gt; Also see “[Todo: Consider an external PCIe enclosure over Thunderbolt 3 to create an external M.2 NVMe SSD storage?](../d695139e/chime.md)”
 
-==&gt; Also see “Todo: Consider to document and understand the technical specs of my Macbook Pro mid 2014 lap-top (e.g., what ports it has and how to interface external devices through these ports)?”
+==&gt; Also see “[Todo: Consider to document and understand the technical specs of my Macbook Pro mid 2014 lap-top (e.g., what ports it has and how to interface external devices through these ports)?](../0bf142e5/chime.md)”
 
-==&gt; Also see “Todo: Consider a motorised external storage cabinet for portable drives that circulates a master and one or more backups in a mechanical round-robin configuration?”
+==&gt; Also see “[Todo: Consider a motorised external storage cabinet for portable drives that circulates a master and one or more backups in a mechanical round-robin configuration?](../eb39d80c/chime.md)”
 
-==&gt; Also see “Todo: External Drive Backup - Consider to use rsync on OS X to keep a backup of my Youtube video materials?"
+==&gt; Also see “[Todo: External Drive Backup - Consider to use rsync on OS X to keep a backup of my Youtube video materials?](../6868462b/chime.md)"
 
 1) Consider this article “How to make sure Time Machine backs up external drives” (<https://www.macworld.com/article/3153995/how-to-make-sure-time-machine-backs-up-external-drives.html> )?
 

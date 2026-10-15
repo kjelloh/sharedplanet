@@ -65,7 +65,7 @@ Studying different aspects of C++, DSL for Element Table encoding/decoding, tagg
 
 5) Consider to apply this Range concept to the implement tagged-range-ASTs?
 
-==&gt; See “Todo: Programming - Consider to study Eric Nibblers Ranges to see if we can use it to operate on Range-trees?"
+==&gt; See “[Todo: Programming - Consider to study Eric Nibblers Ranges to see if we can use it to operate on Range-trees?](../5f7594a0/chime.md)"
 
 …
 

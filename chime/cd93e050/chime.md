@@ -7,9 +7,9 @@
 {% raw %}
 I want to know more about how to integrate a lua repl into a C++ console application.
 
-==&gt; Also see "Todo: Consider to add Lua scripting to my open source Cratchit application to expose run time operations on book keeping data"
+==&gt; Also see "[Todo: Consider to add Lua scripting to my open source Cratchit application to expose run time operations on book keeping data](../a7f48374/chime.md)"
 
-==&gt; Also see "Todo: C++ scripting - Consider to document some scripting engines we may integrate with C++ applications (e.g., Lua, Chaiscript...)?"
+==&gt; Also see "[Todo: C++ scripting - Consider to document some scripting engines we may integrate with C++ applications (e.g., Lua, Chaiscript...)?](../efa21d51/chime.md)"
 
 1) Consider to install lua with brew to see what we get?
 

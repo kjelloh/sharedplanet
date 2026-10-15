@@ -13,7 +13,7 @@ Could it be a good idea to think about a design for a C++ GUI framework that ena
 
 2) Consider to study the Elm language model of GUI update (which is also producing a mutable GUI based on new instances of an Immutable Data Model)?
 
-==&gt; Also see ”Todo: Darwinet - Consider to apply the Elm language Model, Update, View architecture for Darwinet MIV, Update View?"
+==&gt; Also see ”[Todo: Darwinet - Consider to apply the Elm language Model, Update, View architecture for Darwinet MIV, Update View?](../0b500d20/chime.md)"
 
 ==&gt; Elm seem to focus very hard on Model, View and Update?
 

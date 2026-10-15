@@ -7,7 +7,7 @@
 {% raw %}
 I want some standard way to fasten tools, gigs and "stuff" to my compact living sliding workspace wall.
 
-==&gt; Also see "Todo: Consider what aluminium profiles and T-tracks that fits Festool "standard" clamps (for DIY workbench builds)?"
+==&gt; Also see "[Todo: Consider what aluminium profiles and T-tracks that fits Festool "standard" clamps (for DIY workbench builds)?](../cd4a0f49/chime.md)"
 
 1) Consider the 30x30 mm 8mm T-slot extruded aluminium profile from Bosch Rexroth as sold by RS-online (<https://se.rs-online.com/web/p/products/2123296/> )?
 

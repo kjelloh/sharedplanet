@@ -15,13 +15,13 @@ Consider to make an SPC-app for all major platforms (Win, Mac, iPOS, Android) th
 
 ==&gt; Creates ones citizen ID (GUID) and SPC-logo with the ID imprinted (as digits, bard code, qr-code)?
 
-==&gt; See “Todo: SharedPlanetBusiness - App for social media communication"
+==&gt; See “[Todo: SharedPlanetBusiness - App for social media communication](../ecae6e67/chime.md)"
 
-==&gt; See “Todo: SharedPlanetBusiness - Use twitter for networking” (ID as GUID)
+==&gt; See “[Todo: SharedPlanetBusiness - Use twitter for networking](../310dc1c5/chime.md)” (ID as GUID)
 
-==&gt; See “Todo: SharedPlanetBusiness through #"
+==&gt; See “[Todo: SharedPlanetBusiness through #](../b8a11386/chime.md)"
 
-==&gt; See “Todo: Consider to design a led-column that produces ones SPC Id when swiped by a panorama picture?"
+==&gt; See “[Todo: Consider to design a led-column that produces ones SPC Id when swiped by a panorama picture?](../4da8078f/chime.md)"
 
 3) Consider enable the app to be able to publish tweets (Citizenship logo as as tweet card)?
 

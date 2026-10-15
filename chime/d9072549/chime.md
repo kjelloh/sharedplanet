@@ -7,15 +7,15 @@
 {% raw %}
 I want to have a compact in-apartment workbench for wood working and painting without having dust and paint be spread around the apartment.
 
-==&gt; Also see "Todo: Maker Space Spray Gun - Consider the Graco cordless airless spray gun and similar to buy and use for my indoor paint boot?"
+==&gt; Also see "[Todo: Maker Space Spray Gun - Consider the Graco cordless airless spray gun and similar to buy and use for my indoor paint boot?](../db5a8082/chime.md)"
 
-==&gt; Also see "Todo: DIY Vacuum - Consider to use a EDF (Electric Ducted Fan) brushless unit as the "impeller" unit to get efficient air suction?"
+==&gt; Also see "[Todo: DIY Vacuum - Consider to use a EDF (Electric Ducted Fan) brushless unit as the "impeller" unit to get efficient air suction?](../adc05dd4/chime.md)"
 
-==&gt; Also see "Todo: Dust Extraction - Consider my Oneida Dust Extractor Cyclone requires a minimum air flow of 24 litres per second?"
+==&gt; Also see "[Todo: Dust Extraction - Consider my Oneida Dust Extractor Cyclone requires a minimum air flow of 24 litres per second?](../b64b8e98/chime.md)"
 
-==&gt; Also see "Todo: Consider a DIY micro controlled (Arduino) Powered Air Purifying Respirator (PAPR)?"
+==&gt; Also see "[Todo: Consider a DIY micro controlled (Arduino) Powered Air Purifying Respirator (PAPR)?](../28a8555c/chime.md)"
 
-==&gt; Also see "Todo: Consider an ultrasonic based fluid flow sensor (e.g., for measuring the airflow of my indoor shed dust extraction system)?"
+==&gt; Also see "[Todo: Consider an ultrasonic based fluid flow sensor (e.g., for measuring the airflow of my indoor shed dust extraction system)?](../8d889b3f/chime.md)"
 
 1) Consider to be inspired by youtube video "Make a foldable painting booth!" (<https://youtu.be/3J6s1o6RNNk> )?
 

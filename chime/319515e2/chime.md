@@ -7,7 +7,7 @@
 {% raw %}
 So, what can we learn by trying to distribute the tree command line tool to each major platform using the preferred package manager on that platform?
 
-==&gt; Also see ”Todo: Programming - Consider to write a tree command line application for windows and distribute it as a chocolatey package?"
+==&gt; Also see ”[Todo: Programming - Consider to write a tree command line application for windows and distribute it as a chocolatey package?](../98b91233/chime.md)"
 
 1) Consider to create a chocolatey package for Windows?
 
@@ -45,7 +45,7 @@ So, what can we learn by trying to distribute the tree command line tool to each
 
 ==&gt; Consider to implement a C++ library to encode packages for e.g., chocolatey package managers?
 
-==&gt; See ”Todo: Programming - Consider to implement a C++ library that provides services that applies tag-path based encoder/decoder idiom to encode packages for popular package managers (e.g. chocolate, NuGet, apt and brew)?”
+==&gt; See ”[Todo: Programming - Consider to implement a C++ library that provides services that applies tag-path based encoder/decoder idiom to encode packages for popular package managers (e.g. chocolate, NuGet, apt and brew)?](../26072468/chime.md)”
 
 …
 

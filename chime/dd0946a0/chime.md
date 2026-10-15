@@ -7,7 +7,7 @@
 {% raw %}
 It seems I should be able to at least measure the pressure drop over the Oneida cyclone and from there figure out how I can calibrate it to show sufficient or to low flow?
 
-==&gt; Also see “Todo: Dust Extraction - Consider my Oneida Dust Extractor Cyclone requires a minimum air flow of 24 litres per second?”
+==&gt; Also see “[Todo: Dust Extraction - Consider my Oneida Dust Extractor Cyclone requires a minimum air flow of 24 litres per second?](../b64b8e98/chime.md)”
 
 1) Consider a “simple” U-tube pressure gauge?
 

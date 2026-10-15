@@ -7,15 +7,15 @@
 {% raw %}
 Could it be time to start planning to build a WikiHouse?
 
-==&gt; Also see “Todo: Consider an art-project where citizens self organize to build a Wikihouse?”
+==&gt; Also see “[Todo: Consider an art-project where citizens self organize to build a Wikihouse?](../f39c11ad/chime.md)”
 
-==&gt; Also see “Todo: Consider to propose immigration housing using Wikihouse based new villages?”
+==&gt; Also see “[Todo: Consider to propose immigration housing using Wikihouse based new villages?](../557d5379/chime.md)”
 
-==&gt; Also see “Todo: Follow up and learn about WikiHouse - Open Source house building”
+==&gt; Also see “[Todo: Follow up and learn about WikiHouse - Open Source house building](../eaec0e9b/chime.md)”
 
-==&gt; Also see “Todo: Consider to evaluate the idea of the economy-of-the-future on how well it creates incitements to go with Wikihouse?”
+==&gt; Also see “[Todo: Consider to evaluate the idea of the economy-of-the-future on how well it creates incitements to go with Wikihouse?](../fd1fd39c/chime.md)”
 
-==&gt; Also see “Todo: Darwinet - Consider to design a domain for WikiHouse projects?”
+==&gt; Also see “[Todo: Darwinet - Consider to design a domain for WikiHouse projects?](../0d7012ac/chime.md)”
 
 1) The sWikiHouse project seems alive and kicking ([https://wikihouse.cc](https://wikihouse.cc/))?
 

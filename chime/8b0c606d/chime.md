@@ -7,7 +7,7 @@
 {% raw %}
 It seems it could be a good (or at least very interesting) idea to understand how I could be able to design and build my own cost effective Brushless Motor speed controller driver?
 
-==&gt; Also see “Todo: Consider to learn and document how to use the Ducted Fan ESC to drive the fan from some suitable power source?"
+==&gt; Also see “[Todo: Consider to learn and document how to use the Ducted Fan ESC to drive the fan from some suitable power source?](../28850883/chime.md)"
 
 1) Consider this digikey page on brushless motor driver and control (<https://www.digikey.com/en/articles/techzone/2016/dec/how-to-power-and-control-brushless-dc-motors>)?
 

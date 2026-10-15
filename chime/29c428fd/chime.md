@@ -7,15 +7,15 @@
 {% raw %}
 Could it be a good idea to make a Darwinet domain with a data model that can hold and share 3D CAD models of vendor parts?
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence from aluminum profiles and accessories (from motedis web shop)?”
+==&gt; Also see “[Todo: Consider to build a table saw rip fence from aluminum profiles and accessories (from motedis web shop)?](../fec8d369/chime.md)”
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence from CNC machine parts (from swedish JBCNC web shop)?”
+==&gt; Also see “[Todo: Consider to build a table saw rip fence from CNC machine parts (from swedish JBCNC web shop)?](../58c1cf0e/chime.md)”
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence from wood working tool vendors (from Deutch Fine Tools web shop)? “
+==&gt; Also see “[Todo: Consider to build a table saw rip fence from wood working tool vendors (from Deutch Fine Tools web shop)?](../7a2b9660/chime.md) “
 
-==&gt; Also see “Todo: Consider to build a table saw rip fence using 3D printed parts (e.g., thingiverse models)?"
+==&gt; Also see “[Todo: Consider to build a table saw rip fence using 3D printed parts (e.g., thingiverse models)?](../33791f93/chime.md)"
 
-==&gt; Also see “Todo: Fusion 360 - Consider to do the exercises provides by Autodesk?"
+==&gt; Also see “[Todo: Fusion 360 - Consider to do the exercises provides by Autodesk?](../fdda3181/chime.md)"
 
 1) Consider what file formats we should support?
 
@@ -25,7 +25,7 @@ Could it be a good idea to make a Darwinet domain with a data model that can hol
 
 2) Consider how we can make Autodesk Fusion 360 to access 3D files in the Darwinet Domain?
 
-==&gt; Also see “Todo: Fusion 360 - Consider to do the exercises provides by Autodesk?"
+==&gt; Also see “[Todo: Fusion 360 - Consider to do the exercises provides by Autodesk?](../fdda3181/chime.md)"
 
 3) Consider parts provided by Motedis (<https://www.motedis.se/shop/Linjaera-produkter/Gear-rack-Pinions/Gear-Rack-Pignons-Modul-1/Gear-rack-15x15-Module-1-999mm::999995071.html>)?
 

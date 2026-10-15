@@ -7,7 +7,7 @@
 {% raw %}
 Det känns spm en kul idé att intervjua mina vänner och göra en pod cast av det?
 
-==&gt; Se också ”Todo: Find out how to publish pod-casts to be accessible by well known pod cast players”
+==&gt; Se också ”[Todo: Find out how to publish pod-casts to be accessible by well known pod cast players](../61271f02/chime.md)”
 
 1) Överväg att fundera på vad intervjuerna skall handa om?
 

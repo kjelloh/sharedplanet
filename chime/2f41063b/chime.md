@@ -7,7 +7,7 @@
 {% raw %}
 At this stage I need a small stable and sufficient s-expression parser and Meh lisp-like evaluator to get the Meh Repl going and it seems I need to understand parsing and evaluation of lisp-like languages better to implement this?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to try implementing Meh parser using C++ Boost Spirit Qi grammar library (Or newer Boost X3)?"
+==&gt; Also see ”[Todo: Meta Value Model - Consider to try implementing Meh parser using C++ Boost Spirit Qi grammar library (Or newer Boost X3)?](../a24d878f/chime.md)"
 
 1) Consider to use (Extended) Backhaus-Naur Form ((E)BNF) to express Meh syntax (<https://en.wikipedia.org/wiki/Extended_Backus–Naur_form>)?
 

@@ -7,13 +7,13 @@
 {% raw %}
 So, what can we say about what functionality and behaviour the sing-in-harmony practice tridelutt app should have?
 
-==&gt; Also see “Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?”
+==&gt; Also see “[Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?](../f38fc1c2/chime.md)”
 
-==&gt; Also see “Todo: Trudelutt - Consider to make first version one where one can share an mp3 and play it synchronously with other members of Darwinet domain?”
+==&gt; Also see “[Todo: Trudelutt - Consider to make first version one where one can share an mp3 and play it synchronously with other members of Darwinet domain?](../167a476f/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to study Myrehearsal-app vs the Trudelutt-app for crowd-source choir?”
+==&gt; Also see “[Todo: Programming - Consider to study Myrehearsal-app vs the Trudelutt-app for crowd-source choir?](../f5ec8937/chime.md)”
 
-==&gt; Also see “Todo: Consider to define Trudelutt to practice in overlapping pieces of the song"
+==&gt; Also see “[Todo: Consider to define Trudelutt to practice in overlapping pieces of the song](../5be93dbe/chime.md)"
 
 1) Consider it should be able to provide karaoke-like piano-roll user interface to allow easy-to-read sing-along?
 

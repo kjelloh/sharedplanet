@@ -139,7 +139,7 @@ meta-0: Identifier {”name” , template&lt;2&gt; } = Set {…any template&lt;1
 
 3) Consider how we implement modeling of generic types?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to follow up on Common Lisp Object System (CLOS) and Meta Object Protocols?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider to follow up on Common Lisp Object System (CLOS) and Meta Object Protocols?](../73924a55/chime.md)”
 
 ==&gt; It seems ”generic functions” are just a special case of generic types?
 
@@ -159,7 +159,7 @@ meta-0: Identifier {”name” , template&lt;2&gt; } = Set {…any template&lt;1
 
 4) It seems Generic Values are strongly correlated with Pattern Matching and value inferring?
 
-==&gt; See ”Todo: Meta Value Model - Consider mechanisms to create and apply pattern matching using existing model meta-values and explicit UML-like model patterns?”
+==&gt; See ”[Todo: Meta Value Model - Consider mechanisms to create and apply pattern matching using existing model meta-values and explicit UML-like model patterns?](../a6a889cc/chime.md)”
 
 ==&gt; We have defined as_pattern to implement the general value inferring mechanism that we seem to be able to implement using inferred identifier and value?
 

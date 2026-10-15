@@ -7,7 +7,7 @@
 {% raw %}
 Watching a talk at Lambda World 2016 by Christopher Meiklejohn it seemed to me he was actually talking about a system with many of the same components as I have imagined to use to build the Darwinet network?
 
-==&gt; Also see ”Todo: Darwinet - It seems Darwinet Deltas are in fact the same thing as "Conflict-free replicated data type" or CFRD?"
+==&gt; Also see ”[Todo: Darwinet - It seems Darwinet Deltas are in fact the same thing as "Conflict-free replicated data type" or CFRD?](../36f0b5ab/chime.md)"
 
 1) Consider to delve into the talk ”Declarative, Convergent Edge Computation by Christopher Meiklejohn” (<https://www.youtube.com/watch?v=9xRWBJ5LZBs>)?
 

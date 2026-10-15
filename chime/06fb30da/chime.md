@@ -23,7 +23,7 @@ So, what do we get if we write a C++ main() console application and generate a b
 
 3) Consider to compare these build environments with the default one found in previous Todo?
 
-==&gt; See “Todo: Programming - Consider to design a C++ console application source and environment setup that will cross compile on Windows, MacOS and Linux?”
+==&gt; See “[Todo: Programming - Consider to design a C++ console application source and environment setup that will cross compile on Windows, MacOS and Linux?](../fa0d7ffa/chime.md)”
 
 ==&gt; Consider to digg the text-files for each platform that defines the build environment?
 

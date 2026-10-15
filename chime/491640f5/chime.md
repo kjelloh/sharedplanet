@@ -7,27 +7,27 @@
 {% raw %}
 It seems there are free piano samples available made by members that samples pianos themselves and share them on UK based Pianobook web site?
 
-==&gt; Also see "Todo: DIY Digital Piano - Consider I can 3D print the parts for the Piano Key Action?"
+==&gt; Also see "[Todo: DIY Digital Piano - Consider I can 3D print the parts for the Piano Key Action?](../d80c1b89/chime.md)"
 
-==&gt; Also see "Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?"
+==&gt; Also see "[Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?](../ca0cdb46/chime.md)"
 
-==&gt; Also see “Todo: Consider to build a digital piano from a micro computer and a VST plug-in digital Piano?”
+==&gt; Also see “[Todo: Consider to build a digital piano from a micro computer and a VST plug-in digital Piano?](../9b52c6ce/chime.md)”
 
-==&gt; Also see “Todo: Piano - Consider to get to the bottom of Transducer (Yamaha Transacousting or Kawai ATX-f) pianos?”
+==&gt; Also see “[Todo: Piano - Consider to get to the bottom of Transducer (Yamaha Transacousting or Kawai ATX-f) pianos?](../155906e8/chime.md)”
 
-==&gt; Also see “Todo: Consider to investigate using electric guitar pickups on piano strings?”
+==&gt; Also see “[Todo: Consider to investigate using electric guitar pickups on piano strings?](../0321e89b/chime.md)”
 
-==&gt; Also see “Todo: Bygg ett stage-piano “
+==&gt; Also see “[Todo: Bygg ett stage-piano](../eda07e01/chime.md) “
 
 ==&gt; Also see “Todo: <http://www.pianocenter.se>”
 
-==&gt; Also see ”Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?"
+==&gt; Also see ”[Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?](../38120215/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to delve into the Faust DSP language echo-system from the talk "FAUST DSP language ecosystem meets JUCE" by Stephane Letz?”
+==&gt; Also see ”[Todo: Programming - Consider to delve into the Faust DSP language echo-system from the talk "FAUST DSP language ecosystem meets JUCE" by Stephane Letz?](../45deb608/chime.md)”
 
-==&gt; Also see ”Todo: C++ - Consider to check out Juce talks on youtube?”
+==&gt; Also see ”[Todo: C++ - Consider to check out Juce talks on youtube?](../2eafc8aa/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?"
+==&gt; Also see ”[Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?](../f38fc1c2/chime.md)"
 
 1) Consider this youtube video "The Free Piano Sample Hit Parade + COMPETITION" (<https://www.youtube.com/watch?v=cM1TCljo2Eo&t=743s> )?
 

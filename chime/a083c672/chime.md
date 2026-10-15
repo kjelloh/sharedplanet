@@ -7,13 +7,13 @@
 {% raw %}
 Can we imagine to define a component that enables a GUI to view the events of a C++ Template DSL defined Protocol Stack?
 
-==&gt; See “Todo: Programming - Consider to design C++ Template Domains Specific Languages to design FSM Protocol Engines and Element Table Message Encodings?”
+==&gt; See “[Todo: Programming - Consider to design C++ Template Domains Specific Languages to design FSM Protocol Engines and Element Table Message Encodings?](../0694d434/chime.md)”
 
-==&gt; See “Todo: Programming - Consider to design the C++11 Protocol Framework to allow for multiple Session and Links?”
+==&gt; See “[Todo: Programming - Consider to design the C++11 Protocol Framework to allow for multiple Session and Links?](../f8d39f8f/chime.md)”
 
-==&gt; See “Todo: Programming - Consider to discuss what traits a C++ Protocol Framework should have to enable implementation of popular protocols?”
+==&gt; See “[Todo: Programming - Consider to discuss what traits a C++ Protocol Framework should have to enable implementation of popular protocols?](../64352105/chime.md)”
 
-==&gt; See “Todo: Programming - Consider to model Protocol Stacks using State-Machine-Based Tagged-Range-Tree Transforms?”
+==&gt; See “[Todo: Programming - Consider to model Protocol Stacks using State-Machine-Based Tagged-Range-Tree Transforms?](../714507a2/chime.md)”
 
 1) How can we imagine to “add-on” a Messaging-viewer to a Protocol Stack defend using the proposed DSL for Protocol Implementation?
 

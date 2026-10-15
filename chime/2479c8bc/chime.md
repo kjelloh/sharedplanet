@@ -7,7 +7,7 @@
 {% raw %}
 I really would like to come up with some better way of handling wall paint than having to deal with the paint buckets with lids they come in?
 
-==&gt; Also see "Todo: Consider to put wall-paint in some soap or epoxy pump dispensers or similar with easy to operate dispenser tap?"
+==&gt; Also see "[Todo: Consider to put wall-paint in some soap or epoxy pump dispensers or similar with easy to operate dispenser tap?](../1c1dab61/chime.md)"
 
 1) Consider a way to transfer paint from the paint bucket to some elastic bag with a dispenser tap?
 

@@ -7,17 +7,17 @@
 {% raw %}
 So, what can we say about Reactive Program and its relation to Function Composition and the take on Subroutine, Coroutoine and Goroutine as just different in how they pass messages?
 
-==&gt; Also see ”Todo: Programming - Consider a "thread" is just message-passing using stack-frames on the same stack (another stack is another thread of stack-frame messaging)?"
+==&gt; Also see ”[Todo: Programming - Consider a "thread" is just message-passing using stack-frames on the same stack (another stack is another thread of stack-frame messaging)?](../e07d2bd4/chime.md)"
 
-==&gt; Also see ”Todo: C++ - Consider to understand Reactive Programming from the semantics and design of RxCpp (Reactive Extensions for Cpp)?”
+==&gt; Also see ”[Todo: C++ - Consider to understand Reactive Programming from the semantics and design of RxCpp (Reactive Extensions for Cpp)?](../5068c5cc/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider a Language Semantics where we can use abstractions to model subroutines, coroutines and coroutines as well as how we engage with them?”
+==&gt; Also see ”[Todo: Programming - Consider a Language Semantics where we can use abstractions to model subroutines, coroutines and coroutines as well as how we engage with them?](../1b520c38/chime.md)”
 
-==&gt; Also see ”Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?”
+==&gt; Also see ”[Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?](../4234851e/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider benefits of a Protocol Library based on immutable data and Functional Reactive Programming?”
+==&gt; Also see ”[Todo: Programming - Consider benefits of a Protocol Library based on immutable data and Functional Reactive Programming?](../90e34eb3/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - Consider to apply Reactive Functional Programming to synchronize between Darwinet Nodes as well as interfacing local clients (through views)?"
+==&gt; Also see ”[Todo: Darwinet - Consider to apply Reactive Functional Programming to synchronize between Darwinet Nodes as well as interfacing local clients (through views)?](../b37834b2/chime.md)"
 
 1) Consider this talk ”Functional reactive programming in C++ - Ivan Cukic - Meeting C++ 2016” (<https://www.youtube.com/watch?v=a2MmURgc6cU&t=111s>)?
 

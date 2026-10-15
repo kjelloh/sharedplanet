@@ -7,9 +7,9 @@
 {% raw %}
 So, what products are out there that I can use to design a Waste Water Treatment system for my "Earth Ship" house and wall paint wash up station?
 
-==&gt; Also see "Todo: Zero Waste Water Disposal - Consider if we can use Alfa Laval ZLD (Zero Liquid Discharge) systems for the industry to also circularly re-use household waste water earth-ship style?"
+==&gt; Also see "[Todo: Zero Waste Water Disposal - Consider if we can use Alfa Laval ZLD (Zero Liquid Discharge) systems for the industry to also circularly re-use household waste water earth-ship style?](../a3ec9abd/chime.md)"
 
-==&gt; Also see "Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+==&gt; Also see "[Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?](../bd86eed6/chime.md)"
 
 1) Consider products by USA based Slurry Solutions (<https://slurrysolutions.com> )?
 

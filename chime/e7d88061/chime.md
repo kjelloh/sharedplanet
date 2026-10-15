@@ -7,11 +7,11 @@
 {% raw %}
 Could it be valuable to actually see C++ string literal parsing (encoding) as yet a tex encoding form applying escaped-characters?
 
-==&gt; Also see “Todo: Programming - Consider to study and understand u8 (UTF-8) encoded character literals and strange output using cout formatting?”
+==&gt; Also see “[Todo: Programming - Consider to study and understand u8 (UTF-8) encoded character literals and strange output using cout formatting?](../e259d383/chime.md)”
 
 ==&gt; Also “Todo: Programming - Consider to design a String "type" that bridges text "meaning" and text encoding?”
 
-==&gt; Also see “Todo: Programming - Consider to study issues with recognizing text (string) encoding and character set (script) when provided with raw input?"
+==&gt; Also see “[Todo: Programming - Consider to study issues with recognizing text (string) encoding and character set (script) when provided with raw input?](../7d6f4d0d/chime.md)"
 
 1) Consider that C++ string literals not only is encoded in the encoding used by the source file, they also applies escaped-character encodings?
 

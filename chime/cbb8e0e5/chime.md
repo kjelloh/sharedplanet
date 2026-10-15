@@ -7,11 +7,11 @@
 {% raw %}
 Based on me dreading any work with viscous substances like paint or chocolate it could be a good idea to try and automate some steps of chocolate tryffel making?
 
-==&gt; Also see "Todo: Choklad - Överväg att lära mig baka med choklad?"
+==&gt; Also see "[Todo: Choklad - Överväg att lära mig baka med choklad?](../f13d4a6b/chime.md)"
 
-==&gt; Se även ”Todo: köksredskap Cordon Bleu”  
-==&gt; Se även ”Todo: Chokladfabriken Regeringsgatan 58, 111 56 Stockholm”  
-==&gt; Se även ”Todo: Göra chokladpraliner - Chokladfabriken Sankt Eriksplan 2"
+==&gt; Se även ”[Todo: köksredskap Cordon Bleu](../d6123e19/chime.md)”  
+==&gt; Se även ”[Todo: Chokladfabriken Regeringsgatan 58, 111 56 Stockholm](../2839ae56/chime.md)”  
+==&gt; Se även ”[Todo: Göra chokladpraliner - Chokladfabriken Sankt Eriksplan 2](../cd039dd3/chime.md)"
 
 1) Consider youtube video "PureThermal 1 USB Camera // GroupGets" about an IR camera module (<https://www.youtube.com/watch?v=ekr0fuNEsac> )?
 

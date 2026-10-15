@@ -7,8 +7,8 @@
 {% raw %}
 It seems we would like us as end user to be able to compose ourselves with both hardware and software functionality and operations of tasks in any graphical works tool chain?
 
-==&gt; Also see "Todo: Consider to understand graphics card architectures and abilities based on the benchmarking made for evaluating the jan 2019 AMD Radeon VII vs Nvidia RTX 2080?"  
-==&gt; Also see "Todo: Consider we should actually be tempted to re-think current computers with centralised CPUs and instead imagine high performance tasks to be moved closer to the data in a pipe of data processing?"
+==&gt; Also see "[Todo: Consider to understand graphics card architectures and abilities based on the benchmarking made for evaluating the jan 2019 AMD Radeon VII vs Nvidia RTX 2080?](../9e6692ca/chime.md)"  
+==&gt; Also see "[Todo: Consider we should actually be tempted to re-think current computers with centralised CPUs and instead imagine high performance tasks to be moved closer to the data in a pipe of data processing?](../407960b6/chime.md)"
 
 1) Consider how much it seems existing graphical tools overlap and fail to interact with each other (causing us as end user to do unnecessary work to create work flows and to pay to much due to tool overlap redundancy)?
 

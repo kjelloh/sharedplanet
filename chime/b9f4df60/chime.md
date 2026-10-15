@@ -7,15 +7,15 @@
 {% raw %}
 I am struggling to understand the chemistry but I think I am slowly getting there?
 
-==&gt; Also see "Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+==&gt; Also see "[Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?](../bd86eed6/chime.md)"
 
-==&gt; Also see "Todo: Consider to research how to flocculate water based wall paint to separate paint from waste water (e.g., using bentonite clay or other effective flocculants)?"
+==&gt; Also see "[Todo: Consider to research how to flocculate water based wall paint to separate paint from waste water (e.g., using bentonite clay or other effective flocculants)?](../d288e4a7/chime.md)"
 
-==&gt; Also see "Todo: Consider possible waste water logistic solutions for my paint wash up station?"
+==&gt; Also see "[Todo: Consider possible waste water logistic solutions for my paint wash up station?](../a978735c/chime.md)"
 
-==&gt; Also see "Todo: Consider tp design and build a prototype of a Micro and Electro Flocculation Rinse Laundring Machine?"
+==&gt; Also see "[Todo: Consider tp design and build a prototype of a Micro and Electro Flocculation Rinse Laundring Machine?](../047072dd/chime.md)"
 
-==&gt; Also see "Todo: Consider if it is possible to flocculate french brew coffee (to separate the coffee grinding from the coffee drink)?"
+==&gt; Also see "[Todo: Consider if it is possible to flocculate french brew coffee (to separate the coffee grinding from the coffee drink)?](../fcc86334/chime.md)"
 
 -1) Consider to write my own abstract on what I think I know about coagulation and flocculation of paint colloids in waste water?
 

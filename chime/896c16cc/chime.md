@@ -7,7 +7,7 @@
 {% raw %}
 It seems silk screen printing is an interesting technique to apply resins onto different surfaces with high resolution (e.g., to print an electro luminance display)?
 
-==&gt; Also see “Todo: Consider to understand the Durometer index used to specify the "hardness" 0..100 of materials (e.g., inlines skate wheels, squeegees and rubber tiers)?"
+==&gt; Also see “[Todo: Consider to understand the Durometer index used to specify the "hardness" 0..100 of materials (e.g., inlines skate wheels, squeegees and rubber tiers)?](../47cc43f9/chime.md)"
 
 1) Consider this YouTube video “High-resolution screen printing demystified” that seems to provide good leads into the process of silk screen printing (<https://www.youtube.com/watch?v=NS8Q9LUIKA8>)?
 

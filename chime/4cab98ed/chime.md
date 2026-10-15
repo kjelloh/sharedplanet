@@ -41,7 +41,7 @@ Can we imagine that implementing Tha meta-value stack in C++ by imagine “last 
 
 ==&gt; Consider how we express the algebra for function (lambda) kind, type and value?
 
-==&gt; Also see “Todo: Tha function model - Consider to once and for all define how Tha should model function kind, type, value and call?"
+==&gt; Also see “[Todo: Tha function model - Consider to once and for all define how Tha should model function kind, type, value and call?](../4ca21428/chime.md)"
 
 ==&gt; It seems the function kind: name -&gt; argument-list -&gt; binding // A function type declaration
 

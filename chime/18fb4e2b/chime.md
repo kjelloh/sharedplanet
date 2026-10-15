@@ -7,13 +7,13 @@
 {% raw %}
 It seems I have a journey to make in my mind to come up with good and efficient ways of hanging and storing tools and materials hanging of the walls of my indoor shed?
 
-==&gt; Also see “Todo: Consider to reverse engineer adhesives for bonding different materials to LSE (low surface energy) plastics from this adhesive selection guide from SCIGrip vendor?"
+==&gt; Also see “[Todo: Consider to reverse engineer adhesives for bonding different materials to LSE (low surface energy) plastics from this adhesive selection guide from SCIGrip vendor?](../9c44a87a/chime.md)"
 
-==&gt; Also see “Todo: Consider an acrylic tube based hinged compartment tower for screws and nuts and other fasteners and small things?”
+==&gt; Also see “[Todo: Consider an acrylic tube based hinged compartment tower for screws and nuts and other fasteners and small things?](../381b798e/chime.md)”
 
-==&gt; Also see “Todo: Consider to research about plastic sheets materials and explicitly the difference between PVC and Poly(methyl methacrylate) (PMMA), also known as acrylic or acrylic glass (branded Plexiglas)”
+==&gt; Also see “[Todo: Consider to research about plastic sheets materials and explicitly the difference between PVC and Poly(methyl methacrylate) (PMMA), also known as acrylic or acrylic glass (branded Plexiglas)](../85de2092/chime.md)”
 
-==&gt; Also see “Todo: Consider what we need to know to glue PLA to Acrylic or PVC (e.g. 3D printer parts to transparent sheets of plastic)”
+==&gt; Also see “[Todo: Consider what we need to know to glue PLA to Acrylic or PVC (e.g. 3D printer parts to transparent sheets of plastic)](../b2818832/chime.md)”
 
 ![](IMG_0031.jpeg)
 

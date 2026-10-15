@@ -7,7 +7,7 @@
 {% raw %}
 Could it be a good idea to try out a C++ teaching path using the same order of concepts as in the book "Structure and Interpretation of Computer Programs” (where they do not introduce mutation and variables until chapter 3, page 167 of 500)?
 
-==&gt; Also see “Todo: Programming - Consider to record my own C++ training course?”
+==&gt; Also see “[Todo: Programming - Consider to record my own C++ training course?](../670ea9db/chime.md)”
 
 1) Consider in this way we can teach C++ starting of not having to bother with pointers, state or other stuff we like to postpone as “advanced” stuff?
 

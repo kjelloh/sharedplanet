@@ -59,7 +59,7 @@ Iterator Iterator   Generator
 
 3) Consider to compare with design requirements as found by other aspects of the Protocol Stack Library?
 
-==&gt; See ”Todo: Programming - Consider to allow protocol Engine to apply Model Specialisation that also acts as additional Value Provider for model defined values?”
+==&gt; See ”[Todo: Programming - Consider to allow protocol Engine to apply Model Specialisation that also acts as additional Value Provider for model defined values?](../d8ea1430/chime.md)”
 
 Uppstack Frame —&gt; Value Provider&#91;state&#93; ---(2)----|
 

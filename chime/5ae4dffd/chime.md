@@ -7,7 +7,7 @@
 {% raw %}
 it seems that if I base house building on container sized modules combined with hovercraft (or hydrofoils, sv bärplan) water transport boats I can build on islands anywhere on mälaren?
 
-== &gt;Also see “Todo: Consider solutions for my own low-footprint house sewer solutions in Sweden?"
+== &gt;Also see “[Todo: Consider solutions for my own low-footprint house sewer solutions in Sweden?](../30e2eb51/chime.md)"
 
 1) Consider swedish company alabanza that sells containers and container living modules ([http://www.container.se](http://www.container.se/))?
 

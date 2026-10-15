@@ -7,9 +7,9 @@
 {% raw %}
 Maybe I can actually buy a complete hydrogen energy storage system from Nilsson Energy AB?
 
-==&gt; Also see "Todo: Consider what energy storage and retrieval efficiency we can expect from hydrogen production, high pressure storage and fuel cell electrical generation?
+==&gt; Also see "[Todo: Consider what energy storage and retrieval efficiency we can expect from hydrogen production, high pressure storage and fuel cell electrical generation?](../4eed46ad/chime.md)
 
-==&gt; Also see "Todo: House Build - Consider to find options to generate electricity from burning wood e.g., using a string engine driven generator?"
+==&gt; Also see "[Todo: House Build - Consider to find options to generate electricity from burning wood e.g., using a string engine driven generator?](../bff71726/chime.md)"
 
 1) It seems Nilsson Energy AB sells a system called RE8760 (<https://nilssonenergy.com/products/> )?
 

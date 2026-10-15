@@ -7,9 +7,9 @@
 {% raw %}
 Just saw a youtube video that made me realised I should build an electric acrylic sheet bender (and use to make the spatter protector screen for my paint work and wash up station)
 
-==&gt; Also see "Todo: Consider to buy Nichrome (heat wire) on Bauhaus (as heat thread for Proxxon 230)?"
+==&gt; Also see "[Todo: Consider to buy Nichrome (heat wire) on Bauhaus (as heat thread for Proxxon 230)?](../8b8b0fcb/chime.md)"
 
-=&gt;= Also see “Todo: DIY Metal Casting - Consider to design and build a small home Metal casting shop (foundry)?”
+=&gt;= Also see “[Todo: DIY Metal Casting - Consider to design and build a small home Metal casting shop (foundry)?](../99c3768d/chime.md)”
 
 1) Consider this youtube video "How to make a DIY acrylic bender (Cheap & easy)" (<https://www.youtube.com/watch?v=-mVmzWQ7Iy8> )?
 

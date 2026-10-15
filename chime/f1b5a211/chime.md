@@ -7,8 +7,8 @@
 {% raw %}
 So, this may sound weird - but it seems to be a reaction between finding the “Truth” and spending time?
 
-==&gt; Also see “Todo: Philosophy - Consider the universe does not like time (it searches for ways to spend the least time possible)?”  
-==&gt; Also see “Todo: Philosophy - Consider feelings drives us to close in on Truth (as in finding the state where no change is required)?"
+==&gt; Also see “[Todo: Philosophy - Consider the universe does not like time (it searches for ways to spend the least time possible)?](../5afcc801/chime.md)”  
+==&gt; Also see “[Todo: Philosophy - Consider feelings drives us to close in on Truth (as in finding the state where no change is required)?](../ff5586bc/chime.md)"
 
 1) Consider “Truth” to be the state where no change is required (the best state)?
 

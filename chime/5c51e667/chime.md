@@ -7,9 +7,9 @@
 {% raw %}
 There seem to be vertical wind turbine and power system providers available online?
 
-==&gt; Also see “Todo: Wind Energy - Consider to try and train a neural network to optimise the power output of a wind turbine?"
+==&gt; Also see “[Todo: Wind Energy - Consider to try and train a neural network to optimise the power output of a wind turbine?](../82d5b75b/chime.md)"
 
-==&gt; Also see “Todo: DIY MPPT - Consider to study, understand and try out building my own Maximum Power Point Tracker (MPPT) Lithium Ion battery charging manager?"
+==&gt; Also see “[Todo: DIY MPPT - Consider to study, understand and try out building my own Maximum Power Point Tracker (MPPT) Lithium Ion battery charging manager?](../63dd4add/chime.md)"
 
 1) Consider the chines company “Mars Rock Solar” on Aliexpress (<https://www.aliexpress.com/store/400691?spm=2114.12010612.0.0.7f6acdhzvInS>)?
 

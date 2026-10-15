@@ -7,9 +7,9 @@
 {% raw %}
 Det verkar finna en ganska stor flora av olika experimentkort med microcontrollers och datormoduler som har utvecklingsmiljö för C++ och som kan hantera I/O från olika givare?
 
-==&gt; Se även ”Todo: Mörkö - Överväg att göra Rasperry Pi manöverpanel för övervakning av solcellsanläggning?”
+==&gt; Se även ”[Todo: Mörkö - Överväg att göra Rasperry Pi manöverpanel för övervakning av solcellsanläggning?](../0d89665b/chime.md)”
 
-==&gt; Se även ”Todo: Mörkö - Överväg att bygga en enkel Ah-mätare för att mäta ström från solpanel, ström till batteri och ström från batteri?”
+==&gt; Se även ”[Todo: Mörkö - Överväg att bygga en enkel Ah-mätare för att mäta ström från solpanel, ström till batteri och ström från batteri?](../f0d600e7/chime.md)”
 
 1) Överväg att kolla upp ”MSP-EXP430G2 LaunchPadTM Development Kit” (<http://www.ti.com/lit/ug/slau318g/slau318g.pdf>)?
 

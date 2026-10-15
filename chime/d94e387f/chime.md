@@ -7,7 +7,7 @@
 {% raw %}
 It seems I may for cheap be able to use IKEA SUNNERSTA mini sink as a washup station for my paint tools?
 
-==&gt; Also see "Todo: Consider I still suck at handling paint (how my test run of pouring paint from and to the paint bucket and cleaning the tools revealed many shortcomings in skill, tools and work space)?"
+==&gt; Also see "[Todo: Consider I still suck at handling paint (how my test run of pouring paint from and to the paint bucket and cleaning the tools revealed many shortcomings in skill, tools and work space)?](../4244383c/chime.md)"
 
 1) Consider IKEA FYNDIG stainless steel zink (<https://www.ikea.com/se/sv/catalog/products/S59158003/> )?
 

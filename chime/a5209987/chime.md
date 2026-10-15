@@ -7,7 +7,7 @@
 {% raw %}
 When on my forrest exercise today I encountered a young very attractive woman doing yoga and found myself saying hi and then apologise for disturbing and felt weak.
 
-==&gt; Also see "Todo: Consider we can evaluate if our model of the human reality is a good one by reason if we can recurse acts-in-faiths to it?"
+==&gt; Also see "[Todo: Consider we can evaluate if our model of the human reality is a good one by reason if we can recurse acts-in-faiths to it?](../202b636c/chime.md)"
 
 1) Consider what the encounter with the woman was like?
 

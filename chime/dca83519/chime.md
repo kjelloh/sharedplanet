@@ -7,7 +7,7 @@
 {% raw %}
 I like to perform build tasks in a way so I reduce errors, enhance confidence and reduce time wasted to scratch my head.
 
-==&gt; Also see "Todo: Consider to extend existing CAM tools with a option to "automate" or "instruct" how to build something using a human actor (in effect a "Human movement G-Code generator")?"
+==&gt; Also see "[Todo: Consider to extend existing CAM tools with a option to "automate" or "instruct" how to build something using a human actor (in effect a "Human movement G-Code generator")?](../45c9ec22/chime.md)"
 
 1) The "Cut Optimizer" seems to live here on the web (<https://www.cutlistoptimizer.com> )?
 

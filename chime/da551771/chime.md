@@ -7,9 +7,9 @@
 {% raw %}
 Could it be a good idea to implement a set of services to find out how a range of anonymous data is modelled as a C++ library?
 
-==&gt; Also see “Todo: programming - Consider to implement a C++ open source library to compile-time identify the build tool chain and target platform?”
+==&gt; Also see “[Todo: programming - Consider to implement a C++ open source library to compile-time identify the build tool chain and target platform?](../9cdf6484/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to write a C++ cross platform service that can tell the format of object files (ELF, COFF...)?"
+==&gt; Also see “[Todo: Programming - Consider to write a C++ cross platform service that can tell the format of object files (ELF, COFF...)?](../2292be64/chime.md)"
 
 1) Consider a good name for a Data Model Investigator library (?name?)?
 
@@ -33,7 +33,7 @@ Could it be a good idea to implement a set of services to find out how a range o
 
 3) Consider the ?name? library to produce a proposed tag-path based data (musca?) models?
 
-==&gt; See “Todo: Programming - Consider to implement the tag-path based encode and decode idiom as a C++ library?”
+==&gt; See “[Todo: Programming - Consider to implement the tag-path based encode and decode idiom as a C++ library?](../1e42a087/chime.md)”
 
 ==&gt; Q: Will we go with the name musca for the tag-path based encode/decode library?
 

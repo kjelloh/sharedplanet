@@ -7,9 +7,9 @@
 {% raw %}
 Kanske skall jag inte köpa en pack-cykel men en “vanlig” cykel?
 
-==&gt; Se också “Todo: Överväg att köpa en lastcykel?”
+==&gt; Se också “[Todo: Överväg att köpa en lastcykel?](../ee5171e9/chime.md)”
 
-==&gt; Se också “Todo: Cykel - Överväg att hålla min Cykel i trim :)"
+==&gt; Se också “[Todo: Cykel - Överväg att hålla min Cykel i trim :)](../a9ddc754/chime.md)"
 
 1) Överväg att köpa en Crescent (<http://www.crescent.se/cyklar/>)?
 

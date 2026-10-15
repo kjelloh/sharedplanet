@@ -7,7 +7,7 @@
 {% raw %}
 Its seems what is called the System F (second) and System Fω (Higher order) lambda calculus bears strong resemblance to the Tha idea of meta-value layering?
 
-==&gt; Also see “Todo: Meh and Tha - Consider to compare Haskell library Servant with the Meh language and Tha meta-model?"
+==&gt; Also see “[Todo: Meh and Tha - Consider to compare Haskell library Servant with the Meh language and Tha meta-model?](../2b6ac0bb/chime.md)"
 
 1) Consider wikipedia definition of System F (<https://en.wikipedia.org/wiki/System_F>)?
 

@@ -7,9 +7,9 @@
 {% raw %}
 There seems to be a pattern of "truth revealing" that shows up in the observation that humor can be seen as truth revealed in suffering, Lacanian and Freudian fascination with double deception and "the truth in the lie"?
 
-==&gt; Also see "Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?"
+==&gt; Also see "[Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?](../f19cbf05/chime.md)"
 
-==&gt; Also see "Kierkegaard wasn't really the greatest at small talk. - Existential Comics"
+==&gt; Also see "[Kierkegaard wasn't really the greatest at small talk. - Existential Comics](../de209a84/chime.md)"
 
 1) Consider the writings of Slavoj Zizek "Om Lacan" containing numerous examples of double deception and truths concealed inlies?
 

@@ -7,7 +7,7 @@
 {% raw %}
 It seems we can come up with some clever percolation mechanism to clean rollers from water based paint?
 
-==&gt; Also see "Todo: Consider an acrylic tube based hinged compartment tower for screws and nuts and other fasteners and small things?"
+==&gt; Also see "[Todo: Consider an acrylic tube based hinged compartment tower for screws and nuts and other fasteners and small things?](../381b798e/chime.md)"
 
 ==&gt;
 

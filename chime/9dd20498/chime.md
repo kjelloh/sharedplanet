@@ -7,7 +7,7 @@
 {% raw %}
 Could we make an argument that from saying that we need a solution that Fi, Mp and SD can agree on, combined with the proposal that it has to be based on a believable Utopia to strive for, we come to the conclusion that what all political movements pointing out how ”bad” society is working is actually saying, is - ”We need to make our lives Religious Again”?
 
-==&gt; Also see ”Todo: Consider what we can learn from treating peoples view-about-reality as actual unconscious-recognized patterns-of-reality?”
+==&gt; Also see ”[Todo: Consider what we can learn from treating peoples view-about-reality as actual unconscious-recognized patterns-of-reality?](../01138571/chime.md)”
 
 1) Consider SD (and trump) to actually be the most ”religious thirsting” community and Mp to be the least?
 

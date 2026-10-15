@@ -7,7 +7,7 @@
 {% raw %}
 Could it be possible to motorise a hand held saw to create a silent, cheaper and possible safer sawing machines?
 
-==&gt; Also see "Todo: Consider a jig saw based miter saw station (with jig saw blade support that moves with the saw through the cut stroke)? "
+==&gt; Also see "[Todo: Consider a jig saw based miter saw station (with jig saw blade support that moves with the saw through the cut stroke)?](../f74d369e/chime.md) "
 
 1) Consider a machine that performs pulling strokes of a Japanese Ryoba saw?
 

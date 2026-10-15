@@ -25,9 +25,9 @@ The Deepin Linux seems like an interesting and seal looking bistro worth to look
 
 4) Consider to try out Bitscope and SigRok on Deepin Linux?
 
-==&gt; See “Todo DIY Open Oscilloscope - Consider to check out Bitscope on Raspberry Pi?”
+==&gt; See “[Todo DIY Open Oscilloscope - Consider to check out Bitscope on Raspberry Pi?](../fb117517/chime.md)”
 
-==&gt; See “Todo: Electronic Lab - Consider to check out the sigrok open source PC/MAC/Linux instrumentation software for a large set of electronic measurement hardware devices?”
+==&gt; See “[Todo: Electronic Lab - Consider to check out the sigrok open source PC/MAC/Linux instrumentation software for a large set of electronic measurement hardware devices?](../bf58bea1/chime.md)”
 
 5) Consider Deepin Linux should look really good on a high grade touch display (to ge a diy SBC Laptop)?
 

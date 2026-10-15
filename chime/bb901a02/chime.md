@@ -5,13 +5,13 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Emdivid and Syntheocracy Model - Consider to use the "em-" prefix for self-organised (emergent) and the "syn-" prefix for rationally created experienced "objects" (things)?"
+==&gt; Also see "[Todo: Emdivid and Syntheocracy Model - Consider to use the "em-" prefix for self-organised (emergent) and the "syn-" prefix for rationally created experienced "objects" (things)?](../74b098c3/chime.md)"
 
-==&gt; Also see "Todo: Consider that to "Understand" is the ability to "Be About" which in turn means we have identified both a model (about) and an internal representation (understand) and consciousness is just a special case of self referential "About Ourself"?"
+==&gt; Also see "[Todo: Consider that to "Understand" is the ability to "Be About" which in turn means we have identified both a model (about) and an internal representation (understand) and consciousness is just a special case of self referential "About Ourself"?](../9b9878bd/chime.md)"
 
-==&gt; Also see "Todo: Consider all four neat-models of reality in MeFour can all be divided into emerged (observed) and constructed (explained) self stabilising parts?"
+==&gt; Also see "[Todo: Consider all four neat-models of reality in MeFour can all be divided into emerged (observed) and constructed (explained) self stabilising parts?](../00e06514/chime.md)"
 
-==&gt; Also see "Todo: What if we search and find truth by fitting observations with our predictions limited to the parts of reality we care for (its is true if it is relevant and of value to us)?"
+==&gt; Also see "[Todo: What if we search and find truth by fitting observations with our predictions limited to the parts of reality we care for (its is true if it is relevant and of value to us)?](../782755bd/chime.md)"
 
 ...and many more...
 

@@ -7,7 +7,7 @@
 {% raw %}
 Fundera på om det kunde vara kul att göra en Rasperry Pi manöverpanel för solcellsanläggningen på Mörkö som gör användningen lättare?
 
-==&gt; Se även ”Todo: Mörkö - Solpaneler, överväg att hitta bra information på nätet för att välja utrustning?”
+==&gt; Se även ”[Todo: Mörkö - Solpaneler, överväg att hitta bra information på nätet för att välja utrustning?](../af647466/chime.md)”
 
 1) Försök räkna på hur mycket ström en Rasperry Pi drar eller om det finns sätt att den inte är på annars än när den behövs?
 

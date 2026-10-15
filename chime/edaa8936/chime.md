@@ -27,7 +27,7 @@ Consider it could be possible and convenient to create a “fake” digital curr
 
 3) Consider to incorporate the “life-year-week-day log-wheel” user interface for future and past transactions?
 
-==&gt; Also see “Todo: Programming - Consider to visualise a calendar as gear of days within gear of weeks within gear of months within gear of years within gear of 10 years and life?”
+==&gt; Also see “[Todo: Programming - Consider to visualise a calendar as gear of days within gear of weeks within gear of months within gear of years within gear of 10 years and life?](../4815abe6/chime.md)”
 
 …
 

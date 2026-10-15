@@ -7,19 +7,19 @@
 {% raw %}
 So, I have discovered that FCPX really sucks at automation. So what video editors exists that can perform video editing based on pre-defined templates and video clip annotation, markers or other form of parameters?
 
-==&gt; Also see “Todo: Consider to investigate if I can use FFmpeg cross platform tool to make my youtube video editing more efficient?"
+==&gt; Also see “[Todo: Consider to investigate if I can use FFmpeg cross platform tool to make my youtube video editing more efficient?](../b86026cb/chime.md)"
 
-==&gt; Also see “Todo: Consider to find video editing tools to 1) Save only raw footage go good quality and 2) Automate video cutting using pre-defined story-line templates”
+==&gt; Also see “[Todo: Consider to find video editing tools to 1) Save only raw footage go good quality and 2) Automate video cutting using pre-defined story-line templates](../a7ecba69/chime.md)”
 
-==&gt; Also see “Todo: Final Cut Pro - Consider if we can automate youtube video creation using Final Cut Pro X XML interchange format (FinalCutProXXMLFormat)?”
+==&gt; Also see “[Todo: Final Cut Pro - Consider if we can automate youtube video creation using Final Cut Pro X XML interchange format (FinalCutProXXMLFormat)?](../e865a9b8/chime.md)”
 
-==&gt; Also see “Todo: Video Creation - Consider ways to create videos for my Youtube channel quicker, more efficient and with higher quality?"
+==&gt; Also see “[Todo: Video Creation - Consider ways to create videos for my Youtube channel quicker, more efficient and with higher quality?](../cd7d717a/chime.md)"
 
-==&gt; Also see “Todo: Consider to make a music video using iPhone and Elin proposed program "VideoPad Video Editor"?"
+==&gt; Also see “[Todo: Consider to make a music video using iPhone and Elin proposed program "VideoPad Video Editor"?](../4bb0e038/chime.md)"
 
-==&gt; Also see “Todo: Consider to check out Max graphical programming environment from cycling74 for audio and video modules?”
+==&gt; Also see “[Todo: Consider to check out Max graphical programming environment from cycling74 for audio and video modules?](../134ccede/chime.md)”
 
-==&gt; Also see “Todo: Consider ways to apply Deep Learning networks to categorise my Youtube Video clips?”
+==&gt; Also see “[Todo: Consider ways to apply Deep Learning networks to categorise my Youtube Video clips?](../c4893345/chime.md)”
 
 -1) Consider the “standard” list of popular video editing tools?
 

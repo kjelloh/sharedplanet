@@ -7,7 +7,7 @@
 {% raw %}
 I want to build a full bridge rectifier to harvest energy from small audio signals to power a mixer for those signals.
 
-==&gt; Also see "Todo: Consider a line level mixer that is driven by the energy of the input audio signals?"
+==&gt; Also see "[Todo: Consider a line level mixer that is driven by the energy of the input audio signals?](../58608978/chime.md)"
 
 1) Consider the youtube video "How to Protect Your Devices Against Reverse Polarity Using Ideal Diodes" (<https://youtu.be/1tQHjUYKQwI> )?
 

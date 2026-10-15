@@ -27,7 +27,7 @@ Could it be fun, productive and informative to try and write a simple C++ Consol
 
 ==&gt; Consider if he has provided the LibCurl adaption in the twitter application he has published here (<https://github.com/kirkshoop/twitter>)?
 
-==&gt; Also see “Todo: RxCpp Twitter App Example - Consider to document how I got the example application from GitHub to run and consume twitter posts?"
+==&gt; Also see “[Todo: RxCpp Twitter App Example - Consider to document how I got the example application from GitHub to run and consume twitter posts?](../4e9b0924/chime.md)"
 
 ==&gt; Also see my downloaded and working version here “/Users/kjell-olovhogdahl/Documents/GitHub/twitter”?
 

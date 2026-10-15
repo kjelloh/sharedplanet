@@ -25,7 +25,7 @@ Consider that the term ”Codec” is a good one to name an object that uses a c
 
 3) Consider that if we go for a design where the Encoded Data Object and the Decoded Data Object are generators we will not need a designated encoder/decoder generator/iterator?
 
-==&gt; See ”Todo: Programming - Consider different Generator or Iterator design of general Protocol Message encode decode library?”
+==&gt; See ”[Todo: Programming - Consider different Generator or Iterator design of general Protocol Message encode decode library?](../d214f257/chime.md)”
 
 ...
 

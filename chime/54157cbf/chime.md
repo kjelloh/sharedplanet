@@ -7,11 +7,11 @@
 {% raw %}
 So, what tool can we imagine to use to manually produce a proof-of-concept of how a C++ File is transformed into byte code?
 
-==&gt; Also see ”Todo: Programming - Consider to check out the C++ visualisation and media library Cinder?"
+==&gt; Also see ”[Todo: Programming - Consider to check out the C++ visualisation and media library Cinder?](../b5bb37e7/chime.md)"
 
-==&gt; Also See ”Todo: Programming - Consider to define transform of C++ code into executable code as a stack-of-transformations?”
+==&gt; Also See ”[Todo: Programming - Consider to define transform of C++ code into executable code as a stack-of-transformations?](../a2b1e6e4/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?”
+==&gt; Also See ”[Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?](../92b081ea/chime.md)”
 
 1) Consider to use RAD Studio Firemonkey 3D components?
 

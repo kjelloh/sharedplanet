@@ -5,7 +5,7 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider to understand how I may write plugins to automate Final Cut Pro X (FCPX) tasks more to my liking?"
+==&gt; Also see "[Todo: Consider to understand how I may write plugins to automate Final Cut Pro X (FCPX) tasks more to my liking?](../41a7aa9a/chime.md)"
 
 1) It seems the FCPX XML reference lives here (<https://developer.apple.com/documentation/professional_video_applications/fcpxml_reference> )?
 

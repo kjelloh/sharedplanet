@@ -7,57 +7,57 @@
 {% raw %}
 It seems to me that maybe we can imagine a way to infer a self organising complex system that in behaviour is isomorphic to some studied system?
 
-==&gt; Also see "Todo: Study "Self-Organisation and Emergence in MAS: An Overview" for pointers to more information"
+==&gt; Also see "[Todo: Study "Self-Organisation and Emergence in MAS: An Overview" for pointers to more information](../a089c554/chime.md)"
 
-==&gt; Also see "Todo: Study Daniel Dennett article ”The social cell” and how it realtes to Society Emergence"
+==&gt; Also see "[Todo: Study Daniel Dennett article ”The social cell” and how it realtes to Society Emergence](../181f8039/chime.md)"
 
-==&gt; Also see "Todo: Synteocracy - Consider to argue about society locked-in emergence with locked-in water vortex direction?"
+==&gt; Also see "[Todo: Synteocracy - Consider to argue about society locked-in emergence with locked-in water vortex direction?](../b5eec98f/chime.md)"
 
-==&gt; Also see "Todo: Programming - Consider to delve into "chemical computing" as food-for-thought addressing self-organizing emergence-leveraging asynchronous functional programming models?"
+==&gt; Also see "[Todo: Programming - Consider to delve into "chemical computing" as food-for-thought addressing self-organizing emergence-leveraging asynchronous functional programming models?](../fc9c1b35/chime.md)"
 
-==&gt; Also see "Todo: Consider to check out Desktop Metal developed "Live Parts" organic "growing" of metal parts as an example of Emergence Programming (the result emerge rather than is calculated)?"
+==&gt; Also see "[Todo: Consider to check out Desktop Metal developed "Live Parts" organic "growing" of metal parts as an example of Emergence Programming (the result emerge rather than is calculated)?](../812fe6b8/chime.md)"
 
-==&gt; Also see "Todo: Consider to use non newtonian fluid on a speaker as one example of emergence of semi-organic behaviour and argue for the human "self" (the cartesian subject) emerge from experienced reality to interact with it? "
+==&gt; Also see "[Todo: Consider to use non newtonian fluid on a speaker as one example of emergence of semi-organic behaviour and argue for the human "self" (the cartesian subject) emerge from experienced reality to interact with it?](../fc54a257/chime.md) "
 
-==&gt; Also see "Todo: [emergenceawareprogramming.blogspot.se](http://emergenceawareprogramming.blogspot.se) - Expressive PI Estimation Algorithm in C++"
+==&gt; Also see "[Todo: \[emergenceawareprogramming.blogspot.se\](http://emergenceawareprogramming.blogspot.se) - Expressive PI Estimation Algorithm in C++](../21499aa0/chime.md)"
 
-==&gt; Also see "Todo: Write about a bee hive that attacks an intruder as being an emergence created by a truth-web signaling a threat"
+==&gt; Also see "[Todo: Write about a bee hive that attacks an intruder as being an emergence created by a truth-web signaling a threat](../f0f4544a/chime.md)"
 
-==&gt; Also see "Todo: Write about Synteocracy, Idea-induced Emergence of society"
+==&gt; Also see "[Todo: Write about Synteocracy, Idea-induced Emergence of society](../f0e2ee5d/chime.md)"
 
-==&gt; Also see "Todo: Consider AI driven dating apps reveals their inability to deal with emergent behaviour (as so far they can only infer existing there-ought-to-be drives; Not emerging ones)?"
+==&gt; Also see "[Todo: Consider AI driven dating apps reveals their inability to deal with emergent behaviour (as so far they can only infer existing there-ought-to-be drives; Not emerging ones)?](../f983f243/chime.md)"
 
-==&gt; Also see "Todo: Consider deeper insight, enlightenment, growing up, transformational experiences, are all examples of an inferred or emergent meta-pattern (a pattern about patterns)?"
+==&gt; Also see "[Todo: Consider deeper insight, enlightenment, growing up, transformational experiences, are all examples of an inferred or emergent meta-pattern (a pattern about patterns)?](../43a26709/chime.md)"
 
-==&gt; Also see "Todo: Consider the term "Emdividualism" for the -ism of Emergent Dividuals?"
+==&gt; Also see "[Todo: Consider the term "Emdividualism" for the -ism of Emergent Dividuals?](../cbaa1ed9/chime.md)"
 
-==&gt; Also see "Todo: Describe and name the "second enlightenment" view of our role as emergent divids in emergent societies"
+==&gt; Also see "[Todo: Describe and name the "second enlightenment" view of our role as emergent divids in emergent societies](../cc99a7cb/chime.md)"
 
-==&gt; Also see "Todo: Emdividualism - Consider to define an Emdividual as the emergent dividual to act-in-faith to an selected applicable subsets of truth-webs?"
+==&gt; Also see "[Todo: Emdividualism - Consider to define an Emdividual as the emergent dividual to act-in-faith to an selected applicable subsets of truth-webs?](../938707e9/chime.md)"
 
-==&gt; Also see "Todo: If Society is an emergent self organizing "social organism", then what "story" should we tell to have the most beneficial society emerge?"
+==&gt; Also see "[Todo: If Society is an emergent self organizing "social organism", then what "story" should we tell to have the most beneficial society emerge?](../8a874839/chime.md)"
 
-==&gt; Also see "Todo: Use this TED talk about emergent patterns in climate change both for SPC and idea about social emergences"
+==&gt; Also see "[Todo: Use this TED talk about emergent patterns in climate change both for SPC and idea about social emergences](../566bc5f0/chime.md)"
 
-==&gt; Also see "Todo: Write about economic systems as emergent from gene, meme and law induced actions"
+==&gt; Also see "[Todo: Write about economic systems as emergent from gene, meme and law induced actions](../d170f6a3/chime.md)"
 
-==&gt; Also see "Todo: Write about society as emergent from simple rules (the ant society model)"
+==&gt; Also see "[Todo: Write about society as emergent from simple rules (the ant society model)](../1c7007da/chime.md)"
 
-==&gt; Also see "Todo: Consider how, in the face of emdividuals and society being emergences, we can do "good" but creating bad consequences?"
+==&gt; Also see "[Todo: Consider how, in the face of emdividuals and society being emergences, we can do "good" but creating bad consequences?](../40aa8606/chime.md)"
 
-==&gt; Also see "Todo: Consider humans are Social Emergence Programmers i.e., Conscious Ants?"
+==&gt; Also see "[Todo: Consider humans are Social Emergence Programmers i.e., Conscious Ants?](../d6bbc47c/chime.md)"
 
-==&gt; Also see "Todo: Consider to argue that there is almost always a layer of Emergence between human actions and beliefs and the state and behaviour of the human society?"
+==&gt; Also see "[Todo: Consider to argue that there is almost always a layer of Emergence between human actions and beliefs and the state and behaviour of the human society?](../535658ed/chime.md)"
 
-==&gt; Also see "Todo: Consider to initiate the "Yours Emergence Society" that tries to use acts-in-faiths as forces to make a "better" society emerge?"
+==&gt; Also see "[Todo: Consider to initiate the "Yours Emergence Society" that tries to use acts-in-faiths as forces to make a "better" society emerge?](../81985046/chime.md)"
 
-==&gt; Also see "Todo: Consider to read Padgett, J.F. and Powell, W.W.: The Emergence of Organizations and Markets (eBook, Paperback and Hardcover)."
+==&gt; Also see "[Todo: Consider to read Padgett, J.F. and Powell, W.W.: The Emergence of Organizations and Markets (eBook, Paperback and Hardcover).](../b6e9de8a/chime.md)"
 
-==&gt; Also see "Todo: Consider to write about "Emergence" as the "Secret ingredient in all parts of life""
+==&gt; Also see "[Todo: Consider to write about "Emergence" as the "Secret ingredient in all parts of life"](../c87f24ac/chime.md)"
 
-==&gt; Also see "Todo: Elaborate on the difference of "emergence" and "self organization""
+==&gt; Also see "[Todo: Elaborate on the difference of "emergence" and "self organization"](../b35a6959/chime.md)"
 
-==&gt; Also see "Todo: Evaluate the ficttive stories domestic society believe from the view of how beneficial the emergence they create are"
+==&gt; Also see "[Todo: Evaluate the ficttive stories domestic society believe from the view of how beneficial the emergence they create are](../5a5ac9f8/chime.md)"
 
 1) Consider to build some intuition to what we mean with a self organising system that shows an emergent behaviour similar to some other studied system?
 
@@ -77,7 +77,7 @@ It seems to me that maybe we can imagine a way to infer a self organising comple
 
 3) Consider to compare my idea of "Emergent Oriented Programming" with "Chemical Programming"?
 
-==&gt; Also see "Todo: Programming - Consider to delve into "chemical computing" as food-for-thought addressing self-organizing emergence-leveraging asynchronous functional programming models?"
+==&gt; Also see "[Todo: Programming - Consider to delve into "chemical computing" as food-for-thought addressing self-organizing emergence-leveraging asynchronous functional programming models?](../fc9c1b35/chime.md)"
 
 ==&gt; Consider the talk ”"Unconventional Programming with Chemical Computing" by Carin Meier” that inspired me (<https://www.youtube.com/watch?v=cHoYNStQOEc>)?
 

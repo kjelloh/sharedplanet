@@ -7,13 +7,13 @@
 {% raw %}
 Consider if we could use a “C++ Crawler” instead of #include and make-files to have our source code use code from other sources?
 
-==&gt; Also see “Todo: Programming - Consider to check out TomTom C++ open source cpp-dependencies project to analyze C++ translation unit dependencies?"
+==&gt; Also see “[Todo: Programming - Consider to check out TomTom C++ open source cpp-dependencies project to analyze C++ translation unit dependencies?](../c6532969/chime.md)"
 
-==&gt; Also see “Todo: Programming - Consider a source-file-system for c++ that exposes a "representation-view" of representation-invariant (e.g. AST-graph) c++ translation units? “
+==&gt; Also see “[Todo: Programming - Consider a source-file-system for c++ that exposes a "representation-view" of representation-invariant (e.g. AST-graph) c++ translation units?](../91d7816a/chime.md) “
 
-==&gt; Also see “Todo: C++ Programming - Consider ways to totally eliminate the need fro a build-system (C++ source code based build definition)?"
+==&gt; Also see “[Todo: C++ Programming - Consider ways to totally eliminate the need fro a build-system (C++ source code based build definition)?](../bed0c2a2/chime.md)"
 
-==&gt; Also see “Todo: C++ Programming - Consider to discuss how to eliminate (automate) C++ Source Files (zero overhead pre-processing)?”
+==&gt; Also see “[Todo: C++ Programming - Consider to discuss how to eliminate (automate) C++ Source Files (zero overhead pre-processing)?](../5419b933/chime.md)”
 
 1) Consider the C++ Crawler should be able to extract header-code required by the code we write in our own translation unit?
 

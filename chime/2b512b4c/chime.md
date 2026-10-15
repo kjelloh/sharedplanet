@@ -7,35 +7,35 @@
 {% raw %}
 Consider to list some cool features we can imagine a “dream IDE” for C++ programming could provide?
 
-==&gt; Also see “Todo: Programming - Consider to study contemporary available IDEs for C++ programming?”
+==&gt; Also see “[Todo: Programming - Consider to study contemporary available IDEs for C++ programming?](../9c1df47d/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider a C++ IDE that writes the code as described by the programmer in a "chat”?
+==&gt; Also see ”[Todo: Programming - Consider a C++ IDE that writes the code as described by the programmer in a "chat](../cd70ecdc/chime.md)”?
 
-==&gt; Also see ”Todo: Programming - Consider a Dream C++ IDE (build environment) to detect Strongly Connected Components (SCC:s) in source as build-able libraries?”
+==&gt; Also see ”[Todo: Programming - Consider a Dream C++ IDE (build environment) to detect Strongly Connected Components (SCC:s) in source as build-able libraries?](../4a574ba5/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to base C++ Dream IDE on a fork of open source Jucipp C++ IDE?”
+==&gt; Also see ”[Todo: Programming - Consider to base C++ Dream IDE on a fork of open source Jucipp C++ IDE?](../3b574a91/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to check out 2016 note worthy C++ Editors/IDEs?”
+==&gt; Also see ”[Todo: Programming - Consider to check out 2016 note worthy C++ Editors/IDEs?](../bc9bb25e/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to define transform of C++ code into executable code as a stack-of-transformations?”
+==&gt; Also See ”[Todo: Programming - Consider to define transform of C++ code into executable code as a stack-of-transformations?](../a2b1e6e4/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to design a "task-pump" for build-tool-chain members to post build tasks for dispatching by threads, processes or grid nodes?”
+==&gt; Also See ”[Todo: Programming - Consider to design a "task-pump" for build-tool-chain members to post build tasks for dispatching by threads, processes or grid nodes?](../ca130c19/chime.md)”
 
 ==&gt; Also See ”Todo: Programming - Consider to design a Clang AST based Source Code Editor, IDE or GUI?”
 
-==&gt; Also See ”Todo: Programming - Consider to enable the "Dream IDE" to understand and help the programmer to comply with "Concepts" (e.g. Input Iterator Concept)”
+==&gt; Also See ”[Todo: Programming - Consider to enable the "Dream IDE" to understand and help the programmer to comply with "Concepts" (e.g. Input Iterator Concept)](../df3bdffe/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to find a way to manually edit a C++ file into a "Pandora View" of that file transformed into byte code?”
+==&gt; Also See ”[Todo: Programming - Consider to find a way to manually edit a C++ file into a "Pandora View" of that file transformed into byte code?](../54157cbf/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?”
+==&gt; Also See ”[Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?](../92b081ea/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to start programming on the Dream Make/Build envrionment for C++ programms?”
+==&gt; Also See ”[Todo: Programming - Consider to start programming on the Dream Make/Build envrionment for C++ programms?](../f0830a72/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to state dream traits of a good c++ make framework?”
+==&gt; Also See ”[Todo: Programming - Consider to state dream traits of a good c++ make framework?](../53c753bb/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to study all "wasted time" in Jason Turner C++ Weekly live programming for input to a dream C++ IDE?”
+==&gt; Also See ”[Todo: Programming - Consider to study all "wasted time" in Jason Turner C++ Weekly live programming for input to a dream C++ IDE?](../a20e90c5/chime.md)”
 
-==&gt; Also See ”Todo: Programming - Consider to use the name "unsource" for the C++ "dream make/build" environment?”
+==&gt; Also See ”[Todo: Programming - Consider to use the name "unsource" for the C++ "dream make/build" environment?](../8d80a6a9/chime.md)”
 
 ==&gt; Also See ”"
 
@@ -89,13 +89,13 @@ Move Assign
 
 4) Consider to have the IDE use a module to detect source dependencies as taled about in “Todo: Programming - Consider to state dream traits of a good c++ make framework?”
 
-==&gt; Also see “Todo: Programming - Consider to use the name "unsource" for the C++ "dream make/build" environment?”
+==&gt; Also see “[Todo: Programming - Consider to use the name "unsource" for the C++ "dream make/build" environment?](../8d80a6a9/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to state dream traits of a good c++ make framework?”
+==&gt; Also see “[Todo: Programming - Consider to state dream traits of a good c++ make framework?](../53c753bb/chime.md)”
 
 5) Consider to implement the “Pandora” 3D-view of source code interdependence?
 
-==&gt; See “Todo: Consider to develop a Pandora C++ IDE using RAD Studio FireMonkey?"
+==&gt; See “[Todo: Consider to develop a Pandora C++ IDE using RAD Studio FireMonkey?](../63af6dc8/chime.md)"
 
 …
 

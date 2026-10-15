@@ -7,7 +7,7 @@
 {% raw %}
 My friend Pauls Dreik has developed a good experience and expertise on applying fuzzing as a way to test C++ programs and I am curious to learn more about it.
 
-==&gt; Also see "Todo: Consider to follow up on Paul Dreik URL to video on Smart Card hacking and fuzzing?"
+==&gt; Also see "[Todo: Consider to follow up on Paul Dreik URL to video on Smart Card hacking and fuzzing?](../dbc284a9/chime.md)"
 
 1) Consider youtube video "Fuzzing Class Interfaces for Generating and Running Tests with libFuzzer - Barnabás Bágyi - CppCon" (<https://youtu.be/TtPXYPJ5_eE> )?
 

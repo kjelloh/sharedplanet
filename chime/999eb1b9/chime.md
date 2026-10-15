@@ -7,11 +7,11 @@
 {% raw %}
 I now have the hunch that FreeCAD may now be capable enough for me to trust it for my design, model and build of my own house.
 
-==&gt; Also see "Todo: Consider to check out Open Source FreeCAD tool for 3D Design?"
+==&gt; Also see "[Todo: Consider to check out Open Source FreeCAD tool for 3D Design?](../d7e80328/chime.md)"
 
 ==&gt; Also see Todo: Consider to study and try out the Open Source 2D CAD application QCAD (NOT CuteCAD as a companion to 3D CAD FreeCAD)?""
 
-==&gt; Also see "Todo: Consider to study and try out the 2D CAD application LibreCAD, a fork of QCAD (as a companion to 3D CAD FreeCAD)?"
+==&gt; Also see "[Todo: Consider to study and try out the 2D CAD application LibreCAD, a fork of QCAD (as a companion to 3D CAD FreeCAD)?](../68befbb5/chime.md)"
 
 -1) Consider to document my experience with using FreeCAD for my house build?
 

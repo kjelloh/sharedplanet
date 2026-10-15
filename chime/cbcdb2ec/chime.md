@@ -7,9 +7,9 @@
 {% raw %}
 I need somewhere to live while I build my own house!
 
-==&gt; Also see "Todo: House Build - Consider if I can live in a Tiny House on trailer (e.g. from Swedish Rullebo / Bert Karlsson) placed on my property while I build my permanent house?"
+==&gt; Also see "[Todo: House Build - Consider if I can live in a Tiny House on trailer (e.g. from Swedish Rullebo / Bert Karlsson) placed on my property while I build my permanent house?](../3a499678/chime.md)"
 
-==&gt; Also see "Todo: House Build - Consider a modular house design on a trailer designed for Tiny Houses that you can assemble and disassemble and move on EU pallets (empty trailer separate)?"
+==&gt; Also see "[Todo: House Build - Consider a modular house design on a trailer designed for Tiny Houses that you can assemble and disassemble and move on EU pallets (empty trailer separate)?](../9c574ff8/chime.md)"
 
 1) Consider to buy a pre-built Tiny House on a trailer from Swedish company TreeSign (<https://www.treesign.se/faq> )?
 

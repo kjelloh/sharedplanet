@@ -7,7 +7,7 @@
 {% raw %}
 Maybe I can just go ahead and pick a ready-to-build house as designed and documented by Svenskt trä "Byggbeskrivningar"?
 
-==&gt; Also see "Todo: House Build - Consider how much "house" I can plan in 1:30 hours?"
+==&gt; Also see "[Todo: House Build - Consider how much "house" I can plan in 1:30 hours?](../11c13358/chime.md)"
 
 1) Consider the different "Byggbeskrivningar" from Svensk Trä (<https://www.byggbeskrivningar.se> )?
 

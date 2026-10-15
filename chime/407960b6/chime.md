@@ -7,8 +7,8 @@
 {% raw %}
 What can we imagine to gain by being able to delegate high performance processing from a central CPU to "migrated" cores to more efficient locations in a pipe of data processing?
 
-==&gt; Also see "Todo: Consider ways we can imagine to make components and functionality of graphical work tool-chains to become compassable by (make graphical operations compose to) the end user?"  
-==&gt; Also see "Todo: Consider to understand graphics card architectures and abilities based on the benchmarking made for evaluating the jan 2019 AMD Radeon VII vs Nvidia RTX 2080?"
+==&gt; Also see "[Todo: Consider ways we can imagine to make components and functionality of graphical work tool-chains to become compassable by (make graphical operations compose to) the end user?](../5450fa0f/chime.md)"  
+==&gt; Also see "[Todo: Consider to understand graphics card architectures and abilities based on the benchmarking made for evaluating the jan 2019 AMD Radeon VII vs Nvidia RTX 2080?](../9e6692ca/chime.md)"
 
 1) Consider 3D games could benefit from having the gaming logic being moved closer to the GPU?
 

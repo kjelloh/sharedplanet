@@ -7,7 +7,7 @@
 {% raw %}
 I am slowly getting to grips with dependent types and now think we should consider to add dependent types (dependent function return type and pair)?
 
-==&gt; Also see "Todo: Tha - Consider to understand Martin-Löf Type Theory for a better base to design the Tha meta level models?"
+==&gt; Also see "[Todo: Tha - Consider to understand Martin-Löf Type Theory for a better base to design the Tha meta level models?](../8fab848a/chime.md)"
 
 1) Consider youtube video "Naïve Type Theory by Thorsten Altenkirch (University of Nottingham, UK)" (<https://www.youtube.com/watch?v=bNG53SA4n48&t=2721s> )?
 
@@ -29,7 +29,7 @@ TODO: Try to pin point all my confusions and then straighten them out?
 
 3) Consider wikipedia on dependent types (<https://en.wikipedia.org/wiki/Dependent_type> )?
 
-==&gt; Also see "Todo: Tha - Consider to understand Martin-Löf Type Theory for a better base to design the Tha meta level models?"
+==&gt; Also see "[Todo: Tha - Consider to understand Martin-Löf Type Theory for a better base to design the Tha meta level models?](../8fab848a/chime.md)"
 
 NOTE: Both SIGMA and PI creates a single type (SIGMA a single pair and PI a single function)?!
 

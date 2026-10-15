@@ -7,7 +7,7 @@
 {% raw %}
 It seems it would be a good idea to learn and document my journey into the MacOS - What exists in the MacOS world; How does it work
 
-==&gt; Also See “Todo: Programming - Consider to document and understand the basics of Linux OS usage and configuration?”
+==&gt; Also See “[Todo: Programming - Consider to document and understand the basics of Linux OS usage and configuration?](../dd94bc79/chime.md)”
 
 1) Consider good command line tool and how to install them on MacOS?
 

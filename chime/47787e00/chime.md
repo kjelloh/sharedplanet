@@ -7,7 +7,7 @@
 {% raw %}
 Watching a video where Adam Savage builds a Japanese model of a Strandbeest he referred to the term “knolling” to describe the process of placing out all the parts of the model before starting to build. I got interested as this seems very close to how I like to do when packing and what I am currently trying to do with the tool walls of my indoor shed and eventually all the stuff in my apartment?
 
-==&gt; Also see “Todo: Consider designs to store tools on wall storages in my indoor shed (preferably transparent to let in light into the shed)?"
+==&gt; Also see “[Todo: Consider designs to store tools on wall storages in my indoor shed (preferably transparent to let in light into the shed)?](../18fb4e2b/chime.md)"
 
 1) This seems to be the youtube video “Adam Savage's One Day Builds: Strandbeest Model Kit” where Adam Savage uses the term “Knolling” as a way to organise stuff for easy access and identifiable action on a flat surface (<https://youtu.be/0JnTThZMJAg?t=238>)?
 

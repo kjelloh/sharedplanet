@@ -7,19 +7,19 @@
 {% raw %}
 Can we imagine a currency that keeps track of what is consumed and then rewards the producer from money trickled down from the network not from the consumer?
 
-==&gt; Also see ”Todo: Consider an electronic currency that uses he limit of the human population instead of a limit in available currency?”
+==&gt; Also see ”[Todo: Consider an electronic currency that uses he limit of the human population instead of a limit in available currency?](../c2622aea/chime.md)”
 
-==&gt; Also see ”Todo: Shared Planet Coin - Consider to elaborate on an electronic currency that has trickle-down and contracts built in to it ("work energy" idiom currency)?”
+==&gt; Also see ”[Todo: Shared Planet Coin - Consider to elaborate on an electronic currency that has trickle-down and contracts built in to it ("work energy" idiom currency)?](../aec7b53a/chime.md)”
 
-==&gt; Also see ”Todo: Consider the traits of an electronic currency that can provide incitements to have a society emerge where human suffering from lack of resources are no more?”
+==&gt; Also see ”[Todo: Consider the traits of an electronic currency that can provide incitements to have a society emerge where human suffering from lack of resources are no more?](../29210d5a/chime.md)”
 
-==&gt; Also see ”Todo: Elaborate on the idea of a Currency that "decays" and is Created by society based on available resources”
+==&gt; Also see ”[Todo: Elaborate on the idea of a Currency that "decays" and is Created by society based on available resources](../58849fe0/chime.md)”
 
-==&gt; Also see ”Todo: Elaborate on the idea of a Currency that behaves like "energy" and is Created by society based on available resources”
+==&gt; Also see ”[Todo: Elaborate on the idea of a Currency that behaves like "energy" and is Created by society based on available resources](../f1256a72/chime.md)”
 
-==&gt; Also see ”Todo: Write about a currency to evaluate "happiness”"
+==&gt; Also see ”[Todo: Write about a currency to evaluate "happiness”](../531d3728/chime.md)"
 
-==&gt; Also see ”Todo: Write about currency with natural decay in value”
+==&gt; Also see ”[Todo: Write about currency with natural decay in value](../201e5191/chime.md)”
 
 1) Consider we want a currency where consumption is ”free” but producers gets paid through automatic trickle back from the network based on consumption?
 

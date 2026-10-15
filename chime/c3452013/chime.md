@@ -7,9 +7,9 @@
 {% raw %}
 It seems I already know enough about what sander I want to go for the Mirka Random Orbital Sander (brushless motor, low noise and vibration and "dust free" sanding)?
 
-==&gt; Also see "Todo: Random Orbital Sander - Consider to understand how a random orbital sander moves and behaves to choose what to buy and possibly how to design my own (using a brushless motor)?"
+==&gt; Also see "[Todo: Random Orbital Sander - Consider to understand how a random orbital sander moves and behaves to choose what to buy and possibly how to design my own (using a brushless motor)?](../cdee3b9d/chime.md)"
 
-==&gt; Also see "Todo: DIY Tools - Consider to 3D print a hand sander block with dust extraction and Abranet sanding sheets?"
+==&gt; Also see "[Todo: DIY Tools - Consider to 3D print a hand sander block with dust extraction and Abranet sanding sheets?](../628ec91c/chime.md)"
 
 1) Consider to understand the Mirka Electric Random Orbital sander product series?
 

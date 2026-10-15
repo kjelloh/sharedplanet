@@ -7,9 +7,9 @@
 {% raw %}
 I suppose it should be a good idea to keep track of the best ways to install and maintain the C++ boost libraries on Xcode and OS X?
 
-==&gt; Also see “Todo: Programming - Consider to document how to configure Xcode to use boost?”
+==&gt; Also see “[Todo: Programming - Consider to document how to configure Xcode to use boost?](../d228368b/chime.md)”
 
-==&gt; Also see “Todo: C++ Programming - Consider to try out Microsoft Casablanca REST SDK (cpprestsdk) on GitHub"
+==&gt; Also see “[Todo: C++ Programming - Consider to try out Microsoft Casablanca REST SDK (cpprestsdk) on GitHub](../96bae485/chime.md)"
 
 1) Consider to use brew?
 

@@ -7,7 +7,7 @@
 {% raw %}
 What can we learn from the idea that Ranges may actually be traversed using Iterator (Consumer driven) or using Generators (Producer driven)?
 
-==&gt; Also see “Todo: Programming - Consider to argue that Generators reflect structure in code whilst Iterators reflect structure in state?"
+==&gt; Also see “[Todo: Programming - Consider to argue that Generators reflect structure in code whilst Iterators reflect structure in state?](../325f464b/chime.md)"
 
 1) This seem like a good talk by Arno Schöld where this idea is presented and explained (<https://www.youtube.com/watch?v=vrCtS6FDay8>)?
 

@@ -7,7 +7,7 @@
 {% raw %}
 I want a good code editor with syntax highlighting and good language support and navigation.
 
-==&gt; Also see "Todo: Consider to check out the Tree-Sitter incremental language parser for IDE syntax highlighting support?"
+==&gt; Also see "[Todo: Consider to check out the Tree-Sitter incremental language parser for IDE syntax highlighting support?](../87f3e0c1/chime.md)"
 
 1) Neovim seems to live here (<https://neovim.io> )?
 

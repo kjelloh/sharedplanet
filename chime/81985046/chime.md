@@ -19,19 +19,19 @@ Could it be a way forward to try an initiate a community that tries to use atten
 
 4) Consider to discuss that each “step” to a “better” society may be intransitive
 
-==&gt; See “Todo: Deny that "progress" is the correct word to describe the goal of change of society”
+==&gt; See “[Todo: Deny that "progress" is the correct word to describe the goal of change of society](../380efe9d/chime.md)”
 
 ==&gt; See “Larry Temkin on Transitivity” (<http://philosophybites.com/2015/07/larry-temkin-on-transitivity.html>)
 
 *“Larry Temkin questions the assumption that transitivity is a feature of our moral judgements - his challenge has come to be known as 'Temkin's Paradox'. If he's right, then many assumptions that philosophers and others make about rationality need revising, with far-reaching consequences for practical ethics.”*
 
-==&gt; See “Todo: Write how the Super Curious "nomad" understand change in states of existence are not transitive”
+==&gt; See “[Todo: Write how the Super Curious "nomad" understand change in states of existence are not transitive](../cda33ba1/chime.md)”
 
-==&gt; See “Todo: Write why worse plus worse may end up better”
+==&gt; See “[Todo: Write why worse plus worse may end up better](../eda71bb2/chime.md)”
 
-==&gt; See “Todo: Write about Psychic-paper money transaction relations are not transitive”
+==&gt; See “[Todo: Write about Psychic-paper money transaction relations are not transitive](../af63cef1/chime.md)”
 
-==&gt; See “Todo: Write about mathematical problems of iterating society to better state of affairs”
+==&gt; See “[Todo: Write about mathematical problems of iterating society to better state of affairs](../29cdeda4/chime.md)”
 
 5) Find a catchy name for the movement (community)?
 

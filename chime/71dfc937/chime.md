@@ -7,7 +7,7 @@
 {% raw %}
 I want to be able to automate or at least operate on video clips in a functional manner.
 
-==&gt; Also see "Todo: Consider to try out Synfig 2D Editor (open source and cross platform)?"
+==&gt; Also see "[Todo: Consider to try out Synfig 2D Editor (open source and cross platform)?](../a12d52a1/chime.md)"
 
 1) It seems MLT actually uses FFMpeg under the hood as plug-in for video processing and playback ([https://en.wikipedia.org/wiki/Media_Lovin%27_Toolkit](https://en.wikipedia.org/wiki/Media_Lovin'_Toolkit) )?
 

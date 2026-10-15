@@ -7,7 +7,7 @@
 {% raw %}
 In fact, the game Rock, paper scissors is a fun game just precisely because the relations that rock &lt; paper &lt; scissors &lt; rock...
 
-==&gt; Also see ”Todo: Consider to follow up on the Larry Temkin "Temkin's Paradox" that moral judgement can't assume transitive "better than" function?”
+==&gt; Also see ”[Todo: Consider to follow up on the Larry Temkin "Temkin's Paradox" that moral judgement can't assume transitive "better than" function?](../11ad9189/chime.md)”
 
 1) Consider to refer to this game to give an example how ”better than” (or progress) may not actually end up in a truly ”better” state?
 

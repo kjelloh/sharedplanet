@@ -7,15 +7,15 @@
 {% raw %}
 It seems the C++ library VMime may be a good candidate to write code that is able to read Todo: mails from an IMAP account?
 
-==&gt; Also See “Todo: C++ - Consider to investigate and try out good ways to read and parse e-mail messages from an IMAP Server?”)
+==&gt; Also See “[Todo: C++ - Consider to investigate and try out good ways to read and parse e-mail messages from an IMAP Server?](../91e9ca9b/chime.md)”)
 
-==&gt; Also see “Todo: Programming - Consider to make an application that processes Todo: mails and generates a cross referenced HTML document?”
+==&gt; Also see “[Todo: Programming - Consider to make an application that processes Todo: mails and generates a cross referenced HTML document?](../9f8b1177/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to understand the e-mail protocols and authentication methods applied and programming libraries to apply them in code?”
+==&gt; Also see “[Todo: Programming - Consider to understand the e-mail protocols and authentication methods applied and programming libraries to apply them in code?](../d565333f/chime.md)”
 
-==&gt; Also see “Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?”
+==&gt; Also see “[Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?](../4234851e/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to make an application that synchronises Mail-Todo:s with in-app Todo:s?”
+==&gt; Also see “[Todo: Programming - Consider to make an application that synchronises Mail-Todo:s with in-app Todo:s?](../42890ccc/chime.md)”
 
 ==&gt; Also see “==&gt; Also see explicit “Todo: Programming - Consider to study the POCO C++ standard Internet protocol library (ftp, pop3)””
 

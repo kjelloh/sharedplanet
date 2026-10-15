@@ -7,7 +7,7 @@
 {% raw %}
 I want to make cratchit able to interact with the API:s os Swedish Tax Agency and SRU-files is one of their file formats for data transfer.
 
-==&gt; Also see "Todo: Consider the Swedish Tax Agency XML format for upload of declaration of employer data?"
+==&gt; Also see "[Todo: Consider the Swedish Tax Agency XML format for upload of declaration of employer data?](../4e275805/chime.md)"
 
 -1) Consider the english terms defines by Swedish Tax Agency (
 

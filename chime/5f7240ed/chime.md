@@ -41,8 +41,8 @@ What can we learn for Darwinet by studying existing ”Identity Providing Soluti
 
 ==&gt; Can we imagine to design an algorithm where Nodes trust the Identity with the longest chain-of-authorizations (if that makes sense)?  
 ==&gt; Consider to understand how the Identity of a live bitcoin is actually trusted (longest chain of approved transactions)?  
-==&gt; See ”Todo: Darwinet - Cosnider to use bitcoin authorization mechanism for Node authentication ”  
-==&gt; See ”Todo: Understand Bitcoin authorization, transaction and mining”  
+==&gt; See ”[Todo: Darwinet - Cosnider to use bitcoin authorization mechanism for Node authentication](../21c62611/chime.md) ”  
+==&gt; See ”[Todo: Understand Bitcoin authorization, transaction and mining](../bb7daa99/chime.md)”  
 ==&gt; E.g. https://www.youtube.com/watch?v=l9jOJk30eQs
 
 3) Can we imagine to merge this idea with the ”truth-web” mechanism?
@@ -51,9 +51,9 @@ What can we learn for Darwinet by studying existing ”Identity Providing Soluti
 
 4) Consider to follow om on other Todo:s relating to this subject?
 
-==&gt; See ”Todo: Compare Darwinet with other digital identity synchronisation services like IFTT”  
-==&gt; See ”Todo: Darwinet dividual and role user modeling”  
-==&gt; See ”Todo: Consider to build Dividuality into the concept of a Darwinet User?”  
-==&gt; See ”Todo: Darwinet - Cosnider to use bitcoin authorization mechanism for Node authentication "
+==&gt; See ”[Todo: Compare Darwinet with other digital identity synchronisation services like IFTT](../71f42c55/chime.md)”  
+==&gt; See ”[Todo: Darwinet dividual and role user modeling](../b5a85707/chime.md)”  
+==&gt; See ”[Todo: Consider to build Dividuality into the concept of a Darwinet User?](../722174bd/chime.md)”  
+==&gt; See ”[Todo: Darwinet - Cosnider to use bitcoin authorization mechanism for Node authentication](../21c62611/chime.md) "
 
 {% endraw %}

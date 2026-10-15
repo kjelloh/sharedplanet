@@ -11,7 +11,7 @@ Dan Ariely TED talk “Are we in control of our own decisions?” seem like a ve
 
 ==&gt; “Are we in control of our own decisions?” (<https://www.ted.com/talks/dan_ariely_asks_are_we_in_control_of_our_own_decisions>)
 
-==&gt; Also see “Todo: Consider to delve into TED talk “A monkey economy as irrational as ours” by Laurie Santos about our flaws to make good economic decisions?”
+==&gt; Also see “[Todo: Consider to delve into TED talk “A monkey economy as irrational as ours” by Laurie Santos about our flaws to make good economic decisions?](../e8c691fc/chime.md)”
 
 ==&gt; “Beware conflicts of interest” (<https://www.ted.com/talks/dan_ariely_beware_conflicts_of_interest>)
 
@@ -19,7 +19,7 @@ Dan Ariely TED talk “Are we in control of our own decisions?” seem like a ve
 
 ==&gt; “What makes us feel good about our work?” (<https://www.ted.com/talks/dan_ariely_what_makes_us_feel_good_about_our_work>)
 
-==&gt; Also see “Todo: Study TED talks about "meaningful work""
+==&gt; Also see “[Todo: Study TED talks about "meaningful work"](../f149e93b/chime.md)"
 
 ==&gt; “How equal do we want the world to be? You'd be surprised” (<https://www.ted.com/talks/dan_ariely_how_equal_do_we_want_the_world_to_be_you_d_be_surprised>)
 

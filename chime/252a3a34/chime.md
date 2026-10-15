@@ -7,7 +7,7 @@
 {% raw %}
 It seems I should now more about the components in a tactile mechanical keyboard for computers?
 
-==&gt; Also see “Todo: Consider to build the DIY ibm-like old-style tactile switches keyboard as indicated by Snazzy Lab youtube video?"
+==&gt; Also see “[Todo: Consider to build the DIY ibm-like old-style tactile switches keyboard as indicated by Snazzy Lab youtube video?](../f61ed67e/chime.md)"
 
 1) Consider the Chinese keyboard kit vendor KBDFan (<https://kbdfans.cn>)?
 

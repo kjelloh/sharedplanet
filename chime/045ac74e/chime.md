@@ -42,7 +42,7 @@ Could it be a good idea to design a C++ File System that presents a file view (f
 
 6) Consider using a C++ “revers” parser and base file content to cover only the actual used ATS?
 
-==&gt; See “Todo: Programming - Consider if it is possible to create a C++ parser that parses in reverse order (from end to start)?"  
+==&gt; See “[Todo: Programming - Consider if it is possible to create a C++ parser that parses in reverse order (from end to start)?](../17312851/chime.md)"  
 ==&gt; Consider that reverse parsing is the quickest way to get an AST of what is actually used in code?  
 ==&gt; But also consider that the same AST can be created using normal parsing and then stripping away what is not used?
 

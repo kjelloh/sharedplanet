@@ -25,11 +25,11 @@ So, can we imagine programming and use of meme-creating bots to cause beneficial
 
 ==&gt; Consider meme-noise (random variations of meme interpretation) as a way to allow meme evolution (same mechanism as ant-cooperation to move objects)
 
-==&gt; See “Todo: Follow up on "crazy ants" enabling scouting ants to affect direction “
+==&gt; See “[Todo: Follow up on "crazy ants" enabling scouting ants to affect direction](../9120e9e2/chime.md) “
 
-==&gt; See “Todo: Define "trait noise" as a way to amplify evolution forces “
+==&gt; See “[Todo: Define "trait noise" as a way to amplify evolution forces](../d4923f4c/chime.md) “
 
-==&gt; See “Todo: Write about "crazy beliefs" as a way to search beneficial truths by applying "truth noise”"
+==&gt; See “[Todo: Write about "crazy beliefs" as a way to search beneficial truths by applying "truth noise”](../ecc75c1a/chime.md)"
 
 …
 

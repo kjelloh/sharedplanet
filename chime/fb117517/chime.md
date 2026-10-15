@@ -7,15 +7,15 @@
 {% raw %}
 It seems the BitScope USB/LAN connected SBC data capture products provide Raspberry Pi supported frontend GUI that enables us to put together a DIY Bench MSO Oscilloscope?
 
-==&gt; Also see “Todo: Electronic Lab - Consider to check out the sigrok open source PC/MAC/Linux instrumentation software for a large set of electronic measurement hardware devices?”
+==&gt; Also see “[Todo: Electronic Lab - Consider to check out the sigrok open source PC/MAC/Linux instrumentation software for a large set of electronic measurement hardware devices?](../bf58bea1/chime.md)”
 
-==&gt; Also see “Todo: Consider to check out Chineese Min company that sell those mini screwdriver, soldering iron and oscilloscope that Macro Reps done reviews on?”
+==&gt; Also see “[Todo: Consider to check out Chineese Min company that sell those mini screwdriver, soldering iron and oscilloscope that Macro Reps done reviews on?](../d50b728f/chime.md)”
 
-==&gt; Also see “Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?”
+==&gt; Also see “[Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?](../9e71efd1/chime.md)”
 
-==&gt; Also see “Todo: Electronics Lab - Consider Oscilloscope brands of common web-shops?”
+==&gt; Also see “[Todo: Electronics Lab - Consider Oscilloscope brands of common web-shops?](../6ed63735/chime.md)”
 
-==&gt; Also see “Todo: Electronics Lab - Consider to buy and use a PC/USB Oscilloscope?”
+==&gt; Also see “[Todo: Electronics Lab - Consider to buy and use a PC/USB Oscilloscope?](../1e289e9c/chime.md)”
 
 1) This seems to be the home of BitScope products ([http://bitscope.com](http://bitscope.com/))
 

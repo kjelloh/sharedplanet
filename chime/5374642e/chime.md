@@ -7,7 +7,7 @@
 {% raw %}
 Could it be a good idea to initiate a C++ open source library that implement services to map languages to their scripts, the character set of the script using web-available infestation?
 
-==&gt; Also see “Todo: Consider to use words from other languages to find names for C++ Open Source Libraries?"
+==&gt; Also see “[Todo: Consider to use words from other languages to find names for C++ Open Source Libraries?](../8896049f/chime.md)"
 
 1) Consider the path of association from the english word to its mapping in the other language?
 

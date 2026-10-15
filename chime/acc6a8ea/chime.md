@@ -7,7 +7,7 @@
 {% raw %}
 Could it be possible to place ”Dyson Style” small cyclone dust separators on a face mask to remove the larger particles (and thus enabling a face mask filter only deal with small particles)?
 
-==&gt; Also see ”Todo: Consider to choose efficient, comfortable and good looking woodworking protection (face mask, eye protection etc.)?"
+==&gt; Also see ”[Todo: Consider to choose efficient, comfortable and good looking woodworking protection (face mask, eye protection etc.)?](../3984a510/chime.md)"
 
 1) Consider to design small cyclones to be placed in inhaled air stream?
 

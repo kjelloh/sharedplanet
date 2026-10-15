@@ -15,7 +15,7 @@ It seems a good bet to get the first Darwinet Node up and running is to make it 
 
 ==&gt; Consider to reach out to him (<https://www.linkedin.com/in/allenholub/>) about C++ include_os micro services and Darwinet P2P shared Tha with eventual consistent view (instead of state)?
 
-==&gt; Also see ”Todo: Darwinet - Consider to motivate survival-of-fittest-view with the argument that views always shows meaningful state where a merge algorithm will always create an invalid state?”
+==&gt; Also see ”[Todo: Darwinet - Consider to motivate survival-of-fittest-view with the argument that views always shows meaningful state where a merge algorithm will always create an invalid state?](../acaa165b/chime.md)”
 
 ...
 

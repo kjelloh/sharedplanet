@@ -5,7 +5,7 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider to delve into the references provided by my leftist friend Angelica in a facebook conversation about Kamala Devi Harris?"
+==&gt; Also see "[Todo: Consider to delve into the references provided by my leftist friend Angelica in a facebook conversation about Kamala Devi Harris?](../e5434e93/chime.md)"
 
 1) Consider this URL that seems to present an interesting debate triggered by Petter Larsson in his article "Helin och högertrollen skrålar ikapp i ”Svenska nyheter”" (<https://www.sydsvenskan.se/2020-11-23/sa-fick-hogertrollen-sjunga-allsang-i-svenska-nyheter> )?
 

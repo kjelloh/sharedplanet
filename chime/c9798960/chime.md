@@ -7,11 +7,11 @@
 {% raw %}
 It seems I should be able to process my "Todo mails" into documentation using some python script?
 
-==&gt; Also see "Todo: Python - Consider to document how I got Python "up and running" on my new Mac Pro?"
+==&gt; Also see "[Todo: Python - Consider to document how I got Python "up and running" on my new Mac Pro?](../c29e4c42/chime.md)"
 
-==&gt; Also see "Todo: Python Programming - Consider to learn Python and try Web scraping and IMAP mail fetching using Python Scripts?"
+==&gt; Also see "[Todo: Python Programming - Consider to learn Python and try Web scraping and IMAP mail fetching using Python Scripts?](../ee3f1eb2/chime.md)"
 
-==&gt; Also see "Todo: Consider to take the online "Global Warming I" and "Global Warming II" where the latter is building models in Python?"
+==&gt; Also see "[Todo: Consider to take the online "Global Warming I" and "Global Warming II" where the latter is building models in Python?](../e4ab27e5/chime.md)"
 
 1) Consider the actual steps I took and the script I ended up writing to read Todo mails using Python?
 

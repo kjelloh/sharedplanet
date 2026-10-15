@@ -7,9 +7,9 @@
 {% raw %}
 It seems the Arduino boards are very popular, cheep and capable and peered by a very vital community?
 
-==&gt; Also see “Todo: Darwinet - Consider to design a Darwinet for secure and low-foot-print IoT "swarms"?"
+==&gt; Also see “[Todo: Darwinet - Consider to design a Darwinet for secure and low-foot-print IoT "swarms"?](../9e285937/chime.md)"
 
-==&gt; Also see “Todo: Follow up and learn about WikiHouse - Open Source house building”
+==&gt; Also see “[Todo: Follow up and learn about WikiHouse - Open Source house building](../eaec0e9b/chime.md)”
 
 1) Consider to check out the Arduino home page for boards and products (<https://www.arduino.cc/>)?
 

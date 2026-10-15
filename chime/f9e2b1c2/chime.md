@@ -7,7 +7,7 @@
 {% raw %}
 I want something more cross platform and less bloated way to write and "typeset" (format) text documents.
 
-==&gt; Also see "Todo: Consider to try out the cross platform Obsidian text editing "platform" (and optionally how it can work together with Pandoc format transformation tool)?"
+==&gt; Also see "[Todo: Consider to try out the cross platform Obsidian text editing "platform" (and optionally how it can work together with Pandoc format transformation tool)?](../99e89356/chime.md)"
 
 1) The Pandoc application seems to live here on the web (<https://pandoc.org> )?
 

@@ -7,9 +7,9 @@
 {% raw %}
 Could it be fun and interesting to check out the Python based Jupyter Notebook that seems to be an interactive Repl-like programming ID that runs in the browser?
 
-==&gt; Also see “Todo: C++ Teaching - Consider to design a C++ REPL Programming IDE or find some existing ones?”
+==&gt; Also see “[Todo: C++ Teaching - Consider to design a C++ REPL Programming IDE or find some existing ones?](../0beb688a/chime.md)”
 
-==&gt; Also see “Todo: Darwinet Repl - Consider we may decorate the Meh Repl with a meta-processor (Cling C++ Repl style) to implement repl commands separate from the Meh language Tha mutations?"
+==&gt; Also see “[Todo: Darwinet Repl - Consider we may decorate the Meh Repl with a meta-processor (Cling C++ Repl style) to implement repl commands separate from the Meh language Tha mutations?](../b2e9849f/chime.md)"
 
 1) Consider this NDS talk “The secret weapon for developers, Notebooks. - Cristian Prieto” as having good leads into this framework (<https://www.youtube.com/watch?v=H0IL7zZSLjg>)?
 

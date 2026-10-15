@@ -7,7 +7,7 @@
 {% raw %}
 It seems it’s beginning to be time to select and buy a lab power supply for my maker space?
 
-==&gt; Also see “Todo: Consider to buy AliExpress RD Power Supply Modules (Units i.e., PSU) and USB Power Meeter modules?"
+==&gt; Also see “[Todo: Consider to buy AliExpress RD Power Supply Modules (Units i.e., PSU) and USB Power Meeter modules?](../58251652/chime.md)"
 
 -1) Consider the requirements I have on my PSU?
 
@@ -49,7 +49,7 @@ It seems it’s beginning to be time to select and buy a lab power supply for my
 
 ==&gt; Actually consider the Chinese RD power supply module vendor on Aliexpress (<https://rdtech.aliexpress.com/store/923042>)?PS305
 
-==&gt; See “Todo: Consider to buy AliExpress RD Power Supply Modules (Units i.e., PSU) and USB Power Meeter modules?"
+==&gt; See “[Todo: Consider to buy AliExpress RD Power Supply Modules (Units i.e., PSU) and USB Power Meeter modules?](../58251652/chime.md)"
 
 ![](<Screen Shot 2018-04-27 at 17.21.49.png>)
 

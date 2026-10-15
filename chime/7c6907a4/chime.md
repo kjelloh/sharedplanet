@@ -7,9 +7,9 @@
 {% raw %}
 Could it be that we are now ready to start building the C++ application for Book Keeping by piecing together a Tha Model with en Elm Idiom unidirectional model, view update, Immer C++ library for immutable dat structure model and asynchronous synchronisation with external models in REST web-services (FortKnox) and IPFS files system?
 
-==&gt; Also see “Todo: Programming Elm Idiom C++ - Consider how we may use the Elm Idiom run-time with an immutable application state (model) to provide different user front-ends to the same core (run-time) and back-end (update)?”
+==&gt; Also see “[Todo: Programming Elm Idiom C++ - Consider how we may use the Elm Idiom run-time with an immutable application state (model) to provide different user front-ends to the same core (run-time) and back-end (update)?](../87b55061/chime.md)”
 
-==&gt; Also see “Todo: Consider to understand how to make a C++ back-end work with an Electron front end?”
+==&gt; Also see “[Todo: Consider to understand how to make a C++ back-end work with an Electron front end?](../92f8255d/chime.md)”
 
 ==&gt; Also see “Todo: Fortknox API - Consider to experiment with the Fortknox API so that I may automate the book keeping of The ITfied AB?”
 

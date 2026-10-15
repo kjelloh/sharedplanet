@@ -7,11 +7,11 @@
 {% raw %}
 It seems it could be possible to provide inference through a meta-2 value we name ”inferred” that instantiate meta-1 generic value that from provided meta-0 value infers its own value?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider in Meh we define meta-1 name "a" as a generic (any) type to be inferred from (Haskel and Elm style)?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider in Meh we define meta-1 name "a" as a generic (any) type to be inferred from (Haskel and Elm style)?](../9e687519/chime.md)”
 
-==&gt; Also see ”Todo: Meta Value Model - Consider mechanisms to create and apply pattern matching using existing model meta-values and explicit UML-like model patterns?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider mechanisms to create and apply pattern matching using existing model meta-values and explicit UML-like model patterns?](../a6a889cc/chime.md)”
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to implement a value-to-meta-value-contract matching ability as implemented by Clojure.spec?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider to implement a value-to-meta-value-contract matching ability as implemented by Clojure.spec?](../c40aa5b0/chime.md)”
 
 1) Consider to elaborate on the nature of this meta-2 value to make this work?
 

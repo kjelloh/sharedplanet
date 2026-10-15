@@ -7,25 +7,25 @@
 {% raw %}
 It seems we should somehow be able to drive the feeder using inline wheels and components available for electric skateboard?
 
-==&gt; Also see "Todo: Consider the requirements on a motor for my Table Saw power feeder?"
+==&gt; Also see "[Todo: Consider the requirements on a motor for my Table Saw power feeder?](../d93391cf/chime.md)"
 
-==&gt; Also see "Todo: Power Feeder - Consider a reciprocating (alternating) push feeder?"
+==&gt; Also see "[Todo: Power Feeder - Consider a reciprocating (alternating) push feeder?](../7087a2b1/chime.md)"
 
-==&gt; Also see "Todo: DIY Power Feeder - Consider a caterpillar drive using available drive chains and sprockets for e.g., bicycles or robots or RC model?"
+==&gt; Also see "[Todo: DIY Power Feeder - Consider a caterpillar drive using available drive chains and sprockets for e.g., bicycles or robots or RC model?](../8b376ef3/chime.md)"
 
-==&gt; Also see "Todo: Power Feeder - Consuder to base a power feeder design on wheels from casters?"
+==&gt; Also see "[Todo: Power Feeder - Consuder to base a power feeder design on wheels from casters?](../52436c2e/chime.md)"
 
-==&gt; Also see "Todo: Table Saw Power Feeder - Consider to design a Power Feeder from self balancing electric skateboard or cycle wheel?"
+==&gt; Also see "[Todo: Table Saw Power Feeder - Consider to design a Power Feeder from self balancing electric skateboard or cycle wheel?](../ec2c8971/chime.md)"
 
-==&gt; Also see "Todo: Table Saw Power Feeder - Consider to design a Power Feeder from Conrad web-shop parts?"
+==&gt; Also see "[Todo: Table Saw Power Feeder - Consider to design a Power Feeder from Conrad web-shop parts?](../9001ef5d/chime.md)"
 
-==&gt; Also see "Todo: Table Saw Power Feeder + Table Saw Rip Fence - Consider Adafruit CNC and Robot parts?"
+==&gt; Also see "[Todo: Table Saw Power Feeder + Table Saw Rip Fence - Consider Adafruit CNC and Robot parts?](../4cabff46/chime.md)"
 
-==&gt; Also see "Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from Accu web shop)?"
+==&gt; Also see "[Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from Accu web shop)?](../872a6397/chime.md)"
 
-==&gt; Also see "Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from ratRig provider)?"
+==&gt; Also see "[Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from ratRig provider)?](../65915dfb/chime.md)"
 
-==&gt; Also see "Todo: DIY - Consider to build a power feeder for my table saw module?"
+==&gt; Also see "[Todo: DIY - Consider to build a power feeder for my table saw module?](../10c92e8a/chime.md)"
 
 1) Consider this youtube video "How to Make a Motorized Shoes / Skating at Home" (<https://www.youtube.com/watch?v=EKnUuBmmr1s> )
 

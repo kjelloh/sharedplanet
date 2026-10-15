@@ -7,7 +7,7 @@
 {% raw %}
 I just go on a hunch here. But it seems to me that the lambda calculus notion of recursion expressed by the Y-combinator may very well carry some isomorphism to the truth all life is based on (recursable truth) and the Truth Jordan B Peterson is arguing we humans have encoded in the stories about how to engage with order and chaos?
 
-==&gt; Also see “Todo: Consider to follow up on Royal Institution lecture on consciousness and how it relates to the eMdividual and Syntheocraties (the MeFour model) stack of meta-tiers of augmented realities?"
+==&gt; Also see “[Todo: Consider to follow up on Royal Institution lecture on consciousness and how it relates to the eMdividual and Syntheocraties (the MeFour model) stack of meta-tiers of augmented realities?](../363f2ccc/chime.md)"
 
 1) Consider this computerphile youtube video on Lambda Calculus (<https://www.youtube.com/watch?v=eis11j_iGMs>)?
 

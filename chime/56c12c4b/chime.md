@@ -7,7 +7,7 @@
 {% raw %}
 I bought a 4TB drive and needs to "clone" my previous (to small) 2 TB drive to it.
 
-==&gt; Also see "Todo: External Drive Backup - Consider to use rsync on OS X to keep a backup of my Youtube video materials?"
+==&gt; Also see "[Todo: External Drive Backup - Consider to use rsync on OS X to keep a backup of my Youtube video materials?](../6868462b/chime.md)"
 
 1) It seems the rsync command does the job (and enables me to pick up where I left off should the copy be disrupted)?
 

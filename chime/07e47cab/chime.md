@@ -7,7 +7,7 @@
 {% raw %}
 It seems it is the phenomena that Peterson draws so many listeners that is the most interesting thing about him. He makes people "look"!
 
-==&gt; Also see "Todo: Consider now is the time to not play for a team (philosophy is in desperate needs for new observations to model reality)?"
+==&gt; Also see "[Todo: Consider now is the time to not play for a team (philosophy is in desperate needs for new observations to model reality)?](../446679b0/chime.md)"
 
 1) Consider all the ways Peterson can say "made you look" or how people "play for the team" rather than "look" at what he states to have found?
 

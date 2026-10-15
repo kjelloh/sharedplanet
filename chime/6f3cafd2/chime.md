@@ -41,7 +41,7 @@
 
 ==&gt; At 48:50 he refers to adopting HPX extensions to cope with Eric Niebler proposal for Ranges.
 
-==&gt; See “Todo: Programming - Consider to follow up and understand Eric Nibblers C++ Ranges concepts for the standard?”
+==&gt; See “[Todo: Programming - Consider to follow up and understand Eric Nibblers C++ Ranges concepts for the standard?](../47010d6a/chime.md)”
 
 ==&gt; At 56:30 he describes the idea of “dependency trees of Futures”
 
@@ -73,7 +73,7 @@
 
 ==&gt; Move this idea into “Todo: Programming - Consider to model Protocol Stacks using State-Machine-Based Tagged-Range-Tree Transforms?”
 
-==&gt; See “Todo: Programming - Consider to design lazy (two-pass) Protocol Message Encoding and Decoding using tagged-range-ASTs?”
+==&gt; See “[Todo: Programming - Consider to design lazy (two-pass) Protocol Message Encoding and Decoding using tagged-range-ASTs?](../42b8afaf/chime.md)”
 
 4) Consider to relate these ideas also to Darwinet Grid-computing?
 

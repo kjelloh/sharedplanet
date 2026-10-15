@@ -7,7 +7,7 @@
 {% raw %}
 So, how does a list of meters saws sorted by there depth look like?
 
-==&gt; Also see “Todo: Consider to find the less than 2000 SEK miter saw I find worth buying?”
+==&gt; Also see “[Todo: Consider to find the less than 2000 SEK miter saw I find worth buying?](../b038bf77/chime.md)”
 
 -1) Consider to update this document with miter saw data?
 

@@ -5,7 +5,7 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider youtube video "LIVESTREAM: Setting up FFmpeg and OpenGL in C++ for real-time video processing" to follow to setup a C++ cross platform FFMPeg video player and and OpenGL video viewer basics"
+==&gt; Also see "[Todo: Consider youtube video "LIVESTREAM: Setting up FFmpeg and OpenGL in C++ for real-time video processing" to follow to setup a C++ cross platform FFMPeg video player and and OpenGL video viewer basics](../4c0da55c/chime.md)"
 
 1) Consider the youtube video "C++ GUIs with coroutines, WinUI3, C++/WinRT and FFMPEG" with this part showing a seemingly nice C++ wrapping of the FFmpeg C API (<https://youtu.be/OSYXGyMw9GE?t=1636> )?
 

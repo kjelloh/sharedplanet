@@ -7,7 +7,7 @@
 {% raw %}
 I want to explore the possibility to cut down timber and turn it myself into lumber for building projects.
 
-==&gt; Also see "Todo: Consider ways to create 3-phase 4-5 kW power under "off-grid" conditions (from battery or fuel)? "
+==&gt; Also see "[Todo: Consider ways to create 3-phase 4-5 kW power under "off-grid" conditions (from battery or fuel)?](../257f750e/chime.md) "
 
 1) Consider Logosol "B751 bandsågverk med 4,6 kW elmotor" (<https://www.logosol.com/se/sagverk/bandsagverk/b751-bandsagverk/b751-bandsagverk-med-4-6-kw-elmotor.html> )?
 

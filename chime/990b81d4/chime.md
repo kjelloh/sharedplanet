@@ -7,7 +7,7 @@
 {% raw %}
 So, what brushless cordless miter saws are there for me to buy in Sweden if I choose to?
 
-==&gt; Also see “Todo: Cordless Brushless Tools - Consider to save good URL:s and information on available Cordless Brushless power tool systems?”
+==&gt; Also see “[Todo: Cordless Brushless Tools - Consider to save good URL:s and information on available Cordless Brushless power tool systems?](../8f812263/chime.md)”
 
 -2) Consider to list prices for miter saw candidates?
 

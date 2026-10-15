@@ -7,11 +7,11 @@
 {% raw %}
 Could it be interesting and lead to some insights to text representation and C++ string processing to delve into the idea of allowing C++ programs to be written in say Arabic script?
 
-==&gt; Also see “Todo: Programming - Consider to investigate what Code Point(s) a character 'Ä' or string "Ä" gets in runtime and compile time scenarios in C++?”
+==&gt; Also see “[Todo: Programming - Consider to investigate what Code Point(s) a character 'Ä' or string "Ä" gets in runtime and compile time scenarios in C++?](../91e2c282/chime.md)”
 
-==&gt; Also see “Todo: Consider to use words from other languages to find names for C++ Open Source Libraries?”
+==&gt; Also see “[Todo: Consider to use words from other languages to find names for C++ Open Source Libraries?](../8896049f/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider a C++ open source library that translates english words into other languages and maps the languages to its script, script character set and script types using web-available information?”
+==&gt; Also see “[Todo: Programming - Consider a C++ open source library that translates english words into other languages and maps the languages to its script, script character set and script types using web-available information?](../5374642e/chime.md)”
 
 1) Consider to what degree existing compares are able to compile UTF-8 encoded source code (comments in the script of the programmer, e.g. Swedish or Arabic)?
 

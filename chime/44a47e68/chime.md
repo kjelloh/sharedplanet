@@ -7,7 +7,7 @@
 {% raw %}
 Could it be possible to animate HTML slides using the Scratch language?
 
-==&gt; Also see “Todo: Programming - Consider we can use HTML and Animated CSS to implement an algorithm and model animation app?”
+==&gt; Also see “[Todo: Programming - Consider we can use HTML and Animated CSS to implement an algorithm and model animation app?](../d7c392ca/chime.md)”
 
 170801 - Not yet (fails to install on MAC OS)...
 

@@ -7,11 +7,11 @@
 {% raw %}
 I want to use immutable data structures in my code development and it gives me a good feeling that the Immer project is still alive and being maintained!
 
-==&gt; Also see "Todo: Darwinet - Consider to implement the Typescript CRTD-library "Collab" in C++ based on C++ immutable library "Immer"?"
+==&gt; Also see "[Todo: Darwinet - Consider to implement the Typescript CRTD-library "Collab" in C++ based on C++ immutable library "Immer"?](../12aef88f/chime.md)"
 
-==&gt; Also see "Todo: Cratchit Book Keeping - Consider to implement a C++ book keeping application using Tha modelling, Elm Idion and Immer Immutable data Struictures asynchronously synchronising with REST Web service (FortKnox) and IPFS file system?"
+==&gt; Also see "[Todo: Cratchit Book Keeping - Consider to implement a C++ book keeping application using Tha modelling, Elm Idion and Immer Immutable data Struictures asynchronously synchronising with REST Web service (FortKnox) and IPFS file system?](../7c6907a4/chime.md)"
 
-==&gt; Also see "Todo: C++ Tha - Consider to implement Tha meta-tier.model in the immutable data structure library Immer?"
+==&gt; Also see "[Todo: C++ Tha - Consider to implement Tha meta-tier.model in the immutable data structure library Immer?](../8cbd727b/chime.md)"
 
 1) The Immer C++ project seems to live here on Github (<https://github.com/arximboldi/immer> )?
 

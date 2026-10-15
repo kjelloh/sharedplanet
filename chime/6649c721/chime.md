@@ -7,11 +7,11 @@
 {% raw %}
 So, what can we learn from studying the default project folder structure cerated by different IDEs that I use (or want to use)?
 
-==&gt; Also see “Todo: Cross Platform Programming - Consider to try out the src, ide, cmake, build project structure?”
+==&gt; Also see “[Todo: Cross Platform Programming - Consider to try out the src, ide, cmake, build project structure?](../a0dd8999/chime.md)”
 
-==&gt; Also see “Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?”
+==&gt; Also see “[Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?](../3b78fd47/chime.md)”
 
-==&gt; Also see “Todo: Cross Platform Programming - Consider to try out the src, ide, cmake, build project structure?”
+==&gt; Also see “[Todo: Cross Platform Programming - Consider to try out the src, ide, cmake, build project structure?](../a0dd8999/chime.md)”
 
 1) Consider an Xcode default C++ Console Application project folder structure?
 
@@ -339,7 +339,7 @@ So, what can we learn from studying the default project folder structure cerated
 
 ==&gt; And the entry-point seems to be this code?
 
-==&gt; See “Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?"
+==&gt; See “[Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?](../3b78fd47/chime.md)"
 
 9) Consider Windows 10 RAD Studio Console Application default project folder structure?
 
@@ -427,7 +427,7 @@ So, what can we learn from studying the default project folder structure cerated
 
 ==&gt; And this seems to be the entry-point code for the default VCL Windows application?
 
-==&gt; See “Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?"
+==&gt; See “[Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?](../3b78fd47/chime.md)"
 
 n) Just for “fun” - Consider an Xcode Cross Platform project folder structure?
 

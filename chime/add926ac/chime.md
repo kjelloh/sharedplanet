@@ -7,7 +7,7 @@
 {% raw %}
 Would it not be a great idea to try and project sensor information on the inside of safety glasses to for example show rip fence location or other sensor information of use when operating maker space tools?
 
-==&gt; Also see “ Consider to build the "Arduino Glasses a HMD for Multimeter" (Head Mount Display) Glasses as shown on [lackaday.io](http://lackaday.io/)?"
+==&gt; Also see “ [Consider to build the "Arduino Glasses a HMD for Multimeter" (Head Mount Display) Glasses as shown on \[lackaday.io\](http://lackaday.io/)?](../9305b8af/chime.md)"
 
 1) Consider information we would like to have projected into the eyes of a maker when he/she operates tools?
 

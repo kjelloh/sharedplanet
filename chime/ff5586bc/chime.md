@@ -7,13 +7,13 @@
 {% raw %}
 It seems feelings are meta-truths about how we should act to close on on Truth as in the state where to change is required?
 
-==&gt; Also see “Todo: Philosophy - Consider "Truth" is that which takes time to find (and time stops when Truth is found)?”
+==&gt; Also see “[Todo: Philosophy - Consider "Truth" is that which takes time to find (and time stops when Truth is found)?](../f1b5a211/chime.md)”
 
-==&gt; Also see “Todo: Philosophy - Consider the universe does not like time (it searches for ways to spend the least time possible)?”
+==&gt; Also see “[Todo: Philosophy - Consider the universe does not like time (it searches for ways to spend the least time possible)?](../5afcc801/chime.md)”
 
-==&gt; Also see “Todo: <http://sanningarmedmodifikationer.blogspot.se/2017/04/hej-emdivid.html> - "Hej Emdivid!""
+==&gt; Also see “[Todo: <http://sanningarmedmodifikationer.blogspot.se/2017/04/hej-emdivid.html> - "Hej Emdivid!"](../018e7651/chime.md)"
 
-==&gt; Also see “Todo: Write about sustainably max-out our reward systems and minimise suffering whilst being Emdividuals experiencing reality only through truth web and feelings"
+==&gt; Also see “[Todo: Write about sustainably max-out our reward systems and minimise suffering whilst being Emdividuals experiencing reality only through truth web and feelings](../516042aa/chime.md)"
 
 1) Consider the feeling of meaningfulness is when we engage in activities that feels true (and spending time is worthwhile)?
 

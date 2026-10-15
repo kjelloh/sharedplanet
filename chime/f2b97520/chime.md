@@ -7,7 +7,7 @@
 {% raw %}
 Could we imagine a note-app that is able to grab graphics directly from screen?
 
-==&gt; Also see “Todo: Consider to document different ways to capture or grab screenshots in OS X, Linux and Windows 10?"
+==&gt; Also see “[Todo: Consider to document different ways to capture or grab screenshots in OS X, Linux and Windows 10?](../276b4374/chime.md)"
 
 1) I do this a lot when making Todo: mails about stuff I learn and what to follow up on.
 

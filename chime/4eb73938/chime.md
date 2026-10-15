@@ -144,7 +144,7 @@ Could we imagine that Haskell typ classes are in fact in Tha just meta values th
 
 ==&gt; Consider in Meh we can accomplish this with a meta-2 value that can be used to infer unbound member identifier types from provided types (or values)?
 
-==&gt; See ”Todo: Tha - Consider to define mtea-2 value "inferred" that constructs generic meta-1 value (they apply pattern matching to define meta-0 values)?”
+==&gt; See ”[Todo: Tha - Consider to define mtea-2 value "inferred" that constructs generic meta-1 value (they apply pattern matching to define meta-0 values)?](../bde9b9a8/chime.md)”
 
 ...
 

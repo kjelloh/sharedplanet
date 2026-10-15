@@ -7,9 +7,9 @@
 {% raw %}
 I really like the idea of a "first principle" bike front suspension with low weight, friction and ideally no moving parts :)
 
-==&gt; Also see "Todo: Consider to investigate and optionally try out the Open SCAD software for script-based 3D modelling of mechanical designs?"
+==&gt; Also see "[Todo: Consider to investigate and optionally try out the Open SCAD software for script-based 3D modelling of mechanical designs?](../124e9802/chime.md)"
 
-==&gt; Also see "Todo: Power Feeder - Consider a reciprocating (alternating) push feeder?"
+==&gt; Also see "[Todo: Power Feeder - Consider a reciprocating (alternating) push feeder?](../7087a2b1/chime.md)"
 
 > *The main idea here is to take the strandbeest walking leg linkage design and use it for the bicycle front suspension design?*
 

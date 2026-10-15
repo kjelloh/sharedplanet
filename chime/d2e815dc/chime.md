@@ -7,7 +7,7 @@
 {% raw %}
 I accidentally ripped of the "pigtail" U.FL antenna connector from the end of the antenna cable and want to repair it.
 
-==&gt; Also see "Todo: Consider to investigate if my MacBook Pro wifi antenna cable uses the Hirose U.FL connector as described by Wikipedia?"
+==&gt; Also see "[Todo: Consider to investigate if my MacBook Pro wifi antenna cable uses the Hirose U.FL connector as described by Wikipedia?](../e9d187da/chime.md)"
 
 1) Consider youtube video "MHF® i-Fit® Crimping Technology / Micro RF Coaxial Connectors / I-PEX" (<https://youtu.be/r3pbPJJiXPw> )?
 

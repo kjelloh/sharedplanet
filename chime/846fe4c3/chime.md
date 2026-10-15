@@ -7,11 +7,11 @@
 {% raw %}
 It seems we can learn a lot by trying to use the IPF (Interplanetary File System) open source framework for storing Darwinet domain MIVs?
 
-==&gt; Also see “Todo: Darwinet - Consider to learn about the CRDT LSeq algorithm to P2P synchronise ordered data (text and other sequences)”
+==&gt; Also see “[Todo: Darwinet - Consider to learn about the CRDT LSeq algorithm to P2P synchronise ordered data (text and other sequences)](../d4756dbf/chime.md)”
 
-==&gt; Also see “Todo: Brew Package Manager - Consider to document and understand what and how the Brew package manager does what it does?” (ifs seems available as a brew package?)
+==&gt; Also see “[Todo: Brew Package Manager - Consider to document and understand what and how the Brew package manager does what it does?](../7a330053/chime.md)” (ifs seems available as a brew package?)
 
-==&gt; Also see “Todo: Darwinet - Consider the work of Christopher Meiklejohn on Declarative, Convergent Edge Computation is in fact a variant of the Darwinet Network?"
+==&gt; Also see “[Todo: Darwinet - Consider the work of Christopher Meiklejohn on Declarative, Convergent Edge Computation is in fact a variant of the Darwinet Network?](../5de1350c/chime.md)"
 
 1) The IPFS initiative seems to live here ([https://ipfs.io](https://ipfs.io/))?
 

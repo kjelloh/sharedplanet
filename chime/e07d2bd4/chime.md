@@ -7,9 +7,9 @@
 {% raw %}
 Could it be a good model to actually view a ”thread” as stack-frame-based message passing between functions on the same stack?
 
-==&gt; Also see ”Todo: Programming - Consider a Language Semantics where we can use abstractions to model subroutines, coroutines and coroutines as well as how we engage with them?”
+==&gt; Also see ”[Todo: Programming - Consider a Language Semantics where we can use abstractions to model subroutines, coroutines and coroutines as well as how we engage with them?](../1b520c38/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider sub-routines (stack-based), Coroutines (heap-based) and Goroutines (Message passing functions) are just three forms of one basic idea of function composition?"
+==&gt; Also see ”[Todo: Programming - Consider sub-routines (stack-based), Coroutines (heap-based) and Goroutines (Message passing functions) are just three forms of one basic idea of function composition?](../3ea0b782/chime.md)"
 
 1) Consider to a thread is stack-frame messaging passing between routines (processes) that are suspended and resumed in a ”subroutine” manner?
 

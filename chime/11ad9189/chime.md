@@ -7,7 +7,7 @@
 {% raw %}
 Consider to follow up on Larry Temkin and his questioning that transitivity is a feature of moral judgement?
 
-==&gt; Also see “Todo: Consider to question Sam Harris notion of "Bad" to "Good" model to navigate the moral space from "Temkin's Paradox" made by Larry Temkin that moral judgement may not be transitive?"
+==&gt; Also see “[Todo: Consider to question Sam Harris notion of "Bad" to "Good" model to navigate the moral space from "Temkin's Paradox" made by Larry Temkin that moral judgement may not be transitive?](../46f870ba/chime.md)"
 
 1) Consider to follow up on “Todo: Deny that "progress" is the correct word to describe the goal of change of society” based on Larry Temkin Philosophy Bites intervju (<http://philosophybites.com/2015/07/larry-temkin-on-transitivity.html>)
 
@@ -37,7 +37,7 @@ Consider to follow up on Larry Temkin and his questioning that transitivity is a
 
 6) Consider to relate this Todo with others that correlate with it?
 
-==&gt; See “Todo: Deny that "progress" is the correct word to describe the goal of change of society"
+==&gt; See “[Todo: Deny that "progress" is the correct word to describe the goal of change of society](../380efe9d/chime.md)"
 
 ...
 

@@ -7,7 +7,7 @@
 {% raw %}
 Could it be a good idea to study the data models implied by existing data streaming formats like XML, JSON, YAML and what have you to get a firm small base to implement as a Tha proof of concept?
 
-==&gt; Also see “Todo: JSon Darwinet, Meh and Tha - Consider that a Tha model and Meh syntax for Json data structures only is in fact small but complete and may serve well as a proof of concept for Darwinet implementation?”
+==&gt; Also see “[Todo: JSon Darwinet, Meh and Tha - Consider that a Tha model and Meh syntax for Json data structures only is in fact small but complete and may serve well as a proof of concept for Darwinet implementation?](../a4165e7e/chime.md)”
 
 1) Consider the Yaml “Yet Another Markup Language” data representation encoding (<https://en.wikipedia.org/wiki/YAML>)?
 
@@ -39,7 +39,7 @@ Could it be a good idea to study the data models implied by existing data stream
 
 2) Consider the JSon encoding?
 
-==&gt; Also see “Todo: JSon Darwinet, Meh and Tha - Consider that a Tha model and Meh syntax for Json data structures only is in fact small but complete and may serve well as a proof of concept for Darwinet implementation?”
+==&gt; Also see “[Todo: JSon Darwinet, Meh and Tha - Consider that a Tha model and Meh syntax for Json data structures only is in fact small but complete and may serve well as a proof of concept for Darwinet implementation?](../a4165e7e/chime.md)”
 
 3) Consider the XML encoding (
 

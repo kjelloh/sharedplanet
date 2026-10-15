@@ -7,7 +7,7 @@
 {% raw %}
 I want a light weight and cross platform note taking application for my role as secretary in an my local housing association.
 
-==&gt; Also see "Todo: Consider the open source and cross platform document format transformer "Pandoc" for docx to markdown, RTF and type setting formats like LaTex and Troff? "
+==&gt; Also see "[Todo: Consider the open source and cross platform document format transformer "Pandoc" for docx to markdown, RTF and type setting formats like LaTex and Troff?](../f9e2b1c2/chime.md) "
 
 0) Consider the bottom line of my evaluation of Obsidian?
 

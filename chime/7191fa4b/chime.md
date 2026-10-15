@@ -7,7 +7,7 @@
 {% raw %}
 I think it is a good thing to document how I install things on my computers
 
-==&gt; Also see "Todo: Cinsider to document install of Brew package manager on Macbook Pro 17" 2009?" (older wrong spelling "Cinsider")
+==&gt; Also see "[Todo: Cinsider to document install of Brew package manager on Macbook Pro 17" 2009?](../f3827d3f/chime.md)" (older wrong spelling "Cinsider")
 
 1) This seems to be a log (Aug 2020) of a successful install off the Brew package manager on my Mac Pro 2013?
 

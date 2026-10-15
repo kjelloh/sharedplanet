@@ -21,7 +21,7 @@ Would it not be fun and meaningful to try and design a Universal Model of the gl
 
 3) Consider to propose each actor to interact using protocol stacks modelled as State Machine based Tagged Range Tree Transforms
 
-==&gt; See “Todo: Programming - Consider to model Protocol Stacks using State-Machine-Based Tagged-Range-Tree Transforms?”
+==&gt; See “[Todo: Programming - Consider to model Protocol Stacks using State-Machine-Based Tagged-Range-Tree Transforms?](../714507a2/chime.md)”
 
 4) Consider to host this initiative on GitHub?
 

@@ -44,7 +44,7 @@ Could it be a good idea to elaborate on the idea that Character-set-encoding (st
 
 ==&gt; Can we imagine an embedded BOM that are invisible to receivers that does not implement this option?
 
-==&gt; Also see “Todo: Consider to write and distribute a white-paper on character-set-encodings in Payment System Messaging? "
+==&gt; Also see “[Todo: Consider to write and distribute a white-paper on character-set-encodings in Payment System Messaging?](../8c9ad97b/chime.md) "
 
 ==&gt; Consider to use “invisible” encoding using “Space” (Ascii 20), “Tab” (Ascii 09) and “Back Space” (Ascii 08), (http://www.ibb.net/~anne/keyboard.html)?
 

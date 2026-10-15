@@ -7,7 +7,7 @@
 {% raw %}
 I want to make a tool wall using some transparent plastic material and it seems I need ti understand the difference between different plastics and especially between PVC and Acrylic Glas (branded Plexiglas)?
 
-==&gt; Also see “Todo: Consider to learn about hot glue and glue guns (to decide on what first glue gun and glue to purchase)?"
+==&gt; Also see “[Todo: Consider to learn about hot glue and glue guns (to decide on what first glue gun and glue to purchase)?](../61f5d812/chime.md)"
 
 1) Consider the wikipedia page on PVC (<https://en.wikipedia.org/wiki/Polyvinyl_chloride>)?
 

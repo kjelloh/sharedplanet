@@ -7,9 +7,9 @@
 {% raw %}
 So a used Tesla model 3 with tow bar will enable me to tow 750 Kg to a "reasonable price" and in compliance with my type B drivers license (750 kg)
 
-==&gt; Also see "Todo: It seems importing a Tesla from Norway to Sweden is out of the question because I need to pay VAT (25%) and import fees (10%) which make the car too expensive!"
+==&gt; Also see "[Todo: It seems importing a Tesla from Norway to Sweden is out of the question because I need to pay VAT (25%) and import fees (10%) which make the car too expensive!](../bc8f037e/chime.md)"
 
-==&gt; Also see "Todo: Consider it may after all perhaps be possible to mount a tow bar on a Tesla model S (or possibly affirmed to be NOT allowed)?"
+==&gt; Also see "[Todo: Consider it may after all perhaps be possible to mount a tow bar on a Tesla model S (or possibly affirmed to be NOT allowed)?](../982ae684/chime.md)"
 
 1) Consider the reasons why a Model 3 with tow bar is the car for me to buy as transport during my house build?
 

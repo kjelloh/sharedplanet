@@ -5,9 +5,9 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider to buy a 47,7 mm diameter coffee tamper for my ROK manual coffee machine porta filter"
+==&gt; Also see "[Todo: Consider to buy a 47,7 mm diameter coffee tamper for my ROK manual coffee machine porta filter](../f5e6e2cc/chime.md)"
 
-==&gt; Also see "Todo: Consider an espresson grinder and machine to buy and experiment with low energy and long lasting coffee making machines?"
+==&gt; Also see "[Todo: Consider an espresson grinder and machine to buy and experiment with low energy and long lasting coffee making machines?](../c5485440/chime.md)"
 
 1) Consider this 3D Printed "Breville/Sage Barista Express/Pro/Touch Dosing cup With" (<https://www.etsy.com/se-en/listing/967331770/brevillesage-barista-expressprotouch?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=barista&ref=sr_gallery-1-39&organic_search_click=1&pro=1&frs=1> )
 

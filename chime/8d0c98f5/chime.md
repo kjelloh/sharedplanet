@@ -7,11 +7,11 @@
 {% raw %}
 Could we imagine to harvest wind energy from something "flapping" in the wind without moving parts (a compliant mechanism instead)?
 
-==&gt; Also see "Todo: Consider to design and build my own vertical axis wind turbine?"
+==&gt; Also see "[Todo: Consider to design and build my own vertical axis wind turbine?](../7ddab667/chime.md)"
 
-==&gt; Also see "Todo: Consider to research and perhaps build the 3D Printer Wind Turbine "WindPowerPrint"?"
+==&gt; Also see "[Todo: Consider to research and perhaps build the 3D Printer Wind Turbine "WindPowerPrint"?](../33406c53/chime.md)"
 
-==&gt; Also see "Todo: Consider to design and build a wind and solar powered birds hot tub and diner?"
+==&gt; Also see "[Todo: Consider to design and build a wind and solar powered birds hot tub and diner?](../3ec0bcfa/chime.md)"
 
 1) Consider this youtube video "Speaker = Generator (version 2015)" (<https://www.youtube.com/watch?v=XU_OHh2JR1c> )?
 

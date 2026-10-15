@@ -7,11 +7,11 @@
 {% raw %}
 It seems it could be interesting and informative to compare my current main computer hardware (Macbook Pro mid 2014) with possible alternatives to upgrade?
 
-==&gt; Also see “Todo: Consider to buy an Apple Mac pro (Quite and reliable although expensive)?"
+==&gt; Also see “[Todo: Consider to buy an Apple Mac pro (Quite and reliable although expensive)?](../53eae359/chime.md)"
 
-==&gt; Also see “Todo: Consider to actually build a hackintosh?"
+==&gt; Also see “[Todo: Consider to actually build a hackintosh?](../8e525424/chime.md)"
 
-==&gt; Also see “Todo: Consider to build a desktop computer workstation (to replace my macbook Pro 2014)?”
+==&gt; Also see “[Todo: Consider to build a desktop computer workstation (to replace my macbook Pro 2014)?](../6dd6232b/chime.md)”
 
 1) Consider the hardware of my Macbook Pro mid 2014?
 

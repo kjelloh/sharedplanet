@@ -7,7 +7,7 @@
 {% raw %}
 I still dream of a way to create applications that are separate bootable images and Include OS seems like a viable option to try out.
 
-==&gt; Also see "Todo: Darwinet Meta Value Model - Consider to implement a MIV in a "include &lt;os&gt;" bootable microservice?"
+==&gt; Also see "[Todo: Darwinet Meta Value Model - Consider to implement a MIV in a "include &lt;os&gt;" bootable microservice?](../5717cacb/chime.md)"
 
 1) Include OS seems to live on Github here (<https://github.com/includeos/IncludeOS> )?
 

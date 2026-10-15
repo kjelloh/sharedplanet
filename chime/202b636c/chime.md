@@ -7,7 +7,7 @@
 {% raw %}
 It just struck me that maybe what is moral are rules that actually recurse (they are still applicable to the state after having acted them out before).
 
-==&gt; Also see "Todo: Consider how my encounter in the sunny spring forrest with the young red head sexually attractive yoga women can help me be better friend with my sexual desires?"
+==&gt; Also see "[Todo: Consider how my encounter in the sunny spring forrest with the young red head sexually attractive yoga women can help me be better friend with my sexual desires?](../a5209987/chime.md)"
 
 1) Consider if free sex is a recurse-able model of a good what-ought-to-be society?
 

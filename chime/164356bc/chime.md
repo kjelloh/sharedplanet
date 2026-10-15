@@ -7,7 +7,7 @@
 {% raw %}
 It seems what I have been called the Elm idiom (Model update view) is perhaps better known as the Single Atom Architecture?
 
-==&gt; Also see “Todo: Tha, Elm and Immer - Consider the C++ Immer immutable data structures based text editor "ewig" is in fact implementing the Elm model, view, update?
+==&gt; Also see “[Todo: Tha, Elm and Immer - Consider the C++ Immer immutable data structures based text editor "ewig" is in fact implementing the Elm model, view, update?](../5a0eb296/chime.md)
 
 1) Consider the talk “C++Now 2017: Juanpe Bolivar “Postmodern Immutable Data Structures"” at 32:45 (<https://youtu.be/ZsryQp0UAC8?t=1966>)?
 
@@ -150,9 +150,9 @@ It seems what I have been called the Elm idiom (Model update view) is perhaps be
 
 ==&gt; Lee Byron seems to be the developer of immutable.js (<https://facebook.github.io/immutable-js/>)?
 
-==&gt; Also see “Todo: Darwinet - Consider Javascript React with immutable.js or Mori actually kind-of already implemented Darwinet immutable MIV and delta history mechanisms?"
+==&gt; Also see “[Todo: Darwinet - Consider Javascript React with immutable.js or Mori actually kind-of already implemented Darwinet immutable MIV and delta history mechanisms?](../d6548533/chime.md)"
 
-==&gt; Also see “Todo: ibi library key path - Consider to enable easy construction of Tries (Index and hash) with corresponding key-path support for member reference? “
+==&gt; Also see “[Todo: ibi library key path - Consider to enable easy construction of Tries (Index and hash) with corresponding key-path support for member reference?](../2035cd75/chime.md) “
 
 ==&gt; He seems to stress the point of designing UIs on immutable state instead of MVC and REST idioms at about 10:45 (<https://youtu.be/pLvrZPSzHxo?t=647>)?
 

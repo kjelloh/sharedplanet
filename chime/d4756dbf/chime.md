@@ -7,15 +7,15 @@
 {% raw %}
 Consider there is actually a CRDT for making operational transformation to an ordered set of data eventually consistent, the LSeq algorithm?
 
-==&gt; Also see “Todo: Darwinet - Consider the work of Christopher Meiklejohn on Declarative, Convergent Edge Computation is in fact a variant of the Darwinet Network?”
+==&gt; Also see “[Todo: Darwinet - Consider the work of Christopher Meiklejohn on Declarative, Convergent Edge Computation is in fact a variant of the Darwinet Network?](../5de1350c/chime.md)”
 
-==&gt; Also see “Todo: Darwinet - Consider to follow up on research by Lindsey Kuper about LVars and its correlation with CRDTs?”
+==&gt; Also see “[Todo: Darwinet - Consider to follow up on research by Lindsey Kuper about LVars and its correlation with CRDTs?](../30921a7d/chime.md)”
 
-==&gt; Also see “Todo: Darwinet - Consider to make a Darwinet REPL?”
+==&gt; Also see “[Todo: Darwinet - Consider to make a Darwinet REPL?](../8440e5f3/chime.md)”
 
-==&gt; Also see “Todo: Darwinet - It seems Darwinet Deltas are in fact the same thing as "Conflict-free replicated data type" or CFRD?”
+==&gt; Also see “[Todo: Darwinet - It seems Darwinet Deltas are in fact the same thing as "Conflict-free replicated data type" or CFRD?](../36f0b5ab/chime.md)”
 
-==&gt; Also see “Todo: Darwinet - Consider to motivate survival-of-fittest-view with the argument that views always shows meaningful state where a merge algorithm will always create an invalid state?"
+==&gt; Also see “[Todo: Darwinet - Consider to motivate survival-of-fittest-view with the argument that views always shows meaningful state where a merge algorithm will always create an invalid state?](../acaa165b/chime.md)"
 
 1) Consider this talk “What CRDTs, distributed editing and the speed of light means to your writer friends- Jonathan Martin" (<https://www.youtube.com/watch?v=pMMDVphop40&index=152&list=PL03Lrmd9CiGewi0lbnahxEpisoP5WZocX>)?
 
@@ -189,7 +189,7 @@ Consider there is actually a CRDT for making operational transformation to an or
 
 ==&gt; I downloaded and installed pre-built framework “quick-start” from here (<https://electron.atom.io>)
 
-==&gt; Also see “Todo: Consider to document installation of Electron development and run-time environment on my different machines?”
+==&gt; Also see “[Todo: Consider to document installation of Electron development and run-time environment on my different machines?](../6e60f6a4/chime.md)”
 
 ==&gt; On my Macbook Pro 2015 electron hets installed to “**/Users/kjell-olovhogdahl/Documents/GitHub/electron-quick-start/node_modules/.bin**”
 
@@ -216,7 +216,7 @@ Consider there is actually a CRDT for making operational transformation to an or
 
 ==&gt; Consider that although LSeq will make the state eventually consistent (but that state is not usable)?
 
-==&gt; Also see “Todo: Darwinet - Consider to motivate survival-of-fittest-view with the argument that views always shows meaningful state where a merge algorithm will always create an invalid state?"
+==&gt; Also see “[Todo: Darwinet - Consider to motivate survival-of-fittest-view with the argument that views always shows meaningful state where a merge algorithm will always create an invalid state?](../acaa165b/chime.md)"
 
 ==&gt; The algorithm solves the problem that two or more actors delete and add text at the same location by protecting the order or these changes?
 

@@ -7,7 +7,7 @@
 {% raw %}
 Consider ot would be a good idea to document how to install and run a Scratch server locally to animate HTML slides?
 
-==&gt; Also see “Todo: Programming Slides - Consider if we can animate HTML slides using the Scratch Language?”
+==&gt; Also see “[Todo: Programming Slides - Consider if we can animate HTML slides using the Scratch Language?](../44a47e68/chime.md)”
 
 ...
 

@@ -7,11 +7,11 @@
 {% raw %}
 It seems the COMMS C++ Library tries to adress the same lack of a good C++ library to implement Protocols?
 
-==&gt; Also see ”Todo: Programming - Consider benefits of a Protocol Library based on immutable data and Functional Reactive Programming?”
+==&gt; Also see ”[Todo: Programming - Consider benefits of a Protocol Library based on immutable data and Functional Reactive Programming?](../90e34eb3/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider we can actually prove that we can unequally define a protocol buffer from a Composite type of a small set of member elements?”
+==&gt; Also see ”[Todo: Programming - Consider we can actually prove that we can unequally define a protocol buffer from a Composite type of a small set of member elements?](../3ba749f8/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to design C++ Template Domains Specific Languages to design FSM Protocol Engines and Element Table Message Encodings?”
+==&gt; Also see ”[Todo: Programming - Consider to design C++ Template Domains Specific Languages to design FSM Protocol Engines and Element Table Message Encodings?](../0694d434/chime.md)”
 
 ==&gt; This Todo seems to reference a lot of related Todos (so no need to repeat those here)?
 

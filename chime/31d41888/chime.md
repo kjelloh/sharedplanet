@@ -9,7 +9,7 @@ I want to be able to manipulate my book keeping and using SIE files for this see
 
 ==&gt; Also see "Todo: Eget AB - Gör bokslut för ITfied 2015-2016 baserat på bifogade SIE-filer"
 
-==&gt; Also see "Todo: Programming - Consider to implement and publish an open source C++ SIE-file reader/writer library?"
+==&gt; Also see "[Todo: Programming - Consider to implement and publish an open source C++ SIE-file reader/writer library?](../6c855293/chime.md)"
 
 1) This seems to be the definition of SIE files in Swedish (<https://sie.se/wp-content/uploads/2020/05/SIE_filformat_ver_4B_080930.pdf> )?
 

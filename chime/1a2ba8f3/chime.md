@@ -7,15 +7,15 @@
 {% raw %}
 I stumbled on the Keysense R3 project in a youtube video on sampling pianos and was intrigued if I can use this solution for my of Digital Piano build?
 
-==&gt; Also see "Todo: DIY Digital Piano - Consider to use the free piano samples by UK based community Pianobook?"
+==&gt; Also see "[Todo: DIY Digital Piano - Consider to use the free piano samples by UK based community Pianobook?](../491640f5/chime.md)"
 
-==&gt; Also see "Todo: DIY Digital Piano - Consider I can 3D print the parts for the Piano Key Action?"
+==&gt; Also see "[Todo: DIY Digital Piano - Consider I can 3D print the parts for the Piano Key Action?](../d80c1b89/chime.md)"
 
-==&gt; Also see "Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?"
+==&gt; Also see "[Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?](../ca0cdb46/chime.md)"
 
-==&gt; Also see "Todo: Consider to build a digital piano from a micro computer and a VST plug-in digital Piano?"
+==&gt; Also see "[Todo: Consider to build a digital piano from a micro computer and a VST plug-in digital Piano?](../9b52c6ce/chime.md)"
 
-==&gt; Also see "Todo: Bygg ett stage-piano "
+==&gt; Also see "[Todo: Bygg ett stage-piano](../eda07e01/chime.md) "
 
 1) Consider youtube video "Is A Piano Is Actually A Dulcimer? (+ I Unveil Something V Saucy)" that ends with a reference to upcoming review of the Keysense R3 module (<https://youtu.be/my3rS8N50Lc?t=731> )?
 
@@ -39,9 +39,9 @@ TODO: I mailed "[info@allesblinkt.com](mailto:info@allesblinkt.com)" and asked f
 
 ==&gt; Consider PianoDisk QuiteTime product (<http://prodigy.pianodisc.com/quiettime/> )?
 
-==&gt; Also see "Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?"
+==&gt; Also see "[Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?](../ca0cdb46/chime.md)"
 
-==&gt; Also see "Todo: Consider to build a digital piano from a micro computer and a VST plug-in digital Piano?"
+==&gt; Also see "[Todo: Consider to build a digital piano from a micro computer and a VST plug-in digital Piano?](../9b52c6ce/chime.md)"
 
 ==&gt; It seems PianoDisc QuietTime does NOT sense the club when it strikes (only the press of the piano key)?
 

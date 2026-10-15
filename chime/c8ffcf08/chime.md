@@ -7,7 +7,7 @@
 {% raw %}
 C++20 Ranges being lazily evaluated means we can write infinite ranges and thus we should be able to write a "Penrose Tiling" range algorithm?
 
-==&gt; Also see "Todo: Consider to delve into the "Penrose Tiling" and what the traits of this pattern can tell us about information content, determinism, the nature of computation and if reality can be such a tiling?"
+==&gt; Also see "[Todo: Consider to delve into the "Penrose Tiling" and what the traits of this pattern can tell us about information content, determinism, the nature of computation and if reality can be such a tiling?](../e79c93be/chime.md)"
 
 1) Consider to write a C++20 program that uses a ranges algorithm to generate some infinite Penrose Tiling?
 

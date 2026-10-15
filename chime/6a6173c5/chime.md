@@ -9,7 +9,7 @@ It seems the term “closure” is what we are looking for to define how Tha sho
 
 -1) It seems closures are in fact function calls with bound arguments?
 
-==&gt; Also see “Todo: Tha function types - Consider we can actually extend normal value-functions to also allow type-functions and kind-functions?”
+==&gt; Also see “[Todo: Tha function types - Consider we can actually extend normal value-functions to also allow type-functions and kind-functions?](../e4335466/chime.md)”
 
 **==&gt; Thus, a closure is modelled as binding of arguments in functions!**
 

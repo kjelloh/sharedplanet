@@ -7,7 +7,7 @@
 {% raw %}
 It seems I could benefit from understanding the mechanics and workings of a random orbital sander to understand what to buy and possibly how to design my own (using say a drone brushless motor)?
 
-==&gt; Also see "Todo: Consider to document and understand brushless motors physics (torque, kv value...)?"
+==&gt; Also see "[Todo: Consider to document and understand brushless motors physics (torque, kv value...)?](../85bc3a7b/chime.md)"
 
 1) Consider this in depth article "The Random Orbital. machine Stroke - How it affects Sanding nd Polishing Performance" (<http://www.buffdaddy.com/files/1519584/uploaded/KBM-Kevin%20Brown%20Method-Machine%20Stroke%20-%20How%20It%20Affects%20Sanding%20and%20Polishing%20Performance.pdf> )?
 
@@ -25,7 +25,7 @@ It seems I could benefit from understanding the mechanics and workings of a rand
 
 2) Consider I should be able to design my own Random Orbital Sander using a multicopter brushless motor with ESC and micro controller for speed control?
 
-==&gt; Also see "Todo: Consider to document and understand brushless motors physics (torque, kv value...)?"
+==&gt; Also see "[Todo: Consider to document and understand brushless motors physics (torque, kv value...)?](../85bc3a7b/chime.md)"
 
 ==&gt; Consider to understand the power ratings of brushless rc model motors?
 

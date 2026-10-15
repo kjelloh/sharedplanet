@@ -9,7 +9,7 @@ I realize I have not really got a grip on what API the existing C++ persistent D
 
 1) Consider to understand the immer C++ persistent data structures through the Ewig editor example (<https://github.com/arximboldi/ewig>)
 
-==&gt; Also see ”Todo: Tha, Elm and Immer - Consider the C++ Immer immutable data structures based text editor "ewig" is in fact implementing the Elm model, view, update?”
+==&gt; Also see ”[Todo: Tha, Elm and Immer - Consider the C++ Immer immutable data structures based text editor "ewig" is in fact implementing the Elm model, view, update?](../5a0eb296/chime.md)”
 
 2) So, how do we initiate the first instance of a C++ Persistent Data Structure?
 

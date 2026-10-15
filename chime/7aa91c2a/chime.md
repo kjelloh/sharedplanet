@@ -7,7 +7,7 @@
 {% raw %}
 It seems the Vruzend DIY battery kit is an alternative no-soldering system for assembling Li-Ion cells into battery modules?
 
-==&gt; Also see "Todo: Mobile 1kWh Battery - Consider to build a LiPo 1 kWh mobile battery power bank from Jehu Garcia DIY kits?"
+==&gt; Also see "[Todo: Mobile 1kWh Battery - Consider to build a LiPo 1 kWh mobile battery power bank from Jehu Garcia DIY kits?](../125f437d/chime.md)"
 
 1) Consider the youtube video "New & improved Vruzend V2.1 no-weld 18650 kit" (<https://www.youtube.com/watch?v=rylbFnTgFI8&t=1s> )?
 

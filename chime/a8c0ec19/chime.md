@@ -7,21 +7,21 @@
 {% raw %}
 I keep coming back to the Harris - Petersson heated debate on Truth because it intrigues me and thus seems worth trying to get a grip on.
 
-==&gt; Also see "Todo: Consider Sam Harris "Truth" is more like facts (as in true at any specific time) while Jordan B Petersson "Truth" ir more like Wisdom (as in true over time)"
+==&gt; Also see "[Todo: Consider Sam Harris "Truth" is more like facts (as in true at any specific time) while Jordan B Petersson "Truth" ir more like Wisdom (as in true over time)](../6ec9474c/chime.md)"
 
-==&gt; Also see "Todo: Consider Sam Harris opposition to superstitious beliefs is the same mode of thinking as Conservatives (in this case Benjamin Owens) opposing open borders and progressive activism?"
+==&gt; Also see "[Todo: Consider Sam Harris opposition to superstitious beliefs is the same mode of thinking as Conservatives (in this case Benjamin Owens) opposing open borders and progressive activism?](../994c2f6e/chime.md)"
 
-==&gt; Also see "Todo: Consider to script a commentary on the Vancouver Debate between Jordan B Peterson and Sam Harris and make a youtube video of it?"
+==&gt; Also see "[Todo: Consider to script a commentary on the Vancouver Debate between Jordan B Peterson and Sam Harris and make a youtube video of it?](../3278bfcf/chime.md)"
 
-==&gt; Also see "Todo: Consider to question Sam Harris notion of "Bad" to "Good" model to navigate the moral space from "Temkin's Paradox" made by Larry Temkin that moral judgement may not be transitive?"
+==&gt; Also see "[Todo: Consider to question Sam Harris notion of "Bad" to "Good" model to navigate the moral space from "Temkin's Paradox" made by Larry Temkin that moral judgement may not be transitive?](../46f870ba/chime.md)"
 
-==&gt; Also see "Todo: Jordan B. Petersson - Consider it would be meaningful to follow up on his latest podcasts on his own, Sam Harris and Joe Rogan?"
+==&gt; Also see "[Todo: Jordan B. Petersson - Consider it would be meaningful to follow up on his latest podcasts on his own, Sam Harris and Joe Rogan?](../4986c152/chime.md)"
 
-==&gt; Also see "Todo: follow up on Sam Harris?"
+==&gt; Also see "[Todo: follow up on Sam Harris?](../2a3414e4/chime.md)"
 
 1) Consider to categorise Harris and Peterson Truth based on how it relates to the passing of time?
 
-==&gt; Also see "Todo: Consider Sam Harris "Truth" is more like facts (as in true at any specific time) while Jordan B Petersson "Truth" ir more like Wisdom (as in true over time)"
+==&gt; Also see "[Todo: Consider Sam Harris "Truth" is more like facts (as in true at any specific time) while Jordan B Petersson "Truth" ir more like Wisdom (as in true over time)](../6ec9474c/chime.md)"
 
 2) Consider if we can expect there to be an "Uncertainty Principle" between knowing what is "True Now" vs "True over time" (in the same way we cant both pinpoint a particle exactly in space as well as how it moves through time as time passes)?
 

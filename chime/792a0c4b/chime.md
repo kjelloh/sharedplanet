@@ -7,7 +7,7 @@
 {% raw %}
 Det verkar som om jag behöver bekosta egna solceller till torpet för att få el till lap-top och DVD-spelare när jag är där under vinterhalvåret (den befintliga panelen laddar nästan ingenting nu då solen börjar stå lågt)
 
-==&gt; Se även ”Todo: Mörkö - Solpaneler, överväg att hitta bra information på nätet för att välja utrustning?"
+==&gt; Se även ”[Todo: Mörkö - Solpaneler, överväg att hitta bra information på nätet för att välja utrustning?](../af647466/chime.md)"
 
 1) Överväg att handla två solpaneler och göra dom prtabla att placera på tomten då jag är där?
 

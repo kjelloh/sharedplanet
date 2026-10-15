@@ -7,7 +7,7 @@
 {% raw %}
 It seems the Tha model is now mature enough so that we can model Json data structures and get something that is in fact complete to use for some Meh and Darwin proof-of-concept?
 
-==&gt; Also see “Todo: C++ JSON - Consider to find a good and stable modern C++ library for Json processing?"
+==&gt; Also see “[Todo: C++ JSON - Consider to find a good and stable modern C++ library for Json processing?](../9723a879/chime.md)"
 
 1) Consider we can define the Tha for the JSon data structure in a very compact and clear way?
 

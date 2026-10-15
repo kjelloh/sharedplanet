@@ -19,9 +19,9 @@ Consider to start gathering real-life testimonies on what drives Innovation (and
 
 3) Consider to relate to other Todo:s on the same subject?
 
-==&gt; See ”Todo: Follow up on Linda Hill TED talk "How to manage for collective creativity”"  
-==&gt; See ”Todo: Study TED talks about "meaningful work”"  
-==&gt; See ”Todo: TED Talk by Margeret Heffernan about our drive to cooperate, not compete!”  
+==&gt; See ”[Todo: Follow up on Linda Hill TED talk "How to manage for collective creativity”](../eddf8a87/chime.md)"  
+==&gt; See ”[Todo: Study TED talks about "meaningful work”](../f149e93b/chime.md)"  
+==&gt; See ”[Todo: TED Talk by Margeret Heffernan about our drive to cooperate, not compete!](../aa12e29a/chime.md)”  
 …
 
 Consider to try and relate more testimonies from reality that indicates that the way we think about monetary incitements are wrong and that there are many reasons we should change the ”religion” we act-in-faith by?  

@@ -35,7 +35,7 @@ Given that what a Deep learning network is doing is to find patterns in data it 
 
 4) Consider to play with existing Open Source Deep Learning Algorithms to test what happens when feed with patternless data?
 
-==&gt; See ”Todo: Dollow up on Deep Learning lecture at KTH 5 October 2015”
+==&gt; See ”[Todo: Dollow up on Deep Learning lecture at KTH 5 October 2015](../c74b568b/chime.md)”
 
 ==&gt; Consider Microsoft Open Sourced ”CNTK” (<http://blogs.microsoft.com/next/2016/01/25/microsoft-releases-cntk-its-open-source-deep-learning-toolkit-on-github/#sm.000pcw56718dxcqerpz2dq9aadh57>)
 

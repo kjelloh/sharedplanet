@@ -7,7 +7,7 @@
 {% raw %}
 It seems Bauhaus seems Nichrome thread as spare part for Proxxon Thermocut 230?
 
-==&gt; Also see “Todo: DIY Metal Casting - Consider to design and build a small home Metal casting shop (foundry)?"
+==&gt; Also see “[Todo: DIY Metal Casting - Consider to design and build a small home Metal casting shop (foundry)?](../99c3768d/chime.md)"
 
 1) Consider to buy Bauhaus (<https://www.bauhaus.se/trad-proxxon-for-thermocut-230-e-30m.html?gclid=CjwKCAiAl7PgBRBWEiwAzFhmmrO-R-IEqcFZyLMqhbJkswRbZVCeoFLCTzUgrckpTwscmwn-TScUEhoCBlEQAvD_BwE>)?
 
@@ -33,7 +33,7 @@ It seems Bauhaus seems Nichrome thread as spare part for Proxxon Thermocut 230?
 
 7) consider the Elfa sortiment of “Resistor Wire”?
 
-==&gt; See “Todo: DIY Metal Casting - Consider to design and build a small home Metal casting shop (foundry)?”
+==&gt; See “[Todo: DIY Metal Casting - Consider to design and build a small home Metal casting shop (foundry)?](../99c3768d/chime.md)”
 
 NOTE: It seems Elfa NiChrome threads are “half price” but 10 times the amount (e.g., 0,5 instead of 0,2 mm thread)...
 

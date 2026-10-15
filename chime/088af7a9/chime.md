@@ -7,7 +7,7 @@
 {% raw %}
 So now it is time again to install and use VSCode and this time on my "new" Mac Pro 2013 (Trashcan)
 
-==&gt; Also see "Todo: Programming - Consider to check out Visual Studio Code for Windows, MAC and Linux?"
+==&gt; Also see "[Todo: Programming - Consider to check out Visual Studio Code for Windows, MAC and Linux?](../6729f029/chime.md)"
 
 1) It seems Visual Studio Code is available for all OS here (<https://code.visualstudio.com/download> )?
 

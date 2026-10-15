@@ -7,9 +7,9 @@
 {% raw %}
 I want to mount a vertical wood working CNC on my slide-out workbench wall in my hallway.
 
-==&gt; Also see "Todo: Consider the "best" way to buy a Mafell Milling motor FM 1000 PV-WS (1000W with PV control and quick tool changer)?"
+==&gt; Also see "[Todo: Consider the "best" way to buy a Mafell Milling motor FM 1000 PV-WS (1000W with PV control and quick tool changer)?](../22cf1801/chime.md)"
 
-==&gt; Also see "Todo: Consider an Ooznest Workbee CNC with a Mafell milling motor?"
+==&gt; Also see "[Todo: Consider an Ooznest Workbee CNC with a Mafell milling motor?](../b0d4214c/chime.md)"
 
 -1) Consider the bottom line of what I think of this CNC router?
 

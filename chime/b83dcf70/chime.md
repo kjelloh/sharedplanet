@@ -7,9 +7,9 @@
 {% raw %}
 Could it be valuable to view a File, A Stream and a Range as the same data structure but just different in how it is distributed in time?
 
-==&gt; Also see “Todo: C++ - Consider to understand Reactive Programming from the semantics and design of RxCpp (Reactive Extensions for Cpp)?”
+==&gt; Also see “[Todo: C++ - Consider to understand Reactive Programming from the semantics and design of RxCpp (Reactive Extensions for Cpp)?](../5068c5cc/chime.md)”
 
-==&gt; Also see “Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?"
+==&gt; Also see “[Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?](../4234851e/chime.md)"
 
 1) Consider a File is in fact just bits ordered “in file”?
 

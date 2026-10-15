@@ -7,13 +7,13 @@
 {% raw %}
 Could it be that if we separate how functions pass data between each other from how the functions are composed we can make algorithms that may operate on data distributed in space as well as on data distributed in time?
 
-==&gt; Also see “Todo: Programming - Consider sub-routines (stack-based), Coroutines (heap-based) and Goroutines (Message passing functions) are just three forms of one basic idea of function composition?"
+==&gt; Also see “[Todo: Programming - Consider sub-routines (stack-based), Coroutines (heap-based) and Goroutines (Message passing functions) are just three forms of one basic idea of function composition?](../3ea0b782/chime.md)"
 
-==&gt; Also see “Todo: Programming - Consider a "thread" is just message-passing using stack-frames on the same stack (another stack is another thread of stack-frame messaging)?”
+==&gt; Also see “[Todo: Programming - Consider a "thread" is just message-passing using stack-frames on the same stack (another stack is another thread of stack-frame messaging)?](../e07d2bd4/chime.md)”
 
-==&gt; Also see “Todo: Darwinet - Consider to design multi-threading using Darwinet synchronized shared data as a thought experiment to find design pos and cons”
+==&gt; Also see “[Todo: Darwinet - Consider to design multi-threading using Darwinet synchronized shared data as a thought experiment to find design pos and cons](../9d5372d2/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to delve into the research and ideas of Hartmut Kaiser regarding "Concurrency and Threads are evil" and Parallelism is the thing?”
+==&gt; Also see “[Todo: Programming - Consider to delve into the research and ideas of Hartmut Kaiser regarding "Concurrency and Threads are evil" and Parallelism is the thing?](../6f3cafd2/chime.md)”
 
 1) It would seem that an algorithm on data distributed in space is time-less (the data is already there and be be processed as defined by its topology in space)
 

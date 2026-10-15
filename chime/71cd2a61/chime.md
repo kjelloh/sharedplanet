@@ -17,7 +17,7 @@ Could it be a good idea to upgrade to Berlin RAD Studio Berlin 10.1?
 
 3) RAD Studio Berlin seem to upgrade clang to version 3.3 (from previous 3.1)?
 
-==&gt; See “Todo: Programming - Understand the difference and interoperation of Visual Studio and RAD Studio binaries “
+==&gt; See “[Todo: Programming - Understand the difference and interoperation of Visual Studio and RAD Studio binaries](../928bbe88/chime.md) “
 
 ==&gt; RAD Studio defines different CLang versions for XE7 and Seattle
 

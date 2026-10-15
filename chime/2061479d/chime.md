@@ -7,15 +7,15 @@
 {% raw %}
 What can we learn from trying to model the C++ build tool chain as a series of functional transformation of immutable ”files” (octet-ranges)?
 
-==&gt; Also see ”Todo: Programming - Consider to elaborate on the idea of modeling source code compilation and linking as a series of transformation between code-spaces?"
+==&gt; Also see ”[Todo: Programming - Consider to elaborate on the idea of modeling source code compilation and linking as a series of transformation between code-spaces?](../2d85dde3/chime.md)"
 
 ==&gt; Also see ”Todo: C++ - Consider we should aim at starting to add transpires that generates C++ code for us (extend the asm mechanism for inline assembly)?”
 
-==&gt; Also see ”Todo: C++ Programming - Consider to discuss how to eliminate (automate) C++ Source Files (zero overhead pre-processing)?”
+==&gt; Also see ”[Todo: C++ Programming - Consider to discuss how to eliminate (automate) C++ Source Files (zero overhead pre-processing)?](../5419b933/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to assemble a 3D example of a "Pandora View" of a piece of C++ code from Pre-processor macros, through templates all the way down to actual assembly?"
+==&gt; Also see ”[Todo: Programming - Consider to assemble a 3D example of a "Pandora View" of a piece of C++ code from Pre-processor macros, through templates all the way down to actual assembly?](../a3a7a483/chime.md)"
 
-==&gt; Also see ”Todo: programming - Consider to argue that C++ pre-processing must go (error-prone because language-agnostic)?"
+==&gt; Also see ”[Todo: programming - Consider to argue that C++ pre-processing must go (error-prone because language-agnostic)?](../a9b42774/chime.md)"
 
 1) Consider to what degree current build tool-chains may be modeled as composition of immutable-file transformations?
 

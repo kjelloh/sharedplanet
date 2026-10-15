@@ -106,7 +106,7 @@ View : Model -&gt; Html Msg
 
 3) Elm seems to use separate function declaration and definition?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider ways to implement function meta-value hierarchy (meta-2...meta-0 declaration, definition operations)?"
+==&gt; Also see ”[Todo: Meta Value Model - Consider ways to implement function meta-value hierarchy (meta-2...meta-0 declaration, definition operations)?](../130c6d9a/chime.md)"
 
 ==&gt; The function declaration defines function name and mapping?
 

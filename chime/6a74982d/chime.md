@@ -43,7 +43,7 @@ Consider what mechanism to use to have Odysseus populate its namespace with some
 
 Consider ways to create a tris struct with SFIANE conditioned members picking selected members of filesystem (in effect defining an API to filesystem members)?
 
-==&gt; See ”Todo: Programming - Consider to understand std::enable_if and the SFINAE idiom and what to use it for?”
+==&gt; See ”[Todo: Programming - Consider to understand std::enable_if and the SFINAE idiom and what to use it for?](../0fa6e5dd/chime.md)”
 
 ==&gt; Pros: Members of &lt;filesystem&gt; are exposed in a very controlled way (has to be explicitly made member in struct)
 

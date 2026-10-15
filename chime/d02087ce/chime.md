@@ -5,17 +5,17 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Consider to check out Fuel Cells from Swedish Manufacturer PowerCellution?"
+==&gt; Also see "[Todo: Consider to check out Fuel Cells from Swedish Manufacturer PowerCellution?](../1e08969a/chime.md)"
 
-==&gt; Also see "Todo: House Build - Consider to delve into the Hydrogen Energy Storage based portable electric car charging stations for leads into available Hydrogen Energy Storage solutions for my house build?"
+==&gt; Also see "[Todo: House Build - Consider to delve into the Hydrogen Energy Storage based portable electric car charging stations for leads into available Hydrogen Energy Storage solutions for my house build?](../2f3e179e/chime.md)"
 
-==&gt; Also see "Todo: House Build - Consider to use the Hydrogen energy storage system RE8760 developed by "Nilsson Energy AB"?"
+==&gt; Also see "[Todo: House Build - Consider to use the Hydrogen energy storage system RE8760 developed by "Nilsson Energy AB"?](../2efef0d7/chime.md)"
 
-==&gt; Also see "Todo: Consider what energy storage and retrieval efficiency we can expect from hydrogen production, high pressure storage and fuel cell electrical generation?"
+==&gt; Also see "[Todo: Consider what energy storage and retrieval efficiency we can expect from hydrogen production, high pressure storage and fuel cell electrical generation?](../4eed46ad/chime.md)"
 
-==&gt; Also see "Todo: Consider if I use Hydrogen Fuel Cells I can actually use the resulting water for drinking and other household applications?"
+==&gt; Also see "[Todo: Consider if I use Hydrogen Fuel Cells I can actually use the resulting water for drinking and other household applications?](../1f7d473a/chime.md)"
 
-==&gt; Also see "Todo: Consider to store solar energy in the summer in the form of compressed hydrogen gas?"
+==&gt; Also see "[Todo: Consider to store solar energy in the summer in the form of compressed hydrogen gas?](../d1775369/chime.md)"
 
 1) It seems the Toyota Mirai comes to sweden mid 2021 (<https://www.toyota.se/nya-bilar/mirai/index.json?gclid=Cj0KCQjw2tCGBhCLARIsABJGmZ7ZZi_PLETjtklaeTc5weJRNz7ez-cnFHgmfuRft8AKMyJ-OkajbwgaAkAMEALw_wcB&gclsrc=aw.ds> )?
 
@@ -23,7 +23,7 @@
 
 2) Consider how to use the Toyota fuel cell to generate electricity for my off-grid house?
 
-==&gt; Also see "Todo: Consider to check out Fuel Cells from Swedish Manufacturer PowerCellution?"
+==&gt; Also see "[Todo: Consider to check out Fuel Cells from Swedish Manufacturer PowerCellution?](../1e08969a/chime.md)"
 
 > *So, the basic idea is to find a small hydrogen fuel cell to turn hydrogen into electricty.*
 

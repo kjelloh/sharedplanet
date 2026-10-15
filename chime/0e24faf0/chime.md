@@ -11,7 +11,7 @@ Could it be a fun idea to hold some talks about stuff I know from my Career?
 
 2) Consider to hold a talk about Requirement Communication (e.g. writing specifications)?
 
-==&gt; See ”Todo: Write about requirement communication and administration”?
+==&gt; See ”[Todo: Write about requirement communication and administration](../59160ec5/chime.md)”?
 
 3) Consider to talk to developers about the how Card Payment Systems ”work”?
 

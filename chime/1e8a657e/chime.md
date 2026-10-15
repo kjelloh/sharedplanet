@@ -7,7 +7,7 @@
 {% raw %}
 Could it be a good idea to define human societies as “ruling by created truths” as a better one that “ruling by created God”?
 
-==&gt; Also see “Todo: Consider to write about Life being "truth creating" and that we are all thus religious in believing in "God" as the "Truth”?"
+==&gt; Also see “[Todo: Consider to write about Life being "truth creating" and that we are all thus religious in believing in "God" as the "Truth”?](../5450793f/chime.md)"
 
 1) Consider if we argue that “God” is just what we call our truth-proxy there is no real difference?
 

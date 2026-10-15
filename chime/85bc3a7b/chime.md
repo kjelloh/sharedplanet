@@ -7,9 +7,9 @@
 {% raw %}
 It seems it could be a good idea to document and understand data and physics about brushless motors?
 
-==&gt; Also see “Todo: Einhell 2025 Table Saw - Consider I can replace the motor with a brushless outrunner dc motor?"
+==&gt; Also see “[Todo: Einhell 2025 Table Saw - Consider I can replace the motor with a brushless outrunner dc motor?](../31db3b0c/chime.md)"
 
-==&gt; Also see “Todo: DIY Torque Transducer - Consider to experiment with strain gauges to implement torque transducer for wind and bicycle generator power measurement?”
+==&gt; Also see “[Todo: DIY Torque Transducer - Consider to experiment with strain gauges to implement torque transducer for wind and bicycle generator power measurement?](../2d597344/chime.md)”
 
 1) Consider this article “BRUSHLESS MOTOR KV CONSTANT EXPLAINED” (<http://learningrc.com/motor-kv/>)?
 

@@ -7,7 +7,7 @@
 {% raw %}
 I am always more interested in what we don't see than what we hold true and maybe we can use flat earth society movement as an indication we all have a "self-evident" truth observation machine that we just can't escape.
 
-==&gt; Also see "Todo: Consider the provocative metaphor that Atheists are "flat minders" in that like "flat earthers" they derive a model of the whole from the close-environment-facts?"
+==&gt; Also see "[Todo: Consider the provocative metaphor that Atheists are "flat minders" in that like "flat earthers" they derive a model of the whole from the close-environment-facts?](../1e433754/chime.md)"
 
 1) Consider to postulate we all have an inner "flat earther" that has to base reality on some observed axioms that we seldom come around to question?
 

@@ -7,7 +7,7 @@
 {% raw %}
 Could it be possible to propose a definition of C++ class in Tha C++ by re-using C++ syntax on meta-3 values?
 
-==&gt; Also see “Todo: C++ Meta - Consider to write a blog post and Lightning talk on Herb Sutter Metaclass proposal using Tha model?"
+==&gt; Also see “[Todo: C++ Meta - Consider to write a blog post and Lightning talk on Herb Sutter Metaclass proposal using Tha model?](../ec963a37/chime.md)"
 
 1) Consider to define a C++ class declaration using the Tha model?
 

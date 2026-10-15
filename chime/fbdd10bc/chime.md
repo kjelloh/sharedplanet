@@ -7,7 +7,7 @@
 {% raw %}
 I seem to have lived my whole life without understanding that there are roller ball pens and ballpoint pens (and they are not the same)?
 
-==&gt; Also see "Todo: Consider pens for drawing and writing in different colours (black, blue, red) that are cost and resource effective (refillable directly from source = no refill cartridge even)?"
+==&gt; Also see "[Todo: Consider pens for drawing and writing in different colours (black, blue, red) that are cost and resource effective (refillable directly from source = no refill cartridge even)?](../de58aee6/chime.md)"
 
 1) Consider wikipedia article on roller ball pen (<https://en.wikipedia.org/wiki/Rollerball_pen> )?
 

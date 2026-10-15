@@ -7,7 +7,7 @@
 {% raw %}
 It seems we can make an observation and argue the case that when we feel something to be meaningful it is our evolved mechanism of emotional truth that rewards us for engaging in an activity (consuming time) to produce truth (putting the state and motion of space into the best possible way)?
 
-==&gt; Also see “Todo: Consider to model "Time" as a currently-like entity or "substance" that is consumed to produce (transformed into) change in space?”
+==&gt; Also see “[Todo: Consider to model "Time" as a currently-like entity or "substance" that is consumed to produce (transformed into) change in space?](../3f4c0cd1/chime.md)”
 
 1) Consider to try the assumption that time is what the universe consumes to put its state in the “best” possible way and life has evolved to take part in that quest for truth?
 

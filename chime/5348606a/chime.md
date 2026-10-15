@@ -7,9 +7,9 @@
 {% raw %}
 It seems Scott Adams has outed that he made a tweet where the content is not the focus but the result of the audience attacking the tweet (audience gets educated in the process of attacking the tweet)?
 
-==&gt; Also see “Todo: May one "contaminate" arguments for discrimination that then evolves into arguments to cooperate and help?”
+==&gt; Also see “[Todo: May one "contaminate" arguments for discrimination that then evolves into arguments to cooperate and help?](../d82e1bd0/chime.md)”
 
-==&gt; Also see “Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?"
+==&gt; Also see “[Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?](../f19cbf05/chime.md)"
 
 1) Consider this youtube episode “Episode 481 Scott Adams: 97% of Scientists Love Gen IV Nuclear, Theron, Mueller, Solar” where Scott Adams reveals he made what we may call a “Trojan Horse” truth (<https://www.youtube.com/watch?v=nkGLLHsnmyM&t=1800s> )?
 
@@ -25,7 +25,7 @@ It seems Scott Adams has outed that he made a tweet where the content is not the
 
 3) Consider how this idea of a “Trojan Horse” argument maybe is closely related to how comedians also can be seen to “reveal hidden truths” and thus also educates people on new information?
 
-==&gt; Also see “Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?"
+==&gt; Also see “[Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?](../f19cbf05/chime.md)"
 
 ==&gt; Consider we may argue that what Scott Adams did was practice a persuasion technique to engage the audience to internalise new information that seems closely related to comedians that disguise new information as humor?
 

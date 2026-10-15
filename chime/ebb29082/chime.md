@@ -7,7 +7,7 @@
 {% raw %}
 So, what can we learn from following up on the paper ”Confluently Persistent Tries for Efficient Version Control” when it comes to design decisions and possible implementations of Darwinet File Systems?
 
-==&gt; Also see ”Todo: Darwinet - Consider to delve into available C++ information and solutions to implement the MIV as a Confluent Persistent (Immutable) Data Structure?"
+==&gt; Also see ”[Todo: Darwinet - Consider to delve into available C++ information and solutions to implement the MIV as a Confluent Persistent (Immutable) Data Structure?](../1eb47a76/chime.md)"
 
 1) The paper ”Confluently Persistent Tries for Efficient Version Control” seems to live here (<http://erikdemaine.org/papers/ConfluentTries_Algorithmica/paper.pdf>)?
 

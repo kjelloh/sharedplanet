@@ -9,25 +9,25 @@ So, what GUI front-end mechanisms can we imagine that we can use for cross platf
 
 ==&gt; Also see “Todo: Front-end Programming - Consider to list and try out different GUI front-end mechanisms that we can also turn into the elm-idiom unidirectional single-atom idiom?”
 
-==&gt; Also see “Todo: C++ 2D GUI - Consider to try out and select existing 2D graphical front-end frameworks I can use for cross platform user interface development?”
+==&gt; Also see “[Todo: C++ 2D GUI - Consider to try out and select existing 2D graphical front-end frameworks I can use for cross platform user interface development?](../a75af71f/chime.md)”
 
-==&gt; Also see “Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?”
+==&gt; Also see “[Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?](../3b78fd47/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to delve into the imgui cross platform C++ GUI interface?”
+==&gt; Also see “[Todo: Programming - Consider to delve into the imgui cross platform C++ GUI interface?](../7fa55bd2/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to design a GUI/Backgrounder interface that works with VCL applications BCC32 and upwards?”
+==&gt; Also see “[Todo: Programming - Consider to design a GUI/Backgrounder interface that works with VCL applications BCC32 and upwards?](../7dbba1d9/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to design VCL (and later FMX) GUI components that separates view from data model?”
+==&gt; Also see “[Todo: Programming - Consider to design VCL (and later FMX) GUI components that separates view from data model?](../a9cd3396/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to provide Tris with a default GUI front-end for all major platforms (Windows, Linux, MacOS)?”
+==&gt; Also see “[Todo: Programming - Consider to provide Tris with a default GUI front-end for all major platforms (Windows, Linux, MacOS)?](../1bf3ffe9/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to study and try out Windows GUI automation frameworks?”
+==&gt; Also see “[Todo: Programming - Consider to study and try out Windows GUI automation frameworks?](../9d44906b/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to study the C++ cross-platform Qt versus Copperspice for GUI development?”
+==&gt; Also see “[Todo: Programming - Consider to study the C++ cross-platform Qt versus Copperspice for GUI development?](../c2c18e21/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to understand the different C++ options to develop Windows Desktop Application GUI on different platforms (Windows 7, 8.1, 10)?”
+==&gt; Also see “[Todo: Programming - Consider to understand the different C++ options to develop Windows Desktop Application GUI on different platforms (Windows 7, 8.1, 10)?](../935c2ee3/chime.md)”
 
-==&gt; Also see “Todo: Programming C++ - Consider to create a "React Like" C++ GUI framework that views and operates on an Immutable Persistent Data Structure?”
+==&gt; Also see “[Todo: Programming C++ - Consider to create a "React Like" C++ GUI framework that views and operates on an Immutable Persistent Data Structure?](../93abb6f6/chime.md)”
 
 -1) Optnially consider to model ALL the existing GUI front-ends in Tha?
 

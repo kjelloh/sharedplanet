@@ -7,9 +7,9 @@
 {% raw %}
 I find it interesting to wonder if the world is deterministic or evolves as a self organising emergent system and a way to explore this would be to imagine some behaviour that we can simulate both as an emergence and as a deterministic mathematical law.
 
-==&gt; Also see "Todo: Consider to use Conway's Game of Life to show how hard it is to design society to eliminate pain (bad things emerge when good things are enforced)?"
+==&gt; Also see "[Todo: Consider to use Conway's Game of Life to show how hard it is to design society to eliminate pain (bad things emerge when good things are enforced)?](../734414bf/chime.md)"
 
-==&gt; Also see "Todo: Darwinet - Consider to implement "Conway´s Game of Life" on a board of Darwinet nodes as a base for distributed computation capabilities?"
+==&gt; Also see "[Todo: Darwinet - Consider to implement "Conway´s Game of Life" on a board of Darwinet nodes as a base for distributed computation capabilities?](../60a9e234/chime.md)"
 
 > *So the idea here is to take something like "Conway's Game of Life" and have the produced pattern of cells behave as if they follow a simple mathematical "law" of cause and effect. Now we know this program at its core is deterministic in each step but we want to know if the rules of each cell development can produce some other causal relationship between patterns on the board.*
 

@@ -7,23 +7,23 @@
 {% raw %}
 It seems I can start documenting what components to have in my electronics lab setup to be able to start doing electronics projects?
 
-==&gt; Also see “Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?”
+==&gt; Also see “[Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?](../9e71efd1/chime.md)”
 
 ==&gt; Also see “Todo: Consider to examine all the battery adapters I have to see if and how I can use them as Power Supplies in ITfied electronic lab?”
 
-==&gt; Also see “Todo: Electronic Lab - Consider to check out the sigrok open source PC/MAC/Linux instrumentation software for a large set of electronic measurement hardware devices?”
+==&gt; Also see “[Todo: Electronic Lab - Consider to check out the sigrok open source PC/MAC/Linux instrumentation software for a large set of electronic measurement hardware devices?](../bf58bea1/chime.md)”
 
-==&gt; Also see “Todo: Electronic Lab - Consider to find a good enough lab power supply?”
+==&gt; Also see “[Todo: Electronic Lab - Consider to find a good enough lab power supply?](../68506fdb/chime.md)”
 
-==&gt; Also see “Todo: Electronics Lab - Consider to buy a trinocular electronics work microscope?”
+==&gt; Also see “[Todo: Electronics Lab - Consider to buy a trinocular electronics work microscope?](../a1573e77/chime.md)”
 
-==&gt; Also see “Todo: Electronics Lab - Consider Oscilloscope brands of common web-shops?”
+==&gt; Also see “[Todo: Electronics Lab - Consider Oscilloscope brands of common web-shops?](../6ed63735/chime.md)”
 
-==&gt; Also see “Todo: Electronics Lab - Consider to buy and use a PC/USB Oscilloscope?”
+==&gt; Also see “[Todo: Electronics Lab - Consider to buy and use a PC/USB Oscilloscope?](../1e289e9c/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to build a simple multi-site search engine for electronics parts to more easily find instruments and components on the web?”
+==&gt; Also see “[Todo: Programming - Consider to build a simple multi-site search engine for electronics parts to more easily find instruments and components on the web?](../3414cb8e/chime.md)”
 
-==&gt; Also see “Todo: Start a maker space that builds consumer electronics that last "forever”?”
+==&gt; Also see “[Todo: Start a maker space that builds consumer electronics that last "forever”?](../002f886a/chime.md)”
 
 -1) Consider to document the current shopping-list proposal?
 

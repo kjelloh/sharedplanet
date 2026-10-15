@@ -7,7 +7,7 @@
 {% raw %}
 Consider it to be a good idea to save documentation on how to install the Electron Environment on my different OS:es and machines?
 
-==&gt; Also see ”Todo: Consider to document installation of Node.js and accompanying npm package manager to by different computers?”
+==&gt; Also see ”[Todo: Consider to document installation of Node.js and accompanying npm package manager to by different computers?](../9d0e6ac8/chime.md)”
 
 1) The Electron Environment seems to be available through the Example package available here (<http://electron.atom.io>)?
 

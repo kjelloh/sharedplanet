@@ -7,11 +7,11 @@
 {% raw %}
 From youtube video by Yorik van Havre, the Brazilian developer of FreeCAD I learned he is also sometimes using Cute CAD and thought this was worth checking out for my own CAD needs?
 
-==&gt; Also see "Todo: Build House - Consider to really give FreeCad a try to see if I can rely on it to design, model and produce plans using it BIM style?"
+==&gt; Also see "[Todo: Build House - Consider to really give FreeCad a try to see if I can rely on it to design, model and produce plans using it BIM style?](../999eb1b9/chime.md)"
 
-==&gt; Also see "Todo: Consider to study and try out the Open Source 2D CAD application QCAD (NOT CuteCAD as a companion to 3D CAD FreeCAD)?"
+==&gt; Also see "[Todo: Consider to study and try out the Open Source 2D CAD application QCAD (NOT CuteCAD as a companion to 3D CAD FreeCAD)?](../de7df97a/chime.md)"
 
-==&gt; Also see "Todo: Consider to study and try out the 2D CAD application LibreCAD, a fork of QCAD (as a companion to 3D CAD FreeCAD)?"
+==&gt; Also see "[Todo: Consider to study and try out the 2D CAD application LibreCAD, a fork of QCAD (as a companion to 3D CAD FreeCAD)?](../68befbb5/chime.md)"
 
 -1) He (Yorik van Havre) meant QCAD - NOT Cute CAD!!
 

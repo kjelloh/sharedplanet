@@ -19,7 +19,7 @@ Consider to think about ways to “reward” the user to actually get long-term 
 
 3) What ideas can we think of to make an App help us prohibit procrastination and create “pleasure” (Rewards and/or flow)
 
-==&gt; See “Todo: Programming - Consider a "Slot Machine" Todo-scheduler for Owls&Bells?”
+==&gt; See “[Todo: Programming - Consider a "Slot Machine" Todo-scheduler for Owls&Bells?](../b2b2409c/chime.md)”
 
 ==&gt; Consider to design “Reward” mechanisms to make user attend to things that needs to be “done”?
 

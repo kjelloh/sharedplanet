@@ -7,7 +7,7 @@
 {% raw %}
 I want tools that compose and saves energy and resources.
 
-==&gt; Also see "Todo: Build SPC expresso machine"
+==&gt; Also see "[Todo: Build SPC expresso machine](../087f0eef/chime.md)"
 
 1) Consider to design an open hardware micro (one cup) water boiler?
 

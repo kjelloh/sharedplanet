@@ -7,7 +7,7 @@
 {% raw %}
 I want to turn heat into electricity and a Stirling engine drive electric generator may be the thing.
 
-==&gt; Also see "Todo: House Build - Consider to find options to generate electricity from burning wood e.g., using a string engine driven generator?"
+==&gt; Also see "[Todo: House Build - Consider to find options to generate electricity from burning wood e.g., using a string engine driven generator?](../bff71726/chime.md)"
 
 1) Consider the free piston Stirling engine products by Netherlands based company Microgen Engine Corporation (<https://www.microgen-engine.com> )?
 

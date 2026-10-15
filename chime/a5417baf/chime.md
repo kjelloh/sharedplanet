@@ -7,9 +7,9 @@
 {% raw %}
 It seems from the observation that coffee made with percolation extracts more coffee out of the beans than infusion we should base a paint removal process on perculation?
 
-==&gt; Also see "Todo: Consider the potential logical fallacy in the intuition that you need less coffee in an infusion process than in percolation one (when in fact an expert claims it is the opposite)?"
+==&gt; Also see "[Todo: Consider the potential logical fallacy in the intuition that you need less coffee in an infusion process than in percolation one (when in fact an expert claims it is the opposite)?](../23a40a10/chime.md)"
 
-==&gt; Also see "Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+==&gt; Also see "[Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?](../bd86eed6/chime.md)"
 
 1) Consider some easy to build first try to percolate water through paint brushes and rollers to extract all paint with minimal water consumption?
 

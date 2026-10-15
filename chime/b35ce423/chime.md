@@ -9,7 +9,7 @@ It seems I would one day want to be able to vacuum form acrylic sheets (e.g., fo
 
 ==&gt; Also see "Todo: Consider possible waste water logistic solutions for my paint "
 
-==&gt; Also see "Todo: Consider what I need to make my own Chocolate moulds for truffles?"
+==&gt; Also see "[Todo: Consider what I need to make my own Chocolate moulds for truffles?](../5d0278e4/chime.md)"
 
 1) Consider the wikipedia article on vacuum forming (<https://en.wikipedia.org/wiki/Vacuum_forming> )?
 

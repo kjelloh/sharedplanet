@@ -7,7 +7,7 @@
 {% raw %}
 Studying Boost Spirit using “rules” that may be composed into “grammars” it seems we may not us that for data message decomposition but the same design may be applied?
 
-==&gt; Also See “Todo: Programming - Consider to elaborate on data-structure paring/mapping using iterator ranges?"
+==&gt; Also See “[Todo: Programming - Consider to elaborate on data-structure paring/mapping using iterator ranges?](../b86fc508/chime.md)"
 
 1) Consider to name this design OPrime (from optimus prime, the great transformer)?
 

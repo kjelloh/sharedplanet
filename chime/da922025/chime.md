@@ -7,11 +7,11 @@
 {% raw %}
 It seems I could benefit from documenting my "off sewage" paint work and wash up station?
 
-==&gt; Also see "Todo: Wall Paining - Consider I make slow progress with better paint work station equipment but I have yet to practice more to actually put any paint on the wall?"
+==&gt; Also see "[Todo: Wall Paining - Consider I make slow progress with better paint work station equipment but I have yet to practice more to actually put any paint on the wall?](../fe595b1f/chime.md)"
 
-==&gt; Also see "Todo: Consider why I am so terrified to start painting my walls and how I may overcome it and also become confident and gain the competence to do it well?"
+==&gt; Also see "[Todo: Consider why I am so terrified to start painting my walls and how I may overcome it and also become confident and gain the competence to do it well?](../1846949d/chime.md)"
 
-==&gt; Also see "Todo: Indoor Painting - Consider to make a stainless steel mini sink into a paint tool cleaning station?"
+==&gt; Also see "[Todo: Indoor Painting - Consider to make a stainless steel mini sink into a paint tool cleaning station?](../d94e387f/chime.md)"
 
 1) Consider the items I bought to make my "off sewage" paint work and wash up station?
 

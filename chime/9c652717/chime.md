@@ -7,7 +7,7 @@
 {% raw %}
 I want to wrap my brain around "reality" and the weird behaviour of quantum states provide interesting and mind boggling observations
 
-==&gt; Also see "Todo: Consider to delve into the "weirdness" of quantum mechanics as described by "The Bomb Experiment"?"
+==&gt; Also see "[Todo: Consider to delve into the "weirdness" of quantum mechanics as described by "The Bomb Experiment"?](../5c32ebe1/chime.md)"
 
 1) Consider the wikipedia article "Delayed-choice quantum eraser" (<https://en.wikipedia.org/wiki/Delayed-choice_quantum_eraser> )?
 

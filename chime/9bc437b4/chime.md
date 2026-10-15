@@ -9,7 +9,7 @@ It seems it could be a good idea to start documenting the Meg grammar in terms o
 
 1) Consider a grammar is defined as a set or production rules that recurse on non-terminal symbols (nodes of the AST) and terminal symbols (reserved symbols of the language)?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to compare context free grammar for English language as input to understand a PEG for Meh?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider to compare context free grammar for English language as input to understand a PEG for Meh?](../ecfd0644/chime.md)”
 
 ![okänt.tiff](okänt.tiff)
 
@@ -21,7 +21,7 @@ It seems it could be a good idea to start documenting the Meg grammar in terms o
 
 2) Consider to understand how the production rules, the non-terminal and the terminal symbols are expressed in C++ boost spirit Qi?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to try implementing Meh parser using C++ Boost Spirit Qi grammar library (Or newer Boost X3)?
+==&gt; Also see ”[Todo: Meta Value Model - Consider to try implementing Meh parser using C++ Boost Spirit Qi grammar library (Or newer Boost X3)?](../a24d878f/chime.md)
 
 ==&gt; Consider the Lisp grammar defined in github project ”Lisp in C++” (<https://github.com/klmr/lisp.cpp>)?
 

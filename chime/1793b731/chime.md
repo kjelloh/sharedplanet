@@ -7,7 +7,7 @@
 {% raw %}
 It seems I can safely narrow down my selection of Hot Meld Adhesive system (Hot Glue Gun and sticks) to the ones provided by 3M and UK based TechSil?
 
-==&gt; Also see “Todo: Consider to learn about hot glue and glue guns (to decide on what first glue gun and glue to purchase)?”
+==&gt; Also see “[Todo: Consider to learn about hot glue and glue guns (to decide on what first glue gun and glue to purchase)?](../61f5d812/chime.md)”
 
 -2) 181204 - Ordered 3M Hot Melt Applicator LT and TC plus glue sticks
 

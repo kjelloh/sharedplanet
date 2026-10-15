@@ -7,9 +7,9 @@
 {% raw %}
 It seems we can say that the Universe does not like time?
 
-==&gt; Also see “Todo: Philosophy - Consider "Truth" is that which takes time to find (and time stops when Truth is found)?”
+==&gt; Also see “[Todo: Philosophy - Consider "Truth" is that which takes time to find (and time stops when Truth is found)?](../f1b5a211/chime.md)”
 
-==&gt; Also see “Todo: Philosophy - Consider feelings drives us to close in on Truth (as in finding the state where no change is required)?"
+==&gt; Also see “[Todo: Philosophy - Consider feelings drives us to close in on Truth (as in finding the state where no change is required)?](../ff5586bc/chime.md)"
 
 1) Consider that ray of lights travel the path that takes least time?
 

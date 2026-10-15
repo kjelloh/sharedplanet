@@ -7,13 +7,13 @@
 {% raw %}
 Seems I now have the opportunity to research flocculant methods on the waste water I have produced after having painted the wall in my bedroom?
 
-==&gt; Also see "Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+==&gt; Also see "[Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?](../bd86eed6/chime.md)"
 
-==&gt; Also see "Todo: Consider possible waste water logistic solutions for my paint wash up station?"
+==&gt; Also see "[Todo: Consider possible waste water logistic solutions for my paint wash up station?](../a978735c/chime.md)"
 
-==&gt; Also see "Todo: Consider tp design and build a prototype of a Micro and Electro Flocculation Rinse Laundring Machine?"
+==&gt; Also see "[Todo: Consider tp design and build a prototype of a Micro and Electro Flocculation Rinse Laundring Machine?](../047072dd/chime.md)"
 
-==&gt; Also see "Todo: Consider if it is possible to flocculate french brew coffee (to separate the coffee grinding from the coffee drink)?"
+==&gt; Also see "[Todo: Consider if it is possible to flocculate french brew coffee (to separate the coffee grinding from the coffee drink)?](../fcc86334/chime.md)"
 
 1) Consider to speculate on what I can do to separate out the paint from the waste water I currently have?
 

@@ -7,11 +7,11 @@
 {% raw %}
 Could it be a good idea to initiate a C++ open source library for reflecting a web-page user interface into some C++ GUI framework for automation (Application interaction with web-pages)?
 
-==&gt; Also see “Todo: Programming - Consider to study and try out Windows GUI automation frameworks?”
+==&gt; Also see “[Todo: Programming - Consider to study and try out Windows GUI automation frameworks?](../9d44906b/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider to try out <http://exercism.io/languages/cpp>”
+==&gt; Also see “[Todo: Programming - Consider to try out <http://exercism.io/languages/cpp>](../c4f0f1ae/chime.md)”
 
-==&gt; Also see “Todo: Programming - Consider the C++ cross platform tool-chain and front-end/back-end options options?”
+==&gt; Also see “[Todo: Programming - Consider the C++ cross platform tool-chain and front-end/back-end options options?](../5d4c0bbb/chime.md)”
 
 ==&gt;
 
@@ -59,7 +59,7 @@ Could it be a good idea to initiate a C++ open source library for reflecting a w
 
 ==&gt; Consider the Qt C++ Framework (See “Todo: Programming - Consider to study the C++ cross-platform Qt versus Copperspice for GUI development?”)?
 
-==&gt; Also see “Todo: Programming - Consider to study the C++ cross-platform Qt-framework for GUI development?"
+==&gt; Also see “[Todo: Programming - Consider to study the C++ cross-platform Qt-framework for GUI development?](../008ee028/chime.md)"
 
 ==&gt; Consider the imgui C++ library (See “odo: Programming - Consider to delve into the imgui cross platform C++ GUI interface?”)?
 

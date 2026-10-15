@@ -7,7 +7,7 @@
 {% raw %}
 I seems, inspired by a tweet, that there are three C++ idioms for reading and writing files?
 
-==&gt; Also see “Todo: Programming - Consider to propose that a C++ File System is actually a special case of a Composite Data Model accessible through key-paths?"
+==&gt; Also see “[Todo: Programming - Consider to propose that a C++ File System is actually a special case of a Composite Data Model accessible through key-paths?](../dfcb19b0/chime.md)"
 
 1) Consider to delve into the C++ code in this tweet about bench marking three C++ file handling on different platforms (<https://cristianadam.eu/20160410/c-plus-plus-i-slash-o-benchmark/>)?
 

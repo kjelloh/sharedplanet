@@ -7,9 +7,9 @@
 {% raw %}
 After the meeting with Olof Åstrand I got even more engaged to get and set-up a LoRa network access point!
 
-==&gt; Also see “Todo: Darwinet - Consider LoRa and Sigfox IoT radio connected and synchronised darwinist domain nodes?”
+==&gt; Also see “[Todo: Darwinet - Consider LoRa and Sigfox IoT radio connected and synchronised darwinist domain nodes?](../49b8258c/chime.md)”
 
-==&gt; Also see “Todo: Consider a stand-by killer we can wake up over a Lora network to activate say a WiFi printer?"
+==&gt; Also see “[Todo: Consider a stand-by killer we can wake up over a Lora network to activate say a WiFi printer?](../2f5b0b63/chime.md)"
 
 1) This seems to be where the LoRa community lives ([https://www.thethingsnetwork.org](https://www.thethingsnetwork.org/))?
 

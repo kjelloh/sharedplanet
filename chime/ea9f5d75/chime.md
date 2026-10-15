@@ -7,7 +7,7 @@
 {% raw %}
 I need more information about support from municipals, the Swedish state and research on building houses with close to zero environmental footprint?
 
-==&gt; Also see "Todo: Own house build - Consider to study the house "Villa Falk" in "MåBraByn" in Robertsfors municipality?"
+==&gt; Also see "[Todo: Own house build - Consider to study the house "Villa Falk" in "MåBraByn" in Robertsfors municipality?](../aa825f71/chime.md)"
 
 1) Consider The Umeå Municipal article on "Energieffektivt byggande i kallt klimat" (<https://www.umea.se/umeakommun/byggaboochmiljo/energiochuppvarmning/projektochnatverk/energieffektivtbyggandeikalltklimat.4.1c82affc124ecb0bbe580007824.html> )?
 

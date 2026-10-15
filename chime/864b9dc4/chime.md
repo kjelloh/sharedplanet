@@ -7,7 +7,7 @@
 {% raw %}
 I need a way to power my TS100 so I should write down the data of it so I can plan how to do this and optionally DIY other accessories for it.
 
-==&gt; Also see "Todo: Consider to check out Chineese Min company that sell those mini screwdriver, soldering iron and oscilloscope that Macro Reps done reviews on?"
+==&gt; Also see "[Todo: Consider to check out Chineese Min company that sell those mini screwdriver, soldering iron and oscilloscope that Macro Reps done reviews on?](../d50b728f/chime.md)"
 
 1) It seems the TS100 is powered through a male DC plug 5.5 x 2.5 mm (<https://www.banggood.com/sv/XT60-Male-Bullet-Connector-to-Male-DC-DC5525-Power-Cable-for-TS100-Electronic-Soldering-Iron-p-1219960.html?gmcCountry=SE&currency=SEK&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgs&utm_content=xibei&utm_campaign=pla-se-all-sv-pc&ad_id=324452396392&gclid=CjwKCAjw7O_pBRA3EiwA_lmtfoPeZQJNUzlyF8f0ajGSaoIoJTyxP32QRa0W9iqMOFNejqbPvVbuURoCbK4QAvD_BwE&cur_warehouse=USA> )?
 

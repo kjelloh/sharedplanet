@@ -5,15 +5,15 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Also see "Todo: Wall Painting - Consider to use Lime Wash (Swedish Kalkfärg) on my tv-room wall to get a more "alive" texture?"
+==&gt; Also see "[Todo: Wall Painting - Consider to use Lime Wash (Swedish Kalkfärg) on my tv-room wall to get a more "alive" texture?](../841c8fe8/chime.md)"
 
-==&gt; Also see "Todo: Wall Painting - Consider to what degree the NCS Colour System is a colur coding system I can use to define colour of paint I buy from different vendors?"
+==&gt; Also see "[Todo: Wall Painting - Consider to what degree the NCS Colour System is a colur coding system I can use to define colour of paint I buy from different vendors?](../eb03bfc9/chime.md)"
 
-==&gt; Also see "odo: Wall Painting - Consider to delve into sponge and faux painting options to optionally try out to have my painted walls look more "alive"?"
+==&gt; Also see "[odo: Wall Painting - Consider to delve into sponge and faux painting options to optionally try out to have my painted walls look more "alive"?](../e4b81404/chime.md)"
 
 ==&gt; Also see local computer "/Users/kjell-olovhogdal/Resilio Sync/Dropbox/Kjell-Olov/Privat/Snickerier Egen Lägenhet 2017"
 
-==&gt; Also see "Todo: Wall Painting - Consider ideas and observations after paining the hall way wall?"
+==&gt; Also see "[Todo: Wall Painting - Consider ideas and observations after paining the hall way wall?](../1226c65f/chime.md)"
 
 1) This seems to be a Tiff format image of the floor plan of my apartment?
 

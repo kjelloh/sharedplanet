@@ -7,13 +7,13 @@
 {% raw %}
 To be able to harvest and store excess solar energy in the summer I think I have to go for hydrogen generation and storage?
 
-==&gt; Also see "Todo: Consider ways to build or buy an atmospheric water generator for my own house build?"
+==&gt; Also see "[Todo: Consider ways to build or buy an atmospheric water generator for my own house build?](../dfae21fb/chime.md)"
 
-==&gt; Also see "Todo: Consider a compliant mechanism wind energy harvester ("turbine") based on "flapping" movement of magnet caused by Bernoulli effect or some flapping wing shape?"
+==&gt; Also see "[Todo: Consider a compliant mechanism wind energy harvester ("turbine") based on "flapping" movement of magnet caused by Bernoulli effect or some flapping wing shape?](../8d0c98f5/chime.md)"
 
-==&gt; Also see "Todo: Wind Energy - Consider to try and train a neural network to optimise the power output of a wind turbine?"
+==&gt; Also see "[Todo: Wind Energy - Consider to try and train a neural network to optimise the power output of a wind turbine?](../82d5b75b/chime.md)"
 
-==&gt; Also see "Todo: Wind Energy - Consider to research on wind energy using a drone brushless engine and DIY wind tunnel and controller?"
+==&gt; Also see "[Todo: Wind Energy - Consider to research on wind energy using a drone brushless engine and DIY wind tunnel and controller?](../46b4b42e/chime.md)"
 
 1) Consider technologies and products to use store solar energy in the summer in the form of Hydrogen gas?
 

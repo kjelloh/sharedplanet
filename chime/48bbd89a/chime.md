@@ -7,7 +7,7 @@
 {% raw %}
 It seems I should take some time to research the Intel CPU architectures to get a grip of what is going on and where the technology is going (and what is out there and why)?
 
-==&gt; Also see “Todo: "Why I bought a new 2013 Mac Pro in 2019!""
+==&gt; Also see “[Todo: "Why I bought a new 2013 Mac Pro in 2019!"](../61d6cdde/chime.md)"
 
 1) consider the wikipedia page on Intel CPU architectures (<https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitectures>)?
 

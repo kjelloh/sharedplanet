@@ -7,7 +7,7 @@
 {% raw %}
 I don't like to have to struggle with pouring paint in and out of paint buckets with lids (messy).
 
-==&gt; Also see "Todo: Consider to put wall-paint in bag-in-box reusable wine bags or similar with easy to operate dispenser tap? "
+==&gt; Also see "[Todo: Consider to put wall-paint in bag-in-box reusable wine bags or similar with easy to operate dispenser tap?](../2479c8bc/chime.md) "
 
 1) Consider if there are any available pump dispensers I can use to put wall paint into for easy (un-messy) dispensing?
 

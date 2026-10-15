@@ -7,7 +7,7 @@
 {% raw %}
 Consider it would be good to define a scripting syntax to be used both for adding meta value declarations and definitions and for printing existing ditos as scripts?
 
-==&gt; Also see ”Todo: Meta Model - Consider to define a language to define meta-value computation (i.e., arrows alias functions)?”
+==&gt; Also see ”[Todo: Meta Model - Consider to define a language to define meta-value computation (i.e., arrows alias functions)?](../5afafbd8/chime.md)”
 
 1) Consider each identifier may be printed to show its current declaration and optional definition?
 

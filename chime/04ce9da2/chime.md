@@ -7,7 +7,7 @@
 {% raw %}
 I want a first-principle "good" front fork suspension for my bicycle and find the friction of air forks are simply to large for my taste (am I wrong)?
 
-==&gt; Also see "Todo: Consider the "seal drag" off a Fox 36 bicycle front suspension fork is between 60N (unserviced) and 50N (Serviced)?"
+==&gt; Also see "[Todo: Consider the "seal drag" off a Fox 36 bicycle front suspension fork is between 60N (unserviced) and 50N (Serviced)?](../e9c55f70/chime.md)"
 
 1) Consider my arguments for an upside down coil suspension fork vs a "normal" or upside down air spring fork?
 

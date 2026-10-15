@@ -7,7 +7,7 @@
 {% raw %}
 It seems I should actually go ahead and try to build some cheap but capable hackintosh to learn how to do it and how well I can use and maintain such a machine?
 
-==&gt; Also see “Todo: Consider to build a desktop computer workstation (to replace my macbook Pro 2014)?"
+==&gt; Also see “[Todo: Consider to build a desktop computer workstation (to replace my macbook Pro 2014)?](../6dd6232b/chime.md)"
 
 1) consider the youtube video “The $450 "Mac mini' You Wish Apple Sold” (<https://www.youtube.com/watch?v=J-wHQEiDKr4>)?
 

@@ -7,9 +7,9 @@
 {% raw %}
 It seems I can learn a lot about Neural Networks, Deep Learning and AI from experimenting with the new Intel Movidius™ Neural Compute Stick?
 
-==&gt; Also see “Todo: Personal AI - Consider to use the AI Single Board Computers from 96boards.ai as the base to build my personal AI?”
+==&gt; Also see “[Todo: Personal AI - Consider to use the AI Single Board Computers from 96boards.ai as the base to build my personal AI?](../c7fb1046/chime.md)”
 
-==&gt; Also see “Todo: Consider to train a neural network to classify my company book keeping vouchers for registration automation?"
+==&gt; Also see “[Todo: Consider to train a neural network to classify my company book keeping vouchers for registration automation?](../9b76fff1/chime.md)"
 
 1) The Intel Movidius™ Neural Compute Stick seems to live here (<https://developer.movidius.com>)?
 

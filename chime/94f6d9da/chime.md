@@ -7,7 +7,7 @@
 {% raw %}
 Consider it would be a good idea to get a C++ image browser application working to then later use it e.g., for voucher browsing in a book keeping application?
 
-==&gt; Also see “Todo: Programming - Överväg att beskriva och eventuellt bygga "drömapplikationen" för företagare för bokföring, bokslut och admin. av skatt och avgifter och göra den C++ open source?”
+==&gt; Also see “[Todo: Programming - Överväg att beskriva och eventuellt bygga "drömapplikationen" för företagare för bokföring, bokslut och admin. av skatt och avgifter och göra den C++ open source?](../de307f3c/chime.md)”
 
 1) Consider Wikipedia article on the Cover Flow GUI (<https://en.wikipedia.org/wiki/Cover_Flow>)?
 

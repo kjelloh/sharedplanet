@@ -7,7 +7,7 @@
 {% raw %}
 I need a CAD tool to design my house and produce the required documents for permits and build.
 
-==&gt; Also see "Todo: Consider the youtube video "FreeCAD 2025 BIM - Architecture - Complete Beginner Tutorial" as a guide to using Freecad for my house design?"
+==&gt; Also see "[Todo: Consider the youtube video "FreeCAD 2025 BIM - Architecture - Complete Beginner Tutorial" as a guide to using Freecad for my house design?](../260a590e/chime.md)"
 
 1) Consider the youtube video "FreeCAD 2025 BIM - Architecture - Complete Beginner Tutorial" (<https://youtu.be/IV-nv9ygZPM> )?
 

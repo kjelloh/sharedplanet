@@ -7,9 +7,9 @@
 {% raw %}
 I am interested in following the evolution of computer programming into multi-core, GPU and parallel processing challenges.
 
-==&gt; Also see "Todo: Dollow up on Deep Learning lecture at KTH 5 October 2015"
+==&gt; Also see "[Todo: Dollow up on Deep Learning lecture at KTH 5 October 2015](../c74b568b/chime.md)"
 
-==&gt; Also see "Todo: Programming - Consider to study and try out a native Clang C++ compiler on windows?"
+==&gt; Also see "[Todo: Programming - Consider to study and try out a native Clang C++ compiler on windows?](../52b0d95e/chime.md)"
 
 -1) It seems bottom line is that CUDA is NOT supported on latest macOS (and for older generations ONLY for NVidia graphics cards)?
 

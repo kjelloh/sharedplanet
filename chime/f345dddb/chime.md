@@ -7,7 +7,7 @@
 {% raw %}
 Det verkar som det svenska begreppet för en bostad för permanentboende på hjul kallas för en villavagn?
 
-==&gt; Se även “Todo: Överväg att köpa begagnade bygg-baracker att bo och arbeta i under mitt husbygge? “
+==&gt; Se även “[Todo: Överväg att köpa begagnade bygg-baracker att bo och arbeta i under mitt husbygge?](../c8112935/chime.md) “
 
 1) Överväg den här sidan på boverket om villavagnar (<https://www.boverket.se/sv/PBL-kunskapsbanken/lov--byggande/anmalningsplikt/byggnader/nybyggnad/> )?
 

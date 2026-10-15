@@ -7,11 +7,11 @@
 {% raw %}
 So, what ways can we get to work to obtain working C++17 tool chains on the major platforms MAC OS, Linux MATE and Windows 10?
 
-==&gt; Also see ”Todo: Programming - Consider the C++ cross platform tool-chain and front-end/back-end options options?”
+==&gt; Also see ”[Todo: Programming - Consider the C++ cross platform tool-chain and front-end/back-end options options?](../5d4c0bbb/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to generate CMake C++ Console project cross platform MacOS, Linix MAKET and Microsoft Visual Studio?”
+==&gt; Also see ”[Todo: Programming - Consider to generate CMake C++ Console project cross platform MacOS, Linix MAKET and Microsoft Visual Studio?](../06fb30da/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider the best way to install and keep updated the llvm tool-chain on Linux?"
+==&gt; Also see ”[Todo: Programming - Consider the best way to install and keep updated the llvm tool-chain on Linux?](../1fccd5dd/chime.md)"
 
 1) Consider gcc-7 on MAC OS?
 

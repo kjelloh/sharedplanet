@@ -7,11 +7,11 @@
 {% raw %}
 It seems we need the composition ”pair” to be able to operate on arrays (lists) as head-tail pairs?
 
-==&gt; Also see ”Todo: Meta Value Model - Consider all values (and the whole mode) is immutable (all mutations create new instance)?”
+==&gt; Also see ”[Todo: Meta Value Model - Consider all values (and the whole mode) is immutable (all mutations create new instance)?](../b098e8f6/chime.md)”
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to enable "Meta Value Lisp" scripting language to allow name-paths to refer to structure members ”
+==&gt; Also see ”[Todo: Meta Value Model - Consider to enable "Meta Value Lisp" scripting language to allow name-paths to refer to structure members](../d7bc174b/chime.md) ”
 
-==&gt; Also see ”Todo: Meta Value Model - Consider to define built-in value compositions using syntax Value&lt;level 2,1,0&gt; and members as_function, as_value, as_text?"
+==&gt; Also see ”[Todo: Meta Value Model - Consider to define built-in value compositions using syntax Value&lt;level 2,1,0&gt; and members as_function, as_value, as_text?](../5830e388/chime.md)"
 
 1) Consider the Pair&lt;meta-n&gt; meta-layer Values?
 

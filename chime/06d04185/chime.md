@@ -7,11 +7,11 @@
 {% raw %}
 It seems it could be a good idea to investigate end delve into the initiative by LeapMotion to provide a hand tracking device product combined with an open source SDK and framework to develop hand tracking augmented reality user interfaces?
 
-==&gt; Also see “Todo: Consider to build heads up protection glasses that can project maker space sensor information directly into the eyes?”
+==&gt; Also see “[Todo: Consider to build heads up protection glasses that can project maker space sensor information directly into the eyes?](../add926ac/chime.md)”
 
-==&gt; Also see “ Consider to build the "Arduino Glasses a HMD for Multimeter" (Head Mount Display) Glasses as shown on [lackaday.io](http://lackaday.io/)?”
+==&gt; Also see “ [Consider to build the "Arduino Glasses a HMD for Multimeter" (Head Mount Display) Glasses as shown on \[lackaday.io\](http://lackaday.io/)?](../9305b8af/chime.md)”
 
-==&gt; Also see “Todo: Consider to check out (maybe buy) the Magic Leap One augmented reality headset (glasses)"
+==&gt; Also see “[Todo: Consider to check out (maybe buy) the Magic Leap One augmented reality headset (glasses)](../542871df/chime.md)"
 
 1) The LeapMotion web site seems to live here (<https://www.leapmotion.com>)?
 

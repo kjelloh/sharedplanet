@@ -7,7 +7,7 @@
 {% raw %}
 IS it possible for us to re-use some existing Lisp system and integrate it with our Meh Repls, in effect not having to implement the Lisp interpreter?
 
-==&gt; Also see ”Todo: Lisp - Consider to really understand the basic Lisp syntax and evaluation rules of Lisp expressions as base of our Meh (Meta Lisp) Repl?"
+==&gt; Also see ”[Todo: Lisp - Consider to really understand the basic Lisp syntax and evaluation rules of Lisp expressions as base of our Meh (Meta Lisp) Repl?](../e84606f2/chime.md)"
 
 1) Consider to embed ECL (Embedded Common Lisp) (<https://github.com/ageneau/ecl-mirror>)?
 

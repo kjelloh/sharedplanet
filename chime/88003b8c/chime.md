@@ -7,9 +7,9 @@
 {% raw %}
 if truth-rafts are self-sustained (interwoven) truths then a proposition we say is "begging the question" is an example of the smallest such truth-raft?
 
-==&gt; Also see "Todo: Consider to digest and internalise "Kant's categorical imperative" and "Humes Guillotine" from a debate between Stephen "Rationality Rules" Crawford and Stefan "Universally Preferable Behaviour" Molyneux?"
+==&gt; Also see "[Todo: Consider to digest and internalise "Kant's categorical imperative" and "Humes Guillotine" from a debate between Stephen "Rationality Rules" Crawford and Stefan "Universally Preferable Behaviour" Molyneux?](../0e17897e/chime.md)"
 
-==&gt; Also see "Todo: Consider Stefan Molyneux "Universally Preferable Behaviour" as addressed by Stephen Woodford and in relation to the Emdividual model of self?"
+==&gt; Also see "[Todo: Consider Stefan Molyneux "Universally Preferable Behaviour" as addressed by Stephen Woodford and in relation to the Emdividual model of self?](../72aa7318/chime.md)"
 
 1) Consider Stefan Molyneux "Universally Preferable Behaviour" accused of begging the question?
 

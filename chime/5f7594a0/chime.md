@@ -7,11 +7,11 @@
 {% raw %}
 What can we learn from trying to use Eric Nibblers Ranges to process Range-trees (ranges of ranges) for composite model encoding/decoding and also parallel-isation of data structure processing?
 
-==&gt; See “Todo: Programming - Consider to follow up and understand Eric Nibblers C++ Ranges concepts for the standard?”
+==&gt; See “[Todo: Programming - Consider to follow up and understand Eric Nibblers C++ Ranges concepts for the standard?](../47010d6a/chime.md)”
 
-==&gt; See “Todo: Programming - Consider to design lazy (two-pass) Protocol Message Encoding and Decoding using tagged-range-ASTs?”
+==&gt; See “[Todo: Programming - Consider to design lazy (two-pass) Protocol Message Encoding and Decoding using tagged-range-ASTs?](../42b8afaf/chime.md)”
 
-==&gt; See “Todo: Programming - Consider to model Protocol Stacks using State-Machine-Based Tagged-Range-Tree Transforms?”
+==&gt; See “[Todo: Programming - Consider to model Protocol Stacks using State-Machine-Based Tagged-Range-Tree Transforms?](../714507a2/chime.md)”
 
 1) Consider this Ranges documentation and examples to see if current design allows for range-tree “piping” (<https://github.com/ericniebler/range-v3/blob/master/doc/index.md>)?
 

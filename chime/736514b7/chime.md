@@ -7,7 +7,7 @@
 {% raw %}
 I heard Tristan Harris refer to the work of Audrey Tang on Taiwan Digital Democracy and found that there seem to be tons of information to dig up by investigating the work of her and Tristan Harris to make digital communication serve Human "well being".
 
-==&gt; Also see "Todo: Consider a Youtube "Transcription Harvester" to link video materials to transcribed text of the stuff being discussed?"
+==&gt; Also see "[Todo: Consider a Youtube "Transcription Harvester" to link video materials to transcribed text of the stuff being discussed?](../4ca40b7f/chime.md)"
 
 1) Consider the youtube interview "Can Truth Survive Big Tech? Tristan Harris" (<https://youtu.be/wHQQFOv7QgQ> )?
 

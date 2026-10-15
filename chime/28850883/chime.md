@@ -7,9 +7,9 @@
 {% raw %}
 It seems I now have to learn how the ESC is controlled and what power source to use to make some progress in my “Ducted Fan” based indoor shed vacuum?
 
-==&gt; Also see “Todo: Consider to understand Radio Controllers and if and how to build my own ones?”
+==&gt; Also see “[Todo: Consider to understand Radio Controllers and if and how to build my own ones?](../f0b82c12/chime.md)”
 
-==&gt; Also see “Todo: Consider to understand how to design and build my own Brushless DC Motor speed controller driver (for my ducted fan vacuum motor and other motor applications)?"
+==&gt; Also see “[Todo: Consider to understand how to design and build my own Brushless DC Motor speed controller driver (for my ducted fan vacuum motor and other motor applications)?](../8b0c606d/chime.md)"
 
 -1) Consider to condense what I have learned so far?
 

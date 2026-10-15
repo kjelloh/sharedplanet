@@ -7,15 +7,15 @@
 {% raw %}
 I want to mount my Quick Tool Change (QTC) Mafell milling motor FM 1000 PV-WS so that I can use the QTC (Quick Tool Change) without having to dismount it.
 
-==&gt; Also see "Todo: Consider to make a printable drilling template for the Mafell QTC ("Quick tool change" like e.g., FM 1000 PV-WS) mounting plate?"
+==&gt; Also see "[Todo: Consider to make a printable drilling template for the Mafell QTC ("Quick tool change" like e.g., FM 1000 PV-WS) mounting plate?](../1288de3b/chime.md)"
 
-==&gt; Also see "Todo: Consider the "best" way to buy a Mafell Milling motor FM 1000 PV-WS (100W with PV control and quick tool changer)?"
+==&gt; Also see "[Todo: Consider the "best" way to buy a Mafell Milling motor FM 1000 PV-WS (100W with PV control and quick tool changer)?](../a2f20a72/chime.md)"
 
-==&gt; Also see "Todo: Consider the Mafell tools lineup and prices for my indoor or future woodworking needs and requirements?"
+==&gt; Also see "[Todo: Consider the Mafell tools lineup and prices for my indoor or future woodworking needs and requirements?](../cbb23bdf/chime.md)"
 
-==&gt; Also see "Todo: Consider an Ooznest Workbee CNC with a Mafell milling motor?"
+==&gt; Also see "[Todo: Consider an Ooznest Workbee CNC with a Mafell milling motor?](../b0d4214c/chime.md)"
 
-==&gt; Also see "Todo: Consider to create linear motion using threaded rods and a bicycle chain driven hex-nuts (e.g., for a router lift or super strong rip fence adjustment)?"
+==&gt; Also see "[Todo: Consider to create linear motion using threaded rods and a bicycle chain driven hex-nuts (e.g., for a router lift or super strong rip fence adjustment)?](../e7c7fec9/chime.md)"
 
 0) Consider some thoughts on how to mount mount my Quick Tool Change (QTC) Mafell milling motor FM 1000 PV-WS to a some router table plate?
 

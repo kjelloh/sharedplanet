@@ -107,7 +107,7 @@ Generate vector/stream of Data Units
 
 1) Consider this a follow up (replacement) of previous Todo: regarding these types of strings
 
-==&gt; See “Todo: Consider to refactor encoding-aware string types as "dimension aware" meta-data?”
+==&gt; See “[Todo: Consider to refactor encoding-aware string types as "dimension aware" meta-data?](../97702e7d/chime.md)”
 
 ==&gt; See “Todo: Testbench - Consider to use the icu-project C++ library for UTF string conversions?”
 

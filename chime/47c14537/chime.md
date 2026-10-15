@@ -7,9 +7,9 @@
 {% raw %}
 So audio recording in FCPX was not a pleasant experience so it seems I should try Audacity?
 
-==&gt; Also see "Todo: Mac Pro - Consider to document the installation and use of PreSonus Audiobox iTwo software Universal Control Universal Control v3.1.0.53214 for Mojave?"
+==&gt; Also see "[Todo: Mac Pro - Consider to document the installation and use of PreSonus Audiobox iTwo software Universal Control Universal Control v3.1.0.53214 for Mojave?](../9a6fe4dc/chime.md)"
 
-==&gt; Also see "Todo: Video Creation - Consider ways to create videos for my Youtube channel quicker, more efficient and with higher quality?"
+==&gt; Also see "[Todo: Video Creation - Consider ways to create videos for my Youtube channel quicker, more efficient and with higher quality?](../cd7d717a/chime.md)"
 
 1) It seems the installation instructions for Audacity on Mac can be found here (<https://www.audacityteam.org/download/mac/> )?
 

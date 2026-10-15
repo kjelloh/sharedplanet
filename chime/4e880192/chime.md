@@ -15,7 +15,7 @@ Det verkar som om jag enligt skatteverket på alla inköp skall deklarera både 
 
 ==&gt; Se även “Todo: Eget AB - Överväg att ta reda på hur jag bokför och begär återbetalning av betalad EU moms (Jag glömt be om momsfritt köp)?”
 
-==&gt; Se även “Todo: EU och Import-Moms Eget Företag - Det verkar som om jag "nollar ut" men ända räknar ut och deklarerar svensk moms?”
+==&gt; Se även “[Todo: EU och Import-Moms Eget Företag - Det verkar som om jag "nollar ut" men ända räknar ut och deklarerar svensk moms?](../ed71dadd/chime.md)”
 
 1) Enligt skatteverket skall måste jag deklarera både varans inköpskostnad och moms vid alla inköp (även EU och import)?
 

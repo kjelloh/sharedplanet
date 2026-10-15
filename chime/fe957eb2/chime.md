@@ -430,7 +430,7 @@ back to run-time
 
 4) Consider what mechanism to use to synchronize Client Op Msg with correct Mod Model state?
 
-==&gt; Also see ”Todo: Tha - Consider the persistent data structure may be represented as a DAG with Deltas as edges and Tha instances as nodes?”
+==&gt; Also see ”[Todo: Tha - Consider the persistent data structure may be represented as a DAG with Deltas as edges and Tha instances as nodes?](../925b6bde/chime.md)”
 
 ==&gt; Consider some simple initial design just for our Repl 8that at least synchronize the model state with the Client?
 

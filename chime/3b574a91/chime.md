@@ -7,15 +7,15 @@
 {% raw %}
 Could it be a good idea to fork and add-on the dream IDE stuff I have imagined on the existing open source C++ IDE Jucipp?
 
-==&gt; Also see ”Todo: Programming - Consider a Dream C++ IDE (build environment) to detect Strongly Connected Components (SCC:s) in source as build-able libraries?”
+==&gt; Also see ”[Todo: Programming - Consider a Dream C++ IDE (build environment) to detect Strongly Connected Components (SCC:s) in source as build-able libraries?](../4a574ba5/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to elaborate on some cool features of the "Dream IDE" for C++ programming?”
+==&gt; Also see ”[Todo: Programming - Consider to elaborate on some cool features of the "Dream IDE" for C++ programming?](../2b512b4c/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to enable the "Dream IDE" to understand and help the programmer to comply with "Concepts" (e.g. Input Iterator Concept)”
+==&gt; Also see ”[Todo: Programming - Consider to enable the "Dream IDE" to understand and help the programmer to comply with "Concepts" (e.g. Input Iterator Concept)](../df3bdffe/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?”
+==&gt; Also see ”[Todo: Programming - Consider to re-visit Pandora and design it as part of a Dream C++ IDE?](../92b081ea/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider to study all "wasted time" in Jason Turner C++ Weekly live programming for input to a dream C++ IDE?"
+==&gt; Also see ”[Todo: Programming - Consider to study all "wasted time" in Jason Turner C++ Weekly live programming for input to a dream C++ IDE?](../a20e90c5/chime.md)"
 
 1) Consider to listen to the Cppcast episode with an interview with one of the developers go Jucipp (<http://cppcast.com/2016/07/alfred-bratterud/>)?
 

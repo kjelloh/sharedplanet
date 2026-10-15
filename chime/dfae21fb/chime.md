@@ -7,9 +7,9 @@
 {% raw %}
 Given the humidity in Sweden all year around I may be able to extract the water I need directly from the air (especially if I don't waste it once I got it)?
 
-==&gt; Also see "Todo: Consider to store solar energy in the summer in the form of compressed hydrogen gas?"
+==&gt; Also see "[Todo: Consider to store solar energy in the summer in the form of compressed hydrogen gas?](../d1775369/chime.md)"
 
-==&gt; Also see "Todo: Consider if I use Hydrogen Fuel Cells I can actually use the resulting water for drinking and other household applications?"
+==&gt; Also see "[Todo: Consider if I use Hydrogen Fuel Cells I can actually use the resulting water for drinking and other household applications?](../1f7d473a/chime.md)"
 
 1) Consider wikipedia on Atmospheric Water Generator (<https://en.wikipedia.org/wiki/Atmospheric_water_generator> )
 

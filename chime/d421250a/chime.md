@@ -7,7 +7,7 @@
 {% raw %}
 The idea is to transform each meta-scope into standard C++ code by executing a C++ program compiled from interpreting the scope as Tha C++.
 
-==&gt; Also see "Todo: C++ Tha - Consider the meta agnostic operators and semantics?"
+==&gt; Also see "[Todo: C++ Tha - Consider the meta agnostic operators and semantics?](../6c925413/chime.md)"
 
 1) Consider how we can interpret a meta-scope as a C++ program that generates standard C++ code?
 

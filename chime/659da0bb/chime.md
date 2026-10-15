@@ -7,13 +7,13 @@
 {% raw %}
 It seems like a good and fun idea to see if I can contribute to the WikiHouse project by providing a Tha Model of WikiHouse models and also a Darwinet Interplanetary Tha Persistent Data Structure for storage and sharing?
 
-==&gt; Also see “Todo: Consider to build a WikiHouse (open source CNC micro factory produced house)?”
+==&gt; Also see “[Todo: Consider to build a WikiHouse (open source CNC micro factory produced house)?](../2ae81711/chime.md)”
 
-==&gt; Also see “Todo: Darwinet - Consider to have Darwinet use IPFS (Interplanetary File System) as storage of the MIV?”
+==&gt; Also see “[Todo: Darwinet - Consider to have Darwinet use IPFS (Interplanetary File System) as storage of the MIV?](../846fe4c3/chime.md)”
 
-==&gt; Also see “Todo: C++ Tha - Consider to implement Tha meta-tier.model in the immutable data structure library Immer?”
+==&gt; Also see “[Todo: C++ Tha - Consider to implement Tha meta-tier.model in the immutable data structure library Immer?](../8cbd727b/chime.md)”
 
-==&gt; Also see “Todo: Consider we would like an Electronic Currency that fairly distributes all the cost all actors try to externalise (using "Shared Planet Coin" currency and "Planet Shares" assets)?”
+==&gt; Also see “[Todo: Consider we would like an Electronic Currency that fairly distributes all the cost all actors try to externalise (using "Shared Planet Coin" currency and "Planet Shares" assets)?](../1b6aa724/chime.md)”
 
 1) Consider a Tha model of a WikiHouse by studying how the CAD design environment Wren is designed (<https://wikihouse.cc/library/technologies/structure/wren>)?
 

@@ -7,11 +7,11 @@
 {% raw %}
 Can we finally get an M up and working for the Darwinet MIV implementation by simply trying out different approaches and go with what works?
 
-==&gt; Also see ”Todo: Darwinet - Model and Instance paths + ID:s and Names”
+==&gt; Also see ”[Todo: Darwinet - Model and Instance paths + ID:s and Names](../75388205/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - Design MIV using type, model paths and instance paths”
+==&gt; Also see ”[Todo: Darwinet - Design MIV using type, model paths and instance paths](../d55d38d6/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - Consider MIV model to mimic the ontology of the Swift language”
+==&gt; Also see ”[Todo: Darwinet - Consider MIV model to mimic the ontology of the Swift language](../b09c5f44/chime.md)”
 
 1) Consider my own idea of modelling using Meta-layers could be quite viable?
 

@@ -7,7 +7,7 @@
 {% raw %}
 Maybe "Joyoshare Media Cutter for Mac" is the solution I can use to do lossless cut down of raw video before saving only what I want to use for video editing?
 
-==&gt; Also see "Todo: Consider to find video editing tools to 1) Save only raw footage go good quality and 2) Automate video cutting using pre-defined story-line templates"
+==&gt; Also see "[Todo: Consider to find video editing tools to 1) Save only raw footage go good quality and 2) Automate video cutting using pre-defined story-line templates](../a7ecba69/chime.md)"
 
 1) The Joyshare media cutter seems to live here (<https://www.joyoshare.com/video-cutter-mac/> )?
 

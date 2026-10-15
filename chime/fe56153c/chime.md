@@ -7,9 +7,9 @@
 {% raw %}
 Could it be possible to provide the current requirements by a welder by driving it from a battery bank “buffer”?
 
-==&gt; Also see “Todo: Maker Space - Överväg att köpa Everlast PowerArc 200ST TIG/STick svets från leverantör i Umeå?"
+==&gt; Also see “[Todo: Maker Space - Överväg att köpa Everlast PowerArc 200ST TIG/STick svets från leverantör i Umeå?](../f13979dd/chime.md)"
 
-==&gt; Also see “Todo: Cordless Tool Batteries - Consider to buy batteries from different cordless platforms and disassembly them to compare them? "
+==&gt; Also see “[Todo: Cordless Tool Batteries - Consider to buy batteries from different cordless platforms and disassembly them to compare them?](../25a870b0/chime.md) "
 
 -1) Consider to buy a cheap Stick/TIG AC inverter welder and convert to a Battery driven one?
 

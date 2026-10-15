@@ -5,11 +5,11 @@
 [mail plain/text](mail.txt)
 
 {% raw %}
-==&gt; Se även ”Todo: köksredskap Cordon Bleu”
+==&gt; Se även ”[Todo: köksredskap Cordon Bleu](../d6123e19/chime.md)”
 
-==&gt; Se även ”Todo: Chokladfabriken Regeringsgatan 58, 111 56 Stockholm”
+==&gt; Se även ”[Todo: Chokladfabriken Regeringsgatan 58, 111 56 Stockholm](../2839ae56/chime.md)”
 
-==&gt; Se även ”Todo: Göra chokladpraliner - Chokladfabriken Sankt Eriksplan 2"
+==&gt; Se även ”[Todo: Göra chokladpraliner - Chokladfabriken Sankt Eriksplan 2](../cd039dd3/chime.md)"
 
 1) Överväg att köpa en enkel kökstermometer med tillräcklig nogrannhet?
 

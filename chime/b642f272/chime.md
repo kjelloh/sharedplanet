@@ -7,33 +7,33 @@
 {% raw %}
 Consider ways we may implement the Tha persistent data structure in a stable, efficient and good-enough way for a proof-of-concept?
 
-==&gt; Also see ”Todo: Tha - Consider the persistent data structure may be represented as a DAG with Deltas as edges and Tha instances as nodes?”
+==&gt; Also see ”[Todo: Tha - Consider the persistent data structure may be represented as a DAG with Deltas as edges and Tha instances as nodes?](../925b6bde/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - Consider to study "Confluently Persistent Tries for Efficient Version Control" as a base for design decisions for Darwinet File Systems?”
+==&gt; Also see ”[Todo: Darwinet - Consider to study "Confluently Persistent Tries for Efficient Version Control" as a base for design decisions for Darwinet File Systems?](../ebb29082/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - Consider to delve into available C++ information and solutions to implement the MIV as a Confluent Persistent (Immutable) Data Structure?"
+==&gt; Also see ”[Todo: Darwinet - Consider to delve into available C++ information and solutions to implement the MIV as a Confluent Persistent (Immutable) Data Structure?](../1eb47a76/chime.md)"
 
-==&gt; Also see ”Todo: Meta Value Model - Consider all values (and the whole mode) is immutable (all mutations create new instance)?"
+==&gt; Also see ”[Todo: Meta Value Model - Consider all values (and the whole mode) is immutable (all mutations create new instance)?](../b098e8f6/chime.md)"
 
-==&gt; Also see ”Todo: Programming - Consider to check out the C++ Immutable Data Structures Library "Immer" and possibly if to use it with Darwinet implementation?”
+==&gt; Also see ”[Todo: Programming - Consider to check out the C++ Immutable Data Structures Library "Immer" and possibly if to use it with Darwinet implementation?](../eae8d897/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider with Immutable Values are basically fine being anonymous (no name required for later reference)?”
+==&gt; Also see ”[Todo: Programming - Consider with Immutable Values are basically fine being anonymous (no name required for later reference)?](../f7e80cf8/chime.md)”
 
-==&gt; Also see ”Todo: Programming - Consider benefits of a Protocol Library based on immutable data and Functional Reactive Programming?”
+==&gt; Also see ”[Todo: Programming - Consider benefits of a Protocol Library based on immutable data and Functional Reactive Programming?](../90e34eb3/chime.md)”
 
 ==&gt; Alse see ”Todo: Darwinet - Consider to delve into available C++ information and solutions to implement the MIV as a Confluent Persistent (Immutable) Data Structure?”
 
-==&gt; Also see ”Todo: C++ - Consider how move-semantics relates to immutable data structures (move means mutation)?”
+==&gt; Also see ”[Todo: C++ - Consider how move-semantics relates to immutable data structures (move means mutation)?](../bb491591/chime.md)”
 
-==&gt; Also see ”Todo: Programming C++ - Consider to create a "React Like" C++ GUI framework that views and operates on an Immutable Persistent Data Structure?”
+==&gt; Also see ”[Todo: Programming C++ - Consider to create a "React Like" C++ GUI framework that views and operates on an Immutable Persistent Data Structure?](../93abb6f6/chime.md)”
 
-==&gt; Also see ”Todo: C++ - Consider to make an "Immutable C++" language that generates C++ code where everything is const (immutable) by default?”
+==&gt; Also see ”[Todo: C++ - Consider to make an "Immutable C++" language that generates C++ code where everything is const (immutable) by default?](../590d5d4d/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - Consider Javascript React with immutable.js or Mori actually kind-of already implemented Darwinet immutable MIV and delta history mechanisms?”
+==&gt; Also see ”[Todo: Darwinet - Consider Javascript React with immutable.js or Mori actually kind-of already implemented Darwinet immutable MIV and delta history mechanisms?](../d6548533/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - Consider what Deltas we may have to evolve Immutable MIVs (e.g. new I:s can only be done with value provided)”
+==&gt; Also see ”[Todo: Darwinet - Consider what Deltas we may have to evolve Immutable MIVs (e.g. new I:s can only be done with value provided)](../c8490ff8/chime.md)”
 
-==&gt; Also see ”Todo: Darwinet - Consider the MIV is actually immutable (each delta creates a new MIV) making Darwinet suitable for a function composition design?”
+==&gt; Also see ”[Todo: Darwinet - Consider the MIV is actually immutable (each delta creates a new MIV) making Darwinet suitable for a function composition design?](../99684f2f/chime.md)”
 
 1) Consider to really understand the terms used to discuss and define persistent (immutable )data structures?
 
@@ -210,7 +210,7 @@ cons: sexpr -&gt; sexpr -&gt; (sexpr . sexpr)
 
 ![](<Radix Balanced Tree - Fig 1 Example .jpeg>)
 
-==&gt; Also see "Todo: Darwinet - Consider to study "Confluently Persistent Tries for Efficient Version Control" as a base for design decisions for Darwinet File Systems?”
+==&gt; Also see "[Todo: Darwinet - Consider to study "Confluently Persistent Tries for Efficient Version Control" as a base for design decisions for Darwinet File Systems?](../ebb29082/chime.md)”
 
 ==&gt; It seems more focused on memory efficiency and larger palette of data structures?
 

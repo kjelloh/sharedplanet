@@ -11,7 +11,7 @@ It seems it could be fun and informative to download, build, run and study the C
 
 ==&gt; Consider we would like to just synchronise a Darwinet Domain with the complete Cura build environment (**one click build environment creation**)
 
-==&gt; Also See “Todo: Darwinet - Consider a Darwinet "One click build environment" creation solution (e.g., from any GitHub repository)?"
+==&gt; Also See “[Todo: Darwinet - Consider a Darwinet "One click build environment" creation solution (e.g., from any GitHub repository)?](../cdc3973a/chime.md)"
 
 1) The Cure project seems to live here on Github (<https://github.com/Ultimaker/Cura>)?
 

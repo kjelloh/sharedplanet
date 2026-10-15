@@ -11,7 +11,7 @@ Could it be a good idea to try out the ”Digital World” idiom as a C++ librar
 
 ==&gt; Consider a tag-path based encoder to be an entity of this world based on the ”santa” library?
 
-==&gt; See ”Todo: Programming - Consider to implement a C++ library that provides services that applies tag-path based encoder/decoder idiom to encode packages for popular package managers (e.g. chocolate, NuGet, apt and brew)?”
+==&gt; See ”[Todo: Programming - Consider to implement a C++ library that provides services that applies tag-path based encoder/decoder idiom to encode packages for popular package managers (e.g. chocolate, NuGet, apt and brew)?](../26072468/chime.md)”
 
 …
 

@@ -7,9 +7,9 @@
 {% raw %}
 It seems it may be time to actually go ahead and create a podcast by "simply" hosting it on my existing web hotell for ITfied?
 
-==&gt; Also see "Todo: Egen Podcast - Överväg att intervjua mina vänner och göra pod casts av dem?"
+==&gt; Also see "[Todo: Egen Podcast - Överväg att intervjua mina vänner och göra pod casts av dem?](../583ddefb/chime.md)"
 
-==&gt; Also see "Todo: Find out how to publish pod-casts to be accessible by well known pod cast players"
+==&gt; Also see "[Todo: Find out how to publish pod-casts to be accessible by well known pod cast players](../61271f02/chime.md)"
 
 1) It seems one route to go is to host podcast episodes as Wordpress blog articles with RSS feed enabled (<https://en.support.wordpress.com/audio/podcasting/> )?
 

@@ -7,7 +7,7 @@
 {% raw %}
 It seems obvious if I store solar energy as hydrogen in the summer I can consume the water produced in the winter when I run the hydrogen through the fuel cells?
 
-==&gt; Also see "Todo: Consider ways to build or buy an atmospheric water generator for my own house build?"
+==&gt; Also see "[Todo: Consider ways to build or buy an atmospheric water generator for my own house build?](../dfae21fb/chime.md)"
 
 1) Consider to research if and in that case how I can harvest the waste water from burning hydrogen in the fuel cells and use in the household?
 

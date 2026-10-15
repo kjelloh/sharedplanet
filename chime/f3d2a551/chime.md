@@ -7,19 +7,19 @@
 {% raw %}
 It seems we can NOT use “Sorts” as the Tha-object names “Sort-of-kinds” (So what name can we use instead)?
 
-==&gt; Also see “Todo: Consider in programming that a "Dispatch" may be modeled as an "Indexing by pattern" (in addition to known indexing by term or type)?"
+==&gt; Also see “[Todo: Consider in programming that a "Dispatch" may be modeled as an "Indexing by pattern" (in addition to known indexing by term or type)?](../9c922c70/chime.md)"
 
-==&gt; Also see “Todo: Meh and Tha and Type Theory and Systems - Consider to delve deeper into Type Theory and the Lambda Cube to understand how we may think about Meh and Tha?"
+==&gt; Also see “[Todo: Meh and Tha and Type Theory and Systems - Consider to delve deeper into Type Theory and the Lambda Cube to understand how we may think about Meh and Tha?](../77f52160/chime.md)"
 
-==&gt; Also see “Todo: Type Systems - Consider Strange Loop talk "Type Systems - The Good, Bad and Ugly" by Paul Snively and Amanda Laucher as having good leads into good and bad type systems and the need for a better programming language?”
+==&gt; Also see “[Todo: Type Systems - Consider Strange Loop talk "Type Systems - The Good, Bad and Ugly" by Paul Snively and Amanda Laucher as having good leads into good and bad type systems and the need for a better programming language?](../9b0ab729/chime.md)”
 
-==&gt; Also see “Todo: Cratchit Book Keeping - Consider to implement a C++ book keeping application using Tha modelling, Elm Idion and Immer Immutable data Struictures asynchronously synchronising with REST Web service (FortKnox) and IPFS file system?"
+==&gt; Also see “[Todo: Cratchit Book Keeping - Consider to implement a C++ book keeping application using Tha modelling, Elm Idion and Immer Immutable data Struictures asynchronously synchronising with REST Web service (FortKnox) and IPFS file system?](../7c6907a4/chime.md)"
 
-==&gt; Also see “Todo: Tha - Consider to name the "Meta stack model" the Tha model and define what this model implies and used?”
+==&gt; Also see “[Todo: Tha - Consider to name the "Meta stack model" the Tha model and define what this model implies and used?](../2927db2a/chime.md)”
 
-==&gt; Also see “Todo: Tha C++ - Consider to discover the C++ meta-layer objects by viewing C++ code as meta-layer expressions expressed in Haskel syntax?”
+==&gt; Also see “[Todo: Tha C++ - Consider to discover the C++ meta-layer objects by viewing C++ code as meta-layer expressions expressed in Haskel syntax?](../f03f3b43/chime.md)”
 
-==&gt; Also see “Todo: Tha - Consider Haskel "kind values" are in fact Tha meta-2 values?”
+==&gt; Also see “[Todo: Tha - Consider Haskel "kind values" are in fact Tha meta-2 values?](../bba1c0c9/chime.md)”
 
 1) Consider this paper “Proofs for free, Parametricity for dependent types” where they seem to define “Sort Hierarchies” as sort of types, sort of kinds etc. (<http://publications.lib.chalmers.se/records/fulltext/local_135303.pdf>)?
 

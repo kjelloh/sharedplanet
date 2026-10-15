@@ -7,9 +7,9 @@
 {% raw %}
 It seems we should be able to build a turn table with a camera that takes photos of a 3D object and then rises the images to MeshRoom to produce a digital 3D Model of the object?
 
-==&gt; Also see “Todo: Consider to use re-used laptop web-cams to build a 3D scanner?"
+==&gt; Also see “[Todo: Consider to use re-used laptop web-cams to build a 3D scanner?](../91d22448/chime.md)"
 
-==&gt; Also see “Todo: Consider to check out Meshroom to use it for 3D scanning of objects (to be used in CAD and CAM)?”
+==&gt; Also see “[Todo: Consider to check out Meshroom to use it for 3D scanning of objects (to be used in CAD and CAM)?](../ab1006f4/chime.md)”
 
 1) Consider some simple design of a turn table, a camera and some SBC to automate the 3D scanning process using MeshRoom?
 

@@ -7,7 +7,7 @@
 {% raw %}
 Could we learn something by trying to express a language algebraic semantics (operations on values) using meta-value relative relations (in effect freeing the semantics from its concrete meaning and replace it with value/meta-value relational meaning)?
 
-==&gt; Also see “Todo: Tha and Algebra Semantic Shifting - Consider re-using a language existing algebraic semantics on meta-levels is in fact a way to enable reflection using value-semantics on types and kinds?"
+==&gt; Also see “[Todo: Tha and Algebra Semantic Shifting - Consider re-using a language existing algebraic semantics on meta-levels is in fact a way to enable reflection using value-semantics on types and kinds?](../4f87d7a4/chime.md)"
 
 1) Consider this article on computer program semantics (<https://web.archive.org/web/20150619164601/http://www.emu.edu.tr/aelci/Courses/D-318/D-318-Files/plbook/semantic.htm>)?
 

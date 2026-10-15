@@ -7,7 +7,7 @@
 {% raw %}
 Is it time to change to hour-by-hour electrical consumption billing?
 
-==&gt; Also see "Todo: Own House - Consider my power consumption I have to cover for my "earth ship" passive house build?"
+==&gt; Also see "[Todo: Own House - Consider my power consumption I have to cover for my "earth ship" passive house build?](../4f861fd7/chime.md)"
 
 1) Consider this service provider that seems to indicate a price for electricity that changes between as low as 20 cents / kWh at night and 220 cents / kWh mid day (<https://tibber.com/se/elpriser/dagens?utm_source=googleadwords_int&utm_medium=cpc&utm_content=18004437329_142975263594_597673126985&utm_id=g_&keyword=aktuella%20elpriser&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2YhhJWJIcCmfARnaPMk4ARXOSsHTe32wdJuqcafOK4aeplpCuXr7OhoCJxUQAvD_BwE>)?
 

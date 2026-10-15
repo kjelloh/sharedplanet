@@ -7,11 +7,11 @@
 {% raw %}
 I want the latest "raw" LLVM / Clang and LLVM C++ library libc++ om macOS separate from XCode tweaked Apple LLVM version.
 
-==&gt; Also see "Todo: Consider to try out macPorts on macOS Monterey and use it to install LLVM 15?"
+==&gt; Also see "[Todo: Consider to try out macPorts on macOS Monterey and use it to install LLVM 15?](../eddbe0e9/chime.md)"
 
-==&gt; Also see "Todo: Consider to interrogate macOS Brew for information about installed llvm (including clang) and potentially understand how to use llvm 13 with VSCode (or other toolchain or IDE)?"
+==&gt; Also see "[Todo: Consider to interrogate macOS Brew for information about installed llvm (including clang) and potentially understand how to use llvm 13 with VSCode (or other toolchain or IDE)?](../d3860726/chime.md)"
 
-==&gt; Also see "Todo: Consider to document the Brew Upgrade llvm from version 10 to version 13 on my Mac Pro 2013 (Trashcan)?"
+==&gt; Also see "[Todo: Consider to document the Brew Upgrade llvm from version 10 to version 13 on my Mac Pro 2013 (Trashcan)?](../bfd4e044/chime.md)"
 
 1) It seems the latest LLVM is available on Githum (<https://github.com/llvm/llvm-project/releases/tag/llvmorg-15.0.2> )?
 

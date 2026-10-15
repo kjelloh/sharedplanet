@@ -45,7 +45,7 @@ Consider we can argue about truth by starting of with truth within games (a set 
 
 …
 
-==&gt; Also see “Todo: Truth - Consider to follow up on youtube video "Logic --The Structure of Reason (Great Ideas of Philosophy)" on F3Thinker channel and its listing of extended logical systems?”
+==&gt; Also see “[Todo: Truth - Consider to follow up on youtube video "Logic --The Structure of Reason (Great Ideas of Philosophy)" on F3Thinker channel and its listing of extended logical systems?](../fa157318/chime.md)”
 
 …
 

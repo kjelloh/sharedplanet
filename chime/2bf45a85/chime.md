@@ -7,7 +7,7 @@
 {% raw %}
 Can we relate C++ value categories (rvalue, lvalue, xvalue, prvalue) to Tha identifiers bound in different ways?
 
-==&gt; Also see “Todo: Programming - Study C++ lazy-evaluation in C++14 proposed "Stream" and future C++ support? “
+==&gt; Also see “[Todo: Programming - Study C++ lazy-evaluation in C++14 proposed "Stream" and future C++ support?](../ed219c8c/chime.md) “
 
 1) Consider that C++11 move semantics is in fact just a compile-time dispatching mechanism (compiler binds different expressions with different code to optimise for “movable” data instances to eliminate copying)?
 

@@ -4,6 +4,7 @@ __pycache__/
 # Ignore local temp folders and files
 _mail
 _chime
+_ignore.md
 _pick.md
 
 # Ignore to_site.py generated artefacts

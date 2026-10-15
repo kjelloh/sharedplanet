@@ -1,0 +1,31 @@
+# Todo: Darwinet - Consider how to automate syncing of C++ projects based on experiences from BitTorrent Sync experiences?
+
+```#4c106ced``` *As of 2016-08-22 23:31*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider it to be a good idea to draw on knowledge from trying C++ project synchronization using BitTorrent Sync?
+
+1) Consider the manual steps involved to sync C++ project ”ibi” using BitTorrent Sync between my MacBook Air and Pro?
+
+a) On Air - Copy from ”/Users/kjell-olov/Documents/XCode/ibi” to ”/Users/kjell-olov/BitTorrent Sync/Sync/Xcode/ibi”
+
+b) On Pro - Copy from ”” to ””.
+
+c) Update the build environment using cmake (and xcode_me.sh script of the project)
+
+==&gt; Note: Otherwise Xcode complains it does not have privileges to mutate project files
+
+2) Consider how Darwinet synching can automate this process (and keep the integrity of local files while synching the shared ones)?
+
+==&gt; Consider if Darwinet would require transform-services to share files that requires local node environment adaption (e.g., paths, text encoding)?  
+==&gt; Consider having Darwinet engaging cmake as a form of ”transform” to have shared changes manifest as local build environment in synch with the changes?  
+...
+
+…
+
+Consider to elaborate on the experiences from syncing this C++ project using BitTorrent Sync and how a Darwinet solution should provide a more seamless and automated service?  
+...
+
+{% endraw %}

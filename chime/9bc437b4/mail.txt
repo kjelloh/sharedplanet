@@ -1,0 +1,103 @@
+﻿It seems it could be a good idea to start documenting the Meg grammar in terms of its terminal symbols?
+
+1) Consider a grammar is defined as a set or production rules that recurse on non-terminal symbols (nodes of the AST) and terminal symbols (reserved symbols of the language)?
+
+	==> Also see ”Todo: Meta Value Model - Consider to compare context free grammar for English language as input to understand a PEG for Meh?”
+
+		
+
+		==> Thus non-terminal symbols (phrase types) of the grammar becomes nodes in the AST and terminal symbols (words) becomes leafs?
+
+		
+
+
+	==> Thus, for Meh - the non-terminal symbols of the language are the possible ”constructs” and the leafs are the language ”reserved words”?
+
+2) Consider to understand how the production rules, the non-terminal and the terminal symbols are expressed in C++ boost spirit Qi?
+
+	==> Also see ”Todo: Meta Value Model - Consider to try implementing Meh parser using C++ Boost Spirit Qi grammar library (Or newer Boost X3)?
+
+	==> Consider the Lisp grammar defined in github project ”Lisp in C++” (https://github.com/klmr/lisp.cpp <https://github.com/klmr/lisp.cpp>)?
+
+template <typename Iterator>
+struct lisp_grammar : qi::grammar<Iterator, value(), qi::ascii::space_type> {
+    template <typename Signature>
+    using rule_t = qi::rule<Iterator, Signature, qi::ascii::space_type>;
+    
+    rule_t<value()> start;
+    rule_t<symbol()> sym;
+    rule_t<value()> lit;
+    rule_t<literal<bool>()> boolean;
+    rule_t<literal<double>()> number;
+    rule_t<literal<std::string>()> string;
+    rule_t<list()> lst;
+    
+    lisp_grammar() : lisp_grammar::base_type{start} {
+        using namespace qi;
+        using namespace boost::phoenix;
+        start %= sym | lit | lst;
+        sym %= eps >> lexeme[+(char_("A-Za-z") | char_('-') | char_("+*/%~&|^!=<>?"))];
+        lit %= boolean | number | string;
+        boolean %=
+            qi::lit("#t")[_val = construct<literal<bool>>(true)]
+          | qi::lit("#f")[_val = construct<literal<bool>>(false)];
+        number %= double_;
+        string %= eps >> lexeme['"' >> *(char_ - '"') >> '"'];
+        lst %= '(' >> *start >> ')';
+    }
+};
+
+		==> It seems rule_t variables actually declares symbols of the grammar (non terminal and terminal symbols)?
+		==> It seems the actual production rules are defined using special operator ”%=”?
+
+start %= sym | lit | lst;
+
+			==> Would defined production rule for symbol ”start” (it is a ”sym”, a ”lit” or a ”lst”)
+
+		==> Thus production rules that are defined as composition of other rules defines non terminal symbols of the grammar?
+
+        start %= sym | lit | lst;
+        lit %= boolean | number | string;
+        lst %= '(' >> *start >> ')’;
+
+		==> And production rules that only picks a symbol out of the ”sentence” defines terminal symbols?
+
+        sym %= eps >> lexeme[+(char_("A-Za-z") | char_('-') | char_("+*/%~&|^!=<>?"))];
+        boolean %=
+            qi::lit("#t")[_val = construct<literal<bool>>(true)]
+          | qi::lit("#f")[_val = construct<literal<bool>>(false)];
+        number %= double_;
+        string %= eps >> lexeme['"' >> *(char_ - '"') >> '"'];
+
+3) Consider to document the Meh language in terms of non-terminal symbols (constructs) and terminal symbols (reserved words)?
+
+	==> It would seem we have a choice on how much we shall define Meh to forward operators to functions modelled in Tha?
+
+		==> By forwarding to Tha the Meh language would need only a very small set of special constructs?
+		…
+
+	==> Consider how Meh defines instantiation (creation) of Identifiers?
+
+		==> Consider the string-literal to act as Identifier constructor?
+
+		Meh´> (”count” number) // Would create new identifier in current environment (Tha) that declares count to be of meta-value number)?
+
+		==> Consider Tha member value ”identifier” with as_function that instantiates a declared identifier?
+
+		Meh¨> (identifier count number) // Would create new identifier in current environment (Tha) that declares count to be of meta-value number)?
+
+		==> Consider ordinary lisp syntax?
+
+			==> Consider make-symbol (https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node110.html)?
+
+”(make-symbol print-name) creates a new uninterned symbol, whose print name is the string print-name. The value and function bindings will be unbound and the property list will be empty."
+
+			Meh´> (make_symbol count)
+			...
+
+	…
+
+…
+
+Consider to update this Todo as the Meh language gest implemented and proved to work in a valuable way?
+...

@@ -1,0 +1,28 @@
+﻿I stumbled on this youtube playlist and found it very clarifying on what a Grammar is as it applied it to the english language.
+
+1) The youtube playlist ”NLP - 06. Parsing, and Context-Free Grammars” seem to live here (https://www.youtube.com/playlist?list=PLO9y7hOkmmSEd16rPv0V5D_eztSF6J8DN)?
+
+	==> I found this Grammar very good to get a grip of the difference of non-terminal S, NP, VP... that are ”intermediate” output by production rules and terminal symbols that are final outputs (no more rules apples)
+
+			
+
+		==> Note: How clear it is that the words of an english sentence are terminal symbols.
+		==> While the non-terminal symbols are composites (and input to further rule productions)
+
+2) Consider to use this insight into english language parsing to design a ”human sounding” command language for the Meh repl?
+
+	Meh´> What is the value of count?
+	The value of count is 4
+	Meh´>
+
+	==> That would be cool, would it not?
+
+	==> Consider it could be possible by defining a query language based on Sentence (S), Verb Phrase (VB) and some small set of english words (terminal symbols)?
+
+		Q -> What (is | are)
+		…
+
+…
+
+Consider to remember this application of Context Free Grammar to better understand computer language parsing and evaluation?
+...

@@ -1,0 +1,19 @@
+﻿It seems we should view files as data distributed in time (data is streamed into sequence in time)?
+
+1) Consider if we model data as a Tha - then storing it to file corresponds to distributing it in time?
+
+	==> This seems like a powerful insight - files are data models distributed in time?
+	==> Loaded files ar data models distributed in space (memory)?
+	…
+
+2) Consider an application providing a user interface to operate on data has a User Interface Tha and a Data Model Tha?
+
+	==> Consider an applications user interface can be modeled as a Tha (separate from the Tha model of the data the application operates on)?
+	==> Then the user interface is in the GUI Tha Model distributed in space (location of view elements on the screen, menus etc.)?
+	==> Animation of the User Interface is the GUI Tha distributed in time (view elements are located in time = they appear, disappear or move in time)?
+	…
+
+…
+
+Consider to delve deeper into this idea of files being the “distributed-in-time” variant of a Tha Model of data?
+...

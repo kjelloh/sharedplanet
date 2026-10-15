@@ -1,0 +1,24 @@
+# Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?
+
+```#38120215``` *As of 2017-11-30 01:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Reading on the C++ Juce framework and community I stumbled on what seems to be a really cool mucis production tool company called Tracker?
+
+1) Their free DAW seems to live here (<https://www.tracktion.com/products/t6-daw>)?
+
+> ”*Unlimited numbers of audio and MIDI tracks, combined with a professional feature set, allow you to compose, record, edit, mix and share your music with ease. Modest CPU requirements make T6 ideal for use on nearly any Mac, Windows or Linux computer*"
+
+2) Consider to try it and see if it supports multi-channel midi recording (so I can capture my EPS-16 songs)?
+
+…
+
+…
+
+Consider to try out this free DAW to see if I want to use it?
+
+...
+
+{% endraw %}

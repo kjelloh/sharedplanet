@@ -1,0 +1,15 @@
+# Todo: Compare Darwinet with other digital identity synchronisation services like IFTT
+
+```#71f42c55``` *As of 2015-10-08 12:21*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, now it comes. The synchronization solutions like IFTTT (<https://ifttt.com>) to help brining our digital life together (tip by Brigitta Edberg at Dataföreningen [Birgitta.Edberg@dfs.se](mailto:Birgitta.Edberg@dfs.se))
+
+1) Consider to use IFTTT synchronization service as inspiration for how Darwinet may accomplish and provide the same services?  
+2) Does IFTTT synchronize the other way round? That is, may I update local files based on what I publish on social services?  
+3) Is IFTTT only for synchronization between web-services?  
+...
+
+{% endraw %}

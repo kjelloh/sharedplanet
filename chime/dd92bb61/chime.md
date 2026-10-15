@@ -1,0 +1,17 @@
+# Todo: Design Darwinet app that calculates the deep cost of things based on ones own definition of deep richness
+
+```#dd92bb61``` *As of 2015-08-30 16:11*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Would it not be nice to have an app that knows my definition of deep richness and that based in that calculates the deep cost of products and services I am about to buy?
+
+1) We need some standard and currencies (value system) for aspects of deep richness.  
+2) We need a global network that calculates the input parameters to evaluate deep cost.  
+3) The app must be able to apply ones own definition of deep richness to the "neutral" values of the item to calculate the deep cost according to me.  
+...
+
+Skickat från min iPhone
+
+{% endraw %}

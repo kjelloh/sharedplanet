@@ -1,0 +1,117 @@
+﻿It seems Trinamic makes really good motion controllers chips and modules. Could ut be a good idea to experiment with their latest TMC160 chips?
+
+1) The German company Trinamic seems to live here (https://www.trinamic.com <https://www.trinamic.com/>)?
+
+2) The TMC160 chip seems to live here (https://www.trinamic.com/products/integrated-circuits/details/tmcc160-lc/ <https://www.trinamic.com/products/integrated-circuits/details/tmcc160-lc/>)?
+
+	==> This seems to be the TMC160 chip data sheet (https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMCC160_datasheet.pdf <https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMCC160_datasheet.pdf>)?
+		
+
+		==> The chip application seems to cover every BLDC driver needs you can imagine?
+
+
+
+	==> The chip seems to come in variants for TMLC, CanOpen or CoE interface?
+
+	==> CAN seems to stand for Controller Area Network (https://sv.wikipedia.org/wiki/Controller_Area_Network <https://sv.wikipedia.org/wiki/Controller_Area_Network>)?
+	==> CanOpen seems to be an industri standard protocol for network communation in automation systems (https://en.wikipedia.org/wiki/CANopen <https://en.wikipedia.org/wiki/CANopen>)?
+	==> CoE seems to stand for “CAN over Ethernet” (https://www.ethercat.org/en/technology.html#1.9.1 <https://www.ethercat.org/en/technology.html#1.9.1>)?
+
+1.9.1 CAN application protocol over EtherCAT (CoE)  <>
+With the CoE protocol, EtherCAT provides the same communication mechanisms as in CANopen®-Standard EN 50325-4: Object Dictionary, PDO Mapping (Process Data Objects) and SDO (Service Data Objects) – even the network management is similar.
+
+
+
+		
+
+		==> Incremental Encoders seems to generate an A and B signal and an optional Z signal to indicate each revolution (https://en.wikipedia.org/wiki/Rotary_encoder#Incremental_rotary_encoder <https://en.wikipedia.org/wiki/Rotary_encoder#Incremental_rotary_encoder>)?
+
+			==> This seems to be an example of phase shifted A and B signals from an Incremental Rotary Encoder (Curtesy Wikipedia)?
+
+			
+
+			==> And this seems to be an example of an AB-encoder (90 degree detection) with a third Z-signal for each revolution (Curtesy Wikipedia)?
+
+			
+			
+ 
+		==> ABN seems to refer to an ABN Incremental rotary controller (https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC8670_datasheet_Rev1.0_prelim.pdf <https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC8670_datasheet_Rev1.0_prelim.pdf>)?
+
+			==> ABN seems to be the same as ABZ as the N or Z stands for “Null” and “Zero” and indicates the encoder generates a revolution pulse?
+
+“The incremental encoders give two phase shifted incremental pulse signals A and B. Some incremental encoders have an additional null position signal N or zero pulse signal Z. An incremental encoder (called ABN encoder or ABZ encoder)"
+
+
+		==> Consider to compare with the cost effective Mauser Electronics AMT10 incremental encoder (https://www.mouser.se/datasheet/2/670/amt10-v-1310331.pdf <https://www.mouser.se/datasheet/2/670/amt10-v-1310331.pdf>)?
+
+			
+
+			==> The ATM10 Seems to call the generated pulses for A,B and X, where X is the Index which is the same as Z or N (https://www.mouser.se/datasheet/2/670/amt10-v-1310331.pdf <https://www.mouser.se/datasheet/2/670/amt10-v-1310331.pdf>)?
+
+		
+
+			==> I am still not sure if I is really “per revolution” or “per AB cycle” but for ATM10 the spec keep stating I is “per revolution”?
+
+				
+3) Consider to buy the TMC160-EVAL board and software to experiment with this chip (https://www.trinamic.com/support/eval-kits/details/tmcc160-eval/ <https://www.trinamic.com/support/eval-kits/details/tmcc160-eval/>)?
+
+	==> This seems to be the TMC160-EVAL manual (https://www.trinamic.com/fileadmin/assets/Products/Eval_Documents/TMCC160-EVAL_manual.pdf <https://www.trinamic.com/fileadmin/assets/Products/Eval_Documents/TMCC160-EVAL_manual.pdf>)?
+
+	==> It seems the Trinamic IDE for using the EVAL board is free (https://www.trinamic.com/support/software/tmcl-ide/ <https://www.trinamic.com/support/software/tmcl-ide/>)?
+
+		==> The Trinamic IDE seems to run on Windows only?
+		==> There seems to be a nightly build available at Github (https://github.com/trinamic/TMCL-IDE-Nightly <https://github.com/trinamic/TMCL-IDE-Nightly>)?
+		==> And a Linux Ubuntu 16.04 64 bit binary available (https://github.com/trinamic/TMCL-IDE-Nightly/blob/master/HowToStartLinuxTMCL-IDE.pdf <https://github.com/trinamic/TMCL-IDE-Nightly/blob/master/HowToStartLinuxTMCL-IDE.pdf>)?
+		==> But the Linux tar-file seems old (from May 2017) (TMCL-IDE-3.0.20.0.tar.gz <https://www.trinamic.com/fileadmin/assets/Support/Software/TMCL-IDE/TMCL-IDE-3.0.20.0.tar.gz>)?
+
+
+	==> TMC160-EVAL Seems to sell at DigiKey for €203 (https://www.digikey.de/product-detail/en/TMCC160-EVAL/1460-1157-ND/5724188?utm_campaign=buynow&WT.z_cid=ref_octopart_dkc_buynow&utm_medium=aggregator&curr=eur&site=us&utm_source=octopart <https://www.digikey.de/product-detail/en/TMCC160-EVAL/1460-1157-ND/5724188?utm_campaign=buynow&WT.z_cid=ref_octopart_dkc_buynow&utm_medium=aggregator&curr=eur&site=us&utm_source=octopart>)?
+	==> TMC160-EVAL seems to sell from Farnell Element 14 for €205 (http://de.farnell.com/trinamic/tmcc160-eval/eval-board-3-ph-bldc-pmsm-motorsteuerung/dp/2630495?CMP=GRHB-OCTOPART <http://de.farnell.com/trinamic/tmcc160-eval/eval-board-3-ph-bldc-pmsm-motorsteuerung/dp/2630495?CMP=GRHB-OCTOPART>)?
+	
+
+4) 	This seems to be a listing of what I need to get up and running with TMC160-EVAL board (https://www.trinamic.com/fileadmin/assets/Products/Eval_Documents/TMCC160-EVAL_manual.pdf <https://www.trinamic.com/fileadmin/assets/Products/Eval_Documents/TMCC160-EVAL_manual.pdf>)
+
+		
+
+		==> Consider a Trinamic Incremental Rotary Encoder (https://www.trinamic.com/products/drives/ <https://www.trinamic.com/products/drives/>)?
+
+			
+
+		==> Consider what I can get from DigiKey web-shop (https://www.digikey.de/en <https://www.digikey.de/en>)?
+
+			==> Consider this shopping cart?
+
+			
+
+			
+
+			==> Consider TMCC160-EVAL board (https://www.digikey.de/scripts/DkSearch/dksus.dll?Detail&itemSeq=258695576&uq=636600538073190787 <https://www.digikey.de/scripts/DkSearch/dksus.dll?Detail&itemSeq=258695576&uq=636600538073190787>)?
+			==> Consider TMC Optical Rotary Encoders and Encoder Kits (https://www.digikey.de/en/product-highlight/t/trinamic/optical-encoders-optimized-for-stepper-motors <https://www.digikey.de/en/product-highlight/t/trinamic/optical-encoders-optimized-for-stepper-motors>)?
+					
+				==> Consider €110 TMS20-kit (https://www.digikey.de/product-detail/en/trinamic-motion-control-gmbh/TMCS-20-KIT/1460-1219-ND/7400382 <https://www.digikey.de/product-detail/en/trinamic-motion-control-gmbh/TMCS-20-KIT/1460-1219-ND/7400382>)?
+				==> Consider €72 TMS28-kit (https://www.digikey.de/product-detail/en/trinamic-motion-control-gmbh/TMCS-28-5-10000-AT-01/1460-1224-ND/7400387 <https://www.digikey.de/product-detail/en/trinamic-motion-control-gmbh/TMCS-28-5-10000-AT-01/1460-1224-ND/7400387>)?
+				==> Consider €92 TMS40-kit (https://www.digikey.de/product-detail/en/trinamic-motion-control-gmbh/TMCS-40-KIT/1460-1221-ND/7400384 <https://www.digikey.de/product-detail/en/trinamic-motion-control-gmbh/TMCS-40-KIT/1460-1221-ND/7400384>)?
+
+			==> Consider a Trinamic Nema 11 QS2818 stepper motor from DigiKey (https://www.digikey.de/products/en?keywords=QSH2818 <https://www.digikey.de/products/en?keywords=QSH2818>)?
+
+			
+
+			==> Consider a Trinamic Nema 17 QBL4208 BLDC motor from DigiKey (https://www.digikey.de/products/en?keywords=QBL4208 <https://www.digikey.de/products/en?keywords=QBL4208>)?
+
+				
+
+4) Consider to buy some motors to experiment with?
+
+	==> Consider a Nema stepper motor?
+
+		==> Consider €62 Trinamic Nema 17 motor sold at Farnell Element 14 (http://de.farnell.com/trinamic/qsh4218-35-10-027/schrittmotor-1-8deg-1a-0-27nm/dp/1010725?st=QSH4218 <http://de.farnell.com/trinamic/qsh4218-35-10-027/schrittmotor-1-8deg-1a-0-27nm/dp/1010725?st=QSH4218>)?
+			
+	==> Consider a BLDC for RC models?
+	==> Consider a gimbal BLDC motor?
+	==> Consider a computer Fan?
+
+…
+
+Consider to commit to buy a set of modules and lab equipment to actually be able to experiment with motion controllers?
+...
+	...

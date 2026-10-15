@@ -1,0 +1,3 @@
+﻿Consider to design a Darwinet File System users guide that uses the same format and topics as the Drobox users guide for file handling mechanisms (e.g. the conflicting topic https://www.dropbox.com/help/19?path=sharing_files_and_folders#conflicting)
+
+*) The general DropBox sharing files help is at https://www.dropbox.com/help/topics/sharing_files_and_folders.

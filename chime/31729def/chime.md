@@ -1,0 +1,18 @@
+# Todo: Darwinet - What would it mean to use Darwinet file system for source code development?
+
+```#31729def``` *As of 2015-09-26 23:57*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Studying different version control systems at seems there is no true p2p version control that actually work well?
+
+1) Subversion is centralized and collaboration is always made manually using commit and branch merging.  
+2) Git has a more local approach but this seems to mean that each user may choose to do local commits and public commits.  
+3) I know I found a p2p version control system (what was it?) but that one relied on mailing and still required manually deciding whom to tell about commits?  
+4) With Darwinet we would would use views that automatically branches on conflicts. Could we imagine to provide merging-apps to have developing teams decide on the best fitting view?  
+5) How may teams apply a main and branch views in Darwinet? And how do we provide tools and services that enables the project to evolve (survival of the fittest)? Is it not a risk that the auto-branching on conflicts will drive projects to drift apart?  
+6) Could we imagine each user to decide how to merge their contributions to the currently ”best branch”?  
+...
+
+{% endraw %}

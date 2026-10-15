@@ -1,0 +1,86 @@
+﻿It seems caster wheels may be the most cost effective to use as drive wheels for the power feeder?
+
+1) Consider the caster wheel options and prices?
+
+	==> Consider wheels with TPE (rubber-like) plastic wheels?
+
+	
+
+
+	
+
+	==> Consider PTE wheels with ball bearings?
+
+		https://www.bauhaus.se/mobelhjul-50x21mm-fast.html <https://www.bauhaus.se/mobelhjul-50x21mm-fast.html> 
+
+	
+
+
+	==> Consider this rubber wheel (https://www.bauhaus.se/apparathjul-50x19mm-fast.html <https://www.bauhaus.se/apparathjul-50x19mm-fast.html>)?
+
+	
+
+	==> Consider rubber wheels and ball bearings?
+
+		https://www.bauhaus.se/mobelhjul-50x22mm-vridbart.html <https://www.bauhaus.se/mobelhjul-50x22mm-vridbart.html> 
+
+		
+
+	…
+
+2) Consider inline wheels?
+
+	==> Consider this set of 8 wheels with spacers and roller bearings (https://www.skatepro.se/69-28434.htm <https://www.skatepro.se/69-28434.htm>)?
+
+		
+
+		==> Equals 48 SEK/Wheel (including bearing and spacers)?
+
+	==> 180817 - Bought these from ScatePro (See “Orderbekräftelse från SkatePro (1566015)”)
+
+3) Consider to compare with skateboard wheels?
+
+	==> Consider the price for scateboard wheels from ScatePro (https://www.skatepro.se/c200.htm <https://www.skatepro.se/c200.htm>)?
+
+		
+
+	==> Consider skateboard roller bearings from ScatePro (https://www.skatepro.se/c183.htm <https://www.skatepro.se/c183.htm>)?
+
+		
+
+	==> It seems lowest price is 4 wheels 179 SEK + 8 bearings 109 SEK = 234 SEK / 4 wheels = around 60 SEK per wheel (plus 4 extra bearings for 60 SEK)?
+
+	==> Consider “Soft” wheels with grip less than 80A?
+
+	==> Consider these flat roller skate wheels (https://www.skatepro.se/54-10148.htm <https://www.skatepro.se/54-10148.htm>)?
+
+	 
+
+		Hm… Does not fit with “standard” 8 or 10 mm spacers (what gives)?
+
+	==> Consider these (cheapest) roller bearing for roller skate wheels (https://www.skatepro.se/27-1615.htm <https://www.skatepro.se/27-1615.htm>)?
+
+		
+
+	
+
+4) Consider to use a pair of inlines (use the two inline mounted wheels for my power feeder)?
+
+	==> Consider these child inlines which gives men 8 wheels on two online mounts for 419 SEK?
+
+	
+	
+
+		==> It seems I can get access and drive only the first and last wheel?
+
+	Hm… On the other hand I should be able to 3D-print my own wheel-frame?
+
+5) Consider actual power feeder wheels (https://planomaskin.se/sv/stationara-maskiner/matarverk/utbyteshjul-for-matarverk-f32-hc32-h32.html)?
+
+	
+
+5) Consider designs to transfer rotation power to the wheels?
+
+	TODO: Find a way to drive the wheels…
+
+...

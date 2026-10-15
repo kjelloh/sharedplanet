@@ -1,0 +1,17 @@
+﻿C++ suffers from 'dependancy hell' and 'translator unit spagetti monster'.
+
+1) Consider a C++ source code 'extractor' and 'assembler' that can create C++ source code that contains only parts actually used?
+
+So, the main idea is that for any C++ project, the source code actually use will almost always be less that what is provided in files. Especially whe importing and using external libraries.
+
+So, can we imagine a way to first create filtered source code that only contains the code actually required for a project to compile and link?
+
+I can imagine two modes for filtering out unused source code. One is to filter i such a way that the ABIs of used objects are kept intact. And the other where we also allow ABIs of objects to change as long as the code called works as it was intended.
+
+Ok, I suppose it may prove tricky to determine if ABI change can be allowed without consequences?  I can think of messaging systems where the ABI is required to be intact for the sender and receiver to be able to map data to processing in the code in the same way?
+
+Still, these kind of problems of inter-process communication (distributing data in time to and from space distributed data) can be checked with testing?
+
+So, can we utilise existing compilers to implement a 'source code filtering'  mechanism?
+
+...

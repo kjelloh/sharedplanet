@@ -1,0 +1,81 @@
+# Todo: Consider the Mafell tools lineup and prices for my indoor or future woodworking needs and requirements?
+
+```#cbb23bdf``` *As of 2021-07-18 14:06*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So Mafell is expensive but may provide some unique solutions to provide tools that work for me in the long run?
+
+0) Remember my indoor woodworking requirements?
+
+==&gt; No dust escape (I want to be able to work without having to clean up afterwards)?
+
+==&gt; Short time-to-use from fold-away position
+
+==&gt; Composable tools in compact working volume (I need to stove away tools when not in use but still be able to use them "on a vim")?
+
+1) Consider the Mafell milling motors?
+
+==&gt; Consider the Mafell FM 1000 (<https://produkte.mafell.de/en/mortising/milling-motor/milling-motors-fm-800-and-fm-1000> )?
+
+> ![](PastedGraphic-1.png)
+
+==&gt; consider the Mafell FM 1000 PV (<https://produkte.mafell.de/en/mortising/milling-motor/milling-motor-fm-1000-pv> )?
+
+> ![](PastedGraphic-3.png)
+
+> ![](PastedGraphic-2.png)  
+> The PV model has remote speed control (to be used in a CNC)
+
+==&gt; Consider the Mafell FM 1000 WS (<https://produkte.mafell.de/en/mortising/milling-motor/milling-motor-fm-1000-ws> )?
+
+==&gt; Consider I can buy from Netherlands CNC web shop (<https://www.damencnc.com/en/milling-motors/mafell/mafell-milling-motors> )?
+
+> ![](PastedGraphic-4.png)  
+> ![](PastedGraphic-6.png)
+
+2) Consider Mafell cross cut circular saws (<https://produkte.mafell.de/en/sawing/cross-cutting-system/> )?
+
+> ==&gt; Consider the Mafell KSS 50 18M (<https://produkte.mafell.de/en/sawing/cross-cutting-system/cordless-cross-cutting-system-kss-50-18m-bl> )?
+
+> ![](PastedGraphic-5.png)  
+> 9 500 SEK utan batteri och laddare
+
+> NOTE: The KSS 40 is to small to cross cut 2" lumber (I need to KSS 50 to cut at least 50 mm square cross cuts)  
+> NOTE: Max cut length with this rail is 407 mm (I need an extension like the flexible rail for longer cuts)
+
+==&gt; It seems I can buy from Swedish web site 3A Byggdelen?
+
+> ![](PastedGraphic-10.png)  
+> <https://3abyggdelen.se/produkt-kategori/mafell/mafell-batterier-laddare/>
+
+3) Consider the Mafelll Cordless Plunge-Cut Saw MT 55 18 M bl in the T-MAX (<https://produkte.mafell.de/en/sawing/plunge-cut-saw/cordless-plunge-cut-saw-mt-55-18-m-bl> )?
+
+==&gt; It seems I can buy from swedish web shop (<https://3abyggdelen.se/produkt/mafell-batteridriven-sanksag-mt-55-18m-bl-918801/> )?
+
+> ![](PastedGraphic-14.png)  
+> Mafell plunge saw kit with guide rail, 2 x battery and charger 13 200 SEK.
+
+4) Consider the Mafell Portable Panel Saw System (<https://produkte.mafell.de/en/sawing/portable-panel-saw-system/portable-panel-saw-system-pss-3100-se> )?
+
+==&gt; It seems I can buy from Swedish web site (<https://3abyggdelen.se/produkt/mafell-portabel-skivsag-pss-3100-se-916201/> )?
+
+> ![](PastedGraphic-11.png)
+
+5) Consider the Mafell portable band saw (<https://produkte.mafell.de/en/sawing/portable-band-saw/> )?
+
+==&gt; It seems I can buy from the swedish web site (<https://3abyggdelen.se/produkt/mafell-hand-bandsag-z-5-ec-925301/> )?
+
+> ![](PastedGraphic-13.png)
+
+6) Consider the Mafell large timber tenoer machine (<https://produkte.mafell.de/en/mortising/tenoner/tenoner-zaf-250-vario> )?
+
+==&gt; It seems I can buy from a swedish web site (<https://3abyggdelen.se/produkt/mafell-tappfras-zaf-250-vario/> )?
+
+> ![](PastedGraphic-15.png)  
+> Mafell big lumber tenoer machine 330 000 SEK
+
+...
+
+{% endraw %}

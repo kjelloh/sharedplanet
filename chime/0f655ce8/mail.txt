@@ -1,0 +1,160 @@
+﻿It seems I still have not succeeded to get Python to install and behave correctly on my OS X machine (and thus it also fails to work with VSCode)?
+
+	==> Also see “Todo: Python Programming - Consider to learn Python and try Web scraping and IMAP mail fetching using Python Scripts?”
+
+1) It seems after installing Python extension to VSCode my python installation is even worse than before?
+
+	==> It seems I still have three installations of Python competing for attention (See VSCode Shift+Cmd+P “python “?
+
+		
+		
+		…then
+
+		
+
+	==> It seems on command line “python” is associated with OS X system version 2.7 (at “/usr/bin/python”)?
+
+
+Kjell-Olovs-MacBook-Pro-2014:Downloads kjell-olovhogdahl$ which python
+/usr/bin/python
+Kjell-Olovs-MacBook-Pro-2014:Downloads kjell-olovhogdahl$ python --version
+Python 2.7.10
+Kjell-Olovs-MacBook-Pro-2014:Downloads kjell-olovhogdahl$ 
+
+	==>
+
+
+Kjell-Olovs-MacBook-Pro-2014:Downloads kjell-olovhogdahl$ ls -la /usr/bin/python*
+-rwxr-xr-x  1 root  wheel  66880 Mar 28 05:03 /usr/bin/python
+-rwxr-xr-x  4 root  wheel    925 Oct  7  2017 /usr/bin/python-config
+lrwxr-xr-x  1 root  wheel     75 Apr  9 15:15 /usr/bin/python2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7
+lrwxr-xr-x  1 root  wheel     82 Apr  9 15:15 /usr/bin/python2.7-config -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-config
+-rwxr-xr-x  1 root  wheel  66880 Mar 28 05:03 /usr/bin/pythonw
+lrwxr-xr-x  1 root  wheel     76 Apr  9 15:15 /usr/bin/pythonw2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/pythonw2.7
+Kjell-Olovs-MacBook-Pro-2014:Downloads kjell-olovhogdahl$ 
+
+	==> It seem pythonw is an “Anaconda” script to start python in an OS X “app bundle” that allows GUI window access (whatever that means) (
+
+“Anaconda addresses this by providing a "pythonw" command that is a shell script that re-directs itself to start up a copy of python that is inside a provided *.app bundle."
+
+	==> And what was Anaconda again (https://en.wikipedia.org/wiki/Anaconda_(Python_distribution) <https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)> )?
+
+“Anaconda is a free and open source[5] distribution of the Python and R programming languages for data science and machine learning related applications "
+
+	==> It seems pythonw is to enable python scripts to execute and create their own GUI using the platform provided “windows” /https://stackoverflow.com/questions/9705982/pythonw-exe-or-python-exe <https://stackoverflow.com/questions/9705982/pythonw-exe-or-python-exe>)?
+
+“pythonw.exe is a GUI app for launching GUI/no-UI-at-all scripts."
+
+	==> It seems my environment PATH prioritise 
+
+
+Kjell-Olovs-MacBook-Pro-2014:Downloads kjell-olovhogdahl$ env
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/bash
+TERM=xterm-256color
+TMPDIR=/var/folders/d9/b6h8_0457ddd9qnrzmhvxm480000gn/T/
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.HSLXMeDm9C/Render
+TERM_PROGRAM_VERSION=404
+OLDPWD=/Users/kjell-olovhogdahl
+TERM_SESSION_ID=347F6421-EE11-4DAE-A300-303F316AC660
+USER=kjell-olovhogdahl
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.qi7ioe9YDy/Listeners
+PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PWD=/Users/kjell-olovhogdahl/Downloads
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/kjell-olovhogdahl
+LOGNAME=kjell-olovhogdahl
+LC_CTYPE=UTF-8
+_=/usr/bin/env
+Kjell-Olovs-MacBook-Pro-2014:Downloads kjell-olovhogdahl$ 
+
+	==> It seems the /Library/Frameworks is OS X specific (https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html#//apple_ref/doc/uid/TP40010672-CH2-SW1 <https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html#//apple_ref/doc/uid/TP40010672-CH2-SW1>)?
+
+“In macOS, frameworks that must be shared by multiple apps can be installed in either the local or user domain. The Frameworks directory in the system domain stores the frameworks you use to create your macOS apps. 
+In iOS, apps cannot install custom frameworks."
+
+	==> Let's see what happens if I just install with the official downloadable Python OS X 64 bit installer (https://www.python.org/downloads/mac-osx/ <https://www.python.org/downloads/mac-osx/>)?
+
+		
+
+	==> It seems they claim we can use OS X system Python 2 together with installed Python 3.7 by post-fixing all python command with “3” (See Readme.rtf file in the python 3.7 installation)?
+
+“Python 3 and Python 2 Co-existence
+
+Python.org Python 3.7 and 2.7.x versions can both be installed on your system and will not conflict. Command names for Python 3 contain a 3 in them, python3 (or python3.7), idle3 (or idle3.7), pip3 (or pip3.7), etc.  Python 2.7 command names contain a 2 or no digit: python2 (or python2.7 or python), idle2 (or idle2.7 or idle), etc."
+
+	==> Fair enough - But can VS Code use the installed Python 3.7 now?
+
+	==> It seems VS Code succeeds with the install operation (after I selected it to use Python 3.7 package and clicked install in the “No Lint” warning pop-up)?
+
+		
+
+		And when I click “Install” this log is created in VS Code
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ /usr/local/bin/python3 -m pip install -U pylint --user
+Collecting pylint
+  Using cached https://files.pythonhosted.org/packages/6e/c2/1e97c238877b6a86562d32297eb33a6670b6220e8ec0ca85f67b66dc893f/pylint-2.1.1-py3-none-any.whl
+Collecting isort>=4.2.5 (from pylint)
+  Using cached https://files.pythonhosted.org/packages/1f/2c/22eee714d7199ae0464beda6ad5fedec8fee6a2f7ffd1e8f1840928fe318/isort-4.3.4-py3-none-any.whl
+Collecting mccabe (from pylint)
+  Using cached https://files.pythonhosted.org/packages/87/89/479dc97e18549e21354893e4ee4ef36db1d237534982482c3681ee6e7b57/mccabe-0.6.1-py2.py3-none-any.whl
+Collecting astroid>=2.0.0 (from pylint)
+  Using cached https://files.pythonhosted.org/packages/19/92/6f6d3591c429dbdb31c18d8476ba1af08d5973d7cc09f66346109e9de7fb/astroid-2.0.4-py3-none-any.whl
+Collecting wrapt (from astroid>=2.0.0->pylint)
+  Using cached https://files.pythonhosted.org/packages/a0/47/66897906448185fcb77fc3c2b1bc20ed0ecca81a0f2f88eda3fc5a34fc3d/wrapt-1.10.11.tar.gz
+Collecting lazy-object-proxy (from astroid>=2.0.0->pylint)
+  Using cached https://files.pythonhosted.org/packages/55/08/23c0753599bdec1aec273e322f277c4e875150325f565017f6280549f554/lazy-object-proxy-1.3.1.tar.gz
+Collecting six (from astroid>=2.0.0->pylint)
+  Using cached https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bfa78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Installing collected packages: isort, mccabe, wrapt, lazy-object-proxy, six, astroid, pylint
+  The script isort is installed in '/Users/kjell-olovhogdahl/Library/Python/3.7/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  Running setup.py install for wrapt ... done
+  Running setup.py install for lazy-object-proxy ... done
+  The scripts epylint, pylint, pyreverse and symilar are installed in '/Users/kjell-olovhogdahl/Library/Python/3.7/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed astroid-2.0.4 isort-4.3.4 lazy-object-proxy-1.3.1 mccabe-0.6.1 pylint-2.1.1 six-1.11.0 wrapt-1.10.11
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+	OH NO!! Why the heck did it install into my personal account *THIS SUCKS!!* (Why do I have to administrate this house-of-cards of tools, libraries and binaries)?!!
+
+		==> The script says “use --no-warn-script-location.” *REALLY??!* (God how awfully user unfriendly this is)!!
+
+
+	==> At least - Now VS Code seems to be able to execute my Python script?
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ cd /Users/kjell-olovhogdahl/Desktop ; env "PYTHONIOENCODING=UTF-8" "PYTHONUNBUFFERED=1" "PYTHONPATH=/Users/kjell-olovhogdahl/.vscode/extensions/ms-python.python-2018.8.0/pythonFiles/experimental/ptvsd" /usr/local/bin/python3 -m ptvsd --host localhost --port 57828 /Users/kjell-olovhogdahl/Desktop/myFirstIMAP.py
+Kjell-Olovs-MacBook-Pro-2014:Desktop kjell-olovhogdahl$
+
+	==> It seems we can start a Python REPL inside VS Code and then run our python file in the REPL (and thus use the script and interact from command line)?
+
+		
+
+	==> AHA - It seems I can’t run my python file in the REPL (But I can start the REPL and then just cut-and-paste to get my REPL into the state where I can interact with my IMAP connection)?
+
+		==> It seems Shift+Cmd+P “Python REPL” does start a REPL in the VS Code terminal window?
+
+		
+
+		
+
+		==> But then if I do Shift + Cmd + P “Python RUN File” it leaves the REPL and runs the script in console-mode instead?
+
+		
+	==> Very Well - If I start the REPL and then just cut-and-paste my scrip-code into the REPL - Then it works :)
+
+	
+
+
+	WE ARE HERE…
+
+
+…
+
+
+Consider to continue this Python experiment to read IMAP mails (in the end to create a PDF of my TODO-mails)?
+

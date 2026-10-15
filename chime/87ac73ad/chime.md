@@ -1,0 +1,58 @@
+# Todo: Consider the measure and formats of my stored and developed photographic film?
+
+```#87ac73ad``` *As of 2020-04-25 15:39*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I need to buy plastic sheets for filing my developed positive and negative photographic film?
+
+1) It seems my photographic film is in 15 cm long strips with 135 film i.e., 35x24 mm actual picture sizes
+
+> ![](IMG_5021.jpeg)  
+> *My positive film strips are 35 mm wide (matches 135 film)*
+
+> ![](IMG_5022.jpeg)  
+> *Each frame is is repeated in 38 mm intervals (36 mm frames)*
+
+> ![](IMG_5023.jpeg)  
+> *My strips seems to be cut into 150 mm long strips*
+
+> ![](IMG_5024.jpeg)  
+> *My strips seems to be cut into 150 mm long strips*
+
+2) It seems I have used film labelled "135 film" for both my positive and negative photographic film (<https://en.wikipedia.org/wiki/135_film> )?
+
+> ![](220px-135film.jpg)
+
+> *"135 film. The film is 35 mm (1.4 in) wide. Each image is 36×24 mm in the most common "full-frame" format (sometimes called "double-frame" for its relationship to the "single-frame" 35 mm movie format)."*
+
+> ![](220px-135_film_perforations.jpg)
+
+3) Is seems I can buy plastic sheets for storing 150 mm long strips of 135 film?
+
+> ![](PastedGraphic-1.png)
+
+> 200425 Ordered plastci sheets for film and 50x50 postive film dia-frames
+
+> **Brunos Bildverkstad AB
+
+> Tack för din order!**
+
+> ---
+
+> Ditt Ordernummer:
+
+> Detaljerad Orderbekräftelse: [**https://www.brunosbildverkstad.se](https://www.brunosbildverkstad.se)...**
+
+> Orderdatum: **lördag 25 april, 2020**
+
+> Mobilnummer:
+
+> **Artiklar:**
+
+> 1 x Negativfickor Hama Pergamynblad 35/10x4/25 (2252) 199kr1 x Hama Arkivsystem för Dia-film 25 ark (2004) 249kr**Totalt exklusive frakt:448krMyPack Collect:69krBetalningsmetod:29krVarav Momspliktig vara 25%::109krTotalt:546kr**
+
+...
+
+{% endraw %}

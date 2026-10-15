@@ -1,0 +1,145 @@
+﻿
+
+1) Consider this copperspice talk "" at 37:45 where they talk about registration of enumerated signal slots (https://youtu.be/LHgaVgMEHjA?list=PL_AKIMJc4roU0F3w20Ac77YeOFyvFmaJD&t=2265 <https://youtu.be/LHgaVgMEHjA?list=PL_AKIMJc4roU0F3w20Ac77YeOFyvFmaJD&t=2265> )?
+
+	==> Consider that Copperspice uses macros at compile time and then run-time reflection to enumerate signal slots using a "templated int class"?
+
+	
+	Copperspice uses macros at compile time and registration code at run-time to make the signal slot enumeration "work"
+
+	==> Consider the copperspice code written into a namespace?
+
+namespace slots {
+#define SLOT(X) \
+    static constexpr const int value_##X = decltype(cs_counter(CSInt<255>{}))::value; \
+    static constexpr CSInt<value_##X + 1> cs_counter(CSInt<value_##X + 1>)
+    
+    // CSInt is a "typed int" to enable function overload type dispacthing
+    template<int N>
+    class CSInt : public CSInt<N-1> {
+    public:
+        static constexpr const int value = N;
+    };
+    
+    template<>
+    class CSInt<0> {
+    public:
+        static constexpr const int value = 0;
+    };
+
+    
+    template<int N>
+    static void cs_register(CSInt<N>) { }
+    
+    static constexpr CSInt<0> cs_counter(CSInt<0>);
+    
+    // SLOT(42); expands to
+    static constexpr const int value_42 = decltype(cs_counter(CSInt<255>{}))::value; \
+    static constexpr CSInt<value_42 + 1> cs_counter(CSInt<value_42 + 1>);
+
+    // SLOT(43); expands to
+    static constexpr const int value_43 = decltype(cs_counter(CSInt<255>{}))::value; \
+    static constexpr CSInt<value_43 + 1> cs_counter(CSInt<value_43 + 1>);
+
+}
+
+		==> It seems in expanded SLOT(42) the cs_counter(CSInt<255>) "call" will "dispatch" to cs_counter(CSInt<0>) and ::value will evaluate to 0 (https://youtu.be/LHgaVgMEHjA?list=PL_AKIMJc4roU0F3w20Ac77YeOFyvFmaJD&t=2734 <https://youtu.be/LHgaVgMEHjA?list=PL_AKIMJc4roU0F3w20Ac77YeOFyvFmaJD&t=2734> )?
+
+" [45:4]7 ...what data type would it evaluate to? Well, we're calling this method called "cs_counter" and we're passing it a wrapped 255... and the only declaration of cs_counter that's in scope is this one [pointing at "static constexpr CSInt<0> cs_counter(CSInt<0>);"]. And since 255 inherits from 254 inherits from 253, eventually inherits all the way up to 0 we will [the compiler will match] call this version get back a wrapped 0. Then we can apply the colon colon value yielding 0 at compile time. Which means value 42 is 0 because it's a constant expression."
+
+		==> Finally the SLOT(42) expansion code declares a new overload for cs_counter that takes a type of a templated int one higher that the one we just used (and remembered in value_42)
+
+		==> So in a way "value_42" is a compile-time variable to remember the index we have used and then declare a new cs_counter overload with a type wrapping the next higher index?
+
+I am trying to condense down the most terse understanding of what is going on here. So we start off with the declaration of base case  CSInt<0> cs_counter(CSInt<0>);  Then we use a macro to get a line-number-dependent name to compile-time define a constant value defined by decltype(cs_counter(CSInt<255>{}))::value . Now the magic is that cs_counter(CSInt<255>{})will engage function overloading on the type CSInt<255>. Which in turn applies function polymorphism as CSInt<0> inherits from CSInt<254> inherits from CSInt<253>... and so on down to CSInt<0>. So the compiler will bind cs_counter(CSInt<255>{})
+to CSInt<0> cs_counter(CSInt<0>);. The next this is now that decltype(cs_counter(CSInt<0>{}))will evaluate to  CSInt<0> (the return type of cs_counter(CSInt<0>). Finally we evaluate the indirection operator :: to reference CSInt<0>::value which is defined as 0. So we end up with value_42 = 0.
+
+The next thing we do is that we use our value_42 = 0 to overload a new CSInt<value_42 + 1> cs_counter(CSInt<value_42 + 1>);. 
+
+So in practice we now have CSInt<1> cs_counter(CSInt<1>); in the namespace.
+
+Now, when we repeat this for value_43 we go through the same compile-time evaluation. But this time the difference is that the compiler will bind cs_counter(CSInt<255>{})
+to cs_counter(CSInt<1>);
+. This is so because due to the polymorphic overload rules the type CSInt<1>
+ more closely matches CSInt<255>{} than CSInt<1> does.
+
+So the bottom line is that we mutate the C++ type environment for our program in steps to incrementally define integer constant values 0...n .
+
+	==> Consider we can understand the copperspice code as a "ratchet" code generator?
+
+The copperspice code seems to work like a ratchet. Each "turn" adds a new constant with an incremented counter value. It is based on preprocessor generated code that transform a line number into a counter constant name. And each new constant is assigned an incremented integer value based on function overloads on each counter value type so far.
+
+ 
+0) A macro is expanded into code with a constant named uniquely depending on the line number of the macro.
+
+	pre-pocessor: line-number -> unique-constant-name
+
+1) Crank pull: The compiler defines a new constant value n by dispatching INT<255> to current "top matching" INT<n>
+
+	compiler: INT<255> -> INT<n> -> n // Using cs_counter overload and dispatch in INT<255> <- INT<254> <- ... INT<0> polymorphic hierachy
+
+2) Crank push: The compiler "pushes" a new function overload onto the "stack" of previously overloads using a type wrapped int with the counter value n+1. 
+
+	compiler: declare INT<n+1> f(INT<n+1>)
+
+*) Each time we repeat 0...2 we will get a new constant wit a value +1 of previous one, and a new function overload to "remember" it.
+
+Note that we are in fact using the overloaded functions f(INT<0>), f(INT<1>), ... f(INT<n>) to "remember" what count value n we are to use "next time". This is interesting and I suppose I shopuld remember this trick for future use to get something close to C++ inductive types?
+
+
+
+	==> Consider the slides (https://www.copperspice.com/pdf/CopperSpice-CppNow-2016.pdf <https://www.copperspice.com/pdf/CopperSpice-CppNow-2016.pdf> )?
+
+	
+	The CSInt<0...n> builds an inheritance hierarchy to enable function overload to "dispatch" to lowest matching current declaration.
+	
+
+
+2) Consider the Copperspice CSInt<> does NOT in fact have inductive powers?
+
+#include <iostream>
+
+template<int N>
+class CSInt : public CSInt<N-1> {
+public:
+    static constexpr const int value = N;
+};
+
+template<>
+class CSInt<0> {
+    static constexpr const int value = 0;
+};
+
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    std::cout << "Hello, World!\n";
+    CSInt<255> count0 {};
+    CSInt<255> count1 {};
+    CSInt<255> count2 {};
+    std::cout
+        << "count0:" << count0.value
+        << " count1:" << count1.value
+        << " count2:" << count2.value
+        << "/nl";
+    return 0;
+}
+
+// outputs...
+
+Hello, World!
+count0:255 count1:255 count2:255/nlProgram ended with exit code: 0
+
+	==> Can we somehow have CSInt<N> reduce to CSInt<I> where I is M+1 of the current last instantiated CSInt<M>?
+
+What we want is something that instantiates a class with an int value that is one above the int value of the last instantiation of this specialised template?
+
+3) Consider if there are other ways to somehow get C++ inductive types?
+
+So the "copperspice way" is to use function polymorhic overloading to have f(INT<255>) match the current "top-of-stack" declared INT<n> f(INT<n>). Now this is neat and all, but requires that we use macros to actually generate the code that leverage this mechanism. But for a true inductive type we would like lazy-evaluation of the-next-higher index type. We would like a compile-time next_index() to increment the last used one and return a type indexed with this next one? This would be possible if the compile-time evaluation of next_index() left a trace in the C++ environment of the last used index so that we could use that to increment a new one.
+
+Now already here we see that because the C++ environment is immutable, any storage of the last-used-index must have a new name. And of course there are currently no mechanism in C++ to compile-time-declare names? So that is why copperspice used macros to generate code, including the name of the constant that "remembers" the last used index.
+
+
+...
+
+

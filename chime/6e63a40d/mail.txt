@@ -1,0 +1,17 @@
+﻿It seems I should try to find at least one way to design a simple 3D body in Fusion 360 and then learn how I can then 3D print it on my Cetus 3D printer?
+
+1) Consider to find Fusion 3D tutorials I can leverage to learn how to design and 3D print?
+
+	==> Consider this tutorial ”Lesson 4: How to sketch and edit simple 2D rectangles using lines, constraints, and center rectangle” (http://f360ap.autodesk.com/courses/introduction-to-3d-modeling/lessons/lesson-4-how-to-sketch-and-edit-simple-2d-rectangles-using-lines-constraints-and-center-rectangle <http://f360ap.autodesk.com/courses/introduction-to-3d-modeling/lessons/lesson-4-how-to-sketch-and-edit-simple-2d-rectangles-using-lines-constraints-and-center-rectangle>)?
+
+		
+
+	==> Consider this tutorial ”Lesson 5: How to create and edit a simple 3D model using extrude, fillet, and timeline features” (http://f360ap.autodesk.com/courses/introduction-to-3d-modeling/lessons/lesson-5-how-to-create-and-edit-a-simple-3d-model-using-extrude-fillet-and-timeline-features <http://f360ap.autodesk.com/courses/introduction-to-3d-modeling/lessons/lesson-5-how-to-create-and-edit-a-simple-3d-model-using-extrude-fillet-and-timeline-features>)?
+
+	
+
+	…
+
+…
+
+Consider to delve into this goal to learn how to design and 3D print using Fusion 360?

@@ -1,0 +1,23 @@
+# Todo: Try to find an idea for a self-organizing society that minimize labour and maximize a "good life"
+
+```#8cc08aa8``` *As of 2015-09-10 14:20*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+As Roland Pulsen point out in his book ”Arbetssamhället - hur arbetet överlevde teknologin” (http://www.bokus.com/bok/9789140671370/arbetssamhallet-hur-arbetet-overlevde-teknologin/) the idea of Basic Income may, if implemented as an amendment to current labour-based-economy, just establish it even further.
+
+So, what idea may we propose that would make society self-organizing in a way that allows labour to be minimized whilst still maximizing the ”rich life” on the planet?
+
+1) Basic Income may just be a way to continue current order of ever increasing consumption and production?  
+2) May we need to break the idea of having ”money” as a neutral value for everything? This idea prevents us from compartmentalize different values from each other, like the environment and high-tech-consumiratism. For example, the current economy allows the rainforest of be cut-down and sold and the money then traded fro say coca-cola.  
+3) It seems we also need to somehow limit how much we are allowed to "borrow from tomorrow”. The environmental Issues is partly due to the fact that what we do to the environment today will not show until some day in the future. This is a kind of borrowing to a cost that we don’t take into account and also do not actually know.  
+4) It seems we need to have mechanism that take into account what resources we consume that is stock from the past. When we use Oil we actually consume resources that has been stocked up to us over million of years. In fact, anything we dig up from the ground that is not living is consumption of such stocked resources. Any idea for a self-organizing sustainable society must prize such stock-reduction correctly.  
+5) The Idea must incite collaboration to ensure that work that needs to be done but that no-one wants to do is shared fairly. For now the idea of paid labour is what we rely on to make this happen. But we need a better idea so that we are allowed to reduce this type of work without loosing out in life quality.  
+6) The idea must create emergences that balances consumption and production within the boundaries of this planet.  
+7) The Idea must allow current society to transition to the self-orgnaizing society. This may be the hardest problem. Especially if any intermediate states means we will experience a ”poorer” life?  
+…
+
+Note that ”We shall believe in that which makes us want to do that which is beneficial to us” is not enough as an Idea. It needs to be followed up with a proposal of what such an Idea may actually be and state it clear enough that it may be used to propose acts-sin-faith that starts the change.
+
+{% endraw %}

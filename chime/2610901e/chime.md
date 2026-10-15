@@ -1,0 +1,32 @@
+# Todo: Consider what we can read out from the OBD (OBD-II, EOBD) interface of a (Swedish) car?
+
+```#2610901e``` *As of 2020-10-30 23:55*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+My friend Pär owns a VW that lately has miss-behaved while driving with blinking dashboard lights shut down of steering servo and break servo.
+
+1) Consider what a car with EOBD (European On Board Diagnostics) can tell about problems with the car?
+
+2) Consider the wikipedia article "On-board diagnostics" (<https://en.wikipedia.org/wiki/On-board_diagnostics#EOBD> )
+
+> *"**OBD systems give the vehicle owner or repair technician access to the status of the various vehicle sub-systems.**"*
+
+==&gt; Consider the wikipedia article "OBD-II PIDs" on the standard OBD error codes (<https://en.wikipedia.org/wiki/OBD-II_PIDs> )?
+
+> *"**The majority of all OBD-II PIDs in use are non-standard. For most modern vehicles, there are many more functions supported on the OBD-II interface than are covered by the standard PIDs, and there is relatively minor overlap between vehicle manufacturers for these non-standard PIDs.**"*
+
+3) Consider the "ELM327 WiFi ELM 327 bildiagnostik felkodsläsare OBD2" (<https://cdon.se/fordon/elm327-wifi-elm-327-bildiagnostik-felkodslasare-obd2-p43746503?gclid=CjwKCAjw8-78BRA0EiwAFUw8LBDaoFzBeNdgr9p0szYsTxjgg1kpLDeIulhXgi9v1O4FYR1_7WS0GhoCjqUQAvD_BwE&gclsrc=aw.ds#fo_c=1753&fo_k=0b91a0ce952f59120341595f5eb8859a&fo_s=gplase> )?
+
+> ![](PastedGraphic-1.png)
+
+4) Consider the "OBD2 FELKODSLÄSARE TILL VOLKSWAGEN" (<https://www.prylteknik.se/obd2-lasare-till-vw> )?
+
+> ![](PastedGraphic-2.png)
+
+==&gt; Consider this youtube video "Hur man felsöker bilen - Icarsoft CR PRO" (<https://youtu.be/moves3GZW04> )?
+
+...
+
+{% endraw %}

@@ -1,0 +1,83 @@
+﻿I would like to start planning for EV charging for my new house and Tesla seems to be able to charge from as low as 220V 6A or 1320 W outlet?
+
+1) Consider the Tesla home charge manual "Fastställa strömbrytarkraven" (https://www.tesla.com/sites/default/files/pdfs/wall-connector-eu/20161208/tesla-32a-wall-connector-installation-manual-sv-SE-v2.pdf?201612081439 <https://www.tesla.com/sites/default/files/pdfs/wall-connector-eu/20161208/tesla-32a-wall-connector-installation-manual-sv-SE-v2.pdf?201612081439> )?
+
+"Laddboxen har en inre vridströmbrytare för justering av dess driftström (se Ställa in driftsströmmen). Strömbrytaren ska vara dimensionerad för den kontinuerliga strömmen på: 6, 8, 10, 13, 16, 20, 25 eller 32 A."
+
+
+	==> 
+
+
+Tesla home charging unit has DIP and rotary switch to limit the charger to match the house circuit 6...32A
+
+
+Tesla home charger rotary switch position '1' limits charging to 6A (220 * 6 = 1320 W)
+
+
+	==> It seems the Tesla home charger can be configured for "TN" ("Terre Neutre" as in earthed through neutral) or "TT" ("Terre Terre" or earthed to earth) electrical earthing system?
+
+
+Three forms of TN (earthing through neutral) schemes
+
+
+The TT (earthing through ground) scheme
+
+	==> It seems  "TN" is from "Terre Neutre" as in earthed through neutral and "TT" is from "Terre Terre" or earthed to earth (https://en.wikipedia.org/wiki/Earthing_system <https://en.wikipedia.org/wiki/Earthing_system> )?
+
+2) Consider that we may be able to automatically turn EV charging off and on simply by cutting the power to the charger (https://www.tesla.com/sites/default/files/pdfs/wall-connector-eu/20161208/tesla-32a-wall-connector-installation-manual-sv-SE-v2.pdf?201612081439 <https://www.tesla.com/sites/default/files/pdfs/wall-connector-eu/20161208/tesla-32a-wall-connector-installation-manual-sv-SE-v2.pdf?201612081439> )?
+
+For an off-grid system we would like to be able to supervise when our solar or wind turbines can provide enough power for level 1 charging of the EV. Now it seems that the Tesla home charger can handle power outage and reset charging when the power comes back again. Only we need to ensure we run the charger in time windows not shorter than the time it takes for the charger to restart charging. For the Tesal charger it seems it will restart charging randomly between 15 seconds and three minutes after the power comes back (to protect the power grid from having all chargers come back at the same time causing a power surge on the grid).
+
+"Strömavbrott
+
+Om ett strömavbrott inträffar återupptar laddboxen automatiskt laddningen när strömmen kommer tillbaka. Om laddningskabeln är inkopplad i fordonet när strömmen kommer tillbaka blinkar lamporna och enheten strömsätter inte laddningskabeln under ungefär 15 sekunder till tre minuter. Detta förhindrar att elnätet drabbas av en stor strömrusning när strömmen kommer tillbaka och låter fordon att börja förbruka ström vid slumpmässiga tillfällen, snarare än alla på en gång.
+"
+
+3) Consider what peak loads the Tesla home charger will draw in 6A mode?
+
+I imagine that although you configure the charger to limit the power consumption to a 6A fused circuit it is in fact allowed to peak somewhat above that? So how much power do my off-grid system be able to deliver to ensure it can saturate the need of the Tesla 6A mode charger?
+
+
+4) Consider this youtube video "Off-grid Tesla Solar Charger: 4kw solar input, 3kw AC output, ATS and more! 3 hour build time" (https://www.youtube.com/watch?v=r6FjPZ7Ge8o <https://www.youtube.com/watch?v=r6FjPZ7Ge8o> )?
+
+
+An example of an off-grid 3000W inverter system that claims to allow for EV level 1 charging 
+
+==> He seems to insinuate that you need 2.4 kW power output to support level 1 charging of an EV (
+https://youtu.be/r6FjPZ7Ge8o?t=138 <https://youtu.be/r6FjPZ7Ge8o?t=138> )?
+
+"So for our loads of an electric car we want this to output 2.4 kilowatts continuously, no problem. And, so for me I only have to worry about 100 amps at 24 volts..."
+
+"[06:35] ... what I'm gonna do is rebuild it with more components and make it stronger so that we can power electric vehicles. And so to design this system we need to figure out how much power we need to charge these electric vehicles continuously. And I looked up some of the charts for Tesla. And this is a good reference for all of them because if you can charge a Tesla you can charge the other ones because they have the fastest charge capability. So you have [07:01] level 1 level 2 and level 3. Level 3 is insane, it's 480 volts and 300 amps. We're talking 140,000 watts of power going into a Tesla like that is so much power it's insane"! Level 2 is 240 volts in 80 amps and so if you want to build a solar power system to produce this much power you'd have to buy a bunch of land and spin like 30 to 50 thousand dollars and solar panels alone just to charge up at this speed like this is incredible speeds. So what we're limited to, is level 1 [07:36] charging and that is 15 to 20 amps at 120 volts. So that's 1.4 kilowatts upwards of 2.4 kilowatts. And I can build that I can trickle charge a Tesla with solar power. But the other options it's unrealistic if you want to charge a Tesla quickly. you're not going to be able to unless you spend a lot of money and you have a huge solar power system in your backyard. So for most people the cheapest and easiest way to charge their electric vehicle with solar power is to use a grid tie system. You have a local installer put a bunch of solar panels on the roof of your house. Then they install a grid tie inverter and/or a power wall or a small lithium battery bank and this will offset your costs so you can buy and sell power from the grid"
+
+5) Consider wind turbines from Swedish Windforce for reference on cost and performance (https://www.windforce.se/vindkraft-windstar3000.php <https://www.windforce.se/vindkraft-windstar3000.php>)?
+
+	==> It seems I can get a 3000W wind turbine system for roughly 100k SEK and expect around 3,7 MWh per year with 4 m/s median wind speeds (https://www.windforce.se/vindkraft-windstar3000.php <https://www.windforce.se/vindkraft-windstar3000.php> )?
+
+
+Annual mean wind speeds of 4 m/s produces estimably 3.68 MWh annual energy
+
+	==> It seems the 3000W power turbine from Windforce has semi-linear performance up to 13 m/s and then flats out for higher wind speeds?
+
+
+An example of a 3000W wind turbine that is most efficient between 7-13 m/s producing 500 to 3000 W
+
+	==> It seems we can expect a wind turbine nose level of between 25 dBa to 45 dBa when producing power
+
+
+An example of Windforce 3000W wind turbine producing between 25 dBa to 45 dBa in operating range 7 m/s to 12 m/s of wind
+
+	==> It seems a Windforce wind turbine with controller and dumpload is 75000 SEK, a mast is 20 000 SEK and batteries and inverter is extra = around 100 000 SEK?
+
+
+A kit with 3000W wind turbine, controller (charger) and dump load is 75 000 SEK
+
+
+An example 3000W wind and 1000W solar MMPT is 16 000 SEK
+
+
+A "self-erecting" (separate hydraulic pistong) mast for a 3000 W wind turbine is around 20 000 SEK
+
+
+
+...

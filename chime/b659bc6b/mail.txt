@@ -1,0 +1,13 @@
+﻿Could it be possible to find or develop a javascript module that is able to search the web for tagged images and capture them for display on a web-page?
+
+	==> Also see ”Kjell-Olov säger hej och undrar om en web-teknikgrej :)” with Erik Sundström
+
+1) Consider to use Google Customized Search (https://developers.google.com/custom-search/ <https://developers.google.com/custom-search/>)?
+
+	==> It seems to be free if we allow commercials to sip through?
+	…
+
+…
+
+Consider to delve into this idea to see what we can do or what we can find to make a web-page display a photo carrousel from images captured from the web?
+...

@@ -1,0 +1,14 @@
+# Todo: Elaborate on the difference of "emergence" and "self organization"
+
+```#b35a6959``` *As of 2015-09-14 00:29*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Based on Max Tegmark in his TED talk defines emergence (http://tedxtalks.ted.com/video/Consciousness-is-a-Mathematical) it seems evident that self-organazing systems is not necessarily the same as emergence?
+
+1) Is self-organizing systems one type of possible emergence?  
+2) Does the level of complexity has something to do with it? A system that shows self-organizing properties is ana example of a highly complex emergence as opposed to wetness of water being a low complex emergence of water molecule structure?  
+...
+
+{% endraw %}

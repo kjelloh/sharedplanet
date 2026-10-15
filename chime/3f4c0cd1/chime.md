@@ -1,0 +1,46 @@
+# Todo: Consider to model "Time" as a currently-like entity or "substance" that is consumed to produce (transformed into) change in space?
+
+```#3f4c0cd1``` *As of 2019-02-18 11:09*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems to me that an alternative way to model time (to explain what time “is”) is that it is “something” that is consumed when change happens in space?
+
+==&gt; Also see “Todo: Consider the feeling of "Meaning" is strongly related to the evolved feeling of reward when we consume time to put our surroundings into the best possible state and motion?"
+
+1) Consider time is a currency-like entity that is consumed to produce, or transformed into, change in the state of space?
+
+==&gt; Consider the observation that it “takes time” to move an object in space?
+
+> “We can start with the observation that to move an object we must first put it into motion. In this process we seem to consume something we model as time and produce something we model as motion. It is as if we have transformed a certain amount of time into a certain amount of motion. Using our model of physical phenomena we can map each new position of the object in space to a certain amount of gained kinetic energy and a certain amount of consumed time. The traditional way of telling the story about moving this object is that some time has passed and the object has gained some speed. But this is fully isomorphic to a story where we say that a certain amount of time has been consumed and transformed into kinetic energy of the object. The consumed time is now “destroyed” and can not be restored. It has been used as a required components of producing kinetic energy and translation of the object into a new location in space."
+
+==&gt; Consider that time is an entity we need to consume to reveal the amounts of time-produced entities like speed and kinetic energy?
+
+> “If we take a snapshot of space, the state of space when no time is consumed, we are unable to determine any amounts of entities, or substances, that required time to be produced. The only way to measure speed is to consume a fixed amount of time and measure the change in the location in space of an object. The relation between the consumed amount of time and the movement in space we call speed. This enables us to model time as “something” that nature consumes to move objects in space. And if we apply a force to an object that is free to move we will transform time into the “stuff” we call energy. If there is friction an applied force to a movable object will consume time and produce heat. And in the ideal case of zero friction nature will transform time into a change in kinetic energy."
+
+2) Consider the benefits of modelling time as a currency-like entity that is consumed as opposed to a dimension that is “travelled”?
+
+> “If we relate to time in our models of space as an entity that is consumed in processes that change the state of space we seem to get rid of the problem that time as a dimension has to be given special treatment in that as a dimension it allows only travel in one direction; Into the future. If instead we model time as an entity that is consumed it fits observations. Regardless of the state changes in space, time is always consumed. Now the dimension-problem of time allowing travel only into the future is transformed into the problem of why consumed time can never we re-produced? We still also have the problem of where the time we consume is coming from? If time is a currency-like entity that nature consumes to produce space state changes, where does this time come from?"
+
+…
+
+3) Consider to model time as that which nature consumes to figure out the “best” state of space?
+
+==&gt; It seems we can observe relations between time and the state of space and tell a story that it seems time is required to put space into the “best” state?
+
+> “Consider we pick up a chain and let it hand between our two hands. It has long been known that we can correctly model its shape by stating that it will come to rest in the state where its potential energy is in its lowest possible value. As if, for reasons we do not yet know, nature forces the chain to comply with a rule, a law, that states that the “best” state of the chain is when it encapsulates the least amount of potential energy. Emitting any excess energy into its surroundings as kinetic or heat energy. What if we re-interpret this observation as an observation about the nature of time? We can just as correctly state that nature seems to consume time in the very exact way to with “least effort” put the chain into the state of “minimum potential energy”.”
+
+> “Consider the observable route a beam of light travels though the barrier between materials having different light travel speeds? The light beam will change direction at the boundary in exactly the way required so that the travel time between two points at the traveled path is always the shortest one. It is as if nature said that the “best” path for light to travel is the one where it consumes the least amount of time to cover a specificities distance? Again, it seems tempting to try and model time as something “consumed” to accomplish “travel” instead of a special time-dimension travelled in conjunction with space travel?“
+
+…
+
+4) Consider memories are imprints in the state of space to represent observed relation between consumed time and produced space state change?
+
+==&gt; It seems we can model cause-and-effect as the relation between consumed time, applied force and produced result?
+
+> “The things we remember are instances of observed relations between consumed time and the change of the state of space. We experience the consumption of time as a “flow” from one space state to another. And this experience enables us to observe and internalise “reality” in a model where objects interact an a predictable way. In memory we keep a list of state of space indexed by the amount of consumed time between these states. The reason we index this list into increments of equal amounts of time is that this is a good reference point to predict how the current space state will transform given such amounts of consumed time. But we also know that if the state of space does not change, then we experience that the time measured by a clock is larger that the time we experience has been consumed. Time seems to go slower. It is as if we are wired to experience the amount of time consumed with the amount of change in the state of space? If nothing happens we assume less time has passed. And gets surprised when we compare with a clock that more time has been consumed than is suggested by the change in state of space would suggest."
+
+==&gt;
+
+{% endraw %}

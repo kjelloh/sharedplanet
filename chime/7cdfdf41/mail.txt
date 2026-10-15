@@ -1,0 +1,455 @@
+﻿I want my open source application Cratchit to be able to generate an annual report from available book keeping data.
+
+-1) Consider the bottom line about how to file a company Annual Report according to K2 Swedish Tax Agency rules?
+
+	==> The first document seems to be the  1) financial statements approval (fastställelseintyg) ?
+	==> The second document seems to be the 2) directors’ report  (förvaltningsberättelse)?
+	==> The third document seems to be the 3)  profit and loss statement (resultaträkning)?
+	==> The fourth document seems to be the 4) balance sheet (balansräkning)?
+	==> The fifth document seems to be the 5) notes (noter)?
+
+1) It seems the content and disposition of the Annual Report is defined by Swedish tax law (https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons.pdf <https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons.pdf> )?
+
+2 kap. 1 § första stycket ÅRL En årsredovisning ska bestå av
+
+en balansräkning,
+
+en resultaträkning,
+
+noter, och
+
+en förvaltningsberättelse.
+
+– – – Lag (2014:542) 
+
+
+2) Consider this web-page that seems to define four documents to provide for an Annual Report filing (https://bolagsverket.se/en/foretag/aktiebolag/arsredovisningforaktiebolag/delarochbilagoriarsredovisningen.761.html <https://bolagsverket.se/en/foretag/aktiebolag/arsredovisningforaktiebolag/delarochbilagoriarsredovisningen.761.html> )?
+
+"The annual report of a limited company must include:
+
+	• a directors’ report  (förvaltningsberättelse)
+	• a profit and loss statement (resultaträkning)
+	• a balance sheet (balansräkning)
+	• notes (noter)."
+
+3) Consider this web-page that states we also needs to provide a "Financial statements approval" (https://bolagsverket.se/en/foretag/aktiebolag/arsredovisningforaktiebolag/delarochbilagoriarsredovisningen/faststallelseintyg.763.html <https://bolagsverket.se/en/foretag/aktiebolag/arsredovisningforaktiebolag/delarochbilagoriarsredovisningen/faststallelseintyg.763.html> )?
+
+"The annual report which the company submits to Bolagsverket must be a copy of the original document. The copy must include a financial statements approval (fastställelseintyg) signed by a member of the board of directors or the managing director."
+
+
+4) Consider this pdf-example of an Annual report (https://bolagsverket.se/foretag/aktiebolag/arsredovisningforaktiebolag/delarochbilagoriarsredovisningen/exempelpaarsredovisningforforetagsomhaftverksamhet.4036.html <https://bolagsverket.se/foretag/aktiebolag/arsredovisningforaktiebolag/delarochbilagoriarsredovisningen/exempelpaarsredovisningforforetagsomhaftverksamhet.4036.html> )?
+
+	==> The first document seems to be the  1) financial statements approval (fastställelseintyg) ?
+
+ 
+
+	==> The second document seems to be the 2) directors’ report  (förvaltningsberättelse)?
+
+  
+
+	==> The third document seems to be the 3)  profit and loss statement (resultaträkning)?
+
+
+
+
+	==> The fourth document seems to be the 4) balance sheet (balansräkning)?
+
+ 
+
+	==> The fifth document seems to be the 5) notes (noter)?
+
+   
+
+ 
+
+5) Consider this pdf-example of an annual report with references to BAS Account numbers (https://srfredovisning.se/srf-mallar-for-arsredovisning/mall-for-arsredovisning-i-mindre-ab-enligt-k2/ <https://srfredovisning.se/srf-mallar-for-arsredovisning/mall-for-arsredovisning-i-mindre-ab-enligt-k2/> )?
+
+	==> The actual pdf seems to live here (http://srfredovisning.se/app/uploads/2022/02/2.0-2.4-mall-for-arsredovisning-i-mindre-ab-enligt-k2-2022.pdf <http://srfredovisning.se/app/uploads/2022/02/2.0-2.4-mall-for-arsredovisning-i-mindre-ab-enligt-k2-2022.pdf> )?
+
+
+
+	==> The first document seems to be the  1) financial statements approval (fastställelseintyg) ?
+
+
+
+	==> The second document seems to be the 2) directors’ report  (förvaltningsberättelse)?
+
+
+
+	==> The third document seems to be the 3)  profit and loss statement (resultaträkning)?
+
+ 
+
+	==> The fourth document seems to be the 4) balance sheet (balansräkning)?
+
+ 
+ 
+
+
+
+	==> The fifth document seems to be the 5) notes (noter)?
+
+ 
+
+
+6) Consider the mapping from BAS Accounts to financial statements in teh Annual Report according to Årsredovisning Online (https://www.arsredovisning-online.se/bas_kontoplan <https://www.arsredovisning-online.se/bas_kontoplan> )?
+
+"Baskontoplan och din årsredovisning
+Här kan du hitta konton från BAS-kontoplanen och se hur de skall användas när du gör din årsredovisning.
+
+Resultaträkning
+Konto 3000-3799
+
+	• Fält: Nettoomsättning
+	• Beskrivning: Intäkter som genererats av företagets ordinarie verksamhet, t.ex. varuförsäljning och tjänsteintäkter.
+Konto 3800-3899
+
+	• Fält: Aktiverat arbete för egen räkning
+	• Beskrivning: Kostnader för eget arbete där resultatet av arbetet tas upp som en tillgång i balansräkningen.
+Konto 3900-3999
+
+	• Fält: Övriga rörelseintäkter
+	• Beskrivning: Intäkter genererade utanför företagets ordinarie verksamhet, t.ex. valutakursvinster eller realisationsvinster.
+Konto 4000-4799 eller 4910-4931
+
+	• Fält: Råvaror och förnödenheter
+	• Beskrivning: Årets inköp av råvaror och förnödenheter +/- förändringar av lagerposten ”Råvaror och förnödenheter”. Även kostnader för legoarbeten och underentreprenader.
+Konto 4900-4999 (förutom 4910-4931, 4960-4969 och 4980-4989)
+
+	• Fält: Förändring av lager av produkter i arbete, färdiga varor och pågående arbete för annans räkning
+	• Beskrivning: Årets förändring av värdet på produkter i arbete och färdiga egentillverkade varor samt förändring av värde på uppdrag som utförs till fast pris.
+Konto 4960-4969 eller 4980-4989
+
+	• Fält: Handelsvaror
+	• Beskrivning: Årets inköp av handelsvaror +/- förändring av lagerposten ”Handelsvaror”.
+Konto 5000-6999
+
+	• Fält: Övriga externa kostnader
+	• Beskrivning: Normala kostnader som inte passar någon annan stans, t.ex. lokalhyra, konsultarvoden, telefon, porto, reklam och nedskrivning av kortfristiga fordringar.
+Konto 7000-7699
+
+	• Fält: Personalkostnader
+Konto 7700-7899 (förutom 7740-7749 och 7790-7799)
+
+	• Fält: Av- och nedskrivningar av materiella och immateriella anläggningstillgångar
+Konto 7740-7749 eller 7790-7799
+
+	• Fält: Nedskrivningar av omsättningstillgångar utöver normala nedskrivningar
+	• Beskrivning: Används mycket sällan. Ett exempel är om man gör ovanligt stora nedskrivningar av kundfordringar.
+Konto 7900-7999
+
+	• Fält: Övriga rörelsekostnader
+	• Beskrivning: Kostnader som ligger utanför företagets normala verksamhet, t.ex. valutakursförluster och realisationsförlust vid försäljning av icke- finansiella anläggningstillgångar.
+Konto 8000-8099 (förutom 8070-8089)
+
+	• Fält: Resultat från andelar i koncernföretag
+	• Beskrivning: Nettot av företagets finansiella intäkter och kostnader från koncernföretag med undantag av räntor, koncernbidrag och nedskrivningar, t.ex. erhållna utdelningar, andel i handelsbolags resultat och realisationsresultat.
+Konto 8070-8089, 8170-8189, 8270-8289 eller 8370-8389
+
+	• Fält: Nedskrivningar av finansiella anläggningstillgångar och kortfristiga placeringar
+	• Beskrivning: Nedskrivningar av och återföring av nedskrivningar på finansiella anläggningstillgångar och kortfristiga placeringar
+Konto 8100-8199 (förutom 8113, 8118, 8123, 8133 och 8170-8189)
+
+	• Fält: Resultat från andelar i intresseföretag och gemensamt styrda företag
+	• Beskrivning: Nettot av företagets finansiella intäkter och kostnader från intresseföretag och gemensamt styrda företag med undantag av räntor och nedskrivningar, t.ex. erhållna utdelningar, andel i handelsbolags resultat och realisationsresultat.
+Konto 8113, 8118, 8123 eller 8133
+
+	• Fält: Resultat från övriga företag som det finns ett ägarintresse i
+	• Beskrivning: Nettot av företagets finansiella intäkter och kostnader från övriga företag som det finns ett ägarintresse i med undantag av räntor och nedskrivningar, t.ex. vissa erhållna vinstutdelningar, andel i handelsbolags resultat och realisationsresultat.
+Konto 8200-8299 (förutom 8270-8289)
+
+	• Fält: Resultat från övriga finansiella anläggningstillgångar
+	• Beskrivning: Nettot av intäkter och kostnader från företagets övriga värdepapper och fordringar som är anläggningstillgångar, med undantag av nedskrivningar. T.ex. ränteintäkter (även på värdepapper avseende koncern- och intresseföretag), utdelningar, positiva och negativa valutakursdifferenser och realisationsresultat.
+Konto 8300-8399 (förutom 8370-8389)
+
+	• Fält: Övriga ränteintäkter och liknande resultatposter
+	• Beskrivning: Resultat från finansiella omsättningstillgångar med undantag för nedskrivningar. T.ex. ränteintäkter (även dröjsmålsräntor på kundfordringar), utdelningar och positiva valutakursdifferenser.
+Konto 8400-8499
+
+	• Fält: Räntekostnader och liknande resultatposter
+	• Beskrivning: Resultat från finansiella skulder, t.ex. räntor på lån, positiva och negativa valutakursdifferenser samt dröjsmåls-räntor på leverantörsskulder.
+Konto 8710
+
+	• Fält: Extraordinära intäkter
+	• Beskrivning: Används mycket sällan. Får inte användas för räkenskapsår som börjar 2016-01-01 eller senare.
+Konto 8750
+
+	• Fält: Extraordinära kostnader
+	• Beskrivning: Används mycket sällan. Får inte användas för räkenskapsår som börjar 2016-01-01 eller senare.
+Konto 8810-8819
+
+	• Fält: Förändring av periodiseringsfonder
+Konto 8820-8829
+
+	• Fält: Erhållna koncernbidrag
+Konto 8830-8839
+
+	• Fält: Lämnade koncernbidrag
+Konto 8840-8849 eller 8860-8899
+
+	• Fält: Övriga bokslutsdispositioner
+Konto 8850-8859
+
+	• Fält: Förändring av överavskrivningar
+Konto 8900-8979
+
+	• Fält: Skatt på årets resultat
+	• Beskrivning: Skatt som belastar årets resultat. Här ingår beräknad skatt på årets resultat, men även t.ex. justeringar avseende tidigare års skatt.
+Konto 8980-8989
+
+	• Fält: Övriga skatter
+	• Beskrivning: Används sällan.
+Balansräkning
+Konto 1020-1059 eller 1080-1089 (förutom 1088)
+
+	• Fält: Koncessioner, patent, licenser, varumärken samt liknande rättigheter
+Konto 1060-1069
+
+	• Fält: Hyresrätter och liknande rättigheter
+Konto 1070-1079
+
+	• Fält: Goodwill
+Konto 1088
+
+	• Fält: Förskott avseende immateriella anläggningstillgångar
+	• Beskrivning: Förskott i samband med förvärv, t.ex. handpenning och deposition.
+Konto 1100-1199 (förutom 1120-1129 och 1180-1189)
+
+	• Fält: Byggnader och mark
+	• Beskrivning: Förutom byggnader och mark, även maskiner som är avsedda för byggnadens allmänna användning.
+Konto 1120-1129
+
+	• Fält: Förbättringsutgifter på annans fastighet
+Konto 1180-1189 eller 1280-1289
+
+	• Fält: Pågående nyanläggningar och förskott avseende materiella anläggningstillgångar
+Konto 1210-1219
+
+	• Fält: Maskiner och andra tekniska anläggningar
+	• Beskrivning: Maskiner och tekniska anläggningar avsedda för produktionen.
+Konto 1220-1279 (förutom 1260)
+
+	• Fält: Inventarier, verktyg och installationer
+	• Beskrivning: Om du fyller i detta fält måste du även fylla i motsvarande not i avsnittet "Noter".
+Konto 1290-1299
+
+	• Fält: Övriga materiella anläggningstillgångar
+	• Beskrivning: T.ex. djur som klassificerats som anläggningstillgång.
+Konto 1310-1319
+
+	• Fält: Andelar i koncernföretag
+	• Beskrivning: Aktier och andelar i koncernföretag.
+Konto 1320-1329
+
+	• Fält: Fordringar hos koncernföretag
+	• Beskrivning: Fordringar på koncernföretag som förfaller till betalning senare än 12 månader från balansdagen.
+Konto 1330-1339 (förutom 1336-1337)
+
+	• Fält: Andelar i intresseföretag och gemensamt styrda företag
+	• Beskrivning: Aktier och andelar i intresseföretag.
+Konto 1336-1337
+
+	• Fält: Ägarintressen i övriga företag
+	• Beskrivning: Aktier och andelar i övriga företag som det redovisningsskyldiga företaget har ett ägarintresse i.
+Konto 1340-1349 (förutom 1346-1347)
+
+	• Fält: Fordringar hos intresseföretag och gemensamt styrda företag
+	• Beskrivning: Fordringar på intresseföretag och gemensamt styrda företag, som förfaller till betalning senare än 12 månader från balansdagen.
+Konto 1346-1347
+
+	• Fält: Fordringar hos övriga företag som det finns ett ägarintresse i
+	• Beskrivning: Fordringar på övriga företag som det finns ett ägarintresse i och som ska betalas senare än 12 månader från balansdagen.
+Konto 1350-1359
+
+	• Fält: Andra långfristiga värdepappersinnehav
+	• Beskrivning: Långsiktigt innehav av värdepapper som inte avser koncern- eller intresseföretag.
+Konto 1360-1369
+
+	• Fält: Lån till delägare eller närstående
+	• Beskrivning: Fordringar på delägare, och andra som står delägare nära, som förfaller till betalning senare än 12 månader från balansdagen.
+Konto 1380-1389
+
+	• Fält: Andra långfristiga fordringar
+	• Beskrivning: Fordringar som förfaller till betalning senare än 12 månader från balansdagen.
+Konto 1410-1429, 1430, 1431 eller 1438
+
+	• Fält: Råvaror och förnödenheter
+	• Beskrivning: Lager av råvaror eller förnödenheter som har köpts för att bearbetas eller för att vara komponenter i den egna tillverkningen.
+Konto 1432-1449 (förutom 1438)
+
+	• Fält: Varor under tillverkning
+	• Beskrivning: Lager av varor där tillverkning har påbörjats.
+Konto 1450-1469
+
+	• Fält: Färdiga varor och handelsvaror
+	• Beskrivning: Lager av färdiga egentillverkade varor eller varor som har köpts för vidareförsäljning (handelsvaror).
+Konto 1470-1479
+
+	• Fält: Pågående arbete för annans räkning
+	• Beskrivning: Om du fyller i detta fält måste du även fylla i motsvarande not i avsnittet "Noter".
+Konto 1480-1489
+
+	• Fält: Förskott till leverantörer
+	• Beskrivning: Betalningar och obetalda fakturor för varor och tjänster som redovisas som lager men där prestationen ännu inte erhållits.
+Konto 1490-1499
+
+	• Fält: Övriga lagertillgångar
+	• Beskrivning: Lager av värdepapper (t.ex. lageraktier), lagerfastigheter och djur som klassificerats som omsättningstillgång.
+Konto 1500-1559 eller 1580-1589
+
+	• Fält: Kundfordringar
+Konto 1560-1569 eller 1660-1669
+
+	• Fält: Fordringar hos koncernföretag
+	• Beskrivning: Fordringar på koncernföretag, inklusive kundfordringar.
+Konto 1570-1579 (förutom 1573) eller 1670-1679 (förutom 1673)
+
+	• Fält: Fordringar hos intresseföretag och gemensamt styrda företag
+	• Beskrivning: Fordringar på intresseföretag och gemensamt styrda företag, inklusive kundfordringar.
+Konto 1573 eller 1673
+
+	• Fält: Fordringar hos övriga företag som det finns ett ägarintresse i
+	• Beskrivning: Fordringar på övriga företag som det finns ett ägarintresse i, inklusive kundfordringar.
+Konto 1590-1619, 1630-1659 eller 1680-1689
+
+	• Fält: Övriga fordringar
+	• Beskrivning: T.ex. aktuella skattefordringar.
+Konto 1620-1629
+
+	• Fält: Upparbetad men ej fakturerad intäkt
+	• Beskrivning: Upparbetade men ej fakturerade intäkter från uppdrag på löpande räkning eller till fast pris enligt huvudregeln.
+Konto 1690-1699
+
+	• Fält: Tecknat men ej inbetalat kapital
+	• Beskrivning: Fordringar på aktieägare före tecknat men ej inbetalt kapital. Används vid nyemission.
+Konto 1700-1799
+
+	• Fält: Förutbetalda kostnader och upplupna intäkter
+	• Beskrivning: Förutbetalda kostnader (t.ex. förutbetalda hyror eller försäkringspremier) och upplupna intäkter (varor eller tjänster som är levererade men där kunden ännu inte betalat).
+Konto 1800-1899 (förutom 1860-1869)
+
+	• Fält: Övriga kortfristiga placeringar
+	• Beskrivning: Innehav av värdepapper eller andra placeringar som inte är anläggningstillgångar och som inte redovisas i någon annan post under Omsättningstillgångar och som ni planerar att avyttra inom 12 månader från bokföringsårets slut.
+Konto 1860-1869
+
+	• Fält: Andelar i koncernföretag
+	• Beskrivning: Här registrerar ni de andelar i koncernföretag som ni planerar att avyttra inom 12 månader från bokföringsårets slut.
+Konto 1900-1989
+
+	• Fält: Kassa och bank
+Konto 1990-1999
+
+	• Fält: Redovisningsmedel
+Konto 2081, 2083 eller 2084
+
+	• Fält: Aktiekapital
+	• Beskrivning: Aktiekapitalet i ett aktiebolag ska vara minst 25 000 kr.
+Konto 2082
+
+	• Fält: Ej registrerat aktiekapital
+	• Beskrivning: Beslutad ökning av aktiekapitalet genom fond- eller nyemission.
+Konto 2085
+
+	• Fält: Uppskrivningsfond
+Konto 2086
+
+	• Fält: Reservfond
+Konto 2087
+
+	• Fält: Bunden överkursfond
+Konto 2090, 2091, 2093-2095 eller 2098
+
+	• Fält: Balanserat resultat
+	• Beskrivning: Summan av tidigare års vinster och förluster. Registrera balanserat resultat med minustecken om det balanserade resultatet är en balanserad förlust. Är det en balanserad vinst ska du inte använda minustecken.
+Konto 2097
+
+	• Fält: Fri överkursfond
+Konto 2110-2149
+
+	• Fält: Periodiseringsfonder
+	• Beskrivning: Man kan avsätta upp till 25% av resultat efter finansiella poster till periodiseringsfonden. Det är ett sätt att skjuta upp bolagsskatten i upp till fem år. Avsättningen måste återföras till beskattning senast på det sjätte året efter det att avsättningen gjordes.
+Konto 2150-2159
+
+	• Fält: Ackumulerade överavskrivningar
+Konto 2160-2199
+
+	• Fält: Övriga obeskattade reserver
+Konto 2210-2219
+
+	• Fält: Avsättningar för pensioner och liknande förpliktelser enligt lagen (1967:531) om tryggande av pensionsutfästelse m.m.
+	• Beskrivning: Åtaganden för pensioner enligt tryggandelagen.
+Konto 2220-2229 eller 2250-2299
+
+	• Fält: Övriga avsättningar
+	• Beskrivning: Andra avsättningar än för pensioner, t.ex. garantiåtaganden.
+Konto 2230-2239
+
+	• Fält: Övriga avsättningar för pensioner och liknande förpliktelser
+	• Beskrivning: Övriga pensionsåtaganden till nuvarande och tidigare anställda.
+Konto 2310-2329
+
+	• Fält: Obligationslån
+Konto 2330-2339
+
+	• Fält: Checkräkningskredit
+Konto 2340-2359
+
+	• Fält: Övriga skulder till kreditinstitut
+Konto 2360-2369
+
+	• Fält: Skulder till koncernföretag
+Konto 2370-2379 (förutom 2373)
+
+	• Fält: Skulder till intresseföretag och gemensamt styrda företag
+Konto 2373
+
+	• Fält: Skulder till övriga företag som det finns ett ägarintresse i
+Konto 2390-2399
+
+	• Fält: Övriga skulder
+Konto 2410-2419
+
+	• Fält: Övriga skulder till kreditinstitut
+Konto 2420-2429
+
+	• Fält: Förskott från kunder
+Konto 2430-2439
+
+	• Fält: Pågående arbete för annans räkning
+	• Beskrivning: Om du fyller i detta fält måste du även fylla i motsvarande not i avsnittet "Noter".
+Konto 2440-2449
+
+	• Fält: Leverantörsskulder
+Konto 2450-2459
+
+	• Fält: Fakturerad men ej upparbetad intäkt
+Konto 2460-2469 eller 2860-2869
+
+	• Fält: Skulder till koncernföretag
+Konto 2470-2479 (förutom 2473) eller 2870-2879 (förutom 2873)
+
+	• Fält: Skulder till intresseföretag och gemensamt styrda företag
+Konto 2473 eller 2873
+
+	• Fält: Skulder till övriga företag som det finns ett ägarintresse i
+Konto 2480-2489
+
+	• Fält: Checkräkningskredit
+Konto 2490-2499 (förutom 2492), 2600-2799, 2810-2859 eller 2880-2899
+
+	• Fält: Övriga skulder
+Konto 2492
+
+	• Fält: Växelskulder
+Konto 2500-2599
+
+	• Fält: Skatteskulder
+Konto 2900-2999
+
+	• Fält: Upplupna kostnader och förutbetalda intäkter"
+  
+7) Consider the mapping from BAS account numbers to entries in the Annual Report according to the Swredish Tax Agency K2 rules (See "SVENSK REDOVISNING. BOKSLUTSBOKEN 2018" ISBN 978-91-39-11615-8 pages 371..383)
+
+
+
+...

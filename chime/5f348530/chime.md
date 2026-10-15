@@ -1,0 +1,20 @@
+# Todo: Consider glimpses of my inability to be self aware (examples of observations of myself I still failed to take into account for problem solving)?
+
+```#5f348530``` *As of 2019-05-04 16:52*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I think I can learn a lot by observing myself and try to note when I fail to actually "see" my own short comings or take them into account to transform reality to enable me to better cope with them?
+
+1) Consider how I observed myself spattering paint on my bedroom window but still failed to add a spatter protector screen to my paint wash up station?
+
+> *I had decided to really adress my dread of handling paint and do any paint job. I even wrote down what I feared and what I needed to practice to overcome those fears. With the goal to actually be able to paint my wall. Still, when I observed that when washing up I managed to spatter paint on my bedroom window, I did NOT write down to add some spatter protector screen. It was as the burden of having to think about how to solve this problem made me shy away from the fact that ths problem must be on the top of the list of problems to solve?*
+
+> *I now think this is a good example of how automatic the decision process is when it comes to the aspect of shying away from addressing problems. As if we have a built in problem-avoider mechanism to prohibit us from solving just any problem right away. As if we should only solve those problem we just can not escape?*
+
+> *I found this very interesting. Because my dread for doing paint work i exactly about how I fear getting paint everywhere. So it should have been obvious to me that adding something to prevent paint spattering was the number one priority. But it was not. I had to do quite a lot of writing and reading before this fact stood out to me. I had to be told about this fact. I could not imagine it. I had to convince myself!*
+
+...
+
+{% endraw %}

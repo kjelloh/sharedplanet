@@ -1,0 +1,28 @@
+# Todo: DIY Tools - Consider to 3D print a hand sander block with dust extraction and Abranet sanding sheets?
+
+```#628ec91c``` *As of 2017-12-24 01:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider it could be fun and productive to 3D print a hand sander
+
+1) Consider to try and build the Mikra Hand Sander Block (https://www.mirka.com/product/#/9190143011/Roundy%20Dust-Free%20Hand%20Block)?
+
+…
+
+2) Consider it should be possible to 3D print a sander block with dust extraction wholes?
+
+…
+
+3) Consider to use the Mikra Abranet sanding sheets for good dust extraction and durability (https://www.mirka.com/abrasive/Abrasives_By_Name/#/)?
+
+==&gt; At verktygsboden round Abranet sanding sheets seem to sell 10 pieces for 130 SEK (https://verktygsboden.se/slip-polertillbehoer/abranet-150-mm-10-pack)?  
+==&gt; At verktygsboden 10 meters 75mm sanding skeet seem to sell on rolls for 340 SEK (https://verktygsboden.se/slip-polertillbehoer/abranet-75-mm-10-m-rulle-p180)?  
+…
+
+…
+
+Consider to delve into this idea to design and 3D print a hand sanding block with dust extraction?
+
+{% endraw %}

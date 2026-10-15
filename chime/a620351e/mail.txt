@@ -1,0 +1,39 @@
+﻿Understanding what happens behind the scenes when one download and install packages and software is hard. Consider to design a tool with which one can visualise dependences between local files, remote files and network synchronisation?
+
+1) Consider a tool that creates a 3D-world of actors and data to view for understanding of what happens “being the scenes”?
+
+	==> Consider a 3D model (game style) that is easy to understand (recognise computers, local files, actors in the form of programs)?
+	==> Consider how to view network connections between actors in the network (e.g. Linux local computer versus repository source)?
+	==> Consider how to animate sequence ice of operations (e.g. sudo apt update)?
+	... 
+
+2) Consider to compare with what we can do in Prezi?
+
+	==> Can we imagine visualising these kind of concepts as Prezi presentations?
+	...
+
+3) Consider to visualise Linux Package Advanced Package Management?
+
+	==> The computer has local databases of installed files (managed by dpkg command)
+	==> The computer local list of repository sources (/etc/apt/sources.list)
+	==> The structure of a remote repository (https://wiki.debian.org/RepositoryFormat <https://wiki.debian.org/RepositoryFormat>)
+	==> The sequence of information transfer and operations using apt commands (e.g. sudo apt update, apt list, apt show)?
+	…
+
+4) Consider to apply the same tool to show windows installer from web-sources (or update from web-sources)?
+
+5) Consider to visualise Swedbank PPL distribution of Terminal Parameters?
+
+	==> The local control file contents?
+	==> Triggering through SPDH?
+	==> Access to key files.
+	==> Access to parameter files
+	==> The sequence of operations performed by the terminal on SPDH trigger or self-triggered PPL update?
+	…
+
+6) What more systems of this Network Data Synchronisation idiom can we imagine to visualise?
+	...	
+
+…
+
+Consider to delve into this idea of a general 3D/2D visualiser of complex network data synchronisations like package installers

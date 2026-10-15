@@ -1,0 +1,44 @@
+﻿
+1) My account seems to live here (https://www.borderlinx.com/en/member/my-account)?
+
+	==> It seems they provide local addresses I can use for web-orders and they takes care of delivering items to me in Sweden?
+
+	
+
+	==> But they do not provide any compatible delivery services?
+
+
+
+2) Consider to deactivate their PayPal access?
+
+	==> I think I solved it!
+
+		==> Go to "My Profile" (Kogg wheel) and Account Settings
+
+		
+
+		==> Click “My Settings” in the left pane.
+
+		
+
+		==> Go to “Log in with Paypal” and click “Change” in the left pane
+
+		
+
+		==> You now get a list of Logins made with this Paypal Account.
+
+		
+
+		==> Click “Remove” to the right for the service entries you want to no longer have permissions to use your account for logins.
+
+	DONE!
+
+	==> I sent an e-mail to Paypal customer service 180112 (https://www.paypal.com/se/selfhelp/contact/email/thankyou)
+
+	
+
+	==> I created an account on paypal community (https://www.paypal-community.com/t5/user/viewprofilepage/user-id/7245569/user-messages-feed/latest-contributions)
+
+	
+
+...

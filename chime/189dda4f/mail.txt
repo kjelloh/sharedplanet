@@ -1,0 +1,136 @@
+﻿Could it be a good idea to study the data models implied by existing data streaming formats like XML, JSON, YAML and what have you to get a firm small base to implement as a Tha proof of concept?
+
+	==> Also see “Todo: JSon Darwinet, Meh and Tha - Consider that a Tha model and Meh syntax for Json data structures only is in fact small but complete and may serve well as a proof of concept for Darwinet implementation?”
+
+1) Consider the Yaml “Yet Another Markup Language” data representation encoding (https://en.wikipedia.org/wiki/YAML <https://en.wikipedia.org/wiki/YAML>)?
+
+	==> Yaml seems to define a basic set of types called “scalars”?
+
+“YAML natively encodes scalars (such as strings, integers, and floats), lists, and associative arrays (also known as hashes or dictionaries"
+
+	==> And these are based perl scalar types?
+
+“These data types are based on the Perl programming language, though all commonly used high-level programming languages share very similar concepts. YAML supports both Python-style indentation to indicate nesting, and a more compact format that uses [] for lists and {} for hashes"
+
+	==> Yaml seem to support both its own (python like indentation encoding) and Json style composition syntax for lists [] and {} for objects (in yaml called hashes)?
+
+“YAML supports both Python-style indentation to indicate nesting, and a more compact format that uses [] for lists and {} for hashes"
+
+	==> Consider this page for the definition of Perl (Yaml) basic data types (https://www.tutorialspoint.com/perl/perl_data_types.htm <https://www.tutorialspoint.com/perl/perl_data_types.htm>)?
+
+“Perl has three basic data types: scalars, arrays of scalars, and hashes of scalars, also known as associative arrays"
+
+		==> Note that arrays and hashes does not seem to nest?
+
+	==> Consider this official Yaml page on the syntax (http://www.yaml.org/spec/history/2001-12-10.html <http://www.yaml.org/spec/history/2001-12-10.html>)?
+
+		==> Yes, in Yaml the structures (collections) do nest.
+
+“YAML collections allow for aggregation of data. There are two primary types of collections which YAML supports, sequences and mappings. Most tree structures can be constructed by nesting collections."
+
+		...
+
+2) Consider the JSon encoding?
+
+	==> Also see “Todo: JSon Darwinet, Meh and Tha - Consider that a Tha model and Meh syntax for Json data structures only is in fact small but complete and may serve well as a proof of concept for Darwinet implementation?”
+
+3) Consider the XML encoding (
+
+	==> XML per se does not define “types”, only a syntax for defining named elements or tags (https://www.w3schools.com/xml/xml_syntax.asp <https://www.w3schools.com/xml/xml_syntax.asp>)?
+
+	==> Consider this msdn graphical view of the XML Schema Data Types (https://msdn.microsoft.com/en-us/library/ms256131(v=vs.110).aspx)? <https://msdn.microsoft.com/en-us/library/ms256131(v=vs.110).aspx)?>
+
+	
+
+4) Consider UML data types (http://www.uml-diagrams.org/data-type.html <http://www.uml-diagrams.org/data-type.html>)?
+
+	==> UML seems to define a small set of “primitive” types?
+
+Standard UML primitive types include:
+Boolean,
+Integer,
+UnlimitedNatural,
+String,
+Real.
+
+	==> And defines “structured data types” to those that aggregates attributes (data) and operation (member functions)?	
+
+	==> It seems to me that lists are modelled with the cardinality of a relation (https://stackoverflow.com/questions/33985491/how-to-indicate-a-list-of-types-in-a-class-diagram <https://stackoverflow.com/questions/33985491/how-to-indicate-a-list-of-types-in-a-class-diagram>)?
+
+“When the max cardinality is > 1, the property typically gets a type that is some kind of collection in the technology"
+
+	==> Lists in UML seems to be a Collection with a Multiplicity (http://www.agiledata.org/essays/objectOrientation101.html <http://www.agiledata.org/essays/objectOrientation101.html>)?
+
+“Multiplicity	A UML concept combining the data modeling concepts of cardinality (how many) and optionality."
+
+	==> So basically UML recognises modelling of "structured types” and Collections (of same type)?
+
+		==> Which in turn should map to Lists (repeated values of the same type) or objects/records (some assembly of values of different types)?
+		==> This sis somewhat different from the view that as assembly of value elements cane be accessed either by name (records, objects, maps) or index (array, list, vector)?
+		...
+
+5) consider ASN.1 “Abstract Syntax Notation One” (https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One <https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One>)?
+
+	==> It seems ASN.1 is a kind of “language” that defines protocols data exchange encoding as well as exchange rules?
+
+“Protocol developers define data structures in ASN.1 modules, which are generally a section of a broader standards document written in the ASN.1 language. Because the language is both human-readable and machine-readable, modules can be automatically turned into libraries that process their data structures, using an ASN.1 compiler."
+
+		==> It seems ASN.1 “code” aims at being readable to both humans and ASN.1 compilers?
+
+	==> Consider this list of free online downloadable books about ASN.1 (http://www.oss.com/asn1/resources/books-whitepapers-pubs/asn1-books.html <http://www.oss.com/asn1/resources/books-whitepapers-pubs/asn1-books.html>)?
+
+	==> Hm…The “types” of ASN.1 seems cluttered, e.g., they seem to mix structure, composition and representation into types (https://www.obj-sys.com/asn1tutorial/node10.html <https://www.obj-sys.com/asn1tutorial/node10.html>)?
+
+Simple Types <>
+  <>ASN.1's built-in simple types are shown in the following Table  <https://www.obj-sys.com/asn1tutorial/node10.html#asn1_simple>. The universal class number (tag) and a typical use of each type are also included.   <>  <>
+Simple Types	Tag	Typical Use
+BOOLEAN	1	Model logical, two-state variable values
+INTEGER	2	Model integer variable values
+BIT STRING	3	Model binary data of arbitrary length
+OCTET STRING	4	Model binary data whose length is a multiple of eight
+NULL	5	Indicate effective absence of a sequence element
+OBJECT IDENTIFIER	6	Name information objects
+REAL	9	Model real variable values
+ENUMERATED	10	Model values of variables with at least three states
+CHARACTER STRING	*	Models values that are strings of characters from a specified characterset
+
+
+	==> Consider this complete list of ASN.1 “Universal Tags” (types?) (https://www.obj-sys.com/asn1tutorial/node124.html <https://www.obj-sys.com/asn1tutorial/node124.html>)
+
+Listing of Universal Tags 
+
+Universal Tag Number	Description
+0	reserved for BER
+1	BOOLEAN
+2	INTEGER
+3	BIT STRING
+4	OCTET STRING
+5	NULL
+6	OBJECT IDENTIFIER
+7	ObjectDescriptor
+8	INSTANCE OF, EXTERNAL
+9	REAL
+10	ENUMERATED
+11	EMBEDDED PDV
+12	UTF8String
+13	RELATIVE-OID
+16	SEQUENCE, SEQUENCE OF
+17	SET, SET OF
+18	NumericString
+19	PrintableString
+20	TeletexString, T61String
+21	VideotexString
+22	IA5String
+23	UTCTime
+24	GeneralizedTime
+25	GraphicString
+26	VisibleString, ISO646String
+27	GeneralString
+28	UniversalString
+29	CHARACTER STRING
+30	BMPString
+
+	…
+
+Consider to update this Todo: if appropriate for any insights into what constitutes a good small set meta information to represent (model) data in an efficient way?
+...

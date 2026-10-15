@@ -1,0 +1,13 @@
+﻿I have never been able to fixate the filament feed tube of my Cetus 3D MK1 printer to the top cover of the extruder assembly and may want to 3D print a "new" and better one? 
+
+1) It seems the Cetus 3D MK1 (First generation) printable parts can be downloaded here (https://www.cetus3d.com/product/cetus-mk1-printable-parts/ <https://www.cetus3d.com/product/cetus-mk1-printable-parts/> )?
+
+
+
+2) It seems it is the file "extruder PCB cover 11.24.STL" that is the top cover with filament feeder tube attachment?
+
+
+
+	NOTE: It seems my macOS is able to preview STP-files :) !!
+
+...

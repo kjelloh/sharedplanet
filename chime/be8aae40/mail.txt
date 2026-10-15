@@ -1,0 +1,60 @@
+﻿It seems it could prove valuable to try out Mahrs wireless callipers to see what I can learn and if ether is an option to develop a Darwinet open standard for the same wireless services?
+
+1) Consider to buy and try out Mahr “MarCal 16 EWRi STARTPAKET” (See offer in attached pdf)?
+
+	
+
+2) Consider to investigate if the Mahr protocol in open (and what it is)?
+
+	==> Consider this Mahr video on the wireless protocol (https://www.mahr.com/videos/MarConnect--Integrated_Wireless--FI--wireless_Measuring_devices--EN--MIP.mp4 <https://www.mahr.com/videos/MarConnect--Integrated_Wireless--FI--wireless_Measuring_devices--EN--MIP.mp4>)?
+
+		==> It seems the USB dongles “MarConnect e‑Stick‑ och i‑Stick‑mottagare” are some form of Radio 2,4 GHz to RS232 converters?
+
+	==> Consider this Mahr web page for Mahrcom Professions 5.2 software interface (https://www.mahr.com/en/Services/Production-metrology/Products/Precision-gages/MarConnect---Data-Processing/MarConnect---MarCom-software/?ContentID=191066 <https://www.mahr.com/en/Services/Production-metrology/Products/Precision-gages/MarConnect---Data-Processing/MarConnect---MarCom-software/?ContentID=191066>)?
+
+	
+
+	==> Consider this pdf “Programmers Guide” that comes with the downloadable zip?
+
+	
+
+		==> It seems to be for windows only (comes as a DLL)?
+
+“ FTDI provides DLL and virtual COM port (VCP) application interfaces to its drivers. This document provides the application programming interface (API) for the FTD2XX DLL function library. "
+
+
+		==> Or, they provide both a DLL (FTD2XX.DLL) and something called a “Virtual COM port”?
+
+
+D2XX	FTDI’s proprietary “direct” driver interface via FTD2XX.DLL 
+
+VCP		Virtual COM Port 
+		
+
+	==> On the other hand they state that drivers are available also for OS X and Linux?
+
+For Linux, Mac OS X (10.4 and later) and Windows CE (4.2 and later) the D2XX driver and VCP driver are mutually exclusive options as only one driver type may be installed at a given time for a given device ID. 
+
+In the case of a Windows system running the CDM driver, applications may use either the D2XX or VCP interface without installing a different driver but may not use both interfaces at the same time. 
+
+As the VCP driver interface is designed to emulate a legacy COM port, FTDI does not provide documentation on how to communicate with the VCP driver from an application; the developer is referred to the large amount of material available on the Internet regarding serial communication.
+
+The D2XX interface is a proprietary interface specifically for FTDI devices. This document provides an explanation of the functions available to application developers via the FTD2XX library. 
+
+	==> Consider this Mahr web-page on their term “Industry 4.0” (https://www.mahr.com/en/Services/Production-metrology/Know-how/Industry-4.0/?ContentID=31994 <https://www.mahr.com/en/Services/Production-metrology/Know-how/Industry-4.0/?ContentID=31994>)?
+
+		Hmm.. Seems to be most “Marketing Wankery”…?
+
+
+3) Consider to sniff the RS232 traffic from the Mahr e-stick / i-stick to see if the data received is usable?
+
+	==> Consider we can reverse engineer the RS232 interface by using the FTD2XX.DLL API or sniff the DLL traffic using some existing Mahr application?
+
+		…
+
+…
+
+Consider to delve deeper into Mahr wireless interface for their measuring devices?
+...
+
+

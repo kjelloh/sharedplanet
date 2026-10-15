@@ -1,0 +1,139 @@
+# Todo: DIY - Consider to check out (professional) tinker board manufacturer tinkerforge (and their Flir sensors)?
+
+```#88fa1259``` *As of 2018-01-12 12:25*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems the manufacturer Tinkerforge aims at providing professional electronics for makers?
+
+1) Tinkrforge seems to live here (<https://www.tinkerforge.com/en/>)?
+
+2) They seem to provide a series of professional electronic shields, boards, extensions for micro controllers called brick (<https://www.tinkerforge.com/en/home/how-it-works/>)?
+
+> “Tinkerforge is a system of building blocks for professional makers.”
+
+![](<Screen Shot 2018-01-12 at 11.41.33.png>)
+
+==&gt; It seems Bricks are the micro controllers interfacing the “outer world” (<https://www.tinkerforge.com/en/doc/Primer.html>)?
+
+> Our products are divided into five different categories:
+
+- [Bricks](https://www.tinkerforge.com/en/doc/Primer.html#primer-bricks): Stackable microcontroller modules for sensing and controlling over USB.
+- [Bricklets](https://www.tinkerforge.com/en/doc/Primer.html#primer-bricklets): Non-stackable sensor/actuator modules that extend the features of a Brick.
+- [Master Extensions](https://www.tinkerforge.com/en/doc/Primer.html#primer-master-extensions): Modules that offers alternatives to the USB interface of [Master Bricks](https://www.tinkerforge.com/en/doc/Hardware/Bricks/Master_Brick.html#master-brick) (Wi-Fi, Ethernet, RS485).
+- [Power Supplies](https://www.tinkerforge.com/en/doc/Primer.html#primer-power-supplies): Modules to power a stack of Bricks, plugged below the stack.
+- [Accessories](https://www.tinkerforge.com/en/doc/Primer.html#primer-accessories)
+
+  
+==&gt; This seem to be the Bricks available in the Tinkerforge system (<https://www.tinkerforge.com/en/doc/Primer.html#primer-bricks>)?
+
+> “Bricks are 4 x 4cm (1.57 x 1.57") modules that can be controlled by devices, such as (embedded) PCs, over their Mini-USB connector. Every Brick basically performs one task. There are Bricks that perform complex sensor tasks (e.g. IMU Brick 2.0), communicate (e.g. Master Brick) and drive motors (e.g. DC Brick)."
+
+![](<Screen Shot 2018-01-12 at 11.44.53.png>)
+
+==&gt; It seems Bricks may be “augmented” with Bricklets (<https://www.tinkerforge.com/en/doc/Primer.html#primer-bricklets>)?
+
+> “Bricklets can be used to extend the features of Bricks. ... to measure physical quantity such as rotation, voltage, current and ... for control purposes such as switching relays, digital input/output and alphanumeric output on LCDs.”
+
+![](<Screen Shot 2018-01-12 at 11.48.00.png>)
+
+==&gt; It seems Master Extensions are used to add communication protocols (<https://www.tinkerforge.com/en/doc/Primer.html#primer-master-extensions>)?
+
+> “Master Extensions extends the communication interface of Master Bricks. There are cable based (RS485, Ethernet) and wireless Master Extensions (WIFI) available."
+
+![](<Screen Shot 2018-01-12 at 11.50.46.png>)
+
+3) Consider the Tinkerforge Flir thermal imaging sensor Bricklet (<https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Thermal_Imaging.html#thermal-imaging-bricklet>)?
+
+==&gt; It seems to be based on a Flir 80x60 Thermal Imaging sensor?
+
+![](<Screen Shot 2018-01-12 at 11.59.19.png>)
+
+==&gt; It seems to sell for €250 (<https://www.tinkerforge.com/en/shop/bricklets/thermal-imaging-bricklet.html>)?
+
+4) This seems to be TinkerForge C++ API and tool chain (<https://www.tinkerforge.com/en/doc/Software/API_Bindings_C.html#api-bindings-c>)?
+
+==&gt; The binding between the developing platform (Windows/Linux/MacOS) seems to be C++ source code?
+
+> “Because there is no precompiled library for the C/C++ bindings there is nothing to install as such. The recommended way of using the bindings is to include their source code directly into your C/C++ project."
+
+==&gt; It seems each Brick has its own UID to be used to connect to it?
+
+> In the example HOST and PORT specify at which network address the Stepper Brick can be found. If it is connected locally to USB then localhost and 4223 is correct. The UID value has to be changed to the **UID of the** connected Stepper **Brick**, which you can figure out using **Brick Viewer**:
+
+  
+> ```
+> #define HOST "localhost"
+> #define PORT 4223
+> #define UID "XYZ" // Change to your UID
+> ```
+
+
+
+==&gt; They seem to support a set of C++ tool chains and IDE:s?
+
+GCC
+
+Visual Studio
+
+QT Creator
+
+Orwell Dev-C++ (<https://en.wikipedia.org/wiki/Dev-C%2B%2B>)
+
+==&gt; This seems to be the C++ example code for a silent stepper TinkerForge system (<https://www.tinkerforge.com/en/doc/Software/Bricks/SilentStepper_Brick_C.html#silent-stepper-brick-c-examples>)?
+
+> ```
+> #include <stdio.h>
+
+> #include "ip_connection.h"
+> #include "brick_silent_stepper.h"
+
+> #define HOST "localhost"
+> #define PORT 4223
+> #define UID "XXYYZZ" // Change XXYYZZ to the UID of your Silent Stepper Brick
+
+> int main(void) {
+>     // Create IP connection
+>     IPConnection ipcon;
+>     ipcon_create(&ipcon);
+
+>     // Create device object
+>     SilentStepper ss;
+>     silent_stepper_create(&ss, UID, &ipcon);
+
+>     // Connect to brickd
+>     if(ipcon_connect(&ipcon, HOST, PORT) < 0) {
+>         fprintf(stderr, "Could not connect\n");
+>         return 1;
+>     }
+>     // Don't use device before ipcon is connected
+
+>     silent_stepper_set_motor_current(&ss, 800); // 800mA
+>     silent_stepper_set_step_configuration(&ss, SILENT_STEPPER_STEP_RESOLUTION_8,
+>                                           true); // 1/8 steps (interpolated)
+>     silent_stepper_set_max_velocity(&ss, 2000); // Velocity 2000 steps/s
+
+>     // Slow acceleration (500 steps/s^2),
+>     // Fast deacceleration (5000 steps/s^2)
+>     silent_stepper_set_speed_ramping(&ss, 500, 5000);
+
+>     silent_stepper_enable(&ss); // Enable motor power
+>     silent_stepper_set_steps(&ss, 60000); // Drive 60000 steps forward
+
+>     printf("Press key to exit\n");
+>     getchar();
+>     silent_stepper_disable(&ss);
+>     silent_stepper_destroy(&ss);
+>     ipcon_destroy(&ipcon); // Calls ipcon_disconnect internally
+>     return 0;
+> }
+> ```
+
+
+
+…
+
+Consider to delve into and try out the Tinkerforge system of microcontrollers and extensions for fund and productive DIY electronics project?
+
+{% endraw %}

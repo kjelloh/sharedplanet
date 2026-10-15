@@ -1,0 +1,93 @@
+﻿Consider we may implement the standard value identifiers and scripting language identifiers by allowing an actual model instantiation to extend (specialize) a basic-model and some language-model?
+
+1) Consider how we may implement Meta Value Model ”inherit” or ”specialization”?
+
+	==> Consider the meta-value ”specialized”?
+
+		(declaration int (specialized number)) // would mean identifier ”int” inherits from (is a specialized) number)?
+
+	==> Consider we need a way to specify what may be specialized in the source meta-value?
+
+		==> Compare C++ ”virtual” that states that a functions may be specialized?
+
+	…
+
+2) Consider we may always allow Cloning of another model (by simply defining it to be the same value as another model)?
+
+	==> Consider cloning still means the custom model still shares the cloned model (it is a persistent data structure)?
+	==> But cloning allows mutation of the cloned model (new immutable state affects only custom model, not the cloned one)?
+
+	==> Thus, cloning say a Darwinet MIV will have mutations to be synchronized only in the domain of the clone (not in the domain of the source model)?
+
+	...
+
+3) Consider to define the basic value compositions as a Meta Value Model to inherit from?
+
+			BasicMetaValueModel // Basic value compositions
+					^
+					| Specialize
+					|
+			CustomMetaValueModel // Custom value compositions
+
+
+	==> Consider it is this basic model defines ”array”, ”record”, ”number”, ”text” etc…?
+	...
+
+4) Consider to add scripting language identifiers as a Meta Value Model from which to inherit to add scripting language processing abilities?
+
+			BasicMetaValueModel // Basic value compositions
+					^
+					| Specialize
+					|
+			ScriptingLanguageMetaValueModel
+					^
+					| Specialize
+					|
+			CustomMetaValueModel // Custom value compositions with scrip function abilities
+
+	==> It seems we need to inherit from a Scripting Language Model to be able to store scripts as executable code in the model (otherwise we would not know how to execute this code)?
+
+			==> But extending a custom model with scripting engine model enable external client to evaluate scripts on the model?
+
+			BasicMetaValueModel // Basic value compositions
+					^
+					| Specialize
+					|
+			CustomMetaValueModel // Custom value compositions (can’t execute function as scripts - script language values not known)?
+					^
+					| Specialize
+					|
+			ScriptingLanguageMetaValueModel // External client may process the Custom model with these scripts - script language values are known?
+
+	==> Consider Meta Value Model identifiers for our Meta Lisp language?
+
+		==> Consider ”append” is a Meta Lisp Model function?
+
+	==> Consider C++ language scripting model?
+
+		C++: int count = 5;
+
+		Value<1> (declare int (specialized number)) // C++ model ”int” type
+		Value<0> ((declare count int) 5)
+
+		C++: 	class A {
+					int x;
+					int b;
+				}
+
+				A a{2,3}; // auto a=A{2,3}, A a = {2,3}
+
+		Meta<2> (declare class (specialized record)) // C++ model ”class”
+		Meta<1> ((declare class A) (declare int x) (declare int b)) // A is record with named members ”x”, ”b” both of Value<1> int
+		Meta<0> ((declare a A) (x 2) (b 3)) // a is instance of A and member values are instance of value 2 and 3.
+
+	==> Consider Clojure language scripting model (https://clojure.org/index)?
+
+		See ”Todo: Meta Value Model - Consider to compare idioms in our Meta Lisp language with the Clojure language?”
+
+	…
+
+…
+
+Consider to delve into this idea to enable Meta Values to be composed using inheritance (specialization)?
+...

@@ -1,0 +1,64 @@
+# Todo: Darwinet - Consider to study "Confluently Persistent Tries for Efficient Version Control" as a base for design decisions for Darwinet File Systems?
+
+```#ebb29082``` *As of 2017-02-17 12:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what can we learn from following up on the paper ”Confluently Persistent Tries for Efficient Version Control” when it comes to design decisions and possible implementations of Darwinet File Systems?
+
+==&gt; Also see ”Todo: Darwinet - Consider to delve into available C++ information and solutions to implement the MIV as a Confluent Persistent (Immutable) Data Structure?"
+
+1) The paper ”Confluently Persistent Tries for Efficient Version Control” seems to live here (<http://erikdemaine.org/papers/ConfluentTries_Algorithmica/paper.pdf>)?
+
+...
+
+2) Consider this paper contains good references and data about typical file directory structure complexity and depths?
+
+==&gt; The paper seems to analyze how efficient different immutable persistent data structures are to represent typical directory trees of version control projects (subversion)?
+
+==&gt; Note: This may or may not have any relevance to file directory structures for other purposes or vertsion control systems (e.g., Git)?
+
+…
+
+3) The paper seems to define a set of Persistent Data Structures suitable to represent version controlled file directory contents?
+
+4) It seems a ”Finger Tree” is a purely functional data structure (and thus all structures in this paper are finger trees)?
+
+==&gt; Consider the wikipedia page on Finger Trees (<https://en.wikipedia.org/wiki/Finger_tree>)?
+
+> ”*A finger tree is a purely functional data structure used in efficiently implementing other functional data structures.*"
+
+==&gt; It seems Finger Trees are in the core of languages like Haskel and C#?
+
+> ”*They have since been used in the Haskell core libraries (in the implementation of Data.Sequence), and an implementation in OCaml exists&#91;1&#93; which was derived from a proven-correct Coq specification;&#91;2&#93; and a C# implementation of finger trees was published in 2008; the Yi text editor specializes finger trees to finger strings for efficient storage of buffer text. Finger trees can be implemented with or without lazy evaluation,&#91;3&#93; but laziness allows for simpler implementations.*"
+
+==&gt; Consider this page on Finger Trees (<http://www.staff.city.ac.uk/~ross/papers/FingerTree.html>)?
+
+==&gt; It seems a Finger tree is an extension of a structure in Chris Okasaki thesis ”Purely Functional Data Structures” (<https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf>)?
+
+> > ”*This is an expanded version of Okasaki's thesis, in which implicit deques are discussed in section 8.4.*"
+
+==&gt; It seems a Finger Tree is an extension of a structure in Chris Okasaki book ”Purely Functional Data Structures” (<http://www.bokus.com/bok/9780521663502/purely-functional-data-structures/>)?
+
+> > ”*Finger trees can be viewed as an extension of the implicit deques discussed in section 11.1*"
+
+==&gt; This seems to be a page with examples of Finger Trees (<http://www.staff.city.ac.uk/~ross/papers/FingerTree/more-trees.html>)?
+
+![](<Finger Tree Examples.tiff>)
+
+==&gt; It would seem a Finger Tree Node is either 1) An Empty Node, 2) Has a Single Sub-node or 3) Has a Left and right Digit sub-Node and a center Finger Tree sub-node.
+
+==&gt; It seems a Digit is an Edge (a connection to 1, 2,3 or four sub-nodes)?
+
+==&gt; It seems a data-node is one with 1 or 2 sub-elements or arbitrary type?
+
+5) …
+
+…
+
+Consider to delve deeper into the paper "Confluently Persistent Tries for Efficient Version Control” to follow up on data structures and their application properties for design decisions of Darwinet MIV based File System?
+
+...
+
+{% endraw %}

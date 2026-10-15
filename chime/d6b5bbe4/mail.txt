@@ -1,0 +1,22 @@
+﻿Update this Todo with notes I made from ReqTest seminar about ideas and pointers for a better requirement administration and testing tool.
+
+See copy of the notes below.
+
+> Begin forwarded message:
+> 
+> From: "Kista Scinece Tower Workstation"<sky.office@vasakronan.se>
+> Subject: Ett skannat dokument från Kista Science Tower
+> Date: 15 Sep 2015 16:38:54 CEST
+> To: kjell-olov.hogdahl@itfied.se
+> Reply-To: sky.office@vasakronan.se
+> 
+> Var vänlig och öppna dokumentet det är skannat från våning 31 KST
+> 
+> Number of Images: 2
+> Attachment File Type: PDF
+> 
+> Device Name: Kista Scinece Tower Workstation
+> Device Location: Kista Science Tower, 31tr
+> 
+> Med vänliga hälsningar Kista Science Tower våning 31
+

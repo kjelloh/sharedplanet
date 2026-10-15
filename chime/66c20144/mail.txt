@@ -1,0 +1,30 @@
+﻿I really like the idea of a "first principle" bike front suspension with low weight, friction and ideally no moving parts :)
+
+	==> Also see "Todo: Consider to investigate and optionally try out the Open SCAD software for script-based 3D modelling of mechanical designs?"
+	==> Also see "Todo: Power Feeder - Consider a reciprocating (alternating) push feeder?"
+
+The main idea here is to take the strandbeest walking leg linkage design and use it for the bicycle front suspension design?
+
+I imagine mounting the wheel axes through the "foot" of the linkage mechanism and have the driver rotation be replaced with a spring.
+
+We can accomplish this by mounting two strandbeest "legs" on each side of the front wheel and attach then to the crown and steering tube.
+
+
+Copyright https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Strandbeest_Leg_Proportions.svg/300px-Strandbeest_Leg_Proportions.svg.png <https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Strandbeest_Leg_Proportions.svg/300px-Strandbeest_Leg_Proportions.svg.png> 
+
+From the example above (from wikipedia article https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Example/Strandbeest <https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Example/Strandbeest> ) it seems if we use the bottom part of the red path as the travel of the front wheel axel up-and-down we need the whole mechanism to be roughly twice the width of the travel?
+
+So a travel of 120mm (red bottom part of path) would mean a mechanism that is 240mm in diameter (but slightly oval i shape).
+
+One revolution of the green path results in one revolution of the red path. So give-or-take we need a spring to be able to travel around half the revolution of the green path.
+
+Note though that the ration between the travel of the driving green path and the red "foot" travel is not linear. I still think though we can expect that half a springed revolution of the green path will suffice?
+
+FINALLY - I imagine we can make this mechanism as a compliant mechanism? We then get a springed linear motion along the bottom red path without any moving parts?!
+
+1) In the naive approach we "simply" makes the joints compliant and place a torsion spring at the drive (green path in figure)?
+2) If we think about it, maybe some of the linkage arms in the design can be bending to somehow enhance the design and simplify the mechanism (get rid of a spring at the drive location)?
+
+...
+
+ 

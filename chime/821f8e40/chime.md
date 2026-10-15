@@ -1,0 +1,140 @@
+# Todo: Follow up on RAD Studio 10 Seattle seminar notes
+
+```#821f8e40``` *As of 2015-10-03 14:24*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Stephen Ball demonstrated RAD Studio 10 Seattle news at stockholm seminar 29 september.
+
+”*Varmt välkommen imorgon på eventet i Stockholm tisdagen den 29 september 2015.*
+
+*Citykonferensen Ingenjörshuset <http://www.citykonferensen.se/vaegbeskrivning>  
+Malmskillnadsgatan 46, 111 84 Stockholm  
+Lokal: Celsiussalen  
+Registreringen börjar 12.45 och vi avslutar dagen ca kl 17.00. Seminariet är kostnadsfritt och vi bjuder på fika under dagen.  
+*
+
+*Malin & David*"
+
+\*) Neighbor attendant told me about Code Signing tools from Thawte. Check them out (<https://www.thawte.com> ?)
+
+\*) The speaker blogs about RAD stido and coding (<https://delphiaball.co.uk>). Investigate what can be found there.
+
+\*) Embarcadero publish close-to-coding information at skillsprint. They publish 20 minutes a week for free about how-to-coding tips fro RAD Studio (<https://www.embarcadero.com/landing-pages/skill-sprints> ?)
+
+\*) The speaker stated the tool has 3 million users.
+
+\*) It has 14 internal compilers to enable production of native code to all the different platforms.
+
+\*) The world now has 2,5 Billion mobile users. And 1 biljon by a device each year.
+
+\*) Nokia Lumia with Windows 10 will be able to run Android apps (<http://gadgets.ndtv.com/apps/news/windows-10-mobile-gets-unofficial-google-play-access-to-android-apps-728732> ?)
+
+\*) EGO: Check out what protocols that are used for IoT (Internet of things). It seems they use HTML 5 framework and REST interfaces in that framework (<http://electronicdesign.com/iot/understanding-protocols-behind-internet-things>)?
+
+\*) Embarcadero focus on the importance of local cashing when using cloud services. Consider to study this and relate to Darwinet that at its core uses local cashing?
+
+\*) Indy is replaced with new core HTTP-classes. This means target code will now use platform provided SSL instead of having to rely on separately deployed OpenSSL components.
+
+\*) Check out Windows 10 ”Contracts” mechanism. RAD Studio 10 now have support for them? (<https://msdn.microsoft.com/en-us/library/windows/apps/dn706135.aspx>)
+
+\*) RAD Studio seems to have a TShareContract component (<http://docwiki.embarcadero.com/RADStudio/Seattle/en/Sharing_Content_Using_the_Sharing_Contract>)
+
+\*) RAD Studio 10 now provides a C++11 compiler for Win32 targets!
+
+\*) RAD Studio multithreading components examples (tutorials) are available at Steven Balls blog (<https://delphiaball.co.uk/2014/09/05/quick-introduction-to-parallel-programming-with-xe7/>)
+
+\*) What is ”ARC for mobile”?
+
+==&gt; Seems to refer to Aragon Research on mobile and IoT? (<http://www.slideshare.net/fiberlink/beyond-byod-securing-iot-in-the-enterprise-for-employee-productivity>). Maybe Tteven was referring to their research on the future for mobile?
+
+==&gt; No, more probable he was referring to ”Automatioc Refernce Counting” (<http://docwiki.embarcadero.com/RADStudio/Seattle/en/Automatic_Reference_Counting_in_Delphi_Mobile_Compilers>)
+
+\*) RAD Studio 10 now has a multi-threaded compiler. (<http://docwiki.embarcadero.com/RADStudio/Seattle/en/What's_New#Parallel_Compilation_for_Clang-enhanced_C.2B.2B_Compilers>)
+
+\*) Check out the ”Update Subscription” model of buying RAD Studio. Is this better for me instead of upgrading manually? (<https://www.embarcadero.com/products/rad-studio/update-subscription>)
+
+==&gt; Upgrade subscription for ”Professional” is listed as 674 Euro.
+
+\*) Ctrl-shift-A starts and stops macro recording.
+
+\*) Check out the ”Source Code Repositories” integration of RAD Studio?
+
+\*) Check out DUnitx framework for unit testing? (<http://docwiki.embarcadero.com/RADStudio/XE8/en/DUnitX_Overview> and Skill-sprint <https://www.youtube.com/watch?v=2blzztz_eNI>)
+
+\*) getIT seems to be a cool feature of RAD Studio to easily add and remove IDE extensions.
+
+\*) EGO: Consider to make Darwinet available through Embarcadero GetIt?
+
+\*) Check out the new TACtivityIndicator? (<http://blogs.embarcadero.com/sarinadupont/2015/09/02/getting-started-with-the-new-windows-10-vcl-ui-controls-in-rad-studio-10-seattle/>)
+
+\*) Check out WinRT framework. (<https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx>, <http://blog.marcocantu.com/blog/2015-june-windows10-notifications-vcl-winrt.html>)
+
+==&gt; WinRT seems to to be available for C++ development!
+
+\*) EGO: Consider to arrange an AW for C++ RAD Studio developers in stockholm?
+
+\*) Does WinRT have OCR Support?
+
+==&gt; LEadTools seems to sell WinRT components for OCR (<https://www.leadtools.com/sdk/winrt?SrcOrigin=Google-CPC-%2Bwinrt%20%2Bocr&MatchType=b&AdPos=1t1&CampaignType=International&gclid=CNq0qcqTpsgCFSjncgod5-4PXw>)?
+
+==&gt; Microsoft seems to provide a free one for Windows 8? (<http://www.nuget.org/packages/Microsoft.Windows.Ocr/>)
+
+\*) Check out the TNoticiationCenter component in RAD Studio? (<http://docwiki.embarcadero.com/Libraries/XE7/en/FMX.Notification.TNotificationCenter>, <http://docwiki.embarcadero.com/CodeExamples/XE8/en/FMX.Notification.Mac_(Delphi))>
+
+\*) Check out the new TRelativePanel component that adjusts control locations at run-time (<http://docwiki.embarcadero.com/Libraries/Seattle/en/Vcl.WinXCtrls.TRelativePanel>, <http://docwiki.embarcadero.com/CodeExamples/Seattle/en/VCL.RelativePanel_Sample>)
+
+\*) Check out the (new?) VCL search box (<http://docwiki.embarcadero.com/CodeExamples/Seattle/en/VCL.SearchBox_Sample>, <http://docwiki.embarcadero.com/Libraries/Seattle/en/Vcl.WinXCtrls.TSearchBox.OnInvokeSearch>)
+
+==&gt; Seems the control invokes an OnSerach event as its core functionality (and probably also executes a ”Searching animation”?)
+
+\*) Check out the new TSplitView with a left column of icons (to select a view?) and a right panel to show selected view ((<http://docwiki.embarcadero.com/Libraries/Seattle/en/Vcl.WinXCtrls.TSplitView>, <http://docwiki.embarcadero.com/CodeExamples/Seattle/en/VCL.SplitView_Sample>)
+
+==&gt; It is document as ”A container for other controls that can be opened and closed..”. Is that all?
+
+\*) Check out the TToggleSwitch (is it a good idea as opposed to a check-box?) (<http://docwiki.embarcadero.com/Libraries/Seattle/en/Vcl.WinXCtrls.TToggleSwitch>, <http://docwiki.embarcadero.com/CodeExamples/Seattle/en/VCL.ToggleSwitch_Sample>)
+
+\*) Check out the MultiPlatformApp demo as base to develop my own multi-platform applications (e.g. darwinet)? (Could not find it on the web. Maybe its a new one provided with the installation?)
+
+\*) EGO: Propose a way for Swedbank to monitor activities of Testbench users through the TCP/IP connection to Swedbank IT (Is this even possible?)
+
+\*) Check out VCL Live bindings (e.g. for Testbench app)?
+
+\*) Added support for Android Services (but only for Delphi).
+
+\*) What is the difference between ”Bluetoth” and ”Bluetooth LE”?
+
+==&gt; Bluetooth LE seems to mean ”Low Energy” (<http://www.bluetooth.com/Pages/low-energy-tech-info.aspx>)
+
+==&gt; Thus this is a base of Bluetooth Smart?
+
+\*) Study Bluetooth Beacon. It seems to be a bluetooth technology where a device sends out ”Hello, Hello” to be picked up by a device. The beacon also sends information that enables the client to determine the distance to the beacon?
+
+\*) RAD Studio Beacon components enables an applicagtion to detect and connect with ”beacons” (<http://docwiki.embarcadero.com/RADStudio/XE8/en/Using_Beacons>)
+
+==&gt; Beacons are documented as ”A beacon is a Bluetooth Low Energy device including some information in its advertising data, specifically in the "Manufacturer Specific Data" described in "Bluetooth Specification Version 4.1, page 2023" <https://www.bluetooth.org/en-us.”>
+
+\*) The demo showed a REST-based text and sound translate service. Cool! What REST-service did they use? Could it have been the google service (<https://cloud.google.com/translate/v2/using_rest>)?
+
+\*) JSON I know, but what is BSON?
+
+==&gt; ”BSON is the binary encoding of JSON-like documents that MongoDB uses when storing documents in collections” at (<http://stackoverflow.com/questions/12438280/what-is-bson-and-exactly-how-is-it-different-from-json>)
+
+==&gt; Seems to be defined at <http://bsonspec.org?>
+
+\*) RAD studio provides AppAnalytics but it requires hosting on Embarcadero server so it is not something we would like to use?
+
+\*) RAD Studio has implemented AppAnalytics based on ”Nuget” framework (<http://www.nuget.org>)?
+
+==&gt; Nuet is documented as ”NuGet is the package manager for the Microsoft development platform including .NET. The NuGet client tools provide the ability to produce and consume packages. The NuGet Gallery is the central package repository used by all package authors and consumers.”
+
+==&gt; NuGet is for Visual Studio. But NuGet states how to install C# app support for Embarcadero AppAnalytics (<https://www.nuget.org/packages/AppAnalyticsCSharp/>)
+
+\*) Compare Interbase mechanism ”Change Views” (<http://docwiki.embarcadero.com/InterBase/XE7/en/Change_Views>) with Darwinet Deltas?
+
+\*) Check out the Raize VCL components (<http://www.raize.com/devtools/rzcomps/>, <https://www.componentsource.com/product/raize-components?gclid=CI%2Db96mlpsgCFQgMcwod33EFrg>)? Are they Good? IF we use them, will they be available in the future or forward compatible with RAD Studio upgrades and OS upgrades?
+
+==&gt; Raize ”Konopka Signature VCL Controls” (<http://www.embarcadero.com/es/products/konopka-signature-vcl-controls>)
+
+{% endraw %}

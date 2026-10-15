@@ -1,0 +1,23 @@
+# Todo: Define the Super Curious as the "Collaborating Human" in contrast to the Curious as the "Enlightened Human"
+
+```#6155a39c``` *As of 2015-09-05 11:20*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to motivate the benefits of being Super Curious over belong Curious in terms of ideals.
+
+1) The Super Curious wants to collaborate. The Curious wants to be Enlightened.  
+2) Her relations to truths is based on the benefits it provides in terms of what acts-in-faith result in. If acts-in-faith between truths prohibits collaboration, then the value of these truths can be questioned.  
+3) Taking a stand for right and wrong prohibits collaboration. The ungrounded core believes of different belief systems are per se ungrounded and thus we can’t tell if they are right or wrong. But we can evaluate what they make us do and if such actions are the ones we need and can benefit from.  
+…
+
+Going from being Curious to being Super Curious we change focus of our ideals.
+
+a) We go from the Enlightened Individual to the Collaborating Dvidiual.  
+b) We go from the Secure human to the Trusting human.  
+c) We go from the Truth Seeing human to the Best Informed human.  
+d) We go from the Goal Seeking human to the Attentive Human.  
+...
+
+{% endraw %}

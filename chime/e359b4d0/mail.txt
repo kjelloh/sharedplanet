@@ -1,0 +1,178 @@
+﻿It seems the "Railway Oriented Programming" idiom (model) as talked about by Scott Wlaschin may be a good way to reason about and understand how monads and monoids are used in programming?
+
+1) Consider this talk by Scott Wlaschin (https://vimeo.com/97344498 <https://vimeo.com/97344498>)?
+
+	==> It seems the Monad here is the ”two track” (happy and error path) function made from single path function?
+
+		result_type f(input_type) ==> Monad<result_type> Monad<input_type>::bind?
+
+	==> At 14:30 he makes funny references to the Monads ”Maybe” and ”Either” :)
+
+		==> When you want to chain together function calls but handle errors as well - Use a Monad!
+
+			==> Seems to rime well with a mathematical monad being about defining an Algerbra for a Category?
+			==> The ”Algebra” here is how and when to call the functions?
+
+	==> At 17:45 he defines functions as transformations between Sets (value level)
+
+	
+
+
+		==> This is exactly my ”value level” where functions maps values of one Set to another set of Values!
+
+	==> At 20:55 he describes how to glue together functions that takes one thing but returns two (success or failure)
+
+	
+
+		==> And uses the analogy to make a new function that actually also takes two inputs!
+
+	
+
+	==> He defines bind as what takes a ”maybe returning function” (a switch) into ”maybe input and return function”.
+
+	
+
+		==> And this is the Monad?
+
+	==> Thus bind makes ”switch” functions (functions that may fail and thus can’t be composed) into compose-able ”two-track” functions
+
+		==> Thus bind takes a switch-function and returns a two-track-input function?
+
+	
+
+		...
+
+	==> Then we may use bind on each switch and compose the resulting two-track functions
+
+	
+
+
+		==> It seems operator>>(two-track-output, two-track-inout-function) and returns two-track-output (the result of calling the two-track-input function with the two-track-input value)
+		==> two-track-output operator>>(two-track-inout, two-track-input-function) { return two-track-inout-function(two-track-input)}?
+
+	==> We may now defined a composed two-track function
+
+	
+
+	==> Which we may write more clearly by defining ">> bind" as the >>= operator
+
+		==> It seems if operator>>(two-track-result, two-track-input-function) and returns a two-track-output result,…
+
+			==> It actually seems to rime very well with this github C++ monad project (https://gist.github.com/brotchie/3134600 <https://gist.github.com/brotchie/3134600>)?
+
+template <template <typename...> class F, typename A, typename B>
+static F<B> operator >>(F<A> a, F<B> b) {
+    function<F<B>(A)> f = [b](A){ return b; };
+    return a >= f;
+}
+
+			==> BUT: This definition is LAZY! (It actually takes the ”previous” two-track-input function F<A> and returns the new two-track-output function F<B>?
+
+		==> Then operator>>=(two-track-result, switch-function) and returns a two-track-output result?
+
+			==> i.e. operator>>= knows how to make not-composable switch-fucntions into composable two-track-inout functions?
+
+
+	
+
+		==> In C++ this seems to be ?? operator>>=(twoTrackInput, SwitchFunction) (Still a bit unclear what it returns)?
+
+
+	==> Is seems map is just like bind but it takes single-track functions instead of switch functions?
+
+	
+
+		==> he also states that ”map" is sometimes called ”lift”
+
+			==> This seem to be the ”fmap” of the Functor in the github project ()?
+
+
+static function <Maybe<B>(Maybe<A>)> fmap(function <B(A)> f) {
+        return [f](Maybe<A> m) -> Maybe<B> {
+            if (m.isNothing()) {
+                return Maybe<B>();
+            } else {
+                return Maybe<B>(f(m.fromJust()));
+            }
+        };
+    };
+
+			==> In this case creates a function that creates two-track<B> from two-track<A> using single track function B(A)
+
+	==> It seems ”return” turns a two-track-output back to single-track-output?
+
+	
+
+2) Consider to reason about chained error handling as functions that passes the error and the result through between functions to enable them to detect errors?
+
+	==> Consider we want to call g with the result of f (but f may fail to produce a result)?
+	==> How do we write our code so that g gets called only if f returns a value?
+
+		1) Create a new function F that uses f to create a ”Maybe<f_result>”
+		2) Create a new function G that takes a Maybe<f_result> and calls g only if f_result has a value?
+		...
+
+3) Consider how the Railway Oriented Programming idiom maps to my proposal of three layer value, monad, template model?
+
+	==> Q: This is not quite there yet!
+
+		==> Q: What should we call the function returned by bind (To make this model work we need a way to refer to the value-inout monadic-value output function created by bind)?
+
+	
+
+
+	==> (1) It seems we first need to turn our fopen, fread, atoi into switch-functions (or are they already switch functions)?
+
+		==> Switch_F<fopen> takes a Path and returns a Maybe<Handle>
+		==> Q: What do we call the operation that creates a switch-function from the ”raw” function?
+		…
+
+	==> (2) Then bind will take an F<fopen> and return an F<Maybe<Path>>, a function that  returns a Maybe<Handle>
+
+		==> bind turns a switch function F<fopen> into a composable two-track-input and output function
+
+	==> Q: The model is still ”wrong” in that it does not show the laziness of composition (the actuall function calls does not occur until we call the created composed function (i.e. from Path to Maybe int)?
+
+	... 
+
+
+4) Consider to read the ”original” Monad paper (http://homepages.inf.ed.ac.uk/wadler/papers/marktoberdorf/baastad.pdf <http://homepages.inf.ed.ac.uk/wadler/papers/marktoberdorf/baastad.pdf>)?
+
+	==> Also reachable through bit.ly/monad-paper <http://bit.ly/monad-paper> 
+
+	==> It seems it defines a Monad type M quite good!
+
+”The original evaluator has the type Term → Int, while in each variation its type took the form Term → M Int. In general, a function of type a → b is replaced by a function of type a → M b. This can be read as a function that accepts an argument of type a and returns a result of type b, with a possible additional effect captured by M. This effect may be to act on state, generate output, raise an exception, or what have you."
+
+
+		==> Replace ”plain” function a —> b with a function a —> M b (i.e., the monadic value of b)
+
+	==> And the monadic type M must be able to do two things to accomplish this.
+
+”First, we need a way to turn a value into the computation that returns that value and does nothing else.
+
+unit :: a → M a"
+
+”
+Second, we need a way to apply a function of type a → M b to a computation of type M a. It is convenient to write these in an order where the argument comes before the function.
+
+(⋆) :: M a → (a → M b) → M b"
+
+	==> The Monad may then be defined.
+
+”A monad is a triple (M,unit,⋆) consisting of a type constructor M and two operations of the given polymorphic types.”
+
+==> (1) We must be able to construct the type M (in C++ we use a template for this, e.g., the template ”Maybe” and we construct the Monad type with Maybe<Handle>, Maybe<string> etc…)
+==> (2) We need the ”unit” where we may instantiate the monadic value given the ”plain” value (In C++ we may call the constructor, e.g., Maybe<Handle>(handle), Maybe<string>(”Hello”)…)
+==> (3) We need a function that uses the a —> M b to turn M a to M b.
+
+	==> This function is created by bind!
+	==> Q: But where do we get our a —> M b?
+
+	… It seems we need to learn the semantics to read this paper (it seems to be some mix of mathematical symbols and computer science symbols)? …
+
+…
+
+Consider to delve deeper into this approach of understanding the ”Railway Oriented Programming” model in terms of Monad and Monoid terms?
+...
+

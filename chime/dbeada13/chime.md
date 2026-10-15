@@ -1,0 +1,960 @@
+# Todo: Consider the Linux command line to list all files recursively in a directory and sort by year of modification / creation?
+
+```#dbeada13``` *As of 2021-10-26 16:52*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I need to get a list of "old" files in a directory structure as a base for possible deletion (clean up)
+
+1) It seems I can pipe the following commands with reasonable result?
+
+> **ls -lR | awk '/^-/ {print $8 " " $6 " " $7 " " substr($0,index($0,$9))}' | awk '!/:/ {print}' | sort**
+
+==&gt; For an example folder I get the following output
+
+> 2002 Dec 9 SOP-CARP.dwg  
+> 2002 Oct 10 Schemavent1&3.dwg  
+> 2003 Dec 4 E_60-C2b.dwg  
+> 2003 Feb 14 forklcarp.dwg  
+> 2003 Jan 13 A30-S001.dwg  
+> 2003 Jan 9 K33-P011.dwg  
+> 2004 Feb 4 E_60-E1.dwg  
+> 2004 Jan 21 Schemavent4.dwg  
+> 2004 Jan 21 Schemavent5.dwg  
+> 2004 Mar 23 K33-P001.dwg  
+> 2004 Oct 13 Vent-1plan9.dwg  
+> 2005 Apr 7 A09002-Layout1.pdf  
+> 2005 Apr 7 A09301-Layout1.pdf  
+> 2005 Apr 7 A09302-Layout1.pdf  
+> 2005 Apr 7 A09303-Layout1.pdf  
+> 2005 Apr 7 A09311-Layout1.pdf  
+> 2005 Apr 7 A09312-Layout1.pdf  
+> 2005 Apr 7 A09316-Layout1.pdf  
+> 2005 Apr 7 A09317-Layout1.pdf  
+> 2005 Apr 7 A09401-Layout1.pdf  
+> 2005 Apr 7 A09402-Layout1.pdf  
+> 2005 Apr 7 A09403-Layout1.pdf  
+> 2005 Apr 7 A09411-Layout1.pdf  
+> 2005 Apr 7 A09412-Layout1.pdf  
+> 2005 Apr 7 A09416-Layout1.pdf  
+> 2005 Apr 7 A09417-Layout1.pdf  
+> 2005 Apr 7 A09501-Layout1.pdf  
+> 2005 Apr 7 A09502-Layout1.pdf  
+> 2005 Apr 7 A09503-Layout1.pdf  
+> 2005 Apr 7 A09511-Layout1.pdf  
+> 2005 Apr 7 A09512-Layout1.pdf  
+> 2005 Apr 7 A09516-Layout1.pdf  
+> 2005 Apr 7 A09517-Layout1.pdf  
+> 2005 Apr 7 A09611-Layout1.pdf  
+> 2005 Apr 7 A09612-Layout1.pdf  
+> 2005 Aug 12 elforkl.dwg  
+> 2005 Aug 15 E64-01-301.dwg  
+> 2005 Aug 15 E64-02-101.dwg  
+> 2005 Aug 15 E64-02-102.dwg  
+> 2005 Aug 15 E64-02-103.dwg  
+> 2005 Aug 15 E64-02-108.dwg  
+> 2005 Aug 15 E64-02-109.dwg  
+> 2005 Aug 15 E64-02-201.dwg  
+> 2005 Aug 15 E_60-B1b.dwg  
+> 2005 Aug 15 E_60-C1b.dwg  
+> 2005 Aug 15 E_60-C3.dwg  
+> 2005 Aug 15 E_normalplanb.dwg  
+> 2005 Aug 15 teforkl.dwg  
+> 2005 Aug 16 E_60-A2b.dwg  
+> 2005 Aug 16 E_60-D1.dwg  
+> 2005 Aug 16 E_60-D2.dwg  
+> 2005 Aug 16 E_60-F1.dwg  
+> 2005 Aug 16 E_60-F2.dwg  
+> 2005 Mar 22 A30-P0A1.dwg  
+> 2005 Mar 22 A30-P0A2.dwg  
+> 2005 Mar 22 A30-P0C3.dwg  
+> 2005 Mar 22 A30-P0D2.dwg  
+> 2005 Mar 22 A30-P0F1.dwg  
+> 2005 Mar 22 V57-111.PDF  
+> 2005 Mar 22 V57-301.dwg  
+> 2005 Mar 22 V57-310.PDF  
+> 2005 Mar 22 V57-310.dwg  
+> 2005 Mar 22 V57-311.dwg  
+> 2005 Mar 22 V57-401.dwg  
+> 2005 Mar 22 V57-402.dwg  
+> 2005 Mar 22 V57-403.dwg  
+> 2005 Mar 22 V57-407.dwg  
+> 2005 Mar 22 V57-410.dwg  
+> 2005 Mar 22 Vent-1plan10.dwg  
+> 2005 Mar 22 Vent-1plan11.dwg  
+> 2005 Mar 22 Vent-1plan2.dwg  
+> 2005 Mar 22 Vent-1plan3-7.dwg  
+> 2005 Mar 22 Vent-1plan8.dwg  
+> 2005 Mar 22 Vent-4plan1.dwg  
+> 2005 Mar 22 Vent-4plan10.dwg  
+> 2005 Mar 22 Vent-4plan2.dwg  
+> 2005 Mar 22 Vent-4plan3.dwg  
+> 2005 Mar 22 Vent-4plan7.dwg  
+> 2005 Mar 22 Vent-4plan8.dwg  
+> 2005 Mar 22 vent-3plan1.dwg  
+> 2005 Mar 23 V57-501.dwg  
+> 2005 Mar 23 V57-502.dwg  
+> 2005 Mar 23 V57-503.dwg  
+> 2005 Mar 23 V57-506.dwg  
+> 2005 Mar 23 V57-507.dwg  
+> 2005 Mar 23 V57-509.dwg  
+> 2005 Mar 23 V57-911.dwg  
+> 2005 Mar 23 V57-912.dwg  
+> 2005 Mar 23 V57-931.dwg  
+> 2005 Mar 23 V57-941.dwg  
+> 2005 Mar 23 V57-942.dwg  
+> 2005 Mar 23 V57-951.dwg  
+> 2005 Mar 23 V57-952.dwg  
+> 2005 Mar 23 Vent-5plan1.dwg  
+> 2005 Mar 23 Vent-5plan2.dwg  
+> 2005 Mar 23 Vent-5plan3.dwg  
+> 2005 Mar 23 Vent-5plan6.dwg  
+> 2005 Mar 23 Vent-5plan7.dwg  
+> 2005 Mar 23 Vent-5plan9.dwg  
+> 2005 Mar 23 vent-1-3sekt0102.dwg  
+> 2005 Mar 23 vent-2sekt0102.dwg  
+> 2005 Mar 23 vent-4sekt0102.dwg  
+> 2005 Mar 23 vent-5sekt0102.dwg  
+> 2005 Mar 24 V57-501.PDF  
+> 2005 Mar 24 V57-502.PDF  
+> 2005 Mar 24 V57-503.PDF  
+> 2005 Mar 24 V57-506.PDF  
+> 2005 Mar 24 V57-507.PDF  
+> 2005 Mar 24 V57-509.PDF  
+> 2005 Mar 29 A30-P0C2.dwg  
+> 2005 Mar 29 VS-1plan10.dwg  
+> 2005 Mar 29 VS-1plan1m.dwg  
+> 2005 Mar 29 VS-1plan2.dwg  
+> 2005 Mar 29 VS-1plan3.dwg  
+> 2005 Mar 29 VS-1plan4.dwg  
+> 2005 Mar 29 VS-1plan5.dwg  
+> 2005 Mar 29 VS-1plan6.dwg  
+> 2005 Mar 29 VS-1plan7.dwg  
+> 2005 Mar 29 VS-1plan8.dwg  
+> 2005 Mar 29 VS-1plan9.dwg  
+> 2005 Mar 29 VS-4plan1m.dwg  
+> 2005 Mar 29 VS-4plan2.dwg  
+> 2005 Mar 29 VS-4plan3.dwg  
+> 2005 Mar 29 VS-4plan4.dwg  
+> 2005 Mar 29 VS-4plan5.dwg  
+> 2005 Mar 29 VS-4plan6.dwg  
+> 2005 Mar 29 VS-5plan1.dwg  
+> 2005 Mar 29 VS-5plan1m.dwg  
+> 2005 Mar 30 A-sektion1.PDF  
+> 2005 Mar 30 A-sektion2.PDF  
+> 2005 Mar 30 V50-004.PDF  
+> 2005 Mar 30 V50-301.PDF  
+> 2005 Mar 30 V50-501.PDF  
+> 2005 Mar 30 VS-4plan1.dwg  
+> 2005 Mar 30 VS-4plan7.dwg  
+> 2005 Mar 30 VS-4plan8.dwg  
+> 2005 Mar 30 VS-5plan3.dwg  
+> 2005 Mar 30 VS-5plan4.dwg  
+> 2005 Mar 30 VS-5plan5.dwg  
+> 2005 Mar 30 VS-5plan6.dwg  
+> 2005 Mar 30 VS-5plan7.dwg  
+> 2005 Mar 31 V50-401.PDF  
+> 2005 Mar 31 V50-401M.PDF  
+> 2005 Mar 31 V50-402.PDF  
+> 2005 Mar 31 V50-403.PDF  
+> 2005 Mar 31 V50-404.PDF  
+> 2005 Mar 31 V50-405.PDF  
+> 2005 Mar 31 V50-406.PDF  
+> 2005 Mar 31 V50-407.PDF  
+> 2005 Mar 31 V50-408.PDF  
+> 2005 Mar 31 V50-503.PDF  
+> 2005 Mar 31 V50-504.PDF  
+> 2005 Mar 31 V50-505.PDF  
+> 2005 Mar 31 V50-506.PDF  
+> 2005 Mar 31 V50-507.PDF  
+> 2005 Sep 26 VS-4plan9.dwg  
+> 2005 Sep 26 VS-5plan8.dwg  
+> 2005 Sep 5 462_ritförtRH.doc  
+> 2005 Sep 5 E-sitplan.dwg  
+> 2005 Sep 5 sitforkl.dwg  
+> 2006 Apr 18 markmodell_sparad-for-va.dwg  
+> 2006 May 24 VS-3plan1.dwg  
+> 2006 May 8 markmodell_omsparad060403.dwg  
+> 2007 Aug 10 E60-01-001.dwg  
+> 2007 Aug 10 E60-01-002.dwg  
+> 2007 Aug 10 E60-01-003.dwg  
+> 2007 Aug 10 E60-01-004.dwg  
+> 2007 Aug 10 E63-01-109.dwg  
+> 2007 Aug 10 E63-01-110.dwg  
+> 2007 Aug 10 E63-01-111.dwg  
+> 2007 Aug 10 E63-01-301.dwg  
+> 2007 Aug 10 E63-01-601.dwg  
+> 2007 Aug 10 E63-02-101.dwg  
+> 2007 Aug 10 E63-02-102.dwg  
+> 2007 Aug 10 E63-02-103.dwg  
+> 2007 Aug 10 E63-02-108.dwg  
+> 2007 Aug 10 E63-02-109.dwg  
+> 2007 Aug 10 E63-02-110.dwg  
+> 2007 Aug 10 E63-02-201.dwg  
+> 2007 Aug 10 E64-01-109.dwg  
+> 2007 Aug 10 E64-01-110.dwg  
+> 2007 Aug 10 V57-409.pdf  
+> 2007 Aug 10 V57-508.PDF  
+> 2007 Aug 13 Ritningsförteckning-LUFT.pdf  
+> 2007 Aug 13 VS-beskrivning.pdf  
+> 2007 Aug 13 Vent-beskrivning.pdf  
+> 2007 Aug 8 V50-101M.dwg  
+> 2007 Aug 8 V50-102.dwg  
+> 2007 Aug 8 V50-103.dwg  
+> 2007 Aug 8 V50-104.dwg  
+> 2007 Aug 8 V50-105.dwg  
+> 2007 Aug 8 V50-106.dwg  
+> 2007 Aug 8 V50-107.dwg  
+> 2007 Aug 8 V50-108.dwg  
+> 2007 Aug 8 V50-301.dwg  
+> 2007 Aug 8 V50-401.dwg  
+> 2007 Aug 8 V50-401M.dwg  
+> 2007 Aug 8 V50-402.dwg  
+> 2007 Aug 8 V50-403.dwg  
+> 2007 Aug 8 V50-404.dwg  
+> 2007 Aug 8 V50-405.dwg  
+> 2007 Aug 8 V50-406.dwg  
+> 2007 Aug 8 V50-407.dwg  
+> 2007 Aug 8 V50-408.dwg  
+> 2007 Aug 8 V50-409.PDF  
+> 2007 Aug 8 V50-409.dwg  
+> 2007 Aug 8 V57-408.dwg  
+> 2007 Aug 9 A-sektion1.dwg  
+> 2007 Aug 9 A-sektion2.dwg  
+> 2007 Aug 9 V50-004.dwg  
+> 2007 Aug 9 V50-501.dwg  
+> 2007 Aug 9 V50-503.dwg  
+> 2007 Aug 9 V50-504.dwg  
+> 2007 Aug 9 V50-505.dwg  
+> 2007 Aug 9 V50-506.dwg  
+> 2007 Aug 9 V50-507.dwg  
+> 2007 Aug 9 V50-508.PDF  
+> 2007 Aug 9 V50-508.dwg  
+> 2007 Aug 9 V57-001.dwg  
+> 2007 Aug 9 V57-004.dwg  
+> 2007 Aug 9 V57-005.dwg  
+> 2007 Aug 9 V57-102.dwg  
+> 2007 Aug 9 V57-103.dwg  
+> 2007 Aug 9 V57-108.dwg  
+> 2007 Aug 9 V57-109.dwg  
+> 2007 Aug 9 V57-110.dwg  
+> 2007 Aug 9 V57-111.dwg  
+> 2007 Aug 9 V57-409.dwg  
+> 2007 Aug 9 V57-508.dwg  
+> 2007 Aug 9 Vent-4plan9.dwg  
+> 2007 Aug 9 Vent-5plan8.dwg  
+> 2007 Feb 19 A09002.dwg  
+> 2007 Feb 19 A09301.dwg  
+> 2007 Feb 19 A09302.dwg  
+> 2007 Feb 19 A09303.dwg  
+> 2007 Feb 19 A09311.dwg  
+> 2007 Feb 19 A09312.dwg  
+> 2007 Feb 19 A09316.dwg  
+> 2007 Feb 19 A09317.dwg  
+> 2007 Feb 19 A09401.dwg  
+> 2007 Feb 19 A09402.dwg  
+> 2007 Feb 19 A09403.dwg  
+> 2007 Feb 19 A09411.dwg  
+> 2007 Feb 19 A09412.dwg  
+> 2007 Feb 19 A09416.dwg  
+> 2007 Feb 19 A09417.dwg  
+> 2007 Feb 19 A09501.dwg  
+> 2007 Feb 19 A09502.dwg  
+> 2007 Feb 19 A09503.dwg  
+> 2007 Feb 19 A09511.dwg  
+> 2007 Feb 19 A09512.dwg  
+> 2007 Feb 19 A09516.dwg  
+> 2007 Feb 19 A09517.dwg  
+> 2007 Feb 19 A09611.dwg  
+> 2007 Feb 19 A09612.dwg  
+> 2007 Feb 19 relationsritn.pdf  
+> 2007 Feb 20 A30-F003.dwg  
+> 2007 Feb 20 A30-F004.dwg  
+> 2007 Feb 20 A30-F005.dwg  
+> 2007 Feb 20 A30-F021.dwg  
+> 2007 Feb 20 A30-P000.dwg  
+> 2007 Feb 20 A30-P021.dwg  
+> 2007 Feb 20 A30-P0A1.dwg  
+> 2007 Feb 20 A30-P0A2.dwg  
+> 2007 Feb 20 A30-P0B1.dwg  
+> 2007 Feb 20 A30-P0C1.dwg  
+> 2007 Feb 20 A30-P0C2.dwg  
+> 2007 Feb 20 A30-P0C3.dwg  
+> 2007 Feb 20 A30-P0D2.dwg  
+> 2007 Feb 20 A30-P0F1.dwg  
+> 2007 Feb 20 A30-P0F2.dwg  
+> 2007 Feb 20 A30-PTA1.dwg  
+> 2007 Feb 20 A30-PTA2.dwg  
+> 2007 Feb 20 A30-PTB1.dwg  
+> 2007 Feb 20 A30-PTE1.dwg  
+> 2007 Feb 20 A30-S001.dwg  
+> 2007 Feb 20 A30-S004.dwg  
+> 2007 Feb 20 A30-S005.dwg  
+> 2007 Feb 20 K33-P002.dwg  
+> 2007 Feb 20 K33-P003.dwg  
+> 2007 Feb 20 K33-P008.dwg  
+> 2007 Feb 20 K33-P009.dwg  
+> 2007 Feb 20 K33-P010.dwg  
+> 2007 Feb 20 K33-P410.dwg  
+> 2007 Feb 26 V50-101M.PDF  
+> 2007 Feb 26 V50-102.PDF  
+> 2007 Feb 26 V50-103.PDF  
+> 2007 Feb 26 V50-104.PDF  
+> 2007 Feb 26 V50-105.PDF  
+> 2007 Feb 26 V50-106.PDF  
+> 2007 Feb 26 V50-107.PDF  
+> 2007 Feb 26 V50-108.PDF  
+> 2007 Feb 26 V50-109.PDF  
+> 2007 Feb 26 V50-110.PDF  
+> 2007 Feb 26 V57-001.pdf  
+> 2007 Feb 26 V57-004.pdf  
+> 2007 Feb 26 V57-005.pdf  
+> 2007 Feb 26 V57-102.pdf  
+> 2007 Feb 26 V57-103.pdf  
+> 2007 Feb 26 V57-108.pdf  
+> 2007 Feb 26 V57-109.pdf  
+> 2007 Feb 26 V57-110.pdf  
+> 2007 Feb 26 V57-301.pdf  
+> 2007 Feb 26 V57-311.pdf  
+> 2007 Feb 26 V57-401.pdf  
+> 2007 Feb 26 V57-402.pdf  
+> 2007 Feb 26 V57-403.pdf  
+> 2007 Feb 26 V57-407.pdf  
+> 2007 Feb 26 V57-408.pdf  
+> 2007 Feb 26 V57-410.pdf  
+> 2007 Feb 26 V57-911.pdf  
+> 2007 Feb 26 V57-912.pdf  
+> 2007 Feb 26 V57-931.pdf  
+> 2007 Feb 26 V57-941.pdf  
+> 2007 Feb 26 V57-942.pdf  
+> 2007 Feb 26 V57-951.pdf  
+> 2007 Feb 26 V57-952.pdf  
+> 2007 Mar 1 ritning.dwg  
+> 2007 Mar 1 vamodell_relation.dwg  
+> 2007 Mar 15 462 Armatur.doc  
+> 2007 Mar 15 462 Armaturfört utgått.pdf  
+> 2007 Mar 15 462 Armaturförteckning.pdf  
+> 2007 Mar 15 462_ritförtRH.pdf  
+> 2007 Mar 15 E60-01-001.pdf  
+> 2007 Mar 15 E60-01-002.pdf  
+> 2007 Mar 15 E60-01-003.pdf  
+> 2007 Mar 15 E60-01-004.pdf  
+> 2007 Mar 15 E63-01-109.pdf  
+> 2007 Mar 15 E63-01-110.pdf  
+> 2007 Mar 15 E63-01-111.pdf  
+> 2007 Mar 15 E63-01-301.pdf  
+> 2007 Mar 15 E63-01-601.pdf  
+> 2007 Mar 15 E63-02-101.pdf  
+> 2007 Mar 15 E63-02-102.pdf  
+> 2007 Mar 15 E63-02-103.pdf  
+> 2007 Mar 15 E63-02-108.pdf  
+> 2007 Mar 15 E63-02-109.pdf  
+> 2007 Mar 15 E63-02-110.pdf  
+> 2007 Mar 15 E63-02-201.pdf  
+> 2007 Mar 15 E64-01-109.pdf  
+> 2007 Mar 15 E64-01-110.pdf  
+> 2007 Mar 15 E64-01-301.pdf  
+> 2007 Mar 15 E64-02-101.pdf  
+> 2007 Mar 15 E64-02-102.pdf  
+> 2007 Mar 15 E64-02-103.pdf  
+> 2007 Mar 15 E64-02-108.pdf  
+> 2007 Mar 15 E64-02-109.pdf  
+> 2007 Mar 15 E64-02-201.pdf  
+> 2007 Sep 28 Brf Ekbladet DUC1.dat  
+> 2007 Sep 28 Brf Ekbladet DUC2.DAT  
+> 2007 Sep 3 M16-02.pdf  
+> 2007 Sep 3 M16-03.pdf  
+> 2007 Sep 3 VA50-02.pdf  
+> 2007 Sep 3 VA50-03.pdf  
+> 2009 Aug 18 Fogtätning karmar produktblad.pdf  
+> 2010 Oct 13 Kopia av bolinderstrandflygbild_jpg - Gmail.mht  
+> 2011 Dec 29 Produktblad Multitape SL.pdf  
+> 2011 Dec 29 SE_GHSProdInfo.pdf  
+> 2011 Sep 11 M18-01.pdf  
+> 2011 Sep 11 M18-02.pdf  
+> 2011 Sep 11 M18-03.pdf  
+> 2011 Sep 11 M18-04.pdf  
+> 2012 May 3 A30151K Layout1 (1).pdf  
+> 2012 May 3 A30152K Layout1 (1).pdf  
+> 2012 May 3 A30451K Layout1 (1).pdf  
+> 2012 May 3 A30452K Layout1 (1).pdf  
+> 2012 May 3 A30551K Layout1 (1).pdf  
+> 2012 May 3 A30552K Layout1 (1).pdf  
+> 2012 May 3 Abilaga1.pdf  
+> 2012 May 3 Abilaga2.pdf  
+> 2012 May 3 färgsättningsh.pdf  
+> 2012 Nov 13 Ekbladet Infästning markiser.jpg  
+> 2012 Nov 20 VA50-01.pdf  
+> 2012 Nov 20 VA50-04.pdf  
+> 2012 Nov 27 insynsskydd Model (1).pdf  
+> 2013 Jan 27 Armatur för Ekar.pdf  
+> 2013 Jan 28 462 Armaturfört. Rev A.doc  
+> 2013 Jul 1 Ritningsförteckning RÖRREL130625.pdf  
+> 2013 Jul 1 V50-501M.PDF  
+> 2013 Jul 1 V50-501M.dwg  
+> 2013 Jul 1 V50-502.PDF  
+> 2013 Jul 1 V50-502.dwg  
+> 2013 Jul 1 VS-5plan1m.dwg  
+> 2013 Jul 1 VS-5plan2.dwg  
+> 2013 Jun 25 A30-P0B1.dwg  
+> 2013 Jun 25 A30-P0C1.dwg  
+> 2013 May 27 A30-P0D1.dwg  
+> 2013 May 27 A30-P0D1.dwg  
+> 2013 May 27 A30-P0E1.dwg  
+> 2013 May 27 A30-P0E1.dwg  
+> 2013 May 27 Ritningsförteckning RÖRREL130527.pdf  
+> 2013 May 27 V50-109.dwg  
+> 2013 May 27 V50-110.dwg  
+> 2013 May 27 V50-309.dwg  
+> 2013 May 27 V50-310.dwg  
+> 2013 May 27 V50-310.pdf  
+> 2013 May 27 VS-3plan10.dwg  
+> 2013 May 29 V50-309.pdf  
+> 2013 May 29 VS-3plan9.dwg  
+> 2013 Oct 22 Serporoc_skötselanv.pdf  
+> 2013 Oct 22 Serporoc_systemk.pdf  
+> 2013 Oct 22 serporoc_02.pdf  
+> 2013 Oct 22 serporoc_arbanv_01.pdf  
+> 2014 Dec 2 Kom igång!.pdf  
+> 2015 Apr 14 Princip utförande Vs-snitt.JPG  
+> 2015 Apr 17 Fuktmätning innan återställning.JPG  
+> 2015 Apr 29 Tätning dränagebleck 1.JPG  
+> 2015 Apr 29 Tätning dränagebleck 2.JPG  
+> 2015 Apr 29 Tätning dränagebleck 3.JPG  
+> 2015 Apr 29 Tätning dränagebleck 4.JPG  
+> 2015 Apr 29 Tätning dränagebleck 5.JPG  
+> 2015 Aug 22 5P06333 Brf Ekbladet.pdf  
+> 2015 Dec 7 Brevmall Utläggsmallar.docx  
+> 2015 Feb 10 Frågor och svar - Utemiljön.docx  
+> 2015 Jul 22 Systemdatablad Serporoc.pdf  
+> 2015 Jun 22 Produktblad Therm_412_Startlist.pdf  
+> 2015 Jun 5 Handledning för fuktmätning i pusade fasader 2015-05-05.pdf  
+> 2015 Jun 5 Prisförslag Brf Ekbladet i Järfälla.pdf  
+> 2015 Mar 20 0.Skyddstäckning träd.JPG  
+> 2015 Mar 30 Demontering fasad.JPG  
+> 2015 Nov 2 Produktblad Superflex 10.pdf  
+> 2015 Nov 2 Produktblad Superflex_10.pdf  
+> 2015 Nov 2 Produktblad sockelbetong.pdf  
+> 2015 Nov 5 Produktblad 371_Premium_32.pdf  
+> 2015 Nov 9 Veckoinfo för trapphus.docx  
+> 2015 Oct 30 Kortlingsplåt stuprör.jpg  
+> 2015 Sep 30 Produktblad 399 EPS Skiva.pdf  
+> 2016 Apr 11 Gipsskarv m T-profil.jpg  
+> 2016 Apr 12 Fogning karm utifrån.jpg  
+> 2016 Apr 18 Täckning fönster.JPG  
+> 2016 Aug 18 ECOSOLV A.pdf  
+> 2016 Aug 18 EcoSolv A (1).pdf  
+> 2016 Dec 9 3. Kvalitetsplan Puts.xls  
+> 2016 Feb 10 Produktblad SK-manschetter.pdf  
+> 2016 Feb 10 Produktblad SK-manschetter.pdf  
+> 2016 Feb 11 2.1Friläggning mark med sugbil.jpg  
+> 2016 Feb 11 2.Friläggning mark med sugbil.JPG  
+> 2016 Feb 11 Dämpmassa undersida fönsterbleck.jpg  
+> 2016 Feb 11 Produktblad DämpmassaDCP500.pdf  
+> 2016 Feb 8 Väggisolering demonterad.JPG  
+> 2016 Feb 8 Väggisolering demonterad1.JPG  
+> 2016 Feb 9 Brandskum produktblad.pdf  
+> 2016 Feb 9 arbetsanvisning_drev.pdf  
+> 2016 Jun 21 Avbrott el-vatten.docx  
+> 2016 Jun 8 4.0 Fuktkontroll Bygg.xls  
+> 2016 Mar 29 Avspärrning arbetsområde.jpg  
+> 2016 May 18 4.0 Kvalitetsplan Bygg.xls  
+> 2016 May 18 5.0 Kvalitetsplan Fog.xls  
+> 2016 Nov 25 5P06333.1 Indikationsmätningar Brf Ekbladet i Järfälla.pdf  
+> 2016 Oct 12 1 kjell-olovhogdal staff 2460878 Oct 12 2016 1 blk utan tak.jpg  
+> 2016 Oct 12 2424077 Oct 12 2016 2 blk utan tak.jpg  
+> 2016 Oct 12 3287582 Oct 12 2016 3 blk utan tak.jpg  
+> 2016 Oct 12 43 Oct 12 2016 4 blk med tak.jpg  
+> 2016 Oct 12 Exempel på bodetablering.JPG  
+> 2016 Oct 12 Gips riven.jpg  
+> 2016 Oct 12 Nytt utf riven Serporoc.jpg  
+> 2016 Oct 12 Orginalutf. grängad Serpomin.jpg  
+> 2016 Oct 12 Skyddsplåt.jpg  
+> 2016 Oct 13 1 kjell-olovhogdal staff 2898105 Oct 13 2016 1 Färdig yta.jpg  
+> 2016 Oct 13 6.0, 6.1 Kvalitetsplan Plåt.xls  
+> 2016 Oct 13 Byte virke 2.jpg  
+> 2016 Oct 27 1 kjell-olovhogdal staff 1492095 Oct 27 2016 1 Vindduk bakom gips.jpg  
+> 2016 Sep 13 Offert OVK Brf Ekbladet.pdf  
+> 2016 Sep 13 Offert Rengöring och OVK Brf Ekbladet.pdf  
+> 2016 Sep 23 Produktblad Hörn-manschett.pdf  
+> 2016 Sep 29 ECO SOLV A.jpg  
+> 2016 Sep 7 0.1Skyddstäckning.jpg  
+> 2017 Apr 21 Protokoll styrelsesammanträde 2017-04-05.pdf  
+> 2017 Apr 24 Protokoll styrelsesammanträde 2017-03-21.pdf  
+> 2017 Apr 24 Protokoll styrelsesammanträde 2017-04-20.pdf  
+> 2017 Aug 1 bilplatsavtalEkbladetBrf.doc  
+> 2017 Aug 12 Dinko Lukes (2) 20170806.pdf  
+> 2017 Aug 12 Kenneth Lagnelius (1) 20170731.pdf  
+> 2017 Aug 12 Roy Timo (1) 20170801.pdf  
+> 2017 Aug 18 1 kjell-olovhogdal staff 2331152 Aug 18 2017 1 Brandskum.jpg  
+> 2017 Aug 18 Profil framifrån.jpg  
+> 2017 Aug 18 Profil nederkant.jpg  
+> 2017 Aug 18 Profil överkant.jpg  
+> 2017 Aug 18 Profil.jpg  
+> 2017 Aug 20 Offert ekbladet träd 2017-08-17.docx  
+> 2017 Aug 23 Tidsplan Brf Ekbladet V33.pdf  
+> 2017 Aug 29 Protokoll styrelsesammanträde 2017-06-20.pdf  
+> 2017 Aug 31 Jan-ÅkeTomas Östlund (1) 20170815.pdf  
+> 2017 Aug 9 2 Aug 9 2017 2 Brandskum.jpg  
+> 2017 Dec 18 Balansrapport_20170101-20170930_Brf Ekbladet .pdf  
+> 2017 Dec 18 Resultatrapport_20170101-20170930_Brf Ekbladet .pdf  
+> 2017 Dec 19 R 2 Riktlinjer Tillgänglighet.pdf  
+> 2017 Dec 31 Uppsägning av parkeringsplats Kjell-Olof Högdal.pdf  
+> 2017 Dec 6 bilplatsavtal1 Maria Englund.pdf  
+> 2017 Dec 7 Offert ekbladet träd 2017-08-17.docx  
+> 2017 Dec 7 Protokoll styrelsesammanträde 2017-11-21.pdf  
+> 2017 Jan 17 Protokoll styrelsesammanträde 2017-01-17.pdf  
+> 2017 Jan 18 Brf Ekbladet Invändiga mätplatser.docx  
+> 2017 Jan 18 FD info enkelsidig.docx  
+> 2017 Jan 18 Fönsterinfo dubbelsidig.docx  
+> 2017 Jan 27 ANBUD Brf Ekbladet - Kortfattad summering.pdf  
+> 2017 Jan 27 ANBUD Brf Ekbladet.pdf  
+> 2017 Jan 27 Beräkningskalkyl Brf Ekbladet.pdf  
+> 2017 Jan 27 Borrkarta Brf Ekbladet.pdf  
+> 2017 Jan 27 EED beräkning Brf Ekladet.pdf  
+> 2017 Jan 27 EON årsstatistik.pdf  
+> 2017 Jan 27 EON prislista.pdf  
+> 2017 Jan 27 GEROX-METODEN varför välja.pdf  
+> 2017 Jan 27 Gerox DRS SmartBox-plattform.pdf  
+> 2017 Jan 27 Gerox DRS-live summering kort version.pdf  
+> 2017 Jun 1 Startmöte med BRF Ekbladet 170531.pdf  
+> 2017 Jun 15 5P06333.2 Friläggning Brf Ekbladet i Järfälla.pdf  
+> 2017 Jun 21 2017-06-20 OVK BRF Ekbladet.pdf  
+> 2017 Mar 13 Källarförråd hyreskontrakt.doc  
+> 2017 Mar 9 Protokoll styrelsesammanträde 2017-02-28.pdf  
+> 2017 May 10 Protokoll Årsstämma 9 maj 2017.pdf  
+> 2017 May 14 BILAGA 2 Gerox DRS SmartBox-plattform.pdf  
+> 2017 May 14 BILAGA 3 GEROX DRS-live summering.pdf  
+> 2017 May 14 BILAGA 4 CV Projektledare.pdf  
+> 2017 May 14 BILAGA 5 Bas U Bas P.pdf  
+> 2017 May 14 BILAGA 6 GEROX Försäkringsbevis 2017.pdf  
+> 2017 May 14 V1 Gerox KONTRAKTSUTKAST Brf Ekbladet.pdf  
+> 2017 May 23 Protokoll styrelsesammanträde 2017-05-23.pdf  
+> 2017 May 31 2. Kvalitetsplan Isolering & nätning.xls  
+> 2017 May 31 Tecknat kontrakt.pdf  
+> 2017 Nov 10 Carportkö Ida Sandman.pdf  
+> 2017 Nov 13 Protokoll styrelsesammanträde 2017-10-25.pdf  
+> 2017 Oct 17 Carportkö Carina Liljeskog.pdf  
+> 2017 Oct 17 Carportkö Darko Kovacic.pdf  
+> 2017 Oct 17 Carportkö Mattias Andersson.pdf  
+> 2017 Oct 19 Carina Liljeskog.pdf  
+> 2017 Oct 19 Darco Kovacic.pdf  
+> 2017 Oct 19 Mattias Andersson.pdf  
+> 2017 Oct 19 bilplatsavtal2 Jesper Sandell.doc  
+> 2017 Oct 2 Städdag.docx  
+> 2017 Oct 20 FÖRSLAG till bergvärmeinformation 2017-10-18 LW.docx  
+> 2017 Oct 23 Protokoll styrelsesammanträde 2017-09-26.pdf  
+> 2017 Oct 25 Jesper Sandell Bilplats 2.pdf  
+> 2017 Oct 29 Bilaga SB Rör1.pdf  
+> 2017 Oct 29 Bilaga SB1-EL.PDF  
+> 2017 Oct 29 Brf EKBLADET Bergvärmeinstallation. Frågor inför möte 25-09-2017 rev A 17-09-25.docx  
+> 2017 Oct 29 Utlåtande SB1.pdf  
+> 2017 Oct 30 senasta gerox ej attesterad.pdf  
+> 2017 Oct 7 Inför bergvärmbesiktningen 2017.docx  
+> 2017 Oct 7 Uthyrningar (33).xlsx  
+> 2017 Sep 19 Protokoll Årsstämma 10 maj 2016.pdf  
+> 2017 Sep 2 Bilplatsavtal (1) Hanna Gunnarsson.pdf  
+> 2017 Sep 20 1 kjell-olovhogdal staff 57370 Sep 20 2017 1 Information till boende inför start .docx  
+> 2017 Sep 20 12. Kvalitetsplan Mark o Trädgård .xls  
+> 2017 Sep 20 20 2017 2 Påminnelse om säkerhet.docx  
+> 2017 Sep 20 Underhållsplan.docx  
+> 2017 Sep 3 Bilplatsavtal (1) Fejzolla Nourani 20170901.pdf  
+> 2017 Sep 30 Protokoll styrelsesammanträde 2017-08-29.pdf  
+> 2017 Sep 4 1. Kvalitetsplan Försegling.xls  
+> 2017 Sep 4 Tidsplan Brf Ekbladet V34.pdf  
+> 2017 Sep 6 RE Offert 52003.msg  
+> 2018 Apr 12 Kallelse 2018.3.doc  
+> 2018 Apr 12 Kallelse 2018.doc  
+> 2018 Apr 12 andringar_i_stadgarna.docx  
+> 2018 Apr 13 Beställning av målning för carportar.pdf  
+> 2018 Apr 13 Beställning av målning för carportar.pdf  
+> 2018 Apr 13 stämma2018.pdf  
+> 2018 Apr 15 Trädgårds och städdag våren 2018.doc  
+> 2018 Apr 17 Tahminah Zareian uppsägning av p plats.pdf  
+> 2018 Apr 2 Motioner till Årsstämman 2018.docx  
+> 2018 Apr 7 Bilplatsavtal 2 Jan-Åke Tomas Östlund.pdf  
+> 2018 Apr 7 Protokoll styrelsesammanträde 2018-03-07.pdf  
+> 2018 Aug 1 Ansöka P-plats Jan Karlsson.pdf  
+> 2018 Aug 1 Bilplatsavtal Jan Karlsson.pdf  
+> 2018 Aug 1 Bilplatsavtal Jan Karlsson.pdf  
+> 2018 Aug 1 Uppsägning av p plats Jan Östlund.pdf  
+> 2018 Aug 1 Uppsägning av plats Norell.pdf  
+> 2018 Aug 18 Protokoll styrelsesammanträde 2018-08-14.pdf  
+> 2018 Aug 21 bilplatsavtal2 Jan Karlsson.doc  
+> 2018 Aug 23 Brf Ekbladet.doc  
+> 2018 Aug 23 Flyttning av bilar 4 sep.docx  
+> 2018 Aug 25 bilplatsavtal 1 Lars Eriksson.docx  
+> 2018 Aug 25 bilplatsavtal 1 Maria Englund.docx  
+> 2018 Aug 25 bilplatsavtal 1 Maria Englund.docx  
+> 2018 Aug 25 bilplatsavtal 2 Lars Eriksson.doc  
+> 2018 Aug 29 Bilplatsavtal 1 Maria Englund.pdf  
+> 2018 Aug 29 Brevlådeskyltar.docx  
+> 2018 Aug 29 Uppsägning av plats Maria Englund.pdf  
+> 2018 Aug 29 Uppsägning av plats Kjell Thylander.pdf  
+> 2018 Aug 30 Bilplatsavtal 2 Jan Karlsson.pdf  
+> 2018 Dec 16 Bilplatsavtal 1 Tobias Möllerfors.pdf  
+> 2018 Dec 16 GA102018totalkostnad (2).xlsx  
+> 2018 Dec 16 Offert målning entreer.pdf  
+> 2018 Dec 3 bilplatsavtal1 Tobias Möllerfors.docx  
+> 2018 Dec 7 Uppsägning av p-plats Daniel Johansson.pdf  
+> 2018 Feb 1 Brf Ekbladet Budgetförslag 2018 (Konfliktkopia för Bo Persson 2018-02-04).xls  
+> 2018 Feb 15 protokoll styrelsesammanträde 2018-01-30.pdf  
+> 2018 Feb 4 Brf Ekbladet Förvaltningsberättelse 2017 bope (1).doc  
+> 2018 Feb 6 Fw_ Fwd_ ljudmätning 2.eml  
+> 2018 Feb 6 Fwd_ SV_ ljudmätning _.eml  
+> 2018 Feb 7 Beställning trädfällning.pdf  
+> 2018 Feb 7 Beställning trädfällning.pdf  
+> 2018 Feb 7 Delägaravtal GA10.pdf  
+> 2018 Feb 7 Offertträdfällning.pdf  
+> 2018 Feb 7 Offertträdfällning.pdf  
+> 2018 Jan 17 protokoll styrelsesammanträde 2017-12-11.pdf  
+> 2018 Jan 22 Parkeringsplatser 20180122.pdf  
+> 2018 Jan 23 Brf Ekbladet Förvaltningsberättelse 2017 mall.doc  
+> 2018 Jan 23 Kommentarer till Förvaltningsberättelse 2018.doc  
+> 2018 Jan 25 Offert ekbladet träd 2017-08-17.docx  
+> 2018 Jan 29 Fällning av träd på parkeringen.docx  
+> 2018 Jan 29 GA10 Protokoll 11jan2018 påskrivit.pdf  
+> 2018 Jan 29 Medlemsförteckning 180129.pdf  
+> 2018 Jan 29 OBS Viktigt mätning.docx  
+> 2018 Jan 30 Fällning av träd2 på parkeringen.docx  
+> 2018 Jul 17 Uppsägning av parkeringsavtal.doc  
+> 2018 Jul 25 Carportkö Jan Karlsson.pdf  
+> 2018 Jul 25 Uppsägning av plats Tore Lovén.pdf  
+> 2018 Jun 12 ansökan p-plats.pdf  
+> 2018 Jun 13 Protokoll styrelsesammanträde 2018-06-04.pdf  
+> 2018 Jun 27 JBR faktura.pdf  
+> 2018 Jun 4 BRF Ekbladet och GDPR.pages  
+> 2018 Jun 4 BRF Ekbladet och GDPR.pdf  
+> 2018 Jun 4 Elbilsplats.pages  
+> 2018 Jun 4 Elbilsplats.pdf  
+> 2018 Jun 4 Valorem etikett.docx  
+> 2018 Jun 5 BRF Ekbladet och GDPR.docx  
+> 2018 Jun 5 Elbilsplats.docx  
+> 2018 Jun 8 GDPR - Utredning av Rutiner och Instruktioner för hantering av personlig information.docx  
+> 2018 Jun 8 GDPR - Utredning av Rutiner och Instruktioner för hantering av personlig information.pdf  
+> 2018 Mar 2 Första kallelse 2018.docx  
+> 2018 Mar 2 Markavtal 2018.pdf  
+> 2018 Mar 27 Brev till revisorn 2018.docx  
+> 2018 Mar 5 Mätning ALV 2.xlsx  
+> 2018 Mar 5 Mätning ALV 4.xlsx  
+> 2018 Mar 5 Mätning ALV 6.xlsx  
+> 2018 May 11 Fw_ pdf årsberättelsen.eml  
+> 2018 May 14 Protokoll styrelsesammanträde 2018-03-26.pdf  
+> 2018 May 14 Protokoll styrelsesammanträde 2018-04-10.pdf  
+> 2018 May 17 Snickeri Carportarna.eml  
+> 2018 May 27 Bilplatsavtal P 45 Jessica Appelfeldt.pdf  
+> 2018 May 28 Protokoll styrelsesammanträde 2018-05-08.pdf  
+> 2018 May 8 Protokoll Årsstämma 2 maj 2018.pdf  
+> 2018 May 8 Protokoll Årsstämma 2 maj 2018.pdf  
+> 2018 May 8 Reviderade_Stadgar_Ekbladet 2018.rtf  
+> 2018 Nov 14 Protokoll styrelsesammanträde 2018-10-09.pdf  
+> 2018 Nov 15 GA10 protokoll 9-4-2018.docx  
+> 2018 Nov 16 Anbud Avloppsrensning 2019 kök och bad.docx  
+> 2018 Nov 21 Protokoll styrelsesammanträde 2018-11-14.pdf  
+> 2018 Nov 23 Brf Ekbladet Budgetförslag 2018.xls  
+> 2018 Nov 29 Brf Ekbladet energideklaration hela.pdf  
+> 2018 Nov 29 Brf Ekbladet energideklaration per adress.pdf  
+> 2018 Nov 29 Nordea lån.pdf  
+> 2018 Nov 29 Nordea uppsägning.doc  
+> 2018 Nov 29 Swebank lån 153 515-0.pdf  
+> 2018 Nov 29 Swedbank lån 055 911-9.pdf  
+> 2018 Nov 30 Nordea uppsägning brev.doc  
+> 2018 Nov 5 Vägguppbyggnad.pdf  
+> 2018 Nov 7 4.0 Fuktkontroll Bygg.pdf  
+> 2018 Oct 10 Ordning BRF .pdf  
+> 2018 Oct 15 Framtidsfullmakt.pdf  
+> 2018 Oct 17 Tingvalla lyktstolpar.jpg  
+> 2018 Oct 23 Carportplats Lars Eriksson.pdf  
+> 2018 Oct 23 Kö till Carportplats.doc  
+> 2018 Sep 10 Brf Ekbladet Likviditetsrapport 2018 07.xls  
+> 2018 Sep 12 Snöröj 2018 vårvinter.png  
+> 2018 Sep 16 Bilplatsavtal 1Lars Eriksson.pdf  
+> 2018 Sep 16 Bilplatsavtal 2 Lars Eriksson.pdf  
+> 2018 Sep 19 Protokoll styrelsesammanträde 2018-09-11.pdf  
+> 2018 Sep 27 Register - Inglasning av balkong alt terrass1.xlsx  
+> 2018 Sep 27 Utlämnade Fastighetsnycklar ver 20171025.xls  
+> 2018 Sep 27 Utlämnade Fastighetsnycklar ver 20171029.xls  
+> 2019 Apr 16 Protokoll styrelsesammanträde 2019-02-26.pdf  
+> 2019 Apr 24 Ordning BRF LGs revidering.docx  
+> 2019 Apr 24 Protokoll styrelsesammanträde 2019-04-24.docx  
+> 2019 Apr 25 Protokoll styrelsesammanträde 2019-04-03 sid 1,3.pdf  
+> 2019 Apr 25 Protokoll styrelsesammanträde 2019-04-03 sid 2,4.pdf  
+> 2019 Apr 30 Föreningsstämma 20190411 protokoll undertecknat.pdf  
+> 2019 Apr 6 Kallelse 2019.1.doc  
+> 2019 Apr 6 Svar på motioner 2019.docx  
+> 2019 Apr 6 motion laddplatser.docx  
+> 2019 Apr 8 Svar på motioner 2019.2.docx  
+> 2019 Apr 9 Protokoll styrelsesammanträde 2019-04-03.docx  
+> 2019 Apr 9 Protokoll styrelsesammanträde 2019-04-03.pdf  
+> 2019 Aug 12 Offert målning stopplank.pdf  
+> 2019 Aug 14 Protokoll styrelsesammanträde 2019-06-18.pdf  
+> 2019 Aug 31 GA10 Protokoll 19aug2019.pdf  
+> 2019 Aug 31 Kallelse 3 september 2019.docx  
+> 2019 Aug 8 Uppsägning av parkeringsplats Johan Hård.pdf  
+> 2019 Dec 15 Protokoll styrelsesammanträde 2019-12-05.pdf  
+> 2019 Dec 17 BRF Ekbladet Möte 4 20191211.pdf  
+> 2019 Dec 17 BRF Ekbladet Tekn inst rev G 2019-12-17 LW.docx  
+> 2019 Dec 17 Beslut förhandsbesked bifall laddpunktsbidrag.pdf  
+> 2019 Dec 17 Beslut förhandsbesked bifall laddpunktsbidrag.pdf  
+> 2019 Dec 17 Brf Ekbladet Kallhäll-Underlag 2019 Elbilsladdning från NewEL.pdf  
+> 2019 Dec 17 Brf Ekbladet Kallhäll-Underlag 2019 Elbilsladdning från NewEL.pdf  
+> 2019 Dec 17 Fwd_ Möte nr 4.eml  
+> 2019 Dec 17 NEWEL underlag Serviceavtal Elbilsaddning.pdf  
+> 2019 Dec 17 NEWEL underlag Serviceavtal Elbilsaddning.pdf  
+> 2019 Dec 17 NewEL Registerutdrag SKatteverket-20180125.pdf  
+> 2019 Dec 17 NewEL Registerutdrag SKatteverket-20180125.pdf  
+> 2019 Dec 17 NewEL Standardprislista tjänster.pdf  
+> 2019 Dec 17 NewEL Standardprislista tjänster.pdf  
+> 2019 Dec 17 Offert_1393-Halo.pdf  
+> 2019 Dec 17 Offert_1393-Halo.pdf  
+> 2019 Dec 17 Offert_1688-Aura.pdf  
+> 2019 Dec 17 Offert_1688-Aura.pdf  
+> 2019 Dec 17 Offertssvarsmall ver 1.0 EKbladet Ekblomman.pdf  
+> 2019 Dec 17 Offertssvarsmall ver 1.0 EKbladet Ekblomman.pdf  
+> 2019 Dec 19 168446802-lcs_client_bin.js.ladda ned  
+> 2019 Dec 19 2.html  
+> 2019 Dec 19 3653818607-postmessagerelay.js.ladda ned  
+> 2019 Dec 19 3790468473-lcs_receiver_bin.js.ladda ned  
+> 2019 Dec 19 Beräkning av effektkostnad - [bopersson2017@gmail.com](mailto:bopersson2017@gmail.com) - Gmail.html  
+> 2019 Dec 19 CDRknYghgP8gjEJsJXrXKLAbZa1BWwtvZXMAczxAlBY.js.ladda ned  
+> 2019 Dec 19 Medlemsförteckning.pdf  
+> 2019 Dec 19 api.js.ladda ned  
+> 2019 Dec 19 cb=gapi(1).loaded_0  
+> 2019 Dec 19 cb=gapi(2).loaded_0  
+> 2019 Dec 19 cb=gapi(3).loaded_0  
+> 2019 Dec 19 cb=gapi.loaded_0  
+> 2019 Dec 19 cb=gapi.loaded_1  
+> 2019 Dec 19 cb=gapi.loaded_2  
+> 2019 Dec 19 cb=gapi.loaded_3  
+> 2019 Dec 19 cb=gapi.loaded_4  
+> 2019 Dec 19 cb=gapi.loaded_5  
+> 2019 Dec 19 cleardot(1).gif  
+> 2019 Dec 19 cleardot.gif  
+> 2019 Dec 19 client(1).html  
+> 2019 Dec 19 client.html  
+> 2019 Dec 19 client.js.ladda ned  
+> 2019 Dec 19 eon svar.eml  
+> 2019 Dec 19 frame.html  
+> 2019 Dec 19 frame2(1).html  
+> 2019 Dec 19 frame2.html  
+> 2019 Dec 19 host-js  
+> 2019 Dec 19 hscv(1).html  
+> 2019 Dec 19 hscv.html  
+> 2019 Dec 19 icon_1_excel_x16.png  
+> 2019 Dec 19 icon_1_image_x16.png  
+> 2019 Dec 19 icon_1_message_x16.png  
+> 2019 Dec 19 icon_1_word_x16.png  
+> 2019 Dec 19 icon_3_pdf_x16.png  
+> 2019 Dec 19 lazy.min.js.ladda ned  
+> 2019 Dec 19 load.html  
+> 2019 Dec 19 logo_gmail_lockup_default_1x.png  
+> 2019 Dec 19 m=a  
+> 2019 Dec 19 m=b  
+> 2019 Dec 19 m=b,bst,c,ca,cnv,md,r  
+> 2019 Dec 19 m=inmolecalling  
+> 2019 Dec 19 m=m,m_i  
+> 2019 Dec 19 m=sps,l,spit,t,it  
+> 2019 Dec 19 no_photo.png  
+> 2019 Dec 19 photo(1).jpg  
+> 2019 Dec 19 photo(2).jpg  
+> 2019 Dec 19 photo.jpg  
+> 2019 Dec 19 postmessageRelay.html  
+> 2019 Dec 19 profile_mask2.png  
+> 2019 Dec 19 rpc_shindig_random.js.ladda ned  
+> 2019 Dec 19 rs=AA2YrTv2ThMm0MnPcs2gMuW3iE6KJ-UZYw  
+> 2019 Dec 19 rs=AA2YrTvvFXzTq_VP44FlEJY1nav_yBrf-w  
+> 2019 Dec 19 saved_resource.html  
+> 2019 Dec 19 sv.js.ladda ned  
+> 2019 Dec 19 unnamed(1).png  
+> 2019 Dec 19 unnamed(2).png  
+> 2019 Dec 19 unnamed(3).png  
+> 2019 Dec 19 unnamed.png  
+> 2019 Dec 2 Protokoll styrelsesammanträde 2019-11-05.pdf  
+> 2019 Feb 18 Bilplatsavtal 1 Gudrun Andersson.pdf  
+> 2019 Jan 20 Brf Ekbladet Budgetförslag 2018.xls  
+> 2019 Jan 20 Protokoll Avloppsrensning.pdf  
+> 2019 Jan 22 Ansvar för grönytor_Fyren.docx  
+> 2019 Jan 22 Åtgärdsplan BRF Ekbladet 2018-12-11.docx  
+> 2019 Jan 22 Överlåtelse av arbetsmiljöansvar m.m 181121.docx  
+> 2019 Jan 22 Presentation utav fasadåtgärd BRF Ekbladet 20190122.pptx  
+> 2019 Jan 27 Protokoll styrelsesammanträde 2018-12-17.pdf  
+> 2019 Jan 27 Protokoll styrelsesammanträde 2019-01-22.pdf  
+> 2019 Jan 28 Uppsägning plats P70 Rinkeholt.pdf  
+> 2019 Jan 3 Bilplatsavtal 1 Roland Karlsson.pdf  
+> 2019 Jul 8 Balansrapport_20190101-20190630_Brf Ekbladet .pdf  
+> 2019 Jul 8 Resultatrapport_20190101-20190630_Brf Ekbladet .pdf  
+> 2019 Jun 1 Protokoll styrelsesammanträde 2019-05-14.pdf  
+> 2019 Jun 17 Ordning BRF LGs revidering rev B.docx  
+> 2019 Jun 18 Utlämnade Fastighetsnycklar ver 20190125.xls  
+> 2019 Mar 3 Brf Ekbladet Årsredovisning 2018.pdf  
+> 2019 Mar 3 LevandeUnderhållsplan jan 2019.xlsx  
+> 2019 Mar 6 AVTAL lw.pdf  
+> 2019 Mar 9 9Första kallelse 2019.docx  
+> 2019 May 14 Ordning BRF Hms rev.docx  
+> 2019 May 14 Protokoll Årsstämma 7 maj 2019.pdf  
+> 2019 May 14 Protokoll Årsstämma 7 maj 2019.pdf  
+> 2019 May 2 BRF Ekbladet Möte 2 20190404.pdf  
+> 2019 May 31 Fördelning och sammanställning av arbetsuppgifter för styrelsen 2019.docx  
+> 2019 May 7 Protokoll styrelsesammanträde 2019-04-24.pdf  
+> 2019 Nov 19 EON1.JPG  
+> 2019 Nov 19 EON2.JPG  
+> 2019 Nov 19 EON3.JPG  
+> 2019 Nov 19 swe-om-effektkomponent(1).pdf  
+> 2019 Nov 2 Protokoll styrelsesammanträde 2019-10-08.docx  
+> 2019 Nov 2 drönarfotografering.docx  
+> 2019 Nov 25 orderagreement_sv_SE_20191121.pdf  
+> 2019 Nov 4 Protokoll styrelsesammanträde 2019-10-08.pdf  
+> 2019 Oct 14 SEK_Handbok_458_digital copy.pdf  
+> 2019 Oct 26 Befintlig brf Ekbladet.pdf  
+> 2019 Oct 26 Bilplatsavtal 2 Jessica Appelfeldt.pdf  
+> 2019 Oct 26 Offert Ekbladet.pdf  
+> 2019 Oct 26 image001.jpg  
+> 2019 Oct 26 städinstruktion brf ekbladet.pdf  
+> 2019 Oct 31 Fwd_ Drönarfotografering BRF Ekbladet.eml  
+> 2019 Oct 31 Home Solutions.pdf  
+> 2019 Oct 31 Höga Elnätskostnader.pdf  
+> 2019 Oct 31 Offert trådbunden M-bus IMD EL Brf Ekbladet 190520.pdf  
+> 2019 Sep 13 Protokoll styrelsesammanträde 2019-09-03.pdf  
+> 2019 Sep 16 dokument laddninngsstolpar.pdf  
+> 2019 Sep 16 elavtal 2020.pdf  
+> 2019 Sep 19 Fwd_ Kontakter och tips.eml  
+> 2019 Sep 19 Fwd_ Protokoll nr 3.eml  
+> 2019 Sep 19 Jm protokoll 3.pdf  
+> 2019 Sep 19 Jm protokoll 3.pdf  
+> 2019 Sep 26 2019-09-12_001_Ny_teknik_nr_37_Artikel_enstegstätad_fasad.pdf  
+> 2019 Sep 26 2019-09-12_002_fuktrelaterade_skador_olika_fasadlosningar_2019_06.pdf  
+> 2019 Sep 26 2019-09-20_artikel villaägarna.pdf  
+> 2020 Apr 2 Årsmöte 2020 senareläggning.docx  
+> 2020 Apr 21 2.html  
+> 2020 Apr 21 3610747733-lcs_receiver_bin.js.nedladdning  
+> 2020 Apr 21 3808778792-lcs_client_bin.js.nedladdning  
+> 2020 Apr 21 829555168-postmessagerelay.js.nedladdning  
+> 2020 Apr 21 8I8Z3wELRgTel2-lhKD1Oru5BR-ljaMim1LAbhzxuu8.js.nedladdning  
+> 2020 Apr 21 BRF Ekbladet - [bopersson2017@gmail.com](mailto:bopersson2017@gmail.com) - Gmail.html  
+> 2020 Apr 21 api.js.nedladdning  
+> 2020 Apr 21 app.html  
+> 2020 Apr 21 cb=gapi(1).loaded_0  
+> 2020 Apr 21 cb=gapi(2).loaded_0  
+> 2020 Apr 21 cb=gapi(3).loaded_0  
+> 2020 Apr 21 cb=gapi(4).loaded_0  
+> 2020 Apr 21 cb=gapi.loaded_0  
+> 2020 Apr 21 cb=gapi.loaded_1  
+> 2020 Apr 21 cb=gapi.loaded_2  
+> 2020 Apr 21 cb=gapi.loaded_3  
+> 2020 Apr 21 cb=gapi.loaded_4  
+> 2020 Apr 21 cb=gapi.loaded_5  
+> 2020 Apr 21 cleardot(1).gif  
+> 2020 Apr 21 cleardot.gif  
+> 2020 Apr 21 client(1).html  
+> 2020 Apr 21 client.html  
+> 2020 Apr 21 client.js.nedladdning  
+> 2020 Apr 21 frame.html  
+> 2020 Apr 21 frame2(1).html  
+> 2020 Apr 21 frame2.html  
+> 2020 Apr 21 host-js  
+> 2020 Apr 21 hscv(1).html  
+> 2020 Apr 21 hscv.html  
+> 2020 Apr 21 icon_1_excel_x16.png  
+> 2020 Apr 21 icon_1_image_x16.png  
+> 2020 Apr 21 icon_1_video_x16.png  
+> 2020 Apr 21 icon_1_word_x16.png  
+> 2020 Apr 21 icon_3_pdf_x16.png  
+> 2020 Apr 21 lazy.min.js.nedladdning  
+> 2020 Apr 21 load.html  
+> 2020 Apr 21 logo_gmail_lockup_default_1x.png  
+> 2020 Apr 21 m=_b,_tp  
+> 2020 Apr 21 m=_b,_tp(1)  
+> 2020 Apr 21 m=a  
+> 2020 Apr 21 m=b  
+> 2020 Apr 21 m=b,bst,c,ca,cnv,md,r  
+> 2020 Apr 21 m=inmolecalling  
+> 2020 Apr 21 m=m,m_i,i20jfd,lKrWxc,hkjXJ,gYOl6d,HXLjIb,DL8jZe,xaQcye,oRmHt,E1P0kd,pE92lb,v2eEBc  
+> 2020 Apr 21 m=sps,l,spit,t,it,anc  
+> 2020 Apr 21 no_photo.png  
+> 2020 Apr 21 photo.jpg  
+> 2020 Apr 21 postmessageRelay.html  
+> 2020 Apr 21 profile_mask2.png  
+> 2020 Apr 21 rpc_shindig_random.js.nedladdning  
+> 2020 Apr 21 rs=AA2YrTtJrF5VkzhlkhpH0aMjFQXPXQnH-g  
+> 2020 Apr 21 rs=AA2YrTuismEQKS9oNeLk4VDxLFFISdrsGg  
+> 2020 Apr 21 saved_resource.html  
+> 2020 Apr 21 silhouette48.png  
+> 2020 Apr 21 sv.js.nedladdning  
+> 2020 Apr 21 unnamed.png  
+> 2020 Apr 23 Deltagare årsmötet 2020.docx  
+> 2020 Apr 23 Synpunkter årsmötet 2020.docx  
+> 2020 Apr 6 Brf Ekbladet - ÅR 2019 - sign (2).pdf  
+> 2020 Dec 2 Trivselregler Gemensamma Förråd Okt 2020.docx  
+> 2020 Dec 2 Trivselregler Gemensamma Förråd Okt 2020.pdf  
+> 2020 Dec 3 JM 201202.docx  
+> 2020 Feb 12 laddstolpar20200121Ekblomman.xlsx  
+> 2020 Feb 19 B S.pdf  
+> 2020 Feb 21 Protokoll styrelsesammanträde 2020-01-30.pdf  
+> 2020 Feb 3 Brf Ekbladet Förvaltningsberättelse 2019 Mall.doc  
+> 2020 Jul 27 Protokoll Årsstämma 2020-06-10.pdf  
+> 2020 Jun 10 Tilläggsavtal till Avtal om fjärrvärmeleverans med särskilt effektbehov - Brf Ekbladet.pdf  
+> 2020 Jun 11 Deltagare årsstämma 2020.pdf  
+> 2020 Jun 11 Kartaäppellunden G28.pdf  
+> 2020 Jun 11 Protokoll styrelsesammanträde 2020-05-15.pdf  
+> 2020 Jun 11 Protokoll styrelsesammanträde 2020-06-08.pdf  
+> 2020 Jun 12 Protokoll 20200611.pdf  
+> 2020 Jun 12 Registreringsbevis - 769608-7977.pdf  
+> 2020 Jun 8 Laddplatsekonomi.xlsx  
+> 2020 Jun 9 Röstlängd Ekbladet.pdf  
+> 2020 Mar 12 Bilplatsavtal 1 Natalia Makarova.pdf  
+> 2020 Mar 13 BRF Ekbladet Möte 5 20200310.docx  
+> 2020 Mar 13 Brf Ekbladet Budget 2020 12-31.xls  
+> 2020 Mar 13 Fwd_ BRF Ekbladet Möte 5 20200310.eml  
+> 2020 Mar 14 Synpunkter på våra möten och J1.docx  
+> 2020 Mar 17 Ga 10 protokoll 2020-03-10.docx  
+> 2020 Mar 23 bilplatsavtal2 Ingrid Nestorsson.doc  
+> 2020 Mar 26 Brf Ekbladet - ÅR 2019 - sign.pdf  
+> 2020 Mar 26 Uttalande från styrelsen - Brf Ekbladet.pdf  
+> 2020 Mar 27 Bilplatsavtal 2 Ingrid Nestorsson.pdf  
+> 2020 May 13 GA10KOSTNADER2020 GA10.xlsx  
+> 2020 May 20 Årsmöte 2020 instruktion.docx  
+> 2020 May 20 Årsmöte 2020 motion.docx  
+> 2020 May 20 Bostadsrättsförs.docx  
+> 2020 May 22 Årsstämma 2020 kallelse.doc  
+> 2020 May 22 motion laddstolpar årsstämma 2020 ver 2.docx  
+> 2020 May 26 Protokoll styrelsesammanträde 2020-03-02.pdf  
+> 2020 May 26 Protokoll styrelsesammanträde 2020-04-21.pdf  
+> 2020 Nov 12 Brf Ekbladet Budgetförslag 2021.xls  
+> 2020 Nov 16 Mall utlägg Brf Ekbladet Valorem Elmermark.xls  
+> 2020 Nov 27 2020-11-26_143629 Jolanta_signerad.pdf  
+> 2020 Nov 3 Fwd_ BRF Ekbladet Möte 5 20200310.eml  
+> 2020 Nov 3 Fwd_ Möte nr 4 kommentarer.eml  
+> 2020 Nov 30 Protokoll styrelsesammanträde 2020-10-28.pdf  
+> 2020 Nov 30 Protokoll styrelsesammanträde 2020-11-20.pdf  
+> 2020 Oct 10 Protokoll styrelsesammanträde 2020-10-09.pdf  
+> 2020 Oct 24 Mall utlägg Brf Ekbladet Valorem Grankvist.xls  
+> 2020 Oct 24 Mall utlägg Brf Ekbladet Valorem Lars Persson.xls  
+> 2020 Oct 28 Brevmall.dotx  
+> 2020 Oct 28 Mall anslag 1.0 reserv.dotx  
+> 2020 Oct 28 Mall pm ver 1.0 reserv.dotx  
+> 2020 Oct 7 Protokoll styrelsesammanträde 2020-09-14.pdf  
+> 2020 Oct 8 Anslag Ordningsregler Gemensamma Förråd.docx  
+> 2020 Sep 14 Protokoll styrelsesammanträde 2020-08-14.pdf  
+> 2020 Sep 7 Brf Ekbladet Försäkring 200901.pdf  
+> 2021 Apr 1 Påskinfo 2021.docx  
+> 2021 Apr 20 Försäkr Brf 2021.pdf  
+> 2021 Apr 25 Första kallelse 2021.docx  
+> 2021 Apr 26 Laddplatsekonomi Ekbladets andel.xlsx  
+> 2021 Apr 4 Offert ett måleri järfälla.pdf  
+> 2021 Apr 4 Prästens måleri offert.pdf  
+> 2021 Apr 4 Prislista måleri mm.pdf  
+> 2021 Feb 10 Mall utlägg Brf Ekbladet Valorem Högdahl.xls  
+> 2021 Feb 10 Mall utlägg Brf Ekbladet Valorem LG.xls  
+> 2021 Feb 4 Brf Ekbladet Förvaltningsberättelse 2020 arbetsmall (2).doc  
+> 2021 Feb 4 Mall utlägg Brf Ekbladet Valorem Maca.xls  
+> 2021 Jan 11 Protokoll styrelsesammanträde 2020-12-18.pdf  
+> 2021 Jan 11 Protokoll styrelsesammanträde 20201009.pdf  
+> 2021 Jan 4 Besiktning 2020.xlsx  
+> 2021 Mar 12 Protokoll styrelsesammanträde 2021-03-04.pdf  
+> 2021 Mar 3 Protokoll styrelsesammanträde 2021-01-28.pdf  
+> 2021 Mar 30 Mall utlägg Brf Ekbladet Valorem.xls
+
+...
+
+{% endraw %}

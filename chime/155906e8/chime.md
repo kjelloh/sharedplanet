@@ -1,0 +1,64 @@
+# Todo: Piano - Consider to get to the bottom of Transducer (Yamaha Transacousting or Kawai ATX-f) pianos?
+
+```#155906e8``` *As of 2017-01-07 23:36*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, is it worth the money to try and get hold of (or build) a ”silent” piano with transducer (sound feed to the piano soundboard) feature?
+
+1) Yamaha seems to call their technology Transacoustic (<http://usa.yamaha.com/products/musical-instruments/keyboards/transacoustic/>)?
+
+2) Kawai seems to call their technology ATX-f or ”Anytime hybrid” (<http://www.kawaius.com/upright/anytime/anytime_main.html>)?
+
+==&gt; But they only seem to provide this feature for upright pianos?
+
+3) This seem to be a good thread on Transacoustic (hybrid) pianos (<http://www.pianoworld.com/forum/ubbthreads.php/topics/2415178/Please_help_me_decide._Yamaha_.html>)
+
+==&gt; One argument against seem to be that without headset the mechanical noise from the keyboard makes it hard to play on lower sound level that plain acoustic anyways?
+
+4) This seem to be a youtube clip where a transducer system is built into a Steinway grand piano (<https://www.youtube.com/watch?v=4PNN5rGZ7Pc>)?
+
+==&gt; He claims he bough the system from (<http://www.hiddenaudiosystems.com/contactinfo.html>)
+
+5) Dayton seems to call their systems for ”exciters" (<http://www.daytonaudio.com/index.php/hdn-8-weatherproof-sound-exciter-transducer.html>)?
+
+==&gt; This seem to be their product range for ”exciters” (<http://www.daytonaudio.com/index.php/catalogsearch/result/?q=exciter>)?
+
+==&gt; This may be a dayton exciter to use (<http://www.daytonaudio.com/index.php/bce-1-22-x-14mm-bone-conducting-exciter.html>)?
+
+==&gt; Note that it is ”only” 3 watts?
+
+==&gt; This seem to be dayton paper on how to use ”Exciters” (<http://www.daytonaudio.com/media/resources/understanding-and-using-dayton-audio-exciters-revised2.pdf>)?
+
+> ”*The panel material behaves like its own acoustic environment, with its own speed of sound, so achieving the most balanced and pleasing sound possible requires careful placement of the exciters themselves on the surface. The material type, exciter placement, and edge termination of the surface all affect the sound properties of a surface, though exciters can give acceptable results when mounted on nearly any kind of surface.*"
+
+6) Consider if I can use my education to ”know” how to mount transducers on a piano sound board without affecting the acoustic traits of the soundboard?
+
+==&gt; It would seem I would have to mount the transducers so they don’t affect the acoustics of the ”unplugged” piano?
+
+==&gt; Yamaha seems to make a case for attaching the transducers in a way to not affect the soundboard (<http://usa.yamaha.com/products/musical-instruments/keyboards/transacoustic/>)
+
+> ”… *the comparatively light coil section is affixed to the soundboard, and the heavier permanent magnet is attached to a side board. Since the transducers themselves do not press against or exert any weight on the soundboard, the soundboard can vibrate and resonate freely,* ..."
+
+==&gt; Can I imagine a way to attach the transducers so that they do not interfere when not used?
+
+==&gt; Consider to attach the transducers to the soundboard only when in use?
+
+==&gt; Consider to transfer sound using ”ordinary” speakers (i.e., not attach the transducers mechanically)?
+
+==&gt; Consider to connect the transducers magnetically only when in use (having the soundboard unattached when transducers are not used)?
+
+==&gt; Can I imagine a way to measure how the soundboard vibrates to find where to attach the transducers (preferably at the nodes of major frequencies)?
+
+==&gt; Is there a way to measure how the soundboard vibrates using laser imaging?
+
+==&gt; Consider how to place the transducers to produce good sound from a stereo source?
+
+==&gt; Consider that ”stereo” may require some processing to produce the correct sound on the singular soundboard of the piano (the bass sound being heavy on the left while the treble frequencies are heavy on the right)?
+
+…
+
+Consider to delve deeper into the options to buy or build a transacoustic piano?
+
+{% endraw %}

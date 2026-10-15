@@ -1,0 +1,32 @@
+﻿It seems there are solutions for “above ground” sewer solutions that are allowed for usage in sweden?
+
+1) Consider solutions from Avloppscenmter in sweden (https://www.avloppscenter.se/vara-produkter/reningsverk/reningsverk-ett-hushall/biolan-trio-reningsverk.html <https://www.avloppscenter.se/vara-produkter/reningsverk/reningsverk-ett-hushall/biolan-trio-reningsverk.html>)?
+
+“
+• reningsverket är avsett för behandling av bostadsfastighetens alla avloppsvatten (för 1-6 personer, PE 6) 
+• normalkapaciteten är 0,75 m3/dygn 
+• maximikapaciteten är ca 0,9 m3/dygn 
+• man får inte leda dagvatten, dvs. regnvatten eller vatten från dränering av grunden, till reningsverket 
+• om jordens genomsläpplighet är dålig, rekommenderas det dränering för minskning av vattnets lyftkraft 
+• reningsverket bör förankras 
+• reningsverket ska placeras så att behållarna kan tömmas med en slambil 
+• reningsverkets föreningsrör ska sitta stadigt på plats och de ska vara 110 mm i diameter 
+• det rekommenderas att långa avloppslinjer och ställen med krökar förses med en kontrollbrunn eller ett rör 
+• reningsverket bör tjälisoleras 
+• reningsverket behöver elström för att fungera (230 V, enfasig, jordfelsskyddad) 
+• strömmatningsdosan ska kopplas bakom en säkring på 10 A i säkringstavlan Fraktkostnad tillkommer för att få detta utkört, fråga oss om pris. Vikt ca 350kg
+"
+
+	==> Consider it may be allowed to place this three step active solution in a heated off-ground house?
+
+		
+
+	==> The users manual seems to indicate this plant is for digging down under ground /https://shopcdn.textalk.se/shop/11994/art73/18558473-52a220-publication.pdf <https://shopcdn.textalk.se/shop/11994/art73/18558473-52a220-publication.pdf>)?
+
+		==> And it is quite power thirsty (more than 1 kWh per day)?
+
+“	• elförbrukning, beroende på vattenförbrukning ca 420 kWh per år”
+
+		…
+
+Consider to delve into what solutions there are for low-foot-print off-ground sewer plants for WC and sewer plants?

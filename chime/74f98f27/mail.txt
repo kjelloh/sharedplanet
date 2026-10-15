@@ -1,0 +1,41 @@
+﻿I may be tempted to assemble my own Lithium battery bank for a all-electric Caravan conversion.
+
+0) Consider the bottom line conclusion of my survey?
+
+
+
+1) Consider the 18650 batteries from the Swedish site batterikungen (https://batterikungen.se/batteri/18650-batterier.html?orderby=product_price&dir=ASC&keyword= <https://batterikungen.se/batteri/18650-batterier.html?orderby=product_price&dir=ASC&keyword=> )?
+
+	==> Consider the capacity and price using the cheapest 43 SEK Li-Ion cells?
+
+
+Speculation: Four in series gives 13,2 - 14.8 (3.3 - 3.9 per cell). 2 Ah per battery means we have around 3.8 x 2A = 7.6 Wh per battery. 1 kWh now requires 131 cells. But we use S4 modules (four in series) so we shall use 132 cells or 33 x four cells.
+
+So, 132 cells would be 132 * 50 SEK = 6600 SEK.
+
+Ok, that is 6.60 SEK per Wh.
+
+Further, 33 modules of 22A max discharge each gives us a max discharge of 33*22 = 726 A. This would correspond to around 726 A * 14V = 10 kW!
+
+Compare this with Victron 12.8 200 Ah Smart battery for 14200 SEK / 2500 Wh = 5.68 SEK per Wh. The Victron battery is CHEAPER :)
+
+NOTE: The Victron battery can discharge at 200A which correspond to say 200A * 12.8V = 2560W (which should be a low estimate?)
+
+	==> Consider the capacity and price using the cheapest 35,5 SEK/Wh LiFePo4 cells?
+
+
+
+It seems LiFePo4 is considered to operate at 'as-if' 3.2V (nominal) cell voltage (range 2,8V - 3,65V). So four in series gives us 12,8 Volts. Each such module would carry around 12,8V * 2,5 Ah = 32 Wh. Thus we need 32 such modules = 1024 Wh.
+
+This would cost us 32 * 4 * 71,20 (I got a discount for this order) = 11400 SEK!
+
+This would mean a price of 11,40 SEK / Wh (still almost double for that off the Victron Smart 12.8 200 Ah battery!)
+
+NOTE: It is also unclear off what discharge this cell can allow. The site claims "good for 50A battery modules". Suppose the cell should at least allow discharge at 1C (empty in 1hour), that is 2,5A. Then 32 in parallel would allow us to discharge the whole package at 32*2,5 = 80A. This would correspond to 80A * 12,8 = 1024 W.
+
+So this cell is NOT a good choice compared to the Victron Smart 12.8 200A LiFePo4 battery! 
+
+2) So what happened to the DIY battery pack builds for down to 1000 SEK per kWh?
+
+	==> Ok, it seems on amazon.se <http://amazon.se/> I may find cells to come down to around 5000 to 6000 / kWh, but this is still close to the Victron 14200 SEK?
+... 

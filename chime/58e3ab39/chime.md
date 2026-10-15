@@ -1,0 +1,36 @@
+# Todo: Programming - Consider to try out Stephen S Lavavej latest MinGW 64 bit Windows distribution?
+
+```#58e3ab39``` *As of 2016-05-30 12:44*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems Stephen L Lavavej has done a good job on making an easy to install and use distribution of MinGW with some additional good open libraries (e.g. boost 1.61 and DSL including SDL-Mixer)?
+
+1) It seems to be published here (<https://nuwen.net/mingw.html>)?
+
+2) Consider to also delve into the additional packages provided in the distribution (as example of ones approved and used by Stephen himself being an expert C++ programmer)?
+
+EssentialsLibrariesUtilitiesUtilities (Binary)[binutils 2.26](https://www.gnu.org/software/binutils/)[Boost 1.61.0](http://www.boost.org/)[coreutils 8.25](https://www.gnu.org/software/coreutils/coreutils.html)\*\*\*[7-Zip 16.02](http://7-zip.org/)[GCC 6.1.0](https://gcc.gnu.org/)[FreeType 2.6.3](https://freetype.org/)[gdb 7.11](https://www.gnu.org/software/gdb/)[git 2.8.3](https://git-scm.com/)[mingw-w64 4.0.6](http://mingw-w64.org/doku.php)[glbinding 2.0.0](https://github.com/cginternals/glbinding)[grep 2.10](https://www.gnu.org/software/grep/)[GLM 0.9.7.5](http://glm.g-truc.net/)[LAME 3.99.5](http://lame.sourceforge.net/)[libbzip2 1.0.6](http://bzip.org/)[make 4.2](https://www.gnu.org/software/make/)[libjpeg-turbo 1.4.2](http://libjpeg-turbo.virtualgl.org/)\*[pngcheck 2.3.0](http://libpng.org/pub/png/apps/pngcheck.html)[libogg 1.3.2](https://xiph.org/ogg/)[pngcrush 1.8.1](http://pmt.sourceforge.net/pngcrush/)[libpng 1.6.21](http://libpng.org/pub/png/libpng.html)[sed 4.2.2](https://www.gnu.org/software/sed/)[libvorbis 1.3.5](https://xiph.org/vorbis/)[vorbis-tools 1.4.0](https://xiph.org/downloads/)[PCRE 8.38](http://pcre.org/)\*\*[SDL 2.0.4](https://libsdl.org/)[SDL_mixer 2.0.1](https://libsdl.org/projects/SDL_mixer/)[zlib 1.2.8](http://zlib.net/)
+
+3) Consider why he distributes the SDL (Simple DirectMedia Layer) library but no GUI library (e.g. no Qt)?
+
+==&gt; He is of the opinion that ones should implement a GUI using SDL?
+
+==&gt; Should I still aim at using Qt or Copperspice for cross platform GUI front-ends?
+
+…
+
+4) Consider why Lavavel proposes GCC and not Clang for windows?
+
+==&gt; Q: Is it because Clang is not yet Microsoft Visual Studio ABI compliant (<http://clang.llvm.org/docs/MSVCCompatibility.html>)?
+
+...
+
+…
+
+Consider to install and delve into this distribution as a good, well though through and reference C++ environment for Windows 10?
+
+...
+
+{% endraw %}

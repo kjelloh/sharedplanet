@@ -1,0 +1,15 @@
+﻿
+1) Eftersom den har borstar så är det en allströmsmotor?
+
+	…
+
+2) It seems the english term is universal motor (https://en.wikipedia.org/wiki/Universal_motor <https://en.wikipedia.org/wiki/Universal_motor>)?
+
+3) Consider to investigate how Welleman ac motor controller works in relation to an “ordinary” dimer (https://www.velleman.eu/products/view/?country=nl&lang=en&id=9075 <https://www.velleman.eu/products/view/?country=nl&lang=en&id=9075>)?
+
+	==> They state they switch only once per cycle (as opposed to dimmers that switches each half cycle)?
+	...
+
+…
+
+

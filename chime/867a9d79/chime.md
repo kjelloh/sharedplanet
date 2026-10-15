@@ -1,0 +1,57 @@
+# Todo: Consider to delve into and try put the open source "Jamulus" client-server software for online streamed music jams?
+
+```#867a9d79``` *As of 2020-04-27 12:38*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I have for some time speculated in the possibilities to play music live (or semi-live) over internet connected audio clients.
+
+==&gt; Also see "Todo: Consider a live music jamming software for internet distributed clients that works like "karaoke" but feels like "live" by recursive distribution of tracks?"
+
+==&gt; Also see "Todo: Överväg att göra en lista på låtar att sjunga som jag har inspelade stämmor på (För Trudelutt, Quartett, sjunga med Pernilla, Linda, Elin, fler...)"
+
+==&gt; Also see "PernOlov Trudelutt - Sånggodis för träffen nu på Onsdag 22 Feb :)" (SAB stämmor på Bach)
+
+1) It seems the Jamulus project lives here on SourceForge (<http://llcon.sourceforge.net> )?
+
+==&gt; It seems Jamulus interfaces the audio hardware using **ASIO** on WIndows, **Core Audio** on Mac and **Jack** on Linus?
+
+> *"Jamulus is Open Source software (GPL, GNU General Public License) and runs under Windows (ASIO), MacOS (Core Audio) and Linux (Jack). It is based on the **Qt framework** and uses the OPUS audio codec."*
+
+==&gt; It seems Jamulus uses the QT Framework for the frontend, the OPUS interactive audio codec for streaming and some old Stanford C++ code for reverberation?
+
+> This code contains open source code from different sources. The developer(s) want to thank the developer of this code for making their efforts available under open source:
+
+-
+
+>   Qt cross-platform application framework: [http://www.qt.io](http://www.qt.io/)
+
+-
+
+>   Opus Interactive Audio Codec: [http://www.opus-codec.org](http://www.opus-codec.org/)
+
+-
+
+>   Audio reverberation code: by Perry R. Cook and Gary P. Scavone, 1995 - 2004 (taken from "The Synthesis ToolKit in C++ (STK)"): <http://ccrma.stanford.edu/software/stk>
+
+  
+==&gt; It seems Jamulus "Rule Number One" is to NOT LISTEN TO YOURSELF, only to the feed from te others (<https://github.com/corrados/jamulus/wiki/Software-Manual> )?
+
+> ![Overview](79309764-bd387280-7ef2-11ea-9d81-1e81302525e6.png)
+
+> "  
+> *Rule Number One!
+
+> DO. NOT. LISTEN. TO. YOUR. DIRECT. SIGNAL!
+
+> This is obviously hard for singers and some acoustic musicians, but even if your connection is good, if players aren't listening to their own signal **coming back from the server**, your synchronisation willsuffer.*  
+> "
+
+2) It seems the Jamulus source code lives here on GitHub (<https://github.com/corrados/jamulus> )?
+
+TODO: Consider to study it to see if I can re-use it for my own implementation?
+
+...
+
+{% endraw %}

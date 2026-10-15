@@ -1,0 +1,18 @@
+# Todo: Consider that to "Understand" is the ability to "Be About" which in turn means we have identified both a model (about) and an internal representation (understand)  and consciousness is just a special case of self referential "About Ourself"?
+
+```#9b9878bd``` *As of 2020-09-15 10:35*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I am interested in how curious it is that life is able to "Be About" reality and that this seems to require both an ability to model reality and also to represent this model internally and act in faith to this representation.
+
+> *So the basic idea here is to focus on our ability as living beings to "Be About" stuff like, that which is external to us, and also to be about ourself. If we model this ability as a way in which we internalise information, we have also to model how this internalise is done. Now, from computer science we know one way is to recognise that to process any information we need both a model of the "stuff" we have information about; but also a representation (an instance) of that model. So let's assume we apply the same model of our own ability to understand stuff. This could mean that when we "Understand" something it means we have succeeded to both identify a model of the stuff we understand and also a way to internalise (represent) that model and to fill (instantiate) the model with information.*
+
+> *We can now propose that every aspect of our experience of reality is in fact an internal representations of our model of the same reality. So when we see "green Grass" this is how we internally represent reality in a model of it being made up of "Objects" (grass) that has "Colour" (green). What we experience as "Reality" is more like a "Virtual Reality" where "Grass" and "Green" are representations of "Objects" and "Colour" as defined by our model of reality. Now, how well our representation (experience) of reality actually matches what reality "is" depends on what kind of interaction with reality we engage in. If we play football on grass it suffice for our activity to experience the world as being made up of green grass as a surface to play football on. If we on the other hand want to keep the grass alive we need to identify grass as living plants that require water, light and nutrition to grow. We need also to model grass as growing and football as an activity that require grass of a restricted hight. This in turn require us to populate reality with solutions (tools and activities) to keep the grass short (we need to regularly cut it).*
+
+> *Now consciousness can be seen as a special case of "Understanding" as our ability to "be About" ourselves. Consciousness could be an internal instance of our representation of our model of ourself! Now, this does not explain why consciousness is an experience or even what an experience (what it is "like" to be) is. But it seems to me that it at least this is a model of how consciousness relates to our ability to "Understand" and "Experience" as sub categories of the more general ability we have to "Be About" as in being able to internally represent a model of reality.*
+
+> *...*
+
+{% endraw %}

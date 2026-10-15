@@ -1,0 +1,45 @@
+﻿It seems we should be able to find something interesting by focusing on Set + (Co-Product), * (Product) and Exponential (Set projection/function) to each level of the Tha meta model layers?
+
+1) What could we “guess” by looking for Set +, * and exponential on the Sets on each meta-layer of the Tha model?
+
+	==> Consider Z ^ Y is the Set of all functions f: Y -> Z  (https://en.wikipedia.org/wiki/Exponential_object)
+	==> Consider to extend the notion from the Sets of Algebraic types (meta-2 level) (https://en.wikipedia.org/wiki/Algebraic_data_type)?
+
+“Two common classes of algebraic types are product types (i.e., tuples and records) and sum types, also called tagged or disjoint unions or variant types.[1]"
+
+	==> See “/Users/kjell-olovhogdahl/Resilio Sync/XCode/MyCppTypeSystemInCppTypeSystem"
+
+/*
+ 
+ It seems we only have three basic ways of combining Sets of interest in types-as-set approach to a type system?
+ 
+    1) Set A + Set B = The SUM "type" Either A or B
+    2) Set A * Set B = The Product "type" Both A and B
+    3) Set B ^ Set A = The Function "type" ALL morphisms from A to B ( B * B * B ... ??)
+ 
+    Meta-1: A + B   = enum value (eiter value A or value B, indexed by tag/name)
+            A * B   = array value (both value A and B, indexed by integer)
+                      struct value (both value A and B, indexed by name)
+            B ^ A   = function value/call (argument value A returns value B)
+ 
+    meta-2: A + B   = union-type (either type A or type B, indexed by name)
+            A * B   = struct-type (both type A and type B, indexed by name)
+            A ^ B   = function-type (maps type A to type B)
+ 
+    meta-3: A + B   = * missing in C++ * (either kind A or kind B, indexed by tag/name)
+            A * B   = * Missing in C++ * (Both kind A and kind B, indexed by name)
+            A ^ B   = template-type (maps template/type/value A to kind B, i.e., class/struct or function kind)
+ 
+    meta-4: A + B   = * missing in C++ * (Either Sort A or Sort B, indexed by tag/name) - But we have only the "template" Sort?
+            A * B   = * missing in C++ * (Both Sort A and Sort B, indexed by tag/name) - But we have only the "template" Sort?
+            A ^ B   = * missing in C++ * (maps/projects Sort A to Sort B) - But we have only the "template" Sort?
+ 
+ */
+
+
+2) ...
+
+
+…
+
+Consider to try and clear this approach up of identifying Set Sum, Product, Exponential on each meta-level of a Type System?

@@ -1,0 +1,112 @@
+# Todo: Consider an electronic currency that uses he limit of the human population instead of a limit in available currency?
+
+```#c2622aea``` *As of 2017-03-30 13:29*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider we can replace the Bitcoin amount limit (induced by the mining cost reaching infinity) with an electronic currency where the limit is set by the number of humans owning currency?
+
+==&gt; Also see ”Todo: Shared Planet Coin - Consider to elaborate on an electronic currency that has trickle-down and contracts built in to it ("work energy" idiom currency)?”
+
+==&gt; Also see ”Todo: Consider the traits of an electronic currency that can provide incitements to have a society emerge where human suffering from lack of resources are no more?”
+
+==&gt; Also see ”Todo: Elaborate on the idea of a Currency that "decays" and is Created by society based on available resources”
+
+==&gt; Also see ”Todo: Elaborate on the idea of a Currency that behaves like "energy" and is Created by society based on available resources”
+
+==&gt; Also see ”Todo: Write about a currency to evaluate "happiness”"
+
+==&gt; Also see ”Todo: Write about currency with natural decay in value”
+
+1) Consider any currency requires some form of limitation of its total availability to protect its value?
+
+==&gt; Consider most currencies relies on the limitation of having to provide some service to get currency (thus providing both limitation and value)?
+
+==&gt; Consider Gold to have value due to its scarcity (you can acquire gold only by trading with someone that owns it)?
+
+==&gt; Consider BitCoin has a built in scarcity defined by the mining cost reaching infinity?
+
+…
+
+2) Consider we can impose a similar limit by restricting the available currency to the number of humans owning it?
+
+==&gt; Consider if the limit should be a fixed amount per person or a factor times the number of humans (to allow for floating prices)?
+
+==&gt; Do we really need to allow for inflation or deflation in prices or can we imagine the currency to be set to a fixed amount in a fixed price economy?
+
+==&gt; Consider mechanism to identify unique individuals (how do we fight off the temptation to create fake accounts)?
+
+==&gt; Consider the currency rewards money in the ”same purse” so that two fraudulent accounts is a net loss compared with one true account?
+
+…
+
+3) Consider new accounts will increase the total currency available to enable the new account to be filled without changing the global average amount?
+
+==&gt; Consider the network will ”mine” more currency during the time currency trickles in from the network as defined by the global average?
+
+==&gt; Consider the ”mined” currency goes to all accounts as a separate process?
+
+==&gt; Consider the new account gets ”filled” by the same ”communicating vessels” (<https://en.wikipedia.org/wiki/Communicating_vessels>)?
+
+…
+
+4) Consider to compare (or combine) this human-population-based currency restriction with others based on available-resources or sustainable-production?
+
+==&gt; Consider ”Todo: Elaborate on the idea of a Currency that behaves like "energy" and is Created by society based on available resources”
+
+==&gt; Consider ”Todo: Elaborate on the idea of a Currency that "decays" and is Created by society based on available resources”
+
+...
+
+5) Consider to elaborate on the traits of the currency-of-the-future as we have discussed it so far?
+
+==&gt; It seems we like the currency to have built-in equalization properties?
+
+==&gt; It seems we like the currency to flow by itself from those who have to those who does not have (communicating vessel mechanism)?
+
+==&gt; It seems we may have the currency ”decay” as an alternative to the Communicating Vessels Flow mechanism?
+
+==&gt; It seems the currency may have a record of how much of the commons each human ”owns” and use this for some equalizing mechanism (e.g., to adjust prices based on how much the buyer and seller trades above ”the average”)?
+
+...
+
+==&gt; It seems we want a restriction in the total amount of currency available to make it carry ”value” (humans are willing to trade ”work” for currency and currency for ”work”)?
+
+==&gt; It seems we may restrict the currency to the ”price” of the quota of the commons we can ”afford” to have consumption on a sustainable level?
+
+==&gt; It seems we may restrict the currency to the number of people trading with the currency?
+
+==&gt; It seems we may restrict the currency to limit human actions within the limits above suffering but below sustainable consumption?
+
+...
+
+==&gt; It seems we want some restriction on the velocity of trading (money per time) each person can do?
+
+==&gt; It seems one mechanism is to adjust how much money per month each person can have trickle in to his or her account (in effect restrict monthly spendings)?
+
+==&gt; It seems one mechanism is to adjust how fast money trickles out from accounts with a balance above global average (in effect restricting accumulated capital)?
+
+…
+
+==&gt; It seems we want the currency to also track actual resources traded in each transaction to use for currency algorithms input?
+
+==&gt; It seems we are tempted to have the currency keep track of who (what account) owns what resources (e.g., to set individual prices based on global sustainable consumption levels)?
+
+…
+
+6) Consider the electronic currency to self-adjust against frauds and black-markeitng by providing stronger incitements for honesty than for fraudulent behavior?
+
+==&gt; Consider this would enable the currency to adapt and be trusted without human supervision (we like to minimize human intervention and control as this is vulnerable to corruption and self-interests to play to large a role)?
+
+==&gt; Consider a currency using transaction contracts, availability limitations and equalization mechanisms to serve as a self-adjusting currency?
+
+...
+
+…
+
+Consider to delve into this idea of restricting currency availability to the total number of engaged humans in the economy using the currency?
+
+...
+
+{% endraw %}

@@ -1,0 +1,252 @@
+﻿It seems I could benefit from understanding the actual system architecture and components of the Late 2013 Apple mac Pro (model 6.1)?
+
+-1) Consider to capture the bottom line of how to understand the different Mac Pro 6.1 model architectures?
+
+	==> It seems all Mac Pro 6.1 uses the SAME housing, chip-set and PCBs?
+	==> It seems all Mac Pro 6.1 uses the Intel Chipset C602J?
+	==> It seems the E5 Xeon 12 core uses Intel QPI (Quick Path Interconnect) internally (and does nNOT require any special chipset of PCBs)?
+
+	==> It seems any Quad 3.5 GHx E5 system is an upgrade (Replaced original Q. Core Xeon E5-1620v2 with E5-1620V4)?
+
+1) Consider the design and parts of the Mac Pro 6.1?
+
+	==> Consider the parts schematics by macparts online (http://www.macpartsonline.com/mac-pro-parts/mac-pro-late-2013-a1481-parts.html <http://www.macpartsonline.com/mac-pro-parts/mac-pro-late-2013-a1481-parts.html> )?
+
+	
+
+	==> It seems the mac Pro 6.1 logic board is “661-7527 Apple Logic Board” and placed at the bottom of the “trash can”?
+
+	
+
+	==> It seems the Mac Pro 6.1 graphics cards are A “661-7532” and B “661-7547" cards.
+
+			
+
+	==> It seems the Mac Pro 6.1 CPU board is the “820-5494-A Apple CPU Riser Card”
+
+	
+
+	==> It seems the Mac Pro 6.1 I/O board is the “661-7553 Apple Input/Output I/O Board”
+
+	
+
+	==> It seems the Mac Pro 6.1 fan is the “923-0492 Apple Exhaust Assembly” or “923-0491 Apple Fan"
+
+		
+	 “923-0492 Apple Exhaust Assembly”
+
+	
+	923-0491 Apple Fan
+	
+
+2) Consider the Intel specifications on the CPU options for the Apple Mac Pro 6.1?
+
+Mac Pro 
+
+Processor
+
+Clockspeed
+
+Cores
+
+L3 Cache
+
+"Quad Core" 3.7 <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-quad-core-3.7-xeon-e5-gray-black-cylinder-late-2013-specs.html>	
+E5-1620v2 <http://ark.intel.com/products/75779/>	
+3.7 GHz
+
+4
+
+10 MB
+
+"Six Core" 3.5 <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-six-core-3.5-xeon-e5-gray-black-cylinder-late-2013-specs.html>	
+E5-1650v2 <http://ark.intel.com/products/75780/>	
+3.5 GHz
+
+6
+
+12 MB
+
+"Eight Core" 3.0 <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-eight-core-3.0-xeon-e5-gray-black-cylinder-late-2013-specs.html>	
+E5-1680v2 <http://ark.intel.com/products/77912/>	
+3.0 GHz
+
+8
+
+25 MB
+
+"Twelve Core" 2.7 <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-twelve-core-2.7-xeon-e5-gray-black-cylinder-late-2013-specs.html>	
+E5-2697v2 <http://ark.intel.com/products/75283/>	
+2.7 GHz
+
+12
+
+30 MB
+
+
+	==> Consider the Intel specification for “Quad Core” 3.7, i.e., E5-1620V2 (https://ark.intel.com/products/75779/ <https://ark.intel.com/products/75779/> )?
+	==> Consider the Intel specification for “Six Core” 3.5, i.e., E5-1650V2 (https://ark.intel.com/products/75780/ <https://ark.intel.com/products/75780/> )?
+	==> Consider the Intel specification for “Eight Core” 3.0, i.e., E5-1680V2 (https://ark.intel.com/products/77912/ <https://ark.intel.com/products/77912/> )?
+	==> Consider the Intel Specification for “Twelve Core” 2.7, i.e., E5-2697V2 (https://ark.intel.com/products/75283/ <https://ark.intel.com/products/75283/> )?
+
+	==> Consider the intel specification for the C602J chipset (https://ark.intel.com/products/66243/Intel-C602J-Chipset?wapkw=c602j <https://ark.intel.com/products/66243/Intel-C602J-Chipset?wapkw=c602j> )?
+
+1) Consider the Wikipedia page on the Mac Pro (https://en.wikipedia.org/wiki/Mac_Pro <https://en.wikipedia.org/wiki/Mac_Pro> )?
+
+2) Consider the Wikipedia page on the Intel Direct Media Interface DMI (https://en.wikipedia.org/wiki/Direct_Media_Interface <https://en.wikipedia.org/wiki/Direct_Media_Interface> )?
+
+	==> It seems mac Pro 6.1 uses the Intel system architecture where the chip-set is divided into a “North Bridge” for high speed GPUs and Memory interaction and a “South Bridge” for I/O (using DMI between the two)?
+
+“In computing, Direct Media Interface (DMI) is Intel's proprietary link between the northbridge and southbridge on a computer motherboard."
+
+	
+
+
+	==> Consider Intels description of their system architecture ()
+
+Bus Speed
+A bus is a subsystem that transfers data between computer components or between computers. Types include front-side bus (FSB), which carries data between the CPU and memory controller hub; direct media interface (DMI), which is a point-to-point interconnection between an Intel integrated memory controller and an Intel I/O controller hub on the computer’s motherboard; and Quick Path Interconnect (QPI), which is a point-to-point interconnect between the CPU and the integrated memory controller.
+
+
+3) Consider the wikipedia page on Intel Northbridge (https://en.wikipedia.org/wiki/Northbridge_(computing) <https://en.wikipedia.org/wiki/Northbridge_(computing)> )?
+
+4) Consider the Wikipedia page on Intel Southbridge (https://en.wikipedia.org/wiki/Southbridge_(computing) <https://en.wikipedia.org/wiki/Southbridge_(computing)> )?
+
+5) Consider the information available at everymac.com (https://everymac.com <https://everymac.com/> )?
+
+	==> Consider this listing of the difference between 4, 6 and 12 core Mac Pro 6.1 (https://everymac.com/ultimate-mac-comparison-chart/?compare=all-macs&highlight=2&prod1=MacPro037&prod2=MacPro038&prod3=MacPro040 <https://everymac.com/ultimate-mac-comparison-chart/?compare=all-macs&highlight=2&prod1=MacPro037&prod2=MacPro038&prod3=MacPro040> )?
+
+ 
+Model Mac Pro 3.7 x4 (2013)Mac Pro 3.5 x6 (2013)Mac Pro 2.7 x12 (2013)
+ 
+Model Specs Complete Specs <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-quad-core-3.7-xeon-e5-gray-black-cylinder-late-2013-specs.html>Complete Specs <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-six-core-3.5-xeon-e5-gray-black-cylinder-late-2013-specs.html>Complete Specs <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-twelve-core-2.7-xeon-e5-gray-black-cylinder-late-2013-specs.html>
+Comparison Q&A Comparison Q&A <https://everymac.com/systems/apple/mac_pro/mac-pro-cylinder-faq/differences-between-mac-pro-gray-black-cylinder-late-2013-models.html>Comparison Q&A <https://everymac.com/systems/apple/mac_pro/mac-pro-cylinder-faq/differences-between-mac-pro-gray-black-cylinder-late-2013-models.html>Comparison Q&A <https://everymac.com/systems/apple/mac_pro/mac-pro-cylinder-faq/differences-between-mac-pro-gray-black-cylinder-late-2013-models.html>
+Series Q&A Series Q&A <https://everymac.com/systems/apple/mac_pro/mac-pro-cylinder-faq/index.html>Series Q&A <https://everymac.com/systems/apple/mac_pro/mac-pro-cylinder-faq/index.html>Series Q&A <https://everymac.com/systems/apple/mac_pro/mac-pro-cylinder-faq/index.html>
+Buy Macs Buy This Mac <https://www.yourtechhq.com/search?q=mac+pro+-macbook+-imac+-ipad&utm_source=everymac>Buy This Mac <https://everymac.com/adorama-macpro>Buy This Mac <https://everymac.com/adorama-macpro>
+Sell Macs Sell This Mac <https://www.buybackworld.com/sell/apple-desktop/mac-pro?utm_source=everymac>Sell This Mac <https://www.buybackworld.com/sell/apple-desktop/mac-pro?utm_source=everymac>Sell This Mac <https://www.buybackworld.com/sell/apple-desktop/mac-pro?utm_source=everymac>
+Upgrade Macs Upgrade This Mac <https://eshop.macsales.com/MyOWC/Upgrades.cfm?model=483>Upgrade This Mac <https://eshop.macsales.com/MyOWC/Upgrades.cfm?model=486>Upgrade This Mac <https://eshop.macsales.com/upgrades/mac-pro-12-core-late-2013-2.7-ghz/>
+Upgrade Macs (UK) Upgrade This Mac (UK) <https://www.flexxmemory.co.uk/categories/apple-mac-memory/mac-pro-ram/upgrades-for-2013-mac-pros/late-2013-macpro6-1.html?utm_campaign=flexx&utm_medium=text&utm_source=everymac>Upgrade This Mac (UK) <https://www.flexxmemory.co.uk/categories/apple-mac-memory/mac-pro-ram/upgrades-for-2013-mac-pros/late-2013-macpro6-1-6-core.html?utm_campaign=flexx&utm_medium=text&utm_source=everymac>Upgrade This Mac (UK) <https://www.flexxmemory.co.uk/categories/apple-mac-memory/mac-pro-ram/upgrades-for-2013-mac-pros/late-2013-macpro6-1-12-core.html?utm_campaign=flexx&utm_medium=text&utm_source=everymac>
+Upgrade Macs (AU) Upgrade This Mac (Australia) <https://www.ramcity.com.au/upgrade/apple/mac-pro/macpro6-1-late-2013-all-cpus/82972>Upgrade This Mac (Australia) <https://www.ramcity.com.au/upgrade/apple/mac-pro/macpro6-1-late-2013-all-cpus/82972>Upgrade This Mac (Australia) <https://www.ramcity.com.au/upgrade/apple/mac-pro/macpro6-1-late-2013-all-cpus/82972>
+Upgrade Macs (SG) Upgrade This Mac (SE Asia) <http://simplymac-sg.myshopify.com/collections/memory/products/macpro-2014-ram>Upgrade This Mac (SE Asia) <http://simplymac-sg.myshopify.com/collections/memory/products/macpro-2014-ram>Upgrade This Mac (SE Asia) <http://simplymac-sg.myshopify.com/collections/memory/products/macpro-2014-ram>
+Introduction Date October 22, 2013*October 22, 2013*October 22, 2013*
+Discontinued Date April 4, 2017**N/AN/A
+Processors (Cores) 1 (4 Cores)1 (6 Cores)1 (12 Cores)
+Geekbench 2 32 129491674924420
+Geekbench 2 64 146601886727865
+Geekbench 3 SC 32 322232112819
+Geekbench 3 MC 32 127801826628882
+Geekbench 3 SC 64 357835743177
+Geekbench 3 MC 64 144262065432797
+Geekbench 4 SC 374937903343
+Geekbench 4 MC 128301733525124
+Processor Speed 3.7 GHz3.5 GHz2.7 GHz
+Processor Type Q. Core Xeon E5-1620v26 Core Xeon E5-1650v212 Core Xeon E5-2697v2
+Turbo Boost 3.9 GHz3.9 GHz3.5 GHz
+Custom Speeds Several*3.0 (8), 2.7 (12)*N/A
+Architecture 64-Bit64-Bit64-Bit
+Processor Upgrade LGA 2011 SocketLGA 2011 SocketLGA 2011 Socket
+System Bus Speed 5 GT/s (DMI2)*5 GT/s (DMI2)*5 GT/s (DMI2)*
+Cache Bus Speed 3.7 GHz (Built-in)3.5 GHz (Built-in)2.7 GHz (Built-in)
+ROM/Firmware EFIEFIEFI
+EFI Architecture 64-Bit64-Bit64-Bit
+L1 Cache 32k/32k x432k/32k x632k/32k x12
+L2 Cache 256k (x4), 10 MB*256k (x6), 12 MB*256k (x12), 30 MB*
+RAM Type PC3-15000 DDR3 ECCPC3-15000 DDR3 ECCPC3-15000 DDR3 ECC
+Min. RAM Speed 1866 MHz1866 MHz1866 MHz
+Standard RAM 12 GB16 GB*12 GB, 16 GB
+Maximum RAM 128 GB*128 GB*128 GB*
+Motherboard RAM NoneNoneNone
+RAM Slots NoneNoneNone
+Video Card AMD FirePro D300 x2*AMD FirePro D500 x2*AMD FirePro D300/D500/D700 x2*
+VRAM Type GDDR5 SDRAMGDDR5 SDRAMGDDR5 SDRAM
+Standard VRAM 2 GB3 GB2, 3, 6 GB*
+Maximum VRAM 2 GB3 GB2, 3, 6 GB*
+Display Up to 6 Displays*Up to 6 Displays*Up to 6 Displays*
+Resolution 5K (5120x2880)*5K (5120x2880)*5K (5120x2880)*
+2nd Disp Support Dual/MirroringDual/MirroringDual/Mirroring
+2nd Max Res 5K (5120x2880) x2*5K (5120x2880) x2*5K (5120x2880) x2*
+Video Port 6 (Thunderbolt 2), 1 (HDMI 1.4 UltraHD)6 (Thunderbolt 2), 1 (HDMI 1.4 UltraHD)6 (Thunderbolt 2), 1 (HDMI 1.4 UltraHD)
+Standard HD 256 GB SSD256 GB SSD256 GB SSD
+Int HD Interface Proprietary* (PCIe 2.0 x4)Proprietary* (PCIe 2.0 x4)Proprietary* (PCIe 2.0 x4)
+Standard Optical None*None*None*
+Standard Ethernet Gigabit (x2)Gigabit (x2)Gigabit (x2)
+Standard AirPort 802.11ac802.11ac802.11ac
+Standard Bluetooth 4.04.04.0
+USB 4 (3.0)4 (3.0)4 (3.0)
+Firewire NoneNoneNone
+Expansion Slots None*None*None*
+Expansion Bays None*None*None*
+Keyboard Type NoneNoneNone
+Case Type CylinderCylinderCylinder
+Input Type NoneNoneNone
+Apple Subfamily Late 2013Late 2013Late 2013
+Order Number ME253LL/AMD878LL/ABTO/CTO
+Model Number A1481A1481A1481
+EMC Number 263026302630
+Model Identifier MacPro6,1MacPro6,1MacPro6,1
+Battery Type N/AN/AN/A
+Battery Life N/AN/AN/A
+Firewire Support NoneNoneNone
+Original OS X 10.9.1 (13B4116)X 10.9.1 (13B4116)X 10.9.1 (13B4116)
+Maximum OS Current*Current*Current*
+Mac OS 9 Support NoneNoneNone
+Windows Support Boot/VirtualizationBoot/VirtualizationBoot/Virtualization
+Minimum Windows 8 (64-Bit)*8 (64-Bit)*8 (64-Bit)*
+Maximum Windows 10 (64-Bit)*10 (64-Bit)*10 (64-Bit)*
+Dimensions 9.9 x 6.6*9.9 x 6.6*9.9 x 6.6*
+Avg Weight 11 lbs. (4.99 kg).11 lbs. (4.99 kg).11 lbs. (4.99 kg).
+Original Price US$2999US$3999*US$6499, US$6999*
+Est Current Retail US$2200-US$2500US$2999*US$4999, US$5199**
+
+
+	==> Consider the “How to upgrade” (https://everymac.com/systems/apple/mac_pro/mac-pro-cylinder-faq/how-to-upgrade-mac-pro-cylinder-cpu-processor.html <https://everymac.com/systems/apple/mac_pro/mac-pro-cylinder-faq/how-to-upgrade-mac-pro-cylinder-cpu-processor.html> )?
+
+
+
+	==> Consider the listing of all Apple Mac Pro 6.1 models (https://everymac.com/ultimate-mac-lookup/?search_keywords=MacPro6,1 <https://everymac.com/ultimate-mac-lookup/?search_keywords=MacPro6,1> )?
+
+	Model: ME253LL/A	3.7 GHz Q. Core Xeon E5-1620v2
+	Model: MD878LL/A 3.5 GHz 6 Core Xeon E5-1650v2
+	Model: MD878LL/A 3.0 GHz 8 Core Xeon E5-1680v2
+	Model: BTO/CTO 2.7 GHz 12 Core Xeon E5-2697v2
+
+	==> Consider the listing of all apple 2013 models (https://everymac.com/systems/by_year/macs-released-in-2013.html <https://everymac.com/systems/by_year/macs-released-in-2013.html> )?
+	==> Consider the listing of all current Apple models (https://everymac.com/systems/by_shipping/index-currently-shipping-macs.html <https://everymac.com/systems/by_shipping/index-currently-shipping-macs.html> )?
+
+		==> It seems Apple Mac Pro 6.1 has NOT CHANGED AT ALL (exactly the same hardware architecture since 2013)?
+
+	==> Consider the “original” (discontinued april 2017) Quad core Mac Pro 6.1 (https://everymac.com/systems/apple/mac_pro/specs/mac-pro-quad-core-3.7-xeon-e5-gray-black-cylinder-late-2013-specs.html <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-quad-core-3.7-xeon-e5-gray-black-cylinder-late-2013-specs.html> )?
+
+Processor Speed:	3.7 GHz 	Processor Type:	Q. Core Xeon E5-1620v2 
+Details:	The 64-bit 22-nm "Xeon E5" processor, or more specifically the "Ivy Bridge-EP" based E5-1620v2, has four independent "cores" each with a dedicated 256k level 2 cache and 10 MB of level 3 "Smart Cache." It also supports "Hyper-Threading" -- which "allows two threads to run simultaneously on each core" (so OS X recognizes eight total cores on this model, four real and four virtual) -- and "Turbo Boost" -- which "automatically boosts the processor speed based on workload" up to 3.9 GHz for this model.
+
+System Bus Speed:	5 GT/s (DMI2)*	Cache Bus Speed:	3.7 GHz (Built-in)
+Details:	*This system has a "Direct Media Interface" -- specifically DMI2 -- that connects between the processor and chipset in lieu of the traditional system bus.
+
+	==> Consider the Mac Pro 6.1 6 core model (https://everymac.com/systems/apple/mac_pro/specs/mac-pro-six-core-3.5-xeon-e5-gray-black-cylinder-late-2013-specs.html <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-six-core-3.5-xeon-e5-gray-black-cylinder-late-2013-specs.html> )?
+
+Processor Speed:	3.5 GHz 	Processor Type:	6 Core Xeon E5-1650v2 
+Details:	The 64-bit 22-nm "Xeon E5" processor, or more specifically the "Ivy Bridge-EP" based E5-1650v2, has six independent "cores" each with a dedicated 256k level 2 cache and 12 MB of level 3 "Smart Cache." It also supports "Hyper-Threading" -- which "allows two threads to run simultaneously on each core" (so OS X recognizes twelve total cores on this model, six real and six virtual) -- and "Turbo Boost" -- which "automatically boosts the processor speed based on workload" up to 3.9 GHz for this model.
+
+System Bus Speed:	5 GT/s (DMI2)*	Cache Bus Speed:	3.5 GHz (Built-in)
+Details:	*This system has a "Direct Media Interface" -- specifically DMI2 -- that connects between the processor and chipset in lieu of the traditional system bus.
+
+	==> Consider the Mac Pro 6.1 eight core model (https://everymac.com/systems/apple/mac_pro/specs/mac-pro-eight-core-3.0-xeon-e5-gray-black-cylinder-late-2013-specs.html <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-eight-core-3.0-xeon-e5-gray-black-cylinder-late-2013-specs.html> )?
+
+Processor Speed:	3.0 GHz 	Processor Type:	8 Core Xeon E5-1680v2 
+Details:	The 64-bit 22-nm "Xeon E5" processor, or more specifically the "Ivy Bridge-EP" based E5-1680v2, has eight independent "cores" each with a dedicated 256k level 2 cache and 25 MB of level 3 "Smart Cache." It also supports "Hyper-Threading" -- which "allows two threads to run simultaneously on each core" (so OS X recognizes sixteen total cores on this model, eight real and eight virtual) -- and "Turbo Boost" -- which "automatically boosts the processor speed based on workload" up to 3.9 GHz for this model.
+
+System Bus Speed:	5 GT/s (DMI2)*	Cache Bus Speed:	3.0 GHz (Built-in)
+Details:	*This system has a "Direct Media Interface" -- specifically DMI2 -- that connects between the processor and chipset in lieu of the traditional system bus.
+
+	==> Consider the Mac Pro 6.1 12 core model (https://everymac.com/systems/apple/mac_pro/specs/mac-pro-twelve-core-2.7-xeon-e5-gray-black-cylinder-late-2013-specs.html <https://everymac.com/systems/apple/mac_pro/specs/mac-pro-twelve-core-2.7-xeon-e5-gray-black-cylinder-late-2013-specs.html> )?
+
+Processor Speed:	2.7 GHz 	Processor Type:	12 Core Xeon E5-2697v2 
+Details:	The 64-bit 22-nm "Xeon E5" processor, or more specifically the "Ivy Bridge-EP" based E5-2697v2, has twelve independent "cores" each with a dedicated 256k level 2 cache and 30 MB of level 3 "Smart Cache." It also supports "Hyper-Threading" -- which "allows two threads to run simultaneously on each core" (so OS X recognizes twenty four total cores on this model, twelve real and twelve virtual) -- and "Turbo Boost" -- which "automatically boosts the processor speed based on workload" up to 3.5 GHz for this model.
+
+System Bus Speed:	5 GT/s (DMI2)*	Cache Bus Speed:	2.7 GHz (Built-in)
+Details:	*This system has a "Direct Media Interface" -- specifically DMI2 -- that connects between the processor and chipset in lieu of the traditional system bus. It also uses QPI (QuickPath Interconnect) for connections within the single processor.
+
+	==>
+
+

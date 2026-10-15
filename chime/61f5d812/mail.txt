@@ -1,0 +1,283 @@
+﻿It seems my project of using my spice glass jars as wall mounted screw storage will require me to try and hot glue the jar caps to wood as fasteners (and then I need a glue gun and glue to try out)?
+
+	==> Also see “Todo: Hot Melt Adhesive System - Consider to compare 3M or TechSil Hot Glue Gun Systems (Hot and Low melt)?"
+
+-1) Consider the abstract of what I have learned about Glue guns and glue sticks?
+
+	==> It seems its common for brands to provide both gun and sticks (and they work only together)?
+
+	==> It seems its normal for glue guns to NOT allow glue sticks from another vendor (they do not specify melt temperature)?
+
+	==> For PLA I need a low melt (110 Degree C) hot glue gun?!!
+
+1) Consider wikipedia page “Hot-melt adhesive” on glue guns and hot glue (https://en.wikipedia.org/wiki/Hot-melt_adhesive <https://en.wikipedia.org/wiki/Hot-melt_adhesive>)?
+
+	==> It seems “Hot Glue” goes under the abbreviation HMA (Hot Melt Adhesive)?
+
+“Hot melt adhesive (HMA), also known as hot glue, is a form of thermoplastic adhesive that is commonly sold as solid cylindrical sticks of various diameters designed to be applied using a hot glue gun."
+
+	==> It seems hot glue consists basically of a “tackifier” and a base polymer?
+
+“ In one common system, EVA is used as the main polymer, with terpene-phenol resin (TPR) as the tackifier."
+
+	==> The wikipedia article on HMA seems to list common base polymers and common tackifiers?
+
+Some of the possible base materials of hot-melt adhesives include the following:
+
+Ethylene-vinyl acetate <https://en.wikipedia.org/wiki/Ethylene-vinyl_acetate> (EVA) copolymers, low-performance, the low-cost and most common material for the glue sticks (e.g., the light amber colored Thermogrip GS51, GS52, and GS53)
+
+Polyolefins <https://en.wikipedia.org/wiki/Polyolefin> (PO) (polyethylene <https://en.wikipedia.org/wiki/Polyethylene> (usually LDPE <https://en.wikipedia.org/wiki/LDPE> but also HDPE <https://en.wikipedia.org/wiki/HDPE>; HDPE has higher melting point and better temperature resistance), atactic <https://en.wikipedia.org/wiki/Atactic> polypropylene <https://en.wikipedia.org/wiki/Polypropylene> (PP or APP), polybutene-1 <https://en.wikipedia.org/wiki/Polybutene-1>, oxidized polyethylene <https://en.wikipedia.org/w/index.php?title=Oxidized_polyethylene&action=edit&redlink=1>, etc.), low-performance, for difficult-to-bond plastics.
+
+Polyamides and polyesters, high-performance
+
+Polyamides <https://en.wikipedia.org/wiki/Polyamide> (PA), high-performance, for severe environments; high-temperature glues; typically applied at over 200 °C, but can degrade and char during processing.
+
+Polyesters <https://en.wikipedia.org/wiki/Polyester>, similar to the ones used for synthetic fibers <https://en.wikipedia.org/wiki/Synthetic_fiber>. High application temperature.
+
+Polyurethanes
+
+Thermoplastic polyurethane <https://en.wikipedia.org/wiki/Polyurethane> (TPU) offer good adhesion to different surfaces due to presence of polar <https://en.wikipedia.org/wiki/Chemical_polarity> groups. Their low glass transition temperature provides flexibility at low temperatures. 
+
+Polyurethanes (PUR), or reactive urethanes, for high temperatures and high flexibility. New type of hot melt thermosetting <https://en.wikipedia.org/wiki/Thermosetting> adhesives, introduced in early 1990s.
+
+Styrene <https://en.wikipedia.org/wiki/Styrene> block copolymers <https://en.wikipedia.org/wiki/Block_copolymer> (SBC), also called styrene copolymer adhesives and rubber-based adhesives, have good low-temperature flexibility, high elongation, and high heat resistance.
+
+Polycaprolactone <https://en.wikipedia.org/wiki/Polycaprolactone> with soy protein <https://en.wikipedia.org/wiki/Soy_protein>, using coconut oil <https://en.wikipedia.org/wiki/Coconut_oil> as plasticizer, a biodegradable <https://en.wikipedia.org/wiki/Biodegradable> hot-melt adhesive investigated at Korea University <https://en.wikipedia.org/wiki/Korea_University>
+
+	==> 
+
+The usual additives include the following:
+
+tackifying <https://en.wikipedia.org/wiki/Tackifier> resins <https://en.wikipedia.org/wiki/Resin> (e.g., rosins and their derivates, terpenes <https://en.wikipedia.org/wiki/Terpene> and modified terpenes, aliphatic <https://en.wikipedia.org/wiki/Aliphatic>, cycloaliphatic and aromatic resins (C5 aliphatic resins, C9 aromatic resins, and C5/C9 aliphatic/aromatic resins), hydrogenated hydrocarbon resins, and their mixtures, terpene-phenol resins (TPR, used often with EVAs)), up to about 40%[35] <https://en.wikipedia.org/wiki/Hot-melt_adhesive#cite_note-35> Tackifiers tend to have low molecular weight, and glass transition and softening temperature above room temperature, providing them with suitable viscoelastic <https://en.wikipedia.org/wiki/Viscoelastic> properties. Tackifiers frequently present most of both weight percentage and cost of the hot-melt adhesive.
+
+waxes <https://en.wikipedia.org/wiki/Wax>, e.g., microcrystalline waxes <https://en.wikipedia.org/wiki/Microcrystalline_wax>, fatty amide waxes or oxidized Fischer-Tropsch <https://en.wikipedia.org/wiki/Fischer-Tropsch> waxes; increase the setting rate. One of the key components of formulations, waxes lower the melt viscosity and can improve bond strength and temperature resistance.[36] <https://en.wikipedia.org/wiki/Hot-melt_adhesive#cite_note-36>
+
+...
+
+
+
+2) Consider the Ben Heck Show  “Super Glue Gun” episodes in this playlist (The Ben Heck Show - Final Season! <https://www.youtube.com/playlist?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa>)?
+
+	
+
+	NOTE: The design seems to overheat!! (So we can’t build this out of the box and expect it to work…)
+
+	
+
+	==> Anyhow, consider these episodes as leads to inofroamtion on what makes a glue gun tick :)
+
+	Super Glue Gun 01: Hot Tool Teardown https://youtu.be/1gerGr907KE?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/1gerGr907KE?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa>
+	Super Glue Gun 02: Extruder Motor https://youtu.be/uMb4fVIo9Ag?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/uMb4fVIo9Ag?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 03: Ungluing the Great Glue Gun https://youtu.be/8MP4r6z9b-8?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/8MP4r6z9b-8?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 04: Hold Me Closer, ATTiny https://youtu.be/8O5bJA61qE8?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/8O5bJA61qE8?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 05: Hall Effect Sensor Hysteria! https://youtu.be/tc1qHSpWkwc?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/tc1qHSpWkwc?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 06: First Working Prototype! https://youtu.be/V45A_CgHpug?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/V45A_CgHpug?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 07: Scoping out the Autostand https://youtu.be/E5mQtt_iwNk?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/E5mQtt_iwNk?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 08: Integrating All Mechs https://youtu.be/QH5VO9l9kEo?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/QH5VO9l9kEo?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 09: How to Make a Stand https://youtu.be/Ja1eeVBKTUE?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/Ja1eeVBKTUE?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 10: Time to Rack and Roll https://youtu.be/9ZrPd6HXyXs?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/9ZrPd6HXyXs?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 11: Design with Fusion 360 https://youtu.be/f66drrZTux4?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/f66drrZTux4?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	Super Glue Gun 12: Design with Fusion 360 - Final Design https://youtu.be/Jm1GqbbNNh0?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa <https://youtu.be/Jm1GqbbNNh0?list=PLwO8CTSLTkijtGC2zFzQVbFnbmLY3AkIa> 
+	
+2) It seems we should be interested in what range of glue sticks we want to use and what guns that can process them?
+
+	TODO: List some common glue sticks, their application and melt temperature?
+
+	TODO: List some common glue guns, their price and what glue sticks (and melt temperature) they can process
+
+	==> It seems for wood requires a high temperature glue gun (https://www.thesprucecrafts.com/select-and-use-a-hot-glue-gun-1825101 <https://www.thesprucecrafts.com/select-and-use-a-hot-glue-gun-1825101>)?
+
+“High-temperature guns, suited for bonding more substantial materials like wood, operate at around 380 degrees F—a significant difference. Dual-temperature guns offer both options and usually cost just slightly more."
+
+		==> 380 degres F is 194 degree C
+
+		
+
+	==> It seems low temperature glue guns operate at around 250 degrees F (122 degrees C)
+
+“ If you’re working with children or on delicate materials, choose a low-temperature gun, which melts the glue sticks at about 250 degrees F."
+
+	Q: This differs from the glue guns that sell in Sweden that seems to melt the glue to 200 degrees C?
+
+		==> The Bosch PKP18E melts the glue to 200 degree C (https://www.k-rauta.se/byggvaruhus-bilagor/500115671_UI.pdf <https://www.k-rauta.se/byggvaruhus-bilagor/500115671_UI.pdf>)?
+
+3) Consider to study some known brands of glue guns?
+
+	==> Consider Bosch GKP 200 CE Professional (http://www.bosch-professional.com/africa/en/glue-gun-gkp-200-ce-131493-0601950703.html <http://www.bosch-professional.com/africa/en/glue-gun-gkp-200-ce-131493-0601950703.html>)?
+
+		
+
+		==> Consider Bosch GKP 200 CE Professional user manual (http://www.bosch-professional.com/africa/en/user_manuals/downloads/glue-gun-gkp-200-ce-137458-0601950703.pdf <http://www.bosch-professional.com/africa/en/user_manuals/downloads/glue-gun-gkp-200-ce-137458-0601950703.pdf>)? 
+
+		==> It seems Bosch GKP 200 CE melts the glue at 200 degrees C?
+
+		
+
+	==> Consider Black+Decker glue gun (https://www.blackanddecker.com/products/power-tools/portable-power-tools/specialty-tools/20v-max-cordless-glue-gun/bdcgg20c <https://www.blackanddecker.com/products/power-tools/portable-power-tools/specialty-tools/20v-max-cordless-glue-gun/bdcgg20c>)?
+
+		
+
+		Q: Black+Decker seems to sell mainly in US and Canada?
+		
+		==> It seems they list wood as material to glue?
+
+	==> Consider Bostik HG3 hot melt glue gun /https://www.bostik.com/australia/Bostik-Products/HG3_Hot_Melt_Glue_Gun <https://www.bostik.com/australia/Bostik-Products/HG3_Hot_Melt_Glue_Gun>)?
+
+		==> It seems to be rated 110-240 volts, 50/60Hz, 55 watts with a working temperature of 193°C?
+
+		
+
+
+	==> Consider the german vendor Bühnen glue guns (https://www.buehnen.de/en/adhesive-melter/mechanical-glue-guns <https://www.buehnen.de/en/adhesive-melter/mechanical-glue-guns>)?
+
+		==> They seem to sell on Amazon Germany for $21 … $310 (https://www.amazon.de/Bühnen/b/ref=bl_dp_s_web_3203208031?ie=UTF8&node=3203208031&field-lbr_brands_browse-bin=Bühnen <https://www.amazon.de/B%C3%BChnen/b/ref=bl_dp_s_web_3203208031?ie=UTF8&node=3203208031&field-lbr_brands_browse-bin=B%C3%BChnen>)?
+
+		
+		
+
+		
+
+		NOTE: The Bühnen Stage HB 230 has an adjustable temperature.
+
+	==> Consider Metabo KE 300 glue gun (https://www.metabo.com/com/en/tools/others/glue-guns/ke-3000-618121000-glue-gun.html <https://www.metabo.com/com/en/tools/others/glue-guns/ke-3000-618121000-glue-gun.html>)?
+
+		
+
+	==> Consider Pattex glue pistil (http://www.pattex.hu/hu1/products/crafting-hobby/hobby-hot-pistol-and-sticks.html <http://www.pattex.hu/hu1/products/crafting-hobby/hobby-hot-pistol-and-sticks.html>)?
+
+		
+
+	
+
+	==> Consider the US based Steinel GF 3002 glue gun (http://www.steinel.net/RelId/608343/ISvars/default/GF_3002.htm <http://www.steinel.net/RelId/608343/ISvars/default/GF_3002.htm>)?
+
+		==> It seems to operate on 204 degrees C (http://www.steinel.net/Customized/uploads/PDFs/GF_3002_Data.pdf <http://www.steinel.net/Customized/uploads/PDFs/GF_3002_Data.pdf>)?
+
+	==> Consider Uhu hot melt and/or low temp glue guns?
+
+		==> Consider Uhu hot melt glue gun (http://www.uhu.com/en/products/glue-guns-hot-melt-adhesives/detail/uhu-promatichot-melt-glue-gun.html?cHash=b7780d30cfd5913a2016862bc59e99be&step=88 <http://www.uhu.com/en/products/glue-guns-hot-melt-adhesives/detail/uhu-promatichot-melt-glue-gun.html?cHash=b7780d30cfd5913a2016862bc59e99be&step=88>)?
+
+		
+
+		==> Consider Uhu low melt glue gun (http://www.uhu.com/en/products/glue-guns-hot-melt-adhesives/detail/uhu-creative-low-melt110c-glue-gun.html?cHash=025ade069544572cc8134beced5e94b7&step=0 <http://www.uhu.com/en/products/glue-guns-hot-melt-adhesives/detail/uhu-creative-low-melt110c-glue-gun.html?cHash=025ade069544572cc8134beced5e94b7&step=0>)?
+
+
+	==> Consider Ryobi cordless R18GLU (https://webservice.ttigroup.eu/local/uploaded/catalog/R18GLU-UM-EU-v1-print.pdf <https://webservice.ttigroup.eu/local/uploaded/catalog/R18GLU-UM-EU-v1-print.pdf>)?
+
+		STRANGE: Ryobi does NOT specify melting temperature for their glue gun?
+
+	==> Consider Casco HotMelt Gun SL 10 (https://www.casco.eu/se/casco-produkter/?p=3278&pc=162 <https://www.casco.eu/se/casco-produkter/?p=3278&pc=162>)?
+
+		STRANGE: Casco does not even provide a user manual (and does NOT specify compatible glue sticks or melting temperature)?
+
+
+	==> Consider Bauhaus Rapid brand look suspiciously very much like the Bühnen glue guns (they are in fact sourced from same vendor in China)?
+
+		
+
+
+	==> Consider 3M Scotch Weld Applicators (https://www.3msverige.se/3M/sv_SE/company-ndc/all-3m-products/~/Produkter/?N=5002385+8711017+3294857479&Ntt=Smältlimpistol&rt=rs <https://www.3msverige.se/3M/sv_SE/company-ndc/all-3m-products/~/Produkter/?N=5002385+8711017+3294857479&Ntt=Sm%C3%A4ltlimpistol&rt=rs>)?
+
+		
+
+		==> 62970099750 -  Scotch-Weld Touch Control Adhesive Applicator seems to sell on Farnell for 2800 SEK (https://se.farnell.com/3m/62970099750/scotch-weld-touch-control-applicator/dp/1768472?st=glue+gun%203M%20scotch-weld <https://se.farnell.com/3m/62970099750/scotch-weld-touch-control-applicator/dp/1768472?st=glue+gun%203M%20scotch-weld>)?
+		
+		
+
+		==> The 3M Hot Melt and Low Melt applicator line-up is a little confusing (http://www.farnell.com/datasheets/578184.pdf?_ga=2.95841179.662223273.1543874253-128727834.1537525728 <http://www.farnell.com/datasheets/578184.pdf?_ga=2.95841179.662223273.1543874253-128727834.1537525728>)?
+
+		==> Maybe this pdf provides good information on the 3M Hot Melt Adhesive applicators and systems (http://multimedia.3m.com/mws/media/44021O/3m-hot-melt-bonding-systems-guide.pdf <http://multimedia.3m.com/mws/media/44021O/3m-hot-melt-bonding-systems-guide.pdf>)?
+
+		
+
+
+		==> Finally - this seems to sum up the 3M HMA (Hot Melt Adhesive) Applicator line-up?
+
+
+		
+
+		==> I guess I should got for the “3M Hot Melt Applicator LT (Low Temp)” and the “3MHot Melt Applicator TC”
+
+		==> But where can I buy them?
+
+		==> It seems the “3 M Scotch Weld TC Q Business. Hot Melt Glue Gun 6Quad” is available on german Amazon for $245 inc. VAT (https://www.amazon.de/3MTM-Scotch-WeldTM-Auftragsgerät-Heißklebepistole-6QUAD/dp/B016ZYM1ME/ref=sr_1_1?m=A270G86K1XEYV9&s=merchant-items&ie=UTF8&qid=1543877523&sr=1-1&keywords=3+M+Scotch+Weld+TC <https://www.amazon.de/3MTM-Scotch-WeldTM-Auftragsger%C3%A4t-Hei%C3%9Fklebepistole-6QUAD/dp/B016ZYM1ME/ref=sr_1_1?m=A270G86K1XEYV9&s=merchant-items&ie=UTF8&qid=1543877523&sr=1-1&keywords=3+M+Scotch+Weld+TC>)?
+
+		==> It seems 3M Germany lists prices for the Applicator line-up (https://3mpro.3mdeutschland.de/index.php?cl=search&searchparam=Auftragsgerät%20für%20Schmelzklebstoffe <https://3mpro.3mdeutschland.de/index.php?cl=search&searchparam=Auftragsger%C3%A4t%20f%C3%BCr%20Schmelzklebstoffe>)?
+
+			==> And I could get to german web-shops that sells these guns (but only in German and unclear if they deliver to Sweden)?
+
+		==> After some navigation I found Swedish shops that sells at leat the “TC Quadrack” model (https://webshop.flinks.se/katalog/fog-lim-spackel-tejp-farg-penslar/sattlim-tralim-kontaktlim-smaltlim-snabblim/smaltlim-limpistoler/limpistoler/limpistol-3m-tc-quadrack-46591 <https://webshop.flinks.se/katalog/fog-lim-spackel-tejp-farg-penslar/sattlim-tralim-kontaktlim-smaltlim-snabblim/smaltlim-limpistoler/limpistoler/limpistol-3m-tc-quadrack-46591>)?
+
+		...
+
+4) Consider to compare the “professional” UK based Techsil and world wide 3M HMA applicator systems?
+
+	==> Consider Techsil silicon hot glue “saver” (https://www.techsil.co.uk/tec-hotmelt-glue-saver <https://www.techsil.co.uk/tec-hotmelt-glue-saver>)?
+
+		
+
+	==> Consider this set of 3M URLs on their Hot Meld Adhesive systems, applicators and recommendations ()?
+
+“Resources
+Brochure
+Scotch-Weld™ Hot Melt Bonding Systems Guide  (PDF, 1.3MB) <https://multimedia.3m.com/mws/media/518398O/scotch-weldtm-hot-melt-bonding-systems-guide.pdf&fn=Final%20Hot%20Melt%20Adhesive%20Systems_digital_R3.pdf>
+Brochures
+3M™ Hot Melt Bonding Systems Guide  (PDF, 1.7MB) <https://multimedia.3m.com/mws/media/44021O/3m-hot-melt-bonding-systems-guide.pdf&fn=Hot%20Melt%20Adhesive%20Systems_LowRes_R1.pdf>
+Adhesives and Tapes Design Guide  (PDF, 12.3MB) <https://multimedia.3m.com/mws/media/372489O/adhesives-and-tapes-design-guide.pdf&fn=TapesAdhesives_US_cg3_LowRes_Links_R4.pdf>
+Flyer
+3M™ Scotch-Weld™ Applicator AE II LT  (PDF, 536.9KB) <https://multimedia.3m.com/mws/media/469919O/3mtm-scotch-weldtm-applicator-ae-ii-lt.pdf&fn=78-9236-7172-7_R1.pdf>
+Scotch-Weld™ Applicator AE II  (PDF, 289.0KB) <https://multimedia.3m.com/mws/media/277207O/scotch-weldtm-applicator-ae-ii.PDF&fn=78-9236-7106-5_R1.pdf>
+Instructions
+3M™ Scotch-Weld™ Hot Melt Applicator PG II Owners Manual  (PDF, 1.8MB) <https://multimedia.3m.com/mws/media/184009O/3mtm-scotch-weldtm-hot-melt-applicator-pg-ii-owners-manual.pdf&fn=38-9019-0520-8.pdf>
+3M™ Scotch-Weld™ Hot Melt Applicator LT Owner's Manual  (PDF, 204.4KB) <https://multimedia.3m.com/mws/media/184011O/3mtm-scotch-weldtm-hot-melt-applicator-lt-owners-manual.pdf&fn=38-9019-0536-4.pdf>
+3M™ Scotch-Weld™ Hot Melt Applicator TC Owner's Manual  (PDF, 216.8KB) <https://multimedia.3m.com/mws/media/184012O/3mtm-scotch-weldtm-hot-melt-applicator-tc-owners-manual.pdf&fn=38-9019-0537-2.pdf>
+3M™ Scotch-Weld™ Hot Melt Applicator PG II LT  (PDF, 587.2KB) <https://multimedia.3m.com/mws/media/184010O/3mtm-scotch-weldtm-hot-melt-applicator-pg-ii-lt.pdf&fn=38-9019-0521-6.pdf>
+3M™ Scotch-Weld™ Hot Melt Applicator EC Owner's Manual  (PDF, 1.3MB) <https://multimedia.3m.com/mws/media/184008O/3mtm-scotch-weldtm-hot-melt-applicator-ec-owners-manual.pdf&fn=38-9019-0190-0.pdf>
+3M™ Scotch-Weld™ Applicator AEIILT for LM Adhesives PDF  (PDF, 127.7KB) <https://multimedia.3m.com/mws/media/473187O/3mtm-scotch-weldtm-applicator-aeiilt-for-lm-adhesives-pdf.pdf&fn=Applicator%20Safety%20Instr.pdf>
+Marketing Promotional Videos
+Hot Melt Adhesive Systems Video  (MP4, 67.8MB) <https://multimedia.3m.com/mws/media/1303564O/hot-melt-adhesive-systems-video.mp4&fn=3M-IATD_Hot-Melt_Demo_FINAL.mp4>
+Product Application\Training Videos
+Hot Melt Introduction Video  (MP4, 16.5MB) <https://multimedia.3m.com/mws/media/1337884O/hot-melt-introduction-video.mp4&fn=Final%20Hot%20Melt%20Awareness%20Video.mp4>"
+
+4) Consider to study some common glue sticks?
+
+	==> Consider to be able to use 3M Hot Melt Adhesives (http://multimedia.3m.com/mws/media/1245168O/3m-hot-melt-adhesive-3747-3779-3789-3797-technical-data-sheet.pdf <http://multimedia.3m.com/mws/media/1245168O/3m-hot-melt-adhesive-3747-3779-3789-3797-technical-data-sheet.pdf>)?
+
+		
+
+		5/8” = 15,9 mm
+		1” = 25,4 mm
+		1/2” = 12,7 mm
+		1/8” = 3,2 mm
+
+	==> Consider this 3m page that provides information on hot meld 3762 glue stick sizes and colour (https://www.3m.com/3M/en_US/company-us/all-3m-products/~/3M-Hot-Melt-Adhesive-3762/?N=5002385+3293241783&rt=rud <https://www.3m.com/3M/en_US/company-us/all-3m-products/~/3M-Hot-Melt-Adhesive-3762/?N=5002385+3293241783&rt=rud>)?
+		 
+	
+	==> Consider this 3M pdf on their HMA systems (http://multimedia.3m.com/mws/media/44021O/3m-hot-melt-bonding-systems-guide.pdf <http://multimedia.3m.com/mws/media/44021O/3m-hot-melt-bonding-systems-guide.pdf>)?
+
+		
+		
+
+	==> It seems Bosch is designed to be compatible with a large set of other brand glue guns (https://shop.bosch-professional.com/gb/en/accessory/glue-sticks--2608882#/PD-productrange <https://shop.bosch-professional.com/gb/en/accessory/glue-sticks--2608882#/PD-productrange>)?
+
+		
+
+“ It is suitable for use with all glue gun brands, including Bosch, Black+Decker, Bostik, Bu¨hnen, Metabo, Pattex, Peugeot, Steinel and Uhu."
+
+		==> The Bosch PKP18E melts the glue to 200 degree C (https://www.k-rauta.se/byggvaruhus-bilagor/500115671_UI.pdf <https://www.k-rauta.se/byggvaruhus-bilagor/500115671_UI.pdf>)?
+
+		==> Thus all these brands can be trusted to also melt the glue at 200 degrees C?
+
+		==> OR - The glue sticks are suitable for all the different temperatures of these guns?
+
+		...
+	
+	==> Consider Casco HotMelt Sticks 6306-6308 (https://media-pms2.schoenox.net/casco/docs/cascohotmeltsticks_se_se_tds.pdf <https://media-pms2.schoenox.net/casco/docs/cascohotmeltsticks_se_se_tds.pdf>)?
+
+		==> It seems to melt at 195 degrees C?
+
+		
+…
+
+Consider to delve deeper into what brands and options for hot guns and glue sticks I have to consider for my first buy and try?
+...

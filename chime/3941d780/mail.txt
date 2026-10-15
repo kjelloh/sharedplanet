@@ -1,0 +1,140 @@
+﻿So, how can I design a dust extraction system that fits all my machines?
+
+	==> Also see “Todo: Indoor Shed Dust Extraction - Consider to use sewer pipes for the fixed piping of the dust extraction system?"
+
+	TODO: Consider the work if we use an inner 51 mm hose to connect with Cyclone?
+
+	TODO: Consider the work if we use an inner 34 mm hose to connect with cyclone?
+
+
+1) Consider what the measurements are for all the dust inlets and extraction outlets I have to consider?
+
+	
+
+
+	 
+
+
+	==> It seems my vacuum cleaner hose is inner 30 mm and outer 34,5 mm?
+	==> It seems my Dust Separator inlet is inner 40 mm and outer 46 mm?
+	==> It seems my Cyclone Outlet and inlet are both conical outer 48,5 … 51 mm and inner 44 to ?? mm
+	==> It seems cyclone adapter 90 degrees outer to inner adapter?
+
+		a) outer 58 mm and inner fits 48,5 … 51 mm
+		b) outer 49 … 51 mm and inner 44 to ?? mm	
+
+	==> It seems Cyclone Hose inlet is inner 51 mm and length 870 mm
+
+	
+
+
+	==> It seems Metabo Miter Saw outlet is outer 41 mm and inner 35,7 mm?
+	==> It seems Band Saw outlet is outer conical 52 … 53 mm and inner 45 mm?
+	==> It seems Einhell Table Saw main outlet is outer 40mm and inner 35mm?
+
+		a) It seems Einhell branch inlet from blade guard is conical outer 34 … 36 mm and inner 29 mm?
+
+	==> It seems Makita Circular Saw outlet is outer 41 mm and inner 34 mm?
+
+ 
+	
+
+
+	==> It seems Matita Router outlet is outer conical 37 … 38 mm and inner 32 mm?
+	==> It seems Makita Jig Saw outlet is outer 28 mm and inner 22,5 mm?
+
+	==> It seems we would aslo like a general dust extractor to clean up inside the shed?
+
+		==> Consider to re-use my attachments for my indoor vacuum?
+		==> Consider to buy a standard vacuum attachment for indoor cleaning?
+
+		==> It seems my Dyson attachment is outer 34 mm (inner not possible as it is grooved on the brush inlet)?
+
+			
+
+
+		==> It seems my Miele attachments are inner 34,5 mm and outer 39 mm except the brush that is outer 40 mm?
+
+			
+
+
+		Hm… NOTHING IS STANDARD??
+
+2) Consider to mount vacuum on outside of shed and have dust separator and cyclone in series inside the shed?
+
+	==> It seems vacuum to separator already works (separator has rubber outlet that fits vacuum hose inlet ok)?
+
+	==> It seems we need an adapter from Dust Separator inlet is inner 40 mm and outer 46 mm? to Cyclone Outlet conical outer 48,5 … 51 mm and inner 44 to ?? mm?
+
+	==> It seems we need a number of adapters from Cyclone inlet to each machine outlets (including a connection hose system)?
+
+
+		a) outer 58 mm and inner fits 48,5 … 51 mm b) outer 49 … 51 mm and inner 44 to ?? mm	
+
+	Metabo Miter Saw outlet is outer 41 mm and inner 35,7 mm?			==> All to Cyclone inlet Cyclone Outlet conical outer 48,5 … 51 mm and inner 44 to ?? mm
+	Band Saw outlet is outer conical 52 … 53 mm and inner 45 mm?			==> All to Cyclone adapter a) outer 58 mm and inner fits 48,5 … 51 mm b) outer 49 … 51 mm and inner 44 to ?? mm
+	Einhell Table Saw main outlet is outer 40mm and inner 35mm?			==> All to a longer Cyclone Hose inlet with inner 51 mm and adapter for each machine?
+	Makita Cirsual Saw outlet is outer 41 mm and inner 34 mm?
+	Matita Router outlet is outer conical 37 … 38 mm and inner 32 mm?
+	Makita Jig Saw outlet is outer 28 mm and inner 22,5 mm?
+	Hose and attachment for shed vacuuming is ??
+
+	==> So it seems we can use a 51mm dust whose that we move to attach to each machine (and then have a conical adapter that fits inner 51 mm of hose)?
+
+	Metabo Miter Saw outlet is outer 41 mm and inner 35,7 mm ==> conical outer 51 mm.
+	Band Saw outlet is outer conical 52 … 53 mm and inner 45 mm  ==> conical outer 51 mm.
+	Einhell Table Saw main outlet is outer 40mm and inner 35mm  ==> conical outer 51 mm.
+	Makita Circular Saw outlet is outer 41 mm and inner 34 mm  ==> conical outer 51 mm.
+	Matita Router outlet is outer conical 37 … 38 mm and inner 32 mm  ==> conical outer 51 mm.
+	Makita Jig Saw outlet is outer 28 mm and inner 22,5 mm  ==> conical outer 51 mm.
+	Hose and attachment for shed vacuuming is ?  ==> conical outer 51 mm.
+
+		Dyson attachments outer 34 mm ==> inner 33…35 to conical outer 51 mm.
+		Miele attachment inner 34,5 mm ==> outer 33…35 to conical outer 51 mm.
+
+	…
+
+	==> It seems we need an (A) Inner 40 mm to a) Inner 44 or b) Outer 51 mm to connect Dust Separator with Oneida Cyclone?
+
+	
+
+
+
+3) Consider what I can buy and use to implement my indoor shed dust extraction system?
+
+	==> Consider Clas Ohlsson vacuum hose inner 51 mm (https://www.clasohlson.com/se/Dammsugarslang-60-x-51-mm,-5-m/51-3048 <https://www.clasohlson.com/se/Dammsugarslang-60-x-51-mm,-5-m/51-3048>)?
+
+	
+
+
+	==> Consider Clas Ohlsson vacuum hose inner 34 mm (https://www.clasohlson.com/se/Dammsugarslang-32-mm,-5-m/51-3051 <https://www.clasohlson.com/se/Dammsugarslang-32-mm,-5-m/51-3051>)?
+
+	
+
+
+	==> Consider to find or 3D print an adapter (34 <—> 51 mm) inner and outer conversion ?
+
+		NOTE: The Clas Ohlsson Cotech adapter is outer 27, 33, 36, 41 mm. Inner 22, 28, 31, 35 mm (Does not adapt to 51 mm)
+
+	
+
+
+
+4) Consider acrylic plastic 50mm pipes just for fun and exotics?
+
+	==> It seems we may order 2m 50mm acrylic pipes from Denmark (https://www.interglas.se/ror-o-50-mm-x-2000-mm-klar-indv-o44-mm.html)?
+
+	
+
+	…
+
+
+
+
+
+	
+
+		
+
+	 
+

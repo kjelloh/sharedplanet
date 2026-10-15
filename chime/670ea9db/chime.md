@@ -1,0 +1,64 @@
+# Todo: Programming - Consider to record my own C++ training course?
+
+```#670ea9db``` *As of 2016-06-27 19:04*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good and fun idea to record a C++ course in my own taste?
+
+1) Consider to compare with the not-so-good O’Rilley video course (<https://player.oreilly.com/videos/9781491960998>)?
+
+==&gt; In my opinion they start of without ”coming to the meat”?
+
+…
+
+2) Consider to design the courses as inspired by Kate Gregory cppcast episode (<http://cppcast.com/2015/10/kate-gregory/>)?
+
+==&gt; Also see Kate Gregory Cppcon 2015 talk (<https://www.youtube.com/watch?v=YnWhqhNdYyk>)?
+
+==&gt; Seems she argues to teach C++ the modern way right from the start (and skip raw pointers and near-metal programming tricks from the start)?
+
+3) Consider to base the examples on some “standard” 2D graphics user interface (modern and true cross-platform including smartphone and pad devices)?
+
+==&gt; Consider to decide on an open source (free) cross platform 2D C++ library to use for all basic examples?
+
+==&gt; Consider to study the C++ standard discussion for a standard C++ 2D library (<http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0267r0.pdf>)
+
+==&gt; Consider to compare with the early C++ proposal for 2D graphic device input (<http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0249r0.pdf>)?
+
+==&gt; Searching the web does not reveal any ongoing C++ projects to implement this P0249 proposal?
+
+...
+
+...
+
+4) Consider to find an easy-to-use tool-chain and record-process to make production of episodes really simple and fast?
+
+==&gt; Consider to use some simple screen-cast toll and more-or-less cut-and-paste code while explaining it?
+
+==&gt; Consider a slide-show combined with code editing and compile snippets (switching windows)?
+
+==&gt; Consider to try out the Pandora-view idiom of code where it is suitable to clarify different parts of C++ code (preprocessing, macros, templates, scopes)?
+
+...
+
+==&gt; Consider some animation tool to actually create small cartoons on subjects that would benefit from being animated (threading, stack and heap mechanisms)?
+
+...
+
+5) Consider to use one or two of these as my C++ Sweden talk the 28’th of September?
+
+==&gt; Consider to make a C++ course on String Handling and semantics (the problems and how to solve them)?
+
+==&gt; Consider to make a C++ course on Protocol Stack Library and tag-path-based message codexes (encode and decode)?
+
+...
+
+…
+
+Consider to elaborate on this idea to record my own C++ course track just for fun and also to actually learn C++ better myself?
+
+...
+
+{% endraw %}

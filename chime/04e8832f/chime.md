@@ -1,0 +1,46 @@
+# Todo: Programming - Consider to implement the Business, Development Trace, Design Insufficiency Log idiom as a C++ open source library?
+
+```#04e8832f``` *As of 2016-07-30 20:02*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to implement the Business, Development Trace, Design Insufficiency Log idiom as a C++ open source library?
+
+1) Consider to find a good name for a Business, Development Trace, Design Insufficiency Log library?
+
+==&gt; Consider a name that is about law and order and the Separation of Powers into a legislature, an executive, and a judiciary. (<https://en.wikipedia.org/wiki/Separation_of_powers>)?
+
+==&gt; The Business Log is to out on record the actions of the Executive (the things the application does)
+
+==&gt; The Development Trace is to put on record the correctness of the Legislature (the program written by the developer)
+
+==&gt; The Design Insufficiency Log is to put on record the Judiciary deviations (the programs inability to apply the law, i.e. do what it should in the situation at hand)
+
+==&gt; Consider a name the refers to some fairytale with three characters in it (and that has something to do with telling what is going on)?
+
+==&gt; Consider a name that refers to someone with three mouths or three eyes?
+
+…
+
+2) Consider the library to be truly cross-platform and asynchronously low-impact on calling (actual log processing in the background in thread with low priority)?
+
+==&gt; Consider the impact go logging on the client code to be very, very small (quick call and queue)?
+
+…
+
+3) Consider to stress the point that stating error level or severity at the log-call is just plain wrong?
+
+==&gt; Consider to argue that what is severe and what is just a warning depends on the historic context when the log entry was made, not the entry in itself?
+
+==&gt; Thus the log-call can’t define the severity of the call?
+
+...
+
+…
+
+Consider to initiate this C++ Open Source Business, Development Trace, Design Insufficiency Log idiom library to promote this way of designing what to log and why?
+
+...
+
+{% endraw %}

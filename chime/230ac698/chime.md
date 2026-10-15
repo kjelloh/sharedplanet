@@ -1,0 +1,19 @@
+# Todo: Överväg att döpa politisk tanjkesmedja/parti till "Vidare"
+
+```#230ac698``` *As of 2015-08-22 20:19*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Överväg att döpa politisk tankesmedja och eventuellt senare parti till ”Vidare”
+
+1) Vidare syftar på att omfamna ständig förändring i betydelsen att vi aldrig, och därför alltid, är framme.  
+2) Visare är också dubbeltydigt och kan betyda ”I ett vidare perspektiv” vilket anknyter till Djup Nyfikenhet.  
+3) Andra partier är ”Inget Vidare” vilken kan användas som en ordvits och slogan.  
+4) ”Vidare?" kan vara den ständiga frågan som visar på fruset att det alltid skall vara så bra som möjligt där man är, men detta måste så klart alltid ifrågasättas. Hur är det här? Är det dags att söka sig vidare? Och i så fall, vidare till vad?  
+5) ”Vidare!" kan vara svaret som beskriver vilka verktyg och mål partiet för närvarande fokuserar på. Efter frågan Vidare? så fäller de områden som för närvarande har högst prioritet att förbättras. Dessa definieras under rubriken Vidare!  
+6) Vidare betyder också att vi inte skall tillbaka till något som till synes fungerat tidigare (till exempel som argument mot SD). Det som fungerat tidigare fungerar med stor sannolikhet inte igen eftersom de förutsättningar som rådde då inte råder idag. Att gå Vidare betyder att hitta det som faktiskt fungerar idag.  
+7) Vidare är också ett argument att inte försöka stagnera (argument mot konservatism). Vidare har starka argument för att konservatism är en helt omöjlig idé. Vidares nomadiska syn på sammhällsutveckling förordar att samhället vilar under en tid utan förändring endast om detta verkar vara önskvärt och i så fall möjligt.  
+...
+
+{% endraw %}

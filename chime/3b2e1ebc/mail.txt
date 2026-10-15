@@ -1,0 +1,28 @@
+﻿It seems like a good advice with sound rationals to always have RAII objects throw on failure to acquire the resource?
+
+1) Consider that a two-stage RAII object with lazy init-on-access gains is nothing?
+
+	==> Consider to change the RAII Process class in clang-bcc project?
+	...
+
+2) Consider what the Core Guidelines has to say about RAII and exceptions (https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#e6-use-raii-to-prevent-leaks <https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#e6-use-raii-to-prevent-leaks>)?
+
+
+3) Consider to understand how to use smart resource owners to delete created resources when destructor is not called after constructors throw?
+
+	==> Consider this article as having good leans to the rules of throwing constructors (http://en.cppreference.com/w/cpp/language/raii <http://en.cppreference.com/w/cpp/language/raii>)
+		==> It seems the destructor is not called if the constructors throws?
+		==> But it seems constructed members objects are still destructed?
+		== >So, by wrapping acquired requires in RAII classes those constructed ok will be released even if the aggregating (owning) class destructor is not called?
+		... 
+
+	==> Consider this post on RAII and exceptions from microsoft (https://msdn.microsoft.com/en-us/library/hh279653.aspx <https://msdn.microsoft.com/en-us/library/hh279653.aspx>)? 
+
+4) Consider this C++ argument about why using exceptions in the post place (https://isocpp.org/wiki/faq/exceptions <https://isocpp.org/wiki/faq/exceptions>)?
+
+5) Consider Stroustrup on RAII (http://www.stroustrup.com/bs_faq2.html#finally <http://www.stroustrup.com/bs_faq2.html#finally>)?
+
+6) Consider the C++ standard proposal of ”RAII Wrappers” to the Standard Library (http://open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3677.html <http://open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3677.html>)?
+
+	==> Seems like a good design idiom?
+	...

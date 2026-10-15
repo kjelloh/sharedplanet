@@ -1,0 +1,17 @@
+# Todo: Johan Rockström missar att jobben försvinner
+
+```#d3f3ba8d``` *As of 2015-07-13 17:06*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Johan säger så bra saker men missar att arbetsmarknaden minskar.
+
+Skriv i hur detta är en bea sak och att en ekonomi inom planetens ramar måste tillåta och till och med uppmuntra den utvecklingen.
+
+1) Ett självreglerande ekonomiskt system som optimerar välfärd och minimerar resursförbrukning (både planetens och mänskliga)  
+2) Ett alternativ för människor att leva trygga, inspirerande, meningsfulla och hälsosamma liv!
+
+Skickat från min iPhone
+
+{% endraw %}

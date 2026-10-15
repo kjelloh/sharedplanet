@@ -1,0 +1,18 @@
+﻿It seems I should be able to 3D print a piece to put on my EOS 60D so that the LED that flashes on the back when it films will be seen from the front?
+
+1) Consider the design of the reflector?
+
+	==> Consider a piece that mounts on the side that reflects the flashing LED light to the front? 
+
+		
+
+	==> Consider using small pieces of aluminium foil to create the reflecting mirrors?
+	…
+
+2) Consider to design the reflector using Fusion 360?
+
+	…
+
+…
+
+Consider to make this reflector for my EOS 60D so that I can monitor if the camera is filming while I’m facing the camera?

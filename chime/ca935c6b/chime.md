@@ -1,0 +1,40 @@
+# Todo: Is there an isomorphism between Jordan B Petersson darwinian Truth (in stories), Recursable Truth and the Y-combinator in lambda calculus?
+
+```#ca935c6b``` *As of 2019-04-03 11:25*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I just go on a hunch here. But it seems to me that the lambda calculus notion of recursion expressed by the Y-combinator may very well carry some isomorphism to the truth all life is based on (recursable truth) and the Truth Jordan B Peterson is arguing we humans have encoded in the stories about how to engage with order and chaos?
+
+==&gt; Also see “Todo: Consider to follow up on Royal Institution lecture on consciousness and how it relates to the eMdividual and Syntheocraties (the MeFour model) stack of meta-tiers of augmented realities?"
+
+1) Consider this computerphile youtube video on Lambda Calculus (<https://www.youtube.com/watch?v=eis11j_iGMs>)?
+
+…
+
+2) Consider this video “Y combinator function. What is it?” with a guy that refers to the Y-combinator as the bases for “All Computation” (<https://www.youtube.com/watch?v=BC8ZAMwfwi4> )?
+
+...
+
+3) Consider to really understand the Y-combionator to build some intuition about how it may relate to “Life” as evolving recursable truth?
+
+==&gt; Consider the proposition of “Life” being the recursive process act-in-faith, pay attention to outcome vs prediction, adjust faith, REPEAT?
+
+> *The idea here is that maybe we can try to express the act-in-faith recursion of life using Y-combinator lambda calculus to see if we can say anything of the function to recurse to somehow be able to control what collective (social) behaviour that emerge?*
+
+> *We want to explore if it is possible to express in pure computational terms the process of both finding the function to recurse as well as actually recurse it and at the same time as an aim of the process get some recurse-able social intelligent behaviour to emerge? *
+
+> ***Is there a lambda function that when individually recursed can figure out and take part in collective recurse-able emergence?***
+
+4) Consider To express both individual recursion and social collective recursion duding the Y-combinator of some recordable lambda function?
+
+![](IMG_4455.jpeg)
+
+*Can we find lambda functions so that we can express both Individual and collective act-in-faith that is both recurse-able and emergence-oriented programming?*
+
+…
+
+...
+
+{% endraw %}

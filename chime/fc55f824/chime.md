@@ -1,0 +1,57 @@
+# Todo: Consider to study Rotary Controllers for servo motors and what we can use them for?
+
+```#fc55f824``` *As of 2018-04-11 20:55*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems the price for rotary controllers and BLDC motors servo drivers are coming down and may become viable options to use for linear motion controllers?
+
+1) Consider to use the leads provides in MacroRep youtube video “Precision motion control: ODrive Servo? Trinamic Stepper? Chinese Hybrid?” (<https://www.youtube.com/watch?v=p4ltHDpxrbI>)?
+
+> “  
+> Blue Chinese Hybrid: [https://goo.gl/yo2SM7](https://www.youtube.com/redirect?v=p4ltHDpxrbI&event=video_description&redir_token=YxEyplqXUkN1fVb9oMah7D1vMkh8MTUyMzUyNTUzNEAxNTIzNDM5MTM0&q=https%3A%2F%2Fgoo.gl%2Fyo2SM7)  
+> ODrive: [https://odriverobotics.com/#odrive](https://www.youtube.com/redirect?v=p4ltHDpxrbI&event=video_description&redir_token=YxEyplqXUkN1fVb9oMah7D1vMkh8MTUyMzUyNTUzNEAxNTIzNDM5MTM0&q=https%3A%2F%2Fodriverobotics.com%2F%23odrive)  
+> Bench PSU: [https://www.welectron.com/Siglent-SPD...](https://www.youtube.com/redirect?v=p4ltHDpxrbI&event=video_description&redir_token=YxEyplqXUkN1fVb9oMah7D1vMkh8MTUyMzUyNTUzNEAxNTIzNDM5MTM0&q=https%3A%2F%2Fwww.welectron.com%2FSiglent-SPD3303X-E-Benchtop-Power-Supply)  
+> Patreon: [https://www.patreon.com/marcoreps](https://www.youtube.com/redirect?v=p4ltHDpxrbI&event=video_description&redir_token=YxEyplqXUkN1fVb9oMah7D1vMkh8MTUyMzUyNTUzNEAxNTIzNDM5MTM0&q=https%3A%2F%2Fwww.patreon.com%2Fmarcoreps)
+
+> In this video I want to find the best motion control system for my new CNC machine. I have been collecting candidates in the past months and now it's time to compare them: A Chinese hybrid stepper w/ encoder, a new Trinamic IC called TMC5160 and an open source hardware BLDC servo driver called ODrive.  
+> "
+
+2) Consider the “High Speed Closed Loop Stepper Motor + HBS57 Stepper Driver + Coding Cable Kit” on Bangood (<https://www.banggood.com/High-Speed-Closed-Loop-Stepper-Motor-HBS57-Stepper-Driver-Coding-Cable-Kit-p-1134993.html?p=KR28032004379201507P&utm_campaign=2004379_1134993&utm_content=1500&cur_warehouse=CN>)?
+
+![](<Screen Shot 2018-04-11 at 11.42.18.png>)
+
+3) Consider the “ODrive” open source brushless servo motor driver ([https://odriverobotics.com](https://odriverobotics.com/))?
+
+==&gt; Is seems it also lives here on youtube (<https://www.youtube.com/redirect?v=p4ltHDpxrbI&event=video_description&redir_token=YxEyplqXUkN1fVb9oMah7D1vMkh8MTUyMzUyNTUzNEAxNTIzNDM5MTM0&q=https%3A%2F%2Fodriverobotics.com%2F%23odrive>)?
+
+![](<Screen Shot 2018-04-11 at 11.43.17.png>)
+
+![](<Screen Shot 2018-04-11 at 11.46.02.png>)
+
+4) Consider where to by good enough not so expensive rotary encoders?
+
+==&gt; Consider the €20 “CUI AMT102-V” from Mouser provider (<https://www.mouser.se/ProductDetail/CUI/AMT102-V?qs=WyjlAZoYn533PQfgnorrMg==>)?
+
+![](<Screen Shot 2018-04-11 at 20.53.17.png>)
+
+==&gt; This seem to be the home of CUI Inc product page for AMT10 series of Incremental encoders (<https://www.cui.com/product/motion/rotary-encoders/incremental/modular/amt10-series>)?
+
+==&gt; Consider Trinamic rotary encoders like this one (<https://www.trinamic.com/products/drives/encoder-details/tmcs-20/>)?
+
+![](<Screen Shot 2018-04-11 at 12.04.46.png>)
+
+==&gt; Trinamic rotary encoders seem to sell at Digikey (<https://www.digikey.com/en/product-highlight/t/trinamic/optical-encoders-optimized-for-stepper-motors>)?
+
+==&gt; The cheapest one seems to be $88 /<https://www.digikey.com/product-detail/en/trinamic-motion-control-gmbh/TMCS-28-6.35-10000-AT-01/1460-1223-ND/7400386>)?
+
+![](<Screen Shot 2018-04-11 at 12.09.56.png>)
+
+…
+
+Consider what more we can learn bout servo motors, rotary controllers, where to buy and what to use them for?
+
+...
+
+{% endraw %}

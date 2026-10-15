@@ -1,0 +1,183 @@
+﻿It seems as the Tha of a Darwinet View may be mutated both by synchronizing with the domain Tha state and bu mutating messages from the Client, the run-time need to be able to detect and process conflicting Tha state changes?
+
+1) Consider how Tha mutations may conflict?
+
+	==> Consider what it means that only update() may mutate Tha state?
+
+		==> It means whatever comes back from update may or may not be a new Tha state?
+		==> That new state may be a synchronization with peer node Tha state?
+
+           subscriptions -> Sub Delta —> run-time <--> update        
+                                            |
+                                            v                 View(view_tha)
+                                         view_Tha   --> view   -->  Client 
+
+
+		==> Or it may be a local new state mutated bly Client (on Client Msg)
+
+                                        run-time
+                                            ^
+                                            |
+                                         view_Tha (the Tha state the client assumes)
+                                           Msg     <-------------  Client
+                                                     Msg (operates on view_that)
+
+		==> It seems the run-time may end up with different Tha states when update()?
+
+			==> Sub Delta carries Darwinet information on what Tha state the Delta must be applied on (Delta.target_index)?
+			==> And the run-time needs to keep track of what Tha state the Client Msg must be applied to?
+			
+			==> So, the run-time needs to be able to detect if these two mutations conflict?
+
+2) Consider ways for the run-time to manage conflicting Tha states?
+
+	==> Consider an Set of Tha-state heads (one for each ”latest state” of a series of non-conflicting mutations)?
+
+		==> It seems such a head would correspond with one sequence of Deltas with no conflicts?
+
+       using ThaHeads = map<ThaKey, Tha> // Tha heads are just a map from a Tha key to a Tha
+
+	==> Consider the run-time may now find the head to send to update to mutate it?
+
+		tha_heads[tha.key()] = update(tha) // update is synchronous!
+
+	==> And for Msg from the Client we must look-up the Client Head tha (to know what head the client operates on)?
+
+		tha_heads[client_tha.key()] = update(client_tha);
+
+	==> BUT - this does NOT work (each mutation will give a NEW head key (the state has changed)!
+
+	==> So, how do we keep track of branches (each allowing non-conflcting head mutation)?
+
+	==> Consider the branch key is the key of the that state that branched (the one where mutations conflicted)?
+
+		==> ”Who” knows this key?
+
+	==> Consider we may get to a mechanism by understanding how we detect conflicts in the first place?
+
+		==> Consider a conflict is when we tray to apply a mutation to a Tha state that already has descendants?
+
+                                    head tha0
+                                        |
+                                        v
+       tha0 -> branch:tha0 -> tha1 -> tha2
+                                        |
+                                        v
+                                     update (OK tha2 is the head)
+                                        ^
+                                        |
+                                       Msg
+        
+		==> Consider it is the run-time that detects if we are updating a head or not?
+
+                                    head tha0 < - -      head tha0
+                                        |          |       |
+                                        v          .       v
+       tha0 -> branch:tha0 -> tha1 -> tha2 < - - | |  -> tha3 = tha´
+                                        |        . .       ^
+                                        v        | |       |
+                                     update -> run-time (OK tha2 is the head)
+                                        ^   tha´
+                                        |
+                                       Msg
+
+		==> What happens in case of conflict (we call update on a non-head tha-state)?
+
+                                    head tha0
+                                        |
+                                        v
+       tha0 -> branch:tha0 -> tha1 -> tha2
+                               |
+                               v
+                             update  ->  run-time (CONFLICT tha1 != head) 
+                               ^    tha'
+                               |
+                              Msg
+
+		==> How may the run-time create a new branch on conflict?
+
+                                    head tha0
+                                        |
+                                        v         head tha1
+       tha0 -> branch:tha0 -> tha1 -> tha2            |
+                               |                      v
+                               | ---> branch:tha1 -> tha1’ = tha´
+                               |          ^            ^
+                               |          |            |
+                               |          -----------  |
+                               v                    |  |
+                             update  ->  run-time (branch tha1 with tha') 
+                               ^    tha'
+                               |
+                              Msg
+
+
+	==> Consider we need a list of branches (each with a head)?
+
+		==> It seems branches can be implemented as pairs {branched_tha, head_tha}?
+
+                                    head tha0
+                                        |
+                                        v         head tha1
+       tha0 -> branch:tha0 -> tha1 -> tha2            |
+                               |                      v
+                               | ---> branch:tha1 -> tha1’ = tha´
+                               |          ^            ^
+                               |          |            |
+                               |          -----------  |
+                               v                    |  |
+                             update  ->  run-time (branch tha1 with tha') 
+                               ^    tha'
+                               |
+                              Msg
+
+	branches {tha0,tha2}, {tha1,tha1’}?
+
+
+	==> Consider how we allow and manage multiple branches?
+
+                                    head tha0
+                                        |
+                                        v         head tha1´, tha1´´and tha1´´´
+       tha0 -> branch:tha0 -> tha1 -> tha2            |
+                               |                      v
+                               | ---> branch:tha1 -> tha1´
+                               |
+                               | ---> branch:tha1 -> tha1’´
+                               |
+                               | ---> branch:tha1 -> tha1’´´
+                               |
+                              ...
+
+	==> Thus, for tha1 there is a list of branches (each with a different head)?
+
+	==> Consider a branch may thus be identified by its root state (the state that branched) and the head (head tha1´, tha1´´and tha1´´´in the example)?
+
+	==> But - then the branch ID will CHANGE as the head change (do we care)?
+
+		==> YES- we do care because if we would add the SAME HEAD to two branches with the same root they will be identical branches?
+		==> Or, that is a good thing?
+
+                                    head tha0
+                                        |
+                                        v         head tha1´, tha1´´and tha1´´´
+       tha0 -> branch:tha0 -> tha1 -> tha2            |
+                               |                      v
+                               | ---> branch:tha1 -> tha1´   -> tha2´
+                               |
+                               | ---> branch:tha1 -> tha1’´  -> tha2´´
+                               |
+                               | ---> branch:tha1 -> tha1’´´ -> tha2´ (Now the same branch as the first one?)
+                               |
+                              ...
+
+	==>	Consider we need to distinguish between ”same instance” and ”same state”?
+
+		==> Two tha instances may represent the same state but be different instances?
+		…
+
+…
+
+Consider to delve deeper into this Issue of how the run-time must handle conflicting model mutations (branches)?
+...
+

@@ -1,0 +1,462 @@
+# Todo: Consider to document how I was able to install latest stable LLVM (LLVM-15.2) / Clang and library libc++ on macOS Monterey (12.5.1)?
+
+```#09b1b586``` *As of 2022-11-05 16:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want the latest "raw" LLVM / Clang and LLVM C++ library libc++ om macOS separate from XCode tweaked Apple LLVM version.
+
+==&gt; Also see "Todo: Consider to try out macPorts on macOS Monterey and use it to install LLVM 15?"
+
+==&gt; Also see "Todo: Consider to interrogate macOS Brew for information about installed llvm (including clang) and potentially understand how to use llvm 13 with VSCode (or other toolchain or IDE)?"
+
+==&gt; Also see "Todo: Consider to document the Brew Upgrade llvm from version 10 to version 13 on my Mac Pro 2013 (Trashcan)?"
+
+1) It seems the latest LLVM is available on Githum (<https://github.com/llvm/llvm-project/releases/tag/llvmorg-15.0.2> )?
+
+![](PastedGraphic-1.png)
+
+==&gt; I assume the "clang+llvm-15.0.2-x86_64-apple-darwin.tar.xz" is for an Intel based macOS?
+
+TODO: Decide if I can unzip this to some "standard" location and use from VSCode on macOS?
+
+> *For now I am pleased I could get both the Brew installed (see below), as well as the macPorts installed clang 15 (See TODO above) to work from VSCode on macOS :)*
+
+2) It seems LLVM 15 is also available using Brew package manager on macOS (<https://formulae.brew.sh/formula/llvm> )?
+
+![](PastedGraphic-2.png)
+
+==&gt; It seems I was successful to use "brew update llvm" to upgrade to llvm15 and remove llvm13?
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew upgrade llvm  
+> Running \`brew update --auto-update\`...  
+> ==&gt; **Auto-updated Homebrew!**  
+> Updated 4 taps (helix-editor/helix, homebrew/core, homebrew/cask and freecad/freecad).  
+> ==&gt; **New Formulae**  
+> agg commitlint fastnetmon gnustep-base levant lmfit node@18 postgresql@15 schemathesis trzsz-go  
+> antidote cpp-httplib felinks go-camo lexicon lucky-commit nuraft protobuf@3 sgn ttdl  
+> apophenia cql-proxy fend go@1.18 lgeneral lunar-date objconv proxsuite sgr tuc  
+> autocorrect create-api ferium got libbpf mabel ocl-icd prql-compiler shaderc tuntox  
+> aws2-wrap crytic-compile fonts-encodings gum libdivide mailsy onlykey-agent prr slither-analyzer typewritten  
+> aztfy curlcpp fortls has libeatmydata manifest-tool open62541 purescript-language-server smap unisonlang  
+> bazarr czg fred highway libff markdownlint-cli2 opencl-icd-loader pymol snapcast uthash  
+> bdftopcf dart-sdk freecad/freecad/freecad@0.20 hof libgrapheme meek openvi pymupdf snowball valijson  
+> berkeley-db@5 datatype99 freecad/freecad/freecad@0.20.1 hotbuild liblbfgs mesheryctl ouch python-build snowflake vectorscan  
+> bfgminer distrobox freecad/freecad/med-file@4.1.1 hpp-fcl libnetfilter_conntrack metalang99 page python-gdbm@3.11 solc-select verapdf  
+> burst docker-buildx freecad/freecad/pyside2@5.15.5 huggingface-cli libnftnl metview pax python-tk@3.11 spr verovio  
+> c doggo freecad/freecad/shiboken2@5.15.5 hwatch libnl mkp224o pferd python-typing-extensions sqlcmd vile  
+> c2rust dooit fuego-firestore hyx libobjc2 mle pgsync python@3.11 svt-av1 vineyard  
+> camlp-streams dronedb gator iir1 libplacebo mprocs pinocchio pyyaml swiftdraw vulkan-loader  
+> cargo-bundle dsda-doom gaze ijq libpython-tabulate mqttui pint qbe taplo wasm-micro-runtime  
+> cargo-crev dumpling gcc@11 interface99 libretls muon pipe-rename qsv tbls weasyprint  
+> cargo-depgraph dunamai gcem iptables liburing mxnet pixie quilt-installer tea webkitgtk  
+> cargo-nextest dura gdrive-downloader jaq libvatek mycorrhiza pixiewps railway tere x86_64-linux-gnu-binutils  
+> cargo-udeps dynein gebug jj licenseplist mypaint-brushes pkcs11-tools rdb textract xctesthtmlreport  
+> cargo-zigbuild echidna ghc@8.10 json2tsv licensor nb pluto req tfel xdg-ninja  
+> cbindgen edencommon ghorg jupp linux-headers@5.15 neovide poac ripsecrets tlsx xq  
+> censys editorconfig-checker git-codereview kalign livekit netcdf-cxx pocl rome toml-test xwin  
+> chain-bench enex2notion git-delete-merged-branches kt-connect livekit-cli netcdf-fortran podman-compose rush-parallel treefmt  
+> circumflex evernote-backup git-machete kubesess llvm@13 nftables pomsky sambamba tremor-runtime  
+> cloudprober fastfetch git-sync leapp-cli llvm@14 nmrpflash popeye scala@2.13 trezor-bridge  
+> ==&gt; **New Casks**  
+> 86box betterandbetter clickshare duckduckgo goxel lookingglassbridge opencore-patcher random-mouse-clicker tailscale ui  
+> adze betterdisplay cloud189 eloquent gyroflow lookingglassstudio openlens readdle-spark tdr-kotelnikov ukrainian-typographic-keyboard  
+> akiflow bing-wallpaper color-studio fertigt-slate headlamp lunacy orka-vm-tools readmoreading tdr-nova v2ray-unofficial  
+> aliwangwang binocs cro-mag-rally filen hookmark macforge picfindr reflect tdr-vos-slickeq ved  
+> anytype black-light dbeaverlite fleet httpie mbcord pictureview reflex tempbox virtualbuddy  
+> apifox black-light-pro dbeaverultimate fly-key imhex metadatics pieces-cli reverso texifier weektodo  
+> apipost bluebubbles dcp-o-matic-editor fresh iqmol miaoyan planet rnnoise tl-legacy whist-browser  
+> aptakube bookwright decentr gama juice micromamba playcover-community rockboxutility tmpdisk wirecast  
+> arc bridge devcleaner gama-jdk keet mints plex-htpc sanesidebuttons topaz-denoise-ai workman  
+> archy cardinal diffusionbee gamemaker kigb mixin plugdata shop-different topaz-gigapixel-ai workspace-one-intelligent-hub  
+> arduino-ide chipmunk dixa gamma-control laconvolver moderndeck polypad slack-cli topaz-sharpen-ai wow  
+> ares chromium-gost dmg-canvas genesis-plus languagetool nanoem postman-cli sms-plus topaz-video-ai xprocheck  
+> astrofox cider doll gittyup lectrote northern-softworks-cache-cleaner prismlauncher snapmaker-luban trunk-io yousician  
+> battery cisdem-duplicate-finder douyin glance-chamburr lemonlime notesnook qspace-pro spline twitch-studio yubihsm2-sdk  
+> beast2 cleaneronepro drawpile go-shiori livebook onekey qwerty-fr squash typcn-bilibili  
+> ==&gt; **Deleted Formulae**  
+> **freecad/freecad/med-file ****✘** **freecad/freecad/pyside2 ****✘** **freecad/freecad/shiboken2@5.15.2 ****✘**
+
+> You have **101** outdated formulae installed.  
+> You can upgrade them with **brew upgrade**  
+> or list them with **brew outdated**.
+
+> ==&gt; **Upgrading 1 outdated package:**  
+> llvm 13.0.1_1 -&gt; 15.0.3  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2022-10-11>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:1b264e579e31b3041a87ff91f09d5f7cc0d51fea1c83e63aee17a1b95509cbe1>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:1b264e579e31b3041a87ff91f09d5f7cc0d51fea1c83e63aee17a1b95509cbe1?se=2022-11-05T12%3A55%3A00Z&sig=fEw5DWGvEY9UXPjNnwqi9MDuWsIDL%2BYCvhZ5iUno0KA%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/openssl/1.1/manifests/1.1.1s>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:d915175bedb146e38d7a2c95e86888a60a5058a5cd21f835813d43d1372a29d9>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:d915175bedb146e38d7a2c95e86888a60a5058a5cd21f835813d43d1372a29d9?se=2022-11-05T12%3A55%3A00Z&sig=1BJqGZ8kfz63k07VjZ3zrASNUTRbzOfL%2BfA3Y9OtSNY%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.1>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:19e6b02f577010a1a33c6ae6f09e40772d6ab22d94b6cf3455cfed9d301d28cf>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:19e6b02f577010a1a33c6ae6f09e40772d6ab22d94b6cf3455cfed9d301d28cf?se=2022-11-05T12%3A55%3A00Z&sig=9dCMU%2Fl5rn6laLQfp3UNWGK%2B4ZsNV0d0YV8wIl1pB%2Bk%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.39.4>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:43b72d87a55f57496284e1028986373e918f382b8381e6b29e1b43177759b7d3>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:43b72d87a55f57496284e1028986373e918f382b8381e6b29e1b43177759b7d3?se=2022-11-05T12%3A55%3A00Z&sig=z4Xns6EwsepA5BH9K%2F0RiFgJi3vsXA4ZMcSkHG9xLBQ%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/xz/manifests/5.2.7>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:02ed422191f81ca5c476f82264b6662a1ebcf95b90fb3ee10b52462cccdc55a8>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:02ed422191f81ca5c476f82264b6662a1ebcf95b90fb3ee10b52462cccdc55a8?se=2022-11-05T12%3A55%3A00Z&sig=RnRKrshyKH%2FMiH%2Bsb%2BF6babD83O2N7OwI0P5Q4h9a48%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/python/3.10/manifests/3.10.8-1>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/python/3.10/blobs/sha256:017d295e8091cf75e95c8002806865dca73d47b898984fff0a4d00df63a28962>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:017d295e8091cf75e95c8002806865dca73d47b898984fff0a4d00df63a28962?se=2022-11-05T12%3A55%3A00Z&sig=xoviTDO5w9eVZ2Dt0lh5VzznTh0yQEtwgj8HwP09HR4%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/six/manifests/1.16.0_3>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/six/blobs/sha256:0dee50367c6facbfc8f65e8a82bcd3e08d43da262b1adff6ccf943ef5bfaf313>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:0dee50367c6facbfc8f65e8a82bcd3e08d43da262b1adff6ccf943ef5bfaf313?se=2022-11-05T12%3A55%3A00Z&sig=VEA0OTRv0iGg2yZSvr35NDS5muS3iVGUJ9SagbJZFHw%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/z3/manifests/4.11.2-2>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:f8c5ff44aaf7d0ca43fd5d47c687dd30856162290f9e06c7cf447013f0c96013>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f8c5ff44aaf7d0ca43fd5d47c687dd30856162290f9e06c7cf447013f0c96013?se=2022-11-05T12%3A55%3A00Z&sig=%2FUxwQQTFn7phaRlTDIdrCzjs9TboX5VkBETQ4Pl7Ir8%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/lz4/manifests/1.9.4>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/lz4/blobs/sha256:88b369cea90a0a119c24aa96a614fe7d77de58d18cb1803023dc925679eb905f>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:88b369cea90a0a119c24aa96a614fe7d77de58d18cb1803023dc925679eb905f?se=2022-11-05T12%3A55%3A00Z&sig=o14uark9o598vVfPPMozIyA5uJY%2FU61q5y%2FyxXudj50%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/llvm/manifests/15.0.3>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/llvm/blobs/sha256:09cc7a2e0d63ce220fd454eca8b6deb6d6c0ba6f2c9f2ec73d8e1bcedb9b1934>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:09cc7a2e0d63ce220fd454eca8b6deb6d6c0ba6f2c9f2ec73d8e1bcedb9b1934?se=2022-11-05T12%3A55%3A00Z&sig=hkqRia4ieC2ZDg%2Bvb7WjbqHegSw5YU3hK0SJRP7y%2FM8%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Upgrading ****llvm**  
+> **13.0.1_1 -&gt; 15.0.3 **
+
+> ==&gt; **Installing dependencies for llvm: ****ca-certificates****, ****openssl@1.1****, ****readline****, ****sqlite****, ****xz****, ****python@3.10****, ****six****, ****z3** **and ****lz4**  
+> ==&gt; **Installing llvm dependency: ****ca-certificates**  
+> ==&gt; **Pouring ca-certificates--2022-10-11.all.bottle.tar.gz**  
+> ==&gt; **Regenerating CA certificate bundle from keychain, this may take a while...**  
+> 🍺 /usr/local/Cellar/ca-certificates/2022-10-11: 3 files, 225.5KB  
+> ==&gt; **Installing llvm dependency: ****openssl@1.1**  
+> ==&gt; **Pouring openssl@1.1--1.1.1s.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/openssl@1.1/1.1.1s: 8,101 files, 18.5MB  
+> ==&gt; **Installing llvm dependency: ****readline**  
+> ==&gt; **Pouring readline--8.2.1.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/readline/8.2.1: 50 files, 1.7MB  
+> ==&gt; **Installing llvm dependency: ****sqlite**  
+> ==&gt; **Pouring sqlite--3.39.4.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/sqlite/3.39.4: 11 files, 4.4MB  
+> ==&gt; **Installing llvm dependency: ****xz**  
+> ==&gt; **Pouring xz--5.2.7.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/xz/5.2.7: 95 files, 1.4MB  
+> ==&gt; **Installing llvm dependency: ****python@3.10**  
+> ==&gt; **Pouring python@3.10--3.10.8.monterey.bottle.1.tar.gz**  
+> Warning: These files were overwritten during the \`brew link\` step:  
+> /usr/local/bin/2to3  
+> /usr/local/bin/idle3  
+> /usr/local/bin/pydoc3  
+> /usr/local/bin/python3  
+> /usr/local/bin/python3-config  
+> /usr/local/share/man/man1/python3.1  
+> /usr/local/lib/pkgconfig/python3-embed.pc  
+> /usr/local/lib/pkgconfig/python3.pc  
+> /usr/local/Frameworks/Python.framework/Headers  
+> /usr/local/Frameworks/Python.framework/Python  
+> /usr/local/Frameworks/Python.framework/Resources  
+> /usr/local/Frameworks/Python.framework/Versions/Current
+
+> They have been backed up to: /Users/kjell-olovhogdal/Library/Caches/Homebrew/Backup  
+> ==&gt; **/usr/local/Cellar/python@3.10/3.10.8/bin/python3.10 -m ensurepip**  
+> ==&gt; **/usr/local/Cellar/python@3.10/3.10.8/bin/python3.10 -m pip install -v --no-deps --no-index --upgrade --isolated --target=/usr/local/lib/python3.10/site-packages /usr/local/Cellar/python@3.10/3.10.8/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ensurepip/_bundled/setuptools-65.4.1-py3-none-any.whl /usr/local/Cellar/python@3.10/3.10.8/Frameworks/Pyt**  
+> ==&gt; **Summary**  
+> 🍺 /usr/local/Cellar/python@3.10/3.10.8: 3,114 files, 56.6MB  
+> ==&gt; **Installing llvm dependency: ****six**  
+> ==&gt; **Pouring six--1.16.0_3.all.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/six/1.16.0_3: 20 files, 122.4KB  
+> ==&gt; **Installing llvm dependency: ****z3**  
+> ==&gt; **Pouring z3--4.11.2.monterey.bottle.2.tar.gz**  
+> 🍺 /usr/local/Cellar/z3/4.11.2: 142 files, 37.7MB  
+> ==&gt; **Installing llvm dependency: ****lz4**  
+> ==&gt; **Pouring lz4--1.9.4.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/lz4/1.9.4: 22 files, 685.2KB  
+> ==&gt; **Installing ****llvm**  
+> ==&gt; **Pouring llvm--15.0.3.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/llvm/15.0.3: 6,408 files, 1.3GB  
+> ==&gt; **Running \`brew cleanup llvm\`...**  
+> Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.  
+> Hide these hints with HOMEBREW_NO_ENV_HINTS (see \`man brew\`).  
+> Removing: /usr/local/Cellar/llvm/13.0.1_1... (5,449 files, 940.9MB)  
+> Warning: Use python3.9 instead of deprecated freecad/freecad/python3.9  
+> Error: Could not get runtime dependencies from /usr/local/opt/pyside2/.brew/pyside2.rb!  
+> Error: No available formula with the name "freecad/freecad/shiboken2@5.15.2". Did you mean freecad/freecad/shiboken2@5.15.5 or freecad/freecad/pyside2@5.15.5?  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ %
+
+==&gt; It seems I need to update my C++ tool chain with the new path to LLVM 15?
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % **brew list llvm**  
+> /usr/local/Cellar/llvm/15.0.3/bin/FileCheck  
+> /usr/local/Cellar/llvm/15.0.3/bin/UnicodeNameMappingGenerator  
+> /usr/local/Cellar/llvm/15.0.3/bin/analyze-build  
+> /usr/local/Cellar/llvm/15.0.3/bin/bugpoint  
+> /usr/local/Cellar/llvm/15.0.3/bin/c-index-test  
+> **/usr/local/Cellar/llvm/15.0.3/bin/clang**  
+> **/usr/local/Cellar/llvm/15.0.3/bin/clang++**  
+> **/usr/local/Cellar/llvm/15.0.3/bin/clang-15**  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-apply-replacements  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-change-namespace  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-check  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-cl  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-cpp  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-doc  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-extdef-mapping  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-format  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-include-fixer  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-linker-wrapper  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-move  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-nvlink-wrapper  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-offload-bundler  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-offload-packager  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-offload-wrapper  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-pseudo  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-query  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-refactor  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-rename  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-reorder-fields  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-repl  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-scan-deps  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang-tidy  
+> /usr/local/Cellar/llvm/15.0.3/bin/clangd  
+> /usr/local/Cellar/llvm/15.0.3/bin/clangd-xpc-test-client  
+> /usr/local/Cellar/llvm/15.0.3/bin/count  
+> /usr/local/Cellar/llvm/15.0.3/bin/darwin-debug  
+> /usr/local/Cellar/llvm/15.0.3/bin/diagtool  
+> /usr/local/Cellar/llvm/15.0.3/bin/dsymutil  
+> /usr/local/Cellar/llvm/15.0.3/bin/find-all-symbols  
+> /usr/local/Cellar/llvm/15.0.3/bin/git-clang-format  
+> /usr/local/Cellar/llvm/15.0.3/bin/hmaptool  
+> /usr/local/Cellar/llvm/15.0.3/bin/intercept-build  
+> /usr/local/Cellar/llvm/15.0.3/bin/ld.lld  
+> /usr/local/Cellar/llvm/15.0.3/bin/ld64.lld  
+> /usr/local/Cellar/llvm/15.0.3/bin/llc  
+> /usr/local/Cellar/llvm/15.0.3/bin/lld  
+> /usr/local/Cellar/llvm/15.0.3/bin/lld-link  
+> /usr/local/Cellar/llvm/15.0.3/bin/lldb  
+> /usr/local/Cellar/llvm/15.0.3/bin/lldb-argdumper  
+> /usr/local/Cellar/llvm/15.0.3/bin/lldb-instr  
+> /usr/local/Cellar/llvm/15.0.3/bin/lldb-server  
+> /usr/local/Cellar/llvm/15.0.3/bin/lldb-vscode  
+> /usr/local/Cellar/llvm/15.0.3/bin/lli  
+> /usr/local/Cellar/llvm/15.0.3/bin/lli-child-target  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-PerfectShuffle  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-addr2line  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-ar  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-as  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-bcanalyzer  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-bitcode-strip  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-c-test  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-cat  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-cfi-verify  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-config  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-cov  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-cvtres  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-cxxdump  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-cxxfilt  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-cxxmap  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-debuginfod  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-debuginfod-find  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-diff  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-dis  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-dlltool  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-dwarfdump  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-dwarfutil  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-dwp  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-exegesis  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-extract  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-gsymutil  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-ifs  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-install-name-tool  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-jitlink  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-jitlink-executor  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-lib  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-libtool-darwin  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-link  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-lipo  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-lto  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-lto2  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-mc  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-mca  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-ml  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-modextract  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-mt  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-nm  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-objcopy  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-objdump  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-opt-report  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-otool  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-pdbutil  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-profdata  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-profgen  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-ranlib  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-rc  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-readelf  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-readobj  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-reduce  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-remark-size-diff  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-rtdyld  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-sim  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-size  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-split  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-stress  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-strings  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-strip  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-symbolizer  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-tapi-diff  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-tblgen  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-tli-checker  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-undname  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-windres  
+> /usr/local/Cellar/llvm/15.0.3/bin/llvm-xray  
+> /usr/local/Cellar/llvm/15.0.3/bin/mlir-cpu-runner  
+> /usr/local/Cellar/llvm/15.0.3/bin/mlir-linalg-ods-yaml-gen  
+> /usr/local/Cellar/llvm/15.0.3/bin/mlir-lsp-server  
+> /usr/local/Cellar/llvm/15.0.3/bin/mlir-opt  
+> /usr/local/Cellar/llvm/15.0.3/bin/mlir-pdll-lsp-server  
+> /usr/local/Cellar/llvm/15.0.3/bin/mlir-reduce  
+> /usr/local/Cellar/llvm/15.0.3/bin/mlir-tblgen  
+> /usr/local/Cellar/llvm/15.0.3/bin/mlir-translate  
+> /usr/local/Cellar/llvm/15.0.3/bin/modularize  
+> /usr/local/Cellar/llvm/15.0.3/bin/not  
+> /usr/local/Cellar/llvm/15.0.3/bin/obj2yaml  
+> /usr/local/Cellar/llvm/15.0.3/bin/opt  
+> /usr/local/Cellar/llvm/15.0.3/bin/pp-trace  
+> /usr/local/Cellar/llvm/15.0.3/bin/run-clang-tidy  
+> /usr/local/Cellar/llvm/15.0.3/bin/sancov  
+> /usr/local/Cellar/llvm/15.0.3/bin/sanstats  
+> /usr/local/Cellar/llvm/15.0.3/bin/scan-build  
+> /usr/local/Cellar/llvm/15.0.3/bin/scan-build-py  
+> /usr/local/Cellar/llvm/15.0.3/bin/scan-view  
+> /usr/local/Cellar/llvm/15.0.3/bin/set-xcode-analyzer  
+> /usr/local/Cellar/llvm/15.0.3/bin/split-file  
+> /usr/local/Cellar/llvm/15.0.3/bin/tblgen-lsp-server  
+> /usr/local/Cellar/llvm/15.0.3/bin/verify-uselistorder  
+> /usr/local/Cellar/llvm/15.0.3/bin/wasm-ld  
+> /usr/local/Cellar/llvm/15.0.3/bin/yaml-bench  
+> /usr/local/Cellar/llvm/15.0.3/bin/yaml2obj  
+> /usr/local/Cellar/llvm/15.0.3/include/c++/ (792 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/clang/ (690 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/clang-c/ (10 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/clang-tidy/ (340 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/lld/ (14 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/lldb/ (515 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/llvm/ (1753 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/llvm-c/ (36 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/mlir/ (1024 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/mlir-c/ (28 files)  
+> /usr/local/Cellar/llvm/15.0.3/include/polly/ (114 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/libClangdXPCLib.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libLLVM-C.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libLLVM.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libLTO.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libMLIR.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libRemarks.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libclang-cpp.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libclang.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/liblldb.15.0.3.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libmlir_async_runtime.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libmlir_c_runner_utils.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libmlir_runner_utils.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libomp.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/libunwind.1.0.dylib  
+> /usr/local/Cellar/llvm/15.0.3/lib/c++/ (9 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/clang/ (227 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/cmake/ (56 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/libear/ (3 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/libscanbuild/ (11 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/objects-Release/ (32 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/python3.10/ (18 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/python3.7/ (3 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/python3.8/ (3 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/python3.9/ (3 files)  
+> /usr/local/Cellar/llvm/15.0.3/lib/ (482 other files)  
+> /usr/local/Cellar/llvm/15.0.3/libexec/python3.10/ (27 files)  
+> /usr/local/Cellar/llvm/15.0.3/libexec/ (6 files)  
+> /usr/local/Cellar/llvm/15.0.3/share/clang/ (11 files)  
+> /usr/local/Cellar/llvm/15.0.3/share/emacs/ (6 files)  
+> /usr/local/Cellar/llvm/15.0.3/share/man/man1/scan-build.1  
+> /usr/local/Cellar/llvm/15.0.3/share/opt-viewer/ (6 files)  
+> /usr/local/Cellar/llvm/15.0.3/share/scan-build/ (2 files)  
+> /usr/local/Cellar/llvm/15.0.3/share/scan-view/ (4 files)  
+> /usr/local/Cellar/llvm/15.0.3/share/vim/ (16 files)  
+> /usr/local/Cellar/llvm/15.0.3/Toolchains/LLVM15.0.3.xctoolchain/Info.plist  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit %
+
+==&gt; This VSCode tasks.json change seems to make the C++ llvm 15 tool chain work?
+
+> *If I copy this tasks.json section for Brew installed Clang 13...*
+
+> {  
+> "type": "cppbuild",  
+> "label": "macOS C/C++: clang-13 build cratchit",  
+> "command": "*/usr/local/Cellar/llvm/13.0.1_1/bin/clang++*",  
+> "args": &#91;  
+> "-fdiagnostics-color=always",  
+> "-std=c++20",  
+> "-g",  
+> "${file}",  
+> "-o",  
+> "${workspaceFolder}/cratchit.out"  
+> &#93;,  
+> "options": {  
+> "cwd": "${fileDirname}"  
+> },  
+> "problemMatcher": &#91;  
+> "$gcc"  
+> &#93;,  
+> "group": "build",  
+> "detail": "compiler: */usr/local/Cellar/llvm/13.0.1_1/bin/clang++*"  
+> },
+
+> ...and paste it into a new section with the following edits...
+
+> {  
+> "type": "cppbuild",  
+> "label": "macOS C/C++: clang-15 build cratchit",  
+> "command": "**/usr/local/Cellar/llvm/15.0.3/bin/clang++**",  
+> "args": &#91;  
+> "-fdiagnostics-color=always",  
+> "-std=c++20",  
+> "-g",  
+> "${file}",  
+> "-o",  
+> "${workspaceFolder}/cratchit.out"  
+> &#93;,  
+> "options": {  
+> "cwd": "${fileDirname}"  
+> },  
+> "problemMatcher": &#91;  
+> "$gcc"  
+> &#93;,  
+> "group": "build",  
+> "detail": "compiler: **/usr/local/Cellar/llvm/15.0.3/bin/clang++**"  
+> },
+
+==&gt; It seems I can now use Clang 15 to build from VSCode?
+
+![](PastedGraphic-15.png)
+
+> \* Executing task: macOS C/C++: clang-15 build cratchit
+
+> Starting build...  
+> /usr/local/Cellar/llvm/15.0.3/bin/clang++ -fdiagnostics-color=always -std=c++20 -g /Users/kjell-olovhogdal/Documents/Github/cratchit/src/main.cpp -o /Users/kjell-olovhogdal/Documents/Github/cratchit/cratchit.out
+
+> Build finished successfully.  
+> \* Terminal will be reused by tasks, press any key to close it.
+
+...
+
+{% endraw %}

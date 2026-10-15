@@ -1,0 +1,34 @@
+﻿Could it be a good idea to try and implement Code Point and Encode Aware (CPEA) “strings” as a C++ library?
+
+1) Consider a good name for the Code Point and Encode Aware (CPEA) “strings”?
+
+	==> Consider the name “babel” (referring to babels tower in the bible)?
+	==> Consider the technical name “cpea” (as an acronym for Code Pont and Encoding Aware string)?
+	…
+
+2) Consider to have the library interact with “raw” strings and be layered into one Code Point and Encode aware layer and one Code Point adapting layer?
+
+	==> Consider the Code Point and Encode Aware layer is the one that interacts with “raw” strings (literals, std::string and different flavours of existing string classes)?
+
+		==> Consider a good name of the namespace for the Code Point and Encode Aware strings?
+
+			==> Consider this layer only operates on CPEA of the same type (explicit conversion or adaptors are required)
+
+			==> Consider the sub-namespace “babel::string” (to refer to being able to interact with “raw” string whilst being Code Point and Encode Aware?
+
+			==> <cpea>::string<Code_Point_Set,Encoding> can only inter-operate on objects of the same type as itself?
+			==> <cpea>::string<Code_Point_Set,Encoding> can inter-operate with objects that applies a Code Point range and Encoding that is a sub-range of itself (i.e., an ISO-LATIN1,UTF-8 may interoperate with an ASCII, ASCII)?
+
+	==> Consider the layer on top of that that is able to inter-operate on CPEA of different Cope Points and Encodings?
+
+		==> Consider a good name of the namespace for the Code Point and?
+
+			==> Consider the sub-namespace “<cpea>::text” (to refer to being able to operate on any known text)?
+
+			==> <cpea>::text<Code_Point_Set_x> is able to interoperate with any babel::text<Code_Point_Set_y> (implicit conversion IS applied)?
+			…
+…
+
+Consider to elaborate on this idea of a C++ library for enhanced text processing?
+...
+

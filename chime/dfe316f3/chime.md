@@ -1,0 +1,128 @@
+# Todo: Programming - Consider to understand and apply "Denotational Semantics" to design C++ Programs?
+
+```#dfe316f3``` *As of 2016-03-24 18:30*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems “Denotational Semantics” may be a good way to try and express the problem domain to find a functional decomposition implementable as a compare program (e.g. in C++)?
+
+1) Consider to delve into this talk from Cppcon 2015 introducing this concept (<https://www.youtube.com/watch?v=x9mIAT-CAwA>)?
+
+==&gt; The slides seem to be available here ([https://github.com/CppCon/CppCon2015/blob/master/Presentations/Functional%20Design%20Explained/Functional%20Design%20Explained%20-%20David%20Sankel%20-%20CppCon%202015.pdf](<https://github.com/CppCon/CppCon2015/blob/master/Presentations/Functional Design Explained/Functional Design Explained - David Sankel - CppCon 2015.pdf>))?
+
+==&gt; Denotational Semantics seems to try and express relations between “meanings”?
+
+==&gt; At 4:30 he proposes what is the “Essence of Programs”?
+
+We would like:
+
+\* “Essence” to have Strong equivalence properties
+
+\* “Essence” written down
+
+\* “Essence” as a set of rules we can apply to any program
+
+==&gt; He states that the goal is to be able to define and identify “same-ness” of programs?
+
+==&gt; He asks: “Any ideas of what would be a good essence language?”
+
+==&gt; Consider to remember the term “Essence Language” (seem like a good term)?
+
+==&gt; At 5:45 he proses math as a good Essence Language?
+
+==&gt; At 6:05 he introduces “Denotational Semantics”
+
+==&gt; The language uses the symbol My (µ) to denote an expression “meaning of”
+
+==&gt; In mathematics this is used to convert a syntax into a meaning.
+
+==&gt; Mathematical left white box square bracket seem to be unicode U + 27E6 (<http://xahlee.info/comp/unicode_matching_brackets.html>)?
+
+µ⟦e1 + e2⟧ = µ⟦e1⟧ + µ⟦e2⟧ where e1, e2 are expressions
+
+==&gt; Seems to define “The meaning of the syntax (left hand side) “e1 + e2” is the expression of the meaning of e1 added to the meaning of e2”?
+
+µ⟦i⟧ = i where i is an integer
+
+==&gt; Seems to mean “the meaning of the syntax ‘i’ is the expression i”.
+
+==&gt; At 12:05 he refers to “Semantics Discovery”
+
+==&gt; The paper “Denotational design with type class morphisms” by Conal elliot seems to be available here (<http://conal.net/papers/type-class-morphisms/type-class-morphisms-long.pdf>)
+
+==&gt; Conal Elliot seem to have a home page here (<http://conal.net>)
+
+==&gt; Although not updated since jan 2015?
+
+==&gt; At 13:20 - Steps of Functional Design in C++
+
+1) Discover the mathematical essence of the problem and write it out
+
+2) Derive an efficient implementation in C++ that has the interface discovered in #1.
+
+==&gt; Seems he means first write it done an an “Essence Language” and then translate that into C++ functions?
+
+==&gt; At 13:50 - he introduces the mathematical language for Algebraic Data Types.
+
+==&gt; This wikipedia page seem to describe this concept well (<https://en.wikipedia.org/wiki/Algebraic_data_type>)?
+
+“In computer programming, particularly functional programming and type theory, an algebraic data type is a kind of composite type, i.e. a type formed by combining other types. Two common classes of algebraic type are product types—i.e. tuples and records—and sum types, also called tagged or disjoint unions or variant types.&#91;1&#93;"
+
+==&gt; Two (value?) types 1 and 0
+
+struct One {}; // The C++ Type One with only one instance-sameness (multiple value instances allowed in C++ but they are all the same value)
+
+struct Zero { Zero() = delete; }; // The C++ Zero type with zero instances allowed
+
+==&gt; Two operations ⊕ (sum) and ⊗ (product) to combine them
+
+==&gt; A Product of A and B seem to be a type that is both A and B?
+
+using A_and_B = std::pair&lt;A,B&gt; // One way to have C++ “Product” Type
+
+==&gt; A Sum of A and B seem to be a type that is either A or B?
+
+using A_or_B = boost::variant&lt;A,B&gt;
+
+==&gt; A function Type A ⟶ B (A pure function that takes a type A and returns a type B)
+
+using Function_B_of_A = std::function&lt;B (A)&gt;; // As long as passed function is Pure (no side effects)
+
+==&gt; At 20:20 - Meaning
+
+==&gt; Seems he adds a way to express value (meaning = value) and type (meaning : type)?
+
+µ⟦syntax⟧ = mathExpression
+
+The **meaning** of left-hand syntax is the right hand expression.
+
+µ⟦expression⟧ : mathExpression
+
+The **type** of left-hand side expression is the right hand side expression type.
+
+==&gt; At 21:25
+
+µ⟦boost::optional&lt;e1&gt;⟧ = µ⟦e1⟧ ⊕ 1
+
+µ⟦std:.pair&lt;e1,e2&gt;⟧ = µ⟦e1⟧ ⊗ µ⟦e1⟧
+
+µ⟦double⟧ = ℝ
+
+==&gt; Seems to state that the meaning of boost::optional is either the meaning of the type or the meaning of none (why not the meaning of zero?)
+
+==&gt; because Zero have no instance but none has?
+
+==&gt; Seems to state that the meaning of the std:.pair is the meaning of both types.
+
+==&gt; And the meaning of double are the real numbers?
+
+==&gt; At 23:20 - What is a Movie?
+
+**WE ARE HERE...**
+
+2) The talk refers to a book “Denotational Semantics” by Schmidt (David A. Schmidt?) that seems to be published here (<http://www.bcl.hamilton.ie/~barak/teach/F2008/NUIM/CS424/texts/ds.pdf>)?
+
+3) This seem to be a good wikipedia page on the subject (<https://en.wikipedia.org/wiki/Denotational_semantics>)?
+
+{% endraw %}

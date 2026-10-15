@@ -1,0 +1,103 @@
+﻿Jag behöver lära mig upprätta en bygglovsansökan och detta exempel i annons från Mäklare verkar vara ett bra underlag att studera.
+
+1) Överväg bygglovsansökan i annons "Trästa broväg 124" från 'Mäklarhuset' (https://www.maklarhuset.se/bostad/sverige/stockholm/hallstavik/trasta-brovag/621826?utm_source=booli&utm_medium=referral&utm_campaign=till-salu&utm_content=trasta%2Bbrovag%2B124 )?
+
+
+￼
+
+￼
+
+
+	==> Denna länk till pdf kanske fungerar för en viss tid framöver (https://cdn.maklarhuset.se/object/files/8355bb5a-006d-4bfc-9a64-295d5272f006/bygglovsritningar_5.pdf )?
+
+
+￼
+
+2) Överväg att studera vilka delar som ingår i de studerade bygglovsritningarna?
+
+	==> Ritningsförteckning (A = Arkitektritningar)
+
+￼
+
+
+	==> Ritningarna verkar märka "Bygglovshandling"?
+
+￼
+
+
+	==> Första ritningen verkar vara planritning och sektionsritning (Ritningstyp "PLANER SEKTION")
+
+￼
+
+￼
+
+￼
+
+
+	==> Nästa tre ritningar verkar vara fasadritningar med markhöjd inritad (Ritningstyp "FASADER*)
+
+￼
+
+	==> Den tredje ritningen av typen "FASAD" verkar döpt med sin skala 1:200 och visar alla fyra fasaderna (ritningstyp "FASAD 1:200")
+
+￼
+
+	==> Nästa ritning 'r situationsplan och verkar visa husets placering på tomten ovanifrån ()
+
+￼
+
+
+	==> MEN: A14 verkar vara 'godkänd' av kommunen som en B-ritning?
+
+￼
+
+
+	==> Enligt chatGPT använder kommunen beteckningen 'B-ritning' för 'Beslutsritning'?
+
+Vad kan en "B-ritning" vara?
+
+I många kommuner betyder "B" = Bygglovsritning eller Beslutsritning. Den kan vara:
+
+✅ En ritning som visar hur kommunen tolkar och godkänner ett förslag, t.ex. utifrån en inlämnad A-ritning.
+
+✅ En kompletterad version av inlämnade handlingar, där kommunen gjort smärre ändringar, förtydliganden eller anpassningar.
+
+✅ Ett juridiskt bindande dokument som visar vad som beviljats – särskilt om det finns skillnader mot vad som ursprungligen söktes.
+
+
+	==> Den sista ritningen verkar vara en sektionsritning som visar bärande delar och grund (ritningstyp "DETALJERAD SEKTION")
+
+￼
+
+	==> Den detaljerade sektionsritningen verkar också visa skalets konstruktion?
+
+
+Den här väggen tolkar jag som 13 mm gips, 12 mm spånskiva, 45x70 regelvägg med 70 mm isolering, plastfolie, 45x95 regelvägg med 195 isolering, vindpapp, 28 mm spikläkt och till slut 21 mm panel?
+
+￼
+
+3) Överväg att förstå beteckningar för ritningar för bostadshus och bygglovsritningar?
+
+	==> Enligt chatGPT verkar A-ritningar vara 'Arkitektritningar' och de som normalt ingår i bygglovsritniongar?
+
+"Vad ingår i A-ritningar?
+Arkitektritningar visar byggnadens utformning och utseende – alltså det som har med arkitektur, funktion och gestaltning att göra. Det kan inkludera:
+
+Situationsplan (hur byggnaden placeras på tomten)
+Planritningar (planlösningar, t.ex. bottenplan, våningsplan)
+Fasadritningar (byggnadens yttre utseende från olika håll)
+Sektioner / snitt (hur byggnaden ser ut i genomskärning)
+Takplan eller taksektioner
+Fönster- och dörrschema (i vissa fall)"
+
+	==> Anligt chatGPT finns det fler klasser av ritningar med egna bokstäver förutom 'A'?
+
+"
+Andra ritningsbeteckningar (för jämförelse)
+Beteckning	Typ av ritning
+A	Arkitektritning
+K	Konstruktionsritning
+V	VVS (värme, ventilation, sanitet)
+E	Elritning
+M	Markritning"
+...

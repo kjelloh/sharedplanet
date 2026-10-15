@@ -1,0 +1,145 @@
+﻿Consider it would be a good exercise to understand how C++ templates are modelled in Meta Value Model?
+
+1) Consider a template operates on meta-2 level and is in fact a meta-2 function?
+
+	==> Consider a  C++ template is a meta-n function (what level is n)?
+
+	// Class template
+	template <typename T1, typename T2>
+	struct A { T1 x; T2 y;}
+
+		==> Consider we can model this as passing arguments to function template?
+
+		 template       <typename T1, typename T2>
+            |          |
+            |          |              struct A { T1 x; T2 y;}
+            |          |                 |
+	template: [Declaration<1>] -> Definition<1> -> ([Definition<1>] -> Value<1>)?
+		  ----------------    -------------    -----------------------------
+		        |                   |                        |
+		argument declarations  template   	Actual template = meta-2 value (a function)
+				      definition		     |
+							  Constructor for meta-1 values
+							  e.g., A<int,int>, A<double, string>…
+							  (The <int,int> is C++ Definition<1> list)
+
+
+	// Function template
+	template <typename T1, typename T2>
+	T1 f(T2 x) {return x*x;}
+ 
+		 template       <typename T1, typename T2>
+            |          |
+            |          |              T1 f(T2 x) {return x*x;}
+            |          |                 |
+	template: [Declaration<1>] -> Definition<1> -> ([Definition<1>] -> Value<1>)?
+		  ----------------    -------------    -----------------------------
+		        |                   |                        |
+		argument declarations  template   	Actual template = meta-2 value (a function)
+				      definition		     |
+							  Constructor for meta-1 values
+							  e.g., f<int,int>, f<double, double>
+
+	
+	// Alias template
+	template <typename T1, typename T2>
+	using persons = std::vector<std::tuple<T1, T2>>;
+
+		 template       <typename T1, typename T2>
+            |          |
+            |          |              using persons = std::vector<std::tuple<T1, T2>>
+            |          |                 |
+	template: [Declaration<1>] -> Definition<1> -> ([Definition<1>] -> Value<1>)?
+		  ----------------    -------------    -----------------------------
+		        |                   |                        |
+		argument declarations  template   	Actual template = meta-2 value (a function)
+				      definition		     |
+							  Constructor for meta-1 values
+							  e.g., f<int,int>, f<double, double>
+
+(2) Consider C++ templates can be modeled as generic type-constrctors dispatched on template arguments?
+
+	==> In this way templates are just generic functions ”called” with template arguments and dispatched to matched instantiation?
+
+	==> We then can apply pattern matching to pick the best candidate given the provided template arguments?
+
+	==> So, how can we model C++ templates as higher-meta functions?
+
+		==> consider template is the top-function?
+		==> It instantiates type-constructors (i.e., class, function or alias templates)
+		==> Then ”template” identifier is defined on meta-3 (!) ??
+
+		==> NO! template instantiations are meta-1 generic types!
+
+		meta-2:	Identifier {”template” , template<3> } = Set {…any template<1> …}
+                                                                                                                 |
+                                                                    --------------------------------------
+                                                                     |      (as_function args definition<1>) (e.g. template <…args> class {}, template <…args> T f(T) {}, template <…args> using name = T)
+                                                                     v
+		meta-1:	Identifier {”name” , template<2> } = Set {…any template<0> …} GENERIC meta-1 values
+                                                                                                                 |
+                                                                    --------------------------------------
+                                                                     |      as_function args to define meta-0 value (i.e., the type constructor)
+                                                                     v
+		meta-0:	Identifier {”name” , template<2> } = Set {…any template<1> …} GENERIC meta-0 values (C++ executable)
+	
+3) Consider how we implement modeling of generic types?
+
+	==> Also see ”Todo: Meta Value Model - Consider to follow up on Common Lisp Object System (CLOS) and Meta Object Protocols?”
+
+		==> It seems ”generic functions” are just a special case of generic types?
+
+	==> Consider ”generics” are Identifiers that are not yet fully bound (any or all of name, meta-value and value are unbound)?
+
+	==> Consider how templates can be modelled as generic types using partly unbound identifiers?
+
+		==> A template identifier is always named?
+		==> A template can be declared and defined separately?
+
+			==> Template declaration must bind to template argument declarations?
+			==> The template argument becomes local names to bind to template definition?
+
+		…
+
+4) It seems Generic Values are strongly correlated with Pattern Matching and value inferring?
+
+	==> See ”Todo: Meta Value Model - Consider mechanisms to create and apply pattern matching using existing model meta-values and explicit UML-like model patterns?”
+
+	==> We have defined as_pattern to implement the general value inferring mechanism that we seem to be able to implement using inferred identifier and value?
+	==> And Generic values seem to be about having a value declared in terms of an argument list that declares local names (but are still not externally bound)?
+	==> Thus, it seems a pattern (having partly bound identifiers and values) has something to do with generic types (that has locally declared but externally unbound arguments)?
+
+		pattern: Composition of partly unbound identifiers and values.
+
+		Generic value: Composition of locally declared by externally unbound arguments (identifiers)
+
+	==> Thus, it seems a pattern tries to infer unbound identifiers and values from a given value.
+	==> And a generic type is instantiated by providing argument values.
+
+		Hm… Can we find a common abstraction here?
+		...
+
+5) It seems I need to really understand how most languages implement binding of arguments on a function call?
+
+	==> I suspect the argument names are bound in the environment of the call (the names given in the call)?
+	==> Are the return value bound on call definition (it can’t be delayed to function call or function return)?
+	…
+
+6) Consider we can allow generics on any meta level?
+
+	==> Consider to use ”Generic” instead of ”template”?
+	==> Generic<2> declares the name for all Generic<1> specializations!
+
+	==> Generic<n+2> value would then be Set {… Any Generic<1> value with declared generic argument list …}
+	==> Generic<n+1> Generic value - Each with Set {… Any Generic<0> value as defined by constructor }
+
+			Generic<n+1> defines one or more instantiations of Generic<2> defined value.
+			Each Generic<n+1> can be specialized for different defined template argument values (argument names cant change)
+
+	==> Generic<0> Value, actual meta-n instantiation of defined generics (all template arguments and member values defined)
+	…
+
+…
+
+Consider to delve deeper into the nature of C++ templates, generic types and functions and how we can model these in a Meta Value Model?
+...

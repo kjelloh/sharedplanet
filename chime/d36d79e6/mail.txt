@@ -1,0 +1,24 @@
+﻿What if we could search the web fro things that matches some model (like searching for something that can hold water with some specific dimensions)?
+
+1) Consider what a search engine that "understands" Tha models could possibly be like?
+
+	==> Consider I would like the search engine to be able to match thins on the web to a model of the thing I am searching for?
+
+	==> Consider I would like the search engine to be able to infer models of things on the web based on images of these objects?
+
+It would be nice of the search engine could infer dimensions of products based on product images. It should be possible to teach some AI to use image data combined with text that describes the object and from that infer things like dimensions, design and materials?
+
+2) Consider what I would be able to use a search engine to find on the web?
+
+As a designer and inventor I often has an idea of how to solve a problem. Often I try to find something with some specific dimensions and properties. Just recently I wanted to find jars for water to use on my IKEA kitchen utility cart to wash up brushes and rollers. I knew the dimensions of the cart so I wanted rectangular containers I could fill with water and use to dilute the paint from a brush in steps to make te brush cleaner and cleaner. But it is close to impossible to use Google for this. And even more problematic to use the search engines on each site. Both Google and each site are aimed at trying to sell you stuff. Which ironically enough would work for them, did they just provide a search engine that could find the things I hade a model of.
+
+3) Consider we would like the search engine to cache inferred models of things on the web in a server-less Darwinet P2P domain hosted on individual mobile devices?
+
+It seems like the next step of the internet to mover from servers to distributed actors based on computing power and storage available on the devices of humans (smartphones, pads, lap-tops) and other "internet of things" coming in the expected next wave of interconnected computation?
+
+
+4) Consider if the search engine can also infer how well products provide some value using the lowest amount of resources possible?
+
+	TODO: What would be a "good" way to access, and thus incite, production of stuff in a resource efficient way?
+
+...

@@ -1,0 +1,26 @@
+﻿It seems it could prove interesting and lead to good understanding of Intels Sandy Bridge based (Mac Pro Ivy Bridge) system architectures and interconnectivity by studing good resources about the Mac Pro 2013 System Architecture?
+
+	==> Also see all my other Todo: on "Mac Pro" study, purchase and upgrade ability research.
+
+1) Consider the breakdown of the Late 2013 mac Pro by AnandTech (https://www.anandtech.com/show/7603/mac-pro-review-late-2013/8 <https://www.anandtech.com/show/7603/mac-pro-review-late-2013/8> )
+
+	
+	Late 2013 Mac Pro System Architecture (https://images.anandtech.com/reviews/mac/MacPro2013/MPsystemarch_north.png <https://images.anandtech.com/reviews/mac/MacPro2013/MPsystemarch_north.png> )
+
+"Of the 40 PCIe 3.0 lanes, 32 are already occupied by the two AMD FirePro GPUs."
+
+"Literally any of the 6 Thunderbolt 2 ports on the back of the Mac Pro will give you access to the 8 remaining PCIe 3.0 lanes living off of the CPU."
+
+"The switch provides roughly 15GB/s of bandwidth to the CPU and 3 x 5GB/s of bandwidth to the Thunderbolt 2 controllers."
+
+"The 8724 is a 24-lane PCIe 3.0 switch. It can take 4 or 8 PCIe 3.0 lanes as an input and share that bandwidth among up to 16 (20 in the case of a x4 input) downstream PCIe lanes."
+
+
+	
+	Late 2013 Mac Pro Platform Controller Hub Architecture (https://images.anandtech.com/reviews/mac/MacPro2013/MPsystemarch_south.png <https://images.anandtech.com/reviews/mac/MacPro2013/MPsystemarch_south.png> )
+
+	
+	Intel Ivy Bridge Xeon Sytem Architecture (https://images.anandtech.com/reviews/mac/MacPro2013/IVBE.png <https://images.anandtech.com/reviews/mac/MacPro2013/IVBE.png> )
+
+	...
+	

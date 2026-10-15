@@ -1,0 +1,16 @@
+# Todo: Write about freeing yourself from your Ego is actually belittlement and comparable to closing borders to immigrants
+
+```#89d596cd``` *As of 2015-08-15 15:36*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Thinking about our core-less selfs, how we create divids to handle interaction with reality and our basic groundlessness in understanding reality it is interesting to relate this view to the one of self empowerment prophets like Eckhart Tolle (http://www.eckharttolle.com) and Byron Katie (http://thework.com).
+
+1) They all talk about how the life we created for ourselves restricts us from living life to our full potential. This is the same approach taken by Unger (The religion of the future) , Botton (Religion for Atheists) and Synteism (http://syntheism.org) and loads of other contemporary thinkers. But where the self-empowerment community emphasizes the importance to find ones inner strength and natural heighten state of mind, the other movement actually sais there is no inner self and instead of mindfulness you should go for act-in-faith.  
+2) Could it be that when Eckhart talks about fighting the Ego, he is actually questioning the individual although he does not see it that way? Is there a path of reasoning where one can say that first you realize the Ego may lay you astray and maybe joy are tempted to fight it. Then you realize that belittles you and draw the conclusion that it is the whole idea of an individual core that you should abandon? Individualism is the answer to capitalisms need for consumers driven by neo liberalism to protect the individuals right of free choice. It is only as long as we accept the idea of an individual that thrives to become happy that we are required to expel the Ego from ourselves. But if we realize that our Ego is part of us and we would like to keep it for the same reasons we want to keep our arms or other bodily parts, then we can take the next step and instead free us from the illusion of our inner individual self. Buy accepting our dividual nature we no longer need to settle for only one true self. We may then also escape commercialism that wants to keep us unhappy by telling us not to settle for what we are but buy stuff to become our true self.  
+…
+
+Consider to study these two approaches to our disconnect with our current way of lives inability to make us feel alive. Where do they meet. How may one use the same argument but suggest that super-curiosity (core-less divid-emergence) path is the way to go?
+
+{% endraw %}

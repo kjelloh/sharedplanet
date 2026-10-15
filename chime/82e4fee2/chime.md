@@ -1,0 +1,28 @@
+# Todo: Skriv om att samhället inte levererar och hur det förklarar mycket av det vi ser hända
+
+```#82e4fee2``` *As of 2015-07-26 19:36*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Samhället levererar inte. Tillräckligt många har inte jobb eller saknar jobb som betalar tillräckligt. En god prognos gör också troligt att antalet arbetstillfällen snabbt kommer att minska framöver. Skattepengarna räcker inte till den välfärd vi anser oss ha rätt till (trygghet, service, vård, pension). Och samhället ser inte heller ut att utvecklas till något bättre. Nej, snarare ser det ut att bli allt svårare att upprätthålla någon ljus bild av framtiden. Med denna observation kan vi gå vidare och studera hur vi medborgare reagerar på detta. Vi kan se två olika sätt beroende på om vi väljer att forsatta tro på den rådande samhällsordningen eller om vi tror oss kunna förändra själva samhället i sig.
+
+Samhället levererar inte, det blir sämre men samhällets grund-idé och struktur är nog ok. Om man sällar sig till denna bild så har man inget val än att söka olika sätt att försöka hur samhället skall prioritera och vem som skall få ta del av samhällets resurser. SD som parti väljer denna syn och agiterar för att vi både måste begränsa vem som får ta del av svensk välfärd och vilka tjänster som skall prioriteras. Med den här synen så blir problemet de som ligger samhället till last och de som inte anstränger sig tillräckligt för att få systemet och sin egen livssituation att fungera. Tiggeri måste förbjudas. Invandring måste kraftigt begränsas. Ungdomar måste anstränga sig mer för att skaffa sig jobb och de får inte vara för bortskämda. Alla dessa åsikter grundar sig att om inte samhället har råd, men att samhället inte kan förändras, ja då måste medborgarna skärpa till sig och de som får vara med och dela på kakan begränsas.
+
+Samhället levererar inte, det blir sämre, därför måste samhället ändras. Till denna syn sällar sig Mp och Fi men med lite olika fokus. Där Mp tar avstamp i vårt ohållbara gränslösa överutnyttjande av jordens resurser så fokuserar Fi på den orättvisa fördelningen. Mp vill kraftigt ändra samhällets ekonomiska system och hur vi producerar och konsumerar. Fi vill att samhället kraftigt förändras så att maktstrukturer och orättvis fördelning av välfärden motverkas.
+
+Samhället levererar inte, det blir sämre, vi måste bryta oss ut och bygga ett helt eget samhälle. Nu talar vi om de som beger sig ut i krig för att skapa den islamiska staten. De ser inte en tillräcklig framtid i det samhälle de lever i och blir exalterade av de möjligheter en heroisk insats för en egen stat och samhälle erbjuder. Men här finner vi också mer fredliga manifestationer som ”Omställning Sverige”, Nya former av ateistiska religioner i manifestationer som Burning Man och den gryende men marginella Synteismens syn på framtidens samhälle.
+
+Samhället levererar inte, det blir sämre (total kollaps är oundviklig), vi måste var och en klara oss själva. Här finner vi rörelser som de så kallade ”preppers” i USA (<https://en.wikipedia.org/wiki/Survivalism>). I stället för att engagera sig och hitta en kollektiv lösning inom samhället (få samhället att möta hoten) så säger man i princip ”var och en få klara sig själv”. Vissa röster och influenser av ”Omställning Sverige” befinner sig i denna åsiktsfåra snarare än i ”bygga eget samhälle”-fåran.
+
+På vilka sätt levererar inte samhället?
+
+1) Samhället finansieras till stor del med skatt på löneintäkter men incitamenten inom marknadsekonomin verkar för att sänka löner och minska behovet av arbetskraft (<http://www.ekonomifakta.se/sv/Fakta/Skatter/Skattetryck/Skatteintakter-per-skatt/> : ”60 procent av de totala skatteintäkterna kommer från skatt på arbete, framför allt inkomstskatter och arbetsgivaravgifter. Ungefär 30 procent utgörs av skatter på konsumtion och insatsvaror. Resterande del, dryga 10 procent, utgörs av skatt på kapital. Totalt uppgick skatteintäkterna år 2014 till 1 653 miljarder kronor”) ![](De-totala-skatterna-i-Sverige-.png)
+
+2) Lagar och regler för marknadsekonomi saknar helt incitament för att ta hänsyn till planetens gränser för hållbar produktion och konsumtion.
+
+3) Marknadsekonomin har inga inbyggda incitament för att rättvist fördela värdet av det som produceras. Thomas Piketty visar detta tydligt i sin ”Capital in the twenty first century”. Snarare ökar klyftorna och tillgångar ansamlas allt mer hos de som har (trippel-up effect)
+
+4) Samhällets mål och visioner innefattar inte de senaste rönen om vad som möjliggör rika och meningsfulla liv. Vi verkar ha nöjt oss med att ganska blint förlita oss på marknadens förmåga att på mer eller mindre oklara sätt leverera det som är bra för oss. Detta har kanske fungerat över hövan bra så länge inte planetens möjlighet att leverera inte har överskridits. Men den nya situationen är att vi nu gått över denna gräns och behöver anpassa oss till dena verklighet.
+
+{% endraw %}

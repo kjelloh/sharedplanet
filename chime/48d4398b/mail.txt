@@ -1,0 +1,5 @@
+﻿Consider to compare BitTorrent Sync (https://www.getsync.com) with Darwinet domain file folder functionality.
+
+1) Is the BitTorrent Sync protocol open source? In that case, may we leverage on that for Darwinet p2p protocol?
+2) Consider to use Sync services as a template to describe what Darwinet file folder services and behaviour?
+...

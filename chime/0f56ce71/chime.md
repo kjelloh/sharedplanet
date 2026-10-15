@@ -1,0 +1,16 @@
+# Todo: Could a better virtual collaboration come from collaborators also known IRL (their human scent felt)
+
+```#0f56ce71``` *As of 2015-08-26 22:27*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Wikipedia has the downside that the author of articles is not valued per se.
+
+1) Could a better wikipedia spring from a trust system where articles by trusted authors is favored over others?  
+2) Are there other ways to remove the anonymous traits of virtual identities to enable relational based credibility?  
+3) Consider to read the arguments by Jaron Lanier on Wikipedia (and collaborative credibility in general) at https://en.wikipedia.org/wiki/Jaron_Lanier. ”The Philosopher's Zone, where he is critical of the denatured effect which "removes the scent of people”"
+
+Generally Lanier seems to have arguments and thoughts worthy to listen to in this subject?
+
+{% endraw %}

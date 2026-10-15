@@ -1,0 +1,14 @@
+﻿In the model of a deterministic universe as well as in the quantum model of splitting universes the only thing that splits is the now. Why is that?
+
+The idea here is somewhat rooted in the observation that in a deterministic universe, time has actually no function. Sure, it separates everything from happening at the "same time". But from a computational perspective it could just have been, as the intermediate states are always pre-determined. No matter how much time the universe spends to process and have each cause-and-effect play out to get the end result, each intermediate state will always be the same. So the question must be asked why it is not the case that the universe just uses the initial condition to transform itself to the end state in to time at all?
+
+From that we can return to the deterministic universe with a looser straight jacket on what time is and ask if in fact the quantum model of splitting universes can be expanded to allow the whole history, the past up until now, to actually split with each collapse of the wave function? If time is only there to separate the events in the long pre-determined chain of historical cause-and-effect, we may as well be "free" to assume it is also not fix when a quantum event splits a universe in ot two new ones? The only thing we are able to "observe" is that the current state of the universe is consistent with the historical cause-and-effects.
+
+For sure, we do not seem to gain anything from allowing also the history of the new universe to "split". But then that seem to be the only reason not to try assert that hypothesis?
+
+On the other hand, if we allow the past to split to fit the observed now as the result of a collapsed wave function we are able to explain why for example a beam of light always travels the path taking the least amount of time. As well as explaining why objects under influence of force fields travels the path that have the smallest the integral of the Lagrange function. We can "simply" state that in fact every time the universe collapses into a new state it has first "tried" all possible cause-and-effect and then just "splits" into the one with a history with these properties?
+
+A deterministic universe would tus be "functional" and everything in it can be modelled with a suitable category theory. The "Objects" are defined by the relations that fixate them into "space" by eliminating every relation that does not "fit". Just as in category theory objects are defined not by what traits they have but how they relate to "everything else". And in some strange way the universe could be this gigantic category with objects manifesting themselves as maximised and minimised relationships.
+
+...
+

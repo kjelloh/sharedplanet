@@ -1,0 +1,40 @@
+# Todo: Einhell 2025 - Consider to document data about my table saw and possible ascessories?
+
+```#1d4fcb9a``` *As of 2017-11-12 12:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems it would be a good idea to document relevant measurements and technical data on my Einhell 2025 table saw?
+
+1) The blade seems to be a 250 mm 30mm axel blade?
+
+==&gt; The blade on the saw is marked as **250 mm x 2,8 mm 30mm whole 24 teeth max rpm 7700**
+
+Idea: We should use a thinner blade (easier cut)?
+
+Note: The riving knife seems to be 2,2 mm (meaning we can use down to 2,2 mm blades)?
+
+==&gt; Consider this blade for Einhell 2025 (<https://www.vidaxl.se/e/4006825431223/einhell-sagblad-24-t-for-geringssag?gclid=Cj0KCQiA_5_QBRC9ARIsADVww153PMKpzzXS4lYqmDFXGALVyneE7bv1l8Nksol-SMwcYzBB-KnT6rkaAqplEALw_wcB>)?
+
+> ![](<Einhell 2025 blade 250 mm with 30 mm fastening whole.tiff>)
+
+==&gt; Consider to try the more efficient Dewalt Extreme designed for battery driven saws (<https://verktygsboden.se/cirkelsagklingor/sagklinga-xr-flexvolt-210x30-mm-60t?vat=1&gclid=Cj0KCQiA_5_QBRC9ARIsADVww155ZHwpuw7gxYtKwVr_dGkCd10p8l1FUnc3_bCR9XxtTqAFM25kMo0aAhypEALw_wcB>)?
+
+190 x 30 24T 255 SEK
+
+190 x 30 36T 347 SEK
+
+…
+
+250 x 30 24T 835 SEK
+
+250 x 30 60T 1092 SEK
+
+NOTE: I need to **replace the riving knife** (thinner blade and cut)!
+
+NOTE: The Dewalt blades are as thin as 1,9 mm!
+
+Einhell 2025 Riving knife is in fact 2,2mm
+
+{% endraw %}

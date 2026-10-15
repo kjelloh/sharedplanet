@@ -1,0 +1,26 @@
+# Todo: Word Sallad Ahead? Consider the problem of representing something new using existing language (describing the new patterns requires using old words)?
+
+```#92aa7850``` *As of 2019-04-19 14:41*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+If and when our brains picks up a new pattern we have the problem of representing that pattern using words previously used to describe well spread and known patterns?
+
+1) It seems to me that we should be able to rationally understand that "word sallad" and "making no sense" can come from trying to express a pattern no one has so far internalised?
+
+![](IMG_4462.jpeg)
+
+*Word Sallad ahead? The problem of representing a new pattern using language with words so far used for existing patterns*
+
+==&gt; Consider ways to detect if Word Sallad is the indication of a radical new and valuable pattern (or an invalid wishful thinking or pattern in fog, haze, mist, clouds)?
+
+> *The problem of course is that we see patterns in everything. So what is it exactly about reasoning that enables us to separate the wheat from the chaff? From science we know Occams Razor that helps to not add something to a model unless it is absolutely needed to explain a well accepted observed behaviour. But when we totally dismantle and re-assemble a model in a new way this does not work. The while model may be a totally new organisation. *
+
+==&gt; Consider in a model of reality that deals with things we care about it gest even more difficult to identify when someone provides a new valid pattern (e.g., a new vision about human future)?
+
+> *In some sense science has began to model the simplest part of our reality, the part that that deals with what-is and how-it-transforms in absence of there-ought-to-be driven actors. One obvious reason why a model of reality that we humans use to navigate our reality is so hard to represent in language, if that it deals with the multitude of future what-ought-to-bes. The correlation between what-is and what-ought-to-be gets poisoned by the multitude of possible transformations and possible action to make it so. Still, that is the very essens of being a living organism. To interact with reality in such a way that what you do based on what you believe enables you to recurse, to continue being alive and reproduce that very truth about reality.*
+
+...
+
+{% endraw %}

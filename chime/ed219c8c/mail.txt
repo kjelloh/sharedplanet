@@ -1,0 +1,56 @@
+﻿Browsing the web for lazy-evaulation-streams I stumbled cross some interesting leads to C++14 Streams, Java 8 Streams and other aspects and related topics. Consider to delve deeper into this and see if some firm understanding of lazy-evaluation and syntax sugar to cover up the lack of such C++ support is worth the effort?
+
+1) This seem like a good article on the subject of lazy-evaluation-stream proposal in C++14 (http://www.infoq.com/news/2014/07/cpp14-streams-lazy-functional)?
+2) The article makes references to boost.phoenix and boost.lamda. What are the connections?
+
+	”Boost.Phoenix is certainly interesting but it feels like an incredibly hacky work around to a pre-lambda C++. Its use of operator overloads and functions named similarly to keywords (e.g. for_ instead of for) make it feel awkward to use. Boost.Lambda offers no benefits since C++11”
+
+3) This seem to be a good introduction to the boost phoenix library (http://www.boost.org/doc/libs/1_55_0/libs/phoenix/doc/html/index.html)?
+
+	”Phoenix enables Functional Programming (FP) in C++. The design and implementation of Phoenix is highly influenced by FC++ by Yannis Smaragdakis and Brian McNamara and the BLL (Boost Lambda Library) by Jaakko Jaarvi and Gary Powell. Phoenix is a blend of FC++ and BLL using the implementation techniques used in the Spirit inline parser.”
+
+	”The Phoenix library enables FP techniques such as 
+	higher order functions
+	lambda (unnamed functions)
+	currying (partial function application)
+	lazy evaluation in C++."
+	==> In phoenix the state, ”Almost everything is a functor.”
+	==> Phoenix applies the lazy-evaluation idiom
+
+struct is_odd_impl
+{
+    typedef bool result_type;
+
+    template <typename Arg>
+    bool operator()(Arg arg1) const
+    {
+        return arg1 % 2 == 1;
+    }
+};
+
+function<is_odd_impl> is_odd;
+std::find_if(c.begin(), c.end(), is_odd(arg1));
+
+	==> ”The library is chock full of STL savvy, predefined lazy functions covering the whole of the STL containers, iterators and algorithms. "
+
+4) Phoenix states that it solves the ”Forwarding Function Problem” using pre-processor macros to implement ”perfect forwarding”
+
+5) The original ”Forwarding Function Problem” seem to be defined and analyzed here (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2002/n1385.htm)?
+
+	==> But this article is not updated for C++11 move semantics (See ”Summary” at page above)?
+	
+	”If the move proposal is accepted, the preferred approach to address forwarding is #7, followed by #6 and #5, in that order. Otherwise, #5 remains the only possibility.”
+
+6) The C++11 move semantics called for expanding previous {rvalue,lvalue} set into {lvalue,xvalue, prvalue} set (http://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues)
+
+	==> C++11 prvalues maps to previous C++ plain (movable) rvalues (right hand side referenced values).
+	==> C++11  lvalues are unchanged (unmovable) left hand side (named) values.
+	==> C++11 xvalues are the new implicitly movable lvalue (std::move returns an xvalue to provided lvalue reference) 
+
+7) The article refers to FC++, a (seemingly old and outdated?) library for functional programming in C++ (https://people.cs.umass.edu/~yannis/fc++/fc++-sigplan.pdf)?
+
+8) Lazy-evaluation-streams has the advantage that elements are not provided until requested which enables definitions of eternal streams (e.g. odd numbers or fibonaccy numbers)
+…
+
+Well, this article carried away to a set of different leads but consider to delve deeper into the junction of problems and solutions related to lazy evaluation, perfect forwarding, C++11 l/x,pr values for safe move-semantics as well as lazy-evaluation-streams?
+...

@@ -1,0 +1,11 @@
+﻿Consider to go through and clean up the itfied subversion repository?
+
+1) Consider to delete all obsolete (no longer relevant) software project under version control (See C:\subversion\itfied\main\trunk)?
+
+2) Consider to switch to a Git repository instead?
+
+	...
+…
+
+Consider to clean out this repository to create a clean-sheet for coming projects?
+...

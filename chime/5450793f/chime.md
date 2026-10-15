@@ -1,0 +1,36 @@
+# Todo: Consider to write about Life being "truth creating" and that we are all thus religious in believing in "God" as the "Truth"?
+
+```#5450793f``` *As of 2016-08-05 15:37*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be interesting and worthwhile to try and tie the “Truth” term, Life and God together to find arguments what Religion is really all about and why humans most powerful trait is the ability to act in-fath, i.e., religiously?
+
+1) Consider to argue that all life is in fact “truth creator” in that they act-in-faith and learns to believe-that-which-works regardless of level of ability to reason?
+
+==&gt; Consider that animals have developed behaviours that are very intelligent by trying out what works (act-in-faith) and the kept behaviours that worked?  
+==&gt; Life itself seems to be chemical processes that produces results “that work” (and therefore it continues to be repeated)?  
+…
+
+2) Consider religion is a set of truths that we act-in-faith by and keeps doing due to the benefits they return (not because what we believe is necessarily true but because what others will do and what I gain is true)?
+
+…
+
+3) Consider Gods has always been those that know the “Truth we humans don’t know (thus God is the external intelligence or power we interact with to know the truth)?
+
+==&gt; Consider in that sense God is what becomes true when we act as if God is true?  
+==&gt; Consider this as just an example of a truth that is proven by act-in-faith (as all processes of life applies on all levels)?  
+…
+
+4) Consider Individualism as an act-in-faith to a core self in control using free will (in fact me-as-a-God)?
+
+==&gt; Consider Individualism belief on a core self in fact is an obstacle for us to embrace true try-and-learn truth-finding?  
+...
+
+…
+
+Consider to delve into these ideas of Truth-as-an-act, God and Life as all aspects of the same mechanism of finding out what works (i.e. is true)?  
+...
+
+{% endraw %}

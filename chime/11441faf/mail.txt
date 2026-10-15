@@ -1,0 +1,145 @@
+﻿It seems the Github hosted project lib torrent is a good C++ library to develop for the bittorrent protocol environment?
+
+1) The lib torrent seem to live here (http://www.libtorrent.org <http://www.libtorrent.org/>)
+
+	==> It seems to be exposed under a non viral license?
+
+	“libtorrent is released under the BSD-license. This means that you can use the library in your project without having to release its source code. The only requirement is that you give credit to the author of the library by including the libtorrent license in your software or documentation."
+
+2) It seem to live on Github here (https://github.com/arvidn/libtorrent <https://github.com/arvidn/libtorrent>)?
+
+	==> Seem alive and active (last activity today 20 feb)
+	==> Based on Boost.Asio (sounds great)?
+	==> Comes with a simple bit torrent client for testing!
+	==> Seem to compile on major platforms (unix, windows, mac)?
+
+	==> Seem to use Boost Build b2 for building?
+
+3) This seem to be a good page publishing the BitTorrent Protocol (BTP) Specification (http://jonas.nitro.dk/bittorrent/bittorrent-rfc.html <http://jonas.nitro.dk/bittorrent/bittorrent-rfc.html>)?
+
+	“BTP was devised and implemented by Bram Cohen as a P2P replacement to standard File Transfer Protocol (FTP) to be used in places where the usage of an FTP implementation poses too much strain on the server in terms of request-processing and sheer bandwidth. Normally a client does not use her upload capacity while downloading a file. The BTP approach capitalizes on this fact by having clients upload bits of the data to each other. In comparison to FTP this adds huge scalability and cost-management advantages.”
+
+	==> It seem to define wrote well the terminology for BTP?
+
+"1.3 <> Terminology
+Peer:
+A peer is a node in a network participating in file sharing. It can simultaneously act both as a server and a client to other nodes on the network.
+Neighboring peers:
+Peers to which a client has an active point to point TCP connection.
+Client:
+A client is a user agent (UA) that acts as a peer on behalf of a user.
+Torrent:
+A torrent is the term for the file (single-file torrent) or group of files (multi-file torrent) the client is downloading.
+Swarm:
+A network of peers that actively operate on a given torrent.
+Seeder:
+A peer that has a complete copy of a torrent.
+Tracker:
+A tracker is a centralized server that holds information about one or more torrents and associated swarms. It functions as a gateway for peers into a swarm.
+Metainfo file:
+A text file that holds information about the torrent, e.g. the URL of the tracker. It usually has the extension .torrent. 
+Peer ID:
+A 20-byte string that identifies the peer. How the peer ID is obtained is outside the scope of this document, but a peer must make sure that the peer ID it uses has a very high probability of being unique in the swarm.
+Info hash:
+A SHA1 hash that uniquely identifies the torrent. It is calculated from data in the metainfo file.”
+
+	==> BTP seem to be made up of two separate protocols (the “Tracker HTTP Protocol” THP and the “Peer Wire Protocol” PWP)?
+
+	“BTP consists of two logically distinct protocols, namely the Tracker HTTP Protocol (THP), and the Peer Wire Protocol (PWP). THP defines a method for contacting a tracker for the purposes of joining a swarm, reporting progress etc. PWP defines a mechanism for communication between peers, and is thus responsible for carrying out the actual download and upload of the torrent."
+
+
+4) This may be a good page explaining the basics of BTP (http://www.howtogeek.com/141257/htg-explains-how-does-bittorrent-work/ <http://www.howtogeek.com/141257/htg-explains-how-does-bittorrent-work/>)?
+
+	“Traditionally, a computer joins a BitTorrent swarm by loading a .torrent file into a BitTorrent client. The BitTorrent client contacts a “tracker” specified in the .torrent file. The tracker is a special server that keeps track of the connected computers. The tracker shares their IP addresses with other BitTorrent clients in the swarm, allowing them to connect to each other.”
+
+5) BTP seem to have added “tracker-less” mode of operating using Distributed Hash Table (DHT Protocol) Node-to-node tracking (http://www.bittorrent.org/beps/bep_0005.html <http://www.bittorrent.org/beps/bep_0005.html>)?
+
+	“BitTorrent uses a "distributed sloppy hash table" (DHT) for storing peer contact information for "trackerless" torrents. In effect, each peer becomes a tracker. The protocol is based on Kademila [1] and is implemented over UDP.”
+
+	==> Note that Arvid Norberg (authors of C++ library libtorrent) is also co-author of the DHT Protocol?
+	
+	“Author:	Andrew Loewenstern <drue@bittorrent.com <mailto:drue@bittorrent.com>>, Arvid Norberg <arvid@bittorrent.com <mailto:arvid@bittorrent.com>>”
+
+	==> This seem like an interesting article about bittorrent founders (http://www.fastcompany.com/3027441/the-infinite-lives-of-bittorrent <http://www.fastcompany.com/3027441/the-infinite-lives-of-bittorrent>)?
+
+	“This [Bram Cohen] is the guy who single-handedly changed the way files are transferred on the Internet”
+
+	==> This may be a good video talk by Arvid Norberg about the DHT Protocol (http://engineering.bittorrent.com/2013/01/22/bittorrent-tech-talks-dht/)?
+	
+
+6) Consider to try and understand how P2P actually works between DNS managed IP addressed clients behind proxies and firewalls?
+
+	==> Seems Windows firewall actually allows incoming connections for defined “programs” (http://torrent.wonderhowto.com/how-to/configure-windows-firewall-allow-utorrent-383739/ <http://torrent.wonderhowto.com/how-to/configure-windows-firewall-allow-utorrent-383739/>)?
+
+	==> BTP defines that two peers connects based on the Peer IP addresses known by the “tracker” (See “Peer Wire Protocol” at http://jonas.nitro.dk/bittorrent/bittorrent-rfc.html#anchor20 <http://jonas.nitro.dk/bittorrent/bittorrent-rfc.html#anchor20>)?
+
+	“The local peer opens a port on which to listen for incoming connections from remote peers. This port is then reported to the tracker. As BTP/1.0 does not specify any standard port for listening it is the sole responsibility of the implementation to select a port.”
+
+	==> We must thus assume that the Internet Service Provider, Any Local Network Proxy AND the Windows Firewall all must allow for incoming connections?
+
+	==> How may the local client know what address (IP and Port) it appears to have to the public internet?
+
+		==> May the Tracker be able to deduce that from the call from the Peer when it reports its local port?
+		==> Are the pros mirrored “as is” although the public IP differs from the local IP?
+		==> Or does in fact the local client “know” its actual public adress (provided by the DHCP)?
+
+	==> This site may provide good leads to Public vs Private IP addresses (public vs local IP adress?)?
+
+		“When a computer is assigned a private IP address, the local devices sees this computer via it's private IP address. However, the devices residing outside of your local network cannot directly communicate via the private IP address, but uses your router's public IP address to communicate. To allow direct access to a local device which is assigned a private IP address, a Network Address Translator (NAT) should be used.”
+
+	==> Wikipedia seem to have a good page on IP (https://en.wikipedia.org/wiki/IP_address <https://en.wikipedia.org/wiki/IP_address>)?
+
+	==> RFC 1918 seem to reserve three adress ranges never routed on the public internet (https://tools.ietf.org/html/rfc1918 <https://tools.ietf.org/html/rfc1918>)
+
+		“	10.0.0.0        -   10.255.255.255  (10/8 prefix)
+			172.16.0.0      -   172.31.255.255  (172.16/12 prefix)
+			192.168.0.0     -   192.168.255.255 (192.168/16 prefix)"
+
+	==> This site seem to give good leads to how BitTorrent is able to connect Peer to Peer (http://blog.bittorrent.com/2015/02/12/μtorrent-pro-tips-understanding-firewalls-upnp-and-nat-pmp/ <http://blog.bittorrent.com/2015/02/12/%CE%BCtorrent-pro-tips-understanding-firewalls-upnp-and-nat-pmp/>)?
+
+	“Enabling both UPnP and NAT-PMP makes it easier for people to use μTorrent by eliminating the need for manual router configuration. UPnP was introduced in 2008, and NAT-PMP was introduced in 2005, but before then there was no easy way for a program to ask the router to open up a port for it to use automatically and without direct user involvement.”
+
+	==> Universal Plug-and-Play (UPnP) seem to have a good wikipedia page (https://en.wikipedia.org/wiki/Universal_Plug_and_Play <https://en.wikipedia.org/wiki/Universal_Plug_and_Play>)?
+
+	==> “NAT Port Mapping Protocol” NAT-PMP seem to have a good wikipedia page (https://en.wikipedia.org/wiki/NAT_Port_Mapping_Protocol <https://en.wikipedia.org/wiki/NAT_Port_Mapping_Protocol>)?
+
+	==> Here seem to be more leads to how Bittorret overcome NAT-Issues and works using only outgoing connections (http://superuser.com/questions/104462/how-does-bittorrent-work-with-only-outbound-connections <http://superuser.com/questions/104462/how-does-bittorrent-work-with-only-outbound-connections>)?
+
+	==> Here is an even better thread on the subject of P2P through NAT (http://stackoverflow.com/questions/20939222/udp-tcp-hole-punching-vs-upnp-vs-stun-vs <http://stackoverflow.com/questions/20939222/udp-tcp-hole-punching-vs-upnp-vs-stun-vs>)?
+
+		“UPnP requires software support in your router. Even when routers have it, it's sometimes turned off due to security concerns. STUN uses a simple public server to detect the presence of NAT and the real IP addresses. This is useful for other, higher-level protocols that do the useful work. Hole punching is a simple technique to connect two computers. It requires a 3rd public computer to communicate between the 2 computers behind NAT. You could run your own server with a custom protocol, our you could use STUN and existing STUN servers. (Only a few packets are needed for setup, the rest are peer-to-peer). Of course, some NAT firewalls are incompatible with the above, so you may need a custom protocol. Bittorrent does this: they use different techniques depending on which clients are behind firewalls and whatnot."
+
+7) Consider to contact the Swedish C++ authors (some originating at Umeå Universitet)?
+
+	“Written by Arvid Norberg. Copyright © 2003-2015
+
+	Contributions by Magnus Jonsson, Daniel Wallin and Cory Nelson
+
+	Thanks to Reimond Retz for bugfixes, suggestions and testing
+
+	Thanks to Umeå University for providing development and test hardware."
+
+8) This seem to be a good wikipedia page about libtorrent (https://en.wikipedia.org/wiki/Libtorrent <https://en.wikipedia.org/wiki/Libtorrent>)
+
+9) Is Bittorrent Sync also open source?
+
+10) libutp	seem to be a C++/C implemented Open Source of the uTorrent (micro Torrent Protocol) proposed as the preferred Peer to Peer protocol for BitTorrent (https://github.com/bittorrent/libutp)?
+
+11) The uTorrent protocol seem to be defined here (http://www.bittorrent.org/beps/bep_0029.html)?
+
+12) Consider to study also the kademlia DHT (Distributed Hash Table) protocol on which BitTorrent DHT is based (https://en.wikipedia.org/wiki/Kademlia)?
+
+	==> This seem to be the home of BitTorrent DHT protocol in C++ (https://github.com/jech/dht)?
+	==> This may be a candidate to check out for a C++11 kademlia library (https://github.com/DavidKeller/kademlia)?
+	==> Consider to check this C++ library that uses BitTorrent DHT (https://github.com/mwarning/KadNode)?
+		==> It seems to use DHT P2P to look up the IP address of an URL stored in the network?
+		==> In this sense it is a distributed DNS service based on the same DHT P2P mechanism as BitTorrent?
+		...
+	
+
+	
+
+…
+
+Consider to study and try out this library to see how it is designed and how and if it may be applied to affect Darwinet Design (or even be part on the Darwinet P2P protocol family)?
+...

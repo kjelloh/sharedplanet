@@ -1,0 +1,66 @@
+﻿So, if we use "object" to mean any "meta level thing" it seems we can view a list of meta-defacto pairs (i.e., an environment or a "struct") as the caretsian product of an ordered SET of meta-objects and an ordered SET of defacto objects?
+
+1) Consider a Cartesian Product of ordered SET of meta objects and defacto objects?
+
+So, if we imagine the ordered SET (a VECTOR?) of meta objects like {int, int, bool} and another ordered SET of defacto objects {x, y, b}, then the cartesian product could be feidned to be {(int,x), (int,y ), (bool, b)}. Now this is already very close to how in C-based languages a struct is defined. In C++ we write struct A {int x; int y; bool b;}.
+
+Question is, can we somehow leverage the concept of Cartesian Product to make sense of the struct in the Tha-way, meaning we view the meta object to be the constructor of its defacto instances (instances of the type defined by the meta object)?
+
+Problem number one seems 
+
+2) Consider if and how we can use the notion of Cartesian Product to model instantiation (initialisation) of struct types?
+
+With the model of Cartesian Products it seems we can define also instantiation of a struct-Type (PRODUCT Type)? If we look at C++ the struct A {int x; int y; bool b;} can be instantiated as variable a as A a {1,17,true}; Thus it is not far fetched to model this as the Cartesian Product of A x {1,17,true}, where A is {int x; int y; bool b;}.
+
+To make this work in value semantics we need to separate the names A and a from the objects {int, int, bool} and {x, y, b} and the "value" {1, 17, true}. I am at this stage of reasoning not sure how to formalise this in some rigorous manner. But let's try to state that A is the name of the "object" {int, int, bool}. Now we must first identify the the object is now actually defined using name references to the objects "int" and "bool". So in a way the object named "A" is now through the "list" syntax {name, name, ...}  defined to be an ordered SET.
+
+We seem to need to add two more ingredients to have the "language" work. The first ingredient is to allow a "value" to be provided either as a name or a litteral, meaning we either provide the name of the object representing the value or we provide the text that using the rules of the language evaluates to the value. The Second ingredient is to observe that the object {name, name, ...} needs to be combined with a "defacto constructor" so we are able to distinguish between say the "struct" (PRODUCT) and the "union" (SUM) type.
+
+It seems we need to somehow apply the operation of cartesian Product with the application of defacto construction?
+
+struct: {meta, meta, ...} -> {defacto, defacto, ...} -> {meta defacto, meta defacto, meta defacto} == {meta, meta, ...} x {defacto, defacto, ...}
+
+That is, the struct "function" takes a vector (ordered SET, tuple...?) of meta objects and a vector (ordered SET, tuple) of defacto names and produces a Cartesian Product.
+
+		name		Tha Object
+
+meta 2:	A			{int, int, bool}
+					A x a == {int x, int y, bool b}
+
+meta 1:	a			{x, y, b}
+					A x a x {1, 17, true} = {int x {1}, int y {17}, bool b {true}}
+
+Now, this is still not consistent wit say C++ type system. Not is it clear how to make this model "work". In some sense C++ has the notion of A x a being {int x, int y, bool b}, as in being a "declaration" that has yet to be "defined". And then the definition "A a {1, 17, true}" is the A x a x {1, 17, true} = {int x {1}, int y {17}, bool b {true}}. But never in C++ can we have "a" mean {x, y, b}? In C++, and I presume most programming language it is the "struct" A that defines the names of the aggregated members?
+
+Now we may solve this if we define the actual Cartesian Product to be part of a constructor on the meta 3 (KIND) level?
+
+		name		Tha Object
+
+meta 3:	struct 		defacto: vector<meta 2> -> vector <meta 1> -> meta 2
+					defacto T t = T x t
+
+meta 2:	A			defacto: meta 1 -> vector <meta 1> -> A::defacto
+					defacto t v = t x v
+					== {int x, int y, bool b}
+
+meta 1:	a			= A::defacto {1, 17, true} == {int x {1}, int y {17}, bool b {true}}
+
+Hm... This doe not rock smoothly either. We still have the not clear syntax and semantics to enable a meta object to actually "construct" both the name and the "value" of the defacto object? It does not seem to help to say that a "value" can be either a named one or a litteral that evaluates directly to one. It is for example not clear what the difference is between {x, y, b} provided to the type function "struct" to enable it to instantiate the type A, vs the vector {1, 17, true} that are used to actually instantiate the variable "a" with the actual "values" for int x, int y and bool b?
+
+Surely we are missing something here that would allow us to formalise this to be more clear in how the layers interact to instantiate named defacto objects on their level below?
+
+For one thing, the vector {x, y, b} and {1, 17, true} seem to be of the "same" type, just that the former is expressed as names and the second as literals?
+
+	==> AHA - The thing I try to model as the Cartesian Product A x a is in type theory an "environment" with "has-type" relationsships (http://www.sm.luth.se/csee/courses/cs68/l23.pdf <http://www.sm.luth.se/csee/courses/cs68/l23.pdf> )?
+
+	
+	Fig: In type theory an environment Γ is a "record" of free variables with "has type" relationsships
+
+3) Consider we are on top something because we seem to now define SUM types as disjunct union of SETs?
+
+If we can just solve the confusion with how to operate on aliases (names) we can go on and define SUM types (i.e., C++ "union") by just replacing Cartesian Product in "struct" with SET + operation? 
+
+Well, not so fast? The C++ union U {int x; float f; bool b} still seems to require Cartesian Product to define the members? But to use Disjunct union to instantiate the actual variable? So it is the defacto of the type union::defacto (the union instantiated type) that is a disjunct union constructor, NOT the function union itself?
+
+...
+...

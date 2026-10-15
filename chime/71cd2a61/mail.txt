@@ -1,0 +1,54 @@
+﻿Could it be a good idea to upgrade to Berlin RAD Studio Berlin 10.1?
+
+1) I seem to be eligible to upgrade to Berlin (through my 1 year grade subscription)?
+
+	
+
+2) Seems I need to do a full install to upgrade (not available as an update through EAD Studio Update tool)?
+
+	…
+
+3) RAD Studio Berlin seem to upgrade clang to version 3.3 (from previous 3.1)?
+
+	==> See “Todo: Programming - Understand the difference and interoperation of Visual Studio and RAD Studio binaries “
+
+		==> RAD Studio defines different CLang versions for XE7 and Seattle
+
+			==> Seattle seem to be based on Clang 3.3 (http://docwiki.embarcadero.com/RADStudio/Seattle/en/BCC64 <http://docwiki.embarcadero.com/RADStudio/Seattle/en/BCC64>)?
+			==> XE7 seem to be based on Clang 3.1 (http://docwiki.embarcadero.com/RADStudio/XE7/en/BCC64.EXE,_the_C%2B%2B_64-bit_Windows_Compiler <http://docwiki.embarcadero.com/RADStudio/XE7/en/BCC64.EXE,_the_C%2B%2B_64-bit_Windows_Compiler>)?	
+
+	==> So Seattle is already clang 3.3?
+
+		==> This seem to be the seattle bcc32c description (http://docwiki.embarcadero.com/RADStudio/Seattle/en/BCC32C <http://docwiki.embarcadero.com/RADStudio/Seattle/en/BCC32C>)?
+		==> And this seems to be Berlin bcc32c description (http://docwiki.embarcadero.com/RADStudio/Berlin/en/BCC32C <http://docwiki.embarcadero.com/RADStudio/Berlin/en/BCC32C>)?
+
+	==> It seems Berlin clang has support for -rt option for builtins and sanitisers (http://compiler-rt.llvm.org <http://compiler-rt.llvm.org/>)?
+
+	==> This seems to be Embarcadero official listing of whats new in Berlin (http://docwiki.embarcadero.com/RADStudio/Berlin/en/What%27s_New <http://docwiki.embarcadero.com/RADStudio/Berlin/en/What's_New>)?
+
+		==> It seems to be the IOS and Android Arm compiler targets that has been upgraded to 3.3?
+
+Better C++ Support for Delphi Types
+In Clang-enhanced C++ compilers <http://docwiki.embarcadero.com/RADStudio/Berlin/en/Clang-enhanced_C%2B%2B_Compilers>:
+You can use range-based for loops <http://en.cppreference.com/w/cpp/language/range-for> and STL iterators <http://en.cppreference.com/w/cpp/iterator> for strings <http://docwiki.embarcadero.com/Libraries/Berlin/en/System.UnicodeString> and for the following RTL containers and derived containers: DynamicArray <http://docwiki.embarcadero.com/Libraries/Berlin/en/System.DynamicArray>, TCollection <http://docwiki.embarcadero.com/Libraries/Berlin/en/System.Classes.TCollection>, and TEnumerable <http://docwiki.embarcadero.com/Libraries/Berlin/en/System.Generics.Collections.TEnumerable>.
+You can use lambda expressions <http://docwiki.embarcadero.com/RADStudio/Berlin/en/How_to_Handle_Delphi_Anonymous_Methods_in_C%2B%2B#Using_a_Lambda_Expression> in calls to TParallel::For <http://docwiki.embarcadero.com/Libraries/Berlin/en/System.Threading.TParallel.For>, TTask::Create <http://docwiki.embarcadero.com/Libraries/Berlin/en/System.Threading.TTask.Create> or TTask::Future <http://docwiki.embarcadero.com/Libraries/Berlin/en/System.Threading.TTask.Future>.
+C++ Option Changes
+In Clang-enhanced C++ compilers <http://docwiki.embarcadero.com/RADStudio/Berlin/en/Clang-enhanced_C%2B%2B_Compilers>:
+The -PC command-line option used to enable parallel compilation on the command line is now deprecated. Use --jobs=<N> instead. For more information see using parallel compilation <http://docwiki.embarcadero.com/RADStudio/Berlin/en/Command-Line_Interfaces_of_Clang-enhanced_C%2B%2B_Compilers#Using_Parallel_Compilation>.
+The -fmath-errno command-line option, which is used to require the math functions to indicate errors, is now configurable from the IDE <http://docwiki.embarcadero.com/RADStudio/Berlin/en/Tour_of_the_IDE>. You can find it on the Floating Point Options <http://docwiki.embarcadero.com/RADStudio/Berlin/en/C%2B%2B_Compiler_Advanced#Floating_Point_Options> from Project > Options > C++ Compiler > Advanced. By default, it is enabled for the Clang-enhanced C++ Compilers <http://docwiki.embarcadero.com/RADStudio/Berlin/en/Clang-enhanced_C%2B%2B_Compilers>.
+Other C++ Compiler Changes
+Now, the BCC32C <http://docwiki.embarcadero.com/RADStudio/Berlin/en/BCC32C> compiler provides dependency checking. The Make <http://docwiki.embarcadero.com/RADStudio/Berlin/en/Compile_and_Make_All_Projects> command compiles only those files that have changed since the last build, as well as files whose dependencies have changed.
+The compiler-rt <http://compiler-rt.llvm.org/> library is now available for BCC32C <http://docwiki.embarcadero.com/RADStudio/Berlin/en/BCC32C> and BCC64 <http://docwiki.embarcadero.com/RADStudio/Berlin/en/BCC64>.
+		…
+Structure View Improvements for C++
+The Structure View <http://docwiki.embarcadero.com/RADStudio/Berlin/en/Structure_View> has undergone several improvements for C++, such as:
+Support for C++11 <http://docwiki.embarcadero.com/RADStudio/Berlin/en/C%2B%2B11> features, such as alias templates <http://docwiki.embarcadero.com/RADStudio/Berlin/en/C%2B%2B11_Features_Supported_by_RAD_Studio_Clang-enhanced_C%2B%2B_Compilers#Alias_templates> or initializer lists <http://docwiki.embarcadero.com/RADStudio/Berlin/en/C%2B%2B11_Features_Supported_by_RAD_Studio_Clang-enhanced_C%2B%2B_Compilers#Initializer_lists>.
+Support for functions that return a function pointer <http://en.cppreference.com/w/cpp/language/pointer#Pointers_to_functions>.
+Support for unnamed bit fields <http://en.cppreference.com/w/cpp/language/bit_field>.
+Improved support for throw <http://docwiki.embarcadero.com/RADStudio/Berlin/en/Throw>.
+
+
+…
+
+Consider to decide if, when and how to upgrade to RAD Studio 10.1 Berlin?
+...

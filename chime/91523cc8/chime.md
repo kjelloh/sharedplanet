@@ -1,0 +1,131 @@
+# Todo: Consider to delve into the Swedish debate around the satire song in 2020 last episode of "Svenska Nyheter" and how it aligns with my own exchange with my facebook friend about Kamala Harris?
+
+```#91523cc8``` *As of 2020-11-28 16:43*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+==&gt; Also see "Todo: Consider to delve into the references provided by my leftist friend Angelica in a facebook conversation about Kamala Devi Harris?"
+
+1) Consider this URL that seems to present an interesting debate triggered by Petter Larsson in his article "Helin och högertrollen skrålar ikapp i ”Svenska nyheter”" (<https://www.sydsvenskan.se/2020-11-23/sa-fick-hogertrollen-sjunga-allsang-i-svenska-nyheter> )?
+
+> Petter Larsson: Helin och högertrollen skrålar ikapp i ”Svenska nyheter”
+
+> *"Skrattet fastnar i halsen när SVT-programmet går radikalhögerns ärenden, menar Petter Larsson.*
+
+> *Vad gör Peter Wolodarski och Anders Lindberg i samma video som radikalhögern?  
+> Kan Göran Greider verkligen håna vänstern?  
+> Jodå. Vi har nått dit nu, när Sveriges Televisions humorprogram Svenska nyheter i fredags skapade ett nytt slags självförnedrings-tv med en sång som hämtad ur en platt nyårsrevy och signerad humorgruppen Grotescos Michael Lindgren och satirtecknaren Jens Ganman, den senare vars alster i åratal hänfört de högerradikala skarorna.*
+
+> *I inslaget sjunger ett tjugotal opinionsbildare från mittenvänstern till ytterhögern tillsammans om hur de avskyr varandra och det hela landar i att de – höhö – är lika goda kålsupare.  
+> Här är politiken en käck debatt mellan två ”lag”. Det spelar inte någon roll om man slåss för eller emot rasism, kvinnoförtryck och ojämlikhet. Det är bara åsikter vilka som helst, helt jämförbara. Ingenting är ändå på riktigt, ingen menar egentligen vad de säger utan vill bara få rätt och många sympatisörer.  
+> Det som trillar ut är en bekväm politisk nihilism, som höjer sig över vad som varje dag står på spel i den verkliga värld, där politiken konkret avgör frågor om liv och hälsa för dem av oss som inte kan köpa oss fria. Kommer du att bli utvisad? Utförsäkrad? Kommer du att kunna få sparken för att du käftar med chefen? Kommer du att bli diskriminerad för ditt kön, ditt namn, din sexuella läggning, din religion? Kommer dina föräldrar att få vård även utan privat försäkring?  
+> Tyvärr är det nog ingen slump att det sker i SVT. Det är ett nästan parodiskt exempel på den inställning vi såg prov på när SVT förra året lanserade ”Sverige möts”, som drevs av den för demokratin främmande idén om att politisk polarisering är farlig och att rasister och antirasister, feminister och antifeminister och så vidare, borde försöka förstå varandra i stället för att bekämpa varandra.  
+> Nervösa i ett nytt politiskt landskap har tv-redaktörerna omtolkat idealet om opartiskhet till att släppa fram demokratins förgörare på samma villkor som dess försvarare.  
+> En till utplåning desperat mittenvänster, som fixerat sig vid att vinna SD-väljare, spelar nu med när den högerradikala karnevalen drar genom världen, med avskaffad pressfrihet, hbtq-fria zoner och statskuppsförsök i sina spår.  
+> Bakom denna ”opartiska” fasad av likabehandling gömmer Svenska nyheters slagdänga i praktiken en tydlig vinkling åt höger. Den skapas på tre sätt.*
+
+> *Man låter konflikten utspelas på kulturkrigets slagfält och det innebär per automatik att radikalhögern har hemmaplan. Så länge de politiska konflikterna rör ”värderingsfrågor” som invandring, brottslighet och hbtq-rättigheter kan de vinna mark på sin konservatism. Om konflikterna istället hade rört ekonomi och fördelningsfrågor hade radikalhögern omvänt inte haft mycket att vinna.  
+> Mittenvänstern får vidare representeras av mycket kvalificerade och erfarna publicister och opinionsbildare, som här jämställs med radikalhögerns sociala medier-provokatörer och rena propagandister. Anders Lindbergs Aftonbladet, Peter Wolodarskis DN och Jan Helins SVT blir samma sak som Chang Fricks propagandasajt Nyheter idag, Dick Erixons SD-organ Samtiden och Henrik Jönssons youtubetrams.  
+> I själva sången får slutligen mittenvänstern håna sin egen politik. Annika Strandhäll ironiserar om ”genus, ras och värdegrund”, Peter Wolodarski om hur han sitter i sitt elfenbenstorn ”bortom bilbrändernas sken”. Göran Greiders ideologi reduceras med hans egna ord till en ”sagostund” för ”vänsterblivna” – en sammanslagning av vänster och efterbliven som importerats direkt från ytterhögern.  
+> Är det jag, som alltid respekterat Greider och delar mycket av hans åsikter, även om vi ibland har bråkat, som nu idiotförklaras? Är det alla de hundratusentals vänsteranhängare som i 30 år sett honom som en viktig röst i offentligheten och trott på hans ”sagor” om demokratisk socialism?  
+> Eller ta Janne Josefsson, som får sjunga om att han gillar att starta drev. Och jag som inbillat mig att han, trots sina felsteg, ändå drevs av en idé om rättvisa och sanning?  
+> Högern däremot får endast medge att de vill tjäna pengar på sitt engagemang och att de lever för provokationer. Det politiska innehållet är bortblåst. Inte ett ord om att engagemanget oavbrutet cirklar kring den moderna rasismens kärna: brottslighet och invandring, invandring och brottslighet.  
+> Hade det blivit alltför ”polariserande” med en textrad av typen ”jag trivs bäst bland blonda svennar”?*
+
+> *Föga förvånande tar provokationsproffset Chang Frick hem spelet genom att vägra sjunga och i stället visa rumpan. Kanske är han den ende som begriper att det pågår en politisk clowntävling och att man måste bryta reglerna för att vinna.  
+> Att paketera politik som humor är förstås ett tacksamt knep. Det gör det mycket svårt att kritisera eftersom man då lätt får rollen som humorlös gnällspik.  
+> Men jag axlar villigt den manteln, eftersom jag vägrar ta formeringen av ett högerblock av en kaliber vi aldrig tidigare sett i svensk historia med en go klackspark.  
+> När historien om den svenska högerradikalismen skrivs en dag kommer ett ansenligt kapitel att handla om hur de fick oss att tro att allt bara var på skoj så att vi trallade hela vägen till Budapest.  
+> På så vis är det symptomatiskt att sången avslutas med Bert Karlsson, den gamle mästaren i att dölja ytterhögerns hårda kärna bakom flabbig Berlusconi-populism, avant la lettre.*  
+> *"*
+
+> Michael Lindgren: Publiken är intelligent nog att hantera en lättsam feelgood-satir i ”Svenska Nyheter”
+
+> *"*  
+> *Ingen av oss är så mäktig, god eller felfri att vi inte förtjänar att drivas med.*
+
+> *Jag kan i relation till vår ”Svenska Nyheter”-sång inte låta bli att reflektera över vilka som blivit argast på mig och mina tv-humor-kollegor genom åren. Ilske-topplistan innehåller ryska kulturattachén (“Tingaliin”, Melodifestivalen), Kinas ambassadör Gui Congyou, Friskolornas riksförbund, islamister (”Svenska Nyheter”), nynazister (“Blanda upp”, ”Grotesco”). Och nu Petter Larsson. Det som förenar alla dessa är till synes benhårda idéer om hur världen är funtad. Men ingen av oss är så mäktig, god eller felfri att vi inte förtjänar att drivas med.*
+
+> *Och nog bemötte jag Larssons kritik i sak när jag förklarade att det han uppfattar som höger-vinkling i valet av medverkande i så fall beror på att vänstern tackat nej?  
+> Sen är det så finurligt ordnat att den som skämtar bjussigast med sig själv ofta går segrande ur en humor-fight. Jag håller med Ann Heberlein när hon skriver att denna självdistans är “ytterst attraktiv”. Och det verkar större delen av publiken också göra.  
+> Jag tror inte sången vrider politiken åt något håll. Den är ett skämt. Men folk har bland annat fått en upplevelse av att Greider, Strandhäll och Wolodarski kan förstå hur de uppfattas från ett höger-perspektiv – vilket kanske gör ett eller annat “högertroll” lite mer benäget att lyssna på vad de har att säga när de pratar allvar. Det betyder inte att någon part plötsligt håller med sin meningsmotståndare. Publiken är intelligent nog att hålla isär sina tankar om vilken politik som är bäst för Sverige från en lättsam feelgood-satir i ”Svenska Nyheter”.  
+> Och – varför skulle SVT inte göra humor som ibland roar även dem som Petter Larsson med illa dolt förakt benämner “Sverigevänner”? Själv tror jag att det är positivt om svenska folket inte bara skrattar åt varandra, utan också tillsammans emellanåt.  
+> Nej Petter Larsson, det är inte du som är odjuret. Men din mycket mänskliga instinkt att vilja begränsa vissa meningsmotståndares utrymme är det. Jag förstår att du kämpar mot fascismen, och jag är din vapenbroder i den kampen. Men fienden måste vara verklig. Man ska inte ropa ¡no pasaran! förrän vargen kommer.*
+
+  
+> *"*
+
+> Petter Larsson: Snacka om ironi, SVT!
+
+> *"*  
+> *Petter Larsson går igenom svaren på sin kritik mot ”Svenska Nyheter” – och finner en ny, omedveten satir.*
+
+> *”Det står klart att en individ som förföljer en man, sin broder, därför att han har en annan åsikt, är ett odjur” citerar allsångsdirigenten Michael Lindgren Voltaire när han försvarar varför han gullar med radikalhögern.*
+
+> *Det är alltså jag som är odjuret. Jag har ”ociviliserade instinkter” och står för ”en totalitär tendens att vilja begränsa det fria ordet.”  
+> Snacka om ironi direkt från komikens högborg! Låt mig stillsamt påminna om Lindgrens SVT-kollega Nike Nylander. När hon intervjuade Jimmie Åkesson mottog hon omedelbart en ström av hatbrev och flera mordhot.*
+
+> *Med anledning av detta publicerade propagandasajten Nyheter Idag en ”guide”, där man instruerade läsarna i att trakassera misshagliga journalister utan att bryta mot lagen, till exempel genom att baktala dem inför arbetsgivare och grannar, göra orosanmälningar och sprida negativa uppgifter i sociala medier.  
+> Artikelförfattare och utgivare för sajten är Lindgrens körgosse Chang Frick.  
+> Jag tar det här exemplet för att det skedde i mitten av september i år och alltså inte är någon ungdomssynd. Men Nylander är bara en av oräkneliga debattörer, journalister och privatpersoner som förföljts av den högerradikala rörelse, vars representanter bjudits in till duett med aningslösa demokrater.  
+> Är det bara ogenomtänkt?  
+> Jag är inte säker.  
+> I samband med att Lindgren lämnade ”Svenska Nyheter” förra året förklarade han att svensk humor varit för vänstervriden och att han velat göra komik också för ”Sverigevänner” (SVT 31 mars 2019).  
+> I så fall är det bara att gratulera.  
+> Notera att Lindgren inte bemöter min kritik i sak. Mina synpunkter på hur vinklat sångens upplägg är och hur rasism och antirasism, feminism och antifeminism och så vidare genom valet av medverkande görs till jämförbara ståndpunkter förbigås med tystnad.  
+> I stället är det kritiken som sådan Lindgren stormar mot. Den som inte skrattar med är antidemokrat!  
+> Det är ett pedagogiskt exempel på hur radikalhögern själv med framgång arbetat. En mer spelat lättkränkt rörelse finns inte. Först säger man något anstötligt, gärna lite ”humoristiskt”, sedan skriker man som bortskämda barn om yttrandefrihet när man får kritik. Så förskjuts diskussionen från det som sades till vad som får sägas, och yttrandefriheten förvrängs till rätten att slippa kritik och rätten att delta i precis alla sammanhang.*
+
+> *Jan Helin å sin sida berättar myndigt och hur många gånger som helst att jag är känslostyrd (lågstatus) medan han själv implicit är rationell (högstatus). Det är en klassisk härskarteknik, som i det här fallet blir extra platt eftersom det är jag som försöker göra det Helin efterlyser: ”klarlägga skillnaderna, inte stanna i känslor kring motsättningen”. Till skillnad från ”Svenska Nyheter” som är fixerade enbart vid motsättningen (”polariseringen”).  
+> Som satir över det senaste decenniets politiska logik är Lindgrens gärning inte utan poänger. Först gör han en politisk intervention med syfte att mildra polariseringen, sedan svarar han själv på kritik med okvädingsord. Han skriver att det inte är ett humorprograms uppgift att stoppa högerblocket. Själv rullar han istället ut röda mattan.*  
+> *"*
+
+> Jan Helin: Debattklimatet förtjänar att förlöjligas
+
+> *"*  
+> *SVT:s mediedirektör Jan Helin förklarar varför han deltog i den kritiserade satirsången i ”Svenska Nyheter”.*
+
+> *Satir är varken ”käck debatt” eller en ”go klackspark”. Den är ett sätt att gestalta något på ett förlöjligande, men träffande sätt.  
+> Jag kan inte svara för de övriga medverkande – men för mig handlade sången i säsongsavslutningen av ”Svenska Nyheter” om att medverka till att förlöjliga ett debattklimat som förtjänar att förlöjligas. Jag har också mycket stor tilltro till Micke Lindgrens förmåga till slagkraftig satir, även när den blottar mina egna tillkortakommanden. Petter Larssons reaktion vittnar om att han åter träffat något.*
+
+> *Nej, jag ska inte göra det enkelt för mig och avfärda Petter Larssons sågning (23/11) av sångnumret som ett utslag av brist på humor. Svårare och mer intressant är att utgå ifrån att han faktiskt är orolig för att den polariserade debatten i Sverige ska sluta i att alla utbrister i sång med innebörden att inget någonsin betytt något.  
+> Det är en oro som lämnar mig kall. Jag vilar trygg i förvissningen att meningsmotståndare kommer att fortsätta att bekämpa varandra. Som publicist i Sveriges Televisions tjänst känner jag ett visst ansvar för hur. Den polarisering som Petter Larsson hyllar som självklart bra för demokratin ser en hel del forskning tvärtom som ett problem. Inte för att människor tycker olika, men för att demokratin kräver informerade medborgare snarare än medborgare som fastnat i ett bipolärt känsloregister kring motsättningar.  
+> Det är inte alldeles självklart för mig vilken hållning till polariseringen som är den journalistiskt mest konstruktiva. Men min uppfattning var, och är, att delar av journalistiken och många debattörer fastnat i gamla hjulspår kring – måhända ibland fyndigt formulerade, men ack så förutsägbara – känsloyttringar över motsättningar i en tid som kräver mer skärpa.*
+
+> *Debatt får gärna för mig handla om att med kraft eller espri slita sin meningsmotståndares bästa argument i småbitar. Men det är enligt min mening inte det som präglat den breda debatten de senaste åren. Den har istället till en början präglats av en självömkande upptagenhet om vem som är innanför eller utanför en åsiktskorridor, och när alla nu tagit sig in i korridoren är den knappast vidare, bara omtapetserad och full av känslor för att markera motsättningar. Brottslighet är dåligt och måste stoppas. Invandring är komplicerat och behöver regleras. Det finns såklart intressanta skillnader i frågan om hur i så stora och självklara problemställningar. Jag tror få har upplevt att debatten haft sitt fokus där. Istället har den fokuserat på starka uttryck och att känna mycket kring sin opponent för att söka motsättning.  
+> Petter Larsson ser här ett ”kulturkrig” kring värderingar. Jag ser en debatt som förtjänar att förlöjligas. Jag tror att nästan alla inblandade kan bättre.  
+> Att konservatismen idag vinner mark på att använda känslor kring värderingsfrågor är uppenbart för de flesta som är intresserade av politik. Petter Larsson blir själv lite otippat rov för den kraften när han surt för in mig i begreppet ”mittenvänster”. Det är politisk retorik för dem som vill skära ner public service. Om min politiska uppfattning har han i sak ingen aning. Det må vara honom ursäktat, det är en fråga som knappt intresserar mig själv. Är det ont, eller gott? Jag vet bara att jag inte är nihilist, jag är publicist. Jag ser en Ormus här, en Ariman där och undrar ständigt varför den kloka är ond, den goda dum och varför allt är en trasa.  
+> Testa att läsa den gamle Aftonbladetskribenten Carl Jonas Love Almqvist du också, Petter. Det är en påminnelse om att det inte är själva motsättningen, utan vari skillnaderna består som är det intressanta. Debatt som journalistisk metod bör vara besatt av att klarlägga skillnaderna, inte stanna i känslor kring motsättningen. Väl medveten om att alla berättelser tillkommer i mötet mellan förnuftet (det sanna) och känslan (det goda).*
+
+  
+> *"*
+
+> Michael Lindgren: Kritiken mot Svenska Nyheter visar på en totalitär tendens
+
+> *"*  
+> *Satirlåten ”Slutna kluster” rör upp känslor. En kålsuparsång som går radikalhögerns ärenden, menar skribenten Petter Larsson. Här svarar textförfattaren Michael Lindgren.*
+
+> *Vi komiker analyserar humor konstant, det är en del av hantverket. Men att gå i polemik om ett skämt i offentligheten undviker man gärna in i det sista – har man lyckats så väl med sitt skojande att den opinionsbildande eliten känner att de måste kommentera saken gör man klokt i att bara luta sig tillbaka. Annars riskerar man att få rollen som allvarssjukt pretto.
+
+> Men jag axlar villigt den manteln, eftersom jag vägrar att låta Petter Larsson stå oemotsagd när han menar att vi på Svenska Nyheter gjort oss till nyttiga idioter för en högervridning.  
+> Sången är skriven för att driva med hur meningsmotståndare pratar om varandra. Att Göran Greider sjunger att han är ”vänsterbliven” är inte att legitimera vare sig begreppet eller den världsbilden, utan ett erkännande av att detta är hur vi talar till varandra. Och samtidigt sitter vi där, bredvid varandra, och sjunger ihop. Det visar på det absurda i den extremt fientliga retorik vi använder mot varandra. Självklart kommer inte människor som lever på att hålla liv i den fiendskapen – i att meningsmotståndare är ens fiender – att uppskatta den skrattspegel vi på Svenska Nyheter höll upp.*
+
+> *Petter Larsson definierar de medverkande i sången på skalan mitten-vänster till ytter-höger. Med detta vill han visa att röster från exempelvis Vänsterpartiet och FI, det han gissningsvis kallar ytter-vänstern, lyser med sin frånvaro.  
+> Och det är korrekt. Anledningen är att samtliga tillfrågade i den hårdare vänstern, och det var ganska många, tackade nej. Av anledningar som jag har skäl att återkomma till.  
+> De medverkande han kallar ytter-höger är Jens Ganman, Henrik Jönsson, Chang Frick och Dick Erixon. (Larsson undviker att nämna Hanif Bali, det behövs inte och är en onödig risk eftersom Bali ändå är folkvald för Moderaterna och svårligen kan kallas ”demokratins förgörare”.)*
+
+> *Är de antidemokrater? Demokratins dödgrävare? Kryptonazister? Framför allt är de personer som anses så kontroversiella att de var självklara val att ha med i en satir om polarisering. Att Petter Larsson anser att de inte bör ha någon plattform alls stärker mig bara i den uppfattningen.  
+> Larsson exemplifierar med sin text precis de ociviliserade instinkter som vår sång ”Slutna kluster” driver med. En totalitär tendens att vilja begränsa det fria ordet för människor man inte håller med. Han ser en risk att vi ”trallar hela vägen till Budapest”. Färgstarkt – och magstarkt.  
+> Om man nu vill stoppa ”formeringen av ett högerblock av en kaliber vi aldrig tidigare sett i svensk historia” så bör detta inte åläggas ett humorprogram – utan politiker och intellektuella som i så fall måste formulera bättre svar än motståndarna på samtidens frågor, och övertyga allmänheten om dessa. I debatt och fria demokratiska val.  
+> Så varför tackade ”ytter-vänstern” nej? Av precis de skäl Larsson anför i sin text: för att inte legitimera högern. Att den ironiska konsekvensen då blev att högern fick mer utrymme spelar ingen roll, hos ”ytter-vänstern” finns en beröringsskräck med meningsmotståndare så stark att den bara matchas av Ivar Arpis vrede.  
+> Hos denna vänster frodas också idéerna om deplattformering, som man helt frikopplar från konceptet yttrandefrihet. För en satiriker är det en big deal. Om du systematiskt vill förneka människor med åsikter du inte håller med om tillgång till alla plattformar, är inte det ett fruktansvärt övergrepp på deras yttrandefrihet?  
+> Jag tillhör den majoritet i Sverige som fortfarande utgör den vänsterliberala röra som Jimmie Åkesson vill äta till frukost. Jag är vänsterbliven i bemärkelsen att jag tycker att vi måste se de grundläggande strukturella orättvisorna i samhället och använda vår kollektiva kraft för att komma åt dessa. Och jag är liberal för att jag vet att demokratin ytterst vilar på åsikts- och yttrandefrihet.*
+
+> *”Jag delar inte dina åsikter, men jag är beredd att dö för din rätt att uttrycka dem” är ett citat som brukar tillskrivas Voltaire, men som egentligen formulerades av den brittiska författaren Evelyn Beatrice Hall som skrev hans biografi.  
+> Själv tycker jag bättre om Voltaires egen variant: ”Det står klart att en individ som förföljer en man, sin broder, därför att han har en annan åsikt, är ett odjur.”*  
+> *"*
+
+...
+
+{% endraw %}

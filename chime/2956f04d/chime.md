@@ -1,0 +1,24 @@
+# Todo: Consider to find where to buy Mafelll Cordless Plunge-Cut Saw MT 55 18 M bl
+
+```#2956f04d``` *As of 2022-08-06 21:52*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I have so far failed to make my cuts at home without creating a lot of dust and having quite a hustle to make accurate cuts.
+
+1) Consider to study where to buy the Mafelll Cordless Plunge-Cut Saw MT 55 18 M bl?
+
+==&gt; It seems to sell fromSwedish web shop "3A Byggdelen" for 13 600 SEK with free shipping (<https://3abyggdelen.se/produkt/mafell-batteridriven-sanksag-mt-55-18m-bl-918801/> )?
+
+![](PastedGraphic-7.png)
+
+![](PastedGraphic-9.png)
+
+==&gt; It seems I can get it delivered for 200 SEK from german "Elektrowerkzeug-Shop von Bort&Herkert" (<https://www.elektrowerkzeug-shop.de/mafell/saegen/tauchsaege/akku-tauchsaege-mt-55-18-m-bl-im-t-max/a-12379170/> )?
+
+![](PastedGraphic-8.png)
+
+...
+
+{% endraw %}

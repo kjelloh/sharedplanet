@@ -1,0 +1,131 @@
+﻿So, what can we say about how trying out different generator or iterator designs to the general protocol encode and decode library model?
+
+1) Consider if one object participates as generator all the others must participate as Iterators?
+
+	==> Having two generators seems to mean we are generating two different output at once (which we are never doing)
+	==> If we are generating Encoded Data one of the other objects must act as the Generator?
+
+						 Data Model
+						  Iterator
+							|
+		Encoded Data ——> Codec  ——> Data Provider
+		Iterator                      Generator	 Iterator
+
+
+						 Data Model
+						  Generator
+							|
+		Encoded Data ——> Codec  ——> Data Provider
+		Iterator                      Iterator	 Iterator
+
+						 Data Model
+						  Iterator
+							|
+		Encoded Data ——> Codec  ——> Data Provider
+		Generator                   Iterator	 	Iterator
+
+	==> If we are generating Decoded Data one of the other objects must be the generator? 
+
+						 Data Model
+						  Iterator
+							|
+		Encoded Data <—— Codec  <—— Data Provider
+		Iterator                      Generator	 Iterator
+
+
+						 Data Model
+						  Generator
+							|
+		Encoded Data <—— Codec  <—— Data Provider
+		Iterator                      Iterator	 Iterator
+
+						 Data Model
+						  Iterator
+							|
+		Encoded Data <—— Codec  <—— Data Provider
+		Iterator                   Iterator	 	Generator
+
+
+2) Consider that the target of the transform (Encoded or Decoded data) can never be the Generator?
+
+	==> For Encoding the Encoded Data can’t be the generator as it does not know the structure to encode (it is known by the model and provider)?
+	==> For Decoding the Data Provider (Decoded Data) can’t be the generator as its structure does not yet exist (known by the Encoded data and the Model)?
+	…
+
+3) Consider to compare with design requirements as found by other aspects of the Protocol Stack Library?
+
+	==> See ”Todo: Programming - Consider to allow protocol Engine to apply Model Specialisation that also acts as additional Value Provider for model defined values?”
+
+
+      Uppstack Frame —>	Value Provider[state] ---(2)----|
+							|
+			Data Model[model path] --(1)----|
+				|			|
+				|			|
+				|			v
+	              	 	 -------------------> Encoder ----> Downstack Frame
+
+
+		==> Having the Data Model as the Generator this seem to become:
+
+      Uppstack Frame —>	Value Provider[state]
+	(Iterator)	  (Iterator)
+				| (2)
+			Data Model[model path]
+			  (Generator)
+				|
+				| (1)
+				|
+	              	 	 -------------------> Downstack Frame
+							(Iterator)
+
+		==> And Having the Value Provider (Decoded Data)  as the Generator this seem to become:
+
+      Uppstack Frame —>	Value Provider[state] ---(2)----|
+	(Iterator)	   (Generator)			|
+				| (1)			|
+			Data Model[model path] 		|
+			   (Iterator)			|
+							|
+							|
+							v
+	              	 	 		     Downstack Frame
+						     (Iterator)
+
+
+3) Consider how to semantically define ”what to encode” when using the different approaches of Iterator/Generator designs?
+
+	==> Consider that using an Encoder (or Codec) we can provide what-to-encode as a state of the Value Provider (The encoder asks the Value Provider for what to encode)?
+	==> Consider that when having the Data Model being the Generator we can still have the state of the Value Provider define what-to-build (The model asks the Value Provider)?
+	==> Consider that even if the Downstack Frame is the Encoder Generator (it builds itself) it would seem natural it knows itself what-to-build (and asks the model and Value Provider to provide build input for that target)?
+		==> Consider that even if the Downstack Frame is the Encoder Generator (it builds itself) we can still have the what-to-build provided by the Value Provider?
+		...
+	
+	…
+
+4) Consider that the Encoder or Decoder is only required if none of the other participating objects are not generators?
+
+	==> If the Encoded Data, The Data Model nor the Data Provider is generator we need a Decoder to generate the Data Provider contents from the Encoded Data as defined by the Data Model?
+	==> If the Encoded Data, The Data Model nor the Data Provider is generator we need an Encoder to generate the Encoded Data from the Data Provider contents as defined by the Data Model?
+
+5) Consider that for the design of an explicit active object for encoding and deciding we should combine them into one ”Codec” object?
+
+	==> Consider our goal is to have only one Data Model and thus both the Encoder and Decoder must use the same Model (only transform in different directions)?
+	==> Consider combining the Encode and Decode operations might enable us to reveal common traits of the Encoding and Decoding process (e.g. both are transforms)?
+	==> Consider bot Encoding and Decoding are transforms guided by the same Data Model?
+	==> Consider Encoding implies ”Represent a structured value into serial form”?
+	==> Consider Decoding implies ”Representing serial data into a structured value”?
+	==> Consider the Data Model defines the structure values of possible data objects using model traits like type, structure and cardinality?
+	...
+
+6) Consider a Generator has its state locally on the stack while an Iterator stores its state internally?
+
+	==> A Generator executes the structure coded in imperative loop statements (each lap in the loop updates the local state)
+	==> A generator needs to know the structure to mirror it in code?
+
+	==> An Iterator recreates its state coded in stored state (each operator++-call updates the state)
+	==> An Iterator needs to know the structure it iterates to update its state?
+…
+
+Consider to elaborate on these options to see what insights and available solutions I may come up with?
+...

@@ -1,0 +1,42 @@
+# Todo: Consider that everything we talk about "exists" to the degree it emerges as existing in our experienced reality from acts of faith to their existence being "true"?
+
+```#3b94180c``` *As of 2020-01-06 17:01*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+What can we suspect about the nature of language from treating it as taking part in meaningful recursion in a process based on act of faith?
+
+> *So the basic idea here is to try something that enables us to confirm or reject the notion that language is "about" (a representation of a model) things that "exists" in our experienced reality as observed after acts of faith that they do exist they way we trust them to. Thus "faith" here is to be understood as our trust for action based on the presumption that "the thing" does exist.*
+
+> *Now we can take this notion of "faith" in something to "exist" as a model of what guides our actions. And then assess that from our observation about how we experience reality to transform in response to these actions it maps on to our original faith of the things to exist.*
+
+> *In some sense we have now broaden and generalised, or applied a meta model of what "exists", the scientific method of theory verified by experiment and observation. The scientific method is to represent a model of reality expressed in some rigorous language like mathematics. We assert that there exists a homomorphism between the things that exists in the model and how they relate to each other according to the model, and the things that we experience (observe) to exist in reality and how then those interact.*
+
+> *Our generalised idea now becomes a model of us as humans having an internal model of reality through which we experience the reality "out there". And we act based on different degrees of faith in how well out internal model is homomorphic with what we experience (observe, infer or deduce). I am very careful here to insist that we always have a model between "us" and "reality" by using the word "experience" rather than "observation" or "fact". I also use the word "faith" quite deliberately rather than "trust", "know" or "understand". In this way we are at least in theory able to incorporate human behaviour as described in collective social interactions we call religion, culture and societies.*
+
+> *Now back to language being a representation of our internal model through which we "understand" as in "trust" that we "know" how to act. If reality present itself to us as processes that emerges from self organising systems of "things" in "relations", we can suspect our language should reflect this behaviour in how we talk about reality. So for example, when we act as citizens of a country (we exist as citizens) we act based on faith that all the others citizens of said country does the same. And the "existence" of the country then emerges as the self organising and convergent system that is the "result" of all these actions.*
+
+> *So from observing that at least things like a "country", a "football team", a "company", a "neighbourhood", a "married couple" and so on can be modelled as self organising systems from act of faith in these systems existing as "real" things we can expand on this idea and propose that anything and everything we can talk about is of this nature. Any substantive refers to an "existence" of an "object" that emerges into being from our action based on the faith that it does exist. In some sense we are co-creators in action of the objects we believe to exist objectively.*
+
+> *Every verb in our language is a representation in our inner model of "reality" that explains how "objects" consumes time to transform themselves and other objects. Like "running" refers to a model about reality that gives us the experience of a human moving trough space using a specific method of locomotion where there is a relationship between "consumption of time and energy" and the actual location in space. And "jumping" is another way we experience humans to consume time in a repetitive locomotion that defies gravitation.*
+
+> *Every adjective is a sub-modelling tagging that enables us to take more general existences and specialise them using reusable modifiers. So a "fast human" specialises any object "human" to have the time consuming property "fast" which we can reuse to talk about "fast running" as a specialisation of the time-space relational process of "running" into a process that produces more locomotion per consumed time unit.*
+
+> *But the basic general idea underneath all this that all we talk about are themselves members of our internal model of reality and they come into "existence" in our experienced reality as self organising and more or less stable systems from our acting based on faith that they exist.*
+
+> *Now we can say that things "exist" if they continue to exist when we act as if they do. And things does NOT exist if they fail to emerge into existence from our actions based on faith that they do exist.*
+
+> *And finally, we now have a too we can use to talk about existence of things we do NOT agree to exist like not only God, Ghosts, Life after Death but also har science theories like multi-universes and string theory "Strings".*
+
+> *And what about "Free Will"? We can now ask ourselves, does "Free Will" exist as an experienced existence that emerges from us acting based on faith that it does exist?*
+
+> *Now, from here we should now continue in two directions. Where one omitted above is the try to refute this model of what language is about and how it relates to "reality". Like, is it never the case that things we talk about exist as self organising systems that emerges from our acts based on the faith that they do exist? I would say No, there are clear cases when this is absolutely the case. In fact, every scientific model of reality is of this nature! Atoms "exists" solely based on the fact that when we act based on the faith that reality behaves as our mathematical model of it as consisting of atoms we are able to observe that they actually do because our experience 100% matches our theory.*
+
+> *Now, does this mean atoms would cease to exist if we stopped acting as if they did? YES! In our experienced reality and how we talk about it there would no longe exist any atoms! Now this is not to say that the limitations or regularities we experience reality to expose would alter. We would just model it using something else then atoms.*
+
+> *...*
+
+...
+
+{% endraw %}

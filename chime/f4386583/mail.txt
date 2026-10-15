@@ -1,0 +1,7 @@
+﻿Gör spc-app.
+
+1. Skapar deklaration med GUID som medborgar-ID! 
+2. Kan publicera actions med hash-tag sitt medborgar-ID på sociala medier!
+3. Knyta sitt medborgar-ID till sin blogg, Google-konto, iCloud etc.
+
+Skickat från min iPhone

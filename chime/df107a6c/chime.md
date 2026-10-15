@@ -1,0 +1,19 @@
+# Todo: Programming - Consider to try using Google Docs API to create a C++ programming collaboration platform?
+
+```#df107a6c``` *As of 2016-10-08 22:50*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Can we imagine that it would be possible to share source code in Google Docs and connect an automatic build system that constantly compiles the source code and repports the status?
+
+1) The Google Docs Api seems to live here (https://developers.google.com/google-apps/realtime/overview)?
+
+2) Consider to try and design a C++ programming environment where programmers writes code in shared Google Docs documents?
+
+…
+
+Consider to make a proof-of-concept of using source code in a shared Google docs document and have it being compiled by one of the client machines?  
+...
+
+{% endraw %}

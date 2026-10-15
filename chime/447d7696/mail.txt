@@ -1,0 +1,98 @@
+﻿Consider a way to address the increasingly complex semantics adde to the C++ language by the standard and also by libraries with cryptic PAI semantics and template operator DSL:s?
+
+1) Consider the different DSL:s we would like to transpile into C++?
+
+	==> Consider transpiling into C++ code that uses a specific Library (e.g., RxCpp, asio, …)
+
+		==> Consider in this case we would like to write code in a clear syntax without having to know what members to call or what objects to create?
+
+	==> Consider transpiling into C++ code that applies a specific idiom (e.g., functional programming, asynchronous programming, threading, …)
+
+		==> Consider in this case we like to be able to express the parts of interest and have C++ code generated that takes care of the actual syntax, keywords and correct data types (e.g. immutable data)?
+		==> Consider to what degree we can write what looks like C++ but that still gets ”decorated” into the idiom we like to apply (e.g., const being the default having to put mutable in explicitly)?
+		...
+
+	==> Consider in what cases we may need to define a DSL to be able to easily express the stuff of interest (and get the complicated C++ code generated for us)?
+
+		==> Consider wer should aim at trying to re-use existing other languages as the DSL to transpile into C++?
+
+
+	==> Consider front-end that only allows a sub-set of C++?
+
+		==> Consider a front-end where only value-semantics is allowed (no pointers or references)?
+		==> Consider a front-end where no C-syntax (C library calls nor C explicit semantics) is allowed?
+		…
+
+	==> Consider front-end that transforms ”old” C++ into modern one (applying the GSL initiative)?
+
+		...
+
+2) Consider to what degree we may provide transpiling from existing language semantics?
+
+	==> Consider being able to write in Go Language and have C++ code generated that uses boost-fibers (or whatever is the best approach)?
+	==> Consider being able to write in some functional language (F#, Haskel, Elm, Clojure) and have C++ code generated for us?
+
+		==> Consider the problem of C++ not having garbage collection (to clean up redundant parts of persistent data structures)?
+
+	==> Consider to what degree we must generate C++ code to implement implicit parts required by the language we transpile from?
+
+		==> Consider Haskel require a garbage collection mechanism?
+		==> Consider Go Language require channels and scheduled fibers (not threads)
+		==> Consider Java and C# requires reference counting.
+		…
+
+
+3) Consider a syntax defining blocks of code in different DSL?
+
+	RxCpp {
+		// DSL code to conveniently generate C++ RxCpp library constructs
+	}
+
+	boost::asio {
+		// DSL code to conveniently generate boost::asio library constructs?
+	}
+
+	cpp {
+		// Untouched c++ code (forwarded ”as is”) to generated C++ code.
+	}
+
+4) Consider to extend existing C++ syntax to mark code for transpiling?
+
+	==> Consider to mimic the existing asm() keyword (http://en.cppreference.com/w/cpp/language/asm <http://en.cppreference.com/w/cpp/language/asm>)?
+
+		RxCpp(
+			”RxCpp DSL code line”
+			”RxCpp DSL Code Line”
+			”..."
+		);
+
+		==> NO - That does NOT seem to work (it looks like a C++ function)?
+
+	==> Consider to hi-jack the C++ Attribute Syntax?
+
+	[[RxCpp]] {
+		// DSL code to conveniently generate C++ RxCpp library constructs
+	}
+
+	[[boost::asio]] {
+		// DSL code to conveniently generate boost::asio library constructs?
+	}
+
+	[[cpp]] {
+		// Untouched c++ code (forwarded ”as is”) to generated C++ code.
+	}
+
+		==> Well, although the attribute is valid C++ syntax a C++ compiler would still choke on each DSL in the blocks?
+
+5) Consider to put code for transpiling into pre-prcessor macros (enabling them to not be seen if compiled by C++ compiler)?
+
+	==> Consider we can transpile DSL code to C++ as a pre-processor step?
+	==> Q: How does this rime with our intention to rid C++ of pre-processing?
+
+	==> Consider it would be better to define the transpiler as a front-end applies a C++ tool-chain as its back-end (leaving the C++ chain untouched)?
+	…
+
+…
+
+Consider to elaborate on this idea to define a transpile-front-end for DSL-to-C++ plug-ins aiming at enabling C++ programmers to get more productive by rid the programmer of having to deal with cumbersome C++ syntax to use different programming idioms and libraries?
+...

@@ -1,0 +1,50 @@
+﻿Could www imagine we can train a neural network to understand how to control the load of a wind turbine generator to maximise power output in different winds?
+
+1) Consider to start out by training the AI in my home made wind tunnel?
+
+	==> Then later move it outdoor to learn on actual wind on my balcony?
+	...
+
+2) Consider to feed the network with a set of different sized windowed wind speeds?
+
+	==> I imagine measuring the momental wind speed and also calculate average wind speeds for different past time intervals can be good input to the network?
+	==> Consider some logarithmic scaled windows sizes like: Momental, 1 s, 10 s, 100 s, 1000 s?
+	…
+
+3) Consider to feed the network with a set of windowed power output from the wind generator?
+
+	==> I imagine measuring the momental output energy as well as a set of average power output for past time frames can be good inputs to the network?
+	==> Consider to use the same wind sizes as the average wind speed time frames?
+	…
+
+4) Consider to train the network to predict the set of framed power outputs (same time frames as the inputs)?
+
+	==> In this way we can train the network to predict (track) the Maximum Power Point of each time frame (aiming at getting the long term overall power output maximised)?
+	…
+
+5) Now to the tricky part - We need a way to train the network to decide what load to put on the wind turbine?
+
+	==> How can we do this (we don not know the correct load do we)?
+	==> Thus, how do we train the network if we in fact want the network to figure out itself what load to apply at each moment?
+	==> Consider to study how neural networks has been designed to learn by themselves to play games (like Go)
+	…
+
+6) Consider to try out something similar to “AlphaGo Zero” to have an AI learn how to control the wind generator load for optimal power output?
+
+	==> Consider this article in Nature magazine (https://www.nature.com/articles/nature24270.epdf?referrer_access_token=f8rx-3Ucn_iPChv70I_ZN9RgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-22SehS6IfIWP6NGb0V5cWu-EoVfAGki0u6km0LszOuzp5t4V7Cfz3E7s7jHnzbQ4qzuSk0MignCMZouLbzvn5mW4_ZI9kEVTtgqcdzq12Y3aiXmloMr_KNd0zP9S3BBjnh3bX2zCY3iyGPYA5uoSpp0sKOgj3KWXDzD1nSkTRBia0J33Zxvk5f3iHTJ9-3zbo&tracking_referrer=www.theverge.com)?
+
+	==> Consider this youtube clip on AlphaGo Zero (https://www.youtube.com/watch?v=4Sm922Xp5N4)?
+
+	==> This youtube clip seems to suggest AlphaGo Zero starts off by trying out random moves (https://www.youtube.com/watch?v=vC66XFoN4DE)?
+
+		==> Then I suspect it must somehow slowly reduce the amount of randomness for the guesses it comes up with from previous plays?
+		==> Finally ending up with no randomness on purely algorithm predicted moves to make?
+		…
+
+	==> Thus, for our wind turbine we need to have the AI try random loads to see what optimise power output in the long run?
+	==> Then we need some way of slowly abandon random load choices for predicted ones to gain more knowledge (hone the algorithm)?
+	...
+
+…
+
+Consider top delve into this idea of using an AlphaGo Zero designed AI to learn how to regulate a wind turbine for optimal long term power output?

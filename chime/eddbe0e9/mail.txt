@@ -1,0 +1,538 @@
+﻿I want some stable and trustworthy way to keep my C++ tool chain on macOS up to date (a separate tool chain from xCode)
+
+1) It Seems macPorts LLVM 15 is NOT what I want (I want macPorts Clang 15)?
+
+After having installed LLVM 15 with macPorts (see below) I failed to find any c++ tool-chain tools available. There seem to be no Clang compiler, no linker and no C++ library?
+
+Instead I searched and found the "Clang 15" available to install here (https://ports.macports.org/port/clang-15/ <https://ports.macports.org/port/clang-15/>) and tried that instead.
+
+Still NOT sure if I also need the LLVM 15 from macPorts?
+
+2) It seems I can install Clang 15 with macPorts (https://ports.macports.org/port/clang-15/ <https://ports.macports.org/port/clang-15/>)?
+
+
+
+	==> It seems installing the Clang 15 ports went well?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % sudo port install clang-15
+Password:
+--->  Computing dependencies for clang-15
+The following dependencies will be installed: 
+ cctools
+ clang_select
+ db48
+ gdbm
+ ld64
+ ld64-xcode
+ libomp
+ llvm-15
+ perl5
+ perl5.34
+ readline
+Continue? [Y/n]: Y
+--->  Fetching archive for cctools
+--->  Attempting to fetch cctools-949.0.1_2+xcode.darwin_21.noarch.tbz2 from https://packages.macports.org/cctools
+--->  Attempting to fetch cctools-949.0.1_2+xcode.darwin_21.noarch.tbz2.rmd160 from https://packages.macports.org/cctools
+--->  Installing cctools @949.0.1_2+xcode
+--->  Activating cctools @949.0.1_2+xcode
+--->  Cleaning cctools
+--->  Fetching archive for clang_select
+--->  Attempting to fetch clang_select-2.2_1.darwin_21.noarch.tbz2 from https://packages.macports.org/clang_select
+--->  Attempting to fetch clang_select-2.2_1.darwin_21.noarch.tbz2.rmd160 from https://packages.macports.org/clang_select
+--->  Installing clang_select @2.2_1
+--->  Activating clang_select @2.2_1
+--->  Cleaning clang_select
+--->  Fetching archive for ld64-xcode
+--->  Attempting to fetch ld64-xcode-2_4.darwin_21.x86_64.tbz2 from https://packages.macports.org/ld64-xcode
+--->  Attempting to fetch ld64-xcode-2_4.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/ld64-xcode
+--->  Installing ld64-xcode @2_4
+--->  Activating ld64-xcode @2_4
+--->  Cleaning ld64-xcode
+--->  Fetching archive for ld64
+--->  Attempting to fetch ld64-3_4+ld64_xcode.darwin_21.x86_64.tbz2 from https://packages.macports.org/ld64
+--->  Attempting to fetch ld64-3_4+ld64_xcode.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/ld64
+--->  Installing ld64 @3_4+ld64_xcode
+--->  Activating ld64 @3_4+ld64_xcode
+--->  Cleaning ld64
+--->  Fetching archive for libomp
+--->  Attempting to fetch libomp-15.0.3_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/libomp
+--->  Attempting to fetch libomp-15.0.3_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/libomp
+--->  Installing libomp @15.0.3_0
+--->  Activating libomp @15.0.3_0
+--->  Cleaning libomp
+--->  Fetching archive for llvm-15
+--->  Attempting to fetch llvm-15-15.0.4_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/llvm-15
+--->  Attempting to fetch llvm-15-15.0.4_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/llvm-15
+--->  Installing llvm-15 @15.0.4_0
+--->  Activating llvm-15 @15.0.4_0
+--->  Cleaning llvm-15
+--->  Fetching archive for db48
+--->  Attempting to fetch db48-4.8.30_4.darwin_21.x86_64.tbz2 from https://packages.macports.org/db48
+--->  Attempting to fetch db48-4.8.30_4.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/db48
+--->  Installing db48 @4.8.30_4
+--->  Activating db48 @4.8.30_4
+--->  Cleaning db48
+--->  Fetching archive for readline
+--->  Attempting to fetch readline-8.1.2.000_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/readline
+--->  Attempting to fetch readline-8.1.2.000_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/readline
+--->  Installing readline @8.1.2.000_0
+--->  Activating readline @8.1.2.000_0
+--->  Cleaning readline
+--->  Fetching archive for gdbm
+--->  Attempting to fetch gdbm-1.23_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/gdbm
+--->  Attempting to fetch gdbm-1.23_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/gdbm
+--->  Installing gdbm @1.23_0
+--->  Activating gdbm @1.23_0
+--->  Cleaning gdbm
+--->  Fetching archive for perl5.34
+--->  Attempting to fetch perl5.34-5.34.1_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/perl5.34
+--->  Attempting to fetch perl5.34-5.34.1_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/perl5.34
+--->  Installing perl5.34 @5.34.1_0
+--->  Activating perl5.34 @5.34.1_0
+--->  Cleaning perl5.34
+--->  Fetching archive for perl5
+--->  Attempting to fetch perl5-5.34.1_0+perl5_34.any_any.noarch.tbz2 from https://packages.macports.org/perl5
+--->  Attempting to fetch perl5-5.34.1_0+perl5_34.any_any.noarch.tbz2.rmd160 from https://packages.macports.org/perl5
+--->  Installing perl5 @5.34.1_0+perl5_34
+--->  Activating perl5 @5.34.1_0+perl5_34
+--->  Cleaning perl5
+--->  Fetching archive for clang-15
+--->  Attempting to fetch clang-15-15.0.4_0+analyzer+libstdcxx.darwin_21.x86_64.tbz2 from https://packages.macports.org/clang-15
+--->  Attempting to fetch clang-15-15.0.4_0+analyzer+libstdcxx.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/clang-15
+--->  Installing clang-15 @15.0.4_0+analyzer+libstdcxx
+--->  Activating clang-15 @15.0.4_0+analyzer+libstdcxx
+--->  Cleaning clang-15
+--->  Updating database of binaries
+--->  Scanning binaries for linking errors
+--->  No broken files found.
+--->  No broken ports found.
+--->  Some of the ports you installed have notes:
+  libomp has the following notes:
+    To use this OpenMP library:
+     * For clang-3.8+, or clang-3.7 with +openmp variant:
+        add "-fopenmp" during compilation / linking.
+     * For clang-3.7 without +openmp variant, use:
+        "-I/opt/local/include/libomp -L/opt/local/lib/libomp -fopenmp"
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	==> It seems I can query macPorts about where my Clang-15 files are located?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % port contents clang-15 > port_contents_clang_15.txt
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % 
+
+
+
+	==> It seems I can make Xcode use macPorts installed clang-15 by editing tasks.json?
+
+Querying macPorts about where my clang-15 files are gives me the path /opt/local/libexec/llvm-15/bin/clang++.
+
+So If I copy a section in tasks.json for using a clang compiler like...
+
+      {
+        "type": "cppbuild",
+        "label": "macOS C/C++: Brew installed clang-15 build cratchit",
+        "command": "/usr/local/Cellar/llvm/15.0.3/bin/clang++",
+        "args": [
+          "-fdiagnostics-color=always",
+          "-std=c++20",
+          "-g",
+          "${file}",
+          "-o",
+          "${workspaceFolder}/cratchit.out"
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "group": "build",
+        "detail": "compiler: /usr/local/Cellar/llvm/15.0.3/bin/clang++"
+      },
+   
+...and edit in the macPorts installed clang compiler path...
+
+      {
+        "type": "cppbuild",
+        "label": "macOS C/C++: macPorts installed clang-15 build cratchit",
+        "command": "/opt/local/libexec/llvm-15/bin/clang++",
+        "args": [
+          "-fdiagnostics-color=always",
+          "-std=c++20",
+          "-g",
+          "${file}",
+          "-o",
+          "${workspaceFolder}/cratchit.out"
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "group": "build",
+        "detail": "compiler: /opt/local/libexec/llvm-15/bin/clang++"
+      },      
+
+I can now use this "task" to compile with macPorts installed clang 15?
+
+	==> It seems the macPorts installed clang-15 FAILS to find required include files?
+
+ *  Executing task: macOS C/C++: macPorts installed clang-15 build cratchit 
+
+Starting build...
+/opt/local/libexec/llvm-15/bin/clang++ -fdiagnostics-color=always -std=c++20 -g /Users/kjell-olovhogdal/Documents/Github/cratchit/src/main.cpp -o /Users/kjell-olovhogdal/Documents/Github/cratchit/cratchit.out
+In file included from /Users/kjell-olovhogdal/Documents/Github/cratchit/src/main.cpp:4:
+In file included from /opt/local/libexec/llvm-15/bin/../include/c++/v1/iostream:41:
+In file included from /opt/local/libexec/llvm-15/bin/../include/c++/v1/ios:220:
+In file included from /opt/local/libexec/llvm-15/bin/../include/c++/v1/__ios/fpos.h:14:
+In file included from /opt/local/libexec/llvm-15/bin/../include/c++/v1/iosfwd:99:
+In file included from /opt/local/libexec/llvm-15/bin/../include/c++/v1/__mbstate_t.h:29:
+/opt/local/libexec/llvm-15/bin/../include/c++/v1/wchar.h:123:15: fatal error: 'wchar.h' file not found
+#include_next <wchar.h>
+              ^~~~~~~~~
+1 error generated.
+
+Build finished with error(s).
+
+	==> Consider "Todo: Consider to try and understand why c++ compilation on macOS results in "...wchar.h: No such file or directory"?
+
+So, the basic problem is that we need to set environment variable SDKROOT (or provide the compiler argument --sysroot as shown below)?
+
+Using the command "env" I can see I currently does NOT have this variable set?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % env
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/zsh
+TERM=xterm-256color
+TMPDIR=/var/folders/h1/w8wsr9316md0l3jtptr9wnx80000gn/T/
+TERM_PROGRAM_VERSION=445
+TERM_SESSION_ID=8353E069-7CE3-4643-81CD-D96AEF408696
+USER=kjell-olovhogdal
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.tPSakAja9x/Listeners
+PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/kjell-olovhogdal/Documents/Github/nudge:/usr/local/Cellar/llvm/13.0.1_1/bin
+__CFBundleIdentifier=com.apple.Terminal
+PWD=/Users/kjell-olovhogdal/Documents/Github/cratchit
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/kjell-olovhogdal
+LOGNAME=kjell-olovhogdal
+OLDPWD=/Users/kjell-olovhogdal/Documents/Github/cratchit
+LC_CTYPE=UTF-8
+_=/usr/bin/env
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit %
+
+So I can set it using the "export" command and the result of querying the path from "xcrun --show-sdk-path"?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % export SDKROOT=`xcrun --show-sdk-path`
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % env                                   
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/zsh
+TERM=xterm-256color
+TMPDIR=/var/folders/h1/w8wsr9316md0l3jtptr9wnx80000gn/T/
+TERM_PROGRAM_VERSION=445
+TERM_SESSION_ID=8353E069-7CE3-4643-81CD-D96AEF408696
+USER=kjell-olovhogdal
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.tPSakAja9x/Listeners
+PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/kjell-olovhogdal/Documents/Github/nudge:/usr/local/Cellar/llvm/13.0.1_1/bin
+__CFBundleIdentifier=com.apple.Terminal
+PWD=/Users/kjell-olovhogdal/Documents/Github/cratchit
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/kjell-olovhogdal
+LOGNAME=kjell-olovhogdal
+OLDPWD=/Users/kjell-olovhogdal/Documents/Github/cratchit
+SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+LC_CTYPE=UTF-8
+_=/usr/bin/env
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % 
+
+And I get the "same" effect by providing the --sysroot argument to the compiler like in this XCode tasks.json configuration.
+
+      {
+        "type": "cppbuild",
+        "label": "macOS C/C++: macPorts installed clang-15 build cratchit",
+        "command": "/opt/local/libexec/llvm-15/bin/clang++",
+        "args": [
+          "--sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+          "-fdiagnostics-color=always",
+          "-std=c++20",
+          "-g",
+          "${file}",
+          "-o",
+          "${workspaceFolder}/cratchit.out"
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "group": "build",
+        "detail": "compiler: /opt/local/libexec/llvm-15/bin/clang++"
+      },      
+
+	NOTE: The path reported by "xcrun --show-sdk-path" seems to be the one that ALWAYS work while the path "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk" is a symlink that currently is set correctly by XCode command line tools, but may stop working in the future?
+
+3) It seems I can install llvm 15 with macPorts (https://ports.macports.org/port/llvm-15/ <https://ports.macports.org/port/llvm-15/> )?
+
+	==> NOTE: This turned out to NOT come with any C++ tool chain components (See Clang 15 above)!
+
+	==> It seems I can query macPorts about installed "ports" using command "ports installed"?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % port installed
+The following ports are currently installed:
+  bzip2 @1.0.8_0 (active)
+  gettext-runtime @0.21_0 (active)
+  icu @71.1_0 (active)
+  libcxx @5.0.1_5 (active)
+  libedit @20221030-3.1_0 (active)
+  libffi @3.4.3_0 (active)
+  libiconv @1.17_0 (active)
+  libxml2 @2.10.3_0 (active)
+  llvm-15 @15.0.4_0 (active)
+  llvm_select @2_1 (active)
+  lz4 @1.9.4_0 (active)
+  ncurses @6.3_0 (active)
+  openssl3 @3.0.7_0+legacy (active)
+  xar @1.8.0.491_0 (active)
+  xz @5.2.7_0 (active)
+  zlib @1.2.13_0 (active)
+  zstd @1.5.2_0 (active)
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	Q: I wonder if libcxx @5.0.1_5 (active) is the LLVM C++ standard library?
+
+	==> It seems I use the suggested command line command to install the macPorts LLVM 15?
+
+
+
+	==> It seems still in 2022 I need to restart my terminal on macOS to have it update to the current environment state?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % sudo port install llvm-15
+Password:
+sudo: port: command not found
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+
+	==> It seems installation of LLVM 15 using macPorts went well?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % sudo port install llvm-15
+zsh: command not found: kjell-olovhogdal@Kjell-Olovs-Mac-Pro
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % sudo port install llvm-15 
+Password:
+--->  Computing dependencies for llvm-15
+The following dependencies will be installed: 
+ bzip2
+ gettext-runtime
+ icu
+ libcxx
+ libedit
+ libffi
+ libiconv
+ libxml2
+ llvm_select
+ lz4
+ ncurses
+ openssl3
+ xar
+ xz
+ zlib
+ zstd
+Continue? [Y/n]: Y
+--->  Fetching archive for libcxx
+--->  Attempting to fetch libcxx-5.0.1_5.darwin_21.noarch.tbz2 from https://packages.macports.org/libcxx
+--->  Attempting to fetch libcxx-5.0.1_5.darwin_21.noarch.tbz2.rmd160 from https://packages.macports.org/libcxx
+--->  Installing libcxx @5.0.1_5
+--->  Activating libcxx @5.0.1_5
+--->  Cleaning libcxx
+--->  Fetching archive for ncurses
+--->  Attempting to fetch ncurses-6.3_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/ncurses
+--->  Attempting to fetch ncurses-6.3_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/ncurses
+--->  Installing ncurses @6.3_0
+--->  Activating ncurses @6.3_0
+--->  Cleaning ncurses
+--->  Fetching archive for libedit
+--->  Attempting to fetch libedit-20221030-3.1_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/libedit
+--->  Attempting to fetch libedit-20221030-3.1_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/libedit
+--->  Installing libedit @20221030-3.1_0
+--->  Activating libedit @20221030-3.1_0
+--->  Cleaning libedit
+--->  Fetching archive for libffi
+--->  Attempting to fetch libffi-3.4.3_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/libffi
+--->  Attempting to fetch libffi-3.4.3_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/libffi
+--->  Installing libffi @3.4.3_0
+--->  Activating libffi @3.4.3_0
+--->  Cleaning libffi
+--->  Fetching archive for llvm_select
+--->  Attempting to fetch llvm_select-2_1.darwin_21.noarch.tbz2 from https://packages.macports.org/llvm_select
+--->  Attempting to fetch llvm_select-2_1.darwin_21.noarch.tbz2.rmd160 from https://packages.macports.org/llvm_select
+--->  Installing llvm_select @2_1
+--->  Activating llvm_select @2_1
+--->  Cleaning llvm_select
+--->  Fetching archive for bzip2
+--->  Attempting to fetch bzip2-1.0.8_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/bzip2
+--->  Attempting to fetch bzip2-1.0.8_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/bzip2
+--->  Installing bzip2 @1.0.8_0
+--->  Activating bzip2 @1.0.8_0
+--->  Cleaning bzip2
+--->  Fetching archive for icu
+--->  Attempting to fetch icu-71.1_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/icu
+--->  Attempting to fetch icu-71.1_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/icu
+--->  Installing icu @71.1_0
+--->  Activating icu @71.1_0
+--->  Cleaning icu
+--->  Fetching archive for libiconv
+--->  Attempting to fetch libiconv-1.17_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/libiconv
+--->  Attempting to fetch libiconv-1.17_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/libiconv
+--->  Installing libiconv @1.17_0
+--->  Activating libiconv @1.17_0
+--->  Cleaning libiconv
+--->  Fetching archive for gettext-runtime
+--->  Attempting to fetch gettext-runtime-0.21_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/gettext-runtime
+--->  Attempting to fetch gettext-runtime-0.21_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/gettext-runtime
+--->  Installing gettext-runtime @0.21_0
+--->  Activating gettext-runtime @0.21_0
+--->  Cleaning gettext-runtime
+--->  Fetching archive for xz
+--->  Attempting to fetch xz-5.2.7_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/xz
+--->  Attempting to fetch xz-5.2.7_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/xz
+--->  Installing xz @5.2.7_0
+--->  Activating xz @5.2.7_0
+--->  Cleaning xz
+--->  Fetching archive for zlib
+--->  Attempting to fetch zlib-1.2.13_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/zlib
+--->  Attempting to fetch zlib-1.2.13_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/zlib
+--->  Installing zlib @1.2.13_0
+--->  Activating zlib @1.2.13_0
+--->  Cleaning zlib
+--->  Fetching archive for libxml2
+--->  Attempting to fetch libxml2-2.10.3_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/libxml2
+--->  Attempting to fetch libxml2-2.10.3_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/libxml2
+--->  Installing libxml2 @2.10.3_0
+--->  Activating libxml2 @2.10.3_0
+--->  Cleaning libxml2
+--->  Fetching archive for openssl3
+--->  Attempting to fetch openssl3-3.0.7_0+legacy.darwin_21.x86_64.tbz2 from https://packages.macports.org/openssl3
+--->  Attempting to fetch openssl3-3.0.7_0+legacy.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/openssl3
+--->  Installing openssl3 @3.0.7_0+legacy
+--->  Activating openssl3 @3.0.7_0+legacy
+--->  Cleaning openssl3
+--->  Fetching archive for xar
+--->  Attempting to fetch xar-1.8.0.491_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/xar
+--->  Attempting to fetch xar-1.8.0.491_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/xar
+--->  Installing xar @1.8.0.491_0
+--->  Activating xar @1.8.0.491_0
+--->  Cleaning xar
+--->  Fetching archive for lz4
+--->  Attempting to fetch lz4-1.9.4_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/lz4
+--->  Attempting to fetch lz4-1.9.4_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/lz4
+--->  Installing lz4 @1.9.4_0
+--->  Activating lz4 @1.9.4_0
+--->  Cleaning lz4
+--->  Fetching archive for zstd
+--->  Attempting to fetch zstd-1.5.2_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/zstd
+--->  Attempting to fetch zstd-1.5.2_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/zstd
+--->  Installing zstd @1.5.2_0
+--->  Activating zstd @1.5.2_0
+--->  Cleaning zstd
+--->  Fetching archive for llvm-15
+--->  Attempting to fetch llvm-15-15.0.4_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/llvm-15
+--->  Attempting to fetch llvm-15-15.0.4_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/llvm-15
+--->  Installing llvm-15 @15.0.4_0
+--->  Activating llvm-15 @15.0.4_0
+--->  Cleaning llvm-15
+--->  Updating database of binaries
+--->  Scanning binaries for linking errors
+--->  No broken files found.
+--->  No broken ports found.
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+
+	==> It seems clicking on instructions I get information about how to locate the installed fils on my machine?
+
+
+
+
+	==> It seems the macPorts LLVM is installed at path "/opt/local/bin/"?
+
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % port contents llvm-15 > macPorts_llvm15_paths.txt
+
+
+
+	==> It seems to uninstall macPorts LLVM 15 I simply use the smae command as to install but using the command "uninstall" instead?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % sudo port uninstall llvm-15
+Password:
+--->  Deactivating llvm-15 @15.0.4_0
+--->  Cleaning llvm-15
+--->  Uninstalling llvm-15 @15.0.4_0
+--->  Cleaning llvm-15
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	==> It seems the uninstall command does NOT uninstall any installed dependencies?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % port installed
+The following ports are currently installed:
+  bzip2 @1.0.8_0 (active)
+  gettext-runtime @0.21_0 (active)
+  icu @71.1_0 (active)
+  libcxx @5.0.1_5 (active)
+  libedit @20221030-3.1_0 (active)
+  libffi @3.4.3_0 (active)
+  libiconv @1.17_0 (active)
+  libxml2 @2.10.3_0 (active)
+  llvm_select @2_1 (active)
+  lz4 @1.9.4_0 (active)
+  ncurses @6.3_0 (active)
+  openssl3 @3.0.7_0+legacy (active)
+  xar @1.8.0.491_0 (active)
+  xz @5.2.7_0 (active)
+  zlib @1.2.13_0 (active)
+  zstd @1.5.2_0 (active)
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+4) The macPort project installation seems to live here (https://www.macports.org/install.php <https://www.macports.org/install.php> )?
+
+
+
+
+	==> This seems to be macPort instructions to install command line tools for XCode (https://guide.macports.org/#installing.xcode <https://guide.macports.org/#installing.xcode> )?
+
+	==> It seems I already have XCode command line tools installed?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % xcode-select --install
+xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+
+	==> It seems downloading and installing macPorts on my macOS Monterey went well?
+
+
+
+
+	==> It seems macPorts install to "/opt/local"?
+
+"The MacPorts installer copies MacPorts to the target directory /opt/local. " 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5) It seems macPorts help lives here (https://guide.macports.org/chunked/using.common-tasks.html <https://guide.macports.org/chunked/using.common-tasks.html> )?
+
+
+...   

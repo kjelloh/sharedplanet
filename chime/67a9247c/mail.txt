@@ -1,0 +1,31 @@
+﻿It seems operating systems (and network environments) may be populated with standard or add-on tools that we may view as “worlds” of “entities” and “objects” that lives only in these world?
+
+-1) Consider to show “worlds” as a bubbles within bubbles?
+
+	==> Consider a world is shown as a bubble with some name in which entities and objects are listed?
+	==> Consider a “world” that lives within another world (e.g. PowerShell lives on Windows) as a double within the double in which it lives?
+
+	==> Consider to be able to show links between bubbles that states entities that handles transforms from one bubble into the next?
+
+		==> Consider “Create World” link that shows the entity and command used to create the sub-world
+			==> e.g. using Windows Powershell to create a Chocolate world?
+			==> e.g. using Linux apt to create a Clang C++ world?
+			...
+ 
+1) Consider PowerShell as a windows standard tool that defines a world of PowerShell scripts?
+
+	==> The PowerShell is then an “entity” that knows how to operate on “objects” in the form of PowerShell scripts?
+
+2) Consider Chocolate to be an add-on tool that defines a world of Windows packages?
+
+	==> The choco command is then an “entity” that knows how to operate on “objects” in the form of chocolate packages and local chocolate configurations?
+
+3) Consider to state worlds using some simple semantics?
+
+	==> Consider word<entitie(s), object(s)>?
+	==> Consider Entity<objects>?
+	...
+…
+
+Consider to elaborate on such a view as a GUI into the “Digital Worlds” of a computer or a network (e.g. internet) and possibly some proof-of-concept application to produce such views?
+...

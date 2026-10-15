@@ -1,0 +1,58 @@
+﻿Consider this blog post (http://cpptruths.blogspot.se/2017/01/folding-monadic-functions.html) may be better explained and understood if described using the value, type, template layers of abstraction I have identified in previous Monad, Monoid and C++ functional programming discussions?
+
+1) Consider this code from the blog post (http://cpptruths.blogspot.se/2017/01/folding-monadic-functions.html) is an example of meta functions taking both template and types as input parameters?
+
+template<template <typename> class M>
+struct monad 
+{ 
+    template <class T, class Func>
+    static auto bind(M<T>& m, Func&& func) -> result_type_t<Func>;
+};
+
+	==> monad is a meta function that takes a Template M and returns a type (a struct) (monad<M> is some struct type)
+	==> monad<M>::bind is a meta function that takes two types T and F and returns a function (monad<M>::bind<T,F> is a function)
+		==> result_type is a meta function that takes a type F and return a type (result_type<F> is the return type of function monad<M>::bind<T,F>)
+
+	==> 
+
+2) Consider to elaborate on the problem with C++ obscurity what meta functions actually returns?
+
+	==> M<T> does not reveal in its semantics what the result will be
+
+		template <typename T>
+		using M = std::vector<T>;
+
+		==> Then M<T> will ”return” std::vector<T>
+
+		template <typename T>
+		struct _M {
+			const int value = 3;
+		};
+
+		template <typename T>
+		const auto M = _M<T>::value; 
+
+		==> Then M<T> will be the integer value 3.
+
+		// http://en.cppreference.com/w/cpp/language/variable_template
+		template <typename T>
+		int M = 4;
+
+		==> M<T> will be integer 4;
+
+
+		template <typename T>
+		struct _M {
+			template <typename U>
+			struct meta {};
+		};
+
+		template <typename T>
+		using M = _M:: template meta;
+
+		==> DOES NOT COMPILE! C++ does not allow using to define an alias for a template (http://en.cppreference.com/w/cpp/language/type_alias)!
+		==> It does not seem to be a way to make M<T> to semantically be a template?
+		
+…
+
+Consider to elaborate more on this model of C++ meta functions being able to operate on each, end between each, levels of integral values, types and templates?

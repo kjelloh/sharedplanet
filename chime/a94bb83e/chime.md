@@ -1,0 +1,74 @@
+# Todo: Bang - Consider to elaborate if Bang could create a "world" for Amazon AWS Lambda services?
+
+```#a94bb83e``` *As of 2016-08-18 12:33*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to elaborate on Bang services by looking into having Bang create a “world” making a local machine and Amazon AWS lama service live “together”?
+
+1) Consider to start of reading this blog entry about C++ and the AWS services (<http://blog.scottfrees.com/c-addons-as-aws-lambda-functions>)?
+
+2) This seem to be the home of Amazon AWS Lambda services (<https://aws.amazon.com/lambda/>)?
+
+> *“AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running. With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. “*
+
+3) Consider the entities the Bang “AWS C++ Lambda” world should understand and be able to deal with?
+
+==&gt; Consider the C++ “glue” code that is callable from Node.js?
+
+==&gt; It seems this code includes “node.h” and requires call of a MACRO that makes the Cpp-file into a module callable from Node.js?
+
+> > ```
+> > #include <node.h>
+
+> > using namespace v8;
+
+> > void Average(const FunctionCallbackInfo<Value>& args) {
+> >     Isolate * isolate = args.GetIsolate();
+> >     double sum = 0;
+> >     int count = 0;
+
+> >     for (int i = 0; i < args.Length(); i++){
+> >         if ( args[i]->IsNumber()) {
+> >             sum += args[i]->NumberValue();
+> >             count++;
+> >         }
+> >     }
+
+> >     Local<Number> retval = Number::New(isolate, sum / count);
+> >     args.GetReturnValue().Set(retval);
+> > }
+
+> > void init(Local<Object> exports) {
+> >   NODE_SET_METHOD(exports, "average", Average);
+> > }
+
+> > NODE_MODULE(average, init)
+> > ```
+
+
+
+==&gt; Consider the world to understand that a C++ add-on requires two Node.js projects (main and add-on)?
+
+> *“We're actually going to actually create two Node.js projects. One will be the C++ addon itself, which won't have any AWS Lambda artifacts at all - it's just a straight up addon. The second will in fact be the Lambda function - it will be a Node.js module that imports the addon, and exposes the Lambda handler.”*
+
+==&gt; Consider the “world” to understand that each project requires three files (C++, package and binding)?
+
+> *“To create the addon, we need three files - our C++ source, a package.json to tell Node.js how to deal with this addon, and a binding.gyp file to handle the build process."*
+
+…
+
+==&gt; Consider what “dieties” (actors or tools) such a world should have?
+
+==&gt; Seems the Node.js package manager npm is one (or is this to be considered as a tool to travel into npm-land)?
+
+...
+
+...
+
+Consider to elaborate on what it would mean to have Bang be able to create a “AWS Lambda” world making these services member also on the local platform?
+
+...
+
+{% endraw %}

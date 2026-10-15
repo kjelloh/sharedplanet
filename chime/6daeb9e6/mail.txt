@@ -1,0 +1,17 @@
+﻿
+1) Consider this youtube video "How to REALLY learn C++ " recommending bounty hunting and C++ open source project participation (https://youtu.be/_zQqN5OYCCM <https://youtu.be/_zQqN5OYCCM> )?
+	
+	...
+
+2) Consider the article "" (https://www.viva64.com/en/b/0660/ <https://www.viva64.com/en/b/0660/> )? 
+
+	...
+
+3) Consider to explore my account (new) at hackerone <http://hackerone.com/> for bug bounty (https://hackerone.com/hacker_dashboard/overview <https://hackerone.com/hacker_dashboard/overview> )?
+
+ 
+4) Consider to explore my account (new) at European bug bounty site intigrity  (https://www.intigriti.com <https://www.intigriti.com/> )?
+
+
+
+...

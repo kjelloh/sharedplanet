@@ -1,0 +1,27 @@
+﻿Could it be a good idea to study the C++ cross-platform Qt-framework for GUI development?
+
+	=>= Also see loos reaction to “Todo: Write about Digital Receipt being another example of the problem of having multiple digital identities?"
+
+1) This Cppcon 2015 on Qt “” seems like a good start to get leads (https://www.youtube.com/watch?v=RXTfC-35Nx8 <https://www.youtube.com/watch?v=RXTfC-35Nx8>)?
+
+2) The Qt-project seem to live here (http://www.qt.io <http://www.qt.io/>)
+
+	==> Consider to start of using an open source GPL version of the library?
+	==> It seems a little more complicated to understand the price and license for commercial non-open-source version of the library (one get a “Contact us” button)?
+	...
+
+3) Consider to try to implement Testbench GUI using the Qt-framework?
+
+	==> See “Todo: Testbench - Consider to prepare the Testbench for different build-environments and possibly targets?”
+	==> Consider to have Qt as an alternative to VCL, Fmx, MFC?
+	...
+
+4) Consider to compare Qt-framework with the RAD Studio Firemonkey cross-platform framework?
+
+	==> How well does Qt solve the same cross-platform issues as the Firemonkey library?
+	==> Does Firemonkey provide more than GUI services (e.g. file system, platform services)?
+	...
+
+…
+
+Consider to delve 

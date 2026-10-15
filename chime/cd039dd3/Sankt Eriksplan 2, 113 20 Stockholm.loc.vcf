@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.9.5//EN
+N:;;;;
+item1.ADR;type=HOME;type=pref:;;Sankt Eriksplan 2;Stockholm;Stockholms län;113 20;Sverige
+item1.X-ABADR:SE
+item2.URL;type=pref:http://maps.apple.com/?lsp=6489&sll=59.339966\,18.038465&q=59.339966\,18.038465
+item2.X-ABLabel:Kart-URL
+X-ABUID:1807A439-7CEC-4E15-873B-2479C3FF6A18:ABPerson
+END:VCARD

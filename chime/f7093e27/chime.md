@@ -1,0 +1,78 @@
+# Todo: Write my own Talks - Consider to write talks as manuscripts first (and then add slides only as the last step to add to the spoken message)?
+
+```#f7093e27``` *As of 2017-08-01 19:24*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider the best way to create talks is not to start with the slides? Instead it is better to first write down what to say as a script and then add slides to aid the message?
+
+1) Consider to write a short talk about something interesting as a manuscript?
+
+==&gt; Write about Programmers being good abstract pattern recognisers (and thus can have interesting things to say about humans and society)?
+
+…
+
+2) Consider to rehearse (read and record) the manuscript until it sounds good and is interesting and easy to follow?
+
+…
+
+3) Consider to add slides only as the last step?
+
+==&gt; Consider the manuscript can contain notes about the information that must go on the slides at different points in the talk?
+
+==&gt; Consider the slides must add to the spoken message (not repeat it in text)?
+
+==&gt; Or, if repeated in text - only use to emphasis what I say (act as a bottom line or head line)?
+
+==&gt; Consider the slides add emotions and interest (but still in line with the message)?
+
+…
+
+4) Consider to experiment with the same talk using different story-line models (e.g. Three acts, as a song verse and chorus)?
+
+==&gt; Consider to try and write a manuscript with a story in three acts (<https://en.wikipedia.org/wiki/Three-act_structure>)?
+
+==&gt; Consider to try and write a manuscript with a story told in the same structure as some pop-song?
+
+short into (instrumental theme = content summarisation but no actual message yet)
+
+First verse (Story build, often medium strong or building up)?
+
+Second Verse (somewhat the same story but more information. More emphasis and energy)
+
+First Chorus (some mirroring or bottom line information with strong emphasis. Perhaps a mirroring or counterpart message)?
+
+A solo (Some distraction with emphasis on feelings - no new information on the message)
+
+A new shorus (repeat the chorus message again. Perhaps with variations)?
+
+Third verse (More secure on the message. A bit slower but more to the point)
+
+Final Chrous (string emphasis. Possibly with variations but more on repetition in different forms. Examples)?
+
+Outro (could be a chresendo or susp. with some references back to the introduction = tie it all together)
+
+==&gt; Consider this actually maps to the three acts idiom of story telling?
+
+==&gt; Maybe it also maps in some way to “the rule of three” as lined out in examples here (<http://sixminutes.dlugan.com/humor-speech-rule-of-three/>)?
+
+…
+
+…
+
+5) Consider to experiment with ambient sounds in the slides?
+
+==&gt; Could it add to the presentation to add some subtle ambient sounds to further add to the message (emotionally or sub-consously)?
+
+==&gt; Consider to add sounds only to parts that has a narrative (when telling a story that gets better if told with aiding sounds like a radio play)?
+
+...
+
+…
+
+Consider to try out this idea to actually write a talk manuscript first and only as the last step add the slides?
+
+...
+
+{% endraw %}

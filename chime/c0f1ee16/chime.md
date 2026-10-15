@@ -1,0 +1,99 @@
+# Todo: C++ - Understand anonymous (lambda) functions and the new use of "-&gt;" in such definitions
+
+```#c0f1ee16``` *As of 2015-12-03 15:42*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I stumbled across some code where “-&gt;” appeared in a seemingly strange context. It turned out to be a C++ anonymous function definition.
+
+1) Here is where I first stumbled across this usage (<http://stackoverflow.com/questions/8511035/sequence-zip-function-for-c11>)
+
+```
+#include <boost/iterator/zip_iterator.hpp>
+#include <boost/range.hpp>
+
+template <typename... T>
+auto zip(const T&... containers) -> boost::iterator_range<boost::zip_iterator<decltype(boost::make_tuple(std::begin(containers)...))>>
+{
+    auto zip_begin = boost::make_zip_iterator(boost::make_tuple(std::begin(containers)...));
+    auto zip_end = boost::make_zip_iterator(boost::make_tuple(std::end(containers)...));
+    return boost::make_iterator_range(zip_begin, zip_end);
+}
+```
+
+Example:
+
+```
+#include <cstdio>
+#include <vector>
+#include <list>
+
+int main()
+{
+    std::vector<int> a {4, 5, 6};
+    double b[] = {7, 8, 9};
+    std::list<std::string> c {"a", "b", "c"};
+    for (auto tup : zip(a, b, c, a))
+    {
+        int x, w;
+        double y;
+        std::string z;
+        boost::tie(x, y, z, w) = tup;
+        printf("%d %g %s %d\n", x, y, z.c_str(), w);
+    }
+}
+```
+
+This would print
+
+```
+4 7 a 4
+5 8 b 5
+6 9 c 6
+```
+
+2) Here seem to a be good enough description of how “-&gt;” is used for C++11 anonymous functions (<https://en.wikipedia.org/wiki/C%2B%2B11>)
+
+```
+[](int x, int y) -> int { return x + y; }
+```
+
+==&gt; An unnamed function taking parameters (x,y) and returning x+y. Return type declared as int.
+
+```
+template<class Lhs, class Rhs>
+  auto adding_func(const Lhs &lhs, const Rhs &rhs) -> decltype(lhs+rhs) {return lhs + rhs;}
+```
+
+==&gt; An template function returning a type defined by (lys + rhs).
+
+==&gt; The “-&gt;” syntax enables definition of return type to after definition of lys and rhs types.
+
+3) The code in (1) this translates as this.
+
+==&gt; The function zip is declared as an anonymous function (“-&gt;”)
+
+==&gt; Return type being boost::iterator_range&lt;boost::zip_iterator&lt;decltype(boost::make_tuple(std::begin(containers)...))&gt;&gt;
+
+==&gt; And the body of the function defined between { }.
+
+==&gt; Function zip accepts variadic template parameters (“typename…” T) (<http://en.cppreference.com/w/cpp/language/variadic_arguments>)
+
+==&gt; zip() returns an iterate-able range of tuples carrying one element each from provided variadic number of containers (type T must be an iterate-able container)
+
+==&gt; Thus "for (auto tup : zip(a, b, c, a))” iterates through these tuples.
+
+==&gt; This seem like a good page about boost tuples (<http://www.boost.org/doc/libs/1_59_0/libs/tuple/doc/tuple_users_guide.html>)
+
+…
+
+Consider to understand C++11 anonymous functions at least so that I am able to read C++11 code?
+
+a) Does template functions defined as anonymous functions enable specialisation on return type?
+
+b) Note that partial template specialisation is not allowed (not even in C++11).
+
+...
+
+{% endraw %}

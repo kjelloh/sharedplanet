@@ -1,0 +1,22 @@
+# Todo: Darwinet - Study Freenet data cashing and deleting
+
+```#faa9af49``` *As of 2015-09-27 12:25*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+free net seems to implement an interesting feature in that it is able to ”forget” (remove) information that is not valued enough by the general public.
+
+1) In one of the original papers (https://freenetproject.org/papers/ddisrs.pdf) there is a chapter 5.2.1 ”Criteria for information Removal” where an algorithm (principle) for removal of cashed data is discussed. It seems to be based on access frequency but it is not stated in relation to what? Is it just that data is removed if it is not accessed within a certain time frame? Or is data ordered based on access rate and then the tail is removed over time?  
+2) Darwinet has the advantage to knowing what Domain data belongs to and may thus value data within the Domain as opposed to Freenet that values data globally. Darwinet may thus apply a ”purging” mechanism based on several aspects like priority, age or delta granularity. In this way a Darwimet domain may be configured to always preserve some data (e.g. old photos or repositories for future research), to only keep data to a certain history depth (e.g. purging data more than one year old) or by access frequency. darwinet may also value access by some users or nodes (or applications) as giving the data more value than access by others.  
+3) The free net paper talks about data having the tendency to be stored with nodes from where it is most often accessed. This is an interesting self-organizing principle that Darwinet should apply? Thus one approach to the self-organizing routing optimization should be to also move data so that it is closer to nodes that access it but has chosen not to store it locally?  
+4) Does this mean we should incorporate spatial data distribution algorithm with the node-to-node routing algorithm? This would mean that not only should the network learn how to best route node-to-node messing, but it should also consider to actually relocate data to nodes where it is most readily accessed? It would be like ants not only marking the best path to food, but also move that food closer to the stack along that path?  
+5) The idea arises that the scent of a path between two nodes would actually first be stronger and stronger due to more and more nodes using the same path and then decrease again when the target node is approached (due to target node becoming more and more unique for the source node). Most commonly accessed data should then be moved to intermediate nodes where the path-scent for that data peaks?  
+6) To make the trail-scenting algorithm to work to also locate where data should be stored for optimal access would mean that the node-to-node messaging must be data-access-aware. A different scent is needed for each entity in the MIV?  
+7) Seems we should go for assigning a GUID to each data in the MIV to reduce the size of the data key (the MIV path is to long?). Or we may use hash-values to reduce the key length of MIVs?  
+8) I get the feeling that data should be stored at nodes that reflects the ”gravitational center” of that data access? This in turn would suggest that we may use the ”force directed layout” algorithm to decide where to actually store data in relation to the source nodes accessing that data?  
+…
+
+Delve deeper into this idea of combining shortest-routing-path with interest-gravitation-data-localization?
+
+{% endraw %}

@@ -1,0 +1,14 @@
+# Todo: Find a way to work as focused with my own projects as I do for clients
+
+```#2f77384f``` *As of 2015-09-25 18:07*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Today I have spent most of the day trying to make code signing work for one of my clients products (the test bench). For some reason I am able to focus and struggle on with almost any task as long as it is for my client. How is that?  
+1) How do I make working with my own projects as meaningful so that I can spend as must time and effort to make them work?  
+2) Is it that when on my own, I fail to prioritise. It feels as if what ever I choose to do I will loose out on not doing something else and then it feels hopeless?  
+3) How do I trick myself into working hard also when I have no guarantee that the work wont end up being futile?  
+…
+
+{% endraw %}

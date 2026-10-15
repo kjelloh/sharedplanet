@@ -1,0 +1,17 @@
+﻿It seems we are homing in on common water treatment processes based on flocculation with Aluminium Sulfate or Ferro Chloride?
+
+1) Consider the wikipedia article "Alkalinity" (https://en.wikipedia.org/wiki/Alkalinity <https://en.wikipedia.org/wiki/Alkalinity> )?
+
+	==> Consider the Swedish article on the relation between Alkalinity and flocculation for water treatment  (https://sv.wikipedia.org/wiki/Alkalinitet <https://sv.wikipedia.org/wiki/Alkalinitet> )?
+
+"Vid flockning i vattenverk och reningsverk är det av flera anledningar viktigt att övervaka alkaliniteten. Detta både för att innan flockningskemikalien tillsätts kunna justera pH till rätt nivå men också för att själva flockningsprocessen i sig sänker alkaliniteten[5]. Det är viktigt att inte låta alkaliniteten bli för hög då detta är förknippat med hög risk för igensättning i ledningsnätet[6]. För låg alkalinitet kan däremot skapa problem med stora pH-variationer under både behandlingsstegen och i ledningsnätet[6].
+
+Flockningskemikalierna är vanligen ett järn- eller aluminiumsalt (vanligast i Sverige är aluminiumsalter)[5]."
+
+	Flocculation with Ferro Chloride consumes Bicarbonate  () which reduces the alkalinity
+
+
+	Flocculation with Aluminium Sulfate consumes Bicarbonate  () which reduces the alkalinity
+
+
+...

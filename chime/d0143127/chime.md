@@ -1,0 +1,15 @@
+# Todo: Write about how Kants isolation of reason from reality-as-it-is maps to Hoffman reality in fact being an illusion experienced by the consciousness
+
+```#d0143127``` *As of 2015-08-26 19:30*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Kant seems to argue that our experienced subjective reality can never fully experience the objective reality-as-it-is (the subject-object problem). This kind of maps in an interesting way to Donald Hoffman approach where Consciousness is behind a user interface to real it-as-it-is created by our brains.
+
+1) The interesting thing here is that the Hoffman Consciousness is in fact the only reality-as-it-is but it experience ut through the user interface created by our brains. This the Kantian Subject, i.e. Consciousness, is in fact the object itself?  
+2) So Kants Objects are nothing more than ”icons of the desktop of reality”? Would this mean that Kants Subject that experience objects are by Hoffman transformed into the Object experiencing the Subject (as in the illusion of reality)?  
+3) Stephen Hicks in "Explaining Postmodernism: Skepticism and Socialism from Rousseau to Foucault” (http://www.bokus.com/bok/9789175669847/postmodernismens-forklaring-skepticism-och-socialism-fran-rousseau-till-foucault/) explains Kant to state that reasoning works very well but only in the inner ”world” created by the subject. It has little or no correlation to reality-as-it-is. This correlates quite well to Hoffmans model that our Consciousness only experience the user interface to reality and that user interface actually hides reality-as-it-is and only provides an experience that benefits us.  
+...
+
+{% endraw %}

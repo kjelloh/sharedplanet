@@ -1,0 +1,9 @@
+﻿From designing the Darwinet Photo database and photo-augmented-map applications it seems we need to treat the swapping algorithm as a separate and important mechanism of Darwinet nodes.
+
+A node may need to swap data when local storage is full for different reasons.
+
+1) It needs to access data stored at another node.
+2) The device has moved to a new location and there are applications that need access to data (e.g. photos) that realtes to that location (spatial-related data).
+3) A node is about to be killed so all data needs to be swapped out. (Using the swap algorithm for this ensures the domain gets a chance to validate and protect domain data distribution requirements)
+4) Temporal dat acces requirements requires re-distribution of data on nodes to ensure lowest node temporal distances. This would mean data that are stored at or temporarily ”near” nodes where that data is recently accessed. If there are many nodes where data is frequently accessed the domain may need to stora such data with high reduncay (at many nodes) just to ensure fast access.
+5) History density and depth may differ for nodes and the domain as a whole. If there are nodes that are configured to store the delta history using low density (not all actually deltas are stored but replaced with ”larger” step deltas) or store a short depth (e.g. if the delta history is only one week) whilst the domain actually is setup to store with full depth and density, then data will need to swap from those nodes to others in the domain. Note though that maybe density and depth should be a property of the view, the node and the domain? In that case each node may apply suitable swapping based on the settings. A node with full depth and density for the node but not the view may be used for storage of data not actually accessible by the view?

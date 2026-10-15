@@ -1,0 +1,91 @@
+﻿It seems we can further understand the implications of Category Theory in programming from the relation between general Category Theory Addition and Multiplication and its realisation in the Category of boolean algebra in the form or OR and AND, and in category of Data Types the Pair and Either?
+
+1) Consider this talk, although painstakingly obscure, as having leads to general Addition and Multiplication (https://www.youtube.com/watch?v=V10hzjgoklA)
+
+	==> At 9:40 he gives hes own take on Category of Types?
+
+		
+
+			==> It seems the Category(A,B) means the objects A and B together with function f: A —> B?
+			==> But it seems we need at least three objects (A,B,C) to talk about function composition (We need to be able to talk about two ways to go from A—>C)?
+			…
+
+	==> At 12:50 he introduces Product in Java
+
+	
+
+		==> It seems Product T1 * T2 is Pair<T1,T2>?
+		==> Q: How is this usable in programming? 
+
+	==> At 28:20 he introduces Sum
+
+	
+
+		==> Note: For some reason Sum in Category Theory is defined by arrows going in the opposite direction as for definition of Multiplication?
+		==> It seems this is why the Sum in Java looks so strange?
+
+		==> It seems, and he also says, that Sum T1 + T2  is Variant<T1,T2>?
+
+	==> At 44:50 he compares Sum and Product as being each-others ”reverse”?
+
+	
+
+
+2) Consider logical OR and AND are the realisation of Addition and Multiplication in the Category of boolean type?
+
+	…
+
+3) Consider the data structures Either (Variant) and Pair (Tuple) as the realisation of Addition and Multiplication in the category of data types?
+
+	…
+
+4) Consider Monads as functors that lifts the category iof types and functions to a Category of ”Monadic” (lifted) values and functions?
+
+	==> Consider the Monad Optional lifts a Category of types to a Category of Optional types?
+
+		
+
+		==> Optional<T> lifts object T (type) to object Optional<T> (also a type)
+		==> Optional::bind lifts ”diagonal” functions from T1 to Optional<T2> to the Monoidal function Optional<T1) to Optional <T2>
+
+		==> Hm… It is still a bit awkward where we get the Diagonal Function from (do they occur naturally and the Monad makes the composable)?  
+
+	==> Now it seems the Category of objects being Monads are in fact the same as the Monoids in the Category of Endofunctors?
+
+		
+
+		==> Monads are Endofunctors because if we apply the Monad Functor to its own category we are still in the same category?
+
+			Optional<Optional<T>> == Optional<T>
+			List<List<T>> == List<T>
+			Future<Future<T>> == Future<T>
+			…
+
+		==> And binary composition of Monadic Values are the new Monadic Values of the same type (the same object)
+
+			Optional<T> + Optional<T> == Optional<T>
+			List<T> + List<T> == List<T>
+			Future<T> + Future<T> == Future<T>
+			...
+
+4) Consider we may finally understand the Monad as a Monoid in the category of  Endofunctiors?
+
+	==> Consider this wikipedia page on the definition of Category (https://en.wikipedia.org/wiki/Category_(mathematics))?
+
+		==> It seems a Category is an ”Algebraic Structure” of Objects linked by Arrows. 
+		==> It seems, to be a category the arrows must compose and each object must have an identity arrow?
+
+		
+
+		==> It seems Composition of arrows are defined by comparing two paths to get between Objects of the Category.
+
+			==> In this case arrow f goes from object A to object B and the g arrow goes from object B to object C. Thus the composition g*f is defined by the arrow from A to C?
+
+	==> Consider this, as one of many, post and thread about a Monad being a Monoid in the Category of Endofunctors (https://www.quora.com/Is-a-monad-really-a-monoid-in-the-category-of-endofunctors)?
+		…
+
+…
+
+Consider to delve deeper into this pattern of OR and AND in boolean Algebra, Either and Pair in Data Types, Addition and Multiplication for integers and so on offers insights to how Category Theory has relevance in programming?
+...
+	

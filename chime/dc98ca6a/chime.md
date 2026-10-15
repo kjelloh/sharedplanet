@@ -1,0 +1,40 @@
+# Todo: Consider how we can make society dividual-centric both IRL and digitally?
+
+```#dc98ca6a``` *As of 2016-03-30 15:53*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider the downsides of current individual freedom and competitive market idiom that creates service-centric optimisation instead of divid-centric ones?
+
+1) Could we reason that competition will lead to identity fragmentation?
+
+==&gt; If services compete to provide unique functionality - then users will use more services and thus need to create more digital identities?
+
+2) Consider to define divid-centric services as a term to use to define what traits we would like services to have (and that competing-for-profit is less likely to create)?
+
+==&gt; Services are dividual-centril if a dividual is on control and owns the result of used services?  
+==&gt; Facebook is not dividual-centric in that user data is stored (and in some respects “owned” by Facebook.  
+==&gt; Dividual-centric services enables and allows the user to re-use the result of one service in another.  
+==&gt; Such re-use may be provided by a third divid-centric service.  
+==&gt; Services that allow Facebook user-data in twitter is not divid-centric (data is still stored, owned and controlled by Facebook and twitter)
+
+3) What incitements can we imagine to drive emergence of dividual centric service models?
+
+==&gt; If the divid owns her data she will be able to get paid by services to share the value of that data with the service?  
+==&gt; If a divids social network was not in the Facebook service itself (a bi-product of using the service) then the divid could sell access to it to allow Facebook to monetise on this information?  
+==&gt; A serverless P2P social network could provide such an option to the user (no need to pay Facebook with user data to get a social network service)?
+
+==&gt; The society could drive for society services to be divid-centric (society is there to provide for divids)?
+
+==&gt; Then society must reduce using market incitements to provide social services?  
+==&gt; Civil funding may be sued to develop divid-centric services (e.g. an automatic tax declaration service)?
+
+==&gt; Note how a tax declaration service must be divid centric in that it must be able to access all tax-related earning and spending of the dividual.  
+==&gt; And that information may today be stored with each business relation and transactions performed by the divid with different providers?  
+…
+
+Consider to delve deeper into this aspect of compete-for-profit idiom that drives to fragmentise the identities and data away from a divid centric idiom we actually would like to be implemented as “deep freedom” (easy-for-me)?  
+...
+
+{% endraw %}

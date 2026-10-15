@@ -1,0 +1,10 @@
+﻿When transferring time reports to invoice one of the hardest work is to remove time that is not-work and distribute work-time on available activities. A common activity is to “glue together” time-frames of work that are separated by not-work. Consider a GUI that enables the user to define time frames (start-stop) and show them as strips of 15-minutes frames in a gantt-scheme fashion with the ability to “punch” the 15-minute frames as buttons for the row of the activity it belongs to.
+
+1) Each time-frame may be expanded into tree-sub-nodes, a table, each row defining an activity.
+2) One row is always “not-work” (which may be lunch or any non-work activity that does not need to be specified)
+3) Each 15-minute time frame can be connected with one activity only.
+4) The user “punches” the 15-minute time frame as a button belonging to the row of the activity to be reported for that frame.
+…
+
+Consider to build a proof-of-concept application to try this kind of user interface?
+...

@@ -1,0 +1,28 @@
+# Todo: Consider to buy and learn to use a Oxyhydrogen generator and soldering torch?
+
+```#9fe58c76``` *As of 2025-10-19 13:36*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to be able to soldier stuff together with precision.
+
+1) Consider youtube video "Inside OxyHydrogen gas generators (HHO/Brown's gas)" (https://youtu.be/F3WCH4fa490 )?
+
+==&gt; It seems we also need Sodium Hydroxide (Swedish Natriumhydroxid 0r Kaustiksoda) to add to the water to make it elctrical conductive?
+
+> "The manual states sodium hydroxide (caustic soda drain cleaner in the UK), but many videos on the subject seemed to recommend potassium hydroxide as being better. But it's much harder to get and mine foamed up, pushing liquid through the system."
+
+==&gt; It seems we should fill the 'bubler' (output cylinder backburn stopper) with plain water, water with some acid to colour the flame or alcohol?
+
+> "The bubbler can be filled (just a third full) with either water or various alcohols. One manufacturer of a jewellery version showed the use of methanol and boric acid for a green flame to improve visibility and perhaps act as a mild brazing flux."
+
+2) Consider the potential sellers I find by google "95L Acrylic Oxygen Hydrogen HHO Welder H180 Polishing Machine with Flame Torch"?
+
+==&gt; Consider Ali Express (https://www.aliexpress.com/item/1005009124307817.html?src=google&pdp_npi=4%40dis!SEK!2027.39!1015.27!!!!!%40!12000047999670729!ppc!!!&snps=y&src=google&albch=shopping&acnt=752-015-9270&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=_oDc8nzq&gclsrc=aw.ds&albagn=888888&ds_e_adid=768419044237&ds_e_matchtype=search&ds_e_device=c&ds_e_network=g&ds_e_product_group_id=2439798957781&ds_e_product_id=en1005009124307817&ds_e_product_merchant_id=5551326180&ds_e_product_country=SE&ds_e_product_language=en&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=22877668700&albag=186344927169&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=22877668700&gbraid=0AAAAA_eFwRB9Zb5PREFnWUW54jVZXjpw4 )?
+
+![PastedGraphic-1.png](PastedGraphic-1.png)
+
+...
+
+{% endraw %}

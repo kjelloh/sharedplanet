@@ -1,0 +1,52 @@
+﻿So, can we imagine creating a bank account transaction report parser application that uses acquired information to analyse spendings?
+
+-1) Consider to design the application using front-end, core and back-end idiom?
+
+	==> The front-end is the user interface and user input interfaces?
+
+		==> Consider one front-end to allow reading of pre-stored csv-files (manually exported from web-service)?
+		==> Consider front-end extension that enables automation of the users bank web-service to acquire data (html-5 browser automation)?
+		…
+
+	==> The core is the internal processing and representation of transaction data, label matching and optional services related to this data?
+
+	==> The back-end is the interface to the platform?
+
+		==> One back-end is able to read csv-files from the file system?
+		==> Consider a sharing-back-end that is able to interact with other nodes to share label mappings?
+			==> Consider one sharing mechanism using a shared but torrent file?
+			==> =Consider another sharing mechanism based on some Darwinet-like mechanism?
+			...
+
+1) Consider to implement such a parser as open source on Github?
+
+	==> Consider this library to be based on the same encoding/decoding idiom as for SIE-file library (and general protocol message encoder/decoder)?
+
+2) Consider to recognise transactions based on transaction labels (e.g. “Kortköp 160426 COOP KONSUM KALLHALL”)?
+
+	==> Consider the label to determine who sent or received the money?
+
+3) Consider to implement some simple Darwinet- like sharing of the transaction-label mapping to transaction type?
+
+	==> Could we imagine the application to enable swarm-defining of labels?
+	==> Each user may share the mapping the apply and also apply label-mapping shared by others?
+
+	==> Consider to use a shared bittorrent file for label mappings?
+		==> Is this even possible?
+		==> How do we handle conflicting mutations of the file?
+
+	==> Consider to define some darwinet-like sharing of label-mappings?
+		==> Consider a bittorrent file sharing mechanism for darwinet deltas of label mapping?
+		==> Consider sharing Darwinet deltas using mail?
+
+4) Consider to expand the front-end with possibility to automate web-service access?
+
+	==> Can we imagine to apply the idea of web-service user interface automation (reflection) to have the application read the data directly from the bank web server?
+	...
+
+…
+
+Consider to delve into this idea to open source a parser and analyser of bank account transaction report from a web-service?
+...
+ 
+

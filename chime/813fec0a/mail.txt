@@ -1,0 +1,43 @@
+﻿Consider to try out and understand the LLVM tool chain for Visual studio?
+
+1) The Windows LLVM tool chain for visual studio seems to be available here (http://llvm.org/builds/)?	
+
+	==> Q: Is this a front-end (Clang) with Visual Studio backend (link)?
+
+	==> It seems to be both a Clang front-end and a backend linker and debugger?
+
+” Currently, the package only includes clang, clang-format, lld, lldb, and the AddressSanitizer runtime from compiler-rt, but eventually it should grow to encompass other Clang tools, and possibly other LLVM projects such as libc++."
+
+	==> Would this imply we will be able to compile Clang compatible C++ code in Visual Studio?
+	==> What does that even mean (will Visual Studio Clang simulate all MSVC macros and tool-chain attributes)?
+	...
+
+2) How does this LLVM for windows Visual Studio differ from the clang-cl (Visual Studio C/C++ compiler cl) (http://clang.llvm.org/docs/UsersManual.html#clang-cl)?
+
+	…
+
+3) In what way does this LLVM for Visual Studio relate to the Visual Studio C2 backend option (https://blogs.msdn.microsoft.com/vcblog/2016/01/20/clang-with-microsoft-codegen-january-2016-released/)
+
+	==> It seems we may install Visual Studio CodeGen from Windows Programs and Features?
+
+”
+How to get this update
+	• Control Panel -> Programs -> Programs and Features
+	• Right click on “Microsoft Visual Studio Enterprise 2015”
+	• Click “Change”
+	• Click “Modify”
+	• Select “Clang with Microsoft CodeGen (January 2016)”. The previous release would be marked as “Deprecated”."
+
+	==> It seems the Visual Studio C2 backend initiative is for mixing Clang cross platform C++ with Platform UI C++ code?
+
+On our end, the primary motivation for doing this work is to enable the cross-platform scenario where a significant portion of your app is cross-platform C++ code.
+
+ <https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/65/69/7510.crossplat_code_structure.png>
+
+This is now possible with the work we have done. What this enables is a scenario in which you compile (1) and (3) using the Visual C++ compiler, (2) using Clang and for code-generation, all of these would still use the Visual C++ back-end (We call it C2).
+…
+
+Consider to try out this LLVM tool-chain for Visual Studio to see what we get and for what we may use it?
+...
+
+

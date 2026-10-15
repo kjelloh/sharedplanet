@@ -1,0 +1,95 @@
+# Todo: Consider "God" (the conscious unknown) is humanities imagined potential that have us self organise towards that potential just as trust in Moore's finds the geniuses and makes them do what is required for the law to hold?
+
+```#823b1c8f``` *As of 2020-08-28 22:40*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I saw
+
+1) Consider Lex Fridmans youtube video "Elon Musk's exponential view of the world | Grant Sanderson and Lex Fridman" where he propose Moore's law is not actually exponential or a law but rather a self fulfilling prophecy (<https://youtu.be/fAaLhEEOVZU> )?
+
+> *So the observation I made when hearing Lex Fridman proposing that Moore's law works because when humans believe it to be true they act as if it has to become true and in doing so actually make it true. To me it sounds like an argument for or a definition of the role of religious faith in human history. By trusting and acting in faith to an "imagined truth" we engage in activities that have us self organise into a society where that truth manifest in our experienced reality! Being it technology, social systems or the wellbeing of everyday life.*
+
+> *So, Lex is in fact arguing for what "God" is and "Why" God exists ;)*
+
+> [*https://youtu.be/fAaLhEEOVZU?t=218](https://youtu.be/fAaLhEEOVZU?t=218) *
+
+> *03:38  
+> it's not exponential it's it's just a  
+> 03:40  
+> consistent  
+> 03:42  
+> set of like what you call like s-curves  
+> 03:45  
+> which is like it's constantly like  
+> 03:48  
+> breakthrough*
+
+> [*https://youtu.be/fAaLhEEOVZU?t=251](https://youtu.be/fAaLhEEOVZU?t=251) *
+
+> *and it's also there's a human  
+> 04:12  
+> psychological level for sure  
+> 04:14  
+> of like the four minute mile like it's  
+> 04:16  
+> there's something about it  
+> 04:18  
+> like saying that look there is uh  
+> 04:21  
+> you know moore's law it's a law  
+> 04:24  
+> so like it's uh it's certainly an  
+> 04:27  
+> achievable  
+> 04:28  
+> thing you know we've achieved it for the  
+> 04:30  
+> last decade the last two decades last  
+> 04:32  
+> three decades you just keep going  
+> 04:35  
+> and it somehow makes it happen*
+
+> [*https://youtu.be/fAaLhEEOVZU?t=309](https://youtu.be/fAaLhEEOVZU?t=309) *
+
+> *basically it's kind of the steve jobs  
+> 05:12  
+> idea is maybe the whole point  
+> 05:16  
+> is uh to create an atmosphere  
+> 05:19  
+> where the genius can discover themselves  
+> 05:22  
+> like  
+> 05:22  
+> like have the opportunity to do the best  
+> 05:24  
+> work of their life  
+> 05:26  
+> and yeah and that the exponential is  
+> 05:29  
+> just milking that  
+> 05:30  
+> it's like rippling the idea that it's  
+> 05:33  
+> possible  
+> 05:34  
+> and that idea that it's possible finds  
+> 05:36  
+> the right people for the four minute  
+> 05:37  
+> mile  
+> 05:38  
+> the idea that it's possible finds the  
+> 05:40  
+> right runners to run it  
+> 05:41  
+> and then expose the number of people who  
+> 05:43  
+> can run faster than four minutes*
+
+...
+
+{% endraw %}

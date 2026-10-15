@@ -1,0 +1,12 @@
+# Todo: Darwinet for Cure
+
+```#8abfdf68``` *As of 2015-08-11 16:13*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+In his TED talk (http://www.ted.com/talks/salvatore_iaconesi_what_happened_when_i_open_sourced_my_brain_cancer) Salvatore Iaconesi talks about the strength to open source his cure from brain cancer. He built a web-page to create a social network of professionals, artists and more to communicate with him to cure as a whole. This helped hit to break loose from becoming only a patient (originally stemming from ”the one who waits”) and become a whole being able to adress and attend to all his needs to cure.
+
+Consider to device a way to do this with Darwinet where you may expand from your medical journal to also build a domain to share and interact as Salvatore Iaconesi did through his web-page. But with Darwinet you can decide rings of access where some is public and some is only between you and doctors, close friends, artists and what have you. In Darwinet you can create Domains for specific illnesses (like brain cancer) or needs like arts for cure and so on. Darwinet then also allows domains to evolve according to the forces of fitness of organization, content and actors.
+
+{% endraw %}

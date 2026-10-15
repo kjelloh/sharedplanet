@@ -1,0 +1,44 @@
+﻿
+1) This seems to be a good mapping between RAL and NCS codes (https://www.collor.se/wp-content/uploads/2019/12/ral-ncs.pdf <https://www.collor.se/wp-content/uploads/2019/12/ral-ncs.pdf> )?
+
+	==> It seems we need to pay attention to the "delta-E" that indicates the subjective divergence between the perceived colour and the reference?
+
+RAL 2009 is NCS 1080-Y60R with Delta-E 1,7
+RAL 2003 is NCS 0570-Y50R with delat-E 1,7
+
+I bough these so fingers crossed they are close to NCS 0580-Y30R that was what I think I would have liked the most?
+
+2) It seems I should prime with a special primer that adheres to galvanised metal?
+
+	==> Consider Hammerite Special Metal Primer (https://www.hammerite.se/produkter/special-metals-primer/ <https://www.hammerite.se/produkter/special-metals-primer/> )?
+
+"Hammerite Special Metals Primer är en speciellt sammansatt vattenburen primer avsedd för icke-järnhaltiga metaller som aluminium, mässing, koppar, rostfritt stål, galvade ytor och andra legeringar."
+
+"Hammerite Special Metals Primer is a specially formulated waterborne primer intended for non-ferrous metals such as aluminum, brass, copper, stainless steel, galvanized surfaces and other alloys."
+
+3) Consider the wikipedia page on RAL (https://en.wikipedia.org/wiki/RAL_colour_standard <https://en.wikipedia.org/wiki/RAL_colour_standard> )?
+
+	==> It seems RAL is used for metal paints and high gloss paints?
+
+"In colloquial speech RAL refers to the RAL Classic system, mainly used for varnish and powder coating but now there are reference panels for plastics as well."
+
+
+4) Consider to evaluate the spray paints I bought from Swedish web shop (https://spraycan.se <https://spraycan.se/> )?
+
+ArtnrBenämningAntalAprisRadtotal
+0330030103Ferrex Rostskyddsfärg Primer grå 0,33 L1157 kr157 kr
+07082RAL 2009 Traffic Orange 400 ml Spray1119 kr119 kr
+696237RAL 2003 Pastel Orange 400 ml Spray1119 kr119 kr
+Pris för frakt (DHL Valfritt utlämningsställe)179 kr79 kr
+Totalpris (inkl. moms)474 kr
+Varav moms94.80 kr
+VAT:Purchaseorder:
+
+
+5) Consider to buy from Swedish Hornbach (https://www.hornbach.se <https://www.hornbach.se/> )?
+
+	==> It seems Hornbach charge only 50 SEK for delivery (Compared to Spraycan.se that charge 79 SEK)?
+
+
+
+...

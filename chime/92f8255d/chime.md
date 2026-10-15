@@ -1,0 +1,20 @@
+# Todo: Consider to understand how to make a C++ back-end work with an Electron front end?
+
+```#92f8255d``` *As of 2018-05-31 12:44*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems for future C++ application work we would like to know if it is possible to use a C++ back-end with an Electron Front end?
+
+==&gt; Also see “Todo: Cratchit Book Keeping - Consider to implement a C++ book keeping application using Tha modelling, Elm Idion and Immer Immutable data Struictures asynchronously synchronising with REST Web service (FortKnox) and IPFS file system?”
+
+1) Consider to find the shortest path to actually make a simple C++ application backend with an Electron Front end?
+
+…
+
+…
+
+Consider to update this todo when appropriate with new information on how to use a C++ back-end with an Electron Front end?
+
+{% endraw %}

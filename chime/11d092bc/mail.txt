@@ -1,0 +1,11 @@
+﻿I don't like the "library" model that seems to always devolve into bloated and "more than needed" code to be linked with the project that use it?
+
+So, the main idea here is, that you should be able to analyse some C++ application for its dependancies on some C++ library - and then parse the library source code to only compile end link what is actually required by the client application.
+
+I imagine a C++ parser should be able to identify the code in the client application that refers to types, variables and code in the library. And after that be able to parse the library for these "items". Finally, I imagine the parser could then purge the AST (Abstract syntax tree) of the library, to remove parts that the client is NOT using.
+
+Now, I think ideally we would like the parser to generate new source code extracted from the library that the client requires to be able to re-compile and link the whole project "from scratch"?
+
+Ideally, the dependance by the client on the library could be mapped to a HASH that does not change unless the client uses the library in some new way. And only then does the parser need to re-parse the library for new extracted source?
+
+...

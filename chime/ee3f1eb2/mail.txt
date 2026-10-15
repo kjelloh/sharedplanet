@@ -1,0 +1,119 @@
+﻿It seems I could be better off by learning Python and then also be able to try out web scraping and IMAP mail reading (e.g., to transform my Todo-mails into document or wiki or something more substantial for sharing)?
+
+1) Consider this youtube channel with a seemingly comprehensive list of Python tutorials (https://www.youtube.com/channel/UCBwpMr85NLRe4RmfE6jTRnw <https://www.youtube.com/channel/UCBwpMr85NLRe4RmfE6jTRnw>)?
+
+2) Consider this tutorial “Day 30: Fetch & Convert Email in Python Programming” on IMAP server access with Python (https://www.youtube.com/watch?v=bbPwv0TP2UQ&t=300s <https://www.youtube.com/watch?v=bbPwv0TP2UQ&t=300s>)?
+
+	==> Also consider the followup “Day 30: Save Emails Locally in Python Programming” (https://www.youtube.com/watch?v=Jt8LizzxkPU <https://www.youtube.com/watch?v=Jt8LizzxkPU>)?
+	…
+
+3) Consider to document python on OS X administration?
+
+	==> I opened a terminal and the python seems installed?
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ python
+Python 3.6.1 |Anaconda 4.4.0 (x86_64)| (default, May 11 2017, 13:04:09) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ 
+
+
+	==> The python community seems to live here (https://www.python.org <https://www.python.org/>)?
+	==> The lastest version of python seems to be 3.6.5 (https://www.python.org/downloads/release/python-365/ <https://www.python.org/downloads/release/python-365/>)?
+	==> NOTE: The URLs in the tutorial videos redirect to a company page with a requirement to register (I dod not do that)
+
+	==> It seems we need to use python package installer pip (https://en.wikipedia.org/wiki/Pip_(package_manager))? <https://en.wikipedia.org/wiki/Pip_(package_manager))?>
+
+Kjell-Olovs-MacBook-Pro-2014:Desktop kjell-olovhogdahl$ pip --version
+pip 9.0.1 from /Users/kjell-olovhogdahl/anaconda/lib/python3.6/site-packages (python 3.6)
+Kjell-Olovs-MacBook-Pro-2014:Desktop kjell-olovhogdahl$ 
+
+
+	==> It seems we need to use pip to install pipenv to be able to create python visual environments (http://docs.python-guide.org/en/latest/dev/virtualenvs/ <http://docs.python-guide.org/en/latest/dev/virtualenvs/>)?
+
+Kjell-Olovs-MacBook-Pro-2014:Desktop kjell-olovhogdahl$ pip install --user pipenv
+Collecting pipenv
+  Downloading https://files.pythonhosted.org/packages/2c/01/37a5867a47d52856b077d0faa561b791cb6e6e3e9410837b6d62f569c1e6/pipenv-11.10.1-py3-none-any.whl <https://files.pythonhosted.org/packages/2c/01/37a5867a47d52856b077d0faa561b791cb6e6e3e9410837b6d62f569c1e6/pipenv-11.10.1-py3-none-any.whl> (6.3MB)
+    100% |████████████████████████████████| 6.3MB 139kB/s 
+Collecting certifi (from pipenv)
+  Downloading https://files.pythonhosted.org/packages/7c/e6/92ad559b7192d846975fc916b65f667c7b8c3a32bea7372340bfe9a15fa5/certifi-2018.4.16-py2.py3-none-any.whl <https://files.pythonhosted.org/packages/7c/e6/92ad559b7192d846975fc916b65f667c7b8c3a32bea7372340bfe9a15fa5/certifi-2018.4.16-py2.py3-none-any.whl> (150kB)
+    100% |████████████████████████████████| 153kB 2.2MB/s 
+Collecting setuptools>=36.2.1 (from pipenv)
+  Downloading https://files.pythonhosted.org/packages/8c/10/79282747f9169f21c053c562a0baa21815a8c7879be97abd930dbcf862e8/setuptools-39.1.0-py2.py3-none-any.whl <https://files.pythonhosted.org/packages/8c/10/79282747f9169f21c053c562a0baa21815a8c7879be97abd930dbcf862e8/setuptools-39.1.0-py2.py3-none-any.whl> (566kB)
+    100% |████████████████████████████████| 573kB 1.1MB/s 
+Requirement already satisfied: pip>=9.0.1 in /Users/kjell-olovhogdahl/anaconda/lib/python3.6/site-packages (from pipenv)
+Collecting virtualenv (from pipenv)
+  Downloading https://files.pythonhosted.org/packages/ed/ea/e20b5cbebf45d3096e8138ab74eda139595d827677f38e9dd543e6015bdf/virtualenv-15.2.0-py2.py3-none-any.whl <https://files.pythonhosted.org/packages/ed/ea/e20b5cbebf45d3096e8138ab74eda139595d827677f38e9dd543e6015bdf/virtualenv-15.2.0-py2.py3-none-any.whl> (2.6MB)
+    100% |████████████████████████████████| 2.6MB 306kB/s 
+Collecting virtualenv-clone>=0.2.5 (from pipenv)
+  Downloading https://files.pythonhosted.org/packages/6d/c2/dccb5ccf599e0c5d1eea6acbd058af7a71384f9740179db67a9182a24798/virtualenv_clone-0.3.0-py2.py3-none-any.whl <https://files.pythonhosted.org/packages/6d/c2/dccb5ccf599e0c5d1eea6acbd058af7a71384f9740179db67a9182a24798/virtualenv_clone-0.3.0-py2.py3-none-any.whl>
+Installing collected packages: certifi, setuptools, virtualenv, virtualenv-clone, pipenv
+Successfully installed certifi-2018.4.16 pipenv-11.10.1 setuptools-39.1.0 virtualenv-15.2.0 virtualenv-clone-0.3.0
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Kjell-Olovs-MacBook-Pro-2014:Desktop kjell-olovhogdahl$ 
+
+	==> It seems I have to add ~/.local/bin to PATH to have access to virtualenv command?
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ ls ~/.local/bin
+easy_install		easy_install-3.6	pewtwo			pipenv			pipenv-resolver		virtualenv		virtualenv-clone
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ PATH=$PATH:~/.local/bin
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ env
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/bash
+TERM=xterm-256color
+TMPDIR=/var/folders/d9/b6h8_0457ddd9qnrzmhvxm480000gn/T/
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.5bXaX3rguQ/Render
+TERM_PROGRAM_VERSION=404
+TERM_SESSION_ID=8BA46A9F-F102-4CF2-A7A7-8726EDE24D8F
+USER=kjell-olovhogdahl
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.cFwFYXSOIq/Listeners
+PATH=/Users/kjell-olovhogdahl/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kjell-olovhogdahl/.local/bin
+PWD=/Users/kjell-olovhogdahl
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/kjell-olovhogdahl
+LOGNAME=kjell-olovhogdahl
+LC_CTYPE=UTF-8
+_=/usr/bin/env
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ 
+
+	==> I used VSCode to add this to Bash shell ~/.profile file
+
+	
+
+	==> At this stage the virtualenv command still does not work (seems incompatible)?
+
+Kjell-Olovs-MacBook-Pro-2014:Desktop kjell-olovhogdahl$ virtualenv email_client && cd email_client
+Using base prefix '/Users/kjell-olovhogdahl/anaconda'
+New python executable in /Users/kjell-olovhogdahl/Desktop/email_client/bin/python
+dyld: Library not loaded: @rpath/libpython3.6m.dylib
+  Referenced from: /Users/kjell-olovhogdahl/Desktop/email_client/bin/python
+  Reason: image not found
+ERROR: The executable /Users/kjell-olovhogdahl/Desktop/email_client/bin/python is not functioning
+ERROR: It thinks sys.prefix is '/Users/kjell-olovhogdahl/Desktop' (should be '/Users/kjell-olovhogdahl/Desktop/email_client')
+ERROR: virtualenv is not compatible with this system or executable
+Kjell-Olovs-MacBook-Pro-2014:Desktop kjell-olovhogdahl$ 
+
+
+	TODO: Fix the problem of incompatible virtualenv command *sigh*!!
+	TODO: Fix that .profile does NOT WORK (new terminal does NOT get PATH updated) *sigh*!!
+
+	THIS SUCKS! Why do I manually have to figure out how to mutate my machine into the correct state (it should be a one-click-operation Darwinet-style)!
+
+3) Consider to use darwinet2@itfied.se <mailto:darwinet2@itfied.se> as the test account for reading mails?
+
+	IMAP Server: imap01.binero.se <http://imap01.binero.se/>
+	User Name: darwinet2@itfied.se <mailto:darwinet2@itfied.se>
+	Password: ****
+
+	...
+	
+
+…
+
+Consider top delve into Python and also try to do web scarping and IMAP email download and save?
+
+

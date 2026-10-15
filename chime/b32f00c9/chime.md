@@ -1,0 +1,39 @@
+# Todo: Consider to design a "Makers Search Engine" that can scrub the web for CAD files and provide search on measurements and physical properties (mechanical function)?
+
+```#b32f00c9``` *As of 2021-07-28 13:53*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to be able to search for physical, mechanical or functional properties and imagines we can utilise that many web shops provides CAD files for their components.
+
+> *So, the basic idea is to scrub the web for CAD files and then parse these files for physical properties to make them searchable.*
+
+> *Now, the hard problem may be how to deign the actual search criteria. it seems we would need some fundamental properties (geometry) that we can us to compose into the physical objects we want to be able to find?*
+
+> *We can imagine a basic crude property is the 3D dimensions the object must fit into (width, depth and height)?*
+
+> *We can imagine another basic crude property is the shape like a box, a sphere, a pyramid etc.?*
+
+> *We can imagine to define objects by adding and subtracting crude basic bodies (like a cube with a drilled hole)?*
+
+> *For known components we want to be able to search for basic functions like roller bearing, shaft, timing wheel etc?*
+
+*1) Consider the social "self organising" and corporative possibilities to enable aggregation of things location for solved propblems?*
+
+> *The basic idea here is to somehow allow makers to share search criteria as well as aggregated search results for others to find and use to solve their own problems.*
+
+> *So we can imagine someone built a Z-axis for a CNC machine and can share the search criteria to find similar components from other suppliers?*
+
+2) Consider the sharing of "needs" in the form of search criteria can enable sellers to provide kits of components tailored for popular searches?
+
+> *Here we imagine it should be possible for suppliers to use the searches made by makers as input to actually provide for the needs reflected by the searches? *
+
+> *In this way the know-how of the supplier may be utilised to expand the possible solutions to makers problems?*
+
+*...  
+*
+
+
+
+{% endraw %}

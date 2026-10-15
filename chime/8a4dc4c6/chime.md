@@ -1,0 +1,18 @@
+# Todo: Varför vad vi vill skall vara sant är viktigare än vad som faktiskt är sant
+
+```#8a4dc4c6``` *As of 2015-08-03 17:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Människan är inte alls så rationell som vi vill tro eller som vi tror att vi kan bli om vi anstränger oss. I ljuset av vad vi lärt oss, valt eller själva insett vara det vi håller för sant så står sig sanningen ofta slätt. Och när vi vill att något skall vara sant, antingen för att det stämmer med vad vi vill skall vara sant eller helt enkelt för att det skulle göra våra egna val enklare, så är sanningen inte heller någon stark opponent.
+
+När Skugge indignerat tycker att ungdomar är för lata och att den stora ungdomsarbetslösheten inte alls beror på tillkortakommanden av marknaden att tillhandahålla stimulerande arbeten med bra lön, jag då beror det så klart på att hon vill att det skall vara så. Hon har ju böjt sig för systemet och arbetat upp sig. Hon valde minsann inte att ge upp då hon var ung utan strävade på och skapade sin egen lycka. Om det nu skulle vara så att denna verklighet inte längre finns och att dagens ungdomar möte en helt annan, ja då har så klart Skugge ingen anledning att försöka ta in denna verklighet. När vi väl valt vår sanning så behåller vi den i det längsta.
+
+När SD-väljare argumenterar för att Invandringen kostar för mycket och att de som kommer hit också skadar vår kultur och hotar vår trygghet, ja då är det också ett uttryck för att dom vill att et skall vara sant. En sådan sanning gör det möjligt att behålla tron på den enskildes egna ansvar att skapa sig ett liv. Att man får det liv man förtjänar och att vi, det svenska folket, förtjänat vår välfärd. Att ens egna motgångar inte varit förgäves. Att man själv förtjänar att få skörda frukterna av sitt eget val att ställa upp på samhällets krav och förväntningar. För att kunna acceptera att människor från andra länder skall få komma hit och ”gratis” ta del av vår välfärd kräver ju att man ändrar sin uppfattning om vem som förtjänar detta. Och ytterst ifrågasätter det också ens egna val att år efter år själv ställa upp på att bli orättvist behandlad av samhället i form av för låg lön eller otrygg framtid. Vad - skall helt främmande personer få komma hit och ”ta” av ”mina” surt förtjänade slantar?
+
+Indignation, i sin mest basala form, är faktiskt inte något annat än en upprördhet över att andra genom handling ifrågasätter den sanning man själv vill tro på. Vänster vill tro att intelligens, eller i brist på det sunt förnuft, omöjliggör främlingsfientlighet, diskriminering och orättvisa. Om man alltså handlar annorlunda är man till någon grad ”dum”. Man missar då att den man angriper faktiskt både kan se och hålla med om argumenten men välja att tro annorlunda (eller bara sätta någon annan sanning, till exempel som behovet av frihet eller trygghet, som högre).
+
+Insikten att vad vi vill tro skall vara sant allt som ofta helt tar udden av argument som talar mot borde göra oss mer förmögna att mötas i diskussioner om för vem samhället skall vara till för och hur vi skapar detta samhälle. För om vi kan mötas i samma vilja så blir det lättare att kompromissa kring vad vi skall göra och inte göra för att ta oss dit. Med argument om varför vi borde vilja vissa saker mer andra än andra, eller till och med varför vissa saker vi vill egentligen är förklädda andra viljor (vi vill inte blir rika, vi vill bli lyckliga), så kan vi bättre navigera förbi de låsningar som uppstår när vi slår varandra i huvudet med vad som är sant och vem som har fel. Det sanna svaret är inte vad vi behöver för att utveckla samhället. Det är vilken fråga vi skall besvara som är det viktiga. Och den bestäms av vad vi egentligen vill och varför vi vill just det!
+
+{% endraw %}

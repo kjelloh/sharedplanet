@@ -1,0 +1,17 @@
+﻿It seems I should be able to build a table saw rip fence using aluminium profiles, shafts and gears?
+
+1) Consider this 1m Gear Rack (https://www.motedis.se/shop/Linjaera-produkter/Gear-rack-Pinions/Gear-Rack-Pignons-Modul-1/Gear-rack-15x15-Module-1-999mm::999995071.html)?
+
+	
+
+2) Consider this Gear Wheel (https://www.motedis.se/shop/Linjaera-produkter/Gear-rack-Pinions/Gear-Rack-Pignons-Modul-1/Spur-gear-Module-1-12-teeth-with-15mm-width::999995072.html)?
+
+	
+
+3) Consider the Motedis youtube page (https://www.youtube.com/user/Motedis/videos)?
+
+	…
+
+…
+
+Consider to try and design a table saw adjustable miter fence using aluminium profiles and accessories from Motedis?

@@ -1,0 +1,18 @@
+﻿So, as Bittorrent Sync was a bit of a disappointment for sharing C++ projects cross devices, maybe iCloud will work better?
+
+1) Consider this post on setting up and using iCloud to share Git repositories (http://winterbe.com/posts/2014/11/27/setup-icloud-git-repository/)?
+
+	==> Seems we first set up a symlink “iCloud” to easily access the folder from our user folder Document sub-folder?
+
+		==> No - We can use the already defined iCloud folder in the explorer from Xcode?
+		…
+
+…
+
+
+Consider to try out this idiom further to see how it works to sync between devices using iCloud stored Git projects?
+...
+
+
+
+	

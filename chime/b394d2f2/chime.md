@@ -1,0 +1,52 @@
+# Todo: Consider to delve into the Swedish Uppsala Company Altris Sodium Battery Technology?
+
+```#b394d2f2``` *As of 2020-10-13 10:04*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider the information referred to by my friend Pär Moritz in mail "Ny battriteknik Natrium jon"?
+
+> > Begin forwarded message:
+
+> > **From: **Pär Moritz &lt;[par.moritz@getinge.com](mailto:par.moritz@getinge.com)&gt;
+
+> > **Subject: ****Ny battriteknik Natrium jon**
+
+> > **Date: **12 October 2020 at 21:30:55 CEST
+
+> > **To: **"Hogdahl, Kjell olov ([kjell-olov.hogdahl@koh-innovation.se](mailto:kjell-olov.hogdahl@koh-innovation.se))" &lt;[kjell-olov.hogdahl@koh-innovation.se](mailto:kjell-olov.hogdahl@koh-innovation.se)&gt;
+
+> > <https://www.solenerginyheter.se/20200429/1594/uppsalaforskare-bakom-brandsakert-batteri>
+
+> > <http://www.altris.se/>
+
+> > <https://etn.se/index.php/nyheter/67038-altris-vill-byta-litium-mot-natrium-blir-battre-batteri.html>
+
+> > Tja och tack för titten senast.
+
+> > Av en tillfällighet kollade jag på en linkedIn notis då det gällde ett företag Altris baserat i Uppsala hittat ett enklare sätt att syntetisera ett katodmaterial.
+
+> > Deras nyblivne VD har tidigare varit konsult hos oss, Adam Dahlquist, för ca 10 år sedan och jag hade en del med honom att göra.
+
+> > I den sista länken flaggas för att bygga en anläggning inom fyra år med en **kapacitet på12 GWh katodmaterial per år motsvarande 25 procent av Northvolts planerade kapacitet**!?!
+
+> > Hursom lite spännande att de siktar på att utmana Li jon tekniken med något som verkar vara bättre i miljöhänseende mm även energitätheten är lägre.
+
+> > Vill du nörda rejält har de beviljat patent Sverige och på G i US EP och CN, numret nedan hittar du på google patents
+
+> > US20190270649A1 - METHOD OF PRODUCING A SODIUM IRON(II)-HEXACYANOFERRATE(II) MATERIAL
+
+> > Kanske något av intresse för ingenjör HögdahlJ, kollade som hastigast men det är kemi….;-)
+
+2) Consider the Swedish article "Altris vill byta litium mot natrium:
+
+Blir bättre batteri!" (<https://etn.se/index.php/nyheter/67038-altris-vill-byta-litium-mot-natrium-blir-battre-batteri.html> )?
+
+> *"**En ny batterikemi med **katodmaterial** i baserat på **natrium** har potential att ta marknadsandelar av bägge. **Natriumjonbatterier** har bättre energitäthet än blysyra men lite sämre än litiumjon. Det klarar ett betydligt större temperaturområde både vad gäller kyla och hetta. Det kan laddas upp och ur snabbare än litiumjon plus att det inte tar stryk av att laddas ut helt.**"*
+
+> *"**Plus att den enda metallen i **katoden, järn**, finns i överflöd. Det gör att natriumjonbatterier baserat på Altris material blir billigare än litiumjonbatterier samtidigt som man slipper de etiska problem som omgärdar brytningen av bland annat kobolt och litium. Slutligen är de miljövänliga.**"*
+
+...
+
+{% endraw %}

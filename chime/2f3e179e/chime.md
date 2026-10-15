@@ -1,0 +1,88 @@
+# Todo: House Build - Consider to delve into the Hydrogen Energy Storage based portable electric car charging stations for leads into available Hydrogen Energy Storage solutions for my house build?
+
+```#2f3e179e``` *As of 2020-01-11 20:14*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I am currently convinced I will need something like a 1 MWh energy storage to "survive" off-grid here in Sweden during the cold, dark, wind still winter months and Hydrogen Energy Storage is the most feasible way to get me such a long term large energy storage.
+
+1) Consider this is the home of UK Based AFC Energy Storage (<https://www.afcenergy.com> )?
+
+==&gt; Consider to reach out to ADC Energy to get more info on the possibility to use their products in my house hydrogen storage solution (<https://www.afcenergy.com/contact-us/> )?
+
+> ## **Contact Us**
+
+> AFC Energy is based in Surrey, England.
+
+> Unit 71.4 Dunsfold Park
+
+> Stovolds Hill
+
+> Cranleigh
+
+> Surrey
+
+> GU6 8TB
+
+> United Kingdom
+
+
+
+> Tel +441483 276726
+
+> [info@afcenergy.com](mailto:info@afcenergy.com)
+
+
+
+==&gt; They seem to sell the "HydroX-Cell(L)" which is an Alkaline Fule Cell Module housed in a 10 feet IOS container with 20 kW and upward capacity (<https://www.afcenergy.com/products/hydrox-cell_l/> )?
+
+> *"**At the heart of every HydroX-Cell(L)TM is its unique ability to accept lower grade, and therefore lower cost, **hydrogen** fuel. Whether sourced **direct** from industry **or** as a **derivative** of **ammonia****"*
+
+> *"...**all principle mechanical and electrical interconnections are housed within a standardised ISO container**"*
+
+> *"**HydroX-Cell (L20)TM*
+
+> *• **20kWel nameplate**  
+> *  
+> *• Zero greenhouse emissions  
+> *  
+> *• Low noise and odour  
+> *  
+> *• **10’ ISO shipping container footprint**  
+> *  
+> *• Capable of running on direct hydrogen or cracked ammonia  
+> *  
+> *• Supports backup, intermittent or base load power  
+> *  
+> *• Available from December 2019"*
+
+==&gt; They seem to sell an alternative "enhanced" and more power dense product "HydroX-Cell(S)" based on Proton Exchange Membrane (PEM) fuel cell technology (<https://www.afcenergy.com/products/hydrox-cell-s/> )?
+
+> ![](PastedGraphic-21.png)  
+> *The UK Based AFC Energy "HydroX-Cell(S)" based on Proton Exchange Membrane (PEM) fuel cell technology*
+
+> *"...**available from third party suppliers through AFC Energy for integration into the final product solution**"*
+
+> *"**The HydroX-Cell(S)TM is currently undergoing development but is expected to be configured as:*
+
+> *• 10kWel stack for integration into third party applications as a primary or auxiliary power source; and  
+> *  
+> *• A MegaBoxTM configuration with a market leading 2MW of power density set for deployment within a 40’ ISO container for stationary off-grid power demands."*
+
+==&gt; Consider it may be that AFC Energy refers to ISO 668 standard for their 10 feet container housed products?
+
+2) Consider the wikipedia page on "Intermodal Container" (<https://en.wikipedia.org/wiki/Intermodal_container> )?
+
+> *"...**10-foot ISO containers of so-called standard height, which are 8 ft 6 in (2.59 m) tall.**"*
+
+3) Consider the wikipedia article on "ISO 668" ()?
+
+> *"ISO 668 - Series 1 freight containers — Classification, dimensions and ratings is an ISO international standard which classifies intermodal freight shipping containers and standardises their size and weight specifications."*
+
+> ![](PastedGraphic-23.png)  
+> *ISO 668 seems to classify a 10 foot container with designation "1D" and size 2.991 x 2.438 x 2.438 (length x width x heigh) in meters*
+
+...
+
+{% endraw %}

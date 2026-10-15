@@ -1,0 +1,97 @@
+# Todo: Audio Programming - Consider to follow up on existing frameworks for developing audio processing applications?
+
+```#479acc46``` *As of 2017-02-26 14:16*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what initiatives are there out there for developing Audio processing applications?
+
+1) Consider to follow up on the leads in this article ”5 of the Best Platforms to Make Music Software” (<https://ask.audio/articles/5-of-the-best-platforms-to-make-music-software>)?
+
+2) Consider Cycling74 MAX graphical platform (<https://cycling74.com/products/max/#.WLK5tRhPqEI>)?
+
+==&gt; Also see ”Todo: Consider to check out Max graphical programming environment from cycling74 for audio and video modules?”
+
+![](<Patch inside Cycling74 Max Framework.tiff>)
+
+==&gt; The Max family of frameworks seems to have been originally developed by Miller Puckette (<http://musicweb.ucsd.edu/people/people.php?cmd=fm_music_directory_detail&query_Full_Name=+Miller+Puckette&query_Active_Status=Faculty>)?
+
+==&gt; Puckette seems to be behind the Max platform now provided by Cycling74?
+
+> ”*Puckette obtained a B.S. in Mathematics from MIT (1980) and Ph. D. in Mathematics from Harvard (1986). Puckette was a member of MIT's Media Lab from its inception until 1987, and then a researcher at IRCAM (l'Institut de Recherche et de Coordination Musique/Acoustique, founded by composer and conductor Pierre Boulez). There he wrote the Max program for MacIntosh computers, which was first distributed commercially by Opcode Systems in 1990 and is now available from [Cycling74.com](http://cycling74.com) . ”*
+
+> *==&gt; Puckette seems to also be behind the enhanced Max called Max/FTS (still available by Ariel)?*
+
+> *"In 1989 Puckette joined IRCAM's "musical workstation" team and put together an enhanced version of Max, called Max/FTS, for the ISPW system, which was commercialized by Ariel, Inc. This system became a widely used platform in computer music research and production facilities.”*
+
+> *==&gt; jMax Seems to be the Java implementation of Max?*
+
+> *"The IRCAM real-time development team has since reimplemented and extended this software under the name jMax, which is distributed free with source code."*
+
+> *== &gt; Oh my - Puckette seems to be behind Pure Data also?!*
+
+> *"Puckette joined the Music department of the University of California, San Diego in 1994, and is now Associate Director of the Center for Research in Computing and the Arts (CRCA). He is currently working on a new real-time software system for live musical and multimedia performances called Pure Data ("Pd"), in collaboration with many other artists/researchers/programmers worldwide. Pd is free and runs on Linux, IRIX, and Windows systems. Since 1997 Puckette has also been part of the Global Visual Music project with Mark Danks, Rand Steiger, and Vibeke Sorensen, which has been generously supported by a grant from the Intel Research Council.*"
+
+3) Consider ”Pure Data” (Pd) for cross platform audio applications development (<https://puredata.info>)?
+
+==&gt; Pure Data seems to be a branch of the Max framework with video processing extensions?
+
+> ”*Pd is a major branch of the family of patcher programming languages known as Max (Max/FTS, ISPW Max, Max/MSP, jMax, DesireData, etc.), originally developed by Miller Puckette at IRCAM. Pd was created to further the Max paradigm by extending data processing to applications other than audio and MIDI, such as real-time video and web interaction.*"
+
+==&gt; It seems, but I am not user, that Pure Data runs on the JVM (Java Virtual Machine)?
+
+==&gt; At least, you can’t create stand-apline applications with Pure Data framework?
+
+...
+
+4) Consider ”Processing” (<https://processing.org>)?
+
+> ”*Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts. *”
+
+==&gt; Consider this talk ”Welcome to Processing 3” (<https://vimeo.com/140600280>)?
+
+5) Consider the C++ toolkit "Open Frameworks” (<http://openframeworks.cc>)?
+
+==&gt; Open Framework seems to provide raw and pre-built downloads for all the major platforms (<http://openframeworks.cc/download/>)?
+
+==&gt; It seems to provide a lot of Add-ons (<http://ofxaddons.com/categories>)?
+
+==&gt; It seems to be an active community with a fair set of members responsible for development and communication (<http://openframeworks.cc/development/#contributors>)?
+
+==&gt; It seems like a cool toolkit for ”Creative Coding” (<http://openframeworks.cc/about/>)?
+
+> ”*openFrameworks is designed to work as a general purpose glue, and wraps together several commonly used libraries, including:*
+
+> *• OpenGL, GLEW, GLUT, libtess2 and cairo for graphics  
+> *  
+> *• rtAudio, PortAudio, OpenAL and Kiss FFT or FMOD for audio input, output and analysis  
+> *  
+> *• FreeType for fonts  
+> *  
+> *• FreeImage for image saving and loading  
+> *  
+> *• Quicktime, GStreamer and videoInput for video playback and grabbing  
+> *  
+> *• Poco for a variety of utilities  
+> *  
+> *• OpenCV for computer vision  
+> *  
+> *• Assimp for 3D model loading  
+> *
+
+> *The code is written to be massively cross-compatible. Right now we support five operating systems (Windows, OSX, Linux, iOS, Android) and four IDEs (XCode, Code::Blocks, and Visual Studio and Eclipse). The API is designed to be minimal and easy to grasp.*"
+
+==&gt; Published videos seems old (<https://vimeo.com/74124094>)?
+
+==&gt; But the community seems really active (<https://forum.openframeworks.cc>)?
+
+==&gt; Consider the Github home for Open Frameworks (<https://github.com/openframeworks>)?
+
+...
+
+Consider to continue to follow up (and try put) possible frameworks for Audio Processing Applications?
+
+...
+
+{% endraw %}

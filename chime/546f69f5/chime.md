@@ -1,0 +1,142 @@
+# Todo: Programming - Consider to learn about available OCR tools and libraries for C++ "Verification Scanning" applications to use?
+
+```#546f69f5``` *As of 2016-06-27 17:45*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+What OCR libraries or tool API:s are available to build OCR-enabled C++ applications at least on the windows platform (preferably also on iPOS and Android)?
+
+1) Microsoft seem to provide “Microsoft OCR Library for Windows Runtime" (<https://blogs.windows.com/buildingapps/2014/09/18/microsoft-ocr-library-for-windows-runtime/>)?
+
+==&gt; This video talk seem to suggest Microsoft SkyDrive has OCR built in for uploaded photos (<https://channel9.msdn.com/Blogs/DevRadio/Microsoft-DevRadio-Microsoft-OCR-Library-Enabling-Windows-apps-to-Recognize-Text-in-Images>)?
+
+==&gt; 160126, tried it on Windows 10 but found no OCR tool for uploaded photo of a verification.
+
+==&gt; Seems OCR is only available for selected languages (e.g. English and not Swedish) (<https://blog.onedrive.com/photos-on-skydrive-get-smarter-with-bing-powered-ocr-optical-character-recognition/>)?
+
+==&gt; Microsoft OCR Library seem to “live” at nuget (<https://www.nuget.org/packages/Microsoft.Windows.Ocr/>)?
+
+2) For Windows 10 Microsoft seem to have moved (refactored) the OCR engine to Windows.Media.Or namespace of WinRT (<https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.ocr.aspx>)?
+
+==&gt; At least it seems to support excellent recognition of Swedish and English text in images?
+
+“Excellent: Czech, Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Norwegian, Polish, Portuguese, Romanian, Serbian Cyrillic, Serbian Latin, Slovak, Spanish and Swedish."
+
+==&gt; An example for a Windows Runtime Application (runs on both desktop and mobile platform)?
+
+==&gt; Place a text control on the application main page /defined by XAML)
+
+&lt;TextBlock Name="OcrText" Margin="100" /&gt;
+
+==&gt; In the code behind the front page
+
+#include &lt;ppltasks.h&gt;
+
+```
+using namespace Platform;
+using namespace Windows::ApplicationModel;
+using namespace Windows::Foundation;
+using namespace Windows::Globalization;
+using namespace Windows::Graphics::Imaging;
+using namespace Windows::Storage;
+using namespace Windows::Storage::FileProperties;
+using namespace Windows::Storage::Streams;
+using namespace Windows::Media::Ocr;
+using namespace concurrency;
+
+```
+
+==&gt; In the Page Constructor
+
+private:
+
+```
+    OcrEngine^ ocrEngine;
+
+public:
+    MainPage()
+    {
+        InitializeComponent();
+
+        // Init OCR engine with English language.
+        ocrEngine = OcrEngine::TryCreateFromLanguage(ref new ::Language("en"));
+    }
+```
+
+==&gt; “^” should actually be “&” or “\*”?
+
+==&gt; Define “Page Load” event handler OnNavigateTo to read an image file and show the found text in it using the ICR Engine
+
+```
+protected:
+	virtual void OnNavigatedTo(Windows::UI::Xaml::Navigation::NavigationEventArgs^ e) override
+	{
+		// Load image from install folder.
+		create_task(Package::Current->InstalledLocation->GetFileAsync("photo.png")).
+			then([this](StorageFile^ file) -> IAsyncOperation<IRandomAccessStream^>^
+		{
+			return file->OpenAsync(FileAccessMode::Read);
+
+		}).then([this](IRandomAccessStream^ imageStream)-> IAsyncOperation<BitmapDecoder^>^
+		{
+			// Create image decoder.
+			return BitmapDecoder::CreateAsync(imageStream);
+
+		}).then([this](BitmapDecoder^ decoder) -> IAsyncOperation<SoftwareBitmap^>^
+		{
+			// Get pixels in BGRA format
+			return decoder->GetSoftwareBitmapAsync();
+
+		}).then([this](SoftwareBitmap^ bitmap) -> IAsyncOperation<OcrResult^>^
+		{
+			// Extract text from image.
+			return ocrEngine->RecognizeAsync(bitmap);
+
+		}).then([this](OcrResult^ result)
+		{
+                        // Display recognized text.
+                        OcrText->Text = result->Text;
+		});
+	}
+```
+
+3) How can we access the WindowsRT API from RAD Studio?
+
+==&gt; See WinRT-notes in “Todo: Follow up on RAD Studio 10 Seattle seminar notes”
+
+==&gt; Here Embarcadero seem to state they support WinRT API access (<http://community.embarcadero.com/blogs/tags/tag/winrt>)?
+
+“With RAD Studio 10 Seattle, developers can rapidly update their VCL and FMX applications to take full advantage of the Windows 10 wave. Support includes Windows 10 and native WinRT/UWP components and APIs, Windows 10 VCL User Experience controls, and updated Windows 10 FMX support.”
+
+==&gt; This page seem to point to more references about using WinRT in RAD Studio (<http://community.embarcadero.com/blogs/entry/skill-sprint-unlocking-the-windows-runtime-winrt-and-universal-windows-platform-uwp-on-windows-10>)
+
+==&gt; C++ RAD Studio WinRT API package seem to be available as an extension installed through GetIt (<http://docwiki.embarcadero.com/RADStudio/Seattle/en/GetIt_Package_Manager_Window>)?
+
+==&gt; Yes, installed it butwith no apparent effect in the VCL components nor available System Type Libraries, ACtiveX Controls nor -NET assemblies (headers only)?
+
+4) Consider to learn how to use WinRT OCR engine from RAD Studio?
+
+**WE ARE HERE...**
+
+5) Consider to learn how to use WinRT OCR Engine in Visual Studio 2015 app?
+
+**WE ARE HERE...**
+
+4) Consider the C++ library “Tesseract” (<https://github.com/tesseract-ocr/tesseract>)?
+
+==&gt; Seem to be be actively used and has a proven history back to 1985?
+
+==&gt; It seems to be alive with an updated read as of feb 2016 and commits of june 2016 (<https://github.com/tesseract-ocr/tesseract/blob/master/README.md>)?
+
+**WE ARE HERE...**
+
+5) There seem to be several C++ OCR libraries published at GitHub (<https://github.com/search?o=desc&q=C%2B%2B+OCR&s=updated&type=Repositories&utf8=✓>)?
+
+…
+
+Consider to delve deeper into OCR tools and libraries to find one for “Automatic Verification Scanning”?
+
+...
+
+{% endraw %}

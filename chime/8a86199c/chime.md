@@ -1,0 +1,22 @@
+# Todo: Skriv om att vi alla kan rationalisera, till och med njuta, av onda handlingar
+
+```#8a86199c``` *As of 2015-07-29 15:35*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Läser en beskrivning av Jan Guillou där Lauritz son Harald som chef för en insatsstyrka inom SS genomför den första utrensningen av SA-soldater i samband med Hitlers övertagande av regeringsmakten augusti 1934. De massavrättar SA-soldater på ett mycket välorganiserat och, syns det, rationellt sätt.
+
+Jag inser när jag läser detta att det finns krafter i mig som, rätt frammanade, skulle ha kunnat få mig att vara delaktig i att genomföra, kanske till och med leda, dessa avrättningar. Känslan av att göra något omänskligt svårt för en ”god” sak, eller i alla fall nödvändig sak, för kollektivets bästa och beundran är stark och söt. Att rensa bort det smutsiga och orena. Att skapa ordning och möjlighet för en god framtid. Jag, en man i tanken, skulle säkert kunna, pådriven av grupptryck och övertygelse, kanske till och med finna njutning i en spådan handling. Som om det i mig, och därmed troligtvis i många människor, finns ett system som belönar oss och därmed gör det möjligt för oss att trotsa faror och uthärda fysiska ansträngningar när så ”behövs". Vi ser det i spänningslitteratur där hjältar har precis dessa egenskaper. I farans stund, i trots mot lagar och regler, gör de ändå ”det rätta” och som belöning hyllas de som hjältar. Vi ser det i propaganda för krig. Vi ser det också i romantisk litteratur där kärlek och hjältemod hyllas som de högsta av dygder. Men vi är blinda för den svarta baksida dessa drifter bär i sitt sköte. I krig och kärlek är allt tillåtet. I krig och kärlek har de mest onda handlingar utförts. Kanske är just krig och kärlek drivna av de samtidigt både mest konstruktiva men också destruktiva krafter vi människor bär på?
+
+I ljuset av detta kan vi inte förlita oss endast på rationella argument som talar till oss om att godhet ändå är den bästa vägen. Som om detta var en sanning i sig självt. Även om jag ändå tror detta vara sant så behöver vi ändå i ljuset av att hjältens och den älskandes drivkrafter inte i sig själva är en garant för godhet och mänsklig lycka, vara uppmärksamma på hur vi kan tillåta och använda dessa krafter för och i ett gott samhälle. Hur kan vi tämja hjältens och kärlekens krafter att skapa gott?
+
+Det är så lätt att i eftertänksamhetens kranka blekhet fastslå att Nasismen och Fascismen var onda och att dessa ideologiers hjältar per automatik styrdes av onda drivkrafter. Detsamma kan vi så här i efterhand säga om kommunisters avrättningar av oliktänkande och snart sagt alla samhällen där oskyldiga, i onödan och orättvist, blivit kränkta, misshandlade och dödade av den onda makten. Som om handlingarnas ondska speglade att drivkraften också var ond.
+
+Men om vi gör detta så riskerar vi att hamna i fällan igen. Att återigen, för försvar av en idé, en kultur, ett land, våldföra oss på de som inte vill samma sak, inte anses höra till eller bara råkar komma i vägen. För, historien och kunskapen om våra mänskliga drivkrafter, måste ändå leda oss till insikten att vi det enda djur som i mycket stort antal och med totala främlingar kan sammarbeta flexibelt och organiserat kring en idé. Vi måste vara mycket försiktiga att släppa känslor av ära, uppoffring och försvar alltför fria i sammanhang då de inte tjänar samhällets syften.
+
+Vi behöver inse att drivkrafterna i sig är desamma som hos de vi sett trotsa faror i de godas syfte som i det ondas. Om handlingarna har ont eller gott uppsåt, om drivkraften i sig är ond eller god, beror på vad vi anser om idén som motiverar handlingarna eller, i efterhand, om resultatet kan anses vara ont eller gott. En människa som tar till våld kan ses som terrorist eller frihetskämpe. En soldat kan ses som en krigshjälte eller en krigsförbrytare. En nytänkare kan ses som en ledare eller en svikare.
+
+Vi behöver bygga samhället kring en väl förankrad idé som inte triggar dessa krafter till tjänst för försvar och befästning av tidigare rådande idéer och ordningar, i tider då det är samförstånd och utveckling vi behöver. Vi måste därför välja den idé vi tror på med stor omsorg! Hur kan en sådan idé se ut? Hur kan en idé vara stark, tydlig och trovärdig (värdig att älska och strida stolt för) och ändå tillåta utveckling och förändring. Kan vi hitta en idé som både är stark och visionär samtidigt som den inte begränsar och förtrycker?
+
+{% endraw %}

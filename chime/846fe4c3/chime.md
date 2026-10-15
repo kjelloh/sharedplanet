@@ -1,0 +1,737 @@
+# Todo: Darwinet - Consider to have Darwinet use IPFS (Interplanetary File System) as storage of the MIV?
+
+```#846fe4c3``` *As of 2018-04-26 13:13*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems we can learn a lot by trying to use the IPF (Interplanetary File System) open source framework for storing Darwinet domain MIVs?
+
+==&gt; Also see “Todo: Darwinet - Consider to learn about the CRDT LSeq algorithm to P2P synchronise ordered data (text and other sequences)”
+
+==&gt; Also see “Todo: Brew Package Manager - Consider to document and understand what and how the Brew package manager does what it does?” (ifs seems available as a brew package?)
+
+==&gt; Also see “Todo: Darwinet - Consider the work of Christopher Meiklejohn on Declarative, Convergent Edge Computation is in fact a variant of the Darwinet Network?"
+
+1) The IPFS initiative seems to live here ([https://ipfs.io](https://ipfs.io/))?
+
+==&gt; It seems to be a C++ GitHub project for an ipfs client (<https://github.com/vasild/cpp-ipfs-api>)?
+
+2) Consider the wikipedia article on IPFS (<https://en.wikipedia.org/wiki/InterPlanetary_File_System>)?
+
+3) It seems ifs is available as a brew package for OS X?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ brew search ipfs  
+> ipfs  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ brew install ipfs  
+> Updating Homebrew...  
+> ==&gt; **Auto-updated Homebrew!**  
+> Updated 1 tap (homebrew/core).  
+> ==&gt; **New Formulae**  
+> **...**  
+> ==&gt; **Updated Formulae**  
+> ...  
+> ==&gt; **Renamed Formulae**  
+> ...
+
+> ==&gt; **Installing dependencies for ipfs: ****gx****, ****gx-go**  
+> ==&gt; **Installing ipfs dependency: ****gx**  
+> ==&gt; **Downloading <https://homebrew.bintray.com/bottles/gx-0.12.1.high_sierra.bottle.tar.gz>**  
+> ==&gt; **Downloading from <https://akamai.bintray.com/60/60573c959e0877aa25f448910b0600d6788ff8900e89dfc7434f19efa9a2575d?__gda__=exp=1524128120~hmac=2dd847473200112651438aad2a8da701020906406053f8e6d2117d8409ecb201&response-content-disposition=attachment%3Bfilename%3D%22gx-0.12.1.high_sierra.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGV>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Pouring gx-0.12.1.high_sierra.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/gx/0.12.1: 5 files, 9.5MB  
+> ==&gt; **Installing ipfs dependency: ****gx-go**  
+> ==&gt; **Downloading <https://homebrew.bintray.com/bottles/gx-go-1.6.0.high_sierra.bottle.tar.gz>**  
+> ==&gt; **Downloading from <https://akamai.bintray.com/cd/cda1bd1bd255c06339ae3b21d09d1588b359ce2974affb1751fb5c833f560f5d?__gda__=exp=1524128124~hmac=4b93b4d55089682a5a2bb3841aa0a30a23aaea1db84c327c3985cec8eabcb2ca&response-content-disposition=attachment%3Bfilename%3D%22gx-go-1.6.0.high_sierra.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2Fsd>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Pouring gx-go-1.6.0.high_sierra.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/gx-go/1.6.0: 6 files, 10.2MB  
+> ==&gt; **Installing ****ipfs**  
+> ==&gt; **Downloading <https://homebrew.bintray.com/bottles/ipfs-0.4.14.high_sierra.bottle.tar.gz>**  
+> ==&gt; **Downloading from <https://akamai.bintray.com/df/df19f3a4470facb659a08ae6ac3fe5c9ecaf9a8fd7eee23586e326c73a4c7d6f?__gda__=exp=1524128128~hmac=dc58a20217bac4dbf827453a61b9bf1152e45f3277e7416997415b35456493fb&response-content-disposition=attachment%3Bfilename%3D%22ipfs-0.4.14.high_sierra.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2Fsd>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Pouring ipfs-0.4.14.high_sierra.bottle.tar.gz**  
+> ==&gt; **Caveats**  
+> To have launchd start ipfs now and restart at login:  
+> brew services start ipfs  
+> Or, if you don't want/need a background service you can just run:  
+> ipfs daemon  
+> ==&gt; **Summary**  
+> 🍺 /usr/local/Cellar/ipfs/0.4.14: 4 files, 29.7MB  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+4) Consider to try out the “tutorial” provided in this ipfs showcase video (<https://youtu.be/8CMxDNuuAiQ>)?
+
+![](<Screen Shot 2018-04-19 at 10.59.34.png>)
+
+==&gt; It seems the brew install actually gave us the ipfs installed and ready to use?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **ipfs**  
+> USAGE  
+> ipfs - Global p2p merkle-dag filesystem.
+
+> ipfs &#91;--config=&lt;config&gt; | -c&#93; &#91;--debug=&lt;debug&gt; | -D&#93; &#91;--help=&lt;help&gt;&#93; &#91;-h=&lt;h&gt;&#93; &#91;--local=&lt;local&gt; | -L&#93; &#91;--api=&lt;api&gt;&#93; &lt;command&gt; ...
+
+> SUBCOMMANDS  
+> BASIC COMMANDS  
+> init Initialize ipfs local configuration  
+> add &lt;path&gt; Add a file to IPFS  
+> cat &lt;ref&gt; Show IPFS object data  
+> get &lt;ref&gt; Download IPFS objects  
+> ls &lt;ref&gt; List links from an object  
+> refs &lt;ref&gt; List hashes of links from an object
+
+> DATA STRUCTURE COMMANDS  
+> block Interact with raw blocks in the datastore  
+> object Interact with raw dag nodes  
+> files Interact with objects as if they were a unix filesystem  
+> dag Interact with IPLD documents (experimental)
+
+> ADVANCED COMMANDS  
+> daemon Start a long-running daemon process  
+> mount Mount an IPFS read-only mountpoint  
+> resolve Resolve any type of name  
+> name Publish and resolve IPNS names  
+> key Create and list IPNS name keypairs  
+> dns Resolve DNS links  
+> pin Pin objects to local storage  
+> repo Manipulate the IPFS repository  
+> stats Various operational stats  
+> p2p Libp2p stream mounting  
+> filestore Manage the filestore (experimental)
+
+> NETWORK COMMANDS  
+> id Show info about IPFS peers  
+> bootstrap Add or remove bootstrap peers  
+> swarm Manage connections to the p2p network  
+> dht Query the DHT for values or peers  
+> ping Measure the latency of a connection  
+> diag Print diagnostics
+
+> TOOL COMMANDS  
+> config Manage configuration  
+> version Show ipfs version information  
+> update Download and apply go-ipfs updates  
+> commands List all available commands
+
+> Use 'ipfs &lt;command&gt; --help' to learn more about each command.
+
+> ipfs uses a repository in the local file system. By default, the repo is  
+> located at ~/.ipfs. To change the repo location, set the $IPFS_PATH  
+> environment variable:
+
+> export IPFS_PATH=/path/to/ipfsrepo
+
+> EXIT STATUS
+
+> The CLI will exit with one of the following values:
+
+> 0 Successful execution.  
+> 1 Failed executions.
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+==&gt; The init command seems to give me a local node id (a hash value)?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **ipfs init**  
+> initializing IPFS node at /Users/kjell-olovhogdahl/.ipfs  
+> generating 2048-bit RSA keypair...done  
+> peer identity: **QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB**  
+> to get started, enter:
+
+> ipfs **cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme**
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+==&gt; It seems my local node gets populated with a set of files with content to help me get started?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **ipfs cat** /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme  
+> Hello and Welcome to IPFS!
+
+> ██╗██████╗ ███████╗███████╗  
+> ██║██╔══██╗██╔════╝██╔════╝  
+> ██║██████╔╝█████╗ ███████╗  
+> ██║██╔═══╝ ██╔══╝ ╚════██║  
+> ██║██║ ██║ ███████║  
+> ╚═╝╚═╝ ╚═╝ ╚══════╝
+
+> If you're seeing this, you have successfully installed  
+> IPFS and are now interfacing with the ipfs merkledag!
+
+> -------------------------------------------------------  
+> | Warning: |  
+> | This is alpha software. Use at your own discretion! |  
+> | Much is missing or lacking polish. There are bugs. |  
+> | Not yet secure. Read the security notes for more. |  
+> -------------------------------------------------------
+
+> Check out some of the other files in this directory:
+
+> **./about**  
+> **./help**  
+> **./quick-start** &lt;-- usage examples  
+> **./readme** &lt;-- this file  
+> **./security-notes**  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+==&gt; The sick-start document seems to hold a lot of good-to-know commands?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **ipfs cat** /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/**quick-start**  
+> # 0.1 - Quick Start
+
+> This is a set of short examples with minimal explanation. It is meant as  
+> a "quick start".
+
+> Add a file to ipfs:
+
+> echo "hello world" &gt;hello  
+> ipfs add hello
+
+> View it:
+
+> ipfs cat &lt;the-hash-you-got-here&gt;
+
+> Try a directory:
+
+> mkdir foo  
+> mkdir foo/bar  
+> echo "baz" &gt; foo/baz  
+> echo "baz" &gt; foo/bar/baz  
+> ipfs add -r foo
+
+> View things:
+
+> ipfs ls &lt;the-hash-here&gt;  
+> ipfs ls &lt;the-hash-here&gt;/bar  
+> ipfs cat &lt;the-hash-here&gt;/baz  
+> ipfs cat &lt;the-hash-here&gt;/bar/baz  
+> ipfs cat &lt;the-hash-here&gt;/bar  
+> ipfs ls &lt;the-hash-here&gt;/baz
+
+> References:
+
+> ipfs refs &lt;the-hash-here&gt;  
+> ipfs refs -r &lt;the-hash-here&gt;  
+> ipfs refs --help
+
+> Get:
+
+> ipfs get &lt;the-hash-here&gt; -o foo2  
+> diff foo foo2
+
+> Objects:
+
+> ipfs object get &lt;the-hash-here&gt;  
+> ipfs object get &lt;the-hash-here&gt;/foo2  
+> ipfs object --help
+
+> Pin + GC:
+
+> ipfs pin add &lt;the-hash-here&gt;  
+> ipfs repo gc  
+> ipfs ls &lt;the-hash-here&gt;  
+> ipfs pin rm &lt;the-hash-here&gt;  
+> ipfs repo gc
+
+> Daemon:
+
+> ipfs daemon (in another terminal)  
+> ipfs id
+
+> Network:
+
+> (must be online)  
+> ipfs swarm peers  
+> ipfs id  
+> ipfs cat &lt;hash-of-remote-object&gt;
+
+> Mount:
+
+> (warning: fuse is finicky!)  
+> ipfs mount  
+> cd /ipfs/&lt;the-hash-here&gt;  
+> ls
+
+> Tool:
+
+> ipfs version  
+> ipfs update  
+> ipfs commands  
+> ipfs config --help  
+> open <http://localhost:5001/webui>
+
+> Browse:
+
+> webui:
+
+> <http://localhost:5001/webui>
+
+> video:
+
+> <http://localhost:8080/ipfs/QmVc6zuAneKJzicnJpfrqCH9gSy6bz54JhcypfJYhGUFQu/play#/ipfs/QmTKZgRNwDNZwHtJSjCp6r5FYefzpULfy37JvMt9DwvXse>
+
+> images:
+
+> <http://localhost:8080/ipfs/QmZpc3HvfjEXvLWGQPWbHk3AjD5j8NEN4gmFN8Jmrd5g83/cs>
+
+> markdown renderer app:
+
+> <http://localhost:8080/ipfs/QmX7M9CiYXjVeFnkfVGf3y5ixTZ2ACeSGyL1vBJY1HvQPp/mdown>  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+==&gt; It seems I was able to add a simple Xcode project to my local ipfs node file system?
+
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$ pwd  
+> **/Users/kjell-olovhogdahl/Resilio Sync/XCode/MyFirstCppConsoleApp**  
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$ tree  
+> .  
+> └── MyFirstCppConsoleApp  
+> ├── MyFirstCppConsoleApp  
+> │ ├── MyFirstCppConsoleApp.1  
+> │ ├── a.out  
+> │ ├── clang-cpp.txt  
+> │ ├── main.cpp  
+> │ └── xcode-cpp.txt  
+> └── MyFirstCppConsoleApp.xcodeproj  
+> ├── project.pbxproj  
+> ├── project.xcworkspace  
+> │ ├── contents.xcworkspacedata  
+> │ └── xcuserdata  
+> │ └── kjell-olov.xcuserdatad  
+> │ └── UserInterfaceState.xcuserstate  
+> └── xcuserdata  
+> └── kjell-olov.xcuserdatad  
+> └── xcschemes  
+> ├── MyFirstCppConsoleApp.xcscheme  
+> └── xcschememanagement.plist
+
+> 9 directories, 10 files  
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$ ipfs add -r .  
+> added QmcoGHEbGqUwDCYNf3NB1KyVp8mH3RGpNUu9fNHGKhmwbR MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.1  
+> added QmSso7xgzRx4C8i4FnVJPquG4VuayG77jeN2ZQtPrGWBod MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp/a.out  
+> added QmcwsyGtfQcYTyd1H5d2DvL42EUe5Gh1Lb7s3kZbWv6T8x MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp/clang-cpp.txt  
+> added QmWWJNnMGhKuu8htC4W8vQsQzvsQ2AeNdqiXjdUUdYZTAs MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp/main.cpp  
+> added QmehLLHgSQ3JBmN2pGoJrWjEaUEfGZwqX99xTkcm7v3HcH MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp/xcode-cpp.txt  
+> added QmPy4dofe2XkMczPbx6m4S1cwpoS1yv4jxqWtMXHhLJDVq MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/project.pbxproj  
+> added Qmc3qWQJedq2H1PZRXyoaMKegc3PQd7ZL4UqiUAT3L1zdY MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/project.xcworkspace/contents.xcworkspacedata  
+> added QmZmC5Yiid1nuh3GP8GoDrpqm9baiKWs3JhnQwZc8R4qNA MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/project.xcworkspace/xcuserdata/kjell-olov.xcuserdatad/UserInterfaceState.xcuserstate  
+> added QmQMnpPsf36RCUNKBuLEKXvFUEtbYkrdkENp441ugndq1D MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/xcuserdata/kjell-olov.xcuserdatad/xcschemes/MyFirstCppConsoleApp.xcscheme  
+> added QmTEv76wntPGEYcp7h7btyEBYLmHYxQ9WWtwrq2CiPBUcu MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/xcuserdata/kjell-olov.xcuserdatad/xcschemes/xcschememanagement.plist  
+> added QmYg8XssRvRhcURcpKJcPaPYCJtvDXFmPxP1NzeJVj5tSc MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp  
+> added QmPEeuzpRVSZcanf5xYhQbFNoCipYR4Jc4k7LLYjWDYwyq MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/project.xcworkspace/xcuserdata/kjell-olov.xcuserdatad  
+> added QmVKyTCf81VcHmctURir6xLUNq9wdr5TtYwik22teUEPZg MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/project.xcworkspace/xcuserdata  
+> added QmTUvZzqUPw8wSEB9GNq1BpE2DgCJi2zioYhfv257J6Fo7 MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/project.xcworkspace  
+> added QmYsk83WfjCTe46borJsCimezA9KnRyC9i62k9DFx6zfdE MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/xcuserdata/kjell-olov.xcuserdatad/xcschemes  
+> added QmbHcgVEWDeK9Pe8jJ4PEQLFzmjiJKTCWu5YVJy74psTEx MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/xcuserdata/kjell-olov.xcuserdatad  
+> added QmPrWJ44SunPLDbu2mBdEmAVspa323PVMEhwcVYu8SoCGs MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj/xcuserdata  
+> added QmNRYh27t9fzsqKN7rRZHwVVKvr5NfLo7KVXWg4uNAH7Fj MyFirstCppConsoleApp/MyFirstCppConsoleApp/MyFirstCppConsoleApp.xcodeproj  
+> **added QmZGkdkDgUwPnyfNiQjiWVfG73z7hwfDfCrYAZy6CV9ST2 MyFirstCppConsoleApp/MyFirstCppConsoleApp**  
+> **added QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi MyFirstCppConsoleApp**  
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$
+
+==&gt; NOTE: It seems ipfs operates bottom up (it adds the child nodes before adding the parent directories)?
+
+==&gt; According to the ipfs video - two files with the **same content** will get the **same hash value** (file IDs thus are **name agnostic**)?
+
+==&gt; It seems ipfs operates on file IDs (hashes) only (it knows not about file paths)?
+
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$ **ipfs ls** QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi  
+> **QmZGkdkDgUwPnyfNiQjiWVfG73z7hwfDfCrYAZy6CV9ST2** 2521774 **MyFirstCppConsoleApp/**  
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$ **ipfs ls** QmZGkdkDgUwPnyfNiQjiWVfG73z7hwfDfCrYAZy6CV9ST2  
+> **QmYg8XssRvRhcURcpKJcPaPYCJtvDXFmPxP1NzeJVj5tSc** 2498512 MyFirstCppConsoleApp/  
+> QmNRYh27t9fzsqKN7rRZHwVVKvr5NfLo7KVXWg4uNAH7Fj 23119 MyFirstCppConsoleApp.xcodeproj/  
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$ **ipfs ls MyFirstCppConsoleApp/MyFirstCppConsoleApp**  
+> **Error**: invalid 'ipfs ref' path  
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$
+
+==&gt; It seems we can “cat out” file content from the ipfs file system?
+
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$ **ipfs cat** QmWWJNnMGhKuu8htC4W8vQsQzvsQ2AeNdqiXjdUUdYZTAs  
+> //  
+> // **main.cpp**  
+> // MyFirstCppConsoleApp  
+> //  
+> // Created by Kjell-Olov Högdahl on 2013-08-12.  
+> // Copyright (c) 2013 Kjell-Olov Högdahl. All rights reserved.  
+> //
+
+> #include &lt;iostream&gt;  
+> #include &lt;algorithm&gt;
+
+> int main(int argc, const char \* argv&#91;&#93;)  
+> {
+
+> // insert code here...  
+> std::cout &lt;&lt; "Hello, World!\\n";  
+> return 0;  
+> }
+
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$
+
+==&gt; It seems we have to start the ipfs daemon to go “online” (connect to the interplanetary ipfs file system)?
+
+> Kjell-Olovs-MacBook-Pro-2014:MyFirstCppConsoleApp kjell-olovhogdahl$ **ipfs daemon**  
+> Initializing daemon...  
+> Successfully raised file descriptor limit to 2048.  
+> Swarm listening on /ip4/10.0.1.2/tcp/4001  
+> Swarm listening on /ip4/10.211.55.2/tcp/4001  
+> Swarm listening on /ip4/10.37.129.2/tcp/4001  
+> Swarm listening on /ip4/127.0.0.1/tcp/4001  
+> Swarm listening on /ip6/::1/tcp/4001  
+> Swarm listening on /p2p-circuit/ipfs/QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB  
+> Swarm announcing /ip4/10.0.1.2/tcp/4001  
+> Swarm announcing /ip4/10.211.55.2/tcp/4001  
+> Swarm announcing /ip4/10.37.129.2/tcp/4001  
+> Swarm announcing /ip4/127.0.0.1/tcp/4001  
+> Swarm announcing /ip4/83.249.39.129/tcp/60864  
+> Swarm announcing /ip6/::1/tcp/4001  
+> API server listening on /ip4/127.0.0.1/tcp/5001  
+> Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8080  
+> Daemon is ready
+
+==&gt; TODO: Figure out how to split screen and open a new shell now when this one is stuck running the daemon?
+
+==&gt; It seems we can now query our local node ID on the P2P network?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **ipfs id**  
+> {  
+> "ID": "**QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB**",  
+> "**PublicKey**": "CAASpgIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDA9Oz4NXFa4+LIZtxzLbSpzbgyeN8xTb4veStbZc84cSiFgiZ7aTR34eJ8ahMgosoVJs3Kdd6v+US9MZlk1EiLC+ye72nRqpgRPIYGm4pDpMfURDqacMh8xhR56+h66gqmm9Bk4/i6iFKrxA5nY/kcLquYj4EZReAVf7iPX/4jLwWIpBRJWMAxPdTl1nsbxjcTbesk7avN8/pdgWiDLvf+PmT7MCKwzEYOtFHu1gAkXZvoXAtwLNI+oOPY8f3NS1BayB5xsqlsyWs+5yqr4fCp6uymDPeXZ2r7Of1MlW/LodKFJTQAAx3ZMvWTS4qMXqv2mJAYMtpBc/KzKjGn0zvvAgMBAAE=",  
+> "**Addresses**": &#91;  
+> "/**ip4/127.0.0.1/tcp/4001**/ipfs/QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB",  
+> "**/ip4/10.0.1.2/tcp/4001**/ipfs/QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB",  
+> "/**ip4/10.211.55.2/tcp/4001**/ipfs/QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB",  
+> "/**ip4/10.37.129.2/tcp/4001**/ipfs/QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB",  
+> "/**ip6/::1/tcp/4001**/ipfs/QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB",  
+> "/**ip4/83.249.39.129/tcp/60864**/ipfs/QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB",  
+> "/**ip4/83.249.39.129/tcp/60864**/ipfs/QmVs1R3LuEaF9ZAhmncVMB9LqYQxDa94FUeXeiNVjW76wB"  
+> &#93;,  
+> "AgentVersion": "go-ipfs/0.4.14/5db3846",  
+> "ProtocolVersion": "ipfs/0.1.0"  
+> }  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+==&gt; It seems we publish our node ID on multiple tcp sockets (both on ipv4 and ipv6)?
+
+==&gt; And we can query what other peers we are currently connected to?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **ipfs swarm peers**  
+> /ip4/1.196.145.104/tcp/19111/ipfs/**QmXSWR5D4aMCRARAcRWw2mmuZSQZoCkXHQwPD3G52C9Zve**  
+> /ip4/100.6.72.99/tcp/4001/ipfs/QmYPmS2ytnfgofMY8VdrbULwdVqKmhJAutkgmD41rW3R84  
+> /ip4/101.132.171.39/tcp/4001/ipfs/QmNqQ6GhYg9fuYvkyP35ksf49GHpS2a1EsQcc4RfCpCnMj  
+> /ip4/101.236.26.121/tcp/4001/ipfs/QmeTvUR4xbztoCmiZPgfgffyRvTgJ5N66y5UjcneGkaLpg  
+> /ip4/103.194.43.45/tcp/60993/ipfs/QmWRUNYGed7cwCF7jLkHSEpYfgaSrj2NtigUTDbQmpTfir  
+> /ip4/103.205.97.78/tcp/40896/ipfs/QmPGpZzdvttgD7qMWBjGbB2QFiJ6kn4E1JNb6QwhRiDomD  
+> /ip4/103.214.62.229/tcp/35773/ipfs/QmaCnCEjrDsAuTVVjybZjANjneshBFSBxGxrdFb68dUAQj  
+> /ip4/103.219.192.23/tcp/4001/ipfs/QmQSLF1hG1kz4whKkoLrQnAGEuLC43ng1XVdPZMfgPe4qR  
+> /ip4/103.7.249.66/tcp/4001/ipfs/QmeUA9RtfQKxYjQr7AExyDzyrHiruFo2t26YT41C8frena  
+> /ip4/103.97.60.33/tcp/2749/ipfs/QmdrLRP4AdBMRLRKLJ5GCtkcRC474hdrw4Jc2iZhwHHeMw  
+> /ip4/104.131.10.96/tcp/4001/ipfs/QmQQVXUUTrNxWv2bbCvV7R34H3qwKuj6Hyv8U8TDzq3ZZb  
+> ...
+
+==&gt;  **Note: I got a very long (at least two full screens) if Peers :)**
+
+==&gt; We may now query any of the connected peers with the id-command and the peer id hash?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **ipfs id QmXSWR5D4aMCRARAcRWw2mmuZSQZoCkXHQwPD3G52C9Zve**  
+> {  
+> "ID": "**QmXSWR5D4aMCRARAcRWw2mmuZSQZoCkXHQwPD3G52C9Zve**",  
+> "PublicKey": "CAASpgIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDk2FcdK2D4I7S7pb+qXJv8XKqFY6fdK8QmpZk/ipmFr6/B1wbrNAmRXfbtcXP+CgO+c6cx2vqMttci0opqhVcJemxcSIhlO5r4jJ+V8aBMxZ4+sMtTmRpAvgAG8IDNAXTZt0k0gRKE7JykniVsnLFPguF3ug5BiaAQB0BjhfU5aCfGQRNs2bWts9Dgu2on63fttbHu2crwHkQZUfi56fx2x6pHrx3ibdGxHjASPUk4PrMUjdK6J1EPkncw44fXluwT7oEwtpbgaAOQ9T18aMil+qT3JAikCMdWgqjvMbhtwt0vK7hoTdAj21YdXtv+AUrMFKO+x3FKXaE8Tx+MKdGLAgMBAAE=",  
+> "Addresses": &#91;  
+> "/ip4/1.196.145.232/tcp/13848",  
+> "/ip4/1.196.147.219/tcp/7927",  
+> "/ip4/1.196.146.232/tcp/11896",  
+> "/ip4/1.196.146.24/tcp/19044",  
+> "/ip4/1.196.146.46/tcp/6725",  
+> "/ip4/1.196.145.106/tcp/2802",  
+> "/ip4/1.196.146.108/tcp/21812",  
+> "/ip4/1.196.145.170/tcp/12084",  
+> "/ip4/1.196.147.195/tcp/4714",  
+> "/ip4/1.196.146.8/tcp/11965",  
+> "/ip4/1.196.144.30/tcp/6559",  
+> "/ip4/1.196.147.78/tcp/21857",  
+> "/ip4/1.196.146.202/tcp/8993",  
+> "/ip4/7.7.7.7/tcp/4001",  
+> "/ip4/1.196.146.122/tcp/12083",  
+> "/ip4/1.196.145.35/tcp/14651",  
+> "/ip4/1.1.1.1/tcp/4001",  
+> "/ip4/1.196.144.253/tcp/6570",  
+> "/ip4/1.196.146.95/tcp/8013",  
+> "/ip4/1.196.147.245/tcp/7371",  
+> "/ip4/1.196.146.113/tcp/1073",  
+> "/ip4/1.196.147.201/tcp/20118",  
+> "/ip4/1.196.147.94/tcp/13444",  
+> "/ip4/1.196.146.134/tcp/4027",  
+> "/ip4/1.196.145.105/tcp/2130",  
+> "/ip4/1.196.146.9/tcp/19856",  
+> "/ip4/9.9.9.9/tcp/4001",  
+> "/ip4/1.196.145.10/tcp/13109",  
+> "/ip4/1.196.145.104/tcp/19111",  
+> "/ip4/1.196.146.171/tcp/4576",  
+> "/ip4/8.8.8.8/tcp/4001",  
+> "/ip4/1.196.144.95/tcp/12554",  
+> "/ip4/1.196.147.141/tcp/2548",  
+> "/ip4/3.3.3.3/tcp/4001",  
+> "/ip4/1.196.145.115/tcp/7311",  
+> "/ip4/1.196.144.51/tcp/10398",  
+> "/ip4/172.16.20.254/tcp/4001",  
+> "/ip4/2.2.2.2/tcp/4001",  
+> "/ip4/1.196.145.48/tcp/14258",  
+> "/ip4/1.196.144.202/tcp/10953",  
+> "/ip4/10.8.8.200/tcp/4001",  
+> "/ip4/1.196.147.219/tcp/21063",  
+> "/ip4/1.196.144.87/tcp/7433",  
+> "/ip4/1.196.146.82/tcp/14109",  
+> "/ip4/127.0.0.1/tcp/4001",  
+> "/ip4/6.6.6.6/tcp/4001"  
+> &#93;,  
+> "AgentVersion": "go-ipfs/0.4.14-dev/0f68fcf",  
+> "ProtocolVersion": "ipfs/0.1.0"  
+> }  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+==&gt; It seems we may connect a web-browser to our local ipfs daemon and open files based on their hash ID?
+
+![](<Screen Shot 2018-04-19 at 12.15.12.png>)
+
+==&gt; Note: The file main.cpp has the hash-value provided in the web-url
+
+==&gt; WOW! We may also access the file through URL [gateway.ipfs.io](http://gateway.ipfs.io/) and priovide the file id!
+
+![](<Screen Shot 2018-04-19 at 12.56.08.png>)
+
+==&gt; WOW! The ipfs gateway is even able to provide a file directly view of the files I added to my ipfs node!
+
+![](<Screen Shot 2018-04-19 at 12.58.43.png>)
+
+==&gt; It seems we can also mount the ipfs file system to a local directory structure?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **ipfs mount**  
+> **Error**: unable to check fuse version.
+
+> Dear User,
+
+> Before mounting, we must check your version of OSXFUSE. We are **protecting**  
+> **you** from a **nasty kernel panic** we found in OSXFUSE versions &lt;2.7.2.&#91;1&#93;. To  
+> make matters worse, it's harder than it should be to check whether you have  
+> the right version installed...&#91;2&#93;. We've automated the process with the  
+> help of a little tool. We tried to install it, but something went wrong&#91;3&#93;.  
+> Please install it yourself by running:
+
+> go get [github.com/jbenet/go-fuse-version/fuse-version](http://github.com/jbenet/go-fuse-version/fuse-version)
+
+> You can also stop ipfs from running these checks and use whatever OSXFUSE  
+> version you have by running:
+
+> ipfs config DontCheckOSXFUSE true
+
+> &#91;1&#93;: <https://github.com/ipfs/go-ipfs/issues/177>  
+> &#91;2&#93;: <https://github.com/ipfs/go-ipfs/pull/533>  
+> &#91;3&#93;: exec: "go": executable file not found in $PATH
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+==&gt; It seems I needed go (And I did not) to check the version of my ipfs node OSXFUSE (whatever that is)?
+
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **go get** [github.com/jbenet/go-fuse-version/fuse-version](http://github.com/jbenet/go-fuse-version/fuse-version)  
+> -bash: go: **command not found**  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **brew install go**  
+> Updating Homebrew...  
+> ==&gt; **Auto-updated Homebrew!**  
+> Updated 1 tap (homebrew/core).  
+> ==&gt; **Updated Formulae**  
+> diff-pdf freetds pdftoedn pdftoipe poppler
+
+> ==&gt; **Downloading <https://homebrew.bintray.com/bottles/go-1.10.1.high_sierra.bottle.tar.gz>**  
+> ==&gt; **Downloading from <https://akamai.bintray.com/03/034fd91bd565cb6a1c9aa863949fd1456c97f380df0e194156c0eb258bb8fc09?__gda__=exp=1524138036~hmac=b18ce800fbd6a3cde9b8f1a26722f00e551623103fec3c0d0af59a24712840f6&response-content-disposition=attachment%3Bfilename%3D%22go-1.10.1.high_sierra.bottle.tar.gz%22&response-content-type=application%2Fgzip&requestInfo=U2FsdGV>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Pouring go-1.10.1.high_sierra.bottle.tar.gz**  
+> ==&gt; **Caveats**  
+> A valid GOPATH is required to use the \`go get\` command.  
+> If $GOPATH is not specified, $HOME/go will be used by default:  
+> <https://golang.org/doc/code.html#GOPATH>
+
+> You may wish to add the GOROOT-based install location to your PATH:  
+> export PATH=$PATH:/usr/local/opt/go/libexec/bin  
+> ==&gt; **Summary**  
+> 🍺 /usr/local/Cellar/go/1.10.1: 8,158 files, 336.7MB  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+==&gt; It seems OSXFuse is an open source file system integration for OS X and a successor to MacFuse ([https://osxfuse.github.io](https://osxfuse.github.io/))?
+
+==&gt; It seems to install the OSXFuse using the installer one has to allow apps developed by “” to install?
+
+![](<Screen Shot 2018-04-19 at 13.40.27.png>)
+
+![](<Screen Shot 2018-04-19 at 13.40.50.png>)
+
+![](<Screen Shot 2018-04-19 at 13.45.20.png>)
+
+==&gt; I could not get ipfs mount to correctly check osxfuse version - so I chekcked it manually in OS X High Sierra settings
+
+![](<Screen Shot 2018-04-19 at 13.58.22.png>)
+
+==&gt; Then I disabled the ipfs client try to check the osxfusion version (trusting it will use the 3.7.1 version)
+
+==&gt; I finally got it to work by ensuring the /ipfs and /ipns directories exists and have the required ownership set.
+
+==&gt; Note: I suppose I should not need to do this if I mounted ipfs in my user document folder?
+
+> > Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ **ipfs config DontCheckOSXFUSE true**  
+> > Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ ipfs mount  
+> > Error: mount_osxfusefs: exit status 64  
+> > Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ cd /  
+> > Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ pwd  
+> > /  
+> > Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ **sudo mkdir ipfs**  
+> > Password:  
+> > Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ ipfs mount  
+> > Error: mount_osxfusefs: **exit status 71**  
+> > Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ **sudo mkdir ipns**  
+> > Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ ipfs mount  
+> > Error: mount_osxfusefs: **exit status 71**  
+> > Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ ipfs mount --**help**  
+> > USAGE  
+> > ipfs mount - Mounts IPFS to the filesystem (read-only).
+
+> > SYNOPSIS  
+> > ipfs mount &#91;--ipfs-path=&lt;ipfs-path&gt; | -f&#93; &#91;--ipns-path=&lt;ipns-path&gt; | -n&#93;
+
+> > OPTIONS
+
+> > -f, --ipfs-path string - The path where IPFS should be mounted.  
+> > -n, --ipns-path string - The path where IPNS should be mounted.
+
+> > DESCRIPTION
+
+> > Mount IPFS at a read-only mountpoint on the OS. The default, /ipfs and /ipns,  
+> > are set in the configuration file, but can be overriden by the options.  
+> > All IPFS objects will be accessible under this directory. Note that the  
+> > root will not be listable, as it is virtual. Access known paths directly.
+
+> > You may have to create /ipfs and /ipns before using 'ipfs mount':
+
+> > **&gt; sudo mkdir /ipfs /ipns**  
+> > **&gt; sudo chown \`whoami\` /ipfs /ipns**  
+> > &gt; ipfs daemon &  
+> > &gt; ipfs mount
+
+> > Example:
+
+> > # setup  
+> > &gt; mkdir foo  
+> > &gt; echo "baz" &gt; foo/bar  
+> > &gt; ipfs add -r foo  
+> > added QmWLdkp93sNxGRjnFHPaYg8tCQ35NBY3XPn6KiETd3Z4WR foo/bar  
+> > added QmSh5e7S6fdcu75LAbXNZAFY2nGyZUJXyLCJDvn2zRkWyC foo  
+> > &gt; ipfs ls QmSh5e7S6fdcu75LAbXNZAFY2nGyZUJXyLCJDvn2zRkWyC  
+> > QmWLdkp93sNxGRjnFHPaYg8tCQ35NBY3XPn6KiETd3Z4WR 12 bar  
+> > &gt; ipfs cat QmWLdkp93sNxGRjnFHPaYg8tCQ35NBY3XPn6KiETd3Z4WR  
+> > baz
+
+> > # mount  
+> > &gt; ipfs daemon &  
+> > &gt; ipfs mount  
+> > IPFS mounted at: /ipfs  
+> > IPNS mounted at: /ipns  
+> > &gt; cd /ipfs/QmSh5e7S6fdcu75LAbXNZAFY2nGyZUJXyLCJDvn2zRkWyC  
+> > &gt; ls  
+> > bar  
+> > &gt; cat bar  
+> > baz  
+> > &gt; cat /ipfs/QmSh5e7S6fdcu75LAbXNZAFY2nGyZUJXyLCJDvn2zRkWyC/bar  
+> > baz  
+> > &gt; cat /ipfs/QmWLdkp93sNxGRjnFHPaYg8tCQ35NBY3XPn6KiETd3Z4WR  
+> > baz
+
+> > Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ **sudo chown \`whoami\` /ipfs /ipns**  
+> > Password:  
+> > Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ **ipfs mount**  
+> > **IPFS mounted at: /ipfs**  
+> > **IPNS mounted at: /ipns**  
+> > Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$
+
+==&gt; It seems I now succeeded to add a 2 GB file to my ipfs node?
+
+> Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ cd ~  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ pwd  
+> /Users/kjell-olovhogdahl  
+> Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ cd Resilio\\ Sync/  
+> Kjell-Olovs-MacBook-Pro-2014:Resilio Sync kjell-olovhogdahl$ ls  
+> 1 To_Attend 3 To_Archive Dropbox ScreenFlow Tonsillerna_DropBox_Copy XCode  
+> 2 To_Print CLion KeyNote SketchUp VisualStudio c++-meetup  
+> Kjell-Olovs-MacBook-Pro-2014:Resilio Sync kjell-olovhogdahl$ cd c++-meetup/  
+> Kjell-Olovs-MacBook-Pro-2014:c++-meetup kjell-olovhogdahl$ ls  
+> Icon? distributed meetup 0x02 (Berlin, London, Stockholm) paultestar stockholm c++ 0x0a  
+> Sweden C++ Video Editing Material guide.txt stockholm c++ 0x09.rslsc  
+> Kjell-Olovs-MacBook-Pro-2014:c++-meetup kjell-olovhogdahl$ cd distributed\\ meetup\\ 0x02\\ \\(Berlin\\,\\ London\\,\\ Stockholm\\)/  
+> Kjell-Olovs-MacBook-Pro-2014:distributed meetup 0x02 (Berlin, London, Stockholm) kjell-olovhogdahl$ ls  
+> Haralds Video and Audio Ljudinspelning 2018-03-28 18-59-40.aac pauls_video  
+> Kings Video and Audio Sweden C++ DIstributed Event 0x02 - Podium iPhone &#91;Stockholm Talks&#93;.m4a screen-recording-spaseship+flags.mov  
+> Kjell-Olovs-MacBook-Pro-2014:distributed meetup 0x02 (Berlin, London, Stockholm) kjell-olovhogdahl$ cd pauls_video/  
+> Kjell-Olovs-MacBook-Pro-2014:pauls_video kjell-olovhogdahl$ ls  
+> 00000.MTS 00001.MTS 00002.MTS  
+> Kjell-Olovs-MacBook-Pro-2014:pauls_video kjell-olovhogdahl$ **ipfs add 00000.MTS **  
+> added **QmfHbQ1D3kbuFJMZmbz8e7hYibkfs5mseYAv4FqN7WkK9F** 00000.MTS  
+> Kjell-Olovs-MacBook-Pro-2014:pauls_video kjell-olovhogdahl$
+
+==&gt; Note: I added this file to the ipfs “root” which has NO local representation (only added folders can be ls’ed to in ipfs mount)?
+
+> Kjell-Olovs-MacBook-Pro-2014:pauls_video kjell-olovhogdahl$ **cd /ipfs/QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi**  
+> Kjell-Olovs-MacBook-Pro-2014:QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi kjell-olovhogdahl$ **ls**  
+> **MyFirstCppConsoleApp**  
+> Kjell-Olovs-MacBook-Pro-2014:QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi kjell-olovhogdahl$ **ls /ipfs/QmfHbQ1D3kbuFJMZmbz8e7hYibkfs5mseYAv4FqN7WkK9F**  
+> **/ipfs/QmfHbQ1D3kbuFJMZmbz8e7hYibkfs5mseYAv4FqN7WkK9F**  
+> Kjell-Olovs-MacBook-Pro-2014:QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi kjell-olovhogdahl$ **cd ..**  
+> Kjell-Olovs-MacBook-Pro-2014:ipfs kjell-olovhogdahl$ **ls**  
+> Kjell-Olovs-MacBook-Pro-2014:ipfs kjell-olovhogdahl$ **pwd**  
+> **/ipfs**  
+> Kjell-Olovs-MacBook-Pro-2014:ipfs kjell-olovhogdahl$ **cd QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi**  
+> Kjell-Olovs-MacBook-Pro-2014:QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi kjell-olovhogdahl$ **ls**  
+> **MyFirstCppConsoleApp**  
+> Kjell-Olovs-MacBook-Pro-2014:QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi kjell-olovhogdahl$
+
+==&gt; Now, this large file did NOT show up in the ipfs gateway (yet)?
+
+==&gt; Maybe it takes time to sync this file into the ipfs global network?
+
+TODO: Consider to check URL “<https://gateway.ipfs.io/ipfs/QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi>” later to see if the file shows up?
+
+==&gt; 180425 - Now the URL “<https://gateway.ipfs.io/ipfs/QmToEcjRhvWDSU5AdBe7KLTbGaorJSQQPmX87xTy5Sf2Hi>” seem to work and browsing to it starts the download!
+
+![](<Screen Shot 2018-04-25 at 16.47.23.png>) ![](<Screen Shot 2018-04-25 at 16.48.48.png>)
+
+==&gt; NOTE: The bandwidth is quite low though (~ 1 MB/s according to Safari)
+
+**TODO: Check the bandwidth if I share large files on my local desktops?**
+
+**Q: How do I check the transfer speed of my router connection to the external web?**
+
+5) Consider in ipfs files are only stored on nodes that share them (there are no decentralised storage for any file on the public file system)?
+
+==&gt; It seems my download of the large file I put on IPFS failed when I turned my own node off-line?
+
+==&gt; On the other hand, the white paper (<https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf>) suggests nodes may in fact store data other nodes “wants” (suggesting my file could, but not have to, actually live at least in part on ipfs nodes out there)?
+
+> “*In the case that a node has nothing that its peers want (or nothing at all), it seeks the pieces its peers want, with lower priority than what the node wants itself. This **incentivizes nodes to cache** and disseminate *rare pieces, even if they are not interested in them directly."
+
+==&gt; Consider this page explaining on a high level how IPFS works (<https://ipfs.io/#how>)?
+
+![](<Screen Shot 2018-04-26 at 12.40.27.png>)
+
+==&gt; Consider the IPFS files are stored very much like Git does (<https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf>)?
+
+> “*IPFS is a distributed file system which synthesizes successful ideas from previous peer-to-peer sytems, including DHTs, BitTorrent, **Git**, and SFS.*”
+
+> “ • Files - versioned file system hierarchy inspired by Git. Described in Section 3.6."
+
+…
+
+…
+
+Consider to continue to try out ipfs to see how it performs, what we can use it for and how to interact with it throng the API (son based)?
+
+...
+
+{% endraw %}

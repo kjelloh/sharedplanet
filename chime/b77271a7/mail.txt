@@ -1,0 +1,10 @@
+﻿Consider to define a way to assign GUID hash-codes to artifacts about SPB Knowledge, Power and Action.
+
+1) The prefixes can be spbk, spbp, spba?
+2) Corresponding for citizens can be spck, spcp, spca?
+
+But then, what does that mean? One can’t integrate the producer GUID in there ? That is, although the id indicates a knowledge is published by a ”business” we still don’t know what business it was? Should that mean one should always publish knowledge, power, action artifacts in pair with ones own id?
+
+Maybe using spb or spc shall indicate if the target is businesses or citizens (not what the source is)? But then some artifacts may be as useful to both?
+
+Think more about this! Having a good prefix may enable searching and grouping possible. For example, a news organisation may investigate whats being published and favored within the citizens or business communities?

@@ -1,0 +1,58 @@
+# Todo: Owls&Bells - Consider the scheduler to interact with the user by mailing follow-up questions?
+
+```#00efb840``` *As of 2016-03-28 20:16*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to have the Owls&Bells scheduler to interact with the user by mailing follow-up questions (e.g. taking the do-next definition and ask the user about it)?
+
+1) Consider to define how Owls&Bells could be made able to perform in this way?
+
+==&gt; Build on the idea that what is scheduled is time to pay attention to a topic of moving a work-in-progress in some direction (direction attentive work)?  
+==&gt; The result of paying attention to some work is updated information (answers) and new questions (what to do next)?  
+==&gt; So, Owls&Bells will then be able to just mail these questions to the user to ask her to pay more attention to this work?
+
+2) Consider to design Owls&Bells “tasks” as state-machines that leaves a trail of answers and a current state of questions?
+
+==&gt; Each task may have one or more “WE ARE HERE” states  
+==&gt; Each “WE ARE HERE” should carry what to attend to next stated as questions
+
+Todo: Consider to meet with Lucas ti get his view on C++ Programming?
+
+Q: So, can we imagine Lucas to attend to our meeting?  
+Q: If so, what can we convince him to bring?
+
+WE ARE HERE
+
+==&gt; Owls&Bells would now be able to trigger the user to attend to this Todo by mailing:
+
+Mailto: User  
+Subject: Regarding “Consider to meet with Lucas ti get his view on C++ Programming?”
+
+So, can we imagine Lucas to attend to our meeting?  
+If so, what can we convince him to bring?
+
+==&gt; Could this be a working way for the user to interact with Owls&Bells and for Owls&Bells to interact with the user?
+
+3) Consider to compare this with the “slot-machine” interface?
+
+==&gt; In the slot-machine interface the user attends to Owls&Bells by “gaming” for things to do?
+
+==&gt; It seems - If we allow Owls&Bells to “auto-play” it may perform the same task but mail the suggested Todo (formatted as questions) to the user?
+
+4) Consider to expand the mailing interface by enabling the user to reply with “Not Now” or “Don’t Know” os similar?
+
+==&gt; Then Owls&Bells may “autoplay again” and mail the new suggested Todo?
+
+5) How can we imagine the user to actually make progress by replying to the mail?
+
+...  
+==&gt; Side Note: Should Owls&Bells be allowed to delete these mails so that the mail folder does not get filled with deprecated mail conversations?  
+…  
+…
+
+Consider to elaborate on this idea to have Owls&Bells “auto-play” for Todos and mail them to the user as the "WE ARE HERE” state questions?  
+...
+
+{% endraw %}

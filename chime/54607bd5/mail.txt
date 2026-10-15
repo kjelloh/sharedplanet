@@ -1,0 +1,37 @@
+﻿It seems it is now time to start building the generator for my bicycle trainer and trainer tyres?
+
+-2) Consider how a 3-phase rectifier is designed?
+
+	
+
+-1) Consider to understand the abbreviations to know what to order?
+
+	==> This seems to be a good wikipedia page on a large set of electronic components packages (https://en.wikipedia.org/wiki/List_of_integrated_circuit_packaging_types <https://en.wikipedia.org/wiki/List_of_integrated_circuit_packaging_types>)?
+	
+	==> BGA package seems to be Ball Grid Array (https://en.wikipedia.org/wiki/Ball_grid_array <https://en.wikipedia.org/wiki/Ball_grid_array>)?
+	
+	
+
+
+1) Consider to order and fetch from Elfa in Solna?
+
+	==> Hm… it seems it is better to just go to Elfa and get help there?
+
+	==> Consider fischer product list of cooling elements (https://www.elfa.se/Web/Downloads/_e/_f/ojSK81_d_e_f.pdf <https://www.elfa.se/Web/Downloads/_e/_f/ojSK81_d_e_f.pdf>)?
+
+	
+
+1) consider to buy components from Mouser?
+
+	==> Consider these items?
+
+	
+
+	TODO: Make larger order to get reduced shipping cost?
+
+	==> Consider this rectifier (https://www.mouser.se/datasheet/2/205/FUO22-12N-275592.pdf <https://www.mouser.se/datasheet/2/205/FUO22-12N-275592.pdf>)?
+
+	==> It seems to be an I4PAC (i4-pac)?
+
+	
+

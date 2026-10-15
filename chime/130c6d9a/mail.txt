@@ -1,0 +1,174 @@
+﻿It seems we need to get the Meta Value Model of functions to fit the meta-value hierarchy which adds the trickery of functions having an extra dimension in that they bind to it arguments on meta-0 call (not on meta-0 definition)?
+
+1) It seems we need to figure out what gets declared and what gets bound on each of the meta-levels of function meta-values?
+
+	==> It seems Function<2> value is a constructor of Function<1> values that defines a mapping Value<1> -> Value<1>?
+
+	Function<2> = Set of {… any Function<1> = Value<1> -> Value<1> …}
+		as_function = constructs Function<1> from Value<1> argument 
+
+	==> It seems Function<1> value is a constructor of Function<0> values that defines a mapping Value<0> -> Value<0>?
+
+	Function<1> = Set of {… any Function<0> = Value<0> -> Value<0> …}
+		as_function = constructs Function<0> from Value<0> argument
+
+	==> It seems Function<0> values are actual callable functions mapping Value<0> -> Value<0>?
+
+	Function<0> = single function value
+		as_function = function body
+
+	Identifier<Function<0>> = binds a name to Function<1> value (declaration) and Function<0> value (definition)
+	  as_function = 	?? For other values we have designed this to mean (define name as_function(Value<1>))), i.e., bind name to value
+					?? But for functions we must have it mean call-the-function?
+					...
+
+	==> So - How do we define a function versus how do we call it?
+
+		==> Consider declaration and definition like any-other-value?
+
+		meta-0> (declare f (function number text)) // declares identifier ”f” to be meta-2 identifier ”function” applied to meta-1 identifiers ”number” and ”text” = mapping number -> text
+		meta-0> (f x (x*x)) // defines identifier ”f” meaning declaring argument names and body definition (having argument name accessible in its namespace)
+
+		==> This would mean applying function as-function would yield the same syntax as function definition?
+
+		meta-0> (f y) // ?? Function definition but missing the body value?
+
+	==> But, Consider Identifier as_function differs depending on wether identifier has been defined or not?
+
+		(undefined_identifier argument) // would mean define undefined_identifier as argument?
+		(defined_identifier argument) // Would mean apply identifier value as_function to argument?
+
+		Thus, after definition of function we may apply it using its name as identifier?
+
+		meta-0> (f y) // Apply f to value y (because f is defined and thus ”applicable”)?
+
+		==> Q: Does this make a good syntax for the language (or will it be confusing for the programmer and cause programming errors ”undefined is not a function”)?
+		==> Note: ”Undefined is not a function” is the #1 issue in Javascript (We do not want that problem)?
+		...
+
+2) Consider to allow function currying (be applied to multiple parameters)?
+
+	==> What would it take for us to allow functions to accept a list of parameters?
+
+		(declare f (function number number number)) // would mean f: number -> number -> number
+		(f x y (x+y)) // define f by declaring argument names and function body
+
+	==> Then Function<2> constructor must instantiate a Function<1> with as many parameters as provided to the constructor?
+
+		(function number number number) // would create a Function<1> that knows how to defined Function<0> instances that accepts two numbers as arguments?
+
+	==> Consider we would like currying to take place (allowing to express definitions leaving arguments unbound)?
+
+		(declare f (function number number number)) // would mean f: number -> number -> number
+
+		==> Q: How can we define a Function<0> where first parameter gets defined byt second does not (i.e. define (f x) )?
+
+			(f x) could be read as f with first argument declared as ”x” (but f takes two parameters so the second one is still undeclared)?
+				i.e., (f x) : (function number -> number) ?
+			((f x) y) could then read (f x) argument declared as ”y” (but no function body yet)?
+			(f (x+y)) could now read as f defined to function body x+y (argument x and y already declared?
+			…
+
+	==> Consider to look again at CLOS generic functions (See ”Todo: Meta Value Model - Consider to follow up on Common Lisp Object System (CLOS) and Meta Object Protocols?”)
+
+		==> It seems in CLOS the meta-1 definition declares function name AND argument names (but not argument types)?
+		==> This would rime with a generic function is dispatched on argument number and types (so we must leave the types out)
+
+			==> Thus, we may now defined several meta-0 functions with different argument types and bodies (to have function name be dispacthed on argument airity and types)?
+
+		==> Q: How do we allow Meta-lisp functions to be defined for parameter airity and type dispatching?
+
+			WE ARE HERE...
+		 
+
+2) Consider to implement the Elm language idiom (https://guide.elm-lang.org/types/reading_types.html <https://guide.elm-lang.org/types/reading_types.html>)?
+
+	==> Elm seems to allow separated function declaration using ”Type Annotations”
+
+”...but it also lets you write a type annotation on the line above a definition if you want."
+
+	Elm> Update : Msg -> Model -> Model	// Reads: Identifier ”update” is of meta-value Msg -> Model -> Model
+
+		==> Which would mean our Meta Value Lisp declaration could be:
+
+		meta-0> (declare Update (function Msg Model Model))
+
+	==> The function definition seems to declare arguments and define the function body?
+
+	Elm> Update msg model = … function body …
+
+		==> Which would mean our Meta List definition would be:
+
+		meta-0> (define Update msg model (… function body…))
+
+		==> Note: It seems we can’t apply the function identifier as value constructor as this would would be confused with function application (how would evaluator know when to execute constructor and when to execute actual function)?
+		==> Or, Can we define that an undefined Identifier will act as value constructor bit a defined Identifier will apply the as_function on the value?
+
+		Identifier<0>
+		  as_function = if (undefined identifier)
+						then (define identifier as_function(as_meta identifier))
+						else as_function(as_value identifier)
+
+		==> And our declaration, definition and call in Meta List will be:
+
+		meta-0> (declare Update (function Msg Model Model)) // Identifier<0> ”Update” declared (bound to) Function<1> value created by Function<2> applied to Identifier<1> Msg, Model, Model
+
+			==> Note: The created Function<1> value is not bound to a name on meta-1 level (there is no Identifier<1> for this value)?
+
+		meta-0>(Update msg model (…function body …)) // Identifier ”Update” is undefined so as_function on ”Update” will bind it to constructed Function<0> value
+
+			==> In effect name ”Update” is bound to meta-value Function<0> and function namespace Identifier<0> ”msg” and ”model” are declared.
+
+		meta-0>(Update a_msg current_model) // Identifier ”Update” is now defined, so apply its value as_function to Identifier<0> ”a_msg” and ”current_model” (i.e., call the function)
+
+			==> In effect environment Identifier<0> ”a_msg” and ”current_model” are bound to function namespace Identifier<0> ”msg” and ”model” (declared when function identifier was defined)
+
+		…
+
+	==> The trick seems to be to be to use a Function<1> value without a bound Identifier<1> (a meta-1 lambda?)
+
+	...
+
+3) Elm seems to allow definition of anonymous (lambda) functions?
+
+	==> It seems an anonymous function is just a function with the name ”\” (resembling greek lambda ”λ")?
+
+	Elm> \n -> n / 2
+	<function> : Float -> Float	
+
+		==> Thus would resemble Meta Lisp syntax:
+
+		meta-0> ((function number number) n (/ n 2))
+		(function number number) n (/ n 2))
+
+		…Or what should the display format be?
+
+		==> In Meta List we could then define and apply an anonymous function:
+
+		meta-0> (((function number number) n (/ n 2)) 4)
+		2
+
+			==> ”function” is a named Function<1> value (defined Identifier)
+			==> (function number number) applies identifier<1> ”function” to identifier<1> ”number” and ”number” (in effect creating a Function<0> value)
+
+				==> Note: there is no ”define” statement
+				==> But we do not need one as we apply the Function<0> value as_function directly
+				
+			==> (Function<0> n (/ n 2)) would now 
+
+	==> Consider Meta Lisp lambda function implementation?
+
+		meta-0> (declare Update (function Msg Model Model)) // Identifier<0> ”Update” declared (bound to) Function<1> value created by Function<2> applied to Identifier<1> Msg, Model, Model
+		meta-0>(Update msg model (…function body …)) // Identifier ”Update” is undefined so as_function on ”Update” will bind it to constructed Function<0> value
+		meta-0>(Update a_msg current_model) // Identifier ”Update” is now defined, so 
+
+
+3) Elm seems to apply some form of type inference in cases where to declaration (type annotation) is provided?
+
+”So far we have just let Elm figure out the types, but it also lets you write a type annotation on the line above a definition if you want"
+
+	...	
+…
+
+Consider to elaborate on ways to implement Function<n> meta-levels declare and define and meta-0 additions Function<0> call to get a consistent design with all other meta-value operations?
+...

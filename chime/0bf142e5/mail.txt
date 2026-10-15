@@ -1,0 +1,54 @@
+﻿It seems I could benefit from understanding how my Macbook Pro mid 2014 "compose" with other devices?
+
+1) Consider the Apple technical specifications on the Mid 2014 MacBook Pro (https://support.apple.com/kb/SP704?locale=en_US )?
+
+	
+
+	==> Consider the specs. of my 1.27 : 1 (close to 5 : 4) 2280 x 1800 15.4" Retina Display?
+
+"Display
+
+	• Retina display: 15.4-inch (diagonal) LED-backlit display with IPS technology; 2880-by-1800 resolution at 220 pixels per inch with support for millions of colors"
+
+	==> Consider I have the Core i7 2.8 / 4.0 GHz with 6 MB L3 cache and 1 TB SSD upgrade?
+
+"Configure to Order
+
+Configure your MacBook Pro to order with these options, only at the Apple Online Store:
+
+	• Up to 2.8GHz quad-core Intel Core i7 (Turbo Boost up to 4.0GHz) with 6MB shared L3 cache
+	• Up to 1TB of flash storage"
+
+"Processor
+	• 2.2GHz
+2.2GHz quad-core Intel Core i7 processor (Turbo Boost up to 3.4GHz) with 6MB shared L3 cache
+Configurable to 2.5GHz quad-core Intel Core i7 (Turbo Boost up to 3.7GHz) with 6MB shared L3 cache or 2.8GHz quad-core Intel Core i7 (Turbo Boost up to 4.0GHz) with 6MB shared L3 cache.
+	• 2.5GHz
+2.5GHz quad-core Intel Core i7 processor (Turbo Boost up to 3.7GHz) with 6MB shared L3 cache
+Configurable to 2.8GHz quad-core Intel Core i7 (Turbo Boost up to 4.0GHz) with 6MB shared L3 cache."
+
+	==> Consider I have both Intel Iris Pro 1536 MB and NVIDIA GeForce GT 750M 2048 integrated graphics?
+
+"Graphics and Video support
+	• Intel Iris Pro Graphics
+	• NVIDIA GeForce GT 750M with 2GB of GDDR5 memory and automatic graphics switching
+	• Dual display and video mirroring: Simultaneously supports full native resolution on the built-in display and up to 2560 by 1600 pixels on up to two external displays, both at millions of colors"
+
+	
+2) Consider the "About this Mac" for my Mid 2014 Macbook Pro?
+	
+	
+	Mid 2014 Macbook Pro connected to an Apple LED Cinema Display (driven by integrated  NVIDIA geForce GT 750 2048 MB Graphics)
+
+	
+	
+	My Mid 2014 MacBook Pro internal disk usage as of 190311 (Note System is "only" 25.48 GB)
+
+
+3) Consider the wikipedia article on the DVI, i.e., Digital Visual Interface (https://en.wikipedia.org/wiki/Digital_Visual_Interface )?
+
+"This interface is designed to transmit uncompressed digital video and can be configured to support multiple modes such as DVI-A (analog only), DVI-D (digital only) or DVI-I (digital and analog). Featuring support for analog connections, the DVI specification is compatible with the VGA interface."
+
+	 
+	https://en.wikipedia.org/wiki/File:DVI_Connector_Types.svg , https://en.wikipedia.org/wiki/File:M1-DA.svg 
+...

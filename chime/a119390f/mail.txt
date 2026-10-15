@@ -1,0 +1,180 @@
+﻿I want to be able to generate files to be sent to Swedish Tax Agency för different declaration purposes.
+
+-2) It seems the period for the employer’s contributions and PAYE tax return form is YYYYMM (E.g., 202205 for May 2022)?
+
+-1) Consider the English terms for the "Arbetsgivardeclaration" and other things as defined by Swedish Tax Agency (https://www.skatteverket.se/servicelankar/otherlanguages/inenglish/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses.4.12815e4f14a62bc048f522a.html <https://www.skatteverket.se/servicelankar/otherlanguages/inenglish/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses.4.12815e4f14a62bc048f522a.html> )?
+
+	==> It seems "Arbetsgivardeklaration" is "employer’s contributions and PAYE tax return form" in english?
+
+"Declaring taxes – Businesses
+
+If you are registered as an employer you must fill in an employer’s contributions and PAYE tax return every month.
+
+Payment must be made with a separate paying-in form.
+
+Use our e-service
+It is possible to submit the VAT and PAYE return in the form of an electronic tax return. Use this e-service."
+
+0) This seems to be the page from where to find the link to the test service for upload of XML-files to Swedish Tax Agency (https://skatteverket.se/foretag/arbetsgivare/lamnaarbetsgivardeklaration/tekniskbeskrivningochtesttjanst.4.309a41aa1672ad0c8377c8b.html <https://skatteverket.se/foretag/arbetsgivare/lamnaarbetsgivardeklaration/tekniskbeskrivningochtesttjanst.4.309a41aa1672ad0c8377c8b.html> )? 
+
+	
+
+
+	==> It seems I need to click on the text "Testtjänsten" to reach the test site (using the URL directly creates a "Not Authorised" error)
+
+	==> Or maybe this link works directly (https://sso.test.skatteverket.se/dama141/da_testtjanst_web/login.do?method=test <https://sso.test.skatteverket.se/dama141/da_testtjanst_web/login.do?method=test> )?
+
+	
+
+
+
+	==> It seems the following XML-file is accepted by Swedish Tax Agency file upload test API?
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Skatteverket omrade="Arbetsgivardeklaration"
+  xmlns="http://xmls.skatteverket.se/se/skatteverket/da/instans/schema/1.1 <http://xmls.skatteverket.se/se/skatteverket/da/instans/schema/1.1>"
+  xmlns:agd="http://xmls.skatteverket.se/se/skatteverket/da/komponent/schema/1.1 <http://xmls.skatteverket.se/se/skatteverket/da/komponent/schema/1.1>"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance <http://www.w3.org/2001/XMLSchema-instance>" xsi:schemaLocation="http://xmls.skatteverket.se/se/skatteverket/da/instans/schema/1.1 <http://xmls.skatteverket.se/se/skatteverket/da/instans/schema/1.1> http://xmls.skatteverket.se/se/skatteverket/da/arbetsgivardeklaration/arbetsgivardeklaration_1.1.xsd <http://xmls.skatteverket.se/se/skatteverket/da/arbetsgivardeklaration/arbetsgivardeklaration_1.1.xsd>">
+  <agd:Avsandare>
+    <agd:Programnamn>Programmakarna AB</agd:Programnamn>
+    <agd:Organisationsnummer>190002039006</agd:Organisationsnummer>
+    <agd:TekniskKontaktperson>
+      <agd:Namn>Valle Vadman</agd:Namn>
+      <agd:Telefon>23-2-4-244454</agd:Telefon>
+      <agd:Epostadress>valle.vadman@programmakarna.se <mailto:valle.vadman@programmakarna.se></agd:Epostadress>
+      <agd:Utdelningsadress1>Artillerigatan 11</agd:Utdelningsadress1>
+      <agd:Utdelningsadress2>C/O Segemyhr</agd:Utdelningsadress2>
+      <agd:Postnummer>62145</agd:Postnummer>
+      <agd:Postort>Visby</agd:Postort>
+    </agd:TekniskKontaktperson>
+    <agd:Skapad>2021-01-30T07:42:25</agd:Skapad>
+  </agd:Avsandare>
+  <agd:Blankettgemensamt>
+    <agd:Arbetsgivare>
+      <agd:AgRegistreradId>165560269986</agd:AgRegistreradId>
+      <agd:Kontaktperson>
+        <agd:Namn>Ville Vessla</agd:Namn>
+        <agd:Telefon>555-244454</agd:Telefon>
+        <agd:Epostadress>ville.vessla@foretaget.se <mailto:ville.vessla@foretaget.se></agd:Epostadress>
+        <agd:Sakomrade>skruv-avdelningens anställda</agd:Sakomrade>
+      </agd:Kontaktperson>
+      <agd:Kontaktperson>
+        <agd:Namn>Maria Olsson</agd:Namn>
+        <agd:Telefon>555-244121</agd:Telefon>
+        <agd:Epostadress>maria.olsson@foretaget.se <mailto:maria.olsson@foretaget.se></agd:Epostadress>
+        <agd:Sakomrade>mutter-avdelningens anställda</agd:Sakomrade>
+      </agd:Kontaktperson>
+    </agd:Arbetsgivare>
+  </agd:Blankettgemensamt>
+
+  <!-- Uppgift 1 HU -->
+  <agd:Blankett>
+    <agd:Arendeinformation>
+      <agd:Arendeagare>165560269986</agd:Arendeagare>
+      <agd:Period>202101</agd:Period>
+    </agd:Arendeinformation>
+    <agd:Blankettinnehall>
+      <agd:HU>
+        <agd:ArbetsgivareHUGROUP>
+          <agd:AgRegistreradId faltkod="201">165560269986</agd:AgRegistreradId>
+        </agd:ArbetsgivareHUGROUP>
+        <agd:RedovisningsPeriod faltkod="006">202101</agd:RedovisningsPeriod>
+        <agd:SummaArbAvgSlf faltkod="487">0</agd:SummaArbAvgSlf>
+        <agd:SummaSkatteavdr faltkod="497">0</agd:SummaSkatteavdr>
+      </agd:HU>
+    </agd:Blankettinnehall>
+  </agd:Blankett>
+
+  <!-- Uppgift 1 IU -->
+  <agd:Blankett>
+    <agd:Arendeinformation>
+      <agd:Arendeagare>165560269986</agd:Arendeagare>
+      <agd:Period>202101</agd:Period>
+    </agd:Arendeinformation>
+    <agd:Blankettinnehall>
+      <agd:IU>
+        <agd:ArbetsgivareIUGROUP>
+          <agd:AgRegistreradId faltkod="201">165560269986</agd:AgRegistreradId>
+        </agd:ArbetsgivareIUGROUP>
+        <agd:BetalningsmottagareIUGROUP>
+          <agd:BetalningsmottagareIDChoice>
+            <agd:BetalningsmottagarId faltkod="215">198202252386</agd:BetalningsmottagarId>
+          </agd:BetalningsmottagareIDChoice>
+        </agd:BetalningsmottagareIUGROUP>
+        <agd:RedovisningsPeriod faltkod="006">202101</agd:RedovisningsPeriod>
+        <agd:Specifikationsnummer faltkod="570">001</agd:Specifikationsnummer>
+        <agd:AvdrPrelSkatt faltkod="001">0</agd:AvdrPrelSkatt>
+      </agd:IU>
+    </agd:Blankettinnehall>
+  </agd:Blankett>
+</Skatteverket>
+
+
+	==> It seems the above XML-file corresponds to the following test report generated by the Swedish Tax Agency test file uppload page?
+
+	
+
+
+	==> It seems From my paper copy of receipt a previously employer data declaration it seems I have to provide three amounts to declare a zero income, zero tax and zero sick leave costs?
+
+Field Code 487: 
+
+487
+SummaArbAvgSlf
+Summa arbetsgivaravgifter och SLF
+Huvuduppgift
+Här visas den totala summan av arbetsgivaravgifter och särskild löneskatt på vissa förvärvsinkomster (SLF) som du har redovisat.
+BELOPP12
+
+Field Code 497:
+
+497
+SummaSkatteavdr
+Summa skatteavdrag
+Huvuduppgift
+Här visas den totala summan av avdragen skatt som du har redovisat.
+BELOPP12
+
+Field Code 499:
+
+499
+TotalSjuklonekostnad
+Sjuklönekostnad inklusive arbetsgivaravgifter
+Huvuduppgift
+Här fyller du i vilka sjuklönekostnader som du har haft under månaden. Skatteverket meddelar i sin tur Försäkringskassan om dina sjuklönekostnader och lönekostnader. Utifrån dessa uppgifter beräknar Försäkringskassan en gång om året om du har rätt till ersättning. Det kallas för Ersättning för höga sjuklönekostnader. Du ska fylla i de kostnader som du ska betala enligt sjuklönelagen. Det innebär: Kostnader för dag 1 till 14 i sjuklöneperioden, med högst 80 procent av lönen och andra anställningsförmåner. Arbetsgivaravgifter på sjuklönen ska räknas med. Tänk på att avgifterna är olika beroende på de anställdas ålder. Räkna inte med kostnader från kollektivavtal eller särskilda avtal med den anställda.
+BELOPP12
+
+1) This seems to be the Swedish Tax Agency home page for XML based file formats (https://www.skatteverket.se/foretag/etjansterochblanketter/allaetjanster/schemalagerxml.4.dfe345a107ebcc9baf80006452.html <https://www.skatteverket.se/foretag/etjansterochblanketter/allaetjanster/schemalagerxml.4.dfe345a107ebcc9baf80006452.html> )?
+
+2) Consider this web page about electronic format for Employer Data declaration to upload to Swedish tax Agency (https://skatteverket.se/foretag/arbetsgivare/lamnaarbetsgivardeklaration/tekniskbeskrivningochtesttjanst.4.309a41aa1672ad0c8377c8b.html <https://skatteverket.se/foretag/arbetsgivare/lamnaarbetsgivardeklaration/tekniskbeskrivningochtesttjanst.4.309a41aa1672ad0c8377c8b.html> )?
+
+	==> It seems there is a page with technical documentation for the "Arbetsgivardeklaration" on xml-file (https://skatteverket.se/foretag/arbetsgivare/lamnaarbetsgivardeklaration/tekniskbeskrivningochtesttjanst/tekniskbeskrivning1111.4.7eada0316ed67d7282a791.html <https://skatteverket.se/foretag/arbetsgivare/lamnaarbetsgivardeklaration/tekniskbeskrivningochtesttjanst/tekniskbeskrivning1111.4.7eada0316ed67d7282a791.html> )?
+
+Här hittar du alla bilagor till den tekniska beskrivningen.
+
+Bilaga Struktur, XML-dokument <https://skatteverket.se/download/18.339cd9fe17d1714c0772aec/1639485591598/Bilaga%20Struktur,%20XML-dokument_1.1.11.1.xlsx>
+ <https://skatteverket.se/download/18.339cd9fe17d1714c0772aec/1639485591598/Bilaga%20Struktur,%20XML-dokument_1.1.11.1.xlsx>
+Bilaga Exempelfiler (PDF) <https://skatteverket.se/download/18.339cd9fe17d1714c0772aea/1639485591481/Bilaga%20Exempelfiler_1.1.11.1.pdf>
+ <https://skatteverket.se/download/18.339cd9fe17d1714c0772aea/1639485591481/Bilaga%20Exempelfiler_1.1.11.1.pdf>
+Bilaga Alla exempelfiler (XML) <https://skatteverket.se/download/18.339cd9fe17d1714c07715c4/1638287526999/Exempelfiler_XML_v1.1.11.zip>
+ <https://skatteverket.se/download/18.339cd9fe17d1714c07715c4/1638287526999/Exempelfiler_XML_v1.1.11.zip>
+Bilaga Fältlista <https://skatteverket.se/download/18.339cd9fe17d1714c0772aeb/1639485591559/Bilaga%20F%C3%A4ltlista%201.1.11.1.xlsx>
+ <https://skatteverket.se/download/18.339cd9fe17d1714c0772aeb/1639485591559/Bilaga%20F%C3%A4ltlista%201.1.11.1.xlsx>
+Bilaga Lands- och ersättningskoder <https://skatteverket.se/download/18.339cd9fe17d1714c07715c1/1638287526902/Bilaga%20Land-%20och%20ers%C3%A4ttningskoder.xlsx>
+ <https://skatteverket.se/download/18.339cd9fe17d1714c07715c1/1638287526902/Bilaga%20Land-%20och%20ers%C3%A4ttningskoder.xlsx>
+Bilaga Kontroller <https://skatteverket.se/download/18.339cd9fe17d1714c07715c0/1638287526870/Bilaga%20Kontroller.xlsx>
+ <https://skatteverket.se/download/18.339cd9fe17d1714c07715c0/1638287526870/Bilaga%20Kontroller.xlsx>
+Bilaga Summering och beräkningsregler <https://skatteverket.se/download/18.339cd9fe17d1714c0772aed/1639485591660/Bilaga%20Summering%20och%20Ber%C3%A4kningsregler.xlsx>
+ <https://skatteverket.se/download/18.339cd9fe17d1714c0772aed/1639485591660/Bilaga%20Summering%20och%20Ber%C3%A4kningsregler.xlsx>
+
+	==> Consider the example "Exempelfil_01_Vanliga_lontagare_v1.1.9.xml" (XML file for "ordinary emplyees") in available zip of example files  (https://skatteverket.se/download/18.339cd9fe17d1714c07715c4/1638287526999/Exempelfiler_XML_v1.1.11.zip <https://skatteverket.se/download/18.339cd9fe17d1714c07715c4/1638287526999/Exempelfiler_XML_v1.1.11.zip> )?
+
+	
+
+
+	==> Consider the excel file with xml field codes (https://skatteverket.se/download/18.339cd9fe17d1714c0772aeb/1639485591559/Bilaga%20F%C3%A4ltlista%201.1.11.1.xlsx <https://skatteverket.se/download/18.339cd9fe17d1714c0772aeb/1639485591559/Bilaga%20F%C3%A4ltlista%201.1.11.1.xlsx> )?
+
+
+
+
+... 

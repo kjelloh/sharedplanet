@@ -1,0 +1,62 @@
+﻿I stumbled on a talk by Carin Meier on ”chemical computing” that inspired me to follow up on this idea to program algorithms using ”molecules” of functions and data that ”react” eventually leaving a stable ”solution”. Great Scott - this seems to be a way to introduce and leverage emergence as a component to solve problems?
+
+	==> Also see "Todo: Programming - Consider if it is possible to infer actor rules of a self organising complex system with an emergent behaviour isomorphic to some studied system or computation (e.g., through deep learning and Tha meta tier modelling)?"
+
+1) Consider the talk ”"Unconventional Programming with Chemical Computing" by Carin Meier” that inspired me (https://www.youtube.com/watch?v=cHoYNStQOEc <https://www.youtube.com/watch?v=cHoYNStQOEc>)?
+
+	…
+
+2) Consider Carin Meier Chemical-Programming Github project (https://github.com/gigasquid/chemical-computing <https://github.com/gigasquid/chemical-computing>)?
+
+	...
+
+3) Consider to read about ”Chemical Computing” in the book ”Unconventional Programming Paradigms” (http://link.springer.com/book/10.1007/11527800 <http://link.springer.com/book/10.1007/11527800>)?
+
+	==> Consider this excerpt of the ”Chemical Programming chapter” (http://link.springer.com/chapter/10.1007/11527800_2 <http://link.springer.com/chapter/10.1007/11527800_2>)? 
+
+4) Consider to read this paper ”Principles of Chemical Programming” (http://pop-art.inrialpes.fr/%7Efradet/PDFs/RULE04.pdf <http://pop-art.inrialpes.fr/%7Efradet/PDFs/RULE04.pdf>)?
+
+”Principles of Chemical Programming
+
+Jean-Pierre Banˆatre1, Pascal Fradet2 and Yann Radenac1
+
+1IRISA, Universit ́e de Rennes1 Campus de Beaulieu
+35042 Rennes Cedex, France jbanatre@irisa.fr <mailto:jbanatre@irisa.fr>, yradenac@irisa.fr <mailto:yradenac@irisa.fr>
+
+2INRIA Rhˆone-Alpes 655, avenue de l’Europe 38330 Montbonnot, France Pascal.Fradet@inria.fr <mailto:Pascal.Fradet@inria.fr>"
+
+
+5) Consider to read this paper ”Programming Self-Organizing Systems with the Higher-Order Chemical Language” (http://pop-art.inrialpes.fr/%7Efradet/PDFs/IJUC06a.pdf <http://pop-art.inrialpes.fr/%7Efradet/PDFs/IJUC06a.pdf>)?
+
+”Programming Self-Organizing Systems with the Higher-Order Chemical Language
+
+JEAN-PIERRE BANAˆ TRE(1), PASCAL FRADET(2), YANN RADENAC(1)
+
+1) INRIA / IRISA, Campus de Beaulieu, 35042 Rennes Cedex, France 
+2) INRIA Rhoˆne-Alpes, 655 avenue de l’Europe, 38330 Montbonnot, France
+
+  jbanatre@irisa.fr <mailto:jbanatre@irisa.fr>, Pascal.Fradet@inria.fr <mailto:Pascal.Fradet@inria.fr>, yradenac@irisa.fr <mailto:yradenac@irisa.fr>
+Received on 17th March 2006
+"
+
+6) Consider to ”hack” a C++ experiment using an ImmGui user interface to perform different types of chemical programming?
+
+	==> Consider a C++ library of ”molecules” made up of functions and values?
+	==> Consider two molecules react based on the types of the molecules that bump into each other?
+	…
+
+7) Consider in what way ”Chemical Programming” is Reactive as compared to ”Reactive Programming”?
+
+	==> It seems both are ”functional” in that a ”reaction” is chemical programming and Reactive Programming is purely functional and creates a new state?
+	==> It seems the ”State” in chemical programming is the content and momentum of the ”molecule solution” while in Reactive Programming the State is the latest produced persistent data structure?
+	...
+
+
+8) Consider if we can apply some self-organizing properties of chemical programming for Darwinet Network organization and optimization?
+
+	…
+
+…
+
+Consider to delve into this idea of ”Chemical Programing” and how it seems to enable emergent properties to be leveraged to find computational solutions?
+...

@@ -1,0 +1,101 @@
+# Todo: Consider to design a plunge base for my Quick Tool Change (QTC) Mafell milling motor FM 1000 PV-WS?
+
+```#30dc77e4``` *As of 2022-10-30 21:21*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to be able to use my Quick Tool Change (QTC) Mafell milling motor FM 1000 PV-WS as in a plunge base.
+
+==&gt; Also see mail "Query: Does any of your OFL router lifts fit a Mafell FM 1000 PV-WS (e.g., is your FM1000-OFL motor "the same" as Mafell FM 1000 PV-WS)?"
+
+==&gt; Also see "Todo: Consider how to mount my Quick Tool Change (QTC) Mafell milling motor FM 1000 PV-WS to a some router table plate?"
+
+==&gt; Also see "Todo: Consider to make a printable drilling template for the Mafell QTC ("Quick tool change" like e.g., FM 1000 PV-WS) mounting plate?"
+
+==&gt; Also see "Todo: Consider the "best" way to buy a Mafell Milling motor FM 1000 PV-WS (100W with PV control and quick tool changer)?"
+
+==&gt; Also see "Todo: Consider the Mafell tools lineup and prices for my indoor or future woodworking needs and requirements?"
+
+==&gt; Also see "Todo: Consider an Ooznest Workbee CNC with a Mafell milling motor?"
+
+==&gt; Also see "Todo: Consider to create linear motion using threaded rods and a bicycle chain driven hex-nuts (e.g., for a router lift or super strong rip fence adjustment)?"
+
+1) Consider the basic design of a plunge base?
+
+![](Plunge-Base-Stack-2000x.jpeg)
+
+*Copyright <https://microfence.com/product/plunge-base/> *
+
+> *Basically, we have a bottom plate to rest at the woking material, two vertical rods with some linear bearings / sliders, a top plate for mounting the milling motor and finally a depth stop mechanism with hight adjustment and three quick change depth reduction shallow, mid and full depth stops.*
+
+2) Consider a simple design for a plunge base to which I may mount my Quick Tool Change (QTC) Mafell milling motor FM 1000 PV-WS?
+
+> *So, it seems I need a bottom plate with an opening for the milling motor chuck and drill bit to fit through, two vertical axes on which the milling motor mount may run vertically.*
+
+> *We need the mount to accept the *Mafell milling motor FM 1000 PV-WS mounting plate.
+
+> We can consider to mount to the side face or the bottom face of the milling motor mount?
+
+> > ![](PastedGraphic-1.png)
+
+> > *The Mafell milling motor FM 1000 PV-WS side mount (Note the six stronger M6 mounting holes)*
+
+> > ![](PastedGraphic-2.png)
+
+> > *Mafell milling motor FM 1000 PV-WS face mount (Note the only four and weaker M5 mounting holes)*
+
+> > ![](IMG_7135.jpeg)
+
+> > *Mafell milling motor FM 1000 PV-WS with tool change handle in closed position*
+
+> > ![](IMG_7134.jpeg)
+
+> > *Mafell milling motor FM 1000 PV-WS with tool change handle in open position*
+
+
+
+3) Consider materials I may need from my local Bauhaus store?
+
+![](PastedGraphic-1-1.png)
+
+![](PastedGraphic-2-1.png)
+
+![](PastedGraphic-3.png)
+
+![](PastedGraphic-4.png)
+
+![](PastedGraphic-5.png)
+
+4) Consider to use the Z-axis mounting plate provided by Sorotec (<https://www.sorotec.de/shop/Mounting-plate-for-Mafell-QTC-for-Basic--Compact-and-Alu-Line.html> )?
+
+![](PastedGraphic-6.png)
+
+==&gt; Consider I can modify some existing router lift and attach this mounting plate on it to make it work with Nafell QTC?
+
+> *I imagine though I have to consider I need room for the QTC (Quick Tool Changer) handle. Or I will be unable to change router bits with the router in the lift!*
+
+5) Consider the Sautershop OFL2.0 -MINI accepts the Mafell FM 1000 PV-WS (<https://www.sautershop.com/router-lift-ofl2.0-mini-sa-ofl2.0-mini?c=16719> )?
+
+![](PastedGraphic-2-2.png)
+
+> From reply to mail "Query: Does any of your OFL router lifts fit a Mafell FM 1000 PV-WS (e.g., is your FM1000-OFL motor "the same" as Mafell FM 1000 PV-WS)?".
+
+> "Hello,  
+> The Mafell FM1000 PV-WS and the sauter FM1000-OFL are exactly the same machine. Both fit the **OFL2.0 -MINI**
+
+> Have a good day
+
+> Yours  
+> Andrew Nichol  
+> International Sales Manager
+
+> sauter GmbH  
+> Arzbergerstr. 4 | 82211 Herrsching a. Ammersee | Germany  
+> Phone +49 8143 99129-0
+
+> E-Mail [info@sautershop.com](mailto:info@sautershop.com) | www.sautershop.com"
+
+...
+
+{% endraw %}

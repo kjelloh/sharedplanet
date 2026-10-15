@@ -1,0 +1,20 @@
+# Todo: Använd anekdoten om "fyllot som letade nyckeln under gatlyktan" som exempel på hur vi ogärna söker svar utanför de sanningar vi anammat
+
+```#94d20341``` *As of 2015-08-30 14:43*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Vår tendens att försvara de sanningar vi samlat på oss och bara söka svaren i ljuset av dessa i stället för att tillåta oss söka svar i ljuset av andra sanningar är en stark kraft i oss men något vi ivrigt förnekar. Det är dena kraft som får oss att förenas och jobba tillsammans i tillit till totala främlingar kring en gemensamma sanningar. Med sanningar menar vi här sådant vi håller för sant och som vi använder som beslutsunderlag för att rationalisera våra handlingar.
+
+”En man är ute och går efter en sen kväll på krogen och möter en överförfriskad man som verkar leta efter något under en gatlykta. Mannen frågar den sökande vad han gör. - Jag har tappat nycklarna till min lägenhet, säger den sökande mannen. - Då hjälper jag dig, säger den som frågat. Tillsammans söker de nyckeln en stund utan resultat. - Är det säkert att du tappade nyckeln här? Frågar den förste mannen. - Nej för fan - säger den andre, - Jag tappade nyckeln därborta, men där är ju så förbannat mörkt!”
+
+Den här historien beskriver hur vi alla beter oss i vardagen. Vi söker svaren på våra frågor i ljuset av de sanningar vi valt att hålla för sanna. Det skall mycket till innan vi söker oss ut i ”mörkret” för att leta svar eftersom detta skulle innebära att vi behöver tända nya ljus och då riskera att behöva släcka de vi använt så länge redan. Detta vill vi inte av goda själ.
+
+1) Den supernyfikne tillåter sig att tro på flera oförenliga sanningar för att för sig själv göra sig mer öppen att hitta ”bättre" sanningar. Till exempel kan den supernyfikne ha tillit till vetenskapliga sanningar för teknik och medicin men låta spirituella (e.g. religiösa) sanningar utveckla och förklara sina relationer till sitt upplevda liv.  
+2) ”Förnuft” för den supernyfikne är att själv väva, eller sätta tillit till andras vävar av stabila vävar av sanningar som möjligt för att på så sätt få tillgång till sanningar som är till bäst gagn för dennes liv.  
+3) Den supernyfikne ”vet att hon tror” eftersom för en majoritet av kunskap måste hon välja vilka källor av sanningar hon skall ha tillit till. En enskild individ i dagens samhälle har helt enkelt ingen möjlighet att skaffa sig egen evident för alla de sanningar inom vetenskap, teknik, religion, filosofi, politik et.c som görs tillgängliga.  
+4) I de områden där ”sanningslyktorna” lyser upp samma område, sanningsvävarna består av svar på samma frågor, så måste den supernyfikne relatera till detta på något sätt. Om sanningarna inte motsäger varandra så är allt gott och väl. Men om de motsäger varandra kan den supernyfikne ifrågasätta den vävda väven eller vävens ogrundade utgångspunkt (de sanningar som inte grundas i andra sanningar). Den supernykne kan antingen hålla öppet för båda vävarnas sanningar beroende på hur de gagnar henne, eller välja bort de ogrundade sanningarna som vävt de sanningar som är mindre till gan för henne. Till exempel kan hon välja att vaccinera sig innan en utlandsresa (som vetenskapsväven framhåller som bästa behandlingen) och välja bort sanningen i sin Antroposofiska sanningsväv (som säger att kroppens inre kraft skyddar bäst).  
+...
+
+{% endraw %}

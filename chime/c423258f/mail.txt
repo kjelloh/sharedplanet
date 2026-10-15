@@ -1,0 +1,76 @@
+﻿
+	==> Also see "Todo: Consider youtube video "LIVESTREAM: Setting up FFmpeg and OpenGL in C++ for real-time video processing" to follow to setup a C++ cross platform FFMPeg video player and and OpenGL video viewer basics"
+
+
+1) Consider the youtube video "C++ GUIs with coroutines, WinUI3, C++/WinRT and FFMPEG" with this part showing a seemingly nice C++ wrapping of the FFmpeg C API (https://youtu.be/OSYXGyMw9GE?t=1636 <https://youtu.be/OSYXGyMw9GE?t=1636> )?
+
+	==> For his purpose to capture random shots from a video file and store as png he uses three ffmpeg libraries?
+
+
+
+
+	==> It seems he encapsulates all ffmpeg operation into a class Shottaker?
+
+
+
+	==> He seems to have another include from FFmep in the cpp file?
+
+
+
+	==> This seems to be the ShotTaker constructor?
+
+
+
+
+
+	==> This seems to be the InitializeDecoder method?
+
+
+
+
+	==> This seems to be the InitializeEncoder method?
+
+
+
+
+	==> This seems to be the InitializeColorSpaceConverter?
+
+
+
+	==> This seems to be the InitaiizationError and the destructor?
+
+
+
+	==> This seems to be the Cleanup method?
+
+
+
+	==> This seems to be the TakeShots method?
+
+
+
+
+	==> This seems to be the free function EncodeNextFrameAsPng
+
+
+
+	==> And these seems to be the free fucntions called from EncodeNextFrameAsPng?
+
+
+
+
+
+
+
+	==> This seems to be the DemuxVideoPacket
+
+
+ 
+
+2) Consider to re.implement hsi ShotTaker class as a way to learn his way of interfacing ffmpeg C API from C++?
+
+	==> I Created Github project ShotTAker (https://github.com/kjelloh/ShotTaker <https://github.com/kjelloh/ShotTaker> )
+
+...
+
+

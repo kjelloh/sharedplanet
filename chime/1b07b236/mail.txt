@@ -1,0 +1,7 @@
+﻿In http://people.ku.edu/~ddorsey/temkin.pdf, Dale Dorsey argues that theres a fundamental flaw in Temkin reasoning in ”Rethinking the Good: Moral Ideals and the Nature of Practical Reasoning”. Temkin also gives a condensed version in http://philosophybites.com/2015/07/larry-temkin-on-transitivity.html.
+
+Dorsey complains ”How could it be possible to conduct an inquiry into the evaluative principles between goods—in particular, their tendency to trade-off against each other in sufficient amounts—without first understanding what is good?”.
+
+Now this can’t be true, can it? If Temkin is able to reason that A is better that B is better than C and so on until Z is better that Y, but that the applied ”better than” still leads to A better than Z (i.e. the ”better than” does not apply to the start and end states although it applies to each step of the transition), without defining exactly what ”better than” to use (just defining the characteristics of such ”better than”), then the argument still holds? Better yet, in this way, any ”better than” that complies to the criteria is then ”proven” to cause the inconsistency?
+
+The author Dale Dorsey, simply misses out on the strength of this generalized reasoning?

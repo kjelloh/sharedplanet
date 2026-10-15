@@ -1,0 +1,129 @@
+﻿Could there be a pattern found in identifying C++ function overloading as if there is a hidden meta-function there that returns the overloaded function based on the call signature?
+
+1) Consider this example code of std namespace specialization of advance() for different iterator types (http://www.boost.org/community/generic_programming.html#tag_dispatching)?
+
+namespace std {
+  struct input_iterator_tag { };
+  struct bidirectional_iterator_tag { };
+  struct random_access_iterator_tag { };
+
+  namespace detail {
+    template <class InputIterator, class Distance>
+    void advance_dispatch(InputIterator& i, Distance n, input_iterator_tag) {
+      while (n--) ++i;
+    }
+
+    template <class BidirectionalIterator, class Distance>
+    void advance_dispatch(BidirectionalIterator& i, Distance n, 
+       bidirectional_iterator_tag) {
+      if (n >= 0)
+        while (n--) ++i;
+      else
+        while (n++) --i;
+    }
+
+    template <class RandomAccessIterator, class Distance>
+    void advance_dispatch(RandomAccessIterator& i, Distance n, 
+       random_access_iterator_tag) {
+      i += n;
+    }
+  }
+
+  template <class InputIterator, class Distance>
+  void advance(InputIterator& i, Distance n) {
+    typename iterator_traits<InputIterator>::iterator_category category;
+    detail::advance_dispatch(i, n, category);
+  }
+}
+	==> The actual function called is determined by the match to the last parameter (the tag)
+	==> iterator_traits<InputIterator> is in fact a meta-function that returns the traits type for provided Iterator type.
+	==> Then detail::advance_dispatch can be seen as a meta-function (it has overloads) that returns different functions based on the type of the last parameter?
+
+2) Consider to what degree the hidden meta-functionality provided by function overloading may actually be implemented using explcit meta functionality (on the form F<T>)?
+
+	==> Further see ”/Users/kjell-olovhogdahl/Resilio Sync/XCode/MyThreeLevelMetaFunctionExample/MyThreeLevelMetaFunctionExample/FunctionOverloadAsMetaFunctions.hpp” on my 17” laptop
+
+namespace meta {
+
+    struct tag_type_1 {};
+    struct tag_type_2 {};
+    
+    struct T1 {};
+    struct T2 {};
+
+    namespace overload {
+        
+        template <typename T>
+        struct T_traits {};
+        
+        template <>
+        struct T_traits<T1> {
+            using type = tag_type_1;
+        };
+        
+        template <>
+        struct T_traits<T2> {
+            using type = tag_type_2;
+        };
+        
+        template <typename T>
+        using tag_type = typename T_traits<T>::type;
+        
+        namespace detail {
+            void f(tag_type_1) {}
+            void f(tag_type_2) {}
+        }
+        
+        template <typename T>
+        void f(T t) {
+            detail::f(tag_type<T>()); // hidden meta-function returning detail::f(tag_type_1) or detail::f(tag_type_2)
+        }
+        
+        void test() {
+            f(T1()); // Will call detail::f(tag_type_1)
+            f(T2()); // Will call detail::f(tag_type_2)
+        }
+        
+    }
+    
+    namespace specialization {
+
+        template <typename T>
+        struct F {};
+        
+        template <>
+        struct F<T1> {
+            void operator()() {}; // "Overload" for type T1
+        };
+
+        template <>
+        struct F<T2> {
+            void operator()() {}; // "Overload" for type T2
+        };
+        
+        template <typename T>
+        void f(T t) {
+            F<T>(); // Will select F<T>::operator()
+        }
+
+        void test() {
+            f(T1()); // Will call F<T1>::operator()
+            f(T2()); // Will call F<T2>::operator()
+        }
+        
+    }
+}
+
+	==> Here overloading uses detail::f(tag_type<T>()) while direct meta-fucntionality uses F<T>().
+	==> In this special case the two compile-time mechanisms (overload versus specialization) will work in ”the same way” (rule differences does not show)
+
+	==> The semantic advantage of F<T>() is that it clearly separates the meta-fucntion F, its parameters T and the actual run-time call F<T>().
+
+		==> The detail::f(tag_type<T>()) does not semantically separate the function selection and the function call (they are one).
+		...
+
+…
+
+Consider to delve deeper into this idea to regard function overloading as engaging of a hidden compile-time meta-function that returns the correct function o call given the provided call signature?
+
+

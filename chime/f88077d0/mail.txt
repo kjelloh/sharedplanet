@@ -1,0 +1,12 @@
+﻿Consider if we could apply anonymous meta-lambdas we could do very compact and powerful programming in a clear and readable way?
+
+1) Consider meta-lambdas re-uses lama syntax with “meta" keyword prefix?
+
+	meta auto [user_type_1](auto some_type)  { if (some_type == int) return float; else return void_t;}
+	
+	hm… How can we imagine to provide a meta lambda as a type constructor?
+	
+…
+
+Consider to elaborate on this idea to re-use lambda syntax and application also to meta-code execution?
+...

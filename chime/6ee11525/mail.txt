@@ -1,0 +1,36 @@
+﻿What do we get if we focus on Meh being a meta-language that extends an existing language syntax and value semantics with meta-level shifting?
+
+1) Consider a language with value semantics extended by Meh into meta-levels Type, Kind, Sort...
+
+	==> Consider a model of how Meh extends the syntax of a language value semantics with meta-level shifting semantics (computation)?
+	
+	
+	The metal-language Meh extends the value semantics of a language with meta-level shifting
+
+	Q: IS this enough to get Types, Kinds... (or do we need the language to already have type semantics)?
+
+I suppose we can suspect that based on the observation that even untyped languages needs to obey the restrictions on what computation you can do with numbers vs text and atomic values vs structured values. So in some sense Meh should always be able to infer types from the value semantics of the language we are extending?
+
+Consider for example "untyped" C++ using the auto keyword (where the type is not specified like in an untyped language)?
+
+    auto a {3};
+    auto b {3.0};
+    auto f = [x=a,y=b]()->auto {return x+y;};
+
+It seems Meh can implement type inference rules to model the type Number for "a" and "b". And in the same way it can infer that "f" is a function type with signature Unity -> Number from the C++ lambda semantics?
+
+Hm... I have to think more about this.
+
+2) Consider Meh needs to add some syntax that fits with the existing syntax of the extended language to add value-semantcis-shifting semantics (computation)?
+
+So to add the ability to express that we want to compute according to existing value semantics on meta-values (e.g. shift from variable to Type and from Type to Kind) we need a syntax to express this. So it seems that the actual syntax we add must be adapted to work with the language we are extending?
+
+So far I have imagined using meta-scoping for C++, e.g. the syntax meta { /* value semantics shifted up to be on values-about-values, e.g. Types-of-variables */ }. Not this syntax may not work for a language like untyped Python or functional language Haskel? Or maybe it does, I don't know?
+
+3) Consider we need to provide Meh with the ability to interpret the syntax of the extended language for its value semantics part?
+
+I imagine we can think about providing Meh with a syntax parser and expression evaluator for a language using Denotational Semantics and Lambda Calculus grammar? AT least that is my intuition as of now that the Denotational Semantics is a way to map syntax into computation (Meaning of the syntax) and the actual computation can then be expressed as behind-the-scene computation specified as Lambda Expressions?
+
+Question is, do I need to use typed lambda expressions or can I repeat the trick of "Meh-extending" untyped Lambda Expressions into typed counterpart using value-semantic-shifting? My huch is that I should not do this. That it is in these Lambda Calculation the "magic" is actually happening?
+
+...

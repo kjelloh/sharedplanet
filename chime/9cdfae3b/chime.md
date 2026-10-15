@@ -1,0 +1,44 @@
+# Todo: Consider we would like to have programmable hardware near RAM, CPU, GPU and SSD so that we can in run time move compression algorithms close to data to be stream-processed?
+
+```#9cdfae3b``` *As of 2019-03-10 11:56*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Is seems we would actually like to move the compression of files into an SSD, near RAM, near CPU and even close to GPU to flexibly decide in runtime the most efficient location of stream processing of data?
+
+1) Consider the pros and cons of a drive that handles compression directly in the drive hardware itself?
+
+==&gt; It seems then we could save a rendered video file to the drive and get it compressed into H.264 or H.265 directly on write?
+
+2) Consider that we would maybe want the compression to happen close to the RAM instead (to only use memory to SD bandwidth with compressed data)?
+
+...
+
+3) Consider we would almost always like the compression to happen before transfer and decompression to happen after transfer?
+
+==&gt; Consider when writing video to SSD we like the compression to happen close to RAM (where possibly rendered vide is stored)?
+
+==&gt; Consider if rendered video is stored on SSD we would like the SSD to be able to on-the-fly also store a compressed file i parallel?
+
+...
+
+4) Consider we would like the compression algorithm to be in programmable hardware and move in run-time to be close to the data?
+
+==&gt; Consider if we could have programmable hardware close to RAM, CPU, SSD and GPU so that we can in run-time move the algorithm close to the data to process?
+
+![](IMG_4400.jpeg)
+
+*Toroid idea of FPGA enhanced Von Neumann computer architecture*
+
+==&gt; Consider a separate FPGA "bus" to connect RAM, CPU, GPU and persistent storage hardware accelerator with each other (and existing system bus)?
+
+...
+
+5) Consider the next Apple Mac Pro could in theory be built with Appel ARM based components to have this hardware acceleration distributed in the computer architecture?
+
+==&gt; Consider the Apple T2 chip is already a close-to-CPU hardware accelerator that can encode video and process image recognition tasks?
+
+...
+
+{% endraw %}

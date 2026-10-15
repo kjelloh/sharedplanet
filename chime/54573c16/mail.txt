@@ -1,0 +1,54 @@
+﻿Vilka verktyg finns för att rita hus och se hur de ser up “på plats”?
+
+1) Överväg att titta på de appar som listas på denna sida (http://www.arch2o.com/10-mobile-apps-that-every-architect-must-have-in-2015/ <http://www.arch2o.com/10-mobile-apps-that-every-architect-must-have-in-2015/>)?
+
+2) Överväg att titta på appar som listas i denna lite äldre lista (http://www.archdaily.com/525062/top-10-technical-apps-for-architects <http://www.archdaily.com/525062/top-10-technical-apps-for-architects>)
+
+	==> Samma site har en äldre lista som kanske också är värd att följa upp (http://www.archdaily.com/441499/top-10-apps-for-architects <http://www.archdaily.com/441499/top-10-apps-for-architects>)
+
+3) Autocad verkar ha en app värd att kolla upp (https://www.autocad360.com/products/mobile/ <https://www.autocad360.com/products/mobile/>)?
+
+	==> Hm… Bara för att titta på redan färdiga BIM (Building Information Model)?
+	…
+
+4) Sketchup verkar vara ett verktyg värt att prova (http://www.sketchup.com <http://www.sketchup.com/>)?
+
+	==> Gratis?
+	==> Tidigare Google Sketchup?
+	==> Finns Free och Pro
+
+	==> Sketchup Pro kostar 695 USD.
+	==> Sketchup Make är gratisversionen (http://www.sketchup.com/products/sketchup-make <http://www.sketchup.com/products/sketchup-make>)
+	
+	==> Click-to-start and click-to-stop konstigt (inget drag-to-draw)?
+
+	==> Q: Kan Sketchup använda metriska mått (tutorial visar tum)
+
+		==> Ja - enligt Introduction Video 2 (http://www.sketchup.com/learn/videos/58 <http://www.sketchup.com/learn/videos/58>)
+
+	==> Q: Kan sketchup använda bilder på T.ex en tomt (rita ett hus på en befintlig tomt)?
+
+5) Vilka verktyg finns för att skapa panorama-bilder?
+
+	==> Microsoft Photosynth verkar coll (https://photosynth.net/about.aspx <https://photosynth.net/about.aspx>)?
+	...
+
+6) Vilka appar kan använda panorama-bilder som omgivning till en 3D-modell?
+
+	==> Vore ju cool med en app får man kan “gå omkring” i en 3D-modell och se ut på en panorama-bild-bakgrund?
+	...	
+
+7) Överväg att studera Homedesign3D även om det verkar buggugn (http://www.homedesign3d.net/EN/ <http://www.homedesign3d.net/EN/>)?
+
+	==> Får dåliga betyg i App Store?
+	==> Finns separata varianter för inomhus och utomhus?
+
+	==> Kostar 75 SEK.
+
+…
+
+Överväg att leta mer för att testa och besluta om det är “värt besväret” att lära sig rita i ett sånt här verktyg?
+
+a) Finns det verktyg som förstår object från leverantörer (t.exe fönster, dörrar, rör etc)?
+b) Q: Är det någon vits att rita om man inte kan använda färdiga object från leverantörer?
+...

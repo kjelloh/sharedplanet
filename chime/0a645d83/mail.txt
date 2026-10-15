@@ -1,0 +1,30 @@
+﻿I want to cut down video clips to keep only the one of value before I start editing or at least before I store them for future use (don't store "dead wood").
+
+1) Consider this youtube video "Save Hard Drive Space! - DaVinci Resolve 17 Media Management Tutorial" where the presenter shows how to save only used parts of clips  (https://youtu.be/eSoNI8bTpFA <https://youtu.be/eSoNI8bTpFA> )?
+
+So, my idea is to start every project by making a single time line with all clip parts that I value as potential usable in the future.
+
+I should now be able to use the Davinci Resolve Media  
+
+
+	==> At around 1:13 he seems to state I should use "Copy" instead of "Transcode" to save clips in their original format (https://youtu.be/eSoNI8bTpFA?t=73 <https://youtu.be/eSoNI8bTpFA?t=73> )?
+
+
+Davinci Resolve Media Management "Timelines" copy clips functionality
+
+	NOTE: It seems Davinci Resolve can manage also "Entire Project" and "Clips" (I wonder what functionality they offer)?
+
+	==> At 1:39 he seems to start explaining about copy "Used media and trim keeping..." as the thing I want to use (https://youtu.be/eSoNI8bTpFA?t=99 <https://youtu.be/eSoNI8bTpFA?t=99> )?
+
+
+2) Consider the workflow I may be able to use to cut down my clips before using them and/or storing them for future use?
+
+I imagine I first create a new project and imports all the media to this project.
+I then imagine I make a time line with all the clip parts I want to keep as input for editing and later storage.
+I now use the Davinci Resolve Media management to "Copy" this timeline to a new location using the operation "Used Media and trim keeping..."
+Now I can get rid of all the original media files and import the ones I just Copied.
+
+Voala! I should now have a project with only the valuable parts of my clips?!
+
+
+...

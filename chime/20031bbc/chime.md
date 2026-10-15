@@ -1,0 +1,49 @@
+# Todo: Programming - Consider to understand C++ concurrency concepts like threads and Coroutines?
+
+```#20031bbc``` *As of 2016-05-05 14:35*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, it seems threads are separate executions with their own stack whilst Coroutines may implement other mechanisms to implement parallel execution?
+
+1) Consider to understand what threads actually ”are” or imply regarding executed code?
+
+==&gt; Threads have unique stack-memory but share heap and static memory?  
+==&gt; Thus shared_ptr referenced data is thread-shared (shared heap memory)  
+==&gt; program memory is static (in program memory), stack (allocated for called function) or heap (allocated dynamically) (http://stackoverflow.com/questions/408670/stack-static-and-heap-in-c)?  
+==&gt; C++ allows definition of thread unique variables ()?
+
+2) So, how can Coroutines (resumable functions) be implemented?
+
+...
+
+3) Can we imagine CPU architectures that divide physical memories between cores (in reality creating ”thread”-unique memory for execution)?
+
+==&gt; Is this even something we want (how do we ensure shared value synchronization)?  
+...
+
+4) Consider to study the HPX C++ library to understand how it enables execution of thousand of ”threads” (https://github.com/STEllAR-GROUP/hpx)?
+
+==&gt; How does their idiom relate to shared memory concurrency (for local, non-distributed execution)?
+
+5) Can we argue that Darwinet separation of state-synchronization from processing as a parallelization approach?
+
+==&gt; Each process (thread of execution) assumes the data it operates on is its own.  
+==&gt; Shared data conflicts are detected as same-state-mutation?  
+==&gt; If applied operation is commutative shared-state-mutation is not an error (the end state is the same regardless of order of applied operations)
+
+==&gt; Asynchronous Parallel processing on different Darwinet nodes are efficient if the cost of merging conflicting branches are less than the one of ensuring correct synchronization within the processing algorithm?  
+==&gt; The cost of re-processing all non-commutative operations having been applied in the wrong order.  
+==&gt; The cost of reprocessing are paid in the form of energy as well as time.  
+==&gt; The cost of up-front-correct-synchronization are paid in wait-time (low energy cost but potentially large wait time)?  
+==&gt; Note that Darwinet naive-parallelisation (hope for little conflicts) is best suited for stochastic runtime behavior (no synchrnonsation scheduler is able to identify correct parelleisation scheduling)?  
+==&gt; Any good scheduler with enough up-front knowledge may be able to not serialize commutative operations?  
+==&gt; But if the cost of identifying commutative operations at runtime is larges than just try-and-see (post-synchronisation) the the Darwinet approach is more efficient?  
+…  
+…
+
+Consider to study these concepts more to see what design patterns we can determine and how we may apply such knowledge to computer program designs?  
+...
+
+{% endraw %}

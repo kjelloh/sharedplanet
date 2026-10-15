@@ -1,0 +1,3 @@
+﻿I want to be able to format tickets in the web service Lighthouseapp into formatted and optionally typeset text and this may be done with some Python script?
+
+...

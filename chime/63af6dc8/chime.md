@@ -1,0 +1,21 @@
+# Todo: Consider to develop a Pandora C++ IDE using RAD Studio FireMonkey?
+
+```#63af6dc8``` *As of 2015-12-10 16:20*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+When reading up on contemporary IDEs for C++ (See “Todo: Programming - Consider to study contemporary available IDEs?”) I reconnected with the old Pandora idea and thought that perhaps this is the time to try it out using available open frameworks for C++ coding?
+
+1) Imagine an IDE using Clang parsing tree interface to view code Pandora-styre (3D-layered file, namespace and code-scopes)?
+
+2) How much support can we get from Clang provided code-trees?
+
+3) How much work is needed to generate the 3D-view using FireMonkey 3D components?
+
+…
+
+Consider to elaborate on this idea just for fun and see where we may go just putting some simple code together?  
+...
+
+{% endraw %}

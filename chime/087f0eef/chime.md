@@ -1,0 +1,27 @@
+# Todo: Build SPC expresso machine
+
+```#087f0eef``` *As of 2015-05-17 17:54*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to invite to a mechanical design forum to construct an espresso machine for Shared Planet Citizen use.
+
+1. Be Totally manual.
+2. Be energy efficient.
+3. Last ”forever”
+
+Consider the following:
+
+1. Use no electric motors. Move everything manually.
+2. Optionally use manually generated electricity.
+
+One scenario.
+
+Start of by grinning the coffee by hand. The grinder should be really easy to use and produce the grinding directly into the filter (no coffee loss). Then heat the water in the machine by friction. OR if that is not an efficient way to do it use an electric heater that may be powered from renewable charged battery or directly from som for of manually driven electric generator (e.g. a bike with a dynamo). Place the coffee in the filter and the filter into the machine. The pull the lever (La Pavoni espresso machine style) to produce the espresson.
+
+Note: To foam milk we need some very energy efficient way of dosing that. Creating the amount of stem needed would probably be to heavy to accomplish manually (it is energy inefficient?) Or maybe not?
+
+It be very cool and awesome to have this type of espresso machine :)
+
+{% endraw %}

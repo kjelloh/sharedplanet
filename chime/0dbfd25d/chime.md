@@ -1,0 +1,26 @@
+# Todo: Consider to modify a handheld battery operated brushless motor drill into a servo motor?
+
+```#0dbfd25d``` *As of 2022-07-16 13:45*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I think we should be able to repurpose handheld drills as drivers for other purposes.
+
+> *So, the basic idea here is that a handheld drill with a brushless motor has all the core components required to make a servo motor.*
+
+> *What we need to do is to design new electronic and attach a rotary encoder to be able to control the motor with some precision.*
+
+> *The upside with using a handheld drill as a servo motor is that is should be easily attachable using the drill shuck that is able to grip a hexagonal (and even a quadratic) shaft?*
+
+> *1) We may need to replace the driver of the motor to be able to drive it in both direction (the drill comes with a single rotation direction combined with a switch to change gear for reverse action)*
+
+> *2) We should be able to control the speed by interacting with the potentiometer attached to the drill trigger?*
+
+> *3) Ideally we would like to modify the the drill so that it is still usable as a handheld drill?*
+
+> *ALSO: I strongly want to publish any design as open hardware and open source so others can build on this framework :)*
+
+...
+
+{% endraw %}

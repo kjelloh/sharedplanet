@@ -1,0 +1,144 @@
+﻿So, where is IPFS currently at in regards to the ability to run an IPFS client in applications on IoT platforms (e.g., Arduino, Raspberry Pi), mobile devices (e.g., Apple iOS apps, Android Apps) and desktops (e.g., OS X, Linux and Windows)?
+
+-1) Consider to document my observations and reflections on comparing IPFS with Immutable Tha and Darwinet?
+
+	==> It still seems IPFS is too disjunct and over complicated (to many components and not a clear IPFS stack)?
+
+	==> Consider IPFS can be re-modelled (or assembled into) an Immutable and DHT stored data model (and made into a try P2P node network)?
+
+	...
+
+1) Consider trusted and up to date IPFS development and resources URLs?
+
+	==> It seems the IPFS project tries to converge on a core (language and platform agnostic) API specified here on GitHub (https://github.com/ipfs/interface-ipfs-core/tree/master/SPEC <https://github.com/ipfs/interface-ipfs-core/tree/master/SPEC>)?
+
+	==> It seems that (maybe) one can build IPFS from source and target OS X, Linux and Window (https://github.com/ipfs/go-ipfs#build-from-source <https://github.com/ipfs/go-ipfs#build-from-source>)?
+
+“
+Building from Source
+
+Warning: In the past you could install IPFS using go get. This does not work anymore!
+If you want, you can also build IPFS from source. If you are on Mac OS X or Linux take a look at the readme <https://github.com/ipfs/go-ipfs#build-from-source>for install instructions. If you are on Windows take a look at this document <https://github.com/ipfs/go-ipfs/blob/master/docs/windows.md> for instructions."
+
+	==> This seems to be (a somewhat outdated) documentation on how to build IPFS from Go source (https://github.com/ipfs/go-ipfs#build-from-source <https://github.com/ipfs/go-ipfs#build-from-source>)?
+
+		...
+
+	==> It seems Go IPFS is the most developed (main) distribution and available for OS X, Linux and Windows on x86 and arm processors (https://dist.ipfs.io/#go-ipfs <https://dist.ipfs.io/#go-ipfs>)?
+
+		
+		Go IPFS available distributions as of 190106
+
+ “go-ipfs is the main implementation of IPFS. It includes: - an IPFS core implementation - an IPFS daemon server - extensive command line tooling - an HTTP API for controlling the node - an HTTP Gateway for serving content to HTTP browsers"
+
+	==> This seems to be the home for IPFS on GitHub (https://github.com/ipfs/ipfs <https://github.com/ipfs/ipfs>)?
+	==> This seems to be a try to document IPFS development status (https://github.com/ipfs/ipfs/blob/master/IMPLEMENTATION_STATUS.md <https://github.com/ipfs/ipfs/blob/master/IMPLEMENTATION_STATUS.md>)?
+
+		NOTE: It seems this may NOT be the most trustworthy nor up-to-date or even good organised information about the IPFS implementation status?
+
+		==> It seems current IPFS focus on implementing Command Line Interface (CLI) and HTTP interface (having actual core P2P API put on halt for now)?
+
+	==> It seems IPFS development focus on Go and Javascript implementation?
+
+	==> This seems to be the IPFS Go implementation on GitHub (https://github.com/ipfs/go-ipfs <https://github.com/ipfs/go-ipfs>)?
+
+	
+	Go IPFS Snapshot 190106
+
+	==> This seems to be the IPFS Javascript implementation on GitHub (https://github.com/ipfs/js-ipfs <https://github.com/ipfs/js-ipfs>)?
+
+	
+	Javascript IPFS Snapshot 190106
+
+	==> This seems to be the current IPFS white paper (https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf <https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf>)?
+
+	
+
+2) Consider IPFS on Arduino / EPS32?
+
+	==> It seems we may require a way to transpile Go code to C/C++ code and then use e.g., the Arduino IDE to compile and distribute the binary to the ESP32?
+	==> Consider this Github project for transpiling a small set of Go to C/C++ to enable installing Go drivers on ESP32 using the Arduino IDE (https://github.com/andygeiss/esp32 <https://github.com/andygeiss/esp32>)?
+
+“This solution transpiles Golang into Arduino code, which can be compiled to an image by using the ESP32 toolchain. "
+
+3) Consider IPFS on Raspberry Pi?
+
+	==> It seems the Raspberry Pi uses an ARM processor and there are many Linux distributions available (e.g., FreeBSD) (https://en.wikipedia.org/wiki/Raspberry_Pi <https://en.wikipedia.org/wiki/Raspberry_Pi>)?
+	==> Consider that IPFS distribution for FreeBSD + Arm may be installed on a Raspberry Pi (based on Raspberry Pi being an ARM processor platform with FreeBSD distribution available and Go-IPFS is available for FreeBSD on Arm)?
+
+	==> This seems to be the instruction to install IPFS on Linux (https://docs.ipfs.io/introduction/install/#installing-from-a-prebuilt-package <https://docs.ipfs.io/introduction/install/#installing-from-a-prebuilt-package>)?
+
+		==> This may be the Arm binary for Go IPFS and FreeBSD platform (and thus may work on Raspberry Pi with FreeBSD) (https://dist.ipfs.io/go-ipfs/v0.4.18/go-ipfs_v0.4.18_freebsd-arm.tar.gz <https://dist.ipfs.io/go-ipfs/v0.4.18/go-ipfs_v0.4.18_freebsd-arm.tar.gz>)?
+"Mac OS X and Linux
+
+After downloading, untar the archive, and move the ipfs binary somewhere in your executables $PATHusing the install.sh script:
+
+$ tar xvfz go-ipfs.tar.gz
+$ cd go-ipfs
+$ ./install.sh
+Test it out:
+
+$ ipfs help
+USAGE:
+
+    ipfs - Global p2p merkle-dag filesystem.
+...
+Congratulations! You now have a working IPFS installation on your computer."
+
+	==> Consider this Reddit thread that seems to indicate that IPFS may be installed on to a Raspberry Pi (https://www.reddit.com/r/ipfs/comments/8gco0d/best_instructions_for_ipfs_on_raspberry_pi_3/ <https://www.reddit.com/r/ipfs/comments/8gco0d/best_instructions_for_ipfs_on_raspberry_pi_3/>)?
+
+		==> Consider this Github project is a good source for making install of IPFS on Raspberry Pi (https://github.com/claudiobizzotto/ipfs-rpi <https://github.com/claudiobizzotto/ipfs-rpi>)?
+
+		==> It seems claudiobizzotto has tested IPFS on Raspberry Pi using 
+
+		
+		IPFS on raspberry Pi https://github.com/claudiobizzotto/ipfs-rpi <https://github.com/claudiobizzotto/ipfs-rpi> project status as of 190106
+
+4) Consider IPFS on iOS?
+
+	==> Consider this Swift IPFS Github project (https://github.com/ipfs/swift-ipfs-api <https://github.com/ipfs/swift-ipfs-api>)?
+
+		Q: What is the status of this Swift IPFS project (it has not been updated since may 2018 and there is no information on what the project can do)?
+
+	==> It seems we can’t run an IPFS client on an iOS device due to the restrictions in running unauthorised code on an Apple device (https://www.reddit.com/r/ipfs/comments/8o96yg/ipfs_on_android/ <https://www.reddit.com/r/ipfs/comments/8o96yg/ipfs_on_android/>)?
+
+“Arbitrary code execution is not allowed on iOS per App Store policy."
+
+	==> Consider this IPFS GitHub page that seems to try and list the IPFS implementation in different languages (https://github.com/ipfs/ipfs#protocol-implementations <https://github.com/ipfs/ipfs#protocol-implementations>)?
+
+		==> There seem to be NO Objective C implementation of IPFS (and thus Swift IPFS or C++ IPFS are the options for iOS)?
+
+	==> Consider this C++ IPFS project on Github (https://github.com/vasild/cpp-ipfs-api <https://github.com/vasild/cpp-ipfs-api>)?
+
+“Allows C++ applications to communicate with IPFS. It implements IPFS API bindings for C++. See the documentation or the source code."
+
+		NOTE: This C++ IPFS project has NOT been updated since Oct 30 2017 (so what is the state and activity)?
+
+	==> Consider the C++ IPFS project tried to implement the IPFS Core API specified on Github here (https://github.com/ipfs/interface-ipfs-core <https://github.com/ipfs/interface-ipfs-core>)?
+
+		==> It seems Javascript IPFS already implements the IPFS Core API and Go IPFS is planned to do so soon?
+
+“Modules that implement the interface
+
+JavaScript IPFS implementation <https://github.com/ipfs/js-ipfs>
+JavaScript IPFS HTTP Client Library <https://github.com/ipfs/js-ipfs-api>
+Soon™, go-ipfs, go-ipfs-api, java-ipfs-api, python-ipfs-api and others will implement it as well.
+Send in a PR if you find or write one!"
+
+5) Consider IPFS on Android?
+
+	==> Consider this Reddit thread that seems to indicate that IPFS now runs on Android and shows data on device cost of having an IPFS node on the device (https://www.reddit.com/r/ipfs/comments/8o96yg/ipfs_on_android/ <https://www.reddit.com/r/ipfs/comments/8o96yg/ipfs_on_android/>)?
+
+		==> It seems to require FireFox with an IPFS-Companion add-on (https://addons.mozilla.org/en-US/firefox/addon/ipfs-companion/) to make IPFS file interaction more convenient?
+
+“Now go to Firefox, open the Web UI and upload some files. Or just visit the IPFS links in this post with Firefox and the redirection should work."
+
+		==> It seems to rely on Go IPFS and use the Linux ARM distribution of it?
+
+“However, right now, the IPFS devs don't want to distribute Android binaries so you'll have to download the Linux arm binary and put it in your go/bin."
+
+6) Consider IPFS on OS X?
+
+7) Consider IPFS on Linux?
+
+8) Consider IPFS on Windows?  

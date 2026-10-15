@@ -1,0 +1,37 @@
+# Todo: Consider to follow up on initiative by Syntheist Lukas Lilja to create web-service to spur cooperation services?
+
+```#2477a355``` *As of 2016-06-16 13:33*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to follow up on revealed ideas and leads from the Meeting with Eva von Wernstedt on Syntehistic ideas and motivation to spark some cooperative actions together based on Lukas initiative to build a web-service to spur collaboration by sharing ”needs" and rewarding action?
+
+1) The project seem to live here for now (http://favourly-50172.onmodulus.net)?
+
+==&gt; It seems to be a kind of sharing-economy work-site?  
+…
+
+2) He seems to argue that the service is to engage waiting current economic idea of work-for-reward idiom?
+
+==&gt; He seem to talk about how ”rich” may ask for services to be performed in return for access to assets own by the rich (e.g., using a boat)?
+
+3) He also has a vision to use the web-service to spark activity in refugee-camps to enable them to ”help themselves”?
+
+4) Consider how to argue against the seemingly ”negative” (realistic) view on human nature?
+
+==&gt; He seems to argue that current economical and psychological ”glue” can’t change and solutions must operate within these parameters?  
+==&gt; He seems to argue that humans basically mistrust each other as the first choice and that trust is a fragile trait of human relations that must be protected?  
+==&gt; He seems to want to protect the idea of the National State (sees no feasible reason to suspect it can be replaced in near future?  
+==&gt; He seems to argue that monetary costs are ”real” and dos not buy into the idea that price is a supply-and-demand game actually quite detached from ”true” cost in resources?  
+==&gt; He basically seem to distrust other humans will to cooperate unless ”enabled” by social contracts?  
+==&gt; He seems to view immigration as a threat to the Swedish Nation in terms of weakening trust to the costal contract?  
+…
+
+==&gt; So, what counter-arguments can we find to these views based on syntheistic doocracy ideas and philosophy (view of self, society and God)?  
+…
+
+Consider to delve deeper into what is this project motivation and vision and how it fots with my own drive to create a paradigm shift in society contracts?  
+...
+
+{% endraw %}

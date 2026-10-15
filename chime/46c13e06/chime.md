@@ -1,0 +1,21 @@
+# Todo: Consider to have the economy-of-the-future create money based on available resources - not demand for loans
+
+```#46c13e06``` *As of 2015-11-09 12:58*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Current economy ”creates” money when it is borrowed (state borrows from federal bank, persons borrow from any bank). This is how money os put into circulation. Money that may then be used to ”transport” value created in the economy (goods and services).
+
+1) What if money where created based on available resources instead? Would that be a mechanism to restrict the market to compete within the boundaries of sustainable living conditions?  
+2) What if this money was distributed as planet-shares to every human to use for consumption? Would this be a way to have the market compete for this money (and thus within limits of sustainable living conditions)?  
+3) Or, can we imagine some other way to put this money into circulation that also includes the aspect of ”investment”, i.e. competition for the available resources?  
+4) Planet-share distribution of resouce-based created money could be seen as a democratization of production in that each person gets equal voting on the economic market? The consumer would gain economic power over production and not only over consumption?  
+5) Consider to find a way to create incitements of this economy to reduce usage of resources, especially non-renewable ones. How may we design such incitements that does not allow fraudulent usage of resources when now-one ”looks” (e.g. mining, oil drilling, cut down of forrest)? Current rules for ownership allows the owner to do what she pleases. What economical incitements would have them use as little as possible?  
+6) What kind of economy can we imagine where individual ownership is not ”allowed” (we all depend and should all control resources as living creatures, not as defined by individual economical power)?  
+7) What kind of economy can we imagine that does not need to grow; That has no need for monetary services (e.g. rent, loan, return-on-capital); That optimizes resource application for production and consumption within sustainable living conditions?  
+…
+
+Consider to delve more into how we may re-shape the well proven idea of trading (competing to please needs) in a new economy that actually creates an equilibrium well within the boundaries of sustainable and rich living conditions for all life?
+
+{% endraw %}

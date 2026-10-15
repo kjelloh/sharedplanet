@@ -1,0 +1,3 @@
+﻿See https://developers.facebook.com/docs/graph-api/quickstart/v2.2?locale=sv_SE
+
+Seems to be a REST API. Try it out with the REST Debugger of XE7

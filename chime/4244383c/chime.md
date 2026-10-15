@@ -1,0 +1,66 @@
+# Todo: Consider I still suck at handling paint (how my test run of pouring paint from and to the paint bucket and cleaning the tools revealed many shortcomings in skill, tools and work space)?
+
+```#4244383c``` *As of 2019-05-02 18:52*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Nope, I still don't have the skill nor the tools or the work station to confidently nor effectively handle paint or clean the tools!
+
+==&gt; Also see "Todo: Consider why I am so terrified to start painting my walls and how I may overcome it and also become confident and gain the competence to do it well?"
+
+==&gt; Also see "Todo: Indoor Painting - Consider to make a stainless steel mini sink into a paint tool cleaning station?"
+
+1) Consider what I learned when practicing pouring paint and cleaning my tools at my paint work station?
+
+==&gt; The round buckets does NOT work well for cleaning tools!
+
+> *I simply need something deeper and more oval to be able to sink the whole tools and the whole hand held bucket for paint to be able to actually clean them. The round buckets are to narrow at the bottom to actually submerge anything!*
+
+==&gt; I really DO NOT like the way I get paint dripping everywhere after having poured it out of the paint bucket!
+
+> *I simply need a better way of getting paint out of the paint bucket that does NOT involve having paint get in contact with the rim of the paint bucket. Maybe I can use a sauce or soup ladle? But then I have paint all over a ladle instead?*
+
+==&gt; I discovered how jello-like the paint was (not at all viscous like syrup I expected it to be)
+
+> *The jello like consistence of the paint surprised me and made pouring much harder than I expected it to be.*
+
+==&gt; I need a small sponge and rubber gloves to actually do the washing up of tools (the dish brush did NOT work)
+
+==&gt; I discovered my waste water bucket was broken.
+
+==&gt; I had no place to put the lid when I opened the waste water bucket!
+
+> *It seems I would really like to have some easily accessible shelves for lids. So like I placed a little shelf-like compartment under the bench to for the paint bucket lid, I should also have a simmilar solution for placing the lid of any waste water buckets I use.*
+
+> ***But then, on the other hand, if I could empty waste water out through a sink drain right into a waste water bucket below the sink!***
+
+==&gt; I discovered round buckets and containers are simply inefficient in using the space available (they do not compose well)
+
+2) Consider what I need to to do get my paint work station up to the standard I require to go forward and actually start paining my walls?
+
+==&gt; Buy one or more sponges to use when washing up tools and paint station work space.
+
+> *A dish brush really do NOT work. I need a sponge with or without a handle.*
+
+==&gt; Buy two rectangular "sinks" in which I can submerge my tools and any hand held pain
+
+> *The two "sinks" should preferably be of stainless steel and be recessed into the bottom of the paint work station top. In this way I have two levels of water proofed areas to work with water and paint. *
+
+> *Consider the IKEA Princip ovenware. *
+
+==&gt; Buy something to get paint from the paint bucket to the hand held container?
+
+> *maybe I can scoop paint out of the paint bucket. Or suck it up into something. Or whatever. Pouring it is just a big mess!*
+
+==&gt; Try to search for something to mount to the paint bucket rim to help with pouring the paint?
+
+> *Maybe I can buy or make some form of rim-extender to help with pouring of paint? *
+
+==&gt; Buy only rectangular or semi-rectangular buckets and containers to make efficient use of the available space.
+
+> *Going forward, any container I buy to use at my paint work station should be rectangular or semi rectangular to compose well on the rectangular shaped kitchen cart.*
+
+...
+
+{% endraw %}

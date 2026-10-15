@@ -1,0 +1,117 @@
+﻿I want to move forward with C++ Tha but have a hard time to actual put in any actual work.
+
+So basically I have formed some intuition and visualisations in my head that I have yet to put down in writing. What are they?
+
+The first basic observation and realisation is that a language uses Names to talk about things. So to be able to "talk" about stuff in a Tha model we need to represent names.
+
+Name <--> Tha Thing
+
+So in our C++ Tha we use text to form names that we tie to Tha "things". The names we use to "talk" about the Tha "things". But it is the Tha "things" that represents them and that we can implement to actually "do the stuff" we have talked about doing.
+
+The next concept is to identify that we have a tier where "things" are named value holders. Now I lack a good name for the concept of a value holder that has a name. The term "variable" is insufficient as not all value holders allows for the value to vary. We also have constants and literals.
+
+Now literals are special creatures in that their name IS their value, just the value is represented in text. And the semantics (meaning) of literals are implicit in that it follows from the syntax where a piece of text is to be interpreted as a literal value. Still it seems to me that we need to have Tha "things" that can represent also literals and that those things have the curious property that their "name" defines their value. The name is not so much an indirection to the Tha "thing" as it is a interpretation relationship.
+
+int a {4}; // "4" is a literal value with the name "4"
+int b {a}; // "a" is the name identifying the value holder to feed the value to the value holder named "b"
+
+"4" <--> Tha Thing "Literal value holder"
+"a" <--> Tha Thing "variable value holder"
+"b" <--> Tha Thing "variable value holder"
+
+The next observation is that Tha Things have a "Meta" Tha thing that defines "stuff" about the Tha Thing.
+
+Tha Thing
+   ^
+   | "Meta"
+   |
+Tha Thing
+
+This Meta-relation does both ways and I have chosen to call the relation from the Meta down to the Tha Thing it knows stuff about as the "defacto" relation.
+
+Tha Thing
+   ^
+   | "Meta"
+   |
+   |
+   | "defacto"
+   v
+Tha Thing
+
+The "Meta" tier of named value holders are "types" that groups (categorise) named value holders. 
+
+The interesting observation now is that the Type tier shares traits with the value holders tier in that types are also Tha "things" with names!
+
+Type "Things" Tier:	name <--> Tha Thing
+				      ^
+				      | "Meta"
+				      |
+				      | "defacto"
+				      v
+Value "Things" Tier:	name <--> Tha Thing
+
+What differs is that for C++ there are no "literals" defined for Type Tier names. And I don't know if that is even possible. Like, what is even the "value" represented by the Tha thing that holds teh information about an "int" type. Maybe we can later come back and define some representation of the "int" type that we can also express in text (and thus be able to write the "literal" name that we can also transform into a type value).
+
+So what is the meta <--> defacto relationship actually about? Well, it is easy. The meta "thing" is the one instantiating the defacto "thing". So the meta "thing" is a function that maps zero or more type "things" to a single value "thing". We can model this as an operator "defacto" that carries out this very operation of "constructing" "defacto-things" from other "defacto-things".
+
+meta-defacto operation: defacto-thing -> defacto-thing -> ... -> defacto-thing
+
+It is also true that each defacto-thing "knows" its  (has a) relationship with its meta-thing. We can even imagine to expand this idea to have an operation that tries to infer some matching meta-thing from a defacto-thing to allow "talking" about computations in contexts where we have defacto-things we do not know what meta-things they stem from. In programming this is called generic programming where code is generated rather than explicitly defined. In C++ we also have the "auto" keyword to engage the compiler to infer the "meta-thing" for some defacto-thing.
+
+auto a {4} // The meta-thing for defacto-thing "a" is inferred to match the meta-thing in C++ for literal "4"
+
+Next we observe how nice it is to use value semantics (meaning) for computation we define when we "talk" about "value-things".
+
+int c {a+b}; // The names "a" and "b" are assumed as stand-in for values = value semantics assumes.
+ 
+What if we could "bring" value semantics also to be able to "talk" about computation on meta-things? In C++ value semantics is only implied on value-things. If we could talk about operations on type things as if they where values we would in effect get "reflection" as in being able to "inspect" type things. We can imagine an extended C++ language where we "tell" the compiler we want to "lift" value semantics up to the type things by defining a meta-scope.
+
+int a {4};
+int b {a};
+int c {a+b}
+meta {
+	// Here we imply value-semantics on "type things"
+}
+
+Now we can ask ourselves, what can we do with "int" thing if we could operate on it as if it was a "value thing"? Because this would define what value semantics on type things would "mean".
+
+But let's wait and continue with the meta-defacto relationship tool. Can we use it again on the Type "things" tier? That is, are there in C++ "things" that can create types? Now, before you shout "template" let me just say that we will come back to this. Instead I will claim the "things" we are looking for are named "struct", "class" and "union". These "things" allow us as programmers to compose with "things". More explicit, the "struct" allows us to define a "thing" that contains "things". And not only that, the member "things" have names.
+
+struct S {
+	int a;
+	int b;
+	int c;
+};
+
+union U {
+	int a;
+	bool b;
+	float r;
+};
+
+
+From here we can rush things and just run with the meta-defacto in tiers up the "stack".
+
+
+4: name <--> Type Constructor Constructor "Thing"
+
+	"template"
+
+3: name <--> Type Constructor Representation "Thing"
+
+	"struct"
+	"class"
+	"union"
+	"4 <typename...> 3-name {typename 1-name; ...}"
+
+2: name <--> Type Representation "Thing"
+
+	"int", "bool", "float"...
+	"3 name {2-name 1-name; ...}"
+
+1: name <--> Value Representation "Thing"
+
+	"<literal>"
+	"name"
+
+...

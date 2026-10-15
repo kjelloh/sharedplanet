@@ -1,0 +1,20 @@
+﻿Consider to write a blog article about different ways to implement a seemingly single-tap mechanism to apply amount-changing loyalty programs?
+
+1) Consider to propose the user-stated membership application with post-approval conformation (and reversal for faulty application)
+
+2) Consider to propose the double-processing local CNA application approach?
+
+3) Consider to send a link to Bård Ljöslad and others for comments?
+
+	==> Consider Benny Johansson (Swedbank)
+	==> Consider Gabriel Tiste (Zamsos)
+	==> Consider Björn Lövroth (Point)
+	==> Consider Eric Lövgren and Roland Svahn (Acquis)?
+	==> Consider Tommy Bengtsson (Caps AB)?
+	==> Consider Lennart Helleberg?
+	==> Consider Dan Petterson (11k)?
+	… who else…
+…
+
+Consider to write this article short and to the point just to share the idea and insight into contactless problems and solutions?
+...

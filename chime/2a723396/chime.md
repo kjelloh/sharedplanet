@@ -1,0 +1,22 @@
+# Todo: Share in a social network if your own Emdividuals?
+
+```#2a723396``` *As of 2015-10-30 14:51*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+How can we create incitement to engage with an app to learn about yourself? Could we share in a social network with our different Emdividuals?
+
+1) A Darwinet domain may hold Emdividuals as different "users"?  
+2) in this network we may publish information about and for "ourselves".  
+3) We may create new "users" when we "identify" a new Emdividual?  
+4) We may publish photos, links, videos etc. as different Emdividuals to communicate with "ourselves"  
+5) we may integrate also practical tools like Todos and calendars for all or selected Emdividuals?  
+6) Consider to enable building Truth-webs for each Emdividual as well as the whole "person".  
+...
+
+Consider to elaborate on this idea to take the "social network" concept and apply it to help understand ourselves and our relation to life in terms of the Emdividual self model?
+
+Skickat från min iPhone
+
+{% endraw %}

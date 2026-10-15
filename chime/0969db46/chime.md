@@ -1,0 +1,20 @@
+# Todo: Consider to make an SPC event in the "Run for your Life" event?
+
+```#0969db46``` *As of 2015-10-28 20:45*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems we may apply to hold an SPB/SPC-event within the run-for-your-life event?
+
+1) Consider to relate the SPB/SPC-values with run-for-your-live values (http://runforyourlife.nu/wp-content/uploads/2015/08/vardegrund.pdf)?  
+2) The run takes place 9 Nov – 29 Nov 2015 (http://runforyourlife.nu/sv/)  
+3) One may attend and run oneself (http://runforyourlife.nu/sv/)  
+4) The campaign trailer seems a bit ”scary” (https://youtu.be/yx65zyFJFy0)?  
+…
+
+Consider to study this more and decide if to attend and if to use the SPB/SPC-brand?
+
+a) Evaluate if this rimes with ”being for rather than against”? Run-for-your-life seem to base the message on ”Danger ahead”?
+
+{% endraw %}

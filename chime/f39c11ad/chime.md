@@ -1,0 +1,20 @@
+# Todo: Consider an art-project where citizens self organize to build a Wikihouse?
+
+```#f39c11ad``` *As of 2015-11-05 13:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could we imagine that citizens may self-organize to build a Wikihouse at some public location (Medborgarplatsen) based on a set of very simple rules?
+
+1) On a sign on Medborgarplasen one states the rules about how to take action to build the house.  
+2) In first run one may imagine all the parts are placed at the location of the budiling site and citizens are simply asked to spend 15-30 minutes to put one or more pieces in place?  
+3) One could imagine one is not allowed to spend more that 30 minutes a day to avoid a small group of entusiasts to build the whole house. We would like to see if we can have many citizens participate a little and still get results?  
+4) A web-camera is set up to film the progress to create a time-lapse film of the building progress.  
+5) The message of the project is to test the proser of emergence (human ability for self organisation).  
+6) Consider to contact Tuttika Zen as project leader and know-how on how to make such a project come true?  
+…
+
+Consider to write down a simple project vision and then con act Tuttika Zen to zoo if she is the one to make such a project come true?
+
+{% endraw %}

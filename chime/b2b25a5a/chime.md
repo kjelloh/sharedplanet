@@ -1,0 +1,20 @@
+# Todo: Was Hunter-gatherer societies more collaborative than agricultural ones?
+
+```#b2b25a5a``` *As of 2015-11-17 00:12*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+What can we say from the Emdividual model of self and emergent society based on what we know about societies of the human past?
+
+1) Is it naive to believe that hunter-gatherers collaborated more and had no need for money because they did not apply the notion of owning?  
+2) Is it well established that it was when humans become farmers that we invented money, trade and ownership.  
+3) If so, is greed a trait of a society honoring ownership and is not seen in hunter-gatherer societies?  
+4) Propose hunter-gatherers come to be as more collaborative Emdividuals and thus we should make society-of-the-future more a hunter-gatherer society than a own-and-trade one?  
+5) If so, could we propose that automatizing labor enables us to become hunter-gatherers again because everything will be made for us in the same way nature once did?  
+6) Are trends we see for sharing-economies where we value access to services more that actually owning things that provide services leading to a possible hunting-gatherer society?  
+…
+
+Consider to elaborate more on what we know of possible and applied human cultures in the past and how we may propose a society-of-the-future to have the good traits we want and then relate this to what Emdividuals we need to become to make this come true as an emergence?
+
+{% endraw %}

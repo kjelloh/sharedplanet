@@ -1,0 +1,123 @@
+﻿I want to be able to manipulate my book keeping and using SIE files for this seems like a possible route to go down.
+
+	==> Also see "Todo: Eget AB - Gör bokslut för ITfied 2015-2016 baserat på bifogade SIE-filer"
+	==> Also see "Todo: Programming - Consider to implement and publish an open source C++ SIE-file reader/writer library?"
+
+1) This seems to be the definition of SIE files in Swedish (https://sie.se/wp-content/uploads/2020/05/SIE_filformat_ver_4B_080930.pdf <https://sie.se/wp-content/uploads/2020/05/SIE_filformat_ver_4B_080930.pdf> )?
+
+
+
+	==> It seems an SIE-file is a file of elements each initiated with a label with a "#" prefix?
+
+"Filens innehåll
+
+	• 5.3.  Varje fil innehåller ett antal poster, vilka kan ha varierande innebörd. Varje post inleds med en ”etikett” som markerar postens innebörd. Alla etiketter inleds med tecknet #. Exempel på etiketter är #PSALDO och #KONTO som inleder en periodsaldopost resp en kontopost
+
+	• 5.4.  Vissa poster kan innehålla underposter. Exempel på underposter är konteringsrader till en verifikation. Dessa underposter anges inom klammer ({ resp }) direkt efter huvudposten. Dessa klamrar ska stå ensamma på var sin rad.
+
+	• 5.5.  Varje post skall avslutas med en radmatning (ASCII 10). En vagnretur (ASCII 13) före radslut tillåts men är inget krav.
+
+	• 5.6.  Tomrader tillåts var som helst i filen och ska ignoreras av det importerande programmet.
+
+	• 5.7.  De olika fälten inom varje post avgränsas av ett eller flera mellanslag. Som mellanslag godtas även tabulatorer (ASCII 9). Alla fält får omslutas av citationstecken (ASCII 34). Citationstecken är dock inget krav utan behövs endast då fältet innehåller mellanslag. Om ett citationstecken förekommer inuti ett fält ska det i exportfilen föregås av en backslash (ASCII 92). Kontrolltecken får ej förekomma inom en textsträng. Med kontrolltecken avses ASCII 0 till och med ASCII 31 samt ASCII 127.
+
+	• 5.8.  Teckenrepertoaren i filen ska vara IBM PC 8-bitars extended ASCII (Codepage 437)
+
+	• 5.9.  Belopp ska ska skrivas med en punkt (ASCII 46) som decimalavgränsare. Om öretal saknas får belopp anges utan decimaler. Maximalt två öressiffror får anges.
+
+Eventuellt minustecken skall anges före beloppet. Plustecken får ej anges. Ingen övre gräns för beloppens storlek finns. Därför bör det importerande programmet kontrollera att dess maximigräns inte överskrids.
+
+	• 5.10.  Datum anges alltid i format ÅÅÅÅMMDD."
+
+Examples of #-prefixed elements (ending with new-line ASCII 10)
+
+#FLAGGA	0
+#RAR	0	20150501	20160430
+#VER	A	1	20150506	"MÜn.avg. PG"
+
+It seems elements with sub-elements have the sub-elements added on the following lines?
+
+#VER	A	1	20150506	"MÜn.avg. PG"
+{
+	#TRANS	1920	{}	-6.00	20150506	"MÜn.avg. PG"	0.00
+	#TRANS	6570	{}	6.00	20150506	"MÜn.avg. PG"	0.00
+}
+
+	==> It seems we can suspect that the SRU-file tokens are "simply" text separated by "white spaces" (and ASCII 10 special end-of-element token)?
+
+'#' + 'A'...'Ö'	= Element Label Token
+'A'...'Ö'	= Text value token
+-,'0'..'9',',','.' = Numerical Value Token
+'"'+ <element> + '"' = Embraced Value Token
+'{'	= start of sub-element token
+'}'	= end of sub-element token
+
+
+
+2) Consider to compare the SIE file specification with some SIE-files I have laying around?
+
+	==> Consider the SIE-file from my book keeping of The ITfied AB for the year 2015-2016?
+
+
+
+
+	==> It seems the file is of type "4" (See element "#SIETYP	4") and has an initial section with some "global" elements?
+
+#FLAGGA	0
+#KSUMMA
+#PROGRAM	"Visma Compact"	5.1.4
+#FORMAT	PC8
+#GEN	20160617	
+#SIETYP	4
+#PROSA	""
+#FNR	2326
+#ORGNR	556782-8172
+#FNAMN	"The ITfied AB"
+#ADRESS	""	"Kista Science Tower 31 tr"	""	"070-685 04 08"
+#KPTYP	EUBAS97
+#RAR	0	20150501	20160430
+#RAR	-1	20140501	20150430
+#DIM	1	"KostnadsstÑlle"
+#DIM	6	"Projekt"
+
+	==> It seems a large portion of the SIE file type 4 is listings of accounts and mapping these accounts to Swedish Tax Agency SRU codes?
+
+#KONTO	1010	"Balanserade utgifter"
+#SRU	1010	7201
+#KONTO	1011	"Bal utgifter forskning/utveckling"
+#SRU	1011	7201
+#KONTO	1012	"Balanserade utgifter programvaror"
+#SRU	1012	7201
+#KONTO	1018	"Ack nedskrivningar balanserade utgifter"
+#SRU	1018	7201
+#KONTO	1019	"Ack avskrivningar balanserade utgifter"
+#SRU	1019	7201
+...
+
+	==> It seems after the account listing follows the in balances from last year and out balances to next year for relevant accounts?
+
+#IB	-1	1221	47425.00
+#IB	0	1221	74471.00
+#UB	-1	1221	74471.00
+#UB	0	1221	74471.00
+...
+
+	==> It seems after in and out balances follows in and out results for relevant accounts?
+
+#RES	-1	3010	-1581179.25
+#RES	0	3010	-662900.00
+#RES	-1	3590	101860.00
+#RES	0	3590	131727.00
+#RES	-1	3740	-11.40
+#RES	0	3740	-5.72
+...
+
+	==> It seems after in and out balances and results follows all vouchers that defines actual transactions as represented in the accounting?
+
+#VER	A	1	20150506	"MÜn.avg. PG"
+{
+	#TRANS	1920	{}	-6.00	20150506	"MÜn.avg. PG"	0.00
+	#TRANS	6570	{}	6.00	20150506	"MÜn.avg. PG"	0.00
+}
+
+...

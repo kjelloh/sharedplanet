@@ -1,0 +1,102 @@
+# Todo: Programming - Consider to enhance Tree command line tool with "add-comments" option?
+
+```#0b3d3958``` *As of 2016-08-07 18:56*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to have my own Tree command line being able to consume a comment text file and produce a directory tree listing with the comments added?
+
+1) Consider the format of the provided file with comments?
+
+==&gt; Consider the file a simple list of lines with tab separated path and comment?
+
+==&gt; Consider relative paths (no anchoring prefix like DOS “C:” or posix root folder “/") are allowed?
+
+...
+
+2) Consider different styles of applying comments?
+
+==&gt; Consider this “on top” added comments (<http://vittorioromeo.info/index/blog/2016_cpp_library_configuration_api.html>)
+
+> ```
+> └── example_lib
+>     │
+>     │   # API definition header.
+>     ├── api.hpp
+>     │
+>     │   # Library implementation folder.
+>     ├── library
+>     │   │
+>     │   │   # "Module 0" implementation folder.
+>     │   ├── module0
+>     │   │   ├── module0.cpp
+>     │   │   ├── module0.hpp
+>     │   │   └── module0.inl
+>     │   │
+>     │   │   # "Module 0" public header.
+>     │   ├── module0.hpp
+>     │   │
+>     │   │   # "Module 1" implementation folder.
+>     │   ├── module1
+>     │   │   ├── module1.cpp
+>     │   │   ├── module1.hpp
+>     │   │   └── module1.inl
+>     │   │
+>     │   │   # "Module 1" public header.
+>     │   └── module1.hpp
+>     │
+>     │   # "Main" public header - includes all modules.
+>     └── library.hpp
+> ```
+
+  
+==&gt; Consider “appended” comments as I use in my own GitHub README.md files (<https://github.com/kjelloh/cratchit>)?
+
+> ```
+> C:.
+> │   .gitignore
+> │   LICENSE
+> │   README.md
+> │
+> └───build
+>     │   CmakeLists.txt      // CMake project
+>     │   msys2_me.sh         // MINGW shell script: Generate MSYS2 build environment sub-folder
+>     │   vs_me.cmd           // Windows shell: Generate Visual Studio build environment sub-folder
+>     │
+>     └───src
+>         │   main.cpp
+>         │
+>         ├───sie
+>         │   │   SIE.cpp
+>         │   │   SIE.h
+>         │   │
+>         │   ├───doc         // SIE documentation
+>         │   │       SIE_filformat_ver_4B_080930.pdf
+>         │   │       SIE_filformat_ver_4B_ENGLISH.pdf
+>         │   │       URL.txt
+>         │   │
+>         │   └───test       // SIE test files
+>         │           sie1.se<http://sie1.se>
+>         │
+>         └───tris                // Tris library (Frontend, Code, Backend idiom)
+>                 Active.cpp
+>                 Active.h
+>                 BackEnd.cpp
+>                 BackEnd.h
+>                 Core.cpp
+>                 Core.h
+>                 FrontEnd.cpp
+>                 FrontEnd.h
+> ```
+
+  
+3) Consider to add options to only list commented (explicitly added) entries ?
+
+==&gt; Could it be a good idea to have the add-comment mode to only list entries that actually have a comment defined?
+
+…
+
+…
+
+{% endraw %}

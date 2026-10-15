@@ -1,0 +1,56 @@
+# Todo: Consider if there are already any V2L adapters for my Tesla Y?
+
+```#9edf3bd4``` *As of 2026-03-19 14:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I would like to use my Tesla Y as a power bank.
+
+==&gt; Also see "Todo: Consider ISO 15118-2 that defines the messaging protocol between electric vehicle (EV) and Electric Vehicle Supply Equipment (ESVE)?"
+
+1) Consider the USA (AliExpress?) available "Tesla V2L Discharge Device 2KW/4KW" shown in youtube video "This V2L Adapter uses Tesla's High Voltage Battery to Power Anything / Can Power Another Tesla Too!" (<https://youtu.be/fikgI4XdCgY> )
+
+==&gt; This seems to be the web-shop-link in USA (<https://tlyard.com/products/tesla-v2l-discharge-adapter-2kw-4kw-for-tesla-3-y-x-s-portable-ev-power-outlet-with-eu-uk-us-standard-socket?source=aw&sv1=affiliate&sv_campaign_id=2056659&sscid=33721_1773924622_0c662337bf162bdc1f0f0bc1b1729832&utm_source=awin&utm_medium=affiliate&utm_campaign=2056659&utm_term=33721_1773924622_0c662337bf162bdc1f0f0bc1b1729832&awc=33721_1773924622_0c662337bf162bdc1f0f0bc1b1729832> )?
+
+![PastedGraphic-4.png](PastedGraphic-4.png)
+
+==&gt; This device seems to use a 12V connection to 'kick start'' it to enable it to connect to the car?
+
+1) Consider the 'Evniculus Tesla V2L Discharger 7 kW CCS2' shown in youtube video "Evniculus V2L adapter for Tesla with 7 kW/32A CEE output" (<https://youtu.be/gEgNJRcWcI4> )?
+
+==&gt; This seems to be the shop for "Evniculus Tesla V2L Discharger 7 kW CCS2" (<https://evniculus.eu/products/v2l-discharger-7-kw-ccs2-with-schuko-cee-32a-blue> )?
+
+> "The V2L discharger simulates a DC fast charging session, triggering your Tesla to engage its high-voltage battery contactor. Once activated, the device safely reroutes DC power from the battery into its internal DC-to-AC inverter. This onboard inverter converts the ~400 V DC into standard 120 V or 240 V AC power, delivering up to 7 kW (240V) of continuous output"
+
+> ![PastedGraphic-3.png](PastedGraphic-3.png)
+
+2) Consider California based early-bird "Tesla Powershare External Discharge Device - VP20" (<https://vortipower.com/tesla-powershare-external-discharge-device-vp20/> )?
+
+20260319 - The site now longer exists and the Kickstarter campaign is last updated April 2025 (<https://www.kickstarter.com/projects/vortipower/vortipower-vp2-tesla-3-y-s-x-powershare-external-discharge> )
+
+![PastedGraphic-1.png](PastedGraphic-1.png)
+
+==&gt; 20260319 It seems to be available on AliExpress?
+
+![PastedGraphic-2.png](PastedGraphic-2.png)
+
+3) Consider the '' (<https://teslaunch.net/sv/products/v2l-discharge-device-for-tesla-model-3-y-s-x-european-version?_pos=1&_sid=17b624f31&_ss=r&variant=46455836442847> )?
+
+![PastedGraphic-2.png](PastedGraphic-2-1.png)
+
+==&gt; 20260319 - This seems to be the same product (<https://www.tesery.com/products/v2l-ev-discharger-for-model-y-3-x-s> )?
+
+![PastedGraphic-1.png](PastedGraphic-1-1.png)
+
+==&gt; 20260319 - This swedish youtube video "V2L på Tesla - ta ström från Teslan till dina prylar" seems to show the same product (<https://youtu.be/bQQu9JlD6IU> )?
+
+==&gt; It seems we MUST put Tesla in 'camping mode' to not DRAIN the Tesla 12V battery (It may turn off 12 V battery conditioning but still drain it somehow if not in camping mode)?
+
+==&gt; "Tlyard V2L Discharge Device for Tesla 3/Y/X/S V2H Charging Station" (<https://tlyard.com/products/tlyard-v2l-discharge-device-for-tesla-3-y-x-s-v2h-charging-station?variant=55644965732733> )
+
+![PastedGraphic-5.png](PastedGraphic-5.png)
+
+...
+
+{% endraw %}

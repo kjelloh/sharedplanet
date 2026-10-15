@@ -1,0 +1,175 @@
+﻿Could it be a good idea to write about ways to enumerate nested loops of n,m combinations from two ranges of integers n: 0…N-1 and m: 0…M-1?
+
+1) Consider to study how replace nested loops with C++ std::generate_n?
+
+	==> To be able to use std::generate and std__generate_n we need a generator capable of generating {n,m} pairs from a call counter (given N and M range definitions)?
+
+// (1) Imperative code
+for (int n=0; n<N; ++n) {
+	for (int m=0; m<M; ++m) {
+		// Here we may operate on pair {n,m}
+	}
+}
+
+// (2) Generator Code
+std::generate_n(OutputIterator iter,N*M, NMGenerator());
+
+2) Consider how we may design an NMGenerator that works both with std::generate_n and std::generate as well as with InputIterator-based algorithms (e.g., std::for_each)?
+
+	==> It seems if we model the NPGenerator both as a lazy iteratable container and a callable we can use it with most std range algorithms?
+
+struct NMGenerator {
+	int seq_no{-1}; // default -1 indicate an ”end” iterator
+	NMPair& operator()() {
+		// Here we generate pair {n,m} as callable (generator = we must ++ us)
+		return combinatorics::permutation<N,M>(seq_no++);	
+	}
+	NMPair& operator*() {
+		// Here we generate pair {n,m} as InputIterator (Client will ++ us)
+		return combinatorics::permutation<N,M>(seq_no);
+	} 
+}
+
+
+// (2) Generator Code
+std::for_each(NMGenerator::begin(),NMGenerator.end(),[](const NMPair& nm) {	
+	// Here we may operate on pair {n,m}
+});
+
+	==> Consider the complexity of implementing a Generator that provides the InputIterator concept (http://en.cppreference.com/w/cpp/concept/InputIterator <http://en.cppreference.com/w/cpp/concept/InputIterator>)?
+
+		..
+
+	==> Consider the std input-range algorithms makes our code more expressive in that the ”sink” appears at the end of the expression (allowing for convenient lambda do be appended)?
+
+struct NMGenerator {
+	// Implement InputIterator concept http://en.cppreference.com/w/cpp/concept/InputIterator <http://en.cppreference.com/w/cpp/concept/InputIterator>
+};
+// (2) Generator Code
+std::for_each(NMGenerator::begin(),NMGenerator.end(),[](const NMPair& nm) {	
+	// Here we may operate on pair {n,m}
+});
+
+		==> Note how this looks much nicer that for std::iterate_n where any lamda would appear in first (the sink expression) instead of the last parameter (the applied function)
+		...
+
+3) Consider to enumerate NM-pairs using modulo calculus?
+
+	==> Also see (https://betterexplained.com/articles/fun-with-modular-arithmetic/)?
+	
+	==> See ”/Users/kjell-olovhogdahl/Resilio Sync/XCode/MySetCombinationEnumerators/MySetCombinationEnumerators"
+
+template <int N,int M>
+std::tuple<int,int> to_nm_pair(int seq_no) {
+    return {seq_no/M,seq_no%M};
+}
+
+template <int N, int M>
+long to_seq_no(const std::tuple<int,int,int>& c) {
+    return std::get<0>(c)*(M) + std::get<1>(c);
+};
+
+	==> Consider we may expand this to triplets?
+
+template <int O, int N, int M>
+std::tuple<int,int,int> to_onm_tuple(int seq_no) {
+    int o = seq_no / (N*M);
+    int n = (seq_no % (N*M)) / M;
+    int m = (seq_no % (N*M)) % M;
+    return {o,n,m};
+}
+
+template <int O, int N, int M>
+long to_seq_no(const std::tuple<int,int,int>& c) {
+    return std::get<0>(c)*(N*M) + std::get<1>(c)*(M) + std::get<2>(c);
+};
+
+
+	==> Consider to discuss how the NM algorithm actually only depend on M and the ONM algorithm only depends on NM?
+
+		...
+
+4) Consider how std algorithms lacks support of ”functional” composability (e.g., Generators and Iterators are all state-ful)?
+
+	==> It seems to be no algorithms that allows the ”generator” to be called with an enumeration (e.g., neither std::generate nor std::generate_n calls the Generator with the sequence number to generate for)?
+	...
+
+5) Consider how we may design suitable NMPair sinks to be used with std range algorithms?
+
+	==> Consider how we can’t make the called OutputIterator ”lazy" (it must consume provided values when called)?
+
+// See http://en.cppreference.com/w/cpp/concept/OutputIterator <http://en.cppreference.com/w/cpp/concept/OutputIterator>
+struct NMPairSink {
+
+	// must implement ++ operator here
+
+	// Models OutputIterator meaning operator* will only be used for assignment and called only once for each written value
+	void operator*(const NMPair& nm) {
+		// Here we may operate on pair {n,m}
+		++(*this);
+	}
+}
+
+	==> Consider we may make the NMPairSink take a callable to parameterize what processing to actually perform?
+
+template <typename F>
+struct NMPairSink {
+	F f;
+	NMPairSink& operator*(const NMPair& nm) {
+		f(nm); // Delegate processing of pair {n,m} to f
+		return this;
+	}
+}
+
+// (2) Generator Code
+std::generate_n(NMPairSink{[](const NMPair& nm) { /* Here we may operate on pair {n,m} */ }},N*M, NMGenerator());
+
+		==> Consider how awkward this code will look (not very expressive in it intentions)? 
+
+	==> Consider to provide a specialized NMPairSink that knows what to do?
+	==> Consider to design NMPairSink to implement push_back so that we can use std::back_insert_iterator for convenience (we don’t need to implement any iterator members)?
+
+// See http://en.cppreference.com/w/cpp/iterator/back_insert_iterator <http://en.cppreference.com/w/cpp/iterator/back_insert_iterator>
+struct NMPairSink {
+	// To be called by std::back_inserter
+	void push_back(const NMPair& nm) {
+		// Here we may operate on pair {n,m}
+	}
+}
+NMPairSink result;
+// (2) Generator Code
+std::generate(std::back_inserter(result),N*M, NMGenerator());
+
+		==> Note that this code also becomes quite obscure (or does it not)?
+
+	==> Consider how to design NPSink to work as an OutputIterator (e.g., for std::generate_n)?
+
+std::generate(OutputIterator iter, OutputIterator end_iter, NMGenerator());
+
+		==> Consider how having NMPairSink as a ”lazy” OutputIterator enables us to use it with std::generate (as long as our sink knows N and M that defines the range)?
+
+6) Consider most flexible solution is an InputIterator and Callable NMGenerator and an OutputIterator and Callable NMSink?
+
+struct NMGenerator {
+	int seq_no{0};
+	NMPair& operator()() {
+		// Here we generate pair {n,m} as callable (generator = we must ++ us here)
+		return combinatorics::permutation<N,M>(seq_no++);	
+	}
+	NMPair& operator*() {
+		// Here we generate pair {n,m} as InputIterator (Client will ++ us)
+		return combinatorics::permutation<N,M>(seq_no);
+	} 
+}
+
+struct NMSink {
+	void operator()(const NMPair& nm) {
+		// Here we operate on pair {n,m} as callable
+	}
+	void operator*(const NMPair& nm) {
+		// Here we operate on pair {n,m} as OutputIterator
+	}
+}
+…
+
+Consider to write a blog post about this?

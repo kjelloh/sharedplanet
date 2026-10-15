@@ -1,0 +1,26 @@
+# Todo: Consider to define an economy based on time, energy and resource entropy (disorder) ?
+
+```#28141bf6``` *As of 2015-11-02 18:56*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to define the economy-of-the-future on ”real” values of time, energy and resource entropy (disorder).
+
+1) A ”cost” is then valued in how much time, energy and resources that has to be spent to make it done.  
+2) Resource cost should be divided into consumed, bound and disordering of resources.  
+3) A resource is consumed if it can’t be recycled (e.g. oil that is burnt for energy).  
+4) A resource may be bound in that it may be later recycled.  
+5) The cost of bound resources shall be valued to the cost to recycle it.  
+6) Combining resources makes the cost of recycling higher (i.e. recycling steel from armed concrete is higher than from iron beams).  
+7) Consider to use the term ”resource entropy” as a measurement of the cost to recycle (creating order in disordered resources)?  
+…
+
+Elaborate on this idea to measure value and cost in ”physical” values that more true reflects the cost to our ”living conditions”?
+
+a) Using this resource based economy a politician would not say they will invest 3 billions to enhance schools. Instead they would say they will invest x time, y hours and z resource entropy?  
+b) Try out the idea on actual costs to see if minimizing this value corresponds to actual cost on living conditions?  
+c) How to we add a way to value experienced living conditions (e.g. security, freedom, excitement)? Should we keep money to value these aspects?  
+...
+
+{% endraw %}

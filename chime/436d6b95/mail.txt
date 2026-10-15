@@ -1,0 +1,14 @@
+﻿Consider to use the term Cache for each view MIVs.
+
+This enables the Caches distributed through the Domain nodes to negotiate on what caches data is replicated.
+
+A darwinet mode needs to decide
+
+1) what subset of the data model to store
+2) What historical depth of cached data to store
+3)  how to balance 1 and 2 to fit data into the max cache size.
+4) ensure cached data is replicated to sufficient degree in the domain. A reasonable loss of nodes shall not risk data or history depth losses!
+5) re-distribute data in remaining caches when a node detached from the domain.
+6) identify data storage nodes (backup service nodes) and ensure full replication on to those.
+
+Skickat från min iPhone

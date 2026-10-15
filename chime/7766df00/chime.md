@@ -1,0 +1,22 @@
+# Todo: Consider if the "quantum measurement" is in fact when some part of the universe becomes "about" the quantum system?
+
+```#7766df00``` *As of 2021-02-13 22:29*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I have been thinking about what it means for a living organism to be "about" something (to internalise a representation of a model of what is "out there".
+
+> *So, the basic idea here is to investigate if there is something that hides behind being "about" realty. Like as if life is some part of the universe that is able to "be about" the rest of the universe. And further, if being able to "become about" the universe is something different than computation in which we simulate reality in the "aboutness" we already has aquired?*
+
+> *If so, we can ask ourselves the following; Is the measurement problem in quantum theory (when the wave function collapses into a factual state) in fact when some part of reality becomes "about" the quantum system.*
+
+> *Note that with this we mean something different than measuring the state of the system. We mean instantiating a representation of a model of the quantum system. We are eluding to the notion that there is something different to represent the quantities (the data) of a system. We ask ourselves if the wave function collapses when it is both modelled and instantiated with the measured state.*
+
+> *I want to think I am trying to get to something more than the proposal that the measurement must be done by a conscious being. Where it is something about consciousness that makes the wave function to collapse. I am trying to see if we can suspect any representation of the quantum system to make it collapse. So it is not sufficient to just to have the quantum system state contaminate more and more parts of reality. The wave function collapses as soon as its state is represented as part of a model of reality held by something being able to "be about" reality.*
+
+> *Ok, so I talk in circles. Still, my intuition is that there may be something interesting here. Something connected to the suspicion that our discovery of computation is only one part of a two sided coin. Where computation takes place in a model while it is NOT computation to come up with the model in the first place?*
+
+> *...*
+
+{% endraw %}

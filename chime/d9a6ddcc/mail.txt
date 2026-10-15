@@ -1,0 +1,13 @@
+﻿My intuition tells me I may be able to build my own coplanar sliding door from a "standard" sliding door mechansim with an additional top rotating mechanism to close the door flush?
+
+1) Consider the key movements for a DIY coplanar sliding door mechanism?
+
+So my intuition is to use gravity to have the door close flush with the wall. If we begin with an "ordinary" sliding door along a track. We should then be able to imagine a top door carrier that at the end position is able to also rotate to have the door move out to become flush with the wall. And we can have the door slide into place by having the rotation lower the door slightly. Then gravity will ensure the door rests in the closed position.
+
+To open the door we then "just" push the door inward to have it also lif upp a little bit by the top rotating arms. Once in its pushed-in position it is now able to slide sideways into the wall and the door opens.
+
+If we have the rotating arms also move a slider in and out of the track we can disable the rotating movement while the door is in the track in the open position. But by having the track release the rotating arm slider in the end position for closing it will by gravity rotate and lower the door outwards into the closed position.
+
+
+
+...

@@ -1,0 +1,5 @@
+﻿See https://www.youtube.com/watch?v=l_Wnk0WtsZY
+
+1. Shows how to use the REST debugger to create VCL REST components from tested REST operation
+2. Shows how to write code that specializes operations
+3. Shows how to use Data Binding to make GUI

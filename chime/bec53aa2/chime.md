@@ -1,0 +1,38 @@
+# Todo: C++ - Consider to understand "Move Semantics" as a compile time "Dispatch Mechanism" to enable linking code that processes "temporary values" to special "Move Value" instead of "Copy Value" operations?
+
+```#bec53aa2``` *As of 2020-10-01 12:54*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I always felt the explanation of Move Semantics in C++ somehow misses the point or fails to adress the actual understanding of what move semantics is all about?
+
+*So, the basic idea here is to look at C++ Move Semantics from the view point of how it allows code that is about copying values around to add an optimisation for values that are temporary as in "About to Die". If these values contain dynamically allocated memory we can then re-use this memory in the "new" value. Or put another way, if no code will again access the old value content, then we can safely just "move" the content of this value into the new value and save memory allocation and data transfer.*
+
+*Now we can understand the "Move" members of classes, that is the "Move Constructor" and the "Move Assignment". They are there to enable linkage of construction and assignment to be specialised for temporary value input where we can re-use the content of the value instead of cloning it.*
+
+*We can model C++ Move Semantics as being composed of three main aspects or mechanisms.*
+
+*Note: For this discussion I will call values that will not be used ever again in the code as "Robinson Values" or "Outcast Values" to allow expansion on the notion of "Temporary Values" into any value safe to "Move Content From" or "Reuse Value Content".*
+
+*I) Detecting and/or annotate "Robinson Values" (Outcast values as in will never be accessed again)*
+
+*II) Passing information about "Robinson Values" as part of the value type*
+
+*III) Value Contents where we benefit from re-using their content instead of cloning it.*
+
+*So let's start with bullet I), how does the compiler "know" if a value provided to a constructor or assignment operator is temporary or not? Well, here things starts easy and then builds in complexity quite rapidly. Let's start with the easy part. The compiler can detect values that are created "in place" without being bound to a named memory storage like a variable.*
+
+*The programmer can also annotate a value to be a "Robinson Value" declaring it or type casting it to the type "&&" (in C++ specification lingo called an rvalue reference). The safe annotation include declaring functions to take values as rvalue reference arguments, in effect telling the linker to compile time dispatch (link) calls passing rvalues to this function. The more risky practise is to type cast an existing value into an rvalue reference before passing it to a function. The programmer must now ensure his or her code does not use this value after the call as it may potentially have been processed by a "Move From" function. The key insight here is the "Potentially Moved From" as this depends on whether there actually where a function accepting a rvalue reference to link to and whether that code actually did move the content of the value to another location.*
+
+*The programmer can type cast an existing value to an rvalue reference with the helper function std::move(your_value). This will tell the compiler to threat the passed value as a "&&" type.*
+
+*2) Consider to explain the C++ specification "Value categories" using the model of Value Semantics as being about enabling the compiler to dispatch code calls to special "Move From" processing functions (<https://en.cppreference.com/w/cpp/language/value_category#rvalue> )?*
+
+> *The main idea here is to try and understand the C++ "value categories" as a way to model the mechanisms that a C++ compiler must be able to do to correctly dispatch value processing to "value cloning" or "Value Reuse" operations based on the context of the code. Like we have function calls vs. return value copy elision as two examples where different "value categories" are defined to define how the compiler acts to link the code to value-clone or value-reuse processing.*
+
+> *...*
+
+*...*
+
+{% endraw %}

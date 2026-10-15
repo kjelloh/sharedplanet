@@ -1,0 +1,18 @@
+# Todo: Check out Zygmunt Bauman
+
+```#482d507c``` *As of 2015-08-06 00:07*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Saw Zygmunt Bauman on SVT program and found him having interesting things to say about society (and its failure to help us cope with change?)
+
+\*) <http://www.svd.se/vi-har-en-svar-tid-med-stora-offer-framfor-oss>
+
+\*) (<http://www.bokus.com/bok/9789171732781/konsumtionsliv/>
+
+\*) <http://www.ur.se/Produkter/176736-Larandets-idehistoria-Vad-ar-kunskap>).
+
+Check him and his books out!
+
+{% endraw %}

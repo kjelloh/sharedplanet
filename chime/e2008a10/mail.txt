@@ -1,0 +1,108 @@
+﻿It seems it is time to step-up my protection against creating in unhealthy particles or chemicals?
+
+	==> Also see “Todo: Consider to choose efficient, comfortable and good looking woodworking protection (face mask, eye protection etc.)?"
+
+1) Consider the wikipedia page on Respiratory Protective Equipment, RPE (https://en.wikipedia.org/wiki/Respiratory_protective_equipment <https://en.wikipedia.org/wiki/Respiratory_protective_equipment>)?
+
+2) Consider the wikipedia page on organic compound category (https://en.wikipedia.org/wiki/Category:Organic_compounds <https://en.wikipedia.org/wiki/Category:Organic_compounds>)? 
+
+	==> It seems Ammoniac is NOT an organic compound (I may need an additional protection against Ammoniac even if I am protected against organic compounds)?
+
+	==> It seems an organic compound that contains carbon but with exceptions of oxides, cyanides, carbonates and carbides?
+
+“An organic compound is any of a large class of chemical compounds whose molecules contain carbon, with the exception of carbides, carbonates, Cyanides and carbon oxides."
+
+3) Consider the wikipedia page on Organic compound (https://en.wikipedia.org/wiki/Organic_compound <https://en.wikipedia.org/wiki/Organic_compound>)?
+
+	==> It seems due to historical reasons there is still no water tight definition of what is and what is excluded as “organic compound” of all carbon compounds?
+
+“In chemistry, an organic compound is generally any chemical compound that contains carbon. Due to carbon's ability to catenate (form chains with other carbon atoms), millions of organic compounds are known. Study of the properties and synthesis of organic compounds is the discipline known as organic chemistry. For historical reasons, a few classes of carbon-containing compounds (e.g., carbonates and cyanides), along with a handful of other exceptions (e.g., carbon dioxide), are not classified as organic compounds and are considered inorganic. No consensus exists among chemists on precisely which carbon-containing compounds are excluded, making the definition of an organic compound elusive.[1] Although organic compounds only make up a small percentage of the Earth's crust, they are of central importance because all known life is based on organic compounds. Most synthetically produced organic compounds are ultimately derived from petrochemicals consisting mainly of hydrocarbons.[2]"
+
+4) Consider what we would like to not create in are “Organic Compound Solvents”?
+
+	TODO: Investigate if we are safe to assume that what we need to protect against is creating in organic compound solvents?
+
+	==> Consider the wikipedia article on solvents (https://en.wikipedia.org/wiki/Solvent <https://en.wikipedia.org/wiki/Solvent>)?
+
+	...
+
+5) Consider the wikipedia page on Respirators (https://en.wikipedia.org/wiki/Respirator <https://en.wikipedia.org/wiki/Respirator>)?
+
+	==> It seems the European standard EN 149 defines filer classes for half masks?
+
+“European standard EN 149 defines the following classes of “filtering half masks” (also called “filtering face pieces”), that is respirators that are entirely or substantially constructed of filtering material:
+
+Class	Filter penetration limit (at 95 L/min air flow)	Inward leakage
+FFP1	Filters at least 80% of airborne particles	<22%
+FFP2	Filters at least 94% of airborne particles	<8%
+FFP3	Filters at least 99% of airborne particles	<2%
+"
+
+	==> It seems an FFP3 (as my Wisent 7031V half mask) only states that 99% of airborne particles are filtered (with a maximum leakage between mask and face of 2%)?
+
+	Q: What does this mean in actual protection against dust (and what does it mean to protection against chemicals)?
+
+6) Consider this wikipedia page on Respirator assigned protection factors (https://en.wikipedia.org/wiki/Respirator_assigned_protection_factors <https://en.wikipedia.org/wiki/Respirator_assigned_protection_factors>)?
+
+7) Consider the safety level of my (probably Bauhaus bought) Wisent 7031V (https://www.bauhaus.info/atemschutzmasken/wisent-feinstaubmaske/p/20155777 <https://www.bauhaus.info/atemschutzmasken/wisent-feinstaubmaske/p/20155777>)?
+
+	NOTE: It seems to no longer be available on the Swedish bauhaus web?
+
+	
+
+	==> It seems Wisent (Bauhaus brand) respirator mask 7031V has assigned filer class FFP3 V?
+
+	==> And FFP3 seems to state only 
+
+
+8) Consider what filters are available for my trend air stealth p3 (r) safety respirator (https://www.trenddirectuk.com/trend-power-tools-and-safety/air-stealth <https://www.trenddirectuk.com/trend-power-tools-and-safety/air-stealth>)?
+
+	
+
+	==> It seems  trend air stealth p3 (r) safety respirator can accommodate either “Stealth/1 P3 filter” or “Stealth/3 P3 nuisance filer”?
+
+	
+
+	==> It seems  “Stealth/1 P3 filter” complies with “Assigned Protection Factor APF20” (https://www.trenddirectuk.com/stealth-1-air-stealth-p3-filter-1-off-pair <https://www.trenddirectuk.com/stealth-1-air-stealth-p3-filter-1-off-pair>)?
+
+	==> It seems “Stealth/3 P3 nuisance filer” complies with “Assigned Protection Factor	APF20” (https://www.trenddirectuk.com/stealth-3-air-stealth-p3-nuisance-filter-1-off-pair <https://www.trenddirectuk.com/stealth-3-air-stealth-p3-nuisance-filter-1-off-pair>)?
+
+	Q: So what is the difference in protection (the  “Stealth/3 P3 nuisance filer” seems to state it also removes odour)?
+
+9) Consider what respirators I should go for to be protected against chemical vapours e.g., when doing glue or paint-jobs?
+
+	TODO: Investigate what I need to be protected against inhaling noxious chemicals when working with chemicals like glue, solvents or paint?
+
+	==> Consider this home owner blog article on respirators (https://www.todayshomeowner.com/how-to-choose-a-respirator-or-dust-mask/ <https://www.todayshomeowner.com/how-to-choose-a-respirator-or-dust-mask/>)?
+
+		
+
+		==> It seems he suggests that a chemical filter is required “only” for protection agains ammonia and Organic vapours (e.g., white spirit
+
+	==> Consider this 3M pdf on Respiratory Protection Equipment, RPE (http://multimedia.3m.com/mws/media/738488O/filters-for-reusable-respirators-selector.pdf <http://multimedia.3m.com/mws/media/738488O/filters-for-reusable-respirators-selector.pdf>)?
+
+		==> They seem to suggest that I need a chemical filter to protect against vapours and gases?
+
+“Chemical Filters
+
+Chemical filters are used on respirators to help remove and lower worker exposures to harmful gases and vapours in the workplace. There are several types of chemical filters:
+
+	•   Organic vapour.
+
+	•   Inorganic vapour.
+
+	•   Acid gases.
+
+	•   Ammonia.
+
+	•   Formaldehyde.
+
+	•   Mercury vapour."
+
+		==> It seems according to 3M I need a respirator filter of type A to protect against organic compounds like white spirits?
+
+“Type A: For use against certain organic gases and vapours with a boiling point higher than 65C as specified by the manufacturer.
+
+A filters, whatever the class, are required to be marked with at least the filter type, the colour code Brown together with the filter class, e.g., A2."
+
+	...

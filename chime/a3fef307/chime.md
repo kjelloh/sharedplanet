@@ -1,0 +1,35 @@
+# Todo: Consider to make a Windows 10 binary file monitor to detect what files not used and can be removed to shrink Windows 10 disk footprint?
+
+```#a3fef307``` *As of 2017-12-28 13:37*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be possible to monitor what files in the Windows 10 OS installation that are actually used (to be able to shrink the Windows 10 disk footprint by removing unused files)?
+
+1) Consider ways to actually monitor file access on Windows 10 installation folders?
+
+==&gt; Is there a way to hi-jack disk access to be able to monitor all file access on the disk?  
+…
+
+2) Consider ways to dynamically detect access to removed files and put them back if they turn up to be required?
+
+==&gt; Consider ways to hi-jack disk access and intervene to put removed files back when required?  
+…
+
+3) Consider ways to circulate windows 10 files in a fixed size installation folder from an external full Windows 10 cache?
+
+==&gt; Consider ways to define a max sized windows 10 installation and then swap files in and out as required by the windows 10 run-time?  
+==&gt; Consider to aim for a 5 GB “live” windows 10 disk volume and a 20 GB external full windows 10 cache?  
+…
+
+4) Consider to investigate what windows 10 functionality to turn off to not use specific windows 10 installation files?
+
+==&gt; Consider there are windows 10 functionality associated with certain sets of disk libraries (feature disabled means files are never used)?  
+...
+
+…
+
+Consider to delve into this idea to monitor and keep a windows 10 disk footprint down to a minimum?
+
+{% endraw %}

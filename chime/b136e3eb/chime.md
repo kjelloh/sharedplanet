@@ -1,0 +1,76 @@
+# Todo: Darwinet - Consider to apply the "digital worlds" idiom to administrate what gets synced and viewed where and when?
+
+```#b136e3eb``` *As of 2016-04-30 23:12*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could we imagine the “digital worlds” idiom to be a good one to base Darwinet view synchronisation sure interface?
+
+1) Imagine one digital world for source code (that source code would not contain entities (apps) nor files that are not source code files)
+
+==&gt; It seems it would then be easy to understand that the “source code world” of that domain syncs only source code files (other files are synced by other worlds or not at all = temporaries)?
+
+2) Imagine ones relation with the tax agency as a world that contains only tax related data (and thus only that data is shared with the tax agency)
+
+3) Consider ones medical journal lives in a “health world” and then it is easy to share only that world with a doctor at a visit or during a treatment?
+
+4) So, what can we say about “Digital Worlds” in relation to other proposed idioms like “dividual users”?
+
+==&gt; Q: Are Digital Worlds defined per dividual or is it the other way around?
+
+==&gt; Q: Can a Digital World exist by-itslef or do we require a dividual deity to observe it for it to exist (it seise to exist if all dividuals leave it)?
+
+==&gt; Q: Is a relation between dividuals defined by a world or does that relationship exist in a world?
+
+==&gt; Consider a world to exist by-itslef but that each dividual may define a view into that world and define relationships with other dividuals though shared views?
+
+Person 1 Person 2
+
+|    |
+
+---------------------  ----------------------------------
+
+|  |  |  |  |  |
+
+Dividual 1 Dividual 2 Dividual 3 Dividual 1 Dividual 2 Dividual 3
+
+|  |
+
+--------------------------------------------------- *Person1/Dividual1 shares a view into a world with Person2/Dividual2?*
+
+| Ex: Michelle (person)/Contractor (dividual) shares a view into a Project (world) with Angela (Person)/Employee (dividual)?
+
+|
+
+View View View The View defines what each dividual (user/member) can do and access (see) (and the branch and point in time we are viewing)?
+
+|--------- | -------|
+
+|
+
+World World World The World defines “deities” (apps/tools) and “objects” (data understandable by the deities e.g., source code and project files)?
+
+|   |  |
+
+------- | ------------------------
+
+MIV The MIV lives in the Domain and carries the history of all Domain activities (Data Model, Object lifetime and Object “value”) changes (delta)
+
+|
+
+Domain
+
+==&gt; Q: Does this even make any sense?
+
+==&gt; One example may be in a work context where ones role in a relation is ones dividual and the world defines the contents of the cooperation (e.g. a project)?
+
+**==&gt; Q: Do we actually have cross-references between multiple MIV:S, Worlds and Views?**
+
+...
+
+…
+
+Consider to elaborate on this “digital world” idiom to see how it could serve as a base for user-interface to understand what is shared and with whom in Darwinet Domains?
+
+{% endraw %}

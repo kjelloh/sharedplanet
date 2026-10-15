@@ -1,0 +1,45 @@
+# Todo: Consider to make espresso the really hard way for the right reason (maximal good espresso for minimal input resources)
+
+```#3797c2b2``` *As of 2021-06-25 16:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+> *So, the basic idea here is to really restrict how much energy, coffee and water we are allowed to use to still make the very best espresso!*
+
+> *One holy grale would be if we can make an espresso using body power only? probably not as heating water is extremely power hungry and although a human may produce around 200 W relatively "easy" I would imagine we would have to keep doing that for quite a while to heat the amount of water we need.*
+
+> *Still, how little water can we get away with and how little heat do we need to use if we really try and optimise the espresso making process?*
+
+> *Lets say we have the following brew goal;*
+
+> *a) Produce 40 ml of espresso from 20g of coffee.*  
+> *b) Brew time 25 - 30 seconds*  
+> *c) Brew pressure up to 9 bars*
+
+> *Lets say we have the following additional goal;*
+
+> *a) A really small dial-in coffee, energy and water waste*  
+> *b) For fun a fully mechanical espresso machine*  
+> *c) Allow electronics only if powered by battery (or super capacitor) charged with human labour.*
+
+> *I imagine if we aim for an espresso machine that uses only human power we would get a very tactile feed back when we are able to make espresso with a little effort as possible?*
+
+1) Consider to weigh the puck before and after the shot?
+
+==&gt; It seems a 18g puck holds about 15g of water?
+
+> *I made one test where I made a shot on my ROK espresso machine but using a gram resolution scale.*
+
+> The portafilter with coffee weighed dry 246 grams and after the shot it weighed 261 grams.
+
+> The portafilter itself weighs in at 230 grams.
+
+> 16g dry coffee  
+> 15g of water
+
+> Seems like a ration very much 1:1 :)
+
+...
+
+{% endraw %}

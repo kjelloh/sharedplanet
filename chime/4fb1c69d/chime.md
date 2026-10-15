@@ -1,0 +1,38 @@
+# Todo: Consider to modify the Kreg Cutting Station so that it accepts 45 mm boards?
+
+```#4fb1c69d``` *As of 2022-08-02 17:56*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I bought the Kreg cutting station as the quickest way to see if I can use it for my needs and found out it accepts only up to 43 (or so) boards (and I need to cut 44-45 mm boards)!
+
+1) It seems the Kreg cutting station is limited to 43 mm high boards?
+
+![](IMG_7121.jpeg)
+
+*The underside of the sliders seems to be at 43 mm from the bottom face?*
+
+![](IMG_7122.jpeg)
+
+*But I want to cut 45 mm high boards - that usually are around 44 mm (but they do not fit even at 44 mm)*
+
+2) Consider I can raise the sliders 2 mm up and then be able to cut my 44-45 mm boards?
+
+> *The basic idea here is to put something to act as a washers under the kreg cutting station sliders to have the saw ride 2 mm higher.*
+
+> *The nail plates I use as metal brackets are in fact 2 mm thick so maybe they can be made to fit?*
+
+3) It seems the Kreg cutting station is 82 mm high (thick) with a 38 mm high /thick) bottom "plate"?
+
+![](IMG_7123.jpeg)
+
+*It seems the Kreg cutting station is 82 mm high in total (excluding the rails)?*
+
+![](IMG_7124.jpeg)
+
+*It seems the Kreg cutting station bottom plate is 38 mm high? *
+
+...
+
+{% endraw %}

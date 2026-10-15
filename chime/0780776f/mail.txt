@@ -1,0 +1,44 @@
+﻿Could we imagine to define a stack of protocols using a DSL where the pipe-operator defines interfaces between stacked protocols? And if so, how does this compare to enable stacking using variadic template parameter list?
+
+1) Consider a Stack to be a sequence of protocols “piped” into a sequence?
+
+	==> The pipe-symbol is established in Unix, DOS and some C++ DSLs so it could be a good candidate?
+
+		auto myStack = protocol1 | protocol2 | protocol3; // myStack now is a Protocol with “Uppstack” interface of protocol1 and “Downstack" interface of protocol3.
+
+2) Consider to enable the DSL to generate a stack where each piped protocol are “executors”?
+
+	==> A protocol is an executor if it has operations running in parallel with external code (e.g. multithreaded or using C++ Coroutines)?
+
+3) Consider a “protocol” to be a composite type of a single or “stacked” protocols of the same interface?
+
+	Protocol<SPDH> protocol1;
+	Protocol<ACISTD> protocol2;
+	auto protocol3 = protocol1 | protocol2;
+
+	==> This should mean protocol3 is SPDH over ACISTD?
+
+	Protocol<TCP_IP> protocol 4;
+	auto protocol5 = protocol3 | protocol4;
+
+	==> Would mean SPDH over ACISTD over TCP/IP?
+
+4) Consider to compare this approach to specifying the stack as variadic template parameter list?
+
+	Protocol<SPDH,ACISTD,TCP_IP> protocol1;
+
+	==> This would mean protocol1 is SPDH over ACISTD over TCP_IP?
+
+	typedef Protocol<SPDH> protocol1_type;
+	typedef Protocol<ACISTD> protocol2_type;
+	Protocol<protocol1_type,protocol2_type> protocol3;
+	 
+	==> This would mean protocol is SPDH over ACISTD?
+
+	==> It seems “stacking” protocol types at compile time (template parameters) should enable us to perform compile-time specialisations?
+	...
+
+…
+
+Consider on this idea to express “stacking” of protocol engines using the “pipe” operator?
+...

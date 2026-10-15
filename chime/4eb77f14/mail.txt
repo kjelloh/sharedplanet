@@ -1,0 +1,791 @@
+﻿When shouting for a MAC Pro 6.1 on eBay I encountered the need to get the seller to provide runt-time information on the machine and got to understand that one can view the S.M.A.R.T information logged by the SSD to get a hint of such data.
+
+1) The command line smartmon tool seems to be downloadable from source forge here (https://sourceforge.net/projects/smartmontools/ )?
+
+2) Consider the Wikipedia page on S.M.A.R.T (https://en.wikipedia.org/wiki/S.M.A.R.T. )?
+
+3) Consider the S.M.A.R.T information about the SSD in my MacPro mid 2014 Retina machine?
+
+	==> This seems to be the commands I had to issei’s and the information returned by the smartctl tool?
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ /usr/local/sbin/smartctl -a disk1s1
+smartctl 7.0 2018-12-30 r4883 [Darwin 18.2.0 x86_64] (sf-7.0-1)
+Copyright (C) 2002-18, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Model Family:     Apple SD/SM/TS...E/F/G SSDs
+Device Model:     APPLE SSD SM1024F
+Serial Number:    S1K6NYAF800700
+LU WWN Device Id: 5 002538 655584d30
+Firmware Version: UXM6JA1Q
+User Capacity:    1,000,555,581,440 bytes [1.00 TB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    Solid State Device
+Device is:        In smartctl database [for details use: -P show]
+ATA Version is:   ATA8-ACS T13/1699-D revision 4c
+SATA Version is:  SATA 3.0, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Mon Feb 18 12:20:26 2019 CET
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+
+General SMART Values:
+Offline data collection status:  (0x00)	Offline data collection activity
+					was never started.
+					Auto Offline Data Collection: Disabled.
+Self-test execution status:      (   0)	The previous self-test routine completed
+					without error or no self-test has ever 
+					been run.
+Total time to complete Offline 
+data collection: 		(    0) seconds.
+Offline data collection
+capabilities: 			 (0x5f) SMART execute Offline immediate.
+					Auto Offline data collection on/off support.
+					Abort Offline collection upon new
+					command.
+					Offline surface scan supported.
+					Self-test supported.
+					No Conveyance Self-test supported.
+					Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x01)	Error logging supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   2) minutes.
+Extended self-test routine
+recommended polling time: 	 (  10) minutes.
+
+SMART Attributes Data Structure revision number: 40
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  1 Raw_Read_Error_Rate     0x001a   200   200   000    Old_age   Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   000    Pre-fail  Always       -       0
+  9 Power_On_Hours          0x0032   097   097   000    Old_age   Always       -       11117
+ 12 Power_Cycle_Count       0x0032   084   084   000    Old_age   Always       -       16026
+169 Unknown_Apple_Attrib    0x0013   253   253   010    Pre-fail  Always       -       7440259103744
+173 Wear_Leveling_Count     0x0032   191   191   100    Old_age   Always       -       47262335021
+174 Host_Reads_MiB          0x0022   099   099   000    Old_age   Always       -       38399889
+175 Host_Writes_MiB         0x0022   099   099   000    Old_age   Always       -       20716730
+192 Power-Off_Retract_Count 0x0012   099   099   000    Old_age   Always       -       56
+194 Temperature_Celsius     0x0022   065   065   000    Old_age   Always       -       35 (Min/Max 11/67)
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+199 UDMA_CRC_Error_Count    0x001a   200   200   000    Old_age   Always       -       0
+240 Unknown_SSD_Attribute   0x0022   100   100   000    Old_age   Always       -       0
+
+SMART Error Log Version: 1
+No Errors Logged
+
+SMART Self-test log structure revision number 1
+No self-tests have been logged.  [To run self-tests, use: smartctl -t]
+
+SMART Selective self-test log data structure revision number 1
+ SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
+    1        0        0  Not_testing
+    2        0        0  Not_testing
+    3        0        0  Not_testing
+    4        0        0  Not_testing
+    5        0        0  Not_testing
+Selective self-test flags (0x0):
+  After scanning selected spans, do NOT read-scan remainder of disk.
+If Selective self-test is pending on power-up, resume after 0 minute delay.
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ 
+
+	==> It seems for some reason my MacBook Pro mid 2014 Retina machine did NOT have the S.M.A.R.T enabled (But I could turn it on using the same smartctl command)?
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ /usr/local/sbin/smartctl -a disk1s1
+smartctl 7.0 2018-12-30 r4883 [Darwin 18.2.0 x86_64] (sf-7.0-1)
+Copyright (C) 2002-18, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Model Family:     Apple SD/SM/TS...E/F/G SSDs
+Device Model:     APPLE SSD SM1024F
+Serial Number:    S1K6NYAF800700
+LU WWN Device Id: 5 002538 655584d30
+Firmware Version: UXM6JA1Q
+User Capacity:    1,000,555,581,440 bytes [1.00 TB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    Solid State Device
+Device is:        In smartctl database [for details use: -P show]
+ATA Version is:   ATA8-ACS T13/1699-D revision 4c
+SATA Version is:  SATA 3.0, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Mon Feb 18 12:20:05 2019 CET
+SMART support is: Available - device has SMART capability.
+SMART support is: Disabled
+
+SMART Disabled. Use option -s with argument 'on' to enable it.
+(override with '-T permissive' option)
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ /usr/local/sbin/smartctl -son disk1s1
+smartctl 7.0 2018-12-30 r4883 [Darwin 18.2.0 x86_64] (sf-7.0-1)
+Copyright (C) 2002-18, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF ENABLE/DISABLE COMMANDS SECTION ===
+SMART Enabled.
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$
+
+	…
+
+4) Consider to analyse the SMART data reported by the seller on eBay of a Mac Pro 6.1 machine I had studied to maybe buy from this eBay account (https://www.ebay.com/usr/kbalda?_trksid=p2047675.l2559 )?
+
+	==> The original eBay link to the Mac Pro 6.1 12 core D700 machine is this one (https://www.ebay.com/itm/273693071583?ul_noapp=true )?
+
+		
+
+	==> This seems to be the SMART data reported by the seller (using the smartctl tool as proposed by me)?
+
+Il 16-feb-19 alle 18:51:22 CET, il venditore ha aggiunto le seguenti informazioni sull'oggetto:
+
+
+Added ssd infos.
+
+Tina:~ cattura$ /usr/local/sbin/smartctl -a disk1s1
+smartctl 7.0 2018-12-30 r4883 [Darwin 18.2.0 x86_64] (sf-7.0-1)
+Copyright (C) 2002-18, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Model Family:     Apple SD/SM/TS...E/F/G SSDs
+Device Model:     APPLE SSD SM0512F
+Serial Number:    S1FWNYADA14761
+LU WWN Device Id: 5 002538 655584d30
+Firmware Version: UXM8JA1Q
+User Capacity:    500. 277. 790. 720 bytes [500 GB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    Solid State Device
+Device is:        In smartctl database [for details use: -P show]
+ATA Version is:   ATA8-ACS T13/1699-D revision 4c
+SATA Version is:  SATA 3.0, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Sat Feb 16 18:44:29 2019 CET
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+
+General SMART Values:
+Offline data collection status:  (0x00)	Offline data collection activity
+					was never started.
+					Auto Offline Data Collection: Disabled.
+Self-test execution status:      (   0)	The previous self-test routine completed
+					without error or no self-test has ever 
+					been run.
+Total time to complete Offline 
+data collection: 		(    0) seconds.
+Offline data collection
+capabilities: 			 (0x5f) SMART execute Offline immediate.
+					Auto Offline data collection on/off support.
+					Abort Offline collection upon new
+					command.
+					Offline surface scan supported.
+					Self-test supported.
+					No Conveyance Self-test supported.
+					Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x01)	Error logging supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   2) minutes.
+Extended self-test routine
+recommended polling time: 	 (  10) minutes.
+
+SMART Attributes Data Structure revision number: 40
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  1 Raw_Read_Error_Rate     0x001a   200   200   000    Old_age   Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   000    Pre-fail  Always       -       0
+  9 Power_On_Hours          0x0032   099   099   000    Old_age   Always       -       1594
+ 12 Power_Cycle_Count       0x0032   098   098   000    Old_age   Always       -       1524
+169 Unknown_Apple_Attrib    0x0013   253   253   010    Pre-fail  Always       -       4153921248768
+173 Wear_Leveling_Count     0x0032   194   194   100    Old_age   Always       -       68731535392
+174 Host_Reads_MiB          0x0022   099   099   000    Old_age   Always       -       7952353
+175 Host_Writes_MiB         0x0022   099   099   000    Old_age   Always       -       8771961
+192 Power-Off_Retract_Count 0x0012   099   099   000    Old_age   Always       -       91
+194 Temperature_Celsius     0x0022   067   067   000    Old_age   Always       -       33 (Min/Max 15/75)
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+199 UDMA_CRC_Error_Count    0x001a   200   200   000    Old_age   Always       -       0
+240 Unknown_SSD_Attribute   0x0022   100   100   000    Old_age   Always       -       0
+
+SMART Error Log Version: 1
+No Errors Logged
+
+SMART Self-test log structure revision number 1
+No self-tests have been logged.  [To run self-tests, use: smartctl -t]
+
+SMART Selective self-test log data structure revision number 1
+ SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
+    1        0        0  Not_testing
+    2        0        0  Not_testing
+    3        0        0  Not_testing
+    4        0        0  Not_testing
+    5        0        0  Not_testing
+Selective self-test flags (0x0):
+  After scanning selected spans, do NOT read-scan remainder of disk.
+If Selective self-test is pending on power-up, resume after 0 minute delay.
+
+	==> Consider to compare this Mac Pro 6.1 with my mid 2014 macbook pro retina SMART property values (rows eBay Mac Pro 6.1 followed by my Macbook Pro Retina mid 2014)?
+
+
+SMART Attributes Data Structure revision number: 40
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE			RAW_VALUE
+  1 Raw_Read_Error_Rate     0x001a   200   200   000    Old_age   Always       -       0
+  1 Raw_Read_Error_Rate     0x001a   200   200   000    Old_age   Always       -       0
+							
+  5 Reallocated_Sector_Ct   0x0033   100   100   000    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   000    Pre-fail  Always       -       0
+
+  9 Power_On_Hours          0x0032   099   099   000    Old_age   Always       -       1594
+  9 Power_On_Hours          0x0032   097   097   000    Old_age   Always       -       11117
+
+ 12 Power_Cycle_Count       0x0032   098   098   000    Old_age   Always       -       1524
+ 12 Power_Cycle_Count       0x0032   084   084   000    Old_age   Always       -       16026
+
+169 Unknown_Apple_Attrib    0x0013   253   253   010    Pre-fail  Always       -       4153921248768
+169 Unknown_Apple_Attrib    0x0013   253   253   010    Pre-fail  Always       -       7440259103744
+
+173 Wear_Leveling_Count     0x0032   194   194   100    Old_age   Always       -       68731535392
+173 Wear_Leveling_Count     0x0032   191   191   100    Old_age   Always       -       47262335021
+
+174 Host_Reads_MiB          0x0022   099   099   000    Old_age   Always       -       7952353
+174 Host_Reads_MiB          0x0022   099   099   000    Old_age   Always       -       38399889
+
+175 Host_Writes_MiB         0x0022   099   099   000    Old_age   Always       -       8771961
+175 Host_Writes_MiB         0x0022   099   099   000    Old_age   Always       -       20716730
+
+192 Power-Off_Retract_Count 0x0012   099   099   000    Old_age   Always       -       91
+192 Power-Off_Retract_Count 0x0012   099   099   000    Old_age   Always       -       56
+
+194 Temperature_Celsius     0x0022   067   067   000    Old_age   Always       -       33 (Min/Max 15/75)
+194 Temperature_Celsius     0x0022   065   065   000    Old_age   Always       -       35 (Min/Max 11/67)
+
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+
+199 UDMA_CRC_Error_Count    0x001a   200   200   000    Old_age   Always       -       0
+199 UDMA_CRC_Error_Count    0x001a   200   200   000    Old_age   Always       -       0
+
+240 Unknown_SSD_Attribute   0x0022   100   100   000    Old_age   Always       -       0
+240 Unknown_SSD_Attribute   0x0022   100   100   000    Old_age   Always       -       0
+
+	==> It seems the eBay Mac Pro has been powered on 1524 times and run average 1594 h / 1524 times = 1 h (while my Macbook pro has been powered on 16 026 times with average run-time of 11 117/16 026 = 41 minutes)?
+	==> It seems the Power Cycle Count also counts power save behaviour (where SSD is powered off when not in use)?
+
+	==> It seems the Wear Leveling Count is a bit proprietary but should roughly estimate the remaining lifetime of the SSD (https://superuser.com/questions/1037644/samsung-ssd-wear-leveling-count-meaning )?
+
+“Kingston describe this SMART attribute as follows:
+Number of erase/program cycles per block on average. This attribute is intended to be an indicator of imminent wear-out. Normalized Equation: 100 – ( 100 * Average Erase Count / NAND max rated number of erase cycles)
+Ignore the Raw Data in these instances (They can be manipulated by manufacturers to work in different ways), and look at the Current Value column. 
+
+This source from Anandtech <http://www.anandtech.com/show/8239/update-on-samsung-850-pro-endurance-vnand-die-size> gives us a good indication of how to use this figure:
+
+The Wear Leveling Count (WLC) SMART value gives us all the data we need. The current value stands for the remaining endurance of the drive in percentage, meaning that it starts from 100 and decreases linearly as the drive is written to. The raw WLC value counts the consumed P/E cycles, so if these two values are monitored while writing to the drive, sooner than later we will find the spot where the normalized value drops by one.
+All of your drives are at between 95 and 100, and will eventually drop to 0. This is an estimation of how many write, erase, rewrite etc. cycles each block can go through before failing, and at the moment, one of your drives is estimated to have used 5% of it's current expected life span. Again, the key word here is estimated. 
+
+Note also that your drives may use different NAND technology, hence the differences in perceived life. Some NAND technology expects blocks to last for around 1000 PE cycles each, others can be rated for as much as 30,000."
+
+	==> It seems a little but unclear wether Apple SSD and OS actually allow or keep the SAMRT data of the SSD updated to be useful (https://apple.stackexchange.com/questions/336667/how-many-writes-do-i-have-on-my-250gb-ssd-hard-drive-on-my-macbook-pro-high-sier )?
+
+“
+It's unlikely you're going to obtain this info. 
+
+	• The drive must support the SMART attribute
+	• Your OS must allow you to obtain the attribute. On macOS, this information, by design, is simply unavailable 
+	• It's not a practical metric to monitor
+Finally, when it comes to drives, whether spinning or solid state, assume they are going to fail. This is why a sensible backup strategy is much, much more critical than monitoring total writes.
+"
+
+“
+The best way to get an approximation of what you want is to look at the SMART attributes on the drive. You can do that with the program "smartctl" from "smartmontools". If you have homebrew installed, you can install smartmontools with this command:
+
+brew install smartmontools
+
+Then afterwards run it like this:
+
+smartctl -a disk0
+
+(replace disk0 with the actual physical disk you want to examine - you can find the device names in Disk Utility)
+
+In the output from smartctl, you'll want to look at the so called "Wear Leveling Count". The raw value at the right tells you how many erase/program cycles each block on the SSD in average has undergone. The erase/program cycles are what wears out the drive eventually.
+
+In addition, the number in the column "value" will tell you in basically how large a part that number of erase/program cycles is compared to the expected number of cycles that you drive can sustain. Basically this number starts at 100% for a new drive, and counts down to 0% where you would expect the drive to start failing. As mentioned before, drives can and will fail before that point - and they might not fail at that point. However, it is one of the better indicators you have of drive health.
+"
+
+	==> But Apple seems to support SAMRT attributes on this SSD drives (https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/WorkingWithSAM/WWS_SAMDevInt/WWS_SAM_DevInt.html )?
+
+“The ATA family provides a device interface that allows applications to get SMART (self-monitoring, analysis, and reporting technology) data from ATA and SATA devices that implement the SMART feature set. For more information on this device interface, see the API reference documentation for ATASMARTLib.h in I/O Kit Framework Reference <https://developer.apple.com/documentation/iokit>."
+
+5) Consider the Wikipedia article on the ATA interface (https://en.wikipedia.org/wiki/Parallel_ATA )?
+
+	==> Consider the ATA/ATAPI-6 (draft?) that is referenced from the wikipedia article (http://www.t13.org/Documents/UploadedDocuments/project/d1410r3b-ATA-ATAPI-6.pdf )?
+
+	==> It seems ATA/ATAPI-6 chapter 8.51 is about the defined SMART commands?
+
+8.51 SMART
+
+Individual SMART commands are identified by the value placed in the Feature register. Table 50 shows these Feature register values.
+
+Table 50 − SMART Feature register values
+
+T13/1410D revision 3b
+
+ 
+Value
+
+
+Command
+
+ 
+00h-CFh
+
+
+Reserved
+
+
+D0h
+
+SMART READ DATA
+
+
+D1h
+
+Obsolete
+
+
+D2h
+
+SMART ENABLE/DISABLE ATTRIBUTE AUTOSAVE 
+
+
+D3h
+
+Obsolete
+
+
+D4h
+
+SMART EXECUTE OFF-LINE IMMEDIATE
+
+
+D5h
+
+SMART READ LOG
+
+
+D6h
+
+SMART WRITE LOG
+
+
+D7h
+
+Obsolete
+
+
+D8h
+
+SMART ENABLE OPERATIONS
+
+
+D9h
+
+SMART DISABLE OPERATIONS
+
+
+DAh
+
+SMART RETURN STATUS
+
+
+DBh
+
+Obsolete
+
+
+DCh-DFh
+
+	
+Reserved
+
+E0h-FFh
+
+ 	
+vendor specific
+
+
+	==>
+ 
+6) Consider apple support on ATASMARTLib.h (https://developer.apple.com/documentation/iokit/atasmartlib_h?language=occ )?
+
+	==> The ATASMARTLIB.h file seems to be located at “Macintosh HD⁩ ▸ ⁨Applications⁩ ▸ ⁨Xcode.app⁩ ▸ ⁨Contents⁩ ▸ ⁨Developer⁩ ▸ ⁨Platforms⁩ ▸ ⁨MacOSX.platform⁩ ▸ ⁨Developer⁩ ▸ ⁨SDKs⁩ ▸ ⁨MacOSX.sdk⁩ ▸ ⁨System⁩ ▸ ⁨Library⁩ ▸ ⁨Frameworks⁩ ▸ ⁨IOKit.framework⁩ ▸ ⁨Versions⁩ ▸ ⁨A⁩ ▸ ⁨Headers⁩ ▸ ⁨storage⁩ ▸ ⁨ata⁩” on my Xcode installation?
+
+		NOTE: It seems to also be provided by apple as open source (https://opensource.apple.com/source/IOATABlockStorage/IOATABlockStorage-130.3.1/UserClientLib/ATASMARTLib.h )?
+
+/*
+ * Copyright (c) 1998-2007 Apple Inc. All rights reserved.
+ *
+ * @APPLE_LICENSE_HEADER_START@
+ * 
+ * This file contains Original Code and/or Modifications of Original Code
+ * as defined in and that are subject to the Apple Public Source License
+ * Version 2.0 (the 'License'). You may not use this file except in
+ * compliance with the License. Please obtain a copy of the License at
+ * http://www.opensource.apple.com/apsl/ and read it before using this
+ * file.
+ * 
+ * The Original Code and all software distributed under the License are
+ * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
+ * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
+ * INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.
+ * Please see the License for the specific language governing rights and
+ * limitations under the License.
+ * 
+ * @APPLE_LICENSE_HEADER_END@
+ */
+
+
+#ifndef __ATA_SMART_LIB_H__
+#define __ATA_SMART_LIB_H__
+
+
+/*! @defined kIOPropertySMARTCapableKey
+	@discussion Property to search for in IORegistry to find SMART capable devices
+	without hardcoding the search to a particular device class. */
+#define kIOPropertySMARTCapableKey		"SMART Capable"
+
+
+#include <IOKit/IOReturn.h>
+#include <IOKit/IOTypes.h>
+
+
+#if !KERNEL
+	#include <CoreFoundation/CFPlugIn.h>
+	#if COREFOUNDATION_CFPLUGINCOM_SEPARATE
+		#include <CoreFoundation/CFPlugInCOM.h>
+	#endif
+	
+	#include <IOKit/IOCFPlugIn.h>
+	#include <IOKit/storage/ata/IOATAStorageDefines.h>
+	
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+/*! @header ATASMARTLib
+ ATASMARTLib implements non-kernel task access to ATA SMART data.
+*/
+
+
+/* 5E659F92-20D3-11D6-BDB5-0003935A76B2 */
+/*! @defined kIOATASMARTLibFactoryID
+    @discussion UUID for the IOATASMARTInterface Factory. */
+
+#define kIOATASMARTLibFactoryID			CFUUIDGetConstantUUIDWithBytes(NULL,				\
+										0x5E, 0x65, 0x9F, 0x92, 0x20, 0xD3, 0x11, 0xD6,		\
+										0xBD, 0xB5, 0x00, 0x03, 0x93, 0x5A, 0x76, 0xB2)
+
+
+/* 24514B7A-2804-11D6-8A02-003065704866 */
+/*! @defined kIOATASMARTUserClientTypeID
+    @discussion Factory ID for creating an ATA SMART user client. */
+#define kIOATASMARTUserClientTypeID		CFUUIDGetConstantUUIDWithBytes(NULL,				\
+										0x24, 0x51, 0x4B, 0x7A, 0x28, 0x04, 0x11, 0xD6,		\
+										0x8A, 0x02, 0x00, 0x30, 0x65, 0x70, 0x48, 0x66)
+
+/* 08ABE21C-20D4-11D6-8DF6-0003935A76B2 */
+/*! @defined kIOATASMARTInterfaceID
+    @discussion InterfaceID for IOATASMARTInterface. */
+#define kIOATASMARTInterfaceID			CFUUIDGetConstantUUIDWithBytes(NULL,				\
+										0x08, 0xAB, 0xE2, 0x1C, 0x20, 0xD4, 0x11, 0xD6,		\
+										0x8D, 0xF6, 0x00, 0x03, 0x93, 0x5A, 0x76, 0xB2)
+
+
+#endif	/* !KERNEL */
+
+
+// Off-line data collection status byte values ( offset 362 into 
+// device SMART data structure ) See section 8.54.5.8.1 of ATA/ATAPI-6.
+enum
+{
+	kATASMARTOffLineCollectionNeverStarted		= 0x00,
+	kATASMARTOffLineCollectionNoError			= 0x02,
+	kATASMARTOffLineCollectionSuspendedByHost	= 0x04,
+	kATASMARTOffLineCollectionAbortedByHost		= 0x05,
+	kATASMARTOffLineCollectionFatalError		= 0x06,
+	
+	kATASMARTOffLineCollectionMask				= 0x7F
+};
+
+// Self-test execution status values ( offset 363 into 
+// Device SMART data structure ) See section 8.54.5.8.2 of ATA/ATAPI-6.
+enum
+{
+	kATASMARTSelfTestStatusNoError 							= 0x00,
+	kATASMARTSelfTestStatusAbortedByHost 					= 0x01,
+	kATASMARTSelfTestStatusInterruptedByReset				= 0x02,
+	kATASMARTSelfTestStatusFatalError 						= 0x03,
+	kATASMARTSelfTestStatusPreviousTestUnknownFailure 		= 0x04,
+	kATASMARTSelfTestStatusPreviousTestElectricalFailure	= 0x05,
+	kATASMARTSelfTestStatusPreviousTestServoFailure			= 0x06,
+	kATASMARTSelfTestStatusPreviousTestReadFailure			= 0x07,
+	kATASMARTSelfTestStatusInProgress						= 0x0F
+};
+
+
+/*
+ *	512 byte Device SMART data structure - 
+ *	See section 8.54.5.8 of T13:1410D (ATA/ATAPI-6).
+ */
+typedef struct ATASMARTData
+{
+	UInt8		vendorSpecific1[362];
+	UInt8		offLineDataCollectionStatus;
+	UInt8		selfTestExecutionStatus;
+	UInt8		secondsToCompleteOffLineActivity[2];
+	UInt8		vendorSpecific2;
+	UInt8		offLineDataCollectionCapability;
+	UInt8		SMARTCapability[2];
+	UInt8		errorLoggingCapability;
+	UInt8		vendorSpecific3;
+	UInt8		shortTestPollingInterval;		/* expressed in minutes */
+	UInt8		extendedTestPollingInterval; 	/* expressed in minutes */
+	UInt8		reserved[12];
+	UInt8		vendorSpecific4[125];
+	UInt8		checksum;
+} ATASMARTData;
+
+
+/*
+ *	512 byte Device SMART data thresholds structure. Not
+ *	strictly part of ATA/ATAPI-6.
+ */
+typedef struct ATASMARTDataThresholds
+{
+	UInt8		vendorSpecific1[362];
+	UInt8		vendorSpecific2[149];
+	UInt8		checksum;
+} ATASMARTDataThresholds;
+
+
+typedef struct ATASMARTLogEntry
+{
+	UInt8	numberOfSectors;
+	UInt8	reserved;
+} ATASMARTLogEntry;
+
+
+typedef struct ATASMARTLogDirectory
+{
+	UInt8				SMARTLoggingVersion[2];
+	ATASMARTLogEntry	entries[255];
+} ATASMARTLogDirectory;
+
+
+#if !KERNEL
+
+/*! 
+ *	@interface IOATASMARTInterface
+ *	@abstract Self-Monitoring, Analysis, and Reporting
+ *	Technology Interface.  
+ *	@discussion See section 6.14 and section 8.54 of T13:1410D ATA/ATAPI-6
+ *	for details on Self-Monitoring, Analysis, and Reporting Technology
+ *	feature set.
+ */
+
+typedef struct IOATASMARTInterface
+{
+	
+	IUNKNOWN_C_GUTS;
+	
+	UInt16		version;
+	UInt16		revision;
+	
+	/* 
+	 * MANDATORY API support. If the device claims SMART feature set compliance, it
+	 * must implement the following functions.
+	 */
+	
+	
+    /*!
+		@function SMARTEnableDisableOperations
+		@abstract toggle SMART Operations.
+		@discussion See section 8.54.1 and 8.54.3 of ATA/ATAPI-6.
+		@param enable Passing true will ENABLE SMART operations,
+		false will DISABLE SMART operations.
+		@result Returns kIOReturnSuccess if successful, kIOReturnNoDevice
+		if there is no connection to an IOService, kIOReturnExclusiveAccess
+		if it is already opened by another client.
+	*/
+	
+	IOReturn ( *SMARTEnableDisableOperations ) ( void *		interface,
+												 Boolean	enable );
+	
+    /*!
+		@function SMARTEnableDisableAutosave
+		@abstract toggle SMART Autosave.
+		@discussion	See section 8.54.2 of ATA/ATAPI-6.
+		@param enable Passing true will ENABLE SMART Autosave, false will
+		DISABLE SMART Autosave.
+		@result Returns kIOReturnSuccess if successful, kIOReturnNoDevice
+		if there is no connection to an IOService, kIOReturnExclusiveAccess
+		if it is already opened by another client.
+	*/
+	
+	IOReturn ( *SMARTEnableDisableAutosave ) ( void *	interface,
+											   Boolean	enable );
+	
+    /*!
+		@function SMARTReturnStatus
+		@abstract see if device has detected a threshold exceeded condition.
+		@discussion	The caller will poll this function and if
+		exceededCondition is non-zero and we returned kIOReturnSuccess the
+		device threshold exceeded condition. This would prompt the caller
+		to call ATASMARTReadData to get more information. See section
+		8.54.7 of ATA/ATAPI-6.
+		@param exceededCondition
+		if exceededCondition is non-zero the device threshold
+		exceeded condition.
+		@result Returns kIOReturnSuccess if successful, kIOReturnNoDevice
+		if there is no connection to an IOService, kIOReturnExclusiveAccess
+		if it is already opened by another client.	
+	*/
+	
+	IOReturn ( *SMARTReturnStatus ) ( void *		interface,
+									  Boolean * 	exceededCondition );
+	
+
+	/* 
+	 * OPTIONAL API support. If the device claims SMART feature set compliance, it
+	 * may implement one or more of the following functions. Please consult the
+	 * technical manual for the device to see what functions are supported.
+	 */
+
+
+    /*!
+		@function SMARTExecuteOffLineImmediate
+		@abstract immediately initiate collection of SMART data.
+		@discussion	See section 8.54.4 of ATA/ATAPI-6.
+		@param extendedTest passing true will collect "off-line" extended test,
+		false short test.
+		@result Returns kIOReturnSuccess if successful,
+		kIOReturnNoDevice if there is no connection to an IOService,
+		kIOReturnExclusiveAccess if it is already opened by another client.	
+	*/
+	
+	IOReturn ( *SMARTExecuteOffLineImmediate ) ( void *		interface,
+												 Boolean	extendedTest );
+	
+    /*!
+		@function SMARTReadData
+		@abstract Retrieves 512 byte device SMART data structure.
+		@discussion	See section 8.54.5 of ATA/ATAPI-6.
+		Will return an appropiate error if command can not be completed.
+	*/
+	
+	IOReturn ( *SMARTReadData ) ( void * interface, ATASMARTData * data );	
+	
+    /*!
+		@function SMARTValidateReadData
+		@abstract Test the integrity of the device SMART data structure.
+		@discussion	The data structure checksum is the two's complement
+		of the sum of the first 511 bytes in the data structure. The sum
+		of all 512 bytes will be zero when the checksum is correct. See
+		section 8.54.5.8.7 of ATA/ATAPI-6. Will return an error if
+		checksum fails.
+	*/
+	
+	IOReturn ( *SMARTValidateReadData ) ( void *				interface,
+										  const ATASMARTData *	data );
+	
+	
+    /*!
+		@function SMARTReadDataThresholds
+		@abstract Retrieves 512 byte device SMART data thresholds structure.
+		@discussion	Retrieves 512 byte device SMART data thresholds structure.
+		This command is not defined as part of ATA/ATAPI-6, but is implemented
+		by a large variety of manufacturers. Will return an appropiate error if
+		command can not be completed.
+	*/
+	
+	IOReturn ( *SMARTReadDataThresholds ) ( void *						interface,
+											ATASMARTDataThresholds *	dataThresholds );
+	
+    /*!
+		@function SMARTReadLogDirectory
+		@abstract Reads the 512-byte log directory.
+		@discussion	The log directory is a directory of all possible
+		SMART logs available from the drive.
+	*/
+	
+	IOReturn ( *SMARTReadLogDirectory ) ( void *				 interface,
+										  ATASMARTLogDirectory * logData );
+	
+    /*!
+		@function SMARTReadLogAtAddress
+		@abstract Reads the 512-byte log at the specified logOffset in the log.
+		@discussion	Reads the 512-byte log at the specified logOffset in the log.
+		See section 8.54.6.4 of ATA/ATAPI-6.
+	*/
+	
+	IOReturn ( *SMARTReadLogAtAddress ) ( void *		interface,
+										  UInt32		logOffset,
+										  void *		buffer,
+										  UInt32		size );
+	
+    /*!
+		@function SMARTWriteLogAtAddress
+		@abstract Writes to the 512-byte log at the specified logOffset in the log.
+		@discussion	Writes to the 512-byte log at the specified logOffset in the log.
+		See section 8.54.8.4 of ATA/ATAPI-6.
+	*/
+	
+	IOReturn ( *SMARTWriteLogAtAddress ) ( void *			interface,
+										   UInt32			logOffset,
+										   const void *		buffer,
+										   UInt32			size );
+	
+	/*!
+		@function GetATAIdentifyData
+		@abstract Reads the 512-byte data provided by the drive in response
+		to the ATA IDENTIFY DEVICE command.
+		@discussion Reads the 512-byte data provided by the drive in response
+		to the ATA IDENTIFY DEVICE command.
+		See section 8.15 of ATA/ATAPI-6.
+		The data placed in buffer is guaranteed to be in native endian form on return.
+		(i.e. it will be byte swapped on big endian platforms, so the caller need not
+		do anything)
+		@param interface A valid IOATASMARTInterface**.
+		@param buffer A valid buffer.
+		@param inSize The number of bytes to place in the buffer.
+		@param outSize The number of bytes placed in the buffer. Can be NULL if the information
+		is not required by the caller.
+		@return An IOReturn result code. If inSize is greater than 512 or less than 1,
+				kIOReturnBadArgument is returned.
+	*/
+	
+	IOReturn ( *GetATAIdentifyData ) ( void *				interface,
+									   void *				buffer,
+									   UInt32				inSize,
+									   UInt32 *				outSize );
+	
+} IOATASMARTInterface;
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif	/* !KERNEL */
+
+#endif	/* __ATA_SMART_LIB_H__ */
+
+
+	...
+	

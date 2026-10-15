@@ -1,0 +1,39 @@
+﻿I realize I have not really got a grip on what API the existing C++ persistent Data structures provide (e.g., do they provide value semantics)?
+
+1) Consider to understand the immer C++ persistent data structures through the Ewig editor example (https://github.com/arximboldi/ewig <https://github.com/arximboldi/ewig>)
+
+	==> Also see ”Todo: Tha, Elm and Immer - Consider the C++ Immer immutable data structures based text editor "ewig" is in fact implementing the Elm model, view, update?”
+
+2) So, how do we initiate the first instance of a C++ Persistent Data Structure?
+
+	==> It seems Immutable-Cpp provides a static empty() factory method (https://github.com/rsms/immutable-cpp <https://github.com/rsms/immutable-cpp>)?
+
+auto a = Array<int>::empty();
+
+	==> 
+
+3) Consider to understand if and how a C++ Persistent Data Structure instance supports value semantics?
+
+	==> Can we assign an existing persistent data structure ”variable” with a new ”instance” (i.e., does the object act as a smart reference)?
+
+	==> It seems Immutable-Cpp provides value semantcs once variable is instantiated (https://github.com/rsms/immutable-cpp <https://github.com/rsms/immutable-cpp>)?
+
+auto a = Array<int>::empty();
+a = a->push(1);
+a = a->push(2);
+a = a->push(3);
+
+	==> 
+
+4) Consider to understand how we can compose with persistent data structures (e.g., have Tha values be and aggregate persistent data structures)?
+
+	==> It seems immutable-cpp actually provides a ref<Array>  instance to provide value semantics?
+
+ref<Array> Array::empty();
+
+		==> Thus we may aggregate ref<Array> members (not try to aggregate the Array<T> itself?
+
+…
+
+Consider to study and try out C++ persistent data structures more to understand what goes behind the scenes and how to best use them in combination with non persistent data?
+...

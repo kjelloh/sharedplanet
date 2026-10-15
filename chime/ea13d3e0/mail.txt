@@ -1,0 +1,64 @@
+﻿Could it be a good ida to start writing on presentations and select some cross platform tool for doing so?
+
+1) Consider Slideshare list of presentation tools (http://www.slideshare.net/ss/creators/tips-and-tricks?from=sub-nav)?
+
+Tools & Resources
+
+PowerPoint isn’t the only option for creating presentations anymore. New apps and tools allow you to easily create beautiful presentations, infographics and design elements. Here are a few to check out:
+
+Keynote <https://www.apple.com/mac/keynote/>
+More commonly known as Apple’s version of PowerPoint (remember to save and upload as a PDF to SlideShare!)
+
+Canva <https://www.canva.com/>
+Create blog graphics, presentations and more using sophisticated design layouts
+
+FlowVella <https://flowvella.com/>
+Insert your content into the Apple-only program and out will come a presentation that looks like an app
+
+eMaze <https://www.emaze.com/>
+Great for users who love working on a browser; you can even get your decks translated
+
+Google Slides <http://www.google.com/slides/about/>
+Similar to PowerPoint, with a cleaner interface that allows for collaborative editing
+
+Slides <http://slides.com/>
+Create decks that are viewable on any device; you can also use other users’ designs and layouts
+
+Slidebean <https://slidebean.com/>
+Add your content and the design is applied automatically; make adjustments with just a few clicks
+
+Piktochart <http://piktochart.com/>
+Make a beautiful infographic in under 10 minutes; choose from more than 400 templates
+
+Easel.ly <http://www.easel.ly/>
+Design an infographic in minutes using templates that allow you to drag and drop your desired elements
+
+Infogr.am <https://infogr.am/>
+Pop your data into an Excel-style spreadsheet and watch your infographic automatically update
+
+Venngage <https://venngage.com/>
+A simple-to-use site, you can choose from a wide number of templates, charts, images and more to create your perfect infographic
+
+SlideTemple <https://blog.slideshare.net/2014/09/24/a-new-way-to-find-and-customize-visuals-for-your-presentations/>
+Choose from more than 100 customizable icons, and request new ones.
+
+BeFunky <http://www.befunky.com/>
+A tool to create professional-looking photos using various photo effects
+
+Skitch <https://evernote.com/skitch/>
+A part of Evernote, Skitch allows you to add annotations, sketches, and more to your assets to make your point
+
+
+Read more to find out the pros and cons of some of these alternatives <https://blog.slideshare.net/2015/04/20/the-best-alternatives-to-powerpoint/>
+Tip: Check out the Presenter’s Toolbox <https://blog.slideshare.net/2014/11/17/presenters-toolbox-apps-and-gear-for-a-successful-presentation/>, which includes apps and gear for a successful presentation!
+
+
+2) Consider to store presentations in Git?
+
+	==> Consider to create presentations for GitHub projects and store them with the project?
+	==> What cross-platform format (tool) should we use to produce GitHub project presentations?
+	…
+…
+
+Consider to elaborate on this idea to start writing on presentations for interesting topics to have something to iterate over time and thus over time get better and better (and finally ready)?
+...

@@ -1,0 +1,51 @@
+﻿I have tried alternatives to word in the form of pure text with markdown like LaTex, Markdown, RTF but wonder if we can do "better"?  
+
+So the basic idea here is to analyse the structure of a pure ASCII or UTF-8 text file to determine abstractions like headers, tables, sections, front page, title and so on. And ALL without requiring the text file to be embellished with any tags or meta-data!
+
+I suggest the writes should aim at making the raw text document look as good as possible using white spaces and text only. The writes should be able to print the document as text and still get decently formatted pages.
+
+My thinking is now that we can try to make an application that analyses such  "type writer formatted pages" and type sets it properly in HTML, LaTex, RTF, Markdown or what have you?
+
+We can assume a single line that is prefixed with a number and a punctuation to be a header?
+
+"3. What is ice cream?"	Can be typeset as "3. What is ice cream?"
+
+We can assume continuous text where the first line is indented with a single tab to be a paragraph?
+
+We can assume text on a single line separated by tabs to be a table row entry? And expect all following rows with tabs as separators to be following rows in the same table. And a single empty line marks the end of the table?
+
+Now, for tables it is a bit tricky to detect multi line entries in cells, I would believe? On the other hand, if we assume no cells are to be empy we can figure it out?
+
+col1			col2			col3			col4
+Volvo		1992		Sweden		This car was made in Sweden
+									and was very popular for its price
+									and safety features!
+
+We can assume the fourth column has a cell with multiple lines of text?
+
+We can assume a line with a number all to the left is a line with a page number and thus marks a page break?
+
+Also, if the text document does NOT have anything that looks like page number lines it is up to the application to break the text into pages in a good looking manner?
+
+...
+
+1) Consider a first approach could be a type setting application that can preserve the document structure although we change font and font size?
+
+The main idea here is that the writer formats pages based on the font and font size used when editing the document.
+
+But to make the pages still look good with preserved tables, line and page breaks under a new font and font size wee need to understand the document structure to re-arrange text so that tables, line and page breaks still looks "good"?
+
+
+2) Consider a good name for this Application?
+
+This application is not intrusive and does NOT require the write to provide any meta-data ion the form of text (e.g., tags and symbols). The application name should imply it interprets the structural intentions of the writer, indicated by the use of line breaks and tabs, to typeset the same structure into headings, chapters, paragraphs, page breaks and tables of some other type setting language / paradigm?
+
+Something about "blooming"?
+
+Something about "growing up"?
+
+Something about waving a wand and putting a spell on the text?
+
+...
+
+...

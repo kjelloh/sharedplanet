@@ -1,0 +1,22 @@
+﻿Consider to write a ”manual” about requirement communication and administration based on my almost 20 years of experience.
+
+1) Requirement ID enabling iterative enhancement (the sweet spot between control and flexibility)
+2) Flavors of requirements (Must, Should, May)
+3) The importance of stating who is required to do what and when.
+4) The importance of taking a small step when a large one is not yet possible
+5) The power of stating an imperfect requirement to find the best one (trusting that imperfect requirements will be questioned so a better one may later be stated)
+6) Different ways of stating requirements (stand-alone, cross referenced and sub-requirement lists)
+7) Top down from product level to technical implementation.
+8) The importance to select the right model and understanding the difference between the model and reality (applying the same requirements to different realizations)
+8.1) The trick of defining a model that is transparently applied to reality (How a special kind of computer is identified as a special kind of HOST)
+9) The importance of aiming at a changing and unknown future (continuous re-aiming applying iterative corrections)
+10) The importance to automate to free humans to spend more time being creative (you can’t automate creativity).
+11) The power of separating what you say from how you say it (The same requirements may be manifested in document, tests and community knowledge).
+12) Preferring Right to Not-Wrong (Much easier to comply to What-must-be than What-must-not-be)
+13) The importance to allow stated truths to be more elaborated that spoken day-to-day language (Stated "Approval Reversal” may be spoken about as just ”Reversal”)
+14) The trick to find a model that many audiences understand (The Product, Processors, Card Schemes and Terminal Vendors may use different terms but the same model)
+15) The importance to understand how to meet business, technical and security requirements in a changing world (having satisfied customers whilst maximizing a sustainable profit)
+16) How to improve whilst everything is on fire (Being able to solve problems, i.e. put out fires,  so they do not come back or live on in a worse form)
+17) Understanding why the right way is not the best way (Decide how to move forward in a world of hidden agendas and unknown legacies)
+18) Understand how to open and close ”doors” to create change in preferable direction (the magic of making the right things happen by making them possible)
+...

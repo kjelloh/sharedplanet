@@ -1,0 +1,39 @@
+﻿What can we learn from trying to use Eric Nibblers Ranges to process Range-trees (ranges of ranges) for composite model encoding/decoding and also parallel-isation of data structure processing?
+
+	==> See “Todo: Programming - Consider to follow up and understand Eric Nibblers C++ Ranges concepts for the standard?”
+	==> See “Todo: Programming - Consider to design lazy (two-pass) Protocol Message Encoding and Decoding using tagged-range-ASTs?”
+	==> See “Todo: Programming - Consider to model Protocol Stacks using State-Machine-Based Tagged-Range-Tree Transforms?”
+
+
+1) Consider this Ranges documentation and examples to see if current design allows for range-tree “piping” (https://github.com/ericniebler/range-v3/blob/master/doc/index.md <https://github.com/ericniebler/range-v3/blob/master/doc/index.md>)?
+
+	==> Current design seem to be based on range-adaptors piped through adaptors that result in lazy-ranges (evaluated on access)?
+
+	std::vector<int> vi{1,2,3,4,5,6,7,8,9,10};
+	    using namespace ranges;
+	    auto rng = vi | view::remove_if([](int i){return i % 2 == 1;})
+	                  | view::transform([](int i){return std::to_string(i);});
+	    // rng == {"2","4","6","8","10"};
+
+	==> Q: Can we imagine a way to allow the “pipe-operator |” to be used for “forked” sub-range piping (root range branched into range-tree)?
+
+		…
+
+2) What can we say about adapting nibblers ranges to parallel processing of fixated sub-ranges?
+
+	==> Consider we would like a range to at phase one be divided into sub-ranges (array of ranges)?
+		==> Consider an array of sub-ranges perhaps should be represented as a vector of iterators marking start of each new sub-range (not store redundant end iterators for each sub-range)?
+
+	==> Consider once the sub-ranges are fixated (location and size known) we know for sure we may process that range in parallel with other non-overlapping ranges?
+
+		==> Consider we still need to worry about the processing code accessing shared state (but the processed range is surely not shared with other sub-ranges)?
+
+	==> Consider what we can say about making sub-range processing effective by thinking about it being accessible in CPU cache?
+
+		==> Consider designs that allows sub-range data to be places on the stack (enhance likelihood it is mirrored into the CPU cache)?
+		…
+	…
+…
+
+Consider to elaborate on this idea of enabling range-tree processing as a good data-model encode/decode idiom and also for parallel processing of such data encoding/decoding?
+...

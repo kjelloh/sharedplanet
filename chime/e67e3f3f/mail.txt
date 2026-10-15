@@ -1,0 +1,80 @@
+﻿I need to choose what Pinion gearbox to go for with my Quantor Urkraft frame?
+
+1) Consider to take a ride with my Marvil Mont Blanc 521 MTB and note what gears I usually use and measure the "development" (traversal per full crank rotation) for these gears?
+
+2) Consider to apply some math and physics knowledge to "guess" a good low and high ration to my liking?
+
+H) So the highest gear should get me to around 50 km/h at 60 rpm?
+
+L) And the lowest should enable me to crank me up a steep trail slope at 90 rpm?
+
+50 km/h is 50 000 m / 3600 s = 14 m/s.
+
+With C1.9XR I can get 5,45 up to 9,74 m / crank revolution. Meaning to go 14 m/s I need to pedal between 14/5,45 to 14/9,74 i.e., 2,6 to 1,43 cranks per second.
+
+With C1.12 I can get between 5,77 up to 10,3 m / crank revolution. Meaning I need to pedal between 14/5,77 to 14/10,3 i.e., 2,42 to 1,36 cranks per second.
+
+I suppose I cruise normally up to 30 kph, 8,3 m/s and would thus have to pedal 8,3 / {5,45 9,74 5,77 10,3} i.e., 1,52 0,85 1,44 0,8 cranks per second.
+
+So what about the low gear options?
+
+On the trail I would occasionally want to crank up some steep slope.
+
+Consulting the web it seems I could hope to be able to produce 500-600 watts for 10-20 seconds? Although athletes has shown to be able to produce 400w continuously for an hour and peak at 2,5 kW!
+
+So if I master a one minute climb at my peak performance 400W (although that is perhaps reaching) I would climb a hill of 400W * 60s = 75 kg * 9,81 * h. Gives h = 400W*60s / 75kg*9.81 = 24000J / 735 kgm/s2 = 32m!
+
+Hm... actually not so unreasonable given my recollection of the tours I have made!
+
+Ok, imagine this is a very steep slope I want to crank up. I don't know?
+
+Consider this article "How steep is too steep when cycling uphill?" (https://www.cyclist.co.uk/in-depth/682/how-steep-is-too-steep-when-cycling-uphill <https://www.cyclist.co.uk/in-depth/682/how-steep-is-too-steep-when-cycling-uphill> ) where they estimate a 60% gradient (tan(alfa) = 0,6) due to friction may be the limit?
+
+To climb 32m on a 60% gradient you have to travel 0,6 m up on every 1 meter forward. Or 1m up one every 1,66m forward. Thus I will travel 1,66*32 = 54m in 60 seconds.
+
+So cranking 1,5 revolution per second and get 54m in 60 seconds I need a "development" of 54/60 = 0,9m per second i.e., per 1,5 crank revolution and thus 0,6m per crank revolution?
+
+Now the different gearboxes and sprocket options gives me 1,71 0,96 0,96 1,71 m/crank revolution. Translated to cranking speed for my example this means I can choose to crank 0,9/ {1,71 0,96} i.e., 0,52 or 0.94 cranks per second.
+
+It seems I would like the 0,96 m / crank revolution at the bottom of the range of my gearbox range? AS this would mean I can climb this 60% slope using a near 60 rpm cranking speed?
+
+And this means a C1.9XR with 24T front and 30T back sprocket or a C1.12 with the same setting! They both produce 0,96 "Development" at the lowest gear with the 24/30 fornt/back combination.
+
+Going back to the top speed I will then get 5,45m/crank revolution with the C1.9XR and 5,77m/crank with the C1.12. Giving top speed of 5,45 m/s or 5,77 m/s at 60rpm i.e., 19,62 or 20,7 kpm at 60 rpm! THAT IS SLOW!!
+
+3) Consider that my friend Pär can tackle some of the slopes of our tours with his 29" Shimano (?) 1x12 XT cassette. 
+
+I wonder what chainring sprocket he has and what gear ratios he has.
+
+Consider this article "How to find the perfect gear ratios for your MTB drivetrain" (https://enduro-mtb.com/en/gear-ratios-mtb-drivetrain/ <https://enduro-mtb.com/en/gear-ratios-mtb-drivetrain/> ) where they indicate the gear ratios of some drive trains.
+
+From what I know he has an Epic Expert (https://www.specialized.com/se/en/epic-expert/p/175236?color=281544-175236 <https://www.specialized.com/se/en/epic-expert/p/175236?color=281544-175236>) which is stated to have a SRAM X1 Eagle, DUB, 32T chain sprocket and a SRAM XG-1275 Eagle, 12-speed, 10-50t casette.
+
+This would mean he has a 500% gear range from a 32/50 to 32/10 i.e., 0,64 to 3,2 output ratio (Pär).
+
+Using the Pinion ration calculator (https://pinion.eu/en/c-line/ <https://pinion.eu/en/c-line/> ) I can now see how I can match this using a C1.9XR or C1.12 gearbox and chainring and sprocket options available.
+
+In the calculator I use either "Development" to get bike travel per crank revolution or "Overall Ratio" as back-wheel-circumference / Development.
+
+Hm...It is a bit confusing that they show the Overall ratio NOT as chainring / back wheel ratio! Teh Pinion "Overall Ratio" this shows the inverse of the one above for chain cassettes!
+
+The C1.9XR 24T/30T 1/2,28 to 1/0,4 =  0,35 to 2,5 (I would take hills much easier than him but he will fly away from me on the fast tracks with his 3,2 ratio)
+The C1.9XR 30T/21T 1/1,28 to 1/0,22 = 0,78 to 4,5 (Now I would really struggle on the slopes but fly on speeds I would not have the power to pedal)
+The C1.9RX 30T/24T 1/1,46 to 1/0,26 = 0,68 to 3,8 (close but still worse on the slopes)
+The C1.9RX 24T/24T 1/1,82 to 1/0,32 = 0,54 to 3,12 (Best Match?)
+
+Hm... We must not forget that he has 29" tyres and I am plying with the idea of putting 27,5" or 28" tyres on my bike. This will reduce my travel distance per crank revolution with a factor 2200 / 2300 = 0,96.
+
+My bike would behave as if a 29" bike with 0,52 to 3 gear ratio.
+
+A 28" tyre would mean even less reduction (and the Pinion calculator states the 28" wheel to be smaller than the 27,5" - I suppose there is an error or else the 28" tyres are not as high as 27,5" tyres are)?
+
+4) Consider the "Development" for 28" tyres using C1.9XR and C1.12 gear range and front and back sprocket options (https://enduro-mtb.com/en/gear-ratios-mtb-drivetrain/ <https://enduro-mtb.com/en/gear-ratios-mtb-drivetrain/> )?
+
+	NOTE: it may be better to use the calculator to return the "gear ratio", i.e., the ration between one pedal crank and the revolution of the back wheel?
+
+	A 27,5" wheel is stated to have a circumference of 2200 mm
+	A 28" wheel a circumference of 2187
+	A 29" wheel a circumference of 2300
+
+

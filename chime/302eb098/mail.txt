@@ -1,0 +1,7 @@
+﻿
+
+1) The Garuda Linux distro seems to live here (https://garudalinux.org/downloads.html <https://garudalinux.org/downloads.html> )
+
+2) The "Garuda KDE Dr460nized" download seems to live here with some other variants of Garuda distros (https://garudalinux.org/downloads.html <https://garudalinux.org/downloads.html> )?
+
+...

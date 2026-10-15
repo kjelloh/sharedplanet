@@ -1,0 +1,350 @@
+﻿Maybe we can automate youtube video creation by creating some generator that spits out XML that we then can import into final cut pro?
+
+1) The Final Cut Pro FinalCutProXXMLFormat seems to live here (https://developer.apple.com/library/content/documentation/FinalCutProX/Reference/FinalCutProXXMLFormat/Introduction/Introduction.html)?
+
+2) Consider what we can do by interacting with final cut pro using the X XML format?
+
+3) Consider to study an re-engeneer a Final Cut Pro project exported as an X XM file?
+
+	==> Consider the empty project “X XML Playground - Empty Project.fcpxml” (Metadata View “General”)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.8">
+    <resources>
+        <format id="r1" name="FFVideoFormat1080p25" frameDuration="100/2500s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+    </resources>
+    <library location="file:///Volumes/Kjell-Olovs%20Passport%20Hard%20Drive/Current%20Workspace.fcpbundle/">
+        <event name="X XML PlayGround" uid="6EF1C872-1B8B-4146-BCA4-F7FE6CE7C90D">
+            <project name="X XML Playground - Empty Project" uid="402494D0-518F-43C2-ADD3-11F9449B03AB" modDate="2018-05-07 11:29:20 +0200">
+                <sequence duration="0s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine/>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>
+
+
+	==> Consider the project “” with three placeholders?
+
+		==> In FCP use “	• Choose Edit > Insert Generator > Placeholder (or press Option-Command-W)."
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.8">
+    <resources>
+        <format id="r1" name="FFVideoFormat1080p25" frameDuration="100/2500s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+        <effect id="r2" name="Placeholder" uid=".../Generators.localized/Elements.localized/Placeholder.localized/Placeholder.motn"/>
+    </resources>
+    <library location="file:///Volumes/Kjell-Olovs%20Passport%20Hard%20Drive/Current%20Workspace.fcpbundle/">
+        <event name="X XML PlayGround" uid="6EF1C872-1B8B-4146-BCA4-F7FE6CE7C90D">
+            <project name="X XML Playground - One Default placeholder" uid="402494D0-518F-43C2-ADD3-11F9449B03AB" modDate="2018-05-07 11:37:52 +0200">
+                <sequence duration="3s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <video name="Placeholder" offset="0s" ref="r2" duration="3s" start="3600s"/>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>
+
+
+	==> It seems tow placeholders are chained in <spine> with adjusted offset and duration?
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.8">
+    <resources>
+        <format id="r1" name="FFVideoFormat1080p25" frameDuration="100/2500s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+        <effect id="r2" name="Placeholder" uid=".../Generators.localized/Elements.localized/Placeholder.localized/Placeholder.motn"/>
+    </resources>
+    <library location="file:///Volumes/Kjell-Olovs%20Passport%20Hard%20Drive/Current%20Workspace.fcpbundle/">
+        <event name="X XML PlayGround" uid="6EF1C872-1B8B-4146-BCA4-F7FE6CE7C90D">
+            <project name="X XML Playground - Two Default placeholders" uid="E1F9DFE5-937A-4B74-A01D-CAF997F94CB6" modDate="2018-05-07 12:29:29 +0200">
+                <sequence duration="6s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <video name="Placeholder" offset="0s" ref="r2" duration="3s" start="3600s"/>
+                        <video name="Placeholder" offset="3s" ref="r2" duration="3s" start="3600s"/>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>
+
+	==> And with five sequential placeholders we see the chaining even more clearly?
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.8">
+    <resources>
+        <format id="r1" name="FFVideoFormat1080p25" frameDuration="100/2500s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+        <effect id="r2" name="Placeholder" uid=".../Generators.localized/Elements.localized/Placeholder.localized/Placeholder.motn"/>
+    </resources>
+    <library location="file:///Volumes/Kjell-Olovs%20Passport%20Hard%20Drive/Current%20Workspace.fcpbundle/">
+        <event name="X XML PlayGround" uid="6EF1C872-1B8B-4146-BCA4-F7FE6CE7C90D">
+            <project name="X XML Playground - Five Default placeholders" uid="E1F9DFE5-937A-4B74-A01D-CAF997F94CB6" modDate="2018-05-07 12:33:58 +0200">
+                <sequence duration="15s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <video name="Placeholder" offset="0s" ref="r2" duration="3s" start="3600s"/>
+                        <video name="Placeholder" offset="3s" ref="r2" duration="3s" start="3600s"/>
+                        <video name="Placeholder" offset="6s" ref="r2" duration="3s" start="3600s"/>
+                        <video name="Placeholder" offset="9s" ref="r2" duration="3s" start="3600s"/>
+                        <video name="Placeholder" offset="12s" ref="r2" duration="3s" start="3600s"/>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>
+
+	==> It seems when adding an actual clip FCP generates some form of complicated bookmark (among other stuff)?
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.8">
+    <resources>
+        <format id="r1" name="FFVideoFormat1080p25" frameDuration="100/2500s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+        <effect id="r2" name="Placeholder" uid=".../Generators.localized/Elements.localized/Placeholder.localized/Placeholder.motn"/>
+        <asset id="r3" name="Thumb nail and outro Playground" uid="DCCDAD9F0E92B665FE5AAA1013FF76EA" src="file:///Volumes/Kjell-Olovs%20Passport%20Hard%20Drive/Current%20Workspace.fcpbundle/X%20XML%20PlayGround/Original%20Media/Thumb%20nail%20and%20outro%20Playground.mov" start="0s" duration="159/25s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9va6AEAAAAAAQQMAAAALzHA2FgpPSXEB1buSfLJzFyM4VEI0+hw0nPZ3H8TkuywAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm
+9sdW1lcwAfAAAAAQEAAEtqZWxsLU9sb3ZzIFBhc3Nwb3J0IEhhcmQgRHJpdmUAGwAAAAEBAABDdXJyZW50IFdvcmtzcGFjZS5mY3BidW5kbGUAEAAAAAEBAABYIFhNTCBQbGF5R3JvdW5kDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAIwAAAAEBAABUaHVtYiBuYWlsIGFuZCBvdXRybyBQbGF5Z3JvdW5kLm1vdgAYAAAAAQYAABAAAAAgAAAASAAAAGwAAACEAAAAnAAAAAgAAAAEAwAAnzUAAAAAAAAIAAAABAMAAAIAAAAAAAAACAAAAAQDAACq5gUAAAAAAAgAAAAEAwAAcgUGAAAAAAAIAAAABAMAACYHBgAAAAAACAAAAAQDAAAsBwYAAAAAABgAAAABBgAA6AAAAPgAAAAIAQAAGAEAACgBAAA4AQAACAAAAAAEAABBwFAySoAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAANgAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvS2plbGwtT2xvdnMlMjBQYXNzcG9ydCUyMEhhcmQlMjBEcml2ZS8AAAgAAAAEAwAAAGBPyugAAAAIAAAAAAQAAEG/4HubAAAAJAAAAAEBAABBQjdEMjFCOC1CNkI0LTNCOTItOUNFMS0yRDUxN0NEODIzMzAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAACgAAAABAQAAL1ZvbHVtZXMvS2plbGwtT2xvdnMgUGFzc3BvcnQgSGFyZCBEcml2ZQgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAPBB6egAAAAIAAAAAAQAAEG5XrHGAAAAJAAAAAEBAAA3OUQ0MzJGNS03Njc4LTMxNDktQkVDRC02OEM2RjI5OUUyRDkYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAAQDAAAAAAAABSAAAHQCAAAAAAAAECAAAIQCAAAAAAAAESAAALgCAAAAAAAAEiAAAJgCAAAAAAAAEyAAAKgCAAAAAAAAICAAAOQCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAHAAAAAEGAAB4AwAAhAMAAJADAACEAwAAhAMAAIQDAACEAwAAqAAAAP7///8BAAAAEAMAAA0AAAAEEAAAyAAAAAAAAAAFEAAASAEAAAAAAAAQEAAAeAEAAAAAAABAEAAAaAEAAAAAAAAAIAAAnAMAAAAAAAACIAAARAIAAAAAAAAFIAAAmAEAAAAAAAAQIAAAIAAAAAAAAAARIAAA+AEAAAAAAAASIAAA2AEAAAAAAAATIAAA6AEAAAAAAAAgIAAAJAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="HD (1-1-1)"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>Apple ProRes 422</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.ingestDate" value="2018-05-07 12:40:52 +0200"/>
+            </metadata>
+        </asset>
+    </resources>
+    <library location="file:///Volumes/Kjell-Olovs%20Passport%20Hard%20Drive/Current%20Workspace.fcpbundle/">
+        <event name="X XML PlayGround" uid="6EF1C872-1B8B-4146-BCA4-F7FE6CE7C90D">
+            <project name="X XML Playground -  Default placeholder + Outro Clip" uid="E1F9DFE5-937A-4B74-A01D-CAF997F94CB6" modDate="2018-05-07 12:43:36 +0200">
+                <sequence duration="23400/2500s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <video name="Placeholder" offset="0s" ref="r2" duration="3s" start="3600s"/>
+                        <asset-clip name="Thumb nail and outro Playground" offset="3s" ref="r3" duration="15900/2500s" audioRole="dialogue" tcFormat="NDF"/>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>
+
+
+	==> This seems to be a project with one default placeholder plus one second default placeholder replaced with a clip range?
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.8">
+    <resources>
+        <format id="r1" name="FFVideoFormat1080p25" frameDuration="100/2500s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+        <effect id="r2" name="Placeholder" uid=".../Generators.localized/Elements.localized/Placeholder.localized/Placeholder.motn"/>
+        <asset id="r3" name="Thumb nail and outro Playground" uid="DCCDAD9F0E92B665FE5AAA1013FF76EA" src="file:///Volumes/Kjell-Olovs%20Passport%20Hard%20Drive/Current%20Workspace.fcpbundle/X%20XML%20PlayGround/Original%20Media/Thumb%20nail%20and%20outro%20Playground.mov" start="0s" duration="159/25s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000">
+            <bookmark>Ym9va6AEAAAAAAQQMAAAAP/xziq22EFWEhnMc4qdDWcKXZW+AjFl+g18xRpc/t1EwAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAfAAAAAQEAAEtqZWxsLU9sb3ZzIFBhc3Nwb3J0IEhhcmQgRHJpdmUAGwAAAAEBAABDdXJyZW50IFdvcmtzcGFjZS5mY3BidW5kbGUAEAAAAAEBAABYIFhNTCBQbGF5R3JvdW5kDgAAAAEBAABPcmlnaW5hbCBNZWRpYQAAIwAAAAEBAABUaHVtYiBuYWlsIGFuZCBvdXRybyBQbGF5Z3JvdW5kLm1vdgAYAAAAAQYAABAAAAAgAAAASAAAAGwAAACEAAAAnAAAAAgAAAAEAwAAnzUAAAAAAAAIAAAABAMAAAIAAAAAAAAACAAAAAQDAACq5gUAAAAAAAgAAAAEAwAAcgUGAAAAAAAIAAAABAMAACYHBgAAAAAACAAAAAQDAAAsBwYAAAAAABgAAAABBgAA6AAAAPgAAAAIAQAAGAEAACgBAAA4AQAACAAAAAAEAABBwFAySoAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAANgAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvS2plbGwtT2xvdnMlMjBQYXNzcG9ydCUyMEhhcmQlMjBEcml2ZS8AAAgAAAAEAwAAAGBPyugAAAAIAAAAAAQAAEG/4HubAAAAJAAAAAEBAABBQjdEMjFCOC1CNkI0LTNCOTItOUNFMS0yRDUxN0NEODIzMzAYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAACgAAAABAQAAL1ZvbHVtZXMvS2plbGwtT2xvdnMgUGFzc3BvcnQgSGFyZCBEcml2ZQgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAPBB6egAAAAIAAAAAAQAAEG5XrHGAAAAJAAAAAEBAAA3OUQ0MzJGNS03Njc4LTMxNDktQkVDRC02OEM2RjI5OUUyRDkYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAAQDAAAAAAAABSAAAHQCAAAAAAAAECAAAIQCAAAAAAAAESAAALgCAAAAAAAAEiAAAJgCAAAAAAAAEyAAAKgCAAAAAAAAICAAAOQCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAHAAAAAEGAAB4AwAAhAMAAJADAACEAwAAhAMAAIQDAACEAwAAqAAAAP7///8BAAAAEAMAAA0AAAAEEAAAyAAAAAAAAAAFEAAASAEAAAAAAAAQEAAAeAEAAAAAAABAEAAAaAEAAAAAAAAAIAAAnAMAAAAAAAACIAAARAIAAAAAAAAFIAAAmAEAAAAAAAAQIAAAIAAAAAAAAAARIAAA+AEAAAAAAAASIAAA2AEAAAAAAAATIAAA6AEAAAAAAAAgIAAAJAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="HD (1-1-1)"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>Apple ProRes 422</string>
+                        <string>Linear PCM</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.ingestDate" value="2018-05-07 12:40:52 +0200"/>
+            </metadata>
+        </asset>
+    </resources>
+    <library location="file:///Volumes/Kjell-Olovs%20Passport%20Hard%20Drive/Current%20Workspace.fcpbundle/">
+        <event name="X XML PlayGround" uid="6EF1C872-1B8B-4146-BCA4-F7FE6CE7C90D">
+            <project name="X XML Playground - One Default placeholder + One range replaced placeholder" uid="8A8B41DC-F0D8-4B4A-83E6-FC443280D2ED" modDate="2018-05-07 13:29:20 +0200">
+                <sequence duration="6s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <video name="Placeholder" offset="0s" ref="r2" duration="3s" start="3600s"/>
+                        <asset-clip name="Thumb nail and outro Playground" offset="3s" ref="r3" duration="3s" start="31/25s" audioRole="dialogue" tcFormat="NDF"/>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>
+
+
+	==> Consider the Final Cut Project “First Time - Fusion 360 Design and Cetus 3D Print [Episode X 18 April 2018]” exported as an X XML file?
+
+	
+
+	==> Consider to understand the different Export “Metadata View” options?
+
+	
+
+
+	==> AHA - They directly corresponds to the Metadata View in the FCP GUI?
+
+		
+
+
+		==> Metadata View “Basic” Seem to be ()?
+
+			
+
+		==> Metadata View “General” Seem to be ()?
+
+
+		
+
+
+		==> Metadata View “Extended” Seem to be ()?
+	
+		
+
+		==> Metadata View “Audio” Seem to be ()?
+
+
+		
+
+		==> Metadata View “EXIF” Seem to be ()?
+
+		
+
+		==> Metadata View “IPTC” Seem to be ()?
+
+
+		
+
+		==> Metadata View “Settings” Seem to be ()?
+
+
+		
+
+		==> Metadata View “HDR” Seem to be ()?
+
+		
+
+		==> Metadata View “DPP Media” Seem to be ()?
+
+		
+
+		==> Metadata View “MXF” Seem to be ()?
+
+		
+
+
+
+		==> Metadata View “DPP Editorial/Services” Seem to be ()?
+
+		
+
+
+
+
+	

@@ -1,0 +1,14 @@
+﻿A Dartwinet Domain file system should be suited to set up regression testing of software projects?
+
+1) Files are updated as defined by domain synchronization (no need to manually check-in and check-out).
+2) Views may be created in the form of folder hierarchies that share and/or organize software files for different environments, platforms and languages?
+3) Result reporting of a regression test performed at a node may be done using report files that also is part of the same file structure?
+4) Node-specific storage would seem to be required to separate data produced by regression tests at different nodes?
+5) Evolution paths would seem to be a good mechanism to enable evolution of ”good source and organization”? Evolution paths in this sense is isomorphic to version control and branching. Only that check-in, check-out is replaced by delta-synchronization mechanisms.
+
+The reasons to use Darwinet domain file system for regression testing should be strong.
+
+a) Evolution and branching happens ”automatically” while focus is on having development and evaluation and merging being the human main activity.
+b) Environmental aspects of the project source is handled by Darwinet views making such details invisible to the node environment where regression test is performed.
+c) It should be easy to set up nodes that performs regresson test for different IDE:s by becoming members of the project domain and then view the domain file system as designed fro that IDE. In this way one user may perform regression test for Embarcadero RAD Studio on windows, another on Microsoft Visual Studio and a third on Unix and so on.
+...

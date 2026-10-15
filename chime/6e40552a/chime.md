@@ -1,0 +1,34 @@
+# Todo: Wall Painting - Consider my thoughts and observations after the second actual paint job (including wash up)?
+
+```#6e40552a``` *As of 2019-05-07 14:45*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I still dread painting but I am building up some confidence and experience...
+
+1) So what did I learn this time about handling paint and do the wash up?
+
+> *So I have just finished my second paint job. I take it very slowly. So I am still only in the alcove and has done only 1 m paint cutting, 30 cm against the roof and 60 cm along the side against the stove.*
+
+> *The wash up is still a mess of inefficiency! But I have gained some clues to do this better.*
+
+> *1) I need a dedicated bin for paint stained tools. For the stirring stick after having poured paint. And for the brush and roller when the paint job is done and I need to pour back the paint into the paint bucket.*
+
+> *2) I need to rinse the brush and the roller first! I figure I should rinse them first in dirty water. Then in pure or almost pure water. The I put them aside while I wash up the rest.*
+
+> *3) I need to use only two "sinks". Using three as I did this time is just too much work. And the hell of re-arranging them on the small 40x60 cm trolley top just takes forever and is messy as f\*ck.*
+
+*2) What did I learn this time about painting?*
+
+> *I wonder if I am using a too low quality base paint? It just does not seem to cover the wall paper good enough. Which is a problem when I am trying to cut the paint against the corners to the roof and stove wall.*
+
+> *1) Consider to buy an actual base paint and compare with the cheap paint I am using now?*
+
+> *2) The triangular beveled brush I bought and tried today dod not seem to help me much? I still had a hard time cutting the paint into the corner.*
+
+> *3) I still do not have a feel of how to cut the paint into the corner. Should I do it on up-stroke or down-stroke? And how hard should I push on the brush? I seem to push too hard as the paint seems to just be scraped on the wall insetad of actually be applied to it?*
+
+*...*
+
+{% endraw %}

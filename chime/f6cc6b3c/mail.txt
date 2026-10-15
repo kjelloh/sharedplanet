@@ -1,0 +1,11 @@
+﻿After stumbling over a link to a web-cloud available web-C++ compiler one may wonder how many more compilers are available through a web-interface?
+
+1) This site seem to expose the latest Visual Studio C++ Compiler (http://webcompiler.cloudapp.net)?
+
+2) So, is there a Clang C++ compiler available somewhere?
+
+3) So, is there a GCC compiler available somewhere?
+
+…
+
+Consider to study and use these compilers and find any more available?

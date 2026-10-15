@@ -1,0 +1,24 @@
+﻿It seems I would one day want to be able to vacuum form acrylic sheets (e.g., for transparent containers, enclosures and what have you)?
+
+	==> Also see "Todo: Consider possible waste water logistic solutions for my paint "
+	==> Also see "Todo: Consider what I need to make my own Chocolate moulds for truffles?"
+
+1) Consider the wikipedia article on vacuum forming (https://en.wikipedia.org/wiki/Vacuum_forming <https://en.wikipedia.org/wiki/Vacuum_forming> )?
+
+"Vacuum forming is a simplified version of thermoforming, where a sheet of plastic is heated to a forming temperature, stretched onto a single-surface mold, and forced against the mold by a vacuum."
+
+2) Consider this youtube video "Adam Savage's Vacuum Forming Machine" (https://www.youtube.com/watch?v=Cacr1WeKOzY <https://www.youtube.com/watch?v=Cacr1WeKOzY> )?
+
+	
+	Adams Vacuum Forming Machine
+
+3) Consider this youtube video "Prop: Shop - How to Make a Vacuum Forming Machine" (https://www.youtube.com/watch?v=Gx66mS7U2vY <https://www.youtube.com/watch?v=Gx66mS7U2vY> )?
+
+	==> It seems he is using a toaster oven to heat the plastic sheet (no heat elements, only vacuum table, in the build)?
+
+	
+	A small vacuum form made from MDF and an attached vacuum
+
+...
+
+

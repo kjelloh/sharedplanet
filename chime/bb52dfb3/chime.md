@@ -1,0 +1,15 @@
+# Todo: Follow up on Yuval Harari TED talk about Humans excel by cooperating flexibly in large numbers
+
+```#bb52dfb3``` *As of 2015-07-28 21:26*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+http://www.ted.com/talks/yuval_noah_harari_what_explains_the_rise_of_humans
+
+He argues convincingly that humans control the earth because we are able to cooperate flexibly in large numbers. And this comes from our ability to trust an idea rather than the actual other being. We trust others to behave according to a common idea and thus we may cooperate. He also adds some final thoughts about the 21’th century will be about what to do with all humans that are not needed (replaced by computers and machines)
+
+1) Does this answer the question what benefits our consciousness gives us. To trust an idea we must be able to believe the conveyed idea to be true and trust others to share this belief. Thus, we are able to trust other consciousness regardless of their physical bodies or even presence? We need a consciousness to create this bond of trust? We need to share this virtual world to connect through it!  
+2) He is writing a book about the 21’th struggle of what to do with the humans that are not needed. Follow up on that and see what we can say for SharedPlanetCitizen. Should we allow humanity to be divided into rich that can afford to upgrade their bodies and the poor that we occupy with drugs and entertainment? Of course not! Unger is here to guide is in that question!
+
+{% endraw %}

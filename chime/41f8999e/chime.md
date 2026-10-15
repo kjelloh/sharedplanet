@@ -1,0 +1,34 @@
+# Todo: Programming - Find out how to Code Sign an setup.exe in a way so that it can be used also after the actual certificate is out-of-date
+
+```#41f8999e``` *As of 2016-01-04 17:38*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+When trying to install Testbenches it seemed as if Windows did no longer approved the Signed Code as it showed dialogs with “Publisher Unknown”.
+
+==&gt; But it turned out only TB_2.0.5.10_setup.exe is actually Code Signed!
+
+1) This should mean that the Certificate d8775b727123848b.spc from GoDaddy valid to 18/11 2015 caused Code Signed TB_2.0.5.10_setup.exe to stay valid according to Windows also after used certificate valid date?
+
+==&gt; This should mean that InstallShield uses the certificate with a time-stamp so that the signing stars valid after the termination date of the Code Signing certificate?
+
+2) See “Todo: Create an encrypted pfx-file from bought spc-certificate code-signing file”
+
+3) This seem like a good page about time-stamping a Code Signature (<http://blog.richpollock.com/2014/06/code-signing-windows-executables-using-authenticode/>)
+
+“Note that the timestamp server option specified by \\t is optional, but since it adds a cryptographically-verifiable timestamp to the signature, it proves that the executable was signed when the certificate was still valid, obviating the need to re-sign every signed executable at the time of certificate expiry. Each certificate authority has its own timestamp server, which you should be able to locate in their documentation.”
+
+4) InstallShield Express states they use a time-stamped signature in the User Guilde available for download here (<https://flexeracommunity.force.com/customer/CCDocumentation>)
+
+In “Adding a Timestamp to Digital Signatures” - “When you specify digital signature information for a release, InstallShield timestamps the digital signature at build time by default. A digital certificate’s timestamp indicates the day and time when a file was signed; it also helps to prove that the certificate was not expired at the moment of signing. A timestamp from a trusted timestamp server typically extends the life of the digital signature beyond the certificate’s validity period, protecting against certificate expiration.”
+
+In “Changing the Timestamp Server for Digital Signatures” - “When you specify digital signature information for a release, InstallShield uses VeriSign’s server (http:// [timestamp.verisign.com/scripts/timstamp.dll](http://timestamp.verisign.com/scripts/timstamp.dll)) as the default timestamp server during builds.”
+
+==&gt; This means Code Signing requires the machine to be *Online to Verisign* to be able to time-stamp?
+
+...
+
+Consider to save this Todo to follow up when purchasing a new Code Signing Certificate (See “Todo: Testbench - Find a better code signing certificate!")?
+
+{% endraw %}

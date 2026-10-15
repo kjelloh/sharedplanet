@@ -1,0 +1,21 @@
+# Todo: Write about gene-based, meme-based and human-experince-based goals for human lives
+
+```#7851fc1c``` *As of 2015-09-07 13:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+What can we say about what is ”right” and ”wrong” when it comes to what we should hold as true about what way of life we should aim for if we apply the model of humans being gene and meme ”processors” in a processing network called society?
+
+1) Should we aim to allow the ”best fitting genes” to be found? Humanity has been and are still applying this reasoning in programs to protect the purity of a race or, as in the extreme case of nazi german, to breed for particular race traits.  
+2) Should we aim to allow the ”best fitting memes” to be found? We argue in this terms when we argue people should obey a religion or adopt a favored political ideology. Even the idea of capitalism is such a meme-based arguing about human life.  
+3) Should we aim to minimize human suffering and maximize the pleasure of human lives? As we may argue that our feelings are the tools of Genes and Memes to make as act-in-faith and thus ”process their instructions” this third way will need awareness of and 2 above.  
+4) Should we adopt a society where we allow evolutionary prosers have their way in the most powerful way? This stand may require that we put faith in that evolution will go for a state of affairs where we suffer the least and enjoy life the most, regardless of wether this is to favor memes or genes?  
+5) Should we allow Internet to enable new emergences to come about? We could argue that our new ability to share large amounts of information almost instantly among everyone on earth means new ”powers” will emerge that we need to take into account to get rich lives? Could this mean e are entering the era where social organism will play a much larger role.  
+6) Should we allow self-learning computers to take part in human interactions and thus enable totally new emergences in the form of dividuals, social organisms and societies to come about?  
+…
+
+Elaborate on this to try and find something to say about what we shall our our free will for? If our brains carry just small systems 2:s will limited power to affect our actions, then what shall we use the little power we have for? What should we aim for and why?  
+...
+
+{% endraw %}

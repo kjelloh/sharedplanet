@@ -1,0 +1,15 @@
+﻿Stumbled cross ROS (http://wiki.ros.org) round 16 minutes into a talk about CMake c++ build framework (http://www.kitware.com/blog/home/post/983 <http://www.kitware.com/blog/home/post/983>).
+
+1) ROS home page seem to be this site (http://www.ros.org)
+
+“The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source.”
+
+2) ROS seem to support Ubuntu mainly (http://wiki.ros.org/ROS/Installation <http://wiki.ros.org/ROS/Installation>)
+
+3) Rasperry Pi 2 claims to run Ubuntu so ROS may be compiled and deployed on a Rasperry Pi robot (http://www.linux.com/news/embedded-mobile/mobile-linux/807087-faster-raspberry-pi-2-says-yes-to-ubuntu-and-windows-but-wheres-android/)?
+
+4) ROS lists many robots as ROS based/compatible (http://wiki.ros.org/Robots <http://wiki.ros.org/Robots>)?
+…
+
+Consider to delve deeper into this and see if it would be fund to build a Raspberry Pi based robot for home cleaning?
+...

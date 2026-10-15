@@ -1,0 +1,28 @@
+﻿Could it be a good idea to initiate a community to build Open Source libraries for P2P mechanisms?
+
+1) Consider to propose that we can imagine an Open Design that may cover existing and new P2P Network Applications?
+
+	a) Consider to view BitTorrent as an example of an idiom that we may identify to allow other P2P Applications to be built?
+	b) Consider the GitTorrent as an example of "the same” P2P Idiom?
+	c) Consider to study all WebTorrent Project proposals to find a common P2P idiom (https://webtorrent.io/faq)?
+	…
+	x) Consider to discuss what C++ Open Source Libraries would be needed to enable implementation of variants of the identified General P2P Idiom?
+	...
+
+2) Consider to list proposals for P2P components to adress?
+
+	==> NAT Bridging between Peers (Hole Punching (e.g. STUN?), Media Server (e.g. TURN))?
+	==> Native Client WebRTC library (non-brower applied WebRTC)?
+	==> P2P boot-strap and routing using DHT and XOR Distance Metrics?
+	==> *New* C++11/14 General Protocol Engine using latest Concurrent and Parallel idioms (allow for future multi-core explosion)?
+	…
+
+3) Consider to initiate a GitHub project (with good name) to start investigating the interest to work on this kind of initiative?
+
+	a) Could we imagine aiming at getting the libraries into Boost?
+	...
+
+…
+
+Consider to extend the list of targeted mechanisms and relate them to existing efforts (open source) or new proposals?
+...

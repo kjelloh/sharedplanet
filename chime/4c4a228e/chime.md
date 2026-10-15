@@ -1,0 +1,23 @@
+# Todo: Write about humanities three crisis (science, society, living space)
+
+```#4c4a228e``` *As of 2015-07-26 16:33*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems humanity is closing up to three revolutions at the same time. These revolutions are indicated by three visible crisis.
+
+1) The crisis of science to explain the universe (discussed by Unger and Smolin in ”The Single Universe and the Reality of Time”)  
+2) The crisis of society and knowledge of the human flaws (current society fails to deliver as predicted by current ideas about economic and social ideas)  
+3) The crisis of insufficient living space (We fail to protect and maintain sufficient living space for humanity on this planet)
+
+Consider to expand on these observations and state some basic rules on what needs to be done and what tools we may apply to get us there.
+
+It seems part of the solution is to accept some basic principle we must adapt for humanity 2.0.
+
+a) Accept change. Change is the only constant (slow or fast). The accelerated change we experience now forces us to face this fact (change is noticeable and affects us in real terms here and now). Any idea of how to conduct science (find out about the world), organize a society (rules and beliefs to guide actions) and share our limited living space must be based on and allow for change (be open to change itself).  
+b) Fight wishful thinking and strive to face reality (whilst also searching for better and better understanding of reality). Although I am not sure why this is true (but we seem to have the drive so we may at least accept it) searching and facing the ”truth” is the best we can do to cope with change and our flaws in human condition, interaction and understanding of the world.
+
+...
+
+{% endraw %}

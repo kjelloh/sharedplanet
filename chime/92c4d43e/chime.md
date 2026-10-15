@@ -1,0 +1,38 @@
+# Todo: Consider to understand the VESA mount standard (Flat Display Mounting Interface - FDMI, or VESA Mounting Interface Standard - MIS)?
+
+```#92c4d43e``` *As of 2023-03-20 10:18*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems I can use the standardised VESA mount as a cheap way to move stuff around in a cramped workspace (e.g. displays or instruments)?
+
+1) Consider the wikipedia article on the VESA mount standard (<https://en.wikipedia.org/wiki/Flat_Display_Mounting_Interface> )?
+
+> *"**The Flat Display Mounting Interface (FDMI), also known as VESA Mounting Interface Standard (MIS) or colloquially as VESA mount, is a family of standards defined by the Video Electronics Standards Association for mounting flat panel monitors, televisions, and other displays to stands or wall mounts.**"*
+
+==&gt; It seems the VESA mounts come in a set of sizes with denoted names?
+
+> *"...**the standard now specifies seven sizes, each with more than one variant. These are referenced as parts B to F of the standard..."*
+
+> ![](PastedGraphic-1.png)
+
+2) Consider I can get a VESA mount for my TV for around 500 SEK?
+
+> ![](PastedGraphic-2.png)
+
+3) Consider I can mount VESA arms to my Festool MFT to hold a tool tray?
+
+> ![](PastedGraphic-3.png)
+
+4) Consider some R&S oscilloscopes (e.g., the new MXO4) comes with a VESA mount (<https://www.rohde-schwarz.com/il/knowledge-center/videos/vesa-mount-video-detailpage_251220-1272512.html> )?
+
+> ![](PastedGraphic-4.png)  
+> *The R&S MXO4 comes with a VESA mount*
+
+> ![](PastedGraphic-5.png)  
+> *The R&S2k seems to NOT provide a VESA mount option?*
+
+...
+
+{% endraw %}

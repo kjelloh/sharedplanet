@@ -1,0 +1,76 @@
+# Todo: Programming - Consider that Software Development is actually Story Telling (And thats why we have Software Languages)?
+
+```#d514bd14``` *As of 2017-02-23 23:53*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+While watching ”RailsConf 2014 - Keynote: Writing Software by David Heinemeier Hansson” (<https://www.youtube.com/watch?v=9LfmrkyP81M>) where he is advocating the importance to develop an eye for Clear Software it occurs to me that what he is actually saying is that Software is actually A Story Written for humans about what the program should do?
+
+1) Consider a good program is a well written story?
+
+==&gt; The human reading the program understands the actors in the story and what they do and when they do it?
+
+==&gt; The program actually describes behavior and plots?
+
+==&gt; Consider in a way a program is a story about a complicated game?
+
+==&gt; The Program describes the rules of the game and the reader understands how the program behaves when it ”plays the game” (executed the program)?
+
+==&gt; Consider most programs play the game interacting with the world?
+
+==&gt; And the world may be other computers playing other games or humans playing some game?
+
+…
+
+2) Consider a good program is a piece of good music?
+
+==&gt; Consider the Programmer writes code for a computer to execute is analogous with a Musician writing music to be played on a Piano?
+
+==&gt; The musician playing a piece of music on a Piano is like a Compiler (or interpreter) translating the software code into operations executed by the computer)?
+
+==&gt; In this sense, a Good Program is to convey the ”Music” it will produce, not the actual mechanics performed by the hardware?
+
+...
+
+3) Consider the Computer Program defines actors and describes what drives the actors (their goals, needs and desires)?
+
+…
+
+4) Consider the abstractions available in a computer language are in fact the stuff available to write a plot?
+
+==&gt; Different computer languages allows the programmer to write the story with different levels of clarity?
+
+==&gt; Consider the schism between imperative and functional programming languages are in fact about what you can easily write about in that language?
+
+…
+
+5) Consider Computer Science is equally important but for enabling programmers to tell the story well, clear and correct?
+
+==&gt; Consider computer science is actually about creating the hardware, the compilers and the languages required to enable the computers to ”play out” the Stories written by programmers in a correct and efficient way?
+
+==&gt; Consider the analogy by David Heinemeier Hansson that Building the Best Piano and Playing the Best Piano are two very different things (building it requires science and writing music to play on it requires a programmer)?
+
+6) Consider there is still room for better Computer Languages in that we can improve on the ”story telling capabilities” and be better at getting rid of having to deal with the mechanics of the hardware?
+
+==&gt; Consider the computer language should NOT be about how the computer hardware should actually work?
+
+==&gt; Just like a Written Story is not about how your brain interprets the story?
+
+==&gt; Just like a Music Sheet is not about how a Piano works (or any instrument) works?
+
+==&gt; Consider C++ abilities to describe memory allocation, threading, coroutines and such is NOT about story telling?
+
+==&gt; Consider C++ should aim at replacing these things from the language and replace them with annotations about synchronicity (story line or parallel plot)?
+
+==&gt; Consider things about threading, coroutines etc. should be stuff left to the compiler to figure out (just like the construction of the Piano has nothing to do with the written music)?
+
+...
+
+…
+
+Consider to make a talk or presentation on this theme of Programmers actually using a Computer Language to write Stories about what the program will do?
+
+...
+
+{% endraw %}

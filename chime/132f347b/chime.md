@@ -1,0 +1,17 @@
+# Todo: Make Darwinet view define more dimensions than the temporal one
+
+```#132f347b``` *As of 2015-08-12 18:03*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+The Darwinet view was originally meant to define where in time we want to view data. But the view concept can be used for more dimensions than just the temporal one.
+
+1) View data from a spatial location (e.g. where the device is). This would enable a way to swap in data related to the current location.  
+2) View data based on what users that are nearby (share the same geographical space). This would enable citizens that meet IRL to look-up information about each other from the global spc darwinet domain.  
+3) View data based on devices or users in the same sub-domain (e.g. an event). The node would prefer to store locally the data of users (or applications) that are members of the event-domain.  
+…
+
+Note how the swap algorithm may be made to take care of providing for the active views within the restrictions of the local storage!
+
+{% endraw %}

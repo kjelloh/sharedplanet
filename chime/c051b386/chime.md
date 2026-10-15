@@ -1,0 +1,24 @@
+# Todo: Consider we need a negative feedback loop on any rational thinking (reasoning) to better infer the limited conclusion space stemming from the starting observations (facts or truths) used in the process?
+
+```#c051b386``` *As of 2020-10-08 22:14*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to understand the limitations as well as the "value" of us being able to "compute" truths using rational reasoning in our self evident reality that is basically unexplained Qualia?
+
+> *The basic idea here is to find rational arguments for being observant on the limitations, or at least the possible truth coverage, we can reach based on what observations we include or exclude as starting arguments (axioms or facts) for the reasoning process.*
+
+> *Maybe we can imagine this could be done as a form of "negative feedback loop" in that the result of the reasoning process is fed back as an additional input of the process itself.*
+
+> *Now this may seem to clash with the tradition to NOT use the answer as an input argument. If we "beg the question" we are not arguing in a rational way. But if we use a negative feed back of the answer maybe we can avoid this? If we find a set of input arguments together with the assumption that the deduced answer is actually somehow "wrong" and still can reach the same answer, then the answer is perhaps the best answer we can reach without over-reaching?*
+
+> *An example could be when New Atheists argue why God does not exist. With a negative feed back we get that we should start the argumentation with the proposition that God DOES exist. If we can do this and still reach the deduced conclusion that God does NOT exist we may have a more trustworthy deduction than if we did NOT include any assumption of existence of God as the input of the reasoning?*
+
+> *Of course, we now have a problem in that the answer contradicts the premises! So either we can NOT do this. Or we have to tweak what we actually mean with "reasoning" (computation) or what it means when we use this negative feed back to "stabilise" the process to produce a stable (balanced) result?*
+
+> *So, what would it mean to imagine a reasoning process that is isomorphic to a negative feed back loop? Because such a loop actually exist in reality without being a contradiction we should be able to map it to an isomorphic reasoning process. Perhaps by using some "fuzzy Logic"?*
+
+> *...*
+
+{% endraw %}

@@ -1,0 +1,43 @@
+﻿So, could it be a good idea to finally refactor BERTLV code into modern C++ and open source?
+
+1) Consider to refactor existing BERTLV code?
+
+
+
+2) Consider to make it use the ibi key-path library?
+
+
+
+3) Consider to make BERTLV message to build from ibi Path=type lists?
+
+	==> Consider to try the semantics of defining a Composite structure using uniform initialising lists?
+
+ipos_msg msg({
+	{“Path”}, ber_typed_value()
+	,{“Path”}, ber_typed_value()
+	,{“Path”}, ber_typed_value()
+	,...
+});
+
+4) Consider to make XML message to build from ibi XPath=type lists?
+
+	==> Consider to try the semantics of defining composite structure using uniform initialising lists?
+
+xml_msg msg({
+	{“XPath”}, xml_typed_value()
+	,{“XPath”}, xml_typed_value()
+	,{“XPath”}, xml_typed_value()
+	,...
+});
+
+
+5) Consider to try allowing the Paths to be relative (not having to repeat the full path
+
+	==> How does that affect the readability of contracted composites form Pat-lists?
+	==> Can we indent listed paths so that the structure still shows?
+	==> How do we handle reverting to previous levels (use “..” at Path-start)?
+	==> Consider to use File-path as idiom model?
+	...
+
+…
+

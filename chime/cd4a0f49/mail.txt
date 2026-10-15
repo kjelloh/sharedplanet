@@ -1,0 +1,40 @@
+﻿I want a flexible workbench and the Festool MFT system seems a good idea to mimic?
+
+1) It seems I need an 8 mm groove 40x40 I-profile aluminium extrusion to be able to fit a Festool clamp? 
+
+	==> Consider Swedish based RS Components I profile (https://se.rs-online.com/web/p/tubing-and-profile-struts/7613319/ <https://se.rs-online.com/web/p/tubing-and-profile-struts/7613319/> )?
+
+What accessories are compatible for groove size 8?
+End caps - 767-5601 <https://se.rs-online.com/web/p/products/7675601/>, 767-5604 <https://se.rs-online.com/web/p/products/7675604/>, 767-5608 <https://se.rs-online.com/web/p/products/7675608/> 
+T-Slot Nut – 767-5645 <https://se.rs-online.com/web/p/products/7675645/>, 767-5642 <https://se.rs-online.com/web/p/products/7675642/>, 767-5654 <https://se.rs-online.com/web/p/products/7675654/>, 767-5667 <https://se.rs-online.com/web/p/products/7675667/>, 767-5648 <https://se.rs-online.com/web/p/products/7675648/>, 767-5651 <https://se.rs-online.com/web/p/products/7675651/>, 767-5658,  <https://se.rs-online.com/web/p/products/7675658/>767-5660 <https://se.rs-online.com/web/p/products/7675660/>, 767-5664 <https://se.rs-online.com/web/p/products/7675664/>, 767-5673 <https://se.rs-online.com/web/p/products/7675673/>, 767-5636 <https://se.rs-online.com/web/p/products/7675636/>
+Connector Bracket and Joint – 767-5695 <https://se.rs-online.com/web/p/products/7675695/>, 767-5718 <https://se.rs-online.com/web/p/products/7675718/>, 767-5737 <https://se.rs-online.com/web/p/products/7675737/>, 767-5715 <https://se.rs-online.com/web/p/products/7675715/>, 767-5761 <https://se.rs-online.com/web/p/products/7675761/>, 767-5692 <https://se.rs-online.com/web/p/products/7675692/>, 767-5721 <https://se.rs-online.com/web/p/products/7675721/>, 767-5709 <https://se.rs-online.com/web/p/products/7675709/>, 767-5702 <https://se.rs-online.com/web/p/products/7675702/>
+Screws – 767-5822 <https://se.rs-online.com/web/p/products/7675822/>, 767-5686 <https://se.rs-online.com/web/p/products/7675686/>, 767-5689 <https://se.rs-online.com/web/p/products/7675689/>
+Cube Connector – 767-5711 <https://se.rs-online.com/web/p/products/7675711/>
+Universal Connector – 767-5730 <https://se.rs-online.com/web/p/products/7675730/>, 767-5670 <https://se.rs-online.com/web/p/products/7675670/>, 767-5676 <https://se.rs-online.com/web/p/products/7675676/>
+T-Matic Connector – 767-5686 <https://se.rs-online.com/web/p/products/7675686/>, 767-5682 <https://se.rs-online.com/web/p/products/7675682/>
+Screw connector – 767-5689 <https://se.rs-online.com/web/p/products/7675689/>
+Connection Angle – 767-5695 <https://se.rs-online.com/web/p/products/7675695/>, 767-5698 <https://se.rs-online.com/web/p/products/7675698/>
+Floor Bracket – 767-5727 <https://se.rs-online.com/web/p/products/7675727/>
+Roller – 767-5743 <https://se.rs-online.com/web/p/products/7675743/>
+
+	==> Consider German based 
+
+	
+2) Consider the my festool clamp in my "RS PRO Strut, 40 x 40 mm, 8mm Groove" (I-type) aluminium profile from RS Components?
+
+
+Festool clamp in the track of the 40x40 I-type aluminium profile
+
+
+Festool clamp in the track of the 40x40 I-type aluminium profile
+
+
+The Festool clamp is around 11,5 mm wide at the "bottom" (fits into 12 mm T-track
+
+
+The Festool clamp is around 7,9 mm wide at the top (fits into 8 mm groove)
+
+
+The Festool clamp requires a 7,5 mm deep T-track.
+  
+...

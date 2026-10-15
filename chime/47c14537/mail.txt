@@ -1,0 +1,58 @@
+﻿So audio recording in FCPX was not a pleasant experience so it seems I should try Audacity?
+
+	==> Also see "Todo: Mac Pro - Consider to document the installation and use of PreSonus Audiobox iTwo software Universal Control Universal Control v3.1.0.53214 for Mojave?"
+	==> Also see "Todo: Video Creation - Consider ways to create videos for my Youtube channel quicker, more efficient and with higher quality?"
+
+1) It seems the installation instructions for Audacity on Mac can be found here (https://www.audacityteam.org/download/mac/ )?
+
+	==> It seems we should "simply" manually download the MacOS package file and move to and rund from the Application folder?
+
+Recommended Download – Latest Version of Audacity
+
+
+Left-click the Audacity .dmg link below to go to the Fosshub download page (where our downloads are hosted).
+Then left-click the Audacity macOS DMG link to start the download.
+Once the download has completed to your Downloads folder, Double-click the DMG file to mount it.
+Drag the Audacity.app icon rightwards onto the “Applications” folder shortcut.
+You can also drag Audacity out of the DMG to any other location. You need the administrator password to copy Audacity to “Applications”.
+Launch Audacity.app from /Applications or from your chosen location.
+Do not double-click the “Audacity.app” in the DMG window to launch it.
+Audacity must not be run from the DMG.
+Audacity 2.3.2 .dmg file <https://www.fosshub.com/Audacity.html/audacity-macos-2.3.1.dmg> (includes user manual)
+
+
+	==> It seemsthe actual download page for Audacity is on the Fosshub site (https://www.fosshub.com/Audacity.html )?
+
+	
+	The available Audacity application downloads on Fosshub (https://www.fosshub.com/Audacity.html )
+
+
+	
+	The Audacity application download for macOS results in the "audacity-macos-2.3.2.dmg" file
+
+	
+	When double-clicking the downloaded Audacity dmg-file macOS runs its tests and mounts it as a "package"
+
+	
+	The "audacity-macos-2.3.2.dmg" opens to an "Installer" that directs you to just drag-and-drop the Audacity application to the macOS "Application" folder
+
+	
+	After drag-and-drop as instructed by Audacity "installer" the Audacity application is available in macOS "Launcpad"
+
+	
+	After installation you have to manually "Eject" the opened downloaded Audacity package file
+
+	
+	You have to manually drag the downloaded Audacity package file to macOS "Trash" to get rid of it
+
+
+	
+	You have to manually empty macOS "Trash" to actually remove the downloaded, installed and then trashed Audacity installation file
+	
+	
+	The first time you launch Audacity on macOS it requires you to authorise the launch of an Internet downloaded app
+
+	
+	Success! Audacity now starts for the first time on macOS with a welcome dialog
+
+...

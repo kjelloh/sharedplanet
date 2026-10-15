@@ -1,0 +1,26 @@
+﻿It seems the technology for smart phone touch screens and laptop track pads are based on “projected capacitive sensors”?
+
+1) Consider this youtube video “projected capacitive sensors, theory and design.(Touchscreen explained)” (https://www.youtube.com/watch?v=gxLzgeiJQbE&t=300s <https://www.youtube.com/watch?v=gxLzgeiJQbE&t=300s>)?
+
+	==> It seems the video shows a track pad example based on the IQS550 trackpad proxSense chip?
+
+	
+
+	==> It seems a projected capacity sensor is two interlaced sheets of rows and columns of diamond shaped conductive metal pads?
+
+	
+
+2) Consider the evaluation kit for the IQS550 ProxSense chip (http://www.azoteq.com/images/stories/pdf/iqs572ev02_datasheet.pdf <http://www.azoteq.com/images/stories/pdf/iqs572ev02_datasheet.pdf>)?
+
+	==> It seems to come with an 8x8 diamond sensor pattern?
+
+“The IQS572EV02 uses an 8x8 diamond sensor pattern to detect user proximity and touch,
+identify finger position co-ordinates, and generate gesture outputs based on the finger interaction."
+
+	==> The sensor board seems to be designed to fit as a shield on an Arduino Uno?
+
+		
+
+	==> The IQS550 evaluation kit 2 seems to be available from DigiKey for around $14 (https://www.digikey.com/product-detail/en/azoteq-pty-ltd/IQS572EV02-S/1790-1050-ND/7164979 <https://www.digikey.com/product-detail/en/azoteq-pty-ltd/IQS572EV02-S/1790-1050-ND/7164979>)?
+
+3) Consider the data sheet “IQS550/572/525-B000 – Capacitive Trackpad/Touchscreen Controller” (http://www.azoteq.com/images/stories/pdf/iqs5xx-b000_trackpad_datasheet.pdf <http://www.azoteq.com/images/stories/pdf/iqs5xx-b000_trackpad_datasheet.pdf>)? 

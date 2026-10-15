@@ -1,0 +1,104 @@
+﻿I want to understand what SD cards I need for my GoPro Hero 8 Black and DJI Osmo Pocket.
+
+1) The Gopro Hero 8 Black seems to require Micro SD Card C10 or UHS-I U1 (10 MB / s capacity)?
+
+2) The DJI Osmo Pocket seems to require Micro SD UHS-I U3 or V30 (30 MB / s capacity)?
+
+3) Consider brands and models to buy for my GoPro Hero 8 Black and DJI Osmo Pocket?
+
+	==> Consider  2 x 32 GB C10 and 2 x U3 or V30?
+
+Buying the "lower" rating SD cards for the Hero 8 will enable me to try them in the Osmo Pocket to see if they actually has sufficient performance for my use cases (1080 60 fps)?
+
+	==> Consider 4 x 32 GB U3 or V30?
+
+4) Consider to investigate if these Micro SD-cards can be used in my Canon D60 that now has 16 GB full size SDHC C10 cards?
+
+5) Consider the wikipedia article on SD cards (https://en.wikipedia.org/wiki/SD_card <https://en.wikipedia.org/wiki/SD_card> )?
+
+
+
+6) Consider the bit or byte rate for recording in different resolution and frame rates using the encodings used by Hero 8 and Osmo Pocket?
+
+The data we are looking for here is the actual data transfer rate required by the camera to write to the SD card for different resolutions and frame rates? 
+
+let's look at the Hero 8 1080 movie (24 fps) and double (60 fps) video modes
+
+
+
+
+
+
+This would suggest the camera requires an SD card with 30 to 45 Mbit / s or 3 to 4,5 MB / s writing speed capacity for 1080 between 24 fps to 60 fps?
+
+The cheapest SD card will do!
+
+...
+
+	==> These seems to be a comprehensive losting of all the video modes and corresponding bit rates of the Hero 8 (https://community.gopro.com/s/article/HERO8-Black-Video-Resolutions?language=en_US <https://community.gopro.com/s/article/HERO8-Black-Video-Resolutions?language=en_US> )?
+
+HERO8 Black Video Settings and Resolutions (16:9)
+ 
+Resolution	FPS	Width	Height	H.264
+Bitrate
+Low/High	H.265
+Bitrate
+Low/High	Digital Lens Options	Zoom	Auto Low Light?
+4k	60/50	3840	2160	NA	60/100	Wide, Linear	NA	Yes
+4k	30/25	3840	2160	60/100	45/100	Wide, Superview, Linear	NA	No
+4k 	24	3840	2160	60/100	45/100	Wide, Superview, Linear	NA	No
+2.7k	120/100	2704	1520	NA	60/100	Wide	NA	No
+2.7k	60/50	2704	1520	60/100	45/100	Wide, Superview, Linear, Narrow	Wide, Linear	Yes
+2.7k	30/25	2704	1520	30/100	45/100	Wide, Superview, Linear, Narrow	Wide, Linear	No
+2.7k	24	2704	1520	30/100	45/100	Wide, Superview, Linear, Narrow	Wide, Linear	No
+1080p	240/200	1920	1080	NA	60/78	Wide	No	No
+1080p	120/100	1920	1080	60/78	45/60	Wide, Superview, Linear, Narrow	Wide, Linear	No
+1080p	60/50	1920	1080	45/60	45/60	Wide, Superview, Linear, Narrow	Wide, Linear	Yes
+1080p	30/25	1920	1080	30/45	24/36	Wide, Superview, Linear, Narrow	Wide, Linear	No
+1080p	24	1920	1080	30/45	24/36	Wide, Superview, Linear, Narrow	Wide, Linear	No
+
+HERO8 Black Video Settings and Resolutions (4:3)
+ 
+Resolution	FPS	Width	Heigh	H.264 Bitrate
+Low/High	H.265 Bitrate
+Low/High	Digital Lens Options	Zoom	Auto Low Light?
+4k	30/25	4000	3000	NA	60/100	Wide, Linear	NA	No
+4k	24	4000	3000	NA	60/100	Wide, Linear	NA	No
+2.7k	60/50	2704	2028	NA	60/100	Wide	Wide	Yes
+2.7k	30/25	2704	2028	60/100	45/100	Wide, Linear, Narrow	Wide, Linear	No
+2.7k	24	2704	2028	60/100	45/100	Wide, Linear, Narrow	Wide, Linear	No
+1440p	120/100	1920	1440	NA	60/78	Wide	NA	No
+1440p	60/50	1920	1440	60/78	45/60	Wide, Linear, Narrow	Wide, Linear	Yes
+1440p	30/25	1920	1440	30/45	24/36	Wide, Linear, Narrow	Wide, Linear	No
+1440p	24	1920	1440	30/45	24/36	Wide, Linear, Narrow	Wide, Linear	No
+
+
+Looping Mode:
+***Looping Mode is only available when making a Custom Preset in Video Mode. Begin the Custom Preset and select Mode. This will give you the Looping Mode option.
+ 
+Resolution	FPS	Digital Lens Options	Zoom	Auto LowLight	Intervals
+(minutes)	H.264 Bitrate	H.265 Bitrate
+4k	30/25	SuperView, Wide, Linear	NA	No	5, 20, 60, 120	55.5	45
+1440p	60/50	Wide, Linear	Wide, Linear	Yes	MAX, 5, 20, 60, 120	55.5	45
+1080p	120/100	SuperView, Wide, Linear	Wide, Linear	No	5, 20, 60, 120	55.5	45
+1080p	60/50	SuperView, Wide, Linear	Wide, Linear	Yes	MAX, 5, 20, 60, 120	30	24
+
+
+	==> It seems the DJI manual lists the video modes (https://www.dji.com/se/osmo-pocket/info <https://www.dji.com/se/osmo-pocket/info> )?
+
+
+Video Formats	MP4 / MOV (MPEG-4 AVC / H.264)
+
+4K Ultra HD: 3840×2160 24/25/30/48/50/60fps
+
+2.7K: 2720x1530 24/25/30/48/50/60 fps
+
+FHD: 1920×1080 24/25/30/48/50/60/120fps
+
+7) It seems MPEG-4 AVC and H.264 are related and even in some sense the same encoding (https://en.wikipedia.org/wiki/Advanced_Video_Coding <https://en.wikipedia.org/wiki/Advanced_Video_Coding> )?
+
+"Advanced Video Coding (AVC), also referred to as H.264 or MPEG-4 Part 10"
+
+
+
+...

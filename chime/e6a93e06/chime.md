@@ -1,0 +1,23 @@
+# Todo: Argue that society must value cost in physical, never monetary entities
+
+```#e6a93e06``` *As of 2015-10-30 16:03*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+From societies point of view the cost of any activity must always relate to physical entities (energy, time, matter, toxins), never monetary ones (e.g. Price)
+
+1) Our living conditions relates only to our physical environment and to what degree it is able to provide for our needs.  
+2) Thus "cost" must always be measured in losses in our environment abilities to provide for those needs (air, food, time, Energy)  
+3) The monetary price is always just a measurement of demand and availability and thus never reflects the cost in terms of living conditions.  
+4) Could we even state that money must only be used to measure subjective values, never cost (subjective or physical)?  
+...
+
+Elaborate on this thought about "true" cost can never be subjective and thus can never be determined by price?
+
+A) I visited expresso house in Kista (stenbergs Torge) where they merchant had the water tap running almost all the time. I asked her to turn it of. She did but reluctantly arguing that she was rinsing glasses whilst attending customers. And sure enough she soon turned it again and kept it do regularly while I watched. So, what "economy" and cost-value would make such behaviour "irrational"?  
+...
+
+Skickat från min iPhone
+
+{% endraw %}

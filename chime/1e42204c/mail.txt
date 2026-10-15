@@ -1,0 +1,12 @@
+﻿I would like my Cetus 3D extruder cover to accept the filament feeder tube to fixate it in a perpendicular orientation to the feeder.
+
+1) Consider this thingiverse "Cetus3D MK3 - Extruder Cover" (https://www.thingiverse.com/thing:3342109/files <https://www.thingiverse.com/thing:3342109/files> )?
+
+
+The thingiverse "Cetus3D MK3 - Extruder Cover" that maybe fits also my original Cetus 3D extruder (same nema stepper motor)?
+
+	==> Consider to see if I can modify the STL to make the feeder hole to accept the actual filament feeder tube?
+
+
+
+...

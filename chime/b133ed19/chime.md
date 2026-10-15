@@ -1,0 +1,7745 @@
+# Todo: Consider to document my try to build Freecad on macOS Apple silicone using Pixi package manager workflow?
+
+```#b133ed19``` *As of 2025-03-16 13:50*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to be able to work on Freecad as a programmer directly.
+
+==&gt; Also see "Todo: Consider to document if I can build Freecad from source on macOS apple silicone?"
+
+1) Consider this article 'Getting Started' (<https://github.com/FreeCAD/DevelopersHandbook/blob/main/gettingstarted/index.md#pixi> )?
+
+==&gt; It seems the article is confused regarding the order to set everything up?
+
+> The article states:
+
+> 1. Install pixi using the following command:  
+> 2. Configure FreeCAD for your platform. There are additional steps necessary on Windows outlined in the next subsection.  
+> 3. Build FreeCAD  
+> 4. Run FreeCAD
+
+> **BUT: For 2..4 to work I need to first clone the Freecad repo and cd into its root!**
+
+2) Consider my progress to build Freecad following the proposed workflow using Pixi packager manager?
+
+==&gt; It seems Pixi install worked ok (<https://pixi.sh/latest/> )?
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD % curl -fsSL https://pixi.sh/install.sh | bash
+
+> This script will automatically download and install Pixi (latest) for you.
+
+> Getting it from this url: https://github.com/prefix-dev/pixi/releases/latest/download/pixi-aarch64-apple-darwin.tar.gz
+
+> % Total % Received % Xferd Average Speed Time Time Time Current
+
+> Dload Upload Total Spent Left Speed
+
+> 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0
+
+> 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0
+
+> 100 17.7M 100 17.7M 0 0 2900k 0 0:00:06 0:00:06 --:--:-- 4071k
+
+> The 'pixi' binary is installed into '/Users/kjell-olovhogdahl/.pixi/bin'
+
+> Updating '/Users/kjell-olovhogdahl/.zshrc'
+
+> Please restart or source your shell.
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD % source ~/.zshrc
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD % pixi --version
+
+> pixi 0.42.1
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD %
+
+NOTE: I had to tell zsh-shell the command 'source ~/.zshrc' to have it update to the change state!
+
+==&gt; It seems 'pixi run configure' works fine in my cloned Freecad repo?
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git % pixi run configure
+
+> WARN Encountered ambiguous version specifier \`3.28.3\`, could be \`3.28.3.\*\` but assuming you meant \`==3.28.3\`. In the future this will result in an error.
+
+> WARN Encountered ambiguous version specifier \`3.13\`, could be \`3.13.\*\` but assuming you meant \`==3.13\`. In the future this will result in an error.
+
+> ✨ **Pixi task (****initialize****): ****git submodule update --init --recursive**
+
+> ✨ **Pixi task (****configure****): ****cmake -B build --preset conda-macos-debug -DFREECAD_QT_VERSION=6 -DBUILD_REVERSEENGINEERING=OFF**
+
+> Preset CMake variables:
+
+> BUILD_FEM_NETGEN:BOOL="ON"
+
+> BUILD_WITH_CONDA:BOOL="ON"
+
+> CMAKE_BUILD_TYPE:STRING="Debug"
+
+> CMAKE_EXPORT_COMPILE_COMMANDS:BOOL="ON"
+
+> CMAKE_IGNORE_PREFIX_PATH:STRING="/opt/homebrew;/usr/local/homebrew"
+
+> CMAKE_INCLUDE_PATH:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include"
+
+> CMAKE_INSTALL_LIBDIR:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib"
+
+> CMAKE_INSTALL_PREFIX:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default"
+
+> CMAKE_LIBRARY_PATH:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib"
+
+> CMAKE_PREFIX_PATH:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default"
+
+> ENABLE_DEVELOPER_TESTS:BOOL="ON"
+
+> FREECAD_LIBPACK_USE:BOOL="OFF"
+
+> FREECAD_USE_EXTERNAL_FMT:BOOL="ON"
+
+> FREECAD_USE_EXTERNAL_SMESH:BOOL="ON"
+
+> FREECAD_USE_PCH:BOOL="OFF"
+
+> FREECAD_USE_PCL:BOOL="ON"
+
+> FREECAD_USE_PYBIND11:BOOL="ON"
+
+> OCCT_CMAKE_FALLBACK:BOOL="ON"
+
+> OCC_INCLUDE_DIR:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade"
+
+> QT_HOST_PATH:PATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default"
+
+> -- Using ccache found at: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/ccache
+
+> -- The C compiler identification is Clang 17.0.6
+
+> -- The CXX compiler identification is Clang 17.0.6
+
+> -- Detecting C compiler ABI info
+
+> -- Detecting C compiler ABI info - done
+
+> -- Check for working C compiler: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/arm64-apple-darwin20.0.0-clang - skipped
+
+> -- Detecting C compile features
+
+> -- Detecting C compile features - done
+
+> -- Detecting CXX compiler ABI info
+
+> -- Detecting CXX compiler ABI info - done
+
+> -- Check for working CXX compiler: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/arm64-apple-darwin20.0.0-clang++ - skipped
+
+> -- Detecting CXX compile features
+
+> -- Detecting CXX compile features - done
+
+> -- Compiler: Clang, version: 17.0.6
+
+> -- Looking for GL/gl.h
+
+> -- Looking for GL/gl.h - not found
+
+> -- Looking for C++ include istream
+
+> -- Looking for C++ include istream - found
+
+> -- Looking for C++ include ostream
+
+> -- Looking for C++ include ostream - found
+
+> -- Looking for C++ include fstream
+
+> -- Looking for C++ include fstream - found
+
+> -- Looking for C++ include sstream
+
+> -- Looking for C++ include sstream - found
+
+> -- Looking for C++ include ios
+
+> -- Looking for C++ include ios - found
+
+> -- Looking for C++ include iostream
+
+> -- Looking for C++ include iostream - found
+
+> -- Looking for C++ include iomanip
+
+> -- Looking for C++ include iomanip - found
+
+> -- Looking for C++ include iostream
+
+> -- Looking for C++ include iostream - found
+
+> -- Check for STD namespace
+
+> -- Check for STD namespace - found
+
+> -- Force BOOST_PP_VARIADICS=1 for clang
+
+> -- prefix: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default
+
+> -- bindir: bin
+
+> -- datadir: share
+
+> -- docdir: share/doc/FreeCAD
+
+> -- includedir: include
+
+> -- libdir: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib
+
+> -- cmake: 3.28.3
+
+> -- Compiling with Qt 6
+
+> -- Found Doxygen: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/doxygen (found version "1.11.0") found components: doxygen dot
+
+> -- find_package() was used to locate fmt version 11.0.2
+
+> -- Found Python3: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/python3.13 (found version "3.13.0") found components: Interpreter Development Development.Module Development.Embed
+
+> -- Found Boost: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/cmake/Boost-1.86.0/BoostConfig.cmake (found suitable version "1.86.0", minimum required is "1.65.0") found components: system iostreams filesystem
+
+> CMake Warning (dev) at .pixi/envs/default/share/pcl-1.14/Modules/FindFLANN.cmake:45 (find_package):
+
+> Policy CMP0144 is not set: find_package uses upper-case &lt;PACKAGENAME&gt;_ROOT
+
+> variables. Run "cmake --help-policy CMP0144" for policy details. Use the
+
+> cmake_policy command to set the policy and suppress this warning.
+
+> CMake variable FLANN_ROOT is set to:
+
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default
+
+> For compatibility, find_package is ignoring the variable, but code in a
+
+> .cmake module might still use it.
+
+> Call Stack (most recent call first):
+
+> .pixi/envs/default/share/pcl-1.14/PCLConfig.cmake:253 (find_package)
+
+> .pixi/envs/default/share/pcl-1.14/PCLConfig.cmake:298 (find_flann)
+
+> .pixi/envs/default/share/pcl-1.14/PCLConfig.cmake:559 (find_external_library)
+
+> cMake/FreeCAD_Helpers/SetupPCL.cmake:11 (find_package)
+
+> CMakeLists.txt:82 (SetupPCL)
+
+> This warning is for project developers. Use -Wno-dev to suppress it.
+
+> -- Found flann version 1.9.2
+
+> -- Found OpenMP_CXX: -fopenmp=libomp
+
+> -- Found OpenMP: TRUE found components: CXX
+
+> -- Found Qhull version 8.0.2
+
+> -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+
+> -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+
+> -- Found Threads: TRUE
+
+> -- Found GLEW: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libGLEW.dylib
+
+> -- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework found components: OpenGL
+
+> -- Found utf8cpp: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include
+
+> -- Found ZLIB: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libz.dylib (found version "1.3.1")
+
+> -- Found PNG: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpng.dylib (found version "1.6.44")
+
+> -- Found nlohmann_json: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.11.3")
+
+> -- Performing Test HAVE_STDATOMIC
+
+> -- Performing Test HAVE_STDATOMIC - Success
+
+> -- Found WrapAtomic: TRUE
+
+> -- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
+
+> -- Found WrapOpenGL: TRUE
+
+> -- Found Eigen3: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/eigen3 (found version "3.4.0")
+
+> -- Found EXPAT: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libexpat.dylib (found version "2.6.4")
+
+> -- Found double-conversion: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libdouble-conversion.dylib
+
+> -- Found LZ4: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/liblz4.dylib (found version "1.9.4")
+
+> -- Found LZMA: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/liblzma.dylib (found version "5.6.3")
+
+> -- Found JPEG: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libjpeg.dylib (found version "80")
+
+> -- Found TIFF: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libtiff.dylib (found version "4.7.0")
+
+> -- Could NOT find freetype (missing: freetype_DIR)
+
+> -- Found Freetype: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libfreetype.dylib (found version "2.12.1")
+
+> -- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework found components: OpenGL
+
+> -- Could NOT find freetype (missing: freetype_DIR)
+
+> -- looking for PCL_COMMON
+
+> -- Found PCL_COMMON: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_common.dylib
+
+> -- looking for PCL_KDTREE
+
+> -- Found PCL_KDTREE: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_kdtree.dylib
+
+> -- looking for PCL_OCTREE
+
+> -- Found PCL_OCTREE: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_octree.dylib
+
+> -- looking for PCL_SEARCH
+
+> -- Found PCL_SEARCH: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_search.dylib
+
+> -- looking for PCL_2D
+
+> -- Found PCL_2D: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/pcl-1.14
+
+> -- looking for PCL_FEATURES
+
+> -- Found PCL_FEATURES: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_features.dylib
+
+> -- looking for PCL_SURFACE
+
+> -- Found PCL_SURFACE: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_surface.dylib
+
+> -- looking for PCL_IO
+
+> -- Found PCL_IO: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_io.dylib
+
+> -- looking for PCL_FILTERS
+
+> -- Found PCL_FILTERS: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_filters.dylib
+
+> -- looking for PCL_GEOMETRY
+
+> -- Found PCL_GEOMETRY: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/pcl-1.14
+
+> -- looking for PCL_ML
+
+> -- Found PCL_ML: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_ml.dylib
+
+> -- looking for PCL_SEGMENTATION
+
+> -- Found PCL_SEGMENTATION: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_segmentation.dylib
+
+> -- looking for PCL_SAMPLE_CONSENSUS
+
+> -- Found PCL_SAMPLE_CONSENSUS: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libpcl_sample_consensus.dylib
+
+> -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_features;pcl_surface;pcl_io;pcl_filters;pcl_ml;pcl_segmentation;pcl_sample_consensus;Boost::system;Boost::iostreams;Boost::filesystem;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL
+
+> -- Performing Test HAS_FLTO_THIN
+
+> -- Performing Test HAS_FLTO_THIN - Success
+
+> -- Found pybind11: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include (found version "2.13.6")
+
+> -- Found XercesC: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libxerces-c.dylib (found version "3.3.0")
+
+> -- PyCXX found:
+
+> -- Headers: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/PyCXX
+
+> -- Sources: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/PyCXX/CXX
+
+> -- Version: 7.1.9
+
+> -- Found OCC: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade (found version "7.8.1")
+
+> -- -- Found OpenCASCADE version: 7.8.1
+
+> -- -- OpenCASCADE include directory: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade
+
+> -- -- OpenCASCADE shared libraries directory: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib
+
+> -- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
+
+> -- Found OpenGLU: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
+
+> -- VTK components: CommonCore;CommonDataModel;FiltersVerdict;IOXML;FiltersCore;FiltersGeneral;IOLegacy;FiltersExtraction;FiltersSources;FiltersGeometry;hdf5;FiltersParallelDIY2;RenderingCore;InteractionStyle;RenderingFreeType;RenderingOpenGL2
+
+> -- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework found components: OpenGL
+
+> -- Found HDF5: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libhdf5.dylib;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libcrypto.dylib;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libcurl.dylib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libpthread.tbd;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libsz.dylib;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libz.dylib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libdl.tbd;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (found version "1.14.4-3") found components: C HL
+
+> -- Could NOT find freetype (missing: freetype_DIR)
+
+> -- Could NOT find Netgen (missing: Netgen_DIR)
+
+> -- Cannot find NETGEN header files.
+
+> -- Cannot find NETGEN library.
+
+> -- Found SWIG: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/swig4.0 (found version "4.3.0")
+
+> -- Found Eigen3: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/eigen3 (found suitable version "3.4.0", minimum required is "3.0.0")
+
+> -- Found Cups: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libcups.tbd (found version "2.3.4")
+
+> -- Set up to compile with Qt 6.7.3
+
+> CMake Deprecation Warning at .pixi/envs/default/lib/cmake/Coin-4.0.3/coin-config.cmake:1 (cmake_minimum_required):
+
+> Compatibility with CMake &lt; 3.5 will be removed from a future version of
+
+> CMake.
+
+> Update the VERSION argument &lt;min&gt; value or use a ...&lt;max&gt; suffix to tell
+
+> CMake that the project does not need compatibility with older versions.
+
+> Call Stack (most recent call first):
+
+> cMake/FreeCAD_Helpers/SetupCoin3D.cmake:10 (find_package)
+
+> CMakeLists.txt:108 (SetupCoin3D)
+
+> -- Checking Pivy version by importing it in a Python program...
+
+> -- Found Pivy 0.6.9
+
+> -- Checking Pivy Coin3D version by importing it in a Python program...
+
+> -- Found Pivy Coin3D SIM Coin 4.0.3
+
+> -- Could NOT find Spnav (missing: SPNAV_LIBRARY SPNAV_INCLUDE_DIR)
+
+> -- Shiboken6Config: Using default python: .cpython-313-darwin
+
+> -- Found Python: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/python3.13 (found suitable version "3.13.0", minimum required is "3") found components: Interpreter Development Development.Module Development.Embed
+
+> -- PYTHON_LIMITED_LIBRARIES:
+
+> -- SHIBOKEN_PYTHON_INCLUDE_DIRS computed to value: '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13'
+
+> -- SHIBOKEN_PYTHON_LIBRARIES computed to value: '-undefined dynamic_lookup'
+
+> -- libshiboken built for Release
+
+> -- PYTHON_CONFIG_SUFFIX: .cpython-313-darwin
+
+> -- libshiboken built for Release
+
+> -- Found PYSIDE6 tools: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/qt6/uic, /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/qt6/rcc
+
+> -- PySide 6.7.3 Python module found at /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/python3.13/site-packages/PySide6.
+
+> -- Found Matplotlib: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/python3.13/site-packages/matplotlib (found version "3.10.0")
+
+> -- Found Boost: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/cmake/Boost-1.86.0/BoostConfig.cmake (found suitable version "1.86.0", minimum required is "1.74") found components: program_options regex system thread date_time
+
+> -- Platform is 64-bit, set -D_OCC64
+
+> -- &#91;E57&#93; Revison ID: E57Format-2.2.1-arm64-darwin
+
+> -- &#91;E57&#93; Building static library
+
+> -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+
+> -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+
+> -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+
+> -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+
+> -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+
+> -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+
+> -- &#91;OndselSolver&#93; Building shared library
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/TypePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Type.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/BaseClassPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/BaseClass.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/BoundBoxPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/BoundBox.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/CoordinateSystemPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/CoordinateSystem.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/PersistencePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Persistence.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/VectorPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Vector.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/MatrixPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Matrix.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/RotationPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Rotation.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/PlacementPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Placement.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/AxisPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Axis.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/UnitPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Unit.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/QuantityPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Quantity.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/PrecisionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Precision.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/DocumentPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/DocumentObjectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/ExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/ExtensionContainerPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/DocumentObjectExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/GroupExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/LinkBaseExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/DocumentObjectGroupPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/GeoFeaturePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/GeoFeatureGroupExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/SuppressibleExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/MetadataPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/OriginGroupExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/PartPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/StringHasherPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/StringIDPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/ComplexGeoDataPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/PropertyContainerPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/MaterialPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/MeasureManagerPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/App/AssemblyObjectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/App/AssemblyLinkPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/App/BomObjectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/App/BomGroupPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/App/JointGroupPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/App/ViewGroupPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/App/SimulationGroupPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/ViewProviderAssemblyPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/App/FemMeshPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/App/FemPostObjectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/App/FemPostPipelinePy.cpp
+
+> -- Found OpenMP_C: -fopenmp=libomp (Required is at least version "4.0")
+
+> -- Found OpenMP_CXX: -fopenmp=libomp (Required is at least version "4.0")
+
+> -- Found OpenMP: TRUE (Required is at least version "4.0")
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/ViewProviderFemConstraintPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/ViewProviderFemMeshPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/ViewProviderFemPostPipelinePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Import/App/StepShapePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/App/Array2DPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/App/Array3DPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/App/MaterialFilterPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/App/MaterialManagerPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/App/MaterialPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/App/ModelManagerPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/App/ModelPropertyPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/App/ModelPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/App/UUIDsPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/MaterialTreeWidgetPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/App/EdgePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/App/FacetPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/App/MeshFeaturePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/App/MeshPointPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/App/MeshPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/ViewProviderMeshPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ArcPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ArcOfConicPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ArcOfCirclePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ArcOfParabolaPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/BodyBasePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ConicPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/CirclePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ArcOfEllipsePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/EllipsePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/HyperbolaPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ArcOfHyperbolaPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ParabolaPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/OffsetCurvePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeometryPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeometryExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeometryIntExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeometryStringExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeometryBoolExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeometryDoubleExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeometryCurvePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/BoundedCurvePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TrimmedCurvePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeometrySurfacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/LinePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/LineSegmentPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/PointPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/BezierCurvePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/BSplineCurvePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/PlanePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ConePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/CylinderPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/SpherePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ToroidPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/BezierSurfacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/BSplineSurfacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/OffsetSurfacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/PlateSurfacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/RectangularTrimmedSurfacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/SurfaceOfExtrusionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/SurfaceOfRevolutionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/PartFeaturePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/AttachExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Part2DObjectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/AttachEnginePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TopoShapePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TopoShapeCompoundPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TopoShapeCompSolidPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TopoShapeEdgePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TopoShapeFacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TopoShapeShellPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TopoShapeSolidPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TopoShapeVertexPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/TopoShapeWirePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/BRepOffsetAPI_MakePipeShellPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/BRepOffsetAPI_MakeFillingPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/BRepFeat/MakePrismPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ChFi2d/ChFi2d_AnaFilletAlgoPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ChFi2d/ChFi2d_FilletAlgoPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ChFi2d/ChFi2d_ChamferAPIPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ChFi2d/ChFi2d_FilletAPIPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/ArcOfCircle2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/ArcOfConic2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/ArcOfEllipse2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/ArcOfHyperbola2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/ArcOfParabola2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/BezierCurve2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/BSplineCurve2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/Circle2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/Conic2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/Ellipse2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/Geometry2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/Hyperbola2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/Curve2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/Line2dSegmentPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/Line2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/OffsetCurve2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/Geom2d/Parabola2dPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeomPlate/BuildPlateSurfacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeomPlate/CurveConstraintPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/GeomPlate/PointConstraintPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/HLRBRep/HLRBRep_AlgoPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/HLRBRep/HLRToShapePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/HLRBRep/HLRBRep_PolyAlgoPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/HLRBRep/PolyHLRToShapePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_RootPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_EdgePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_FacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_ShapePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_ShellPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_SolidPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_WirePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_WireframePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_WireVertexPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_EdgeConnectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_FaceConnectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_FixSmallFacePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_FixSmallSolidPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_FreeBoundsPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_ShapeTolerancePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_SplitCommonVertexPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeFix/ShapeFix_SplitToolPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/App/ShapeUpgrade/UnifySameDomainPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/ViewProviderPartExtPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/App/BodyPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/App/FeaturePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/ViewProviderPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/App/CommandPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/App/PathPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/App/FeaturePathCompoundPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/App/AreaPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/App/FeatureAreaPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/App/VoronoiPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/App/VoronoiCellPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/App/VoronoiEdgePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/App/VoronoiVertexPy.cpp
+
+> -- area module (for Path Workbench) will be installed to: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/PathSimulator/App/PathSimPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/PathSimulator/AppGL/CAMSimPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/App/PointsPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/App/Robot6AxisPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/App/TrajectoryPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/App/WaypointPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/App/RobotObjectPy.cpp
+
+> -- Performing Test _flag_found
+
+> -- Performing Test _flag_found - Success
+
+> -- Performing Test _flag_found
+
+> -- Performing Test _flag_found - Success
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/App/SketchObjectSFPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/App/SketchObjectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/App/SketchGeometryExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/App/ExternalGeometryExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/App/GeometryFacadePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/App/ExternalGeometryFacadePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/App/ConstraintPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/App/SketchPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/ViewProviderSketchGeometryExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/App/SheetPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/App/PropertySheetPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/App/PropertyColumnWidthsPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/App/PropertyRowHeightsPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/ViewProviderSpreadsheetPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Surface/App/Blending/BlendPointPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Surface/App/Blending/BlendCurvePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Measure/App/MeasurementPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Measure/App/MeasureBasePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Measure/Gui/QuickMeasurePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawPagePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawViewPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawViewPartPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawViewSymbolPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawTemplatePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawParametricTemplatePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawSVGTemplatePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawViewClipPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawViewDimensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawViewDimExtentPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawHatchPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawGeomHatchPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawViewCollectionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawProjGroupPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawProjGroupItemPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawViewAnnotationPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawLeaderLinePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawRichAnnoPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/GeomFormatPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/CenterLinePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/CosmeticEdgePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/CosmeticVertexPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawTilePy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawTileWeldPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawWeldSymbolPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/CosmeticExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/App/DrawBrokenViewPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/DocumentPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/PythonWorkbenchPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/ViewProviderPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/ViewProviderDocumentObjectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/ViewProviderGeometryObjectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/ViewProviderExtensionPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/WorkbenchPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Selection/SelectionObjectPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/LinkViewPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/ViewProviderLinkPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/AxisOriginPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/CommandPy.cpp
+
+> -- /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Navigation/NavigationStylePy.cpp
+
+> -- Found Python3: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/python3.13 (found version "3.13.0") found components: Interpreter
+
+> ==============
+
+> System
+
+> ==============
+
+> -- bindir: bin
+
+> -- BLAS: -undefined-
+
+> -- ccache: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/ccache
+
+> -- CMAKE_VERSION: 3.28.3
+
+> -- Compiler: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/arm64-apple-darwin20.0.0-clang++ (17.0.6)
+
+> -- datadir: share
+
+> -- docdir: share/doc/FreeCAD
+
+> -- includedir: include
+
+> -- libdir: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib
+
+> -- prefix: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default
+
+> -- Python: 3.13.0 &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/python3.13&#93; Suffix: &#91;.cpython-313-darwin&#93;
+
+> ==============
+
+> Config
+
+> ==============
+
+> -- BUILD_ADDONMGR: ON
+
+> -- BUILD_ASSEMBLY: ON
+
+> -- BUILD_BIM: ON
+
+> -- BUILD_CAM: ON
+
+> -- BUILD_CLOUD: OFF
+
+> -- BUILD_DRAFT: ON
+
+> -- BUILD_DRAWING: OFF
+
+> -- BUILD_FEM: ON
+
+> -- BUILD_GUI: ON
+
+> -- BUILD_HELP: ON
+
+> -- BUILD_IDF: ON
+
+> -- BUILD_IMPORT: ON
+
+> -- BUILD_INSPECTION: ON
+
+> -- BUILD_JTREADER: OFF
+
+> -- BUILD_MATERIAL: ON
+
+> -- BUILD_MEASURE: ON
+
+> -- BUILD_MESH: ON
+
+> -- BUILD_MESH_PART: ON
+
+> -- BUILD_OPENSCAD: ON
+
+> -- BUILD_PART: ON
+
+> -- BUILD_PART_DESIGN: ON
+
+> -- BUILD_PLOT: ON
+
+> -- BUILD_POINTS: ON
+
+> -- BUILD_REVERSEENGINEERING: OFF
+
+> -- BUILD_ROBOT: ON
+
+> -- BUILD_SANDBOX: OFF
+
+> -- BUILD_SHOW: ON
+
+> -- BUILD_SKETCHER: ON
+
+> -- BUILD_SMESH: OFF
+
+> -- BUILD_SPREADSHEET: ON
+
+> -- BUILD_START: ON
+
+> -- BUILD_SURFACE: ON
+
+> -- BUILD_TECHDRAW: ON
+
+> -- BUILD_TEST: ON
+
+> -- BUILD_TUX: ON
+
+> -- BUILD_VR: OFF
+
+> -- BUILD_WEB: ON
+
+> -- CMAKE_BUILD_TYPE: Debug
+
+> -- CMAKE_CXX_FLAGS: -Wall -Wextra -Wpedantic -Wno-write-strings -fdiagnostics-color -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include -Wno-undefined-var-template
+
+> -- CMAKE_CXX_STANDARD: 20
+
+> -- CMAKE_INSTALL_PREFIX: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default
+
+> -- CMAKE_PREFIX_PATH: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default
+
+> -- ENABLE_DEVELOPER_TESTS: ON
+
+> -- FREECAD_CREATE_MAC_APP: OFF
+
+> -- FREECAD_LIBPACK_USE: OFF
+
+> -- FREECAD_QT_VERSION: 6
+
+> -- FREECAD_USE_EXTERNAL_KDL: OFF
+
+> -- FREECAD_USE_EXTERNAL_SMESH: ON
+
+> -- FREECAD_USE_FREETYPE: ON
+
+> -- FREECAD_USE_PYBIND11: ON
+
+> -- FREECAD_USE_PYSIDE: ON
+
+> -- FREECAD_USE_SHIBOKEN: ON
+
+> -- Python3_EXECUTABLE: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/python3.13
+
+> -- PYTHON_LIBRARY: -undefined-
+
+> -- USE_CUDA: -undefined-
+
+> -- USE_OPENCV: -undefined-
+
+> ==============
+
+> Libraries
+
+> ==============
+
+> -- 3Dconnexion: Building with 3Dconnexion NavLib support
+
+> -- Boost: 1.86.0
+
+> -- Coin3D: 4.0.3 &#91;optimized;Coin;debug;Coin&#93; &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include&#93;
+
+> -- Coin3D_DOC: not found
+
+> -- DesignerPlugin: not built (BUILD_DESIGNER_PLUGIN is OFF)
+
+> -- Doxygen: 1.11.0 Language: English
+
+> -- Eigen3: 3.4.0
+
+> -- fmt: 11.0.2
+
+> -- Freetype: 2.12.1
+
+> -- Matplotlib: 3.10.0 PathDirs: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/python3.13/site-packages/matplotlib
+
+> -- NETGEN: not enabled
+
+> -- OCC: 7.8.1 &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib&#93; &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade&#93;
+
+> -- OCC_Libs: &#91;TKFillet;TKMesh;TKernel;TKG2d;TKG3d;TKMath;TKShHealing;TKXSBase;TKBool;TKBO;TKBRep;TKTopAlgo;TKGeomAlgo;TKGeomBase;TKOffset;TKPrim;TKHLR;TKFeat;TKDESTEP;TKDEIGES;TKDEGLTF;TKDESTL&#93;
+
+> -- OpenGL_Lib: &#91;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework&#93;
+
+> -- OpenGLU_Incl: &#91;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework&#93;
+
+> -- OpenGLU_Lib: &#91;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework&#93;
+
+> -- pivy: 0.6.9
+
+> -- pybind11: 2.13.6
+
+> -- PYCXX: 7.1.9 Incl: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/PyCXX Src:/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/PyCXX/CXX
+
+> -- PySide: 6.7.3 &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/PySide6&#93;
+
+> -- PySideTools: v: 6 uic: &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/qt6/uic&#93; rcc: &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/qt6/rcc&#93;
+
+> -- QtConcurrent: 6.7.3
+
+> -- QtCore: 6.7.3
+
+> -- QtNetwork: 6.7.3
+
+> -- QtOpenGL: 6.7.3
+
+> -- QtPrintSupport: 6.7.3
+
+> -- QtSvg: 6.7.3
+
+> -- QtTest: 6.7.3
+
+> -- QtUiTools: 6.7.3
+
+> -- QtWidgets: 6.7.3
+
+> -- QtXml: 6.7.3
+
+> -- Rift: not enabled (BUILD_VR)
+
+> -- Shiboken: 6.7.3 &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/shiboken6;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13&#93;
+
+> -- SMESH: 9.8.0.2
+
+> -- SWIG: 4.3.0
+
+> -- Vtk: 9.3.1
+
+> -- XercesC: 3.3.0 &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib/libxerces-c.dylib&#93; &#91;/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include&#93;
+
+> -- yaml-cpp: 0.8.0
+
+> -- ZLIB: 1.3.1
+
+> =================================================
+
+> Now run 'cmake --build /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build' to build FreeCAD
+
+> =================================================
+
+> -- Configuring done (42.8s)
+
+> -- Generating done (0.6s)
+
+> -- Build files have been written to: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git %
+
+
+
+==&gt; It seems the next result of command 'pixi run build' is defined by pixi through the 'pixi.toml' in the Freecad repo root?
+
+> *Me: "*  
+> *Given I am at the root of my Freecad github repo. And I am instructed to run 'pixi run build'. I have s ub-folder 'build' created by 'pixi run configure'. In what directory do I need to be to have 'pixi run build' work as intended? That is, is 'build' the name of my build folder or is it an argument to pixi?**"*
+
+> *chatGPT: "**You should run pixi run build from the root of your FreeCAD repo (where pixi.toml is). **✔ The build/ directory will be used automatically because it was set up during pixi run configure.**"*
+
+==&gt; It seems 'pixi run build' actually succeeded?
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git % pixi run build
+
+> WARN Encountered ambiguous version specifier \`3.28.3\`, could be \`3.28.3.\*\` but assuming you meant \`==3.28.3\`. In the future this will result in an error.
+
+> WARN Encountered ambiguous version specifier \`3.13\`, could be \`3.13.\*\` but assuming you meant \`==3.13\`. In the future this will result in an error.
+
+> ✨ **Pixi task (****build****): ****cmake --build build**
+
+> &#91;48/6105&#93; Generating version_file
+
+> git
+
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Build/Version.h.out written
+
+> &#91;57/6105&#93; Generating Resources/translations/Base_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_cs.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;58/6105&#93; Generating Resources/translations/Base_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_be.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;59/6105&#93; Generating Resources/translations/Base_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_ca.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;60/6105&#93; Generating Resources/translations/Base_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_da.qm'...
+
+> Generated 11 translation(s) (10 finished and 1 unfinished)
+
+> &#91;61/6105&#93; Generating Resources/translations/Base_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_de.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;62/6105&#93; Generating Resources/translations/Base_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_el.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;63/6105&#93; Generating Resources/translations/Base_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_es-AR.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;64/6105&#93; Generating Resources/translations/Base_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_es-ES.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;65/6105&#93; Generating Resources/translations/Base_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_eu.qm'...
+
+> Generated 11 translation(s) (8 finished and 3 unfinished)
+
+> &#91;66/6105&#93; Generating Resources/translations/Base_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_fi.qm'...
+
+> Generated 11 translation(s) (7 finished and 4 unfinished)
+
+> &#91;67/6105&#93; Generating Resources/translations/Base_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_fr.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;68/6105&#93; Generating Resources/translations/Base_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_gl.qm'...
+
+> Generated 11 translation(s) (0 finished and 11 unfinished)
+
+> &#91;69/6105&#93; Generating Resources/translations/Base_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_hr.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;70/6105&#93; Generating Resources/translations/Base_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_hu.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;71/6105&#93; Generating Resources/translations/Base_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_it.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;72/6105&#93; Generating Resources/translations/Base_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_id.qm'...
+
+> Generated 11 translation(s) (7 finished and 4 unfinished)
+
+> &#91;73/6105&#93; Generating Resources/translations/Base_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_ja.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;74/6105&#93; Generating Resources/translations/Base_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_lt.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;75/6105&#93; Generating Resources/translations/Base_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_ka.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;76/6105&#93; Generating Resources/translations/Base_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_ko.qm'...
+
+> Generated 11 translation(s) (8 finished and 3 unfinished)
+
+> &#91;77/6105&#93; Generating Resources/translations/Base_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_pt-BR.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;78/6105&#93; Generating Resources/translations/Base_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_nl.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;79/6105&#93; Generating Resources/translations/Base_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_pl.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;80/6105&#93; Generating Resources/translations/Base_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_ro.qm'...
+
+> Generated 11 translation(s) (6 finished and 5 unfinished)
+
+> &#91;81/6105&#93; Generating Resources/translations/Base_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_pt-PT.qm'...
+
+> Generated 11 translation(s) (6 finished and 5 unfinished)
+
+> &#91;82/6105&#93; Generating Resources/translations/Base_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_ru.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;83/6105&#93; Generating Resources/translations/Base_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_sl.qm'...
+
+> Generated 11 translation(s) (6 finished and 5 unfinished)
+
+> &#91;84/6105&#93; Generating Resources/translations/Base_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_sr.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;85/6105&#93; Generating Resources/translations/Base_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_sr-CS.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;86/6105&#93; Generating Resources/translations/Base_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_sv-SE.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;87/6105&#93; Generating Resources/translations/Base_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_tr.qm'...
+
+> Generated 11 translation(s) (10 finished and 1 unfinished)
+
+> &#91;88/6105&#93; Generating Resources/translations/Base_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_uk.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;89/6105&#93; Generating Resources/translations/Base_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_val-ES.qm'...
+
+> Generated 11 translation(s) (0 finished and 11 unfinished)
+
+> &#91;90/6105&#93; Generating Resources/translations/Base_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_zh-CN.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;92/6105&#93; Generating Resources/translations/Base_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Base/Resources/translations/Base_zh-TW.qm'...
+
+> Generated 11 translation(s) (11 finished and 0 unfinished)
+
+> &#91;123/6105&#93; Building CXX object src/Base/CMakeFiles/FreeCADBase.dir/__/3rdParty/PyCXX/CXX/cxxsupport.cxx.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/PyCXX/CXX/cxxsupport.cxx:42:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/PyCXX/CXX/Python3/cxxsupport.cxx:49:1: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 49 | Py_UNICODE unicode_null_string&#91;1&#93; = { 0 };
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;160/6105&#93; Building CXX object src/Base/CMakeFiles/FreeCADBase.dir/PyObjectBase.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Base/PyObjectBase.cpp:173:1: ****warning: ****missing field 'tp_versions_used' initializer &#91;-Wmissing-field-initializers&#93;**
+
+> 173 | };
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Base/PyObjectBase.cpp:231:1: ****warning: ****missing field 'tp_versions_used' initializer &#91;-Wmissing-field-initializers&#93;**
+
+> 231 | };
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Base/PyObjectBase.cpp:262:27: ****warning: ****'PyWeakref_GetObject' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 262 | PyObject\* proxy = PyWeakref_GetObject(ref);
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/weakrefobject.h:30:1: note: **'PyWeakref_GetObject' has been explicitly marked deprecated here
+
+> 30 | Py_DEPRECATED(3.13) PyAPI_FUNC(PyObject \*) PyWeakref_GetObject(PyObject \*ref);
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> 3 warnings generated.
+
+> &#91;196/6105&#93; Building CXX object src/Base/CMakeFiles/FreeCADBase.dir/Interpreter.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Base/Interpreter.cpp:631:32: ****warning: ****'Py_GetPath' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 631 | return Py_EncodeLocale(Py_GetPath(), nullptr);
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pylifecycle.h:46:1: note: **'Py_GetPath' has been explicitly marked deprecated here
+
+> 46 | Py_DEPRECATED(3.13) PyAPI_FUNC(wchar_t \*) Py_GetPath(void);
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;228/6105&#93; Generating Resources/translations/App_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_be.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;229/6105&#93; Generating Resources/translations/App_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_ca.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;230/6105&#93; Generating Resources/translations/App_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_cs.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;232/6105&#93; Generating Resources/translations/App_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_da.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;233/6105&#93; Generating Resources/translations/App_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_de.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;234/6105&#93; Generating Resources/translations/App_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_el.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;235/6105&#93; Generating Resources/translations/App_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_es-AR.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;236/6105&#93; Generating Resources/translations/App_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_eu.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;237/6105&#93; Generating Resources/translations/App_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_fi.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;238/6105&#93; Generating Resources/translations/App_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_es-ES.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;239/6105&#93; Generating Resources/translations/App_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_gl.qm'...
+
+> Generated 9 translation(s) (2 finished and 7 unfinished)
+
+> &#91;240/6105&#93; Generating Resources/translations/App_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_fr.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;241/6105&#93; Generating Resources/translations/App_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_hr.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;242/6105&#93; Generating Resources/translations/App_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_hu.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;243/6105&#93; Generating Resources/translations/App_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_id.qm'...
+
+> Generated 9 translation(s) (3 finished and 6 unfinished)
+
+> &#91;244/6105&#93; Generating Resources/translations/App_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_it.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;245/6105&#93; Generating Resources/translations/App_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_ja.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;246/6105&#93; Generating Resources/translations/App_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_ka.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;247/6105&#93; Generating Resources/translations/App_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_ko.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;248/6105&#93; Generating Resources/translations/App_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_nl.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;249/6105&#93; Generating Resources/translations/App_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_lt.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;250/6105&#93; Generating Resources/translations/App_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_pl.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;251/6105&#93; Generating Resources/translations/App_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_pt-PT.qm'...
+
+> Generated 11 translation(s) (3 finished and 8 unfinished)
+
+> &#91;252/6105&#93; Generating Resources/translations/App_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_pt-BR.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;253/6105&#93; Generating Resources/translations/App_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_ro.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;254/6105&#93; Generating Resources/translations/App_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_sl.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;255/6105&#93; Generating Resources/translations/App_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_sr-CS.qm'...
+
+> Generated 11 translation(s) (3 finished and 8 unfinished)
+
+> &#91;256/6105&#93; Generating Resources/translations/App_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_ru.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;257/6105&#93; Generating Resources/translations/App_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_sr.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;258/6105&#93; Generating Resources/translations/App_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_sv-SE.qm'...
+
+> Generated 11 translation(s) (3 finished and 8 unfinished)
+
+> &#91;259/6105&#93; Generating Resources/translations/App_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_uk.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;260/6105&#93; Generating Resources/translations/App_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_tr.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;261/6105&#93; Generating Resources/translations/App_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_val-ES.qm'...
+
+> Generated 9 translation(s) (2 finished and 7 unfinished)
+
+> &#91;262/6105&#93; Generating Resources/translations/App_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_zh-TW.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;263/6105&#93; Generating Resources/translations/App_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/App/Resources/translations/App_zh-CN.qm'...
+
+> Generated 11 translation(s) (4 finished and 7 unfinished)
+
+> &#91;294/6105&#93; Building CXX object src/3rdParty/libE57Format/CMakeFiles/E57Format.dir/src/SourceDestBufferImpl.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/libE57Format/src/SourceDestBufferImpl.cpp:491:43: ****warning: ****implicit conversion from 'const int64_t' (aka 'const long long') to 'double' changes value from 9223372036854775807 to 9223372036854775808 &#91;-Wimplicit-const-int-float-conversion&#93;**
+
+> 491 | if ( doubleRawValue &lt; E57_INT64_MIN || E57_INT64_MAX &lt; doubleRawValue )
+
+> |  **^~~~~~~~~~~~~ ~**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/libE57Format/src/SourceDestBufferImpl.cpp:203:42: ****warning: ****implicit conversion from 'const int32_t' (aka 'const int') to 'float' changes value from 2147483647 to 2147483648 &#91;-Wimplicit-const-int-float-conversion&#93;**
+
+> 203 | if ( inValue &lt; E57_INT32_MIN || E57_INT32_MAX &lt; inValue )
+
+> |  **^~~~~~~~~~~~~ ~**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/libE57Format/src/SourceDestBufferImpl.cpp:932:4: note: **in instantiation of function template specialization 'e57::SourceDestBufferImpl::_setNextReal&lt;float&gt;' requested here
+
+> 932 | _setNextReal( value );
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/libE57Format/src/SourceDestBufferImpl.cpp:215:43: ****warning: ****implicit conversion from 'const uint32_t' (aka 'const unsigned int') to 'float' changes value from 4294967295 to 4294967296 &#91;-Wimplicit-const-int-float-conversion&#93;**
+
+> 215 | if ( inValue &lt; E57_UINT32_MIN || E57_UINT32_MAX &lt; inValue )
+
+> |  **^~~~~~~~~~~~~~ ~**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/libE57Format/src/SourceDestBufferImpl.cpp:227:42: ****warning: ****implicit conversion from 'const int64_t' (aka 'const long long') to 'float' changes value from 9223372036854775807 to 9223372036854775808 &#91;-Wimplicit-const-int-float-conversion&#93;**
+
+> 227 | if ( inValue &lt; E57_INT64_MIN || E57_INT64_MAX &lt; inValue )
+
+> |  **^~~~~~~~~~~~~ ~**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/libE57Format/src/SourceDestBufferImpl.cpp:227:42: ****warning: ****implicit conversion from 'const int64_t' (aka 'const long long') to 'double' changes value from 9223372036854775807 to 9223372036854775808 &#91;-Wimplicit-const-int-float-conversion&#93;**
+
+> 227 | if ( inValue &lt; E57_INT64_MIN || E57_INT64_MAX &lt; inValue )
+
+> |  **^~~~~~~~~~~~~ ~**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/libE57Format/src/SourceDestBufferImpl.cpp:937:4: note: **in instantiation of function template specialization 'e57::SourceDestBufferImpl::_setNextReal&lt;double&gt;' requested here
+
+> 937 | _setNextReal( value );
+
+> |  **^**
+
+> 5 warnings generated.
+
+> &#91;697/6105&#93; Automatic MOC and UIC for target FreeCADGui
+
+> AutoMoc: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/UiLoader.h: note: No relevant classes found. No output generated.
+
+> &#91;698/6105&#93; Generating Language/FreeCAD_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_af.qm'...
+
+> Generated 2129 translation(s) (1241 finished and 888 unfinished)
+
+> &#91;699/6105&#93; Generating Language/FreeCAD_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_ar.qm'...
+
+> Generated 2130 translation(s) (987 finished and 1143 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;702/6105&#93; Generating Language/FreeCAD_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_bg.qm'...
+
+> Generated 2130 translation(s) (2084 finished and 46 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;703/6105&#93; Generating Language/FreeCAD_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_be.qm'...
+
+> Generated 2366 translation(s) (2158 finished and 208 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;704/6105&#93; Generating Language/FreeCAD_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_ca.qm'...
+
+> Generated 2366 translation(s) (2158 finished and 208 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;705/6105&#93; Generating Language/FreeCAD_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_da.qm'...
+
+> Generated 2383 translation(s) (2092 finished and 291 unfinished)
+
+> &#91;706/6105&#93; Generating Language/FreeCAD_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_cs.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;708/6105&#93; Generating Language/FreeCAD_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_de.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;709/6105&#93; Generating Language/FreeCAD_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_el.qm'...
+
+> Generated 2366 translation(s) (1696 finished and 670 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;710/6105&#93; Generating Language/FreeCAD_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_es-AR.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;711/6105&#93; Generating Language/FreeCAD_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_es-ES.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;712/6105&#93; Generating Language/FreeCAD_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_eu.qm'...
+
+> Generated 2383 translation(s) (2052 finished and 331 unfinished)
+
+> &#91;713/6105&#93; Generating Language/FreeCAD_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_fi.qm'...
+
+> Generated 2383 translation(s) (1793 finished and 590 unfinished)
+
+> &#91;714/6105&#93; Generating Language/FreeCAD_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_fil.qm'...
+
+> Generated 2077 translation(s) (1361 finished and 716 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;715/6105&#93; Generating Language/FreeCAD_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_fr.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;716/6105&#93; Generating Language/FreeCAD_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_gl.qm'...
+
+> Generated 2353 translation(s) (1644 finished and 709 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;717/6105&#93; Generating Language/FreeCAD_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_hu.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;718/6105&#93; Generating Language/FreeCAD_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_hr.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;719/6105&#93; Generating Language/FreeCAD_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_id.qm'...
+
+> Generated 2335 translation(s) (1457 finished and 878 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;720/6105&#93; Generating Language/FreeCAD_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_ja.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;721/6105&#93; Generating Language/FreeCAD_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_ka.qm'...
+
+> Generated 2366 translation(s) (2145 finished and 221 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;722/6105&#93; Generating Language/FreeCAD_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_it.qm'...
+
+> Generated 2383 translation(s) (2148 finished and 235 unfinished)
+
+> &#91;723/6105&#93; Generating Language/FreeCAD_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_kab.qm'...
+
+> Generated 2112 translation(s) (1352 finished and 760 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;724/6105&#93; Generating Language/FreeCAD_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_ko.qm'...
+
+> Generated 2366 translation(s) (1878 finished and 488 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;725/6105&#93; Generating Language/FreeCAD_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_lt.qm'...
+
+> Generated 2366 translation(s) (2137 finished and 229 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;726/6105&#93; Generating Language/FreeCAD_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_nl.qm'...
+
+> Generated 2383 translation(s) (2063 finished and 320 unfinished)
+
+> &#91;727/6105&#93; Generating Language/FreeCAD_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_no.qm'...
+
+> Generated 2129 translation(s) (1361 finished and 768 unfinished)
+
+> &#91;728/6105&#93; Generating Language/FreeCAD_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_pl.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;729/6105&#93; Generating Language/FreeCAD_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_pt-PT.qm'...
+
+> Generated 2366 translation(s) (1462 finished and 904 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;730/6105&#93; Generating Language/FreeCAD_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_ro.qm'...
+
+> Generated 2383 translation(s) (2096 finished and 287 unfinished)
+
+> &#91;731/6105&#93; Generating Language/FreeCAD_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_pt-BR.qm'...
+
+> Generated 2383 translation(s) (2164 finished and 219 unfinished)
+
+> &#91;733/6105&#93; Generating Language/FreeCAD_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_sk.qm'...
+
+> Generated 2094 translation(s) (1508 finished and 586 unfinished)
+
+> &#91;734/6105&#93; Generating Language/FreeCAD_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_sr-CS.qm'...
+
+> Generated 2366 translation(s) (2109 finished and 257 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;735/6105&#93; Generating Language/FreeCAD_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_sl.qm'...
+
+> Generated 2366 translation(s) (1930 finished and 436 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;736/6105&#93; Generating Language/FreeCAD_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_ru.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;737/6105&#93; Generating Language/FreeCAD_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_sr.qm'...
+
+> Generated 2366 translation(s) (2108 finished and 258 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;738/6105&#93; Generating Language/FreeCAD_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_uk.qm'...
+
+> Generated 2383 translation(s) (2166 finished and 217 unfinished)
+
+> &#91;739/6105&#93; Generating Language/FreeCAD_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_sv-SE.qm'...
+
+> Generated 2366 translation(s) (1764 finished and 602 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;740/6105&#93; Generating Language/FreeCAD_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_tr.qm'...
+
+> Generated 2383 translation(s) (1740 finished and 643 unfinished)
+
+> &#91;741/6105&#93; Generating Language/FreeCAD_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_val-ES.qm'...
+
+> Generated 2361 translation(s) (1673 finished and 688 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;742/6105&#93; Generating Language/FreeCAD_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_vi.qm'...
+
+> Generated 2094 translation(s) (1470 finished and 624 unfinished)
+
+> Ignored 17 untranslated source text(s)
+
+> &#91;743/6105&#93; Generating Language/FreeCAD_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_zh-TW.qm'...
+
+> Generated 2383 translation(s) (2175 finished and 208 unfinished)
+
+> &#91;744/6105&#93; Generating Language/FreeCAD_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Gui/Language/FreeCAD_zh-CN.qm'...
+
+> Generated 2383 translation(s) (2163 finished and 220 unfinished)
+
+> &#91;781/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FeaturePartBoolean.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FeaturePartBoolean.cpp:27:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;784/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FeaturePartCommon.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FeaturePartCommon.cpp:25:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;787/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FeaturePartCut.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FeaturePartCut.cpp:25:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;788/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FeaturePartFuse.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FeaturePartFuse.cpp:25:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Fuse.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;795/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FeaturePartSection.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FeaturePartSection.cpp:25:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Section.h:33:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;796/6105&#93; Building CXX object src/Gui/CMakeFiles/FreeCADGui.dir/3Dconnexion/navlib/NavlibPivot.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibPivot.cpp:69:57: ****warning: ****unused parameter 'position' &#91;-Wunused-parameter&#93;**
+
+> 69 | long NavlibInterface::GetPivotPosition(navlib::point_t& position) const
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibPivot.cpp:226:16: ****warning: ****suggest braces around initialization of subobject &#91;-Wmissing-braces&#93;**
+
+> 226 | extents = {boundingBox.MinX,
+
+> |  **^~~~~~~~~~~~~~~~~**
+
+> |  {
+
+> 227 | boundingBox.MinY,
+
+> |  **~~~~~~~~~~~~~~~~~**
+
+> 228 | boundingBox.MinZ,
+
+> |  **~~~~~~~~~~~~~~~~**
+
+> |  }
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibPivot.cpp:229:16: ****warning: ****suggest braces around initialization of subobject &#91;-Wmissing-braces&#93;**
+
+> 229 | boundingBox.MaxX,
+
+> |  **^~~~~~~~~~~~~~~~~**
+
+> |  {
+
+> 230 | boundingBox.MaxY,
+
+> |  **~~~~~~~~~~~~~~~~~**
+
+> 231 | boundingBox.MaxZ};
+
+> |  **~~~~~~~~~~~~~~~~**
+
+> |  }
+
+> 3 warnings generated.
+
+> &#91;799/6105&#93; Building CXX object src/Gui/CMakeFiles/FreeCADGui.dir/3Dconnexion/navlib/NavlibNavigation.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibNavigation.cpp:52:7: ****warning: ****field 'patternInitialized' will be initialized after field 'activeTab' &#91;-Wreorder-ctor&#93;**
+
+> 52 | patternInitialized(false),
+
+> |  **^~~~~~~~~~~~~~~~~~~~~~~~~**
+
+> |  activeTab({-1, ""})
+
+> 53 | activeTab({-1, ""})
+
+> |  **~~~~~~~~~~~~~~~~~~~**
+
+> |  patternInitialized(false)
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibNavigation.cpp:307:63: ****warning: ****unused parameter 'frustum' &#91;-Wunused-parameter&#93;**
+
+> 307 | long NavlibInterface::SetViewFrustum(const navlib::frustum_t& frustum)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibNavigation.cpp:337:16: ****warning: ****suggest braces around initialization of subobject &#91;-Wmissing-braces&#93;**
+
+> 337 | extents = {-halfWidth,
+
+> |  **^~~~~~~~~~~**
+
+> |  {
+
+> 338 | -halfHeight,
+
+> |  **~~~~~~~~~~~~**
+
+> 339 | -halfDepth,
+
+> |  **~~~~~~~~~~**
+
+> |  }
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibNavigation.cpp:340:16: ****warning: ****suggest braces around initialization of subobject &#91;-Wmissing-braces&#93;**
+
+> 340 | halfWidth,
+
+> |  **^~~~~~~~~~**
+
+> |  {
+
+> 341 | halfHeight,
+
+> |  **~~~~~~~~~~~**
+
+> 342 | halfDepth};
+
+> |  **~~~~~~~~~**
+
+> |  }
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibNavigation.cpp:388:42: ****warning: ****unused parameter 'fov' &#91;-Wunused-parameter&#93;**
+
+> 388 | long NavlibInterface::GetViewFOV(double& fov) const
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibNavigation.cpp:393:41: ****warning: ****unused parameter 'fov' &#91;-Wunused-parameter&#93;**
+
+> 393 | long NavlibInterface::SetViewFOV(double fov)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/3Dconnexion/navlib/NavlibNavigation.cpp:451:43: ****warning: ****unused parameter 'value' &#91;-Wunused-parameter&#93;**
+
+> 451 | long NavlibInterface::SetTransaction(long value)
+
+> |  **^**
+
+> 7 warnings generated.
+
+> &#91;881/6105&#93; Building CXX object src/Gui/CMakeFiles/FreeCADGui.dir/TaskCSysDragger.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/TaskCSysDragger.cpp:268:21: ****warning: ****implicit capture of 'this' with a capture default of '=' is deprecated &#91;-Wdeprecated-this-capture&#93;**
+
+> 268 | onRotationChange(rotationSpinBox);
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/TaskCSysDragger.cpp:267:18: note: **add an explicit capture of 'this' to capture '\*this' by reference
+
+> 267 | &#91;=&#93;(double) {
+
+> |  **^**
+
+> |  , this
+
+> 1 warning generated.
+
+> &#91;1124/6105&#93; Building CXX object src/Gui/CMakeFiles/FreeCADGui.dir/MainWindow.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/MainWindow.cpp:443:9: ****warning: ****implicit capture of 'this' with a capture default of '=' is deprecated &#91;-Wdeprecated-this-capture&#93;**
+
+> 443 | onSetActiveSubWindow(qobject_cast&lt;QWidget\*&gt;(object));
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Gui/MainWindow.cpp:442:20: note: **add an explicit capture of 'this' to capture '\*this' by reference
+
+> 442 | this, &#91;=&#93;(QObject\* object) {
+
+> |  **^**
+
+> |  , this
+
+> 1 warning generated.
+
+> &#91;1176/6105&#93; Generating Resources/translations/Material_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_be.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1177/6105&#93; Generating Resources/translations/Material_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_ca.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1178/6105&#93; Generating Resources/translations/Material_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_cs.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1179/6105&#93; Generating Resources/translations/Material_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_da.qm'...
+
+> Generated 218 translation(s) (67 finished and 151 unfinished)
+
+> &#91;1181/6105&#93; Generating Resources/translations/Material_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_de.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1182/6105&#93; Generating Resources/translations/Material_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_el.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1183/6105&#93; Generating Resources/translations/Material_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_es-AR.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1184/6105&#93; Generating Resources/translations/Material_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_es-ES.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1185/6105&#93; Generating Resources/translations/Material_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_eu.qm'...
+
+> Generated 218 translation(s) (69 finished and 149 unfinished)
+
+> &#91;1186/6105&#93; Generating Resources/translations/Material_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_fi.qm'...
+
+> Generated 218 translation(s) (112 finished and 106 unfinished)
+
+> &#91;1187/6105&#93; Generating Resources/translations/Material_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_fr.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1188/6105&#93; Generating Resources/translations/Material_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_hr.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1189/6105&#93; Generating Resources/translations/Material_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_hu.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1190/6105&#93; Generating Resources/translations/Material_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_id.qm'...
+
+> Generated 15 translation(s) (3 finished and 12 unfinished)
+
+> &#91;1191/6105&#93; Generating Resources/translations/Material_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_it.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1192/6105&#93; Generating Resources/translations/Material_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_ja.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1193/6105&#93; Generating Resources/translations/Material_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_ka.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1194/6105&#93; Generating Resources/translations/Material_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_ko.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1195/6105&#93; Generating Resources/translations/Material_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_lt.qm'...
+
+> Generated 218 translation(s) (183 finished and 35 unfinished)
+
+> &#91;1196/6105&#93; Generating Resources/translations/Material_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_nl.qm'...
+
+> Generated 218 translation(s) (119 finished and 99 unfinished)
+
+> &#91;1197/6105&#93; Generating Resources/translations/Material_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_pl.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1198/6105&#93; Generating Resources/translations/Material_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_pt-BR.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1199/6105&#93; Generating Resources/translations/Material_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_pt-PT.qm'...
+
+> Generated 218 translation(s) (181 finished and 37 unfinished)
+
+> &#91;1200/6105&#93; Generating Resources/translations/Material_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_ro.qm'...
+
+> Generated 218 translation(s) (71 finished and 147 unfinished)
+
+> &#91;1201/6105&#93; Generating Resources/translations/Material_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_ru.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1202/6105&#93; Generating Resources/translations/Material_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_sl.qm'...
+
+> Generated 218 translation(s) (66 finished and 152 unfinished)
+
+> &#91;1203/6105&#93; Generating Resources/translations/Material_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_sr-CS.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1204/6105&#93; Generating Resources/translations/Material_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_sr.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1205/6105&#93; Generating Resources/translations/Material_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_sv-SE.qm'...
+
+> Generated 218 translation(s) (68 finished and 150 unfinished)
+
+> &#91;1206/6105&#93; Generating Resources/translations/Material_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_tr.qm'...
+
+> Generated 218 translation(s) (84 finished and 134 unfinished)
+
+> &#91;1207/6105&#93; Generating Resources/translations/Material_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_uk.qm'...
+
+> Generated 218 translation(s) (216 finished and 2 unfinished)
+
+> &#91;1208/6105&#93; Generating Resources/translations/Material_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_val-ES.qm'...
+
+> Generated 218 translation(s) (60 finished and 158 unfinished)
+
+> &#91;1210/6105&#93; Generating Resources/translations/Material_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_zh-CN.qm'...
+
+> Generated 218 translation(s) (206 finished and 12 unfinished)
+
+> &#91;1211/6105&#93; Generating Resources/translations/Material_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Material/Gui/Resources/translations/Material_zh-TW.qm'...
+
+> Generated 218 translation(s) (196 finished and 22 unfinished)
+
+> &#91;1221/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/PartFeature.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/PartFeature.cpp:29:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Fuse.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1334/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/CrossSection.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/CrossSection.cpp:27:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1337/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/ExtrusionHelper.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/ExtrusionHelper.cpp:25:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1345/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/AppPartPy.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/AppPartPy.cpp:111:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FT2FC.h:33:23: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 33 | PyObject\* FT2FC(const Py_UNICODE \*unichars,
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/AppPartPy.cpp:111:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FT2FC.h:40:23: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 40 | PyObject\* FT2FC(const Py_UNICODE \*unichars,
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/AppPartPy.cpp:1984:9: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 1984 | Py_UNICODE \*unichars = nullptr;
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/AppPartPy.cpp:2024:25: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 2024 | unichars = (Py_UNICODE \*)PyUnicode_AsUCS4Copy(p);
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/AppPartPy.cpp:2037:25: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 2037 | unichars = (Py_UNICODE \*)PyUnicode_AsUCS4Copy(intext);
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> 5 warnings generated.
+
+> &#91;1347/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FCBRepAlgoAPI_BooleanOperation.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.cpp:29:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1349/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FCBRepAlgoAPI_Common.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.cpp:29:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1357/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FCBRepAlgoAPI_Fuse.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Fuse.cpp:29:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Fuse.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1364/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FCBRepAlgoAPI_Cut.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.cpp:29:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1366/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FCBRepAlgoAPI_Section.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Section.cpp:29:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Section.h:33:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1373/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/FT2FC.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FT2FC.cpp:71:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FT2FC.h:33:23: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 33 | PyObject\* FT2FC(const Py_UNICODE \*unichars,
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FT2FC.cpp:71:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FT2FC.h:40:23: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 40 | PyObject\* FT2FC(const Py_UNICODE \*unichars,
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FT2FC.cpp:88:23: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 88 | PyObject\* FT2FC(const Py_UNICODE \*PyUString,
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FT2FC.cpp:102:23: ****warning: ****'Py_UNICODE' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 102 | PyObject\* FT2FC(const Py_UNICODE \*PyUString,
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/cpython/unicodeobject.h:10:1: note: **'Py_UNICODE' has been explicitly marked deprecated here
+
+> 10 | Py_DEPRECATED(3.13) typedef wchar_t Py_UNICODE;
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> 4 warnings generated.
+
+> &#91;1377/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/TopoShapeExpansion.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/TopoShapeExpansion.cpp:44:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1378/6105&#93; Building CXX object src/Mod/Part/App/CMakeFiles/Part.dir/TopoShape.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/TopoShape.cpp:39:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1465/6105&#93; Generating Resources/translations/Part_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_af.qm'...
+
+> Generated 943 translation(s) (380 finished and 563 unfinished)
+
+> &#91;1466/6105&#93; Generating Resources/translations/Part_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_ar.qm'...
+
+> Generated 943 translation(s) (406 finished and 537 unfinished)
+
+> &#91;1467/6105&#93; Generating Resources/translations/Part_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_be.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1227 translation(s) (1189 finished and 38 unfinished)
+
+> &#91;1468/6105&#93; Generating Resources/translations/Part_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_bg.qm'...
+
+> Generated 943 translation(s) (475 finished and 468 unfinished)
+
+> &#91;1469/6105&#93; Generating Resources/translations/Part_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_ca.qm'...
+
+> Generated 1227 translation(s) (1190 finished and 37 unfinished)
+
+> &#91;1470/6105&#93; Generating Resources/translations/Part_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_cs.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1227 translation(s) (1198 finished and 29 unfinished)
+
+> &#91;1471/6105&#93; Generating Resources/translations/Part_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_da.qm'...
+
+> Generated 1227 translation(s) (255 finished and 972 unfinished)
+
+> &#91;1474/6105&#93; Generating Resources/translations/Part_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_de.qm'...
+
+> Generated 1227 translation(s) (1202 finished and 25 unfinished)
+
+> &#91;1475/6105&#93; Generating Resources/translations/Part_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_el.qm'...
+
+> Generated 1227 translation(s) (897 finished and 330 unfinished)
+
+> &#91;1479/6105&#93; Generating Resources/translations/Part_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_es-ES.qm'...
+
+> Generated 1227 translation(s) (1200 finished and 27 unfinished)
+
+> &#91;1480/6105&#93; Generating Resources/translations/Part_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_es-AR.qm'...
+
+> Generated 1227 translation(s) (1200 finished and 27 unfinished)
+
+> &#91;1481/6105&#93; Generating Resources/translations/Part_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_eu.qm'...
+
+> Generated 1227 translation(s) (1147 finished and 80 unfinished)
+
+> &#91;1482/6105&#93; Generating Resources/translations/Part_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_fil.qm'...
+
+> Generated 1080 translation(s) (803 finished and 277 unfinished)
+
+> &#91;1483/6105&#93; Generating Resources/translations/Part_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_gl.qm'...
+
+> Generated 1210 translation(s) (861 finished and 349 unfinished)
+
+> &#91;1484/6105&#93; Generating Resources/translations/Part_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_fr.qm'...
+
+> Generated 1227 translation(s) (1202 finished and 25 unfinished)
+
+> &#91;1485/6105&#93; Generating Resources/translations/Part_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_hr.qm'...
+
+> Generated 1227 translation(s) (1201 finished and 26 unfinished)
+
+> &#91;1486/6105&#93; Generating Resources/translations/Part_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_fi.qm'...
+
+> Generated 1227 translation(s) (907 finished and 320 unfinished)
+
+> &#91;1487/6105&#93; Generating Resources/translations/Part_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_hu.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1227 translation(s) (1202 finished and 25 unfinished)
+
+> &#91;1488/6105&#93; Generating Resources/translations/Part_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_id.qm'...
+
+> Generated 1180 translation(s) (805 finished and 375 unfinished)
+
+> &#91;1489/6105&#93; Generating Resources/translations/Part_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_ja.qm'...
+
+> Generated 1227 translation(s) (1197 finished and 30 unfinished)
+
+> &#91;1490/6105&#93; Generating Resources/translations/Part_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_kab.qm'...
+
+> Generated 943 translation(s) (520 finished and 423 unfinished)
+
+> &#91;1491/6105&#93; Generating Resources/translations/Part_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_ka.qm'...
+
+> Generated 1227 translation(s) (1181 finished and 46 unfinished)
+
+> &#91;1492/6105&#93; Generating Resources/translations/Part_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_it.qm'...
+
+> Generated 1227 translation(s) (1201 finished and 26 unfinished)
+
+> &#91;1493/6105&#93; Generating Resources/translations/Part_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_ko.qm'...
+
+> Generated 1227 translation(s) (783 finished and 444 unfinished)
+
+> &#91;1494/6105&#93; Generating Resources/translations/Part_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_no.qm'...
+
+> Generated 943 translation(s) (461 finished and 482 unfinished)
+
+> &#91;1495/6105&#93; Generating Resources/translations/Part_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_nl.qm'...
+
+> Generated 1227 translation(s) (965 finished and 262 unfinished)
+
+> &#91;1496/6105&#93; Generating Resources/translations/Part_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_lt.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1227 translation(s) (1014 finished and 213 unfinished)
+
+> &#91;1497/6105&#93; Generating Resources/translations/Part_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_pl.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1227 translation(s) (1202 finished and 25 unfinished)
+
+> &#91;1498/6105&#93; Generating Resources/translations/Part_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_pt-BR.qm'...
+
+> Generated 1227 translation(s) (1195 finished and 32 unfinished)
+
+> &#91;1499/6105&#93; Generating Resources/translations/Part_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_pt-PT.qm'...
+
+> Generated 1227 translation(s) (847 finished and 380 unfinished)
+
+> &#91;1500/6105&#93; Generating Resources/translations/Part_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_sk.qm'...
+
+> Generated 1080 translation(s) (688 finished and 392 unfinished)
+
+> &#91;1501/6105&#93; Generating Resources/translations/Part_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_ru.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1227 translation(s) (1201 finished and 26 unfinished)
+
+> &#91;1502/6105&#93; Generating Resources/translations/Part_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_ro.qm'...
+
+> Generated 1227 translation(s) (1149 finished and 78 unfinished)
+
+> &#91;1503/6105&#93; Generating Resources/translations/Part_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_sl.qm'...
+
+> Generated 1227 translation(s) (1116 finished and 111 unfinished)
+
+> &#91;1504/6105&#93; Generating Resources/translations/Part_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_sr.qm'...
+
+> Generated 1227 translation(s) (1166 finished and 61 unfinished)
+
+> &#91;1505/6105&#93; Generating Resources/translations/Part_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_sr-CS.qm'...
+
+> Generated 1227 translation(s) (1158 finished and 69 unfinished)
+
+> &#91;1506/6105&#93; Generating Resources/translations/Part_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_tr.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1227 translation(s) (993 finished and 234 unfinished)
+
+> &#91;1507/6105&#93; Generating Resources/translations/Part_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_uk.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1227 translation(s) (896 finished and 331 unfinished)
+
+> &#91;1508/6105&#93; Generating Resources/translations/Part_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_sv-SE.qm'...
+
+> Generated 1227 translation(s) (903 finished and 324 unfinished)
+
+> &#91;1509/6105&#93; Generating Resources/translations/Part_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_vi.qm'...
+
+> Generated 1145 translation(s) (814 finished and 331 unfinished)
+
+> &#91;1510/6105&#93; Generating Resources/translations/Part_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_val-ES.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1199 translation(s) (811 finished and 388 unfinished)
+
+> &#91;1512/6105&#93; Generating Resources/translations/Part_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_zh-CN.qm'...
+
+> Generated 1227 translation(s) (990 finished and 237 unfinished)
+
+> &#91;1513/6105&#93; Generating Resources/translations/Part_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Part/Gui/Resources/translations/Part_zh-TW.qm'...
+
+> Generated 1227 translation(s) (1198 finished and 29 unfinished)
+
+> &#91;1875/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeatureTransformed.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeatureTransformed.cpp:27:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1878/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeaturePocket.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeaturePocket.cpp:26:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1879/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeaturePad.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeaturePad.cpp:26:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Fuse.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1880/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeatureExtrude.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeatureExtrude.cpp:27:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Fuse.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1881/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeatureRevolution.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeatureRevolution.cpp:26:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Fuse.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1882/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeatureGroove.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeatureGroove.cpp:26:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1886/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeaturePrimitive.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeaturePrimitive.cpp:27:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1888/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeatureBoolean.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeatureBoolean.cpp:26:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1889/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeaturePipe.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeaturePipe.cpp:26:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1894/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeatureHelix.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeatureHelix.cpp:27:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;1905/6105&#93; Building CXX object src/Mod/PartDesign/App/CMakeFiles/PartDesign.dir/FeatureHole.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeatureHole.cpp:28:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/PartDesign/App/FeatureHole.cpp:2168:9: ****warning: ****variable 'i' set but not used &#91;-Wunused-but-set-variable&#93;**
+
+> 2168 | int i = 0;
+
+> |  **^**
+
+> 2 warnings generated.
+
+> &#91;1933/6105&#93; Building CXX object src/Mod/Sketcher/App/CMakeFiles/Sketcher.dir/AppSketcherPy.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Sketcher/App/AppSketcherPy.cpp:98:33: ****warning: ****object backing the pointer will be destroyed at the end of the full-expression &#91;-Wdangling-gsl&#93;**
+
+> 98 | auto filename = file.fileNamePure().c_str();
+
+> |  **^~~~~~~~~~~~~~~~~~~**
+
+> 1 warning generated.
+
+> &#91;1982/6105&#93; Generating Resources/translations/Mesh_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_af.qm'...
+
+> Generated 407 translation(s) (270 finished and 137 unfinished)
+
+> &#91;1983/6105&#93; Generating Resources/translations/Mesh_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_ar.qm'...
+
+> Generated 407 translation(s) (221 finished and 186 unfinished)
+
+> &#91;1984/6105&#93; Generating Resources/translations/Mesh_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_be.qm'...
+
+> Generated 409 translation(s) (407 finished and 2 unfinished)
+
+> &#91;1985/6105&#93; Generating Resources/translations/Mesh_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_bg.qm'...
+
+> Generated 407 translation(s) (197 finished and 210 unfinished)
+
+> &#91;1986/6105&#93; Generating Resources/translations/Mesh_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_ca.qm'...
+
+> Generated 409 translation(s) (407 finished and 2 unfinished)
+
+> &#91;1987/6105&#93; Generating Resources/translations/Mesh_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_cs.qm'...
+
+> Generated 409 translation(s) (361 finished and 48 unfinished)
+
+> &#91;1988/6105&#93; Generating Resources/translations/Mesh_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_da.qm'...
+
+> Generated 409 translation(s) (51 finished and 358 unfinished)
+
+> &#91;1989/6105&#93; Generating Resources/translations/Mesh_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_de.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;1990/6105&#93; Generating Resources/translations/Mesh_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_el.qm'...
+
+> Generated 409 translation(s) (407 finished and 2 unfinished)
+
+> &#91;1991/6105&#93; Generating Resources/translations/Mesh_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_es-AR.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;1992/6105&#93; Generating Resources/translations/Mesh_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_es-ES.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;1993/6105&#93; Generating Resources/translations/Mesh_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_eu.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;1994/6105&#93; Generating Resources/translations/Mesh_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_fi.qm'...
+
+> Generated 409 translation(s) (352 finished and 57 unfinished)
+
+> &#91;1995/6105&#93; Generating Resources/translations/Mesh_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_fil.qm'...
+
+> Generated 422 translation(s) (285 finished and 137 unfinished)
+
+> &#91;1996/6105&#93; Generating Resources/translations/Mesh_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_fr.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;1997/6105&#93; Generating Resources/translations/Mesh_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_gl.qm'...
+
+> Generated 409 translation(s) (305 finished and 104 unfinished)
+
+> &#91;1998/6105&#93; Generating Resources/translations/Mesh_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_hr.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;1999/6105&#93; Generating Resources/translations/Mesh_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_hu.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;2000/6105&#93; Generating Resources/translations/Mesh_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_id.qm'...
+
+> Generated 409 translation(s) (276 finished and 133 unfinished)
+
+> &#91;2001/6105&#93; Generating Resources/translations/Mesh_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_it.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;2002/6105&#93; Generating Resources/translations/Mesh_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_ja.qm'...
+
+> Generated 409 translation(s) (407 finished and 2 unfinished)
+
+> &#91;2003/6105&#93; Generating Resources/translations/Mesh_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_ka.qm'...
+
+> Generated 409 translation(s) (407 finished and 2 unfinished)
+
+> &#91;2004/6105&#93; Generating Resources/translations/Mesh_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_kab.qm'...
+
+> Generated 407 translation(s) (246 finished and 161 unfinished)
+
+> &#91;2005/6105&#93; Generating Resources/translations/Mesh_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_ko.qm'...
+
+> Generated 409 translation(s) (353 finished and 56 unfinished)
+
+> &#91;2006/6105&#93; Generating Resources/translations/Mesh_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_lt.qm'...
+
+> Generated 409 translation(s) (361 finished and 48 unfinished)
+
+> &#91;2007/6105&#93; Generating Resources/translations/Mesh_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_nl.qm'...
+
+> Generated 409 translation(s) (369 finished and 40 unfinished)
+
+> &#91;2008/6105&#93; Generating Resources/translations/Mesh_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_no.qm'...
+
+> Generated 407 translation(s) (277 finished and 130 unfinished)
+
+> &#91;2009/6105&#93; Generating Resources/translations/Mesh_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_pl.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;2010/6105&#93; Generating Resources/translations/Mesh_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_pt-BR.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;2011/6105&#93; Generating Resources/translations/Mesh_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_pt-PT.qm'...
+
+> Generated 409 translation(s) (407 finished and 2 unfinished)
+
+> &#91;2012/6105&#93; Generating Resources/translations/Mesh_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_ro.qm'...
+
+> Generated 409 translation(s) (407 finished and 2 unfinished)
+
+> &#91;2013/6105&#93; Generating Resources/translations/Mesh_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_ru.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;2014/6105&#93; Generating Resources/translations/Mesh_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_sk.qm'...
+
+> Generated 422 translation(s) (222 finished and 200 unfinished)
+
+> &#91;2016/6105&#93; Generating Resources/translations/Mesh_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_sl.qm'...
+
+> Generated 409 translation(s) (406 finished and 3 unfinished)
+
+> &#91;2017/6105&#93; Generating Resources/translations/Mesh_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_sr-CS.qm'...
+
+> Generated 409 translation(s) (395 finished and 14 unfinished)
+
+> &#91;2018/6105&#93; Generating Resources/translations/Mesh_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_sr.qm'...
+
+> Generated 409 translation(s) (395 finished and 14 unfinished)
+
+> &#91;2019/6105&#93; Generating Resources/translations/Mesh_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_sv-SE.qm'...
+
+> Generated 409 translation(s) (375 finished and 34 unfinished)
+
+> &#91;2020/6105&#93; Generating Resources/translations/Mesh_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_tr.qm'...
+
+> Generated 409 translation(s) (368 finished and 41 unfinished)
+
+> &#91;2021/6105&#93; Generating Resources/translations/Mesh_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_uk.qm'...
+
+> Generated 409 translation(s) (409 finished and 0 unfinished)
+
+> &#91;2022/6105&#93; Generating Resources/translations/Mesh_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_val-ES.qm'...
+
+> Generated 409 translation(s) (315 finished and 94 unfinished)
+
+> &#91;2023/6105&#93; Generating Resources/translations/Mesh_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_vi.qm'...
+
+> Generated 422 translation(s) (311 finished and 111 unfinished)
+
+> &#91;2024/6105&#93; Generating Resources/translations/Mesh_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_zh-CN.qm'...
+
+> Generated 409 translation(s) (406 finished and 3 unfinished)
+
+> &#91;2025/6105&#93; Generating Resources/translations/Mesh_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Mesh/Gui/Resources/translations/Mesh_zh-TW.qm'...
+
+> Generated 409 translation(s) (407 finished and 2 unfinished)
+
+> &#91;2046/6105&#93; Generating Resources/translations/Spreadsheet_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_af.qm'...
+
+> Generated 132 translation(s) (12 finished and 120 unfinished)
+
+> &#91;2048/6105&#93; Generating Resources/translations/Spreadsheet_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_ar.qm'...
+
+> Generated 132 translation(s) (124 finished and 8 unfinished)
+
+> &#91;2049/6105&#93; Generating Resources/translations/Spreadsheet_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_be.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2050/6105&#93; Generating Resources/translations/Spreadsheet_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_bg.qm'...
+
+> Generated 132 translation(s) (131 finished and 1 unfinished)
+
+> &#91;2051/6105&#93; Generating Resources/translations/Spreadsheet_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_ca.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2052/6105&#93; Generating Resources/translations/Spreadsheet_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_cs.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2053/6105&#93; Generating Resources/translations/Spreadsheet_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_da.qm'...
+
+> Generated 199 translation(s) (102 finished and 97 unfinished)
+
+> &#91;2054/6105&#93; Generating Resources/translations/Spreadsheet_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_de.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2055/6105&#93; Generating Resources/translations/Spreadsheet_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_el.qm'...
+
+> Generated 199 translation(s) (168 finished and 31 unfinished)
+
+> &#91;2056/6105&#93; Generating Resources/translations/Spreadsheet_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_es-AR.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2057/6105&#93; Generating Resources/translations/Spreadsheet_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_es-ES.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2058/6105&#93; Generating Resources/translations/Spreadsheet_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_eu.qm'...
+
+> Generated 199 translation(s) (171 finished and 28 unfinished)
+
+> &#91;2059/6105&#93; Generating Resources/translations/Spreadsheet_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_fi.qm'...
+
+> Generated 199 translation(s) (124 finished and 75 unfinished)
+
+> &#91;2060/6105&#93; Generating Resources/translations/Spreadsheet_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_fil.qm'...
+
+> Generated 187 translation(s) (103 finished and 84 unfinished)
+
+> &#91;2061/6105&#93; Generating Resources/translations/Spreadsheet_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_fr.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2062/6105&#93; Generating Resources/translations/Spreadsheet_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_gl.qm'...
+
+> Generated 191 translation(s) (129 finished and 62 unfinished)
+
+> &#91;2063/6105&#93; Generating Resources/translations/Spreadsheet_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_hr.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2064/6105&#93; Generating Resources/translations/Spreadsheet_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_hu.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2065/6105&#93; Generating Resources/translations/Spreadsheet_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_id.qm'...
+
+> Generated 191 translation(s) (99 finished and 92 unfinished)
+
+> &#91;2067/6105&#93; Generating Resources/translations/Spreadsheet_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_it.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2068/6105&#93; Generating Resources/translations/Spreadsheet_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_ka.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2069/6105&#93; Generating Resources/translations/Spreadsheet_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_ja.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2070/6105&#93; Generating Resources/translations/Spreadsheet_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_kab.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 132 translation(s) (85 finished and 47 unfinished)
+
+> &#91;2071/6105&#93; Generating Resources/translations/Spreadsheet_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_ko.qm'...
+
+> Generated 199 translation(s) (174 finished and 25 unfinished)
+
+> &#91;2072/6105&#93; Generating Resources/translations/Spreadsheet_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_lt.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 199 translation(s) (98 finished and 101 unfinished)
+
+> &#91;2073/6105&#93; Generating Resources/translations/Spreadsheet_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_nl.qm'...
+
+> Generated 199 translation(s) (173 finished and 26 unfinished)
+
+> &#91;2074/6105&#93; Generating Resources/translations/Spreadsheet_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_no.qm'...
+
+> Generated 132 translation(s) (109 finished and 23 unfinished)
+
+> &#91;2075/6105&#93; Generating Resources/translations/Spreadsheet_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_pl.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2076/6105&#93; Generating Resources/translations/Spreadsheet_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_pt-BR.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2077/6105&#93; Generating Resources/translations/Spreadsheet_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_pt-PT.qm'...
+
+> Generated 199 translation(s) (116 finished and 83 unfinished)
+
+> &#91;2078/6105&#93; Generating Resources/translations/Spreadsheet_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_ro.qm'...
+
+> Generated 199 translation(s) (173 finished and 26 unfinished)
+
+> &#91;2079/6105&#93; Generating Resources/translations/Spreadsheet_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_ru.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2080/6105&#93; Generating Resources/translations/Spreadsheet_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_sk.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 187 translation(s) (122 finished and 65 unfinished)
+
+> &#91;2081/6105&#93; Generating Resources/translations/Spreadsheet_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_sl.qm'...
+
+> Generated 199 translation(s) (168 finished and 31 unfinished)
+
+> &#91;2082/6105&#93; Generating Resources/translations/Spreadsheet_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_sr-CS.qm'...
+
+> Generated 199 translation(s) (161 finished and 38 unfinished)
+
+> &#91;2083/6105&#93; Generating Resources/translations/Spreadsheet_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_sr.qm'...
+
+> Generated 199 translation(s) (160 finished and 39 unfinished)
+
+> &#91;2084/6105&#93; Generating Resources/translations/Spreadsheet_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_sv-SE.qm'...
+
+> Generated 199 translation(s) (129 finished and 70 unfinished)
+
+> &#91;2085/6105&#93; Generating Resources/translations/Spreadsheet_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_tr.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 199 translation(s) (154 finished and 45 unfinished)
+
+> &#91;2087/6105&#93; Generating Resources/translations/Spreadsheet_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_uk.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2088/6105&#93; Generating Resources/translations/Spreadsheet_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_vi.qm'...
+
+> Generated 208 translation(s) (140 finished and 68 unfinished)
+
+> &#91;2089/6105&#93; Generating Resources/translations/Spreadsheet_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_val-ES.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 191 translation(s) (113 finished and 78 unfinished)
+
+> &#91;2090/6105&#93; Generating Resources/translations/Spreadsheet_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_zh-CN.qm'...
+
+> Generated 199 translation(s) (160 finished and 39 unfinished)
+
+> &#91;2091/6105&#93; Generating Resources/translations/Spreadsheet_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet_zh-TW.qm'...
+
+> Generated 199 translation(s) (175 finished and 24 unfinished)
+
+> &#91;2151/6105&#93; Building CXX object src/Mod/Sketcher/App/CMakeFiles/Sketcher.dir/SketchObject.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Sketcher/App/SketchObject.cpp:31:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Section.h:33:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2168/6105&#93; Generating Resources/translations/Sketcher_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_af.qm'...
+
+> Generated 1026 translation(s) (257 finished and 769 unfinished)
+
+> &#91;2169/6105&#93; Generating Resources/translations/Sketcher_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_ar.qm'...
+
+> Generated 1061 translation(s) (286 finished and 775 unfinished)
+
+> &#91;2170/6105&#93; Generating Resources/translations/Sketcher_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_be.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1222 translation(s) (1198 finished and 24 unfinished)
+
+> &#91;2171/6105&#93; Generating Resources/translations/Sketcher_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_bg.qm'...
+
+> Generated 1061 translation(s) (110 finished and 951 unfinished)
+
+> &#91;2172/6105&#93; Generating Resources/translations/Sketcher_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_ca.qm'...
+
+> Generated 1222 translation(s) (1199 finished and 23 unfinished)
+
+> &#91;2173/6105&#93; Generating Resources/translations/Sketcher_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_cs.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1222 translation(s) (1201 finished and 21 unfinished)
+
+> &#91;2174/6105&#93; Generating Resources/translations/Sketcher_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_da.qm'...
+
+> Generated 1222 translation(s) (736 finished and 486 unfinished)
+
+> &#91;2175/6105&#93; Generating Resources/translations/Sketcher_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_de.qm'...
+
+> Generated 1222 translation(s) (1209 finished and 13 unfinished)
+
+> &#91;2176/6105&#93; Generating Resources/translations/Sketcher_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_el.qm'...
+
+> Generated 1222 translation(s) (656 finished and 566 unfinished)
+
+> &#91;2177/6105&#93; Generating Resources/translations/Sketcher_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_es-AR.qm'...
+
+> Generated 1222 translation(s) (1206 finished and 16 unfinished)
+
+> &#91;2178/6105&#93; Generating Resources/translations/Sketcher_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_es-ES.qm'...
+
+> Generated 1222 translation(s) (1206 finished and 16 unfinished)
+
+> &#91;2179/6105&#93; Generating Resources/translations/Sketcher_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_eu.qm'...
+
+> Generated 1222 translation(s) (1001 finished and 221 unfinished)
+
+> &#91;2180/6105&#93; Generating Resources/translations/Sketcher_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_fi.qm'...
+
+> Generated 1222 translation(s) (713 finished and 509 unfinished)
+
+> &#91;2181/6105&#93; Generating Resources/translations/Sketcher_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_fil.qm'...
+
+> Generated 973 translation(s) (468 finished and 505 unfinished)
+
+> &#91;2182/6105&#93; Generating Resources/translations/Sketcher_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_fr.qm'...
+
+> Generated 1222 translation(s) (1209 finished and 13 unfinished)
+
+> &#91;2183/6105&#93; Generating Resources/translations/Sketcher_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_gl.qm'...
+
+> Generated 1222 translation(s) (517 finished and 705 unfinished)
+
+> &#91;2184/6105&#93; Generating Resources/translations/Sketcher_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_hr.qm'...
+
+> Generated 1222 translation(s) (1208 finished and 14 unfinished)
+
+> &#91;2185/6105&#93; Generating Resources/translations/Sketcher_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_hu.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1222 translation(s) (1209 finished and 13 unfinished)
+
+> &#91;2186/6105&#93; Generating Resources/translations/Sketcher_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_id.qm'...
+
+> Generated 1227 translation(s) (434 finished and 793 unfinished)
+
+> &#91;2187/6105&#93; Generating Resources/translations/Sketcher_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_it.qm'...
+
+> Generated 1222 translation(s) (1208 finished and 14 unfinished)
+
+> &#91;2188/6105&#93; Generating Resources/translations/Sketcher_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_ja.qm'...
+
+> Generated 1222 translation(s) (1209 finished and 13 unfinished)
+
+> &#91;2189/6105&#93; Generating Resources/translations/Sketcher_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_ka.qm'...
+
+> Generated 1222 translation(s) (1195 finished and 27 unfinished)
+
+> &#91;2190/6105&#93; Generating Resources/translations/Sketcher_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_kab.qm'...
+
+> Generated 1026 translation(s) (351 finished and 675 unfinished)
+
+> &#91;2191/6105&#93; Generating Resources/translations/Sketcher_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_ko.qm'...
+
+> Generated 1222 translation(s) (1098 finished and 124 unfinished)
+
+> &#91;2192/6105&#93; Generating Resources/translations/Sketcher_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_lt.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1222 translation(s) (440 finished and 782 unfinished)
+
+> &#91;2193/6105&#93; Generating Resources/translations/Sketcher_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_nl.qm'...
+
+> Generated 1222 translation(s) (1045 finished and 177 unfinished)
+
+> &#91;2194/6105&#93; Generating Resources/translations/Sketcher_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_no.qm'...
+
+> Generated 1026 translation(s) (221 finished and 805 unfinished)
+
+> &#91;2195/6105&#93; Generating Resources/translations/Sketcher_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_pl.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1222 translation(s) (1209 finished and 13 unfinished)
+
+> &#91;2196/6105&#93; Generating Resources/translations/Sketcher_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_pt-BR.qm'...
+
+> Generated 1222 translation(s) (1184 finished and 38 unfinished)
+
+> &#91;2197/6105&#93; Generating Resources/translations/Sketcher_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_pt-PT.qm'...
+
+> Generated 1222 translation(s) (567 finished and 655 unfinished)
+
+> &#91;2198/6105&#93; Generating Resources/translations/Sketcher_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_ro.qm'...
+
+> Generated 1222 translation(s) (1121 finished and 101 unfinished)
+
+> &#91;2200/6105&#93; Generating Resources/translations/Sketcher_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_ru.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1222 translation(s) (1209 finished and 13 unfinished)
+
+> &#91;2201/6105&#93; Generating Resources/translations/Sketcher_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_sk.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 973 translation(s) (456 finished and 517 unfinished)
+
+> &#91;2202/6105&#93; Generating Resources/translations/Sketcher_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_sl.qm'...
+
+> Generated 1222 translation(s) (971 finished and 251 unfinished)
+
+> &#91;2203/6105&#93; Generating Resources/translations/Sketcher_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_sr-CS.qm'...
+
+> Generated 1222 translation(s) (1179 finished and 43 unfinished)
+
+> &#91;2204/6105&#93; Generating Resources/translations/Sketcher_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_sr.qm'...
+
+> Generated 1222 translation(s) (1181 finished and 41 unfinished)
+
+> &#91;2205/6105&#93; Generating Resources/translations/Sketcher_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_sv-SE.qm'...
+
+> Generated 1222 translation(s) (625 finished and 597 unfinished)
+
+> &#91;2206/6105&#93; Generating Resources/translations/Sketcher_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_tr.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1222 translation(s) (810 finished and 412 unfinished)
+
+> &#91;2207/6105&#93; Generating Resources/translations/Sketcher_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_uk.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1222 translation(s) (1207 finished and 15 unfinished)
+
+> &#91;2208/6105&#93; Generating Resources/translations/Sketcher_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_val-ES.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1213 translation(s) (524 finished and 689 unfinished)
+
+> &#91;2209/6105&#93; Generating Resources/translations/Sketcher_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_vi.qm'...
+
+> Generated 998 translation(s) (616 finished and 382 unfinished)
+
+> &#91;2210/6105&#93; Generating Resources/translations/Sketcher_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_zh-CN.qm'...
+
+> Generated 1222 translation(s) (1047 finished and 175 unfinished)
+
+> &#91;2211/6105&#93; Generating Resources/translations/Sketcher_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Sketcher/Gui/Resources/translations/Sketcher_zh-TW.qm'...
+
+> Generated 1222 translation(s) (1201 finished and 21 unfinished)
+
+> &#91;2241/6105&#93; Building CXX object src/Mod/Fem/App/CMakeFiles/Fem.dir/FemMesh.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Fem/App/FemMesh.cpp:73:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Fem/App/FemMesh.h:227:15: ****warning: ****private field 'myStudyId' is not used &#91;-Wunused-private-field&#93;**
+
+> 227 | const int myStudyId;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2422/6105&#93; Building CXX object src/Mod/Spreadsheet/Gui/CMakeFiles/SpreadsheetGui.dir/AppSpreadsheetGui.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Spreadsheet/Gui/AppSpreadsheetGui.cpp:72:29: ****warning: ****object backing the pointer will be destroyed at the end of the full-expression &#91;-Wdangling-gsl&#93;**
+
+> 72 | auto filename = file.fileNamePure().c_str();
+
+> |  **^~~~~~~~~~~~~~~~~~~**
+
+> 1 warning generated.
+
+> &#91;2455/6105&#93; Building CXX object src/Mod/TechDraw/App/CMakeFiles/TechDraw.dir/ShapeExtractor.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/App/ShapeExtractor.cpp:28:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Fuse.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2457/6105&#93; Building CXX object src/Mod/TechDraw/App/CMakeFiles/TechDraw.dir/DrawProjectSplit.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/App/DrawProjectSplit.cpp:32:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2470/6105&#93; Building CXX object src/Mod/TechDraw/App/CMakeFiles/TechDraw.dir/DrawComplexSection.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/App/DrawComplexSection.cpp:62:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2491/6105&#93; Building CXX object src/Mod/TechDraw/App/CMakeFiles/TechDraw.dir/DrawViewSection.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/App/DrawViewSection.cpp:50:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2492/6105&#93; Building CXX object src/Mod/TechDraw/App/CMakeFiles/TechDraw.dir/DrawGeomHatch.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/App/DrawGeomHatch.cpp:31:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2499/6105&#93; Building CXX object src/Mod/TechDraw/App/CMakeFiles/TechDraw.dir/DrawViewDetail.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/App/DrawViewDetail.cpp:26:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Common.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2503/6105&#93; Building CXX object src/Mod/TechDraw/App/CMakeFiles/TechDraw.dir/DrawBrokenView.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/App/DrawBrokenView.cpp:46:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Cut.h:32:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2511/6105&#93; Building CXX object src/Mod/TechDraw/App/CMakeFiles/TechDraw.dir/Geometry.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/App/Geometry.cpp:29:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_Section.h:33:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/Part/App/FCBRepAlgoAPI_BooleanOperation.h:53:34: ****warning: ****'FCBRepAlgoAPI_BooleanOperation::Build' hides overloaded virtual function &#91;-Woverloaded-virtual&#93;**
+
+> 53 | Standard_EXPORT virtual void Build(); // NOLINT(clang-diagnostic-overloaded-virtual, -Woverloaded-virtual)
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade/BRepAlgoAPI_BooleanOperation.hxx:113:32: note: **hidden overloaded virtual function 'BRepAlgoAPI_BooleanOperation::Build' declared here: different number of parameters (1 vs 0)
+
+> 113 | Standard_EXPORT virtual void Build(const Message_ProgressRange& theRange = Message_ProgressRange()) Standard_OVERRIDE;
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;2624/6105&#93; Generating Resources/translations/Assembly_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_be.qm'...
+
+> Generated 242 translation(s) (183 finished and 59 unfinished)
+
+> &#91;2626/6105&#93; Generating Resources/translations/Assembly_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_ca.qm'...
+
+> Generated 242 translation(s) (182 finished and 60 unfinished)
+
+> &#91;2627/6105&#93; Generating Resources/translations/Assembly_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_cs.qm'...
+
+> Generated 242 translation(s) (183 finished and 59 unfinished)
+
+> &#91;2628/6105&#93; Generating Resources/translations/Assembly_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_de.qm'...
+
+> Generated 242 translation(s) (184 finished and 58 unfinished)
+
+> &#91;2629/6105&#93; Generating Resources/translations/Assembly_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_da.qm'...
+
+> Generated 242 translation(s) (20 finished and 222 unfinished)
+
+> &#91;2631/6105&#93; Generating Resources/translations/Assembly_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_el.qm'...
+
+> Generated 242 translation(s) (44 finished and 198 unfinished)
+
+> &#91;2632/6105&#93; Generating Resources/translations/Assembly_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_es-AR.qm'...
+
+> Generated 242 translation(s) (184 finished and 58 unfinished)
+
+> &#91;2633/6105&#93; Generating Resources/translations/Assembly_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_es-ES.qm'...
+
+> Generated 242 translation(s) (184 finished and 58 unfinished)
+
+> &#91;2634/6105&#93; Generating Resources/translations/Assembly_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_eu.qm'...
+
+> Generated 242 translation(s) (42 finished and 200 unfinished)
+
+> &#91;2635/6105&#93; Generating Resources/translations/Assembly_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_fi.qm'...
+
+> Generated 242 translation(s) (42 finished and 200 unfinished)
+
+> &#91;2636/6105&#93; Generating Resources/translations/Assembly_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_fr.qm'...
+
+> Generated 242 translation(s) (184 finished and 58 unfinished)
+
+> &#91;2637/6105&#93; Generating Resources/translations/Assembly_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_gl.qm'...
+
+> Generated 70 translation(s) (45 finished and 25 unfinished)
+
+> &#91;2638/6105&#93; Generating Resources/translations/Assembly_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_hr.qm'...
+
+> Generated 242 translation(s) (184 finished and 58 unfinished)
+
+> &#91;2639/6105&#93; Generating Resources/translations/Assembly_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_id.qm'...
+
+> Generated 79 translation(s) (6 finished and 73 unfinished)
+
+> &#91;2640/6105&#93; Generating Resources/translations/Assembly_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_hu.qm'...
+
+> Generated 242 translation(s) (184 finished and 58 unfinished)
+
+> &#91;2641/6105&#93; Generating Resources/translations/Assembly_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_it.qm'...
+
+> Generated 242 translation(s) (183 finished and 59 unfinished)
+
+> &#91;2642/6105&#93; Generating Resources/translations/Assembly_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_ka.qm'...
+
+> Generated 242 translation(s) (131 finished and 111 unfinished)
+
+> &#91;2643/6105&#93; Generating Resources/translations/Assembly_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_ja.qm'...
+
+> Generated 242 translation(s) (182 finished and 60 unfinished)
+
+> &#91;2644/6105&#93; Generating Resources/translations/Assembly_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_ko.qm'...
+
+> Generated 242 translation(s) (181 finished and 61 unfinished)
+
+> &#91;2645/6105&#93; Generating Resources/translations/Assembly_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_lt.qm'...
+
+> Generated 242 translation(s) (22 finished and 220 unfinished)
+
+> &#91;2646/6105&#93; Generating Resources/translations/Assembly_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_nl.qm'...
+
+> Generated 242 translation(s) (48 finished and 194 unfinished)
+
+> &#91;2647/6105&#93; Generating Resources/translations/Assembly_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_pl.qm'...
+
+> Generated 242 translation(s) (184 finished and 58 unfinished)
+
+> &#91;2648/6105&#93; Generating Resources/translations/Assembly_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_pt-BR.qm'...
+
+> Generated 242 translation(s) (178 finished and 64 unfinished)
+
+> &#91;2649/6105&#93; Generating Resources/translations/Assembly_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_pt-PT.qm'...
+
+> Generated 242 translation(s) (38 finished and 204 unfinished)
+
+> &#91;2650/6105&#93; Generating Resources/translations/Assembly_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_ro.qm'...
+
+> Generated 242 translation(s) (39 finished and 203 unfinished)
+
+> &#91;2651/6105&#93; Generating Resources/translations/Assembly_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_ru.qm'...
+
+> Generated 242 translation(s) (184 finished and 58 unfinished)
+
+> &#91;2652/6105&#93; Generating Resources/translations/Assembly_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_sr-CS.qm'...
+
+> Generated 242 translation(s) (181 finished and 61 unfinished)
+
+> &#91;2653/6105&#93; Generating Resources/translations/Assembly_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_sl.qm'...
+
+> Generated 242 translation(s) (57 finished and 185 unfinished)
+
+> &#91;2654/6105&#93; Generating Resources/translations/Assembly_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_sr.qm'...
+
+> Generated 242 translation(s) (181 finished and 61 unfinished)
+
+> &#91;2655/6105&#93; Generating Resources/translations/Assembly_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_sv-SE.qm'...
+
+> Generated 242 translation(s) (31 finished and 211 unfinished)
+
+> &#91;2656/6105&#93; Generating Resources/translations/Assembly_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_tr.qm'...
+
+> Generated 242 translation(s) (35 finished and 207 unfinished)
+
+> &#91;2657/6105&#93; Generating Resources/translations/Assembly_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_val-ES.qm'...
+
+> Generated 181 translation(s) (12 finished and 169 unfinished)
+
+> &#91;2658/6105&#93; Generating Resources/translations/Assembly_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_zh-CN.qm'...
+
+> Generated 242 translation(s) (44 finished and 198 unfinished)
+
+> &#91;2659/6105&#93; Generating Resources/translations/Assembly_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_uk.qm'...
+
+> Generated 242 translation(s) (178 finished and 64 unfinished)
+
+> &#91;2660/6105&#93; Generating Resources/translations/Assembly_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Assembly/Gui/Resources/translations/Assembly_zh-TW.qm'...
+
+> Generated 242 translation(s) (175 finished and 67 unfinished)
+
+> &#91;2661/6105&#93; Generating Resources/translations/MeshPart_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_af.qm'...
+
+> Generated 100 translation(s) (33 finished and 67 unfinished)
+
+> &#91;2662/6105&#93; Generating Resources/translations/MeshPart_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_ar.qm'...
+
+> Generated 102 translation(s) (48 finished and 54 unfinished)
+
+> &#91;2663/6105&#93; Generating Resources/translations/MeshPart_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_be.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2664/6105&#93; Generating Resources/translations/MeshPart_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_ca.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2665/6105&#93; Generating Resources/translations/MeshPart_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_bg.qm'...
+
+> Generated 102 translation(s) (50 finished and 52 unfinished)
+
+> &#91;2666/6105&#93; Generating Resources/translations/MeshPart_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_cs.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2667/6105&#93; Generating Resources/translations/MeshPart_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_da.qm'...
+
+> Generated 106 translation(s) (17 finished and 89 unfinished)
+
+> &#91;2668/6105&#93; Generating Resources/translations/MeshPart_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_de.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2669/6105&#93; Generating Resources/translations/MeshPart_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_el.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2670/6105&#93; Generating Resources/translations/MeshPart_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_es-AR.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2671/6105&#93; Generating Resources/translations/MeshPart_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_es-ES.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2672/6105&#93; Generating Resources/translations/MeshPart_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_eu.qm'...
+
+> Generated 106 translation(s) (105 finished and 1 unfinished)
+
+> &#91;2673/6105&#93; Generating Resources/translations/MeshPart_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_fi.qm'...
+
+> Generated 106 translation(s) (96 finished and 10 unfinished)
+
+> &#91;2674/6105&#93; Generating Resources/translations/MeshPart_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_fil.qm'...
+
+> Generated 102 translation(s) (67 finished and 35 unfinished)
+
+> &#91;2675/6105&#93; Generating Resources/translations/MeshPart_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_fr.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2676/6105&#93; Generating Resources/translations/MeshPart_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_gl.qm'...
+
+> Generated 106 translation(s) (73 finished and 33 unfinished)
+
+> &#91;2677/6105&#93; Generating Resources/translations/MeshPart_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_hr.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2678/6105&#93; Generating Resources/translations/MeshPart_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_hu.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2679/6105&#93; Generating Resources/translations/MeshPart_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_id.qm'...
+
+> Generated 106 translation(s) (67 finished and 39 unfinished)
+
+> &#91;2680/6105&#93; Generating Resources/translations/MeshPart_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_it.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2681/6105&#93; Generating Resources/translations/MeshPart_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_ja.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2682/6105&#93; Generating Resources/translations/MeshPart_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_ka.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2683/6105&#93; Generating Resources/translations/MeshPart_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_kab.qm'...
+
+> Generated 100 translation(s) (46 finished and 54 unfinished)
+
+> &#91;2684/6105&#93; Generating Resources/translations/MeshPart_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_ko.qm'...
+
+> Generated 106 translation(s) (76 finished and 30 unfinished)
+
+> &#91;2685/6105&#93; Generating Resources/translations/MeshPart_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_lt.qm'...
+
+> Generated 106 translation(s) (95 finished and 11 unfinished)
+
+> &#91;2686/6105&#93; Generating Resources/translations/MeshPart_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_no.qm'...
+
+> Generated 100 translation(s) (30 finished and 70 unfinished)
+
+> &#91;2687/6105&#93; Generating Resources/translations/MeshPart_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_nl.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2688/6105&#93; Generating Resources/translations/MeshPart_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_pl.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2689/6105&#93; Generating Resources/translations/MeshPart_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_pt-BR.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2690/6105&#93; Generating Resources/translations/MeshPart_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_ro.qm'...
+
+> Generated 106 translation(s) (105 finished and 1 unfinished)
+
+> &#91;2691/6105&#93; Generating Resources/translations/MeshPart_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_pt-PT.qm'...
+
+> Generated 106 translation(s) (104 finished and 2 unfinished)
+
+> &#91;2692/6105&#93; Generating Resources/translations/MeshPart_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_ru.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2693/6105&#93; Generating Resources/translations/MeshPart_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_sk.qm'...
+
+> Generated 102 translation(s) (65 finished and 37 unfinished)
+
+> &#91;2694/6105&#93; Generating Resources/translations/MeshPart_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_sl.qm'...
+
+> Generated 106 translation(s) (102 finished and 4 unfinished)
+
+> &#91;2695/6105&#93; Generating Resources/translations/MeshPart_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_sr-CS.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2696/6105&#93; Generating Resources/translations/MeshPart_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_sr.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2697/6105&#93; Generating Resources/translations/MeshPart_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_sv-SE.qm'...
+
+> Generated 106 translation(s) (80 finished and 26 unfinished)
+
+> &#91;2698/6105&#93; Generating Resources/translations/MeshPart_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_tr.qm'...
+
+> Generated 106 translation(s) (99 finished and 7 unfinished)
+
+> &#91;2699/6105&#93; Generating Resources/translations/MeshPart_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_uk.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2700/6105&#93; Generating Resources/translations/MeshPart_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_val-ES.qm'...
+
+> Generated 106 translation(s) (91 finished and 15 unfinished)
+
+> &#91;2701/6105&#93; Generating Resources/translations/MeshPart_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_vi.qm'...
+
+> Generated 106 translation(s) (67 finished and 39 unfinished)
+
+> &#91;2702/6105&#93; Generating Resources/translations/MeshPart_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_zh-CN.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2703/6105&#93; Generating Resources/translations/MeshPart_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/MeshPart/Gui/Resources/translations/MeshPart_zh-TW.qm'...
+
+> Generated 106 translation(s) (106 finished and 0 unfinished)
+
+> &#91;2705/6105&#93; Generating Resources/translations/CAM_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_be.qm'...
+
+> Generated 1585 translation(s) (1553 finished and 32 unfinished)
+
+> &#91;2706/6105&#93; Generating Resources/translations/CAM_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_ca.qm'...
+
+> Generated 1585 translation(s) (313 finished and 1272 unfinished)
+
+> &#91;2707/6105&#93; Generating Resources/translations/CAM_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_cs.qm'...
+
+> Generated 1585 translation(s) (1543 finished and 42 unfinished)
+
+> &#91;2708/6105&#93; Generating Resources/translations/CAM_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_da.qm'...
+
+> Generated 1585 translation(s) (174 finished and 1411 unfinished)
+
+> &#91;2709/6105&#93; Generating Resources/translations/CAM_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_de.qm'...
+
+> Generated 1585 translation(s) (1553 finished and 32 unfinished)
+
+> &#91;2710/6105&#93; Generating Resources/translations/CAM_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_el.qm'...
+
+> Generated 1585 translation(s) (294 finished and 1291 unfinished)
+
+> &#91;2711/6105&#93; Generating Resources/translations/CAM_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_es-AR.qm'...
+
+> Generated 1585 translation(s) (1553 finished and 32 unfinished)
+
+> &#91;2712/6105&#93; Generating Resources/translations/CAM_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_es-ES.qm'...
+
+> Generated 1585 translation(s) (1553 finished and 32 unfinished)
+
+> &#91;2713/6105&#93; Generating Resources/translations/CAM_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_eu.qm'...
+
+> Generated 1585 translation(s) (1364 finished and 221 unfinished)
+
+> &#91;2714/6105&#93; Generating Resources/translations/CAM_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_fi.qm'...
+
+> Generated 1585 translation(s) (254 finished and 1331 unfinished)
+
+> &#91;2715/6105&#93; Generating Resources/translations/CAM_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_fr.qm'...
+
+> Generated 1585 translation(s) (1553 finished and 32 unfinished)
+
+> &#91;2716/6105&#93; Generating Resources/translations/CAM_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_gl.qm'...
+
+> Generated 1530 translation(s) (288 finished and 1242 unfinished)
+
+> &#91;2717/6105&#93; Generating Resources/translations/CAM_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_hr.qm'...
+
+> Generated 1585 translation(s) (1553 finished and 32 unfinished)
+
+> &#91;2718/6105&#93; Generating Resources/translations/CAM_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_hu.qm'...
+
+> Generated 1585 translation(s) (1553 finished and 32 unfinished)
+
+> &#91;2719/6105&#93; Generating Resources/translations/CAM_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_id.qm'...
+
+> Generated 1537 translation(s) (232 finished and 1305 unfinished)
+
+> &#91;2720/6105&#93; Generating Resources/translations/CAM_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_it.qm'...
+
+> Generated 1585 translation(s) (1320 finished and 265 unfinished)
+
+> &#91;2721/6105&#93; Generating Resources/translations/CAM_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_ja.qm'...
+
+> Generated 1585 translation(s) (820 finished and 765 unfinished)
+
+> &#91;2722/6105&#93; Generating Resources/translations/CAM_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_ka.qm'...
+
+> Generated 1585 translation(s) (1424 finished and 161 unfinished)
+
+> &#91;2723/6105&#93; Generating Resources/translations/CAM_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_ko.qm'...
+
+> Generated 1585 translation(s) (398 finished and 1187 unfinished)
+
+> &#91;2724/6105&#93; Generating Resources/translations/CAM_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_lt.qm'...
+
+> Generated 1585 translation(s) (273 finished and 1312 unfinished)
+
+> &#91;2725/6105&#93; Generating Resources/translations/CAM_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_nl.qm'...
+
+> Generated 1585 translation(s) (506 finished and 1079 unfinished)
+
+> &#91;2727/6105&#93; Generating Resources/translations/CAM_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_pl.qm'...
+
+> Generated 1585 translation(s) (1553 finished and 32 unfinished)
+
+> &#91;2728/6105&#93; Generating Resources/translations/CAM_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_pt-PT.qm'...
+
+> Generated 1585 translation(s) (284 finished and 1301 unfinished)
+
+> &#91;2729/6105&#93; Generating Resources/translations/CAM_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_pt-BR.qm'...
+
+> Generated 1585 translation(s) (1304 finished and 281 unfinished)
+
+> &#91;2730/6105&#93; Generating Resources/translations/CAM_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_ro.qm'...
+
+> Generated 1585 translation(s) (539 finished and 1046 unfinished)
+
+> &#91;2731/6105&#93; Generating Resources/translations/CAM_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_ru.qm'...
+
+> Generated 1585 translation(s) (1553 finished and 32 unfinished)
+
+> &#91;2732/6105&#93; Generating Resources/translations/CAM_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_sl.qm'...
+
+> Generated 1585 translation(s) (1096 finished and 489 unfinished)
+
+> &#91;2733/6105&#93; Generating Resources/translations/CAM_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_sr-CS.qm'...
+
+> Generated 1585 translation(s) (361 finished and 1224 unfinished)
+
+> &#91;2734/6105&#93; Generating Resources/translations/CAM_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_sr.qm'...
+
+> Generated 1585 translation(s) (357 finished and 1228 unfinished)
+
+> &#91;2735/6105&#93; Generating Resources/translations/CAM_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_sv-SE.qm'...
+
+> Generated 1585 translation(s) (452 finished and 1133 unfinished)
+
+> &#91;2736/6105&#93; Generating Resources/translations/CAM_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_uk.qm'...
+
+> Generated 1585 translation(s) (544 finished and 1041 unfinished)
+
+> &#91;2737/6105&#93; Generating Resources/translations/CAM_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_tr.qm'...
+
+> Generated 1585 translation(s) (646 finished and 939 unfinished)
+
+> &#91;2738/6105&#93; Generating Resources/translations/CAM_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_zh-CN.qm'...
+
+> Generated 1585 translation(s) (1393 finished and 192 unfinished)
+
+> &#91;2739/6105&#93; Generating Resources/translations/CAM_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_val-ES.qm'...
+
+> Generated 1555 translation(s) (227 finished and 1328 unfinished)
+
+> &#91;2740/6105&#93; Generating Resources/translations/Points_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_af.qm'...
+
+> Generated 57 translation(s) (51 finished and 6 unfinished)
+
+> &#91;2741/6105&#93; Generating Resources/translations/CAM_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/CAM/Gui/Resources/translations/CAM_zh-TW.qm'...
+
+> Generated 1585 translation(s) (1456 finished and 129 unfinished)
+
+> &#91;2742/6105&#93; Generating Resources/translations/Points_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_ar.qm'...
+
+> Generated 57 translation(s) (40 finished and 17 unfinished)
+
+> &#91;2743/6105&#93; Generating Resources/translations/Points_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_be.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2744/6105&#93; Generating Resources/translations/Points_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_bg.qm'...
+
+> Generated 57 translation(s) (56 finished and 1 unfinished)
+
+> &#91;2745/6105&#93; Generating Resources/translations/Points_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_ca.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2746/6105&#93; Generating Resources/translations/Points_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_cs.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2747/6105&#93; Generating Resources/translations/Points_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_da.qm'...
+
+> Generated 56 translation(s) (16 finished and 40 unfinished)
+
+> &#91;2748/6105&#93; Generating Resources/translations/Points_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_de.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2749/6105&#93; Generating Resources/translations/Points_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_el.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2750/6105&#93; Generating Resources/translations/Points_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_es-AR.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2751/6105&#93; Generating Resources/translations/Points_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_es-ES.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2752/6105&#93; Generating Resources/translations/Points_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_eu.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2753/6105&#93; Generating Resources/translations/Points_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_fi.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2754/6105&#93; Generating Resources/translations/Points_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_fr.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2755/6105&#93; Generating Resources/translations/Points_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_fil.qm'...
+
+> Generated 54 translation(s) (47 finished and 7 unfinished)
+
+> &#91;2756/6105&#93; Generating Resources/translations/Points_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_gl.qm'...
+
+> Generated 54 translation(s) (53 finished and 1 unfinished)
+
+> &#91;2757/6105&#93; Generating Resources/translations/Points_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_hr.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2758/6105&#93; Generating Resources/translations/Points_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_id.qm'...
+
+> Generated 54 translation(s) (53 finished and 1 unfinished)
+
+> &#91;2759/6105&#93; Generating Resources/translations/Points_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_hu.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2760/6105&#93; Generating Resources/translations/Points_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_it.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2761/6105&#93; Generating Resources/translations/Points_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_ja.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2762/6105&#93; Generating Resources/translations/Points_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_ka.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2763/6105&#93; Generating Resources/translations/Points_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_kab.qm'...
+
+> Generated 57 translation(s) (48 finished and 9 unfinished)
+
+> &#91;2764/6105&#93; Generating Resources/translations/Points_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_ko.qm'...
+
+> Generated 56 translation(s) (47 finished and 9 unfinished)
+
+> &#91;2765/6105&#93; Generating Resources/translations/Points_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_lt.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2766/6105&#93; Generating Resources/translations/Points_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_nl.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2767/6105&#93; Generating Resources/translations/Points_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_no.qm'...
+
+> Generated 57 translation(s) (43 finished and 14 unfinished)
+
+> &#91;2768/6105&#93; Generating Resources/translations/Points_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_pl.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2769/6105&#93; Generating Resources/translations/Points_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_pt-BR.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2770/6105&#93; Generating Resources/translations/Points_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_pt-PT.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2771/6105&#93; Generating Resources/translations/Points_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_ro.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2773/6105&#93; Generating Resources/translations/Points_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_ru.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2774/6105&#93; Generating Resources/translations/Points_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_sk.qm'...
+
+> Generated 54 translation(s) (54 finished and 0 unfinished)
+
+> &#91;2775/6105&#93; Generating Resources/translations/Points_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_sl.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2776/6105&#93; Generating Resources/translations/Points_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_sr-CS.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2777/6105&#93; Generating Resources/translations/Points_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_sr.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2778/6105&#93; Generating Resources/translations/Points_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_sv-SE.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2779/6105&#93; Generating Resources/translations/Points_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_tr.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2780/6105&#93; Generating Resources/translations/Points_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_uk.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2781/6105&#93; Generating Resources/translations/Points_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_val-ES.qm'...
+
+> Generated 54 translation(s) (50 finished and 4 unfinished)
+
+> &#91;2782/6105&#93; Generating Resources/translations/Points_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_vi.qm'...
+
+> Generated 54 translation(s) (53 finished and 1 unfinished)
+
+> &#91;2783/6105&#93; Generating Resources/translations/Points_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_zh-CN.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2784/6105&#93; Generating Resources/translations/Points_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Points/Gui/Resources/translations/Points_zh-TW.qm'...
+
+> Generated 56 translation(s) (54 finished and 2 unfinished)
+
+> &#91;2785/6105&#93; Generating Resources/translations/StartPage_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_be.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2786/6105&#93; Generating Resources/translations/StartPage_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_ca.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2787/6105&#93; Generating Resources/translations/StartPage_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_cs.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2788/6105&#93; Generating Resources/translations/StartPage_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_da.qm'...
+
+> Generated 36 translation(s) (26 finished and 10 unfinished)
+
+> &#91;2789/6105&#93; Generating Resources/translations/StartPage_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_de.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2790/6105&#93; Generating Resources/translations/StartPage_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_el.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2791/6105&#93; Generating Resources/translations/StartPage_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_es-AR.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2792/6105&#93; Generating Resources/translations/StartPage_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_es-ES.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2793/6105&#93; Generating Resources/translations/StartPage_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_eu.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2794/6105&#93; Generating Resources/translations/StartPage_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_fi.qm'...
+
+> Generated 36 translation(s) (31 finished and 5 unfinished)
+
+> &#91;2795/6105&#93; Generating Resources/translations/StartPage_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_fr.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2796/6105&#93; Generating Resources/translations/StartPage_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_hr.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2797/6105&#93; Generating Resources/translations/StartPage_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_hu.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2798/6105&#93; Generating Resources/translations/StartPage_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_id.qm'...
+
+> Generated 34 translation(s) (3 finished and 31 unfinished)
+
+> &#91;2799/6105&#93; Generating Resources/translations/StartPage_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_it.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2800/6105&#93; Generating Resources/translations/StartPage_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_ka.qm'...
+
+> Generated 36 translation(s) (33 finished and 3 unfinished)
+
+> &#91;2801/6105&#93; Generating Resources/translations/StartPage_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_ko.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2802/6105&#93; Generating Resources/translations/StartPage_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_ja.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2803/6105&#93; Generating Resources/translations/StartPage_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_lt.qm'...
+
+> Generated 36 translation(s) (33 finished and 3 unfinished)
+
+> &#91;2804/6105&#93; Generating Resources/translations/StartPage_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_pl.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2805/6105&#93; Generating Resources/translations/StartPage_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_nl.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2806/6105&#93; Generating Resources/translations/StartPage_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_pt-BR.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2807/6105&#93; Generating Resources/translations/StartPage_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_pt-PT.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2808/6105&#93; Generating Resources/translations/StartPage_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_ro.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2809/6105&#93; Generating Resources/translations/StartPage_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_ru.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2810/6105&#93; Generating Resources/translations/StartPage_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_sl.qm'...
+
+> Generated 36 translation(s) (4 finished and 32 unfinished)
+
+> &#91;2811/6105&#93; Generating Resources/translations/StartPage_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_sr-CS.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2812/6105&#93; Generating Resources/translations/StartPage_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_sr.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2813/6105&#93; Generating Resources/translations/StartPage_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_sv-SE.qm'...
+
+> Generated 36 translation(s) (13 finished and 23 unfinished)
+
+> &#91;2814/6105&#93; Generating Resources/translations/StartPage_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_tr.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2815/6105&#93; Generating Resources/translations/StartPage_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_uk.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2816/6105&#93; Generating Resources/translations/StartPage_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_val-ES.qm'...
+
+> Generated 35 translation(s) (3 finished and 32 unfinished)
+
+> &#91;2817/6105&#93; Generating Resources/translations/StartPage_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_zh-CN.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2818/6105&#93; Generating Resources/translations/StartPage_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Start/Gui/Resources/translations/StartPage_zh-TW.qm'...
+
+> Generated 36 translation(s) (34 finished and 2 unfinished)
+
+> &#91;2819/6105&#93; Generating Resources/translations/Test_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_af.qm'...
+
+> Generated 23 translation(s) (21 finished and 2 unfinished)
+
+> &#91;2820/6105&#93; Generating Resources/translations/Test_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_ar.qm'...
+
+> Generated 23 translation(s) (20 finished and 3 unfinished)
+
+> &#91;2821/6105&#93; Generating Resources/translations/Test_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_be.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2822/6105&#93; Generating Resources/translations/Test_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_bg.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2823/6105&#93; Generating Resources/translations/Test_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_ca.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2824/6105&#93; Generating Resources/translations/Test_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_cs.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2825/6105&#93; Generating Resources/translations/Test_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_da.qm'...
+
+> Generated 23 translation(s) (21 finished and 2 unfinished)
+
+> &#91;2826/6105&#93; Generating Resources/translations/Test_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_el.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2827/6105&#93; Generating Resources/translations/Test_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_de.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2828/6105&#93; Generating Resources/translations/Test_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_es-AR.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2829/6105&#93; Generating Resources/translations/Test_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_es-ES.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2830/6105&#93; Generating Resources/translations/Test_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_eu.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2831/6105&#93; Generating Resources/translations/Test_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_fi.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2832/6105&#93; Generating Resources/translations/Test_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_fil.qm'...
+
+> Generated 23 translation(s) (21 finished and 2 unfinished)
+
+> &#91;2833/6105&#93; Generating Resources/translations/Test_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_fr.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2834/6105&#93; Generating Resources/translations/Test_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_gl.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2835/6105&#93; Generating Resources/translations/Test_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_hr.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2836/6105&#93; Generating Resources/translations/Test_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_id.qm'...
+
+> Generated 23 translation(s) (22 finished and 1 unfinished)
+
+> &#91;2837/6105&#93; Generating Resources/translations/Test_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_hu.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2838/6105&#93; Generating Resources/translations/Test_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_ja.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2839/6105&#93; Generating Resources/translations/Test_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_it.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2840/6105&#93; Generating Resources/translations/Test_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_ka.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2841/6105&#93; Generating Resources/translations/Test_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_kab.qm'...
+
+> Generated 23 translation(s) (4 finished and 19 unfinished)
+
+> &#91;2842/6105&#93; Generating Resources/translations/Test_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_lt.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2843/6105&#93; Generating Resources/translations/Test_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_ko.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2844/6105&#93; Generating Resources/translations/Test_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_nl.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2845/6105&#93; Generating Resources/translations/Test_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_no.qm'...
+
+> Generated 23 translation(s) (21 finished and 2 unfinished)
+
+> &#91;2846/6105&#93; Generating Resources/translations/Test_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_pl.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2847/6105&#93; Generating Resources/translations/Test_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_pt-BR.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2848/6105&#93; Generating Resources/translations/Test_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_pt-PT.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2849/6105&#93; Generating Resources/translations/Test_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_ro.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2850/6105&#93; Generating Resources/translations/Test_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_ru.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2851/6105&#93; Generating Resources/translations/Test_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_sk.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2852/6105&#93; Generating Resources/translations/Test_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_sl.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2853/6105&#93; Generating Resources/translations/Test_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_sr-CS.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2854/6105&#93; Generating Resources/translations/Test_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_sr.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2855/6105&#93; Generating Resources/translations/Test_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_sv-SE.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2856/6105&#93; Generating Resources/translations/Test_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_tr.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2857/6105&#93; Generating Resources/translations/Test_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_val-ES.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2858/6105&#93; Generating Resources/translations/Test_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_uk.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2859/6105&#93; Generating Resources/translations/Test_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_zh-CN.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2860/6105&#93; Generating Resources/translations/Test_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_vi.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2861/6105&#93; Generating Resources/translations/Test_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Test/Gui/Resources/translations/Test_zh-TW.qm'...
+
+> Generated 23 translation(s) (23 finished and 0 unfinished)
+
+> &#91;2932/6105&#93; Generating qrc_Measure_translation.cpp
+
+> RCC: Warning: No resources in '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Measure/Gui/Resources/Measure_translation.qrc'.
+
+> &#91;2937/6105&#93; Generating Resources/translations/Robot_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_af.qm'...
+
+> Generated 179 translation(s) (166 finished and 13 unfinished)
+
+> &#91;2938/6105&#93; Generating Resources/translations/Robot_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_ar.qm'...
+
+> Generated 179 translation(s) (143 finished and 36 unfinished)
+
+> &#91;2939/6105&#93; Generating Resources/translations/Robot_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_be.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2940/6105&#93; Generating Resources/translations/Robot_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_bg.qm'...
+
+> Generated 179 translation(s) (110 finished and 69 unfinished)
+
+> &#91;2941/6105&#93; Generating Resources/translations/Robot_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_ca.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2942/6105&#93; Generating Resources/translations/Robot_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_cs.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2943/6105&#93; Generating Resources/translations/Robot_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_da.qm'...
+
+> Generated 166 translation(s) (124 finished and 42 unfinished)
+
+> &#91;2944/6105&#93; Generating Resources/translations/Robot_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_de.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2945/6105&#93; Generating Resources/translations/Robot_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_el.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2946/6105&#93; Generating Resources/translations/Robot_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_es-AR.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2947/6105&#93; Generating Resources/translations/Robot_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_es-ES.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2948/6105&#93; Generating Resources/translations/Robot_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_eu.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2949/6105&#93; Generating Resources/translations/Robot_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_fi.qm'...
+
+> Generated 166 translation(s) (163 finished and 3 unfinished)
+
+> &#91;2950/6105&#93; Generating Resources/translations/Robot_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_fil.qm'...
+
+> Generated 172 translation(s) (158 finished and 14 unfinished)
+
+> &#91;2951/6105&#93; Generating Resources/translations/Robot_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_fr.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2953/6105&#93; Generating Resources/translations/Robot_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_gl.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2954/6105&#93; Generating Resources/translations/Robot_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_hr.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2955/6105&#93; Generating Resources/translations/Robot_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_hu.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2956/6105&#93; Generating Resources/translations/Robot_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_id.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2957/6105&#93; Generating Resources/translations/Robot_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_it.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2958/6105&#93; Generating Resources/translations/Robot_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_ja.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2959/6105&#93; Generating Resources/translations/Robot_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_ka.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2960/6105&#93; Generating Resources/translations/Robot_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_kab.qm'...
+
+> Generated 179 translation(s) (163 finished and 16 unfinished)
+
+> &#91;2961/6105&#93; Generating Resources/translations/Robot_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_ko.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2962/6105&#93; Generating Resources/translations/Robot_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_lt.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2963/6105&#93; Generating Resources/translations/Robot_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_no.qm'...
+
+> Generated 179 translation(s) (165 finished and 14 unfinished)
+
+> &#91;2964/6105&#93; Generating Resources/translations/Robot_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_nl.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2965/6105&#93; Generating Resources/translations/Robot_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_pl.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2966/6105&#93; Generating Resources/translations/Robot_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_pt-BR.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2967/6105&#93; Generating Resources/translations/Robot_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_pt-PT.qm'...
+
+> Generated 166 translation(s) (161 finished and 5 unfinished)
+
+> &#91;2968/6105&#93; Generating Resources/translations/Robot_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_ro.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2969/6105&#93; Generating Resources/translations/Robot_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_ru.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2970/6105&#93; Generating Resources/translations/Robot_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_sk.qm'...
+
+> Generated 172 translation(s) (139 finished and 33 unfinished)
+
+> &#91;2971/6105&#93; Generating Resources/translations/Robot_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_sl.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2972/6105&#93; Generating Resources/translations/Robot_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_sr-CS.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2973/6105&#93; Generating Resources/translations/Robot_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_sr.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2974/6105&#93; Generating Resources/translations/Robot_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_sv-SE.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2975/6105&#93; Generating Resources/translations/Robot_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_tr.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2976/6105&#93; Generating Resources/translations/Robot_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_uk.qm'...
+
+> Generated 166 translation(s) (162 finished and 4 unfinished)
+
+> &#91;2977/6105&#93; Generating Resources/translations/Robot_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_val-ES.qm'...
+
+> Generated 166 translation(s) (159 finished and 7 unfinished)
+
+> &#91;2978/6105&#93; Generating Resources/translations/Robot_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_vi.qm'...
+
+> Generated 172 translation(s) (166 finished and 6 unfinished)
+
+> &#91;2979/6105&#93; Generating Resources/translations/Robot_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_zh-CN.qm'...
+
+> Generated 166 translation(s) (166 finished and 0 unfinished)
+
+> &#91;2980/6105&#93; Generating Resources/translations/Robot_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Robot/Gui/Resources/translations/Robot_zh-TW.qm'...
+
+> Generated 166 translation(s) (160 finished and 6 unfinished)
+
+> &#91;2989/6105&#93; Generating Resources/translations/Fem_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_af.qm'...
+
+> Generated 436 translation(s) (251 finished and 185 unfinished)
+
+> &#91;2990/6105&#93; Generating Resources/translations/Fem_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_ar.qm'...
+
+> Generated 436 translation(s) (205 finished and 231 unfinished)
+
+> &#91;2991/6105&#93; Generating Resources/translations/Fem_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_be.qm'...
+
+> Generated 1154 translation(s) (1118 finished and 36 unfinished)
+
+> &#91;2992/6105&#93; Generating Resources/translations/Fem_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_bg.qm'...
+
+> Generated 436 translation(s) (89 finished and 347 unfinished)
+
+> &#91;2993/6105&#93; Generating Resources/translations/Fem_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_ca.qm'...
+
+> Generated 1154 translation(s) (1119 finished and 35 unfinished)
+
+> &#91;2994/6105&#93; Generating Resources/translations/Fem_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_cs.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;2995/6105&#93; Generating Resources/translations/Fem_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_da.qm'...
+
+> Generated 1154 translation(s) (125 finished and 1029 unfinished)
+
+> &#91;2996/6105&#93; Generating Resources/translations/Fem_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_de.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;2997/6105&#93; Generating Resources/translations/Fem_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_el.qm'...
+
+> Generated 1154 translation(s) (757 finished and 397 unfinished)
+
+> &#91;2998/6105&#93; Generating Resources/translations/Fem_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_es-AR.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;2999/6105&#93; Generating Resources/translations/Fem_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_es-ES.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;3000/6105&#93; Generating Resources/translations/Fem_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_eu.qm'...
+
+> Generated 1154 translation(s) (1028 finished and 126 unfinished)
+
+> &#91;3001/6105&#93; Generating Resources/translations/Fem_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_fi.qm'...
+
+> Generated 1154 translation(s) (427 finished and 727 unfinished)
+
+> &#91;3002/6105&#93; Generating Resources/translations/Fem_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_fil.qm'...
+
+> Generated 897 translation(s) (303 finished and 594 unfinished)
+
+> &#91;3003/6105&#93; Generating Resources/translations/Fem_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_fr.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;3004/6105&#93; Generating Resources/translations/Fem_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_gl.qm'...
+
+> Generated 1081 translation(s) (341 finished and 740 unfinished)
+
+> &#91;3005/6105&#93; Generating Resources/translations/Fem_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_hr.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;3006/6105&#93; Generating Resources/translations/Fem_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_hu.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;3008/6105&#93; Generating Resources/translations/Fem_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_id.qm'...
+
+> Generated 1087 translation(s) (311 finished and 776 unfinished)
+
+> &#91;3009/6105&#93; Generating Resources/translations/Fem_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_it.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;3010/6105&#93; Generating Resources/translations/Fem_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_ja.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;3011/6105&#93; Generating Resources/translations/Fem_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_ka.qm'...
+
+> Generated 1154 translation(s) (1107 finished and 47 unfinished)
+
+> &#91;3012/6105&#93; Generating Resources/translations/Fem_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_kab.qm'...
+
+> Generated 436 translation(s) (263 finished and 173 unfinished)
+
+> &#91;3013/6105&#93; Generating Resources/translations/Fem_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_ko.qm'...
+
+> Generated 1154 translation(s) (338 finished and 816 unfinished)
+
+> &#91;3014/6105&#93; Generating Resources/translations/Fem_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_lt.qm'...
+
+> Generated 1154 translation(s) (308 finished and 846 unfinished)
+
+> &#91;3015/6105&#93; Generating Resources/translations/Fem_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_nl.qm'...
+
+> Generated 1154 translation(s) (547 finished and 607 unfinished)
+
+> &#91;3016/6105&#93; Generating Resources/translations/Fem_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_no.qm'...
+
+> Generated 436 translation(s) (90 finished and 346 unfinished)
+
+> &#91;3017/6105&#93; Generating Resources/translations/Fem_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_pl.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;3018/6105&#93; Generating Resources/translations/Fem_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_pt-BR.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;3019/6105&#93; Generating Resources/translations/Fem_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_pt-PT.qm'...
+
+> Generated 1154 translation(s) (394 finished and 760 unfinished)
+
+> &#91;3020/6105&#93; Generating Resources/translations/Fem_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_ro.qm'...
+
+> Generated 1154 translation(s) (465 finished and 689 unfinished)
+
+> &#91;3021/6105&#93; Generating Resources/translations/Fem_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_ru.qm'...
+
+> Generated 1154 translation(s) (1120 finished and 34 unfinished)
+
+> &#91;3022/6105&#93; Generating Resources/translations/Fem_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_sk.qm'...
+
+> Generated 897 translation(s) (232 finished and 665 unfinished)
+
+> &#91;3023/6105&#93; Generating Resources/translations/Fem_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_sl.qm'...
+
+> Generated 1154 translation(s) (576 finished and 578 unfinished)
+
+> &#91;3024/6105&#93; Generating Resources/translations/Fem_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_sr-CS.qm'...
+
+> Generated 1154 translation(s) (598 finished and 556 unfinished)
+
+> &#91;3025/6105&#93; Generating Resources/translations/Fem_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_sr.qm'...
+
+> Generated 1154 translation(s) (628 finished and 526 unfinished)
+
+> &#91;3026/6105&#93; Generating Resources/translations/Fem_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_sv-SE.qm'...
+
+> Generated 1154 translation(s) (503 finished and 651 unfinished)
+
+> &#91;3027/6105&#93; Generating Resources/translations/Fem_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_uk.qm'...
+
+> Generated 1154 translation(s) (1103 finished and 51 unfinished)
+
+> &#91;3028/6105&#93; Generating Resources/translations/Fem_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_tr.qm'...
+
+> Generated 1154 translation(s) (753 finished and 401 unfinished)
+
+> &#91;3029/6105&#93; Generating Resources/translations/Fem_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_val-ES.qm'...
+
+> Generated 1139 translation(s) (329 finished and 810 unfinished)
+
+> &#91;3030/6105&#93; Generating Resources/translations/Fem_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_vi.qm'...
+
+> Generated 1080 translation(s) (414 finished and 666 unfinished)
+
+> &#91;3031/6105&#93; Generating Resources/translations/Fem_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_zh-CN.qm'...
+
+> Generated 1154 translation(s) (735 finished and 419 unfinished)
+
+> &#91;3032/6105&#93; Generating Resources/translations/Fem_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/Fem/Gui/Resources/translations/Fem_zh-TW.qm'...
+
+> Generated 1154 translation(s) (530 finished and 624 unfinished)
+
+> &#91;3035/6105&#93; Building CXX object src/Main/CMakeFiles/FreeCADMainCmd.dir/MainCmd.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Main/MainCmd.cpp:103:32: ****warning: ****'Py_GetPath' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 103 | &lt;&lt; Py_EncodeLocale(Py_GetPath(), nullptr) &lt;&lt; "\\n\\n";
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pylifecycle.h:46:1: note: **'Py_GetPath' has been explicitly marked deprecated here
+
+> 46 | Py_DEPRECATED(3.13) PyAPI_FUNC(wchar_t \*) Py_GetPath(void);
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;3054/6105&#93; Generating Resources/translations/PartDesign_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_af.qm'...
+
+> Generated 806 translation(s) (201 finished and 605 unfinished)
+
+> &#91;3055/6105&#93; Generating Resources/translations/PartDesign_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_ar.qm'...
+
+> Generated 806 translation(s) (393 finished and 413 unfinished)
+
+> &#91;3056/6105&#93; Generating Resources/translations/PartDesign_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_be.qm'...
+
+> Generated 981 translation(s) (966 finished and 15 unfinished)
+
+> &#91;3057/6105&#93; Generating Resources/translations/PartDesign_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_bg.qm'...
+
+> Generated 806 translation(s) (420 finished and 386 unfinished)
+
+> &#91;3058/6105&#93; Generating Resources/translations/PartDesign_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_ca.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3059/6105&#93; Generating Resources/translations/PartDesign_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_cs.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3060/6105&#93; Generating Resources/translations/PartDesign_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_da.qm'...
+
+> Generated 981 translation(s) (926 finished and 55 unfinished)
+
+> &#91;3061/6105&#93; Generating Resources/translations/PartDesign_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_de.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3063/6105&#93; Generating Resources/translations/PartDesign_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_es-AR.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3064/6105&#93; Generating Resources/translations/PartDesign_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_el.qm'...
+
+> Generated 981 translation(s) (704 finished and 277 unfinished)
+
+> &#91;3065/6105&#93; Generating Resources/translations/PartDesign_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_eu.qm'...
+
+> Generated 981 translation(s) (919 finished and 62 unfinished)
+
+> &#91;3066/6105&#93; Generating Resources/translations/PartDesign_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_es-ES.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3067/6105&#93; Generating Resources/translations/PartDesign_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_fi.qm'...
+
+> Generated 981 translation(s) (567 finished and 414 unfinished)
+
+> &#91;3068/6105&#93; Generating Resources/translations/PartDesign_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_fil.qm'...
+
+> Generated 837 translation(s) (542 finished and 295 unfinished)
+
+> &#91;3069/6105&#93; Generating Resources/translations/PartDesign_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_fr.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3070/6105&#93; Generating Resources/translations/PartDesign_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_gl.qm'...
+
+> Generated 977 translation(s) (552 finished and 425 unfinished)
+
+> &#91;3071/6105&#93; Generating Resources/translations/PartDesign_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_hr.qm'...
+
+> Generated 981 translation(s) (973 finished and 8 unfinished)
+
+> &#91;3072/6105&#93; Generating Resources/translations/PartDesign_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_hu.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3073/6105&#93; Generating Resources/translations/PartDesign_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_id.qm'...
+
+> Generated 988 translation(s) (537 finished and 451 unfinished)
+
+> &#91;3074/6105&#93; Generating Resources/translations/PartDesign_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_it.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3075/6105&#93; Generating Resources/translations/PartDesign_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_ja.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3076/6105&#93; Generating Resources/translations/PartDesign_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_ka.qm'...
+
+> Generated 981 translation(s) (960 finished and 21 unfinished)
+
+> &#91;3077/6105&#93; Generating Resources/translations/PartDesign_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_kab.qm'...
+
+> Generated 806 translation(s) (282 finished and 524 unfinished)
+
+> &#91;3078/6105&#93; Generating Resources/translations/PartDesign_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_ko.qm'...
+
+> Generated 981 translation(s) (942 finished and 39 unfinished)
+
+> &#91;3079/6105&#93; Generating Resources/translations/PartDesign_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_lt.qm'...
+
+> Generated 981 translation(s) (394 finished and 587 unfinished)
+
+> &#91;3080/6105&#93; Generating Resources/translations/PartDesign_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_nl.qm'...
+
+> Generated 981 translation(s) (767 finished and 214 unfinished)
+
+> &#91;3081/6105&#93; Generating Resources/translations/PartDesign_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_no.qm'...
+
+> Generated 806 translation(s) (527 finished and 279 unfinished)
+
+> &#91;3082/6105&#93; Generating Resources/translations/PartDesign_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_pl.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3083/6105&#93; Generating Resources/translations/PartDesign_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_pt-BR.qm'...
+
+> Generated 981 translation(s) (974 finished and 7 unfinished)
+
+> &#91;3084/6105&#93; Generating Resources/translations/PartDesign_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_pt-PT.qm'...
+
+> Generated 981 translation(s) (588 finished and 393 unfinished)
+
+> &#91;3085/6105&#93; Generating Resources/translations/PartDesign_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_ro.qm'...
+
+> Generated 981 translation(s) (930 finished and 51 unfinished)
+
+> &#91;3086/6105&#93; Generating Resources/translations/PartDesign_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_ru.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3087/6105&#93; Generating Resources/translations/PartDesign_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_sk.qm'...
+
+> Generated 837 translation(s) (627 finished and 210 unfinished)
+
+> &#91;3088/6105&#93; Generating Resources/translations/PartDesign_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_sl.qm'...
+
+> Generated 981 translation(s) (910 finished and 71 unfinished)
+
+> &#91;3089/6105&#93; Generating Resources/translations/PartDesign_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_sr-CS.qm'...
+
+> Generated 981 translation(s) (961 finished and 20 unfinished)
+
+> &#91;3090/6105&#93; Generating Resources/translations/PartDesign_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_sr.qm'...
+
+> Generated 981 translation(s) (965 finished and 16 unfinished)
+
+> &#91;3091/6105&#93; Generating Resources/translations/PartDesign_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_sv-SE.qm'...
+
+> Generated 981 translation(s) (637 finished and 344 unfinished)
+
+> &#91;3092/6105&#93; Generating Resources/translations/PartDesign_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_tr.qm'...
+
+> Generated 981 translation(s) (801 finished and 180 unfinished)
+
+> &#91;3093/6105&#93; Generating Resources/translations/PartDesign_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_uk.qm'...
+
+> Generated 981 translation(s) (974 finished and 7 unfinished)
+
+> &#91;3094/6105&#93; Generating Resources/translations/PartDesign_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_val-ES.qm'...
+
+> Generated 977 translation(s) (511 finished and 466 unfinished)
+
+> &#91;3095/6105&#93; Generating Resources/translations/PartDesign_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_vi.qm'...
+
+> Generated 862 translation(s) (568 finished and 294 unfinished)
+
+> &#91;3096/6105&#93; Generating Resources/translations/PartDesign_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_zh-CN.qm'...
+
+> Generated 981 translation(s) (972 finished and 9 unfinished)
+
+> &#91;3097/6105&#93; Generating Resources/translations/PartDesign_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/PartDesign/Gui/Resources/translations/PartDesign_zh-TW.qm'...
+
+> Generated 981 translation(s) (975 finished and 6 unfinished)
+
+> &#91;3101/6105&#93; Building CXX object src/Main/CMakeFiles/FreeCADMain.dir/MainGui.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Main/MainGui.cpp:269:58: ****warning: ****'Py_GetPath' is deprecated &#91;-Wdeprecated-declarations&#93;**
+
+> 269 | QString::fromUtf8(Py_EncodeLocale(Py_GetPath(), nullptr)),
+
+> |  **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pylifecycle.h:46:1: note: **'Py_GetPath' has been explicitly marked deprecated here
+
+> 46 | Py_DEPRECATED(3.13) PyAPI_FUNC(wchar_t \*) Py_GetPath(void);
+
+> | **^**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: **expanded from macro 'Py_DEPRECATED'
+
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+
+> |  **^**
+
+> 1 warning generated.
+
+> &#91;3104/6105&#93; Generating Resources/translations/TechDraw_af.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_af.qm'...
+
+> Generated 920 translation(s) (75 finished and 845 unfinished)
+
+> &#91;3105/6105&#93; Generating Resources/translations/TechDraw_ar.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_ar.qm'...
+
+> Generated 943 translation(s) (235 finished and 708 unfinished)
+
+> &#91;3106/6105&#93; Generating Resources/translations/TechDraw_be.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_be.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1725 translation(s) (1675 finished and 50 unfinished)
+
+> &#91;3108/6105&#93; Generating Resources/translations/TechDraw_bg.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_bg.qm'...
+
+> Generated 943 translation(s) (226 finished and 717 unfinished)
+
+> &#91;3109/6105&#93; Generating Resources/translations/TechDraw_ca.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_ca.qm'...
+
+> Generated 1725 translation(s) (1674 finished and 51 unfinished)
+
+> &#91;3110/6105&#93; Generating Resources/translations/TechDraw_cs.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_cs.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1725 translation(s) (1228 finished and 497 unfinished)
+
+> &#91;3111/6105&#93; Generating Resources/translations/TechDraw_da.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_da.qm'...
+
+> Generated 1725 translation(s) (1202 finished and 523 unfinished)
+
+> &#91;3112/6105&#93; Generating Resources/translations/TechDraw_de.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_de.qm'...
+
+> Generated 1725 translation(s) (1675 finished and 50 unfinished)
+
+> &#91;3113/6105&#93; Generating Resources/translations/TechDraw_el.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_el.qm'...
+
+> Generated 1725 translation(s) (559 finished and 1166 unfinished)
+
+> &#91;3114/6105&#93; Generating Resources/translations/TechDraw_es-AR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_es-AR.qm'...
+
+> Generated 1725 translation(s) (1674 finished and 51 unfinished)
+
+> &#91;3115/6105&#93; Generating Resources/translations/TechDraw_es-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_es-ES.qm'...
+
+> Generated 1725 translation(s) (1675 finished and 50 unfinished)
+
+> &#91;3116/6105&#93; Generating Resources/translations/TechDraw_eu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_eu.qm'...
+
+> Generated 1725 translation(s) (1489 finished and 236 unfinished)
+
+> &#91;3117/6105&#93; Generating Resources/translations/TechDraw_fi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_fi.qm'...
+
+> Generated 1725 translation(s) (1253 finished and 472 unfinished)
+
+> &#91;3118/6105&#93; Generating Resources/translations/TechDraw_fil.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_fil.qm'...
+
+> Generated 1404 translation(s) (370 finished and 1034 unfinished)
+
+> &#91;3119/6105&#93; Generating Resources/translations/TechDraw_fr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_fr.qm'...
+
+> Generated 1725 translation(s) (1674 finished and 51 unfinished)
+
+> &#91;3120/6105&#93; Generating Resources/translations/TechDraw_gl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_gl.qm'...
+
+> Generated 1648 translation(s) (591 finished and 1057 unfinished)
+
+> &#91;3121/6105&#93; Generating Resources/translations/TechDraw_hr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_hr.qm'...
+
+> Generated 1725 translation(s) (1675 finished and 50 unfinished)
+
+> &#91;3122/6105&#93; Generating Resources/translations/TechDraw_hu.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_hu.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1725 translation(s) (1674 finished and 51 unfinished)
+
+> &#91;3123/6105&#93; Generating Resources/translations/TechDraw_id.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_id.qm'...
+
+> Generated 1672 translation(s) (476 finished and 1196 unfinished)
+
+> &#91;3124/6105&#93; Generating Resources/translations/TechDraw_it.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_it.qm'...
+
+> Generated 1725 translation(s) (1675 finished and 50 unfinished)
+
+> &#91;3125/6105&#93; Generating Resources/translations/TechDraw_ja.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_ja.qm'...
+
+> Generated 1725 translation(s) (1674 finished and 51 unfinished)
+
+> &#91;3126/6105&#93; Generating Resources/translations/TechDraw_ka.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_ka.qm'...
+
+> Generated 1725 translation(s) (1626 finished and 99 unfinished)
+
+> &#91;3127/6105&#93; Generating Resources/translations/TechDraw_kab.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_kab.qm'...
+
+> Generated 920 translation(s) (105 finished and 815 unfinished)
+
+> &#91;3128/6105&#93; Generating Resources/translations/TechDraw_ko.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_ko.qm'...
+
+> Generated 1725 translation(s) (554 finished and 1171 unfinished)
+
+> &#91;3129/6105&#93; Generating Resources/translations/TechDraw_lt.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_lt.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1725 translation(s) (419 finished and 1306 unfinished)
+
+> &#91;3130/6105&#93; Generating Resources/translations/TechDraw_nl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_nl.qm'...
+
+> Generated 1725 translation(s) (1111 finished and 614 unfinished)
+
+> &#91;3131/6105&#93; Generating Resources/translations/TechDraw_no.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_no.qm'...
+
+> Generated 920 translation(s) (106 finished and 814 unfinished)
+
+> &#91;3132/6105&#93; Generating Resources/translations/TechDraw_pl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_pl.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1725 translation(s) (1675 finished and 50 unfinished)
+
+> &#91;3133/6105&#93; Generating Resources/translations/TechDraw_pt-BR.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_pt-BR.qm'...
+
+> Generated 1725 translation(s) (1355 finished and 370 unfinished)
+
+> &#91;3135/6105&#93; Generating Resources/translations/TechDraw_pt-PT.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_pt-PT.qm'...
+
+> Generated 1725 translation(s) (755 finished and 970 unfinished)
+
+> &#91;3136/6105&#93; Generating Resources/translations/TechDraw_ro.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_ro.qm'...
+
+> Generated 1725 translation(s) (466 finished and 1259 unfinished)
+
+> &#91;3137/6105&#93; Generating Resources/translations/TechDraw_ru.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_ru.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1725 translation(s) (1675 finished and 50 unfinished)
+
+> &#91;3138/6105&#93; Generating Resources/translations/TechDraw_sk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_sk.qm'...
+
+> Generated 1404 translation(s) (181 finished and 1223 unfinished)
+
+> &#91;3139/6105&#93; Generating Resources/translations/TechDraw_sl.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_sl.qm'...
+
+> Generated 1725 translation(s) (1456 finished and 269 unfinished)
+
+> &#91;3140/6105&#93; Generating Resources/translations/TechDraw_sr-CS.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_sr-CS.qm'...
+
+> Generated 1725 translation(s) (1648 finished and 77 unfinished)
+
+> &#91;3141/6105&#93; Generating Resources/translations/TechDraw_sr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_sr.qm'...
+
+> Generated 1725 translation(s) (1649 finished and 76 unfinished)
+
+> &#91;3142/6105&#93; Generating Resources/translations/TechDraw_sv-SE.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_sv-SE.qm'...
+
+> Generated 1725 translation(s) (1017 finished and 708 unfinished)
+
+> &#91;3143/6105&#93; Generating Resources/translations/TechDraw_tr.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_tr.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1725 translation(s) (1231 finished and 494 unfinished)
+
+> &#91;3144/6105&#93; Generating Resources/translations/TechDraw_uk.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_uk.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1725 translation(s) (722 finished and 1003 unfinished)
+
+> &#91;3145/6105&#93; Generating Resources/translations/TechDraw_vi.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_vi.qm'...
+
+> Generated 1477 translation(s) (385 finished and 1092 unfinished)
+
+> &#91;3146/6105&#93; Generating Resources/translations/TechDraw_val-ES.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_val-ES.qm'...
+
+> Removed plural forms as the target language has less forms.
+
+> If this sounds wrong, possibly the target language is not set or recognized.
+
+> Generated 1755 translation(s) (864 finished and 891 unfinished)
+
+> &#91;3147/6105&#93; Generating Resources/translations/TechDraw_zh-CN.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_zh-CN.qm'...
+
+> Generated 1725 translation(s) (744 finished and 981 unfinished)
+
+> &#91;3149/6105&#93; Generating Resources/translations/TechDraw_zh-TW.qm
+
+> Updating '/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Mod/TechDraw/Gui/Resources/translations/TechDraw_zh-TW.qm'...
+
+> Generated 1725 translation(s) (1675 finished and 50 unfinished)
+
+> &#91;3503/6105&#93; Building CXX object src/Mod/TechDraw/Gui/CMakeFiles/TechDrawGui.dir/DimensionValidators.cpp.o
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/Gui/DimensionValidators.cpp:736:17: ****warning: ****10 enumeration values not handled in switch: 'isInvalid', 'isCircle', 'isEllipse'... &#91;-Wswitch&#93;**
+
+> 736 | switch (geometry3d) {
+
+> |  **^~~~~~~~~~**
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Mod/TechDraw/Gui/DimensionValidators.cpp:749:17: ****warning: ****10 enumeration values not handled in switch: 'isInvalid', 'isCircle', 'isEllipse'... &#91;-Wswitch&#93;**
+
+> 749 | switch (geometry2d) {
+
+> |  **^~~~~~~~~~**
+
+> 2 warnings generated.
+
+> &#91;3643/6105&#93; Building C object src/MacAppBundle/QuickLook/CMakeFiles/QuicklookFCStd.dir/GenerateThumbnailForURL.m.o
+
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/MacAppBundle/QuickLook/GenerateThumbnailForURL.m:41:32: warning: 'QLThumbnailRequestCreateContext' is deprecated: first deprecated in macOS 12.0 - Use a QLThumbnailReply in a Thumbnail Extension to provide thumbnails for your file types. &#91;-Wdeprecated-declarations&#93;
+
+> 41 | CGContextRef cgContext = QLThumbnailRequestCreateContext(thumbnail, /\*maxSize\*/canvasSize, true, NULL);
+
+> | ^
+
+> /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QLGenerator.h:145:24: note: 'QLThumbnailRequestCreateContext' has been explicitly marked deprecated here
+
+> 145 | QL_EXPORT CGContextRef QLThumbnailRequestCreateContext(QLThumbnailRequestRef thumbnail, CGSize size, Boolean isBitmap, CFDictionaryRef properties) API_DEPRECATED("Use a QLThumbnailReply in a Thumbnail Extension to provide thumbnails for your file types.", macos(10.0, 12.0));
+
+> | ^
+
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/MacAppBundle/QuickLook/GenerateThumbnailForURL.m:50:9: warning: 'QLThumbnailRequestFlushContext' is deprecated: first deprecated in macOS 12.0 - Use a QLThumbnailReply in a Thumbnail Extension to provide thumbnails for your file types. &#91;-Wdeprecated-declarations&#93;
+
+> 50 | QLThumbnailRequestFlushContext(thumbnail, cgContext);
+
+> | ^
+
+> /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QLGenerator.h:153:16: note: 'QLThumbnailRequestFlushContext' has been explicitly marked deprecated here
+
+> 153 | QL_EXPORT void QLThumbnailRequestFlushContext(QLThumbnailRequestRef thumbnail, CGContextRef context) API_DEPRECATED("Use a QLThumbnailReply in a Thumbnail Extension to provide thumbnails for your file types.", macos(10.0, 12.0));
+
+> | ^
+
+> 2 warnings generated.
+
+> &#91;3645/6105&#93; Building C object src/MacAppBundle/QuickLook/CMakeFiles/QuicklookFCStd.dir/GeneratePreviewForURL.m.o
+
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/MacAppBundle/QuickLook/GeneratePreviewForURL.m:44:38: warning: 'QLPreviewRequestCreateContext' is deprecated: first deprecated in macOS 12.0 - Use a QLPreviewingController in a Preview Extension to provide previews for your file types. &#91;-Wdeprecated-declarations&#93;
+
+> 44 | CGContextRef cgContext = QLPreviewRequestCreateContext(preview, canvasSize, true, NULL);
+
+> | ^
+
+> /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QLGenerator.h:382:24: note: 'QLPreviewRequestCreateContext' has been explicitly marked deprecated here
+
+> 382 | QL_EXPORT CGContextRef QLPreviewRequestCreateContext(QLPreviewRequestRef preview, CGSize size, Boolean isBitmap, CFDictionaryRef properties) API_DEPRECATED("Use a QLPreviewingController in a Preview Extension to provide previews for your file types.", macos(10.0, 12.0));
+
+> | ^
+
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/MacAppBundle/QuickLook/GeneratePreviewForURL.m:52:17: warning: 'QLPreviewRequestFlushContext' is deprecated: first deprecated in macOS 12.0 - Use a QLPreviewingController in a Preview Extension to provide previews for your file types. &#91;-Wdeprecated-declarations&#93;
+
+> 52 | QLPreviewRequestFlushContext(preview, cgContext);
+
+> | ^
+
+> /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QLGenerator.h:402:16: note: 'QLPreviewRequestFlushContext' has been explicitly marked deprecated here
+
+> 402 | QL_EXPORT void QLPreviewRequestFlushContext(QLPreviewRequestRef preview, CGContextRef context) API_DEPRECATED("Use a QLPreviewingController in a Preview Extension to provide previews for your file types.", macos(10.0, 12.0));
+
+> | ^
+
+> 2 warnings generated.
+
+> &#91;6103/6105&#93; Building CXX object tests/CMakeFiles/Sketcher_tests_run.dir/src/Mod/Sketcher/App/SketchObjectChanges.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/tests/src/Mod/Sketcher/App/SketchObjectChanges.cpp:13:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/tests/src/App/InitApplication.h:9:13: ****warning: ****unused function 'initApplication' &#91;-Wunused-function&#93;**
+
+> 9 | static void initApplication()
+
+> |  **^~~~~~~~~~~~~~~**
+
+> 1 warning generated.
+
+> &#91;6104/6105&#93; Building CXX object tests/CMakeFiles/Sketcher_tests_run.dir/src/Mod/Sketcher/App/SketchObject.cpp.o
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/tests/src/Mod/Sketcher/App/SketchObject.cpp:11:
+
+> In file included from /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/tests/src/Mod/Sketcher/App/SketcherTestHelpers.h:14:
+
+> **/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/tests/src/App/InitApplication.h:9:13: ****warning: ****unused function 'initApplication' &#91;-Wunused-function&#93;**
+
+> 9 | static void initApplication()
+
+> |  **^~~~~~~~~~~~~~~**
+
+> 1 warning generated.
+
+> &#91;6105/6105&#93; Linking CXX executable tests/Sketcher_tests_run
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git %
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git %
+
+
+
+==&gt; It seems I now have two binaries build ok?
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git % find build -name "FreeCAD" -type f
+
+> build/bin/FreeCAD
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git % ls build/bin
+
+> FreeCAD FreeCADCmd
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git % ls -la build/bin
+
+> total 680
+
+> drwxr-xr-x 4 kjell-olovhogdahl staff 128 Mar 16 12:04 .
+
+> drwxr-xr-x 29 kjell-olovhogdahl staff 928 Mar 16 12:04 ..
+
+> -rwxr-xr-x 1 kjell-olovhogdahl staff 179944 Mar 16 12:04 FreeCAD
+
+> -rwxr-xr-x 1 kjell-olovhogdahl staff 165848 Mar 16 12:04 FreeCADCmd
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git %
+
+
+
+==&gt; And it seems it also RUNS!
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git % pixi run freecad
+
+> WARN Encountered ambiguous version specifier \`3.28.3\`, could be \`3.28.3.\*\` but assuming you meant \`==3.28.3\`. In the future this will result in an error.
+
+> WARN Encountered ambiguous version specifier \`3.13\`, could be \`3.13.\*\` but assuming you meant \`==3.13\`. In the future this will result in an error.
+
+> ✨ **Pixi task (****freecad****): ****build/bin/FreeCAD**
+
+> Error: Failed to open library "/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib"! Error: dlopen(/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib, 0x0005): tried: '/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib' (no such file), '/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib' (no such file)!
+
+> FreeCAD 1.1.0, Libs: 1.1.0devR40607 (Git)
+
+> (C) 2001-2025 FreeCAD contributors
+
+> FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+> **(qt.qpa.fonts) Populating font family aliases took 140 ms. Replace uses of missing font family "Courier" with one that exists to avoid this cost. **
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git %
+
+> ![PastedGraphic-1.png](PastedGraphic-1.png)
+
+==&gt; It seems this differs from my weekly built Freecad I downloaed previously?
+
+> ![PastedGraphic-2.png](PastedGraphic-2.png)
+
+==&gt; It seems cmake is still unable to generate a tool chain on my macOS apple silicone?
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD % mkdir xcode
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD % cd xcode
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/xcode % cmake ../FreeCAD-git -G "Xcode"
+
+> -- The C compiler identification is AppleClang 16.0.0.16000026
+
+> -- The CXX compiler identification is AppleClang 16.0.0.16000026
+
+> -- Detecting C compiler ABI info
+
+> -- Detecting C compiler ABI info - done
+
+> -- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang - skipped
+
+> -- Detecting C compile features
+
+> -- Detecting C compile features - done
+
+> -- Detecting CXX compiler ABI info
+
+> -- Detecting CXX compiler ABI info - done
+
+> -- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ - skipped
+
+> -- Detecting CXX compile features
+
+> -- Detecting CXX compile features - done
+
+> -- Compiler: AppleClang, version: 16.0.0.16000026
+
+> -- Looking for GL/gl.h
+
+> -- Looking for GL/gl.h - not found
+
+> -- Looking for C++ include istream
+
+> -- Looking for C++ include istream - found
+
+> -- Looking for C++ include ostream
+
+> -- Looking for C++ include ostream - found
+
+> -- Looking for C++ include fstream
+
+> -- Looking for C++ include fstream - found
+
+> -- Looking for C++ include sstream
+
+> -- Looking for C++ include sstream - found
+
+> -- Looking for C++ include ios
+
+> -- Looking for C++ include ios - found
+
+> -- Looking for C++ include iostream
+
+> -- Looking for C++ include iostream - found
+
+> -- Looking for C++ include iomanip
+
+> -- Looking for C++ include iomanip - found
+
+> -- Looking for C++ include iostream
+
+> -- Looking for C++ include iostream - found
+
+> -- Check for STD namespace
+
+> -- Check for STD namespace - found
+
+> -- Force BOOST_PP_VARIADICS=1 for clang
+
+> -- prefix: /usr/local
+
+> -- bindir: bin
+
+> -- datadir: share
+
+> -- docdir: share/doc/FreeCAD
+
+> -- includedir: include
+
+> -- libdir: lib
+
+> -- cmake: 3.31.6
+
+> -- Performing Test HAVE_STDATOMIC
+
+> -- Performing Test HAVE_STDATOMIC - Success
+
+> -- Compiling with Qt 6
+
+> -- Found Doxygen: /opt/homebrew/bin/doxygen (found version "1.13.2") found components: doxygen dot
+
+> -- find_package() was used to locate fmt version 11.1.4
+
+> -- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.13/bin/python3.13 (found version "3.13.2") found components: Interpreter Development Development.Module Development.Embed
+
+> -- Found XercesC: /opt/homebrew/lib/libxerces-c.dylib (found version "3.3.0")
+
+> -- Found ZLIB: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/libz.tbd (found version "1.2.12")
+
+> -- PyCXX found:
+
+> -- Headers: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/PyCXX
+
+> -- Sources: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/3rdParty/PyCXX/CXX
+
+> -- Version: 7.1.9
+
+> -- Found OCC: /opt/homebrew/include/opencascade (found version "7.9.0")
+
+> -- -- Found OpenCASCADE version: 7.9.0
+
+> -- -- OpenCASCADE include directory: /opt/homebrew/include/opencascade
+
+> -- -- OpenCASCADE shared libraries directory: /opt/homebrew/lib
+
+> -- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework
+
+> -- Found OpenGLU: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework
+
+> -- VTK components: CommonCore;CommonDataModel;FiltersVerdict;IOXML;FiltersCore;FiltersGeneral;IOLegacy;FiltersExtraction;FiltersSources;FiltersGeometry;hdf5;RenderingCore;InteractionStyle;RenderingFreeType;RenderingOpenGL2
+
+> -- Found Threads: TRUE
+
+> -- Found nlohmann_json: /opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.11.3")
+
+> -- Found HDF5: hdf5-shared (found version "1.14.6") found components: C HL
+
+> -- Found utf8cpp: /opt/homebrew/include/utf8cpp
+
+> -- Found PNG: /opt/homebrew/lib/libpng.dylib (found version "1.6.47")
+
+> -- Found Eigen3: /opt/homebrew/include/eigen3 (found version "3.4.0")
+
+> -- Found EXPAT: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/libexpat.tbd (found version "2.6.3")
+
+> -- Found LZ4: /opt/homebrew/lib/liblz4.dylib (found version "1.10.0")
+
+> -- Found LZMA: /opt/homebrew/lib/liblzma.dylib (found version "5.6.4")
+
+> -- Found JPEG: /opt/homebrew/lib/libjpeg.dylib (found version "80")
+
+> -- Found TIFF: /opt/homebrew/lib/libtiff.dylib (found version "4.7.0")
+
+> -- Could NOT find freetype (missing: freetype_DIR)
+
+> -- Found Freetype: /opt/homebrew/lib/libfreetype.dylib (found version "2.13.3")
+
+> -- Found double-conversion: /opt/homebrew/lib/libdouble-conversion.dylib
+
+> -- Check for medfile (libmed and libmedc) ...
+
+> CMake Error at cMake/FindMEDFile.cmake:47 (MESSAGE):
+
+> med.h not found, please install development header-files for libmedc
+
+> Call Stack (most recent call first):
+
+> cMake/FreeCAD_Helpers/SetupSalomeSMESH.cmake:82 (find_package)
+
+> CMakeLists.txt:94 (SetupSalomeSMESH)
+
+> -- Configuring incomplete, errors occurred!
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/xcode % ls
+
+> CMakeCache.txt CMakeDoxygenDefaults.cmake backtrace.cpp config.h
+
+> CMakeDoxyfile.in CMakeFiles cMake
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/xcode %
+
+==&gt; Now this is probably because 'cmake ../FreeCAD-git -G "Xcode"' will NOT know about pixi installed dependancies?
+
+==&gt; Trying a modified pixi call to cmake for XCode tool-chain also fails.
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git % cmake -B xcode -G "Xcode" --preset conda-macos-debug -DFREECAD_QT_VERSION=6 -DBUILD_REVERSEENGINEERING=OFF
+
+> Preset CMake variables:
+
+> BUILD_FEM_NETGEN:BOOL="ON"
+
+> BUILD_WITH_CONDA:BOOL="ON"
+
+> CMAKE_BUILD_TYPE:STRING="Debug"
+
+> CMAKE_EXPORT_COMPILE_COMMANDS:BOOL="ON"
+
+> CMAKE_IGNORE_PREFIX_PATH:STRING="/opt/homebrew;/usr/local/homebrew"
+
+> CMAKE_INCLUDE_PATH:FILEPATH="/include"
+
+> CMAKE_INSTALL_LIBDIR:FILEPATH="/lib"
+
+> CMAKE_INSTALL_PREFIX:FILEPATH=""
+
+> CMAKE_LIBRARY_PATH:FILEPATH="/lib"
+
+> CMAKE_PREFIX_PATH:FILEPATH=""
+
+> ENABLE_DEVELOPER_TESTS:BOOL="ON"
+
+> FREECAD_LIBPACK_USE:BOOL="OFF"
+
+> FREECAD_USE_EXTERNAL_FMT:BOOL="ON"
+
+> FREECAD_USE_EXTERNAL_SMESH:BOOL="ON"
+
+> FREECAD_USE_PCH:BOOL="OFF"
+
+> FREECAD_USE_PCL:BOOL="ON"
+
+> FREECAD_USE_PYBIND11:BOOL="ON"
+
+> OCCT_CMAKE_FALLBACK:BOOL="ON"
+
+> OCC_INCLUDE_DIR:FILEPATH="/include/opencascade"
+
+> QT_HOST_PATH:PATH=""
+
+> -- The C compiler identification is AppleClang 16.0.0.16000026
+
+> -- The CXX compiler identification is AppleClang 16.0.0.16000026
+
+> -- Detecting C compiler ABI info
+
+> -- Detecting C compiler ABI info - done
+
+> -- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang - skipped
+
+> -- Detecting C compile features
+
+> -- Detecting C compile features - done
+
+> -- Detecting CXX compiler ABI info
+
+> -- Detecting CXX compiler ABI info - done
+
+> -- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ - skipped
+
+> -- Detecting CXX compile features
+
+> -- Detecting CXX compile features - done
+
+> -- Compiler: AppleClang, version: 16.0.0.16000026
+
+> -- Looking for GL/gl.h
+
+> -- Looking for GL/gl.h - not found
+
+> -- Looking for C++ include istream
+
+> -- Looking for C++ include istream - found
+
+> -- Looking for C++ include ostream
+
+> -- Looking for C++ include ostream - found
+
+> -- Looking for C++ include fstream
+
+> -- Looking for C++ include fstream - found
+
+> -- Looking for C++ include sstream
+
+> -- Looking for C++ include sstream - found
+
+> -- Looking for C++ include ios
+
+> -- Looking for C++ include ios - found
+
+> -- Looking for C++ include iostream
+
+> -- Looking for C++ include iostream - found
+
+> -- Looking for C++ include iomanip
+
+> -- Looking for C++ include iomanip - found
+
+> -- Looking for C++ include iostream
+
+> -- Looking for C++ include iostream - found
+
+> -- Check for STD namespace
+
+> -- Check for STD namespace - found
+
+> -- Force BOOST_PP_VARIADICS=1 for clang
+
+> -- prefix:
+
+> -- bindir: bin
+
+> -- datadir: share
+
+> -- docdir: share/doc/FreeCAD
+
+> -- includedir: include
+
+> -- libdir: /lib
+
+> -- cmake: 3.31.6
+
+> -- Compiling with Qt 6
+
+> -- Found Doxygen: /opt/homebrew/bin/doxygen (found version "1.13.2") found components: doxygen dot
+
+> -- Checking for connection to GitHub...
+
+> -- GitHub connection established for FetchContent
+
+> -- Module support is disabled.
+
+> -- Version: 9.1.0
+
+> -- Build type: Debug
+
+> -- CXX_STANDARD: 20
+
+> -- Performing Test has_std_20_flag
+
+> -- Performing Test has_std_20_flag - Success
+
+> -- Performing Test has_std_2a_flag
+
+> -- Performing Test has_std_2a_flag - Success
+
+> -- Required features: cxx_variadic_templates
+
+> -- Performing Test HAS_NULLPTR_WARNING
+
+> -- Performing Test HAS_NULLPTR_WARNING - Success
+
+> -- fmt was downloaded using FetchContent into /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/xcode/_deps/fmt-src
+
+> CMake Error at cMake/FreeCAD_Helpers/SetupLibYaml.cmake:3 (find_package):
+
+> By not providing "Findyaml-cpp.cmake" in CMAKE_MODULE_PATH this project has
+
+> asked CMake to find a package configuration file provided by "yaml-cpp",
+
+> but CMake did not find one.
+
+> Could not find a package configuration file provided by "yaml-cpp" with any
+
+> of the following names:
+
+> yaml-cppConfig.cmake
+
+> yaml-cpp-config.cmake
+
+> Add the installation prefix of "yaml-cpp" to CMAKE_PREFIX_PATH or set
+
+> "yaml-cpp_DIR" to a directory containing one of the above files. If
+
+> "yaml-cpp" provides a separate development package or SDK, be sure it has
+
+> been installed.
+
+> Call Stack (most recent call first):
+
+> CMakeLists.txt:78 (SetupYamlCpp)
+
+> -- Configuring incomplete, errors occurred!
+
+> kjell-olovhogdahl@MacBook-Pro ~/FreeCAD/FreeCAD-git %
+
+
+
+==&gt; If I compare it with the cmake output that succeeded above it is obvious all pixi cmake prefix paths are missing.
+
+> ✨ **Pixi task (****configure****): ****cmake -B build --preset conda-macos-debug -DFREECAD_QT_VERSION=6 -DBUILD_REVERSEENGINEERING=OFF**
+
+> Preset CMake variables:
+
+> BUILD_FEM_NETGEN:BOOL="ON"
+
+> BUILD_WITH_CONDA:BOOL="ON"
+
+> CMAKE_BUILD_TYPE:STRING="Debug"
+
+> CMAKE_EXPORT_COMPILE_COMMANDS:BOOL="ON"
+
+> CMAKE_IGNORE_PREFIX_PATH:STRING="/opt/homebrew;/usr/local/homebrew"
+
+> CMAKE_INCLUDE_PATH:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include"
+
+> CMAKE_INSTALL_LIBDIR:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib"
+
+> CMAKE_INSTALL_PREFIX:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default"
+
+> CMAKE_LIBRARY_PATH:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/lib"
+
+> CMAKE_PREFIX_PATH:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default"
+
+> ENABLE_DEVELOPER_TESTS:BOOL="ON"
+
+> FREECAD_LIBPACK_USE:BOOL="OFF"
+
+> FREECAD_USE_EXTERNAL_FMT:BOOL="ON"
+
+> FREECAD_USE_EXTERNAL_SMESH:BOOL="ON"
+
+> FREECAD_USE_PCH:BOOL="OFF"
+
+> FREECAD_USE_PCL:BOOL="ON"
+
+> FREECAD_USE_PYBIND11:BOOL="ON"
+
+> OCCT_CMAKE_FALLBACK:BOOL="ON"
+
+> OCC_INCLUDE_DIR:FILEPATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/opencascade"
+
+> QT_HOST_PATH:PATH="/Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default"
+
+> -- Using ccache found at: /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/bin/ccache
+
+> ...
+
+> vs.
+
+> ...
+
+> BUILD_FEM_NETGEN:BOOL="ON"
+
+> BUILD_WITH_CONDA:BOOL="ON"
+
+> CMAKE_BUILD_TYPE:STRING="Debug"
+
+> CMAKE_EXPORT_COMPILE_COMMANDS:BOOL="ON"
+
+> CMAKE_IGNORE_PREFIX_PATH:STRING="/opt/homebrew;/usr/local/homebrew"
+
+> CMAKE_INCLUDE_PATH:FILEPATH="/include"
+
+> CMAKE_INSTALL_LIBDIR:FILEPATH="/lib"
+
+> CMAKE_INSTALL_PREFIX:FILEPATH=""
+
+> CMAKE_LIBRARY_PATH:FILEPATH="/lib"
+
+> CMAKE_PREFIX_PATH:FILEPATH=""
+
+> ENABLE_DEVELOPER_TESTS:BOOL="ON"
+
+> FREECAD_LIBPACK_USE:BOOL="OFF"
+
+> FREECAD_USE_EXTERNAL_FMT:BOOL="ON"
+
+> FREECAD_USE_EXTERNAL_SMESH:BOOL="ON"
+
+> FREECAD_USE_PCH:BOOL="OFF"
+
+> FREECAD_USE_PCL:BOOL="ON"
+
+> FREECAD_USE_PYBIND11:BOOL="ON"
+
+> OCCT_CMAKE_FALLBACK:BOOL="ON"
+
+> OCC_INCLUDE_DIR:FILEPATH="/include/opencascade"
+
+> QT_HOST_PATH:PATH=""
+
+**==&gt; CONSIDER TO EDIT CODE WITH VSCODE?**
+
+==&gt; I think I have found main() for GUI version of Freecad in repo src/Main/MainGui.cpp?
+
+> ![PastedGraphic-3.png](PastedGraphic-3.png)
+
+==&gt; And it seems I can now build from VSCode after having added build task that calls pixi?
+
+> {  
+> // See https://go.microsoft.com/fwlink/?LinkId=733558  
+> // for the documentation about the tasks.json format  
+> "version": "2.0.0",  
+> "tasks": &#91;  
+> {  
+> "label": "Pixi Build",  
+> "type": "shell",  
+> "command": "pixi",  
+> "args": &#91;  
+> "run",  
+> "build"  
+> &#93;,  
+> "group": {  
+> "kind": "build",  
+> "isDefault": true  
+> },  
+> "problemMatcher": &#91;&#93;,  
+> "detail": "Run pixi run build"  
+> }  
+> &#93;  
+> }
+
+...
+
+> \* Executing task: pixi run build
+
+> WARN Encountered ambiguous version specifier \`3.28.3\`, could be \`3.28.3.\*\` but assuming you meant \`==3.28.3\`. In the future this will result in an error.  
+> WARN Encountered ambiguous version specifier \`3.13\`, could be \`3.13.\*\` but assuming you meant \`==3.13\`. In the future this will result in an error.  
+> ✨ Pixi task (build): cmake --build build  
+> &#91;1/68&#93; Generating version_file  
+> git  
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/build/src/Build/Version.h.out written  
+> &#91;3/4&#93; Building CXX object src/Main/CMakeFiles/FreeCADMain.dir/MainGui.cpp.o  
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/src/Main/MainGui.cpp:269:58: warning: 'Py_GetPath' is deprecated &#91;-Wdeprecated-declarations&#93;  
+> 269 | QString::fromUtf8(Py_EncodeLocale(Py_GetPath(), nullptr)),  
+> | ^  
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pylifecycle.h:46:1: note: 'Py_GetPath' has been explicitly marked deprecated here  
+> 46 | Py_DEPRECATED(3.13) PyAPI_FUNC(wchar_t \*) Py_GetPath(void);  
+> | ^  
+> /Users/kjell-olovhogdahl/FreeCAD/FreeCAD-git/.pixi/envs/default/include/python3.13/pyport.h:251:54: note: expanded from macro 'Py_DEPRECATED'  
+> 251 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))  
+> | ^  
+> 1 warning generated.  
+> &#91;4/4&#93; Linking CXX executable bin/FreeCAD  
+> \* Terminal will be reused by tasks, press any key to close it.
+
+...
+
+{% endraw %}

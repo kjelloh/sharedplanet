@@ -1,0 +1,21 @@
+﻿
+1) Consider youtube video "USB Type-C Power Delivery Trigger Board || DIY or Buy" (https://youtu.be/DQLrZA5RMjQ?t=61 )?
+
+	
+
+	==> He seems to be using a board labelled ZY12PDN?
+
+2) Consider youtube video "Building DIY LED lights" (https://www.youtube.com/watch?v=Y06VHj1GvLI )?
+
+	
+	==> He seems to be using the same ZY12PDN??
+
+3) Consider the ZY12PDN available from Aliexpress (https://www.aliexpress.com/item/4001244296837.html?spm=a2g0o.productlist.0.0.4fb732d0dRPXqh&algo_pvid=39bae0c0-57fb-46f1-8327-73dda1fa9164&algo_exp_id=39bae0c0-57fb-46f1-8327-73dda1fa9164-11 )?
+
+	
+
+
+...
+	
+
+

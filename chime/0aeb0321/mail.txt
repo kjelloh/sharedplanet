@@ -1,0 +1,15 @@
+﻿
+1) LosslessCut seems to live here on Github (https://github.com/mifi/lossless-cut <https://github.com/mifi/lossless-cut> )?
+
+	==> It seems I can download a pre-built binary for Mac OS for free (https://github.com/mifi/lossless-cut/releases/latest/download/LosslessCut-mac.dmg <https://github.com/mifi/lossless-cut/releases/latest/download/LosslessCut-mac.dmg> )?
+
+2) It seems LosslessCut has this dedicated home page (https://mifi.no/losslesscut/ <https://mifi.no/losslesscut/> )?
+
+
+The LosslessCut app to cut video at key-frames to NOT re-encode clips
+
+3) It seems I can "donate" by buying LosslessCut from Apple app-store (https://apps.apple.com/app/id1505323402 <https://apps.apple.com/app/id1505323402> )?
+
+4) Consider this youtube video showing februari 2020 release features (https://youtu.be/IPQymOSei_Q <https://youtu.be/IPQymOSei_Q> )?
+
+...

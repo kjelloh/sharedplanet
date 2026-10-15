@@ -1,0 +1,13 @@
+﻿Could we argue that a Darwinet MIV is actually immutable in that each Delta in fact creates a new MIV (the MIV as it is in the new state)?
+
+1) Consider to relate to this talk at roughly 36:00 where she talks about the Elm language UI model (https://www.youtube.com/watch?v=X25xOhntr6s)? 
+
+	==> Consider this Elm Immutable Model View to be how we actually would like a Darwinet MIV view should behave? 
+
+	
+
+	==> ”Events” in Darwinet are in fact Deltas (locally or network received)?
+	==> ”Immutable MODEL” in Darwinet is the MIV?
+	==> ”Update Function” is in Darwinet the application of the received Deltas?
+
+...

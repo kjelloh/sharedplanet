@@ -1,0 +1,95 @@
+﻿Maybe we can home in on how to model C++ Tha by identifying the meta agnostic operators and semantics (syntax)?
+
+1) Consider what meta-agnostic C++ type system operators and semantics we can imagine to re-use in meta-scopes?
+
+	==> Consider "auto"?
+
+Consider we may view the "auto" as an inference operator. By using auto we may tell the interpreter to infer a meta-object from the provided defacto expression.
+
+	==> Consider "using"?
+
+It seems we should be able to view "using" as an alias operator. With "using" we can give a defacto name to a defacto expression?
+
+	==> Consider the "lambda syntax"?
+
+Maybe we should be able to re-use the lambda syntax on any meta level? The lambda syntax allows us to express a defacto capture (environment binding), an argument meta-defacto namespace (call site defacto binding) and the body meta-defactor namespace plus operative commands.
+
+	==> Consider the meta-defacto binding "declaration"?
+
+The most basic type system operator seems to be the meta-defacto binding where we declare a named defacto to be a member of a named meta SET.
+
+	==> Consider the defacto construction (instantiation or actualisation) "definition"?
+
+Having a previous meta-defacto declaration or used directly in such a declaration we can view a definition as instantiating the data framed by a defacto object.
+
+
+2) Consider is "namespace" is a constructor or a naming composition operator (in fact "just" a meta-defacto PRODUCT "type")?
+
+	...
+
+3) Consider c++ specification on "auto" (https://en.cppreference.com/w/cpp/language/auto <https://en.cppreference.com/w/cpp/language/auto> )?
+
+	
+
+4) Consider C++ specification on "using" (https://en.cppreference.com/w/cpp/keyword/using <https://en.cppreference.com/w/cpp/keyword/using> )?
+
+	==> Consider using namespace (https://en.cppreference.com/w/cpp/language/namespace <https://en.cppreference.com/w/cpp/language/namespace> )?
+
+	==> Consider the using declaration (https://en.cppreference.com/w/cpp/language/using_declaration <https://en.cppreference.com/w/cpp/language/using_declaration> )?
+
+	==> Consider the type alias and alias template (https://en.cppreference.com/w/cpp/language/type_alias <https://en.cppreference.com/w/cpp/language/type_alias> )?
+
+5) Consider C++ specification on lamdas (https://en.cppreference.com/w/cpp/language/lambda <https://en.cppreference.com/w/cpp/language/lambda> )?
+
+	
+
+6) Consider c++ specification on declarations (https://en.cppreference.com/w/cpp/language/declarations <https://en.cppreference.com/w/cpp/language/declarations> )?
+
+"Declarations introduce (or re-introduce) names into the C++ program. Each kind of entity is declared differently. Definitions <https://en.cppreference.com/w/cpp/language/definition> are declarations that are sufficient to use the entity identified by the name. 
+A declaration is one of the following:
+Function definition <https://en.cppreference.com/w/cpp/language/function#Function_definition>
+Template declaration <https://en.cppreference.com/w/cpp/language/templates> (including Partial template specialization <https://en.cppreference.com/w/cpp/language/partial_specialization>)
+Explicit template instantiation <https://en.cppreference.com/w/cpp/language/class_template#Explicit_instantiation>
+Explicit template specialization <https://en.cppreference.com/w/cpp/language/template_specialization>
+Namespace definition <https://en.cppreference.com/w/cpp/language/namespace>
+Linkage specification <https://en.cppreference.com/w/cpp/language/language_linkage>
+Attribute declaration (attr <https://en.cppreference.com/w/cpp/language/attributes> ;) (since C++11)
+Empty declaration (;) (since C++11)
+A function declaration without a decl-specifier-seq:"
+
+7) Consider C++ variables and types basics (http://www.cplusplus.com/doc/tutorial/variables/ <http://www.cplusplus.com/doc/tutorial/variables/> )?
+
+	==> Consider the "built in" c++ types (meta values)?
+
+"Here is the complete list of fundamental types in C++:
+Group	Type names*	Notes on size / precision
+Character types	char	Exactly one byte in size. At least 8 bits.
+char16_t	Not smaller than char. At least 16 bits.
+char32_t	Not smaller than char16_t. At least 32 bits.
+wchar_t	Can represent the largest supported character set.
+Integer types (signed)	signed char	Same size as char. At least 8 bits.
+signed short int	Not smaller than char. At least 16 bits.
+signed int	Not smaller than short. At least 16 bits.
+signed long int	Not smaller than int. At least 32 bits.
+signed long long int	Not smaller than long. At least 64 bits.
+Integer types (unsigned)	unsigned char	(same size as their signed counterparts)
+unsigned short int
+unsigned int
+unsigned long int
+unsigned long long int
+Floating-point types	float	
+double	Precision not less than float
+long double	Precision not less than double
+Boolean type	bool	
+Void type	void	no storage
+Null pointer	decltype(nullptr)	
+
+* The names of certain integer types can be abbreviated without their signed and int components - only the part not in italics is required to identify the type, the part in italics is optional. I.e., signed short int can be abbreviated as signed short, short int, or simply short; they all identify the same fundamental type."
+
+8) Consider C++  user defines literals (https://en.cppreference.com/w/cpp/language/user_literal <https://en.cppreference.com/w/cpp/language/user_literal> )?
+
+	
+
+
+
+...

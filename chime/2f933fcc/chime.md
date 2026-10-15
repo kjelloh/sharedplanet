@@ -1,0 +1,20 @@
+# Todo: Consider a 3D modelling tool in which we can model also manual manufacturing using hand tools?
+
+```#2f933fcc``` *As of 2021-07-27 01:06*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+> *The basic idea is that I want to be able to plan how to manufacture say a cabinet in the 3D modelling tool in which I designed the thing.*
+
+> *Like, I want to model how to cut up sheet goods. Not only the cut-list, but also the löayout and the order of cuts and the tools to use to make the cuts.*
+
+> *So if I plan to use a track saw I want to imagine and try out in what order to make the cuts to get the pieces I designed.*
+
+> *I think it would be nice to look at the manufacturing phase as no different as designing a tool path for CNC machining or the slicing of a model for 3D printing.*
+
+> *What we in fact are doing is manifesting the thing we have designed in our 3D modelling program in physical reality. And we can make the modelling software help us model how to apply physical tools to physical objects to make the thing become a real physical object!*
+
+> *...*
+
+{% endraw %}

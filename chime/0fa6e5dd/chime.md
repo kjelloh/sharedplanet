@@ -1,0 +1,106 @@
+# Todo: Programming - Consider to understand std::enable_if and the SFINAE idiom and what to use it for?
+
+```#0fa6e5dd``` *As of 2016-08-04 14:44*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to understand the SFINAE idiom and how and when to apply it to expose or hide members of the generated code?
+
+1) Consider this article as a good start to understand the SFINAE idiom ([https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/SFINAE](https://en.wikibooks.org/wiki/More_C++_Idioms/SFINAE))?
+
+==&gt; SFINAE seems to be an abbreviation for ”Substitution Failure Is Not An Error”?
+
+==&gt; The idiom seem to exploit the fact that a failure to instantiate a template specialization candidate is not an error?
+
+==&gt; Invalid returns type of template function or method is not an error (simply ignored as candidate)
+
+==&gt; Invalid template function or method parameter is not an error (simply ignored as candidate)
+
+> > *”If an invalid argument or return type is formed during the instantiation of a function template, the instantiation is removed from the overload resolution set instead of causing a compilation error. As long as there is one and only one function to which the call can be dispatched, the compiler issues no errors."*
+
+==&gt; In this example the template candidate fails to instantiate as client call uses parameter type int that does not have member ”multiplication_result” and thus the template function return type is illformed.
+
+> > ```
+> > long multiply(int i, int j) { return i * j; }
+
+> > template <class T>
+> > typename T::multiplication_result multiply(T t1, T t2)
+> > {
+> >   return t1 * t2;
+> > }
+> > int main(void)
+> > {
+> >   multiply(4,5); // template multiply<int> discarded as return type int::multiplication_result is invalid
+
+> > }
+> > ```
+
+  
+> > *”*  
+> > *Calling function multiply in main causes the compiler to instantiate the signature of the templatized function even though the first multiplyfunction is a better match. During instantiation an invalid type is produced: int::multiplication_result. Due to SFINAE, however, the invalid instantiation is neglected automatically. At the end, there is exactly one multiply function that can be called. So the compilation is successful.*  
+> > *" *
+
+==&gt; This seem to be an example of two step template instantiation based on SFINAE selected constructor return type?
+
+> > ```
+> > template <class T>
+> > struct is_pointer
+> > {
+> >   template <class U>
+> >   static char is_ptr(U *);
+
+> >   template <class X, class Y>
+> >   static char is_ptr(Y X::*);
+
+> >   template <class U>
+> >   static char is_ptr(U (*)());
+
+> >   static double is_ptr(...);
+
+> >   static T t;
+> >   enum { value = sizeof(is_ptr(t)) == sizeof(char) };
+> > };
+
+> > ```
+
+
+
+==&gt; It is a meta-function returning type dependent value (evaluates to true if matched constructor returns a type of size char)?
+
+==&gt; Constructor instantiation uses SFINAE to select only the one matching the instantiation parameter T to constructor parameter expression
+
+U\* ==&gt; matches pointer to U
+
+Y X::\* ==&gt; Matches member X pointer
+
+U (\*)()) ==&gt; Matches function pointer (function taking no parameters)
+
+2) Consider this page as a good start on enable_if and SFINAE ([https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/enable-if](https://en.wikibooks.org/wiki/More_C++_Idioms/enable-if))?
+
+==&gt; It seems the enable_if is a convenient meta-function that returns an invalid type if the provided condition is false
+
+==&gt; It seems we thus may use std__enable_if to invalidate return type or parameter type to have template instation remove it depending on applied type?
+
+> ```
+> template <class T>
+> typename enable_if<is_arithmetic<T>::value, T>::type
+> foo(T t) { // … return t;}
+> ```
+
+  
+> ```
+> template <class T>
+> T foo(T t, typename enable_if<is_arithmetic<T>::value >::type* dummy = 0);
+> ```
+
+  
+> ==&gt; It seems in case 1 the return type and in case 2 the second parameter will be of invalid type if the applied template parameter is not ”arithmetic” (that is, an integral type or a floating-point type)?
+
+…
+
+Consider to delve into SFINAE and std::enable_if idiom when more applicable information is found?
+
+...
+
+{% endraw %}

@@ -1,0 +1,50 @@
+# Todo: Meta Value Model - Consider to refer to Meta Value Model as "Tha" and the programming language to operate on it for "Meh" (In effect Meh operates on Tha, thus "MehTha")?
+
+```#c6a21306``` *As of 2017-06-18 12:05*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider from now on we refer to the Mata Value Model as ”the Tha” or ”a Tha” and the programming language to operate on it for ”Meh” so that Meh operates on Tha and becomes ”Meh-Tha”, thus ”Meta"?
+
+1) It seems in this way we have a way to talk about Meh (the language) and Tha (the environment for Meh) in a clear way?
+
+…
+
+2) Consider a Tha instance is in fast a Meta Value System (not a Meta Value Model)?
+
+==&gt; Consider a System is something that has structure and behavior (<https://en.wikipedia.org/wiki/System>)?
+
+> ”*In computer science and information science, system is a software system which has components as its structure and observable inter-process communications as its behavior.*"
+
+==&gt; Consider Tha is an Object System of the same reason Common Lisp Object System (CLOS) is a System (<https://en.wikipedia.org/wiki/Common_Lisp_Object_System>)?
+
+==&gt; Thus, Tha would be able to implement CLOS?
+
+==&gt; In Fact, Tha would be able to model any programming language Object System (memory management)
+
+==&gt; Note: C++ defines a ”memory Model” that seems to be isomorphic to an object system but manifested into the compiled code (<http://en.cppreference.com/w/cpp/language/memory_model>)?
+
+...
+
+==&gt; Consider a model is some representation (or abstraction) of the structure and behavior of a System (<https://en.wikipedia.org/wiki/Conceptual_model>)?
+
+> ”*A conceptual model is a representation of a system, made of the composition of concepts which are used to help people know, understand, or simulate a subject the model represents.*"
+
+==&gt; Consider the Tha Model is a representation of a Tha (the system) structure and behavior?
+
+==&gt; Thus ”the or a Tha” is an actual instance (the system) of the Tha model (defining system structure and behavior)
+
+...
+
+2) Consider to label the Todo: entries with ”Todo: Meh - ” and ”Todo: Tha - ” for posts referring to them?
+
+…
+
+…
+
+Consider to elaborate on this idea to name the language Meh and the meta value system
+
+...
+
+{% endraw %}

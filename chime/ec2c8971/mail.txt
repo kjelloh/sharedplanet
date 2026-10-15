@@ -1,0 +1,11 @@
+﻿Could we imagine to actually use a self balancing electric cycle wheel as the power feeder drive?
+
+1) Consider this e-bay wheel (https://www.ebay.com/itm/Pair-of-6-5-Motor-Wheel-For-Self-Balancing-Electric-Cycle-Replacement-Wheel-AU/162936498584?hash=item25efc5a998:g:nJoAAOSwOtVaodka)?
+
+	==> It is actually over-powered for our power feeder (350W)?
+
+	
+
+	…
+
+...

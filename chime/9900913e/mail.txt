@@ -1,0 +1,9 @@
+﻿Consider to follow up on this note from 14 mars 2015 (sent from iPhone)
+
+1) Branching is detectable on main trail and individual MIV trail.
+2) To store several branched trail States only the branched MIVs States is needed.
+3) Individual MIVs in same state may be merged. Mechanism? Locally generated merge-Deltas?
+4) Two trails are branched as long as at least one MIV state differs.
+5) If all MIVs in two trails have same state then they may be automatically merged. Mechanism? Shared merge-Delta?
+
+Skickat från min iPhone

@@ -1,0 +1,133 @@
+﻿It seems I should just put down some design notes and required measurements to carry in the back of my mind until it’s time to build the workbench and mount the vises?
+
+	==> Also see “Files ready for download — Online Store"
+	==> Also see “Project Update #3: Twin Turbo Vise by Inkleind llc”
+	==> Also see “Yes! Twin Turbo Vise has been successfully funded.” 7 April 2019 17:31
+	==> Also see “Yes! Twin Turbo Vise has been successfully funded.” 7 April 2019 08:05
+	==> Also see “Project Update #2: Twin Turbo Vise by Inkleind llc”
+	==> Also see “You just backed Twin Turbo Vise”
+
+1) Consider what I need to know to be able to mount these vises onto a workbench?
+
+	==> It seems I have pledged for one 14” and one 24” Twin Turbo Vise (See “”)
+
+Amount pledged 
+$840.00
+
+Reward 
+$840.00
+
+14" and 24" Twin Turbo Vises ($550)
+
+The large and small vises, good for a wide bench that doesn't need a big front vise. Your bench should be 20" wide and 4" thick to use the 24" vise as an end vise. If you have the width but not the thickness you can use some riser blocks on the threaded rod nuts and bushings to make it work.
+
+INCLUDES:
+14" Twin Turbo Vise
+24" Twin Turbo Vise
+4× 10" x 30" cork rubber
+Estimated delivery 
+Oct 2019
+
+Shipping to 
+Sweden ($290)
+
+
+	==> It seems I have received the plans provided by Inkleind IIC as ordered from (See 
+
+Files ready for download
+Online Store
+Hello Kjell-Olov Högdahl,
+Your order  #472 <https://www.in-kleind.com/store/account/orders?keywords=472&offset=0> on Apr 16, 2019 has been paid. The following files are ready for download. The download links expire in 72 hours.
+Twin Turbo Vise Planning Dimensions
+14%22 TTV dimension planning <http://store16152324.multiscreenstore.com/download/16152324/4690a752bedca9eae5d6ae2fb3a45892/14%2522%20TTV%20dimension%20planning.pdf> (PDF, 2.04M)
+Screw Length Under Bench <http://store16152324.multiscreenstore.com/download/16152324/8a15401d109a8151cf9427c3ce13e0c7/Screw%20Length%20Under%20Bench.pdf> (PDF, 3.08M)
+24%22 TTV dimension planning <http://store16152324.multiscreenstore.com/download/16152324/c11f88daae1dc439ac6c0f517fa7731f/24%2522%20TTV%20dimension%20planning.pdf> (PDF, 1.79M)
+20%22 TTV dimension planning <http://store16152324.multiscreenstore.com/download/16152324/6bcf44b760104e111439c56f6c20beb1/20%2522%20TTV%20dimension%20planning.pdf> (PDF, 1.86M)
+	
+
+
+	==> It seems I need to actual design also the wooden jaws of the vise (the vise comes only as the mechanical parts and I have to provide the actual jaws in which they operate)?
+
+	==> It seems the vises are dimensioned according the the distance between the jaw screws (the distance between the center of the two screws that operates the jaws of the vise)?
+
+	==> It seems the workbench for my 14” vise needs to be thicker than 2 1/16” to enable me to mount it to the table top underside without the vise front sticks up above the table top?
+	==> It seems the workbench for my 24” vise needs to be thicker than 3 7/8” to enable me to mount it to the table top underside without the vise front sticks up above the table top?
+
+To mount the two vises I bought, the 14” vise requires table top thickness larger than 2 1/16” (50,8 + 1,59 mm = 52,39 mm) and the 24” vise requires a table top thickness larger than 3 7/8” (76,2 + 22,225 = 98,425 mm)
+
+Now I can solve this by mounting the vises on underneath spacers? Because a table top thickness of around 12 cm is abut much is it not?
+
+	==> I seems I should imagine to mount the vise jaw in some framing wood (where the wood frame mist be strong enough to allow clamping with the vise)?
+
+The 14” vise is stated to be 17” (431,8 mm) and the 24” vise is 28 15/16” (711,2 + 381/406,4 = 711,2 + 0,94 mm = 712,14 mm)
+
+I may be tempted to mount the 24” vise as an end vise but that would mean a workbench at least 75 cm deep. Well that’s quite reasonable is it not?
+
+The absolute smallest (unpractically small) workbench would need to be 44 cm by 72 cm. And if we add a rim to the vise jaws of 10 mm we get the smallest bench to be 45 cm by 74 cm (rounded off to nearest cm).
+
+We can compare with The 125 kg Sjöbergs Elite 2000 with 600 mm deep and 85 mm thick table top. My 24” vise is larger and thicker.
+
+	==> Can we imagine a workbench where we can fill the table top with sand to add weight once it is in place. Then we could also empty it of sand when we like to move it?
+
+	==> Don’t forget to design the wooden jaw to have wholes for bench dogs (to allow clamping of material on the workbench surface?
+
+With the Twin Turbo Vise we can’t mount the two bench dogs so they collide with the two clamping screws! The standard vise design has the clamping screw in the middle and thus the whole for the bench dogs can go on each side. Consider a design with one central and two side mounted bench dogs?
+
+For the Twin Turbo Vise the mechanism takes up the whole width of the jaw making it more difficult to find space for wholes for bench dogs. The bench dog wholes should ideally go all the way through the jaws? For this to be possible for the Twin Turbo Vise jaws the wholes for the bench dogs must go in front of or behind the actual clamping mechanism.
+
+It can’t see there is any standard on bench dog dimensions but Sjöbergs bench dogs seem to be around 15..19 mm and thus they would fit in a 20 mm whole? This seems to be roughly the same dimensions (20 mm) that UK based “Benchdogs” as praised by Peter Millard on youtube (https://benchdogs.co.uk) are? I get the impression that the 20mm bench dog whole dimensions come from them being that size on Festools Multifunction Slab Tops (MFST)?
+
+A 20 mm bench dog whole would require some additional wood to cover the whole. Say the thickness added to the vise jaw has to be at least 30 mm?
+
+1) The kickstarter campaign for the Twin Turbo Vises seems to live here (https://www.kickstarter.com/projects/2121995757/twin-turbo-vise <https://www.kickstarter.com/projects/2121995757/twin-turbo-vise>)?
+
+	
+
+2) The exact dimensions of the Twin Turbo Vises seems to be available here (https://www.in-kleind.com/store/Free-Plans-and-Downloads-c34081001 <https://www.in-kleind.com/store/Free-Plans-and-Downloads-c34081001> )?
+
+	==> It seems I have to “order” the plans, although no payment is required (so I did 190416)
+
+	
+	
+
+	
+
+3) Consider the explanatory youtube video “Wait, how big are these vises?” (https://www.youtube.com/watch?v=Uwhqz6qI8Dc&feature=youtu.be <https://www.youtube.com/watch?v=Uwhqz6qI8Dc&feature=youtu.be> )?
+
+	
+	Dimensions of smallest Twin Turbo Vise with 14” between screw centers
+
+	==> It seems one crucial measurement is from underside the workbench and the top of the vise front (and it is different between the different vise seizes)?
+
+	==> It seems the workbench for my 14” vise needs to be thicker than 2 1/16” to enable me to mount it to the table top underside without the vise front sticks up above the table top?
+
+“...The top of the nut and the bushing and the top of the front of the vise…"
+
+“…and because you not gonna want an open top to these vises you’re gonna want a little bit more than 2 1/16” of bench thickness for this vise to work..."
+
+		==> This seems to mean that if I mount the 14” vise to the underside of the workbench the thickness of the bench top must be at least 2 1/16” (50,8 + 1,59 mm = 52,39 mm)?
+
+	==> It seems the workbench for the 20” vise needs to be thicker than 3 1/8” to enable me to mount it to the table top underside without the vise front sticks up above the table top?
+
+	 
+	Dimensions of the middle sized Twin Turbo Vise with 20” between the screw centers
+
+
+	==> It seems the workbench for my 24” vise needs to be thicker than 3 7/8” to enable me to mount it to the table top underside without the vise front sticks up above the table top?
+
+	
+	
+	Dimensions of the large Twin Turbo Vise with 24” between the screw centers
+	
+
+	
+	Possible “open sides” jaw design with the vise mounted to wood with the same width as the vise
+
+4) Consider to compare with existing woodworking workbenches?
+
+	==> Consider the measurements and design of Sjöberg (https://www.sjobergs.se/sortiment/proffs/index.php?id=1029&cat=16&lang=se&artnr=33458 <https://www.sjobergs.se/sortiment/proffs/index.php?id=1029&cat=16&lang=se&artnr=33458> )?
+
+	
+	The 125 kg Sjöbergs Elite 2000 with 600 mm deep and 85 mm thick table top. 
+
+...

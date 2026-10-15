@@ -1,0 +1,20 @@
+# Todo: Darwinet - Consider to self-organize node-to-node paths using "ant trails"?
+
+```#b6738f87``` *As of 2015-09-26 23:23*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I know I made an entry about the ”ant trailing” mechanism and its possible relation to Darwinet routing.
+
+1) Find the original Todo about this and relate it to this one.  
+2) Could we apply this algorithm to each node-to-node routing? We may be able to self-organize optimal routing between nodes by applying ”ant trailing”? Each message would then randomly split and try different paths. And each message must be acknowledged back to the sending node and update the ”scent” based on the temporal distance (speed).  
+3) We seem to need different scents for each node-to-node messaging? That is because the best path from A to B may differ from the best path from A to C.  
+4) In contrast to the ant society that only tracks the best path from the stack to different targets, Darwinet needs to track best routing from any node to any other node. How do we solve this? We can’t have a scent for each node-to-node combination as this would just mount to an enormous number of paths!  
+5) Seems we need to only have scents for group-to-group routing? Or even allow for layering of groups having each layer use a restricted number of scents?  
+6) This in turn suggests we need a mechanism to self-organize the network into efficient layers of relay nodes? Could one idea be to imagine how ants would do this if they where to interact with other stacks?  
+7) Could we apply a mechanism that optimize routing within domains? And then leverage on that to use other domains for faster routing? That is, allow nodes between one domain to use nodes of other domains to relay messages more efficiently?  
+8) The ”six friends” organisation tells us we may reach all the people in the world in just six steps. What does this tell us about our ability to optimize Darwinet messaging using ant-trailing?  
+...
+
+{% endraw %}

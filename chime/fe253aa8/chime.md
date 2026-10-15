@@ -1,0 +1,94 @@
+# Todo: Consider to research comma.ai NEO open source robotics platform for self driving cars?
+
+```#fe253aa8``` *As of 2017-11-28 17:19*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems
+
+1) Comma.ai seems to live here (<https://comma.ai>)?
+
+2) Consider to study and understand the chiffr app available for Android and iOS (<http://chffr.comma.ai>)?
+
+==&gt; The iOS app seems to live here (<https://itunes.apple.com/us/app/chffr-dash-cam-that-remembers/id1146683979>)?
+
+…
+
+==&gt; It seems with the App in the phone (connected to the car)? feed data to the open cloud service that gathers data to train self driving car ai?
+
+> “**chffr** is a dashcam that **trains self-driving cars**. Driving with chffr improves comma.ai openpilot, free self-driving car software. Contribute to the over 2 million miles driven with chffr and claim your stake in the self-driving revolution. “
+
+> “*- Use your **phone as** a dash cam with live **speedometer, trip duration**, and comma point rewards*  
+> *- Replay every moment on the road  
+> - **Collect** and visualize your **car's data** by **connecting** chffr to your **comma.ai panda***"
+
+3) Consider to study and understand the openpilot github project (<https://github.com/commaai/openpilot>)?
+
+> “***openpilot** is an open source driving agent.*
+
+> *Currently it performs the functions of Adaptive Cruise Control (**ACC**) and Lane Keeping Assist System (**LKAS**) for **Hondas and Acuras**. It's about on par with Tesla Autopilot at launch, and better than all other manufacturers.*"
+
+==&gt; It seems to be written in Python?(!!)
+
+==&gt; So, why is it not implemented in a compiling language?
+
+...
+
+==&gt; Consider this youtube video “Open pilot 0.3.2 comma neo” (<https://www.youtube.com/watch?v=64Wvt5pYQmE>)?
+
+==&gt; It seems to self drive the car using a Comma NEO kit
+
+3) Consider to study and understand the comma EON Dashcam DevKit (<https://shop.comma.ai/products/eon-dashcam-devkit>)?
+
+> “*You need three things on your dashboard: a dashcam, navigation, and music. EON is all three. EON is your new dashboard.*”  
+> “Built on a solid **NEOS foundation**, we run chffrplus, our award winning open source dashcam software. **chffrplus** is a **cloud based dashcam**, meaning all your drives don't eat up the space on your device."
+
+==&gt; Consider this youtube video “George Hotz Presents Comma Neo” from December 8, 2016 (<https://www.youtube.com/watch?v=lM2_E2y4eCg>)?
+
+4) Consider to understand the NEOS foundation and community (<https://github.com/commaneos>)?
+
+==&gt; NEOS seems to be the open source operating system for the NEO robotics platform?
+
+> “OS for the NEO robotics platform"
+
+==&gt; It seems NEOS is made to be put on ROM and executed by and Android OnePlus 3 smartphone (See below)?
+
+5) Consider to understand the NEO Robotics Platform (<https://github.com/commaai/neo>)?
+
+> “The neo is an open source robotics research platform. It is powered by a **OnePlus 3 smartphone** and an **STM32F205-based CAN interface board**, in a **3d-printed housing** with active cooling.
+
+> The neo platform includes **NEOS**, a **stripped down Android ROM** designed for robustness and to get out of the way of your software. It also provides a modern **linux environment** for easy development."
+
+==&gt; It seems a NEO 6 is a DIY build and the material costs about 700 $?
+
+> “*to build a neo, 6 orders must be placed from the following sources:*
+
+> *• digikey  
+> *  
+> *• mcmaster  
+> *  
+> *• shapeways  
+> *  
+> *• oshpark  
+> *  
+> *• amazon  
+> *  
+> *• one plus*
+
+> *The total cost is about $700.*"
+
+6) Consider to study and understand the chiffr open source on github (<https://github.com/commaai/chffrplus>)?
+
+> “**chffrplus** is an open source **dashcam**.
+
+> This is the shipping reference software for the comma EON Dashcam DevKit. It keeps many of the niceities of openpilot, like high quality sensors, great camera, and good autostart and stop. Though unlike openpilot, it cannot control your car. chffrplus can interface with your car through a panda, but just like our dashcam app chffr, it is read only.  
+> "
+
+7) The Panda CAN hardware interface to the car lives on github here (<https://github.com/commaai/panda/tree/3cab37297566962fd6e48a674db3e1f6de8fa4da>)?
+
+…
+
+Consider to follow up the
+
+{% endraw %}

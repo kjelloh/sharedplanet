@@ -1,0 +1,164 @@
+﻿Is seems I can actually upload my personal TAX sales form to Swedish Tax Agency using their file upload service?
+
+0) It seems this is the web page with the TEST API for upload of files (https://www.skatteverket.se/foretag/etjansterochblanketter/allaetjanster/tjanster/filoverforing.4.1f604301062bf0c47e8000527.html <https://www.skatteverket.se/foretag/etjansterochblanketter/allaetjanster/tjanster/filoverforing.4.1f604301062bf0c47e8000527.html> )?
+
+	==> Consider this is the direct URL to the TEST API for file upload (https://www1.skatteverket.se/fv/fv_web/login.do <https://www1.skatteverket.se/fv/fv_web/login.do> )?
+
+1) It seems I can use the provided "_SKV269 blankettbilder med fÑltnamn 2021P4.pdf" to see how the form values maps to SRU Codes (https://skatteverket.se/download/18.96cca41179bad4b1aac351/1642600897155/Nyheter_from_beskattningsperiod_2021P4.zip <https://skatteverket.se/download/18.96cca41179bad4b1aac351/1642600897155/Nyheter_from_beskattningsperiod_2021P4.zip> )
+
+	==> This seems to be the mapping from SRU Codes to the Personal TAX Form INK1?
+
+
+ 
+
+
+	==> It seems to me that the values I need to provide have the following SRU Codes?
+
+SRU:1000 	"1.1 Lön Förmåner, Sjukpenning mm"	(Från förtryckta uppgifter)
+SRU:1100	"7.2 Ränteinkomster, utdelningar..."	(från K10 SRU:4515	"Utdelning som tas upp i kapital")
+
+	==> This seems to be the mapping from SRU Codes to the K10 form I need to provide for my ownership of stocks in my own company?
+
+
+ 
+
+ 
+
+ 
+
+ 
+	==> It seems to me I have to provide values for the following SRU Codes?
+
+SRU:4531	"Antal ägda andelar vid årets ingång"
+SRU:4532	"Totala antalet andelar i hela företaget vid årets ingång"
+SRU:4511	"Årets gränsbelopp enligt förenklingsregeln"				(=183 700 * ägar_andel)
+SRU:4501	"Sparat utdelningsutrymme från föregående år * 103%)	(103% av förra årets sparade utrymme, förra årets SRU:4724)
+SRU:4502	"Gränsbelopp enligt förenklingsregeln"					(SRU:4511 + SRU:4501
+SRU:4503	"Gränsbelopp att utnyttja vid p. 1.7 nedan"				(SRU:4502)
+
+// Utdelning som beskattas I TJÄNST"
+SRU:4504	"Utdelning"										(Från BAS:2898, SRU:7369)
+SRU:4721	"Gränsbelopp SRU:4503"
+SRU:4722	"Sparat utdelningsutrymme"							(SRU:4504 - SRU:4721)
+SRU:4724	"Sparat utdelningsutrymme till nästa år"					(SRU:4722)
+
+// Utdelning som beskattas i KAPITAL
+SRU:4506	"Utdelning"										(SRU:4504)
+SRU:4507	"Utdelning i Kapital"
+SRU:4508	Det minsta av (2/3 av gränsbelopp vs 2/3 av utdelning Kapital)
+SRU:4509	Resterande utdelning (utdelning kapital - gränsbelopp om positivt annars 0)
+SRU:4515	"Utdelning som tas upp i kapital"						(Till INK1 p. 7.7. SRU:1100)
+
+
+2) It seems these two SRU-files where accepted by Swedish Tax Agency?
+
+
+
+	==> It seems it is critical to use the correct form ID as defined in file "_Nyheter_from_beskattningsperiod_2021P4_.pdf" of zip file (https://skatteverket.se/download/18.96cca41179bad4b1aac351/1642600897155/Nyheter_from_beskattningsperiod_2021P4.zip)?
+
+
+
+2) Consider this information from the Swedish Ta Agency (https://skatteverket.se/privat/etjansterochblanketter/blanketterbroschyrer/broschyrer/info/269 <https://skatteverket.se/privat/etjansterochblanketter/blanketterbroschyrer/broschyrer/info/269> )?
+
+	==> It seems this is a pdf with information about how to send TAX sales form for both private (inkomstdeklaration 1) and companies (Inkomstdeklaration 2) and more (https://skatteverket.se/download/18.96cca41179bad4b1aad958/1636640681760/SKV269_27.pdf <https://skatteverket.se/download/18.96cca41179bad4b1aad958/1636640681760/SKV269_27.pdf> )?
+
+	==> It seems the SRU-file must be encoded using the ISO8859-1 character set?
+
+"6.1 Teckenrepresentation Enligt ISO8859-1."
+
+	==> It seems the URL named "Nyheter från och med Oktober 2021 utgåva 2 (2021P4)" triggers download of a zip file that carries files for mapping SKV forms to SRU-codes and SRU-files (https://skatteverket.se/download/18.96cca41179bad4b1aac351/1642600897155/Nyheter_from_beskattningsperiod_2021P4.zip <https://skatteverket.se/download/18.96cca41179bad4b1aac351/1642600897155/Nyheter_from_beskattningsperiod_2021P4.zip> )?
+
+	
+
+
+	==> Consider this is the content as listed by the tree-commadn on my macOS after download?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro Nyheter_from_beskattningsperiod_2021P4 % tree
+.
+├── Blanketter
+│   ├── INK1_2000_31_man_prg.pdf
+│   ├── INK2_2002_30_web_platt_prg.pdf
+│   ├── INK3_2003_30_web_platt_prg.pdf
+│   ├── INK4_2004_30_web_platt_prg.pdf
+│   ├── K10 2110_34_web_platt_prg.pdf
+│   ├── K10A 2110a_16_web_platt_prg.pdf
+│   ├── K11 2111_03_2021P4_platt.prg.pdf
+│   ├── K12 2112_22_web_platt_prg.pdf
+│   ├── K13 2113_08_2021P4_platt.prg.pdf
+│   ├── K15A 2115_15_2021P4_platt.prg.pdf
+│   ├── K15B 2116_17_2021P4_platt.prg.pdf
+│   ├── K2 2102_15_web_platt_prg.pdf
+│   ├── K4 2104_27_web_2021P4_platt.prg.pdf
+│   ├── K5 2105_32_web_platt_prg.pdf
+│   ├── K6 2106_32_web_platt_prg.pdf
+│   ├── K7 2107_26_web_2021P4_platt.prg.pdf
+│   ├── K8 2108_11_web_platt_prg.pdf
+│   ├── K9 2119_04_web_platt_prg.pdf
+│   ├── N11 2157_01_2021P4_platt.prg.pdf
+│   ├── N3A 2153_31_web_platt_prg.pdf
+│   ├── N3B 2167_23_2021P4_platt.prg.pdf
+│   ├── N4 2154_17_2021P4_platt.prg.pdf
+│   ├── N7 2170_11_2021P4_platt.prg.pdf
+│   ├── N8 2155_10_2021P4_platt.prg.pdf
+│   ├── N9_2158_03_web_platt_prg.pdf
+│   ├── NE 2161_11_2021P4_platt.prg.pdf
+│   ├── NEA 2164_10_2021P4_platt.prg.pdf
+│   ├── T1 2050_31_web_platt_prg.pdf
+│   └── T2 2051_32_web_platt_prg.pdf
+├── Excelfiler
+│   ├── Filexempel_2015.xls
+│   ├── Fritext_FO.xls
+│   ├── INK1_SKV2000-31-02-0021-01_SKV269.xls
+│   ├── INK2R_SKV2002-30-01-20-02.xls
+│   ├── INK2S_SKV2002-30-01-20-02.xls
+│   ├── INK2_SKV2002-30-01-20-02_SKV269.xls
+│   ├── INK3K_SKV2003-30-01-20-01.xls
+│   ├── INK3R_SKV2003-30-02-20-07.xls
+│   ├── INK3SUF_SKV2003-30-01-20-01.xls
+│   ├── INK3SUS_SKV2003-30-01-20-01.xls
+│   ├── INK3S_SKV2003-30-01-20-07.xls
+│   ├── INK4DU_SKV2004-30-01-21-01.xls
+│   ├── INK4R_SKV2004-30-02-21-01.xls
+│   ├── INK4S_SKV2004-30-01-21-06.xls
+│   ├── K10A_SKV2110a-16-02-21-02.xls
+│   ├── K10_SKV2110-34-04-21-02.xls
+│   ├── K11_SKV2111-03-01-18-02.xls
+│   ├── K12_SKV2112-22-01-21-01.xls
+│   ├── K13_SKV2113-08-02-15-01.xls
+│   ├── K15A_SKV2115-15-01-17-01.xls
+│   ├── K15B_SKV2116-17-01-17-01.xls
+│   ├── K2_SKV2102-15-02-21-04.xls
+│   ├── K4_SKV2104-27-02-19-01.xls
+│   ├── K5_SKV2105-32-02-21-03.xls
+│   ├── K6_SKV2106-32-02-21-03.xls
+│   ├── K7_SKV2107-26-01-18-01.xls
+│   ├── K8_SKV2108-11-01-21-02.xls
+│   ├── K9_SKV2119-04-02-21-03.xls
+│   ├── Landkoder_EES_2022.xls
+│   ├── Lokala_Skattekontor_for_anstan.xls
+│   ├── Medieleverantorsinfo_2022.xls
+│   ├── N3A_SKV2153-31-03-21-01.xls
+│   ├── N3B_SKV2167-23-01-18-01.xls
+│   ├── N4_SKV2154-17-01-15-01.xls
+│   ├── N7_SKV2170-11-01-19-02.xls
+│   ├── N8_SKV2155-10-01-19-01.xls
+│   ├── N9_SKV2158-03-06-21-03.xls
+│   ├── NEA_SKV2164-10-02-17-01.xls
+│   ├── NE_SKV2161-11-02-19-02.xls
+│   ├── T1_SKV2050-31-01-21-02.xls
+│   ├── T2_SKV2051-32-02-21-02.xls
+│   └── Vardeforrad_2022.xls
+├── _Nyheter_from_beskattningsperiod_2021P4_.pdf
+└── _SKV269 blankettbilder med fÑltnamn 2021P4.pdf
+
+2 directories, 73 files
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro Nyheter_from_beskattningsperiod_2021P4 % 
+
+
+3) Consider this information from Swedish Tax Agency about how to send the K10 form as an SRU-file (https://www.skatteverket.se/foretag/inkomstdeklaration/delagareifamansforetag/instruktionimporterak10bilaga.4.339cd9fe17d1714c07781a0.html <https://www.skatteverket.se/foretag/inkomstdeklaration/delagareifamansforetag/instruktionimporterak10bilaga.4.339cd9fe17d1714c07781a0.html> )
+
+
+4) This seems to be the K10 form I should provide to declare my share dividend (https://skatteverket.se/privat/etjansterochblanketter/blanketterbroschyrer/blanketter/info/2110.4.39f16f103821c58f680006280.html?q=K10 <https://skatteverket.se/privat/etjansterochblanketter/blanketterbroschyrer/blanketter/info/2110.4.39f16f103821c58f680006280.html?q=K10> )?
+
+
+...

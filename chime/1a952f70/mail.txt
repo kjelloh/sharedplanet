@@ -1,0 +1,7 @@
+﻿
+1) Consider this article that seems to state a consumer SSD degrade in 12-24 months if not powered (https://www.quora.com/How-long-can-SSD-store-data-without-power-Can-data-be-recovered-from-SSD <https://www.quora.com/How-long-can-SSD-store-data-without-power-Can-data-be-recovered-from-SSD> )?
+
+
+"JEDEC specifies 1 year for consumer SSDs and 3 months for enterprise SSDs, at normal operating temperatures (30C)."
+
+...

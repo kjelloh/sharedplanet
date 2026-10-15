@@ -1,0 +1,28 @@
+# Todo: Programming - Would it be possible to design a "compiler" that compiles available C++ source code into a builder that creates the correct targets from that source?
+
+```#65d36715``` *As of 2015-12-19 17:17*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could one imagine a ”compiler” that compiles c++ source code into a builder that determines the tool-chain and targets and then calls these tools to build the targets?
+
+1) Consider to design a language for the LLVM tool-chain that ”includes” the source (list of source folders) and uses language features to discover and execute building of targets?  
+2) Base this language on the build-platform-model as defined in ”Todo: Programming - Consider to study, understand and possibly cross-translate between different build tool (pre-processor/compiler/linker) options?”  
+3) This language should be readable by C++ programmers (i.e. be object oriented and procedural)?  
+==&gt; Consider to implement it as a c++ class library (i.e. let it actually be c++)?  
+==&gt; Or, let it at least mimic a limited set of the C++ syntax (e.g. control statements if, while,for, and build functions f())?  
+4) No - the best approach would be to write the builder using c++ and a CppBuild class library?!
+
+5) Consider to study The GNU build system (Automake) for inspiration and interoperation (<https://en.wikipedia.org/wiki/GNU_build_system>)
+
+“The GNU build system makes it possible to build many programs using a two-step process: configure followed by make”
+
+![](Autoconf-automake-process.svg.png)
+
+…
+
+Consider to elaborate on this idea and decide if to design a small build-language and compiler or if to design a C++ library to enable programming a builder using pure C++?  
+...
+
+{% endraw %}

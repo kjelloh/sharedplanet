@@ -1,0 +1,20 @@
+﻿Elaborate on the model of enabling the user to synchronise all her desktops with her Darwinet Domain using a Darwinet Desktop Synchroniser?
+
+1) The Desktop Synchroniser connects desktop data with Darwinet Data?
+
+	==> Synchronise file system?
+	==> Synchronise Desktop user data (e.g. passwords, key-chain, configuration)?
+	==> Synchronise desktop application data (e.g. images, films, web-history, notes, mails)?
+
+2) Consider to treat each Desktop Synchroniser as at least one Darwinet Node?
+
+	==> Would it be a good idea to view the Darwinet Desktop Synchroniser as a tool with the same services as “Windows Explorer”)?
+	…
+
+3) Consider to name this Application the “Darwinet Desktop”?
+	…
+
+…
+
+Consider to elaborate more on this model of connecting each user device desktops to the one user Darwinet private Domain?
+...

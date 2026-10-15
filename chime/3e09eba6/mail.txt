@@ -1,0 +1,21 @@
+﻿Could it be a good idea to maintain and keep updated a list or IRL events (to plan or attend) to create a feeling of a meaningful future?
+
+1) Consider to the following IRL candidates as of 160224
+
+	==> Attend as choir member the Collin Nutley TV series filming day?
+	==> Attend the Trysil see trip?
+	==> Attend Amanda-in-the-hose pub event 4 mars
+	==> Attend Visingsö and sing Your Song?
+	==> Attend Böda Strand choir week?
+	==> Sail with Vega
+	…
+
+2) Consider to have this as a function in Owls&Bells?
+
+3) Consider to design a tool (e.g. Owl&Bells) to use a P2P DHT network for storing, sharing and retrieving data?
+
+
+
+…
+
+Consider to define how when and with what tool to keep such a list up-to-date?

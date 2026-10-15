@@ -1,0 +1,248 @@
+# Todo: Multi-Ux Cross Platform Programming - Consider the run-time entry point actually defines the Ux domain (and thus we know at compile time what Ux to instantiate at runtime)?
+
+```#9e5a9061``` *As of 2017-07-28 12:41*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what can we learn from noting that it seems we know at the run-time entry point what platform we are running on and thus what User Interface we can and should use?
+
+==&gt; Also see “Todo: Programming - Consider to provide Tris with a default GUI front-end for all major platforms (Windows, Linux, MacOS)?”
+
+==&gt; Also see “Todo: Programming - Consider to understand the different C++ options to develop Windows Desktop Application GUI on different platforms (Windows 7, 8.1, 10)?”
+
+==&gt; Also see “Todo: Programming - Consider to design a C++ console application source and environment setup that will cross compile on Windows, MacOS and Linux?”
+
+==&gt; Also see “Todo: Programming - Consider to design a good way to connect business logic code to callback to Windows handle message pump"
+
+1) Consider the run-time entry point actually defines the Ux domain (i.e., if “we” are a console or windows application and on what platform we are running)?
+
+==&gt; Also consider that the target run-time platform is usually know at compile time (we know the target)?
+
+==&gt; Thus, we can use compile-time switches in the source code to build for a specific target.
+
+==&gt; Consider target OS and target CPU?
+
+==&gt; Consider Target run-time User Interface framework (e.g., Windows Win32 Console, Windows (MFC) Win32 Application, Windows (Xaml) Universal Application…)
+
+…
+
+==&gt; And at run-time entry point we know what Ux we shall imitate and bind to the business run.time?
+
+==&gt; It seems we can see a pattern to what happens at compile time and what happens at run.time?
+
+==&gt; At compile-time it seems we know what is target indifferent and what is not?
+
+a) We can make the business domain logic the same (e.g., use a single Elm run-time Messages, Model and update)?
+
+b) We can compile target specify code for the view function and View object (e.g. a Console or windows Ux model)?
+
+==&gt; At run-time it seems the entry-point is in the Ux which then initiates, connects with and run the business run.time?
+
+a) We can and should instantiate the Business run-time as a platform independent Elm run-time?
+
+b) Then link the business run-time with our Ux view function and View object?
+
+2) Consider how we may organise the source code project to build and run for different targets with different Ux models (e.g. Console versus Windows based)?
+
+==&gt; It seems we need different build tool chains as well as source code conditioned for the target?
+
+a) Consider we can model the till chain as a build function that defines a mapping of source code to executable code?
+
+**build**: project source code -&gt; target executable code
+
+==&gt; Consider that “build” may be cerated with cmake (to get at the appropriate build tool-chain for the target we are building for)?
+
+**cmake**: CMakeLists.txt -&gt; build
+
+b) Consider we can model the conditional code as a pre-process function that defines a taping from project source code to target source code?
+
+**pre-process**: generic source code -&gt; target source code
+
+==&gt; Consider this is part of the build mapping?
+
+**build**: pre-processor -&gt; generic source code -&gt; compiler -&gt; *target source code* -&gt; compiler-switches -&gt;*target executable code*
+
+3) Consider ways to organise the project files and directory structure to support different target source code generation and tool chains?
+
+==&gt; It seems we actually have four different aspects to mirror in the directory structure?
+
+==&gt; We want to allow different IDE:s (thus IDE:s specific files should go into directory structure in some controlled way)?
+
+==&gt; We want to allow for at least one build tool chain generator (e.g. inject cmake files into the project file structure)?
+
+==&gt; We want to allow the generic source code to contain conditionals to enable generation of different target source code (e.g., using pre-processor macros)?
+
+==&gt; We want to be able to invoke different tools chains separately (e.g., build with Xcode on OS X and Visual Studio on Windows)?
+
+==&gt; Consider most build tool chains allows their files to be placed separated (e.g. in parallel folders) from the source code and resource files?
+
+==&gt; Consider cmake recommends the build tool chain to be generated in a separate (often a build parallel folder)?
+
+==&gt; But cmake projects often place the CMakeLists.txt at the top of the source code folder structure?
+
+…
+
+3) Consider to try a cross platform project with parallel folders for IDE,cmake,build and source code using Xcode, CLion, Visual Studio and optionally Embarcadero RAD Studio?
+
+==&gt; Consider the naive approach with one parallel folder for each aspect of the project?
+
+project
+
+|
+
+— src
+
+|
+
+— ide
+
+|
+
+— cmake
+
+|
+
+— build
+
+==&gt; Can we get this to work for Xcode, CLion and Visual Studio on OS X, Linux and Windows 10?
+
+==&gt; Further see “Todo: Cross Platform Programming - Consider to try out the src, ide, cmake, build project structure?”
+
+...
+
+4) Consider how we can initiate an Elm run-time with the appropriate view method and View model to get the application running?
+
+==&gt; It seems we can imagine two basic re-usable View models (A Console text based model and a windows widget based model)?
+
+==&gt; Consider some generic Console View Model?
+
+Console View Model
+
+|
+
+-- Output Text
+
+|
+
+-- Prompt
+
+==&gt; The View Port may then just print the Output Text and the the Prompt?
+
+==&gt; This behaviour could even work in a windows based view port that implement the Console View Model?
+
+...
+
+==&gt; Consider some generic Widget View Model?
+
+Widget View Model
+
+|
+
+-- Widget | Composite of Widgets
+
+|
+
+...
+
+==&gt; Consider we can come a long way to some generic widget composite by using elements like panes, buttons, lists, …?
+
+5) Consider we actually should extend the Elm model to use one Business Model, two or or View models and then apply the different platform UI framework viewports to render these Views?
+
+==&gt; Consider an Elm model using Messages to operate on one domain immutable State (business model)?
+
+Application Domain View Model Platform View Port
+
+update: Msg -&gt; State view: State -&gt; View render: View -&gt; Ux Ux Engine
+
+/--------------------------------------------\\ /---------------------\\ /--------------------------\\ /--------------
+
+/ \\/ \\/ \\/
+
+External Message --&gt;--| | --&gt; Console::view ---&gt; | |
+
+| Sub | | windows10::win32&lt;MFC&gt; |
+
+| | --&gt; 2DWindow::view --&gt; | windows10::win&lt;xaml&gt; |
+
+|--&gt; update --&gt;-+------&gt; | | |
+
+| | | | Linux::posix&lt;Qt&gt; | --&gt; User Experience
+
+| | Cmd | --&gt; 3DWindow::view --&gt; | Linux::?? |
+
+-------&lt;--------- | | | &lt;-- User Actions
+
+| | MAC OS::cocoa&lt;swift&gt; |
+
+| | MAC OS::cocoa&lt;object-C&gt; |
+
+| | |
+
+| | Android::?? |
+
+| | ... |
+
+==&gt; Consider it is the View object that “knows” the mapping from User Actions into Domain Messages?
+
+Application Domain View Model Platform View Port
+
+update: Msg -&gt; State view: State -&gt; View render: View -&gt; Ux User Interface
+
+/--------------------------------------------\\ /---------------------\\ /--------------------------\\ /--------------
+
+/ \\/ \\/ \\/
+
+External Message --&gt;--| | --&gt; Console::**view** ---&gt; | |
+
+| Sub | | windows10::win32&lt;MFC&gt; |
+
+| | --&gt; 2DWindow::**view** --&gt; | windows10::win&lt;xaml&gt; |
+
+|--&gt; **update** --&gt;-+------&gt; | | |
+
+| | | | Linux::posix&lt;Qt&gt; | --&gt; User Experience
+
+| | Cmd | --&gt; 3DWindow::**view** --&gt; | Linux::?? |
+
+-------&lt;--------- | | | &lt;-- User Actions
+
+| | | MAC OS::cocoa&lt;swift&gt; |
+
+| | | MAC OS::cocoa&lt;object-C&gt; |
+
+^ Op | | |
+
+| | | Android::?? |
+
+| Actions |
+
+|------------------------&lt;------------------------&lt;---------- **View** &lt;----------- |
+
+6) Consider we can design this Elm Model using RxCpp and Copperspice cross-thread signalling library?
+
+==&gt; Consider we would like to create the Reactive piping using declarative expressions?
+
+auto messages = Messages{subscriptions,runt_time};
+
+messages &gt;&gt; update(messages) &gt;&gt; view &gt;&gt; view_port(messages);
+
+| | | |
+
+| new State new View Renders to user interface
+
+posts msg Processes User Actions
+
+from rx_queue Uses View object
+
+to turn Actions
+
+to post to rx_queue
+
+…
+
+…
+
+Consider to delve into this idea that from build target we know at compile time what View Model and view port to compile for (and optionally that we may compose this as a Reactive Pipe using thread-aware signalling framework)?
+
+{% endraw %}

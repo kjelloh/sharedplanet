@@ -1,0 +1,12 @@
+﻿I want to be able to compile C++20 code on macOS with clang but with the option to link with gny libstdc++
+
+1) It seems there are a lot of refernces in the LLVM / clang source files to "libstdc++"?
+
+grep -rnw ./clang -e 'libstdc++' > libstdc++_refs_in_clang_files.txt
+
+
+
+
+	NOTE: Most of the references are probably about building and linking clang itself (and not about how clang reacts to parsing the input argument "-stdlib=libstdc++"?
+
+... 

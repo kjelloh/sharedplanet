@@ -1,0 +1,16 @@
+# Todo: Write about peer-to-peer node ever present "temporarily offline" aspect
+
+```#b787c4f3``` *As of 2015-07-31 15:43*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Each node of a peer-to-peer network will always be separated from other nodes (and thus the current knowledge of the network as a whole) by a spatial and temporal distance.
+
+This means, that at each given point, each node must be able to act ”temporarily offline” synchronizing with ”online” information when it comes available. The Temporarily Offline aspect is thus due to the separation of nodes in the time domain (Whilst new information i created they can never all know the same thing at the same time as it takes time to synchronize information between all nodes).
+
+It is to cope with the temporarily offline condition that each Darwinet Node needs to use locally available properties (especially a unique node ID) when marking deltas. It is Temporarily Offline and can’t rely on any network shared information to ensure delta id uniqueness (some other sub-network may in the offline tome window decide on the same ID without us knowing until until later).
+
+Note that bitcoin solves the temporality offline aspect by asking the network for best-proven-chain of signatures (although I am not yet quite sure how this prohibits two sub-nets to allow the same coin to be used in the temporarily offline shadow?)
+
+{% endraw %}

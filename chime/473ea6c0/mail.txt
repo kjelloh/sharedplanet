@@ -1,0 +1,40 @@
+﻿It seems interesting that there is a proposal to add linear algebra to the c++ standard library!
+
+1) Consider this youtube video "Linear Algebra for the Standard C++ Library" (https://www.youtube.com/watch?v=ynYJjn4uM8c <https://www.youtube.com/watch?v=ynYJjn4uM8c> )?
+
+"Linear algebra is a mathematical discipline of ever-increasing importance in today's world, with direct application to a wide variety of problem domains, such as signal processing, computer graphics, medical imaging, machine learning, data science, financial modeling, and scientific simulations. And yet, despite the relevance of linear algebra to so many aspects of modern computing, the C++ standard library does not include a set of linear algebra facilities. This talk will describe a proposal before the C++ standardization committee (P1385) to add linear algebra to the standard library. We'll begin with a quick refresher on what linear algebra is and why it's so important. Next, we'll cover the features and high-level requirements for the proposed components, including a review of related mathematical objects deliberately excluded. We'll then discuss in detail the design of the proposed components, the evolution of that design, and its rationale. In particular, we'll discuss in depth how the requirements we set out to fulfill led directly to the design, and how modern C++ allows us to specify an extensible interface that is expressive, customizable, and supports high performance. Along the way, the talk will also provide some color commentary regarding the process of composing, submitting, and advocating a proposal for a significant new library feature."
+
+
+	
+
+2) The P1385 proposal seems to live here (http://wg21.link/P1385 <http://wg21.link/P1385> currently  http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1385r1.html <http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1385r1.html> )?
+
+	==> It seems the P1385 recommends we should read the P1166 first? 
+
+"This paper should be read after P1166, in which we describe a high-level set of expectations for what a linear algebra library should contain."
+
+3) The P1166 seems to live here (http://wg21.link/P1166 <http://wg21.link/P1166> currently http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1166r0.pdf <http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1166r0.pdf> )? 
+
+	==> It seems the P1166 proposes an API and not an implementation for a linear algebra C++ library?
+
+"Many libraries have been created with varying design criteria. A brief inspection of the literature will reveal libraries as different as BLAS, Blaze, Eigen and many others. The purpose of the committee is to standardise existing practice, not design new libraries, by describing an API, not an implementation:"
+
+	==> Consider it is a bit surprising that the P1166 about C++ linear Algebra library does not reference GPU, Hardware of "Graphics" acceleration?
+
+I would have expected a linear algebra library for C++ to be able to utilise the GPU. But the P1166 paper has no reference to "GPU", "Hardware" or "Graphics" utilisation or considerations?
+
+4) Consider the existing Eigen C++ template library for linear algebra (http://eigen.tuxfamily.org/index.php?title=Main_Page <http://eigen.tuxfamily.org/index.php?title=Main_Page> )?
+
+"Eigen is being successfully used with the following compilers:
+
+	• GCC, version 4.8 and newer. Older versions of gcc might work as well but they are not tested anymore.
+	• MSVC (Visual Studio), 2012 and newer. Be aware that enabling IntelliSense (/FR flag) is known to trigger some internal compilation errors. The old 3.2 version of Eigen supports MSVC 2010, and the 3.1 version supports MSVC 2008.
+	• Intel C++ compiler. Enabling the -inline-forceinline option is highly recommended.
+	• LLVM/CLang++, version 3.4 and newer. (The 2.8 version used to work fine, but it is not tested with up-to-date versions of Eigen)
+	• XCode 7 and newer. Based on LLVM/CLang.
+	• MinGW, recent versions. Based on GCC.
+	• QNX's QCC compiler.
+
+Regarding performance, Eigen performs best with compilers based on GCC or LLVM/Clang. See this page for some known compilation issues."
+
+...

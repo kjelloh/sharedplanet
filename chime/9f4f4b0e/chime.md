@@ -1,0 +1,18 @@
+# Todo: Write about the possible conflict of Philosophical versus Emotional relation to life
+
+```#9f4f4b0e``` *As of 2015-08-24 15:18*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+People does generally not want philosophical arguments and reasoning about how to experience of relate to life, they want an emotional relation with life. Listening to ”Filosofiska rummer” on sr-play (”Utblick: Livets mening i en sekulär kultur. 2012 begav sig Thomas Lunderquist till USA och träffade filosofiprofessorn Hubert Dreyfus vars bok, All Things Shining, handlar om att läsa litterära klassiker för att finna mening i en sekulär tid”,<http://t.sr.se/1Vi5qmK>) Hubert Dreyfus argues precisely that.
+
+1) So, is philosophy all about explaining our relation with reality and life purely a logical and reasoning approach?
+
+2) Can the Philosophy of the Super Curious human include spiritual and emotional arguments? Can the Super Curious be explained as a way to relate emotionally to life (Also to other Todo about the lack of spirituality in Synetism and Ungers Religion of the Future)
+
+3) Consider to relate the Super Curious to what Hubert Dreyfus argues?
+
+...
+
+{% endraw %}

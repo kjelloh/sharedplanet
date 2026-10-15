@@ -1,0 +1,15 @@
+# Todo: Consider to base Force Directed Graph FMX component on Boost graph library?
+
+```#2f54cb17``` *As of 2015-09-20 14:42*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to define the Force Directed Grapg layout component to adapt to some defined data model of the graph to draw.
+
+a) Consider to require the graph to show be a boost c++ graph? This would follow quite easily if we base it on one of the available boost force layouts?  
+b) Consider to enable the view to ”morph” from one view to another? Thus, if we change the view to emphasize other relations between the nodes (e.g. changes a Todo-graph from location dependent to temporal dependent) then the view should animate the transition of node locations? How do we accomplish this?  
+c) We may need to animate transition between two views by always first move to an intermediate ”neutral” layout for the target layout? That is, avoid the risk that if we take the source layout as the starting point of iterating to the target layout we may become stuck in some unstable layout state?  
+...
+
+{% endraw %}

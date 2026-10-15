@@ -1,0 +1,40 @@
+﻿It seems it could be a fun project to design a robot that automatically tests 18650 cell capacity and then marks and groups them into packages of similar capacity?
+
+1) Consider this youtube video “Make Matched 18650 DIY Powerwall Modules using Builder tool rePackr.com” about testing 18650 cells and arrange them into similar (balanced) cell packages (https://www.youtube.com/watch?v=hXYf1r62vqc&t=404s <https://www.youtube.com/watch?v=hXYf1r62vqc&t=404s>)?
+
+	==> It seems he uses a cell package webb tool that lives here (https://j35.us/rePackrCOM <https://j35.us/rePackrCOM>)
+
+		
+
+		==> Consider to 
+
+
+Cell Holders http://j35.us/100cellHolders <https://www.youtube.com/redirect?q=http%3A%2F%2Fj35.us%2F100cellHolders&event=video_description&redir_token=BfMYzim8y6PV59C6UisvDD_ufr58MTUzOTcwNzkxMkAxNTM5NjIxNTEy&v=hXYf1r62vqc>
+Cell Tester http://j35.us/ZanflareC4 <https://www.youtube.com/redirect?q=http%3A%2F%2Fj35.us%2FZanflareC4&event=video_description&redir_token=BfMYzim8y6PV59C6UisvDD_ufr58MTUzOTcwNzkxMkAxNTM5NjIxNTEy&v=hXYf1r62vqc>
+
+2) Consider a robot that can pick 18650 cells, place them into a capacity tester and mark them with capacity?
+
+	==> Consider a design so that we can place the cells to be picked by the robot?
+	==> Consider if to buy or build an 18650 cell capacity tester for our robot (we need to be able to automate insertion and removal of cells)?
+	==> Consider what “printer” to use to print the date and capacity of the cells?
+	==> Consider to design an “output tray” where the robot places measured cells (and optionally also knows where they are)?
+	==> Consider to design the robot to automatically arrange the measured cells into groups of cell packages of similar capacity?
+	…
+
+3) Consider what we can consider to measure to be able to arrange the cells into “similar” cell packages?
+
+	==> Consider we would like cells in each package to be arranged in series so that cells with similar capacities are place in the same location in each package?
+
+		==> Or does the order of the cells not matter (when charged the cells with lower charged will automatically swallow the most charge and thus even up the charge between cells in series)?
+
+	==> Consider we would like to measure each cell charge and discharge rate and curve (assuming we like cells in a package to have as similar charge curve as possible)?
+
+		==> Or will they have similar charge and discharge curve if they have the same capacity?
+		==> Consider cells with the same capacity still can charge and discharge with different current based on their design (and thus they DO have different discharge curves)?
+		…
+
+	==> Consider we would like to measure each cell internal resistance (and arrange cells so that each cell within a group, and each group, will have matched internal resistance)?
+
+	==> Consider what more properties of the cells we could measure and keep track of to be able to arrange them properly into cell packages?
+
+	... 

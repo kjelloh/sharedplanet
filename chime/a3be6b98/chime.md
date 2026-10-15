@@ -1,0 +1,34 @@
+# Todo: Överväg att spekulera i mina drömmar om ett meningsfullt boende?
+
+```#a3be6b98``` *As of 2019-04-15 16:47*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Det verkar som om jag flyr från att verkligen försöka konkretisera var jag skulle vilja befinna mig i mitt dagliga ekorrhjul. Varför? Antagligen för att jag är för fri att göra annat. Jag är för fri för att ha kraft att med egen vilja hålla mig från att göra det som för stunden känns mindre ansträngande och mer njutningsfullt. Men låt oss lämna det åt sidan för en stund och faktiskt försöka göra en ansträngning. Har jag några konkreta bilder av hur jag skulle vilja att min vardag såg ut? Ja det har jag!
+
+Jag vill bo i ett hus med en flygel i. Flygeln skall stå i ett rum som inger lugn och harmoni. Det skall vara tyst och ombonat. Men också inge en känsla av rymd. Att det finns plats att andas! Jag skulle vilja ha en utsikt över vatten från min plats vid flygeln. Jag skulle vilja att det kring flygeln finns plats för gäster att stå och sjunga. Jag kan tänka mig en hel vägg som bara är skjutdörrar med glas mot en veranda med utsikt över öppna vidder och himmel. En utsikt över vatten och skog, luft och rymd. Men det skulle också kunna vara en utsikt över mänsklig civilisation. En flygen i ett rum med stora fönster mot skyskrapor med människor i. Det skulle funka men inte min högsta prioritet. Nej, ett rum med en mjuk heltäckningsmatta, stora glasdörrar med utsikt över skog, vatten och himmel är min dröm.
+
+Jag vill bo i ett hus som svävar över marken. Jag vill att mitt hus inte gräver sig fast i marken som en blodigel eller en fästing. Jag vill att mitt hus står på några få ben. Ett starkt och tryggt stöd mot marken men utan att göra några sår. Ett hus på en häll med några få korta lodräta balkar med en några få starka förankringar i klippan. Och på detta vilar hela huset! Ett hus med tomten lämnad obrukad. En tomt med hälla och skogsmark skulle kännas bra!
+
+Jag vill bo i ett hus som i hög grad är ett eget slutet system som skördar vatten och energi från rymden där den står. Jag vill undvika att borra ett hål för att hämta vatten ur marken. Om möjligt vill jag att huset tar in regnvatten eller ytvatten från en bäck eller sjö. Jag vill att huset sedan åter-cirkulerar sitt vatten så långt det är rimligt och möjligt. Diskvatten och vatten för tvätt av kläder vill jag skall vara ett system där använt vatten rensas från smuts och rengöringsmedel och återanvänds för nya tvättar och diskar. Detta vatten behöver inte kunna drickas. Det skall bara vara tillräckligt rent för att jag skall kunna diska och tvätta i det. Jag vill ha ett andra system av vatten för tvätt av kroppen, alltså duschvatten och tvättställsvatten. Detta vatten behöver renas från två och rengöringsprodukter som används på kroppen. Jag tror det är en annan reningsprocess än den som behövs för disk och tvättvatten. Alltså är det rimligt att ha ett separat system för att åter-cirkulera t vatten för hygien.
+
+Jagvill att huset skall ha inbyggd förvaring så att alla saker jag äger kan få en plats och samtidigt skall vara lätt att komma åt och använda. Jag vill pröva idén att skare jag har inte skall ligga i lager. De skall ligga tillgängliga för att användas när så behov uppstår. Mina kläder skall hänga och ligga så att jag lätt ser vad jag har och kan bestämma vad jag skall eller kan ha på mig både medvetet och omedvetet.
+
+**AHA - Jag vill kunna organisera mina saker rent fysiskt så att jag kan få min interna model av vad jag äger och har att överensstämma med den fysiska organisationen av min saker**. Kanske är det så, tänker jag, att för att kunna få ut bästa möjliga värde av mina saker så behöver jag ha dom organiserade på ett sätt som göra det möjligt för mig att på ett enkelt sätt både kan “se” vad jag har men också “se” hur de hänger ihop och därför också “se” vad sakerna gör det möjligt för mig att göra. Jag behöver också kunna interagera med själva organisationen av de saker jag har. Kanske måste en viss sak inte ligga i hallen utan i köket. Kanske måste vissa saker organisera på ett speciellt sätt under en viss period då jag är upptagen med en viss aktivitet? Säg att jag för närvarande fokuserar på att omvandla tid till kläder? Då behöver jag organiser amin saker så att tyg och symaskin är lätt tillgängliga och överskådliga. Senare vill jag kanske omvandla tid till en bokhylla. Då behöver jag kanske ställa dator, papper och min snickarverkstad i ordning så att denna process blir effektiv?
+
+Ett meningsfullt boende för mig är alltså ett där jag på ett smidigt sätt kan organisera den fysiska realiteten så att jag med minst tid och energi kan skapa maximal mening och därmed tillfredsställelse och frid?
+
+Jag vill att mitt hus skall ha en verkstad med maskiner. Och i den verkstaden skall det finnas ett material-lager. Detta material-lagers skall på ett enkelt sätt lagra och göra tillgängligt saker som begagnade cykeldäck och uppklippta slangar, kartongbitar, sparat packmaterial som bubbelplast och frigolit, delar från återvunna laserskrivare och kaffebryggare. Det skall finnas plats för långa begagnade fackverk i plåt för gipsväggar. Det skall finnas plats för sparat hår, hittade larm-brickor för kläder. Ja lite allt möjligt helt enkelt. Så lagert behöver kunna lagra långa saker, platta saker, stora saker och små saker. Och allt måste vara överblickbart. Det måste ligga på ett sätt så att det är lätt att få en överblick. Det skall gå att flytta om och organisera på olika sätt. Men allt skall alltid ha ett hem av lagom storlek och inte vara i vägen för andra saker.
+
+Jag vill också ha materiallager med nytt material. Det viktigaste lagret är lagret för material till husbygget. Där måste kunna ligga virke till ramverket, skivor till innerväggar, rör för avlopp och stuprännor. Ja allt som själva huset skall byggas av!
+
+Jag vill att huset skall ha en hög sida mot solen, alltså mot söder, och en låg sida åt det kalla norr. Samtidigt vill ha ha solceller som fångar mest energi från söder. På något sätt får jag försöka hitta en ställning för solcellerna som inte följer taket som kommer att slutta mot norr. Eller är det kanske fel tänkt? Jag vill ju att huset exponent så lite yta mot norr som möjligt. Då kanske ett tak som sluter på södra sidan är bättre? Och huset får bara en lodrät, om än hög, gavel mot norr?
+
+Jag vill ha solceller och tysta vindturbiner som skördar energi. Även om vertikala vindturbiner är mindre effektiva än stående så verkar de ändå var mer lättplacerade på en tomt och dessutom generera mycket mindre ljud?
+
+...
+
+...
+
+{% endraw %}

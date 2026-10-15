@@ -1,0 +1,29 @@
+﻿
+1) Consider the package managers mentioned in this article "How to install packages on Debian 11" (https://linuxhint.com/installing_packages_debian/ <https://linuxhint.com/installing_packages_debian/> )?
+
+Some commands have been obsoleted in the newer version of Debian 11 like apt-get, but there are many other commands which can be used as an alternative to apt-get to install the packages in Debian 11.
+
+Installing a package using apt
+>sudo apt install
+>sudo apt remove
+>sudo apt autoremove [package-name]
+
+Installing a package using dpkg
+>sudo dpkg -i [package]
+>sudo dpkg -r [package]
+
+Installing a package using aptitude
+>sudo apt install aptitude
+>sudo aptitude install [package name]
+>sudo aptitude remove [package name]
+
+Installing a package using gdebi
+>sudo apt install gdebi
+>sudo gdebi [package name]
+
+
+
+
+
+
+...

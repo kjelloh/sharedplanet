@@ -1,0 +1,138 @@
+﻿Could it be fun and valuable to be able to define defacto functions using meta-value processing expressions and statements?
+
+1) Consider a purely functional language using a basic set of functions and function composition?
+
+	==> Consider ’:’ to bind (declare) name to/as meta-value (name declared-as meta-value)?
+
+		Declaration: x:number
+
+		==> The declaration would read x declared-as number
+
+	==> Consider ’=’ to bind (define) name as/to a value?
+
+		Definition: x = 4
+
+		==> The definition would read: x defined as 4.
+
+	==> Consider Definition may be written as declaration = value?
+
+		definition: x:number = 4
+
+		==> The Definition would read x declared as number defined as 4?
+
+	==> Consider to use [] to denote lists?
+
+		Declaration: numbers : [number]
+		Definition: numbers = [2,5,17]
+		Definition: numbers: [number] = [2,5,17]
+
+	==> Consider {} to denote records of declarations?
+
+		Declaration: entry : {name:text, value:number}
+		Definition: entry = {name=”value1”, value=5}
+		Definition: entry:{name:text, value:number} = {name=”value1”, value=5}
+
+		Hm… Record member order is not perserved (thus we need to repeat record member names in the definition)?
+
+	==> Consider ”->” means function computation left side to right side meta-value?
+
+		Declaration: f : number -> number
+		Definition: f = x -> {x*x}
+		Definition: f : number -> number = x -> x*x
+
+		==> The declaration would read: ”f” declared as compute number to number
+		==> The definition would read: ”f” equals x computed to expression x*x.
+
+			==> Note: The declaration already stated x to be number and expression to evaluate to number?
+			==> short-hand definition would read: f declared as number to number, defined as x computed as x*x?
+
+		==> Compare JavaScript (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions>)
+		==> Compare Haskell (https://www.haskell.org/arrows/ <https://www.haskell.org/arrows/>)?
+
+		Hm… ”number -> number” defines meta-value {function,{number, number}}?
+
+	==> Consider to use [] to denote lists also in expressions?
+
+		Declaration: f: number -> [number]
+		Definition: f = x -> [x]
+		Definition: f : number -> [number] = x -> [x]
+
+		==> The declaration would read: ”f” such that number computes to list-of-number
+		==> The definition would read: ”f” equals x computes as expression - list with member x.
+
+	==> Consider {} to denote records also in expressions?
+
+		Declaration: f: text -> number -> {name:text,value:number}
+		Definition: f = name -> value -> {name=name, value=value}
+		Definition: f : text -> number -> {name:text, value:number} = name -> value -> {name=name, value=value}
+
+		Hm… This is strange?
+
+		==> But it could make sense as in the definition ’=’ means named-value = value (so name=name means record member ”name” defined as argument value ”name”?
+		==> Compare this to C++ that allows constructor(int x) : x(x) {} to mean member x = argument x?
+
+	==> Consider "f argument” means f applied to argument?
+
+		Declaration: entry : {name:text,value:number}
+		Definition: entry = f ”value1” 5
+		Defiinition: entry :  {name:text,value:number} = f ”value1” 5
+
+		==> The declaration would read: ”entry” declared as record {name:text,value:number}
+		==> The definition would read: entry defined as f applied to ”value1” - applied to 5 (which will invoke f expression {name = ”value1”, value = 5})
+
+		…
+
+2) Consider meta-values are initialization functions anonymously defined when they occur to the right of ’=’?
+
+	definition: x = number 4
+
+	==> Would read: x is defined as the number meta-value applied to 4 (x is this bound to meta-value named ”number")
+
+		==> Note: meta-values are always functions that computes initialization values?
+
+	Definition: numbers =  [number] [2,5,17]
+	
+	==> Would mean [number] is the anonymous list-of-numbers meta-value applied to the list [2,5,17] (numbers thus bound to anonymous list-of-numbers meta-value)?
+
+	Definition: entry = {name:text, value:number} {name=”value1”, value=5}
+
+	==> {name:text, value:number} declaration defines an anonymous record-meta-value then applied to defacto record value {name=”value1”, value=5} (entry is thus bound to the anonymous record-meta-value)
+
+	Definition: f = number -> number x -> x*x
+	Definition: f = number -> [number] x -> [x]
+
+	==> Would mean number -> number is the anonymous meta-arrow-value (computation) defined as x -> x*x (f is thus bound to the anonymous meta-arrow number->arrow and defined )?
+
+		==> Note: We do not need any framing ( meta-value -> meta-value defines anonymous meta-arrow and the ”space x” indicates end of meta-value declaration)?
+		==> Or, require parenthesis to aid parsing?
+
+		Definition: f = (number -> number) (x -> x*x)
+		Definition: f = (number -> [number]) (x -> [x])
+		
+		??
+
+	Definition: f  = text -> number -> {name:text, value:number} name -> value -> {name=name, value=value}
+
+	==> WE ARE HERE...	
+
+3) Consider to define also imperative statements?
+
+	==> Consider to use {} to compose statements in arrow computations (functions)?
+
+		Declaration: f: number -> [number]
+		Definition: f = x -> {
+			if (>5) x {
+				{return [x]}
+				,{return []}
+			}
+		}
+
+…
+
+Consider to elaborate on this ida of defining some language to allow the model to contain meta-value computation (arrows alias functions)?
+...
+
+		
+	
+
+		

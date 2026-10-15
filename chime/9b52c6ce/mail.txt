@@ -1,0 +1,55 @@
+﻿Could it be possible to use VST instruments in a home built digital piano?
+
+1) Consider the API’s provided by this Piano VST instrument (https://www.thomann.de/se/synthogy_ivory_ii_grand_piano.htm?glp=1&gclid=Cj0KCQiAgNrQBRC0ARIsAE-m-1yVh-Ne6qE28c8nSkKb3nqo6J5zPNJS9k_UG_6TRfB_SKoRYuUixs8aArU_EALw_wcB <https://www.thomann.de/se/synthogy_ivory_ii_grand_piano.htm?glp=1&gclid=Cj0KCQiAgNrQBRC0ARIsAE-m-1yVh-Ne6qE28c8nSkKb3nqo6J5zPNJS9k_UG_6TRfB_SKoRYuUixs8aArU_EALw_wcB>)?
+
+“Supported formats: VST2 / AU / AAXnative / RTAS
+
+System requirements: WinVista (32/64-bit), Mac OSX 10.7, 2 GHz Dual Core CPU, 2 GB RAM, 77 GB HD, Internet connection, thomann Pace iLok"
+
+
+2) It seems we need to support digital keys to unlock purchased VST, e.g., Pace iLok (https://ilok.com/#!ilok-requirements <https://ilok.com/#!ilok-requirements>)?
+
+“What do I need in order to use my iLok?
+
+In order to use an iLok, you'll need at least 3 things:
+
+	• Your iLok :)
+
+	• A license for the iLok-protected software you want to run (you’ll need to have the publisher place this license in your account or send you an Activation code)
+
+	• The software that is iLok protected (usually a download from the Publisher's or retailer's website, we do not host those on this site)"
+
+3) VST seems to be an acronym “Virtual Studio Technology” for the set of different digital audio plug-in instruments and audio devices developed by Steinberg  (https://en.wikipedia.org/wiki/Virtual_Studio_Technology <https://en.wikipedia.org/wiki/Virtual_Studio_Technology>)?
+
+4) Audio Units (AU) sems to be an Apple operating systems VST API (https://en.wikipedia.org/wiki/Audio_Units <https://en.wikipedia.org/wiki/Audio_Units>)?
+
+“Audio Units (AU) are a system-level plug-in architecture provided by Core Audio in Apple's macOS and iOS operating systems. Audio Units are a set of application programming interface (API) services provided by the operating system to generate, process, receive, or otherwise manipulate streams of audio in near-real-time with minimal latency. It may be thought of as Apple's architectural equivalent to another popular plug-in format, Steinberg's Virtual Studio Technology (VST). Because of the many similarities between Audio Units and VST, several commercial and free wrapping technologies are available (e.g. Symbiosis and FXpansion VST-AU Adapter)."
+
+5) RTAS, Real Time AudioSuite, seems to be (https://en.wikipedia.org/wiki/Real_Time_AudioSuite <https://en.wikipedia.org/wiki/Real_Time_AudioSuite>)?
+
+“Real-Time AudioSuite (RTAS) is a format of audio plug-in developed by Digidesign, currently Avid Technology for their Pro Tools LE and Pro Tools M-Powered systems,"
+
+6) Consider if we can use Juce C++ framework to develop player(s) for, e.g., a Digital Plug-in Piano with some USB license key (https://forum.juce.com/t/vst2-vs-vst3-and-whether-i-should-choose-juce/16946 <https://forum.juce.com/t/vst2-vs-vst3-and-whether-i-should-choose-juce/16946>)?
+
+	…
+
+7) Consider what micro-controller we can use to be able to process purchased Virtual Instrument (e.g., do we need a windows platform)?
+
+	…
+
+8) Consider to salvage the keyboard of a real piano as the keyboard for my digital piano?
+
+	…
+
+9) Consider to purchase and use PianoDisc Silent Piano hardware (http://www.pianodisc.eu/en/products/quiettime-silent-and-midi-systems.html <http://www.pianodisc.eu/en/products/quiettime-silent-and-midi-systems.html>)?
+
+	==> They seems to have the product ProRecord, Midi Only without the actual Paino sound module (http://www.pianodisc.eu/tl_files/downloads/en/Sales%20Brochure%20QuietTime%20Silent%20Systems%20Overview%20-%20EN%20-%20NEW!.pdf <http://www.pianodisc.eu/tl_files/downloads/en/Sales%20Brochure%20QuietTime%20Silent%20Systems%20Overview%20-%20EN%20-%20NEW!.pdf>)?
+
+
+	==> ProRecotd seems to be the Sensor and Midi-generator part only (http://www.pianodisc.eu/en/products/quiettime-silent-and-midi-systems/quiettime-prorecord-kopie.html <http://www.pianodisc.eu/en/products/quiettime-silent-and-midi-systems/quiettime-prorecord-kopie.html>)?
+
+“the new ProRecord Optical Key Sensor System is perfect for the professional user and generally for users looking for a system that can match and even surpass the performance of any factory fitted system in the market today.”
+
+	==> Thus, it should be possible to use this to generate Midi events and feed them to the Piano VST for playback?
+
+Consider to delve deeper into this idea to purchase and use some Virtual Instrument Piano in a digital piano of my own design?

@@ -1,0 +1,2 @@
+﻿Thorough as I am I think it may be valuable to just document the main steps of my Dropbox installation process (on my Mac pro "Trash Can")?
+

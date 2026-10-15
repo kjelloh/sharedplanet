@@ -1,0 +1,38 @@
+# Todo: C++ Programming - Consider to make an OS X "Cover Flow" image browser
+
+```#94f6d9da``` *As of 2018-04-24 17:50*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider it would be a good idea to get a C++ image browser application working to then later use it e.g., for voucher browsing in a book keeping application?
+
+==&gt; Also see “Todo: Programming - Överväg att beskriva och eventuellt bygga "drömapplikationen" för företagare för bokföring, bokslut och admin. av skatt och avgifter och göra den C++ open source?”
+
+1) Consider Wikipedia article on the Cover Flow GUI (<https://en.wikipedia.org/wiki/Cover_Flow>)?
+
+2) Consider what C++ frameworks or libraries I can use to create the OS X mimicking Cover Flow UI?
+
+==&gt; There seems to e a RAD Studio XE3 Fire Monkey example “FireFlow” (<https://www.youtube.com/watch?v=0GmFgQsrYAA>)?
+
+==&gt; Is the example only in Delphi?
+
+...
+
+3) Consider to implement the Cover Flow in an Electron HTML Front end (<https://electronjs.org>)?
+
+==&gt; Consider this proposed youtube “What is Electron: The Hard Parts Made Easy” (<https://youtu.be/8YP_nOCO-4Q>)?
+
+==&gt; Consider that all these desktop apps are in fact Electron JavaScript Apps that run in a local Browser?
+
+![](<Screen Shot 2018-04-24 at 16.29.22.png>)
+
+==&gt; Consider this “Electron Elm Tutorial” youtube video (<https://www.youtube.com/watch?v=FP4P7_c4meY>)?
+
+==&gt; He seem to state that Electron is built on Chromium web browser (stripped down)?
+
+…
+
+…
+
+{% endraw %}

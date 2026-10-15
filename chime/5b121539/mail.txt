@@ -1,0 +1,59 @@
+﻿
+	==> Also see "Todo: Consider to understand how I may write plugins to automate Final Cut Pro X (FCPX) tasks more to my liking?"
+
+1) It seems the FCPX XML reference lives here (https://developer.apple.com/documentation/professional_video_applications/fcpxml_reference <https://developer.apple.com/documentation/professional_video_applications/fcpxml_reference> )?
+
+	==> It seems FCPXML is used to communicate in both directions between plugins and FCPX itself (https://developer.apple.com/documentation/professional_video_applications/fcpxml_reference/creating_fcpxml_documents <https://developer.apple.com/documentation/professional_video_applications/fcpxml_reference/creating_fcpxml_documents> )?
+
+"FCPXML describes Final Cut Pro items in a way your app understands. Your app uses FCPXML to send data to Final Cut Pro, and Final Cut Pro uses it to describe the data your app receives.
+FCPXML describes data from your app in terms that correlate to Final Cut Pro objects — clips and project sequences, along with their media assets, often organized in events. FCPXML captures editing decisions, including the order of clips, as well as audio or video effects and transitions. It also captures metadata associated with the media assets, as well as ratings, keywords, and markers that Final Cut Pro uses to organize and annotate data."
+
+
+	==> Consider this example of a FCPX project XML file (https://developer.apple.com/documentation/professional_video_applications/fcpxml_reference/describing_final_cut_pro_items_in_fcpxml <https://developer.apple.com/documentation/professional_video_applications/fcpxml_reference/describing_final_cut_pro_items_in_fcpxml> )?
+
+<fcpxml version="1.9">
+<import-options>
+<option key="library location" value="file:///Volumes/FCPXLibraries/MyLibrary.fcpbundle"/>
+</import-options>
+<!--  Resources  -->
+<resources>
+<format id="r1" name="FFVideoFormat1080p30"/>
+<asset id="r2" start="0s" duration="10s" hasVideo="1" hasAudio="1" format="r1" audioSources="1" audioChannels="2" audioRate="48000">
+<media-rep kind="original-media" src="file:///Volumes/Media/MyMovie1.mov"/>
+</asset>
+<asset id="r3" start="0s" duration="20s" hasVideo="1" hasAudio="1" format="r1" audioSources="1" audioChannels="2" audioRate="48000">
+<media-rep kind="original-media" src="file:///Volumes/Media/MyMovie2.mov"/>
+</asset>
+<asset id="r4" start="10s" duration="40s" hasVideo="1" hasAudio="1" format="r1" audioSources="1" audioChannels="2" audioRate="48000">
+<media-rep kind="original-media" src="file:///Volumes/Media/MyMovie3.mov"/>
+</asset>
+</resources>
+<project name="MyProjectWithMarkers">
+<!--  Project Story Elements  -->
+<sequence format="r1">
+<spine>
+<asset-clip name="MyMovie1" ref="r2" start="0s" duration="5s" audioRole="dialogue">
+<marker start="2s" duration="1000/30000s" value="My Marker 1"/>
+</asset-clip>
+<asset-clip name="MyMovie3" ref="r4" offset="5s" start="15s" duration="5s" audioRole="dialogue">
+<chapter-marker start="18s" duration="1000/30000s" value="Chapter 2" posterOffset="19s"/>
+</asset-clip>
+<asset-clip name="MyMovie1" ref="r2" offset="10s" start="5s" duration="5s" audioRole="dialogue">
+<marker start="8s" duration="1000/30000s" value="My Marker 2"/>
+</asset-clip>
+<asset-clip name="MyMovie2" ref="r3" offset="15s" start="5s" duration="5s" audioRole="dialogue">
+<marker start="6s" duration="1000/30000s" value="My To Do 1" completed="0"/>
+<marker start="8s" duration="1000/30000s" value="My To Do 2" completed="1"/>
+</asset-clip>
+<asset-clip name="MyMovie1" ref="r2" offset="20s" start="0s" duration="5s" audioRole="dialogue">
+<marker start="4s" duration="1000/30000s" value="My Marker 3"/>
+</asset-clip>
+</spine>
+</sequence>
+</project>
+<!--  Clips  -->
+<asset-clip name="MyMovie1" ref="r2" format="r1" start="0s" duration="10s" audioRole="dialogue"/>
+<asset-clip name="MyMovie2" ref="r3" format="r1" start="0s" duration="20s" audioRole="dialogue"/>
+<asset-clip name="MyMovie3" ref="r4" format="r1" start="10s" duration="40s" audioRole="dialogue"/>
+</fcpxml>
+...

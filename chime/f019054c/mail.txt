@@ -1,0 +1,9 @@
+﻿In TED Talk (http://www.ted.com/talks/jim_simons_a_rare_interview_with_the_mathematician_who_cracked_wall_street#t-486228) Jim Simons mentions the Euler Characteristic that is invariant between shapes of the same topology (e.g. Spheres have an Euler number of 2 while a “donut” has an Euler number of zero).
+
+1) Note that different topologies share the same Euler number.
+2) Is it possible to represent a graph of realting “truths” into a graph, i.e. is the web-approach a valid one?
+3) if so, how would we then go about to calculate the Euler Number of that web?
+4) If we succeed, would we then be able to tell if our truth web is a “donut” rather than a sphere-within-a-shpere? And by the way, what is the Euler Number of a sphere-within-a-sphere?
+
+Well, this could be a dead end but the idea to investigate the topology of interdependent “truths” is still an interesting one?
+...

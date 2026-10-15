@@ -1,0 +1,124 @@
+﻿So, what C++ semantics can we implement to allow easy to use and easy to read index traversal of composites (components)?
+
+	==> Note: All components should support index (anonymous node) traversal?
+	==> Note: Some components may support named (keyed) members?
+
+-1) It seems we have three ways of matching a Path to a Component tree?
+
+	a) The Component uses Level[i]::member == Path[i] (i.e. operator== on Component and Key)
+	b) The Component uses a provided binary Predicate(member,Key)
+	c) The Path Key is a Predicate(member)
+
+	==> Consider to try them out to see what design is the ”best”?
+
+1) Consider array index using operator[] (index)?
+
+	Component& e =  c[1][3][2]; // have operator[](index) return a reference to selected child
+
+2) Consider child select using operator()(index)
+
+	Component& e = c.n(1)->(3)->(2); // have operator()(index) return pointer to selected child and.
+	Component& e = c(1)(3)(2); // 
+
+3) Consider selection using index initializer list?
+
+	Component& e = c[{1,3,2}];
+
+	==> This seems to have the advantage that we can apply relative paths?
+
+	Component& e2 = c[{1,3}];
+	Component& e3 = e2[{2}];
+	Component& e3 = c[{1,3}][{2}];
+	...
+	
+4) Consider how to extend indexed traversal to keyed traversal?
+
+	==> Consider to overload the operator[] with ones taking key types instead of index types?
+	==> Q: How do we prevent ambiguity between index type and key types matching or implicitly cartable to index type (e.g. enum keys)?
+
+	Component& e =  c[”Student”][”Adress”][”Street"]; // apply operator[](t_key), t_key == std::string
+	Component& e =  c[{”Student”,”Adress”}[”Street"]; // apply operator[](std__initializer_list<t_key>)
+	…
+
+		==> Seems it works quite well to overload unsigned int index versions with enum key versions?
+
+        enum e_Key {
+            key1
+            ,key2
+            ,key3
+        };
+
+        class Component {
+        public:
+            using Index = unsigned int;
+            using Key = e_Key;
+            
+            Component& operator[](Index i) { return *this;}
+            Component& operator[](std::initializer_list<Index> indexes ) { return *this;}
+
+            Component& operator[](Key key) { return *this;}
+            Component& operator[](std::initializer_list<Key> keyes ) { return *this;}
+
+        };
+    }
+    
+    void test() {
+
+        {
+            using namespace naive;
+            Component c;
+            Component& e1 = c[1];
+            Component& e2 = c[{1,3}];
+            Component& e3 = c[key1];
+            Component& e4 = c[{key2,key3}];
+            Component& e5 = c[key1][{key2,key3}];
+            
+        }
+    }
+
+
+			==> Note: If we remove the Key overloads of operator[], then the index versions are called (enum implicitly cast to unsigned int)	
+
+5) Consider what it would take to now handle XPath into xml Components using the Key traversal mechanism?
+
+	==> See http://www.w3schools.com/xsl/xpath_syntax.asp <http://www.w3schools.com/xsl/xpath_syntax.asp> for examples.
+
+	==> Consider to provide an XPath —> ibis::Path<xml::element_t>?
+
+		==> We could then implement an XML document as a component with members having element_t of either Element or Attribute?
+
+6) Consider to implement Predicate Key nodes (inspired by XPath Predicates)?
+
+	==> Consider how we can implement XPath Predicates as Key of Predicate type?
+
+		"/title[@lang='en’]” means - select all title elements with the attribute lang equals the value ’en’.
+
+	==> Consider an ibi::Path with element Predicate<Attribute,Value>?
+
+	Component& e1 = c[Key]; // Returns Component for which Predicate(component) return true?
+	...
+
+7) Consider ibi::Path is always a vectors of Predicates (each key in the path implements bool operator()(Component) to compare a key match)?
+
+	==> Q: What does this mean to the implementation of Compnent::operator[](Key)?
+
+/bookstore/book[1] 	Selects the first book element that is the child of the bookstore element.
+Note: In IE 5,6,7,8,9 first node is[0], but according to W3C, it is [1]. To solve this problem in IE, set the SelectionLanguage to XPath:
+
+In JavaScript: xml.setProperty("SelectionLanguage","XPath");
+/bookstore/book[last()]	Selects the last book element that is the child of the bookstore element
+/bookstore/book[last()-1]	Selects the last but one book element that is the child of the bookstore element
+/bookstore/book[position()<3]	Selects the first two book elements that are children of the bookstore element
+//title[@lang]	Selects all the title elements that have an attribute named lang
+//title[@lang='en']	Selects all the title elements that have a "lang" attribute with a value of "en"
+/bookstore/book[price>35.00]	Selects all the book elements of the bookstore element that have a price element with a value greater than 35.00
+/bookstore/book[price>35.00]/title	Selects all the title elements of the book elements of the bookstore element that have a price element with a value greater than 35.00
+
+	==> Seems a predicate is actually a key,bool expression pair that compares to a value?
+	==> Seems we could implement them with Lamdas passed to Predicate key node of Path?
+
+	...
+…
+
+Consider to elaborate on what index traversal semantics we may consider in C++?
+...

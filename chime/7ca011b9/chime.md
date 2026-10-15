@@ -1,0 +1,24 @@
+# Todo: Explain how "should I pray" is answered differently in the "God Exists" truth web and the "Natural Laws" truth web
+
+```#7ca011b9``` *As of 2015-09-07 12:37*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to use the example of praying to give an example how a religious person may benefit from holding two contradicting truths at the same time.
+
+1) A Person experience suffering and asks herself if she would pray.  
+2) The truth web based on ”God Exists” tells her yes - by praying she may gain power or even make god apply its power to change the circumstances to the better.  
+3) The ”Natural Laws” web tells her - No, there is no meaning as she can affect the situation only with what is known to science. If the hurt is emotional she may visit a shrink. If the is ill she may seek a doctor for treatment is there is one.  
+4) But if the holds both as true she may do both. In the face of the religion she may interact with the situation as a religious dividual using the tools and advice and comfort from other religious dividuals. In the face of science she may become a dividual that seeks out a doctor, a psychiatrist or other treatments that has some evidence.  
+5) An ordinary person may not even have a problem of applying these two truths webs to experience-as-it-is as she may lack the information needed to spot the contradiction.  
+6) Now, is this strategy unreasonable? Is this not a wise thing to do? Could one say that the one that abandons religion and applies science is smarter and has applied a sounder strategy to the things at hand?
+
+Could it not be that a human should be free to put faith in anything as long as she and humanity as a whole does not suffer and instead can collaborate to make life rich and awesome?
+
+a) So, how do we define what is ”bad” with religion (the bad results of acting-in-faith) and what is good (the benefits from acting-in-faith).  
+b) And what can be said to be bad science (bad or less good result form acting-in-faith) and what is good (the benefits from acting-in-faith).  
+c) What does this say about the Super Curious scientist and religious believer?  
+...
+
+{% endraw %}

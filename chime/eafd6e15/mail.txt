@@ -1,0 +1,1 @@
+﻿Consider to write an app that synchronizes (makes a local cache copy) of the Swedbank Lighthouseapp account projects.

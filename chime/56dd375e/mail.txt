@@ -1,0 +1,27 @@
+﻿Make seem to be the currently most popular cross platform make tool for C-like languages (C++ explicitly)
+
+1) It seem to enable intelligent (local system service and file discovery) cross platform make utility (https://cmake.org/ <https://cmake.org/>)?
+
+2) CMake for windows seem to be available as win32 installer (https://cmake.org/download/ <https://cmake.org/download/>)?
+
+	==> Downloaded and installed cmake-3.4.1-win32-x86.exe.
+	==> The installer is not signed (trust anyways)
+	
+
+
+	==> Made installer add CMake to PATH (for convenient use)
+
+
+
+	==> Installed to default “C:\Program Files (x86)\CMake”
+
+	==> The installer failed to add CMake to PATH (PATH variable to long)
+
+
+
+	==> Added “C:\Program Files (x86)\CMake\bin” to PATH manually (no problem)
+	==> Note: Error could be due to having a folder property dialog open in windows finder?
+
+	==> make now works in windows command prompt :)
+
+3) Consider to download the source code and build using Visual Studio ()?

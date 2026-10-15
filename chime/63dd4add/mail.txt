@@ -1,0 +1,25 @@
+﻿There seems to exist ready to use chips, assembled boards and youtube videos on the MMPT versus PWN solar panel charger techniques? Consider to delve into this area of available information on how to most efficiently harvest wind and solar energy into Lithium on batteries?
+
+
+1) Consider to use the Texas Instrument BQ24650 MMPT charger chip (http://www.ti.com/lit/ds/symlink/bq24650.pdf)?
+
+	==> Consider this youtube clip ”Voltlog #54 - BQ24650 MPPT Charging Module” (https://www.youtube.com/watch?v=yjvV_yBvZdw)?
+
+2) Consider to use the CN3722 (http://www.consonance-elec.com/pdf/datasheet/DSE-CN3722.pdf)?
+
+	==> Consider this youtube clip ”Cheap(est?) Lithium MPPT Solar Charge Controller CN3722 - 12v Solar Shed” (https://www.youtube.com/watch?v=liYZ5pYOZDE)?
+
+3) Consider sources of ”wind turbine Maximum Power Point Tracking” also?
+
+	==> Consider this youtube video ”” covering some basics to host energy from Solar and wind  - but not using MPPT technique (https://www.youtube.com/watch?v=oabDLnsIiSs)?
+	==> Consider this site that sells wind turbine DIY kits and components (http://www.hydrogenappliances.com/batteryregulator.html)?
+	==> Consider this article on trying to identify good MPPT algorithms for wind (http://onlinelibrary.wiley.com/doi/10.1002/tee.22128/abstract)?
+
+”Because of the continuously changing nature of the wind, the output power of a wind energy conversion system (WECS) can be maximized if the wind rotor is driven at an optimal rotational speed for a particular wind speed. This is achieved with a maximum power point tracking (MPPT) controller. Over the years, a variety of MPPT studies have been made, but very few provide guidelines to single out the most suited MPPT technique. In this paper, a comprehensive comparison of the four most used schemes has been made in relation to a permanent magnet synchronous generator (PMSG) wind turbine system."
+
+	...
+
+…
+
+Consider to delve into this area of available information on how to mot efficiently harvest wind and solar energy into Lithium on batteries?
+

@@ -1,0 +1,47 @@
+﻿I want some images to inspire me to strive for the house I want to build.
+
+1) Consider the porposal for available web based AI tools to generate images for house designs?
+
+"For generating inspirational designs for a low-energy, eco-friendly house, there are several AI tools that can provide visuals, concepts, and design elements tailored to your ideas. Here are some top recommendations:
+
+1. **DALL-E by OpenAI**: DALL-E can generate visually inspiring concept images based on detailed text prompts. You could describe the architectural style, energy-saving features, and desired ambiance of your low-energy home, such as "passive solar design with natural materials" or "compact, green-roofed house with large windows." This could help visualize the style, materials, and spatial layout you envision.
+
+2. **Midjourney**: Midjourney is another excellent AI tool that generates artistic and detailed concept art. By entering prompts like "low-energy modern home in natural surroundings with large south-facing windows," you can create inspiring visuals that reflect your sustainable goals.
+
+3. **Interior AI**: Interior AI offers a design-focused approach, and although it is typically used for interior spaces, you can also generate ideas for exterior finishes and general layouts. Describe your preferences for energy efficiency and materials (like insulated walls, passive solar techniques, etc.), and it can generate interior concepts that align with these features.
+
+4. **Home Design 3D AI**: If you're interested in creating floor plans or room layouts, Home Design 3D AI can provide preliminary room layouts and visualize a home's spatial organization. It’s a practical tool for seeing how energy-efficient layouts might work in your space.
+
+5. **Revit with AI Plugins**: Autodesk’s Revit, when used with AI-driven plugins like TestFit and Spacemaker, can help develop sustainable building layouts with real-world considerations. These tools offer insights on energy-efficient designs by accounting for factors like sunlight exposure, natural ventilation, and optimal insulation.
+
+6. **Design Inspiration Tools like Architizer and Pinterest**: Although not strictly AI, sites like Architizer use machine learning to recommend related design images based on your likes and searches, so they can help you find inspiration in existing eco-friendly architectural projects.
+
+### How to Get the Most Out of These Tools
+- **Be Specific in Prompts**: Describe elements like “open floor plan with cross ventilation,” “rainwater harvesting,” or “green roofing.”
+- **Request Regional Customization**: Tailor prompts to your location’s climate for AI-generated designs that reflect energy-efficient adaptations (e.g., extra insulation for colder climates).
+- **Iterate**: Experiment with multiple versions of prompts to refine the ideas further. AI tools like DALL-E and Midjourney allow multiple iterations with slight changes to prompts for diverse results. 
+
+These tools together can help you visualize your ideas and see what sustainable, low-energy elements can look like in a finished concept."
+
+2) Consider DALLE-3 generated house design?
+
+	==> This is one of the images generated from the prompt "passive solar design with natural materials"
+
+	￼
+
+3) Consider if and how I should buy a subscription to Midjourney?
+
+It seems midjourney costs from $8 up to $69 per month?
+
+
+4) Consider Interior Designs we AI (https://www.interioraidesigns.com <https://www.interioraidesigns.com/> )?
+
+First - I did noit like that I could not reject all cooies in one easy dialog. Intstead I had to scroll through a long list of options and deactivate them one by one.
+
+But it seems I sign up with a one time payment (no subscriuption) which I found positive.
+
+But - The AI seems to take an image or drawing as inout. So it is not possible to generate a design from a a prompt only?
+
+...
+
+

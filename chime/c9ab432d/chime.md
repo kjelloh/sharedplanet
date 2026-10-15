@@ -1,0 +1,18 @@
+# Todo: Study our minds user interface to reality
+
+```#c9ab432d``` *As of 2015-09-17 15:21*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+In his TED talk (http://www.ted.com/talks/donald_hoffman_do_we_see_reality_as_it_is) Donald Hoffman proposes an approach where we in fact are Consciousness and an interface to reality-as-it-is is created for as as an illusion to enable us to interact with it and each other.
+
+1) Is it so that our consciousness is actually our tool to see passed our user interface to reality? It is the very aspect to feel separated from ourself is what is needed to be able to question and think past how the world seems to be but actually are not. This is what is needed to supervise what our ”automatic” parts are doing and add yet another basis of action?
+
+2) He sais our perception is shaped to fit our purpose, not to show the "real reality". But that does not mean our ability to perform logic and mathematics is not able to lead us closer to the truth?
+
+3) Could it be that our consciousness is constructed by our body to help us leap into the world beyond perception? Then this ”what is really out there” may be our mother concept of God? And meanwhile ”God” may be our experience of interaction, the outcome of it and the utopia we dream of as a result of this in the future?
+
+Published at http://kjell-olov.hogdal.org/?p=248
+
+{% endraw %}

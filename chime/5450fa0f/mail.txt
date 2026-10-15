@@ -1,0 +1,59 @@
+﻿It seems we would like us as end user to be able to compose ourselves with both hardware and software functionality and operations of tasks in any graphical works tool chain?
+
+	==> Also see "Todo: Consider to understand graphics card architectures and abilities based on the benchmarking made for evaluating the jan 2019 AMD Radeon VII vs Nvidia RTX 2080?"
+	==> Also see "Todo: Consider we should actually be tempted to re-think current computers with centralised CPUs and instead imagine high performance tasks to be moved closer to the data in a pipe of data processing?"
+
+1) Consider how much it seems existing graphical tools overlap and fail to interact with each other (causing us as end user to do unnecessary work to create work flows and to pay to much due to tool overlap redundancy)?
+
+	==> Consider rendering of models into photo realistic images or videos seem to be part of many tools (so when having to use several to get to their individual unique abilities we end up paying for rendering several times)?
+
+	==> Consider the ability to create 3D models seem to be part of several tools (even if their unique functionality has nothing to do with modelling)?
+
+	…
+
+2) Consider how we can imagine graphical work tool-chains and what operations that are actually involved?
+
+	==> Consider Modelling and rendering are separate operations (the model can be manifested as different types of rendering depending on how the model is manifested)?
+
+		Model —> (Render operation) —> real-time Image or Video (for efficient real time view during work with model)
+
+	==> Consider rendering is separate from Encoding (a rendering can be compressed into a file for persistent storage and operate viewing through the process of encoding)?
+
+		Real-time Image or Video —> (Encoding operation) —> Compressed Image or Video bit-stream (e.g., For persistent storage as file or real-time streaming to network)?
+
+		==> Consider Encoding is a step after rendering to make sharing and storage of rendered images or videos more efficient?
+
+	==> Consider CAD is separate from CAM in that CAM is a process to manifest a model into an actual physical object?
+
+		CAD —> (Additive or subtractive manufacture process) —> CAM
+
+		==> Consider how we can separate the design Model from the manufacture Model?
+
+		Model of design —> Model of Manufacturing
+
+3) Consider in what way we can imagine to use Tha-Modelling to get a grip of how graphical work tool chain operations relate to each other?
+
+	==> Consider a 3D Model of a design is Meta to a CAM model of manufacturing (CAD is the constructor for CAM)?
+
+		n+1:		CAD
+		n:		CAM
+
+	==> Consider a 3D model is Meta to a rendering (The 3D Model is the constructor of a rendering?
+
+		n+1:	3D Model
+		n:	Rendering 
+
+	==> Consider physical modelling is interaction on a physically manifested 3D design (The physical modelling is in the "same" reality-level as the manifested model)?
+
+		n+1: 3D Model		n+1: Model of Physical Environment
+		n:	Physical Model	n: Physical Environment
+
+		==> Consider the Model of a physical environment is the constructor for the Physical Environment (that is to exist and interact in the "same" reality as the manifested 3D Model of the object to simulate)?
+
+4) Consider for transformation from a model to a persistent  compressed storage we would like to have the operation to be made very close (in line with) the actual writing to the SSD?
+
+	==> Consider an SSD with an additional FPGA that we can configure for e.g. H.264 encoding on a rendered bit-stream (truning the rendered graphics into compressed graphics)?
+
+	==> Consider what options we have to actually use run-time software to trun software defined operations into FPGA implemented hardware accelerated operations?
+
+	...

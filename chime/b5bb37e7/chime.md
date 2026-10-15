@@ -1,0 +1,47 @@
+# Todo: Programming - Consider to check out the C++ visualisation and media library Cinder?
+
+```#b5bb37e7``` *As of 2016-05-30 13:45*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Cinder seems like a good C++ library for cross platform visualisation and media front-ends?
+
+1) Cinder seems to live here (<https://libcinder.org>)?
+
+2) Consider this as a good introduction to using Cinder (<https://libcinder.org/docs/guides/opengl/index.html>)?
+
+==&gt; Cinder seems to be based on Open GL (and hence does not target the Linux platform)
+
+“Cinder supports desktop OpenGL on Microsoft Windows and OS X, and the OpenGL ES API on iOS and Android”
+
+3) Cinder seems to enable a very easy way to get a GUI application based on Open GL up and running (<https://libcinder.org/docs/guides/opengl/part1.html>)?
+
+```
+	#include "cinder/app/App.h"
+	#include "cinder/app/RendererGl.h"
+	#include "cinder/gl/gl.h"
+
+	using namespace ci;
+	using namespace ci::app;
+
+	class BasicApp : public App {
+	  public:
+		void draw() override;
+	};
+
+	void BasicApp::draw()
+	{
+		gl::clear();
+	}
+
+	CINDER_APP( BasicApp, RendererGl )
+```
+
+…
+
+Consider to delve deeper into Cinder to see how it works and if it could serve as an alternative to write 2D and 3D front-ends?
+
+...
+
+{% endraw %}

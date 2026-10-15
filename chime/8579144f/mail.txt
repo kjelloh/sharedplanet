@@ -1,0 +1,9 @@
+﻿
+
+1) Consider the paper "The Next 700 Programming Languages." by P. J. Landin. 1966 (https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf <https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf> )?
+
+	
+
+...
+
+

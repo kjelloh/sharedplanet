@@ -1,0 +1,29 @@
+﻿I quite often need to 'un-litter' my git repo from files that ends up in the repo but should not be there.
+
+1) It seems 'git clean' is the command to use?
+
+	==> It seems I can 'dry run' git clean with the -n flag?
+
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % git clean -nf
+Would remove eml_to_chime.py
+Would remove eml_to_html.py
+Would remove emls_to_chimes.py
+Would remove html_to_markdown.py
+Would remove pytest.ini
+Would remove test_eml_to_chime.py
+Would remove test_html_to_markdown.py
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % 
+
+	==> It seems 'git clean -f' removes files that are untracked and NOT in '.gitignore'?
+
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % git clean -f 
+Removing eml_to_chime.py
+Removing eml_to_html.py
+Removing emls_to_chimes.py
+Removing html_to_markdown.py
+Removing pytest.ini
+Removing test_eml_to_chime.py
+Removing test_html_to_markdown.py
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % 
+
+...

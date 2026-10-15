@@ -1,0 +1,26 @@
+# Todo: Meta Value Model - Consider to remember how it was Captain Picard that put me on track to Elm Repl and generic function modeling?
+
+```#4adcd5f4``` *As of 2017-06-13 18:42*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It started Wednesday 7 June when Picard in a Start Trek Episode ended an order with ”…with dispatch!”.
+
+I instantly triggered and wondered how Dispatch could be used in that way ”With Dispatch”. So I turned to Google and soon found that it meant ”with haste, promptly” but also why dispatching is a term used in Programming. The wikipedia page (https://en.wikipedia.org/wiki/Dynamic_dispatch) led me to an understanding about C++ single dispatch and Lisp multiple dispatch.
+
+From there I got a lead to my problem of having base class Value method be called with Base class Value argument and still be dispatched to concrete Value instance operating on concrete Value argument. The solution is the Visitor Pattern.
+
+Now, having understod that Lisp has something to teach me about function evaluation and modeling I got inspired to study it, and also to study more modern functional languages like Clojure and Elm.
+
+This hole chain of events lead to me re-discovering the Elm model, update, view run-time and realized thats what I wanted to use for the Meta Value Model engine. It decouples the Client view from the model and operates cleanly with an immutable model. Just what I needed.
+
+Further, it lead me to discover CLOS generic functions and the notion that the Meta Value Model would not be complete without being able to model functions that could be evaluated using multiple dispatch!
+
+All this from Picards single ”…with dispacth!”
+
+PS: The Episode was from Star Trek, The Next Generation season 3, disc 1 to 6 (probably disc 5 or 6)
+
+...
+
+{% endraw %}

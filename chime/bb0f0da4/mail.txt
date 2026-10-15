@@ -1,0 +1,7 @@
+﻿
+1) Consider when smiles a thumbs up at Jonathan about safe_integer implementations At 6:55 into “C++Now 2017: John McFarlane "Composite Arithmetic Types Are ＞ the + of Their Parts” (https://youtu.be/1xSyUoYgSR4?list=PL_AKIMJc4roXJldxjJGtH8PJb4dY6nN1D&t=418 <https://youtu.be/1xSyUoYgSR4?list=PL_AKIMJc4roXJldxjJGtH8PJb4dY6nN1D&t=418>)?
+
+
+
+
+2) 

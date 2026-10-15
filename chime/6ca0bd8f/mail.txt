@@ -1,0 +1,17 @@
+﻿Whilst reading about the c++ POCO project (http://pocoproject.org <http://pocoproject.org/>) I stumbled cross IoT framework machina.io (http://macchina.io <http://macchina.io/>) that talks about a lightweight (small footprint) TCP/IP messaging protocol called MQTT.
+
+1) MQTT seem to be hosted here (http://mqtt.org/documentation)
+
+	==> It is an originally IBM (smarter planet) invention?
+
+2) It seems to be a client/server protocol (http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html)
+
+	== >But also talks about aiming at machine-to-machine messaging (kind of P2P idiom)?
+
+3) Sidenote: The MQTT specification uses requirements its between share brackets just like Swedbank specifications ()http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718013 <http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718013>) :)
+
+	==> But the ID is closely related to the MQTT version and document chapter (making adding or removing IDs in the same version not so flexible).
+…
+
+Consider to keep this protocol in mind for usage in other projects (e.g. TestBench communication with extensions or in Darwinet Node-to-node messaging)?
+...

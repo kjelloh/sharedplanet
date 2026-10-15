@@ -1,0 +1,1293 @@
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew tap freecad/freecad     
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+alsa-lib                        libxext
+asroute                         libxfixes
+box2d                           libxfont
+clang-format@8                  libxft
+cloudformation-guard            libxi
+commitizen                      libxinerama
+croc                            libxkbfile
+dbdeployer                      libxmu
+diskonaut                       libxpm
+dotnet                          libxrandr
+envoy                           libxrender
+fleet-cli                       libxres
+flit                            libxscrnsaver
+font-util                       libxshmfence
+foreman                         libxt
+git-hound                       libxtst
+gitql                           libxv
+halide                          libxvmc
+httpx                           libxxf86dga
+infracost                       libxxf86vm
+ioctl                           localstack
+ladspa-sdk                      matplotplusplus
+leaf                            openfst
+libaio                          ormolu
+libdmx                          periscope
+libfontenc                      podman
+libfs                           prometheus-cpp
+libgccjit                       protoc-gen-go-grpc
+libhandy                        python@3.9
+libice                          rustscan
+libirecovery                    server-go
+libmnl                          shtools
+libnetfilter-queue              snap
+libnfnetlink                    sponge
+libpciaccess                    structurizr-cli
+libpthread-stubs                terrascan
+libseccomp                      tfsec
+libsm                           trunk
+libx11                          util-macros
+libxau                          vivid
+libxaw                          vtk@8.2
+libxaw3d                        webify
+libxcb                          x86_64-elf-gdb
+libxcomposite                   xcb-proto
+libxcursor                      xdpyinfo
+libxdamage                      xorgproto
+libxdmcp                        xtrans
+==> Updated Formulae
+Updated 2892 formulae.
+==> Renamed Formulae
+gst-validate -> gst-devtools
+==> Deleted Formulae
+xu4
+
+==> Tapping freecad/freecad
+Cloning into '/usr/local/Homebrew/Library/Taps/freecad/homebrew-freecad'...
+remote: Enumerating objects: 101, done.
+remote: Counting objects: 100% (101/101), done.
+remote: Compressing objects: 100% (67/67), done.
+remote: Total 954 (delta 42), reused 68 (delta 34), pack-reused 853
+Receiving objects: 100% (954/954), 199.35 KiB | 2.10 MiB/s, done.
+Resolving deltas: 100% (505/505), done.
+Tapped 10 formulae (36 files, 272.7KB).
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew install eigen
+==> Downloading https://homebrew.bintray.com/bottles/eigen-3.3.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/2903
+#                                                              ####################                                           #########################################                      #############################################################  ######################################################################## 100.0%
+==> Pouring eigen-3.3.8_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/eigen/3.3.8_1: 493 files, 6.6MB
+==> `brew cleanup` has not been run in 30 days, running now...
+Removing: /Users/kjell-olovhogdal/Library/Logs/Homebrew/unrar... (64B)
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew install --only-dependencies freecad --with-packaging-utils
+==> Installing freecad from freecad/freecad
+==> Downloading https://homebrew.bintray.com/bottles/cmake-3.18
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/c7c4
+                                                               #                                                              ##                                                             ####                                                           #####                                                          ######                                                         ########                                                       #########                                                      ##########                                                     ############                                                   #############                                                  ##############                                                 ################                                               #################                                              ##################                                             ####################                                           #####################                                          ######################                                         ########################                                       #########################                                      ###########################                                    ############################                                   #############################                                  ###############################                                ################################                               #################################                              ###################################                            ####################################                           #####################################                          #######################################                        ########################################                       #########################################                      ###########################################                    ############################################                   #############################################                  ###############################################                ################################################               #################################################              ###################################################            ####################################################           #####################################################          #######################################################        ########################################################       #########################################################      ###########################################################    ############################################################   ############################################################## ################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################# 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/ccache-3.7
+#=#=#                                                                                                                         ######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/libpng-1.6
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/c8e7
+##                                                             ######################################################         ######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/freetype-2
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/5de2
+#=#=#                                                          ##########################                                     ####################################################           ######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/gdbm-1.18.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/f7b5
+#####                                                          ######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/openssl%40
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/4e53
+                                                               #####                                                          #########                                                      #############                                                  #################                                              #####################                                          ##########################    ##############################                     ##################################                 ######################################             ###########################################        ###############################################    ####################################################################################################################################################################################################################################################################################################################################### 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/readline-8
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/6ae1
+####                                               ################################################   ######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/sqlite-3.3
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/7856
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/xz-5.2.5.c
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/2dcc
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/python%403
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/96e1
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/icu4c-67.1
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/2d1e
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/boost-1.73
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/21b7
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/gmp-6.2.0.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/2e6a
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/isl-0.22.1
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/b531
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/mpfr-4.1.0
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/5fcf
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/libmpc-1.2
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/gcc-10.2.0
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/8dbc
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/hwloc-2.3.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/b984
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/libevent-2
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/b5f5
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/open-mpi-4
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/fd21
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/openblas-0
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/dcff
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/pkg-config
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/80f1
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/python%403
+Already downloaded: /Users/kjell-olovhogdal/Library/Caches/Homebrew/downloads/7b141a6f0ae16912ab5e0a70ed33cca4669b0608788830cbf6fd48e7e6f76d87--python@3.8-3.8.6.catalina.bottle.tar.gz
+==> Downloading https://homebrew.bintray.com/bottles/boost-pyth
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/36a3
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/xerces-c-3
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/8bcf
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/qt-5.15.1.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/98b5
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/libffi-3.3
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/llvm-10.0.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/d8ad
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/numpy-1.19
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/5665
+######################################################################## 100.0%
+==> Downloading https://dl.bintray.com/vejmarie/freecad/shiboke
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/d5e8
+######################################################################## 100.0%
+==> Downloading https://dl.bintray.com/vejmarie/freecad/pyside2
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/eb3c
+######################################################################## 100.0%
+==> Downloading https://dl.bintray.com/vejmarie/freecad/pyside2
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/601b
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/jpeg-9d.ca
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/8f7b
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/libtiff-4.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/449b
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/webp-1.1.0
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/27c7
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/freeimage-
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/dd2d
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/tbb-2020_U
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/4f70
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/opencascad
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/c40f
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/orocos-kdl
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/e650
+######################################################################## 100.0%
+==> Downloading https://dl.bintray.com/vejmarie/freecad/matplot
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/e109
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/szip-2.1.1
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/hdf5%401.1
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/b60c
+######################################################################## 100.0%
+==> Downloading https://dl.bintray.com/vejmarie/freecad/med-fil
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/1ee2
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/fontconfig
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/64ff
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/hdf5-1.12.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/e099
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/netcdf-4.7
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/0ae7
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/sip-4.19.2
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/27b5
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/pyqt-5.15.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/ba91
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/vtk%408.2-
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/37d8
+######################################################################## 100.0%
+==> Downloading https://dl.bintray.com/vejmarie/freecad/nglib-v
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/3651
+######################################################################## 100.0%
+==> Downloading https://dl.bintray.com/vejmarie/freecad/coin-4.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/7cd8
+######################################################################## 100.0%
+==> Downloading https://dl.bintray.com/vejmarie/freecad/pivy-0.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/b030
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/pcre-8.44.
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/f8ac
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/swig-4.0.2
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/530e
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/node-14.13
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/2f35
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/oniguruma-
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/1524
+######################################################################## 100.0%
+==> Downloading https://homebrew.bintray.com/bottles/jq-1.6.cat
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/820a
+######################################################################## 100.0%
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you an update run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+
+==> Installing dependencies for freecad/freecad/freecad: cmake, ccache, libpng, freetype, gdbm, openssl@1.1, readline, sqlite, xz, python3, icu4c, boost, gmp, isl, mpfr, libmpc, gcc, hwloc, libevent, open-mpi, openblas, pkg-config, python@3.8, boost-python3, xerces-c, qt, libffi, llvm, numpy, FreeCAD/freecad/shiboken2, FreeCAD/freecad/pyside2, FreeCAD/freecad/pyside2-tools, jpeg, libtiff, webp, freeimage, tbb, opencascade, orocos-kdl, freecad/freecad/matplotlib, szip, hdf5@1.10, freecad/freecad/med-file, fontconfig, hdf5, netcdf, sip, pyqt, vtk@8.2, FreeCAD/freecad/nglib, FreeCAD/freecad/coin, FreeCAD/freecad/pivy, pcre, swig, node, oniguruma and jq
+==> Installing freecad/freecad/freecad dependency: cmake
+==> Pouring cmake-3.18.4.catalina.bottle.tar.gz
+==> Caveats
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/cmake
+==> Summary
+🍺  /usr/local/Cellar/cmake/3.18.4: 6,263 files, 60.3MB
+==> Installing freecad/freecad/freecad dependency: ccache
+==> Pouring ccache-3.7.12.catalina.bottle.tar.gz
+==> Caveats
+To install symlinks for compilers that will automatically use
+ccache, prepend this directory to your PATH:
+  /usr/local/opt/ccache/libexec
+
+If this is an upgrade and you have previously added the symlinks to
+your PATH, you may need to modify it to the path specified above so
+it points to the current version.
+
+NOTE: ccache can prevent some software from compiling.
+ALSO NOTE: The brew command, by design, will never use ccache.
+==> Summary
+🍺  /usr/local/Cellar/ccache/3.7.12: 66 files, 288.8KB
+==> Installing freecad/freecad/freecad dependency: libpng
+==> Pouring libpng-1.6.37.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libpng/1.6.37: 27 files, 1.2MB
+==> Installing freecad/freecad/freecad dependency: freetyp
+==> Pouring freetype-2.10.3.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/freetype/2.10.3: 64 files, 2.3MB
+==> Installing freecad/freecad/freecad dependency: gdbm
+==> Pouring gdbm-1.18.1_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gdbm/1.18.1_1: 25 files, 641KB
+==> Installing freecad/freecad/freecad dependency: openssl
+==> Pouring openssl@1.1-1.1.1h.catalina.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl@1.1/certs
+
+and run
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides LibreSSL.
+
+If you need to have openssl@1.1 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openssl@1.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+==> Summary
+🍺  /usr/local/Cellar/openssl@1.1/1.1.1h: 8,067 files, 18.5MB
+==> Installing freecad/freecad/freecad dependency: readlin
+==> Pouring readline-8.0.4.catalina.bottle.tar.gz
+==> Caveats
+readline is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides BSD libedit.
+
+For compilers to find readline you may need to set:
+  export LDFLAGS="-L/usr/local/opt/readline/lib"
+  export CPPFLAGS="-I/usr/local/opt/readline/include"
+
+==> Summary
+🍺  /usr/local/Cellar/readline/8.0.4: 48 files, 1.5MB
+==> Installing freecad/freecad/freecad dependency: sqlite
+==> Pouring sqlite-3.33.0.catalina.bottle.tar.gz
+==> Caveats
+sqlite is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have sqlite first in your PATH run:
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find sqlite you may need to set:
+  export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+  export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+
+==> Summary
+🍺  /usr/local/Cellar/sqlite/3.33.0: 11 files, 4MB
+==> Installing freecad/freecad/freecad dependency: xz
+==> Pouring xz-5.2.5.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/xz/5.2.5: 92 files, 1.1MB
+==> Installing freecad/freecad/freecad dependency: python3
+==> Pouring python@3.8-3.8.6.catalina.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.8
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run python@3.8
+
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/2to3
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/idle3
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/pydoc3
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.7/bin/python3-config
+==> /usr/local/Cellar/python@3.8/3.8.6/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/l
+==> /usr/local/Cellar/python@3.8/3.8.6/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/l
+==> /usr/local/Cellar/python@3.8/3.8.6/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/l
+==> Caveats
+Python has been installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python@3.8/libexec/bin
+
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.8/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /usr/local/Cellar/python@3.8/3.8.6: 4,341 files, 69.7MB
+==> Installing freecad/freecad/freecad dependency: icu4c
+==> Pouring icu4c-67.1.catalina.bottle.tar.gz
+==> Caveats
+icu4c is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides libicucore.dylib (but nothing else).
+
+If you need to have icu4c first in your PATH run:
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.zshrc
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.zshrc
+
+For compilers to find icu4c you may need to set:
+  export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+  export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+
+==> Summary
+🍺  /usr/local/Cellar/icu4c/67.1: 258 files, 71.2MB
+==> Installing freecad/freecad/freecad dependency: boost
+==> Pouring boost-1.73.0.catalina.bottle.1.tar.gz
+🍺  /usr/local/Cellar/boost/1.73.0: 14,538 files, 509.6MB
+==> Installing freecad/freecad/freecad dependency: gmp
+==> Pouring gmp-6.2.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gmp/6.2.0: 20 files, 3.2MB
+==> Installing freecad/freecad/freecad dependency: isl
+==> Pouring isl-0.22.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/isl/0.22.1: 72 files, 4.7MB
+==> Installing freecad/freecad/freecad dependency: mpfr
+==> Pouring mpfr-4.1.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/mpfr/4.1.0: 29 files, 5.1MB
+==> Installing freecad/freecad/freecad dependency: libmpc
+==> Pouring libmpc-1.2.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libmpc/1.2.0: 12 files, 382.9KB
+==> Installing freecad/freecad/freecad dependency: gcc
+==> Pouring gcc-10.2.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gcc/10.2.0: 1,463 files, 338.7MB
+==> Installing freecad/freecad/freecad dependency: hwloc
+==> Pouring hwloc-2.3.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/hwloc/2.3.0: 914 files, 9.6MB
+==> Installing freecad/freecad/freecad dependency: libeven
+==> Pouring libevent-2.1.12.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libevent/2.1.12: 57 files, 1.9MB
+==> Installing freecad/freecad/freecad dependency: open-mp
+==> Pouring open-mpi-4.0.5.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/open-mpi/4.0.5: 752 files, 11.3MB
+==> Installing freecad/freecad/freecad dependency: openbla
+==> Pouring openblas-0.3.10_1.catalina.bottle.tar.gz
+==> Caveats
+openblas is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides BLAS in Accelerate.framework.
+
+For compilers to find openblas you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openblas/lib"
+  export CPPFLAGS="-I/usr/local/opt/openblas/include"
+
+==> Summary
+🍺  /usr/local/Cellar/openblas/0.3.10_1: 23 files, 120MB
+==> Installing freecad/freecad/freecad dependency: pkg-con
+==> Pouring pkg-config-0.29.2_3.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pkg-config/0.29.2_3: 11 files, 623.8KB
+==> Installing freecad/freecad/freecad dependency: boost-p
+==> Pouring boost-python3-1.73.0.catalina.bottle.tar.gz
+Warning: boost-python3 dependency gcc was built with a different C++ standard
+library (libstdc++ from clang). This may cause problems at runtime.
+🍺  /usr/local/Cellar/boost-python3/1.73.0: 472 files, 18.1MB
+==> Installing freecad/freecad/freecad dependency: xerces-
+==> Pouring xerces-c-3.2.3.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/xerces-c/3.2.3: 1,684 files, 36.6MB
+==> Installing freecad/freecad/freecad dependency: qt
+==> Pouring qt-5.15.1.catalina.bottle.tar.gz
+==> Caveats
+We agreed to the Qt open source license for you.
+If this is unacceptable you should uninstall.
+
+qt is keg-only, which means it was not symlinked into /usr/local,
+because Qt 5 has CMake issues when linked.
+
+If you need to have qt first in your PATH run:
+  echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find qt you may need to set:
+  export LDFLAGS="-L/usr/local/opt/qt/lib"
+  export CPPFLAGS="-I/usr/local/opt/qt/include"
+
+For pkg-config to find qt you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/qt/5.15.1: 10,691 files, 370.4MB
+==> Installing freecad/freecad/freecad dependency: libffi
+==> Pouring libffi-3.3.catalina.bottle.tar.gz
+==> Caveats
+libffi is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+For compilers to find libffi you may need to set:
+  export LDFLAGS="-L/usr/local/opt/libffi/lib"
+  export CPPFLAGS="-I/usr/local/opt/libffi/include"
+
+For pkg-config to find libffi you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/libffi/3.3: 16 files, 489.4KB
+==> Installing freecad/freecad/freecad dependency: llvm
+==> Pouring llvm-10.0.1_2.catalina.bottle.tar.gz
+==> Caveats
+To use the bundled libc++ please add the following LDFLAGS:
+  LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+
+llvm is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have llvm first in your PATH run:
+  echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find llvm you may need to set:
+  export LDFLAGS="-L/usr/local/opt/llvm/lib"
+  export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
+==> Summary
+🍺  /usr/local/Cellar/llvm/10.0.1_2: 7,029 files, 1GB
+==> Installing freecad/freecad/freecad dependency: numpy
+==> Pouring numpy-1.19.2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/numpy/1.19.2: 490 files, 15.7MB
+==> Installing freecad/freecad/freecad dependency: FreeCAD
+==> Pouring shiboken2-5.15.0.catalina.bottle.tar.gz
+Warning: freecad/freecad/shiboken2 dependency gcc was built with a different C++ standard
+library (libstdc++ from clang). This may cause problems at runtime.
+🍺  /usr/local/Cellar/shiboken2/5.15.0: 65 files, 2.5MB
+==> Installing freecad/freecad/freecad dependency: FreeCAD
+==> Pouring pyside2-5.15.0.catalina.bottle.tar.gz
+Warning: freecad/freecad/pyside2 dependency gcc was built with a different C++ standard
+library (libstdc++ from clang). This may cause problems at runtime.
+🍺  /usr/local/Cellar/pyside2/5.15.0: 232 files, 37.9MB
+==> Installing freecad/freecad/freecad dependency: FreeCAD
+==> Pouring pyside2-tools-5.15.0.catalina.bottle.tar.gz
+Warning: freecad/freecad/pyside2-tools dependency gcc was built with a different C++ standard
+library (libstdc++ from clang). This may cause problems at runtime.
+🍺  /usr/local/Cellar/pyside2-tools/5.15.0: 15 files, 1.5MB
+==> Installing freecad/freecad/freecad dependency: jpeg
+==> Pouring jpeg-9d.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/jpeg/9d: 21 files, 775.2KB
+==> Installing freecad/freecad/freecad dependency: libtiff
+==> Pouring libtiff-4.1.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libtiff/4.1.0: 247 files, 3.7MB
+==> Installing freecad/freecad/freecad dependency: webp
+==> Pouring webp-1.1.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/webp/1.1.0: 39 files, 2.1MB
+==> Installing freecad/freecad/freecad dependency: freeima
+==> Pouring freeimage-3.18.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/freeimage/3.18.0: 13 files, 29.9MB
+==> Installing freecad/freecad/freecad dependency: tbb
+==> Pouring tbb-2020_U3.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/tbb/2020_U3: 144 files, 3.0MB
+==> Installing freecad/freecad/freecad dependency: opencas
+==> Pouring opencascade-7.4.0_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/opencascade/7.4.0_1: 9,320 files, 167.2MB
+==> Installing freecad/freecad/freecad dependency: orocos-
+==> Pouring orocos-kdl-1.4.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/orocos-kdl/1.4.0: 97 files, 991.9KB
+==> Installing freecad/freecad/freecad dependency: freecad
+==> Pouring matplotlib-2.1.1.catalina.bottle.1.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/f2py
+Target /usr/local/bin/f2py
+is a symlink belonging to numpy. You can unlink it:
+  brew unlink numpy
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite matplotlib
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run matplotlib
+
+Possible conflicting files are:
+/usr/local/bin/f2py -> /usr/local/Cellar/numpy/1.19.2/bin/f2py
+/usr/local/bin/f2py3 -> /usr/local/Cellar/numpy/1.19.2/bin/f2py3
+/usr/local/bin/f2py3.8 -> /usr/local/Cellar/numpy/1.19.2/bin/f2py3.8
+==> Caveats
+      If you want to use the `wxagg` backend, do `brew install wxpython`.
+      This can be done even after the matplotlib install.
+==> Summary
+🍺  /usr/local/Cellar/matplotlib/2.1.1: 1,647 files, 37.4MB
+==> Installing freecad/freecad/freecad dependency: szip
+==> Pouring szip-2.1.1_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/szip/2.1.1_1: 11 files, 111.9KB
+==> Installing freecad/freecad/freecad dependency: hdf5@1.
+==> Pouring hdf5@1.10-1.10.7.catalina.bottle.tar.gz
+Warning: hdf5@1.10 dependency gcc was built with a different C++ standard
+library (libstdc++ from clang). This may cause problems at runtime.
+==> Caveats
+hdf5@1.10 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have hdf5@1.10 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/hdf5@1.10/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find hdf5@1.10 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/hdf5@1.10/lib"
+  export CPPFLAGS="-I/usr/local/opt/hdf5@1.10/include"
+
+==> Summary
+🍺  /usr/local/Cellar/hdf5@1.10/1.10.7: 263 files, 18MB
+==> Installing freecad/freecad/freecad dependency: freecad
+==> Pouring med-file-4.0.0.catalina.bottle.tar.gz
+Warning: freecad/freecad/med-file dependency gcc was built with a different C++ standard
+library (libstdc++ from clang). This may cause problems at runtime.
+🍺  /usr/local/Cellar/med-file/4.0.0: 100 files, 8.7MB
+==> Installing freecad/freecad/freecad dependency: fontcon
+==> Pouring fontconfig-2.13.1.catalina.bottle.tar.gz
+==> Regenerating font cache, this may take a while
+==> /usr/local/Cellar/fontconfig/2.13.1/bin/fc-cache -frv
+🍺  /usr/local/Cellar/fontconfig/2.13.1: 531 files, 3.4MB
+==> Installing freecad/freecad/freecad dependency: hdf5
+==> Pouring hdf5-1.12.0_1.catalina.bottle.tar.gz
+Warning: hdf5 dependency gcc was built with a different C++ standard
+library (libstdc++ from clang). This may cause problems at runtime.
+🍺  /usr/local/Cellar/hdf5/1.12.0_1: 268 files, 16.3MB
+==> Installing freecad/freecad/freecad dependency: netcdf
+==> Pouring netcdf-4.7.4_1.catalina.bottle.tar.gz
+Warning: netcdf dependency gcc was built with a different C++ standard
+library (libstdc++ from clang). This may cause problems at runtime.
+🍺  /usr/local/Cellar/netcdf/4.7.4_1: 90 files, 6.2MB
+==> Installing freecad/freecad/freecad dependency: sip
+==> Pouring sip-4.19.24.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/sip/4.19.24: 15 files, 976.2KB
+==> Installing freecad/freecad/freecad dependency: pyqt
+==> Pouring pyqt-5.15.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pyqt/5.15.1: 961 files, 28MB
+Warning: vtk@8.2 has been deprecated because it is a versioned formula!
+==> Installing freecad/freecad/freecad dependency: vtk@8.2
+==> Pouring vtk@8.2-8.2.0.catalina.bottle.tar.gz
+Warning: vtk@8.2 dependency gcc was built with a different C++ standard
+library (libstdc++ from clang). This may cause problems at runtime.
+==> Caveats
+vtk@8.2 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have vtk@8.2 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/vtk@8.2/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find vtk@8.2 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/vtk@8.2/lib"
+  export CPPFLAGS="-I/usr/local/opt/vtk@8.2/include"
+
+==> Summary
+🍺  /usr/local/Cellar/vtk@8.2/8.2.0: 3,986 files, 131.2MB
+==> Installing freecad/freecad/freecad dependency: FreeCAD
+==> Pouring nglib-v6.2.2007.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/nglib/v6.2.2007: 378 files, 9.4MB
+==> Installing freecad/freecad/freecad dependency: FreeCAD
+==> Pouring coin-4.0.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/coin/4.0.0: 921 files, 9.6MB
+==> Installing freecad/freecad/freecad dependency: FreeCAD
+==> Pouring pivy-0.6.5.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pivy/0.6.5: 36 files, 13.7MB
+==> Installing freecad/freecad/freecad dependency: pcre
+==> Pouring pcre-8.44.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre/8.44: 204 files, 5.5MB
+==> Installing freecad/freecad/freecad dependency: swig
+==> Pouring swig-4.0.2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/swig/4.0.2: 725 files, 5.4MB
+==> Installing freecad/freecad/freecad dependency: node
+==> Pouring node-14.13.1_1.catalina.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/node
+Target /usr/local/bin/node
+already exists. You may want to remove it:
+  rm '/usr/local/bin/node'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite node
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run node
+
+Possible conflicting files are:
+/usr/local/bin/node
+/usr/local/include/node/common.gypi
+/usr/local/include/node/config.gypi
+/usr/local/include/node/libplatform/libplatform-export.h
+/usr/local/include/node/libplatform/libplatform.h
+/usr/local/include/node/libplatform/v8-tracing.h
+/usr/local/include/node/node.h
+/usr/local/include/node/node_api.h
+/usr/local/include/node/node_api_types.h
+/usr/local/include/node/node_buffer.h
+/usr/local/include/node/node_object_wrap.h
+/usr/local/include/node/node_version.h
+/usr/local/include/node/openssl/aes.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm/include/progs.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm/include/progs.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/VC-WIN32/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/VC-WIN32/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/VC-WIN64-ARM/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/VC-WIN64-ARM/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN64-ARM/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN64-ARM/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/VC-WIN64-ARM/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm/include/progs.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/VC-WIN64A/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm/include/progs.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/aix-gcc/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/aix-gcc/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/aix-gcc/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/aix-gcc/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/aix-gcc/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/aix-gcc/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm/include/progs.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/aix64-gcc/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/aix64-gcc/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm/include/progs.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/darwin-i386-cc/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm/include/progs.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/darwin64-x86_64-cc/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux-aarch64/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-aarch64/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-armv4/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux-armv4/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-armv4/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-armv4/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-armv4/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-armv4/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-elf/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-elf/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-elf/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-elf/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-elf/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-elf/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-elf/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-elf/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-elf/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-elf/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux-elf/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-elf/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-elf/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-elf/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-elf/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-ppc/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux-ppc/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-ppc/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-ppc/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux-ppc64/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-ppc64/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-ppc64le/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-x32/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-x32/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-x32/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-x32/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-x32/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-x32/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-x32/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-x32/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-x32/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-x32/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux-x32/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-x32/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-x32/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-x32/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-x32/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux-x86_64/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux-x86_64/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux32-s390x/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux32-s390x/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm/include/progs.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/linux64-s390x/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/linux64-s390x/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm/include/progs.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/solaris-x86-gcc/no-asm/include/progs.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm/include/progs.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/asm_avx2/include/progs.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/crypto/buildinf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/crypto/include/internal/bn_conf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/crypto/include/internal/dso_conf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/include/openssl/opensslconf.h
+/usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/include/progs.h
+/usr/local/include/node/openssl/asn1.h
+/usr/local/include/node/openssl/asn1_mac.h
+/usr/local/include/node/openssl/asn1err.h
+/usr/local/include/node/openssl/asn1t.h
+/usr/local/include/node/openssl/async.h
+/usr/local/include/node/openssl/asyncerr.h
+/usr/local/include/node/openssl/bio.h
+/usr/local/include/node/openssl/bioerr.h
+/usr/local/include/node/openssl/blowfish.h
+/usr/local/include/node/openssl/bn.h
+/usr/local/include/node/openssl/bn_conf.h
+/usr/local/include/node/openssl/bn_conf_asm.h
+/usr/local/include/node/openssl/bn_conf_no-asm.h
+/usr/local/include/node/openssl/bnerr.h
+/usr/local/include/node/openssl/buffer.h
+/usr/local/include/node/openssl/buffererr.h
+/usr/local/include/node/openssl/camellia.h
+/usr/local/include/node/openssl/cast.h
+/usr/local/include/node/openssl/cmac.h
+/usr/local/include/node/openssl/cms.h
+/usr/local/include/node/openssl/cmserr.h
+/usr/local/include/node/openssl/comp.h
+/usr/local/include/node/openssl/comperr.h
+/usr/local/include/node/openssl/conf.h
+/usr/local/include/node/openssl/conf_api.h
+/usr/local/include/node/openssl/conferr.h
+/usr/local/include/node/openssl/crypto.h
+/usr/local/include/node/openssl/cryptoerr.h
+/usr/local/include/node/openssl/ct.h
+/usr/local/include/node/openssl/cterr.h
+/usr/local/include/node/openssl/des.h
+/usr/local/include/node/openssl/dh.h
+/usr/local/include/node/openssl/dherr.h
+/usr/local/include/node/openssl/dsa.h
+/usr/local/include/node/openssl/dsaerr.h
+/usr/local/include/node/openssl/dso_conf.h
+/usr/local/include/node/openssl/dso_conf_asm.h
+/usr/local/include/node/openssl/dso_conf_no-asm.h
+/usr/local/include/node/openssl/dtls1.h
+/usr/local/include/node/openssl/e_os2.h
+/usr/local/include/node/openssl/ebcdic.h
+/usr/local/include/node/openssl/ec.h
+/usr/local/include/node/openssl/ecdh.h
+/usr/local/include/node/openssl/ecdsa.h
+/usr/local/include/node/openssl/ecerr.h
+/usr/local/include/node/openssl/engine.h
+/usr/local/include/node/openssl/engineerr.h
+/usr/local/include/node/openssl/err.h
+/usr/local/include/node/openssl/evp.h
+/usr/local/include/node/openssl/evperr.h
+/usr/local/include/node/openssl/hmac.h
+/usr/local/include/node/openssl/idea.h
+/usr/local/include/node/openssl/kdf.h
+/usr/local/include/node/openssl/kdferr.h
+/usr/local/include/node/openssl/lhash.h
+/usr/local/include/node/openssl/md2.h
+/usr/local/include/node/openssl/md4.h
+/usr/local/include/node/openssl/md5.h
+/usr/local/include/node/openssl/mdc2.h
+/usr/local/include/node/openssl/modes.h
+/usr/local/include/node/openssl/obj_mac.h
+/usr/local/include/node/openssl/objects.h
+/usr/local/include/node/openssl/objectserr.h
+/usr/local/include/node/openssl/ocsp.h
+/usr/local/include/node/openssl/ocsperr.h
+/usr/local/include/node/openssl/opensslconf.h
+/usr/local/include/node/openssl/opensslconf_asm.h
+/usr/local/include/node/openssl/opensslconf_no-asm.h
+/usr/local/include/node/openssl/opensslv.h
+/usr/local/include/node/openssl/ossl_typ.h
+/usr/local/include/node/openssl/pem.h
+/usr/local/include/node/openssl/pem2.h
+/usr/local/include/node/openssl/pemerr.h
+/usr/local/include/node/openssl/pkcs12.h
+/usr/local/include/node/openssl/pkcs12err.h
+/usr/local/include/node/openssl/pkcs7.h
+/usr/local/include/node/openssl/pkcs7err.h
+/usr/local/include/node/openssl/rand.h
+/usr/local/include/node/openssl/rand_drbg.h
+/usr/local/include/node/openssl/randerr.h
+/usr/local/include/node/openssl/rc2.h
+/usr/local/include/node/openssl/rc4.h
+/usr/local/include/node/openssl/rc5.h
+/usr/local/include/node/openssl/ripemd.h
+/usr/local/include/node/openssl/rsa.h
+/usr/local/include/node/openssl/rsaerr.h
+/usr/local/include/node/openssl/safestack.h
+/usr/local/include/node/openssl/seed.h
+/usr/local/include/node/openssl/sha.h
+/usr/local/include/node/openssl/srp.h
+/usr/local/include/node/openssl/srtp.h
+/usr/local/include/node/openssl/ssl.h
+/usr/local/include/node/openssl/ssl2.h
+/usr/local/include/node/openssl/ssl3.h
+/usr/local/include/node/openssl/sslerr.h
+/usr/local/include/node/openssl/stack.h
+/usr/local/include/node/openssl/store.h
+/usr/local/include/node/openssl/storeerr.h
+/usr/local/include/node/openssl/symhacks.h
+/usr/local/include/node/openssl/tls1.h
+/usr/local/include/node/openssl/ts.h
+/usr/local/include/node/openssl/tserr.h
+/usr/local/include/node/openssl/txt_db.h
+/usr/local/include/node/openssl/ui.h
+/usr/local/include/node/openssl/uierr.h
+/usr/local/include/node/openssl/whrlpool.h
+/usr/local/include/node/openssl/x509.h
+/usr/local/include/node/openssl/x509_vfy.h
+/usr/local/include/node/openssl/x509err.h
+/usr/local/include/node/openssl/x509v3.h
+/usr/local/include/node/openssl/x509v3err.h
+/usr/local/include/node/uv/aix.h
+/usr/local/include/node/uv/android-ifaddrs.h
+/usr/local/include/node/uv/bsd.h
+/usr/local/include/node/uv/darwin.h
+/usr/local/include/node/uv/errno.h
+/usr/local/include/node/uv/linux.h
+/usr/local/include/node/uv/os390.h
+/usr/local/include/node/uv/posix.h
+/usr/local/include/node/uv/stdint-msvc2008.h
+/usr/local/include/node/uv/sunos.h
+/usr/local/include/node/uv/threadpool.h
+/usr/local/include/node/uv/tree.h
+/usr/local/include/node/uv/unix.h
+/usr/local/include/node/uv/version.h
+/usr/local/include/node/uv/win.h
+/usr/local/include/node/uv.h
+/usr/local/include/node/v8-platform.h
+/usr/local/include/node/v8-profiler.h
+/usr/local/include/node/v8-util.h
+/usr/local/include/node/v8-value-serializer-version.h
+/usr/local/include/node/v8-version-string.h
+/usr/local/include/node/v8-version.h
+/usr/local/include/node/v8.h
+/usr/local/include/node/v8config.h
+/usr/local/include/node/zconf.h
+/usr/local/include/node/zlib.h
+/usr/local/share/doc/node/gdbinit
+/usr/local/share/doc/node/lldb_commands.py
+/usr/local/share/man/man1/node.1
+/usr/local/share/systemtap/tapset/node.stp
+/usr/local/lib/dtrace/node.d
+Warning: The post-install step did not complete successfully
+You can try again using `brew postinstall node`
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/node/14.13.1_1: 4,698 files, 62.0MB
+==> Installing freecad/freecad/freecad dependency: oniguru
+==> Pouring oniguruma-6.9.5-rev1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/oniguruma/6.9.5-rev1: 16 files, 1.3MB
+==> Installing freecad/freecad/freecad dependency: jq
+==> Pouring jq-1.6.catalina.bottle.1.tar.gz
+🍺  /usr/local/Cellar/jq/1.6: 18 files, 1MB
+==> Caveats
+==> cmake
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/cmake
+==> ccache
+To install symlinks for compilers that will automatically use
+ccache, prepend this directory to your PATH:
+  /usr/local/opt/ccache/libexec
+
+If this is an upgrade and you have previously added the symlinks to
+your PATH, you may need to modify it to the path specified above so
+it points to the current version.
+
+NOTE: ccache can prevent some software from compiling.
+ALSO NOTE: The brew command, by design, will never use ccache.
+==> openssl@1.1
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl@1.1/certs
+
+and run
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides LibreSSL.
+
+If you need to have openssl@1.1 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openssl@1.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+For pkg-config to find openssl@1.1 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+
+==> readline
+readline is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides BSD libedit.
+
+For compilers to find readline you may need to set:
+  export LDFLAGS="-L/usr/local/opt/readline/lib"
+  export CPPFLAGS="-I/usr/local/opt/readline/include"
+
+For pkg-config to find readline you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+
+==> sqlite
+sqlite is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have sqlite first in your PATH run:
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find sqlite you may need to set:
+  export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+  export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+
+For pkg-config to find sqlite you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+
+==> python@3.8
+Python has been installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python@3.8/libexec/bin
+
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.8/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> icu4c
+icu4c is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides libicucore.dylib (but nothing else).
+
+If you need to have icu4c first in your PATH run:
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.zshrc
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.zshrc
+
+For compilers to find icu4c you may need to set:
+  export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+  export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+
+For pkg-config to find icu4c you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+
+==> openblas
+openblas is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides BLAS in Accelerate.framework.
+
+For compilers to find openblas you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openblas/lib"
+  export CPPFLAGS="-I/usr/local/opt/openblas/include"
+
+For pkg-config to find openblas you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
+
+==> qt
+We agreed to the Qt open source license for you.
+If this is unacceptable you should uninstall.
+
+qt is keg-only, which means it was not symlinked into /usr/local,
+because Qt 5 has CMake issues when linked.
+
+If you need to have qt first in your PATH run:
+  echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find qt you may need to set:
+  export LDFLAGS="-L/usr/local/opt/qt/lib"
+  export CPPFLAGS="-I/usr/local/opt/qt/include"
+
+For pkg-config to find qt you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
+
+==> libffi
+libffi is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+For compilers to find libffi you may need to set:
+  export LDFLAGS="-L/usr/local/opt/libffi/lib"
+  export CPPFLAGS="-I/usr/local/opt/libffi/include"
+
+For pkg-config to find libffi you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
+==> llvm
+To use the bundled libc++ please add the following LDFLAGS:
+  LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+
+llvm is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have llvm first in your PATH run:
+  echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find llvm you may need to set:
+  export LDFLAGS="-L/usr/local/opt/llvm/lib"
+  export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
+==> matplotlib
+      If you want to use the `wxagg` backend, do `brew install wxpython`.
+      This can be done even after the matplotlib install.
+==> hdf5@1.10
+hdf5@1.10 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have hdf5@1.10 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/hdf5@1.10/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find hdf5@1.10 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/hdf5@1.10/lib"
+  export CPPFLAGS="-I/usr/local/opt/hdf5@1.10/include"
+
+==> vtk@8.2
+vtk@8.2 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have vtk@8.2 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/vtk@8.2/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find vtk@8.2 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/vtk@8.2/lib"
+  export CPPFLAGS="-I/usr/local/opt/vtk@8.2/include"
+
+==> node
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 

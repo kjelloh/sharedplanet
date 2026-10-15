@@ -1,0 +1,17 @@
+# Todo: Define the Super Curious as one that treasure her curiousity
+
+```#a3a6645f``` *As of 2015-08-23 18:40*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Perhaps the best way to separate the Super Curious from the Curious is that the former care for her curiosity as a dear friend while the Curious tries to satisfy or get rid of curiosity.
+
+1) The Super curious carefully evaluates what question to hand to Curiosity. Beneficial questions are treasures to the Super Curious.  
+2) The Super Curious treats curiosity as insatiable but enjoy satisfying it over and over with ever new and currently beneficial answers.  
+3) answers creates the environment where the Super Curious nomad currently camp.  
+...
+
+Skickat från min iPhone
+
+{% endraw %}

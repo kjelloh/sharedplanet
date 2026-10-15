@@ -1,0 +1,5 @@
+﻿Consider to create a streaming media (TV) commercial blocker. Clients pay to get commercials filtered/blocked.
+
+As s side service the filter may be used to be connect commercial provider to consumers that are interested. Providers pay to get commercials through to high value (interested) consumers.
+
+Skickat från min iPhone

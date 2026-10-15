@@ -1,0 +1,175 @@
+﻿It seems it will serve us well to really understand how we should evaluate the parser created AST using the Tha as the environment?
+
+	==> Also see ”Todo: Meh - Consider to define the non terminal (AST nodes) and terminal (AST leafs) symbols of the Meh grammar?"
+
+1) Consider to study github project ”Lisp in C++” (https://github.com/klmr/lisp.cpp <https://github.com/klmr/lisp.cpp>)?
+
+	==> It seems in code the ast is in variable ”expr”?
+
+auto&& expr = klmr::lisp::read_full(begin(line), end(line));
+if (not expr)
+  return;
+auto&& result = eval(*expr, global_env);
+std::cout << result << '\n';
+
+	==> It seems the eval function takes the ast (expr) and the environment to evaluate the expression in?
+
+		==> Note: expr is an optional<value>, this *expr is the value.
+
+	==> It seems expr is a value that in turn is implemented as a variant of all terminal symbols of the grammar?
+
+		==> Consider a simple Meh + expresson?
+
+		Meh´> (+ 1 2)
+
+		==> Then the AST would be?
+
+	variant(list)
+                 |
+               values = {variant(symbol), variant(literal<int>(1)), variant(literal<int>(2))}
+                                   |                  |                         |
+                                 repr(”+”)         value(1)                   value(2)
+
+	==> The AST seems to be dispatched using visitor?
+
+auto eval(value expr, environment& env) -> value {
+    return boost::apply_visitor(eval_visitor{env}, expr);
+}
+
+		==> And the visitor aggregates the environment?
+
+	==> The visitor then dispatches a value to its underlaying c++ object?
+
+	==> Each dispatch returns a new value (as variant of possible terminal symbols of the grammar)?
+
+	==> Dispatch of a symbol simply returns the value with that name in the environment?
+
+auto operator ()(symbol const& sym) const -> value {
+    return env[sym];
+}
+
+		==> For Meh operating on Tha (as environment) this would mean the Tha be able to return values in the form they are represented in the AST?
+		==> Or, can we imagine that Meh evaluator knows how to convert Tha values into AST values?
+		==> Note: We need type to be an AST value as it may be used in further evaluations!
+		...
+
+	==> Dispatch of a list evaluates the first member and applies it as a function to the evaluated values of the tail?
+
+auto operator ()(list const& cons) const -> value {
+    if (empty(cons))
+        throw invalid_node{cons, "non-empty list"};
+    auto&& call = eval(head(cons), env);
+    return boost::apply_visitor(eval_call_visitor{env, tail(cons)}, call);
+}
+
+		==> Note: The List is implemented as a ”cons” (having head and tail)
+		==> It seems list is implemented as a std::vector<value> and helper functions?
+
+struct list {
+    ...
+    std::vector<value> values;
+    ...
+};
+
+inline auto head(list const& list) -> value const& {
+    return list.values[0];
+}
+
+inline auto tail(list const& list) -> list::const_range {
+    return {begin(list.values) + 1, end(list.values)};
+}
+	==> It seems it is c++ type ” eval_call_visitor” that applies a function to a tail?
+
+struct eval_call_visitor : boost::static_visitor<value> {
+    environment& env;
+    list::const_range args;
+    ...
+    auto operator ()(call const& call) const -> value;
+    auto operator ()(macro const& macro) const -> value;
+};
+
+	==> It seems to represent function as C++ type ”call” (with member operator() )?
+
+    auto operator ()(call const& call) const -> value {
+        auto evaluated_args = std::vector<value>(std::distance(begin(args), end(args)));
+        std::transform(begin(args), end(args), begin(evaluated_args),
+                       [this](value const& v) { return eval(v, env); });
+        return call(env, begin(evaluated_args), end(evaluated_args));
+    }
+
+		==> It clearly evaluates the arguments before providing them to call() (using std::transform)!
+
+	==> It seems to represent macro as C++ type ”macro”?
+
+auto operator ()(macro const& macro) const -> value {
+        return macro(env, begin(args), end(args));
+    }
+
+	==> It seems the environment is a node in a linked list of environments (each environment knows about its parent)?
+
+struct environment {
+    environment(environment* parent = nullptr) : parent{parent} {}
+    
+    environment(environment&, std::vector<symbol>, call::iterator a, call::iterator b);
+    
+    auto operator [](symbol const& sym) -> value&;
+    
+    auto add(symbol const& sym, value val) -> void;
+    
+    friend auto parent(environment const&) -> environment*;
+    
+private:
+    std::unordered_map<symbol, value> frame;
+    environment* parent;
+};
+
+		==> It clearly maps symbols to AST values!
+
+	==> It seems the environment searches its own and its parent for symbols (terminating in global environment)?
+
+auto environment::operator[](symbol const& sym) -> value& {
+    for (auto current = this; current != nullptr; current = current->parent) {
+        auto&& it = current->frame.find(sym);
+        if (it != current->frame.end())
+            return it->second;
+    }
+    
+    throw name_error{sym};
+}
+
+		==> Note: Nice construct to iterate this and parent until no parent using a for-loop!
+
+    for (auto current = this; current != nullptr; current = current->parent)
+
+		==> Will start with this and continue with parent but break on null!
+	...
+
+2) Consider to understand environment handling and content using github project ”Lisp in C++” (https://github.com/klmr/lisp.cpp <https://github.com/klmr/lisp.cpp>)?
+
+	==> It seems to populate the global environment” with language function and macro definitions?
+
+    env.add(symbol{"define"},
+        macro{env, {"name", "expr"}, [] (environment& env) {
+            auto&& name = as_symbol(env["name"]);
+            parent(env)->add(name, eval(env["expr"], *parent(env)));
+            return eval(nil, env);
+        }}
+    );
+
+	==> It seems ”define” macro is defined to add a new name (identifier) into the parent environment (why)?
+	...
+
+3) Consider what effects (if any) it has that the environment (Tha) is persistent?
+
+	==> Consider if we get into any problems with bindings to older values when Tha gets updated?
+
+	==> Consider ”bind by name” could be safer as it will bind to whatever value the name is defined as when evaluated (current Tha state)?
+
+	==> Consider ”bind by name” and lazy evaluation will ensure we use current state when evaluated (not state when defined)?
+
+	==> Consider if there are cases when we actually want to bind to value at definition time (not at evaluation time)?
+
+	==> Consider pure functions will ensure we use values at evaluation time (provided arguments are evaluated at call time)?
+
+		==> Lazy evaluation of functions ensures the arguments gets evaluated at evaluation time, not call definition time)?
+		...

@@ -1,0 +1,17 @@
+﻿It seems I should be able to use my Angle Grinder as a Circular saw (and perhaps other multi-tool purposes)?
+
+1) Consider this russian YouTube video “Диск по дереву для УШМ, распаковка и тест! Disk on wood 125mm” (“Drive wood for angle grinders, unpacking and test! Disk on wood 125mm") using a special circular saw blade for wood on a Angle Grinder (https://www.youtube.com/watch?v=Msu5MjsaOVs&t=293s <https://www.youtube.com/watch?v=Msu5MjsaOVs&t=293s>)?
+
+	
+
+2) Consider this intractable article “Turning an Angle Grinder into a Multitool” /https://makezine.com/2017/07/25/turning-an-angle-grinder-into-a-multitool/ <https://makezine.com/2017/07/25/turning-an-angle-grinder-into-a-multitool/>)?
+
+	 
+
+3) Consider what we can do if we also add a speed controller to the angle grinder?
+
+	==> Consider with lower RPM we can use circular wood saw blades more efficiently (closer to correct cutting speed)?
+
+	==> Consider with a speed controller and load detector we can make the Angle Grinder more safe by having it speed up only on load (and stop on being touched by body parts)?
+
+	...

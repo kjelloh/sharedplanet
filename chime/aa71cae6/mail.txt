@@ -1,0 +1,217 @@
+﻿Consider ot would be a good idea to document how to install and run a Scratch server locally to animate HTML slides?
+
+	==> Also see “Todo: Programming Slides - Consider if we can animate HTML slides using the Scratch Language?”
+	...
+
+1) The Scratch stand-alone server seems to live here (https://github.com/LLK/scratch-www <https://github.com/LLK/scratch-www>)?
+
+Kjell-Olovs-MacBook-Pro:~ kjell-olovhogdahl$ cd Documents/
+Kjell-Olovs-MacBook-Pro:Documents kjell-olovhogdahl$ cd GitHub/
+Kjell-Olovs-MacBook-Pro:GitHub kjell-olovhogdahl$ git clone https://github.com/LLK/scratch-www.git --recursive
+Cloning into 'scratch-www'...
+remote: Counting objects: 12894, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 12894 (delta 1), reused 3 (delta 0), pack-reused 12887
+Receiving objects: 100% (12894/12894), 209.42 MiB | 1.59 MiB/s, done.
+Resolving deltas: 100% (8234/8234), done.
+Kjell-Olovs-MacBook-Pro:GitHub kjell-olovhogdahl$ pwd
+/Users/kjell-olovhogdahl/Documents/GitHub
+Kjell-Olovs-MacBook-Pro:GitHub kjell-olovhogdahl$ cd scratch-www/
+Kjell-Olovs-MacBook-Pro:scratch-www kjell-olovhogdahl$ pwd
+/Users/kjell-olovhogdahl/Documents/GitHub/scratch-www
+Kjell-Olovs-MacBook-Pro:scratch-www kjell-olovhogdahl$ 
+
+
+2) Consider to document installation of npm?
+
+Kjell-Olovs-MacBook-Pro:~ kjell-olovhogdahl$ brew install npm
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+apng2gif
+==> Updated Formulae
+allure              folly               lean-cli            qemu
+angular-cli         fontforge           libcds              rakudo-star
+ansifilter          fonttools           libgit2-glib        re2
+apktool             forego              libpng              redis@3.2
+arx-libertatis      fs-uae              logstalgia          rlvm
+ascii               gedit               mal4s               rtags
+awslogs             geoserver           mediaconch          saltstack
+basex               getdns              micro               sbcl
+bash-snippets       glew ✔              msitools            skinny
+blastem             gnuplot             nzbget              supertux
+coffeescript        goad                openal-soft         swiftformat
+collector-sidecar   gofabric8           openclonk           tomcat
+cppcheck            gource              opencsg             translate-toolkit
+dcm2niix            grafana             openmsx             vim
+emscripten          gsoap               paket               watson
+etsh                idris               passenger           widelands
+ffmpeg              imagemagick         ponyc               wimlib
+fibjs               imagemagick@6       ppsspp              yle-dl
+flawfinder          jenkins             pwntools            youtube-dl
+
+==> Installing dependencies for node: icu4c
+==> Installing node dependency: icu4c
+==> Downloading https://homebrew.bintray.com/bottles/icu4c-58.2.el_capitan.bottl
+==> Downloading from https://akamai.bintray.com/f8/f8267df67e76db7412baf967dd9ef
+######################################################################## 100.0%
+==> Pouring icu4c-58.2.el_capitan.bottle.tar.gz
+==> Using the sandbox
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides libicucore.dylib (but nothing else).
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/icu4c/lib
+    CPPFLAGS: -I/usr/local/opt/icu4c/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/icu4c/lib/pkgconfig
+
+==> Summary
+🍺  /usr/local/Cellar/icu4c/58.2: 242 files, 65MB
+==> Installing node
+==> Downloading https://homebrew.bintray.com/bottles/node-8.2.1.el_capitan.bottl
+==> Downloading from https://akamai.bintray.com/ab/ab78a487ceeaa1c335ded6dfe094d
+######################################################################## 100.0%
+==> Pouring node-8.2.1.el_capitan.bottle.tar.gz
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/node/8.2.1: 4,151 files, 46MB
+Kjell-Olovs-MacBook-Pro:~ kjell-olovhogdahl$ 
+
+
+3) It seems I need to struggle a bit to get it to install, build and run on my MAC OS?
+
+	==> The install seems to run ok (See attached console output file)?
+
+
+	
+
+npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated npmconf@2.1.2: this package has been reintegrated into npm and is now out of date with respect to npm
+npm WARN deprecated node-uuid@1.4.8: Use uuid module instead
+npm WARN deprecated minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated graceful-fs@1.2.3: graceful-fs v3.0.0 and before will fail on node releases >= v7.0. Please update to graceful-fs@^4.0.0 as soon as possible. Use 'npm ls graceful-fs' to find it in the tree.
+
+…
+
+WARN invalid config loglevel="notice"
+…
+Cannot download "https://github.com/sass/node-sass/releases/download/v3.3.3/darwin-x64-57_binding.node": HTTP error 404 Not Found
+…
+gyp info ok 
+Installed in ` /Users/kjell-olovhogdahl/Documents/GitHub/scratch-www/node_modules/node-sass/vendor/darwin-x64-57/binding.node `
+npm notice created a lockfile as package-lock.json. You should commit this file.
+added 1227 packages in 107.605s
+Kjell-Olovs-MacBook-Pro:scratch-www kjell-olovhogdahl$ 
+
+	==> At this stage the npm run build command fails (See attached console output file)
+
+	
+
+#
+# Fatal error in ../deps/v8/src/api.cc, line 1200
+# Check failed: !value_obj->IsJSReceiver() || value_obj->IsTemplateInfo().
+#
+…
+
+
+	==> I installed node.js 8.2.1 from (https://nodejs.org/en/ <https://nodejs.org/en/>)
+
+Node.js was installed at
+   /usr/local/bin/node
+npm was installed at
+   /usr/local/bin/npm
+Make sure that /usr/local/bin is in your $PATH.
+
+		==> Note: 6.11.2 was not enough to make things work.
+
+	==> At this stage the npm run build command still fails (See attached console output file)
+
+	
+
+Error: The `libsass` binding was not found in /Users/kjell-olovhogdahl/Documents/GitHub/scratch-www/node_modules/node-sass/vendor/darwin-x64-48/binding.node
+This usually happens because your node version has changed.
+Run `npm rebuild node-sass` to build the binding for your current node version.
+
+
+	==> But that rebuild created the same eror as we originally got for building Scratch-www
+
+Kjell-Olovs-MacBook-Pro:scratch-www kjell-olovhogdahl$ npm rebuild node-sass
+
+> node-sass@3.3.3 install /Users/kjell-olovhogdahl/Documents/GitHub/scratch-www/node_modules/node-sass
+> node scripts/install.js
+
+
+> node-sass@3.3.3 postinstall /Users/kjell-olovhogdahl/Documents/GitHub/scratch-www/node_modules/node-sass
+> node scripts/build.js
+
+` /Users/kjell-olovhogdahl/Documents/GitHub/scratch-www/node_modules/node-sass/vendor/darwin-x64-57/binding.node ` exists. 
+ testing binary.
+
+
+#
+# Fatal error in ../deps/v8/src/api.cc, line 1200
+# Check failed: !value_obj->IsJSReceiver() || value_obj->IsTemplateInfo().
+#
+
+==== C stack trace ===============================
+
+    0   node                                0x0000000100bf6d23 v8::base::debug::StackTrace::StackTrace() + 19
+    1   node                                0x0000000100bf3ec9 V8_Fatal + 233
+    2   node                                0x000000010014739a v8::Template::Set(v8::Local<v8::Name>, v8::Local<v8::Data>, v8::PropertyAttribute) + 330
+    3   binding.node                        0x0000000105a713c7 SassTypes::Boolean::get_constructor() + 355
+    4   binding.node                        0x0000000105a73413 SassTypes::Factory::initExports(v8::Local<v8::Object>) + 407
+    5   node                                0x0000000100a7c479 node::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&) + 888
+    6   node                                0x000000010017b0c2 v8::internal::FunctionCallbackArguments::Call(void (*)(v8::FunctionCallbackInfo<v8::Value> const&)) + 466
+    7   node                                0x00000001001e6eef v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments) + 911
+    8   node                                0x00000001001e6449 v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*) + 281
+    9   ???                                 0x000003a9fd7040bd 0x0 + 4028636348605
+    10  ???                                 0x000003a9fd899af4 0x0 + 4028638010100
+Illegal instruction: 4
+Kjell-Olovs-MacBook-Pro:scratch-www kjell-olovhogdahl$ 
+
+	==> I found that Sass could be installed as instructed on this github Sass home (https://github.com/sass/sass <https://github.com/sass/sass>)
+
+Kjell-Olovs-MacBook-Pro:scratch-www kjell-olovhogdahl$ sudo gem install sass
+Password:
+Fetching: rb-fsevent-0.10.2.gem (100%)
+Successfully installed rb-fsevent-0.10.2
+Fetching: ffi-1.9.18.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed ffi-1.9.18
+Fetching: rb-inotify-0.9.10.gem (100%)
+Successfully installed rb-inotify-0.9.10
+Fetching: sass-listen-4.0.0.gem (100%)
+Successfully installed sass-listen-4.0.0
+Fetching: sass-3.5.1.gem (100%)
+Successfully installed sass-3.5.1
+Parsing documentation for rb-fsevent-0.10.2
+Installing ri documentation for rb-fsevent-0.10.2
+Parsing documentation for ffi-1.9.18
+Installing ri documentation for ffi-1.9.18
+Parsing documentation for rb-inotify-0.9.10
+Installing ri documentation for rb-inotify-0.9.10
+Parsing documentation for sass-listen-4.0.0
+Installing ri documentation for sass-listen-4.0.0
+Parsing documentation for sass-3.5.1
+Installing ri documentation for sass-3.5.1
+5 gems installed
+Kjell-Olovs-MacBook-Pro:scratch-www kjell-olovhogdahl$ 
+
+	==> But the npm run build still fails with the same error...
+
+	HERE I GAVE UP… *sigh* (And this is 2017?)
+
+4) Consider we can make Scratch work locally on Linux?
+
+	...
+
+...

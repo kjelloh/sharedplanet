@@ -1,0 +1,137 @@
+﻿It seems it could prove to be a good idea to use the USB-C connector ability to transfer data using any of the four protocols Thunderbolt, DisplayPort, USB and PCI Express as a good framing to understand contemporary serialisation techniques and how they work?
+
+1) Consider this youtube video “What's the difference between Thunderbolt 3 and USB-C?” that at least seems to give good leads into the USB-C connector and its ability to transfer data using Thunderbolt, DisplayPort, USB or PCIe ( https://www.youtube.com/watch?v=BqfFE7v5VLk <https://www.youtube.com/watch?v=BqfFE7v5VLk> )?
+
+	==> he seems to suggest that USB-C can transfer data using any of four protocols (Thunderbolt, DisplayPort, USB and PCI Express)?
+
+	
+	The USB-C physical form factor can transfer data using Thunderbolt, DisplayPort, USB or PCI Express (https://www.intel.com/content/dam/www/public/us/en/images/illustrations/RWD/thunderbolt-3-illustration-rwd.png.rendition.intel.web.720.405.png <https://www.intel.com/content/dam/www/public/us/en/images/illustrations/RWD/thunderbolt-3-illustration-rwd.png.rendition.intel.web.720.405.png> )
+
+
+2) Consider good resources on the Thunderbolt technology?
+
+	==> Consider Intels page on Thunderbolt (https://www.intel.com/content/www/us/en/io/thunderbolt/thunderbolt-technology-developer.html <https://www.intel.com/content/www/us/en/io/thunderbolt/thunderbolt-technology-developer.html> )?
+
+	==> Consider Intels technical brief on the Thunderbolt 3 technology (https://thunderbolttechnology.net/sites/default/files/HBD16235_Thunderbolt_TB_r05.pdf <https://thunderbolttechnology.net/sites/default/files/HBD16235_Thunderbolt_TB_r05.pdf> )?
+
+		==> It seems Thunderbolt provides a physical layer capable of switching operation mode to act as USB, DisplayPort or Thunderbolt protocol transfers (where Thunderbolt mode in itself can transfer a combination of DisplayPort and PCIe on the available four channels of data)?
+
+“Fundamentally, Thunderbolt is a tunneling architecture designed to take a few underlying protocols and combine them onto a single interface. That way, the total speed and performance of the link can be shared between the underlying usages of these protocols – whether they are data, display, or something else.
+
+At the physical interface level, Intel’s Thunderbolt 3 silicon builds in a few important features:
+
+	• A physical interface (PHY) layer that can dynamically switch its operating mode to drive either:
+
+- USB 2.0, 3.0, and 3.1
+- DisplayPort* 1.1 and 1.2a
+- Thunderbolt at 20 Gbps and 40 Gbps
+
+	• In the Thunderbolt mode, the Thunderbolt 3 port has the ability to support at least one or two (4-lane) DisplayPort interface(s), and up to four lanes of PCI Express Gen 3."
+
+	==> So it would seem Thunderbolt is in itself NOT a protocol but a tunnel technology for DisplayPort, USB and PCIe?
+
+		
+		Thunderbolt four physical lanes can be used as two bi-directional data lanes (https://thunderbolttechnology.net/sites/default/files/HBD16235_Thunderbolt_TB_r05.pdf <https://thunderbolttechnology.net/sites/default/files/HBD16235_Thunderbolt_TB_r05.pdf> ) 
+
+	==> It seems Thunderbolt 1 and 2 uses the exact same form factor as the Mini Display Port (https://www.cnet.com/news/confusing-mini-displayport-with-thunderbolt/ <https://www.cnet.com/news/confusing-mini-displayport-with-thunderbolt/> )?
+
+	
+
+	==> Consider this apple support page on the relations between different form factors for USB, Thunderbolt, displayport, firewire etc ( )?
+
+	
+
+3) Consider good resources on the Universal Serial Bus (USB) protocol?
+
+	==> Consider this article on the USB Protocol (https://www.beyondlogic.org/usbnutshell/usb3.shtml <https://www.beyondlogic.org/usbnutshell/usb3.shtml> )?
+
+	
+	USB logical connections Host to Device (https://www.beyondlogic.org/usbnutshell/endpoint.gif <https://www.beyondlogic.org/usbnutshell/endpoint.gif> )
+
+	==> Consider the wikipedia page on the USB Protocol (https://en.wikipedia.org/wiki/USB )?
+
+	
+	Different USB connectors where type A is used for USB 1 to 3.1 and USB-c only for USB 3.1 and 3.2 (and future higher versions?) (from wikipedia https://en.wikipedia.org/wiki/USB <https://en.wikipedia.org/wiki/USB> )
+
+4) Consider good resources on the DisplayPort (DP) Protocol?
+
+	==> Consider wikipedia on the DisplayPort (https://en.wikipedia.org/wiki/DisplayPort <https://en.wikipedia.org/wiki/DisplayPort> )?
+
+		==> It seems a displayport connection consists of a a set of unidirectional and differential lanes where standard is four lanes?
+
+“The DisplayPort main link is used for transmission of video and audio. The main link consists of a number of unidirectional serial data channels which operate concurrently, called lanes. A standard DisplayPort connection has 4 lanes," 
+
+		==> It seams each lane in the DisplayPort main link can operate in a set of modes with different speed and characteristics?
+
+“DisplayPort's transmission modes are as follows:
+
+	• RBR (Reduced Bit Rate): 1.62 Gbit/s bandwidth per lane (162 MHz link symbol rate)
+	• HBR (High Bit Rate): 2.70 Gbit/s bandwidth per lane (270 MHz link symbol rate)
+	• HBR2 (High Bit Rate 2): 5.40 Gbit/s bandwidth per lane (540 MHz link symbol rate), introduced in DP 1.2
+	• HBR3 (High Bit Rate 3): 8.10 Gbit/s bandwidth per lane (810 MHz link symbol rate), introduced in DP 1.3”
+
+“The total bandwidth of the main link in a standard 4-lane connection is the aggregate of all lanes:
+
+	• RBR: 4 × 1.62 Gbit/s = 6.48 Gbit/s bandwidth (data rate of 5.184 Gbit/s or 648 MB/s with 8b/10b encoding)
+	• HBR: 4 × 2.70 Gbit/s = 10.80 Gbit/s bandwidth (data rate of 8.64 Gbit/s or 1.08 GB/s)
+	• HBR2: 4 × 5.40 Gbit/s = 21.60 Gbit/s bandwidth (data rate of 17.28 Gbit/s or 2.16 GB/s)
+	• HBR3: 4 × 8.10 Gbit/s = 32.40 Gbit/s bandwidth (data rate of 25.92 Gbit/s or 3.24 GB/s)"
+
+	==> Consider this youtube video “Essentials DisplayPort Protocols Webinar” from a webinar on the DisplayPort interface (https://www.youtube.com/watch?v=pSiOYb8Sbig <https://www.youtube.com/watch?v=pSiOYb8Sbig> )?
+
+	
+	
+
+5) Consider good resources on the PCI Express protocol?
+
+	==> Consider the PCI-Sig forum web home (http://pcisig.com <http://pcisig.com/> )?
+
+		==> GOSH! The PCI Express specifications are r e a l l y expensive (http://pcisig.com/specifications/order-form <http://pcisig.com/specifications/order-form> )?
+		== >It seems the “PCI Express Base Specification Revision 4.0 “ costs $4500 for non member?
+
+	==> Consider national instruments overview of the PCI Express interface (http://www.ni.com/white-paper/3767/en/ <http://www.ni.com/white-paper/3767/en/> )?
+
+“The fundamental PCI Express link consists of two low-voltage AC-coupled differential pairs of signals (a transmit pair and a receive pair) as shown in Figure 3."
+
+	
+	Figure 3 - PCI Express physical layer (http://www.ni.com/cms/images/devzone/tut/b3dadcae1480.png <http://www.ni.com/cms/images/devzone/tut/b3dadcae1480.png> )
+
+		
+	
+	Figure 4 - The PCI Express protocol stack (http://www.ni.com/cms/images/devzone/tut/b3dadcae1481.png <http://www.ni.com/cms/images/devzone/tut/b3dadcae1481.png> )
+
+
+	…
+
+	==> Consider NVMe is a protocol that runs over PCIe to (https://en.wikipedia.org/wiki/NVM_Express <https://en.wikipedia.org/wiki/NVM_Express> )?
+
+“NVM Express (NVMe) or Non-Volatile Memory Host Controller Interface Specification (NVMHCIS) is an open logical device interface specification for accessing non-volatile storage media attached via a PCI Express (PCIe) bus.”
+
+“By its design, NVM Express allows host hardware and software to fully exploit the levels of parallelism possible in modern SSDs."
+
+6) Consider good resources to understand the 8b/10b encoding that many (all?) contemporary transfer interfaces seem to use?
+
+	==> Consider this article from embedded.com <http://embedded.com/> on 8b/10b Encoding (https://www.embedded.com/design/debug-and-optimization/4371977/Troubleshoot-and-verify-8b-10b-encoded-signals-with-a-real-time-oscilloscope <https://www.embedded.com/design/debug-and-optimization/4371977/Troubleshoot-and-verify-8b-10b-encoded-signals-with-a-real-time-oscilloscope> )?
+
+		==> It seems DisplayPort, PCIe and USB all uses 8b/10b Encoding?
+
+“Few serial technologies have become more widely adopted than 8b/10b coding, which is now used in standards like PCI-Express, Serial ATA, SAS, Fibre Channel, InfiniBand, FireWire, MIPI M-PHY, HDMI, DisplayPort, CIPRI, OBSAI, XAUI, USB3.0 and others."
+
+		==> Note: It says nothing about Thunderbolt itself using 8b/10b encoding (but maybe that comes without saying to tunnel DisplayPort, USB and PCIe)?
+
+		==> It seems 8b/10b encoding is to ensure a nearly 50/50 distribution between transferred ones and zeroes (to avoid DC drift of the signal)?
+
+“Each 8 bit word corresponds to two 10b characters to ensure the long term ratio between 1´s and 0´s is nearly 50 percent,” 
+
+		
+		The 8b/10b encoding keeps the DC drift low by ensuring 50/50 relation between transferred zeroes and ones (https://m.eet.com/media/1158451/tek8b-10bfig2.jpg <https://m.eet.com/media/1158451/tek8b-10bfig2.jpg> )
+		
+
+	==> Consider wikipeida on the 8b/10 Encoding (https://en.wikipedia.org/wiki/8b/10b_encoding <https://en.wikipedia.org/wiki/8b/10b_encoding> )?
+
+	==> It seems PCIe uses differential lanes that uses 8b/10b encoding (http://www.ni.com/white-paper/3767/en/ <http://www.ni.com/white-paper/3767/en/> )?
+
+“Each byte is transmitted, with 8b/10b encoding, across the lane(s). "
+
+	
+...

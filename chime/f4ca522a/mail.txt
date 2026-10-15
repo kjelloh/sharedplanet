@@ -1,0 +1,13 @@
+﻿I found out about this site from Cppcon 2019 talk "CppCon 2019: Jens Weller “Modern C++ Macros”" (https://youtu.be/uY4iZAuov_I?t=215 <https://youtu.be/uY4iZAuov_I?t=215> ).
+
+1) The cppinsights web tools seems to live here (https://cppinsights.io <https://cppinsights.io/> )?
+
+2) Consider how a C++ lambda expressions is expanded into a lambda class by the https://cppinsights.io <https://cppinsights.io/> tool?
+
+
+
+Gets expanded into...
+
+
+
+...

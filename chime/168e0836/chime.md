@@ -1,0 +1,16 @@
+# Todo: Träna upp konditionen och meditera mer
+
+```#168e0836``` *As of 2015-10-05 15:30*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Jag tror jag behöver bättre kondition och lägre stressnivåer.
+
+1) Hitta ett sätt att träna regelbundet som inte stressar mig, som jag tycker är kul och som ger mig större hjärtvolym och lungkapacitet?  
+2) Gör en vana av att hitta sätt att aktivt koppla av. Meditera kan vara ett sätt. Ett annat kan vara att umgås med andra i ett accepterande och kravlöst sammanhang?  
+…
+
+Fundera på olika sätt att agera-i-övertygelse så att mer av aktiviteter som leder till dessa resultat sker “av-sig-självt”?
+
+{% endraw %}

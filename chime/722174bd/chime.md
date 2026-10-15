@@ -1,0 +1,15 @@
+# Todo: Consider to build Dividuality into the concept of a Darwinet User?
+
+```#722174bd``` *As of 2015-08-24 15:52*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Darwinet may be designed so that a Darwinet User is in fact a Dividual (many different ones). Consider to build this into the framework of Darwinet.
+
+a) How do we model a dividual? Is this a role? No, Each dividual can play roles. A dividual shall be defined by traits of that dividual. ”The super curious me” can be a dividual? ”Me that develops Darwinet” may be one of my dividuals? ”Me that votes for immigrants to be allowed in Sweden” is one dividual.  
+b) Each dividual should only be able to access different parts of a domain? Or shall others be able to see only what defined dividuals, not all, are doing.  
+c) At the very least the dividual aspect of a user shall allow dividual aspects of oneself to interact with other dividuals and not having to restort to role-based or user based interaction?  
+...
+
+{% endraw %}

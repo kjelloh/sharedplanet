@@ -1,0 +1,132 @@
+# Todo: Tha C++ - Consider to discover the C++ meta-layer objects by viewing C++ code as meta-layer expressions expressed in Haskel syntax?
+
+```#f03f3b43``` *As of 2017-09-27 11:37*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider it could be a way forward to discover what the C++ meta-layer ”objects” actually looks like by viewing C++ code as meta-layer expressons in the type system expressed using Haskel syntax?
+
+==&gt; Also see ”Todo: Programming - Consider this talk "Abusing C# More - Jon Skeet" as fun insights to Text encoding clash with Source Code Processing (also applicable to C++)?"
+
+1) Consider what Haskel Syntax View of C++ declarations and definitions would reveal to us?
+
+int a; // ”**int**" is a constructor that takes a name and returns a binding of name to a meta-value for ints
+
+// In C++ syntax: auto meta_1::a_declaration = int(”a”);
+
+struct A { // ”**struct**” is a constructor that takes a name and a list of constructors and returns a binding of a name to a meta-value for structs
+
+int x; // In C++ syntax: auto meta_2::A_declaration = struct(”A”, {int(”x”)});
+
+}
+
+template &lt;typename T&gt; // ”**template**” is a constructor that takes an argument list and a kind constructor and returns a binding of a name to a meta-value for templates
+
+struct B { // In C++ syntax: auto meta_3:.B_declaration = template({},{typename(”T”)},struct(”B”,{T(”t”)}));
+
+T t; // Note: template is a function object that takes a captured environment (free variable bindings), an argument list and a ”function body” in the form of a kind constructor
+
+}
+
+2) Consider to express the Semantics of the ”Haskel”syntax” in C++ syntax?
+
+int a; // ”**int**" is a constructor that takes a name and returns a binding of name to a meta-value for ints
+
+// In C++ syntax: auto meta_1::a_declaration = int(”a”);
+
+struct A { // ”**struct**” is a constructor that takes a name and a list of constructors and returns a binding of a name to a meta-value for structs
+
+int x; // In C++ syntax: auto meta_2::A_declaration = struct(”A”, {int(”x”)});
+
+}
+
+template &lt;typename T&gt; // ”**template**” is a constructor that takes an argument list and a kind constructor and returns a binding of a name to a meta-value for templates
+
+struct B { // In C++ syntax: auto meta_3:.B_declaration = template({},{typename(”T”)},struct(”B”,{T(”t”)}));
+
+T t; // Note: template is a function object that takes a captured environment (free variable bindings), an argument list and a ”function body” in the form of a kind constructor
+
+}
+
+==&gt; Consider to use the zero width space unicode characters in C++ identifier names to be able to actually write C++ code that looks like the C++ syntax for the Haskel semantics (See below)?
+
+...
+
+3) Consider we can write C++ code using identifiers that looks like reserved identifiers ”int”, ”struct”, template by using invisible characters in the name?
+
+==&gt; See ”/Users/kjell-olovhogdahl/Resilio Sync/XCode/MyCppTypeSystemInCppTypeSystem/MyCppTypeSystemInCppTypeSystem”
+
+> //  
+> // main.cpp  
+> // MyCppTypeSystemInCppTypeSystem  
+> //  
+> // Created by Kjell-Olov Högdahl on 2017-09-27.  
+> // Copyright © 2017 Kjell-Olov Högdahl. All rights reserved.  
+> //
+
+> #include &lt;iostream&gt;
+
+> /\*
+
+> This is a playground for expressing the C++ type system in the C++ type system itself.  
+> See "Todo: Tha C++ - Consider to discover the C++ meta-layer objects by viewing C++ code as meta-layer expressions expressed in Haskel syntax?"
+
+> ==&gt; The idea is to use the Zero Width Space unicode characters in identifiers to represent objects with names that reads as C++ built in type system objects
+
+> \*/
+
+> // meta-4 sort "template"  
+> class t​emplate {};
+
+> // meta-3 kind "class"  
+> class c​lass {};
+
+> // meta-2 type "int"  
+> class i​nt {};
+
+> int main(int argc, const char \* argv&#91;&#93;) {  
+> std::cout &lt;&lt; '\\n' &lt;&lt; "Welcome!";
+
+> auto my_template = t​emplate{};  
+> auto my_class = c​lass{};  
+> auto my_int = i​nt{};
+
+> std::cout &lt;&lt; "\\nBye!" &lt;&lt; std::endl;  
+> return 0;  
+> }
+
+==&gt; Also see ”Todo: Programming - Consider this talk "Abusing C# More - Jon Skeet" as fun insights to Text encoding clash with Source Code Processing (also applicable to C++)?”
+
+==&gt; It seems in C++ characters not in the source code set is replaced with white spaces which breaks the identifier into a syntax error?
+
+> // Following identifier has a mongolian separator character (0x180E) between last '_' and the 's'  
+> // Xcode shows error right at this positiion in code (Treated as white space causing syntax error)  
+> auto identifier_with_mongolian_᠎separator = int{4};
+
+==&gt; This page seems to define what unicode characters that are allowed in C++ identifiers (<http://en.cppreference.com/w/cpp/language/identifiers>)?
+
+==&gt; It seems we can use the zero width space characters in C++ names to allow for identifiers that reads like reserved names?
+
+> // The following identifiers has a zero width space character (0x200B) between the fiorst a second visible character  
+> class s​truct {  
+> s​truct(/\* meta-object cosntructor arguments\*/);  
+> /\* binding \*/ void operator()(/\* defacto constructor arguments \*/);  
+> };
+
+> class i​nt {  
+> i​nt(/\* meta-object constructor arguments\*/);  
+> /\* binding \*/ void operator()(/\* defacto constructor arguments \*/);  
+> };
+
+==&gt;  Hm… Is this a good idea or only confusing?
+
+==&gt; It does allow us to actually write Tha meta-level expressions using C++ objects ”int”, ”struct”, ”template”…
+
+…
+
+…
+
+Consider to elaborate on this idea to discover the nature and members of C++ type system objects ”int” (meta-2 types), ”struct” (meta-3 kinds), ”template” (meta-4 sorts) etc?
+
+{% endraw %}

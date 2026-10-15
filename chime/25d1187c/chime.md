@@ -1,0 +1,154 @@
+# Todo: Consider to reverse engineer the "woke culture" model of reality from anarchist Vaush youtube video "What is Gender Abolitionism?"?
+
+```#25d1187c``` *As of 2019-08-12 11:58*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I found this youtube video as potentially a good one to get under the skin of what is going on in the woke culture way of looking at reality and argue for change?
+
+1) Consider the youtube video "What is Gender Abolitionism?" for leads into what being woke actually means in terms of what model of reality it proposes (<https://www.youtube.com/watch?v=-Gb_LruXLFA&t=680s> )?
+
+> I have found it to be a good tool to reason about my observations of reality and my fellow humans way of reasoning about it, to apply the view that we are in fact modelling reality. So from that point of view I can watch this youtube video and try to reverse engineer what model of reality the so called woke culture is applying and arguing for and from within?
+
+> At 11:30 Vaush seems to be in the middle of observing how gender expressions has varied through history. So that expressions like long or short hair, suit or skirt and the blue colour vs the pink colour through history has flipped in being related to masculine or feminine gender. So from this he concludes gender associations to these expressions are arbitrary?
+
+> "11:20 there have been plenty of fashion trends in the past. And today where women have looked plenty good in suits and been widely celebrated for their appearance. The fedora used to be considered a woman's hat now it's considered a men's hat. I'm not sure how that transition happened? Facial piercings? Earrings and the shit? You really think men weren't rocking that shit back in the day? Men were wearing dresses, even then. You know there are societies in which women were expected to be the sexually aggressive ones? I'm pretty sure &#91;there were in&#93; ancient Greece some city-states where that was the case. All of these associations are arbitrary. And in my opinion, and this is where we get into that gender abolitionists bent. And in my opinion these associations are not only arbitrary they are harmful."
+
+> So from Vaush arguing it seems we can conclude he argues for a conviction that gender associations are for one arbitrary and secondly harmful. Now, at this point Vaush correlating gender associations with being harmful is isomorphic to the New Atheists correlating religion with cause of harm. And I suppose we should suspect this is how the human mind works when it models reality. It looks for harmful actions and correlates them seemingly harmful argumentation? In woke culture the model states that gender association causes harm. And in new atheism religious beliefs causes harm.
+
+> Vaush now continues to state he is an Anarchist and from that view point he argues that the value of gender is low. He seems to argue that the valuable things he associates with his person is not because they are associated with his male gender. It is because they are valuable things in themselves? Like confidence that stems from strength?
+
+> **WE ARE HERE...**
+
+> "...and this is where we get into gender like roles, gender expectations okay? To say that gender is arbitrary is not like a super hot take in most left-leaning circles. I'm not exactly expecting accolades for that one and to
+
+> 12:21  
+> say that gender roles are harmful I  
+> 12:23  
+> think is similarly you know tepid its  
+> 12:27  
+> bathwater temperature a take
+
+> but ... as an  
+> 12:32  
+> anarchist I see value in the  
+> 12:38  
+> deconstruction of social hierarchies and  
+> 12:41  
+> taxonomies which I believe contribute to  
+> 12:43  
+> oppression not just to make those  
+> 12:46  
+> hierarchies good not just to make those  
+> 12:49  
+> hierarchies fine or decent or not  
+> 12:53  
+> harmful but to destroy them. something  
+> 12:57  
+> should have value to be kept. What do we  
+> 13:01  
+> get from gender? Like what do we what do  
+> 13:04  
+> we actually get from it? What's the  
+> 13:09  
+> benefit quia. Actually take a second to  
+> 13:12  
+> think for a second. Because I I actually  
+> 13:14  
+> want us to think about this, okay? What do  
+> 13:19  
+> we get from gender. Cuz I can't think of  
+> 13:22  
+> much everything that I have that is  
+> 13:26  
+> associated with my gender, for example  
+> 13:29  
+> I'm confident I speak in a deep voice;  
+> 13:31  
+> I'm large you know I mean pretty big you  
+> 13:35  
+> know I like strengths mostly both like  
+> 13:37  
+> as a metaphysical concept and physically  
+> 13:39  
+> I like being physically strong I think  
+> 13:41  
+> those things benefit me in some ways in  
+> 13:43  
+> my day to day life  
+> 13:44  
+> these things are gender associated but I  
+> 13:46  
+> could get all of these without gender.
+
+> 13:51  
+> gender isn't really necessary to teach  
+> 13:54  
+> me the importance of these things. It  
+> 13:56  
+> doesn't help me recognize why these  
+> 13:59  
+> things are important. I've never looked  
+> 14:01  
+> at myself and thought I should be  
+> 14:02  
+> confident and well-spoken  
+> 14:04  
+> because I'm a man. No, I should be  
+> 14:09  
+> confident and well-spoken because it  
+> 14:10  
+> helps me achieve my goals. I should be  
+> 14:13  
+> strong and bold because I'm a man well  
+> 14:17  
+> no I should be strong and bold because  
+> 14:21  
+> it helps me achieve my goals. I can't  
+> 14:23  
+> really think  
+> 14:24  
+> anyway in which gender helps people. Or  
+> 14:27  
+> if the expectations surrounding gender  
+> 14:29  
+> help people. Because if something that  
+> 14:32  
+> gender provides us is valuable we should  
+> 14:35  
+> be able to argue for its value outside  
+> 14:37  
+> the gendered paradigm at least that  
+> 14:39  
+> makes sense to me right so I don't know  
+> 14:42  
+> what good gender gets us I can think of  
+> 14:45  
+> some harm gender ascribes to us see  
+> 14:49  
+> gender can't really exist outside of  
+> 14:51  
+> gender roles anytime you create a  
+> 14:54  
+> category for someone the existence of  
+> 14:56  
+> the category implicitly reinforces the  
+> 14:59  
+> belief both from with those within the  
+> 15:01  
+> category and those from without him that  
+> 15:03  
+> people in that category should hold  
+> 15:05  
+> themselves to certain values there's no  
+> 15:07  
+> value to a category that has no meaning  
+> 15:09  
+> right so what if you're a man well
+
+> "
+
+...
+
+{% endraw %}

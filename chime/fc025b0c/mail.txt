@@ -1,0 +1,26 @@
+﻿I just experienced that to record scripts for youtube videos I have to use a text editor separate from the program I record the Audio in (and possibly a third program to edit an actual video). Why can’t we have one to handle the whole process?
+
+1) Consider the functionality we would like a text, audio and video editor to be able to provide?
+
+	==> Consider we like to be able to edit voce-over scripts?
+
+	==> Consider we would like speech recognition so get autoscroll when we record the voice-over?
+
+	==> Consider we would like feed-back on what parts of the script we have correctly recorded as voice-over and what parts we need second takes on?
+
+	==> Consider we would like the option to have text-to-speach?
+
+	==> Consider we would like speech-to-text (e.g., to create video captures)?
+
+	==> Consider we would like text to video-animation (insert text doubles, quotes etc. in nice graphics and effects)?
+
+	==> Consider on top we would like to have good enough video editing?
+
+2) Consider to have the text, audio, video editor to be Tha-based?
+
+	==> Consider we like to be able to compose freely with text, audio and speech?
+
+	==> Consider we would like to be able to produce any combination of text, audio, video output (e-books, pod casts, youtube videos, web-contents)?
+
+	...
+

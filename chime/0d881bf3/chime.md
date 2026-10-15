@@ -1,0 +1,43 @@
+# Todo: Consider to find ways to visualize an interactive model of the Swedish Tax law rules and dynamic behavior?
+
+```#0d881bf3``` *As of 2017-02-23 19:33*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider it would be a good idea to try and make an interactive model of the Swedish Tax law rules and dynamic behavior?
+
+1) Consider this talk as an inspiration on how it can look (https://www.youtube.com/watch?v=oUaOucZRlmE&feature=youtu.be#t=1072.979699016)?
+
+==&gt; Consider especially the dynamic and interactive examples of complex mathematical data!  
+…
+
+2) Consider a way to enter a model of the Swedish Tax Law that perserve the references to the law on the model (so that applying the model can communicate what paragraphs that was applied)?
+
+==&gt; Consider this makes its easy to enter the model and to verify that the model has been entered correctly (by comparing with the law specification)?  
+==&gt; Consider this makes the model more valuable to use as it will be able to express what laws that has been applied in a simulated scenario?  
+...
+
+3) Consider to make an Open Source Project where code can be developed to implement this interactive model of the Swedish Tax law rules and dynamic behavior?
+
+==&gt; Consider a GUI based on a view of an immutable model state (each input creates a new model state)?  
+==&gt; Consider to implement a Web-technology based GUI (e.g., Electron, React)?  
+…
+
+4) Consider ways to model the Swedish Tax Law rules?
+
+==&gt; Consider what can be a good mathematical engine to model the rules (the model will be discrete and may contain inconsistencies and inputs that create invalid states)?  
+==&gt; Consider if there is already an existing model of the law (implemented somewhere to test the law accuracy or simulate law changes effects on citizen behavior)?  
+…
+
+5) Consider modules of this model shall be re-usable in tax planning rules and automated tax report generation for Swedish Citizens?
+
+Consider to base these modules on the conception of ”flow of money” through ”splitters” that generate VAT flows, Tax flows, Breakpoint values etc?  
+...
+
+…
+
+Consider to delve deeper into this idea to cooperate to develop an interactive model of the Swedish Taw law rules and dynamic behavior?  
+...
+
+{% endraw %}

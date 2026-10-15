@@ -1,0 +1,255 @@
+﻿I want to have access to the latest C++ standard committee documentation to be able to follow current progress and discussions in development of the C++ programming language
+
+1) It seems the Draft ("latest" ?) C++ standard working documents is available in LaTeX format on github (https://github.com/cplusplus/draft <https://github.com/cplusplus/draft> )?
+
+"These are the sources used to generate drafts of the C++ standard. These sources should not be considered an ISO publication, nor should documents generated from them unless officially adopted by the C++ working group (ISO/IEC JTC1/SC22/WG21)."
+
+"Getting Started on Mac OS X
+Install the MacTeX distribution <http://tug.org/mactex/>."
+
+
+2) Consider to document my success of actually building the C++ standard committee document(s) as instructed from github LaTeX document formats?
+
+"Instructions
+
+To typeset the draft document, from the source directory run:
+
+make
+
+That's it! You should now have an std.pdf containing the typeset draft."
+
+
+	==> After having cloned the repository using GitHub Desktop helper app I opened a console from the Finder into the "source" folder
+
+
+You can open a terminal window from Finder using appropriate service command
+
+	==> I now found myself in a terminal window at the "source" folder of path to the downloaded cplusplus LaTex source
+
+Last login: Thu Apr  9 13:49:30 on console
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro source % pwd
+/Users/kjell-olovhogdal/Documents/Github/cplusplus/draft/source
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro source % 
+
+	==> It seems "make" does produce a pdf-file and report success although there are an awful lot of warnings during generation?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro source % make
+latexmk -pdf std
+Latexmk: This is Latexmk, John Collins, 17 March 2019, version: 4.63b.
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex': The following rules & subrules became out-of-date:
+      'pdflatex'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -recorder  "std.tex"'
+------------
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./std.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2018/12/12 v3.7h configurable book, report, article docu
+ment class
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/ifetex/ifetex.sty
+
+...
+
+LaTeX Warning: Reference `support' on page 2 undefined on input line 68.
+
+
+LaTeX Warning: Reference `thread' on page 2 undefined on input line 68.
+
+
+LaTeX Warning: Reference `diff.library' on page 2 undefined on input line 68.
+
+
+LaTeX Warning: Reference `depr.locale.stdcvt' on page 2 undefined on input line
+ 82.
+
+[2]
+
+LaTeX Warning: Reference `definitions' on page 3 undefined on input line 106.
+
+
+LaTeX Warning: Reference `library' on page 3 undefined on input line 107.
+
+...
+
+=== TeX engine is 'pdfTeX'
+Latexmk: Index file 'generalindex.idx' was written
+Latexmk: Index file 'grammarindex.idx' was written
+Latexmk: Index file 'headerindex.idx' was written
+Latexmk: Index file 'libraryindex.idx' was written
+Latexmk: Index file 'conceptindex.idx' was written
+Latexmk: Index file 'impldefindex.idx' was written
+Latexmk: Log file says output to 'std.pdf'
+Latexmk: All targets () are up-to-date
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro source % 
+
+	==> There now seems to be a std.pdf in the "source" folder?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro source % ls *.pdf
+figdag.pdf		figname.pdf		fignonvirt.pdf		figstreampos.pdf	figvirt.pdf		figvirtnonvirt.pdf	std.pdf			valuecategories.pdf
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro source % 
+
+	
+
+3) Consider to understand how I can get the GitHub Desktop to work on MacOS?
+
+	==> When I try to open the C++ documentation LaTeX project in GitHub Desktop my MacOS fails to understand the URL because I had not Installed the application yet!
+
+
+My MacOS fails to understand the URL to open the cplusplus/draft GitHub project in the locally installed GitHub Desktop application because it was not yet installed!
+
+	==> First I noted I had to install the GitHub Desktop from here (https://desktop.github.com <https://desktop.github.com/> )
+
+
+
+
+My MacOS required me to Allow the download I had requested
+
+
+The download of the GitHub Desktop application for MacOS succeeded
+
+
+MacOS requires me to authorise opening of the downloaded GitHub desktop application installation package
+
+	==> The installation instructions says nothing about moving the downloaded GitHub Desktop application from the Download folder to say the "Applications" folder (https://help.github.com/en/desktop/getting-started-with-github-desktop/installing-github-desktop <https://help.github.com/en/desktop/getting-started-with-github-desktop/installing-github-desktop> )?
+
+"You can install GitHub Desktop on macOS 10.10 or later .
+
+	• Visit the GitHub Desktop download page.
+	• Choose Download for Mac.
+	• In your computer's Downloads folder, double-click the GitHub Desktop zip file.
+	• After the file has been unzipped, double-click GitHub Desktop."
+
+"After you've launched GitHub Desktop, you can choose to set up GitHub Desktop right away, or you can skip the setup process."
+
+
+	==> But the GitHub Desktop article on uninstalling states it shall be removed from the Applications folder (https://help.github.com/en/desktop/getting-started-with-github-desktop/uninstalling-github-desktop <https://help.github.com/en/desktop/getting-started-with-github-desktop/uninstalling-github-desktop> )?
+
+"Uninstalling GitHub Desktop
+
+You can uninstall GitHub Desktop from Microsoft Windows or OS X any time.
+
+Mac
+Windows
+	• In a Finder window, navigate to the Applications folder.
+	• While pressing the Control button on your keyboard, click GitHub Desktop.
+	• Choose Move to Trash.
+	• In the upper-left corner of your screen, select the Finder menu.
+	• Click Empty Trash.
+	• Read the warning in the pop-up box and click Empty Trash."
+
+	Q: Will the GitHub Desktop application be moving "itself" after we have configured it?
+
+
+Having configured the GitHub Desktop application it did NOT move itself to the MacOS Application folder!
+
+
+The GitHub Desktop application manually dragged to the MacOS Application folder
+
+
+With the GitHub Desktop application downloaded, moved to the Applications and configured the "Open in GitHub Desktop" URL worked just fine in safari on my MacOS
+
+
+The GitHub Desktop defaults to download to "/Users/kjell-olovhogdal/Documents/GitHub/draft" which is a bad and confusing local path (I changed it to "/Users/kjell-olovhogdal/Documents/GitHub/cplusplus/draft"
+
+NOTE: I edited the local path to include the master project "cplusplus", i.e., "/Users/kjell-olovhogdal/Documents/GitHub/cplusplus/draft"
+
+
+The UI of the Github Desktop while downloading is failing to show the local path where the downloaded files are stored...
+
+
+
+4) Consider to document my progress of installing and using C++ standard committee draft documents build environment (https://github.com/cplusplus/draft <https://github.com/cplusplus/draft> )?
+
+	==> It seems I succeeded to download the MacOS distribution of the LaTeX build environment "MacTeX" from here (http://tug.org/mactex/mactex-download.html <http://tug.org/mactex/mactex-download.html> )?
+
+
+
+
+The downloaded  pkg-file "mactex-20190508.pkg" with the MacOS LaTeX distribution "MacTeX"
+
+	==> It seems macOS unpacks and runs the install script when I double-click the  pkg-file "mactex-20190508.pkg"?
+
+The first install dialog shown after double-clicking the  pkg-file "mactex-20190508.pkg"
+
+	==> It seems the LaTex typesetting system comes with a bunch of different softwares like the TeX Program, macro packages, a GUI, postscript interpreter, BibTex database editor and more?
+
+"
+MacTeX-2019 ReadMe
+For Sierra (macOS 10.12) and Higher
+
+This installer provides all the software needed to use the TeX typesetting system on Mac OS X. All of the software is fully configured and ready to use. Included are
+
+	• the actual TeX program, and the XeTeX extended version with Unicode and native font support;
+	• macro packages, such as LaTeX, AMSTeX, and ConTeXt
+	• TeXShop, a graphical user interface for TeX
+	• Ghostscript 9.27, a free postscript interpreter used by certain TeX utilities
+	• BibDesk, an editor for BibTeX databases
+	• LaTeXiT, a utility to typeset LaTeX equations and export the resulting PDF by drag and drop
+	• TeX Live Utility, a utility to administer TeX Live and update packages in it over the network
+	• cocoAspell, an extension of Apple's built-in spell checker which understands LaTeX
+	•   
+The underlying TeXLive distribution is extensive, containing most binaries, fonts, styles, and packages used in the TeX community. It is a repackaging of the full TeX Live distribution from the TeX Users Group (TUG), and installs that distribution exactly as it would appear if installed from the TeX Live DVD.
+
+A custom install option is provided for users who want only part of the package. The package contains Ghostscript; users who already have Ghostscript may want to use custom install to avoid the version provided here. 
+
+Among the programs installed by the package is TeXShop, a graphical interface to the TeX typesetting tools. TeXShop will be in your Applications folder in a subfolder named TeX and you can drag its icon to the dock if you wish. The TeX folder contains a README file explaining technical details of TeX Live for experienced users, and explaining how to start using and learning TeX for beginners.
+
+Some programs in TeX need to know whether you are using letter-size paper or A4-size paper. The installer tries to guess the answer from your printer's default paper setting. This will work in almost all cases. If you run into problems, run TeX Live Utility in /Applications/TeX and select "Change Paper Size..." in the Actions menu. 
+
+The installer adds BibDesk, LaTeXiT to the TeX folder in your Applications folder. All are standard Mac programs which can be uninstalled by just dragging them to the trash.
+
+The TeX typesetting system consists of several command line programs and a large number of supporting files. These tools are installed in /usr/local, a directory not visible in the Finder. Inside the system Library folder you will find a subfolder named TeX; the Root file inside this folder is a link to the TeX directory tree which makes it visible to the Finder. So you can examine the files if you are curious.  It is usually not necessary to look at the command line files because they are automatically accessed by TeX as needed. 
+
+If you have used TeX on another system, you may have needed to modify $TEXINPUTS, $PATH, and other shell variables; these are handled automatically on Mac OS X. Occasionally you will want to add additional style files and the like to TeX; to do so, create the directory "texmf" inside your personal Library folder in your home directory, and put additional files in subdirectories of this folder. For instance, LaTeX will find any file in
+
+	~/Library/texmf/tex/latex
+
+or a subdirectory of this folder.
+
+For more information about TeX, see http://tug.org, in particular http://tug.org/begin.html for links to a number of introductory resources. For more information about this MacTeX distribution, see http://tug.org/mactex.
+
+"
+
+
+
+
+
+
+The MacTex-2019 package will occupy 7 GB on the OS disk!
+
+
+I had 108 GB free on my Mac Pro 2013 SSD
+
+
+MacOS requires me to authorise the installation before the installation script is allowed to carry on
+
+
+
+
+
+
+
+
+The MacText-2019 installation script succeeded to install to my MacOS machine
+
+NOTE: At no stage did I get any indication to where the package was actually installed (So how do I uninstall it should I need or want to)?
+
+
+The MacTex-2019 installation script kindly offers to move the package file to the macOS bin after installation is complete
+
+
+But I still need to manually empty the Bin after the installation package has been moved there 
+
+NOTE: Emptying the Bin was successful though so the installation script was able to unmount the package before or after having moved it to the bin (good service)!
+
+
+
+...

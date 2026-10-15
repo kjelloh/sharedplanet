@@ -1,0 +1,44 @@
+﻿So, the guy that seems to have put me on track to understand functional concepts in programming languages is Scott Wlaschin, it is also interesting to find good leads to how to actually leverage these concepts in C++?
+
+1) Consider this page by with links to recommended C++ Functional programming talks (http://www.levelofindirection.com/storage/FCPPRefs.html)?
+
+	...
+
+2) Consider talks by Phil Nash?
+
+	==> ”Functional C++ for Fun and Profit by Phil Nash” (https://www.youtube.com/watch?v=YgcUuYCCV14)?
+	
+		==> At 11:00 he proposes C++ alreade have map, filter and reduce ”functional” functions 
+
+			std::transform 		== map
+			std::copy_if		== filter
+			std::accumulate	== reduce
+
+			==> But how can std::transform be the ”map” (In functional programming map returns a lifted function, not the actual execution of the lifted function)?
+
+				==> std::transform creates a new output range by applying a function to each element in an input range
+
+				Vector<T> —> Vector<U>
+				                   F
+						   ^
+						   |
+						map
+						   |
+				    		   f
+					      T —> U				
+
+				==> So yes, execution of std::transform(Vector<T>, Vector<U>,f) is kind of execution of F: Vector<T> —> Vector<U>, i.e. F(Vector<T>)
+				…
+
+	==> Immutable data structures do not need a default constructor (we need to create it with its value)
+	...
+
+3) Consider talks by Kevlin Henney
+
+	==> ”Functional C++ - Kevlin Henney" on NDC Norway 2016 (https://vimeo.com/131640207)?
+	…
+
+…
+
+Consider to follow up on leads by these presenters into ideas on how to best do Functional C++ :)
+...

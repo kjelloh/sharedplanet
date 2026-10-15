@@ -1,0 +1,15 @@
+# Todo: Write about exponential progress and the forecast of the singularity
+
+```#d669f356``` *As of 2015-08-16 20:54*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, how can we relate the very form exponential progress of all kinds of science and technologies (not only transistor density and price) to the ideas and ”religions” in the making to meet the challenges of humanity (living space, society services and understanding of reality)?
+
+1) Ray Kurzweil is one of the founders of the singularity university (http://www.ted.com/talks/ray_kurzweil_announces_singularity_university)  
+2) http://singularityu.org  
+3) Could the super-curious human be the binding concept?  
+...
+
+{% endraw %}

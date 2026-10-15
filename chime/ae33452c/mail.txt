@@ -1,0 +1,34 @@
+﻿Consider to come back to the Idea of using a robot arm to perform automated tests of Payment Terminals?
+
+1) The original Idea was to use the ABB robot (http://new.abb.com/products/robotics/industrial-robots/irb-120)
+
+	==> Weights 25 Kg and reaches 58 cm carrying 3 Kg.
+
+2) Consider the ROS C++ open source framework to build robotic software (http://www.ros.org <http://www.ros.org/>)
+
+	==> ROS suggests they have a development staged ROS version for ABB (http://wiki.ros.org/abb <http://wiki.ros.org/abb>)?
+
+3) ROS lists the Open Unit Robot (OUR) as a project to develop Open Hardware based robots (http://wiki.ros.org/Robots/OUR <http://wiki.ros.org/Robots/OUR>)
+
+4) This video shows an OUR based robot (https://www.youtube.com/watch?v=7tQqfmGnYDI)
+
+5) Smokie Robotics Inc seem to produce OUR based robots (http://www.smokierobotics.com)?
+
+	==> Their robot is named OUR-1, weights 18 Kg and reaches 85 cm, 360 degrees (http://www.smokierobotics.com/Home/Product?productId=1 <http://www.smokierobotics.com/Home/Product?productId=1>)
+	==> They show off the precision by showing the robot testing a touch sensitive pad (https://youtu.be/LrfCh1bw90A <https://youtu.be/LrfCh1bw90A>)
+
+6)  Robai Corporation seem another candidate for the robot arm (http://www.robai.com/robots/robot/cyton-gamma-1500/)?
+	
+	“Robai Corporation develops lightweight robotic systems that transcend traditional robotics through advanced software."
+
+	==> “The Cyton Gamma 1500 robot starts at under $12k.” (http://www.robai.com/robots/robot/cyton-gamma-1500/)
+	==> Reach 68 cm carrying 1,5 Kg.
+	==> “If you will have a program that generates target reach/grasp locations, you can command the arm to move to those positions using the C++ SDK, TCP commands, LabView or ROS interface. “
+	==> Here seem to be a video of the robot arm actually testing contactless card and PIN input (https://youtu.be/VOBN670khvo)?
+
+…
+
+Consider to put together an investment plan and show-case to get funding from Swedbank (Terminal Vendors and other banks)?
+ <https://www.youtube.com/watch?v=VOBN670khvo>
+	
+

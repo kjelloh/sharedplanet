@@ -1,0 +1,10 @@
+﻿When modelling SPDH Messaging I invented a way of showing states in the sequence diagram. When programming a new SPDH Messaging Engine from this model I discovered that the states of each actor may actually be seen as actors themselves?
+
+1) Use “state” to know what to do on Time out. All other aspects of how to process an event or signal may use other mechanism than state.
+2) Using this definition of state, consider to model each state as an “inner” actor or the state machine. In this way states may be modelled as actors that may signal each other.
+3) In code, model signals between separate state machines (main actors) as enumerations. In this way basic signalling between state.machines may de defined in a way understandable in code.
+4) Be aware about the difficulty of each state machine interfacing both high and lower protocol layers (actors). This poses a problem in naming interfaces as each actor may call two “clients” (upstream and downstream in protocol stack) as well as receive signals from both upstream and downstream protocol layers (actors). Each protocol layer actor thus responds to two “clients” and use two “servers”.
+5) May we solve this “dual-client, dual-server” model by having each actor define its upstream and downstream interface within a “interface set” class for the layer? In this approach the ACISTDClient may define its two client interfaces as c_ACISTDClient::c_UpstreamIfc and c_ACISTDClient::c_DownStreamIfc?
+…
+
+Consider to elaborate in this idea and perhaps Blog about it to get input from other programmers? 

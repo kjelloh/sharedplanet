@@ -1,0 +1,23 @@
+# Todo: Consider to delve into the idea that the "best truth" is the one that recurse to transform the human predicament into a stable and "better" state?
+
+```#8a1215e7``` *As of 2019-12-22 12:54*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So what I am trying to et at is a way to explain levels of meta-truth about the human reality being created by act-in-faith to truths as experienced by us being conscious ants.
+
+> *Oh how I want to be able to express this idea in one or two really meaningful and understandable sentences but seem to be unable to.*
+
+> *But one idea here is to recognise and argue that as humans we create our own reality both physically by inventing and building stuff as well as story-wise as in explaining what we are doing and why. And in that way we seem to observe, understand and act in a recursive way. Meaning what we hold true shows up in how we act and how we rationalise our actions. So by stating that what we hold true is what we trust as a basis of our chosen actions we can model our behaviour as recursing a processing of reality where the result is us transforming reality through our actions. And then our new processing is of the transformed reality very much like a recursive algorithm in a computer program is applying "itself", the same function, to the result of itself.*
+
+> *So, as time goes by we nest into reality in deeper and deeper understanding and state of itself. As we are bound by a reality in which we all exist every action we take to transform our reality will itself be part of reality and be applied in this reality.*
+
+> *So because every action we take or do not take matters in terms of what reality transform into the conclusion should be that any recursively applicable truth (with good outcome over time) will beat a truth applicable only once as a cause-and-effect relationship.*
+
+> *And of course we then have entered the Jordan B. Petersson and Sam Harris debate on what "truth" actually is. Where Sam Harris clang to factual truths as unquestionable cause-and-effect *  
+> *relationships while Jordan B. Peterson argued for the converging recursively applicable truth as being the more important one. His famous example of smallpox research being recursively "bad" as it may kill us while Sam Harris stating it factually true based on it being cause-and-effectually true each time you do it.*
+
+> *...*
+
+{% endraw %}

@@ -1,0 +1,26 @@
+﻿When studying proposed Boost AFIO (Asynchronous File System) motivations I came to think how Darwinet actually will have to adress merging of conflicting file system mutations (as part of general MIV merging that relates to the file system)?
+
+1) Consider to study the AFIO library to get introduced to File System Races and how AFIO tries to address them?
+
+	==> Consider this talk at Cppcon 2015 (https://www.youtube.com/watch?v=uhRWMGBjlO8)?
+	==> Consider this talk at ACCU 2016 (https://www.youtube.com/watch?v=elegewDwm64)?
+
+	==> Consider to study the source code at github (https://github.com/ned14/boost.afio)?
+
+2) Consider how multi-core and distributed computing adds more and more cases of Concurrency conflicts for different aspect of shared resources?
+
+	==> Conflicting state of  File System mutated by parallel operations?
+	==> Conflicting memor cache for multi-core processing?
+	==> Conflicting state of shared memory in multi-threaded applications?
+	….
+
+3) Consider to what degree Darwinet post-synchronization idiom is able to adress these parallel mutated shared state Issues?
+
+	==> Consider there are cases where Darwinet approach to process as-if-private-state then merge parallel mutations is the ”best” choice?
+	==> Consider where the Darwinet approach can never work (to much overhead or will-never-catch-up)?
+	…
+
+…
+
+Consider to elaborate on more such similar patterns of conflicting shared states Issues and how Darwinet may or shall adress them?
+...

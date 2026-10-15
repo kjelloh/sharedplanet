@@ -1,0 +1,73 @@
+# Todo: Consider to use open protocols to enable charging or battery bank from a public EV charger?
+
+```#2bf205cf``` *As of 2025-11-16 15:22*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I would like to have a trailer mounted battery bank that I can charge from public EV chargers.
+
+1) Consider Andreas Spiess youtube video "The Truth About Solar EV Charging: What You Really Need" (https://youtu.be/Th4H8ETVDv8 )?
+
+![PastedGraphic-1.png](PastedGraphic-1.png)
+
+==&gt; Consider the links in the video notes?
+
+> Links:  
+> OCPP: [https://openchargealliance.org/protoc...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXIxa3oxODlmNVVSSEZnNmdranM2YU1fVDdpQXxBQ3Jtc0tuYUpKXzF5UVJpZFNqdjlBa3p0UVo0Rkl0TmM4VEFqc0d2RlVjclZZUzRLSFQ3MkFUUGNVVjRoSkt3WFRzOTZ6S1VkSmtBdVRneFdCVDhWTW1kZmo0RHNjeXM5TlBYbk1mZTNSbnlfai1hUzRZT09MMA&q=https%3A%2F%2Fopenchargealliance.org%2Fprotocols%2Fopen-charge-point-protocol%2F&v=Th4H8ETVDv8)  
+> Smart #5: [https://uk.smart.com/en/models/hashta...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1VCWnNFd3E4V3VXUHVuNGZBZHJINVRCZ2RRZ3xBQ3Jtc0tsbnZ3Wnc5YjJrQ3RobWo3T2VWc3Q3aXhrLTVReUJsNGszaG5fT2huM3BBQ3ZwWktkSUJYY0ROYzhVOXZNeXJKRzBXWHo1NV9GNXlJTVFvUWcxcGRpdTZHWGY4LWF2V2hrdjZBSGVJUEtVZHNTMlRKTQ&q=https%3A%2F%2Fuk.smart.com%2Fen%2Fmodels%2Fhashtag-five%2F&v=Th4H8ETVDv8)  
+> OCPP Tester: [https://github.com/SensorsIot/OCPP-Te...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa08yaGNkT2NVMzdsSjN0dEZEbDc4VEkzNjRDZ3xBQ3Jtc0tuTnQxQy1zVXhuazlTWDJYWHUtd1NneklzYkVyQUxUc0lqNDdxRWdfQkJxcWlPTlp6Z0U3U0ZDMlRFOEtZV0xrc09OLTAtSlFHTXpDTW9qVWEzXzdBZGtnbzVZaXAzU0NnZTNiTXk5aHVBdkdIX2tsUQ&q=https%3A%2F%2Fgithub.com%2FSensorsIot%2FOCPP-Tester&v=Th4H8ETVDv8)  
+> ESP32 Mini used for Modbus proxy and EV simulator: [https://s.click.aliexpress.com/e/_c3I...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDNlVkFWdUVXckdaZWI3Q0V5MVpJTFBlc1hTQXxBQ3Jtc0ttTEV4Y3N4V3c0X0kwUlQ2YklKN3hoaFpjS05pUDJZM1hJMzRxVDVEa05BUEpqMzRoVEZ1N0R4VzhrUk9Ub2UzU2RBeTJUNDMtOGIySDJXUWRVOVpIemJ2azhkeWRsTkxNWFR3eWI0UWUzZVN3VzU3QQ&q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_c3IK8EPn&v=Th4H8ETVDv8)  
+> Insulated RS485 (Modbus) interfaces: [https://s.click.aliexpress.com/e/_c3i...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1JOY3pVMHo4c2plUkpibVF3MWRhU1NveHFKUXxBQ3Jtc0tsa2FCZVYyTWt4RTY5cGJtTm5jbmhDOTBYZlo3amFseWNnUjBIRklIOFFQblh3NWdqN1MyUlZ2SGF4b3NfeVd1ZEo2VWNwbFZZQWl1SzljZ3dFSjVqS2tNTlRwQ2xaUWwwbjN5U0JuS2szeGdZXy1MQQ&q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_c3iegVA1&v=Th4H8ETVDv8)
+
+==&gt; It seems he focus on AC charging?
+
+![PastedGraphic-4.png](PastedGraphic-4.png)
+
+==&gt; It seems the wall-box signals available power to the car with a PWN signal?
+
+![PastedGraphic-5.png](PastedGraphic-5.png)
+
+==&gt; It seems in Europe we use CCS Type 2 physical connector with signal pins PP and CP (And three phase AC L1,L2,L3 and N)?
+
+![PastedGraphic-6.png](PastedGraphic-6.png)
+
+==&gt; At around 4:23 he seems to state that 'CP' is the 'control pilot' with the PWN signal (https://youtu.be/Th4H8ETVDv8?t=263 )?
+
+==&gt; At around 4:26 he adds that the car also uses the CP to signal charging state (https://youtu.be/Th4H8ETVDv8?t=266 )?
+
+![PastedGraphic-7.png](PastedGraphic-7.png)
+
+==&gt; It seems PP (proximity pilot) kind-of signals if the EV is engaged or not?
+
+![PastedGraphic-8.png](PastedGraphic-8.png)
+
+==&gt; It seems the wallbox uses PP (proximity pilot) with a resistor to signal to power capability to the car?
+
+![PastedGraphic-9.png](PastedGraphic-9.png)
+
+==&gt; It seems the car uses CP as a voltage bridge to signal to the wallbox?
+
+![PastedGraphic-10.png](PastedGraphic-10.png)
+
+![PastedGraphic-11.png](PastedGraphic-11.png)
+
+2) Consider Andreas Spiess github repo with his EV Charger tester repo (https://github.com/SensorsIot/OCPP-Tester )?
+
+**NOTE: It seems to not exist (or he has not mader it public yet)?**
+
+3) Consider the "OCPP - OPEN CHARGE POINT PROTOCOL" (https://openchargealliance.org/protocols/open-charge-point-protocol/ )?
+
+![PastedGraphic-3.png](PastedGraphic-3.png)
+
+==&gt; It seems OCPP is for negotiation between charger and central system (NOT with the EV)?
+
+> *The goal of the Open Charge Point Protocol (OCPP) is to provide a uniform method of communication between charge points and central systems.*
+
+3) Consider Andreas Spiess github account "SensorsIOT" (https://github.com/SensorsIot )?
+
+![PastedGraphic-2.png](PastedGraphic-2.png)
+
+...
+
+{% endraw %}

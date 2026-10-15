@@ -1,0 +1,5 @@
+﻿I wonder if I could wrap the git app with something more semantically consistent and understandable?
+
+1) It seems this is the home of git on Github (https://github.com/git/git )?
+
+...

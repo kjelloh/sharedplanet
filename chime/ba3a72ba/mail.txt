@@ -1,0 +1,151 @@
+﻿It seems I will needing bearings when I make stuff for my maker space and or invent things?
+
+-1) The bearings I bought seem to follow the “standard” for bearing designations?
+
+		MR106	?	No designation = open?
+		MR106-2RS	2RS = Rubber sealing both sides.
+		MR106ZZ	ZZ = Metal shielding on both sides (In this case a metal grid)
+		MR128	?	No designation = open?
+		608-2RS		2RS = Rubber sealing both sides
+		MF106-ZZ	ZZ = Metal shielding on both sides (In this case a metal grid)
+		MR106ZZC	ZZ = Metal shielding on both sides (In this case a metal grid)
+					C = ceramic?
+
+	==> Consider this document (https://sibela.eu/wp-content/uploads/2015/12/NSK-Bearing-Designation-Systems.pdf <https://sibela.eu/wp-content/uploads/2015/12/NSK-Bearing-Designation-Systems.pdf>)?
+	==> Consider SKF web page (http://www.skf.com/group/products/bearings-units-housings/roller-bearings/tapered-roller-bearings/matched-tapered-roller-bearings/designation-system/index.html <http://www.skf.com/group/products/bearings-units-housings/roller-bearings/tapered-roller-bearings/matched-tapered-roller-bearings/designation-system/index.html>)?
+
+
+		<From below I seem to be able to conclude>
+
+		==> So my “608-2RS” is a Deep-groove ball bearing (designation 60, although the second 0 designates )
+		==> They actually seems to use the “special meaning” MR and MF prefixes?
+		==> Suffix “RS” seems to designate “Bearing with seals on both sides”?
+		==> Suffix “ZZ” seems to designate “shields on both sides”
+		==> Designation “608-2RS” bearing (6 = single deep groove, Radial Width 0, Diameter 8 mm)
+		==> All designations “106” bearings i bought (1 = Self-aligning ball bearing, Radial Width 0, Diameter 6 mm)
+		==> Designation “128” bearings i bought (1 = Self-aligning ball bearing, Radial Width 2 , Diameter 8 mm)
+
+
+1) Consider to understand the bearing designations of bearings I have bought so far?
+
+	==> Consider this swedish web-shop that provides bearings (https://www.kullagret.com/category/sparkullager <https://www.kullagret.com/category/sparkullager>)?
+
+Olika Efterbeteckningar på Lager
+2 RS - Gummitätning båda sidor
+2 RSH - Gummitätning båda sidor
+LLU - Gummitätning båda sidor
+2RSL - Lågfriktionstätning Gummi
+2Z - Plåttätning båda sidor
+ZZ - Plåttätning båda sidor
+NR - Låsringsspår i ytterbana
+W - Rostfritt Kullager
+SS - Rostfritt Kullager
+C3 - Större lagerglapp vid kallt lager
+C4 - Större Lagerglapp än C3
+TN9 - Kulhållare av Polyamid
+
+	==> Consider to compare with the bearings I ordered from Kullagergrososten (https://www.kullagergrossisten.se/customer/order/78905 <https://www.kullagergrossisten.se/customer/order/78905>)?
+
+		 
+
+
+		MR106	?	No designation = open?
+		MR106-2RS	2RS = Rubber sealing both sides.
+		MR106ZZ	ZZ = Metal shielding on both sides (In this case a metal grid)
+		MR128	?	No designation = open?
+		608-2RS		2RS = Rubber sealing both sides
+		MF106-ZZ	ZZ = Metal shielding on both sides (In this case a metal grid)
+		MR106ZZC	ZZ = Metal shielding on both sides (In this case a metal grid)
+					C = ceramic?
+
+	==> It seems I have bought XLBearings bearing and they use their own designations (http://www.xlb.cc/Product-Detail?product_id=10738 <http://www.xlb.cc/Product-Detail?product_id=10738>)?
+
+		
+
+ 
+
+
+
+	==> NO, they seem to follow the “standard” bearing designations (https://sibela.eu/wp-content/uploads/2015/12/NSK-Bearing-Designation-Systems.pdf <https://sibela.eu/wp-content/uploads/2015/12/NSK-Bearing-Designation-Systems.pdf>)?
+
+		
+
+
+		
+
+
+		==> So my “608-2RS” is a Deep-groove ball bearing (designation 60, although the second 0 designates )
+
+		==> They actually seems to use the “special meaning” MR and MF prefixes?
+
+“Prefixes are used comparatively rarely. They serve almost exclusively to indicate individual components of complete bearings or to designate miniature bearings. The codes are listed in table 2."
+
+		
+
+		Note: NSK/RHP are bearing types of this manufacturer...
+
+		==> Prefix “MF” seems to designate Miniature bearing (special dimensions) with flanged outer ring (which matches the bearing “MF106-Z” i bought)?
+		==> Prefix “MR” seems to designate Miniature bearing (special dimensions) which matches all the bearings MRxxx i bought?
+
+	==> AND they use “special suffixes” for ball bearings?
+
+“Table 3.3 – Seal and snap ring groove
+
+The following suffixes are only used in conjunction with ball bearings."
+
+
+	
+
+		==> Suffix “RS” seems to designate “Bearing with seals on both sides”?
+
+	
+
+		==> Suffix “ZZ” seems to designate “shields on both sides”
+		
+
+2) SKF seems to use bearing designations according to ISO 355 or “Basic designations” established prior to 1977 (http://www.skf.com/group/products/bearings-units-housings/roller-bearings/tapered-roller-bearings/matched-tapered-roller-bearings/bearing-designations/index.html?WT.oss=designation&WT.z_oss_boost=0&tabname=All&WT.z_oss_rank=4 <http://www.skf.com/group/products/bearings-units-housings/roller-bearings/tapered-roller-bearings/matched-tapered-roller-bearings/bearing-designations/index.html?WT.oss=designation&WT.z_oss_boost=0&tabname=All&WT.z_oss_rank=4>)?
+
+		
+
+		
+
+	
+
+“	• For bearings with a bore diameter < 10 mm, or ≥ 500 mm, the bore diameter is generally given in millimetres (uncoded). The size identification is separated from the rest of the bearing designation by an oblique stroke, e.g. 618/8 (d = 8 mm) or 511/530 (d = 530 mm). This is also true for standard bearings in accordance with ISO 15 that have a bore diameter of 22, 28 or 32 mm, e.g. 62/22 (d = 22 mm).
+	• For some bearings with a bore diameter < 10 mm, such as deep groove, self-aligning and angular contact ball bearings, the bore diameter is also given in millimetres (uncoded) but is not separated from the series designation by an oblique stroke, e.g. 629 or 129 (d = 9 mm).”
+
+	==> Which seems to match the “608-2RS” bearing I bought (6 = single deep groove, Radial Width 0, Diameter 8 mm)
+	==> Which seems to match all “106” bearings i bought (1 = Self-aligning ball bearing, Radial Width 0, Diameter 6 mm)
+	==> Which seems to match the “128” bearings i bought (1 = Self-aligning ball bearing, Radial Width 2 , Diameter 8 mm)
+
+	==> Consider this SKF page on “Designation system” (http://www.skf.com/group/products/bearings-units-housings/roller-bearings/tapered-roller-bearings/matched-tapered-roller-bearings/designation-system/index.html <http://www.skf.com/group/products/bearings-units-housings/roller-bearings/tapered-roller-bearings/matched-tapered-roller-bearings/designation-system/index.html>)?
+
+Designation system
+
+The designations of most SKF rolling bearings follow a system that may consist of a basic designation with or without one or more prefixes and/or suffixes (→ Basic bearing designation system <http://www.skf.com/group/products/bearings-units-housings/principles/general-bearing-knowledge/bearing-basics/basic-bearing-designation-system/index.html>).
+Examples and the applicable options for matched single row tapered roller bearings are given below.
+
+Examples
+31324 X/DF	where	31324 =	
+
+X =	
+
+DF =	
+
+32232T179/DB32C230	where	32232 =	
+T179 =	
+DB32, C230 =	
+
+		==> But that DOES NOT seem to match the designations on the bearings I bought?
+
+	==> Consider this SKF web page “Basic Bearing designation system” (http://www.skf.com/group/products/bearings-units-housings/principles/general-bearing-knowledge/bearing-basics/basic-bearing-designation-system/index.html <http://www.skf.com/group/products/bearings-units-housings/principles/general-bearing-knowledge/bearing-basics/basic-bearing-designation-system/index.html>)?
+
+		
+
+
+	…
+
+…
+
+Consider to delve deeper into bearing designs and designations when appropriate?
+		

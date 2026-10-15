@@ -1,0 +1,28 @@
+﻿Top build my house I need some good sources of information as base for my decisions and design.
+
+-1) Consider to delve into my ordered books about elctrical installations standards and recommendations?
+
+
+
+1) Consider the Swedish site "Svensk Elstandard" (https://elstandard.se <https://elstandard.se/> )?
+
+	==> It seems they are a non profit organisation assigned by the Swedish government to organise and lobby for Swedish electrical installation standars (https://elstandard.se/om-sek-svensk-elstandard/ <https://elstandard.se/om-sek-svensk-elstandard/> )?
+
+"SEK är svensk nationalkommitté i IEC, International Electrotechnical Commission. IEC och det internationella standardiseringsarbetet är stommen i SEKs verksamhet och standarder från IEC ligger till grund för de flesta europeiska och svenska standarder inom det elektrotekniska området."
+
+"SEK Svensk Elstandard är en ideell organisation som drivs utan vinstintresse och som är utsedd av regeringen att ansvara för all standardisering inom det elektrotekniska området i Sverige."
+
+	==> It seems "Svensk Elstandard" has gathered a good list of FAQ regarding electrical installations (https://elstandard.se/faq/ <https://elstandard.se/faq/> )?
+
+	==> It seems Swedish electrical installations must comply with SS 436 40 00?
+
+	==> It seems "Svensk Elstandard" sels a good book "SEK Handbok 444, utg 2.1:2019" that I can rely on for electrical installation standards for my House Build (https://shop.elstandard.se/Produkt/2069601/SEK-Handbok-444--utg-2-1-2019 <https://shop.elstandard.se/Produkt/2069601/SEK-Handbok-444--utg-2-1-2019> )?
+
+
+
+	==> It seems "Svensk Elstandard" sels a good book "SEK Handbok 436, utg 3.1:2017" that seems to be a compact reference guide for electrical installations (https://shop.elstandard.se/Produkt/1884901/SEK-Handbok-436--utg-3-1-2017 <https://shop.elstandard.se/Produkt/1884901/SEK-Handbok-436--utg-3-1-2017> )?
+
+
+
+
+...

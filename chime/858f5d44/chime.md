@@ -1,0 +1,106 @@
+# Todo: Consider how it is possible to create a closed loop of probability relations between dices that is NOT transitive (so called Non Transitive Dices)?
+
+```#858f5d44``` *As of 2019-03-10 19:28*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems you can design dices so that if you order them according to the probability the left dice will "beat" the right one is NOT a transitive property?
+
+==&gt; Also see "Todo: Consider to question Sam Harris notion of "Bad" to "Good" model to navigate the moral space from "Temkin's Paradox" made by Larry Temkin that moral judgement may not be transitive?"
+
+==&gt; Also see “Todo: Consider to follow up on the Larry Temkin "Temkin's Paradox" that moral judgement can't assume transitive "better than" function?”
+
+==&gt; Also see "Todo: Consider the web shop "Maths Gear" as a good source for interesting things to own (and as a source of good presents to give away)?"
+
+1) Consider the example described in the youtube video "What Happens When Maths Goes Wrong? - with Matt Parker" here (<https://youtu.be/6JwEYamjXpA?t=2171> )?
+
+![](<Screenshot 2019-03-10 at 18.42.49.png>)
+
+*The Math Gear Grime Dice "better than" relations are non-transitive in a closed loop*
+
+==&gt; It seems he calls these dices the "Grime Dice"?
+
+==&gt; Consider he also "as I already have" identified that rock, paper, scissors is also a non-transitive relations game (<https://youtu.be/6JwEYamjXpA?t=2232> )?
+
+![](<Screenshot 2019-03-10 at 18.48.55.png>)
+
+*If Grime Dices are played as pairs the "best" dice order reverses*
+
+![](<Screenshot 2019-03-10 at 18.50.37.png>)
+
+*The Grime Dice single dice internal order*
+
+![](<Screenshot 2019-03-10 at 18.53.31.png>)
+
+*Grime Dice colours selected so that number of letters (3,4,5...) orders the outer circle and inner circle is the colours in alphabetical order (B,M,O,R,Y)*
+
+==&gt; matt Parker seems to show off these Grime Dices in this youtube video "Maths Gear: Non-transitive Grime Dice" also (<https://www.youtube.com/watch?v=u4XNL-uo520> )?
+
+2) Consider if and in that case how we can use the non-transitive probability relations between these dices to discuss Sam Harris "Moral Landscape" and "God" as a model of the unknown in the art of living?
+
+==&gt; Consider the way our act-in-faith create "better" life in the same non-transitive as these dices are "better" that each other in precisely the same non-transitive way (making sam Harris moral landscape impossible to navigate)?
+
+==&gt; Consider the reason "God" has been applied so broadly and "successfully" is because "God" is a "model of the unknown in the art of living good" encapsulates these non-transitive relations between good and bad actions?
+
+==&gt; Consider a way to discuss this non-transitivity of "better actions" means you can do one good action after the other and still end up in a life that is worse?
+
+==&gt; So the art of living involves listening to stories that negotiates different possible actions with the current situation and the "higher" goal to actually end up better off (not fall into the iterative-non-transitive-enhancement path to hell)?
+
+==&gt; Consider the reason our stories tell us "If we bring heaven down to earth we also brings down hell" is somehow related to dealing "wrongly" with non-transitive enhanced-life-iterations?
+
+==&gt; Consider that the aim for "Heaven on earth" brings also hell down to earth because we then imagine any action that seems to bring us closer to "heaven" is "good" without taking into account that these "good" actions creates enhancements that are NOT transitive (and thus these "good" actions actually leads to "Hell")?
+
+==&gt; Consider our sole focus on material enhancement fails to take into account that material enhancement is a non-transitive enhancement (because our failure to take into account the over consumption aspect and destruction of natural and human "values")?
+
+...
+
+2) Consider the wikipedia page on Non-transitive dice (<https://en.wikipedia.org/wiki/Nontransitive_dice> )?
+
+==&gt; It seems the correct mathematical way to express what is not transitive is to say that the relation "X rolls a higher number than Y more than half the time" is NOT transitive on its elements (any X,Y from the set)?
+
+> "A set of dice is nontransitive if it contains three dice, A, B, and C, with the property that A rolls higher than B more than half the time, and B rolls higher than C more than half the time, but it is not true that A rolls higher than C more than half the time. In other words, a set of dice is nontransitive if the binary relation – X rolls a higher number than Y more than half the time – on its elements is not transitive."
+
+==&gt; Consider to understand an example of non-transitive set of dices?
+
+> "Consider the following set of dice.
+
+> • Die A has sides 2, 2, 4, 4, 9, 9.  
+> • Die B has sides 1, 1, 6, 6, 8, 8.  
+> • Die C has sides 3, 3, 5, 5, 7, 7."
+
+==&gt; For all Dice it is a probability of 1/3 for any of its three numbers.
+
+==&gt; Die A may roll 2,4 or 9
+
+==&gt; Die B may roll 1,6,8
+
+==&gt; Die C may roll 3,5,7
+
+==&gt; Thus A will "Beat" B for  {2,1}, {4,1}, {9,1}, {9,6}, {9,8} which is 5/9 times
+
+==&gt; Thus will "Beat" C for {6,3}, {6,5}, {8,3}, {8,5}, {8,7} which is 5/9 times
+
+==&gt; But then C will "Beat" A for  {3,2}, {5,2}, {5,4}, {7,2}, {7,4} which is 5/9 times
+
+Hm... So how does B beat C while C beat A and A beats B?
+
+==&gt; It seems the "opening" that allows for non-transitivity is that the relations are pairwise applicable but the pairs themselves are independent?
+
+==&gt; As long as we ensures that A outcomes beats B outcomes 5 out of nine we are free to choose the outcomes quite freely?
+
+==&gt; The 9 on A always beats B AND the 8 on B always beats C (counting for 3/9 "wins" A over B and B over C)
+
+==&gt; But C can still beat A by having a 3, 5 and 7 that beats A 2 3/9 times and 4 2/9 times (counting for 5/9 "wins" over A)
+
+![](<Screenshot 2019-03-10 at 19.23.46.png>)
+
+*There are a chance of 5/9 that A betas B, B beats C and also C to beat A (the "beats" relation is non-transitive)*
+
+3) It seems you can buy a set of Grime Dices from Maths Gear here (<https://mathsgear.co.uk/products/non-transitive-grime-dice> )?
+
+190310 - I Bought a set of dices :)
+
+TODO: Consider these dices could be a very good present to someone?!!
+
+{% endraw %}

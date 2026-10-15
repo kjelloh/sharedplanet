@@ -1,0 +1,200 @@
+# Todo: Maker Space - Consider to buy a brushless cordless miter saw?
+
+```#990b81d4``` *As of 2018-01-12 18:50*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what brushless cordless miter saws are there for me to buy in Sweden if I choose to?
+
+==&gt; Also see “Todo: Cordless Brushless Tools - Consider to save good URL:s and information on available Cordless Brushless power tool systems?”
+
+-2) Consider to list prices for miter saw candidates?
+
+==&gt; Consider **Dewalt DCS777** sliding mitre saw from [Toolab.se](http://toolab.se) 4819 (DSC777N) + 995 (DCB118 charger) + 2\*1995 (DCB546 Flexvolt 54V x 2 Ah) = **9804 SEK 🙄 **OR **7594 SEK** (DSC777T2 **kit**)
+
+![](<Screen Shot 2018-01-12 at 18.17.40.png>)
+
+==&gt; Consider **Milwaukee M18 FMS190** sliding mitre saw from [Proffsmagasinet.se](http://proffsmagasinet.se) for 5750 (M18 FMS190-0) + 781 (M12-18C) + 1435 (M18 B4 4 Ah) = **7966 SEK**
+
+![](<Screen Shot 2018-01-09 at 22.46.10.png>)
+
+==&gt; Consider **AEG BPS18-254** sliding mitre saw from Bauhaus for 5495 (AEG BPS18-254BL) + 2295 (1 x 5,0 Ah 18V and charger SETL1850BLK) = **7790 SEK**?
+
+![](<Screen Shot 2018-01-09 at 20.16.55.png>)
+
+==&gt; Consider **Makita DLS714** sliding mitre saw from [Verktygsvaruhuset.se](http://verktygsvaruhuset.se) 6850 SEK (Makita DLS714Z Solo) + 700 (Makita BL1840B batteri 18V 4.0ah) + 600 SEK (en till laddare) = **8150 SEK**
+
+![](<Screen Shot 2018-01-09 at 20.47.04.png>)
+
+==&gt; Consider **NON BRUSHLESS** Metabo KGS 18 LTX 216 from [proffsmagasinet.se](http://proffsmagasinet.se) for 2920 (KGS 18 LTX 216) + 500 (ASC 14,4-36V) + 1244 (5,5 Ah LiHD) = **4664 SEK (2x5,5Ah for 5908 SEK)**
+
+OR **7500 SEK** (kit with **2 x** 18V 5,5Ah LiHD + ASC 30-36 V)
+
+hm… what am I missing (the kit is so much more expensive) **🙄**
+
+![](<Screen Shot 2018-01-10 at 00.09.56.png>)
+
+==&gt; Consider **Milwaukee M18 FMS254** sliding mitre saw from [Proffsmagasinet.se](http://proffsmagasinet.se) for 7369 (M18 FMS254) + 781 (M12-18C) + 1435 (M18 B4 4 Ah) = **9585 SEK**
+
+**==&gt; Consider NON CORDLESS Bosh **GCM 12 JL Professional from **
+
+**Computersalg **5500 SEK** (GCM 12 JL Professional)
+
+**
+
+![](<Screen Shot 2018-01-10 at 00.44.04.png>)
+
+**
+
+==&gt; DIY: Run it with an inverter?
+
+==&gt; NOTE: There is a **10” glide model** on the US market (But not on Europe market)?
+
+-1) Really consider a **non-sliding** saw?
+
+==&gt; Consider **Makita DLS600** fix miter saw from [Duabhuset.se](http://duabhuset.se) 5995 (Makita DLS600Z) + 0 (I already have charger and battery) = **5995 SEK**
+
+![](<Screen Shot 2018-01-09 at 20.58.29.png>)
+
+==&gt; No AEG fix miter saw?
+
+==&gt; No Dewalt fix miter saw?
+
+==&gt; No Milwaukee fix miter saw?
+
+==&gt; Consider **NON BRUSHLESS** Ryobi EMS190DCL 190 mm from BauHaus 1995 + 799 (RBC18L15 18V 1,5AH ONE+) = **2800 SEK**
+
+![](<Screen Shot 2018-01-10 at 21.04.47.png>)
+
+…
+
+1) Consider AEG?
+
+==&gt; Consider Bauhaus AEG BPS18-254BL (<https://www.aeg-powertools.eu/en-gb/products/woodworking/saws/mitre-saws/bps18-254bl>)?
+
++ Brushless, runs on any combination of 1 or 2 18V batteries.
+
+- Extrudes on the back (can’t be placed close to wall)
+
+==&gt; Consider AEG 5,0 Ah 18V SETL1850BLK (<https://www.aeg-powertools.eu/en-gb/products/accessories/chargers/blk1218>)?
+
+![](<Screen Shot 2018-01-09 at 20.05.38.png>)
+
++ Runs on 220 and 12V (car outlet)
+
+- Only one Pro 18V battery (second battery - left - of other form factor)
+
+2) Consider Makita?
+
+==&gt; Consider Makita DLS600Z **fix** miter saw (<https://www.makita.se/tool/15211/DLS600Z.html>)?
+
++ Single battery
+
+- **Small cut capacity**
+
+> > Sågkapacitet vid 90°  
+> > 46x92 mm
+
+> > Sågkapacitet vid 45°  
+> > 46x65 mm
+
+> > Max gerräckvidd (v/h)  
+> > 52/52 °
+
+> > Sågkapacitet 45° (v)  
+> > 30x92 mm
+
+==&gt; Consider Makita DLS714Z **sliding** miter saw (<https://www.makita.se/tool/15211/DLS714Z.html>)?
+
++ Already have one battery
+
+- Requires **two batteries** (and thus a new charger and a second battery)
+
+==&gt; Consider Makita DC18RD double battery charger (<https://www.makita.se/tool/17992/196933-6.html>)?
+
+![](<Screen Shot 2018-01-09 at 20.51.29.png>)
+
+3) Consider Dewalt?
+
+==&gt; Dewalt seems to call their brushless tools for “XR” (<http://xr.dewalt.com/#_ga=2.131070351.1630605506.1515769761-1715178594.1515769761>)?
+
+==&gt; Dewalt does NOT seem to mention “brushless” in their product description but e.g., Dewalt DCS777N IS brushless as can be seen in this commercial (<https://youtu.be/IHAFSZMxW64>)!
+
+![](<Screen Shot 2018-01-12 at 16.19.13.png>)
+
+==&gt; Consider the Dewalt line-up of “XR” (Brushless) miter saws (<http://www.dewalt.se/powertools/productoverview/hierarchy/3177/>)?
+
+![](<Screen Shot 2018-01-12 at 16.21.41.png>)
+
+4) Consider Ryobi?
+
+==&gt; Consider to keep track on **NON BRUSHLESS** (<https://se.ryobitools.eu/elverktyg/stationara-maskiner/ems190/ems190dcl/>)?
+
+==&gt; This seems to be Ryobi “MODEL: #P3650B 18V ONE+ONE™ 10 IN. BRUSHLESS DUAL BEVEL SLIDING MITER SAW" sold in USA (<https://www.ryobitools.com/power-tools/products/details/18v-one-plus-one-10-in-brushless-dual-bevel-sliding-miter-saw>)
+
+![](<Screen Shot 2018-01-10 at 21.10.10.png>)
+
+5) Consider Einhell?
+
+6) Consider Milwaukee?
+
+==&gt; Consider M12-18C (<https://se.milwaukeetool.eu/m12-m18-multiladdare/m12-18-c/>)?
+
+![](<Screen Shot 2018-01-09 at 22.56.50.png>)
+
+==&gt; Consider M18 B4 Battery (<https://se.milwaukeetool.eu/m18-4,0-ah-batteri/m18-b4/>)?
+
+![](<Screen Shot 2018-01-09 at 23.02.57.png>)
+
+==&gt; Consider Milwaukee "M18 FMS190”/“Milwaukee M18 7 1/4” " Sliding Miter Saw (<https://se.milwaukeetool.eu/m18-fuel-190-mm-kap-gersag/m18-fms190/>)?
+
++ Runs on single battery, compact (small) size and blade
+
+- Extrudes on the back (can’t sit flush to wall)
+
+==&gt; Consider Milwaukee "M18 FMS254” Sliding Miter Saw (<https://se.milwaukeetool.eu/m18-fuel-254-mm-kap-gersag/m18-fms254/>)?
+
+![](<Screen Shot 2018-01-09 at 22.47.40.png>)
+
++ Rails under the table, runs on single battery
+
+- Extrudes on the back (can’t sit flush to wall)
+
+7) Consider Metabo?
+
+==&gt; Consider **NON BRUSHLESS** (<https://www.metabo.com/com/en/tools/cordless-tools/cordless-mitre-saws/kgs-18-ltx-216-619001660-cordless-mitre-saw.html>)?
+
+==&gt; Consider Charger (<https://www.metabo.com/com/en/accessories/accessories-for-cordless-machines/charger/>)?
+
+![](<Screen Shot 2018-01-10 at 00.16.17.png>)
+
+==&gt; Consider Metabo LiHd battery (<https://www.metabo.com/com/en/accessories/accessories-for-cordless-machines/battery-packs/lihd/>)?
+
+![](<Screen Shot 2018-01-10 at 00.17.59.png>)
+
+8) Consider Bosh?
+
+==&gt; Consider **NON BRUSHLESS**, **NON CORDLESS** **Sliding** GCM 12 GDL Professional (<https://www.bosch-professional.com/se/sv/gcm-12-gdl-27093-ocs-p/>)?
+
+![](<Screen Shot 2018-01-10 at 00.56.06.png>)
+
++ Går att ställa mot vägg
+
+- Den är stor!
+
+==&gt; Consider **NON BRUSHLESS**, **NON CORDLESS** **Fix** GCM 12 JL Professional (<https://www.bosch-professional.com/se/sv/gcm-12-jl-30916-ocs-p/>)?
+
++ Can be placed close to wall (compact), good dust extraction (?)
+
+- Brushed 220V motor
+
+9) Consider Ridgid 18V 7-1/4 in. Cordless Brushless Dual Bevel Sliding Miter Saw Kit (<https://www.ridgid.com/us/en/18-volt-cordless-brushless-dual-bevel-sliding-miter-saw-kit>)?
+
+==&gt; NOTE: On US market only ($399 including battery and charger)?
+
+![](<Screen Shot 2018-01-12 at 15.59.02.png>)
+
+...
+
+{% endraw %}

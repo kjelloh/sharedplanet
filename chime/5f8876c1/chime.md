@@ -1,0 +1,48 @@
+# Todo: Consider the "Why from a How" is the historical (backward looking) mirror of "Ought from an Is" (forward looking)?
+
+```#5f8876c1``` *As of 2019-05-31 21:00*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I started with the observation that how something is never explains how it came to be (e.g., why does the universe or life exist can't be explained by how the universe or life exists) and somehow saw the correlation with Humes Ought from an Is.
+
+1) Consider it is never the case that how something is explains how it came to exist?
+
+> *We can study how the universe exists, how it works, how it behaves, how it transform what is now into what ought to be in the future. We can model this using the natural laws and be able to measure some state of reality and apply computation to predict how nature think the future state ought to be. But the relationship between what is and what ought to be according to the natural laws has nothing to do with why these laws, why a universe at all?*
+
+2) Consider that "Why from a How" is historical inference of creation (it tries to see how something came into existence based on how it exists here and now)?
+
+> *Why am I here? Why is there a universe? Can we study what is and from that infer why it is? I think not. In fact, I think we can make a strong argument, or at least a convincing observation that it is fully possible for something exist and behave in a certain way without anything of this existence or behaviour reveals why it came into existence in the first place.*
+
+> *If a bake a cake I can study that cake in all its details without finding any clue into why I made the cake at all.*
+
+> *So the same is probably true about the existence of the universe. It is fully possible that the universe was brought into existence in this shape and nature by a cause that has absolutely nothing to do with what exists in our universe.*
+
+> *TODO: Consider the probability that the universe was brought into existence by a reality of the same nature as the universe we live in?*
+
+> *TODO: Consider the probability that the nature of our universe should bear any traces of what brought it into existence in the first place?*
+
+3) Consider that Humes "Ought from an Is" is future aiming in that it tries to transform what exists into what should exist in the future?
+
+> *One way of looking at Humes ought-from-an-is model is that it looks into the future. The ought is what the is should be transformed into moving forward in time. We can study what these transformation has been in the past.*
+
+4) So we seem to have a temporal mirroring relation between "Why from a How" and "Ought from an Is"?
+
+> *The idea here is that when studying what is we can try to trace its existence back in time hoping we can understand how it came into existence in the first place. We then try to infer all the transformations of ought-from-an-is backwards through time. The nature of the things that exist now can be seen as the result of living actors transforming reality with the aim to have these things exist. So if I look at a car I can say that the car is the way it is because those who created the car thought it ought to be that way. But the way the car is totally unrelated to why the car exist at all. Or put another way, How the car is does not explain Why it is.*
+
+> *Now Humes observation that how something ought to be can't be deduced from how something is comes into play also when we look back in time. We can model reality as if the way things are now is the result of the transformation made by actors in the past trying to make reality into what it ought to be. If we with actors include both dead matter and living creatures. Dead things "acts" to transform reality as it "ought" to be defined by our model or naturals laws. And living things acts to transform reality into how it ought to be according to their idea of a good life (or something along those lines).*
+
+> *But the drives for action produced by living things actin in faith to their there-ought-to-be algorithm does not in any way explain why this algorithm exist. There is absolutely no correlation between how living creatures act and the reason they exist at all.*
+
+> *And the same goes for anything we can observe to exist. We seem to live in a universe that we can model with natural laws to predict how it will behave given some initial Is-state. But how the natural laws transform is to an ought does not correlate at all with why the nature exists and acts in the way it does. We can study living organisms and try to model how they transform an is to an ought but still never get any clue to why the living organism exists in the first place.*
+
+5) Consider how cause-and-effect can be seen as natures is-to-an-ought?
+
+6) Consider how human moral and ethic can be seen as a model of our ought-from-an-is represented in language?
+
+> *The idea here is that what is considered moral is in fact what has been discovered to be the way to interact with reality that has proven to be recurse-able over time. A moral behaviour is what transforms how reality is into what it ought to be in such a way that reality self-corrects and self-organise into a stable emergent social behaviour. The moral rules are the instructions of the algorithm to execute to transform reality from what it is into what it ought to be given some stable emergent order of society.*
+
+...
+
+{% endraw %}

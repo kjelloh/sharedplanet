@@ -1,0 +1,20 @@
+# Todo: Write about Accepting groundlessness can be done immediately without "work"
+
+```#9e58bd92``` *As of 2015-08-15 17:43*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+The power of the ”truth” that we are groundless (no matter what we believe www must always settle for axioms of beliefs somewhere) lays in that fact that it is applicable to any activity we engage in with no delay. There is no need to become ”aware” or ”enlightened”. You do not have to learn some meditation practice or go through some program. You do not need to acquire some special knowledge. It is a simple attitude you may take on at anytime you feel overwhelmed by the complexity of reality and anytime you need to find a calm place to rest your mind.
+
+It is also a plausible truth and a truth that better suits all the knowledge humanity har gathered over time. Since The Enlightenment in late 17’th and 18’th century we have benefitted from the sciences and technology revolution that we have come to belief in an absolute truth like almost a religious belief. So much that we are now obsessed with finding and empowering ourselves to cope with the flaws of the human society we have created for us. As this is clearly not working for us, and more and more have started to realize that we can’t actually expect each individual to be an iland totally left to his or her own device to cope with the world. Especially when we in fact now that the more we learn, the more we realize that nothing we know is grounded in anything. Also, islands of knowledge state truths that we have no clues on how to relate to truths in other knowledge islands (like physics and cosmology for example).
+
+Grounding ones knowledge about reality in the truth that is in fact ungrounded (core-less and rests on beliefs) seems to the be truth that should be at the core of the Second Enlightenment. The second enlightenment is the realization that we shall continue to search the truth but we must let go of the belief that a grounded truth can ever be found.
+
+The initial benefit from this in a view of the day-to-day living is more profound and not so innocent as it first appear.
+
+1) It enables us to rest in the moment. No need to find enlightenment or fight treats of ourselves we do not like. We are groundless searchers free to be super-curious in any way we like or feel is worth the effort.  
+2) Groundless also means core-less. There is no core ”me” inside to be found. There are no traits of mine that is unwanted. Being groundless frees us from belittlement. We should be super-curious about ourselves and allow ourselves to be as god-like as each of us can be as dividuals and as society.  
+...
+
+{% endraw %}

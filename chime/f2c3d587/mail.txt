@@ -1,0 +1,30 @@
+﻿Could it be a product idea to provide a product in the form of a double blind test where one can tets the effects of drugs or food on the own person?
+
+1) Consider how one could use a product to measure the effects of caffein on ones own person?
+
+	==> The product provides a substance that look and taste like coffee but with and without caffein.
+	==> The product comes with an app to enter answers to questions related to caffein effects.
+	==> The product comes with instructions (in the form of an app) that guides the person to perform the test.
+	==> The test should be in a form where one tries to eliminate the effects of placebo and nocebo.
+
+	==> Consider to design the test to explain and perhaps also show the impact of placebo and nocebo (as part of the test result)?
+
+2) Consider how one could use the product to test the impact of pain killers?
+
+	==> The product comes with look-alike sugar pills for the pan killers one normally takes.
+	==> Consider to design the test so that it does nit require one eats pain killers when not needed?
+	==> Consider to design the test so that each time one needs a pain killer one would take one provided by the test?
+
+	==> Consider how one should motivate persons to not cheat when they really want the paint to go away (and thus not risk getting a sugar pill)?
+	…
+
+3) Consider other ways of measuring the effects of activities (not testable by double blind test)?
+
+	==> Consider the kickometer as suggested by Walle in earlier discussions?
+	==> Consider to measure the impact of different planning strategies as part of the Todo-slot-machine application?
+	…
+
+…
+
+Consider to elaborate on this idea to make a product based on ”sugar pills” to measure the effects of different drugs or foods one ones own person?
+...

@@ -1,0 +1,38 @@
+# Todo: Consider "Religion" is a model of "that which lives" (as in changes and evolves) while "Science" is about "That which is dead" (as in being firm and untouched by the passage of time)?
+
+```#e03400d9``` *As of 2020-07-27 10:47*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I am continuously interested in how to best understand the divide between "Religion" and "Science" and find myself apply different ways of categorising them using some good criteria.
+
+1) Consider the divide between "Religion" and "Science" can be identified as being between interaction with "that which lives" (religion) and "that which is dead" (science)?
+
+> *Now science will not agree that it is about "that which is dead" but for the purpose of this discussion lets use this description to mean that science is about explaining that which is objective as in not being dependent on or exist in the "subjective". In this way we can say that science is about trying to frame reality as if "that which lives" is in fact just a special case of "that which is dead", that is life is based on and framed within the laws of the fundamental reality of physics. The clash between religion and science can now be seen as a clash between a model of the reality experienced by a living human being and the reality as measured and modeled by the natural sciences.*
+
+> *Religion seems to be a model of how to navigate life while Science seems to be about how to navigate the physical reality. And science tries to expand into the realm of navigating life by stipulating that life is a special case of the physical reality. Or put another way, the experience of navigating ones life can in theory be transformed into a special case of navigating the physical reality governed by physical laws.*
+
+> *Now, the thing to observe here is that wether ot not this is true the question is wether any human will be capable of applying navigational techniques based on the nature of the physical reality solely, or wether we in fact are restricted to apply the tools evolution has provided us with based on how we experience reality to be. I would argue that it is obviously the case that as living actors we navigate reality based on how we care about the reality we experience. And that the physical reality in fact just poses restrictions on what we find possible to do. The physical reality does not tell us what we should do. And there we recognise the Hume "Is vs Ought" problem. *
+
+2) Consider Religion is about interacting with the "Unknown" while Science is about interacting with "The Known"?
+
+> *I would argue that the enlightenment can be seen as a "worship" of the "Sacred Ignorance" and as doing so found itself bound to clash with religion that worship "The all knowing". If religion models reality as there being an all knowing creator (God) you can interact with to navigate the unknown, then Science can be seen as a model of reality where you interact only with the known and keep a very clear boundary between the known and the unknown. In fact, the scientific method stipulates very clearly you should assume nothing about the unknown (the sacred ignorance) while Religion states it knows someone (God) that knows everything about the unknown.*
+
+> *In Religion the boundary between the known and the unknown is defined by "God" (The Eternal, The Truth, The Whole, The final base of reality) while in Science the boundary between the known and the unknown is defined by what your model of reality can explain and predict.*
+
+3) Consider Science as about explaining reality as basically dead so that both time and free will are illusions while Religion is about explaining reality to optimise how to navigate ones life time based on our free will?
+
+> *It is striking how if we view science as trying to frame life as a special case in a dead (deterministic) universe must conclude that both free will as well as time are in fact illusions while Religion is very much about how to accept our experienced reality and provide tools with which to apply our free will to use time in the best way to navigate through our lives.*
+
+> *In this way the clash between Religion and Science becomes a clash between how to explain and interact with our experience of being conscious, having a free will trying to spend time to navigate life - and our profound success to model the physical reality using deterministic laws of physics represented using the mathematical language. It would seem to us we can't have it both ways. Either we are conscious actors with a (free) will to search for truth about what and how to "do" stuff, or everything in reality are equally "dead" chained in a deterministic chain of cause and effect.*
+
+> *But of course, it seems we can't escape the contradiction between "what is" and "what should be" based on our models of reality. In Religion the contradiction is deferred to an all knowing being (God) or "Base Reality" out of reach to human comprehension while in science the contradiction is seen as the lack of a better model of reality. In Religion you can interact with the unknown part of reality as described by the practices of your religion while in Science you interact with the unknown by performing experiments and document your observations.*
+
+> *In our experienced reality there seem to be a strong correlation between the concept of "Free Will", "Time" and "Determinism". For our "will" to be able to create change in our life we need both time to think and to act. And for our actions to have any effect we need some form of determinism otherwise we would not know how to act to have our desired outcome to become true. On the other hand, in physics we find the we can model the physical reality to such detail that there seem to be no need for time and no room for free will. That is, in a fully deterministic universe there is actually no need for time to exist as the outcome of any cause is the effect defined by the laws of nature. It should be puzzling to us that we find that physical events can be determined with such precision that there is in fact no need for time to separate them at all. In a fully determined universe the big bang could just as easily result in the end state of the universe directly, without having to go through all intermediate states distributed over time.*
+
+> *Why do we find ourselves in the predicament of having to use time to interrogate reality and act to try and navigate it in the "best" way we can, if every event already is determined by its previous causes?*
+
+...
+
+{% endraw %}

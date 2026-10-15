@@ -1,0 +1,165 @@
+# Todo: Consider to check out Open Source FreeCAD tool for 3D Design?
+
+```#d7e80328``` *As of 2019-04-22 14:49*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could FreeCAD be a good tool to get started in creating 3D Designs?
+
+1) It seem to be published at this site ([http://www.freecadweb.org](http://www.freecadweb.org/))?
+
+==&gt; It seem to be downloadable here (<http://www.freecadweb.org/wiki/?title=Download>)
+
+==&gt; It seem to be a lot of development going on at the moment?
+
+“If you want to install FreeCAD with more in-development features, and are willing to accept that these versions have a higher chance of bugs and crashes, then you can check the official FreeCAD Files page to download 64 bit, older, or unstable releases. Of course, if you want to stay even more on the bleeding edge of development, you can compileFreeCAD, or use the Ubuntu daily build updates or install one of the pre-release files from the github page above.”
+
+==&gt; It seems BIM is supported by Arch Workbench?
+
+> *“The workbench you will start using in FreeCAD depends on the type of job you need to do: If you are going to work on mechanical models, or more generally any small-scale objects, you'll probably want to try the PartDesign Workbench. If you will work in 2D, then switch to the Draft Workbench, or the Sketcher Workbench if you need constraints. If you want to do BIM, launch the Arch Workbench. If you are working with ship design, there is a special Ship Workbench for you. And if you come from the OpenSCAD world, try the OpenSCAD Workbench."  
+> *
+
+==&gt; **190422** - It seems it may have been developed somewhat since 160331 when I tested it the last time according to "FreeCAD Version 0.18 Release Trailer" (<https://www.youtube.com/watch?v=85HlYXnaxbw> )?
+
+> *"More than 2500 commits. More than 100 contributors. More than 11 months in the making. *
+
+> *0.18 wasn't a big change in terms of features but very important for the core. FreeCAD now supports Python 3 and QT5."*
+
+==&gt; Consider the FreeCAD 0.18 released on 12 March, 2019 (<https://www.freecadweb.org/wiki/Release_notes_0.18> )?
+
+==&gt; Consider to use FreeCAD for house plans (<https://www.freecadweb.org/wiki/Release_notes_0.18#Arch_Workbench> )?
+
+![](700px-Draft_release018_example.jpeg)
+
+==&gt; It seems FreeCAD has something called "Arch Building" with which we may compose "Building Parts" (<https://www.freecadweb.org/wiki/Arch_Building> )?
+
+> *"The Arch Building is a special type of FreeCAD group object particularly suited for representing a whole building unit. They are mostly used to organize your model, by containing floor obj*ects.*"*
+
+==&gt; It seems in FreeCAD the term "Arch" is used to mean "Compose" or "Component" as in part-and-whole structures?
+
+> *" • Starting from FreeCAD version 0.18, the Building object is actually a BuildingPart with its DATA IFC roleproperty set to "Building". You can convert any BuildingPart to a Building simply by changing its IFC role.*  
+> *• After creating a building, you can add more objects to it by drag and dropping them in the Tree View or by using the Arch Add tool.  
+> *  
+> *• You can remove objects from a building by drag and dropping them out of it the Tree View or by using the Arch Remove tool."*
+
+==&gt; Consider FreeCAD, like all CAD programs I viewed so far, still feels like a forced assembly of seemingly more or reell interconnected parts?
+
+> *When reading trough the FreeCAD 0.18 release notes I see a long list of features that I know is largely interconnected but are presented as separated features with unclear inter-relations and obfuscated names. We have "TechDraw" that seems to provide technical drawing features. But in my world a technical drawing is just a view of an existing design model. It should nto be considered a feature as much as an alternative representation? Some "Sketcher" tools with a more robust "PartDesign". Why is "PartDesign" a "Sketcher" tool? A CAD program is all about Computer Aided Design. Why is "sketching" a part a separate "design" tool? *
+
+==&gt; Aha - It seems FreeCAD has incorporated Open BIM as defined by buildingSMART (See wikipedia on BIM and buildingSMART resources below)?
+
+2) Consider to what degree we can build a Tha-based CAD application using FreeCAD as open source base and fork it?
+
+==&gt; It seems FreeCAD is written in C++ and allows plugins written in Python (<https://github.com/FreeCAD> )?
+
+==&gt; It seems FreeCAD is fully opens source under LGPL2+ license (<https://github.com/FreeCAD/FreeCAD> )?
+
+> "It is 100% Open Source (LGPL2+ license)"
+
+==&gt; It seems FreeCAD uses Qt (and thus it is semi-restricted by the Qt license) (<https://www.freecadweb.org/wiki/Interface_Customization> )?
+
+> *"Since FreeCAD interface is based on the modern Qt toolkit, it has a state-of-the-art organization. Widgets, menus, toolbars and other tools can be modi*fied, moved, shared between workbenches, keyboard shortcuts can be set, modified, and macros can be recorded and played.*"*
+
+==&gt; It seems FreeCAD is based on a "geometry kernel" OpenCASCADE and an "Open Inventor-compliant 3D scene representation model " by Coin 3D (<https://github.com/FreeCAD/FreeCAD> )?
+
+> "*FreeCAD is based on OpenCASCADE, a powerful geometry kernel, features an Open Inventor-compliant 3D scene representation model provided by the Coin 3D li*brary, and a broad Python API. The interface is built with Qt. FreeCAD runs exactly the same way on Windows, Mac OSX, BSD and Linux platforms."
+
+==&gt; Consider OpenCASCADE open source 3D modelling kernel (<https://www.opencascade.com/content/open-source-core-technology> )?
+
+> *" Open CASCADE Technology is a software development kit (SDK) intended for development of applications dealing with 3D CAD data, freely available in open source. It includes a set of C++ class libraries providing services for 3D surface and solid modeling, visualization, data exchange and rapid application development."*
+
+==&gt; It seems OpenCASCADE is open source to use bu mainly maintained internally by Open Cascade Company (<https://dev.opencascade.org> )?
+
+> *"Since its publication in open source, OCCT has been developed almost exclusively by internal resources of OPEN CASCADE Company. At the same time, OPEN CASCADE recognizes and welcomes the efforts and growing strength of the Open Source Community to improve OCCT. Thus*, in 2011, this web site has been created to make OCCT development visible and provide tools for all OCCT contributors to work in the same open environment.*"*
+
+==&gt; It seems OpenCASCADE uses OpenGL for rendering with some adaptable ANGLE framework to interface other graphical APIs (<https://www.opencascade.com/content/visualization> )?
+
+> *"The low-level graphic renderer is based on OpenGL and GLSL graphics API and is fully compatible with desktop and mobile graphics (OpenGL ES). It runs on Windows, Linux, OS X, Android and iOS."*
+
+> *"With ANGLE project, the Open CASCADE Technology renderer can be used on even wider range of systems where other graphics API is available or preferred (e.g. Microsoft Direct3D). For integration with Microsoft Direct3D applications, a dedicated package is also included into Open CASCADE Technology."*
+
+**Q: Does this mean that OpenCASCADE can adapt to Metal on Apple OS when Apple ditches OpenGL?**
+
+3) Consider to understand some acronyms and terms used in CAD for different purposes?
+
+==&gt; Consider Wikipedia on BIM that seems to be "Building Information Model" (<https://sv.wikipedia.org/wiki/Building_Information_Model> )?
+
+> *"Building information modeling (BIM) is a process supported by various tools and technologies involving the generation and management of digital representations of physical and functional characteristics of places. Building information models (BIMs) are files (often but not always in proprietary formats and containing proprietary data) which can be extracted, exchanged or networked to support decision-making regarding a built asset. Current BIM software is used by individuals, businesses and government agencies who plan, design, construct, operate and maintain diverse physical infrastructures, such as* water, refuse, electricity, gas, communication utilities, roads, railways, bridges, ports and tunnels.*"*
+
+> *&#91;In Swedish&#93; "BIM är en förkortning för Byggnadsinformationsmodellering eller på engelska Building Information Modeling.&#91;1&#93;&#91;2&#93; I engelskan syns ibland även Building Information Management. *
+
+> *BIM innebär att en 3D-modell skapas i en byggprocess för projektering och visualisering med målet att samla information om byggnader och processerna och besluten kring byggnaden.&#91;3&#93; BIM är en modern arbetsmetod i byggprocesser och det är ett brett men relativt vedertaget namn/begrepp under 2000-talet som tolkas olika beroende på vem som använder det."*
+
+==&gt; It seems buidlingSMART is actually through providing an open standard for BIM an influential actor to shape BIM softare tools?
+
+> *"BIM is often associated with Industry Foundation Classes (IFCs) and aecXML – data structures for representing information. IFCs have been developed by buildingSMART (the former International Alliance for Interoperability), as a neutral, non-proprietary or *open standard for sharing BIM data among different software applications (some proprietary data structures have been developed by CAD vendors incorporating BIM into their software).*"*
+
+==&gt; Consider wikipedia on aecXML (<https://en.wikipedia.org/wiki/AecXML> )?
+
+> *"aecXML is a specific XML mark-up language which uses Industry Foundation Classes to create a vendor-neutral means to access data generated by Building Information Modeling. It is being developed for use in the architecture, engineering, construction and facility management industries, in conjunction with BIM software, and is trademarked by the buildingSMART (the former International Alliance for Interoperability), a council of the National Institute of Building Sciences*.*"*
+
+==&gt; Consider this article "A Brief History of BIM" (<https://www.archdaily.com/302490/a-brief-history-of-bim> )?
+
+==&gt; It seems BIM is some "loose" term that defines a process to synchronise Architectural, structural and engineering and mechanical plans for buildings?
+
+==&gt; It seems BIM uses International Foundation Class (IFC) files to interchange data between different models in a BIM process?
+
+> *"A broad variety of programs used by architects and engineers makes collaboration difficult. Varying file formats lose fidelity as they move across platforms, especially BIM models as the information is hierarchical and specific. To combat this inefficiency the International Foundation Class (IFC) file format was developed in 1995 and has continued to adapt to allow the exchange of data from one BIMprogram to anothe*r. *"*
+
+==&gt; It seems BIM was introduced by Autodesk in a white paper from 2002?
+
+> *"In 2002, Autodesk released a white paper entitled "Building Information Modeling,"&#91;8*&#93;*"*
+
+==&gt; Consider this Autodesk White Paper "Building Information Modeling" that is said to have introduced BIM in the firts place (<http://www.laiserin.com/features/bim/autodesk_bim.pdf> )?
+
+> *"Building information modeling solutions have three characteristics:*
+
+> *(1) They create and operate on digital databases for collaboration.  
+> (2) They manage change throughout those databases so that a change to any part of the
+
+> database is coordinated in all other parts.
+
+> *  
+> *(3) They capture and preserve information for reuse by additional industry-specific applications."*
+
+4) Consider BIM rests on a standard for file exchange called IFC (<https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/> )?
+
+==&gt; It seems current version of IFC is IFC 4.1 which is backwards compatible with IFC 2x3 TC1?
+
+> *"*The latest version, IFC 4.1 is recommended for all current developments, which is fully backward compatible with IFC 4.0. Core definitions within IFC 4.1 and 4.0 are backward compatible with IFC 2x3 TC1.*"*
+
+==&gt; It seems Open BIM is some initiative of Building SMART that is some sort of independent organisation that is in charges of at least three ISO standards ( <https://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/HTML/> )?
+
+> *"buildingSMART develops open standards for Building Information Modeling, open BIM. The standards deal with data models, processes and terms. The Industry Foundation Classes IFC specification constitutes buildingSMART's specification for the buildingSMART data model. Property terms, defined in IFC, are linked to terms defined in the buildingSMART data dictionary.*  
+> *buildingSMART liaises with the International Standardization Organization ISO, regional and national standardization bodies for developing international, regional and national standards. The Industry Foundation Classes IFC specification is registered as ISO 16739. buildingSMART works actively as a A-liaison organization with ISO/TC 59/SC 13. Further editions of IFC will be submitted to ISO/TC 59/SC 13/JWG 12 for acceptance as next addendums or editions of ISO 16739."*
+
+5) Consider that BIM may in fact be an attempt to implement what I would like in a House CAD tool - the ability to draw 3D house parts and have the construction be generated on the fly?
+
+> *In my vision I see it should be possible for the CAD program to know how to instantiate modelled objects based on some three-tier Tha model of them. So like walls, I extend the wall and the program knows it is a wall and that it is a wooden framed wall so it generates studs and cross bars automatically. Modern computers should be powerful enough to perform this generation as well as some rendering on the fly?*
+
+> *Further, I would like to be able to incorporate windows and doors into walls by simply drawing them. And the CAD tool would automatically snap between available pre-fabricated windows and doors? In Tha-model terms a certain shaped drawn window can be used to infer a SUM-type of possible windows that could optionally be used as instances of the drawn window shape (model)?*
+
+> *In some sens it seems BIM is somewhat a try to do something similar. It tries to keep architectural, *
+
+6) Consider to elaborate on the possibility to make a Tha model with the potential to interact with and in the future replace all the representations in the Open BIM model?
+
+==&gt; It seems BIM through IFC file formats and aceXML XML representations can be as one single Tha model?
+
+> *"With the proposition that Tha can model "anything" based on the assumption that all there is in data modelling is Product and SUM compositions of some base intrinsics combined with meta layering to allow for parametrised instantiations as well as pattern matched inference , it shoud actually be possible to infer a single Tha model to host all models represented in IFC files?"*
+
+==&gt; Consider the approach to infer Tha models from existing Open BIM and aceXML files?
+
+> *The Open BIM seems to define how data is to be interchanged between tools involved in the BIM process as "objects". And especially when stored as aceXML files we should almost easily be able to infer a Tha model from these files?*
+
+> *And for tools that operates on the Tha model of Open BIM data we can imagine we can always also instantiate Open BIM files and aceXML files from any modified Tha model?*
+
+…
+
+…
+
+Consider to try out FreeCAD to see what we can learn from it and what we can use it for?
+
+...
+
+{% endraw %}

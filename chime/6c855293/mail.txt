@@ -1,0 +1,195 @@
+﻿Imagine to implement and publish as open source a C++ library for SIE-file read and write?
+
+1) Consider to study what existing open source libraries there is for SIE-file decoding and encoding?
+
+	==> On github there seem to be a couple of SIE-file processing libraries in different languages?
+
+		==> This seem to be a ruby project with latest commit jan 2016 (https://github.com/barsoom/sie <https://github.com/barsoom/sie>)?
+		==> This seem to a node.js Express Framework web application component with latest commit aug 2012 (https://github.com/holar2b/node-sie-reader <https://github.com/holar2b/node-sie-reader>)?
+		==> This seem to be a C# application (Visual Studio 2013 project file included) with lates commit May 2015 (https://github.com/idstam/jsisie <https://github.com/idstam/jsisie>)?
+			==> It seem to be available as installable nuget package?
+
+2) Consider to enable conversion between SIE-data-model in alternative composite encodings (not only the actual SIE-encoding)?
+
+	==> SIE-files are encoded as defined by the SIE standard (http://www.sie.se/?page_id=250 <http://www.sie.se/?page_id=250>)?
+	==> But we can imagine the same data-model to be encoded in say JSON or XML (same element names and meaning)?
+
+	==> Consider to imagine the C++ SIE-library being able to encode an SIE-data-model in some common internal Key-path-based Composite?
+
+
+								               |<==> JSON File Encoder ==> JSON file
+									       |
+	SIE-File <==> SIE File Decoder <==> SIE-key-path-tagged Composite <==> |
+									       |
+								               |<==> JSON File Encoder ==> JSON file
+
+
+	==> Consider to propose an SIE-structure-key-paths for an SIE-file Composite (http://www.sie.se/?page_id=250 <http://www.sie.se/?page_id=250>)?
+
+// Note: Keys spelled in capital letters corresponds to SIE-encoding of #-element (e.g., sie.ADRESS corresponds to file member #ADRESS)
+// Note: In key-path the key name is the SIE Element name with spaces replaced with ‘_’ (e.g., SIE Element “distribution address” becomes key “distribution_address”
+// Note: Elements that implicitly form a list is assigned a list key []
+// Note: member with sub-elements {dimension_no object_no} has been assigned the key “object”
+// Note: Specified #RES member “year’s” has bee assigned the key “year_no”
+// Note: Specified TRANS member element “object list” has been assigned the list key “objects[]” each conforming to key object (see specification 8.21)
+sie.ADRESS.contact
+sie.ADRESS.distribution_address
+sie.ADRESS.postal_address
+sie.ADRESS.tel
+
+sie.BKOD.SNI_code
+
+sie.DIM[*].dimension_no	
+sie.DIM[*].name
+
+sie.ENHET[*].account_no 
+sie.ENHET[*].unit
+
+sie.FLAGGA.x
+
+sie.FNAMN.company_name
+
+sie.FNR.company_id
+
+sie.FORMAT
+sie.FTYP
+
+sie.GEN.date
+sie.GEN.sign
+
+sie.IB.year_no 
+sie.IB.account
+sie.IB.balance
+sie.IB.quantity	// optional
+
+sie.KONTO[*].account_no 
+sie.KONTO[*].account_name
+
+sie.KPTYP
+
+sie.KTYP.account_no 
+sie.KTYP.account_type
+
+sie.OBJEKT[*].dimension_no
+sie.OBJEKT[*].object_no
+sie.OBJEKT[*].object_name
+
+sie.OIB[*].year_no 
+sie.OIB[*].account 
+sie.OIB[*].object.dimension_no
+sie.OIB[*].object.object_no
+sie.OIB[*].balance 
+sie.OIB[*].quantity // optional
+
+sie.OMFATTN
+
+sie.ORGNR.CIN 
+sie.ORGNR.acq_no 
+sie.ORGNR.act_no
+
+sie.OUB[*].year_no 
+sie.OUB[*].account 
+sie.OUB[*].object.dimension_no 
+sie.OUB[*].object.object_no
+sie.OUB[*].balance
+sie.OUB[*].quantity // optional
+
+sie.PBUDGET[*].year_no 
+sie.PBUDGET[*].period
+sie.PBUDGET[*].account
+sie.PBUDGET[*].object.dimension_no 
+sie.PBUDGET[*].object.object_no
+sie.PBUDGET[*].balance
+sie.PBUDGET[*].quantity
+
+sie.PROGRAM.program_name 
+sie.PROGRAM.version
+
+sie.PROSA
+
+sie.PSALDO[*].year_no 
+sie.PSALDO[*].period 
+sie.PSALDO[*].account 
+sie.PSALDO[*].object.dimension_no 
+sie.PSALDO[*].object.object_no
+sie.PSALDO[*].balance
+
+sie.RAR[*].year_no 
+sie.RAR[*].start 
+sie.RAR[*].end
+
+sie.RES[*].year_no 
+sie.RES[*].account 
+sie.RES[*].balance 
+sie.RES[*].quantity
+
+sie.SIETYP
+
+sie.SRU[*].account 
+sie.SRU[*].SRU_code
+
+sie.TAXAR
+
+sie.UB[*].year_no 
+sie.UB[*].account 
+sie.UB[*].balance 
+sie.UB[*].quantity
+
+sie.UNDERDIM[*].dimension_no
+sie.UNDERDIM[*].name
+sie.UNDERDIM[*].superdimension
+
+sie.VALUTA
+
+sie.VER[*].series
+sie.VER[*].verno
+sie.VER[*].verdate
+sie.VER[*].vertext // optional presence
+sie.VER[*].regdate
+sie.VER[*].sign
+
+sie.VER[*].RTRANS[*].account_no
+sie.VER[*].RTRANS[*].objects[*].dimension_no
+sie.VER[*].RTRANS[*].objects[*].object_no
+sie.VER[*].RTRANS[*].amount
+sie.VER[*].RTRANS[*].transdate // optional
+sie.VER[*].RTRANS[*].transtext // optional
+sie.VER[*].RTRANS[*].quantity // optional presence
+sie.VER[*].RTRANS[*].sign
+
+sie.VER[*].TRANS[*].account_no
+sie.VER[*].TRANS[*].objects[*].dimension_no
+sie.VER[*].TRANS[*].objects[*].object_no
+sie.VER[*].TRANS[*].amount
+sie.VER[*].TRANS[*].transdate // optional
+sie.VER[*].TRANS[*].transtext // optional
+sie.VER[*].TRANS[*].quantity // optional presence
+sie.VER[*].TRANS[*].sign
+
+sie.VER[*].BTRANS[*].account_no
+sie.VER[*].BTRANS[*].objects[*].dimension_no
+sie.VER[*].BTRANS[*].objects[*].object_no
+sie.VER[*].BTRANS[*].amount
+sie.VER[*].BTRANS[*].transdate // optional
+sie.VER[*].BTRANS[*].transtext // optional
+sie.VER[*].BTRANS[*].quantity // optional presence
+sie.VER[*].BTRANS[*].sign
+
+
+3) Consider to define a C++ DSL to define the whole file encoder and/or decoder?
+
+	==> Consider a decoder to call an element-sink with each element key-path and value?
+	==> Consider an encoder to call an element-source with each required element key-path and expect a value in return?
+	==> Consider to pass element values around as std::optional to communicate if the element value presence?
+		==> In decoding a not present value indicates a not present element.
+		==> In encoding a not present value may or may not be encoded as defined by encoding rules (not present element or present element with non-present value)?
+…
+
+4) Consider to provide the library with test code?
+
+	==> Consider to use Google test Framework (popular)?
+	==> Or consider to use Boost Tes Framework (well established standard)?
+	...
+
+Consider to iterate until a working SIE-file encoder/decoder library is implemented?
+...

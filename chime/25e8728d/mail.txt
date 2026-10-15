@@ -1,0 +1,367 @@
+﻿Consider to design an example where the goal is to take an imperatively designed function and turn it into a composed-function design instead and then try to spot the Monad?
+
+-3) Consider this article as a good example of a C++ ”Maybe String” Monad (http://zenol.fr/blog/an-alternative-error-handling-strategy-cpp/en.html <http://zenol.fr/blog/an-alternative-error-handling-strategy-cpp/en.html>)?
+
+	==> Note: This article if referred to from the ”Stop calling "Function Objects" "Functors"” (http://jackieokay.com/2017/01/26/functors.html <http://jackieokay.com/2017/01/26/functors.html>)
+	...
+
+-2) Consider the ”best practices” and ”lessons learned” for Functional C++?
+
+	==> C++ does NOT allow binary operator function composition on built in types (e.g. functions pointers and lambdas)!
+
+// Error - C++ does not allow this overload for built in types (in this case function pointers)
+//    template <typename F, typename G>
+//    auto operator>>(F f, G g) {
+//        return [f,g](auto x) { return g(f(x));}; // return function h, such that h(x) == g(f(x)), i.e. the composed function g*f
+//    }
+
+
+		==> (1) If we pipe the result value to next function it WILL work (but that is value piping, not function composition)
+
+	==> For binary-operator composition of function call chains we may define value-to-next-function-piping or wrapped-function-composition-end-then-call piping.
+
+		in_value >> f1 >> f2 >> f3 >> fn // value piping to executefn(f3(f2(f1(in_value)))), i.e. direct evaluation.
+		(f1 >> f2 >> f3 >> fn)(in_value) // composition piping  (fn*f3*f2*f1)(in_value), i.e., lazy evaluation
+
+-1) Consider that if the lifted functions does not apply any ”glue code”, then there is no ”Algebra” involved and the lifting Functor is NOT a Monad?
+
+	==> It seems to rime well with a Monad having a bind to ”lift” diagonal functions (and it is the bind that defines the ”Algebra” about how to lift the diagonal function)?
+	==> In example ”namespace unified” we are able to lift each f1,f2,… without ”gluing” code as the lifted parameter value can always be used ”as is” (It does not represent an optional or future value and there are no side effects to apply)?
+	==> Q: So it seems the presence of a diagonal function indicates we require a Monad to lift it (we need a bind that defines how to chain the parameter to the diagonal function call)?
+	...
+
+1) Consider some esoteric (highly abstracted) example in C++ that compiles and that we refactor step-by-step into a ”Composed-Function” design?
+
+//
+//  main.cpp
+//  MyFunctionCompositions
+//
+//  Created by Kjell-Olov Högdahl on 2017-01-16.
+//  Copyright © 2017 Kjell-Olov Högdahl. All rights reserved.
+//
+
+#include <iostream>
+#include <functional>
+
+struct Type_0 {};
+struct Type_1 {};
+struct Type_2 {};
+struct Type_3 {};
+struct Type_n {};
+using Result = Type_n;
+
+Type_1 f1(Type_0 p) {
+    std::cout << "\n\t" << "f1";
+    return Type_1{};
+}
+Type_2 f2(Type_1 p) {
+    std::cout << "\n\t" << "f2";
+    return Type_2{};
+}
+Type_3 f3(Type_2 p) {
+    std::cout << "\n\t" << "f3";
+    return Type_3{};
+}
+Type_n fn(Type_3 p) {
+    std::cout << "\n\t" << "f4";
+    return Type_n{};
+}
+
+namespace imperative {
+    
+    Result f(Type_0 in_value) {
+        // (1) We want to chain function calls
+        Type_1 result_1 = f1(in_value);
+        //        |
+        //        --------------
+        //                     v
+        Type_2 result_2 = f2(result_1);
+        //        |
+        //        --------------
+        //                     v
+        Type_3 result_3 = f3(result_2);
+        // ...
+        //        |
+        //        --------------
+        //                     v
+        Type_n result_n = fn(result_3);
+        
+        return result_n;
+    }
+    
+    /*
+                        -> f1 ->   -> f2 ->  -> f3 ->  -> fn ->
+                        |       |  |      |  |      |  |      |
+     "Plain" type   Type_0     Type_1    Type_2    Type_3   Type_n -> return -> Result
+     
+     
+     */
+    
+}
+
+namespace composed {
+    
+    template <typename F, typename G>
+    auto composed_f(F f, G g) {
+        return [f,g](auto x) { return g(f(x));}; // return function h, such that h(x) == g(f(x)), i.e. the composed function g*f
+    }
+
+    Result f(Type_0 in_value) {
+        // (2) Then we may compose the functions and then just call the composed one
+        return composed_f(composed_f(composed_f(f1,f2),f3),fn)(in_value);
+        //                    ------- composed_f -------
+        //                    |                        |
+        //             -- composed_f --                |
+        //             |              |                |
+        //        composed_f          |                |
+        //        |         |         |                |
+        //       f1         f2       f3                fn
+        //        |         |         |                |
+        // Type_0 -> Type_1 -> Type_2 -> Type_3 -> ... -> Type_n
+        
+    }
+}
+
+namespace operator_composed {
+    
+    template <typename F, typename G>
+    auto compose_f(F f, G g) {
+        return [f,g](auto x) { return g(f(x));}; // return function h, such that h(x) == g(f(x)), i.e. the composed function g*f
+    }
+
+    // (X) C++ does not allow this overload for built in types (in this case function pointers)
+//    template <typename F, typename G>
+//    auto operator>>(F f, G g) {
+//        return [f,g](auto x) { return g(f(x));}; // return function h, such that h(x) == g(f(x)), i.e. the composed function g*f
+//    }
+    
+      // (X) Ugly syntax passing operating on function refernces (to avoid using built in function pointers)
+//    template <typename F>
+//    struct f_ref {
+//        const F& f;
+//        f_ref(const F& f_ref) : f(f_ref) {}
+//    };
+//    
+//    template <typename F>
+//    auto _ref(F f) { return f_ref<F>{f};}
+//    
+//    template <typename FRef, typename GRef>
+//    auto operator>>(FRef _f,GRef _g) {
+//        return _ref([=](auto x) { return _g.f(_f.f(x));});
+//    };
+
+    template <typename R, typename T>
+    std::function<R(T)> _func(R (*f)(T t)) {return f;}; // Conveniant function factory
+
+    template <typename F, typename G>
+    auto operator>>(F&& f, G&& g) {
+        return [=](auto x) { return g(f(x));};
+    }
+    
+    
+    Result f(Type_0 in_value) {
+        // (3) We must "lift" functions to some new type so we can implement function composition using some "compose operator"
+        // return (f1 >> f2) >> f3 >> fn)(in_value); // Error, can't overload binary operators for built in types (in this case function pointers)
+        // return (_ref(f1) >> _ref(f2) >> _ref(f3) >> _ref(fn)).f(in_value); // UGLY!
+        return (f1 >> _func(f2) >> _func(f3) >> _func(fn))(in_value); // STRANGE - Works because operator>>( function_pointer ,std::function) is allowed and works
+        
+        //                    ----------  >>  ---------
+        //                    |                        |
+        //             --    >>     --                 |
+        //             |              |                |
+        //            >>              |                |
+        //        |         |         |                |
+        //       f1         f2       f3                fn
+        //        |         |         |                |
+        // Type_0 -> Type_1 -> Type_2 -> Type_3 -> ... -> Type_n
+        
+    }
+}
+
+// (4) WE ARE HERE, Find a nice function type to allow C++ operator to compose functions of this function type
+//      ?? Use std::function ??
+
+namespace unified {
+    template <typename T>
+    struct UnifiedType {
+        UnifiedType(T t) : value(t) {}
+        UnifiedType() = default;
+        T value;
+    };
+    
+    UnifiedType<Type_1> unified_f1(UnifiedType<Type_0> p) {return UnifiedType<Type_1>{f1(p.value)};}
+    UnifiedType<Type_2> unified_f2(UnifiedType<Type_1> p) {return UnifiedType<Type_2>{f2(p.value)};}
+    UnifiedType<Type_3> unified_f3(UnifiedType<Type_2> p) {return UnifiedType<Type_3>{f3(p.value)};}
+    UnifiedType<Type_n> unified_fn(UnifiedType<Type_3> p) {return UnifiedType<Type_n>{fn(p.value)};}
+    
+    Result f(Type_0 in_value) {
+        UnifiedType<Type_1> result_1 = unified_f1(UnifiedType<Type_0>(in_value));
+        //                     |
+        //                     ---------------------
+        //                                          v
+        UnifiedType<Type_2> result_2 = unified_f2(result_1);
+        //                     |
+        //                     ---------------------
+        //                                          v
+        UnifiedType<Type_3> result_3 = unified_f3(result_2);
+        // ...
+        //                     |
+        //                     ---------------------
+        //                                          v
+        UnifiedType<Type_n> result_n = unified_fn(result_3);
+        
+        return result_n.value;
+    }
+
+    /*
+     
+     
+     UnifiedType   UnifiedType<Type_0>  UnifiedType<Type_1>  UnifiedType<Type_2>  UnifiedType<Type_3>  UnifiedType<Type_n>
+                                 ^ |                  | |                  | |                  | |                  |  |
+                                 | --- unified_f1 --->  --- unified_f2 --->  --- unified_f3 --->  --- unified_fn --->   |
+                                 |                                                                                      |
+                               create                                                                                 .value
+                                 |                                                                                      |
+                                 |  ---     f1     --->   ---    f2     --->  ---    f3      --->  ---     fn     --->  |
+                                 |  |                  | |                  | |                  | |                  | |
+     "Plain" type              Type_0               Type_1               Type_2               Type_3               Type_n -> return -> Result
+     
+     
+     */
+    
+    
+}
+
+// (2) Better.
+//      ==> We "lift" in_value to the UnifiedType world
+//      ==> We chain "lifted" unified_f1, unified_f2, ... together.
+//      ==> Finally we return the "plain" value of the last result.
+
+// (3) Can we now get rid of (hide) intermediate results?
+//      ==> What if we define a chaining operator>>?
+
+namespace operator_unified {
+    
+    // using namespace unified;
+    
+    template <typename Param, typename UnifiedFunc>
+    auto operator>>(Param&& p, UnifiedFunc unified_func) {
+        return unified_func(std::move(p));
+    }
+    
+    Result f(Type_0 in_value) {
+        return (
+                unified::UnifiedType<Type_0>(in_value)
+                >>  unified::unified_f1
+                >>  unified::unified_f2
+                >>  unified::unified_f3
+                >>  unified::unified_fn).value;
+    }
+}
+
+int main(int argc, const char * argv[]) {
+    std::cout << '\n' << "<imperative>";
+    imperative::f(Type_0{});
+    std::cout << '\n' << "<composed>";
+    composed::f(Type_0{});
+    std::cout << '\n' << "<operator_composed>";
+    operator_composed::f(Type_0{});
+    std::cout << '\n';
+    return 0;
+}
+
+…WE ARE HERE
+
+	… Continue the refactoring and do it in a way so that we may identify return and map?
+
+	==> NOTE: Is this really going to be a Monad as we do not require a bind (we have no diagonal functions)?
+	==> Q: Should we do the refactoring so that we have diagonal functions on the way (define diagonal_f and then have bind create a unified_f)?
+	...
+
+2) Consider some more real examples?
+
+	==> Consider this one currently in ”/Users/kjell-olovhogdahl/Resilio Sync/XCode/MySpotTheMonadPlayground/MySpotTheMonadPlayground/ParseIntsFromFile.cpp”?
+
+std::vector<int> read_ints(const char* szPath) {
+        //                                   |
+        //                         -----------
+        //                         |
+        //                         v
+        FILE* pFile = std::fopen(szPath,"r");
+        //      |
+        //      -----------------------
+        //                             |
+        //                             v
+        std::string text = read_text(pFile); std::fclose(pFile);
+        //           |
+        //           --------------------------------------
+        //                                                |
+        //                                                v
+        std::vector<std::string> texts = split_on_comma(text);
+        //                        |
+        //                        v
+        auto ints = map_to_ints(texts);
+        //      |
+        //      V
+        return ints; // -->
+    }
+
+		==> Consider to first make a compose-function-variant for the happy path (ignoring error path)
+		==> Consider to then ”lift” the happy-path to an asynchronous version (each function returns a value lifted to a future)?
+		==> Consider to then go back and lift the plain one again to a two-trtack version using optional (poor mans error path)?
+		==> Consider to then lift it using two-track happy+error path (each function returns variant<result,error>
+		==> Consider at some point lift the lifted happy-error path to the async version (lift return value to future<variant<result,error>>)?
+		...
+
+3) Consider the example from ”CppCon 2015: Gor Nishanov “C++ Coroutines - a negative overhead abstraction"” (https://www.youtube.com/watch?v=_fu0gx-xseY <https://www.youtube.com/watch?v=_fu0gx-xseY>)?
+
+	
+
+	==> He transforms this using Coroutines (co_await, co_return).
+	==> Can we build on that to identify a Future Monad when bind provides the Coroutine glue stuff?
+	==> Consider to lift this code the same way as 
+	...
+
+4) Consider an example of traversal of pointer structures and refactor it to Maybe-Monad composition?
+
+	==> Consider to design an example (e.g. take one from TestBench) where a pointer structure is traversed?
+
+		auto pResult = pConatiner->member()->member()->member(); // each member may be NULL
+
+	==> Consider breaking it down in separate steps?
+
+	auto pMember1 = pConatiner->member();
+	auto pMember2 = pMember1->member();
+	auto pMember3 = pMember2->member();
+
+	==> Then add the null-check at each step.
+
+	auto pMember1 = pConatiner->member();
+	if (pMember1) {
+		auto pMember2 = pMember1->member();
+		if (pMember2) {
+			auto pMember3 = pMember2->member();
+			if (pMember3) {
+				pResult = pMember3;
+			}
+		}
+	}
+
+	==> We seem to repeat a general pattern that is associated with each composition step?
+
+		==> Consider to move the Null-check into a compose function)?
+		… I.e., we are close to the Maybe Monad Bind?
+		...
+
+
+4) Consider steps to break each problem down to make it into composable functions?
+
+	1) Motivate why we want to make this into a design where we chain fucntions?
+	2) Realize each function takes a ”thing” from the step before and produces a new ”thing” (functions a —> b)
+	3) How do we make them all take the ”same” thing and return the ”same” thing (but process the value of course)
+	…
+
+…
+
+Consider to elaborate on this example to expose the Monad pattern?
+...

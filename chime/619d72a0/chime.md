@@ -1,0 +1,29 @@
+# Todo: Programming Consider to understand Transient Data Structures as mutable companions to Persistent Data Structures used to enhance performance for multi-step data transformations?
+
+```#619d72a0``` *As of 2017-02-13 10:26*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems Clojure implements something called Transient Data Structures as mutable companions of Persistent Data Structures to be used to enhance efficiency for multi-step data transformations where the state of intermediate steps are not shared, nor observable, and thus may be implemented using mutable state?
+
+1) Consider this Clojure page about Transient Data Structures (https://clojure.org/reference/transients)?
+
+==&gt; It seems they ”live” in their own type space (being create-able from Persistent data Structures, exposing mutating operations and then serve as base to create a Persistent Data Structure again)?
+
+Persistent a;  
+Transient b(a); // b shares a data structure  
+b.mutate_1(x); // Each mutation of transient b mutates its own parts by keeps un-mutated parts shared with a.  
+b.mutate_2(y); // Each mutation of transient b mutates its own parts by keeps un-mutated parts shared with a.  
+Persistent c(b); // Persistent c now shares un-mutated parts of original a and a copy of the mutated parts of b.
+
+2) Consider if any C++ implementation of Persistent Data Structures should also provide Transient companion types?
+
+…
+
+…
+
+Consider to delve deeper into this idea of how to mix Persistent Data Structures with mutable ones for multi-step state transitions?  
+...
+
+{% endraw %}

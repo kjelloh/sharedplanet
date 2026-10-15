@@ -1,0 +1,41 @@
+﻿Could it be valuable to view a File, A Stream and a Range as the same data structure but just different in how it is distributed in time?
+
+	==> Also see “Todo: C++ - Consider to understand Reactive Programming from the semantics and design of RxCpp (Reactive Extensions for Cpp)?”
+	==> Also see “Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?"
+
+1) Consider a File is in fact just bits ordered “in file”?
+
+	==> Consider a File may be accessed both as a stream and as a range (with direct access to position in the range)?
+	…
+
+2) Consider a Stream is just a more general way to represent data in a file distributed in time?
+
+	==> Consider a stream can only be consumed in one end (no random access is possible)?
+	==> Consider random access is not possible because unread data is still not possible (it will be available later)?
+	==> Thus a stream represents data distributed in time (from the consumers point of view)?
+	…
+
+3) Consider a Range is in fact a randomly accessible stream?
+
+	==> Consider for a range we have the data stored in file “in space” (it has been read into randomly accessible memory)?
+	==> Thus, A stream becomes a range once it has been read into memory (distribution in space is transformed into data distributed in address space)?
+	…
+
+4) Consider to forward some critique to the C++ Ranges Proposal for not correctly model the “distribution in time” versus “distribution in address space”?
+
+	==> Consider the C++ Ranges Proposal to introduce sentinel iterators is not good based on that it tries to treat Streams (range end known later) as Ranges (Ranges in time)?
+	==> Consider how the C++ Ranges Proposal may be upgraded to better model Stream -> Vector (Distribution in time transformed into distribution in adress space)?
+	==> Consider to compare with how the “Reactive Programming Model” realises its algorithms to be about operation on data (events) distributed in time?
+
+		==> Consider how C++ Reactive forwards the notion that C++ Ranges is about data distributed in space (https://github.com/Reactive-Extensions/RxCpp <https://github.com/Reactive-Extensions/RxCpp>)?
+
+“The Reactive Extensions for C++ (RxCpp) is a library of algorithms for values-distributed-in-time. The Range-v3 library does the same for values-distributed-in-space."
+
+
+		==> But then with Ranges v3 sentinel iterators it actually tries to treat data distributed in time as-if it is distributed in space (i.e., trying to make streams iterable)?
+
+	==> Consider how The Reactive Initiative seems to relate “Iterable” to “Distributed in space” and its counterpart “Observable” as “Distributed in time” (http://reactivex.io/intro.html <http://reactivex.io/intro.html>)?
+
+		
+
+	...

@@ -1,0 +1,5 @@
+﻿1) Donload the pvk-tool from http://www.drh-consultancy.demon.co.uk/pvktool.zip
+2) Use the tool as describe at http://wiki.cacert.org/Authenticode
+	# Convert the private key file from PEM to the Microsoft
+	# proprietary PVK format (use pvktool utility mentioned on webpage).
+	> pvk -in userkey.pem -topvk -nocrypt -out userkey.pvk

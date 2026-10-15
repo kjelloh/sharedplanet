@@ -1,0 +1,65 @@
+# Todo: Programming - Consider to wrap the tag-path based stacked protocol message encoding decoding idiom into pipe-operator semantics (e.g. Nieblers and boost ranges pipe operator) ?
+
+```#6d3db464``` *As of 2016-07-14 12:35*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could we imagine the tag-path based encoding and decoding of ranges (and range-AST:s) could be wrapped into a pipe operator based semantics?
+
+1) Consider to understand the piping of ranges using boost and nibblers ranges libraries?
+
+==&gt; This seem like a good basic example of range transformation using boost (
+
+```
+#include <boost/range/adaptors.hpp>
+#include <boost/range/algorithm.hpp>
+#include <vector>
+#include <functional>
+
+int main() {
+    std::vector<int> v{
+        1,5,4,2,8,5,3,7,9
+    };
+    std::function<int(int)> func = [](int i) { return -i; };
+    std::cout << *boost::min_element(v | boost::adaptors::transformed(
+    func)) << std::endl;
+    return 0;
+}
+```
+
+==&gt; It seems pipe operator ’|’ forwards provided vector v (as a range) to boost::adaptors::transformed that applies the negate lambda to the elements?
+
+…
+
+2) Consider how each level in a protocol stack actual adds (encodes) or removes (decodes) ranges of data of the protocol frame?
+
+==&gt; Seems the ”stripping” part fits well with the piping idiom (piping is a closed operation in that the inout and output are of the same type, i.e. a range)?
+
+==&gt; But the interaction of a tag-path based element value provider/receiver does NOT fit the piping idiom?
+
+==&gt; It seems the pipe-function should be pure in that it only operates on the range (it odes not cause side effects or carry state)?
+
+...
+
+==&gt; Consider the SPDH and ACI-STD protocol levels where the ACI-STD frames SPDH messages?
+
+==&gt; Q: How do we apply frame-detection into a piping-operation?
+
+==&gt; Q: Does Nibblers ranges library provide pipe-switching (allowing for different pipe-operations depending of what the input range contains)?
+
+==&gt; Consider the output range when piping an ACI-STD frame may, or may not be an SPDH range?
+
+==&gt; Q: And what is the output range when parsing an ACI-STD control frame (e.g., an ACK, NAK)?
+
+==&gt; Q: Can we argue that ”event handling” does not fit the piping-idiom (piping as parsing and interpretation)?
+
+…
+
+…
+
+Consider to delve into this idea of finding out if the piping-idiom of ranges fits into the stacked protocol engine message processing architecture?
+
+...
+
+{% endraw %}

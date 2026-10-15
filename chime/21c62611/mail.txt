@@ -1,0 +1,13 @@
+﻿A problem with Darwinet is how to validate that a node is a valid darwinet (secure) node. If no authorization is applied it would be very easy to create and distribute intruding nodes that behaves as real ones but that eavesdrop on domain activity!
+
+Consider to authorize nodes using the same mechanism that bitcoin uses to validate each coin. To fake a Darwinet node would require a network with a CPU proser surpassing the network of authentic nodes. But then - how do we prevent fake nodes to be accepted in the firs place?
+
+Updated 160221
+
+1) Consider to follow up on GitTorrent (bittorrent based distributed Git) that actually uses Bitcoin blockchains to authenticate users (http://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/)
+
+	“We need a method of “distributed consensus” to give out usernames and know who their owners are. The method I find most promising is actually Bitcoin’s blockchain — the shared consensus that makes this cryptocurrency possible.”
+
+	==> Consider to study if the same approach may be used to base Node ID authentication on “distributed consensus”?
+
+	WE ARE HERE...

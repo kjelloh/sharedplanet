@@ -1,0 +1,48 @@
+﻿
+1) It seems the downlaod of 4.1.9 i available here (https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.9/binaries/en-GB/Apache_OpenOffice_4.1.9_MacOS_x86-64_install_en-GB.dmg/download <https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.9/binaries/en-GB/Apache_OpenOffice_4.1.9_MacOS_x86-64_install_en-GB.dmg/download> )?
+
+	Note: The download did not start automatically from my Safari Browser so I had to click the <Problems Downloading?> button and acticate a "Direct Link".
+
+2) It seems I get a dmg-package named "Apache_OpenOffice_4.1.9_MacOS_x86-64_install_en-GB.dmg"?
+
+3) It seems the installation is a simple "drag and drop"?
+
+
+When opening the "Apache_OpenOffice_4.1.9_MacOS_x86-64_install_en-GB.dmg" you are advised to drag the OpenOffice to the Applications folder in the dialog
+
+	==> It seems OpenOffice is not fully Open Source but parts are licenced by Oracle and IBM (according to file "NOTICE" provided in package folder "LICENSEs")?
+
+
+
+...
+
+Portions of this software copyright (c) 2000-2011, Oracle and/or its affiliates  <http://www.oracle.com/>.
+
+
+Portions of this software (C) Copyright IBM Corporation 2003, 2012.  All Rights Reserved
+...
+
+
+	==> macOS seems to NOT allow the OpenOffice app to be run "as is" ?
+
+
+	==> It seems I have to find the OpenOffice file in the "Applications" folder and right-click-open it get the option to  authorise macOS to open it?
+
+
+
+	==> 
+
+
+
+	==>
+
+
+
+	==> 
+
+	
+
+
+
+
+...

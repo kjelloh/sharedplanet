@@ -1,0 +1,32 @@
+﻿I suppose it could prve both fun and intsructuve to actually build this thingiverse peristaltic pump from 3D printed parts and readily available parts?
+
+1) The RWTH Aachen University 2017 iGEM competition Open Source Peristaltic Pump seems to live on thingiverse here (https://www.thingiverse.com/thing:2619479 <https://www.thingiverse.com/thing:2619479> )?
+
+"We are a student team from different disciplines of the RWTH Aachen University and have created this project in the context of the 2017 iGEM competition."
+
+		
+
+	Q: Is my Cetus 3D printer large enough to print the body of this pump?
+
+
+2) Consider what we can learn from the design and possibly re-use for my own design?
+
+	==> They seem to use 4mm steel pins and needle bearings from conrad for the tube pump pressing action?
+
+		
+		Needle bearings on steel pins for tube press pump action
+
+		
+
+		Steel pins to press against the tube (https://www.conrad.com/p/toolcraft-1059230-straight-pin-x-l-4-mm-x-14-mm-stainless-steel-a1-50-pcs-1059230 <https://www.conrad.com/p/toolcraft-1059230-straight-pin-x-l-4-mm-x-14-mm-stainless-steel-a1-50-pcs-1059230> )
+
+
+		
+		Needle bearings for the tube pressing Pins (https://www.conrad.com/p/hk-needle-roller-bearings-ubc-bearing-hk-0408-bore-diameter-4-mm-outside-diameter-8-mm-rotational-speed-max-26000-rpm-197802 <https://www.conrad.com/p/hk-needle-roller-bearings-ubc-bearing-hk-0408-bore-diameter-4-mm-outside-diameter-8-mm-rotational-speed-max-26000-rpm-197802> )
+
+2) Consider the BOM with links to where to buy all the parts (https://www.thingiverse.com/download:4283137 <https://www.thingiverse.com/download:4283137> )?
+
+	==> They seems to buy from Conrad, like the Arduino board (https://www.conrad.com/p/joy-it-compatible-board-arduino-uno-r3-dip-joy-it-atmega328-1456485 <https://www.conrad.com/p/joy-it-compatible-board-arduino-uno-r3-dip-joy-it-atmega328-1456485> )?
+	==> They seem to buy from German based Pollin, like this stepper motor (https://www.pollin.de/p/schrittmotor-psm42byghw603-1-80-310453 <https://www.pollin.de/p/schrittmotor-psm42byghw603-1-80-310453> )?
+	
+	

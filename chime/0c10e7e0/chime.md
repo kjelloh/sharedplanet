@@ -1,0 +1,44 @@
+# Todo: Requirement Compliance - Consider to study and apply Stroustrup "Rule violation Detection Scheme" to Requirement Compliance Testing?
+
+```#0c10e7e0``` *As of 2016-01-13 22:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Watching Brane Stroustrup talk about “within C++ there is a smaller, simpler, safer language struggling to get out” (<https://www.youtube.com/watch?v=1OEu9C51K2A>) and his “Rule Violation Detection Scheme” it seems the very same idea may be applied to Test Object Requirement Compliance validation?
+
+1) Consider to study these traits and see how they match “requirements” as I have stated them in documentation?
+
+==&gt; He argues against bad rules (rules to avoid “bad” things ro happen) (round 8:15 into talk)
+
+==&gt; He argues FOR Guidelines (i.e. “god” rules that are about enhancing code) (round 13m into talk)
+
+2) Consider to state “Requirements” using the same traits as he proposes for rules (at 16m 10s into the talk)
+
+3) Consider to have a Compliance Deviation Detection Tool behave as he proposes for static-analysis tool for code (At 48:15)
+
+“The tools shall know the rules” and points the programmer to violation points and the rule violated.
+
+==&gt; AND - by having the rule written as defined bove the programmer gets easy-to-understand description of the consequences of the violation.
+
+==&gt; Consider having a “Testbench” know what Requirements Deviation it detects and show the rule description with all its traits that motivates the rule and explains the consequences of the test object deviating from the requirement?
+
+4) Consider to listen carefully and fully these advices by Neil MacIntosh about tools for “Static Analysis” of code (<https://www.youtube.com/watch?v=rKlHvAw1z50>)?
+
+==&gt; The tool must be at the “inner loop”. For Tested Objects that means in used by the developer?
+
+==&gt; At the very least a Compliance Deviation Detection tool must be very helpful (!) to the tester?
+
+==&gt; And, if possible, the tool should be easy to use and provide great value for the developer (used already at development of product)?
+
+==&gt; At 45:00 “Prevent Defects from being Constructed”
+
+...
+
+…
+
+Consider to delve deeper into this idea to apply the same thinking to Compliance Deviation Detection as Stroustrup initiative for Coding Rule Violations?
+
+...
+
+{% endraw %}

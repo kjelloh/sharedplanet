@@ -1,0 +1,41 @@
+﻿Consider it could be interesting and good education to design and build a power (speed) control for my Einhell 2025 table saw?
+
+	==> Also see ”Todo: Einhell Bordssåg - Kolla upp om motorn är en universalmotor (alltså en allströmsmotor med borstar)?”
+	==> Also see ”Todo: Einhell 2025 - Consider to document data about my table saw and possible ascessories?"
+
+1) Consider the Conrad Power Control 2760VA (https://www.conrad.com/ce/en/product/191343/Power-controller-Component-Conrad-Components-191343-230-Vac?ref=list <https://www.conrad.com/ce/en/product/191343/Power-controller-Component-Conrad-Components-191343-230-Vac?ref=list>)?
+
+	==> It seems they recommend and define an AC filter according to EC guideline 89/336/EWG EU EMC directive (https://sv.wikipedia.org/wiki/EMC-direktivet <https://sv.wikipedia.org/wiki/EMC-direktivet>)?
+	
+2) Consider to build the AC filer for the Conrad Power Control 2760 according to the EU EMC directive (https://sv.wikipedia.org/wiki/EMC-direktivet <https://sv.wikipedia.org/wiki/EMC-direktivet>)?
+
+	==> This sems to be the operating instructions where the filter is defined (http://www.produktinfo.conrad.com/datenblaetter/175000-199999/191343-an-01-ml-Power_Control_2760_de_en_fr_nl.pdf <http://www.produktinfo.conrad.com/datenblaetter/175000-199999/191343-an-01-ml-Power_Control_2760_de_en_fr_nl.pdf>)?
+
+	
+
+
+	==> This seems to be the components required?
+
+		==> The Varistor seems to be Vrms 250V, Vdc 320, Imax (8/20 µs) 2500A, Wmax (2 ns) 38J, Pmax 0,4W
+
+		
+
+		1 st	Varistor (EPCOS code B72210S0251K101)
+		1 st	220 nF
+		1 st	680 nF
+		2 st	1.0 nF
+	
+		2 st	15 mH
+		1 st	250 µH
+
+	==> This seems to be the price when ordred from Elfa?
+
+		==> NOTE: I wonder if a drossel marked 5A is for max or continuous current (if continuous we can get away with smaller ones)?
+		==> Note that Einhell is marked as a 2000W motor (2000/240 = 8.3A) but what is the realistic current we must dimension the choke for?
+		...
+
+		
+
+…
+
+Consider to update this Tod with findings if and when I try applying speed control (manual soft start) to the Einhell 2025 table saw?

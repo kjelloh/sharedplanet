@@ -1,0 +1,34 @@
+# Todo: Consider T-slot cut router bits for designs and builds in wood where T-slot fastening could be an option?
+
+```#69edf934``` *As of 2018-12-09 21:01*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I stumbled on a youtube video showing how to use T-slot cutting router bits to create T-slots in wood for wood cutting jig designs.
+
+1) This seems to be the youtube video “DIY T-Tracks For Amazing Jigs & Tools” by Eric Sorensen (<https://www.youtube.com/watch?v=nqI5nhj05Ys>)?
+
+![](<Screenshot 2018-12-09 at 20.49.32.png>)
+
+![](<Screenshot 2018-12-09 at 20.50.34.png>)
+
+2) consider the Amazon links to the router bits that Eric Rorensen used in his “DIY T-Tracks For Amazing Jigs & Tools” youtube video?
+
+NOTE: These bits are imperial (and I need metric sized shanks)?
+
+==&gt; Consider this 55 x 35 mm T-slot router bit ([https://www.amazon.com/Eyech-Carbide-Straight-Milling-Woodworking/dp/B07H96LL98/ref=sr_1_1?ie=UTF8&qid=1544285546&sr=8-1&keywords=Eyech+1%2F4+Inch+Shank+Straight+T+Slot+Router+Bit+Carbide+Wood+Milling](https://www.amazon.com/Eyech-Carbide-Straight-Milling-Woodworking/dp/B07H96LL98/ref=sr_1_1?ie=UTF8&qid=1544285546&sr=8-1&keywords=Eyech+1/4+Inch+Shank+Straight+T+Slot+Router+Bit+Carbide+Wood+Milling))?
+
+![](<Screenshot 2018-12-09 at 20.53.02.png>)
+
+==&gt; Consider these yellow T-slot router bit pair ([https://www.amazon.com/Akozon-Yellow-Cutting-Woodworking-Milling/dp/B07F5CJTTR/ref=sr_1_fkmr0_1?ie=UTF8&qid=1544285613&sr=8-1-fkmr0&keywords=Akozon+Yellow+T-Slot+Cutter+Router+Bit+for+3%2F8%27%27+%26+1%2F2%27%27+Cutting+Edge+1%2F4%27%27+Shank+Set+of+2pcs](https://www.amazon.com/Akozon-Yellow-Cutting-Woodworking-Milling/dp/B07F5CJTTR/ref=sr_1_fkmr0_1?ie=UTF8&qid=1544285613&sr=8-1-fkmr0&keywords=Akozon+Yellow+T-Slot+Cutter+Router+Bit+for+3/8''+&+1/2''+Cutting+Edge+1/4''+Shank+Set+of+2pcs))?
+
+![](<Screenshot 2018-12-09 at 20.59.39.png>)
+
+…
+
+…
+
+Consider to remember this option of routing T-slots in wood for fastening using hex-bolts and “standard” T-slot attachments to designs and build I may want to make?
+
+{% endraw %}

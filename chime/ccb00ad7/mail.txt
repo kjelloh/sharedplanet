@@ -1,0 +1,366 @@
+﻿Could it be a good idea to understand the NTP (Network Time Protocol) and document what C++ open source projects there are with code we may use to apply NTP services in applications?
+ 
+1) It seems we should implement the SNTP as defined by RFC4330 (https://tools.ietf.org/html/rfc4330 <https://tools.ietf.org/html/rfc4330>)?
+
+
+1) The seems to be NTP version 4 defined as RFC5905 (http://www.ietf.org/rfc/rfc5905.txt <http://www.ietf.org/rfc/rfc5905.txt>)?
+
+”This document defines the Network Time Protocol version 4 (NTPv4), which is widely used to synchronize system clocks among a set of distributed time servers and clients."
+
+	==> NTP Version 3 seems defined here (http://www.ietf.org/rfc/rfc1305.txt <http://www.ietf.org/rfc/rfc1305.txt>)?
+
+	==> Each NTP packet seems to be an UDP datagram defined by RFC0768 (https://tools.ietf.org/html/rfc768)?
+
+”The NTP packet is a UDP datagram [RFC0768]."
+
+	==> It seems we would like to implement SNTP (Simple Network Time Protocol) for use by a plain client just wanting to get correct system clock?
+
+”Primary servers and clients complying with a subset of NTP, called
+   the Simple Network Time Protocol (SNTPv4) [RFC4330], do not need to
+   implement the mitigation algorithms described in Section 9 and
+   following sections.  SNTP is intended for primary servers equipped
+   with a single reference clock, as well as for clients with a single
+   upstream server and no dependent clients."
+
+	==> The On-Wire protocol seem to define how to peers (Peer A and B) should actually interact to exchange timing information?
+
+
+             t2            t3           t6            t7
+        +---------+   +---------+   +---------+   +---------+
+        |    0    |   |    t1   |   |   t3    |   |    t5   |
+        +---------+   +---------+   +---------+   +---------+
+        |    0    |   |    t2   |   |   t4    |   |    t6   |  Packet
+        +---------+   +---------+   +---------+   +---------+ Timestamps
+        |   t1    |   |t3=clock |   |   t5    |   |t7=clock |
+        +---------+   +---------+   +---------+   +---------+
+        |t2=clock |                 |t6=clock |
+        +---------+                 +---------+
+                                                               Peer B
+        +---------+   +---------+   +---------+   +---------+
+   org  |   T1    |   |    T1   |   | t5<>T1? |   |    T5   |
+        +---------+   +---------+   +---------+   +---------+   State
+   rec  |   T2    |   |    T2   |   |   T6    |   |    T6   | Variables
+        +---------+   +---------+   +---------+   +---------+
+   xmt  |    0    |   |    T3   |   |  t3=T3? |   |    T7   |
+        +---------+   +---------+   +---------+   +---------+
+
+                  t2      t3                 t6          t7
+        ---------------------------------------------------------
+                 /\         \                 /\            \
+                 /           \                /              \
+                /             \              /                \
+               /               \/           /                 \/
+        ---------------------------------------------------------
+             t1                t4         t5                  t8
+
+            t1            t4            t5             t8
+        +---------+   +---------+   +---------+   +---------+
+        |    0    |   |    t1   |   |   t3    |   |    t5   |
+        +---------+   +---------+   +---------+   +---------+
+        |    0    |   |    t2   |   |   t4    |   |    t6   |  Packet
+        +---------+   +---------+   +---------+   +---------+ Timestamps
+        |t1=clock |   |    t3   |   |t5=clock |   |    t7   |
+        +---------+   +---------+   +---------+   +---------+
+                      |t4=clock |                 |t8=clock |
+                      +---------+                 +---------+
+                                                               Peer A
+        +---------+   +---------+   +---------+   +---------+
+   org  |    0    |   |  t3<>0? |   |   T3    |   | t7<>T3? |
+        +---------+   +---------+   +---------+   +---------+   State
+   rec  |    0    |   |    T4   |   |   T4    |   |    T8   | Variables
+        +---------+   +---------+   +---------+   +---------+
+   xmt  |   T1    |   |  t1=T1? |   |   T5    |   |  t5=T5? |
+        +---------+   +---------+   +---------+   +---------+
+
+                        Figure 15: On-Wire Protocol
+
+
+<edited> "In the figure, 
+(t1) the first packet transmitted by A contains only the origin timestamp t1, which is then copied to T1.  
+(t2) B receives the packet at t2 and copies t1 to T1 and the receive timestamp t2 to T2.
+(t3) At this time or some time later at t3, B sends a packet to A containing t1 and t2 and the transmit timestamp t3.  All three timestamps are copied to the corresponding state variables.  
+(t4) A receives the packet at t4 containing the three timestamps t1, t2, and t3 and the destination timestamp t4.  
+These four timestamps are used to compute the offset and delay of B relative to A, as described below."
+
+	==> it seems after a bodies check the offset and delay shall be calculated by A using a defined algorithm?
+
+”The four most recent timestamps, T1 through T4, are used to compute
+   the offset of B relative to A
+
+   theta = T(B) - T(A) = 1/2 * [(T2-T1) + (T3-T4)]
+
+   and the round-trip delay
+
+   delta = T(ABA) = (T4-T1) - (T3-T2)."
+
+	==> It seems t5…t8 is assumed as iterations of t1…t4 (but not explicitly stated in the RFC)?
+
+             t2            t3           t6            t7
+        +---------+   +---------+   +---------+   +---------+
+        |    0    |   |    t1   |   |   t3    |   |    t5   |
+        +---------+   +---------+   +---------+   +---------+
+        |    0    |   |    t2   |   |   t4    |   |    t6   |  Packet
+        +---------+   +---------+   +---------+   +---------+ Timestamps
+        |   t1    |   |t3=clock |   |   t5    |   |t7=clock |
+        +---------+   +---------+   +---------+   +---------+
+        |t2=clock |                 |t6=clock |
+        +---------+                 +---------+
+                                                               Peer B
+        +---------+   +---------+   +---------+   +---------+
+   org  |   T1    |   |    T1   |   | t5<>T1? |   |    T5   |
+        +---------+   +---------+   +---------+   +---------+   State
+   rec  |   T2    |   |    T2   |   |   T6    |   |    T6   | Variables
+        +---------+   +---------+   +---------+   +---------+
+   xmt  |    0    |   |    T3   |   |  t3=T3? |   |    T7   |
+        +---------+   +---------+   +---------+   +---------+
+
+                  t2      t3                 t6          t7
+        ---------------------------------------------------------
+                 /\         \                 /\            \
+                 /           \                /              \
+                /             \              /                \
+               /               \/           /                 \/
+        ---------------------------------------------------------
+             t1                t4         t5                  t8
+
+            t1            t4            t5             t8
+        +---------+   +---------+   +---------+   +---------+
+        |    0    |   |    t1   |   |   t3    |   |    t5   |
+        +---------+   +---------+   +---------+   +---------+
+        |    0    |   |    t2   |   |   t4    |   |    t6   |  Packet
+        +---------+   +---------+   +---------+   +---------+ Timestamps
+        |t1=clock |   |    t3   |   |t5=clock |   |    t7   |
+        +---------+   +---------+   +---------+   +---------+
+                      |t4=clock |                 |t8=clock |
+                      +---------+                 +---------+
+                                                               Peer A
+        +---------+   +---------+   +---------+   +---------+
+   org  |    0    |   |  t3<>0? |   |   T3    |   | t7<>T3? |
+        +---------+   +---------+   +---------+   +---------+   State
+   rec  |    0    |   |    T4   |   |   T4    |   |    T8   | Variables
+        +---------+   +---------+   +---------+   +---------+
+   xmt  |   T1    |   |  t1=T1? |   |   T5    |   |  t5=T5? |
+        +---------+   +---------+   +---------+   +---------+
+
+                        Figure 15: On-Wire Protocol
+	==> Is seems an SNTP client shall use the fast_xmit packet to interact with the NTP server?
+
+”Upon receiving a client request, an SNTP primary server constructs
+   and sends the reply packet as described in Figure 31.  Note that the
+   dispersion field in the packet header must be updated as described in
+   Section 5."
+
+                   +-----------------------------------+
+                   | Packet Variable <--   Variable    |
+                   +-----------------------------------+
+                   | x.leap        <--     s.leap      |
+                   | x.version     <--     r.version   |
+                   | x.mode        <--     4           |
+                   | x.stratum     <--     s.stratum   |
+                   | x.poll        <--     r.poll      |
+                   | x.precision   <--     s.precision |
+                   | x.rootdelay   <--     s.rootdelay |
+                   | x.rootdisp    <--     s.rootdisp  |
+                   | x.refid       <--     s.refid     |
+                   | x.reftime     <--     s.reftime   |
+                   | x.org         <--     r.xmt       |
+                   | x.rec         <--     r.dst       |
+                   | x.xmt         <--     clock       |
+                   | x.keyid       <--     r.keyid     |
+                   | x.digest      <--     md5 digest  |
+                   +-----------------------------------+
+
+                    Figure 31: fast_xmit Packet Header
+
+   "An SNTP client implementing the on-wire protocol has a single server
+   and no dependent clients.  It can operate with any subset of the NTP
+   on-wire protocol, the simplest approach using only the transmit
+   timestamp of the server packet and ignoring all other fields.
+   However, the additional complexity to implement the full on-wire
+   protocol is minimal so that a full implementation is encouraged."
+
+	==> Is seems the RFC actually defines the data package contents in C-code ("A.1.2.  Packet Data Structures”)
+
+/*
+ * The receive and transmit packets may contain an optional message
+ * authentication code (MAC) consisting of a key identifier (keyid) and
+ * message digest (mac in the receive structure and dgst in the transmit
+ * structure).  NTPv4 supports optional extension fields that
+ * are inserted after the header and before the MAC, but these are
+ * not described here.
+ *
+ * Receive packet
+ *
+ * Note the dst timestamp is not part of the packet itself.  It is
+ * captured upon arrival and returned in the receive buffer along with
+ * the buffer length and data.  Note that some of the char fields are
+ * packed in the actual header, but the details are omitted here.
+ */
+struct r {
+        ipaddr  srcaddr;        /* source (remote) address */
+        ipaddr  dstaddr;        /* destination (local) address */
+        char    version;        /* version number */
+        char    leap;           /* leap indicator */
+        char    mode;           /* mode */
+        char    stratum;        /* stratum */
+        char    poll;           /* poll interval */
+        s_char  precision;      /* precision */
+        tdist   rootdelay;      /* root delay */
+        tdist   rootdisp;       /* root dispersion */
+        char    refid;          /* reference ID */
+        tstamp  reftime;        /* reference time */
+        tstamp  org;            /* origin timestamp */
+        tstamp  rec;            /* receive timestamp */
+        tstamp  xmt;            /* transmit timestamp */
+        int     keyid;          /* key ID */
+        digest  mac;            /* message digest */
+        tstamp  dst;            /* destination timestamp */
+} r;
+
+/*
+ * Transmit packet
+ */
+struct x {
+        ipaddr  dstaddr;        /* source (local) address */
+        ipaddr  srcaddr;        /* destination (remote) address */
+        char    version;        /* version number */
+        char    leap;           /* leap indicator */
+        char    mode;           /* mode */
+        char    stratum;        /* stratum */
+        char    poll;           /* poll interval */
+        s_char  precision;      /* precision */
+        tdist   rootdelay;      /* root delay */
+        tdist   rootdisp;       /* root dispersion */
+        char    refid;          /* reference ID */
+        tstamp  reftime;        /* reference time */
+        tstamp  org;            /* origin timestamp */
+        tstamp  rec;            /* receive timestamp */
+        tstamp  xmt;            /* transmit timestamp */
+        int     keyid;          /* key ID */
+        digest  dgst;           /* message digest */
+} x;
+
+	==> It seems the RFC in fact defines C-code that describes key parts of the protocol mechanism (”Appendix A.  Code Skeleton”)?
+
+”Appendix A.  Code Skeleton
+
+   This appendix is intended to describe the protocol and algorithms of
+   an implementation in a general way using what is called a code
+   skeleton program.  This consists of a set of definitions, structures,
+   and code fragments that illustrate the protocol operations without
+   the complexities of an actual implementation of the protocol.  This
+   program is not an executable and is not designed to run in the
+   ordinary sense."
+
+	==> It seems actors of NTP uses different modes of the protocol depending on their interaction roles?
+
+”There are three NTP protocol variants: symmetric, client/server, and broadcast."
+
+	==> It seems clients sends mode 4 packages to server and server responds with mode 3 packages?
+
+          +-------------------+-------------------+------------------+
+          |  Association Mode | Assoc. Mode Value | Packet Mode Value|
+          +-------------------+-------------------+------------------+
+          | Symmetric Active  |         1         | 1 or 2           |
+          | Symmetric Passive |         2         | 1                |
+          | Client            |         3         | 4                |
+          | Server            |         4         | 3                |
+          | Broadcast Server  |         5         | 5                |
+          | Broadcast Client  |         6         | N/A              |
+          +-------------------+-------------------+------------------+
+
+”In the client/server variant, a persistent client sends packet mode 4 packets to a server, which returns packet mode 3 packets.  Servers provide synchronization to one or more clients, but do not accept synchronization from them."
+
+	
+	==> It seems the client interacts with the server to get the offset theta between peer clock and local system clock (and additional clock statistics in the form of delta, epsilon and psi)?
+
+”A client sends packets to one or more servers and then processes returned packets when they are received.  The server interchanges source and destination addresses and ports, overwrites certain fields in the packet and returns it immediately (in the client/server mode) or at some time later (in the symmetric modes).  As each NTP message is received, the offset theta between the peer clock and the system clock is computed along with the associated statistics delta, epsilon, and psi."
+
+	==> It seems the algorithm includes a mechanism to select ”true-chimers” and discard ”false-tickers” to use for clock adjustment?
+
+”The selection algorithm uses Byzantine
+   fault detection principles to discard the presumably incorrect
+   candidates called "falsetickers" from the incident population,
+   leaving only good candidates called "truechimers".  A truechimer is a
+   clock that maintains timekeeping accuracy to a previously published
+   and trusted standard, while a falseticker is a clock that shows
+   misleading or inconsistent time.  The cluster algorithm uses
+   statistical principles to find the most accurate set of truechimers.
+   The combine algorithm computes the final clock offset by
+   statistically averaging the surviving truechimers."
+
+	==> It seems the Clock-Adjust process is only for servers?
+
+”12.  Clock-Adjust Process
+…
+The actual clock-adjust process runs at one-second intervals to add the frequency correction and a fixed percentage of the residual offset theta_r.
+…
+It begins at zero when the service starts and increments once each second.  At each interrupt, the clock_adjust() routine is called to incorporate the clock discipline time and frequency adjustments, then the associations are scanned to determine if the seconds counter equals or exceeds the p.next state variable defined in the next section.  If so, the poll process is called to send a packet and compute the next p.next value."
+
+	==> It seems NTP also incorporates definition of the hardware clock tick (frequency and phase)?
+
+
+
+                theta_r + +---------\        +----------------+
+            NTP --------->|  Phase   \  V_d  |                | V_s
+                theta_c - | Detector  ------>|  Clock Filter  |----+
+                +-------->|          /       |                |    |
+                |         +---------/        +----------------+    |
+                |                                                  |
+              -----                                                |
+             /     \                                               |
+             | VFO |                                               |
+             \     /                                               |
+              -----    .......................................     |
+                ^      .            Loop Filter              .     |
+                |      . +---------+   x  +-------------+    .     |
+                | V_c  . |         |<-----|             |    .     |
+                +------.-|  Clock  |   y  | Phase/Freq  |<---------+
+                       . | Adjust  |<-----| Prediction  |    .
+                       . |         |      |             |    .
+                       . +---------+      +-------------+    .
+                       .......................................
+
+                 Figure 26: Clock Discipline Feedback Loop
+
+
+		==> NTP provides the theta_r to synchronize this clock tick generator?
+
+
+
+2) Consider what available C++ projects there are that provides NTP services?
+
+	==> This seem to be a C++ NTP library based on QT (https://github.com/retgone/qntp <https://github.com/retgone/qntp>)?
+	==> This seem to contain good leads on Network Time Protocol (https://en.wikipedia.org/wiki/Network_Time_Protocol <https://en.wikipedia.org/wiki/Network_Time_Protocol>)?
+
+		==> It seems the NTP may be used to synchronize the time to within a few milliseconds (See wikipedia ?
+
+”NTP is intended to synchronize all participating computers to within a few milliseconds of Coordinated Universal Time (UTC)."
+
+		
+
+A typical NTP client will regularly poll three or more servers on diverse networks. To synchronize its clock, the client must compute their time offset and round-trip delay. Time offset θ is defined by
+
+and the round-trip delay δ by
+
+where
+
+t0 is the client's timestamp of the request packet transmission,
+t1 is the server's timestamp of the request packet reception,
+t2 is the server's timestamp of the response packet transmission and
+t3 is the client's timestamp of the response packet reception.[1]:19
+
+	==> This seem to be the reference implementation of the NTP Protocol in C (https://github.com/ntp-project/ntp <https://github.com/ntp-project/ntp>)?
+	…
+
+3) Consider to implement the NTP protocol using the Pastry C++ Protocol Library and the Musca tag-path based encode and decode library?
+
+	==> Or, what names have we decided to give those libraries?
+	==> Also see ”Todo: Programming - Consider to implement the "Protocol Stack" as a C++ Library providing tag-path based encoding and decoding and stacked protocol state machine engines?”
+	==> Also see ”Todo: Programming - Consider to implement the tag-path based encode and decode idiom as a C++ library?"
+	...  
+
+
+
+
+	

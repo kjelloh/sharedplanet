@@ -1,0 +1,17 @@
+# Todo: Darwinet - Consider to design an AppAnalytics-type of service using Darwinet domain?
+
+```#b78a620d``` *As of 2015-10-03 14:06*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Embarcadero provides a Hosted Service called AppAnalytics that receives data from connected applications and logs statistics about the application usage.
+
+1) But a hosted service requires online access and also potentially exposing the product and the customers of it?  
+2) Better would be to have a darwinet APP that shares this information in a private domain only involving the user the the application provider?  
+3) Even, the application provider need not have access at all. The customer simply sets up the service its his/her own domain and is then able to monitor application usage within the company without involving the application provider!  
+…
+
+Elaborate on more up-sides of using private and secure Darwinet domains to secure private share data produced by purchased applications without involving the application provider!
+
+{% endraw %}

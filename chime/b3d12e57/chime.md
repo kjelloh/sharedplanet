@@ -1,0 +1,18 @@
+# Todo: Relate the SVT Series "Den Enda Sanna Vägen" about sects to our general ability to "blind group faith"
+
+```#b3d12e57``` *As of 2015-10-07 20:48*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Watching SVT series ”Den Enda Sanna Vägen” (http://www.svtplay.se/video/4049175/den-enda-sanna-vagen/den-enda-sanna-vagen-avsnitt-7) and come to think about wether we are actually always in the state of ”blind faith”?
+
+1) Could it be that we are always part of one or several belief systems where we just ”obey” in ”blind faith” (e.g. socialism, liberalism, the right to own, money)?  
+2) What is actually the difference between a sect and say the core ideas of any society?  
+3) Could we argue we act as part of a sect when we strive for good work and looking down (outcast) those that has no income of their own?  
+4) Is the difference between what we regard as a sect and society as a whole just that the former is a minority and thus looked upon as ”different”? But the basic ”clock work” of our actions is the same?  
+…
+
+Consider to elaborate on the idea that we are always more or less part of a ”sect” in that we act-in-faith to what we as society has agreed to regard as true (rightful behavior)?
+
+{% endraw %}

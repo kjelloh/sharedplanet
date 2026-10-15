@@ -1,0 +1,22 @@
+# Todo: Consider to propose immigration housing using Wikihouse based new villages?
+
+```#557d5379``` *As of 2015-11-05 13:00*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to start emergence of a housing solution for immigrants and refugees based on Wikihouse based new villages?
+
+1) Wikihouse is open sourced construction and production of buildings (http://www.ted.com/talks/alastair_parvin_architecture_for_the_people_by_the_people)  
+2) Wikihouse project home page describes what is available and how it works (http://www.wikihouse.cc)  
+3) Production may occur anywhere where there is an NCC machine that can cut plywood (or other wood sheet materials)  
+4) This could mean that citizens may engage without state intervention to help providing for the actual need?  
+5) People coming to Sweden can engage in building their own lives and is not forced to passivity in wait for state support?  
+…
+
+Consider to make this into a proposal of the think tank ”Vidare”?
+
+a) Can we combine this idea with proof-of-concept by designing bubbles of economy-of-the-future that organizes and build Wikihouse villages and that interacts with the capitalist economy to exchange goods and services?  
+...
+
+{% endraw %}

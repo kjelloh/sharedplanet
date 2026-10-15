@@ -1,0 +1,38 @@
+# Todo: Consider that Scott Adams actually published a Trojan Horse tweet carrying a "contaminated truth" that seems related to the idea along those lines I had back in 2015?
+
+```#5348606a``` *As of 2019-04-05 19:26*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems Scott Adams has outed that he made a tweet where the content is not the focus but the result of the audience attacking the tweet (audience gets educated in the process of attacking the tweet)?
+
+==&gt; Also see “Todo: May one "contaminate" arguments for discrimination that then evolves into arguments to cooperate and help?”
+
+==&gt; Also see “Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?"
+
+1) Consider this youtube episode “Episode 481 Scott Adams: 97% of Scientists Love Gen IV Nuclear, Theron, Mueller, Solar” where Scott Adams reveals he made what we may call a “Trojan Horse” truth (<https://www.youtube.com/watch?v=nkGLLHsnmyM&t=1800s> )?
+
+,,,
+
+2) Consider how the Scott Adams tweet is closely related to my idea of planting “contaminated arguments” as in “Todo: May one "contaminate" arguments for discrimination that then evolves into arguments to cooperate and help?”?
+
+==&gt; Consider this passage in the video where he outs the “magic” of the tweet (<https://youtu.be/nkGLLHsnmyM?t=806> )?
+
+> *“So the the magic of the tweet is that it makes people disagree. So if someone, let’s say somebody is a climate change alarmist type and they see that 97 percent, the first thing they're gonna say is that's BS. - That’s BS I don’t believe that! And that's what I want them to say, because in the process of debunking it, which I am inviting people to do of course that's the whole point of it. In the process of getting people to think about it, focus on and debunk it, they will be educating themselves on generation for nuclear possibilities. That's all I want! I just want them to focus on it. I want them to get a little mad. I want them to be skeptical where that number came from. I want them to doubt it. I wanted them to dig into it to prove me wrong and then I want them to become educated."*
+
+==&gt; Consider hos this seems in fact to be a “contaminated argument” in that when engaging with the argument the opponents gets educated and starts think about new information?
+
+3) Consider how this idea of a “Trojan Horse” argument maybe is closely related to how comedians also can be seen to “reveal hidden truths” and thus also educates people on new information?
+
+==&gt; Also see “Todo: Consider that humor is "truth" about chaotic and destructive events (to foster better interaction with those events as individuals and as society)?"
+
+==&gt; Consider we may argue that what Scott Adams did was practice a persuasion technique to engage the audience to internalise new information that seems closely related to comedians that disguise new information as humor?
+
+> *So what Scott Adams reveals is that persuasion may in fact NOT be about getting your opponent to agree but for your opponent to go through your arguments and possibly come back with information that confirms your argument OR that shows your argument to be wrong. In the social conext both these outcomes are positive one because in the end your argumentation resulted in either a better “truth” to be revealed, or your “truth” gets confirmed and spread?*
+
+> *The comedian may be said to somewhat provide they same service to the society. The Comedian reveals hidden truths that may optionally be better ones. And because laughter is a pleasant feeling we are able to internalise the message in the humor and reflect on it. If it is even so that the reason the humor is funny is because it reveals unexpected truths, then just by being a god joke it will be spread!*
+
+...
+
+{% endraw %}

@@ -1,0 +1,21 @@
+﻿I want a "first principle" based low maintenance and durable MTB and everyday use bike.
+
+1) Consider to understand and try out the Igus Plastic plain bearings for the mountain bike (https://www.igus.eu/info/mountainbike <https://www.igus.eu/info/mountainbike> )?
+
+	==> It seems Igus aims to provide bearings for many components on the mountain bike?
+
+
+
+2) Consider the Igus video promoting plastic bearings for bikes (https://www.igus.eu/contentData/Product_Files/Download/mp4/Bicycle_industry.mp4 <https://www.igus.eu/contentData/Product_Files/Download/mp4/Bicycle_industry.mp4> )?
+
+3) Consider if we can imagine a low maintenance front fork suspension design based on Igus piston ring and bushing?
+
+So, the basic idea here is to go back to first principles for damping and see how basic we can get the fron fork suspension to be?
+
+For example, can we imagine a springed piston with Igus piston ring and bushing using escaped air as dampening mechanism? 
+
+It seems we should be able to accomplish this with some simple air valve and piston escape holes to make the fork move quickly up to absorb shocks. And then let the spring move the fork back to its resting position having the valve force air out of the piston with some adjustable resistance?
+
+Now, this suspension would make a lot of hissing noises?  But what the heck! :)
+
+...

@@ -1,0 +1,27 @@
+# Todo: Consider our unconscious to be about producing answers while our consciousness is about formulating questions?
+
+```#6ece544e``` *As of 2016-06-15 16:18*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could we argue that what rational thinking, being the youngest of the evolutionary children, provides are good questions as an add-on to the unconscious answer providing machine?
+
+1) Consider our reflexes (unconscious) is about direct action (anser) to sensoritory alerts about danger?
+
+2) Consider seniorititory models of the world (unconscious) provides an interactive-able reality (answers).
+
+3) Consider our emotions (unconscious) as drives (answers) that tells us to act?
+
+4) Consider conscious thinking as on top of all this to question unconscious answers to find yet more honed answers than those we unconsciously produce?
+
+5) Consider conscious reasoning, being the youngest child of evolution, is still furthest from reality (in that it thinks of itself to be in the center of all action)?
+
+==&gt; Consider it is not only the Eearth that is not in the center of the universe, we are in fact not in the center of ourselves?  
+…  
+…
+
+Consider to elaborate on this view of ourselves and the correct place of our experienced selfe in ourselves?  
+...
+
+{% endraw %}

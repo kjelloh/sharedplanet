@@ -1,0 +1,13 @@
+﻿I still dream of a way to create applications that are separate bootable images and Include OS seems like a viable option to try out.
+
+	==> Also see "Todo: Darwinet Meta Value Model - Consider to implement a MIV in a "include <os>" bootable microservice?"
+
+1) Include OS seems to live on Github here (https://github.com/includeos/IncludeOS )?
+
+2) Include OS seems to host good documentation here (https://includeos.readthedocs.io/en/latest/Getting-started.html )?
+
+3) Consider to build and try out the include OS "Hello World" example?
+
+
+
+...

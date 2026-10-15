@@ -1,0 +1,112 @@
+﻿From what I’ve seen initially the Helium.com <http://helium.io/> initiative seems to integrate many of the elements I have imagined the Darwinet network to have. Let's investigate!
+
+1) Consider this Hackster.io <http://hackster.io/> youtube video “Helium's New IoT Hotspot // Intro & Setup” (https://www.youtube.com/watch?v=LOLFPWi9sWw <https://www.youtube.com/watch?v=LOLFPWi9sWw> )?
+
+	...
+
+2) The Helium.com <http://helium.io/> initiative seems to live here (https://www.helium.com <https://www.helium.com/> )?
+
+	
+	Helium.com front page message
+	
+	==> It seems I can register on the wait list to maybe get a hot spot when ready (if I am found worthy)?
+
+“Hotspots are physical hardware devices that earn rewards while creating network coverage.
+
+Hotspots earn rewards for their owners by validating peer hotspots are providing legitimate coverage and by routing data from machines to the internet.
+
+We will be holding a Hotspot sale soon and by signing up for this list, you'll be the first to know."
+
+
+	==> Consider the Helium white paper (http://whitepaper.helium.com <http://whitepaper.helium.com/> )?
+
+	
+
+2) Consider what I like and what I don’t like about the Helium.com <http://helium.io/> initiative?
+
+	==> I don’t like that the business plan of Helium, the company, is not clearly stated (https://www.helium.com/about <https://www.helium.com/about> )?
+
+“Helium has raised equity funding from some of the most prominent Venture Capital (VC) firms in the world including Khosla Ventures, FirstMark Capital, GV (formerly Google Ventures), HSB/MunichRe Ventures and others."
+
+		==> Note how they state they have gained investors but NOT what the investors has invested in?
+
+		==> Are Helium to sell hardware or solutions built on top of a supposedly open p2p network and blockchain?  
+
+	==> From the into of the white paper I get suspicious that this is a business plan for an ICO-like scheme to make a profit on investments made by rallied up participants looking for a chance to do good and mine “atoms” (
+
+“The Internet of Things is an $800 billion industry, with over 8.4 billion connected devices online, and spending predicted to reach nearly $1.4 trillion by 2021 [1]. Most of these devices need to connect to the Internet to function. However, current solutions such as cellular, WiFi, and Bluetooth are suboptimal: they are too expensive, too power hungry, or too limited in range.
+
+The Helium network is a decentralized wireless network that enables devices anywhere in the world to wirelessly connect to the Internet and geolocate themselves without the need for power-hungry satellite location hardware or expensive cellular plans."
+
+		==> Note how this very first message in the Abstract of the Helium white paper states a business opportunity (large industry that lacks a solution)?
+		==> The economic value stated for the IoT industry ($800 billion) seems to be totally unrelated to the “value” of the Helium.com <http://helium.io/> network being some form of cost reduction solution?
+
+	==> It seems Helium.com <http://helium.io/> leverage open source software and hardware (https://www.helium.com/enterprise#networksolutions <https://www.helium.com/enterprise#networksolutions> )?
+
+"No Vendor Lock-in. Proprietary technologies and licensing hurt innovation. Helium uses open-standards, off-the-shelf hardware, and all of Helium's core technology is open-source."
+
+	==> It seems Helium.com <http://helium.io/> has built their own blockchain to allow storage of sensor data as well as micro transactions in a power efficient way (https://www.helium.com/progress <https://www.helium.com/progress> )?
+
+“A New Protocol Blockchain
+
+Q4 2018
+
+Progress would have been faster and easier if we could have leveraged an existing blockchain. However, our unique use case required adding data from the physical world to a blockchain, supporting microtransactions, and requiring a new consensus model that was useful, energy efficient, and fair. Learn more about our blockchain including why we built our own (https://blog.helium.com/introducing-the-helium-blockchain-dc2f8997083c <https://blog.helium.com/introducing-the-helium-blockchain-dc2f8997083c> ); challenges of DKG (https://blog.helium.com/building-a-truly-decentralized-system-with-a-distributed-key-generator-930a210f4a72 <https://blog.helium.com/building-a-truly-decentralized-system-with-a-distributed-key-generator-930a210f4a72> ), proof-of-coverage (https://blog.helium.com/proof-of-coverage-useful-energy-efficient-and-fair-f1450c7d94c7 <https://blog.helium.com/proof-of-coverage-useful-energy-efficient-and-fair-f1450c7d94c7> ), and our Wallet (https://blog.helium.com/linking-hardware-to-a-blockchain-3fc30c492c9f <https://blog.helium.com/linking-hardware-to-a-blockchain-3fc30c492c9f> )."
+
+	==> It seems Helium.com <http://helium.io/> uses the fact that hot spots uses both radio and cable communication allowing proof-of-location (coverage) as identity (https://blog.helium.com/introducing-the-helium-blockchain-dc2f8997083c <https://blog.helium.com/introducing-the-helium-blockchain-dc2f8997083c> )?
+
+“After a lot of thinking, false starts and whiteboarding, we’ve come up with a way to turn our gateway’s access to radio equipment and location into a proof of coverage suitable for use as an identity. Essentially Helium gateways assert their location (according to their GPS coordinate) and other Helium gateways routinely challenge these gateways to prove their location.
+
+Over time, with enough successful responses to these challenges, the gateways can create a strong identity with an associated trust score that we can use to defeat Sybil attacks. Because a gateway is anchored in space, and only a single gateway can occupy a point in space (we don’t allow two gateways to claim the same location), these identities are also unique."
+
+3) Consider spin off ideas I get while investigating the Helium.com <http://helium.io/> initiative?
+
+	==> I can’t quite make up my mind if Helium.com <http://helium.io/> is a true open initiative with no proprietary tie downs or if it still is an ICO-like initiative (pansy scheme)?
+
+My initial sense is that a lot of work has gone into providing a slick front-end with marketing wording about how Helium.com dresses all these problems and the goal is an open global p2p network for trusted IoT. And at the core of the network is a blockchain with a coin called “Atom” that you as a participant will “earn” while also promoting a good cause. But then, if the reason to engage is to earn “atoms”, how can we trust that this is not the business idea of Helium.com <http://helium.io/>? In some sense this whole initiative has all the same traits as that of the Filecoin initiative (https://filecoin.io <https://filecoin.io/> )?
+Helium.com
+
+Another thing, where are the links to the claimed open source and hardware specifications?
+
+	==> Consider an alternative (i.e., Darwinet)  block chain based network that favours (rewards) actors that produce “most meaning using least energy in least time”?
+
+The idea here being that what we as humans find meaningful is figuring out how to do “the right thing” to optimise recursion using available time and energy as efficient as possible. Thus we would like an organic network where we can live digital lives to try its very best to provide its services in the most efficient way possible. Meaning a digital network should operate to consume as little energy and time as possible while providing the most potent services to find what will recurse (what is the true best truth about living a digital life)?
+
+	==> Consider the problem of evaluating “proof of resource consumption” (problem of detecting if actors are lying about the amount of energy they consume vs the “value" they produce)?
+
+Actor in a network can monitor the amount of time other actors are using up to provide a service. But how can actors in concert verify how much energy each actor consumes? Or put another way, how to we verify that actors are not lying about their energy consumption?
+
+It seems Helium.com <http://helium.io/> has implemented a scheme for “proof of location” and “proof of service”. But have they also implemented “proof of energy consumption”?
+
+	==> Consider we can imagine we would like a network where production of entropy is punished and actors producing the least entropy is rewarded (race to minimise entropy production rate)?
+
+Entropy is well defined and can be rather easily measured. And we know if a low amount of entropy is produced, then also energy is consumed to a low rate or in an efficient way.
+
+Problem still reamins though how to determine that actors do not lie about the amount of entropy they ahem produced?
+
+
+	==> Consider we would like to implement some form of proof-of-trust to be able to balance such trust against the risk of being fooled to find a sweet spot and minimise the energy (being to distrustful wastes energy)?
+
+In eye to eye communications between humans there is always the potential that the other is not to be trusted. And it occurs that humans lie and betray each other to gain benefits. Still, it seems we have several social mechanisms to identify and deal with other humans so that the impact of importers is balanced against the gains of trusting other to do what they have agreed upon doing.
+
+Is there a hardware actor equivalent in p2p networks we can imagine and implement as interaction algorithms? What we are trying to imagine and implement is to leverage some form of digital trust that we can use to balance against potential digital imposters in the network. We do not want to be to rigours as that is a waste of energy in cases where there are no imposters. On the other hand, we do not want to trust naively as this may enhance the incitement to try and gain from acting dishonestly.
+
+The first thing we would like to have is some form of proof-of-trust. Nad for that to be even possible we need a proof-of-identity to tie such trust to. It seems the Helium.com p2p mechanism of proof-of-location and proof-of-service is something we can leverage as a basis for proof-of-trust?
+
+	==> Consider we can replace verification of “not lying” with “strong incitement not to lie”?
+
+In social relations between humans here seems to be several incitement not to lie. If you do not lie you gain trust. And if people trust you interactions with others costs less energy and you get invited to participate in social endeavours that you benefit from.
+
+It seems we can imagine a similar digital mechanism so that digital actors in the network that is trustworthy and competent are invited to participate in activities that are beneficial. Now we have to remember that the benefits we are talking about should be ones valued by the human user associated with the digital actor. Like the mechanism in Helium.com that seems to reward humans with trusted IoT hot spots with Helium.com <http://helium.io/> blockchain currency tokens called “atoms”. It seems as long you maintain digital actors, in this case Helium hot spots, so they gain trust you will be rewarded with money? Helium.com
+
+	==> Consider the dangers of rewarding digital agents in p2p networks based on trust or valuable acts in that it also punishes those who do not do so well regardless of the reason?
+
+In human interactions we value competent and trust with money and status. And this can cause some to not be able to earn a living or be treated unfairly. Now depending on if you are right or left leaning you may look at this and pick sides. Either you say it is more important that no-one gets hurt so social structures based on some perceived value or trust is basically power structures and should be dismantled to create a society where all are forced to be valued equally. Or you say it is more important to have a meritocracy so each can provide optimally and those who fail to contribute in some sense deserves to suffer a little more.
+
+We should also consider the experiments in China and other places where social networks are used to value citizens based on reported value the provide to society. To the degree that in China you may be denied bank loans or travel the commute trains if your social value points are too low. This at least feel like a dangerous path to go down. AT least from the perspective that it seems it short cuts sufficient human intervention to stop these networks from miss-treating citizens based on erroneous information.
+
+So it seems we must be very careful if we build into any p2p networks for humans to live digital lives where we try to evaluate human actions by rewarding their digital actors based on their performance.
+
+4)
+
+

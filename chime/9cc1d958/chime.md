@@ -1,0 +1,44 @@
+# Todo: Programming - Consider to check out the 3D Rendering possible by the "Software Defined Visualization" open source initiative?
+
+```#9cc1d958``` *As of 2016-04-03 00:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) The root project of “Software Defined Visualization” seem to live here (<http://sdviz.org>)?
+
+*“Software Defined Visualization (SDVis) is an open source initiative from Intel and industry collaborators to improve the visual fidelity, performance and efficiency of prominent visualization solutions – with a particular emphasis on supporting the rapidly growing “Big Data” usage on workstations through HPC supercomputing clusters without the memory limitations and cost of GPU based solutions."*
+
+2) This seem to be where the Cppcast pod-cast lives where I learned about this project (<http://cppcast.com/2016/03/jeff-amstutz/>)?
+
+*“Jeff is a Visualization Software Engineer at Intel, where he works on the open source OSPRay project.”*
+
+3) The pvOSPRay seems to be the ray-tracing module for the ParaView living here on Github (<https://tacc.github.io/pvOSPRay/>)
+
+“pvOSPRay is a module for the ParaView visualization toolkit (<http://www.paraview.org/>) that utilizes Intel's OSPRay ray tracing framework (<http://ospray.github.io>) for rendering.”
+
+4) Open SWR Seem to be an OpenGL “replacement” with this home page (<http://openswr.org>)?
+
+*“As with our original version of OpenSWR, this is a drop-in replacement OpenGL library - no recompilation of your programs is necessary.”*
+
+==&gt; It seems they aim at enhancing the Linux Mesa (Linux OpenGL on CPU) Component?
+
+*“We are working on integrating both the SWR core and driver into the Mesa project. This will provide a SWR renderer that supports much of the OpenGL 3.3 Core and OpenGL 3.0 Compatibility contexts."*
+
+5) The Mesa project seem to live here (<http://www.mesa3d.org/intro.html>)?
+
+*“Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics."*
+
+6) Paraview seem to live here (<http://www.paraview.org>)?
+
+“ParaView is an open-source, multi-platform data analysis and visualization application.”
+
+==&gt; Paraview seem to come in several flavours (e.g. a Desktop one) and provide video talks about them here (<http://www.paraview.org/webinars/#paraviewintro>)?
+
+…
+
+Consider to follow up on these and more leads to see what we can learn and if we can find a good candidate to build 3D-user interfaces (e.g. Pandora C++ Source Code View)?
+
+...
+
+{% endraw %}

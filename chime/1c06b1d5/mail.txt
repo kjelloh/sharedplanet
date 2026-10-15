@@ -1,0 +1,37 @@
+﻿Maybe I can just go ahead and pick a ready-to-build house as designed and documented by Svenskt trä "Byggbeskrivningar"?
+
+	==> Also see "Todo: House Build - Consider how much "house" I can plan in 1:30 hours?"
+
+1) Consider the different "Byggbeskrivningar" from Svensk Trä (https://www.byggbeskrivningar.se <https://www.byggbeskrivningar.se/> )?
+
+	TODO: Consider to study the different build instructions with designs and bill of materials?
+
+2) Consider the house "Enkelstugan" (https://www.byggbeskrivningar.se/utvandigt/enkelstugan/ <https://www.byggbeskrivningar.se/utvandigt/enkelstugan/> )?
+
+	
+
+	==> It seems I can generate a complete bill of materials for the house "Enkelstugan" to suit the conditions for southern or Nothern sweden (different roof strain requirements)?
+
+	
+
+	==> Consider to estimate the cost for the bill of materials for Svenskt Trä "Enkelstugan"?
+
+	==> It seems I can generate a cutting list for the bill of materials?
+
+	
+
+	TODO: Consider to study the cutting list to understand and possibly re-use the format for my own plans to prepare the build process?
+
+3) Consider if and how I can adjust the design of "Enkelstugan" to enable me to prefabricate sections in dry conditions to reduce the assembly time of the final house?
+
+	==> Consider I need to think about making my "prefabrication tent" to be dry (so it needs to be slightly pressurised with dehumidified outdoor air)?
+
+	==> Consider I need to design and build a compact dry heated storage for prefabricated house parts to enable me to make them complete including indoor dry walls and flooring)?
+
+	==> Consider if I can prefabricate each wall as separate sections to be lifted into place when assembling the house?
+
+	==> Consider if and in what way I can prefabricate the roof in sections to be lifted into place at assembly?
+
+	==> Consider to possibly study the design of existing prefabricated house by some known house vendors?
+
+...

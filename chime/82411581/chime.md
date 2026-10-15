@@ -1,0 +1,32 @@
+# Todo: Programming - Consider to design an example to expose the Maybe Monad pattern for a file processing procedure?
+
+```#82411581``` *As of 2017-01-15 15:31*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider it could be a good idea to use a File Processing Procedure as an example where we would like to model it as composable functions instead?
+
+1) Consider an example where we want to open a file at a path and parse for some data?
+
+Result read_integers(std::path file_path) {  
+// 1) open the file  
+// 2) Read coma separated strings  
+// 3) Parse strings as integers  
+// 4) Write integers to GUI  
+// 5) Return Error or Success.  
+}
+
+2) Consider steps to break this problem down to make it into composable functions?
+
+1) Motivate why we want to make this into a design where we chain fucntions?  
+2) Realize each function takes a ”thing” from the step before and produces a new ”thing” (functions a —&gt; b)  
+3) How do we make them all take the ”same” thing and return the ”same” thing (but process the value of course)  
+…
+
+…
+
+Consider to elaborate on this example to expose the patterns of the Maybe Monad?  
+...
+
+{% endraw %}

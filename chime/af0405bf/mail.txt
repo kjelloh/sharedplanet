@@ -1,0 +1,10 @@
+﻿Visiting Solna Library I discovered one now are able to borrow CD/DVD-books and films (media). But I suppose it is not possible to borrow media in digital form (streaming)? Consider to propose how Darwinet stored media may be “borrowed” by restricting copying (only one user has access at a time)?
+
+1) Darwinet knows where a file (data) is stored and who has access to it and from where.
+2) This mechanism may thus be used to restrict files (data) from being accessed more than allowed (the count of available entities).
+3) A Darwinet library app may be designed to “know” how many copies of a digital media the library owns and then restrict access so only the ones that has currently borrowed it may actually access it?
+4) The “borrower" mus “return” the file before a new user may borrow it.
+5) Darwinet may also restrict access to only streaming access? In this way access to the file is not allowed and copying is not possible?
+…
+
+Consider to elaborate on this idea as a proof-of-concept of the Darwinet concept? 

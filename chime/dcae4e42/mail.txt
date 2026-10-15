@@ -1,0 +1,46 @@
+﻿Can we imagine to somehow get hold of the GH 60 PCB layout and modify it to accommodate it to host an SD card reader (end then order PCBs from china)?
+
+1) Consider sources of the GH60 PCB (or similar) as a base of the design?
+
+	==> Consider GH60 pcb design files are available here on Github (https://github.com/komar007/gh60 <https://github.com/komar007/gh60> )?
+
+2) Consider if I can somehow use Fusion 360 to design PCBs?
+
+	==> Consider Autodesk hobbyist free EAGLE version that seems to integrate with Fusion 360 (https://www.autodesk.com/products/eagle/overview <https://www.autodesk.com/products/eagle/overview> )?
+
+		==> EAGLE for mac seems to be available free for hobbyists here (https://www.autodesk.com/products/eagle/free-download <https://www.autodesk.com/products/eagle/free-download> )?
+
+	==> It seems EAGLE is unable to open any of the (kicad?) design files in GH60 github repository?
+
+3) Consider to learn how to use Kicad (http://kicad-pcb.org <http://kicad-pcb.org/> )?
+
+	==> It seems Kicad is open source (http://kicad-pcb.org/contribute/developers/ <http://kicad-pcb.org/contribute/developers/> )?
+
+	==> It is exposed as a git project but NOT on GitHub?
+
+Once you have git installed, you just need to clone the official repository, like so:
+
+git clone https://git.launchpad.net/kicad
+You can pull the latest changes in your clone with:
+
+git pull
+
+	==> There seems to be an OS X image available for download (http://kicad-pcb.org/download/osx/ <http://kicad-pcb.org/download/osx/> )?
+
+		NOTE: Download is s l o w ...
+
+		TODO: Install and try out the Kicad application on the GH60 Kicad project files (https://github.com/komar007/gh60 <https://github.com/komar007/gh60> )?
+
+		NOTE: I cloned the files to "Macintosh HD⁩ ▸ ⁨Users⁩ ▸ ⁨kjell-olovhogdahl⁩ ▸ ⁨Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨gh60⁩"
+
+	==> It seems instructions for building from source can be found here (http://docs.kicad-pcb.org/doxygen/md_Documentation_development_compiling.html <http://docs.kicad-pcb.org/doxygen/md_Documentation_development_compiling.html> )?
+
+
+3) Consider to document the installation on OS X o the EAGLE application?
+
+	
+
+	
+
+	
+

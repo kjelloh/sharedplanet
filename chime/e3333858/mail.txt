@@ -1,0 +1,211 @@
+﻿So, what can we say about how a front-end (user interface) should interact well with a multithreaded Core (business logic) engine?
+
+	Also See ”Todo: Programming - Consider to understand C++ concurrency concepts like threads and Coroutines?"
+
+-4) Consider that a reactive (concurrent) front-end may still be choked by producers of viewed data?
+
+	==> Consider that a view front-end will receive all viewed events through the main event queue and may thus be choked?
+	==> So, when we replace GUI polling with producer posting we may still need to ensure the producer to provide data in consumable chunks?
+		==> This could mean that all places where the GUI polling is restricted to not block the call - when refactored into a producer should maybe still be restricted in the amount of data posted each time?
+
+		static const int NR_OF_EVENTS_TO_PROCESS_ON_EACH_POLL = 5;
+		for (int i = 0; i < NR_OF_EVENTS_TO_PROCESS_ON_EACH_POLL; i++) {
+		==> Consider when making this to producer it should post in chunks of five and then sleep (to not choke the consuming main GUI thread)?
+		...
+
+-3) Consider designs that Reactor interaction based on Future returning asynchronous calls?
+
+	==> Asume Peer A and B are to interact.
+	==> Peer A and B are both Reactors implemented using Future returning asynchronous function calls.
+	==> When Peer A calls Peer B it returns a Future return value that must be kept alive until the asynchronous execution initiated by the call ends.
+
+	Peer A::f 	—> 	Peer B::operation
+		<— Future<B::operation::result> <— 
+
+	==> When Peer B calls Peer A it returns a Future return value that must be kept alive until the asynchronous execution initiated by the call ends.
+
+	Peer A::operation 	<— 	Peer B::f
+		—> Future<A::operation::result> —>
+
+	==> Now assume A is a user interface and B is some Business (Core) logic.
+	==> Let A::f be a user interface control (e.g. a button) and A::v is a user interface view (e.g. the Button Caption).
+	==> Let B::o be some asynchronous operation returning a Future<B::o::r> (a future result)
+	==> Let A::f call B::o (e.g. on button click)
+
+	Peer A::f 	—> 	Peer B::o
+		<— Future<B::o::r> <— 
+
+	==> Now, who should own and store the returned future result Future<B::o::r> (It must live until B::o terminates)?
+	==> It seems B::o needs a view to call when it terminates (to control life time of corresponding Future<B::o::r>)?
+		==> Consider B::o to create and return an explicit view B::o::v of that very call?
+		==> Let B::o::v aggregate and own the future result Future<B::o::r>?
+	==> Now, who would own and delete the created operation view B::o::v?
+		==> It seems B::o::v can’t delete itself (as it must be its owner that deletes it)?
+			==> If B::o::v is controlled by an std::unique_ptr (or similar) it is evident B::o::v can’t delete itself as this would confuse owning std::unique_ptr<B::o::v>)?
+		==> It seems it is complicated for A to own B::o::v (A would have to delete correct B::o::v on some dispatched event from B::o)?
+		==> It seems the easiest is if B::o deletes its corresponding B::o::v on termination?
+	==> But B::o can’t delete its B::o::v due to race conditions (Asynchronous B::o may call B::o::v before B::o::v is assigned the Future<B::o::r>)?
+	==> Thus it must be A that owns the B::o::v (and thus the Future<B::o::r>)?
+		==> Consider A::f to assign an event handler A::e<B::o::v> for the asynchronous operation view?
+		==> Consider B::o to call its B::o::v on termination?
+		==> Consider B::o::v to send an event to A::e<B::o::v> about the terminated B::o?
+
+	==> Consider how B::o::v shall now how to call the facade of A?
+
+		==> Consider A::f to assign to B::o::v a callback to an A facade function to call on B::o termination?
+			==> A being a Reactor has a facade that creates internal asynchronous calls and returns a Future back to B:.o::v
+			==> But A being a User Interface means that the Future returned to B is empty (not result to return)
+		==> Consider B::o::v to call registered A facade callback function with a pointer to its own instance?
+		==> A facade function may then create an Event carrying the B::o::v instance pointer?
+		==> A may then dispatch this event to an event handler that finds the stored B::o::v and deletes it?
+		==> If A is a single threaded GUI (e.g. a Windows GUI) the list lookup and item delete is a safe operation (single thread access)?
+		==> A need only one list of all current active B::o::v (they all have the same termination API, i.e. stored with instance adress as key)? 
+		…
+
+ 
+-2) Consider C++ seems to provide three types of parallel execution mechanisms?
+
+	==> It seems C++ provides the threading mechanism and std::async plus Coroutines as Future based return from function call?
+
+	==> In thread based execution the caller must ensure proper storage and administration of thread objects?
+	==> In Future based function calls the caller must ensure proper storage and administration of Future objects?
+	==> Future based asynchronous function calls has the benefit of easy scaling (each Future may or may not correspond to a separate thread of execution)?
+	==> Thread based asynchronous execution models are more or less prone to be implemented based on message loops (functions are executed by posted thread)?
+	...
+	 
+-1) Consider to understand the Reactive and Proactive Design Patterns?
+
+	==> The difference from the Reactive Design Pattern is that the ”Event Handler” is called asynchronously (Proactive Asynchronous Operation)?
+		==> In the Reactive Design Pattern the Event Handler is called synchronously (executed by the dispatcher)?
+		==> In the Proactive Design Pattern the Event Handler is executed by it’s own thread (leaving the dispatcher free to dispatch next event)?
+
+	==> This seem like a good wikipedia page on Proactor design pattern (https://en.wikipedia.org/wiki/Proactor_pattern <https://en.wikipedia.org/wiki/Proactor_pattern>)?
+
+	
+
+
+	==> This seem to be the ”home” of the Reactor Design Pattern specification (chapter 5 in http://www.cs.wustl.edu/~schmidt/PDF/PLoP-94.pdf <http://www.cs.wustl.edu/~schmidt/PDF/PLoP-94.pdf>)?
+
+	
+
+		==> It seems the ”handle_event” call is synchronous in the Reactor design Pattern?
+
+1) Consider to understand the Windows Message loop?
+
+	==> This seem to be a good wiki book on Windows Message Loop (https://en.wikibooks.org/wiki/Windows_Programming/Message_Loop_Architecture <https://en.wikibooks.org/wiki/Windows_Programming/Message_Loop_Architecture>)?
+
+	==> This seem to be the microsoft official specification (https://msdn.microsoft.com/en-us/library/windows/desktop/ms644927(v=vs.85).aspx)? <https://msdn.microsoft.com/en-us/library/windows/desktop/ms644927(v=vs.85).aspx)?>
+
+		==> It seems a Console application simply calls the system for input and output whilst a Windows program is event driven (waits for input)?
+
+	”Unlike MS-DOS-based applications, Windows-based applications are event-driven. They do not make explicit function calls (such as C run-time library calls) to obtain input. Instead, they wait for the system to pass input to them.”
+
+		==> it seems each windows is called (its windows procedure) by a ”message dispatcher” to act on events adressed to it?
+
+	”The system passes all input for an application to the various windows in the application. Each window has a function, called a window procedure, that the system calls whenever it has input for the window. The window procedure processes the input and returns control to the system."
+
+		==> Calls to a windows procedure may be asynchronous (Post) or synchronous (Send)?
+
+	”The system uses two methods to route messages to a window procedure: posting messages to a first-in, first-out queue called a message queue, a system-defined memory object that temporarily stores messages, and sending messages directly to a window procedure."	
+
+		==> It seems a windows GUI can in fact be multi-threaded ?
+
+		”The system maintains a single system message queue and one thread-specific message queue for each GUI thread.”
+
+		==> It seems message dispatching is made first from System Message Queue to GUI Thread Message Queues and then by each thread?
+
+		”The system removes the messages, one at a time, from the system message queue, examines them to determine the destination window, and then posts them to the message queue of the thread that created the destination window. ”
+
+		==> It seems an application must implement at least one Message Queue (in WinMain for single-threaded) and in each GUI-thread (multi-thrteaded)?
+
+		”An application must remove and process messages posted to the message queues of its threads. A single-threaded application usually uses a message loop in its WinMain function to remove and send messages to the appropriate window procedures for processing. Applications with multiple threads can include a message loop in each thread that creates a window.”
+
+		==> It seems each Message Loop just do dequeue, translate and dispatch for each message in the queue?
+
+MSG msg;
+BOOL bRet;
+
+while( (bRet = GetMessage( &msg, NULL, 0, 0 )) != 0)
+{ 
+    if (bRet == -1)
+    {
+        // handle the error and possibly exit
+    }
+    else
+    {
+        TranslateMessage(&msg); 
+        DispatchMessage(&msg); 
+    }
+}
+
+			==> It seems translate is just to convert virtual key events into character key events (encode them into ASCII or Unicode character set)?
+
+			”A virtual-key message contains a virtual-key code that identifies which key was pressed, but not its character value. To retrieve this value, the message loop must contain TranslateMessage, which translates the virtual-key message into a character message (WM_CHAR) and places it back into the application message queue."
+
+2) Consider that most front-ends are single threaded which would suggest they should (and do) implement the Reactor Design Pattern?
+
+	==> It seems a Windows Application in fact implements the Proactor Design Pattern?
+
+		==> The System unqueues messages and posts them (asynchronous dispatch) to correct GUI-Thread queue?
+
+			==> The System is then the ”Proactive Initiator”?
+			==> The Windows Application is the ”Asynchronous Operation Processor”?
+			==> The System dispatching of windows message to GUI-Thread message queue is ”Asynchronous Operation”
+
+		==> But there is no Application Level (System Process) Completion Dispatching (Post-to-GUI-Thread has no completion to process)
+
+			==> Or put another way, the completion processing of the actual message processing is disregarded at SystemLevel?
+
+	==> Each GUI-thread windows message loop is in fact the Reactor Design Pattern (chapter 5 in http://www.cs.wustl.edu/~schmidt/PDF/PLoP-94.pdf <http://www.cs.wustl.edu/~schmidt/PDF/PLoP-94.pdf>)?
+
+			==> The Windows Message Loop is in fact the ”handle_events”?
+			==> The Windows Procedure is in fact the ”Event Handler”?
+			==> The Windows Handle is ”Handle”?
+			==> The CreateWindowEx call is in fact ”register_handler” (although it creates and registers in the same call)
+
+		==> It seems Windows require at least one Message Loop?
+
+MSG msg;
+BOOL bRet;
+
+while( (bRet = GetMessage( &msg, NULL, 0, 0 )) != 0)
+{ 
+    if (bRet == -1)
+    {
+        // handle the error and possibly exit
+    }
+    else
+    {
+        TranslateMessage(&msg); 
+        DispatchMessage(&msg); 
+    }
+}
+
+	==> Thus the VCL is by definition single-threaded (VCL-code executed by DispatchMessage from the message loop)?
+		==> VCL may be single threaded also by design (it does not expect to be called from several threads)
+
+3) Consider a multithreaded Core should, almost by definition,  implement the Proactor Design Pattern?
+
+4) Elaborate on how a Console front-end should interact with Core (Business Logic) Engine?
+
+	==> Consider a console front-end may act on call-backs from the Core (as long as system calls for screen updates are thread-safe)?
+		==> Elaborate on the  fact that screen updates using cout are NOT thread safe?
+
+	==> Consider a Console front-end should also implement the single threaded Reactor Design Pattern?
+		==> In this way we make front-end single-threaded asynchronous to Core operations (ensuring no hanging whilst still ensuring synchronous screen updates)
+
+5) Consider to compare with the early C++ proposal for 2D graphic device input (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0249r0.pdf <http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0249r0.pdf>)?
+
+	==> Q: How do they propose to handle events in the 2D device input library?
+		==> The seem to state under “Motivation” that are aiming at synchronous AND asynchronous event handling?
+
+		“2)  To provide developers ways to dynamically add, remove, invalidate and step through both synchronous and asynchronous events without the encumbrance of writing lengthy code.”
+
+	==> Searching the web does not reveal any ongoing C++ projects to implement this P0249 proposal?
+
+	WE ARE HERE...
+
+…
+
+Consider to elaborate more on what design patterns different front-end frameworks apply and how we can leverage this information to design a good interface between a front-end and the core business logic?
+...

@@ -1,0 +1,545 @@
+﻿
+
+-1) Consider to sum up some learnings I made from the exercise to update Brew install llvm?
+
+	==> It seems the $PATH variable for the ZSH shell is updated for "old" Python in $HOME/.zprofile
+
+And I simply removed this file on my machine and the adding of the path to 
+/Library/Frameworks/Python.framework/Versions/3.9/bin was no longer made to my $PATH variable.
+
+	==> It seems macOS may be configured to use a BASH shell (older versions) or a ZSH shell (newer versions)
+
+And each shell has its own way of how the $PATH variable is assembled when a shell is created.
+
+Just google and be dismayed over how many ways there seem to be to ensure the correct PATH variable is instantiated! 
+
+	==> LLVM with clang seems to be installed to 
+
+1) It seems llvm is installed to /usr//Cellar/llvm/13.0.0_1 (with a symlink /usr/local/opt/llvm -> ../Cellar/llvm/13.0.0_1)?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % ls -l /usr/local/opt/llvm    
+lrwxr-xr-x  1 kjell-olovhogdal  admin  23 Nov 27 13:43 /usr/local/opt/llvm -> ../Cellar/llvm/13.0.0_1
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin %               
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % ls -l /usr/local/opt/llvm/bin | grep clang
+lrwxr-xr-x  1 kjell-olovhogdal  staff         8 Sep 24 18:18 clang -> clang-13
+lrwxr-xr-x  1 kjell-olovhogdal  staff         5 Sep 24 18:18 clang++ -> clang
+-rwxr-xr-x  1 kjell-olovhogdal  staff    198096 Sep 24 18:18 clang-13
+-r-xr-xr-x  1 kjell-olovhogdal  staff    181952 Sep 24 18:18 clang-apply-replacements
+-r-xr-xr-x  1 kjell-olovhogdal  staff    410528 Sep 24 18:18 clang-change-namespace
+-r-xr-xr-x  1 kjell-olovhogdal  staff    111128 Sep 24 18:18 clang-check
+lrwxr-xr-x  1 kjell-olovhogdal  staff         5 Sep 24 18:18 clang-cl -> clang
+lrwxr-xr-x  1 kjell-olovhogdal  staff         5 Sep 24 18:18 clang-cpp -> clang
+-r-xr-xr-x  1 kjell-olovhogdal  staff    794256 Sep 24 18:18 clang-doc
+-r-xr-xr-x  1 kjell-olovhogdal  staff     66024 Sep 24 18:18 clang-extdef-mapping
+-r-xr-xr-x  1 kjell-olovhogdal  staff    153744 Sep 24 18:18 clang-format
+-r-xr-xr-x  1 kjell-olovhogdal  staff    291952 Sep 24 18:18 clang-include-fixer
+-r-xr-xr-x  1 kjell-olovhogdal  staff    351224 Sep 24 18:18 clang-move
+-r-xr-xr-x  1 kjell-olovhogdal  staff    156472 Sep 24 18:18 clang-offload-bundler
+-r-xr-xr-x  1 kjell-olovhogdal  staff    102512 Sep 24 18:18 clang-offload-wrapper
+-r-xr-xr-x  1 kjell-olovhogdal  staff    281744 Sep 24 18:18 clang-query
+-r-xr-xr-x  1 kjell-olovhogdal  staff    171640 Sep 24 18:18 clang-refactor
+-r-xr-xr-x  1 kjell-olovhogdal  staff    134792 Sep 24 18:18 clang-rename
+-r-xr-xr-x  1 kjell-olovhogdal  staff    166104 Sep 24 18:18 clang-reorder-fields
+-r-xr-xr-x  1 kjell-olovhogdal  staff     92336 Sep 24 18:18 clang-repl
+-r-xr-xr-x  1 kjell-olovhogdal  staff    274248 Sep 24 18:18 clang-scan-deps
+-r-xr-xr-x  1 kjell-olovhogdal  staff   9861888 Sep 24 18:18 clang-tidy
+-r-xr-xr-x  1 kjell-olovhogdal  staff  15691920 Sep 24 18:18 clangd
+-r-xr-xr-x  1 kjell-olovhogdal  staff     76632 Sep 24 18:18 clangd-xpc-test-client
+-r-xr-xr-x  1 kjell-olovhogdal  staff     21738 Sep 24 18:18 git-clang-format
+-r-xr-xr-x  1 kjell-olovhogdal  staff     12449 Sep 24 18:18 run-clang-tidy
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % 
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % find /usr -name 'clang++'    
+/usr/bin/clang++
+find: /usr/sbin/authserver: Permission denied
+/usr/local/Homebrew/Library/Homebrew/shims/mac/super/clang++
+/usr/local/Homebrew/Library/Homebrew/shims/super/clang++
+/usr/local/Homebrew/Library/Homebrew/shims/linux/super/clang++
+/usr/local/Cellar/ccache/3.7.12/libexec/clang++
+/usr/local/Cellar/llvm/13.0.0_1/bin/clang++
+/usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/bin/clang++
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % 
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % find /usr -name clang   
+/usr/bin/clang
+find: /usr/sbin/authserver: Permission denied
+/usr/local/Homebrew/Library/Homebrew/shims/mac/super/clang
+/usr/local/Homebrew/Library/Homebrew/shims/super/clang
+/usr/local/Homebrew/Library/Homebrew/shims/linux/super/clang
+/usr/local/Cellar/ccache/3.7.12/libexec/clang
+/usr/local/Cellar/llvm/13.0.0_1/bin/clang
+/usr/local/Cellar/llvm/13.0.0_1/include/clang
+/usr/local/Cellar/llvm/13.0.0_1/lib/clang
+/usr/local/Cellar/llvm/13.0.0_1/lib/cmake/clang
+/usr/local/Cellar/llvm/13.0.0_1/lib/python3.9/site-packages/clang
+/usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/bin/clang
+/usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/include/clang
+/usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/clang
+/usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/cmake/clang
+/usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/python3.9/site-packages/clang
+/usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/share/clang
+/usr/local/Cellar/llvm/13.0.0_1/share/clang
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % 
+
+
+
+0) Consider to revisit this log if I get future Python problems?
+
+	==> I went ahead and removed Python 3.7 from /Library/Frameworks/Python.framework/Versions
+
+It seems Python install on macOS is a MESS?
+
+macOS REQUIRES a system installed Python 2.7 for its inner workings but it is not clear from searching the web where this is or how to detect other Python versions that are s a f e to remove?
+
+If we list the Python links in /usr/bin it seems the /System/Library/Frameworks/Python.framework/Versions are macOS binaries that is actually different from /Library/Frameworks/Python.framework/Versions
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro local % ls -l /usr/bin/python*
+lrwxr-xr-x  1 root  wheel     75 Oct 13  2019 /usr/bin/python -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7
+lrwxr-xr-x  1 root  wheel     82 Oct 13  2019 /usr/bin/python-config -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-config
+lrwxr-xr-x  1 root  wheel     75 Oct 13  2019 /usr/bin/python2 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7
+lrwxr-xr-x  1 root  wheel     75 Oct 13  2019 /usr/bin/python2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7
+lrwxr-xr-x  1 root  wheel     82 Oct 13  2019 /usr/bin/python2.7-config -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-config
+-rwxr-xr-x  1 root  wheel  31488 Sep 22  2020 /usr/bin/python3
+lrwxr-xr-x  1 root  wheel     76 Oct 13  2019 /usr/bin/pythonw -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/pythonw2.7
+lrwxr-xr-x  1 root  wheel     76 Oct 13  2019 /usr/bin/pythonw2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/pythonw2.7
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro local %
+
+I went ahead and used Brew to force the links update for Python 3.9 (to latest python 3.9.9)
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % brew link --overwrite --dry-run python@3.9
+Would remove:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3
+/usr/local/bin/2to3-3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3-3.9
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3
+/usr/local/bin/idle3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3.9
+/usr/local/bin/pip3 -> /usr/local/Cellar/python@3.9.6/3.9.6_3/bin/pip3
+/usr/local/bin/pip3.9 -> /usr/local/Cellar/python@3.9.6/3.9.6_3/bin/pip3.9
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3
+/usr/local/bin/pydoc3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3.9
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3-config
+/usr/local/bin/python3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+/usr/local/bin/python3.9-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9-config
+/usr/local/bin/wheel3 -> /usr/local/Cellar/python@3.9.6/3.9.6_3/bin/wheel3
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % brew link --overwrite python@3.9 
+Linking /usr/local/Cellar/python@3.9/3.9.9... 24 symlinks created.
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % 
+
+And now it seems the /usr/local/bin python related files links to 3.9.9?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % ls -l /usr/local/bin/py*
+lrwxr-xr-x  1 kjell-olovhogdal  admin  37 Nov 27 16:14 /usr/local/bin/pydoc3 -> ../Cellar/python@3.9/3.9.9/bin/pydoc3
+lrwxr-xr-x  1 root              wheel  70 May 27  2019 /usr/local/bin/pydoc3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/pydoc3.7
+lrwxr-xr-x  1 kjell-olovhogdal  admin  39 Nov 27 16:14 /usr/local/bin/pydoc3.9 -> ../Cellar/python@3.9/3.9.9/bin/pydoc3.9
+lrwxr-xr-x  1 kjell-olovhogdal  admin  35 Nov 27 13:59 /usr/local/bin/pylupdate6 -> ../Cellar/pyqt/6.2.0/bin/pylupdate6
+lrwxr-xr-x  1 kjell-olovhogdal  admin  50 Nov 27 13:57 /usr/local/bin/pyside2-lupdate -> ../Cellar/pyside2-tools/5.15.2/bin/pyside2-lupdate
+lrwxr-xr-x  1 kjell-olovhogdal  admin  49 Nov 27 13:57 /usr/local/bin/pyside_tool.py -> ../Cellar/pyside2-tools/5.15.2/bin/pyside_tool.py
+lrwxr-xr-x  1 kjell-olovhogdal  admin  38 Nov 27 16:14 /usr/local/bin/python3 -> ../Cellar/python@3.9/3.9.9/bin/python3
+lrwxr-xr-x  1 kjell-olovhogdal  admin  45 Nov 27 16:14 /usr/local/bin/python3-config -> ../Cellar/python@3.9/3.9.9/bin/python3-config
+lrwxr-xr-x  1 root              wheel  71 May 27  2019 /usr/local/bin/python3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7
+lrwxr-xr-x  1 root              wheel  78 May 27  2019 /usr/local/bin/python3.7-config -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7-config
+lrwxr-xr-x  1 root              wheel  72 May 27  2019 /usr/local/bin/python3.7m -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7m
+lrwxr-xr-x  1 root              wheel  79 May 27  2019 /usr/local/bin/python3.7m-config -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7m-config
+lrwxr-xr-x  1 kjell-olovhogdal  admin  40 Nov 27 16:14 /usr/local/bin/python3.9 -> ../Cellar/python@3.9/3.9.9/bin/python3.9
+lrwxr-xr-x  1 kjell-olovhogdal  admin  47 Nov 27 16:14 /usr/local/bin/python3.9-config -> ../Cellar/python@3.9/3.9.9/bin/python3.9-config
+lrwxr-xr-x  1 kjell-olovhogdal  admin  31 Nov 27 13:59 /usr/local/bin/pyuic6 -> ../Cellar/pyqt/6.2.0/bin/pyuic6
+lrwxr-xr-x  1 root              wheel  68 May 27  2019 /usr/local/bin/pyvenv -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/pyvenv
+lrwxr-xr-x  1 root              wheel  72 May 27  2019 /usr/local/bin/pyvenv-3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/pyvenv-3.7
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % 
+
+==> But 3.7 is still there?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % ls -l /usr/local/bin/*3.7* 
+lrwxr-xr-x  1 root  wheel  70 May 27  2019 /usr/local/bin/2to3-3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/2to3-3.7
+lrwxrwxr-x  1 root  admin  78 May 27  2019 /usr/local/bin/easy_install-3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/easy_install-3.7
+lrwxr-xr-x  1 root  wheel  69 May 27  2019 /usr/local/bin/idle3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/idle3.7
+lrwxrwxr-x  1 root  admin  68 May 27  2019 /usr/local/bin/pip3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/pip3.7
+lrwxr-xr-x  1 root  wheel  70 May 27  2019 /usr/local/bin/pydoc3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/pydoc3.7
+lrwxr-xr-x  1 root  wheel  71 May 27  2019 /usr/local/bin/python3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7
+lrwxr-xr-x  1 root  wheel  78 May 27  2019 /usr/local/bin/python3.7-config -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7-config
+lrwxr-xr-x  1 root  wheel  72 May 27  2019 /usr/local/bin/python3.7m -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7m
+lrwxr-xr-x  1 root  wheel  79 May 27  2019 /usr/local/bin/python3.7m-config -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7m-config
+lrwxr-xr-x  1 root  wheel  72 May 27  2019 /usr/local/bin/pyvenv-3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/pyvenv-3.7
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % 
+
+I took the plunge and removed 3.7 from the shell
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % rm /usr/local/bin/*3.7*
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % ls -l /usr/local/bin/*3.7*
+zsh: no matches found: /usr/local/bin/*3.7*
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % rm -r /Library/Frameworks/Python.framework/Versions/3.7
+rm: /Library/Frameworks/Python.framework/Versions/3.7: Permission denied
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % sudo rm -r /Library/Frameworks/Python.framework/Versions/3.7
+Password:
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % ls  /Library/Frameworks/Python.framework/Versions 
+3.9	Current
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % 
+
+
+1) Consider the errors reported by the Brew Upgrade llvm command?
+
+	==> It seems symlink /usr/local/bin/2to3 could not be updated (to refer to /usr/local/bin/2to3)
+
+==> Installing llvm dependency: python@3.9
+==> Pouring python@3.9--3.9.9.catalina.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.9
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run python@3.9
+
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3
+/usr/local/bin/2to3-3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3-3.9
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3
+/usr/local/bin/idle3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3.9
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3
+/usr/local/bin/pydoc3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3.9
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3-config
+/usr/local/bin/python3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+/usr/local/bin/python3.9-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9-config
+
+
+		==> It seems /usr/local/bin/2to3 is linked to macOS Framework Python (and I have Python 3.7 and 3.9 installed into /Library/Frameworks/Python.framework/Versions) ?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro local % ls -l /usr/local/bin/2to3
+lrwxr-xr-x  1 root  wheel  66 Oct 14  2020 /usr/local/bin/2to3 -> ../../../Library/Frameworks/Python.framework/Versions/3.9/bin/2to3
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro local % ls -l /usr/local/bin/python*
+lrwxr-xr-x  1 root  wheel  69 Oct 14  2020 /usr/local/bin/python3 -> ../../../Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+lrwxr-xr-x  1 root  wheel  76 Oct 14  2020 /usr/local/bin/python3-config -> ../../../Library/Frameworks/Python.framework/Versions/3.9/bin/python3-config
+lrwxr-xr-x  1 root  wheel  71 May 27  2019 /usr/local/bin/python3.7 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7
+lrwxr-xr-x  1 root  wheel  78 May 27  2019 /usr/local/bin/python3.7-config -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7-config
+lrwxr-xr-x  1 root  wheel  72 May 27  2019 /usr/local/bin/python3.7m -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7m
+lrwxr-xr-x  1 root  wheel  79 May 27  2019 /usr/local/bin/python3.7m-config -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7m-config
+lrwxr-xr-x  1 root  wheel  71 Oct 14  2020 /usr/local/bin/python3.9 -> ../../../Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+lrwxr-xr-x  1 root  wheel  78 Oct 14  2020 /usr/local/bin/python3.9-config -> ../../../Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9-config
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro local % 
+
+		==> It seems the Brew suggestion would remove my existing Python 3.9 links to /Library/Frameworks/Python.framework/Versions/3.9?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro local % brew link --overwrite --dry-run python@3.9
+Would remove:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3
+/usr/local/bin/2to3-3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3-3.9
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3
+/usr/local/bin/idle3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3.9
+/usr/local/bin/pip3 -> /usr/local/Cellar/python@3.9.6/3.9.6_3/bin/pip3
+/usr/local/bin/pip3.9 -> /usr/local/Cellar/python@3.9.6/3.9.6_3/bin/pip3.9
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3
+/usr/local/bin/pydoc3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3.9
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3-config
+/usr/local/bin/python3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+/usr/local/bin/python3.9-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9-config
+/usr/local/bin/wheel3 -> /usr/local/Cellar/python@3.9.6/3.9.6_3/bin/wheel3
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro local % 
+
+It seems after I have removed links in /usr/local/bin to Python 3.7 AND 3.9 in /Library/Frameworks/... I now only have links to the Brew installed 3.9.9?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % ls -l /usr/local/bin | grep python
+lrwxr-xr-x  1 kjell-olovhogdal  admin        35 Nov 27 16:14 2to3 -> ../Cellar/python@3.9/3.9.9/bin/2to3
+lrwxr-xr-x  1 kjell-olovhogdal  admin        39 Nov 27 16:14 2to3-3.9 -> ../Cellar/python@3.9/3.9.9/bin/2to3-3.9
+lrwxr-xr-x  1 kjell-olovhogdal  admin        47 Oct 14  2020 easy_install-3.8 -> ../Cellar/python@3.8/3.8.6/bin/easy_install-3.8
+lrwxr-xr-x  1 kjell-olovhogdal  admin        36 Nov 27 16:14 idle3 -> ../Cellar/python@3.9/3.9.9/bin/idle3
+lrwxr-xr-x  1 kjell-olovhogdal  admin        38 Nov 27 16:14 idle3.9 -> ../Cellar/python@3.9/3.9.9/bin/idle3.9
+lrwxr-xr-x  1 kjell-olovhogdal  admin        35 Nov 27 16:14 pip3 -> ../Cellar/python@3.9/3.9.9/bin/pip3
+lrwxr-xr-x  1 kjell-olovhogdal  admin        37 Oct 14  2020 pip3.8 -> ../Cellar/python@3.8/3.8.6/bin/pip3.8
+lrwxr-xr-x  1 kjell-olovhogdal  admin        37 Nov 27 16:14 pip3.9 -> ../Cellar/python@3.9/3.9.9/bin/pip3.9
+lrwxr-xr-x  1 kjell-olovhogdal  admin        37 Nov 27 16:14 pydoc3 -> ../Cellar/python@3.9/3.9.9/bin/pydoc3
+lrwxr-xr-x  1 kjell-olovhogdal  admin        39 Nov 27 16:14 pydoc3.9 -> ../Cellar/python@3.9/3.9.9/bin/pydoc3.9
+lrwxr-xr-x  1 kjell-olovhogdal  admin        38 Nov 27 16:14 python3 -> ../Cellar/python@3.9/3.9.9/bin/python3
+lrwxr-xr-x  1 kjell-olovhogdal  admin        45 Nov 27 16:14 python3-config -> ../Cellar/python@3.9/3.9.9/bin/python3-config
+lrwxr-xr-x  1 kjell-olovhogdal  admin        40 Nov 27 16:14 python3.9 -> ../Cellar/python@3.9/3.9.9/bin/python3.9
+lrwxr-xr-x  1 kjell-olovhogdal  admin        47 Nov 27 16:14 python3.9-config -> ../Cellar/python@3.9/3.9.9/bin/python3.9-config
+lrwxr-xr-x  1 kjell-olovhogdal  admin        37 Nov 27 16:14 wheel3 -> ../Cellar/python@3.9/3.9.9/bin/wheel3
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % ls -l           
+
+
+	==> It seems pyqt@5 (version 5?) is no longer present on my system (but vtk@8.2 depends on it)?
+
+==> Installing vtk@8.2 dependency: pyqt@5
+==> Pouring pyqt@5--5.15.6.catalina.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/pylupdate5
+Target /usr/local/bin/pylupdate5
+is a symlink belonging to pyqt. You can unlink it:
+  brew unlink pyqt
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite pyqt@5
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run pyqt@5
+
+Possible conflicting files are:
+/usr/local/bin/pylupdate5 -> /usr/local/Cellar/pyqt/5.15.1/bin/pylupdate5
+/usr/local/bin/pyrcc5 -> /usr/local/Cellar/pyqt/5.15.1/bin/pyrcc5
+/usr/local/bin/pyuic5 -> /usr/local/Cellar/pyqt/5.15.1/bin/pyuic5
+
+If I search for pyqt links I get only references to version 6.2.0?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % ls /usr/local/Cellar/pyqt            
+6.2.0
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % ls -l /usr/local/bin | grep pyqt                   
+lrwxr-xr-x  1 kjell-olovhogdal  admin        35 Nov 27 13:59 pylupdate6 -> ../Cellar/pyqt/6.2.0/bin/pylupdate6
+lrwxr-xr-x  1 kjell-olovhogdal  admin        31 Nov 27 13:59 pyuic6 -> ../Cellar/pyqt/6.2.0/bin/pyuic6
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro / % 
+
+
+
+	==> ??
+
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.9.6
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run python@3.9.6
+
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3
+/usr/local/bin/2to3-3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3-3.9
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3
+/usr/local/bin/idle3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3.9
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3
+/usr/local/bin/pydoc3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3.9
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3-config
+/usr/local/bin/python3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+/usr/local/bin/python3.9-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9-config
+
+	==>
+
+==> Installing freecad/freecad/shiboken2 dependency: ./numpy@1.19.4
+==> Pouring numpy
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/f2py
+Target /usr/local/bin/f2py
+is a symlink belonging to numpy. You can unlink it:
+  brew unlink numpy
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite numpy@1.19.4
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run numpy@1.19.4
+
+Possible conflicting files are:
+/usr/local/bin/f2py -> /usr/local/Cellar/numpy/1.21.4/bin/f2py
+/usr/local/bin/f2py3 -> /usr/local/Cellar/numpy/1.21.4/bin/f2py3
+/usr/local/bin/f2py3.9 -> /usr/local/Cellar/numpy/1.21.4/bin/f2py3.9
+/usr/local/lib/python3.9/site-packages/numpy/LICENSE.txt -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/LICENSE.txt
+/usr/local/lib/python3.9/site-packages/numpy/__config__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/__config__.py
+...
+*many many more...*
+
+		==> It seems brew link overwrite will remove numpy in 
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ %  brew link --overwrite --dry-run numpy@1.19.4
+Would remove:
+/usr/local/bin/f2py -> /usr/local/Cellar/numpy/1.21.4/bin/f2py
+/usr/local/bin/f2py3 -> /usr/local/Cellar/numpy/1.21.4/bin/f2py3
+/usr/local/bin/f2py3.9 -> /usr/local/Cellar/numpy/1.21.4/bin/f2py3.9
+/usr/local/lib/python3.9/site-packages/numpy/LICENSE.txt -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/LICENSE.txt
+/usr/local/lib/python3.9/site-packages/numpy/__config__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/__config__.py
+/usr/local/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd
+/usr/local/lib/python3.9/site-packages/numpy/__init__.pxd -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/__init__.pxd
+/usr/local/lib/python3.9/site-packages/numpy/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/_distributor_init.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/_distributor_init.py
+/usr/local/lib/python3.9/site-packages/numpy/_globals.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/_globals.py
+/usr/local/lib/python3.9/site-packages/numpy/_pytesttester.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/_pytesttester.py
+/usr/local/lib/python3.9/site-packages/numpy/compat/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/compat/__init__.py
+...
+*many many more...*
+
+		==> I took the leap and did brew link --overwrite numpy@1.19.4
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew link --overwrite numpy@1.19.4
+Linking /usr/local/Cellar/numpy@1.19.4/1.19.4... 487 symlinks created.
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % ls -l /usr/local/lib/python* 
+/usr/local/lib/python3.8:
+total 0
+drwxr-xr-x  18 kjell-olovhogdal  admin  576 Nov 27 13:57 site-packages
+
+/usr/local/lib/python3.9:
+total 0
+drwxr-xr-x  39 kjell-olovhogdal  admin  1248 Nov 27 13:59 site-packages
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % ls -l /usr/local/lib/python3.8
+total 0
+drwxr-xr-x  18 kjell-olovhogdal  admin  576 Nov 27 13:57 site-packages
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % ls -l /usr/local/lib/python3.8/
+total 0
+drwxr-xr-x  18 kjell-olovhogdal  admin  576 Nov 27 13:57 site-packages
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % ls -l /usr/local/lib/python3.9/
+total 0
+drwxr-xr-x  39 kjell-olovhogdal  admin  1248 Nov 27 13:59 site-packages
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % rm -r /usr/local/lib/python3*
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % ls /usr/local/lib/py*
+zsh: no matches found: /usr/local/lib/py*
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	==> 
+
+==> Upgrading freecad/freecad/nglib
+  v6.2.2007 -> 6.2.2101 
+
+==> Installing dependencies for freecad/freecad/nglib: ./tbb@2020_u3 and ./opencascade@7.5.0
+==> Installing freecad/freecad/nglib dependency: ./tbb@2020_u3
+==> Pouring tbb
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink include/tbb/blocked_range.h
+Target /usr/local/include/tbb/blocked_range.h
+is a symlink belonging to tbb. You can unlink it:
+  brew unlink tbb
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite tbb@2020_u3
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run tbb@2020_u3
+
+Possible conflicting files are:
+/usr/local/include/tbb/blocked_range.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_range.h
+/usr/local/include/tbb/blocked_range2d.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_range2d.h
+/usr/local/include/tbb/blocked_range3d.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_range3d.h
+...
+*many many more...*
+
+		==> I went ahead and did the brew link --overwrite
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ %  brew link --overwrite --dry-run tbb@2020_u3
+Would remove:
+/usr/local/include/tbb/blocked_range.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_range.h
+/usr/local/include/tbb/blocked_range2d.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_range2d.h
+/usr/local/include/tbb/blocked_range3d.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_range3d.h
+/usr/local/include/tbb/blocked_rangeNd.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_rangeNd.h
+/usr/local/include/tbb/cache_aligned_allocator.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/cache_aligned_allocator.h
+/usr/local/include/tbb/combinable.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/combinable.h
+/usr/local/include/tbb/concurrent_hash_map.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_hash_map.h
+/usr/local/include/tbb/concurrent_lru_cache.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_lru_cache.h
+/usr/local/include/tbb/concurrent_map.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_map.h
+/usr/local/include/tbb/concurrent_priority_queue.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_priority_queue.h
+/usr/local/include/tbb/concurrent_queue.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_queue.h
+/usr/local/include/tbb/concurrent_set.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_set.h
+/usr/local/include/tbb/concurrent_unordered_map.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_unordered_map.h
+/usr/local/include/tbb/concurrent_unordered_set.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_unordered_set.h
+/usr/local/include/tbb/concurrent_vector.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_vector.h
+/usr/local/include/tbb/enumerable_thread_specific.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/enumerable_thread_specific.h
+/usr/local/include/tbb/flow_graph.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/flow_graph.h
+...
+*many more...*
+
+		==> It seems TBB is a C++ project "Thread Building Blocks" (https://github.com/oneapi-src/oneTBB <https://github.com/oneapi-src/oneTBB> )
+	
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ %  brew link --overwrite tbb@2020_u3 
+Linking /usr/local/Cellar/tbb@2020_u3/2020_U3_1... 91 symlinks created.
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % ls -l /usr/local/include/tbb/
+total 0
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 aggregator.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/aggregator.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 aligned_space.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/aligned_space.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  55 Nov 27 17:39 atomic.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/atomic.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 blocked_range.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/blocked_range.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  64 Nov 27 17:39 blocked_range2d.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/blocked_range2d.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  64 Nov 27 17:39 blocked_range3d.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/blocked_range3d.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  64 Nov 27 17:39 blocked_rangeNd.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/blocked_rangeNd.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  72 Nov 27 17:39 cache_aligned_allocator.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/cache_aligned_allocator.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  63 Nov 27 13:59 collaborative_call_once.h -> ../../Cellar/tbb/2021.4.0/include/tbb/collaborative_call_once.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 combinable.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/combinable.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  53 Nov 27 17:39 compat -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/compat
+lrwxr-xr-x  1 kjell-olovhogdal  admin  68 Nov 27 17:39 concurrent_hash_map.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/concurrent_hash_map.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  69 Nov 27 17:39 concurrent_lru_cache.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/concurrent_lru_cache.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  63 Nov 27 17:39 concurrent_map.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/concurrent_map.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  74 Nov 27 17:39 concurrent_priority_queue.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/concurrent_priority_queue.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  65 Nov 27 17:39 concurrent_queue.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/concurrent_queue.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  63 Nov 27 17:39 concurrent_set.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/concurrent_set.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  73 Nov 27 17:39 concurrent_unordered_map.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/concurrent_unordered_map.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  73 Nov 27 17:39 concurrent_unordered_set.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/concurrent_unordered_set.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  66 Nov 27 17:39 concurrent_vector.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/concurrent_vector.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  65 Nov 27 17:39 critical_section.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/critical_section.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  75 Nov 27 17:39 enumerable_thread_specific.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/enumerable_thread_specific.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 flow_graph.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/flow_graph.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  72 Nov 27 17:39 flow_graph_abstractions.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/flow_graph_abstractions.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  71 Nov 27 17:39 flow_graph_opencl_node.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/flow_graph_opencl_node.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  63 Nov 27 17:39 global_control.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/global_control.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  57 Nov 27 17:39 index.html -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/index.html
+lrwxr-xr-x  1 kjell-olovhogdal  admin  53 Nov 27 17:39 info.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/info.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  55 Nov 27 17:39 internal -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/internal
+lrwxr-xr-x  1 kjell-olovhogdal  admin  58 Nov 27 17:39 iterators.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/iterators.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  54 Nov 27 17:39 machine -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/machine
+lrwxr-xr-x  1 kjell-olovhogdal  admin  60 Nov 27 17:39 memory_pool.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/memory_pool.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  54 Nov 27 17:39 mutex.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/mutex.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 null_mutex.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/null_mutex.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 null_rw_mutex.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/null_rw_mutex.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  60 Nov 27 17:39 parallel_do.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/parallel_do.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  61 Nov 27 17:39 parallel_for.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/parallel_for.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  66 Nov 27 17:39 parallel_for_each.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/parallel_for_each.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  64 Nov 27 17:39 parallel_invoke.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/parallel_invoke.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  57 Nov 27 13:59 parallel_pipeline.h -> ../../Cellar/tbb/2021.4.0/include/tbb/parallel_pipeline.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  64 Nov 27 17:39 parallel_reduce.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/parallel_reduce.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 parallel_scan.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/parallel_scan.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 parallel_sort.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/parallel_sort.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  63 Nov 27 17:39 parallel_while.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/parallel_while.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  60 Nov 27 17:39 partitioner.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/partitioner.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  57 Nov 27 17:39 pipeline.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/pipeline.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  49 Nov 27 13:59 profiling.h -> ../../Cellar/tbb/2021.4.0/include/tbb/profiling.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 queuing_mutex.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/queuing_mutex.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  65 Nov 27 17:39 queuing_rw_mutex.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/queuing_rw_mutex.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  67 Nov 27 17:39 reader_writer_lock.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/reader_writer_lock.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  64 Nov 27 17:39 recursive_mutex.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/recursive_mutex.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  63 Nov 27 17:39 runtime_loader.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/runtime_loader.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  67 Nov 27 17:39 scalable_allocator.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/scalable_allocator.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 spin_mutex.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/spin_mutex.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 spin_rw_mutex.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/spin_rw_mutex.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  53 Nov 27 17:39 task.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/task.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 task_arena.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/task_arena.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 task_group.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/task_group.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  68 Nov 27 17:39 task_scheduler_init.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/task_scheduler_init.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  72 Nov 27 17:39 task_scheduler_observer.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/task_scheduler_observer.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  52 Nov 27 17:39 tbb.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbb.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 tbb_allocator.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbb_allocator.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 tbb_config.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbb_config.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  71 Nov 27 17:39 tbb_disable_exceptions.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbb_disable_exceptions.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 tbb_exception.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbb_exception.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  60 Nov 27 17:39 tbb_machine.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbb_machine.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  62 Nov 27 17:39 tbb_profiling.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbb_profiling.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 tbb_stddef.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbb_stddef.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 tbb_thread.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbb_thread.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  64 Nov 27 17:39 tbbmalloc_proxy.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tbbmalloc_proxy.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  59 Nov 27 17:39 tick_count.h -> ../../Cellar/tbb@2020_u3/2020_U3_1/include/tbb/tick_count.h
+lrwxr-xr-x  1 kjell-olovhogdal  admin  47 Nov 27 13:59 version.h -> ../../Cellar/tbb/2021.4.0/include/tbb/version.h
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+
+	==> It seems I got the TBB error twice (See above)
+
+Error: Could not symlink lib/cmake/TBB/TBBConfig.cmake
+Target /usr/local/lib/cmake/TBB/TBBConfig.cmake
+is a symlink belonging to tbb. You can unlink it:
+  brew unlink tbb
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite tbb
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run tbb
+
+... 

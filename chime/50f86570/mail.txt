@@ -1,0 +1,90 @@
+﻿Its seems what is called the System F (second) and System Fω (Higher order) lambda calculus bears strong resemblance to the Tha idea of meta-value layering?
+
+	==> Also see “Todo: Meh and Tha - Consider to compare Haskell library Servant with the Meh language and Tha meta-model?"
+
+1) Consider wikipedia definition of System F (https://en.wikipedia.org/wiki/System_F <https://en.wikipedia.org/wiki/System_F>)?
+
+	“Whereas simply typed lambda calculus has variables ranging over functions, and binders for them, System F additionally has variables ranging over types, and binders for them. As an example, the fact that the identity function can have any type of the form A→ A would be formalized in System F”
+
+	==> It seems the generalisation made in System Fω may be applied to the Tha meta-value layer model?
+
+“That is, Fω is the system which allows functions from types to types where the argument (and result) may be of any order."
+
+	…
+
+2) Consider this article “F-omega -- the workhorse of modern compilers” by on GitHub (https://github.com/leithaus/davinci/blob/master/doc/F-omega.txt <https://github.com/leithaus/davinci/blob/master/doc/F-omega.txt>)?
+
+	
+
+3) Consider to understand “Denotational Semantics/Design”  and “Operational Semantics” to be able to read papers on type systems?
+
+	==> Also see “Todo: Programming - Consider to understand and apply "Denotational Semantics" to design C++ Programs?”
+
+	==> It seems “denotation” means map a term/sign/symbol to its meaning (https://en.wikipedia.org/wiki/Denotation <https://en.wikipedia.org/wiki/Denotation>)?
+
+“Denotation is a translation of a sign to its meaning, precisely to its literal meaning, more or less like dictionaries try to define it. Denotation is sometimes contrasted to connotation, which translates a sign to its associated meanings."
+
+		==> It seems in computer science “meaning” is adressed through “Denotational” and “Operational” semantics?
+		==> Thus, denotational semantics is kind-of related to “declarative” programming while operational semantics relates more with imperative programming?
+
+	==> Consider this wikipedia page “Denotational semantics” (https://en.wikipedia.org/wiki/Denotational_semantics <https://en.wikipedia.org/wiki/Denotational_semantics>)?
+
+“In computer science, denotational semantics (initially known as mathematical semantics or Scott–Strachey semantics) is an approach of formalizing the meanings of programming languages by constructing mathematical objects (called denotations) that describe the meanings of expressions from the languages"
+
+	==> Consider this wikipedia page "Operational Semantics” (https://en.wikipedia.org/wiki/Operational_semantics <https://en.wikipedia.org/wiki/Operational_semantics>)?
+
+“Operational semantics is a category of formal programming language semantics in which certain desired properties of a program, such as correctness, safety or security, are verified by constructing proofs from logical statements about its execution and procedures, rather than by attaching mathematical meanings to its terms (denotational semantics)."
+
+	==> Consider the works of Conal Elliott (referred to by David Sankel)
+
+		==> Se Conal Elliott works published on Github  (https://github.com/conal/talk-2014-lambdajam-denotational-design <https://github.com/conal/talk-2014-lambdajam-denotational-design>)?
+		==> Consider this talk “Lambda Jam 2015 - Conal Elliott - Denotational Design: From Meanings To Programs” (https://www.youtube.com/watch?v=bmKYiUOEo2A <https://www.youtube.com/watch?v=bmKYiUOEo2A>)?
+
+	==> Also see selected talks by David Sankel on C++ where he uses Denotational/Operational Semantics/Design?
+
+		==> Consider this talk “C++Now 2017: David Sankel "The Mathematical Underpinnings of Promises in C++"” (https://www.youtube.com/watch?v=2OY0Zn3oBCE&list=PL_AKIMJc4roXJldxjJGtH8PJb4dY6nN1D&index=15 <https://www.youtube.com/watch?v=2OY0Zn3oBCE&list=PL_AKIMJc4roXJldxjJGtH8PJb4dY6nN1D&index=15>)?
+
+			==> At 14:03 he starts talking about the mathematical notations he will use (https://youtu.be/2OY0Zn3oBCE?list=PL_AKIMJc4roXJldxjJGtH8PJb4dY6nN1D&t=843 <https://youtu.be/2OY0Zn3oBCE?list=PL_AKIMJc4roXJldxjJGtH8PJb4dY6nN1D&t=843>)?
+
+				==> But he uses an unlucky notion (where the ‘.’ is normal sentence punctuation, not lambda calculus binding nor C++ member access operator)!
+
+				
+
+				==> a : b		means <name> : <type> "a is of type b” (i.e., declares name “a” to be defined by meta-value “b”)
+				==> u -> v	means a function that maps values of type u into values of type v (a meta-value mapping)
+				==> (u,v) -> w	means a function that maps values of pair<u,v> into values of type w (i.e., u -> v -> w)
+				
+			==> At 54:04 he introduces “Operational Semantics” (https://youtu.be/2OY0Zn3oBCE?list=PL_AKIMJc4roXJldxjJGtH8PJb4dY6nN1D&t=3244 <https://youtu.be/2OY0Zn3oBCE?list=PL_AKIMJc4roXJldxjJGtH8PJb4dY6nN1D&t=3244>)?
+			==> It seems ‘E’ refers to an environment (and this is crucial to operational semantics)?
+			==> The semantics seems to relay on two “constructs”?
+			==> The first one is how a pre-condition allows for a reduction of state?
+
+			<some pre-condition>
+			------------------------------- 
+			<some possible reduction of state>
+
+			==> The second one the actual state reduction (using the ‘->’ symbol)?
+
+			<State> -> <State>
+
+
+			=> It seems the bracket (<…>) syntax defines a State as a pair of an environment and a sequence of statements (separated by ‘;'?
+
+			<E, p2=p1.then(f);e>	reads: Environment E and “head" statement “p2=p1.then(f)” followed by statements tail e?
+
+			==> And state reduction ‘->’ is about mutating the environment?
+
+			… -> <EU{p1>>p2},e> reads:Environment E is mutated into E U {p1>>p2} which means the union of E and {p1>>p2} and the taking statements e (p2 depends on (>>) p1)
+
+				==> Note: actual dependancy p2=p1.then(f) is defined in the source state (to the left of ‘->’) so the {…} expression just remembers that p2 is sequenced after p1?
+
+		
+			==> Hm… It seems the ‘>>’ symbol states dependancy in time (p1>>p2 means p1 will be known before p2)?
+
+
+
+
+…
+
+Consider to delve deeper into the System F and Lambda calculus to map the Tha meta-value layers idea to existing computer programming idioms and mathematical systems?
+...

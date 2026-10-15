@@ -1,0 +1,79 @@
+﻿Could it be fun and interesting to check out the Python based Jupyter Notebook that seems to be an interactive Repl-like programming ID that runs in the browser?
+
+	==> Also see “Todo: C++ Teaching - Consider to design a C++ REPL Programming IDE or find some existing ones?”
+	==> Also see “Todo: Darwinet Repl - Consider we may decorate the Meh Repl with a meta-processor (Cling C++ Repl style) to implement repl commands separate from the Meh language Tha mutations?"
+
+1) Consider this NDS talk “The secret weapon for developers, Notebooks. - Cristian Prieto” as having good leads into this framework (https://www.youtube.com/watch?v=H0IL7zZSLjg <https://www.youtube.com/watch?v=H0IL7zZSLjg>)?
+
+2) Consider to try out Jupyter Notebook on my Macbook Pro 2014?
+
+	==> I followed the installation instructions here (http://jupyter.org/install.html <http://jupyter.org/install.html>)
+
+	==> I chose to install as part of Anaconda and downloaded for my MAC from (https://www.continuum.io/downloads#macos <https://www.continuum.io/downloads#macos>)	
+	==> The graphical installer told me it will install a large set of libraries and modify my path variable.
+
+	
+
+	==> Installation stated it will occupy 1.4 Gb?!
+	==> Anyhow, Installation seems to have gone well?
+
+“Anaconda is the leading open data science platform powered by Python.
+
+Share your notebooks and packages on Anaconda Cloud!
+Sign up for free <https://anaconda.org/>
+"
+
+	==> I could now start a local Jupyter Notebook in my Web browser.
+
+Last login: Wed Aug  2 15:38:36 on ttys001
+Kjell-Olovs-MacBook-Pro:~ kjell-olovhogdahl$ jupyter notebook
+[I 19:29:17.339 NotebookApp] Writing notebook server cookie secret to /Users/kjell-olovhogdahl/Library/Jupyter/runtime/notebook_cookie_secret
+[I 19:29:17.388 NotebookApp] Serving notebooks from local directory: /Users/kjell-olovhogdahl
+[I 19:29:17.389 NotebookApp] 0 active kernels 
+[I 19:29:17.389 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=e7cbfd19e46190e911b534ea84103a0e4b3f7f91bcbbbf96
+[I 19:29:17.389 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 19:29:17.392 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=e7cbfd19e46190e911b534ea84103a0e4b3f7f91bcbbbf96
+[I 19:29:17.717 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+
+
+	==> And my web-browser opened into what looks like a file system (aha - its my local machine file system)?
+
+	
+
+3) There seem to be a C++ interpreter for Jupyter Notebook based on Cling (https://jasonqsy.github.io/add-c-kernel-for-jupyter-notebook.html <https://jasonqsy.github.io/add-c-kernel-for-jupyter-notebook.html>)?
+
+	==> Hm…it is posted 1 of April (is this an aprils fool joke)?!
+
+	==> But Cling exists as a C++ Repl (https://root.cern.ch/cling <https://root.cern.ch/cling>)?
+Command Line
+
+Cling has its own command line, which looks like any other Unix shell. The emacs-like command line editor is what we call interactive command line or interactive shell.
+Once we start Cling it automatically includes several header files and its own runtime universe. Thus it creates the minimal environment for the user to start.
+Grammar
+Cling is capable to parse everything that Clang can do. In addition, Cling can parse some interpreter-specific C++ extensions.
+Metaprocessor
+Cling Metaprocessor provides convenient and easy to use interface for changing the interpreter's internal state or for executing handy commands. Cling provides the following metaprocessor commands:
+syntax: .(command), where command is:
+.x filename.cxx - loads filename and calls void filename() if defined
+.L library | filename.cxx - loads library or filename.cxx
+.printAST - shows the abstract syntax tree after each processed entity
+.I path - adds an include path
+
+		==> A Metaprocessor seems just shat we would like to have for the Meh’ Repls as well (to mutate the interpreter state in some convention ways)?
+
+	==> This seems to be a Github (fork?) of Cling including jupyter plug-in (https://github.com/root-project/cling <https://github.com/root-project/cling> )?
+
+		==> Consider to try out Cling C++ Repl both stand-alone (part of Anaconda) and in Jupyter NoteBook?
+
+		WE ARE HERE...
+
+	…
+
+…
+
+Consider to delve deeper into the behaviour and value of using Jupyter Notebook style programming (e.g. for C++ Repl)?
+...

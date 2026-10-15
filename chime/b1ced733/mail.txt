@@ -1,0 +1,11 @@
+﻿Could we imagine to use open source WebKit to build a cross platform C++ Facebook client?
+
+1) Consider to test if Facebook requires the user to use a trusted browser?
+
+2) Consider if we may use emscriptem to have a C++ Facebook client run within a trusted browser?
+
+...
+
+Consider to delve into this idea to implement a C++ API to a local html client, e.g., Facebook?
+
+Skickat från min iPhone

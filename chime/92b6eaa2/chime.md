@@ -1,0 +1,22 @@
+# Todo: Write about society failure to cope with change
+
+```#92b6eaa2``` *As of 2015-08-05 23:28*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Society is unable to cope with change. We believe that we need tro act and react to hinder change. We aslo believe that current society is the truly best one and thus must not change (all other societies are worse).
+
+Failure to organize society to cope with inevitable change causes all sort of problems.
+
+1) We can’t handle when labour is driven extinct by automation and enhanced efficiency.  
+2) We can’t cope with immigration  
+3) We can’t cope with growth in the numbers of those in need.  
+4) We can’t believe in a better future (change is not wanted, a threat)  
+5) We place all faith to cope with change to the financial market.  
+6) We fail to see the inconsistency between progress (i.e,. change) with fixed truth and order of society (that must not change)  
+…
+
+Play with this focus of our failure to cope with change. And also play with the related concept of a fixed truth.
+
+{% endraw %}

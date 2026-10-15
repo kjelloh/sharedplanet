@@ -1,0 +1,47 @@
+﻿It seems I have some intuitive feeling that I may be able to design and build a special keyboard for source code input?
+
+	==> Also see “Todo: Consider to build the DIY ibm-like old-style tactile switches keyboard as indicated by Snazzy Lab youtube video?”
+
+1) Consider a multiple-key-press “Piano Chord” approach to enter source code?
+
+	==> Consider to enter a matched parenthesis “{ … }” with some finger-pinch keyboard press?
+
+	==> Consider to leverage the four-layer Tha model of C++ to enter keywords with a combination of layer + first character pinch?
+
+		==> Consider “int” = 2 + ‘i’
+		==> Consider “struct” = 3 + ’s’
+		==> Consider “class” = 3 + ‘c’
+		==> Consider “union” = 3 + ‘u’
+		==> Consider “template” = 4 + ’t’
+
+	…
+
+2) Consider to study game controllers for inspiration to a grip-based source-code input device (https://en.wikipedia.org/wiki/Game_controller)?
+
+	
+	A common two hand game controller
+
+	
+
+	
+	A dual joy stick game controller
+
+	
+	A steering wheel game controller
+
+	
+	A game controller with both foot pedals and steering wheel
+
+3) Consider to study different text input keyboard designs?
+
+	
+	The Kinesis Freestyle 2 ergonomic keyboard
+
+	==> Consider this Braille Keyboard for a user interface for blind people for using the web and a PC (https://www.youtube.com/watch?v=ytS_NtjHew4)?
+
+	
+
+...
+
+
+Consider to continue to imagine faster and less error prone ways to enter source code for computer programming?

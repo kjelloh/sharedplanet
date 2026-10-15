@@ -1,0 +1,36 @@
+# Todo: Consider to delve into the thinking of Canadian academic, publisher, writer and think tank president Irvin Studin?
+
+```#e5f60201``` *As of 2022-02-25 12:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I stumbled on Irvin Studin in a youtube video by CBC News where he made interesting and sesnible comments on Russia and China relations in the framing of Russia "invading" Ukraine.
+
+1) Consider the Irvin Studin comments in CBC News youtube vidoe "The National | Russia invades Ukraine" (<https://youtu.be/y5OcZ9DqHdM> )?
+
+==&gt; Consider Irvin Studin comments at around 10:50 to 12:40 (<https://youtu.be/y5OcZ9DqHdM?t=651> )?
+
+==&gt; Consider Irvin Studin comments at around 33:00 to 35:05 (<https://youtu.be/y5OcZ9DqHdM?t=1983> )?
+
+==&gt; Consider Irvin Studin comments at around 38:50 to 40:55 (<https://youtu.be/y5OcZ9DqHdM?t=2333> )?
+
+> *Irvin Studin seems to state China is the most powerful economy after the pandemic and Russia covers the largest land mass of all countries. So Russia and China together forms the "centre of the world". Interesting, relevant and believable I think.*
+
+> *He also states Asian countries as less ideological as western countries. Also **Interesting, relevant and believable.*
+
+> *He states India, China, North and South Korea with Israel as important and relevant powers that has "cards to play" to affect the progress of Russias strike against Ukraine. Again, **Interesting, relevant and believable.*
+
+> *He proposes we should take Putins claims at "face value" and as rational in the framework he has. This is also **Interesting, relevant and believable.*
+
+> *All in all Irvin Studin seems like a voice to listen to because he provides a way of framing the situation in a way that goes against the (naive?) standard framing west media and politicians communicate. And as such he may have something new and valuable to bring to the table for us to understand what is going on and how to relate to it?*
+
+> *For me it is more important to find the model that represents what human activity that is going on than to try to cherry pick observations to ratify any current or old model! The world changes and with that humans perception of it and for us to interact peacefully and prosperous we need to take in and digest alternative world views and incitements to keep society together without having to degrade to using force or violence!*
+
+> *From having seen how Canada with Justin Trudeau at the helm framing what could easily be believed to be a peaceful but understandably frustrated protest by the Truckers under the name of the "Freedom Convoy" as a "Fringe Minority" trying to "violently overthrow the government" I am now awake and intrigued to question how bad we get Putins intentions and rationals from shoe-horning our observations into the explanation as him being a reckless villain with only bad intentions?*
+
+2) Consider the wikipedia article on Irvin Studin (<https://en.wikipedia.org/wiki/Irvin_Studin> )?
+
+...
+
+{% endraw %}

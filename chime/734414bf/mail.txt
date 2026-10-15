@@ -1,0 +1,39 @@
+﻿Could it be a way to engage with “her emergence” to understand how hard it is to design a good society in the precedes of emergent kick-back?
+
+1) Consider to implement Conway's Game of Life from some source on GitHub?
+
+	==> Consider this open source C++ implementation of Conway's Game of Life (https://github.com/MarioTalevski/game-of-life <https://github.com/MarioTalevski/game-of-life>)?
+
+	
+
+	…
+
+2) Consider to define some events and situations (states) in  Conway's Game of Life that we like to avoid to occur?
+
+
+	==> Consider to define “god” states that we like to preserve?
+
+	==> Consider we like to avoid the “bad” states by tweaking the rules from which the bad states emerge?
+
+	==> Consider to enhance the game so that bad states are shown in the colour red and good states in the colour green?
+
+		==> Or consider to render bad states with Unicode symbols that represent pain (and in a red colour)?
+		==> And consider to render good states with Unicode symbols that represent pleasure (and in green colour)?
+
+		==> Or should RED be the good (warm) states and BLACK (Blue) to be the bad (cold and painful) states?
+
+	==> Consider to try and show how hard it is to understand the correlation between the rules and the emergent behaviour (stream of states)?
+
+	==> Consider to show how enforcing rules that eliminate the “bad” states also risk eliminating some “god” states?
+
+	…
+
+3) Consider to tie emergence to the model of human (and living things) as emdividuals (emergent dividuals)?
+
+	==> Consider we humans actually emerge from the perceived sate and events (as identified by our four meta-models space-time reality, emotional response, rational story-telling and explained sytheocracies)?
+
+	... 
+
+…
+
+Consider to delve deeper into this idea to use the simple  Conway's Game of Life to provide some intuition into the problem of social engineering in the face of the precedes of emergent phenomena (which we are basically unable to predict)? 

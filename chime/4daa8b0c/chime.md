@@ -1,0 +1,20 @@
+# Todo: Speculate on corporation break down by Commons-based peer production
+
+```#4daa8b0c``` *As of 2015-07-27 00:19*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+One may argue that in the face of possible commons-based peer production the days of corporations has seen its golden age.
+
+When everyone and everything becomes interconnected over global networks the need to centralize production of goods and service in the form of corporations may go away. Why have a factory with employees and administration owned by share holders when the organization may as well be made by a suitable application on the web?
+
+Also, when 3D-printers become affordable, more capable and accurate even production of physical objects may be made by a local provider contracted over the web.
+
+In fact, it is not so hard to imagine a whole company manufacturing some product to be totally replaced by distributed providers over the globe, each providing a needed service of the production and supply chain? A customer orders a pair of shies on the web. A cloud based application synchronizes orders to different providers for the shoe nearby the customer location. Each provider delivers parts for the shoe, or even prints the whole shoe in one stroke, and then contracts some delivery service to pick it up and deliver it to the customer. Other agents take care of book keeping, status reporting, pays taxes and so on. One may even think that any existing company can be distributed and automatically organized by a computer system (business system) that interacts between the chief executive, the chief of finance, the pr department, the workers in production and what-have-you. All just self contracted individuals working from home?
+
+Next step could be using self learning computers that replaces humans at many of these functions of the organization. Even the operator of the 3D-printer may be become a robot. Such distributed self-learning and production systems will also be able to optimize production in ways humans are simply unable or lacks incitements to do. All with the goal to make production both cheep and sustainable.
+
+But at this extreme automated, low-labour providing state there will be no consumers unless we find a new way to distribute wealth (income). Otherwise there will be no-one left that may buy anything. Question is, will there be a need to buy if no-one is needed to produce it? Maybe, if production of goods and services becomes fully automated and self-maintained, then humans can simply go back to be gatherers again? Just go out into this virtual nature and pick what is provided?
+
+{% endraw %}

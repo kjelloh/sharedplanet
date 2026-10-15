@@ -1,0 +1,25 @@
+# Todo: Starta en Sharing Economy för Bolinderstrand and my friends for tools
+
+```#0ee99336``` *As of 2015-10-30 20:26*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to start a Sharing Economy for my friends and Bolinderstrand and my fiends to share tools
+
+1) Share my tools (drill hammer, music recording etc.)  
+2) Use Google docs to establish a simple record of who contributes, who owns and who has.  
+3) Design simple process how to register transfers (who currently has it and where)  
+4) When one contributes one simply updates an excel sheet registering where the tool currently is.  
+…
+
+This should be very easy to set up? Just write an instruction on how to share and loan tools
+
+a) Borrow my drill hammer  
+b) Visit me to record song or other music  
+c) Borrow my glass machine  
+d) To become a member one simply updates the excel sheet with what one contributes with (no need to contribute but have a need)  
+e) The pay-back to attend is the knowledge that one helps another friend with what they do not have  
+...
+
+{% endraw %}

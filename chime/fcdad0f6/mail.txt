@@ -1,0 +1,113 @@
+﻿Now when energy prices are rising i feel it is time to monitor my power consumption.
+
+0) Consider products I can buy and install to monitor my three phase energy consumption?
+
+	==> Consider Shelly 3EM (https://shelly.cloud/products/shelly-3em-smart-home-automation-energy-meter/ <https://shelly.cloud/products/shelly-3em-smart-home-automation-energy-meter/> )?
+
+
+
+It seems to be connected to neutral (blue) and phase (brown) wires?
+
+	==> Consider the "Z-Wave Home Energy Meter" (https://www.dustinhome.se/product/5011108049/z-wave-home-energy-meter?tab=specification <https://www.dustinhome.se/product/5011108049/z-wave-home-energy-meter?tab=specification> )?
+
+
+
+
+1) Consider the electrical layout of my electrical feed inlet box?
+
+
+
+
+From what I know the wiring in my and my neighbours apartments is so that the refrigerator has a separate circuit that does NOT go though the top middle (See 4,5 slot )
+
+
+
+It seems I have access to the three phases wiring both at the top left inlet to the main switch?
+
+The space to clamp a current sensor around these wires are not great so I may have to choose a power meeter with small-enough sensing clamps?
+
+
+2) Consider the vendor meter box used to bill me for electricity?
+
+
+
+It seems I do NOT have a "HAN port" on the apartment power meter?
+
+3) It seems in Sweden we have ruled that all households MUST have a meter with a "HAN port" 2025 at the latest (https://hanporten.se <https://hanporten.se/> )?
+
+"Denna sida innehåller information om det nya lokala kundgränssnitt som ska finnas på nya elmätare i Sverige. De nya elmätarna installeras just nu runt om i landet och skall vara helt utbytta tills 2025."
+
+"Energiföretagen Sverige har tagit fram en branschrekommendation för hur HAN-porten på svenska elmätare bör utformas. Men vissa nätbolag rullade ut nya mätare med HAN-port innan dessa rekommendationer var fullt på plats. Därför finns det även elmätare med den norska varianten av HAN-port. Skillnaden är att den norska är en RJ45 kontakt (vanlig internetsladd) och den svenska är en RJ12 kontakt."
+
+
+	==> It seems the web site source for hanporten.se <http://hanporten.se/> is hosted on Github (https://github.com/u9n/hanporten <https://github.com/u9n/hanporten> )?
+
+"
+HANporten
+
+hanporten.se by Utilitarian is licensed under CC BY-SA 4.0
+
+An information page about the local customer interface in Swedish electricity meters. Also called the HAN port or P1 port
+"
+
+	==> It seems this pdf "Branschrekommendation för lokalt kundgränssnitt för elmätare" is a recommendation on how to design and implement the "HAN Port" on household power meters (https://www.energiforetagen.se/globalassets/energiforetagen/det-erbjuder-vi/kurser-och-konferenser/elnat/branschrekommendation-lokalt-granssnitt-v2_0-201912.pdf <https://www.energiforetagen.se/globalassets/energiforetagen/det-erbjuder-vi/kurser-och-konferenser/elnat/branschrekommendation-lokalt-granssnitt-v2_0-201912.pdf> )?
+
+
+
+	==> It seems the "HAN Porten" is based on ”P1 Companion Standard, version 5.0.2” och alltså baserat på IEC 62056-21 Mode D?
+
+"Energiföretagen Sverige föreslår att det lokala kundgränssnittet på elmätare utformas som ett fysiskt gränssnitt, utförande baserat på den nederländska implementeringen beskriven i ”P1 Companion Standard, version 5.0.2” och alltså baserat på IEC 62056-21 Mode D, samt med de ändringar och kompletteringar som framgår av detta dokument."
+
+	==> It seems the 2002 version is published for free here "https://www.ungelesen.net/protagWork/media/downloads/solar-steuerung/iec62056-21%7Bed1.0%7Den_.pdf <https://www.ungelesen.net/protagWork/media/downloads/solar-steuerung/iec62056-21%7Bed1.0%7Den_.pdf> )?
+
+
+
+4) Consider EON plan to replace my power meter with a "smart" one with the HAN port and hour-by-hour measurement (https://www.eon.se/el/elnat/sa-fungerar-din-smarta-elmatare <https://www.eon.se/el/elnat/sa-fungerar-din-smarta-elmatare> )?
+
+	==> It seems for my apartment in western stockholm area is scheduled to be replaced late 2023 to spring 2024 (https://www.eon.se/mitt-e-on/matarbyte <https://www.eon.se/mitt-e-on/matarbyte> )?
+
+När kommer vi till dig?
+Mätarbyte kommer ske fram till årskiftet 2024. Vi aviserar tre veckor innan, men nedan kan du se när vi preliminärt kommer till ditt område.
+Nordvästra Skåne
+mars 2021-april 2022
+Norrköping
+mars 2021-april 2022
+Västra Kronoberg
+mars 2021-juni 2022
+Medelpad och västra Jämtland
+april 2021-september 2022
+Nordöstra Skåne
+juni 2021-oktober 2022
+Ångermanland och norra Jämtland
+juli 2021-december 2022
+Södra Skåne
+november 2021-oktober 2022
+Västra Blekinge
+maj 2022-februari 2023
+Östra Kronoberg
+maj 2022-februari 2023
+Östergötland
+mars 2022-januari 2023
+Halland
+september 2022-juni 2023
+Malmö ytterområde
+oktober 2022-januari 2024
+Örebro centrala delar
+september 2022-juni 2023
+Örebro ytterområde
+november 2022-oktober 2023
+Norra Småland
+januari 2023-november 2023
+Kalmar
+januari 2023-november 2023
+Östra Blekinge
+januari 2023-november 2023
+Malmö centrala delar
+februari 2023-augusti 2024
+Västra Stockholm
+april 2023-juni 2024
+Östra Stockholm
+november 2023-juni 2024
+
+
+... 

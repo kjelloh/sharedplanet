@@ -1,0 +1,17 @@
+# Todo: Consider to define Trudelutt to practice in overlapping pieces of the song
+
+```#5be93dbe``` *As of 2015-08-27 10:57*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+One issue all choir teachers seem to forget is to practice the transition between different pieces of a song. One practice like the verse, the chorus and so on separately but miss to practice how to get from the verse to the chorus. So although one knows very well how ones voice should sing in each peace one do not know how the relate. Also, teachers tend to forget that to understand that one needs to hear the whole harmony of each peace to learn where ones voice is in relation to it. Like if one sings a third or a fifth over the melody, this is not appear ant until one hears the harmony and it is very easy to sing the right melody but in the wrong relation to the harmony of the others.
+
+So Trudelutt shall adress these issues when practicing.
+
+a) Learn voices overlapping. Each piece one rehearses shall stretch a bit into the next. One should consider to find good start and end points of the practiced pieces to make them overlap without adding complexity to the rehearsal.  
+b) Focus on the logic and structure of the song. Finding the pattern of the song early greatly lowers the amount of work to learn it. Teaching practices on how to do so would be a key part of Trudelutt.  
+c) Always prefer to practice voices together with the final harmony. This greatly enhances the ability to understand and hear where ones voice is in relation to the other voices.  
+...
+
+{% endraw %}

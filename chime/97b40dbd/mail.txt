@@ -1,0 +1,641 @@
+﻿I liked this video as it shows how meta-understanding about computation and representation gets you to lift from GPU -> CPU and transform images -> video (all open source)
+
+1) Consider youtube video "Graphics API is irrelevant" (https://youtu.be/xNX9H_ZkfNE )?
+
+	==> Consider the links in the video description?
+
+References:
+PPM Spec: https://netpbm.sourceforge.net/doc/pp... <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa3JjbGdhUWh4bTV1SmNWemtHZWx5aXVPSVBrUXxBQ3Jtc0treXdvYTJQOFA5NURSTDV1REVnemJYWThlbFVaRWxZcTQ3QlRxN2x6UE9wV0JWeTBSdERoXy1pQXlHd09QeHhQbE1vVmVobnZQMmdDOUxhb0VnTm5ibkxULTRKaUR6V3VyeURvQTNkOS1YaVlFYXRfSQ&q=https%3A%2F%2Fnetpbm.sourceforge.net%2Fdoc%2Fppm.html&v=xNX9H_ZkfNE>
+"Plasma" by XorDev: https://x.com/XorDev/status/189412395... <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa01pQ1ZKcTIwS2pOci15S0xURmhxam40YjB6Z3xBQ3Jtc0tsSjlaaHlhZUV6WkQwOEV0V2hKUVNfN0FvRk5XUUdvX0pSblczS2h6NVJ2MVlYQUxhVTl5aHotSmlxWkhuZmo0MzltYktNcXBGbmpVZF9aLWpSMmhvd3hZZ0hSQnFtZXo3UGVWOWluTFBxR0YwbnhfRQ&q=https%3A%2F%2Fx.com%2FXorDev%2Fstatus%2F1894123951401378051&v=xNX9H_ZkfNE>
+All the Source Code: https://gist.github.com/rexim/ef86bf7... <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1lMaDFuWmNIbng5QkFUdW9KRlhROEtmTWVoUXxBQ3Jtc0trajZsWUJJVEJHckV3NmNicGNUUzh3N0wzeVRadlpDOWFIa0hOLWlnTFZNc2tTSk5kX3QzV0Z2SExSLUtDWmxCLXRUblFJSjI0c0VoLXNFdlJFWDNhak9NNEhaR1AwMWV0X1JuSGZDcUVZYjdFdnR2bw&q=https%3A%2F%2Fgist.github.com%2Frexim%2Fef86bf70918034a5a57881456c0a0ccf&v=xNX9H_ZkfNE>
+
+
+	==> At around 5:15 he seems to show how to use printf-like-syntax to feed ffmpeg with a set of image files to generate a video from (https://youtu.be/xNX9H_ZkfNE?t=281 )?
+
+	￼
+
+	==> Consider the video transcription to find relevant sections in the video?
+
+
+0:00
+People who regularly watch my streams
+0:02
+probably know that I'm a huge fan of the
+0:04
+ppm format. And the reason why I like
+0:06
+this format is because it is so simple
+0:09
+that you can process it directly without
+0:12
+using any third party dependencies or
+0:14
+any libraries. So let's quickly do that.
+0:16
+Let's open a file and let's call this
+0:18
+file something like output ppm. Let's
+0:21
+open it for writing as a binary file.
+0:23
+What's interesting about this format is
+0:25
+that it starts up as a text format and
+0:28
+then switches to a binary format. So the
+0:30
+first thing you have to do, you have to
+0:32
+output line P6. And I suppose this is
+0:34
+some sort of like a magical number of
+0:36
+the format. So the next line will
+0:38
+contain the dimensions of the image that
+0:39
+you want to output. So let's actually
+0:41
+put them into a variable and decide on
+0:43
+our dimensions. So I think I want to
+0:45
+have a ratio of 16 by 9. But the factor,
+0:49
+let's say that the factor is going to be
+0:50
+16. All right. So let's actually output
+0:53
+them in here width and height and the
+0:55
+last text line is supposed to be the
+0:58
+maximum value of the color component and
+1:01
+usually in case of P6 it's 255. So after
+1:04
+that it switches to a binary mode and
+1:06
+you're supposed to output the triplets
+1:08
+of bytes basically red green and blue
+1:10
+components of each individual pixel.
+1:12
+Let's iterate first rows starting from
+1:16
+zero up until H. Then iterate the
+1:19
+columns from 0 to W and for each
+1:22
+individual pixel let's output red
+1:25
+component no green component and no blue
+1:28
+component. So let's try to generate just
+1:30
+a red rectangle. After that let's close
+1:32
+the file and what I usually like to do I
+1:34
+like to print what program has
+1:37
+generated. So let's actually factor out
+1:39
+the name of the file and reuse it in
+1:43
+here saying something like generated as
+1:46
+output path. and let's return zero. So
+1:48
+let's go ahead and try to compile it and
+1:50
+run it. And as you can see, it in fact
+1:51
+generated output ppm. Let's take a look
+1:53
+at the folder. And we do in fact have
+1:55
+output ppm. And if we open it in Emacs,
+1:58
+Emacs has a built-in image viewer, it
+2:00
+will show you a red rectangle. So
+2:01
+essentially ppm format is actually
+2:03
+relatively known. So any software that
+2:05
+uses common image libraries will
+2:08
+recognize that format and that's one
+2:10
+huge advantage of this format. So let's
+2:12
+try to generate something more
+2:13
+interesting. For example, a checker
+2:15
+pattern. Let's decide on the size of
+2:17
+cell. Let's actually say it's going to
+2:19
+be 60 since the dimensions are divisible
+2:21
+by 60. If we divide X by 60, we get the
+2:24
+column of the cell. And if we divide Y
+2:27
+by 60, we get the row of the cell. If
+2:30
+you sum them up, you get an index. And
+2:32
+you can distinguish whether you need to
+2:34
+color a particular cell one color or
+2:36
+another by checking if it's even or odd.
+2:38
+If it is odd, like in this case, we're
+2:41
+going to be coloring it red. Otherwise,
+2:43
+let's color it black. basically by
+2:46
+setting the red component to zero. And
+2:49
+there we go. We got a checker pattern.
+2:50
+In fact, you can generate more than one
+2:53
+image. Let's actually generate 60 of
+2:55
+them. And let's create an animation of
+2:57
+this checker pattern moving somewhere.
+2:59
+How can you move it? You can basically
+3:01
+offset X and Y components. For example,
+3:04
+I can maybe add 10 to X and 10 to Y.
+3:08
+What is going to happen if I do that?
+3:11
+The whole pattern has shifted. Let's
+3:14
+repeat it 60 times. Let's organize a
+3:16
+loop where we iterate from 0 to 60 like
+3:20
+so. And we're going to use i as the
+3:23
+offset. And for each individual
+3:25
+iteration, let's create a separate
+3:27
+frame. We need some sort of a buffer
+3:29
+where we're going to be storing the name
+3:31
+of the file frame we're going to be
+3:33
+generating. So let's actually allocate
+3:35
+it on the stack. I think 256 characters
+3:37
+should be enough for us hopefully. So
+3:39
+the way we're going to be generating the
+3:40
+name is we're going to be using SN
+3:43
+printf function. It accepts the buffer
+3:45
+also the size of the buffer so it
+3:47
+doesn't overflow and then you can just
+3:48
+use it as a regular print f except it's
+3:50
+going to produce a string instead of
+3:52
+printing that string to the standard
+3:53
+output. So in here we're going to say
+3:54
+the output is going to be dppp and you
+3:58
+just provide the i. So we're using i
+3:59
+simultaneously as an offset and as an
+4:01
+index for this specific file. One thing
+4:03
+I like to do, I like to left pad this
+4:06
+index with zero. So they're all aligned
+4:08
+and look nice. So let's go ahead and try
+4:10
+to generate 60 files. Ascend print f.
+4:12
+Oh, of course. Ascend print f returns
+4:15
+how many characters it generated. So
+4:17
+what we have to do instead, we have to
+4:19
+assign buffer to the output path. So the
+4:22
+rest of the code that uses output path
+4:24
+knows where to get the file. That's what
+4:26
+we have to do. As you can see, we
+4:27
+generated 60 frames. I can now open them
+4:30
+in the which is a image viewer. And I
+4:33
+can basically step through them
+4:35
+manually. But what I can do with these
+4:37
+frames now, I can feed them into ffmpeg.
+4:40
+FFmpeg has this very cool feature that
+4:43
+it accepts not only a video files and
+4:45
+input but also a sequence of images. So
+4:48
+what you can do, you can provide sort of
+4:50
+like a pattern of these images. In our
+4:52
+case, the pattern is output and then you
+4:55
+can literally use a printf syntax to
+4:58
+specify the pattern. So you put
+4:59
+percent02d
+5:01
+literally the pattern that we had in our
+5:04
+print f in here and that tells ffmpeact
+5:07
+to grab all of these files and use them
+5:10
+as a input video. Then we're going to
+5:11
+say that the fps of this video is going
+5:14
+to be 60. And let's output into output
+5:16
+mp4 and it just produce a video that we
+5:19
+can open with mpv. And this is why I
+5:22
+like BPM format because it's very simple
+5:25
+and it's wellnown without any third
+5:27
+party dependencies at least in the C
+5:30
+code in the C code. I just produced a
+5:32
+bunch of image files and I fed them into
+5:35
+software infrastructure and software
+5:37
+infrastructure just picked them up and
+5:38
+now I can do animations a really complex
+5:41
+one actually. In fact I can even do
+5:44
+shaders. Let's take a look a very
+5:46
+interesting shader artist Zord Dev. And
+5:49
+if you never heard about Zordv, I really
+5:50
+recommend to check him out. He creates
+5:52
+this beautiful shader animations. And he
+5:55
+always posts also the code that produces
+5:58
+such animations. And here is the code.
+6:00
+It is a small shader. For those who
+6:01
+doesn't know, shaders are programs that
+6:03
+are executed on your GPU. And this is a
+6:05
+specifically a fragment shader, which
+6:08
+means that it produces this image by
+6:10
+executing this program for each and
+6:12
+individual pixel simultaneously. And
+6:15
+what's interesting is that if you think
+6:16
+about it, this is literally what we're
+6:18
+doing here. We're executing this piece
+6:20
+of code for each and individual pixel
+6:23
+not simultaneously but sequentially but
+6:25
+without using any graphical APIs. Can we
+6:29
+for example take this entire code copy
+6:31
+paste it in here and produce the same
+6:33
+image with the same idea. Let's
+6:35
+literally copy paste this code and
+6:37
+remove this one. Unfortunately, this is
+6:40
+not going to work at all because this
+6:43
+code is not written in C even though it
+6:46
+kind of looks like C, right? It's kind
+6:48
+of dense. This is because it was called
+6:50
+Gulf. Uh, essentially Zordev was trying
+6:52
+to produce a shader, a cool shader with
+6:55
+as minimal characters as possible. As
+6:57
+far as I know, he actually made it down
+6:59
+to 179. So, let's actually use the
+7:01
+latest one, which is much smaller. So,
+7:03
+that's the shader. So, let's not use the
+7:05
+bulky huge one. Let's use the small one.
+7:07
+So it's not written in C, it is written
+7:10
+in JLSL. And JLSL is the shader language
+7:13
+of OpenJL. So if you try to compile this
+7:15
+entire thing, it is obviously not going
+7:17
+to compile because for example, it
+7:19
+doesn't have a type vector 2. But vector
+7:22
+2 is actually rather simple type. It is
+7:24
+literally a structure with two fields X
+7:27
+and Y. We can actually provide that. We
+7:29
+can actually easily provide that. Uh so
+7:31
+the next thing it doesn't have a FC. I
+7:34
+suppose it stands for fragment
+7:36
+coordinate. And in OpenGL terminology,
+7:38
+fragment is basically a pixel. Not
+7:41
+really, but you can treat it as a pixel.
+7:44
+And what it tells me that this is
+7:45
+probably the coordinate of the current
+7:48
+pixel. It actually takes only x and y
+7:50
+component of it, which tells me that
+7:52
+maybe in the environment where this
+7:54
+shader is executed, fragment coordinate
+7:56
+is not a two-dimensional vector. Maybe
+7:58
+it's a three-dimensional one. So maybe
+7:59
+it has Z for Zbuffering or whatever.
+8:02
+what we can do, we can actually just
+8:03
+like remove this thing and always assume
+8:05
+that FC is a two-dimensional vector. So
+8:08
+let's do something like this. Okay. And
+8:10
+now we can't proceed any further because
+8:13
+we're trying to multiply a
+8:14
+two-dimensional vector by a scalar. And
+8:17
+in C it is literally impossible because
+8:19
+we don't have an operator overloading.
+8:21
+But you know what has an operator
+8:23
+overloading? C++. We can actually switch
+8:26
+to C++ specifically to make this shader
+8:28
+compile. So I'm going to switch to CPP
+8:31
+and let's actually try to recompile the
+8:34
+whole thing. So to make it possible to
+8:37
+multiply a vector by a scaler, we
+8:40
+literally have to overload a
+8:41
+multiplication operator. So here we're
+8:43
+going to be accepting the vector by a
+8:45
+constant reference. Since we're using
+8:47
+C++, we might as well go full on C++.
+8:50
+And also a scaler. And this entire thing
+8:52
+is supposed to return a new vector. So,
+8:55
+and here what we're going to do, we're
+8:56
+going to just return ax multiplied by s
+8:59
+a y multiplied by s. And there you go.
+9:02
+We overloaded this operator by making a
+9:04
+little bit more of the shadow compile.
+9:06
+So, it doesn't really like that uh we're
+9:08
+passing integers into a float vector. We
+9:11
+might as well maybe cast them to
+9:13
+something like float. And what you have
+9:14
+to do, you have to just continue adding
+9:17
+more and more shader features until
+9:20
+you've basically implemented all of the
+9:22
+missing operations and you essentially
+9:25
+have a shader compatibility layer. And
+9:28
+we still have some missing variables for
+9:30
+example R. I can presume from my own
+9:33
+experience it is probably the resolution
+9:36
+of the screen. So let's actually create
+9:38
+it somewhere here. So let's actually
+9:40
+have something like vector 2 R. And in
+9:42
+here we are literally going to have W
+9:44
+and H.
+9:46
+Another thing that we're missing is O
+9:49
+variable. And O variable from what I can
+9:52
+understand is actually a
+9:53
+four-dimensional vector. And it's
+9:55
+probably an output of the shader. The
+9:57
+output of a single pixel. Let's actually
+10:00
+allocate this four-dimensional vector
+10:02
+here.
+10:04
+And also it wants to have t which is
+10:07
+probably time, right? Because the entire
+10:09
+thing is animated. So let's actually
+10:11
+provide the time. I suppose the time is
+10:12
+going to depend on the current frame.
+10:14
+And we can do the following thing. We
+10:16
+can just basically interpolate the
+10:18
+entire animation by taking I and
+10:21
+dividing it by 60. So that means T is
+10:24
+going to go from 0 to one through the
+10:26
+entirety of the video. And of course we
+10:28
+want to do that in floats. And as you
+10:30
+can see it is generating frame, but
+10:32
+we're not outputting anything into the
+10:35
+files. So what we have to do, we have to
+10:37
+take this output vector which contains
+10:39
+the components of the pixel and put them
+10:42
+as bytes into the ppm file. So the thing
+10:44
+about OpenGL is that all of its color
+10:47
+components are normalized. So that means
+10:49
+that X, Y, and Z, they correspond to
+10:51
+RGB, but there are values from 0 to 1 in
+10:54
+floats. We have to convert them to
+10:56
+values from 0 to 255 in bytes. Uh the
+10:59
+easiest way to do that is to literally
+11:01
+just multiply them by 255 and that's it.
+11:03
+and just output them as bytes like so
+11:06
+and just wait until it generates all
+11:09
+these 60 frames. We might as well
+11:10
+actually optimize it so it goes a little
+11:12
+bit faster. But in your case, I can just
+11:14
+cut into when it's finished. And it's
+11:16
+finished. And let's generate a video out
+11:18
+of that. And let's take a look at the
+11:20
+video. And it's literally the same
+11:23
+video, but produced on CPU instead of
+11:26
+GPU. What that tells us? That tells us
+11:29
+that knowledge of specific languages,
+11:33
+APIs, hardware is maybe important but it
+11:37
+is not particularly relevant. What is
+11:40
+relevant is understanding what exactly
+11:43
+you are doing and how to generate
+11:45
+pixels. Once you know how to do that,
+11:48
+you can actually work with any API.
+
+
+2) Consider the GLSL (OpenGL Shading Language) (https://learnopengl.com/Getting-started/Shaders )?
+
+	TBD.
+
+
+...

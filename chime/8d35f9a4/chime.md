@@ -1,0 +1,62 @@
+# Todo: Programming - Consider to delve into initiatives to think and use C++ in simpler efficient ways?
+
+```#8d35f9a4``` *As of 2016-01-13 23:06*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems there are some interesting initiatives within the C++ community to define a simpler and more efficient and generalised way to use the language?
+
+1) Brane Stroustrup seem to give some good leads in his talk about “within C++ there is a smaller, simpler, safer language struggling to get out” (<https://www.youtube.com/watch?v=1OEu9C51K2A>)?
+
+==&gt; He argues against bad rules (rules to avoid “bad” things ro happen) (round 8:15 into talk)
+
+==&gt; He argues FOR Guidelines (i.e. “god” rules that are about enhancing code) (round 13m into talk)
+
+==&gt; He defines the structure (traits) of a rule (at 16m 10s into the talk).
+
+==&gt; Consider to study these traits and see how they match “requirements” as I have stated them in documentation?
+
+==&gt; GSL is NOT run-time, its design-time “marking” of code and its for an external tool and the programmer to use these “items” to help apply rules.
+
+==&gt; At 48:15 “The tools shall know the rules” and points the programmer to violation points and the rule violated.
+
+==&gt; AND - by having the rule written as defined bove the programmer gets easy-to-understand description of the consequences of the violation.
+
+==&gt; He states he do not like “camel case” (<https://en.wikipedia.org/wiki/CamelCase>)
+
+==&gt; Wonder what he prefers instead?
+
+2) He talks about C++ Guidline Support Library (GSL) that seem to be published here (<https://github.com/microsoft/gsl>)?
+
+==&gt; At least the microsoft proposed implementation?
+
+==&gt; It assumes support for C++14.
+
+3) The general C++ Core Guidelines “project” seem to be published here (<https://github.com/isocpp/CppCoreGuidelines>)?
+
+==&gt; At this site a list of talks on the subject (Videos and pdf:s) seem to be listed here (<https://github.com/isocpp/CppCoreGuidelines/tree/master/talks>)?
+
+==&gt; I seem to have accomplished to find most (all) of them in this mail anyhows?
+
+4) Neil MacIntosh “Static Analysis and C++: More Than Lint” seems like a good talk including GLS at microsoft (<https://www.youtube.com/watch?v=rKlHvAw1z50>)
+
+==&gt; Microsoft plans to provide “CppCoreCheck” in some form in VS2015 update 1 (at 45:50 into talk)?
+
+5) Bartosz Milewski talks about taking the opportunity to generalise C++17 to leverage on functional programming know-how (<https://www.youtube.com/watch?v=eCUfzvz7Z20>)?
+
+6) This seem to be Herb Sutter talk at the same convent with the same goal as Stroustrup above (<https://channel9.msdn.com/Events/CPP/CppCon-2015/Writing-Good-C14-By-Default> )?
+
+7) Consider to check out Gabriel dos Reis in this talk on “Good large modules” in C++ (<https://channel9.msdn.com/events/CPP/CppCon-2015/CPPConD02V014>)?
+
+8) This seem to be another interesting talk by Reis on “Contracts for dependable C++” (<https://channel9.msdn.com/events/CPP/CppCon-2015/CPPConD03V025>)?
+
+…
+
+This seem very interesting to follow up on and perhaps participate in?
+
+a) Consider to participate by splitting Testbench into Clang/GCC core code (enabling use of C++14/C++17 supporting compiler) and GUI in RAD Studio (C++11 support)?
+
+...
+
+{% endraw %}

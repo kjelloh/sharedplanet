@@ -1,0 +1,22 @@
+# Todo: Consider an electronic voting system that authorizes votes in the same way as bitcoin authorizes transactions?
+
+```#ab4967a6``` *As of 2016-02-21 13:49*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be possible to create an electronic voting system that authorizes votes in the same way as bitcoin transactions are authorized by the network?
+
+a) This won’t solve the problem of the voter being paid or threatened to vote against their will.  
+b) But it should be able to ensure each voter only votes once?  
+c) The mechanism of bitcoin to upheld a ledger of approved transactions has no meaning in a voting system? Voters should be able to vote asynchronously so a ”vote” is not isomorphic to a ”transaction”?  
+…
+
+Updated 160221
+
+1) Consider to follow up on GitTorrent (bittorrent based distributed Git) that actually uses Bitcoin blockchains to authenticate users (http://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/)
+
+“We need a method of “distributed consensus” to give out usernames and know who their owners are. The method I find most promising is actually Bitcoin’s blockchain — the shared consensus that makes this cryptocurrency possible.”  
+...
+
+{% endraw %}

@@ -1,0 +1,16 @@
+# Todo: Ask if children cried as much in pre-historic societies than contemporary ones?
+
+```#b81cbbce``` *As of 2015-08-27 14:51*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+As a measurement of what constitutes a deeply rich life one may study the amount of hurt. And then consider to use children's discomfort as an indicator if hurt? One would then argue that if children hurt, so do we but as adults we rationalise why we need to or event that we don't.
+
+1) When we lived as primitive tribes in Africa always in threat of being the meal of some hungry predator. Did children then cry as much as they do today? Could we not argue that they did not as that would put us in unnecessary risk of being discovered by predators?  
+2) In any case, what can children's cry tell us about the hurts modern society creates in our lives? E.g. A children that cries desperately at a shopping mall or on a commute train?  
+...
+
+Skickat från min iPhone
+
+{% endraw %}

@@ -1,0 +1,14 @@
+# Todo: The Super-curious and deep curiosity
+
+```#9e7e4344``` *As of 2015-08-17 14:07*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+We may consider the Super-Curious human to act-in-fath of deep curiosity?
+
+1) Deep curiosity may then mean the curiosity that allows questing also the framework within one searches for answers. That is, applying deep curiosity means to find answers also to how society and collaboration may be changed. When applying shallow curiosity one only asks about how to apply the rules in the best way possible, i.e. how to succeed within the system as in becoming rich or famous. Applying deep curiosity means asking if Deep Richness can be accomplished by changing the rules of society, i.e. allowing citizens to work less and have more time striving for meaningful activities (arts, science or just plain contemplation).  
+2) Deep curiosity then inherits the insight that knowledge always has an unknown blind spot at its core (the ungrounded basis of knowledge). Deep Curiosity addresses both the extend the question the ground of knowledge as well as expanding knowledge of reality and our existence.  
+….
+
+{% endraw %}

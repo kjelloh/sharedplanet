@@ -1,0 +1,106 @@
+# Todo: Programming - Consider to elaborate on the relation between 1) Function Interaction mechanisms (data passing) and 2) Function interaction schemes (data flow)?
+
+```#bcb58b04``` *As of 2017-02-05 13:13*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what can we say about the relations between how functions interact (pass data to each other) and the ways we may compose these functions (data flow architecture)?
+
+1) Consider we look at different mechanisms to pass data to and from functions?
+
+==&gt; A) Consider sub-routines (stack-frames used for data passing)
+
+==&gt; B) Consider Coroutines (heap-frames used for data passing)
+
+==&gt; C) Consider Goroutines (Messages used for data passing)
+
+2) Consider we look at different mechanisms for chaining functions into sequences of operations?
+
+==&gt; 1) Consider continuation chains (each function passes result to the next in the chain)
+
+==&gt; Consider by carefully designing M::bind and chaining operator| we can make
+
+return x | M::bind(f) | M::bind(g) | M::bind(h)
+
+become continuation-chains:
+
+return h(g(f(x))); // for A) stacked sub-routine composition?
+
+return (co_await h(co_await g(co_await f(x)))) ).get(); // For Coroutine B) composition?
+
+?? for Goroutine composition?
+
+==&gt; 2) Consider call-and-return chaining (the ”composer” handles passing the return form one function to the next)?
+
+==&gt; Consider by carefully designing M::bind and chaining operator| we can make
+
+return x | M::bind(f) | M::bind(g) | M::bind(h)
+
+become call-return chains:
+
+// For sub-routines A)
+
+auto result_f = f(x);
+
+auto result_g = g(result_f);
+
+auto result_h = h(result_g);
+
+return result_h;
+
+// For Coroutines ??
+
+auto result_f = co_await f(x);
+
+auto result_g = co_await g(result_f);
+
+auto result_h = co_await h(result_g);
+
+return result_h.get(); // return future when ready
+
+// For Goroutines ??
+
+auto channel f_channel;
+
+go f(x); auto result_f &lt;- f_channel;
+
+auto channel g_channel;
+
+go g(result_f); auto result_g &lt;- g_channel;
+
+auto channel h_channel;
+
+go h(result_g); auto result_h &lt;- g_channel;
+
+return result_h;
+
+3) It seems in C++ we have a semantic problem with hiding composition as lifted functions composed with binary operators?
+
+==&gt; Consider making the expression (x | M::bind(f) | M::bind(g) | M::bind(h)) to work for f,g,h being subroutines, coroutines or goroutines is quite hard?
+
+==&gt; WAIT: For Continuation we actually needs to lift the input parameter (they must be lifted to accept the continuation)!!
+
+==&gt; This means we need a CoMonad (one that lifts the source type and is able to co_bind these)??
+
+*AAArgh … So close but I still can’t put the pieces together exactly right??*
+
+**WE ARE HERE...**
+
+4) Consider the benefits from finding a composition-mechanism indifferent semantics is to be able to replace a stack-called subroutine with a messaged external process?
+
+==&gt; Consider if we succeed we can have f be a local subroutine and g a process on an external machine?
+
+**return M::bind(x) | M::bind(f) | M::bind(g); // Enable g to be subrotuine, coroutine or goroutine??!**
+
+5) Consider Reactive Programming is actually asynchronous function composition?
+
+...
+
+…
+
+Consider to elaborate on this idea that we should be able to compose functions regardless of their data passing mechanism (sub-routines, Coroutiones or Goroutines)?
+
+...
+
+{% endraw %}

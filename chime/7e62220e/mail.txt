@@ -1,0 +1,16 @@
+﻿Consider to save for re-use the appropriate ways to mark my work to be licensed using different Creative Commons licenses?
+
+1) Consider this text for Source Code placed in public domain?
+
+“
+//  This work is licensed under
+//  Creative Commons Attribution 4.0 International Public License
+//  https://creativecommons.org/licenses/by/4.0/
+"
+
+2) …
+
+…
+
+Consider to update this Todo: for any new license of markings I may require?
+...

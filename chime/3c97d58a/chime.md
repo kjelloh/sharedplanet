@@ -1,0 +1,28 @@
+# Todo: Consider to study and understand the Nordea bank Open Banking API?
+
+```#3c97d58a``` *As of 2022-05-26 20:42*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to understand what applications are possible by accessing the EU initiative "Open Banking".
+
+1) This seems to be the Nordea Bank Open Banking API home page (<https://developer.nordeaopenbanking.com/app/docs> )?
+
+==&gt; This seems to be the documentation of the "Accounts" API for Nordea Bank ([https://developer.nordeaopenbanking.com/app/documentation?api=Accounts%20API](<https://developer.nordeaopenbanking.com/app/documentation?api=Accounts API>) )?
+
+> *This API consumes JSON objects and returns responses as JSON objects. Consult the API reference or the examples sections of each API page to see how the response objects look like. The responses are returned encoded in UTF-8 format.*
+
+2) It seems a Swagger is a standard to query an API for all the available operations (<https://swagger.io/docs/specification/2-0/what-is-swagger/> )?
+
+> *"We can .. automatically generate client libraries for your API in many languages and explore other possibilities like automated testing. **Swagger does this by asking your API to return a YAML or JSON **that contains a detailed description of your entire API. This file is essentially a resource listing of your API which adheres to OpenAPI Specification."*
+
+3) It seems Yaml is a serialisation format (text representation of structured data) just as XML or JSON (<https://en.wikipedia.org/wiki/YAML> )?
+
+==&gt; It seems JSON is in fact valid (subset of) YAML?
+
+> *"YAML (/ˈjæməl/ and YAH-ml) (see § History and name) is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. YAML targets many of the same communications applications as Extensible Markup Language (XML) but has a minimal syntax which intentionally differs from SGML.&#91;1&#93; It uses both Python-style indentation to indicate nesting, and a more compact format that uses &#91;...&#93; for lists and {...} for maps&#91;1&#93; thus JSON files are valid YAML 1.2.&#91;2&#93;"*
+
+...
+
+{% endraw %}

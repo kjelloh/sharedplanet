@@ -1,0 +1,49 @@
+﻿I have been thinking about how to design a machine that can use the same cutting wheel both in “planer” and “jointer” configuration and got the idea that perhaps we can do a first try with a hand planer?
+
+	==> Also see “Todo: Consider a combined jointer planer power tool design (same cutting wheel but wood pressed towards to joint it or pressed to a parallel plane to plane)?”
+
+1) Consider what hand planers I can choose from and how much they cost?
+
+	==> Consider this site that seems to list all brands of hand planer vendors (https://www.elhyvlar.se <https://www.elhyvlar.se/>)?
+
+	
+
+	==> Consider the hand planer sold at K-rauta (https://www.k-rauta.se/byggvaruhus/sok/elhyvel <https://www.k-rauta.se/byggvaruhus/sok/elhyvel>)?
+
+	
+
+	==> Consider the hand planers sold by Bauhaus (https://www.bauhaus.se/catalogsearch/result/index/?cat=&dir=desc&order=price&q=elhyvel <https://www.bauhaus.se/catalogsearch/result/index/?cat=&dir=desc&order=price&q=elhyvel>)?
+
+	
+
+	==> Consider the hand planers sold by Hornbach (https://www.hornbach.se/shop/sok/artikel/elhyvel <https://www.hornbach.se/shop/sok/artikel/elhyvel>)?
+
+	
+	
+	==> Consider to buy a very cheap one to just make a POC (proof of concept)?
+
+	==> Consider to buy a used one (e-bay Germany or blocket)?
+
+	...
+
+
+2) Consider this youtube video “Turn Your Hand Planer into a Jointer for Only $10” that shows how to use a hand planer as a jointer (https://www.youtube.com/watch?v=YOROlmd0Zn8 <https://www.youtube.com/watch?v=YOROlmd0Zn8>)?
+
+	==> He seems to use some angle iron (for stiffness)?
+	  
+
+	
+
+3) Consider this youtube video “DIY Planer Table In Action” (https://www.youtube.com/watch?v=5HYkLgB4zPs&t=8s)?
+
+	==> It seems to be a simple thickness planer by having an adjustable fence pressing the board to the hand planer?
+
+	
+
+	==> But is seems to also work as a jointer by being able to feed the wood referencing the square fence and table?
+
+	
+
+	==> Consider we could actually use this as a jointer to create the first flat surface on rough wood by adding springer wheels that press the wood onto the hand planer from the fence side (being springy meaning they take up the unevenness of the wood better)?
+
+	...

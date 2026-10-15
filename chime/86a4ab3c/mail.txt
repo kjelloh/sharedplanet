@@ -1,0 +1,45 @@
+﻿So, how can we understand C++11 new ”Curly Brace” initializations?
+
+1) This seem to give a good starting point (http://programmers.stackexchange.com/questions/133688/is-c11-uniform-initialization-a-replacement-for-the-old-style-syntax)
+
+	==> We are talking about a) Initializer lists and b) Uniform initialization?
+
+	”Initializer lists use the same syntax as uniform initialization”
+
+	==> The compiler must use a initializer list constructor if it can (there is one and the call looks like one)
+
+	std::vector<int> v{100}; // v{100} looks like an initializer list of one element and std::vector has an initializer list constructor, thus a one element vector is created.
+
+2) C++ Initializer list seems to be defined here (http://en.cppreference.com/w/cpp/utility/initializer_list)?
+
+	”An object of type std::initializer_list<T> is a lightweight proxy object that provides access to an array of objects of type const T.” 
+
+	”A std::initializer_list object is automatically constructed when:
+		• a braced-init-list is used in list-initialization, including function-call list initialization and assignment expressions 
+		• a braced-init-list is bound to auto, including in a ranged for loop”
+
+3) Uniform initialization seem to be explained in clear way here (https://en.wikipedia.org/wiki/C%2B%2B11#Uniform_initialization)?
+
+	==> Seems Uniform Initialization is introduced to replace C++ many ways of initializing objects?
+
+	class A {public A(); A(int i);}; // A may be default-constructed or constructed from an int. 
+	A a; // default constructed
+	A a = 9; // Constructed by A(9)
+	A a(9); // Constructed by A(9)
+
+	==> With Uniform Initialization one may use curly-brace initialization to rep laze all these.
+
+	A a; // Default constructed
+	A a{}; // Default constructed
+	A a = {9} // Constructed by A(9). If A had had an Initializer List Constructor that one would have been used.
+	A a{9}; // Constructed by A(9). If A had had an Initializer List Constructor that one would have been used.
+
+	WE ARE HERE…
+
+…
+
+Consider to delve deeper into ”Curly Brace” initialization as ”Initializer List” construction and ”Uniform Initialization” variants?
+...
+	
+
+	

@@ -1,0 +1,21 @@
+﻿Consider we can use this adhesive selection cheat sheet to reverse engineer what it is in adhesives required to bond different materials to LSE (low surface energy) materials?
+
+1) The SCIGrip adhesive selection guide seems to live here (https://www.eplastics.com/pdf/scigrip-quick-selection-page3.pdf <https://www.eplastics.com/pdf/scigrip-quick-selection-page3.pdf>)?
+
+	
+
+	
+	
+
+2) It seems the adhesive “45” is very versatile?
+
+	==> It seems Wled-On 45 is a quite toxic 2-component adhesive that requires an applicator to be applied (https://www.eplastics.com/accessories/plastic-adhesives/acrylic-glue/ips45-43ml <https://www.eplastics.com/accessories/plastic-adhesives/acrylic-glue/ips45-43ml>)?
+
+“WeldOn 45 Structural Adhesive Cartridge. Two-component, high strength, high viscosity, reactive structural adhesive for bonding unprepared and corrosion resistant metals, composites, and plastics (e.g. ABS, acrylic, aluminum, brass, copper galvanized steel, PETG, polycarbonate, and PVC)."
+
+	==> Wow - this is expensive glue, the applicator is almost $150 (https://www.eplastics.com/accessories/plastic-adhesives/acrylic-glue/ips55-dispenser <https://www.eplastics.com/accessories/plastic-adhesives/acrylic-glue/ips55-dispenser>)?
+
+		
+
+		==> This seems to be the safety data sheet for Wel-on 45 2-component adhesive (https://www.eplastics.com/pdf/SDS-ips-45.pdf <https://www.eplastics.com/pdf/SDS-ips-45.pdf>)?
+	

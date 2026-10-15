@@ -1,0 +1,882 @@
+# Todo: Elm Fortknox - Consider to go from demo to actually make REST calls and parse Json from FortKnox developer account by developing Elm code for this?
+
+```#534f618f``` *As of 2019-08-14 15:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So it seems I can now take the demo code for elm http + json Get and turn it into actual Fortknox access call and Json parse of the result?
+
+==&gt; Also see "odo: Consider to learn Elm in VSCode by writing application to access ITfied accounting through FortKnox REST and Json API?"
+
+-1) Consider to document the most important things I learned about elm while writing code in it?
+
+==&gt; It seems I can detect if a forget to define a function with input argument by detecting a type error
+
+> *So if I forget to match by function definition with the type annotation and get;*
+
+> TYPE MISMATCH - Something is off with the body of the \`fortknox_api_view\` definition:
+
+> 247| div &#91;&#93; &#91;text "Hello"&#93;  
+> #^^^^^^^^^^^^^^^^^^^^^#  
+> This \`div\` call produces:
+
+> #Html msg#
+
+> But the type annotation on \`fortknox_api_view\` says it should be:
+
+> #Model -&gt; Html Msg#Elm
+
+> *I should read this to mean I forgot to define my function to take a Model argument and then turn that into Html Msg. Note that to me it was confusing that the error talked about lower case "msg" instead of the type annotation defined as Html Msg.*
+
+> fortknox_api_view : Model -&gt; Html Msg  
+> fortknox_api_view =  
+> div &#91;&#93; &#91;text "Hello"&#93;
+
+> *So the error is in fact noting that the "div" produces an "Html a" where "a" is a type variable, only that it decided to tell me with the syntax "Html msg". But ANY lower case type name in a place where a type is expected WILL be interpreted by elm as a type variable making the expression generic!*
+
+==&gt; It seems the piping operator in elm, "|&gt;", will be able to determine the type of the whole pipe expression and provide an error if the pipe expression does not match the required type in the context it is used.
+
+> *So when I used "piping" to compose JSON decoders elm will be able to check that the record for a decoded value is actually created by the decoder created by the pipe expression.*
+
+> type alias Voucher = {  
+> url : String  
+> ,comments : String  
+> ,description : String  
+> ,referenceNumber : String  
+> ,referenceType : String  
+> ,transactionDate : String  
+> ,voucherNumber : Int  
+> ,voucherSeries : String  
+> ,year : Int  
+> ,approvalState : Int  
+> }
+
+> voucherDecoder : D.Decoder Voucher  
+> voucherDecoder =  
+> D.succeed Voucher  
+> |&gt; required "@url" D.string  
+> |&gt; optional "Comments" D.string ""  
+> |&gt; required "Description" D.string  
+> |&gt; required "ReferenceNumber" D.string  
+> |&gt; required "ReferenceType" D.string  
+> |&gt; required "TransactionDate" D.string  
+> |&gt; required "VoucherNumber" D.int  
+> |&gt; required "VoucherSeries" D.string  
+> |&gt; required "Year" D.int  
+> |&gt; required "ApprovalState" D.int
+
+> *If for example "comments" were of type "Maybe String" this would not match the second piped argument "**optional "Comments" D.string "" **" and I would get a type error that looks like this.*
+
+> ![](PastedGraphic-2.png)
+
+> *Which is hard to read but I now know it means the argument deals with a "String" but should deal with a "Maybe String" (but I have to dig deeper to really understand what this error message talks about in terms of type annotations)*
+
+> *...*
+
+1) Consider to document as a diary my steps in developing elm code that actually makes http + json access to my Fortknox developer account?
+
+==&gt; I began my making directory "/Users/kjell-olovhogdal/Resilio Sync/VSCode/ElmFortknoxAccess"
+
+==&gt; I opened folder "/Users/kjell-olovhogdal/Resilio Sync/VSCode/ElmFortknoxAccess" from within VSCode (&lt;File&gt; / &lt;Open&gt;)
+
+==&gt; I opened a terminal window in VSCode to "/Users/kjell-olovhogdal/Resilio Sync/VSCode/ElmFortknoxAccess"
+
+==&gt; In the terminal window issued "elm init" to have elm create the elm.json file
+
+==&gt; It seems elm.json is created by the online command "elm init" (<https://elm-lang.org/0.19.0/init> )?
+
+> *I performed these commands in the VSCode terminal window...*
+
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ pwd  
+> /Users/kjell-olovhogdal/Resilio Sync/VSCode/ElmFortknoxAccess  
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ **elm init**  
+> Hello! Elm projects always start with an elm.json file. I can create them!
+
+> Now you may be wondering, what will be in this file? How do I add Elm files to  
+> my project? How do I see it in the browser? How will my code grow? Do I need  
+> more directories? What about tests? Etc.
+
+> Check out &lt;<https://elm-lang.org/0.19.0/init>&gt; for all the answers!
+
+> Knowing all that, **would you like me to create an elm.json file now? &#91;Y/n&#93;: Y**  
+> Okay, I created it. Now read that link!  
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$
+
+> *This resulted in this elm-json file (as shown in VSCode edit window)...*
+
+> {  
+> "type": "application",  
+> "source-directories": &#91;  
+> "src"  
+> &#93;,  
+> "elm-version": "0.19.0",  
+> "dependencies": {  
+> "direct": {  
+> "elm/browser": "1.0.1",  
+> "elm/core": "1.0.2",  
+> "elm/html": "1.0.0"  
+> },  
+> "indirect": {  
+> "elm/json": "1.1.3",  
+> "elm/time": "1.0.0",  
+> "elm/url": "1.0.0",  
+> "elm/virtual-dom": "1.0.2"  
+> }  
+> },  
+> "test-dependencies": {  
+> "direct": {},  
+> "indirect": {}  
+> }  
+> }
+
+==&gt; In VSCode I created a new file main.elm in the subdirectory src (that elm init created)
+
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ pwd  
+> /Users/kjell-olovhogdal/Resilio Sync/VSCode/ElmFortknoxAccess  
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ ls  
+> elm.json src  
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ ls src  
+> main.elm  
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$
+
+==&gt; In VSCode I copied all the source from the demo code "/Users/kjell-olovhogdal/Resilio Sync/VSCode/MyFirstElmProgram/src/Toward_a_better_frontend_demo.elm" to my new main.elm
+
+==&gt; In VSCode I started a new terminal window (let's call this terminal window 2) and in that window I started the elm reactor
+
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ elm reactor  
+> Go to &lt;[**http://localhost:8000](http://localhost:8000)**&gt; to see your project dashboard.
+
+==&gt; In Safari I opened a web page to localhost:8000.
+
+![](<Screenshot 2019-08-13 at 12.46.46.png>)
+
+*The output of local web server at localhost:8000 created by "elm reactor" call in terminal*
+
+==&gt; Consider in FortKnox REST Api there are four header entries I always must provide (<https://developer.fortnox.se/documentation/general/header-fields/> )?
+
+> ```
+> Accept: application/json
+> Access-Token: 605de498-486c-ae9f-b740-119cd660badf
+> Client-Secret: 2a5OUpaWhz
+> Content-Type: application/json
+> ```
+
+  
+> *To interact with json I need to provide header entries "Accept" and "Content-Type" to specify json sned and response*
+
+==&gt; Consider to hard code a request for a voucher using the demo code that already contains code for Rest call with json content?
+
+==&gt; Consider according to "/Users/kjell-olovhogdal/Resilio Sync/Shared/workplace/VSCode/ITfied Fortknox REST Access/PHP Access.php" that works I need to aslo provide 'query' fields?
+
+> $headers = &#91;  
+> 'Access-Token'=&gt;'af5b2f2a-fe45-40bd-ae4d-a2bdc892e22e',  
+> 'Client-Secret'=&gt;'fHwPk9j17w',  
+> 'Content-Type'=&gt;'application/json',  
+> 'Accept'=&gt;'application/json',&#93;;  
+> #Default client with correct header entries for Access-token, Client-secret and json return setting  
+> #NOTE: With 'limit' = 200 we will get all 129 vouchers  
+> #NOTE: We should set a limit and then iterate 'page' 1,2,3 as indicated by returned "MetaInformation"/"TotalPages"  
+> $client = new GuzzleHttp\\Client(&#91;  
+> 'base_uri' =&gt; '<https://api.fortnox.se/3/>',  
+> 'query' =&gt; &#91;'financialyeardate' =&gt; '2018-05-01','limit' =&gt; 200,'page' =&gt; 1&#93;,  
+> 'headers' =&gt; $headers  
+> &#93;);  
+> try {  
+> $request = new Psr7\\Request('GET','vouchers');  
+> # make request with URL = base_uri '[https://api.fortnox.se/3/' concatenated with 'vouchers](<https://api.fortnox.se/3/' concatenated with 'vouchers>)'  
+> $response = $client-&gt;send($request);  
+> echo "Response HTTP : " . $response-&gt;getStatusCode();  
+> # echo Psr7\\str($response); // Debug  
+> // <http://php.net/manual/en/function.json-decode.php>  
+> $json = json_decode($response-&gt;getBody());  
+> {  
+> # echo "\\n";  
+> # var_dump($json,true);  
+> }  
+> # Iterate over the json object  
+> ...
+
+Q: What is http "query"?
+
+A: It seems an http query string is the part of the url following a question mark containing name=value terms (<https://en.wikipedia.org/wiki/Query_string> )?
+
+> Typical URL containing a query string is as follows:
+
+> > `<http://example.com/over/there>**?name=ferret**`
+
+> When a server receives a request for such a page, it may run a program, passing the query string, which in this case is, `name=ferret`unchanged, to the program. The question mark is used as a separator, and is not part of the query string.[&#91;2&#93;](https://en.wikipedia.org/wiki/Query_string#cite_note-2)[&#91;3&#93;](https://en.wikipedia.org/wiki/Query_string#cite_note-3)  
+> [Web frameworks](https://en.wikipedia.org/wiki/Web_Framework) may provide methods for parsing multiple parameters in the query string, separated by some delimiter.[&#91;4&#93;](https://en.wikipedia.org/wiki/Query_string#cite_note-w3c-recom-4) In the example URL below, multiple query parameters are separated by the [ampersand](https://en.wikipedia.org/wiki/Ampersand), "`&`":
+
+> > `<http://example.com/path/to/page>**?name=ferret&color=purple**`
+
+> The order of the queries doesn't matter (`name=ferret&color=purple` and `color=purple&name=ferret` both produce the same results) and the exact structure of the query string is not standardized. Methods used to parse the query string may differ between websites.  
+> A link in a web page may have a URL that contains a query string. [HTML](https://en.wikipedia.org/wiki/HTML) defines three ways a user agent can generate the query string:
+- an [HTML form](<https://en.wikipedia.org/wiki/Form_(HTML)>) via the `&lt;form&gt;...&lt;/form&gt;` element
+- a [server-side image map](https://en.wikipedia.org/wiki/Image_map#Server-side) via the `ismap` attribute on the `&lt;img&gt;` element with a `&lt;img ismap&gt;` construction
+- an indexed search via the now deprecated `&lt;isindex&gt;` element
+
+
+
+A: According to elm documentation the query string is appended with a '?' to the url (<https://package.elm-lang.org/packages/elm/url/latest> )?
+
+> A URL is defined by Tim Berners-Lee in [this document](https://tools.ietf.org/html/rfc3986). It is worth reading, but I will try to share some highlights. He shares an example like this:
+
+> ```
+>   https://example.com:<https://example.com:>8042/over/there?name=ferret#nose
+>   \___/   \______________/\_________/ \_________/ \__/
+>     |            |            |            |        |
+>   scheme     authority       path        query   fragment
+> ```
+
+
+
+Q: How does elm Http module (library) handle header entries?
+
+A: It seems elm Http package provides a request function that allows the client to provide header entries (<https://package.elm-lang.org/packages/elm/http/latest/Http#request> )?
+
+> [request](https://package.elm-lang.org/packages/elm/http/latest/Http#request) :  
+> { method : String  
+> , headers : List [Header](https://package.elm-lang.org/packages/elm/http/latest/Http#Header)  
+> , url : String  
+> , body : [Body](https://package.elm-lang.org/packages/elm/http/latest/Http#Body)  
+> , expect : [Expect](https://package.elm-lang.org/packages/elm/http/latest/Http#Expect) msg  
+> , timeout : Maybe Float  
+> , tracker : Maybe String  
+> }  
+> -&gt; Cmd msg
+
+Q: How does the elm Http module (library) treat query strings?
+
+==&gt; I hard coded the URL to Fortknox REST API to get vouchers.
+
+> fetchVoucher : String -&gt; Cmd Msg  
+> fetchVoucher screenName =  
+> Http.get {  
+> url = "<https://api.fortnox.se/3/vouchers>"  
+> ,expect = Http.expectJson LoadUser voucherDecoder  
+> }
+
+![](<Screenshot 2019-08-13 at 13.23.57.png>)
+
+*The elm reactor response in web browser to localhost:8000 for a project that uses Json.Decode without having updated the elm.json file with this dependancy using "elm install"*
+
+==&gt; In VSCode terminal window 1 (not the one running elm reactor) I executed "elm install to add dependancy to json to elm-json file)
+
+> *The elm install command responds a but confusing with stating the dependancy is there but is "indirect"?*
+
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ **elm install elm/json**  
+> I found it in your elm.json file, but in the "indirect" dependencies.  
+> **Should I move it into "direct" dependencies for more general use? &#91;Y/n&#93;: Y**  
+> Dependencies loaded from local cache.  
+> Dependencies ready!  
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$
+
+> *And the elm.json file now looks like this when viewed in VSCode editor.*
+
+> {  
+> "type": "application",  
+> "source-directories": &#91;  
+> "src"  
+> &#93;,  
+> "elm-version": "0.19.0",  
+> "dependencies": {  
+> "direct": {  
+> "elm/browser": "1.0.1",  
+> "elm/core": "1.0.2",  
+> "elm/html": "1.0.0",  
+> "elm/json": "1.1.3"  
+> },  
+> "indirect": {  
+> "elm/time": "1.0.0",  
+> "elm/url": "1.0.0",  
+> "elm/virtual-dom": "1.0.2"  
+> }  
+> },  
+> "test-dependencies": {  
+> "direct": {},  
+> "indirect": {}  
+> }  
+> }
+
+==&gt; I did "elm install" also for http.
+
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ **elm install elm/http**  
+> Here is my plan:  
+> Add:  
+> elm/bytes 1.0.8  
+> elm/file 1.0.5  
+> elm/http 2.0.0
+
+> Would you like me to update your elm.json accordingly? &#91;Y/n&#93;: **Y**  
+> Dependencies loaded from local cache.  
+> Dependencies ready!  
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$
+
+==&gt; My elm.json now looks like this.
+
+> {  
+> "type": "application",  
+> "source-directories": &#91;  
+> "src"  
+> &#93;,  
+> "elm-version": "0.19.0",  
+> "dependencies": {  
+> "direct": {  
+> "elm/browser": "1.0.1",  
+> "elm/core": "1.0.2",  
+> "elm/html": "1.0.0",  
+> "elm/http": "2.0.0",  
+> "elm/json": "1.1.3"  
+> },  
+> "indirect": {  
+> "elm/bytes": "1.0.8",  
+> "elm/file": "1.0.5",  
+> "elm/time": "1.0.0",  
+> "elm/url": "1.0.0",  
+> "elm/virtual-dom": "1.0.2"  
+> }  
+> },  
+> "test-dependencies": {  
+> "direct": {},  
+> "indirect": {}  
+> }  
+> }
+
+==&gt; I added Http.request with appropriate headers and query string (I think) but I get Network Error?
+
+> fetchVoucher screenName =  
+> Http.request {  
+> method = "GET"  
+> , headers = &#91;  
+> Http.header "Access-Token" "af5b2f2a-fe45-40bd-ae4d-a2bdc892e22e"  
+> ,Http.header "Client-Secret" "fHwPk9j17w"  
+> ,Http.header "Content-Type" "application/json"  
+> ,Http.header "Accept" "application/json"&#93;  
+> , url = "<https://api.fortnox.se/3/vouchers/?financialyeardate=2018-05-01&limit=200&page=1>"  
+> , body = Http.emptyBody  
+> , expect = Http.expectJson LoadUser voucherDecoder  
+> , timeout = Nothing  
+> , tracker = Nothing  
+> }
+
+==&gt; I enabled Safari "Browser Developer Tools" and opened window with &lt;Developer&gt; / &lt;Show Web Inspector&gt; according to (<https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools> )
+
+![](<Screenshot 2019-08-13 at 14.56.36.png>)
+
+*Safari &lt;Developer&gt; / &lt;Show Web Inspector&gt; reveals a window stating "failed to laod resource: Preflight response is not successful"*
+
+![](<Screenshot 2019-08-13 at 14.59.29.png>)
+
+*Safari &lt;Developer&gt; / &lt;Show Web Inspector&gt; reveals a window listing the Headers (and all headers seem fine)?*
+
+==&gt; Consider to compare with corresponding curl call?
+
+> ```
+> curl -X "GET" "https://api.fortnox.se/3/vouchers/?financialyeardate=2018-05-01&limit=200&page=1<https://api.fortnox.se/3/vouchers/?financialyeardate=2018-05-01&limit=200&page=1>" \
+>      -H "Access-Token: af5b2f2a-fe45-40bd-ae4d-a2bdc892e22e" \
+>      -H "Client-Secret: fHwPk9j17w" \
+>      -H "Content-Type: application/json" \
+>      -H "Accept: application/json"
+> ```
+
+> ```
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ curl -X "GET" "https://api.fortnox.se/3/vouchers/?financialyeardate=2018-05-01&limit=200&page=1<https://api.fortnox.se/3/vouchers/?financialyeardate=2018-05-01&limit=200&page=1>"      -H "Access-Token: af5b2f2a-fe45-40bd-ae4d-a2bdc892e22e"      -H "Client-Secret: fHwPk9j17w"      -H "Content-Type: application/json"      -H "Accept: application/json"
+> {"MetaInformation":{"@TotalResources":197,"@TotalPages":1,"@CurrentPage":1},"Vouchers":[{"@url":"https:\/\/api.fortnox.se<http://api.fortnox.se>\/3\/vouchers\/A\/1?financialyear=3","Comments":null,"Description":"Beanstalk","ReferenceNumber":"","ReferenceType":"MANUAL","TransactionDate":"2018-05-02","VoucherNumber":1,"VoucherSeries":"A","Year":3,"ApprovalState":0},{"@url":"https:\/\/api.fortnox.se<http://api.fortnox.se>\/3\/vouchers\/A\/2?financialyear=3","Comments":null,"Description":"M\u00e5nadsavgift PG","ReferenceNumber":"","ReferenceType":"MANUAL","TransactionDate":"2018-05-04","VoucherNumber":2,"VoucherSeries":"A","Year":3,"ApprovalState":0},{"@url":"https:\/\/api.fo ...
+> ```
+
+  
+==&gt; YES! Curl seems to succeed?
+
+Q: Why does not my elm application even send the request ("preflight response is not successful)?
+
+A: It seems it is the web browser that applies something called CORS to first send "OPTION" to the server before sending the actual GET (<https://dev.to/effingkay/cors-preflighted-requests--options-method-3024> )?
+
+> *...if the request doesn't meet the criteria above, **the browser automatically sends** a HTTP request before the original one by **OPTIONS** method to check whether it is safe to send the original request.*
+
+==&gt; I opened "<http://localhost:8000/src/main.elm>" in Mozilla Firefox and opened its "Browser Developer Tools" with &lt;Tools&gt; / &lt;Web Developer&gt; / &lt;Toggle Tools&gt;
+
+![](<Screenshot 2019-08-13 at 15.16.59.png>)
+
+*We can show the Safari "Browser Developer Tools" with &lt;Tools&gt; / &lt;Web Developer&gt; / &lt;Toggle Tools&gt;*
+
+==&gt; It seems the Mozilla browser &lt;Tools&gt; / &lt;Web Developer&gt; / &lt;Toggle Tools&gt; window for my elm program actually exposed it DOES send and OPTION request that Fortknox responds to with 403 ""
+
+![](<Screenshot 2019-08-13 at 15.28.10.png>)
+
+*Mozilla Browser Developer Tools window shows that it does send a an extra OPTION request to Fortknox and gets denial 403 "Forbidden"*
+
+Q: So should I try to turn this off in my browser (app) or should I configure my Fortknox account in some way to accept the OPTION request call?
+
+A: At least I can Disable CORS in Safari and now the request is responded with "bad Body" (kind of a step forward?)
+
+![](<Screenshot 2019-08-13 at 15.39.46.png>)
+
+*In Safari we can disable CORS (Cross-Origin Restrictions) with &lt;Develop&gt; / &lt;Disable Cross-Origin Restrictions&gt;*
+
+![](<Screenshot 2019-08-13 at 15.43.38.png>)
+
+We can use Safari
+
+==&gt; It seems if I enable CORS again in Safari the "failed to laod resource: Preflight response is not successful" does NOT return (it somehow stays satisfied after having made a successful GET evn if this was done with CORS disabled)?
+
+==&gt; AHA, elm requires "variables" to have lower case names (and actually hints this if you just take your time and RTFM...)
+
+> *This record has fields with names to match a json struct but fails to parse because elements must have lowe-case names!*
+
+> type alias Voucher = {  
+> url : String  
+> ,Comments : Maybe String  
+> ,Description : String  
+> ,ReferenceNumber : String  
+> ,ReferenceType : String  
+> ,TransactionDate : String  
+> ,VoucherNumber : Int  
+> ,VoucherSeries : String  
+> ,Year : Int  
+> ,ApprovalState : Int  
+> }
+
+> *And the elm parser actually hints you about this if you just take your time and actually read what it sais!*
+
+> PARSE ERROR - Something went wrong while parsing a record type.  
+> 38| type alias Voucher = {  
+> 39| url : String  
+> 40| ,Comments : Maybe String }  
+> #^#  
+> I was expecting to see a lower-case variable, like \`x\` or \`user\`Elm
+
+> ...
+
+==&gt; It seems elm decodes Json based on the "engine" defined by "decodeString : Decoder a -&gt; String -&gt; Result Error a"?
+
+> [decodeString](https://package.elm-lang.org/packages/elm/json/latest/Json-Decode#decodeString) : [Decoder](https://package.elm-lang.org/packages/elm/json/latest/Json-Decode#Decoder) a -&gt; String -&gt; Result [Error](https://package.elm-lang.org/packages/elm/json/latest/Json-Decode#Error) a
+
+> *Ok, let's take it slowly here. It seems as a C++ programmer I keep tripping over the semantics that is going on here. So how does this all tie together?*
+
+> *It begins with update that turns a Msg and a Model into a tuple (Model, Cmd Msg)*
+
+> update : Msg -&gt; Model -&gt; (Model, Cmd Msg)
+
+> *And update triggers on the Msg "**FetchMetaAndVouchers**" to call **fetchMetaAndVouchers*
+
+> FetchMetaAndVouchers -&gt; (model, fetchMetaAndVouchers model.vouchers_url)
+
+> *Now, the way this is set up is to have **fetchMetaAndVouchers return the new Cmd Msg (to put nack into the Msg circulation that keep things happen in the specified round-robin update, view, update, view ... order)*
+
+> fetchMetaAndVouchers : String -&gt; Cmd Msg  
+> fetchMetaAndVouchers vouchers_url =  
+> Http.request {
+
+> *It is now the fetchMetaAndVouchers calls Http.request (which is conveniently declared to return the Cmd Msg we are expected to return :) )*
+
+> *And the Http.request is provided with the "expect" function set to the result of "**Http.expectJson LoadVouchersAndMeta vouchersAndMetaDecoder.*
+
+> expect = Http.expectJson LoadVouchersAndMeta vouchersAndMetaDecoder
+
+> *Now the "Http.expectJson" is a tricky one!*
+
+> [expectJson](https://package.elm-lang.org/packages/elm/http/latest/Http#expectJson) : (Result [Error](https://package.elm-lang.org/packages/elm/http/latest/Http#Error) a -&gt; msg) -&gt; Decoder a -&gt; [Expect](https://package.elm-lang.org/packages/elm/http/latest/Http#Expect) msg
+
+> *For one it is generic in that it is defined in terms of a general type 'a' and 'msg. And it wants first a function : Result Error a -&gt; msg. It also expects a Decoder a. And finally it returns an Expect msg! Phiew!*
+
+> *Let's not delve too deep into this now. Let's instead observe I do provide "**LoadVouchersAndMeta**". And this is in fact one of the messages in the Msg union with exactly this payload!*
+
+> type Msg =  
+> UpdateScreenName String  
+> | FetchMetaAndVouchers  
+> | **LoadVouchersAndMeta** (Result Http.Error VouchersAndMeta)
+
+> *Now I experience how hard I have to make meaning of terms like "Message" here. But ok, **"**LoadVouchersAndMeta**" IS one of the types Msg can "be". And it IS of the type "**Result Http.Error VouchersAndMeta**". So everything IS ok. Just keep calm and see where this is leading.*
+
+> *The second argument to Http.expectJson is teh Json decoder "**vouchersAndMetaDecoder**" which is of type "Decoder "**VouchersAndMeta" where "**VouchersAndMeta**" itself is the internal type we have defined to hold the parsed json data. This makes sense now when we have gotten this far I suppose.*
+
+> *So how do we compose with the existing Json package functions to actually write this Json decoder "**vouchersAndMetaDecoder" **that puts everything neatly into "**VouchersAndMeta**" and returns it in the correct type.*
+
+> *Ok, for a while I fell into the trap of reading the code to mean **that "**vouchersAndMetaDecoder**" must return an instance of the type "Expect **VouchersAndMeta**"! *
+
+> *But that is in error! It is **"Http.expectJson" that returns such a type (and how that works is NOT my business). All I have to do is to write my decoder "**vouchersAndMetaDecoder**" to be of type "**D.Decoder VouchersAndMeta**"*
+
+> vouchersAndMetaDecoder : D.Decoder VouchersAndMeta
+
+> *So how can we compose with the Json decoders to write our own? What goes after the equal sign here?*
+
+> vouchersAndMetaDecoder = ?? and return a D.Decoder VouchersAndMeta
+
+> *Well, a bit overwhelming at this stage. Let's start with something simpler. We should be able to figure out how to parse the parts first?*
+
+> {- The vouchers call returns json
+
+> {  
+> "MetaInformation": {  
+> "@TotalResources": 197,  
+> "@TotalPages": 1,  
+> "@CurrentPage": 1  
+> },  
+> "Vouchers": &#91;  
+> {  
+> "@url": "<https://api.fortnox.se/3/vouchers/A/1?financialyear=3>",  
+> "Comments": null,  
+> "Description": "Beanstalk",  
+> "ReferenceNumber": "",  
+> "ReferenceType": "MANUAL",  
+> "TransactionDate": "2018-05-02",  
+> "VoucherNumber": 1,  
+> "VoucherSeries": "A",  
+> "Year": 3,  
+> "ApprovalState": 0  
+> },...  
+> }  
+> }
+
+> -}
+
+> *So writing a json parser for the "**MetaInformation**" record and each record in the "**Vouchers**" list should be easy enough?*
+
+> *After some reading and guessing I think I am convinced there is no way to actually map json fields to record fields and ensure their names are used to place them correctly. But what I can do is hard code in what order the json fields must appear in the input stream and then from that hard code them to their position in a record.*
+
+> vouchersMetaDecoder =  
+> D.map4 VouchersMeta  
+> (D.field "@TotalResources" D.int)  
+> (D.field "@TotalPages" D.int)  
+> (D.field "@CurrentPage" D.int)
+
+> *The "map4" function will call the constructor of provided type (in this case the "**VouchersMeta" record) with the parsed json fields as named and defined by each "field" parser created).*
+
+> *So, fingers crossed. Let's move on!*
+
+> *To decode each Voucher record we seem to need the "**Json.Decode.Pipeline" as we have more fields to parse than there are Decoder.map functions to handle **(*[*https://package.elm-lang.org/packages/NoRedInk/elm-json-decode-pipeline/latest/Json-Decode-Pipeline](https://package.elm-lang.org/packages/NoRedInk/elm-json-decode-pipeline/latest/Json-Decode-Pipeline) )?*
+
+> *...*
+
+==&gt; It seems elm suffers from the same problem as other programming language in that it is not so clear on how to "import" or "install" dependencies?
+
+> *Like, I wanted to use "json-decode-pipeline" as defined in the documentation (<https://package.elm-lang.org/packages/NoRedInk/elm-json-decode-pipeline/latest/> ).*
+
+> *But when I added the import to my source file I got an error that it was "missing" and maybe I need to "install" it?*
+
+> import Json.Decode.Pipeline exposing (required, optional)
+
+> *When I tried to throw this ate the reactor I got the following error from the localhost web server where it was running:*
+
+> ![](<Screenshot 2019-08-13 at 19.14.13.png>)  
+> *Elm reactor error when it did not find the JSon.Decode.Pipeline to import*
+
+> *But I fail to find any information on what argument I should give to "elm install" to potentially fix this problem. I mean, what is the "name" I must provide to "elm install" to have it update my elm.json file?*
+
+> *So I took a guess!! I found the github project "*[*https://github.com/NoRedInk/elm-json-decode-pipeline](https://github.com/NoRedInk/elm-json-decode-pipeline)**" and thought that perhaps the name was the gihub relative url?*
+
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$ **elm install NoRedInk/elm-json-decode-pipeline**  
+> Here is my plan:
+
+> Add:  
+> NoRedInk/elm-json-decode-pipeline 1.0.0
+
+> Would you like me to update your elm.json accordingly? &#91;Y/n&#93;: Y  
+> Starting downloads...
+
+> ● NoRedInk/elm-json-decode-pipeline 1.0.0
+
+> Dependencies ready!  
+> Kjell-Olovs-Mac-Pro:ElmFortknoxAccess kjell-olovhogdal$
+
+> Ha - And it worked :)  
+> ...
+
+==&gt; So it seems the argument to "elm install" is the relative url on github that exposes an elm-package (it has an elm.json file at the root with appropriate information about the package)?
+
+> *So at *[*https://github.com/NoRedInk/elm-json-decode-pipeline](https://github.com/NoRedInk/elm-json-decode-pipeline) there is the elm-package "**Json.Decode.Pipeline" because there is an elm.json file that provides teh correct information and source required for this package to be downloaded and installed by "elm install"?*
+
+> { "type": "package", "name": "NoRedInk/elm-json-decode-pipeline", "summary": "Use pipelines to build JSON Decoders.", "license": "BSD-3-Clause", "version": "1.0.0", "**exposed-modules**": &#91; "**Json.Decode.Pipeline**" &#93;, "elm-version": "0.19.0 &lt;= v &lt; 0.20.0", "dependencies": { "elm/core": "1.0.0 &lt;= v &lt; 2.0.0", "elm/json": "1.0.0 &lt;= v &lt; 2.0.0" }, "test-dependencies": { "elm-explorations/test": "1.0.0 &lt;= v &lt; 2.0.0" }}
+
+> *...*
+
+==&gt; Moving on - We now have an error in the
+
+> ![](<Screenshot 2019-08-14 at 08.53.12.png>)
+
+> *Let's tread carefully here to don't risk getting to frustrated about us having gotten something wrong here.*
+
+> *If we stick to our conviction that vouchersAndMetaDecoder must in fact be of type "D.Decoder Voucher*sAndMeta*", then we must ask ourselves how we can compose with elms decoders to return this type, and also return a decoder that actually decodes Json to a "VouchersAndMeta" instance.*
+
+> *But we have a second way to interpret this error and that is to suspect that maybe it is the map3 return type that is the correct one? To be able to compose with elms json decoders we should be able to use map3 for our purpose?*
+
+> *So why does map3 return the type "D.Decoder c -&gt; D.Decoder value", that is a specified function type, and not the type "D.Decoder VouchersAndMeta" which is also a function albeit not with a specified function signature?*
+
+> *What does even "D.Decoder value" mean?*
+
+> *Wait, we are using the map3 function the wrong way are we not? We should have it map the first field of provided Json to "vouchersMetaDecoder" and the second field to "*D.list voucherDecoder*"?*
+
+> vouchersAndMetaDecoder =  
+> D.map3 VouchersAndMeta vouchersMetaDecoder (D.list voucherDecoder)
+
+> *Now I thought that was what this code would do. But what is missing is the actual parsing of the field names! So the code should actually be;*
+
+> vouchersAndMetaDecoder =  
+> D.map2 VouchersAndMeta  
+> (D.field "MetaInformation" vouchersMetaDecoder)  
+> (D.field "Vouchers" (D.list voucherDecoder))
+
+> *Which makes sense if we assume that map2 wants two decoders to produce two values to pass to the constructor of the two fielded record "VouchersAndMeta".*
+
+> *And that D.field wants one String with a json field name and one decoder to parse the value of that json field?*
+
+> *Success! But now we have a problem with the decoder we wrote that uses the piping operator.*
+
+> ![](<Screenshot 2019-08-14 at 09.17.39.png>)
+
+> *So what is going on here? It says "This function cannot handle the argument sent through the (|&gt;) pipe:". What does "sent through the pipe" even mean?*
+
+> *As a programmer I read this code and expect "|&gt;" to be a function that takes a function and a value, passes the value to the function and returns a new function with the same signature. Or something along those lines. I mean, we want the '|&gt;' operator to compose so that the output of one function can be passed to the next function in a "piping" manner.*
+
+> *Let's study how the piping "|&gt;" operator is actually defined to accomplish this (<https://github.com/NoRedInk/elm-json-decode-pipeline/blob/master/src/Json/Decode/Pipeline.elm> )?*
+
+> {-|  
+> # Json.Decode.Pipeline  
+> Use the \`(|&gt;)\` operator to build JSON decoders.  
+> ## Decoding fields  
+> @docs required, requiredAt, optional, optionalAt, hardcoded, custom  
+> ## Ending pipelines  
+> @docs resolve  
+> -}
+
+> *From this comment it seems we can conclude that the "|&gt;" operator is to be used to compose "JSON decoders" which I suppose means the result are of types "Decoder a"?*
+
+> *AHA - The "|&gt;" operator is in fact an elm operator (<https://package.elm-lang.org/packages/elm/core/latest/Basics#|>&gt; )?!*
+
+> [(|&gt;)](<https://package.elm-lang.org/packages/elm/core/latest/Basics#(|%3E)>) : a -&gt; (a -&gt; b) -&gt; b
+
+> *So we give it an instance of any type "a" and a function that takes an instance of "a" and returns an instance of any other type "b", and it will return an instance of type "b" when called.*
+
+> Saying `x |&gt; f` is exactly the same as `f x`
+
+> *Yes, this will "pipe" because we can now apply "|&gt;" again and feed it the instance of "b" and a function b -&gt; c and get a c - and so on! So "x |&gt; f |&gt; g" would become "g(f(x))"?*
+
+> ```
+> -- BEFORE
+> sanitize : String -> Maybe Int
+> sanitize input =
+>   String.toInt (String.trim input)
+
+> ```
+
+> We can rewrite it like this:
+
+> ```
+> -- AFTER
+> sanitize : String -> Maybe Int
+> sanitize input =
+>   input
+>     |> String.trim
+>     |> String.toInt
+> ```
+
+> *Ok, so what is our error all about. It seems to complain on the second (not the first) application of the piping operator? So the first application on "required ..." is OK but the second "optional..." is not?*
+
+> *If we shorten down the body to;*
+
+> voucherDecoder : D.Decoder Voucher  
+> voucherDecoder =  
+> D.succeed Voucher  
+> |&gt; required "@url" D.string
+
+> *The error changes to;*
+
+> ![](<Screenshot 2019-08-14 at 12.44.21.png>)
+
+> *Hm... How can we understand this? Somehow the signature of the type provided to D.Decoder (The "(maybe String -&gt; String -&gt; ...)" kind of correlates with the actual structure of Voucher?*
+
+> type alias Voucher = {  
+> {-  
+> "@url": "<https://api.fortnox.se/3/vouchers/A/1?financialyear=3>",  
+> "Comments": null,  
+> "Description": "Beanstalk",  
+> "ReferenceNumber": "",  
+> "ReferenceType": "MANUAL",  
+> "TransactionDate": "2018-05-02",  
+> "VoucherNumber": 1,  
+> "VoucherSeries": "A",  
+> "Year": 3,  
+> "ApprovalState": 0  
+> -}
+
+> url : String  
+> ,comments : Maybe String  
+> ,description : String  
+> ,referenceNumber : String  
+> ,referenceType : String  
+> ,transactionDate : String  
+> ,voucherNumber : Int  
+> ,voucherSeries : String  
+> ,year : Int  
+> ,approvalState : Int  
+> }
+
+> *Somehow it seems the "Body" mentioned in the error matches the Voucher struct member types beginning with "comments" which is "Maybe String". If we line up the error with the Voucher struct we get;*
+
+> *The body is: **type alias **Voucher** = { *
+
+> *D.Decoder **(*  
+> *url : String*  
+> *Maybe String **,comments : Maybe String*  
+> *-&gt; String **,description : String*  
+> *-&gt; String **,referenceNumber : String*  
+> *-&gt; String **,referenceType : String*  
+> *-&gt; String **,transactionDate : String*  
+> *-&gt; Int **,voucherNumber : Int*  
+> *-&gt; String **,voucherSeries : String*  
+> *-&gt; Int **,year : Int*  
+> *-&gt; Int **,approvalState : Int *  
+> *-&gt; **Voucher** *  
+> *)*
+
+> *So is elm somehow able to apply reflection so that the pipe operator composition can be matched with the struct we are aiming at creating?*
+
+> *Because it seems "D.succeed Voucher **|&gt; required "@url" D.string" has "consumed" the first member type in "Voucher" and now expects "the rest" of Voucher?*
+
+> *How can we understand this? Let's look at "succeed" to see what it actually do (<https://github.com/elm/json/blob/1.1.3/src/Json/Decode.elm> )?*
+
+> {-| Ignore the JSON and produce a certain Elm value.  
+> decodeString (succeed 42) "true" == Ok 42  
+> decodeString (succeed 42) "&#91;1,2,3&#93;" == Ok 42  
+> decodeString (succeed 42) "hello" == Err ... -- this is not a valid JSON string  
+> This is handy when used with \`oneOf\` or \`andThen\`.  
+> -}  
+> succeed : a -&gt; Decoder a
+
+> *So this is just a helper function to turn a type to a decoder of that type?*
+
+> *AHA - We need to provide a decoder that returns a "Maybe String" but we provide one that return String!!*
+
+> *AND - we had missed to decode for the member "**ReferenceType**". So this is the decoder that matches to decode the members of "Voucher"*
+
+> voucherDecoder : D.Decoder Voucher  
+> voucherDecoder =  
+> D.succeed Voucher  
+> |&gt; required "@url" D.string  
+> |&gt; optional "Comments" D.string ""  
+> |&gt; required "Description" D.string  
+> |&gt; required "ReferenceNumber" D.string  
+> |&gt; required "ReferenceType" D.string  
+> |&gt; required "TransactionDate" D.string  
+> |&gt; required "VoucherNumber" D.int  
+> |&gt; required "VoucherSeries" D.string  
+> |&gt; required "Year" D.int  
+> |&gt; required "ApprovalState" D.int
+
+> *NEAT! Somehow elm can do pattern matching on piped functions here to ensure we actually get all the values of correct type to instantiate our elm type (in this case Voucher). But I have to come back to this to really understand how this mechanism work. I kind of get a hunch how it can be done but I will place that at the back of my head and come back to it later.*
+
+> SUCCESS! My elm-file now compiles and runs and places a REST call to Fortknox AND parses the returned Json without any visible errors :)
+
+> TODO: Document the progress from here in a separate mail!
+
+> **WE ARE HERE... (See next Todo about Fortknox REST interaction app progress)**
+
+> *...*
+
+==&gt; It seems if I really want to get to the nitty gritty about function signatures and stuff for Json decoding I can look into the source code (<https://github.com/elm/json/blob/1.1.3/src/Json/Decode.elm> )?
+
+> *So for example it seems a the decoder type does in fact have the signature "String -&gt; String -&gt; your_type" although abstracted into implicit "types" "String -&gt; Json -&gt; your_type"?*
+
+> *But in elm code this is not so obvious. For one the actual Decode type just states that "Decode" is "indexed" on some type*
+
+> {-| A value that knows how to decode JSON values.  
+> There is a whole section in \`[guide.elm-lang.org](http://guide.elm-lang.org)\` about decoders, so &#91;check it  
+> out&#93;(<https://guide.elm-lang.org/interop/json.html>) for a more comprehensive  
+> introduction!  
+> -}  
+> type Decoder a = Decoder
+
+> *Note how this definition does not state anything about the actual type. It seems to be a design decision by elm to use this syntax to be able to have types be "indexed" by some type variable but postpone how this is actually done for each definition of some specific type 'a'?*
+
+> *So like the decoder that turns some Json value into an elm Bool instance is defined as;*
+
+> {-| Decode a JSON boolean into an Elm \`Bool\`.  
+> decodeString bool "true" == Ok True  
+> decodeString bool "42" == Err ...  
+> decodeString bool "3.14" == Err ...  
+> decodeString bool "\\"hello\\"" == Err ...  
+> decodeString bool "{ \\"hello\\": 42 }" == Err ...  
+> -}  
+> bool : Decoder Bool  
+> bool =  
+> Elm.Kernel.Json.decodeBool
+
+> *Note the language in the comment here. A "JSON Boolean" seems to mean the Json text that represent the Boolean value? So when elm talks about JSON "Values" they mean the text in the JSon file that represents that value?*
+
+> *Now we can make sense of the comment for "decodeString" that in fact implements the two step process if first decoding some provided JSON text into a JSON "Value" which should mean the text snippet that according to JSON syntax represents the value of some JSON field (element, term?). So the text "4" is a valid JSON representation of an integer value. And "decodeString" takes a "Decoder a" instance and an elm String instance and calls the "Decoder a" instance with this text.*
+
+> {-| Parse the given string into a JSON value and then run the \`Decoder\` on it.  
+> This will fail if the string is not well-formed JSON or if the \`Decoder\`  
+> fails for some reason.  
+> decodeString int "4" == Ok 4  
+> decodeString int "1 + 2" == Err ...  
+> -}  
+> decodeString : Decoder a -&gt; String -&gt; Result Error a  
+> decodeString =  
+> Elm.Kernel.Json.runOnString
+
+> *Now, the interesting thing here is that "decodeString" is defined to return "Result Error a" where "a" is a type variable that defines the elm type we are to use to represent the parsed JSON "Value".*
+
+> *We can also deduce that in elm-lingua the term "JSON string" means any text that is to be parsed using JSON syntax while "JSON Value" means the JSON text (string) that represents a value of JSON elements. We see this in the comment to "**decodeValue**" that expects the provided with an instance of the type "Value" which is the result of already having passed the JSON syntax parsing?*
+
+> *...*
+
+> {-| Run a \`Decoder\` on some JSON \`Value\`. You can send these JSON values  
+> through ports, so that is probably the main time you would use this function.  
+> -}  
+> decodeValue : Decoder a -&gt; Value -&gt; Result Error a  
+> decodeValue =  
+> Elm.Kernel.Json.run
+
+> *...*
+
+> {-| A structured error describing exactly how the decoder failed. You can use  
+> this to create more elaborate visualizations of a decoder problem. For example,  
+> you could show the entire JSON object and show the part causing the failure in  
+> red.  
+> -}  
+> type Error  
+> = Field String Error  
+> | Index Int Error  
+> | OneOf (List Error)  
+> | Failure String Value
+
+> *...*
+
+2) Consider it seems I may be able to integrate "privately" with my live FortKnow account by integrating with my Client-Id (<https://developer.fortnox.se/getting-started/> )?
+
+TODO: Check out if I did something wrong the last time when I got the impression I had to pay 59 SEK per month to activate integration to be able to do this?
+
+,,,
+
+3) Consider how the wikipedia article on JSON fails to define the semantics to enable concise talk "about" Json text content (<https://en.wikipedia.org/wiki/JSON> )?
+
+> *My problem with the wikipedia article on JSOn is that it does not break down the syntax of text that represents JSON into what the JSON parts actually are, what to call them and how to talk about them. We see this problem in understanding the elm package for JSON parsing where terms like "string" and "value" are used without trying to explain what they are. And the wikipedia article does not help.*
+
+==&gt; Consider the Json articles on w3shools are "better" in describing how to talk about JSON text (<https://www.w3schools.com/js/js_json_intro.asp> )?
+
+> "JSON: **J**ava**S**cript **O**bject **N**otation.
+
+> JSON is a syntax for storing and exchanging data.
+
+> JSON is text, written with JavaScript object notation."
+
+
+
+==&gt; Consider this w3 shools article on JSON is good and very to-the-point on how to talk about JSON (<https://www.w3schools.com/js/js_json_syntax.asp> )?
+
+> "JSON syntax is derived from JavaScript object notation syntax:
+- **Data** is in name/value pairs
+- Data is separated by commas
+- Curly braces hold **objects**
+- Square brackets hold **arrays**"
+
+  
+> "A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:"
+
+==&gt; So from this we seem to be able to deduce that to talk about JSON we can talk about "Data", "Objects" and "Arrays" where "Data" consists of "Name" (also called "Key") and "Value"
+
+...
+
+{% endraw %}

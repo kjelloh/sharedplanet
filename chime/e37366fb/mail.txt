@@ -1,0 +1,38 @@
+﻿So, could it be fun and meaningful to get hold of some god and reasy to use CFD software to simulate wind turbines and dust and coagulant (water purification) separators?
+
+1) Consider OpenFoam (https://www.openfoam.com <https://www.openfoam.com/>)?
+
+	==> Latest release seems to be from June 2017 (https://www.openfoam.com/releases/openfoam-v1706/ <https://www.openfoam.com/releases/openfoam-v1706/>)?
+	==> It seems to be available to download for all major platforms Mac, Linux and Windows (https://www.openfoam.com/download/ <https://www.openfoam.com/download/>)?
+
+	==> The source code seems to be available for contribution and own build (
+	==> The source seems to be C++ using veru much the latest tools in the community (
+
+”Minimum recommended versions
+
+	• gcc: 4.8.0
+	• cmake: 2.8.11 (required for ParaView and CGAL build)
+	• boost: 1.48 (required for CGAL build)
+	• Qt: 4.7.2 (optional - required for ParaView build)"
+
+	==> OpenFOAM seems to come with a Qt based visualizer called ”VisualCFD" (https://www.openfoam.com/products/visualcfd.php <https://www.openfoam.com/products/visualcfd.php>)?
+
+	==> Consider this youtube channel for (somewhat old) OpenFOAM tutorials (https://www.youtube.com/watch?v=ElOt9qzXQ7k <https://www.youtube.com/watch?v=ElOt9qzXQ7k>)?
+	==> Consider this video from 2009 ”Evolving Wind Turbine Blades” on development of VAWT (Vertical axes wind turbine) blades using OpenFOAM simulations (https://www.youtube.com/watch?v=YZUNRmwoijw <https://www.youtube.com/watch?v=YZUNRmwoijw>)?
+	…
+
+2) Consider this youtube channel where a guy has posted seemingly tons of research on VAWT and OpenFOAM usage (https://www.youtube.com/user/sjh7132/videos <https://www.youtube.com/user/sjh7132/videos>)?
+
+	==> Consider this video on MPPT (Maximum Power Point Tracking) for wind turbines (https://www.youtube.com/watch?v=0TE38SOdf64&t=256s <https://www.youtube.com/watch?v=0TE38SOdf64&t=256s>)?
+	==> In this video he seems to state that OpenFOAM is only good for simulating steady flow situations, i.e. fix RPM wind turbine (https://www.youtube.com/watch?v=wjr7NUe5hfg <https://www.youtube.com/watch?v=wjr7NUe5hfg>)?
+
+		==> He seems to have written ”Spinner” that iterates OpenFoam on the changed model of new VAWT RPM?
+
+		
+
+	WE ARE HERE…
+
+…
+
+Consider to delve into different options of being able to simulate wind and water flows using affordable and usable CFD softwares?
+...

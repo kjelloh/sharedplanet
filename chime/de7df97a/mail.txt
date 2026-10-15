@@ -1,0 +1,20 @@
+﻿From youtube video by Yorik van Havre, the Brazilian developer of FreeCAD I learned he is also sometimes using QCAD (NOT Cute CAD) and thought this was worth checking out for my own CAD needs?
+
+	==> Also see "Todo: Build House - Consider to really give FreeCad a try to see if I can rely on it to design, model and produce plans using it BIM style?"
+	==> Also see "Todo: Consider to study and try out the Open Source 2D CAD application QCAD (NOT CuteCAD as a companion to 3D CAD FreeCAD)?"
+	==> Also see "Todo: Consider to study and try out the 2D CAD application LibreCAD, a fork of QCAD (as a companion to 3D CAD FreeCAD)?"
+	==> Also see "Todo: Consider to study and try out the 2D CAD application CuteCAD (as a companion to 3D CAD FreeCAD)?"
+
+-1) He (Yorik van Havre) meant QCAD - NOT Cute CAD!!
+
+	==> It seems I heard wrong and that Yorik van Havre actually was talking about (and using) the Open Source QCAD (
+
+		==> Further see "Todo: Consider to study and try out the 2D CAD application CuteCAD (as a companion to 3D CAD FreeCAD)?" and (https://www.qcad.org/en/ <https://www.qcad.org/en/> )?
+
+1) It seems QCAD lives on this web site (https://www.qcad.org/en/ <https://www.qcad.org/en/> )?
+
+"QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. 
+
+The current version of QCAD is 3.22."
+
+...

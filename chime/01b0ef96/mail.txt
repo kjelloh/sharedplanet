@@ -1,0 +1,36 @@
+﻿
+
+1) Consider the information given in Cppcon 2019 talk "CppCon 2019: Andrew Sutton “Meta++: Language Support for Advanced Generative Programming”" (https://youtu.be/kjQXhuPX-Ac <https://youtu.be/kjQXhuPX-Ac> )?
+
+
+
+
+Some interesting URLs at 9:47 into the video (https://youtu.be/kjQXhuPX-Ac?t=587 <https://youtu.be/kjQXhuPX-Ac?t=587> )
+
+
+2) This seems to be the home of Lock3 "The Lock3 LLVM Reflection & Metaprograming Clang Fork" at gitlab (https://gitlab.com/lock3/clang <https://gitlab.com/lock3/clang> )?
+
+"This repository contains a modified version of the clang compiler for reflection (feature/reflect) and metaprogramming (feature/metaprogramming)."
+
+	==> This seems to be the Lock3 wiki with documentation on this project (https://gitlab.com/lock3/clang/-/wikis/home <https://gitlab.com/lock3/clang/-/wikis/home> )?
+
+Development & Compilation Resources
+
+Build Instructions <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF/lock3/clang/-/wikis/Build-Instructions>
+Upstream Tracking <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF/lock3/clang/-/wikis/Upstream-Tracking>
+ <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF#tutorials>Tutorials
+
+Reflection Introductory Tutorial <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF/lock3/clang/-/wikis/Reflection-Introductory-Tutorial>
+Metaprogramming Introductory Tutorial <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF/lock3/clang/-/wikis/Metaprogramming-Introductory-Tutorial>
+Contexts for Variadic Reifiers <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF/lock3/clang/-/wikis/Variadic-Reification>
+ <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF#library-documentation>Library Documentation
+
+Reflection Library <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF/lock3/clang/-/wikis/LibDocs/Reflection-Library.pdf>
+Metaprogramming Extensions <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF/lock3/clang/-/wikis/LibDocs/Metaprogramming-Extensions.pdf>
+ <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF#implementation-information>Implementation Information
+
+Library Implementation Details <applewebdata://A69C4C93-7188-4B6F-84FA-841B627D48FF/lock3/clang/-/wikis/Library-Implementation-Details>
+
+
+
+...

@@ -1,0 +1,70 @@
+# Todo: Write about Digital Receipt being another example of the problem of having multiple digital identities?
+
+```#2bde9781``` *As of 2016-02-14 13:22*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to write about the problem for handling Digital Receipts concerning how to identify the Digital Identity of the customer to send the receipt to?
+
+1) Digital Receipts require a Digital Identity of the customer to send the receipt to.
+
+==&gt; There is currently no way to use a single Digital Identity for Digital Services (each service defines a new Digital Identity and attach to the person)  
+==&gt; Existing Digital Receipt habitats include defining a Digital Identity of the user within that habitat.  
+==&gt; Different Digital Receipt habitats may be unable to share Digital Receipts.
+
+2) Compare Digital Receipt and Physical Receipt traits and application
+
+==&gt; Physical Receipts can be handed to the Physical Customer at the Point of Purchase.  
+==&gt; All existing Point Of Sales are able to produce a physical receipt.  
+==&gt; All aspects of storing and processing physical receipts together with rules and laws for doing so is well established and global.  
+==&gt; Corresponding aspects for Digital Receipts are not in place.
+
+3) Elaborate on the solution of Account Based identity (App + register and login approach)
+
+==&gt; The customers digital identity is defined by an account the user has created with a service.
+
+4) Elaborate on most Digital Identities basically is an e-mail address of the user
+
+==&gt; Account based digital identities are often based on a ”user name” being an e-mail to reach the user.
+
+5) Argue that a ”true” Digital Receipt solution has to solve the ”Multiple Digital Identity Disorder)?
+
+==&gt; If Digital Receipts produced by different Point of Sales is sent to different Digital Identities of the customer it will just ”not work”  
+==&gt; E-mail kind of ”works best” as it enables the customer to use the same e-mail address as her Digital Identity cross different Digital Services.
+
+6) How may we extend e-mail Digital Identity to one that may evolve into richer user centered digital services?
+
+==&gt; What can we say about the Darwinet approach to extend e-mail messaging to a rich user centered digital service environment?  
+==&gt; What other approaches can we imagine to extend mail-based Digital Identity relations with multiple services?
+
+7) What can we say about using Social Service Accounts as Cross-service Digital Identities?
+
+==&gt; Many services uses Facebook-login to connect the users Facebook Identity as the Digital Identity for the service.  
+==&gt; The same goes for Google, LinkedIn etc.  
+…
+
+8) What can we say about OpenID initiative from the perspective of creating a single cross-service Digital Identity on the web (http://openid.net/connect/faq/)?
+
+”OpenID Connect lets developers authenticate their users across websites and apps without having to own and manage password files. For the app builder, it provides a secure verifiable, answer to the question: “What is the identity of the person currently using the browser or native app that is connected to me?””
+
+==&gt; This seem to be a good clip relating multiple identities and how OpenID supports this model (https://youtu.be/Kb56GzQ2pSk)?  
+==&gt; Note how the seem to confuse ”role” with ”Identity”?  
+==&gt; How does this relate to the Emdividual Model of Self?  
+==&gt; This seem like another good clip about OpenID and Digital identity in general (https://youtu.be/xcmY8Pk-qEk)?  
+==&gt; Note how OpenID seem to still provide for several Identity Providers?  
+==&gt; In a way OpenID moves ”Identity Authorization) from the Service to the Identity Provider?  
+...
+
+9) What can we say in general regarding OAuth 2.0 (http://oauth.net/2/)?
+
+==&gt; The OAuth 2.0 RFC 6749 seems to define the current OAuth framework (http://tools.ietf.org/html/rfc6749)?  
+==&gt; This seem to be a good BSD Licensed C++ library for OAUTH 2.0 aimed for the QT framework (http://www.qt.io/qt-quick/)?  
+==&gt; QT seem to live at this site and provide also and IDE for multi-platform development (http://www.qt.io)?  
+...  
+…
+
+Consider to elaborate more on the problem of being forced to administrate Multiple Digital Identities?  
+...
+
+{% endraw %}

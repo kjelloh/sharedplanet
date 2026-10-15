@@ -1,0 +1,97 @@
+# Todo: Consider to choose an Onyx back hub to go with the Pinion Gearbox drive train?
+
+```#02cda35d``` *As of 2021-08-19 01:05*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider the Hyper Glyde Single Speed (HGSS) 142 x 12 mm Onyx Classic Hub with ISO 6 hole disc mount (<https://onyxrp.com/store/mtb-hubs/mtb-iso-hgss/mtb-iso-hgss-142-12mm-thru/> )?
+
+> ![](PastedGraphic-8.png)  
+> ![](PastedGraphic-1.png)
+
+> A - Hub Center To Flange Center, Non-Drive Side (mm)30.85B - Hub Center To Flange Center, Drive Side (mm)34.92C - Axle Width (mm)142Spoke Hole Circle Diameter, Drive Side (mm)60Spoke Hole Circle Diameter, Non-Drive Side (mm)60Spoke Hole Counts Available28/32/36
+
+> ## Specs
+
+> Weight17.0 oz / 482 gDimensions - Approximate for Shipping9.5 × 4.5 × 4 inHub Type  
+> [Rear](https://onyxrp.com/attribute-name/attribute/hub-type/rear/)  
+> Axle Width - mm  
+> [142](https://onyxrp.com/attribute-name/attribute/axle-width/142/)  
+> Axle Diameter - mm  
+> [12](https://onyxrp.com/attribute-name/attribute/axle-diameter/12/)  
+> Spoke Count  
+> [28](https://onyxrp.com/attribute-name/attribute/spoke-count/28/), [32](https://onyxrp.com/attribute-name/attribute/spoke-count/32/), [36](https://onyxrp.com/attribute-name/attribute/spoke-count/36/)  
+> Attach Style  
+> [Thru-bolt](https://onyxrp.com/attribute-name/attribute/attach-style/thru/)  
+> Hub Shell Style  
+> [Solid](https://onyxrp.com/attribute-name/attribute/hub-shell-style/solid/)  
+> Disc Brake Rotor Mount  
+> [ISO 6-Bolt Flange](https://onyxrp.com/attribute-name/attribute/disc-brake-rotor-mount/iso-6-bolt-flange/)  
+> Driver Style  
+> [Shimano Hyperglide® Single Speed](https://onyxrp.com/attribute-name/attribute/driver-style/hyperglide-single-speed/)  
+> Spoke Tension - Max kgf  
+> [120](https://onyxrp.com/attribute-name/attribute/spoke-tension-max-kgf/120/)  
+> Product Line  
+> [Classic](https://onyxrp.com/attribute-name/attribute/product-line/classic/)
+
+2) Consider the Hyper Glyde (HG) 11 Speed Onyx Vesper Hub (<https://onyxrp.com/store/mtb-hubs/onyx-vesper-mtb-iso-hg-11spd-142-12-thru-bolt-rear-hub/> )?
+
+> ![](PastedGraphic-9.png)
+
+> ## Specs
+
+> Weight14.5 oz / 411 gDimensions - Approximate for Shipping9.5 × 4.5 × 4 inHub Type  
+> [Rear](https://onyxrp.com/attribute-name/attribute/hub-type/rear/)  
+> Axle Width - mm  
+> [142](https://onyxrp.com/attribute-name/attribute/axle-width/142/)  
+> Axle Diameter - mm  
+> [12](https://onyxrp.com/attribute-name/attribute/axle-diameter/12/)  
+> Spoke Count  
+> [24](https://onyxrp.com/attribute-name/attribute/spoke-count/24/), [28](https://onyxrp.com/attribute-name/attribute/spoke-count/28/), [32](https://onyxrp.com/attribute-name/attribute/spoke-count/32/)  
+> Attach Style  
+> [Thru-bolt](https://onyxrp.com/attribute-name/attribute/attach-style/thru/)  
+> Hub Shell Style  
+> [Solid](https://onyxrp.com/attribute-name/attribute/hub-shell-style/solid/)  
+> Disc Brake Rotor Mount  
+> [ISO 6-Bolt Flange](https://onyxrp.com/attribute-name/attribute/disc-brake-rotor-mount/iso-6-bolt-flange/)  
+> Driver Style  
+> [Shimano Hyperglide® 11 Speed](https://onyxrp.com/attribute-name/attribute/driver-style/hg-11spd/)  
+> Spoke Tension - Max kgf  
+> [120](https://onyxrp.com/attribute-name/attribute/spoke-tension-max-kgf/120/)  
+> Product Line  
+> [Vespe](https://onyxrp.com/attribute-name/attribute/product-line/vesper/)
+
+3) It seems an Onyx Standard single speed (for stronger wheel) will add and 482g to my bike and set me back $600 including shipping with five to six weeks to manufacture?
+
+> ![](PastedGraphic-10.png)
+
+4) Consider to build a DT Swiss 32 spoke wheel on the Onyx Hub?
+
+==&gt; Consider the 29" 25mm wide M 462 29 25 MM DB VI (<https://www.dtswiss.com/en/components/rims-mtb/all-mountain/m-462> )?
+
+> ![](PastedGraphic-11.png)
+
+==&gt; It seems Rosebikes sell the DT Swiss M442 that also has 603mm reference diameter bu 27mm rim width ([https://www.rosebikes.se/dt-swiss-m442-mtb-disc-rim-797047?product_shape=black&article_size=29%27%27](https://www.rosebikes.se/dt-swiss-m442-mtb-disc-rim-797047?product_shape=black&article_size=29'') )?
+
+> ![](PastedGraphic-15.png)
+
+> NOTE: This rim with Onyx classic hub will weigh around 495 (rim) + 482 (hub) plus spokes and nipples (1 kg?)
+
+==&gt; It seems the Onyx web spoke calculator for reference diameter 603 mm and 3.cross lacing requires 292 mm spokes?
+
+> 32 Spoke HolesNon-Drive Side  
+> (mm)Drive Side  
+> (mm)1-Cross 2742752-Cross 2812823-Cross 2922924-Cross 303304
+
+==&gt; Consider 40 spokes from rosebikes for 200 SEK + shipping (<https://www.rosebikes.se/dt-swiss-champion-spokes-black-20-pack-47815?product_shape=black&article_size=292mm> )?
+
+> ![](PastedGraphic-12.png)
+
+==&gt; Consider 40 brass nipples 12 mm from rosebikes (<https://www.rosebikes.se/dt-swiss-pro-lock-spoke-nipples-black-40-pack-46913?product_shape=black&article_size=12mm> )?
+
+> ![](PastedGraphic-13.png)
+
+...
+
+{% endraw %}

@@ -1,0 +1,46 @@
+# Todo: Script - Consider to script a video about how I managed to remove dry wall expanders from my living room south wall?
+
+```#01b361c4``` *As of 2019-08-21 15:14*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Her is how I manager to get these little bastards out of my living room dry wall!
+
+If you like my videos ...
+
+I managed to get these dry wall expanders out of my dry wall. Now it was not a 100% success story. And I want to share with you what I think are some clues and tricks to make removal of these more successful.
+
+First understand how they work. They have these sider strips of metall that will contract against the inside of the dry wall when you tighten the fastening screw.
+
+So to unmount them you have to somehow straighten out these metal strips again.
+
+And the way you can do that is to insert the fastening screw and them hammer it in!
+
+The force will then straighten these metal strips out again.
+
+In theory that should not be so hard and I got the hang of it after some attempts.
+
+I first screw the fastening screw into the threads of the fastener.
+
+Then I gently tapped the screw to bit by bit have the deformed and clamping metal strips expand again.
+
+Once they have started to expand you can hit the screw a little harder until it bottoms out.
+
+I then unscrew the screw and wiggled the fastener out from the wall.
+
+As you can see the degree to which I succeeded to straighten the fastener varied a lot!
+
+The first two ones totally failed. Probably because I hit the screw so hard it lost the grip of its thread and went in without causing any deformation at all to the clamp. So when I pulled it out I made a mess.
+
+Some of the following ones I managed to straighten out the metals strips but then I hammered away and enabled this front clamp to dislodge from the backend of the clamp. Which made it har to get out but at least the injurie I made to the dry wall was somewhat less.
+
+It was not until the last attempts I learned to not hammer away too hard in the beginning and not at the end. So I got the clamp to straighten out without the wall, the clamp or the threads give away to the forces.
+
+A final note: I think these expanders are actually designed to fail when you hammer them it like I did here. You are probably meant to then just force that inside part of the clamp into the wall and forget all about it. I just did not want to do that. To me it just felt better to remove the garbage from the wall and not have parts of these clamps rest in some clamping grave yard in there!
+
+So there you have it. If you have more ideas on how to remove dry wall expanders please let me now by leaving a comment below.
+
+So, if you have, thank you for watching and see you next time!
+
+{% endraw %}

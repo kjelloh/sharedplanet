@@ -1,0 +1,44 @@
+# Todo: Consider a "swarming" society evolution mechanism based on open source development and C++ committee organisation?
+
+```#7a1c7852``` *As of 2016-03-28 16:11*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could we imagine a society-of-the-future to implement self-evolution using some “swarming” mechanism in the line of how Open Source Projects or C++ language evolve?
+
+1) Consider to study C++ committee proposal and voting system as indicated at 36:30 in this talk (https://channel9.msdn.com/Events/CPP/CppCon-2015/CPPConD01V005)?
+
+==&gt; Anyone may propose changes (will get an Nxxxx number somewhere in the process)?  
+==&gt; The committee discuss and votes on the form SF-F-N-A-SA (Strongly in favour, in favour, neutral, against, strongly against)
+
+==&gt; Thus a vote is a kind of graph showing both both the “spread” and the “mean” of the vote (e.g. 6-7-5-2-0 leans to favours while 4-2-3-5-2 suggests no consensus)?
+
+2) Consider the society allows “committees” to form spontaneous round subjects and gain power to impact by support through voting?
+
+==&gt; How do we imagine such a mechanism to require engagement only among those that care?
+
+3) What if we imagine each citizen to get a default manifest at birth with the option to edit the manifest at any time during life?
+
+==&gt; The role of the society could then be seen as trying to enable all citizens to fulfil their manifest?  
+==&gt; The manifest could be based on “A Declaration of dependance” to impose the basic restrictions of all life sharing this planet (physically and “mentally”)?
+
+4) Consider democratic elections are to vote for how to provide to manifest fulfilment (not what to fulfil)?
+
+5) Consider society to have a special meta-society where the content of the default manifest is processed and decided on?
+
+==&gt; Consider a goal where the default manifest should carry the evolved knowledge of what works and what not?  
+==&gt; This way the interest of the “silent mass” is protected over the progress of society?  
+==&gt; It must be ok to be a politically passive citizen and still get the benefits of the evolution of society?
+
+6) Consider a basic mechanism is to allow experiments of societies applying different default manifests?
+
+==&gt; Consider this to be a way to acknowledge that humans are poor at predict the result of our own and collective actions and beliefs?  
+==&gt; Having semi-controlled environments where new beliefs and organisation of society round those beliefs enables societies to evolve based on “survival of the fittest” mechanisms?
+
+…
+
+Consider to elaborate more on this idea for self-programming of society organisation and services?  
+...
+
+{% endraw %}

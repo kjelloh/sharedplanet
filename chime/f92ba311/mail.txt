@@ -1,0 +1,36 @@
+﻿My Brother HL-L2375DW laser printer suddenly refused to print with the error "Low Toner..." but I wanted to force it to really empty the cartridge!
+
+1) Consider to try a third party toner to see how it behaves compared to Brother own "original" (and more expensive) toner?
+
+	==> Consider the Toner to buy is either Product TN-2410 (1200 pages) or TN-2420 (300 pages)?
+
+	
+	Brother HL-L2375DW seems to accept either 122 pages TN-2410 or 300 pages TN-2420?
+
+	==> Consider "TBV180 inkClub Ersätter: TN-2410" third party toner for 418 SEK inc. VAT and shipping?
+
+2) Consider what it means that it continued to print until beginning of August 2020!
+
+So this week (around 5th of August) my Brother HL-2375DW finally gave up printing. It is quite telling that this is in fact almost 9 month after it self-activated its lock due to low toner! So this is the world we are living in now?
+
+	==> Consider how I managed to get more prints by shaking the toner!!
+
+I took out the toner and gave it a thorough shaking and managed to print with OK quality again! At least one page so let's see how many more pages before it really, really is empty :)
+
+3) It seems this trick to "Reset" the Low-Toner block worked for me (https://www.inkhub.com.au/brother-tn-2450-toner-reset <https://www.inkhub.com.au/brother-tn-2450-toner-reset> )?
+
+	==> For me it worked to select "Continue" in step 3 and then hit <Go> (and then wait around one minute!)
+HL-L2375DW / HL-L2350DW /  HL L2395DW
+
+  1. Press the Up or Down arrow key to choose General Setup, and then press OK.
+
+  2. Press the Up or Down arrow key to choose Replace Toner, and then press OK.
+
+  3.Press the Up or Down arrow key to choose Continue or Stop.
+
+  4. Press Go.
+
+
+	Note: I had to wait for around a minute or two for the printer to start printing again. It may or may not have been a coincident?
+
+...

@@ -1,0 +1,67 @@
+﻿It seems we may be able to build a 3D scanner by using cheap re-used laptop web-cams, some single board computer and open source MeshRoom?
+
+	==> Also see “Todo: Consider to check out Meshroom to use it for 3D scanning of objects (to be used in CAD and CAM)?"
+
+1) Consider where to buy the re-used laptop web-cams?
+
+	==> Consider this youtube video “DIY Home Security - ON A BUDGET!” for leads to where to buy and how to use these cameras (https://youtu.be/CouxmNqxO4A)?
+
+		==> He seems to state that two cameras is a limit for bandwidth and driver reasons (https://youtu.be/CouxmNqxO4A?t=419)?
+
+	==> It seems the cameras are USB cameras?
+
+	==> Consider e-bay uk search for “webcam + cable” (https://www.ebay.co.uk/sch/i.html?_sop=15&_from=R40&_sacat=0&_nkw=webcam+%2B+cable&=&rt=nc&LH_ItemCondition=4)?
+
+	…
+
+2) It seems Alibaba lists “USB laptop camera module) for US $10 - 20 per pc for reasonable quality cameras (https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText=USB+laptop+camera+module)?
+
+	==> Consider to search Alibaba more for models and price to see what we can find and use for a 3D scanner?
+
+	…
+
+3) Consider how we can connect many USB cameras to be read from a single SBC?
+
+	==> What do we need to be able to connect say 10 … 50 cameras to the same SBC?
+
+	==> Consider the wikipedia page on USB (https://sv.wikipedia.org/wiki/Universal_Serial_Bus)?
+
+		==> It seems USB is an acronym for “Universal Serial Bus” (https://en.wikipedia.org/wiki/USB)?
+
+	==> Consider the wikipedia article on USB Hub (https://en.wikipedia.org/wiki/USB_hub)?
+
+
+		==> It seem a “USB Hub” splits a single serial bus into one or more ports?
+
+"A USB hub is a device that expands a single Universal Serial Bus (USB) port into several so that there are more ports"
+
+	==> Consider the Oracle article on USB “Hub”, “Root Hub” and “Interface” (https://docs.oracle.com/cd/E19683-01/817-6960/devusbover-17/index.html)?
+
+		==> It seems the Controller is the hardware that hosts an “USB Root Hub”?
+
+"The USB host controller has an embedded hub called the root hub."
+
+		==> It seems the USB Hub manages power and plug-and-play detection of devices connected to its ports?
+
+"A USB hub is responsible for the following:
+
+ <>
+Monitoring the insertion or removal of a device on its ports
+
+Power-managing individual devices on its ports
+
+Controlling power to its ports"
+
+4) Consider ways to automate image capturing from all camera and feed them to Meshroom to process them into a 3D mesh file?
+
+	==> Consider if Meshroom runs on Linux or Android (popular free OS for SBC)?
+
+	==> Consider we may require to use a Windows based SBC (e.g., a latte Panda)?
+
+	...
+
+…
+
+Consider to delve deeper into this idea to use cheap re-used laptop web cams to build a 3D scanner?
+
+

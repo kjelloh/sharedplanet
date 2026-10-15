@@ -1,0 +1,17 @@
+# Todo: Bygg en vask i hallen?
+
+```#d9b4abf3``` *As of 2015-11-13 17:22*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Det borde gå alldeles utmärkt och vara ett bra ställe att bygga en vask för grovstädning i hallen.
+
+1) Vatten-stammen verkar sitta i väggen mot badrummet (under tvättstället)? Koppla in sig där?  
+2) Överväg att kakla (göra vattentåligt) i hela hörnet mot badrummet för att kunna stänka utan risk.  
+3) Borde vi också dra ett avlopp in till badrummet (Borde gå att göra ett höjt golv med bra avrinningsvinkel genom rör som mynna i avloppet under badkaret)?  
+…
+
+Överväg att kolla upp detta mera och ifall jag behöver anlita en rörmokare/kakelläggare för att få detta by-the-book?
+
+{% endraw %}

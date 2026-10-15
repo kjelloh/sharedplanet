@@ -1,0 +1,33 @@
+﻿I want to learn TIG welding that requires Nitrogen and I have also just learned that welding can benefit from shielding with inert nitrogen (less, or no, flux is required).
+
+1) Consider this article "Nitrogen Gas Generator" (https://www.instructables.com/Nitrogen-gas-generator/ <https://www.instructables.com/Nitrogen-gas-generator/> )?
+
+
+
+"Before making this nitrogen generator you should know a few things. The unit is at least 300lbs when complete. You will be dealing with pressures close to 150 psi. You will need access to welding equipment and possibly steel plate rollers."
+
+	==> It seems this is the youtube video "Nitrogen generator PSA" of this build (https://youtu.be/LWM3ZImmVWQ <https://youtu.be/LWM3ZImmVWQ> )?
+
+2) Consider the JBC "Nitrogen Generator Module" (https://www.jbctools.com/gn-a-nitrogen-module-generator-powered-by-compressed-unit-product-163.html <https://www.jbctools.com/gn-a-nitrogen-module-generator-powered-by-compressed-unit-product-163.html> )?
+
+	==> It seems to require a feed of compressed air 4 - 6 bar?
+
+SPECIFICATIONS
+Net weight
+2,00 kg (4.41lb)
+Size
+85x90x355 mm
+0.31 x 0.35 x 13.98 in
+Compressed air pressure
+4 - 6 bar
+Gas concentration
+Up to 99%
+Concentrated N2 gas flow
+1 - 2 SLPM
+	==> SLPM seems to stand for the US used "Standard litre per minute" (https://en.wikipedia.org/wiki/Standard_litre_per_minute <https://en.wikipedia.org/wiki/Standard_litre_per_minute> )?
+
+"The standard liter per minute (SLM or SLPM) is a unit of volumetric flow rate of a gas at standard conditions for temperature and pressure (STP), which is most commonly practiced in the United States, whereas European practice revolves around the normal litre per minute (NLPM)."
+
+
+
+...

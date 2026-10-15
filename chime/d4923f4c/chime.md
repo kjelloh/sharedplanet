@@ -1,0 +1,20 @@
+# Todo: Define "trait noise" as a way to amplify evolution forces
+
+```#d4923f4c``` *As of 2015-08-31 16:38*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+As discovered among ants that there is always a small amount of ants contributing randomly (collaboration noise) it may be fruitful for us to have a small amount of randomly contradicting traits. This would enable us to with smaller efforts try out new ways to relate to an event than if our traits where more fixed?
+
+Elaborate on this thought.
+
+1) do we have "trait noise"  
+2) does this cause "collaboration noise" that lowers tress holds to new (possibly better) emergence?  
+3) Does this cause "dividual noise", I.e. Noise in dividual emergence?
+
+Seems we could discuss his thus may introduce noise in all emergence that occur in human collaboration?
+
+Skickat från min iPhone
+
+{% endraw %}

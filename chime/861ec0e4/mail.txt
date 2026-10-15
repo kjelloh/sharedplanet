@@ -1,0 +1,93 @@
+﻿Consider we could imagine to attach re-usable RFID tags (from a fixed set of permutable tags) to filament spools and keep track of filament consumption indexed by the RFID tag?
+
+1) Consider if it is possible to buy cheap stackable RFID tags?
+
+	TODO: Find small, stickable RFID tags to buy?
+
+	…
+
+2) Consider where to buy RFID tag readers?
+
+	TODO: Find RFID tag readers that works with the RFID tags I buy to stick to the filament spools?
+
+3) Consider to design some simple system to read Filament Spool RFID tag and enter data about consumed filament in some predictable and easy-to-do-right way?
+
+	==>  Consider a Darwinet domain connected Arduino or other SBC with an RFID tag reader attached to the 3D printer to detect mounted spool?
+
+	…
+
+4) Consider ways to update the data of each RFID tag indexed filament spool (keep track of filament consumption and how much is left on spool)?
+
+	==> Consider a spool revolution sensor (NO - one revolution is not proportional to a fixed amount of consumed filament)
+
+	==> Consider a rotary encoder that measures the filament feed from the spool?
+
+	Hm… What about the “slack” between the spool feed sensor and the filament in the tube to the 3D printer (not yet consumed but passed the feed sensor)?
+
+	…
+
+	==> Consider a Darwinet Node on the PC connected to the same Darwinet Domain with a GUI where we can manually enter how much we plan to consume at each print?
+
+	Hm… This can get corrupted very easy (and quickly as soon as we miss to enter consumed filament or the consumed filament turns out to be something completely different)?
+
+	==> It seems we actually need the 3D printer to keep track of the amount of filament that has been feed to the hot end (can’t be retracted and is thus consumed)?
+
+	…
+
+5) Consider to “weigh in” each new spool and then keep track of weight loss (indexed by the mounted spool read RFID tag)?
+
+	==> Consider we can mount an electronic scale on the spool holder (and keep track of current weight?
+
+	==> Consider for each new spool to register the total weight of the spool + filament and the filament weight (specified on the new spool label)?
+
+	==> If we can measure the spool weight with a precision of +/- 0,5 grams (over a 1000 g range) we should be able to keep track of filament consumption with sufficient tolerance)?
+
+	NOTE: 0,5 g precision on 1000 g range is 0,5/1000 = 0,05 % (a bit much to expect)?
+
+	NOTE: For a 1% precision we need to be able to weight a 1000 g spool with 1/2 of 10 g = +/- 5 g precision? 
+
+	==> Consider a “normal” kitchen scale actually already has 1 g precision on a 1..5 kg range?
+
+		==> Consider my old OBH Nordica that seems to be able to measure 41 g of filament on a 225 g reel?
+
+		
+
+		==> Consider a new OBH Nordica kotchen scale has a 1…5000 g range with 1g precision (https://www.obhnordica.se/produkter/for-koket/koksvag/kitchen-scale-pure-white <https://www.obhnordica.se/produkter/for-koket/koksvag/kitchen-scale-pure-white>)?
+
+		
+
+6) Consider this Arduino based DIY kitchen scale project using the (https://www.instructables.com/id/How-to-Build-Arduino-Weighing-Scales/ <https://www.instructables.com/id/How-to-Build-Arduino-Weighing-Scales/>)?
+
+	==> It seems inside the scale we find either a four wire load cell or four three wire load cells?
+
+“All digital weighing scales are built around either a 4-terminal load cell or four 3-terminal load cells."
+
+	==> I presume one four wire load cell or four three wire load cells are both arranged into a Wheatstone Bridge configuration?
+
+	==> It sure seems like we are able to measure grams with the Arduino based kitchen scale sensor build (Calibrated with 8,5 g coin)?
+
+	
+
+	…
+
+7) Consider we can use the HX711 weight sensor module that even comes with an Arduino library ready to use?
+
+	==> Gosh - The HX711 weight sensor module is everywhere and costs close to nothing from China (https://www.aliexpress.com/item/RCmall-HX711-Weight-Sensor-AD-Module-with-3KG-2KG-1KG-20KG-10KG-5KG-Scale-Load-Cell/32854505107.html?af=175518&afref=&cv=565204&dp=565204%253A%253A175518%253A%253A%253A%253A%253A%253A1544651607&cn=15647&aff_platform=aaf&cpt=1544651608497&sk=Y7bAZbY&aff_trace_key=f00005e14a0f4ed1a190325ff7925aee-1544651608497-03777-Y7bAZbY&terminal_id=b072bced170c4d3ab8eef0b68e1864a9 <https://www.aliexpress.com/item/RCmall-HX711-Weight-Sensor-AD-Module-with-3KG-2KG-1KG-20KG-10KG-5KG-Scale-Load-Cell/32854505107.html?af=175518&afref=&cv=565204&dp=565204%3A%3A175518%3A%3A%3A%3A%3A%3A1544651607&cn=15647&aff_platform=aaf&cpt=1544651608497&sk=Y7bAZbY&aff_trace_key=f00005e14a0f4ed1a190325ff7925aee-1544651608497-03777-Y7bAZbY&terminal_id=b072bced170c4d3ab8eef0b68e1864a9>)?
+
+	
+
+8) Consider this article on how Digital weighing scales work (https://wiki.restarters.net/Digital_weighing_scales <https://wiki.restarters.net/Digital_weighing_scales>)?
+
+	...
+
+ 
+
+9) Consider the wikipedia page on “Load cell” (https://en.wikipedia.org/wiki/Load_cell <https://en.wikipedia.org/wiki/Load_cell>)?
+
+“A load cell is a transducer that is used to create an electrical signal whose magnitude is directly proportional to the force being measured. The various load cell types include hydraulic, pneumatic, and strain gauge."
+	
+	
+
+…
+
+Consider to elaborate on this idea of finding a way to mark up filament spools with RFID tags and then design a system to enable tracking of filament consumption (and how much is left on the spool)?

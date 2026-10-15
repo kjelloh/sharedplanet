@@ -1,0 +1,108 @@
+﻿Would it not be fun if there was an easy way to turn your body powers into energy to be used at home?
+
+	==> Also see ”Todo: Design an exercise tool to charge batteries for electrical appliances” (note the spelling error fixed in this Todo)
+
+-4) Juts in case - Consider to measure my bikes front wheel axes and spoke count?
+
+	==> My bikes front wheel shaft seem to be 9 mm?
+	==> My bikes front wheel seem to have 18 spokes on each side (36 spokes in total)?
+
+-3) Consider electric motors we may use as generators?
+
+	==> Consider this site that sells bike motors in Euro (http://www.ebike-solutions.com/en/shop/motors/motors-up-to-250w/bafang-front-wheel-motor-36v-250w-with-roller-brake-mount.html)?
+
+		...
+
+	==> Consider this youtube video (https://www.youtube.com/watch?v=7hfClQh3rxM <https://www.youtube.com/watch?v=7hfClQh3rxM>)?
+
+		==> He seems to use a bicycle electric engine from chineese keyde (http://keyde.com <http://keyde.com/>)?
+		==> It seems to the 98SWXN36 (http://keyde.com/en/Product/motor/Front_motor/2015/0828/121.html <http://keyde.com/en/Product/motor/Front_motor/2015/0828/121.html> )
+		==> It seems to be listed as unavailable on AliExpress for $150 (https://www.aliexpress.com/item/Electric-bike-80mm-width-V-brake-motor/650183817.html <https://www.aliexpress.com/item/Electric-bike-80mm-width-V-brake-motor/650183817.html>)?
+		==> But there seems to be a company page for keyde.com <http://keyde.com/> on alibaba (https://keyde.en.alibaba.com/?spm=a2700.details.shnsopsi9.4.31080b77HVQwLH <https://keyde.en.alibaba.com/?spm=a2700.details.shnsopsi9.4.31080b77HVQwLH>)?
+		
+		==> And this seems to be all their motors (https://keyde.en.alibaba.com/productgrouplist-213504255/e_bike_motor.html?spm=a2700.icbuShop.74.1.57b10eef8unRUO&scene=taobao_shop <https://keyde.en.alibaba.com/productgrouplist-213504255/e_bike_motor.html?spm=a2700.icbuShop.74.1.57b10eef8unRUO&scene=taobao_shop>)?
+
+		==> It seems we should go for one without built in controller?
+		==> So 98SWXR36 should work as generator (https://keyde.en.alibaba.com/product/558818757-213504255/250W_brushless_electric_bicycle_hub_motor_roller_brake_motor.html?spm=a2700.icbuShop.prewdfa4cf.1.756e649Lo2xqa <https://keyde.en.alibaba.com/product/558818757-213504255/250W_brushless_electric_bicycle_hub_motor_roller_brake_motor.html?spm=a2700.icbuShop.prewdfa4cf.1.756e649Lo2xqa>)?
+		==> So 98SWX36 should work as generator (https://keyde.en.alibaba.com/product/569663294-213504255/keyde_electric_bicycle_front_hub_motor_V_brake_motor_DIY_kit_250W.html?spm=a2700.icbuShop.prewdfa4cf.16.756e649Lo2xqa <https://keyde.en.alibaba.com/product/569663294-213504255/keyde_electric_bicycle_front_hub_motor_V_brake_motor_DIY_kit_250W.html?spm=a2700.icbuShop.prewdfa4cf.16.756e649Lo2xqa>)?
+		
+		==> Hm… We really wpould like the small 1.4 kg 98SWXN36 model?
+		==> And we want no gears…
+
+		==> Its so easy to get confused! The front intelligent roller motor 98SWXRN* (http://keyde.com/en/Product/motor/Front_motor/2015/0828/123.html <http://keyde.com/en/Product/motor/Front_motor/2015/0828/123.html>) differs from  …
+
+110SWXDC36	”110mm diameter）with built-in controller is brushless and gearless.” 2 kg
+110SWXCN36 ”（110mm diameter）with built-in controller is brushless and gearless.” 2 kg
+98SWXN36 	Front Intelligent v-brake motor - ”...brushless and gearless. The motor has no clutch” 1.6 kg
+98SWXDN36 	Front intelligent disc brake motor - ”brushless and gearless. The motor has no clutch” 1.6 kg
+98SWXRN36 	Front intelligent roller motor - ”...brushless and gearless. The motor has no clutch…” 1.4 kg
+98SWXNN36 	Front 80mm motor - ”80mm motor: Our newly developed super-mini motor for e-bike” 1.4 kg
+98SWXCN36 	Front electromechanical integrated V brake motor-super mini - ”built-in controller is brushless and gearless.” 1.6 kg
+98SWXDCN36 Front electromechanical integrated disc-brake motor-super mini - ”built-in controller is brushless and gearless.” 1.6 kg
+
+
+		==> So 98SWXDN36 is 98SWXN36 but with a disc break mounted (https://keyde.en.alibaba.com/product/569672945-213504255/keyde_electric_bicycle_hub_motor_intelligent_disc_brake_motor_250W.html?spm=a2700.icbuShop.prewdfa4cf.25.756e649Lo2xqa <https://keyde.en.alibaba.com/product/569672945-213504255/keyde_electric_bicycle_hub_motor_intelligent_disc_brake_motor_250W.html?spm=a2700.icbuShop.prewdfa4cf.25.756e649Lo2xqa>)?
+		==> And 98SWXRN36 is for a wheel with no breaks (roller) (
+
+		==> It seems Alibaba lists (an older?) model 98SWX V brake motor for front wheel with external Controller (https://www.alibaba.com/product-detail/keyde-electric-bicycle-front-v-brake_646304788.html?spm=a2700.icbuShop.maylikever.9.18ae199feI7SFt <https://www.alibaba.com/product-detail/keyde-electric-bicycle-front-v-brake_646304788.html?spm=a2700.icbuShop.maylikever.9.18ae199feI7SFt>)?
+
+			==> What is this about?
+
+		==> He states his 98SWXN36 weighs 1.4 kg (but data sheets above states 1.6 kg?
+		==> Could it be that the video is from 2014, and now the model he used is called 98SWXRN36 or 98SWXNN36 (both weighing 1.4 kg and not contradicting to be brushless and clutch free)?
+
+		==> AHA - The roller motor is designed to go on to the wheel using friction!! NO (See Below)
+		==> This should be ideal for the bike trainer design?!!
+
+		==> Lets go for 98SWXRN36 (https://keyde.en.alibaba.com/product/569659233-213504255/keyde_electric_bicycle_roller_motor_250W.html?spm=a2700.icbuShop.prewdfa4cf.13.756e649Lo2xqa <https://keyde.en.alibaba.com/product/569659233-213504255/keyde_electric_bicycle_roller_motor_250W.html?spm=a2700.icbuShop.prewdfa4cf.13.756e649Lo2xqa>)?
+
+		171201 - I created an Alibaba account for The ITfied AB and requested quotations :)
+
+		==> NO - Its a Roller Brake Motor (i.e. with a drum brake)
+		...
+
+
+-2) Consider this manufacturer of bike hub electric engines (https://keyde.en.alibaba.com/productgrouplist-213504255/e_bike_motor.html <https://keyde.en.alibaba.com/productgrouplist-213504255/e_bike_motor.html>)?
+
+	==> The actual company seems to live here (http://keyde.com <http://keyde.com/>)?
+
+	==> They seem to sell both front and rear engines and also DIY kits to modify an existing bike (http://keyde.com/en/Product/Motor/ <http://keyde.com/en/Product/Motor/>)? 
+
+	==> Given a DC motor may act as a generator we can use these motors as generators?
+
+-1) Consider to mount the bike on this trainer that I bought  (https://www.rosebikes.se/artikel/tacx-blue-twist-t2675-turbo-trainer/aid:630466 <https://www.rosebikes.se/artikel/tacx-blue-twist-t2675-turbo-trainer/aid:630466>)?
+
+	
+
+	==> Consider this wikipedia article on Bicycle trainer to understand how to turn them into generators (https://en.wikipedia.org/wiki/Bicycle_trainer <https://en.wikipedia.org/wiki/Bicycle_trainer>)?
+
+
+”Magnetic trainers have magnets and a conducting flywheel operating as an eddy current brake."
+
+		==> Consider if we can utilize the rotating magnets into an electric generator (add copper windings)?
+
+	==> Consider ways to make bicycle trainers that utilizes the applied resistance into notable (and optionally usable) energy (e.g. charging battery or heating coffee)?
+
+	==> Consider ways to replace the magnetic break on the bicycle trainer with an electric generator (e.g., brushless DC motor)?
+
+1) Design a compact ”machine” that you at least can drive with your big muscle groups (bicycling, rowing) to change a battery.
+2) Make it modular so you may select different battery packages and generator power.
+3) Let it have USB, 12V and power network outlets (220V, 110V etc) to charge phones, lap-tips and also drive household ecquipmentsm tooth brushes, shavers and so on.
+4) Let it have internet connection to exchange information about generated energy and to interact in challenges (competions) of different forms.
+5) Consider it to provide Darwinet support?
+6) let it have interface to Teslas wall mount power pack (http://www.teslamotors.com/powerwall <http://www.teslamotors.com/powerwall>)
+7) Let the user interface show available time and effect stored. Also allow setting of effect and time and let the machine automatically turn on power outlet when that amount of energy is available. In this way the user may set e.g. 1 KW for 2 minutes and then keep pedaling until the machine turns on the outlet.
+8) Power outlet much be controlled so that it is not runded on until it is reasonable able to provide power for a reasonable time. Otherwise the connected apparatus may be damaged?!
+
+*) At https://en.wikipedia.org/wiki/Human_power: <https://en.wikipedia.org/wiki/Human_power:> ”A trained cyclist can produce about 400 watts of mechanical power for an hour or more, but adults of good average fitness average between 50 and 150 watts for an hour of vigorous exercise. A healthy well-fed laborer over the course of an 8-hour work shift can sustain an average output of about 75 watts”
+
+150822)Here seems to be a good page about human energy outputs, battery charging and calorie versus Joule compoarrisson! (http://scienceshareware.com/bicycle-generator-faq.htm#power <http://scienceshareware.com/bicycle-generator-faq.htm#power>). For example, powering a 100W TV for one hour would require burning 86 Calories (25 % efficiency of the human body and 1000 Calories = 4184 J).
+
+150822) This video is about using a DC-motor and a bicycle to charge a led battery power pack (https://www.youtube.com/watch?v=mCI_Ke1tA4o <https://www.youtube.com/watch?v=mCI_Ke1tA4o>).
+150822) This site seems to have off-the-shelf bicycle generator systems :) (http://pedalpowergenerator.com <http://pedalpowergenerator.com/>)
+150822) This video shows an example of boiling water using a 12 V coffee brewer (https://www.youtube.com/watch?v=fgHJlTCsJZw <https://www.youtube.com/watch?v=fgHJlTCsJZw>). Turns out they got a 66 % efficiency (33 % was lost in the heating process).
+150822) This site argues why the energy produced by the human will most likely be less than the energi it took to produce the equipment (http://www.lowtechmagazine.com/2011/05/bike-powered-electricity-generators.html <http://www.lowtechmagazine.com/2011/05/bike-powered-electricity-generators.html>),
+150822) Search for ”pedal power generator”.
+
+Example: Brewing one cup of expresso may require 2 minutes heating and 30 seconds brewing at 1 Kw? This is 150 s * 1000 W = 150 000 J. Providing 200 W of pedaling would then require 150 000 / 200 = 750 s = 12,5 minutes before the brewing may start (outlet turned on). Or actually, the outlet may trun on a little earlier given that the human keeps paddling until brewing is done?
+

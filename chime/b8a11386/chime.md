@@ -1,0 +1,24 @@
+# Todo: SharedPlanetBusiness through #
+
+```#b8a11386``` *As of 2015-03-14 10:19*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Figure Out what is possible communication using hash-tags on social media?
+
+1. What is the API for apps providing?
+2. May one count occurrence of tag?
+3. May one find url to content having tag?
+4. Is there a way to count likes of content with tag?
+
+Bottom line - may we use existing social media as the backbone of SPB network?
+
+1. Have SPB/spc app generate GUID.
+2. Publish cards marked with GUID hashtags.
+3. Vote on (like) hash-tagged cards
+4. Have app access social media, e.g., Twitter, and count most popular or played cards.
+
+Skickat från min iPhone
+
+{% endraw %}

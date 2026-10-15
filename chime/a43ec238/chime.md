@@ -1,0 +1,58 @@
+# Todo: Programming - Consider C++ strings actually lack both a Code Point View and a Meaning View?
+
+```#a43ec238``` *As of 2016-05-04 14:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, could it be that what is missing from the C++ string handling is a way to easily use a Code Point View (Operations on Code Points) and a Meaning View (operations on the text meaning)?
+
+1) Consider current strings are Code Unit Containers (arrays of Code Units)
+
+==&gt; In Code Unit world escaped Code Point encodings will show in the data.
+
+==&gt; Thus problem with current string handling operating on encoded text is at least two-fold?
+
+==&gt; Two string values may carry different encodings?
+
+==&gt; Two string data units may or may not be a Code Point (e.g. be part of an escaped Code Point)?
+
+2) Consider to add a Code Point View that knows about what encoding that is used?
+
+==&gt; Then such a view will be able to ensure operations on Code Point ranges?
+
+==&gt; In this world the different encoding issue remains as different-coped-point-set issue?
+
+3) Consider to add a meaning-view where texts may be operated on as defined by its IRL meaning (e.g. an ‘A’ is recognised as the same meaning regardless of Code Point Set)?
+
+==&gt; In this world two texts meaning “Välkommen” is equal independent on what Code Point Set that use used?
+
+4) So, what should we call the Code Point Set view and the Meaning View?
+
+==&gt; Consider **std::text** should be the meaning view?
+
+std::text&lt;UTF-8&gt;(“Välkommen) == std::text&lt;ISO-LATIN&gt;(“Välkommen”)
+
+==&gt; Consider **std::code_points** should mean a Code Point view?
+
+std::code_points&lt;UTF-8&gt;(“Välkommen”) &lt;&gt; std::code_points&lt;ISO-LATIN&gt;(“Välkommen”)
+
+==&gt; Consider how we would like to add std::code_points and std::text to extend existing string literals and string classes?
+
+char szStringLiteral = “Välkommen”;
+
+std::string sString(“Välkommen”);
+
+auto myCodePoints = std::code_points&lt;UTF-8&gt;(sTring); // explicit construct from anonymous string.
+
+auto myText = std::text(myCodePoints); // implicit from known code_points)
+
+…
+
+…
+
+Consider to elaborate on this idea that what is missing is an extra layer of Code Point View and then on top of that a Text Meaning View?
+
+...
+
+{% endraw %}

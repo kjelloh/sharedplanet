@@ -1,0 +1,1690 @@
+﻿I found the NIX package manager intriguing and good looking.
+
+1) It seems the recommended macOS installation through executing a curl downloaded script worked well (https://nixos.org/download/ )?
+
+￼
+
+	==> Consider the console output of the installation process?
+
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/freecad-playground % sh <(curl -L https://nixos.org/nix/install)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  4267  100  4267    0     0   5161      0 --:--:-- --:--:-- --:--:--  5161
+downloading Nix 2.26.3 binary tarball for aarch64-darwin from 'https://releases.nixos.org/nix/nix-2.26.3/nix-2.26.3-aarch64-darwin.tar.xz' to '/var/folders/d9/b6h8_0457ddd9qnrzmhvxm480000gn/T/nix-binary-tarball-unpack.XXXXXXXXXX.IH5Px2B0cA'...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 26.2M  100 26.2M    0     0  2991k      0  0:00:08  0:00:08 --:--:-- 3935k
+Switching to the Multi-user Installer
+Welcome to the Multi-User Nix Installation
+
+This installation tool will set up your computer with the Nix package
+manager. This will happen in a few stages:
+
+1. Make sure your computer doesn't already have Nix. If it does, I
+   will show you instructions on how to clean up your old install.
+
+2. Show you what I am going to install and where. Then I will ask
+   if you are ready to continue.
+
+3. Create the system users (uids [351..382]) and groups (gid 350)
+   that the Nix daemon uses to run builds. To create system users
+   in a different range, exit and run this tool again with
+   NIX_FIRST_BUILD_UID set.
+
+4. Perform the basic installation of the Nix files daemon.
+
+5. Configure your shell to import special Nix Profile files, so you
+   can use Nix.
+
+6. Start the Nix daemon.
+
+Would you like to see a more detailed list of what I will do?
+[y/n] n
+
+
+---- let's talk about sudo -----------------------------------------------------
+This script is going to call sudo a lot. Every time I do, it'll
+output exactly what it'll do, and why.
+
+Just like this:
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo echo
+
+to demonstrate how our sudo prompts look
+
+
+This might look scary, but everything can be undone by running just a
+few commands. I used to ask you to confirm each time sudo ran, but it
+was too many times. Instead, I'll just ask you this one time:
+
+Can I use sudo?
+[y/n] y
+
+Yay! Thanks! Let's get going!
+
+~~> Fixing any leftover Nix volume state
+Before I try to install, I'll check for any existing Nix volume config
+and ask for your permission to remove it (so that the installer can
+start fresh). I'll also ask for permission to fix any issues I spot.
+
+~~> Checking for artifacts of previous installs
+Before I try to install, I'll check for signs Nix already is or has
+been installed on this system.
+
+---- Nix config report ---------------------------------------------------------
+        Temp Dir:      /var/folders/d9/b6h8_0457ddd9qnrzmhvxm480000gn/T/tmp.TDQkNj6gmr
+        Nix Root: /nix
+     Build Users: 32
+  Build Group ID: 350
+Build Group Name: nixbld
+
+build users:
+    Username:  UID
+     _nixbld1:    351
+     _nixbld2:    352
+     _nixbld3:    353
+     _nixbld4:    354
+     _nixbld5:    355
+     _nixbld6:    356
+     _nixbld7:    357
+     _nixbld8:    358
+     _nixbld9:    359
+     _nixbld10:   360
+     _nixbld11:   361
+     _nixbld12:   362
+     _nixbld13:   363
+     _nixbld14:   364
+     _nixbld15:   365
+     _nixbld16:   366
+     _nixbld17:   367
+     _nixbld18:   368
+     _nixbld19:   369
+     _nixbld20:   370
+     _nixbld21:   371
+     _nixbld22:   372
+     _nixbld23:   373
+     _nixbld24:   374
+     _nixbld25:   375
+     _nixbld26:   376
+     _nixbld27:   377
+     _nixbld28:   378
+     _nixbld29:   379
+     _nixbld30:   380
+     _nixbld31:   381
+     _nixbld32:   382
+
+Ready to continue?
+[y/n] y
+
+
+---- Preparing a Nix volume ----------------------------------------------------
+    Nix traditionally stores its data in the root directory /nix, but
+    macOS now (starting in 10.15 Catalina) has a read-only root directory.
+    To support Nix, I will create a volume and configure macOS to mount it
+    at /nix.
+
+~~> Configuring /etc/synthetic.conf to make a mount-point at /nix
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/ex -u NONE -n /etc/synthetic.conf
+
+to add Nix to /etc/synthetic.conf
+
+Password:
+
+~~> Creating a Nix volume
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/diskutil apfs addVolume disk3 APFS Nix Store -nomount
+
+to create a new APFS volume 'Nix Store' on disk3
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/diskutil unmount force disk3s7
+
+to ensure the Nix volume is not mounted
+
+disk3s7 was already unmounted
+
+~~> Configuring /etc/fstab to specify volume mount options
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/vifs
+
+to add nix to fstab
+
+
+~~> Encrypt the Nix volume
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/diskutil mount Nix Store
+
+to mount your Nix volume for encrypting
+
+Volume Nix Store on Nix Store mounted
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/security -i
+
+to add your Nix volume's password to Keychain
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/diskutil apfs encryptVolume Nix Store -user disk -stdinpassphrase
+
+to actually encrypt your Nix volume
+
+Encrypting with the new "Disk" crypto user on disk3s7
+The new "Disk" user will be the only one who has initial access to disk3s7
+The new APFS crypto user UUID will be 8A6FB559-E9E0-40B8-BC61-4378791F9090
+Encryption has likely completed due to AES hardware; see "diskutil apfs list"
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/diskutil unmount force Nix Store
+
+to unmount the encrypted volume
+
+Volume Nix Store on disk3s7 force-unmounted
+
+~~> Configuring LaunchDaemon to mount 'Nix Store'
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/ex -u NONE -n /Library/LaunchDaemons/org.nixos.darwin-store.plist
+
+to install the Nix volume mounter
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo launchctl bootstrap system /Library/LaunchDaemons/org.nixos.darwin-store.plist
+
+to launch the Nix volume mounter
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo launchctl kickstart -k system/org.nixos.darwin-store
+
+to launch the Nix volume mounter
+
+
+~~> Setting up the build group nixbld
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o create -r Nix build group for nix-daemon -i 350 nixbld
+
+Create the Nix build group, nixbld
+
+            Created:      Yes
+
+~~> Setting up the build user _nixbld1
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld1 UniqueID 351
+
+Creating the Nix build user (#1), _nixbld1
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 1
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld1 nixbld
+
+Add _nixbld1 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld1 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld2
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld2 UniqueID 352
+
+Creating the Nix build user (#2), _nixbld2
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 2
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld2 nixbld
+
+Add _nixbld2 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld2 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld3
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld3 UniqueID 353
+
+Creating the Nix build user (#3), _nixbld3
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 3
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld3 nixbld
+
+Add _nixbld3 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld3 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld4
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld4 UniqueID 354
+
+Creating the Nix build user (#4), _nixbld4
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 4
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld4 nixbld
+
+Add _nixbld4 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld4 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld5
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld5 UniqueID 355
+
+Creating the Nix build user (#5), _nixbld5
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 5
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld5 nixbld
+
+Add _nixbld5 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld5 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld6
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld6 UniqueID 356
+
+Creating the Nix build user (#6), _nixbld6
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 6
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld6 nixbld
+
+Add _nixbld6 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld6 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld7
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld7 UniqueID 357
+
+Creating the Nix build user (#7), _nixbld7
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 7
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld7 nixbld
+
+Add _nixbld7 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld7 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld8
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld8 UniqueID 358
+
+Creating the Nix build user (#8), _nixbld8
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 8
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld8 nixbld
+
+Add _nixbld8 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld8 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld9
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld9 UniqueID 359
+
+Creating the Nix build user (#9), _nixbld9
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 9
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld9 nixbld
+
+Add _nixbld9 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld9 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld10
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld10 UniqueID 360
+
+Creating the Nix build user (#10), _nixbld10
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 10
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld10 nixbld
+
+Add _nixbld10 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld10 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld11
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld11 UniqueID 361
+
+Creating the Nix build user (#11), _nixbld11
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 11
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld11 nixbld
+
+Add _nixbld11 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld11 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld12
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld12 UniqueID 362
+
+Creating the Nix build user (#12), _nixbld12
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 12
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld12 nixbld
+
+Add _nixbld12 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld12 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld13
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld13 UniqueID 363
+
+Creating the Nix build user (#13), _nixbld13
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 13
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld13 nixbld
+
+Add _nixbld13 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld13 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld14
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld14 UniqueID 364
+
+Creating the Nix build user (#14), _nixbld14
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 14
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld14 nixbld
+
+Add _nixbld14 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld14 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld15
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld15 UniqueID 365
+
+Creating the Nix build user (#15), _nixbld15
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 15
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld15 nixbld
+
+Add _nixbld15 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld15 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld16
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld16 UniqueID 366
+
+Creating the Nix build user (#16), _nixbld16
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 16
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld16 nixbld
+
+Add _nixbld16 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld16 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld17
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld17 UniqueID 367
+
+Creating the Nix build user (#17), _nixbld17
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 17
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld17 nixbld
+
+Add _nixbld17 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld17 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld18
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld18 UniqueID 368
+
+Creating the Nix build user (#18), _nixbld18
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 18
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld18 nixbld
+
+Add _nixbld18 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld18 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld19
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld19 UniqueID 369
+
+Creating the Nix build user (#19), _nixbld19
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 19
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld19 nixbld
+
+Add _nixbld19 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld19 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld20
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld20 UniqueID 370
+
+Creating the Nix build user (#20), _nixbld20
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 20
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld20 nixbld
+
+Add _nixbld20 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld20 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld21
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld21 UniqueID 371
+
+Creating the Nix build user (#21), _nixbld21
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 21
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld21 nixbld
+
+Add _nixbld21 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld21 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld22
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld22 UniqueID 372
+
+Creating the Nix build user (#22), _nixbld22
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 22
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld22 nixbld
+
+Add _nixbld22 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld22 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld23
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld23 UniqueID 373
+
+Creating the Nix build user (#23), _nixbld23
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 23
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld23 nixbld
+
+Add _nixbld23 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld23 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld24
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld24 UniqueID 374
+
+Creating the Nix build user (#24), _nixbld24
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 24
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld24 nixbld
+
+Add _nixbld24 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld24 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld25
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld25 UniqueID 375
+
+Creating the Nix build user (#25), _nixbld25
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 25
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld25 nixbld
+
+Add _nixbld25 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld25 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld26
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld26 UniqueID 376
+
+Creating the Nix build user (#26), _nixbld26
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 26
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld26 nixbld
+
+Add _nixbld26 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld26 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld27
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld27 UniqueID 377
+
+Creating the Nix build user (#27), _nixbld27
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 27
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld27 nixbld
+
+Add _nixbld27 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld27 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld28
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld28 UniqueID 378
+
+Creating the Nix build user (#28), _nixbld28
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 28
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld28 nixbld
+
+Add _nixbld28 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld28 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld29
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld29 UniqueID 379
+
+Creating the Nix build user (#29), _nixbld29
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 29
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld29 nixbld
+
+Add _nixbld29 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld29 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld30
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld30 UniqueID 380
+
+Creating the Nix build user (#30), _nixbld30
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 30
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld30 nixbld
+
+Add _nixbld30 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld30 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld31
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld31 UniqueID 381
+
+Creating the Nix build user (#31), _nixbld31
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 31
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld31 nixbld
+
+Add _nixbld31 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld31 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the build user _nixbld32
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . create /Users/_nixbld32 UniqueID 382
+
+Creating the Nix build user (#32), _nixbld32
+
+           Created:       Yes
+            Hidden:       Yes
+    Home Directory:       /var/empty
+              Note:       Nix build user 32
+   Logins Disabled:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/dseditgroup -o edit -t user -a _nixbld32 nixbld
+
+Add _nixbld32 to the nixbld group
+
+  Member of nixbld:       Yes
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/dscl . -create /Users/_nixbld32 PrimaryGroupID 350
+
+to let the nix daemon use this user for builds (this might seem redundant, but there are two concepts of group membership)
+
+    PrimaryGroupID:       350
+
+~~> Setting up the basic directory structure
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/sbin/chown -R root:nixbld /nix
+
+to take root ownership of existing Nix store files
+
+chown: /nix/.Trashes: Operation not permitted
+chown: /nix/.Trashes: Operation not permitted
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo install -dv -m 0755 /nix /nix/var /nix/var/log /nix/var/log/nix /nix/var/log/nix/drvs /nix/var/nix /nix/var/nix/db /nix/var/nix/gcroots /nix/var/nix/profiles /nix/var/nix/temproots /nix/var/nix/userpool /nix/var/nix/daemon-socket /nix/var/nix/gcroots/per-user /nix/var/nix/profiles/per-user
+
+to make the basic directory structure of Nix (part 1)
+
+install: mkdir /nix/var
+install: mkdir /nix/var/log
+install: mkdir /nix/var/log/nix
+install: mkdir /nix/var/log/nix/drvs
+install: mkdir /nix/var/nix
+install: mkdir /nix/var/nix/db
+install: mkdir /nix/var/nix/gcroots
+install: mkdir /nix/var/nix/profiles
+install: mkdir /nix/var/nix/temproots
+install: mkdir /nix/var/nix/userpool
+install: mkdir /nix/var/nix/daemon-socket
+install: mkdir /nix/var/nix/gcroots/per-user
+install: mkdir /nix/var/nix/profiles/per-user
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo install -dv -g nixbld -m 1775 /nix/store
+
+to make the basic directory structure of Nix (part 2)
+
+install: mkdir /nix/store
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo install -dv -m 0555 /etc/nix
+
+to place the default nix daemon configuration (part 1)
+
+install: mkdir /etc/nix
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo install -m 0644 /var/folders/d9/b6h8_0457ddd9qnrzmhvxm480000gn/T/tmp.TDQkNj6gmr/.nix-channels /var/root/.nix-channels
+
+to set up the default system channel (part 1)
+
+
+~~> Installing Nix
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo cp -RPp ./store/0mjkx2zcq2wzd1wqx2d6xfb2mcvhg074-libcxx-16.0.6-dev ./store/0n0hifspzqzccqczwq756l2ib2lwhvqp-publicsuffix-list-0-unstable-2024-10-25 ./store/0sa8nrx4aki56q6prn2wkz1gfzh5r01i-aws-crt-cpp-0.26.12 ./store/0vys7318crrjfgh2y3g6b9hj59yjsby3-krb5-1.21.3-lib ./store/0xsji5f16mz9hjglwsz3zgb7r9graw6x-libpsl-0.21.5 ./store/0y2a624xhi55hn5n7dwqqvyh9x9ffxci-aws-c-event-stream-0.4.3 ./store/10r87kpkn4zrj0d1qhq8nfr8g2gf0imp-zlib-1.3.1 ./store/16jccnc0ba3af72a55jhd0whlvmc4jr3-libarchive-3.7.7-dev ./store/1a4j0c5xn6xl53z77sifkncg3fing1qj-openssl-3.3.2 ./store/1daj1n4b2mwdwb9lfk80mhw6hw5497vq-nix-store-2.26.3-dev ./store/1gsqji8882zb737sypbkv3522xi0v0nw-nix-main-2.26.3 ./store/26f50gxdmqjyq2jk0qy0fa30ajvxzh0k-aws-c-common-0.9.27 ./store/2lb62bypbzny2jckmm2djgdn8h7w1h10-boehm-gc-8.2.8-dev ./store/3a7j0047dvr6qfbz4hdwz1b37wcw2xiv-libssh2-1.11.1 ./store/3mva6h0zbhz726wd6nv3npklz6lycrx3-nix-expr-2.26.3-dev ./store/3w1yf8cl6djijxjx7qz79xlfc7j967fr-libresolv-83 ./store/45sfwc7wanwkbsm4h1ml4z7hkk53qzcv-boost-1.81.0 ./store/4n9wa8kfphzqvszzlrc8l82zpbb8vr1r-aws-c-cal-0.6.15 ./store/55b5lii1n43hvf9lhz7b3xxc9gvbg3zh-aws-checksums-0.1.18 ./store/77g7gh3ig3mm8kqb9nnc7y6b7ng5j06n-nix-store-2.26.3 ./store/7dkrmf9gqhwl6cz766s26j3k4a6z0n00-bash-5.2p37 ./store/8f7m2f7n7dwvmqx9b0vmkh9cdxl607n5-libunistring-1.2 ./store/8qlkfgpr2j74mhq54nydiqw75naldws6-nlohmann_json-3.11.3 ./store/8y38m02qwxgnsldqc5l5a0lqwjj36kmk-boost-1.81.0-dev ./store/a3vidhbwlm6gq2sd0lrrqcbbpijmki1l-editline-1.17.1 ./store/aiz8a3lcfjiw43lxmqbmij3gmsw2z2z7-libgit2-1.8.4-lib ./store/ak2v494v05jc7fxpc5akkj2bq9jcysjj-aws-c-mqtt-0.10.5 ./store/c1i506skml8vnr2y164i4sbhps9vgid8-nix-expr-2.26.3 ./store/cdlkcn5g7si1a8s58nj4bpdbjm6bncf1-aws-c-compression-0.2.19 ./store/d3f1233sl7yip2wpkg5vqfgdvnmdb4s0-libxml2-2.13.4 ./store/dka6i6yj8sgws93wc6m0lmqzhk21kq87-libiconv-107 ./store/dlmfvqs0p02sp7cr4mrlvg3p810n6gpi-zstd-1.5.6 ./store/dnaabn46c0zmlbbwqkc7byrkn9yaw7dk-gettext-0.21.1 ./store/fi6iv7bz78i54m4iyq01qhj7zrq5v89a-aws-sdk-cpp-1.11.336 ./store/fm0y10g8wqgr99vqd1qiimbc774mzd3i-pcre2-10.44 ./store/hdyx5jw59pcjpm7nym48n2mcq9n4wn86-libidn2-2.3.7 ./store/ihzqzqwhadyrxc2hp3j24k8l5ghbj5xc-nix-fetchers-2.26.3-dev ./store/j39kv1qva1ndbbfc6b7rqipz5fs9pnvc-curl-8.11.0 ./store/jgihf7sq52ih1dfkd9sppgcq3wscagjd-nix-fetchers-2.26.3 ./store/jpj7i429d6v44ca9k1xpgyfq3kq3ng8z-nss-cacert-3.107 ./store/lasalygw4qrs06r8gn080dryqb3s84s4-nix-util-2.26.3-dev ./store/lhyf55syd17jpcsgiggh45ljifkzg3fc-nix-2.26.3 ./store/m6pp92l31xzgnkzm84bcf71xfj8m56ap-aws-c-s3-0.6.0 ./store/md8l82d1ggi4136ja9qdpg855z6wavip-libcxx-16.0.6 ./store/nv1z35sa864z04yfs570hnn9iwx5r3q6-aws-c-sdkutils-0.1.16 ./store/pdc9kk31s34akw1k229hfw73p79fkvkp-nghttp2-1.64.0-lib ./store/pynvhlbnwv4z8x9n05a41lrpjhsz6cbw-boehm-gc-8.2.8 ./store/q21pck0ph1aqa7bk1fzalhhk141z30dh-libsodium-1.0.20 ./store/r7fvblydd9smajp3asaqhm6jvqc38qmb-brotli-1.1.0-lib ./store/s3bq5z2jc9p0qbng2fbp0wn95z7y2l99-libarchive-3.7.7 ./store/sp16nb9iy4fg5vzjx01lw642knychh1j-bzip2-1.0.8 ./store/vimbyf55ffvkmqgqrwmhvs9kqv379kqw-aws-c-http-0.8.2 ./store/w3b8kbif1x6nhr6shpmj2zx3ppmdj26j-sqlite-3.46.1 ./store/w8qh8p5c27ha5izr3k4gymm8rsps58rr-aws-c-io-0.14.18 ./store/wb3pcj722fdy669g5hdnp49yz9q4fcjv-aws-c-auth-0.7.26 ./store/x9yp088bzjx5f00v3bg29y62pahr721s-xz-5.6.3 ./store/xbh7bpk5x7kx98vjmbv597r98bfbx3ia-toml11-3.7.1 ./store/xkd2wqf7zvw44vhn2z46wc3g5ipyf2wq-nix-flake-2.26.3 ./store/xrsqvmzmj2nnd63h94d3jpd8hgr5cl9v-lowdown-1.2.0-lib ./store/y36glw0iw6a38q86j2i2kblvccad8kx2-nix-cmd-2.26.3 ./store/y3rwm0hfsxgipx9z59glkv2yf2d9xdxs-libarchive-3.7.7-lib ./store/yzb4lw97xazf52mxl1ixn6vjcm7mqn69-nix-util-2.26.3 ./store/zc0avja428rnlxgivl00n668h0q075s3-Security-11.0 /nix/store/
+
+to copy the basic Nix files to the new store at /nix/store
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo chmod -R ugo-w /nix/store/
+
+to make the new store non-writable at /nix/store
+
+      Alright! We have our first nix at /nix/store/lhyf55syd17jpcsgiggh45ljifkzg3fc-nix-2.26.3
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo HOME=/var/root /nix/store/lhyf55syd17jpcsgiggh45ljifkzg3fc-nix-2.26.3/bin/nix-store --load-db
+
+to load data for the first time in to the Nix Database
+
+      Just finished getting the nix database ready.
+
+~~> Setting up shell profiles: /etc/bashrc /etc/profile.d/nix.sh /etc/zshrc /etc/bash.bashrc /etc/zsh/zshrc
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo cp /etc/bashrc /etc/bashrc.backup-before-nix
+
+to back up your current /etc/bashrc to /etc/bashrc.backup-before-nix
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo tee -a /etc/bashrc
+
+extend your /etc/bashrc with nix-daemon settings
+
+
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo cp /etc/zshrc /etc/zshrc.backup-before-nix
+
+to back up your current /etc/zshrc to /etc/zshrc.backup-before-nix
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo tee -a /etc/zshrc
+
+extend your /etc/zshrc with nix-daemon settings
+
+
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo touch /etc/bash.bashrc
+
+to create a stub /etc/bash.bashrc which will be updated
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo tee -a /etc/bash.bashrc
+
+extend your /etc/bash.bashrc with nix-daemon settings
+
+
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
+
+
+~~> Setting up shell profiles for Fish with conf.d/nix.fish inside /etc/fish /usr/local/etc/fish /opt/homebrew/etc/fish /opt/local/etc/fish
+
+~~> Setting up the default profile
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo HOME=/var/root /nix/store/lhyf55syd17jpcsgiggh45ljifkzg3fc-nix-2.26.3/bin/nix-env -i /nix/store/lhyf55syd17jpcsgiggh45ljifkzg3fc-nix-2.26.3
+
+to install a bootstrapping Nix in to the default profile
+
+installing 'nix-2.26.3'
+building '/nix/store/0ji6j0b2xjb9fgzgyw4m8qbqn34ykfgn-user-environment.drv'...
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo HOME=/var/root /nix/store/lhyf55syd17jpcsgiggh45ljifkzg3fc-nix-2.26.3/bin/nix-env -i /nix/store/jpj7i429d6v44ca9k1xpgyfq3kq3ng8z-nss-cacert-3.107
+
+to install a bootstrapping SSL certificate just for Nix in to the default profile
+
+installing 'nss-cacert-3.107'
+building '/nix/store/5x9znx5vw6hpfdsw88cqdzxs4gd7ygql-user-environment.drv'...
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo HOME=/var/root NIX_SSL_CERT_FILE=/nix/var/nix/profiles/default/etc/ssl/certs/ca-bundle.crt /nix/store/lhyf55syd17jpcsgiggh45ljifkzg3fc-nix-2.26.3/bin/nix-channel --update nixpkgs
+
+to update the default channel in the default profile
+
+unpacking 1 channels...
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo install -m 0644 /var/folders/d9/b6h8_0457ddd9qnrzmhvxm480000gn/T/tmp.TDQkNj6gmr/nix.conf /etc/nix/nix.conf
+
+to place the default nix daemon configuration (part 2)
+
+
+~~> Setting up the nix-daemon LaunchDaemon
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo /usr/bin/install -m u=rw,go=r /nix/var/nix/profiles/default/Library/LaunchDaemons/org.nixos.nix-daemon.plist /Library/LaunchDaemons/org.nixos.nix-daemon.plist
+
+to set up the nix-daemon as a LaunchDaemon
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist
+
+to load the LaunchDaemon plist for nix-daemon
+
+
+---- sudo execution ------------------------------------------------------------
+I am executing:
+
+    $ sudo launchctl kickstart -k system/org.nixos.nix-daemon
+
+to start the nix-daemon
+
+Alright! We're done!
+Try it! Open a new terminal, and type:
+
+  $ nix-shell -p nix-info --run "nix-info -m"
+
+Thank you for using this installer. If you have any feedback or need
+help, don't hesitate:
+
+You can open an issue at
+https://github.com/NixOS/nix/issues/new?labels=installer&template=installer.md
+
+Or get in touch with the community: https://nixos.org/community
+
+---- Reminders -----------------------------------------------------------------
+[ 1 ]
+Nix won't work in active shell sessions until you restart them.
+
+Press enter/return to acknowledge.
+
+2) Consider the result of running 'nix-shell -p nix-info --run "nix-info -m"'?
+
+	==> oooups! What happened now (a whole development environment was cached)?!
+
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/freecad-playground % nix-shell -p nix-info --run "nix-info -m"
+these 64 paths will be fetched (151.38 MiB download, 1134.68 MiB unpacked):
+  /nix/store/b6c4gr52pv5df2wpdi7b0gkiqsfjm0sr-DarwinTools-1
+  /nix/store/lsjl29pwp5if71jfgxlv8fifsrpax805-apple-sdk-11.3
+  /nix/store/r6hp1dz7lhg07z4qq9db91xf532f7xk8-bash-5.2p37
+  /nix/store/bp95if14388zp5s4xh1qhw94arc9rp7l-bash-interactive-5.2p37
+  /nix/store/7cwjn2gpz008q1kbwr9qqi27n6i1zp3b-bzip2-1.0.8
+  /nix/store/2wdyvqj4fg13rzm3cjmvqnhn1h4n5rm4-bzip2-1.0.8-bin
+  /nix/store/8540flazsp8vjvfl40qd7p44mkkidpda-cctools-1010.6
+  /nix/store/bw3ndgqqpr23a7i3cxrki7qq2cayh1pm-cctools-1010.6-libtool
+  /nix/store/7y0vlsf6l8lr3vjsbrirqrsbx4mwqiwf-cctools-binutils-darwin-1010.6
+  /nix/store/8v19r3366y400xmmsnpslpyddck2ma1m-cctools-binutils-darwin-wrapper-1010.6
+  /nix/store/c397xq3dql1js7q2my001jz51fwxk8f2-clang-19.1.7
+  /nix/store/cyrakdc5rxkzz36hfjgg6r1yig0infbs-clang-19.1.7-lib
+  /nix/store/0jd4fjnnrfz0dfxbc5lgfyxjfay73i77-clang-wrapper-19.1.7
+  /nix/store/krdzh53irgpav00m58z7aqd2a6h9wvl5-compiler-rt-libc-19.1.7
+  /nix/store/hklang3njvw0f5mgra9vsvn3c2zi2v45-compiler-rt-libc-19.1.7-dev
+  /nix/store/fc3m1n18s3a5rs4fffaqhiykvdx7s32n-coreutils-9.6
+  /nix/store/vzi6s9yh1i12bkj9abyfp43y6x1fdzpl-cups-headers-2.4.11
+  /nix/store/p6b6jmbwx1khdalzfq3llq5lxwpdj5sd-diffutils-3.10
+  /nix/store/krwdcg82qbr3ndi1zi9hjsd85vd3i1p0-ed-1.21
+  /nix/store/ng4si46cpchvr8x25bbdy3h87iaz7s40-expand-response-params
+  /nix/store/sqpjj3a0390ll3vacdjlybkikh135gz4-file-5.46
+  /nix/store/c15yf86kbhsms01nylmfrwqczks5jgpq-findutils-4.10.0
+  /nix/store/qrwd1gm74raf808mgxf7q64lcrcrd00k-gawk-5.3.1
+  /nix/store/npbqs59h5fvs0sk0pgimaahvsg182lvw-gettext-0.22.5
+  /nix/store/r4hyppw0wkgq927siyw36y6x72dg89r7-gmp-with-cxx-6.3.0
+  /nix/store/446y93j5kjyk1ziyippnmn1qcqdhxgdg-gnu-config-2024-01-01
+  /nix/store/0hyrbiwq9v43bpd9qmysscjynz7jl3s0-gnugrep-3.11
+  /nix/store/27xhi94aggy63f3dcf349cln833hjkd8-gnumake-4.4.1
+  /nix/store/9kycqy5a6dcg236ahyl5n9g4ffq9hr5m-gnused-4.9
+  /nix/store/20p718g1snq888pm73xhgjc9wx9pdfad-gnutar-1.35
+  /nix/store/yma338pjwzvfic09qrg21rappjbd2a5h-gzip-1.13
+  /nix/store/93m2zpkyjrh0hm93c0158zbn9aqyggac-ld64-954.16
+  /nix/store/dmn3z88payls3vcn328vxlfv6mcgy2cl-ld64-954.16-lib
+  /nix/store/ds6q14s3950bvhh641n4zfwdslnvfqsn-libSystem-B
+  /nix/store/m2jcvx713lz5zsgza5rsq7r29d792gv1-libcxx-19.1.7
+  /nix/store/j3dhkx4m14m38drh3f40bccrwrgzlsg5-libcxx-19.1.7-dev
+  /nix/store/zdmsg65wxvi72gh6nn6gxbmzfl5c7w4f-libffi-39
+  /nix/store/i0b08c8m02rs2sazmd7sr2zxbnz6ylsf-libiconv-109
+  /nix/store/f4z2y0zn2bmrwywp67y3h21cmb6ky547-libiconv-109-dev
+  /nix/store/2c41z35araahli1x6bdx0f5ppiphfqbz-libresolv-83
+  /nix/store/17a9rq4bw8drbhlr3dijrmxzfqlz8z85-libresolv-83-dev
+  /nix/store/gbjd71m8pn0kg9kpj94vs9cdqpc0hggf-libsbuf-14.1.0
+  /nix/store/34bb5prqghfl0hpindhk8xlc5s2q2xjg-libsbuf-14.1.0-dev
+  /nix/store/ha68a8n0cbss2kv16l76lz41cc3fgh1l-libutil-72
+  /nix/store/35yfrid48r9bjavba4pmkczq8f6n5dc9-libxml2-2.13.5
+  /nix/store/i77g016djbgkdjf5905z5hrr2mrsxh27-llvm-19.1.7
+  /nix/store/b7c1zdmmdh1ha5wbnswph6a736ldrv17-llvm-19.1.7-lib
+  /nix/store/92vq8z9pslvi9rn0z36a4yq68jnlppim-locale-118
+  /nix/store/6s5wq8phzamjca5lar2l6hsa69m2qc2s-ncurses-6.5
+  /nix/store/fw908fh4lhcfv37c71q10xa35gqfzc1i-ncurses-6.5-dev
+  /nix/store/0d40ab0l9s9i5f010qqvmdxp224kc1zk-ncurses-6.5-man
+  /nix/store/920c6q654ang4h351jq5a6nsvr44d9xz-nix-info
+  /nix/store/0v2hhy3f53hsai7spdsqrrnvjwlm2pya-openssl-3.4.1
+  /nix/store/8f3i51k7g7gpq8d5ccxlsw3nz1k5fjyj-patch-2.7.6
+  /nix/store/vykrd0x36gaxmqqbihygc9dr7np9nn7f-pcre2-10.44
+  /nix/store/kk3dgpnjvr5acz2npaav2ib2msm1gn75-readline-8.2p13
+  /nix/store/yagr58hrskzi3xy41pk4ssnn6b0d1w6b-stdenv-darwin
+  /nix/store/avk3im3m1c7bb4ws9cx1ck00dgc7c0wa-update-autotools-gnu-config-scripts-hook
+  /nix/store/x36ylqmkmfnjpraf0gfrgbqmvc8kw4mn-xar-minimal-501-lib
+  /nix/store/lk8lil0krarzimw2x4kisqizfm76qc7q-xcbuild-0.1.1-unstable-2019-11-20
+  /nix/store/prpzadksziwxb1w7x9y57iqnai22ybbx-xcbuild-0.1.1-unstable-2019-11-20-xcrun
+  /nix/store/4fi5wwnf8d8ml62v6w9ap6j7bw8l4mn4-xz-5.6.4
+  /nix/store/6h0ikxcgrcf81zrris7v4bidsw0763qz-xz-5.6.4-bin
+  /nix/store/93ad4h0rs8hjdk4i00pf200a8vx47lm6-zlib-1.3.1
+copying path '/nix/store/r6hp1dz7lhg07z4qq9db91xf532f7xk8-bash-5.2p37' from 'https://cache.nixos.org'...
+copying path '/nix/store/b6c4gr52pv5df2wpdi7b0gkiqsfjm0sr-DarwinTools-1' from 'https://cache.nixos.org'...
+copying path '/nix/store/qrwd1gm74raf808mgxf7q64lcrcrd00k-gawk-5.3.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/9kycqy5a6dcg236ahyl5n9g4ffq9hr5m-gnused-4.9' from 'https://cache.nixos.org'...
+copying path '/nix/store/i0b08c8m02rs2sazmd7sr2zxbnz6ylsf-libiconv-109' from 'https://cache.nixos.org'...
+copying path '/nix/store/92vq8z9pslvi9rn0z36a4yq68jnlppim-locale-118' from 'https://cache.nixos.org'...
+copying path '/nix/store/6s5wq8phzamjca5lar2l6hsa69m2qc2s-ncurses-6.5' from 'https://cache.nixos.org'...
+copying path '/nix/store/7cwjn2gpz008q1kbwr9qqi27n6i1zp3b-bzip2-1.0.8' from 'https://cache.nixos.org'...
+copying path '/nix/store/vzi6s9yh1i12bkj9abyfp43y6x1fdzpl-cups-headers-2.4.11' from 'https://cache.nixos.org'...
+copying path '/nix/store/ng4si46cpchvr8x25bbdy3h87iaz7s40-expand-response-params' from 'https://cache.nixos.org'...
+copying path '/nix/store/ds6q14s3950bvhh641n4zfwdslnvfqsn-libSystem-B' from 'https://cache.nixos.org'...
+copying path '/nix/store/m2jcvx713lz5zsgza5rsq7r29d792gv1-libcxx-19.1.7' from 'https://cache.nixos.org'...
+copying path '/nix/store/vykrd0x36gaxmqqbihygc9dr7np9nn7f-pcre2-10.44' from 'https://cache.nixos.org'...
+copying path '/nix/store/4fi5wwnf8d8ml62v6w9ap6j7bw8l4mn4-xz-5.6.4' from 'https://cache.nixos.org'...
+copying path '/nix/store/93ad4h0rs8hjdk4i00pf200a8vx47lm6-zlib-1.3.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/2c41z35araahli1x6bdx0f5ppiphfqbz-libresolv-83' from 'https://cache.nixos.org'...
+copying path '/nix/store/zdmsg65wxvi72gh6nn6gxbmzfl5c7w4f-libffi-39' from 'https://cache.nixos.org'...
+copying path '/nix/store/gbjd71m8pn0kg9kpj94vs9cdqpc0hggf-libsbuf-14.1.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/0d40ab0l9s9i5f010qqvmdxp224kc1zk-ncurses-6.5-man' from 'https://cache.nixos.org'...
+copying path '/nix/store/0v2hhy3f53hsai7spdsqrrnvjwlm2pya-openssl-3.4.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/34bb5prqghfl0hpindhk8xlc5s2q2xjg-libsbuf-14.1.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/2wdyvqj4fg13rzm3cjmvqnhn1h4n5rm4-bzip2-1.0.8-bin' from 'https://cache.nixos.org'...
+copying path '/nix/store/sqpjj3a0390ll3vacdjlybkikh135gz4-file-5.46' from 'https://cache.nixos.org'...
+copying path '/nix/store/17a9rq4bw8drbhlr3dijrmxzfqlz8z85-libresolv-83-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/6h0ikxcgrcf81zrris7v4bidsw0763qz-xz-5.6.4-bin' from 'https://cache.nixos.org'...
+copying path '/nix/store/krwdcg82qbr3ndi1zi9hjsd85vd3i1p0-ed-1.21' from 'https://cache.nixos.org'...
+copying path '/nix/store/446y93j5kjyk1ziyippnmn1qcqdhxgdg-gnu-config-2024-01-01' from 'https://cache.nixos.org'...
+copying path '/nix/store/yma338pjwzvfic09qrg21rappjbd2a5h-gzip-1.13' from 'https://cache.nixos.org'...
+copying path '/nix/store/avk3im3m1c7bb4ws9cx1ck00dgc7c0wa-update-autotools-gnu-config-scripts-hook' from 'https://cache.nixos.org'...
+copying path '/nix/store/8f3i51k7g7gpq8d5ccxlsw3nz1k5fjyj-patch-2.7.6' from 'https://cache.nixos.org'...
+copying path '/nix/store/kk3dgpnjvr5acz2npaav2ib2msm1gn75-readline-8.2p13' from 'https://cache.nixos.org'...
+copying path '/nix/store/krdzh53irgpav00m58z7aqd2a6h9wvl5-compiler-rt-libc-19.1.7' from 'https://cache.nixos.org'...
+copying path '/nix/store/r4hyppw0wkgq927siyw36y6x72dg89r7-gmp-with-cxx-6.3.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/j3dhkx4m14m38drh3f40bccrwrgzlsg5-libcxx-19.1.7-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/ha68a8n0cbss2kv16l76lz41cc3fgh1l-libutil-72' from 'https://cache.nixos.org'...
+copying path '/nix/store/fw908fh4lhcfv37c71q10xa35gqfzc1i-ncurses-6.5-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/npbqs59h5fvs0sk0pgimaahvsg182lvw-gettext-0.22.5' from 'https://cache.nixos.org'...
+copying path '/nix/store/0hyrbiwq9v43bpd9qmysscjynz7jl3s0-gnugrep-3.11' from 'https://cache.nixos.org'...
+copying path '/nix/store/f4z2y0zn2bmrwywp67y3h21cmb6ky547-libiconv-109-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/35yfrid48r9bjavba4pmkczq8f6n5dc9-libxml2-2.13.5' from 'https://cache.nixos.org'...
+copying path '/nix/store/bp95if14388zp5s4xh1qhw94arc9rp7l-bash-interactive-5.2p37' from 'https://cache.nixos.org'...
+copying path '/nix/store/fc3m1n18s3a5rs4fffaqhiykvdx7s32n-coreutils-9.6' from 'https://cache.nixos.org'...
+copying path '/nix/store/b7c1zdmmdh1ha5wbnswph6a736ldrv17-llvm-19.1.7-lib' from 'https://cache.nixos.org'...
+copying path '/nix/store/lk8lil0krarzimw2x4kisqizfm76qc7q-xcbuild-0.1.1-unstable-2019-11-20' from 'https://cache.nixos.org'...
+copying path '/nix/store/hklang3njvw0f5mgra9vsvn3c2zi2v45-compiler-rt-libc-19.1.7-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/p6b6jmbwx1khdalzfq3llq5lxwpdj5sd-diffutils-3.10' from 'https://cache.nixos.org'...
+copying path '/nix/store/c15yf86kbhsms01nylmfrwqczks5jgpq-findutils-4.10.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/dmn3z88payls3vcn328vxlfv6mcgy2cl-ld64-954.16-lib' from 'https://cache.nixos.org'...
+copying path '/nix/store/x36ylqmkmfnjpraf0gfrgbqmvc8kw4mn-xar-minimal-501-lib' from 'https://cache.nixos.org'...
+copying path '/nix/store/920c6q654ang4h351jq5a6nsvr44d9xz-nix-info' from 'https://cache.nixos.org'...
+copying path '/nix/store/prpzadksziwxb1w7x9y57iqnai22ybbx-xcbuild-0.1.1-unstable-2019-11-20-xcrun' from 'https://cache.nixos.org'...
+copying path '/nix/store/27xhi94aggy63f3dcf349cln833hjkd8-gnumake-4.4.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/20p718g1snq888pm73xhgjc9wx9pdfad-gnutar-1.35' from 'https://cache.nixos.org'...
+copying path '/nix/store/cyrakdc5rxkzz36hfjgg6r1yig0infbs-clang-19.1.7-lib' from 'https://cache.nixos.org'...
+copying path '/nix/store/93m2zpkyjrh0hm93c0158zbn9aqyggac-ld64-954.16' from 'https://cache.nixos.org'...
+copying path '/nix/store/i77g016djbgkdjf5905z5hrr2mrsxh27-llvm-19.1.7' from 'https://cache.nixos.org'...
+copying path '/nix/store/bw3ndgqqpr23a7i3cxrki7qq2cayh1pm-cctools-1010.6-libtool' from 'https://cache.nixos.org'...
+copying path '/nix/store/8540flazsp8vjvfl40qd7p44mkkidpda-cctools-1010.6' from 'https://cache.nixos.org'...
+copying path '/nix/store/c397xq3dql1js7q2my001jz51fwxk8f2-clang-19.1.7' from 'https://cache.nixos.org'...
+copying path '/nix/store/7y0vlsf6l8lr3vjsbrirqrsbx4mwqiwf-cctools-binutils-darwin-1010.6' from 'https://cache.nixos.org'...
+copying path '/nix/store/lsjl29pwp5if71jfgxlv8fifsrpax805-apple-sdk-11.3' from 'https://cache.nixos.org'...
+copying path '/nix/store/8v19r3366y400xmmsnpslpyddck2ma1m-cctools-binutils-darwin-wrapper-1010.6' from 'https://cache.nixos.org'...
+copying path '/nix/store/0jd4fjnnrfz0dfxbc5lgfyxjfay73i77-clang-wrapper-19.1.7' from 'https://cache.nixos.org'...
+copying path '/nix/store/yagr58hrskzi3xy41pk4ssnn6b0d1w6b-stdenv-darwin' from 'https://cache.nixos.org'...
+ - system: `"aarch64-darwin"`
+ - host os: `Darwin 23.6.0, macOS 14.6`
+ - multi-user?: `yes`
+ - sandbox: `no`
+ - version: `nix-env (Nix) 2.26.3`
+ - channels(root): `"nixpkgs"`
+ - nixpkgs: `/nix/store/ldwapm29wjwan94c9nqjv57jssqrs0rh-nixpkgs/nixpkgs`
+
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/freecad-playground % 
+
+...

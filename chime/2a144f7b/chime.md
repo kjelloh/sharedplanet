@@ -1,0 +1,22 @@
+# Todo: Programming - Consider to delve into what we can do with Raspberry Pi and Windows 10 IoT?
+
+```#2a144f7b``` *As of 2016-03-22 21:57*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Microsoft has ported Windows 10 IoT Core to Raspberry Pi and enabled Visual Studio 2015 to develop for that platform.
+
+1) This Microsoft event show-off indicates some cool stuff using Augmented Reality, a physical Raspberry Pi robot (<https://www.raspberrypi.org/blog/windows-10-for-iot/>)?
+
+2) Consider to buy the latest Raspberry Pi and try out Windows 10 IoT on it?
+
+3) Consider to build an iPOS Payment Terminal Emulator running on a Raspberry Pi?
+
+…
+
+Consider to delve into the possibilities of playing with Raspberry Pi and Windows 10 IoT?
+
+...
+
+{% endraw %}

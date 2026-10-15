@@ -1,0 +1,22 @@
+# Todo: Consider how a decentralised shared state network can alleviate the bottlenecks when central server is bogged down by letting the user update the state and then do something else while the state is shared
+
+```#516e8656``` *As of 2021-12-31 13:36*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Today (new years eve) I tried to pay my bills through my internet bank but failed because it seems everyone else is trying to do the samek thing at the same time?
+
+> *The basic idea here is that I really do not need to be connected to my internet bank while I update the "state" of my payment requests. All I actually is required to do is update my local state to queue payments in a secure way.*
+
+> *Then later, when my internet bank is able to do so, it can sync with my local state and perform the transaction requests.*
+
+> *This will result in a new share state that is then, later still, synchronised back to me.*
+
+> *I can then have notifications associated with failed or succeeded transactions so I know if I need to take actions to have my transactions go through?*
+
+> *I propose this mechanism of sharing states can be accomplished with Darwinet (or what I actually should call it) as long as the state changes are protected so that non but me is able to actually perform them.*
+
+> *Some form of blockchain distributed trust mechanism comes to mind to ensure only I can add to the chain of state changes of the state I own.*
+
+{% endraw %}

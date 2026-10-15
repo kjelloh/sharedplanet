@@ -1,0 +1,26 @@
+﻿Finally I got round to try and recover the pictures stored on my old USB hard disc that I screwed up by using it with my korg OASYS workstation
+
+1) I went with the Apple app Disk Drill Media Recovery (http://www.cleverfiles.com <http://www.cleverfiles.com/>)
+
+	==> I bought in through Mac App Store (nearly 500 SEK)
+
+	==> It installed without fuzz.
+
+2) It seems we need to download a separate application (package) to make the app able to connect directly to the disks (http://help.cleverfiles.com/new-disk-drill-media-recovery/ <http://help.cleverfiles.com/new-disk-drill-media-recovery/>)?
+
+	==> The package to install seems to be here (http://www.cleverfiles.com/releases/dd-disk-access.pkg <http://www.cleverfiles.com/releases/dd-disk-access.pkg>)?
+
+	==> Well, I installed it and re.staretd the application and now it lists all attached disc drives OK.
+
+3) I ran the “apply all scan methods” and it started to recover files.
+
+	==> YES - It found all the old windows files (but the recovery will take a very long time as it seems)?!
+
+		
+		Picture: Disc Drill after 15 minutes (a long way to go before finished)?!
+
+		==> It seems to indicate it will take roughly 6 hours to finish?
+
+		WE ARE HERE...
+		...
+

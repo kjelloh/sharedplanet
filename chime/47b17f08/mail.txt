@@ -1,0 +1,62 @@
+﻿It seems the (now deprecated) Stanford course CS140e (available as archived) could be a could reference to delve into Rust and Operating System programming in one fun go?
+
+1) Consider the archived course material for Stanford CS140e course (https://cs140e.sergio.bz/syllabus/#schedule <https://cs140e.sergio.bz/syllabus/#schedule> )?
+
+	==> Consider this RUST cheat sheet by Sergio Benitez?
+
+	
+	RUST Container cheat sheet (https://cs140e.sergio.bz/notes/lec3/cheat-sheet.pdf <https://cs140e.sergio.bz/notes/lec3/cheat-sheet.pdf> )
+
+	==> Consider this to-the-point short overview of non volatile storage devices and drivers (https://cs140e.sergio.bz/notes/lec5/fs-dm.pdf <https://cs140e.sergio.bz/notes/lec5/fs-dm.pdf> )?
+
+	
+
+	==> Consider the first assignment which results in writing a bootloader, a file transfer protocol AND a shell to run on a Raspberyy Pi 3 (https://cs140e.sergio.bz/assignments/1-shell/ <https://cs140e.sergio.bz/assignments/1-shell/> )?
+
+	==> It seems when finishing the first assignment we will have a Raspberry Pi with a boot loader that receives a kernel with a shell over XMODEM, loads and boots it?
+
+Phase 4: Boot ‘em Up
+In this phase, you’ll use everything you’ve written thus far to implement a bootloader for your Raspberry Pi. You’ll be working primarily in os/bootloader/src/kmain.rs.
+
+
+Implement the Bootloader
+
+Implement the bootloader in bootloader/src/kmain.rs. We’ve declared the bootloader’s start address, the loaded binary’s start address, and the maximum binary size in const declarations at the top of the file. We’ve also provided a jump_to function that unconditionally branches to the address addr. This has the effect of setting the program counter to that address. Your bootloader should use these declarations along with your existing code from the pi and xmodem libraries to receive a transmission over UART and write it to the memory address the binary expects to be loaded at. When the transmission is complete, your bootloader should execute the new binary.
+
+Be aware that your bootloader should continuously attempt to initiate an XMODEM reception by setting a low timeout value (say, 750ms) and attempting a new reception if a timeout occurs. If a reception fails for any other reason, print an error message and try again. Once you’ve implemented the bootloader, test it by sending your kernel binary from os/kernel/build/kernel.bin to your Pi using your ttywriteutility. If all is well, you should see your shell when you screen into your Pi.
+
+
+Phase 3: Not a Seashell
+In this phase, you will be implementing drivers for the built-in timer, GPIO, and UART devices. You’ll use then these drivers to implement a simple shell.
+
+Phase 2: Oxidation
+In this phase, you will write two libraries, one command-line utility, and review one library. You will be working in the stack-vec, volatile, ttywrite, and xmodem skeleton subdirectories. Subdirectories may contain a questions directory in which you should record your answers to questions corresponding to the respective subphase.
+
+All projects are being managed with Cargo. You will find the following cargo commands useful:
+
+cargo build - build an application or library
+cargo test - test an application or library
+cargo run - run an application
+cargo run -- $flags - run an application and pass arbitrary flags to it
+
+
+Phase 1: Ferris Wheel
+In this phase, you will modify Rust programs so that they compile, fail to compile, or pass tests. 
+
+Phase 0: Getting Started
+As with assignment 0, ensure that you are using a compatible machine:
+
+Runs a modern Unix natively: Linux, BSD, or macOS
+Runs a 64-bit variant of the OS
+Has a USB-A port or USB-C to USB-A adapter
+And has the following software installed: git, wget, tar, screen, make, and the software from assignment 0.
+
+
+
+2) Consider this youtube video "A Case for Oxidation: The Rust Programming Language" where I learned about RUST memory safety, Sergio Benitez and the Stanford course CS140e (https://www.youtube.com/watch?v=cDFSrVhnZKo <https://www.youtube.com/watch?v=cDFSrVhnZKo> )?
+
+3) Consider the RUST language onlue specification (https://doc.rust-lang.org/book/title-page.html <https://doc.rust-lang.org/book/title-page.html> )?
+
+
+
+...

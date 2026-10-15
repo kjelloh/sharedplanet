@@ -1,0 +1,36 @@
+# Todo: Consider an encryption algorithm that for any key produces "valid" data and structure but correct data and structure only for the correct key (to obscure what decryption and key that is the correct one)?
+
+```#9aa91f16``` *As of 2019-06-24 16:47*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Can we imagine an encryption scheme that has the property to always, at every stage of the decryption (or at least at the end of decryption) always produces "valid" data (just not the correct one unless you have the correct key)?
+
+1) Consider the intuition behind how and why an encryption algorithm that always produces decrypted valid data?
+
+> *If a decryption of some data always results in valid data, just not the correct one unless you have the correct key, then this should make breaking such an encryption harder? You would now have the additional problem of somehow validating if the data you got is the correct one or just fake?*
+
+> *Also, if any decryption results in valid data it may make it more obscure to use decrypted data as input when trying to break the key of some other encrypted data. This is normally one of the attack methods fro cryptos. You get hold of some clear text data and its encrypted counterpart. And from that you can deduce some information about how some other data may be encrypted and what key has been used there. But if you can't be sure you really have a piece of clear text data this would make it harder to also find data usable as input to crack the crypto?*
+
+> *Now, at this stage I just got this idea and have not yet thought about wether this is true or not. Maybe spotting incorrect data is easier than I imagine? But never the less, that is the idea so far.*
+
+> *I also have the intuition that maybe we can use some folding based encryption algorithm with some restriction on the space we are folding so that when we unfold (decrypt) we get at least in the final stage always valid data. Is this possible? And if it is possible, would this then also severely reduce the strength of the crypto? And if so, can we compensate with a sufficient longer key?*
+
+> *... *
+
+2) Consider the intuition to restrict some folding based encryption algoritm to always unfold into "valid" data?
+
+> *From how I understand cryptos like tripple DES, AES (and maybe at same base level any crypto) uses a key, some random data to pollute the input and then a sequence of folding the data on itself using XOR to keep the information just in a distorted form. So my intuition tells me that maybe we can do the folding in such a way so that when we unfold (decrypt) with any valid key we will always end up with data that is valid in content and structure, just not the correct content and structure if we use the wrong key.*
+
+> *I imagine we can view the folding and unfolding operations with a key as some path in a space of possible states of the data we are processing. In this model we now need to ensure that if we start at an endpoint of such a folding path (the crypto text using a specific key), there should be a path back to valid data for any key we use. Now, although my intuition can imagine this map, it is not clear if how "the exact same" unfolding steps but with the wrong key, should result in a state of the data in the space of valid clear test data?*
+
+> *IF we start with a trivial binary integer (a vector of bytes) it seems it is trivially true that any decryption of an encrypted integer will result in some other integer. But already here can we imagine that we know the integer is a date, or a price in some currency, so that there is a restriction on what is a valid integer in this context. And now the problem becomes that to ensure a fixed set of unfoldings using any key must end up as an integer in the restricted space of valid integers. Is that possible?*
+
+> *And what about PRODUCT and SUM structures with say named member elements? Now any unfolding of a crypto text with any key must end up with "the same" structure but with invalid content. Is that possible? It seems at least to make this work we must have the encryption algorithm be able to "understand" and somehow preserve the valid structure so that decryption can then also preserve it regardless of wether we use the correct key or not?*
+
+> *... *
+
+...
+
+{% endraw %}

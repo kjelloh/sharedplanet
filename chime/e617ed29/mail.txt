@@ -1,0 +1,45 @@
+﻿It may be time to lubricate the linear rails on my Cetus 3D printer but what lubrication should I use for that?
+
+1) Consider I should lubricate the linear rails on my Cetus 3D printer with White Lithium grease?
+
+	==> Consider this thread "Lubrication" on the Tiertime community forum (https://www.tiertime.com/community/viewtopic.php?t=6995 <https://www.tiertime.com/community/viewtopic.php?t=6995> )?
+
+"...
+
+The manual recommends using white lithium grease, which you probably already have on hand (if not, it's available at a hardware store). I cleaned mine with Q tips and applied new grease.
+
+I wouldn't use WD-40, since that can get tacky over time.
+"
+
+	==> Consider to buy Clas Ohlson "Universal Grease" that seems to be a White Lithium grease (https://www.clasohlson.com/se/Universalfett-CRC-100-ml/p/31-9136 <https://www.clasohlson.com/se/Universalfett-CRC-100-ml/p/31-9136> )?
+
+
+
+2) It seems I have the Cetus 3D MKII from dec 2017 and it has IKO LWL12B linear rails and blocks?
+
+	==> Also see "Cetus3D Online Store - Order 2651"
+
+
+
+	==> It seems the linear rails on my Cetus 3D Printer MKII is marked as "IKO LWL12 B"?
+
+
+The IKO LWL12 B linear rails of my Cetus 3D Printer MKII 
+
+3) It seems this is one URL listing the LWL (Linear Way L) models (https://www.ikont.co.jp/eg/product/chocudo/tou07.html <https://www.ikont.co.jp/eg/product/chocudo/tou07.html> )?
+
+
+
+
+	==> It seems a pdf specification can be downloaded from this URL (https://ikowb01.ikont.co.jp/technicalservice/ikoc0110.php?pno=%26nbsp%3BRail%20Guide%20Type%20Endless%20linear%20motion%2C%26nbsp%3B%26nbsp%3B-%26nbsp%3BC-Lube%20Linear%20Way%20ML%2C%26nbsp%3B%26nbsp%3B-%26nbsp%3BLinear%20Way%20L&c0=ML%2CLWL&c1=%2CA%20part%20of%2CCAT-1578E&path=download%2Fpdf_catalog%2F&name=1578E_ML_LWL.pdf <https://ikowb01.ikont.co.jp/technicalservice/ikoc0110.php?pno=&nbsp;Rail%20Guide%20Type%20Endless%20linear%20motion,&nbsp;&nbsp;-&nbsp;C-Lube%20Linear%20Way%20ML,&nbsp;&nbsp;-&nbsp;Linear%20Way%20L&c0=ML,LWL&c1=,A%20part%20of,CAT-1578E&path=download/pdf_catalog/&name=1578E_ML_LWL.pdf> )?
+
+
+IKO Linear rail model notation (LWL 12 B is on my Cetus 3D Printer MKII)
+
+
+IKO Linear Way L structure B means "Standard Rail Ball retained type B"
+
+
+The "B" seems to indicate that the balls of the slide unit is in fact "retained" (will not fall out if the slide is removed from the rail)?
+
+..

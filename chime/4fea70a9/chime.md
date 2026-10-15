@@ -1,0 +1,14 @@
+# Todo: Write about how privileged groups may come into existence without the members of the group believing they are entitled to the privileges
+
+```#4fea70a9``` *As of 2015-08-30 18:12*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+many debates about injustice in society are based on the argument that the members of the privileged group also believe they are entitled to these privileges. This is not true. It is fully possible for such groups to emerge based on other, not so easily seen, factors.
+
+1) People of western countries may not believe that are entitled to the prosperity they experience but the global economics still allow this difference to emerge. So, should the moral of western citizens be blamed for this injustice to go on? Some think so. But a ,ore powerful approach could instead be to understand the mechanism of emergence. If we base our economy on the right to own and gather wealth on a free macer, maybe this is the ”ruth” to blame for the injustice?  
+2) men may not believe they are entitled to better wages and more power in society than women. Still women may argue men should on moral bases not accept this to happen. But perhaps a more powerful approach to this injustice is to realize that modern economics is based on competition, a trait seen as sexual favorable for men but not to women. Could it be that we need incitements in the economy that favors women sexual traits also in monetary terms? (Deep Richness could incorporate such values?)  
+...
+
+{% endraw %}

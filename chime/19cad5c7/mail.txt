@@ -1,0 +1,20 @@
+﻿Watching the playlist of Open Vis Conf I stumbled on this talk “How to Simulate the Universe, in 134 Easy Steps — Nicky Case” that seems inspiring and having many leads to visualisations of human interactions and leads to how to create new ones?
+
+1) The talk “How to Simulate the Universe, in 134 Easy Steps — Nicky Case” seems to live here at youtube (https://www.youtube.com/watch?v=uc5rfTkLzlY&list=PLlgxAbM67lYKz_NssZ1DdDwIRIWbkDlN-&index=4 <https://www.youtube.com/watch?v=uc5rfTkLzlY&list=PLlgxAbM67lYKz_NssZ1DdDwIRIWbkDlN-&index=4>)
+
+2) This seems to be the home of slides, transcription and links to examples (http://ncase.me/OVC2016/ <http://ncase.me/OVC2016/>)?
+
+	==> This seems like a good simulation of probability of death at different ages (http://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/ <http://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/>)?
+	==> This seems like a good simulation of death cause (http://flowingdata.com/2016/01/19/how-you-will-die/ <http://flowingdata.com/2016/01/19/how-you-will-die/>)?
+	==> This seems like an intriguing simulation of effects or parole strategies (https://www.themarshallproject.org/2015/08/04/the-new-science-of-sentencing#simulator <https://www.themarshallproject.org/2015/08/04/the-new-science-of-sentencing#simulator>)?
+	==> This seems to be a good simulation of the Monty Hall Paradox or The Goat and the Car gamle (http://blog.vctr.me/monty-hall/ <http://blog.vctr.me/monty-hall/>)?
+	==> This seems like a pedagogic visualisation of why poll results has errors (http://rocknpoll.graphics <http://rocknpoll.graphics/>)?
+
+3) Consider to make my own visualisation of the Causal Loop Diagram for fighting Drug Addiction “Why we can’t win the war on drugs" (http://linchpin.org/site/?p=1009 <http://linchpin.org/site/?p=1009>)
+
+	==> Nicky Case states in his talk that somebody should make these diagrams “nicer”, they hurt his eyes!
+	...
+…
+
+Consider to follow up leads in this talk to see what we can use to inspire to make Shared Planet visualising inviting and engaging, especially in creating positive emergence for community growths and actions for change?
+...

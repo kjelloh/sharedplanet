@@ -1,0 +1,30 @@
+﻿So, what can we learn by trying out a project structure with parallel folders for the different aspects of a software project?
+
+	==> Also see “Todo: Multi-Ux Cross Platform Programming - Consider the run-time entry point actually defines the Ux domain (and thus we know at compile time what Ux to instantiate at runtime)?”
+
+1) Consider too what degree this structure works conveniently for different IDE:s?
+
+	==> It seems Xcode can create a “Cross Platform Project” bu then only for Swift or Object C?
+	==> And an Xcode cross-platform project is actually only cross Apple platforms (MAC OS, iOS, Watch OS…)?
+
+2) Consider to create a Github hosted project and try to what degree we can make it cross platform for different IDE:s, build tool chains and different view port frameworks?
+
+	==> Consider by having it a Github project we may sync it while we try it on MAC OS, Linux and Windows?
+
+	==> Consider to first make a Console App that use cmake to create platform IDE/Tool chain for MAC OS, Linux and Windows?
+
+	==> Then consider what we need to do to add 2D windows UI to each platform for the same application domain?
+
+	…
+
+3) Consider to try using Copperspice (or Qt) for the 2D windows view port on MAC OS, Linux and Windows 10?
+
+	==> This may be the way to understand how Qt has solved the problem of hiding the platform view port from the application domain code?
+
+	...
+
+
+…
+
+Consider to work on this idea until we have a cross platform project with single domain state and messaging, both a Console and a 2D window View Model running on at least one view port on each platform?
+...

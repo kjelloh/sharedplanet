@@ -1,0 +1,32 @@
+# Todo: Consider a Hackintosh as built in youtube video "My Mom Builds Her First Hackintosh PC (While I'm Blindfolded)!"?
+
+```#9e656319``` *As of 2018-10-05 10:48*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems we can learn about what top put in to and what works as a Hackintosh buy studying this “My Mom Builds Her First Hackintosh PC (While I'm Blindfolded)!” build?
+
+1) The youtube video “My Mom Builds Her First Hackintosh PC (While I'm Blindfolded)!” seems to live here (<https://www.youtube.com/watch?v=03BNdwaDd20>)?
+
+==&gt; This seems to be the parts list (Amazon affiliate links)?
+
+> Parts list:  
+> Phanteks Pro M Case - [http://geni.us/7nny6](https://www.youtube.com/redirect?q=http%3A%2F%2Fgeni.us%2F7nny6&v=03BNdwaDd20&event=video_description&redir_token=Fx17sYRJPpLjGVzJV_eY6g_fFCR8MTUzODgxMjkxNUAxNTM4NzI2NTE1)  
+> Intel i7-8700K CPU - [http://geni.us/xk9Vl0e](https://www.youtube.com/redirect?q=http%3A%2F%2Fgeni.us%2Fxk9Vl0e&v=03BNdwaDd20&event=video_description&redir_token=Fx17sYRJPpLjGVzJV_eY6g_fFCR8MTUzODgxMjkxNUAxNTM4NzI2NTE1)  
+> Gigabyte AORUS Z370 Motherboard - [http://geni.us/v6PiE](https://www.youtube.com/redirect?q=http%3A%2F%2Fgeni.us%2Fv6PiE&v=03BNdwaDd20&event=video_description&redir_token=Fx17sYRJPpLjGVzJV_eY6g_fFCR8MTUzODgxMjkxNUAxNTM4NzI2NTE1)  
+> Corsair Vengeance LPX 32GB DDR4 RAM - [http://geni.us/hCrIS](https://www.youtube.com/redirect?q=http%3A%2F%2Fgeni.us%2FhCrIS&v=03BNdwaDd20&event=video_description&redir_token=Fx17sYRJPpLjGVzJV_eY6g_fFCR8MTUzODgxMjkxNUAxNTM4NzI2NTE1)  
+> Samsung 970 PRO NVMe SSD - [http://geni.us/k3I0B](https://www.youtube.com/redirect?q=http%3A%2F%2Fgeni.us%2Fk3I0B&v=03BNdwaDd20&event=video_description&redir_token=Fx17sYRJPpLjGVzJV_eY6g_fFCR8MTUzODgxMjkxNUAxNTM4NzI2NTE1)  
+> EVGA 750W P2 PSU - [http://geni.us/dyAoX](https://www.youtube.com/redirect?q=http%3A%2F%2Fgeni.us%2FdyAoX&v=03BNdwaDd20&event=video_description&redir_token=Fx17sYRJPpLjGVzJV_eY6g_fFCR8MTUzODgxMjkxNUAxNTM4NzI2NTE1)  
+> Thermaltake Asetek AIO - [http://geni.us/dSUWA](https://www.youtube.com/redirect?q=http%3A%2F%2Fgeni.us%2FdSUWA&v=03BNdwaDd20&event=video_description&redir_token=Fx17sYRJPpLjGVzJV_eY6g_fFCR8MTUzODgxMjkxNUAxNTM4NzI2NTE1)  
+> AMD RX 470 - [http://geni.us/6sHaA](https://www.youtube.com/redirect?q=http%3A%2F%2Fgeni.us%2F6sHaA&v=03BNdwaDd20&event=video_description&redir_token=Fx17sYRJPpLjGVzJV_eY6g_fFCR8MTUzODgxMjkxNUAxNTM4NzI2NTE1)
+
+==&gt; It seems he means Radeon RX 570 graphics card (NOT AMD RX 470)?
+
+2) The build seems to use these parts?
+
+## Attachments
+
+- [Dustin Hackintosh youtube "Mom build".pages](<Dustin Hackintosh youtube Mom build.pages>)
+
+{% endraw %}

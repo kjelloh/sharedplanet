@@ -1,0 +1,122 @@
+﻿I would like to be able to automate creation of 'video snippets' and then tell ffmpeg to assemble an output video from this.
+
+1) It seems ffmpeg alerady suppsort something called 'concat demuxer' and a file format 'ffconcat' (https://trac.ffmpeg.org/wiki/Concatenate )?
+
+2) Consider the chatGP answer to my question?
+
+"
+I have this idea to edit videos with the cross platform ffmpeg tool and library. I wonder, would it be possible to somehow tell ffmpeg to play sections (ranges) from a set of available video files in sequence? That is, can I provide arguments to ffmpeg about each section and then have ffmpeg play them back-to-back?
+"
+
+"Yes. In fact, FFmpeg is quite good at this, although the exact approach depends on whether you mean preview/playbackor producing a new video.
+There are a few options.
+
+Option 1: Use the concat demuxer (recommended)
+
+If your clips don't need re-encoding (or you're okay with re-encoding afterwards), you can treat each desired range as its own input and concatenate them.
+
+For example, suppose you have:
+
+a.mp4 → play 5–10 seconds
+b.mp4 → play 20–25 seconds
+c.mp4 → play 0–8 seconds
+You can create a concat file:
+
+ffconcat version 1.0
+
+file a.mp4
+inpoint 5
+outpoint 10
+
+file b.mp4
+inpoint 20
+outpoint 25
+
+file c.mp4
+outpoint 8
+Then:
+
+ffmpeg -f concat -safe 0 -i playlist.ffconcat -c copy output.mp4
+or
+
+ffplay -f concat -safe 0 playlist.ffconcat
+This is surprisingly powerful. The concat demuxer understands inpoint and outpoint.
+
+Option 2: Use filter_complex
+
+If you're already processing video (scaling, transitions, subtitles, etc.), you can trim each input in a filter graph.
+
+Example:
+
+ffmpeg \
+    -i a.mp4 \
+    -i b.mp4 \
+    -filter_complex "
+        [0:v]trim=start=5:end=10,setpts=PTS-STARTPTS[v0];
+        [0:a]atrim=start=5:end=10,asetpts=PTS-STARTPTS[a0];
+        [1:v]trim=start=20:end=25,setpts=PTS-STARTPTS[v1];
+        [1:a]atrim=start=20:end=25,asetpts=PTS-STARTPTS[a1];
+        [v0][a0][v1][a1]concat=n=2:v=1:a=1
+    " \
+    output.mp4
+This is more flexible but gets verbose when you have many segments.
+
+Option 3: Multiple -ss/-to inputs
+
+Each segment can simply be another input:
+
+ffmpeg \
+    -ss 5 -to 10 -i a.mp4 \
+    -ss 20 -to 25 -i b.mp4 \
+    -filter_complex \
+    "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1" \
+    output.mp4
+This is often easier to generate programmatically.
+
+Can FFplay play them as a playlist?
+
+Yes.
+
+ffplay can read an .ffconcat file directly:
+
+ffplay playlist.ffconcat
+or
+
+ffplay -f concat -safe 0 playlist.ffconcat
+That gives you playback without first rendering a new video.
+
+If you're embedding libavformat/libavcodec
+
+If you're using FFmpeg as a library rather than invoking the executable, another approach is to build your own "virtual timeline":
+
+Segment 1:
+    file = A.mp4
+    start = 5.2
+    end = 9.8
+
+Segment 2:
+    file = C.mp4
+    start = 15.0
+    end = 18.5
+
+Segment 3:
+    file = B.mp4
+    start = 1.0
+    end = 4.0
+Your player simply:
+
+Opens the first file.
+Seeks to the start timestamp.
+Decodes until the end timestamp.
+Opens the next file.
+Repeats.
+This is how many non-linear editors internally represent an edit decision list (EDL). It avoids creating temporary videos and makes edits effectively instantaneous because you're just changing metadata describing the timeline.
+
+For a cross-platform video editor, this "timeline of source ranges" model is generally preferable. You can then:
+
+preview edits immediately,
+reorder clips without re-encoding,
+export later by translating the timeline into an FFmpeg filter graph or concat workflow,
+support trims, speed changes, and effects without modifying the source media until final render.
+So yes—FFmpeg already supports sequential playback of ranges from multiple files, and if you're building an editor, representing the project as a list of (file, start_time, end_time) segments is a natural and scalable design."
+...

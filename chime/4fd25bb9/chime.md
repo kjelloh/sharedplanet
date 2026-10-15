@@ -1,0 +1,15 @@
+# TODO: Experiment with XE7 wifi app tethering
+
+```#4fd25bb9``` *As of 2015-01-04 20:04*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+See about 1:14 in https://www.youtube.com/watch?v=qqNAyoqF9O4&list=PLwUPJvR9mZHikVu-FgmXg2ajAagF8OPgh&index=16
+
+Seems to allow IP tethering of two apps.
+
+1. Consider to separate TestBench GUI from engine using IP tethering? This would enable the engine to be used as a central server.
+2. Use IP tethering to build Darwinet node clouds?
+
+{% endraw %}

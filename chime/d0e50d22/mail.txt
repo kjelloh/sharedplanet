@@ -1,0 +1,44 @@
+﻿Could it be a good idea to try out a C++ teaching path using the same order of concepts as in the book "Structure and Interpretation of Computer Programs” (where they do not introduce mutation and variables until chapter 3, page 167 of 500)?
+
+	==> Also see “Todo: Programming - Consider to record my own C++ training course?”
+
+1) Consider in this way we can teach C++ starting of not having to bother with pointers, state or other stuff we like to postpone as “advanced” stuff?
+
+2) Consider how C++ concepts can be paired with the ones in chapter 1 and 2 of the book?
+
+	==> Consider how to map chapter 1 to C++ concepts?
+
+	 
+
+	==> Consider how to map Chapter 2 to C++ concepts?
+	
+	
+	
+	
+
+	==> Consider how to map chapter 3 to C++ concepts?
+
+	
+
+2) Consider what fun we can do with only the Chapter 1 and 2 concepts (not mutation) if we use Persistent data Structures (“functional programming") in our C++ exercises?
+
+	==> Consider if this makes teaching more or less complicated for beginners to programming?
+
+	==> Can we do Console input and output without mutation?
+	==> Can we do 2D UI examples without mutation?
+	==> Can we do 3D games without mutation?
+	…
+
+3) Consider how this idea for teaching C++ rimes with the thinking of Kate Gregory (e.g. in cppcast episode http://cppcast.com/2015/10/kate-gregory/ <http://cppcast.com/2015/10/kate-gregory/>)?
+
+	==> Also see Kate Gregory Cppcon 2015 talk  (https://www.youtube.com/watch?v=YnWhqhNdYyk <https://www.youtube.com/watch?v=YnWhqhNdYyk>)?
+	...
+
+4) Consider to see if the C++ Core Guidelines may be ordered by how they relate to concepts in the book?
+
+	==> Consider to what extent the C++ Core Guidelines are about "Structure and Interpretation of Computer Programs”?
+	...
+
+…
+
+Consider to elaborate on this idea to teach C++ by providing concepts in the same order as the book "Structure and Interpretation of Computer Programs"

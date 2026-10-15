@@ -1,0 +1,96 @@
+# Todo: Consider to delve into the "Delayed-choice quantum eraser" experiment and what this can tell us about "Reality"?
+
+```#9c652717``` *As of 2021-08-29 18:30*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to wrap my brain around "reality" and the weird behaviour of quantum states provide interesting and mind boggling observations
+
+==&gt; Also see "Todo: Consider to delve into the "weirdness" of quantum mechanics as described by "The Bomb Experiment"?"
+
+1) Consider the wikipedia article "Delayed-choice quantum eraser" (<https://en.wikipedia.org/wiki/Delayed-choice_quantum_eraser> )?
+
+> *"A delayed-choice quantum eraser experiment, first performed by Yoon-Ho Kim, R. Yu, S. P. Kulik, Y. H. Shih and Marlan O. Scully,&#91;1&#93; and reported in early 1999, is an elaboration on the quantum eraser experiment that incorporates concepts considered in Wheeler's delayed-choice experiment."*
+
+> ![](401px-Kim_EtAl_Quantum_Eraser.svg.png)  
+> Copyright <https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Kim_EtAl_Quantum_Eraser.svg/401px-Kim_EtAl_Quantum_Eraser.svg.png>
+
+> *"*  
+> *The beam splitters and mirrors direct the idler photons towards detectors labeled D1, D2, D3 and D4. Note that:
+
+> *  
+> *• If an idler photon is recorded at detector D3, it can only have come from slit B.  
+> *  
+> *• If an idler photon is recorded at detector D4, it can only have come from slit A.  
+> *  
+> *• If an idler photon is detected at detector D1 or D2, it might have come from slit A or slit B.  
+> *  
+> *• The optical path length measured from slit to D1, D2, D3, and D4 is 2.5 m longer than the optical path length from slit to D0. This means that any information that one can learn from an idler photon must be approximately 8 ns later than what one can learn from its entangled signal photon."*
+
+2) Consider what we can "tell" from the observation of the results from the "Delayed-choice quantum eraser"?
+
+> *The basic idea behind the "Delayed-choice quantum eraser" experiment is to exploit the double-slit experiment with an additional time delay between registering of "as-a-wave" or "as-a-particle" travel of a particle through a system, and an explicit registration of the path the particle actually travelled, combined with a final choice of "erasing" this knowledge.*
+
+> *In the original double split experiment an insertion of a detector at one of the splits destroys the interference pattern of the particle absorption screen in line with the realisation that is we KNOW the particle went through a specific slit, then it must hit the absorption screen as a particle. Or put another way, then it can NOT hit the absorption screen distributed in an interference pattern.*
+
+> *The ingenious thing with the delayed-choice quantum eraser is that we can choose to first potentially detect what path the photon took and then FORGET this information again. We can say we prevent the information about the path to escape the system.*
+
+> *The experiment seems to show that every photon which is entangled with a sibling photon (signal photon) that takes a path where it can potentially be detected to have gone through a specific slot, but ends up traveling an extended path where this information is erased again, will create a distribution pattern of interference.*
+
+> *And this is true even though the photon hits the absorption screen BEFORE its sibling has reached the path where its safe from revealing what slot it went through!*
+
+> *So it seems the first photon "knows" if the information about "what slit" it went through will be revealed or not BEFORE it is actually possible to measure it?!*
+
+> *Here is how the experiment works.*
+
+> *1) A photon source emits a single photon through any of two sources in a random way (emulating the double slit set-up).*  
+> *2) The photon from each source is split by a prism into two entangled photons, one aimed at the main detector D0 and the its sibling aimed at the "what-slit" detector set-up. *  
+> *3) The paths are selected so that the photon will hit main detector D0 BEFORE it enters the "what-slit" detector system.*  
+> *4) The sibling photons from each of the source enters their own detection path but each detector system has the same setup.*  
+> *5) Each "what-slit" detector system splits the photon again so that it will either hit a detector or pass through undetected.*  
+> *6) Photons that travels the "not-detected" path of each "what-slit" system is recombined again to erase this information again before it hits either final detectors D1 or D2.*
+
+> *So far the experiment tells us that each photon will be absorbed at detector D0 where we can observe its distribution pattern. For each such photon we can also detect if its sibling will propagate to trigger detector D1 or D2. If it does, we have erased any information about what slit it originated from.*
+
+> *7) Detector D0, D1 and D2 are connected to a coincidence counter so that we can pair every sibling photon detected by D1 or D2 with a photon that has hit detector D0.*
+
+> *Now, to this setup we add a photon splitter in each "what-slit" detector system.*
+
+> *8) We split the sibling photon from a specific original slit so that can "choose" to go to a detector D3 and D4 respectively or to pass through to the recombination (erase) part of the system.*
+
+> *This means that each sibling (signal photon) that triggers detector D3 or D4 reveals what slit the original photon came through!*
+
+> *Now let us imagine we separate the time between the photon is absorbed by detector D0 and its sibling (signal photon) hits any of detectors D2, D3 or D4 with say a full day. This would mean we have ample time to take the distribution pattern on detector D0 and put it up on the wall to observe. We would then see ALL the photons we were able to detect at D0.*
+
+> *We now have to wait for the sibling photons (signal photons) to reach any of the detectors in the "what-path" system.*
+
+> *The next day all the sibling photons (signal photons) have reached a detector and we can start to pair them up with the photons registered on the absorption pattern at detecter D0.*
+
+> *We can do this by using the coincidence counter. What this device does is that it measures the time between a hit of detector D0 and any hit of detectors D2 to D4. Given the known delay between these D0 and any of these paths we can do two thiongs.*
+
+> *a) Remove any injected noise where any detected photon by any detector does not pair up with a sibling (signal photon) separated by a possible time delay.*  
+> *b) pair up detections with the appropriate time delays and in the process also identify what detector D1,D2 or D3 that has been hit by a sibling photon (signal photon) with a specific "parent" photon hit at D0.*
+
+> *What we now discover is, that if we remove all photon hits at D0 where its sibling (signal photon) hit D2 or D3 (revealing what slit the original photon came from), then the remaining photons a distributed in an interference pattern!*
+
+> ![](KimDelayedChoiceQuantumEraserGraphsGIF.gif)  
+> *"Figure 4. Simulated recordings of photons jointly detected between D0 and D1, D2, D3, D4(R01, R02, R03, R04)"*  
+> Copyright  
+> <https://upload.wikimedia.org/wikipedia/commons/8/8c/KimDelayedChoiceQuantumEraserGraphsGIF.gif>
+
+> ![](220px-Detector0RawResults.svg.png)
+
+> *"Figure 5. Distribution of signal photons at D0 can be compared with distribution of bulbs on digital billboard. When all the bulbs are lit, billboard does not reveal any pattern of image, which can be "recovered" only by switching off some bulbs. Likewise interference pattern or no-interference pattern among signal photons at D0 can be recovered only after "switching off" (or ignoring) some signal photons and which signal photons should be ignored to recover pattern, this information can be gained only by looking at corresponding entangled idler photons in detectors D1 to D4."*
+
+> *Copyright <https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Detector0RawResults.svg/220px-Detector0RawResults.svg.png> *
+
+> *So, it is worth noting that we need to wait for the information from "what-slit" detectors D1,D2 and D3 to be able to filter out photon hits at D0 that produce interference patterns from those that does not.*
+
+> *Still, the one we keep on the absorption plate at D0 ARE detected there BEFORE we have revealed what slit they came from or not!*
+
+> *What on earth does this mean?*
+
+...
+
+{% endraw %}

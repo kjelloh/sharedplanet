@@ -1,0 +1,168 @@
+﻿So, can we imagine to design a C++ REPl IDE to enable programming in C++ using JIT-compiled and run C++ code?
+
+1) Consider this wikipedia definition of REPL (https://en.wikipedia.org/wiki/Read–eval–print_loop <https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop>)?
+
+	…
+
+2) Consider to try out the Cling C++ Repl based on Clang (https://root.cern.ch/cling <https://root.cern.ch/cling>)?
+
+	==> It seems to come as github project and build on several platforms using cmake (https://root.cern.ch/cling-build-instructions <https://root.cern.ch/cling-build-instructions>)?
+
+		==> This page seems to state that we need to build the whole cern llvm package?
+
+git clone http://root.cern.ch <http://root.cern.ch/>/git/llvm.git src
+cd src
+git checkout cling-patches
+cd tools
+git clone http://root.cern.ch <http://root.cern.ch/>/git/cling.git
+git clone http://root.cern.ch/git/clang.git
+cd clang
+git checkout cling-patches
+cd ../..
+
+	==> This seems to be a Github (fork?) of Cling (https://github.com/root-project/cling <https://github.com/root-project/cling> )?
+
+		==> This project also seems to tag to jupyter?
+
+		==> And build using provided python cpt script seems to work ok (See console output file below)?
+
+
+	
+	
+
+	==> It seems to build to “/Users/kjell-olovhogdahl/Documents/GitHub/cling/tools/packaging/cling-build/builddir/./bin/cling"
+	
+	==> It seems to start and execute ok?
+
+Kjell-Olovs-MacBook-Pro:bin kjell-olovhogdahl$ pwd
+/Users/kjell-olovhogdahl/Documents/GitHub/cling/tools/packaging/cling-build/builddir/bin
+Kjell-Olovs-MacBook-Pro:bin kjell-olovhogdahl$ cling
+-bash: cling: command not found
+Kjell-Olovs-MacBook-Pro:bin kjell-olovhogdahl$ ./cling
+
+****************** CLING ******************
+* Type C++ code and press enter to run it *
+*             Type .q to exit             *
+*******************************************
+[cling]$ int a;
+[cling]$ a=5;
+[cling]$ a
+(int) 5
+[cling]$ .q
+Kjell-Olovs-MacBook-Pro:bin kjell-olovhogdahl$ 
+
+
+	==> This seems to be the Cling meta-commands?
+
+*******************************************
+[cling]$ .help
+
+ Cling (C/C++ interpreter) meta commands usage
+ All commands must be preceded by a '.', except
+ for the evaluation statement { }
+ ==============================================================================
+ Syntax: .Command [arg0 arg1 ... argN]
+
+   .L <filename>		- Load the given file or library
+
+   .(x|X) <filename>[args]	- Same as .L and runs a function with
+				  signature: ret_type filename(args)
+
+   .> <filename>		- Redirect command to a given file
+      '>' or '1>'		- Redirects the stdout stream only
+      '2>'			- Redirects the stderr stream only
+      '&>' (or '2>&1')		- Redirects both stdout and stderr
+      '>>'			- Appends to the given file
+
+   .undo [n]			- Unloads the last 'n' inputs lines
+
+   .U <filename>		- Unloads the given file
+
+   .I [path]			- Shows the include path. If a path is given -
+				  adds the path to the include paths
+
+   .O <level>			- Sets the optimization level (0-3)
+				  (not yet implemented)
+
+   .class <name>		- Prints out class <name> in a CINT-like style
+
+   .files 			- Prints out some CINT-like file statistics
+
+   .fileEx 			- Prints out some file statistics
+
+   .g 				- Prints out information about global variable
+				  'name' - if no name is given, print them all
+
+   .@ 				- Cancels and ignores the multiline input
+
+   .rawInput [0|1]		- Toggle wrapping and printing the
+				  execution results of the input
+
+   .dynamicExtensions [0|1]	- Toggles the use of the dynamic scopes and the
+				  late binding
+
+   .printDebug [0|1]		- Toggles the printing of input's corresponding
+				  state changes
+
+   .storeState <filename>	- Store the interpreter's state to a given file
+
+   .compareState <filename>	- Compare the interpreter's state with the one
+				  saved in a given file
+
+   .stats [name]		- Show stats for internal data structures
+				  'ast'  abstract syntax tree stats
+				  'asttree [filter]'  abstract syntax tree layout
+				  'decl' dump ast declarations
+				  'undo' show undo stack
+
+   .help			- Shows this information
+
+   .q				- Exit the program
+
+[cling]$ 
+
+
+	WE ARE HERE…
+
+	...
+
+3) Consider how a C++ REPL IDE should behave?
+
+	==> Consider a command line interface where input is C++ code that modifies the background Translation Unit?
+
+		==> One can enter declarations and definitions and they will be entered into the background translation unit?
+			==> Consider to show compiler errors in the entered code (never in dependent code)?
+			==> Onside when and how to allow entered code affect dependent code?
+			…
+
+		==> Consider the background translation unit is stored as a clang generated AST in a Persistent Immutable Data Structure (always allowing for undo)?
+		
+			==> Consider to have dependent code be affected by changes only if the entered code compiles?
+			==> Consider only user mutations of code counts as undo/redo steps (having automatically changes to dependent code be regarded as transactions following a successful user input)?
+			==> Consider in this way the user may undo her/his input to come back to compiling code in just one undo?
+			...
+
+		==> One can enter imperative C++ instructions and they will be run?
+
+			==> Consider how the background translation unit should be generated so that the application when run performs just the instructions the user entered?
+			…
+
+4) Consider the C++ REPL IDE should be just about entering declarations, definitions and statements (not writing an executable function)?
+
+	==> Consider in this way the user may still write a complete application as long as it fits in calling one function (executing one statement)?
+	==> Then the background translation unit may at any time put the statement to execute as the only one in the application entry point?
+	==> Consider how we can make this work for 1) Console, 2) 2D UI application and 3) 3D GUI application?
+
+		==> Consider the “only” difference is what the entry point looks like (the IDE may still put the statement in there)?
+		…
+
+	==> Consider if the IDE should allow for mutation of entered code that is executing in a UI update loop?
+
+		==> Consider to compare with ProJucer IDE that seems to implement such RELP C++ code execution using the “the ICE engine”?
+			==> Consider at 5:50 in this talk “The Projucer behind the scenes, Stefan Gränitz” (https://www.youtube.com/watch?v=x2GnSXlSpwk <https://www.youtube.com/watch?v=x2GnSXlSpwk>)?
+	…
+
+…
+
+Consider to delve into this idea of finding or developing a C++ REPL IDE to learn C++ faster?
+... 

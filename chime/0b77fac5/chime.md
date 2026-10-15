@@ -1,0 +1,38 @@
+# Todo: Consider reason is "begging the answer" in that it worships Occams Razor to prune truth to fit the an assumed status quo?
+
+```#0b77fac5``` *As of 2019-04-14 13:00*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider “Begging the answer” may be interpreted as arguing for a fact based on observing the fact?
+
+==&gt; Consider this blog post “Begging the answer” (<http://www.shotinthedark.info/wp/?p=21837> )?
+
+> *“**I’m sure classical logic doesn’t recognize the concept of “begging the answer” – using the status quo as a defense of the status quo.**"*
+
+==&gt; Consider that conservatism as being a protector of “that which has been proven to work” can in fact be interpreted as “Begging the answer”?
+
+> *If we interpret that conservatism is about valuing what has been proven to work we can also recognise that this is NOT a bad thin in itself. In fact, it is valuable to remember what has been proven to work because that justifies faith in such a model of reality. So in that sense “Begging the answer” can be an aforism of arguing that status quo is good because status quo seems to exist. The Status quo is true because it observably is. And it is good if good life in status quo is observably “good”.*
+
+2) Consider that science in its search for objective and unchanging truth about reality is actively “begging the answer”?
+
+==&gt; Consider the aforism “Begging the Answer” may be interpreted as a critique and thus can become a humorous way to model its super powers?
+
+> *The key idea here is that it is the super power of science to try and model status quo. Science is searching for the fundamental model of reality that does not change. And the way to do that is observing that status quo in fact stays status quo. If the observed reality is NOT status quo, then a meta-model of reality is required. One that finds the status quo of the mechanisms for the observed change. There is nothing wrong with that. But by observing that this in fact is a framing of reality that it to its core has unchaining elements. If we do not try a model of reality where the model itself is allowed to change, then we will not find such a model if one should exist.*
+
+> *So, the success and power of the current scientific meta physics is that it is “Begging the answer”.*
+
+3) Consider hos “Beging the answer” can help us understand why reason can only prune and deduce, never discover or discern?
+
+==&gt; Consider ways in which we can argue that we can not use reason to ?
+
+> *To reason is to draw logical or at least plausible conclusions based on observable facts or probabilities. But this also means we must pay attention to what facts or probabilities we choose to put into the reasoning process. When we apply “Critical thinking” we do just that. By being critical we don’t allow just any garbage observation or probability to pollute the conclusions we draw. It is easy to think that critical thinking is what enables us to reason in the most efficient way possible. That critical thinking somehow is the basis for thinking logical. But then we forget that for thinking to be able to simulate reality, and thus enable us to reason about reality, we need to harvest sufficient observations about reality in the first place. And here comes the hidden crux, it is not the conscious reasoning process that does the observation!*
+
+> *In fact, we must be honest and accept that the observations we make about reality are presented to us as more or less self-evident facts. We can’t use reason to observe existence of “things” that for some reason is NOT revealed to us by our observation machinery. But wait a minute you may say, what about being critical about the observations and practice methods to look in different ways and to look in new places for new things? And yes, that we can do. But if the thing we are looking for is not something that or observation machinery is able to pick up on, then we still don’t see it.*
+
+> *The power of reason is its ability to criticise the self evident, the observed reality. It adds a new way to interpret reality in that it processes the self evidently existing and comes up with new conclusions, a pruned model. *
+
+...
+
+{% endraw %}

@@ -1,0 +1,43 @@
+# Todo: Consider a fold-out-cabinet for compact covered wall storage with easy access?
+
+```#ba3ed6e5``` *As of 2020-09-20 14:09*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Originating from my fascination for the "Origami door" I find myself imagining different mechanism for compact "fold out" storage solutions.
+
+1) Consider a wall cabinet that is made up of two halves facing each other when closed that "folds out" to reveal and make easy access to the inside?
+
+> ![](PastedGraphic-1.png)  
+> *Closed cabinet (left white halves) beside another cabinet to the right (wood)*
+
+> > ![](PastedGraphic-3.png)  
+> > *Fold-out cabinet half opened with front half on the way to turn to the left and back half moving forward*
+
+> ![](PastedGraphic-2.png)  
+> *Opened cabinet where front halv now turned to the left exposing the "inside" and the back half has moved out beside it*
+
+2) Consider some mechanisms to have the front half "fold out" and the back half just slide forward inside a cabinet frame?
+
+> *So, the main idea here is to imagine a cabinet that is almost like a wall hung "trunk" with a top and bottom half hinged on one side so that when you open it the top and bottom ned up side-by-side with the same height. But we want this "trunk" like thing to reside inside a cabinet and open up without extening outside this cabinet frame.*
+
+> *So somehow we want the top half to hinge to the left (easy enough?) but the bottom half to come out as if moving on drawer sliders.*
+
+> *Is there a mechanism we can imagine that does this?*
+
+==&gt; Consider the front half hinged like a normal door while the back half moves on drawer slides?
+
+> *Maybe we can imagine the from and back half connected with wires so that when we open the front half it pulls the bottom half out?*
+
+> *Hm... But then we can't close it as we would need to push the back side back into the cabinet and wires can't do that?*
+
+> *Also, it seems we need the fron side to also begin by sliding out so that it can swing open without getting jammed inside the cabinet?*
+
+> *So, the simple design seems to be to have the whole "trunk" slide out on drawer slides and then the front side can hinge out into the folded out position and we have both halöves expsoing their interior?*
+
+> *...*
+
+...
+
+{% endraw %}

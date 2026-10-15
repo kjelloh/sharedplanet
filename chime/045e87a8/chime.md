@@ -1,0 +1,51 @@
+# Todo: Internet structure of Shared Planet
+
+```#045e87a8``` *As of 2015-08-29 16:33*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Cross reference Business and Citizen.
+
+X) Shared Planet Business defined as ”Enable Shared Planet Citizen to inest in Deep Richness”  
+Y) Shared Planet Citizen defined as ”Require Shared Planet Businesses to produce Deep Wealth”
+
+Licensee Businesses to declare themselves as SPB.
+
+1) Self declaration. The business shall argue itself for its ability to enable and produce Depp Wealth to the world.  
+2) Definition of Deep Wealth is defined by the Community but shall always be based on Deep Capital as in values that defines Deep Richness.
+
+License Shared Planet Citizen to declare themselves as SPC.
+
+1) Self declaration. The citizen shall argue itself for its ability to support and invest in Deep Richness.  
+2) Definition of Deep Richness is defined by the community mainly based on Declaration of Dependance.
+
+Wikipedia defines the concepts and terms of the movement.
+
+a) Shared Planet Business  
+b) Shared Planet Citizen  
+c) Deep Richness  
+d Deep Wealth  
+e) Syntheocracy. SPB and SPC seeks Synheocracy based on the idea of Deep Wealth. Humanity shall seek to become Deep Wealthy by enabling all SPC to become Deep Rich. Defining a secure and better future applies the requirement that Deep Wealth requires at least sustainability. No need to define Sustainability as a specific restriction.
+
+One becomes an SPC in simple steps.
+
+1) Visit www.sharedplanetcitizen.org and find a link to Wikipedia that defines the movement and concepts.  
+2) Go to Wikipedia where the steps are defined and where the templates for SPC can be found (source forge? Network of mirrored servers? Google Docs?)  
+3) Publish the SPC logo as profile picture, or use as mask on existing profile picture (support level)  
+4) Engage by using tag #spc, #spb on social media (as defined on wikipedia under "hash tags” and engagement)  
+4) Publish ones Declaration and spc-hashtag (citizen level)  
+5) Engage by by using ones spc-hashtag.  
+…
+
+One becomes an SPB in simple steps.
+
+1) Visit www.sharedplanetbusiness.org and find a link to Wikipedia that defines the movement and concepts.  
+2) Go to Wikipedia where the steps are defined and where the templates for SPB can be found (source forge? Network of mirrored servers? Google Docs?)  
+3) Publish the SPB logo together with the organisation logo in some public announcement.  
+4) Engage by using tag #spc, #spb on social media (as defined on wikipedia under "hash tags” and engagement)  
+4) Publish ones Declaration and spb-hashtag (business level)  
+5) Engage by by using ones spb-hashtag. A business is expected to use its spy-tag to promote (sell) its message, engagement, products and services.  
+...
+
+{% endraw %}

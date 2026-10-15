@@ -1,0 +1,30 @@
+# Todo: Consider Humans are able to identify much more complex "truths" than the ones we identify from rational reasoning?
+
+```#a83acffd``` *As of 2017-01-29 13:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good way to understand how humans apply ”truth” from the fact that we seem to be able to identify much more complex truths than the ones that comes from rational reasoning?
+
+1) Consider to define ”truth” as some isomorphic representation we create in our brain?
+
+==&gt; Consider we are pattern matchers in that we interact with the external using interna representation of tis reality?  
+…
+
+2) Consider we evaluate how ”true” our identified patterns are by which they deliver on their promises?
+
+==&gt; Consider we act-in-faith to these patterns and if the perceived counter-reaction (response or result) is as expected we consider the pattern to be ”true”  
+…
+
+3) Consider the patterns we recognize communicate back to us through our senses, our emotions and our conscious understanding?
+
+==&gt; Consider this means we are able to act-in-faith to patterns (truths) much more complex than the ones we grasp only through reasoning?  
+…
+
+…
+
+Consider to elaborate on this concept of ”truth” being an internalized pattern that delivers on its propmises on all levels of our perception or reality (space-time senses, emotions and rational reasoning)?  
+...
+
+{% endraw %}

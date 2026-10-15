@@ -1,0 +1,206 @@
+﻿Det kanske är en bra ide att bara tecken ner vad jag formar fram på nätet om trähus som jag kan komma tillbaka till och använda när jag konstruerar mitt eget trähus?
+
+1) Överväg att använda de tillsynes bra konstruktionsritningarna på Svenskt Träs Byggbeskrivningar (https://www.byggbeskrivningar.se <https://www.byggbeskrivningar.se/> )?
+
+	==> Överväg att använda deras karta över trähandlare (byggvaruhus) i hela sverige (https://www.byggbeskrivningar.se/Map/ViewMap.aspx <https://www.byggbeskrivningar.se/Map/ViewMap.aspx> )?
+
+	==> Överväg att studera och modifiera konstruktionsexempel på grundläggning av krypgrund (https://www.traguiden.se/konstruktion/konstruktionsexempel/grundlaggning/ <https://www.traguiden.se/konstruktion/konstruktionsexempel/grundlaggning/> )?
+
+	
+
+	NOTERA: Jag vill ju bygga helt fristående på pelare ovan mark (utan ångspärr, dränering eller annan påverkan på marken under och kring huset)!
+
+2) Överväg om jag kan ha nytta av forum-sajten byggahus.se <http://byggahus.se/> (https://www.byggahus.se <https://www.byggahus.se/> )?
+
+	==> Överväg att välja den här snubben som bygger ett lösvirkeshus på ljuten grund 270 kvadrat för 3,3 miljoner (https://www.byggahus.se/forum/threads/nybygge-loesvirke-1-plan-i-vinkel.330254/ <https://www.byggahus.se/forum/threads/nybygge-loesvirke-1-plan-i-vinkel.330254/> )?
+
+Kalkyl (tKr):​
+Tomt och anslutningavgifter (725 tKr)
+Tomt: 405'
+VA:100'
+El: 30'
+Byggel (ej kWh): 10'
+Uppvärmning/Bergvärme: 145'
+Fiber: 30'
+Kommentar: 
+Troligen kommer bergvärmen bli något dyrare. VA anslutning kostar ca 92', men vi behöver köpa en pumpstation för ca 35' utöver detta, så den posten är lite under.
+
+Grundläggning ~260m2 (320 tKr)
+Schaktning:10'
+Krossproduktuer inkl frakt:50'
+Grundmaterial inkl golvvärme, vvs, betong i plattan:260'
+Kommentar:
+Schaktar och lägger allt under grunden samt sätter ut och lägger kantelement/isolering själv. Ca 30-40cm matjord överst (gammal åkermark med fin jord).
+Tar in entreprenör för att lägga golvvärme samt armera+gjuta grunden.
+
+Bostadshus (1'955 tKr)
+Stomme (ytterpanel till gips):225'
+Tak (takgips och uppåt):200'
+Dörrar o fönster:225'
+Förbrukning (spik, beslag etc): 30'
+Elinstallation:75'
+Badrum o tvättstuga:150'
+Ventilation: 85'
+Kök inkl vitvaror:150'
+Kamin:50'
+Färg /spackel (material) till ytskikt, inne+ute:60'
+Golv (inkl flyspackling och kakel badrum):125'
+Inhyrd snickare (1000h): 500'
+Inhyrd målare/spackling: 50'
+Inredning (typ elfa, inga skåp): 25'
+Kommentar:
+Stommen kommer vi få ner priset lite på via kontakter.
+Elinstallation kommer delvis göras själv.
+Mycket i badrum kommer göras själv, endast flytspackling lejs bort.
+Ventilation görs själv med köpt ritning.
+Kök blir troligen Ikea med andra vitvaror.
+Inhyrd snickare är utbytt till bekant, så den kostnaden kommer halveras.
+
+
+Övriga kostnader (165 tKr)
+Lagfart:10'
+Pantbrev: 60'
+Bygglovshandlingar via arkitekt: 30'
+Bygglovsavgifter, nybyggnadskarta samt utstakning: 35'
+KA:30'
+Oförutsett (150 tKr)
+Oförutsett: 150'
+TOTALT: 3'315 tKr
+
+
+	==> Överväg hus min kalkyl kan se ut för ett 60 kvadrat hus i ett plan?
+
+		Tomt och anslutningsavgifter
+
+		Tomt: 400 000
+
+		Grundläggning		
+
+		Grundläggning: ?? (påla, ljutna plintar, borrade ankare, ligg-plintar = ren tyngd + friktion?)
+
+		Bostadshus
+
+			• Stomme (ytterpanel till innervägg): ??
+			• Tak (takgips och uppåt): ??
+			• Dörrar o fönster: ??
+			• Förbrukning (spik, beslag etc): ??
+			• Elinstallation (inne-el): ??
+			* Uppvärmning (golvvärme el eller vatten?): ??
+			• Badrum o tvättstuga: ??
+			• Ventilation: ??
+			• Kök inkl vitvaror: ??
+			• Kamin: ??
+			• Färg /spackel (material) till ytskikt, inne+ute: ??
+			• Golv (inkl flyspackling och kakel badrum): ??
+			• Inhyrd snickare (1000h): ??
+			• Inhyrd målare/spackling: ??
+			• Inredning (typ elfa, inga skåp): ??
+
+		El-generering (sol och vind)
+
+		Batteri (10 KWh ?) : ??
+		Inverteranläggning : ??
+		Solpaneler : ??
+		Vindgeneratorer: ??
+
+		Övriga kostnader
+
+		• Lagfart: ??
+		• Pantbrev: ??
+		• Bygglovshandlingar via arkitekt: ??
+		• Bygglovsavgifter, nybyggnadskarta samt utstakning: ??
+		• KA: ??
+		• Oförutsett: 150'
+		—————————————————————
+		Totalt: 1,5 miljoner (Beroende på läge och om huset går att flytta så jag kan välja om ta med huset om ej går att sälja utan förlust)?
+
+	==> Vad är Lagfart?
+
+		==> Överväg wikipedias arikel om lagfart  (https://sv.wikipedia.org/wiki/Lagfart <https://sv.wikipedia.org/wiki/Lagfart> )?
+
+“Lagfart är en officiell registrering av en ny lagfaren ägare[1] efter ett förvärv av fast egendom.”
+“Lantmäteriet sköter hantering av lagfart. Kostnaden för registrering av ett förvärv består av expeditionsavgift och stämpelskatt.”
+“Stämpelskatten för fysiska personer är 1,5 procent av det högsta värdet av köpeskillingen jämfört med taxeringsvärdet för föregående år."
+
+	==> Vad är Pantbrev?
+
+		==> Överväg wikipedias artikel om pantbrev (https://sv.wikipedia.org/wiki/Pantbrev <https://sv.wikipedia.org/wiki/Pantbrev> )?
+
+“Ett pantbrev eller bottenpantbrev är ett dokument som används som säkerhet för lån, till exempel bostadslån. Det är utfärdat på ett visst belopp och inom en viss del av det pantsattaobjektets värde (inomläget).”
+“Pantbrev är en historisk handling som levt kvar sedan många år tillbaka. Tidigare var pantbreven fysiska dokument som lämnades in till banken. De lämnades som pant för att få ta lån eftersom det är omöjligt att lämna in själva fastigheten.”
+“Lantmäteriet hanterar pantbrev men det är vanligt att banken utför administrationen. Lantmäteriet tar även ut en expeditionsavgift samt en procentsats på pantsumman.”
+“Lantmäteriet tar ut en avgift för pantbrevet på 2 % av pantbrevsbeloppet."
+
+	==> Vad är bygglovshandlingar?
+
+		==> Överväg wikipedias artikel om bygglov (https://sv.wikipedia.org/wiki/Bygglov <https://sv.wikipedia.org/wiki/Bygglov> )?
+
+“Ett bygglov (äldre benämning byggnadslov) är ett tillstånd att bygga nytt, bygga om, bygga till eller ändra användningen av en byggnad eller en anläggning.”
+“Bygglov utfärdas av kommunerna.”
+“För en enkel bygglovsansökan krävs minst följande handlingar:
+
+	• Ansökan (på en av kommunen tillhandahållen blankett).
+	• Situationsplan i skala 1:400 där tomtgränsen framgår och byggnaden eller tillbyggnaden markeras.
+	• Huvudritningar (ofta kallade bygglovsritningar) i skala 1:100 där måttsatta planer, fasader och sektioner visas.
+
+Ritningar får upprättas av lekman men skall vara "fackmässigt" utförda."
+
+		==> Överväg boverkets sida om bygglovsprocessen (https://www.boverket.se/sv/om-boverket/guider/guide-for-bygglov-och-byggprocessen/ <https://www.boverket.se/sv/om-boverket/guider/guide-for-bygglov-och-byggprocessen/> )?
+
+“	• Fråga byggnadsnämnden om du behöver bygglov
+	• Skicka in ansökan och alla handlingar
+	• Byggnadsnämnden gör en första granskning
+	• Du får ett mottagningsbevis
+	• Byggnadsnämnden prövar din bygglovsansökan
+	• Byggnadsnämnden beslutar om ditt bygglov
+	• Byggnadsnämnden håller ett tekniskt samråd
+	• Du får ett startbesked
+	• Byggnadsnämnden gör arbetsplatsbesök
+	• Byggnadsnämnden håller ett slutsamråd
+	• Du får ett slutbesked"
+
+	==> Vad är KA?
+
+		==> Överväg boverkets sida om “Kontrollansvarig, KA” (https://www.boverket.se/sv/byggande/bygga-nytt-om-eller-till/kontrollansvarig/ <https://www.boverket.se/sv/byggande/bygga-nytt-om-eller-till/kontrollansvarig/> )?
+
+“Den kontrollansvarige du anlitar måste vara certifierad.”
+“Byggnadsnämnden i kommunen beslutar vem som ska vara kontrollansvarig för en viss bygg-, rivnings- eller markåtgärd. Vem det är står i beslutet om bygglov och i startbeskedet."
+
+		==> Överväg boverkets sida om kontrollansvariges uppgifter (https://www.boverket.se/sv/PBL-kunskapsbanken/lov--byggande/byggprocessen/kontrollansvariga-och-deras-uppgifter/ <https://www.boverket.se/sv/PBL-kunskapsbanken/lov--byggande/byggprocessen/kontrollansvariga-och-deras-uppgifter/> )?
+
+“Den kontrollansvarige ska hjälpa byggherren med att ta fram ett förslag till kontrollplan för den aktuella åtgärden.”
+“Den kontrollansvarige ska närvara vid:
+
+	• tekniska samråd,
+	• besiktningar och andra kontroller, samt
+	• byggnadsnämndens arbetsplatsbesök.
+Den kontrollansvarige ska dokumentera sina byggplatsbesök och notera iakttagelser som kan vara av värde vid utvärderingen inför slutbeskedet. Den kontrollansvarige ska också avge ett utlåtande till byggherren och byggnadsnämnden som underlag för slutbeskedet."
+
+3) Överväg att kolla upp ISOTimber i Östersund som gör träkonstruktioner för husbygge utan plastskikt och bara “trä och luft” (https://isotimber.se <https://isotimber.se/> )?
+
+“ IsoTimber Holding AB
+
+Org.nr: 556748-4679
+Adress: Odenskogsv.gen 17A, 83148 .stersund
+Bolagets säte: .stersund
+
+Telefon: 063-43131
+E-post: info@isotimber.se
+Hemsida: www.isotimber.se
+"
+
+	 
+
+		
+	
+	==> Det verkar som om detta är ISOTimber pdf över deras byggsystem (https://isotimber.se/pdfs/isotimber_byggsystem_171016-01-001.pdf <https://isotimber.se/pdfs/isotimber_byggsystem_171016-01-001.pdf> )?
+
+	
+
+“Det unika i lösningen är att vi fräser ur tusentals luftkanaler i trämaterialet vilket ger isolerande egenskaper.”
+
+“Ingen plast (diffusionsspärr) behövs och då trä är ett diffusionsöppet material, betyder det att luftfuktigheten absorberas eller emitteras beroende på omgivningens rådande fukthalt. Väggen ger därför ett jämnare och behagligare inomhusklimat,
+ett hälsosamt hus att bo i."
+
+
+

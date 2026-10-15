@@ -1,0 +1,20 @@
+# Todo: Consider to evaluate if I can find a better cell phone plan to replace my Telia "Jobbmobil Basic TFA" fixed 219 SEK/Month and around 34 SEK/Month variable cost?
+
+```#d1f99b71``` *As of 2020-11-23 11:12*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider my latest invoice seems to tell me I have a Telia "Jobbmobil Basic TFA" with fixed 219 SEK/Month and around 34 SEK/Month variable cost?
+
+> *Lets start with getting some grip on what I actually pay with my current plan.*
+
+> *From the last invoice I read that I pay 657 SEK for three months in a fixed cost. This means I have 219 SEK per month for my cell phone plan regardless of whether I actually use it.*
+
+> *And on my 201116 invoice fromTelia I have to pay 101.15 for my use of my phone from 11 Aug to 9 Nov. This could mean I use my cell plan services for 34 SEK per month.*
+
+> *Surely there should be a bette plan for my low consumption of cell phone services?*
+
+...
+
+{% endraw %}

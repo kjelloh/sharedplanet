@@ -1,0 +1,20 @@
+# Todo: AEA - Kolla upp vilket arbetslöshetsstöd jag har rätt till om jag lever utan inkomst ett tag innan stöd sökes?
+
+```#56b3632a``` *As of 2015-12-12 16:54*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Är det inte så att arbetlöshetsstödets storlek beräknas på den samlade inkomsten de senaste 12 månaderna? I så fall - vilket stöd har jag rätt till om jag lever på egna sparade pengar (ingen inkomst) innan jag ansöker om stöd?
+
+1) Överväg att kolla upp med AEA hur reglerna kring detta fungerar?  
+2) Kan jag begära att inkomst beräknas innan ett slags “sabbatsår”, alltså att jag lever på egna pengar (ungefär som paus för studier) innan jag ansöker om stöd?  
+3) Eller är reglerna så stelbenta att jag “straffas” om jag lever på sparade pengar till dess jag behöver stöd?  
+4) I så fall — är det ens vettigt för mig att ha en försäkring hos AEA eftersom jag alltid kommer att få ett mycket lägre stöd än det jag betalar för?
+
+==&gt; I varge fall om jag inte ansöker om stöd direkt då jag slutar ta ut lön ur företaget )och då får ersättning beserad på uttagen lön 39 000 SEK)?  
+…
+
+Överväg att maila dessa frågor till AEA
+
+{% endraw %}

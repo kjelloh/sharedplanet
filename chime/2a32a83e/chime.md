@@ -1,0 +1,881 @@
+# Todo: Consider to follow ChuckE2009 down the far right radical traditionalist ethno-nationalist rabbit hole (efter he came out as white nationalist with political ambitions and new web site)?
+
+```#2a32a83e``` *As of 2019-05-11 23:27*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So I have followed ChuckE2009 for like a year for his down to earth videos on running an American farm but now he suddenly came out as far right nationalist!
+
+-1) Consider to reflect on my own feelings and impressions with ChuckE2009 far right nationalism and related ideas?
+
+> *I try to listen to and understand the thinking of all the notable movements in the contemporary political landscape. And for some reason I find it at least logically coherent when far right ideas are expressed. And when ChuckE2009 came out as radical traditionalist and, frankly, far right ethno-nationalist I already had found ChuckE2009 as a man with hart and a strong belief in honesty and hard work. I found him a passionate man. This in turn made me decide to continue to follow him and his reasoning also after he outed himself in this way.*
+
+> *I find myself in the position of being able to listen to these kinds of ideas without being frightened or think the person expressing them as being evil or violent. They are angry, sure. And they feel their society are being replaced by this new idea of globalism being a good thing and all moral frameworks of equal value. And they strongly disagree. And I can sympathise with that. I am capable of internalise these feelings and understand how those can drive a person.*
+
+> *I have not yet been equal successful with internalising the ideas and drives of the far left and progressivism above all where, to me, only the emotions makes sense. None of the arguments seems to me to be grounded in anything I even remotely can envision. I suppose to some part it is because I am a white heterosexual man and as such don't share the emotional drives of an LBGTQ person trying to make room in society for their way of sexual relations? But I strongly believe we should explore what humans are capable of accomplishing and feel and that oppression and inflicted harm should be minimised to the degree it is humanly possible. But the way the far left proposes change to fight oppression just based on the self evidence that it feels bad is just naive to me. Removing pain just seems so obviously the right thing to do. Even to the degree of stopping others from inflicting pain. But it is just not obvious to me that all pain can be dealt with by stopping humans from inflicting it.*
+
+> *So although I rationally and emotionally embrace change, freedom and all humans rights to make love how they please and move where they want. I also have come to distrust the self evident. And that in fact we, as conscious ants, are restricted to only create societies in which all human cares must be able to co-exist and cross pollinate. This means the values of those who find themselves in the conservative camp all the way to the revolt-to-the-shrinking-west must have room in any future society that will emerge. Simply based on the observation that any other society would have to enforce its will on the other half. And this can never be stable not a society that leverage the potential of human ingenuity to its fullest extent.*
+
+1) Consider ChuckE2009 (last?) youtube video "THEY'RE DELETING MY CHANNEL" (<https://www.youtube.com/watch?v=oFMG-YAiePU&bpctr=1557608368> )?
+
+> *"If this is my last upload on here, I would like to thank you all for a wonderful ten years. Additionally, no matter where you are in life, seek God and believe on Jesus Christ. The Bible forewarns us about the wickedness we will see in the world around us, and the Book Of John among others tells us that we should expect to be hated by this evil. Even if you're an atheist or an agnostic like I used to be, at least consider reading the gospel so that you know why (((they))) hate it so much, and why the Western Traditionalists have clung to it so tightly for generations upon generations:**"*
+
+==&gt; Consider ChuckE2009 links to this youtube video "Matthew - King James Bible, New Testament (Audio Book)" (<https://www.youtube.com/watch?v=ncG3fKBf6nc> )?
+
+==&gt; Consider to check if this video will be banned and possibly his whole channel taken down (<https://www.youtube.com/user/ChuckE2009> )?
+
+==&gt; Consider the auto transcript of ChuckE2009 (last?) youtube video "THEY'RE DELETING MY CHANNEL" (<https://www.youtube.com/watch?v=oFMG-YAiePU&bpctr=1557608368> )?
+
+> *"*  
+> *00:00  
+> all right so it's the evening of May  
+> 00:01  
+> 10th today has been a rather interesting  
+> 00:03  
+> day um so I don't really even know where  
+> 00:09  
+> to start with telling this story but to  
+> 00:12  
+> make a long story short this morning I  
+> 00:15  
+> posted I think like 10 11 a.m. somewhere  
+> 00:17  
+> around there video went live on the  
+> 00:19  
+> channel where I read Britain Tarrance  
+> 00:21  
+> manifesto the full like 70 80 pages  
+> 00:24  
+> whatever it is and Brent and Taryn it  
+> 00:28  
+> for those who don't know he's the New  
+> 00:30  
+> Zealand er I actually think he's  
+> 00:31  
+> Australian he is the person in New  
+> 00:33  
+> Zealand who slaughtered a whole bunch of  
+> 00:35  
+> Muslim invaders from from New Zealand  
+> 00:37  
+> essentially and the book goes into how  
+> 00:40  
+> and why he went about these things and  
+> 00:42  
+> what pushed him to do so and so on and  
+> 00:45  
+> so forth I thought it was a very  
+> 00:47  
+> interesting read you know the reason why  
+> 00:49  
+> I posted that is because and I said this  
+> 00:52  
+> in that video I've been driving a lot  
+> 00:54  
+> you know world events I like to try to  
+> 00:56  
+> follow them I wasn't able to find an  
+> 00:58  
+> audio book of this so I'm like you know  
+> 00:59  
+> I've consumed a lot of audio books  
+> 01:00  
+> they'll do something and make one and  
+> 01:02  
+> that way everybody else can enjoy it I  
+> 01:05  
+> knew it would rustle some Jimi's I  
+> 01:07  
+> expected that so I've seen I made an  
+> 01:12  
+> exception from my rule against reading  
+> 01:14  
+> comments for this video because it's  
+> 01:16  
+> really starting to get out of hand at  
+> 01:18  
+> this point and and people are like oh  
+> 01:21  
+> you know for Chucky's really coming  
+> 01:23  
+> unhinged no I really haven't  
+> 01:25  
+> I've been a far-right ethno nationalists  
+> 01:27  
+> since about 2014 or so what I did though  
+> 01:30  
+> is I just I really tried to keep this  
+> 01:33  
+> under wraps I mean you can ask anybody  
+> 01:34  
+> who knows me in the real world and you  
+> 01:38  
+> know friends family girlfriend whatever  
+> 01:40  
+> and I tried this sort of not bring that  
+> 01:43  
+> into work stuff all that much for the  
+> 01:46  
+> pursuit of money and I guess internet  
+> 01:48  
+> fame as well but what ultimately  
+> 01:50  
+> happened is I realise that these things  
+> 01:52  
+> are pretty much meaningless in the long  
+> 01:55  
+> and the grand scheme of things they're  
+> 01:57  
+> empty materialistic things they don't  
+> 01:59  
+> really matter and I realized something  
+> 02:02  
+> that pretty much every atleast man and  
+> 02:06  
+> Western civilization needs to realize  
+> 02:08  
+> and that's that there are things much  
+> 02:09  
+> larger than  
+> 02:10  
+> and much more important than us so a  
+> 02:13  
+> month or two ago I started dropping some  
+> 02:15  
+> red pills into some of my videos I think  
+> 02:18  
+> it was a month maybe two months  
+> 02:19  
+> somewhere around there I don't really  
+> 02:20  
+> know because I remember some videos but  
+> 02:23  
+> I dropped them in so many that I don't  
+> 02:25  
+> actually remember which videos have them  
+> 02:28  
+> and which do not and that's a lot of  
+> 02:30  
+> videos over that period of time and so  
+> 02:33  
+> my reasoning for this is I was trying to  
+> 02:36  
+> kind of avoid a confrontation because  
+> 02:38  
+> you know the the progressives and the  
+> 02:41  
+> leftist they preach tolerance and and  
+> 02:44  
+> diversity and everything as long a as  
+> 02:47  
+> long as it's agreeable to them it  
+> 02:49  
+> doesn't have to be agreeable to you and  
+> 02:50  
+> if it doesn't you just have to embrace  
+> 02:53  
+> it anyway cuz otherwise you're a racist  
+> 02:55  
+> and a big and whatever else but as long  
+> 02:56  
+> as they think it's okay that's fine if  
+> 02:58  
+> they don't then it's the absolute end of  
+> 03:00  
+> the world  
+> 03:00  
+> so yeah carrying on with this I post the  
+> 03:05  
+> video and what happens is I think it was  
+> 03:08  
+> someone at first and in multiple people  
+> 03:11  
+> that they start posting at this video to  
+> 03:13  
+> places like 4chan and some deeper darker  
+> 03:16  
+> parts of the political underworld on the  
+> 03:18  
+> internet and it starts to circulate  
+> 03:20  
+> there and this is a problem because that  
+> 03:24  
+> site the politically incorrect section  
+> 03:27  
+> is pretty much like the the internet  
+> 03:29  
+> mecca for any right-wing extremist  
+> 03:32  
+> anything and it's also likewise of mecca  
+> 03:36  
+> for degenerates in the media and places  
+> 03:40  
+> like like the ADL in the Southern  
+> 03:42  
+> Poverty Law Center and government  
+> 03:44  
+> agencies actually watch this place and  
+> 03:46  
+> everything so essentially my cover was  
+> 03:49  
+> blown am i surprised no I knew I knew  
+> 03:51  
+> this was gonna happen it was inevitable  
+> 03:52  
+> sooner or later but I really wasn't  
+> 03:54  
+> ready for this at this point but now  
+> 03:56  
+> it's all over the internet and and  
+> 03:59  
+> there's people who are actively trying  
+> 04:01  
+> to get my channel taken down right now  
+> 04:03  
+> as we speak that's all I'm gonna post  
+> 04:04  
+> this video tonight it's a post in the  
+> 04:06  
+> morning cuz I don't know if I'll have a  
+> 04:06  
+> channel in the morning so yeah that  
+> 04:09  
+> escalated rather quickly I was not  
+> 04:11  
+> expecting any of this I realized that  
+> 04:14  
+> that posting a to plus our audiobook  
+> 04:18  
+> which was pretty spicy in the first  
+> 04:20  
+> place and in hindsight all the  
+> 04:22  
+> like commentary I added well I don't  
+> 04:24  
+> know if it's really commentary I tried  
+> 04:26  
+> to avoid putting in personal opinion but  
+> 04:28  
+> I provided information which was  
+> 04:30  
+> relevance was being discussed a lot of  
+> 04:33  
+> that stuff was also pretty spicy so I  
+> 04:35  
+> can't say I'm really all that surprised  
+> 04:37  
+> and I knew what I was getting into as  
+> 04:39  
+> well but I will say the part of this  
+> 04:42  
+> that frustrates me is you know people go  
+> 04:45  
+> out and they openly push for children's  
+> 04:47  
+> who mutilate their genitals and become  
+> 04:49  
+> transsexuals and and there is no protest  
+> 04:52  
+> when the Vice President of the United  
+> 04:54  
+> States says we are pretty much openly at  
+> 04:56  
+> war with you and your people we're going  
+> 04:58  
+> to give away your lands and your culture  
+> 04:59  
+> and your heritage and everything you  
+> 05:01  
+> have to the the entire world anybody who  
+> 05:03  
+> bothers to show up and take it there is  
+> 05:05  
+> effectively no protest if there's a  
+> 05:07  
+> second thing you have black box  
+> 05:09  
+> an unrelenting stream of immigration  
+> 05:13  
+> non-stop non-stop folks like me who were  
+> 05:18  
+> Caucasian of European descent for the  
+> 05:21  
+> first time in 2017 will be in an  
+> 05:24  
+> absolute minority in the United States  
+> 05:27  
+> of America absolute minority fewer than  
+> 05:30  
+> 50% of the people in America from then  
+> 05:33  
+> and on will be white European stock  
+> 05:37  
+> that's not a bad thing that's as a  
+> 05:40  
+> source of our strength when the media  
+> 05:42  
+> claims the guise of free speech in order  
+> 05:44  
+> to push the most absolutely rotten filth  
+> 05:48  
+> of every type and kind that they can  
+> 05:50  
+> even come up with down everybody's  
+> 05:51  
+> throats  
+> 05:52  
+> there is no protest but the day that  
+> 05:55  
+> someone is so much as reads off  
+> 05:57  
+> something from someone who doesn't  
+> 05:59  
+> subscribe to their degenerate  
+> 06:00  
+> philosophies although one can argue with  
+> 06:04  
+> his principles and whether it was right  
+> 06:06  
+> or wrong for him to go about things and  
+> 06:08  
+> exactly the way that he did it is the  
+> 06:10  
+> absolute end of the world I suppose it  
+> 06:13  
+> doesn't help that I named the Jew in  
+> 06:15  
+> that video and I specifically said that  
+> 06:17  
+> you know the Jews are behind most mass  
+> 06:20  
+> immigration in the Western countries  
+> 06:21  
+> they influence things they certainly own  
+> 06:23  
+> the media and so when you see all this  
+> 06:24  
+> welcome these foreign horts you want to  
+> 06:26  
+> rape and kill you and your family and  
+> 06:27  
+> your children you know that's them as  
+> 06:29  
+> well probably that did not do me any  
+> 06:31  
+> favors with this video because right now  
+> 06:33  
+> people are trying to get them to get  
+> 06:35  
+> YouTube to delete my channel so but you  
+> 06:39  
+> know sort of comes with the territory I  
+> 06:40  
+> suppose and since when did everyone turn  
+> 06:42  
+> into a hippie and grow their hair out  
+> 06:44  
+> and start singing Kumbaya people whine  
+> 06:46  
+> and cry about how oh you know Brent and  
+> 06:49  
+> Tarrant you know all these people who  
+> 06:51  
+> have a literal religious obligation to  
+> 06:53  
+> move to foreign countries and kill  
+> 06:55  
+> everyone there who doesn't believe on  
+> 06:57  
+> the whatever filth they believe well one  
+> 06:59  
+> of the non-believers got to them before  
+> 07:00  
+> they got to him and it's just the most  
+> 07:02  
+> unfair thing on the history of the  
+> 07:04  
+> planet because violence is never okay is  
+> 07:07  
+> it really this country's been in a state  
+> 07:09  
+> of perpetual war since roughly the 1940s  
+> 07:12  
+> and you know nobody when we send out  
+> 07:15  
+> thousands of our best young men and  
+> 07:17  
+> women to die for International Finance  
+> 07:19  
+> or for oil or to play World Police and  
+> 07:21  
+> some flora dump this is this is  
+> 07:24  
+> honorable this is seen as a good thing  
+> 07:26  
+> nothing against these people they  
+> 07:28  
+> honest-to-god believe they're doing the  
+> 07:29  
+> same thing I'm glad I'm not a veteran  
+> 07:31  
+> because I don't think I could handle  
+> 07:32  
+> knowing what I know about the world and  
+> 07:34  
+> and the reasons why we thought most of  
+> 07:36  
+> these wars in the first place and don't  
+> 07:38  
+> spare me all this nonsense about how  
+> 07:40  
+> these evil people you know they got got  
+> 07:42  
+> before they got innocent you know  
+> 07:44  
+> wholesome partially Christian people in  
+> 07:46  
+> New Zealand I have absolutely no  
+> 07:48  
+> sympathy but I'll tell you what when  
+> 07:50  
+> people start to understand this thing  
+> 07:53  
+> called the Holdem or where some filthy  
+> 07:55  
+> communist killed tens of millions of  
+> 07:57  
+> white Christian Europeans and most  
+> 07:59  
+> people have never even heard of it but  
+> 08:01  
+> everybody knows about the Holocaust in  
+> 08:02  
+> Germany or you know when people whine  
+> 08:06  
+> and cry about these Muslim rat --let's  
+> 08:07  
+> that got wasted in New Zealand when when  
+> 08:10  
+> people are legitimately upset about the  
+> 08:12  
+> fact that the United States and Britain  
+> 08:14  
+> firebomb the city of Dresden knowingly  
+> 08:17  
+> killing hundreds of thousands of women  
+> 08:19  
+> and children they knew that there were  
+> 08:21  
+> no military installations there they  
+> 08:23  
+> knew there was nothing of value they  
+> 08:25  
+> knew what they were doing and they were  
+> 08:26  
+> proud of it and they gloated about it  
+> 08:28  
+> well when people cry about that I will  
+> 08:30  
+> consider having some sympathy for these  
+> 08:32  
+> Muslims that got wasted but in the  
+> 08:34  
+> meantime I won't and honestly probably  
+> 08:36  
+> not even then now of course I don't  
+> 08:38  
+> advocate violence in any way shape or  
+> 08:40  
+> form but knowing what these people do  
+> 08:42  
+> it's really hard to have sympathy for  
+> 08:44  
+> them furthermore most people who watch  
+> 08:46  
+> this channel or European  
+> 08:47  
+> stocke males how would your ancestors at  
+> 08:50  
+> the ones who went off and fought and  
+> 08:51  
+> died in the Crusades to free southern  
+> 08:53  
+> Europe from Islamic hordes knowing that  
+> 08:56  
+> they would not come back how do you  
+> 08:57  
+> think they would feel seeing all this  
+> 08:59  
+> and seeing all this pathetic whining and  
+> 09:00  
+> complaining about someone who actually  
+> 09:02  
+> stood up for their own people and  
+> 09:03  
+> actually did something for them they'd  
+> 09:06  
+> be very angry and very disgusted it's  
+> 09:08  
+> just like the rest of our ancestors if  
+> 09:09  
+> they could see what we let the world  
+> 09:10  
+> around us turn into these mainstream  
+> 09:12  
+> really weak really passive soft on sin  
+> 09:15  
+> holier-than-thou self-righteous  
+> 09:17  
+> Christians who say these things there  
+> 09:19  
+> are a lot of the reason why the West is  
+> 09:21  
+> in the situation that it's in today  
+> 09:22  
+> people need to understand that it is  
+> 09:24  
+> good to hate the things that are evil in  
+> 09:26  
+> this world and they're evil all around  
+> 09:27  
+> us and the things that I hate when I see  
+> 09:29  
+> the filthy sodomites corrupting young  
+> 09:31  
+> innocent trusting children and  
+> 09:32  
+> institutions which are supposed to be  
+> 09:34  
+> educational this I hate I don't even  
+> 09:36  
+> know why people are bringing this up and  
+> 09:38  
+> the Brent and Taryn thing because that  
+> 09:39  
+> involves Muslims coming in and replacing  
+> 09:41  
+> Christians and Christian lands these are  
+> 09:43  
+> not exactly God's people and you know  
+> 09:45  
+> what sometimes folks are like all these  
+> 09:47  
+> poor minorities who want to openly  
+> 09:49  
+> replace us and so on and so forth we  
+> 09:51  
+> just have to let them in or we don't  
+> 09:53  
+> love them or some meaningless drivel  
+> 09:54  
+> that they come up with let me tell you a  
+> 09:56  
+> thing or two about this if you ever want  
+> 09:58  
+> a yardstick to measure whether something  
+> 10:00  
+> is a wholesome idea or a wicked and  
+> 10:02  
+> sinful idea to go by look at it this way  
+> 10:05  
+> who is behind this oh when we're talking  
+> 10:07  
+> about mass immigration and people being  
+> 10:09  
+> deprived of their homelands is it a sin  
+> 10:11  
+> to kill a single person well it's a  
+> 10:13  
+> murder a single person or rather I  
+> 10:14  
+> should say absolutely is it a sin to  
+> 10:17  
+> facilitate or outright caused an entire  
+> 10:19  
+> race to be killed off in their lands  
+> 10:21  
+> give it away to third world Muslim  
+> 10:23  
+> hordes who want to rape and pillage our  
+> 10:25  
+> women and destroy everything that we  
+> 10:27  
+> have absolutely and furthermore we have  
+> 10:30  
+> to look at the people who are behind  
+> 10:31  
+> this these are our child raping  
+> 10:34  
+> politicians the sick degenerate freaks  
+> 10:36  
+> and our media they are satanic most of  
+> 10:38  
+> them are Jewish they openly worship the  
+> 10:39  
+> Antichrist they hate all that is good  
+> 10:42  
+> they love all that is evil and they push  
+> 10:44  
+> this wickedness down everyone else's  
+> 10:45  
+> throat and I hate the evil in this world  
+> 10:47  
+> with a peer and with a burning and wood  
+> 10:50  
+> hatred light by which our Lord and God  
+> 10:51  
+> and Savior Jesus Christ hates everything  
+> 10:53  
+> that is evil in this world and I'm not  
+> 10:55  
+> backing down from this assuming this  
+> 10:57  
+> cost me this channel in this audience  
+> 10:59  
+> that I've been building for roughly 10  
+> 11:01  
+> years at this point and a pretty sweet  
+> 11:03  
+> six-figure income off of making these  
+> 11:05  
+> videos I'm okay with that the reality is  
+> 11:08  
+> I made all the welding videos I wanted  
+> 11:10  
+> to I welded all the stuff I wanted to  
+> 11:12  
+> weld I filled all the stuff that I  
+> 11:13  
+> wanted to shell there's just not that  
+> 11:15  
+> much else I wanted to do and unlike a  
+> 11:17  
+> lot of people to be quite harsh but  
+> 11:18  
+> brutally honest I realized there's  
+> 11:20  
+> things that are a lot bigger than I am  
+> 11:22  
+> and a lot more important than I am and I  
+> 11:24  
+> realize that the preservation of our  
+> 11:26  
+> people and our culture and all that we  
+> 11:28  
+> have is definitely one of those so even  
+> 11:31  
+> if this does cost me all that I regret  
+> 11:33  
+> nothing beyond waiting as long as I did  
+> 11:36  
+> to get started I said in one of those  
+> 11:37  
+> videos we live in the days of extremism  
+> 11:39  
+> or extinction and I believe that 100%  
+> 11:42  
+> I took my pick and I didn't stutter when  
+> 11:43  
+> I said it it is what it is and we just  
+> 11:45  
+> have to go from here so most people  
+> 11:48  
+> guess that me dropping these red pills  
+> 11:50  
+> in these videos even the really spicy  
+> 11:52  
+> ones was more this was not an end in  
+> 11:56  
+> itself it was leading up to something  
+> 11:57  
+> which it was I was going to try to see  
+> 12:01  
+> if I can get some of the world at least  
+> 12:03  
+> organized against a lot of the evil that  
+> 12:05  
+> we see around us I don't know if it'll  
+> 12:07  
+> go anywhere I would like to think so but  
+> 12:09  
+> you know I have my doubts because most  
+> 12:11  
+> people are just incredibly apathetic and  
+> 12:13  
+> indifferent to the world around them  
+> 12:15  
+> they the people in the last 50 60 years  
+> 12:17  
+> that idly by and watch everything fall  
+> 12:19  
+> apart at best and did absolutely nothing  
+> 12:22  
+> we all know that the only thing that is  
+> 12:24  
+> necessary in this world for evil to  
+> 12:25  
+> triumph is for good people to sit idly  
+> 12:27  
+> by and watch it happen and that's  
+> 12:29  
+> exactly what they did and that is not  
+> 12:30  
+> something I'm willing to do so with that  
+> 12:32  
+> being said I'm gonna start a political  
+> 12:34  
+> movement this is not merely a political  
+> 12:36  
+> party is an entire way of life I really  
+> 12:39  
+> hadn't thought this out very much and  
+> 12:40  
+> you know pretty much all this was up in  
+> 12:42  
+> my head and I had to work with what I  
+> 12:44  
+> had today and this is what I've come up  
+> 12:46  
+> with and building a website right now it  
+> 12:48  
+> really wasn't planning to do any of this  
+> 12:50  
+> until like probably closer to the end of  
+> 12:52  
+> Donald Trump's first term as people like  
+> 12:54  
+> begin to lose their faith in the system  
+> 12:56  
+> a little bit more every day but you know  
+> 12:58  
+> what whatever we're here I didn't ask  
+> 12:59  
+> for  
+> 13:00  
+> I didn't ask for any of this I wanted to  
+> 13:01  
+> be a dairy farmer but you know when you  
+> 13:03  
+> see your people going extinct and people  
+> 13:05  
+> celebrating it and those doing horrible  
+> 13:07  
+> wicked things to our most innocent  
+> 13:09  
+> members of it what are you gonna do are  
+> 13:10  
+> you just gonna do what the degenerate  
+> 13:11  
+> boomers did and sit idly by and do  
+> 13:13  
+> nothing or are you gonna stand up and do  
+> 13:15  
+> something even if it costs you a pretty  
+> 13:17  
+> sweet income and something you built ten  
+> 13:18  
+> years doing yeah well yeah I mean how  
+> 13:21  
+> else you even live with yourself  
+> 13:22  
+> honestly so that's what I'm gonna do so  
+> 13:24  
+> I'm still working through some of this  
+> 13:27  
+> right now this channel will probably not  
+> 13:29  
+> this channel will probably not exist for  
+> 13:33  
+> much longer if it doesn't you know what  
+> 13:35  
+> it was worth it you know like I said I  
+> 13:38  
+> regret nothing I this was something that  
+> 13:40  
+> I always knew what happened when I  
+> 13:41  
+> started doing this and and you know what  
+> 13:44  
+> if it woke a single person who's worth  
+> 13:45  
+> it and I know for a fact that it did so  
+> 13:46  
+> there anyway I would highly recommend  
+> 13:49  
+> subscribing to my bitch chute account  
+> 13:51  
+> just Chucky's 2009 on bitch chute it's  
+> 13:53  
+> it's one of the youtube alternatives  
+> 13:55  
+> it's my favorite one personally I've  
+> 13:58  
+> been on there I uploaded a couple videos  
+> 13:59  
+> but I never really did anything much  
+> 14:00  
+> with it I didn't even I don't think I  
+> 14:02  
+> even plugged it on this channel once I  
+> 14:03  
+> just I didn't get around to it I'm  
+> 14:04  
+> building a website right now for the  
+> 14:06  
+> party and anyway you know good old Brett  
+> 14:11  
+> and Tarrant man you know I didn't make  
+> 14:13  
+> that video because I necessarily I agree  
+> 14:15  
+> because I necessarily agree with  
+> 14:16  
+> everything that he did you know or his  
+> 14:19  
+> means of doing it I made that video for  
+> 14:22  
+> the after mention reasons but the guy is  
+> 14:24  
+> an acceleration estanzuela everything  
+> 14:27  
+> including all of this happening right  
+> 14:29  
+> now I didn't expect any of this but it's  
+> 14:31  
+> bound to happen sooner or later  
+> 14:33  
+> it's been a great ride and we'll see  
+> 14:36  
+> what comes next all that really matters  
+> 14:38  
+> is above all else we must preserve the  
+> 14:39  
+> existence of our people in a future for  
+> 14:41  
+> white children I regret nothing beyond  
+> 14:43  
+> waiting as long as I did have a nice  
+> 14:45  
+> night and thanks for watching over the  
+> 14:47  
+> past decade I hope the channel exists  
+> 14:48  
+> and I can continue to make videos but  
+> 14:50  
+> you know what nothing in life is certain  
+> 14:51  
+> and this is no exception*  
+> *"*
+
+2) Consider ChuckE2009 youtube video "THEY BANNED THIS BOOK - So Let's Read It Together!!!" where he reads the manifesto from the New Zealand muslim shooter (<https://www.youtube.com/watch?v=vMbGPXgbryI&t=745s> )?
+
+==&gt; Consider it is not easy to understand why ChuckE2009 reads this manifesto although he has stated he does NOT embrace violence (maybe he shares the anger)?
+
+==&gt; Consider the auto transcript of ChuckE2009 reading the manifesto of
+
+## Attachments
+
+- [THEY BANNED THIS BOOK - So Let's Read It Together!!!.pages](<THEY BANNED THIS BOOK - So Let's Read It Together!!!.pages>)
+
+{% endraw %}

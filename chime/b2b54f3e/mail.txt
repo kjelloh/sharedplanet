@@ -1,0 +1,23 @@
+﻿Consider it could be a good idea to delve into the idea of C4 to visualize Software Architecture in layers from Software Systems down to Source Code Objects and Functions?
+
+1) Consider this talk ”A picture is worth 1000 lines of code - Mike Minutillo” (https://vimeo.com/193422891)?
+
+	
+
+2) Consider this book by C4 ”inventor” Simon Brown (https://leanpub.com/visualising-software-architecture <https://leanpub.com/visualising-software-architecture>)?
+
+	...
+
+3) Consider this talk by Simon Brown (https://vimeo.com/191283373 <https://vimeo.com/191283373>)?
+
+	…
+
+4) Consider to try out C4 to visualize the Darwinet Software System of domains, nodes users and applications (algorithms)?
+
+	...
+
+…
+
+Consider to delve into this idea of how to visualize software systems in a consistent way to see if its valuable, applicable and provides a better way of communicating such systems?
+
+...

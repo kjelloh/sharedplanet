@@ -1,0 +1,39 @@
+﻿Reading about Code Signing, certificates and tools, I stumbled cross Extended Validation (EV) Certificates and support for it in Windows. Consider to understand what it is and wether thats better than ordinary certificates for my need for Code Signing?
+
+1) This seem to be a good page from Microsoft regarding Code Signing in general and EV Certificates (http://blogs.msdn.com/b/ieinternals/archive/2011/03/22/authenticode-code-signing-for-developers-for-file-downloads-building-smartscreen-application-reputation.aspx <http://blogs.msdn.com/b/ieinternals/archive/2011/03/22/authenticode-code-signing-for-developers-for-file-downloads-building-smartscreen-application-reputation.aspx>)
+
+	==> EV Certificates seem to involve more rigorous issuing and use?
+
+	“Note: In August 2012, Microsoft announced support for a new type of Code-Signing certificate, the Extended Validation (EV) certificate. These certificates tend to be more expensive and harder-to-use (requiring security token hardware) but have the benefit of providing faster accumulation of reputation for SmartScreen.”
+
+	==> SmartScreen seem to be a mechanism in IE9 and above (https://blogs.msdn.microsoft.com/ie/2010/10/13/stranger-danger-introducing-smartscreen-application-reputation/ <https://blogs.msdn.microsoft.com/ie/2010/10/13/stranger-danger-introducing-smartscreen-application-reputation/>)?
+
+	“When you download a program in IE9 a file identifier and the publisher of the application (if digitally signed) are sent to a new application reputation service in the cloud. If the program has an established reputation there is no warning. If the file is downloaded from a reported malicious site, IE9 blocks the download”
+
+2) This seem to be a good page about using EC Certificates including hardware token (USB stick) secured and stored certificates (http://blog.richpollock.com/2014/06/code-signing-windows-executables-using-authenticode-2-extended-validation-certificates/ <http://blog.richpollock.com/2014/06/code-signing-windows-executables-using-authenticode-2-extended-validation-certificates/>)?
+
+3) I am not sure EV Certificates adds any value to Code Signing software that are not downloaded but installed directly from distributable media?
+
+	==> This wikipedia page seem to propose EV Certificates are mainly to enhance downloadable software making browser protect against downloading malware (https://en.wikipedia.org/wiki/Extended_Validation_Certificate <https://en.wikipedia.org/wiki/Extended_Validation_Certificate>)?
+
+	“EV certificates are mainly presented by web servers to web browsers for use with SSL/TLS connections.”
+
+	“security expert Peter Gutmann states the new class of certificates restore a CA's profits which were eroded due to the race to the bottom that occurred among issuers in the industry. Gutmann calls this phenomenon "PKI-Me-Harder”."
+
+	==> Seems I should go for a “normal” certificate for now just to get the installation show a trusted publisher?	
+
+4) May it even be a compatibility problem using EV Certificates?
+
+	==> Symantec warns that EV Certificates uses SHA-256 and may thus be incompatible with older operating systems (https://evcs.websecurity.symantec.com/evcs/process/enrollment <https://evcs.websecurity.symantec.com/evcs/process/enrollment>)?
+
+	“On January 1, 2016, Microsoft plans to discontinue support for code signing certificates with a SHA-1 algorithm. To ensure compliance, EV code signing certificates are available with only SHA-256. 
+Note: Code signed with a SHA-256 certificate may not work with older operating systems."
+
+…
+
+Consider to delve deeper into the difference between “normal” Code Signing certificate and an Extended Validation Certificate?
+
+a) Seems an EV Certificate always comes on a security hardware token (e.g. as an USB embedded device)?
+b) AS of now it does not seem Microsoft favours EV Certificates that strongly?
+c) The seem expensive (symantec lists an EV Code Signing Certificate for $795 1 year and $1549 for 3 years https://msdn.microsoft.com/en-us/library/windows/hardware/dn653556(v=vs.85).aspx <https://msdn.microsoft.com/en-us/library/windows/hardware/dn653556(v=vs.85).aspx> )?
+...

@@ -1,0 +1,44 @@
+# Todo: Programming - Consider to design a Protocol Stack Messaging View that exposes a datamodel to be used by a GUI view component?
+
+```#a083c672``` *As of 2016-03-27 15:43*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Can we imagine to define a component that enables a GUI to view the events of a C++ Template DSL defined Protocol Stack?
+
+==&gt; See “Todo: Programming - Consider to design C++ Template Domains Specific Languages to design FSM Protocol Engines and Element Table Message Encodings?”
+
+==&gt; See “Todo: Programming - Consider to design the C++11 Protocol Framework to allow for multiple Session and Links?”
+
+==&gt; See “Todo: Programming - Consider to discuss what traits a C++ Protocol Framework should have to enable implementation of popular protocols?”
+
+==&gt; See “Todo: Programming - Consider to model Protocol Stacks using State-Machine-Based Tagged-Range-Tree Transforms?”
+
+1) How can we imagine to “add-on” a Messaging-viewer to a Protocol Stack defend using the proposed DSL for Protocol Implementation?
+
+2) Consider to design the viewer to observe concurrent (parallel) events?
+
+==&gt; The GUI that uses the view must be able to be single-threaded (isolated from the concurrent events of the stack)?
+
+3) Consider to implement the view as GUI-agnosting (i.e. a pure business-logic component)?
+
+==&gt; We would like the GUI to interface the view (making the viewer GUI Framework agnostic)?
+
+4) Consider if we can have the Viewer generated automatically at compile-time?
+
+5) Consider what options we have to comply with “don’t pay for what you don’t use”?
+
+==&gt; We what the viewer to be generated compile-time only if we ask for it.
+
+==&gt; We want viewer elision if it is not used in runtime?
+
+...
+
+…
+
+Consider to elaborate on this idea to have a Protocol Stack Viewer as an add-on to debug and view the runtime actions of the DSL-defined Protocol Stack?
+
+...
+
+{% endraw %}

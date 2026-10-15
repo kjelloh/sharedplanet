@@ -1,0 +1,71 @@
+﻿I may want to buy a used caravan and upgrade it to be all-electric based on the well known brand Victron system components?
+
+1) Consider the Victron system described in youtube video "The Best Power System for Vans | Watch Before You Buy Van Electrical System" (https://youtu.be/mRU80jmO7lA <https://youtu.be/mRU80jmO7lA> )?
+
+	
+	Victron bluesolar mppt 100/30 (https://youtu.be/mRU80jmO7lA?t=98 <https://youtu.be/mRU80jmO7lA?t=98> )
+
+	NOTE: To enable charging from solar panels
+
+
+	
+	Victron Lithium Battery Smart 12,8V 200 Ah (https://youtu.be/mRU80jmO7lA?t=131 <https://youtu.be/mRU80jmO7lA?t=131> )
+
+	NOTE: This is the actual battery bank
+
+	
+	Victron Smart BMS 12/200( https://youtu.be/mRU80jmO7lA?t=168 <https://youtu.be/mRU80jmO7lA?t=168> )
+
+	NOTE: To monirot and control the battery charging and discharging
+
+	
+	Victron Lynx Distributor (https://youtu.be/mRU80jmO7lA?t=242 <https://youtu.be/mRU80jmO7lA?t=242> )
+
+	Note: To host circuit breakers and act as physical connection hub for electrical wiring 
+
+	
+	Victron Smartshunt (https://youtu.be/mRU80jmO7lA?t=287 <https://youtu.be/mRU80jmO7lA?t=287> )
+
+	NOTE: To keep track of energy going in and out of battery bank
+
+	
+	Victron Multiplus (https://youtu.be/mRU80jmO7lA?t=322 <https://youtu.be/mRU80jmO7lA?t=322> )
+
+	NOTE: To connect to external AC and provide charging of battery and on-board AC from battery or external AC.
+
+	
+	Victron Cerbo GX (https://youtu.be/mRU80jmO7lA?t=369 <https://youtu.be/mRU80jmO7lA?t=369> )
+
+	NOT: To act a a centarl hub / controller and monitor
+
+	
+	Victron Multi Control (https://youtu.be/mRU80jmO7lA?t=469 <https://youtu.be/mRU80jmO7lA?t=469> )
+
+	NOTE: To control load on externally connected grid (to prevent breaker trip depending on how much the connected AC can take)
+
+2) Consider the Victron information on the components recommended by youtube video ()?
+
+	==> Victron bluesolar mppt 100/30 (https://www.victronenergy.se/solar-charge-controllers/mppt-100-30 <https://www.victronenergy.se/solar-charge-controllers/mppt-100-30> ) C.a 1800 SEK
+	==> Victron Lithium Battery Smart 12,8V & 25,6V (https://www.victronenergy.se/batteries/lithium-battery-12-8v <https://www.victronenergy.se/batteries/lithium-battery-12-8v> ) C.a 14200 SEK (LFP 12.8 V 200 AH = 2,5 kWh)
+	==> Victron Smart BMS 12/200 (https://www.victronenergy.se/battery-management-systems/smart-bms-12-200 <https://www.victronenergy.se/battery-management-systems/smart-bms-12-200>  ) C.a 3200 SEK
+	==> Victron Lynx Distributor 1000 (https://www.victronenergy.se/dc-distribution-systems/lynx-distributor <https://www.victronenergy.se/dc-distribution-systems/lynx-distributor> ) C.a 2800 SEK	
+	==> Victron Smartshunt (https://www.victronenergy.se/battery-monitors/smart-battery-shunt <https://www.victronenergy.se/battery-monitors/smart-battery-shunt> ) C.a 1500 SEK
+	==> Victron Multiplus (https://www.victronenergy.se/inverters-chargers/multiplus-12v-24v-48v-800va-3kva <https://www.victronenergy.se/inverters-chargers/multiplus-12v-24v-48v-800va-3kva> ) C.a 17200 SEK
+	==> Victron Cerbo GX (https://www.victronenergy.se/communication-centres/cerbo-gx <https://www.victronenergy.se/communication-centres/cerbo-gx> ) C.a 3800 SEK (inkl skärm)
+	==> Victron Multi Control GX (https://www.victronenergy.se/display-and-panels/digital-multi-control-panel-gx <https://www.victronenergy.se/display-and-panels/digital-multi-control-panel-gx> ) C.a 1800 SEK
+
+	==>It seems a system with 1 one 2,5 kWh battery would be roughly 50 000 SEK with an additional 14200 for each extra 2,5 kWh?
+
+	
+
+3) Consider how to adress the fact that Victron batteries seem to not come with built in heaters (to enable charging below freezing)?
+
+The basic observation is that if the caravan with batteries gets cooled down below freezing there is no way to charge the batteries.
+
+I can imagine we can run a heater of the energy in the batteries to heat the caravan and batteries to allow charging.
+
+But this takes time and will also not work if the batteries are very low!
+
+NOTE: The Victron chargers are described to be able to work with self-heating batteries. But this I need to confirm and also investigate how this mechanism works!
+
+...

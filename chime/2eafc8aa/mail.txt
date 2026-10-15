@@ -1,0 +1,5 @@
+﻿It seems Juce attended a conference called ADC’16 and produced a buch of talks on youtube.
+
+1) The youtube channel for these talks seem to be here (https://www.youtube.com/channel/UCaF6fKdDrSmPDmiZcl9KLnQ)?
+
+	...

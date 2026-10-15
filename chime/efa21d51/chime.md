@@ -1,0 +1,524 @@
+# Todo: C++ scripting - Consider to document some scripting engines we may integrate with C++ applications (e.g., Lua, Chaiscript...)?
+
+```#efa21d51``` *As of 2022-07-17 13:31*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to explore ways to script applications written in C++ Lua-style and apply to e.g., my open source book keeping application Cratchit.
+
+1) Consider Angelscipt (<https://www.angelcode.com/angelscript/> )?
+
+> *It seems Angelscript uses C/C++ syntax but the documentation spends much time talking about the language and why to use it. It is much harder to find any actual examples or "raw meat" information on the language itself?*
+
+==&gt; Consider this Angelscript grammar is a good introduction into the language (<https://www.angelcode.com/angelscript/sdk/docs/manual/doc_script_bnf.html> )?
+
+> This is language grammar in Backus-Naur Form (BNF).
+
+> The following convention is used:
+
+> ```
+>  ( )  - used for grouping
+>  { }  - 0 or more repetitions
+>  [ ]  - optional
+>   |   - or
+>  ' '  - token
+
+> ```
+
+> ```
+> SCRIPT        ::= {IMPORT | ENUM | TYPEDEF | CLASS | MIXIN | INTERFACE | FUNCDEF | VIRTPROP | VAR | FUNC | NAMESPACE | ';'}
+> CLASS         ::= {'shared' | 'abstract' | 'final' | 'external'} 'class' IDENTIFIER (';' | ([':' IDENTIFIER {',' IDENTIFIER}] '{' {VIRTPROP | FUNC | VAR | FUNCDEF} '}'))
+> TYPEDEF       ::= 'typedef' PRIMTYPE IDENTIFIER ';'
+> NAMESPACE     ::= 'namespace' IDENTIFIER {'::' IDENTIFIER} '{' SCRIPT '}'
+> FUNC          ::= {'shared' | 'external'} ['private' | 'protected'] [((TYPE ['&']) | '~')] IDENTIFIER PARAMLIST ['const'] FUNCATTR (';' | STATBLOCK)
+> INTERFACE     ::= {'external' | 'shared'} 'interface' IDENTIFIER (';' | ([':' IDENTIFIER {',' IDENTIFIER}] '{' {VIRTPROP | INTFMTHD} '}'))
+> VAR           ::= ['private'|'protected'] TYPE IDENTIFIER [( '=' (INITLIST | EXPR)) | ARGLIST] {',' IDENTIFIER [( '=' (INITLIST | EXPR)) | ARGLIST]} ';'
+> IMPORT        ::= 'import' TYPE ['&'] IDENTIFIER PARAMLIST FUNCATTR 'from' STRING ';'
+> ENUM          ::= {'shared' | 'external'} 'enum' IDENTIFIER (';' | ('{' IDENTIFIER ['=' EXPR] {',' IDENTIFIER ['=' EXPR]} '}'))
+> FUNCDEF       ::= {'external' | 'shared'} 'funcdef' TYPE ['&'] IDENTIFIER PARAMLIST ';'
+> VIRTPROP      ::= ['private' | 'protected'] TYPE ['&'] IDENTIFIER '{' {('get' | 'set') ['const'] FUNCATTR (STATBLOCK | ';')} '}'
+> MIXIN         ::= 'mixin' CLASS
+> INTFMTHD      ::= TYPE ['&'] IDENTIFIER PARAMLIST ['const'] ';'
+> STATBLOCK     ::= '{' {VAR | STATEMENT} '}'
+> PARAMLIST     ::= '(' ['void' | (TYPE TYPEMOD [IDENTIFIER] ['=' EXPR] {',' TYPE TYPEMOD [IDENTIFIER] ['=' EXPR]})] ')'
+> TYPEMOD       ::= ['&' ['in' | 'out' | 'inout']]
+> TYPE          ::= ['const'] SCOPE DATATYPE ['<' TYPE {',' TYPE} '>'] { ('[' ']') | ('@' ['const']) }
+> INITLIST      ::= '{' [ASSIGN | INITLIST] {',' [ASSIGN | INITLIST]} '}'
+> SCOPE         ::= ['::'] {IDENTIFIER '::'} [IDENTIFIER ['<' TYPE {',' TYPE} '>'] '::']
+> DATATYPE      ::= (IDENTIFIER | PRIMTYPE | '?' | 'auto')
+> PRIMTYPE      ::= 'void' | 'int' | 'int8' | 'int16' | 'int32' | 'int64' | 'uint' | 'uint8' | 'uint16' | 'uint32' | 'uint64' | 'float' | 'double' | 'bool'
+> FUNCATTR      ::= {'override' | 'final' | 'explicit' | 'property'}
+> STATEMENT     ::= (IF | FOR | WHILE | RETURN | STATBLOCK | BREAK | CONTINUE | DOWHILE | SWITCH | EXPRSTAT | TRY)
+> SWITCH        ::= 'switch' '(' ASSIGN ')' '{' {CASE} '}'
+> BREAK         ::= 'break' ';'
+> FOR           ::= 'for' '(' (VAR | EXPRSTAT) EXPRSTAT [ASSIGN {',' ASSIGN}] ')' STATEMENT
+> WHILE         ::= 'while' '(' ASSIGN ')' STATEMENT
+> DOWHILE       ::= 'do' STATEMENT 'while' '(' ASSIGN ')' ';'
+> IF            ::= 'if' '(' ASSIGN ')' STATEMENT ['else' STATEMENT]
+> CONTINUE      ::= 'continue' ';'
+> EXPRSTAT      ::= [ASSIGN] ';'
+> TRY           ::= 'try' STATBLOCK 'catch' STATBLOCK
+> RETURN        ::= 'return' [ASSIGN] ';'
+> CASE          ::= (('case' EXPR) | 'default') ':' {STATEMENT}
+> EXPR          ::= EXPRTERM {EXPROP EXPRTERM}
+> EXPRTERM      ::= ([TYPE '='] INITLIST) | ({EXPRPREOP} EXPRVALUE {EXPRPOSTOP})
+> EXPRVALUE     ::= 'void' | CONSTRUCTCALL | FUNCCALL | VARACCESS | CAST | LITERAL | '(' ASSIGN ')' | LAMBDA
+> CONSTRUCTCALL ::= TYPE ARGLIST
+> EXPRPREOP     ::= '-' | '+' | '!' | '++' | '--' | '~' | '@'
+> EXPRPOSTOP    ::= ('.' (FUNCCALL | IDENTIFIER)) | ('[' [IDENTIFIER ':'] ASSIGN {',' [IDENTIFIER ':' ASSIGN} ']') | ARGLIST | '++' | '--'
+> CAST          ::= 'cast' '<' TYPE '>' '(' ASSIGN ')'
+> LAMBDA        ::= 'function' '(' [[TYPE TYPEMOD] IDENTIFIER {',' [TYPE TYPEMOD] IDENTIFIER}] ')' STATBLOCK
+> LITERAL       ::= NUMBER | STRING | BITS | 'true' | 'false' | 'null'
+> FUNCCALL      ::= SCOPE IDENTIFIER ARGLIST
+> VARACCESS     ::= SCOPE IDENTIFIER
+> ARGLIST       ::= '(' [IDENTIFIER ':'] ASSIGN {',' [IDENTIFIER ':'] ASSIGN} ')'
+> ASSIGN        ::= CONDITION [ ASSIGNOP ASSIGN ]
+> CONDITION     ::= EXPR ['?' ASSIGN ':' ASSIGN]
+> EXPROP        ::= MATHOP | COMPOP | LOGICOP | BITOP
+> BITOP         ::= '&' | '|' | '^' | '<<' | '>>' | '>>>'
+> MATHOP        ::= '+' | '-' | '*' | '/' | '' | '**'
+> COMPOP        ::= '==' | '!=' | '<' | '<=' | '>' | '>=' | 'is' | '!is'
+> LOGICOP       ::= '&&' | '||' | '^^' | 'and' | 'or' | 'xor'
+> ASSIGNOP      ::= '=' | '+=' | '-=' | '*=' | '/=' | '|=' | '&=' | '^=' | '%=' | '**=' | '<<=' | '>>=' | '>>>='
+> IDENTIFIER    ::= single token:  starts with letter or _, can include any letter and digit, same as in C++
+> NUMBER        ::= single token:  includes integers and real numbers, same as C++
+> STRING        ::= single token:  single quoted ', double quoted ", or heredoc multi-line string """
+> BITS          ::= single token:  binary 0b or 0B, octal 0o or 0O, decimal 0d or 0D, hexadecimal 0x or 0X
+> ```
+
+
+
+2) Consider the Lua scripting engine (<https://www.lua.org> )?
+
+==&gt; Consider this Lua language syntax as a good entry point to the language (<https://www.lua.org/manual/5.4/manual.html#9> )?
+
+> # 9 – [The Complete Syntax of Lua]()
+
+> Here is the complete syntax of Lua in extended BNF. As usual in extended BNF, {A} means 0 or more As, and &#91;A&#93; means an optional A. (For operator precedences, see [§3.4.8](https://www.lua.org/manual/5.4/manual.html#3.4.8); for a description of the terminals Name, Numeral, and LiteralString, see [§3.1](https://www.lua.org/manual/5.4/manual.html#3.1).)
+
+> ```
+> 	chunk ::= block
+
+> 	block ::= {stat} [retstat]
+
+> 	stat ::=  ‘;’ |
+> 		 varlist ‘=’ explist |
+> 		 functioncall |
+> 		 label |
+> 		 break |
+> 		 goto Name |
+> 		 do block end |
+> 		 while exp do block end |
+> 		 repeat block until exp |
+> 		 if exp then block {elseif exp then block} [else block] end |
+> 		 for Name ‘=’ exp ‘,’ exp [‘,’ exp] do block end |
+> 		 for namelist in explist do block end |
+> 		 function funcname funcbody |
+> 		 local function Name funcbody |
+> 		 local attnamelist [‘=’ explist]
+
+> 	attnamelist ::=  Name attrib {‘,’ Name attrib}
+
+> 	attrib ::= [‘<’ Name ‘>’]
+
+> 	retstat ::= return [explist] [‘;’]
+
+> 	label ::= ‘::’ Name ‘::’
+
+> 	funcname ::= Name {‘.’ Name} [‘:’ Name]
+
+> 	varlist ::= var {‘,’ var}
+
+> 	var ::=  Name | prefixexp ‘[’ exp ‘]’ | prefixexp ‘.’ Name
+
+> 	namelist ::= Name {‘,’ Name}
+
+> 	explist ::= exp {‘,’ exp}
+
+> 	exp ::=  nil | false | true | Numeral | LiteralString | ‘...’ | functiondef |
+> 		 prefixexp | tableconstructor | exp binop exp | unop exp
+
+> 	prefixexp ::= var | functioncall | ‘(’ exp ‘)’
+
+> 	functioncall ::=  prefixexp args | prefixexp ‘:’ Name args
+
+> 	args ::=  ‘(’ [explist] ‘)’ | tableconstructor | LiteralString
+
+> 	functiondef ::= function funcbody
+
+> 	funcbody ::= ‘(’ [parlist] ‘)’ block end
+
+> 	parlist ::= namelist [‘,’ ‘...’] | ‘...’
+
+> 	tableconstructor ::= ‘{’ [fieldlist] ‘}’
+
+> 	fieldlist ::= field {fieldsep field} [fieldsep]
+
+> 	field ::= ‘[’ exp ‘]’ ‘=’ exp | Name ‘=’ exp | exp
+
+> 	fieldsep ::= ‘,’ | ‘;’
+
+> 	binop ::=  ‘+’ | ‘-’ | ‘*’ | ‘/’ | ‘//’ | ‘^’ | ‘%’ |
+> 		 ‘&’ | ‘~’ | ‘|’ | ‘>>’ | ‘<<’ | ‘..’ |
+> 		 ‘<’ | ‘<=’ | ‘>’ | ‘>=’ | ‘==’ | ‘~=’ |
+> 		 and | or
+
+> 	unop ::= ‘-’ | not | ‘#’ | ‘~’
+> ```
+
+  
+3) Consider Chaiscript (<https://chaiscript.com> )?
+
+> *It seems Chaiscript is the most "modern" scripting framework for C++? Fort one thing it requires C++14 and the syntax seems to leverage modern C++ features which makes it "less C" and "more C++"?*
+
+> *And it is "Header Only" which I find as a plus (no binaries to link to),*
+
+==&gt; Consider this language reference as a good introduction to the chaiscript language syntax (<https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#language-reference> )?
+
+> # Language Reference
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#variables>Variables
+
+  
+> ```
+> var i; // uninitialized variable, can take any value on first assignment;
+> auto j; // equiv to var
+
+> var k = 5; // initialized to 5 (integer)
+> var l := k; // reference to k
+> auto &m = k; // reference to k
+
+> global g = 5; // creates a global variable. If global already exists, it is not re-added
+> global g = 2; // global 'g' now equals 2
+
+> global g2;
+> if (g2.is_var_undef()) { g2 = 4; } // only initialize g2 once, if global decl hit more than once
+
+> GLOBAL g3; // all upper case version also accepted
+
+> ```
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#looping>Looping
+
+  
+> ```
+> // c-style for loops
+> for (var i = 0; i < 100; ++i) { print(i); }
+
+> ```
+
+  
+> ```
+> // while
+> while (some_condition()) { /* do something */ }
+
+> ```
+
+  
+> ```
+> // ranged for
+> for (i : [1, 2, 3]) { print(i); }
+
+> ```
+
+> Each of the loop styles can be broken using the `break` statement. For example:
+
+  
+> ```
+> while (some_condition()) {
+>   /* do something */
+>   if (another_condition()) { break; }
+> }
+
+> ```
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#conditionals>Conditionals
+
+  
+> ```
+> if (expression) { }
+
+> ```
+
+  
+> ```
+> // C++17-style init-if blocks
+> // Value of 'statement' is scoped for entire `if` block
+> if (statement; expression) { }
+
+> ```
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#switch-statements>Switch Statements
+
+  
+> ```
+> var myvalue = 2
+> switch (myvalue) {
+>     case (1) {
+>         print("My Value is 1");
+>         break;
+>     }
+>     case (2) {
+>         print("My Value is 2");
+>         break;
+>     }
+>     default {
+>         print("My Value is something else.";
+>     }
+> }
+
+> ```
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#built-in-types>Built in Types
+
+> There are a number of build-in types that are part of ChaiScript.
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#vectors-and-maps>Vectors and Maps
+
+  
+> ```
+> var v = [1,2,3u,4ll,"16", `+`]; // creates vector of heterogenous values
+> var m = ["a":1, "b":2]; // map of string:value pairs
+
+> // Add a value to the vector by value.
+> v.push_back(123);
+
+> // Add an object to the vector by reference.
+> v.push_back_ref(m);
+
+> ```
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#numbers>Numbers
+
+> Floating point values default to `double` type and integers default to `int` type. All C++ suffixes such as `f`, `ll`, `u` as well as scientific notation are supported
+
+  
+> ```
+> 1.0 // double
+> 1.0f // float
+> 1.0l // long double
+> 1 // int
+> 1u // unsigned int
+> 1ul // unsigned long
+> 1ull // unsigned long long
+
+> ```
+
+> Literals are automatically sized, just as in C++. For example: `10000000000` is &gt; 32bits and the appropriate type is used to hold it on your platform.
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#functions>Functions
+
+> Note that any type of ChaiScript function can be passed freely to C++ and automatically converted into an `std::function` object.
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#general-2>General
+
+  
+> ```
+> def myfun(x, y) { x + y; } // last statement in body is the return value
+> def myfun(x, y) { return x + y; } // equiv
+
+> ```
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#optionally-typed>Optionally Typed
+
+  
+> ```
+> def myfun(x, int y) { x + y; } // requires y to be an int
+
+> ```
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#with-guards>With Guards
+
+  
+> ```
+> def myfun(x, int y) : y > 5 { x - y; } // only called if y > 5
+
+> ```
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#methods>Methods
+
+> Methods and functions are mostly equivalent
+
+  
+> ```
+> def string::add(int y) { this + to_string(y); }
+> def add(string s, int y) { s + to_string(y); } //equiv functionality
+
+> // calling new function/method
+> "a".add(1); // returns a1
+> add("a", 1); // returns a1, either calling syntax works with either def above
+
+> ```
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#lambdas>Lambdas
+
+  
+> ```
+> var l = fun(x) { x * 15; }
+> l(2) // returns 30
+
+> var a = 13
+> var m = fun[a](x) { x * a; }
+> m(3); // a was captured (by reference), returns 39
+
+> var n = bind(fun(x,y) { x * y; }, _, 10);
+> n(2); // returns 20
+
+> ```
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#chaiscript-defined-types>ChaiScript Defined Types
+
+> Define a type called "MyType" with one member value "a" and a getter
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#preferred-1>Preferred
+
+  
+> ```
+> class MyType {
+>   var value;
+>   def MyType() { this.value = "a"; }
+>   def get_value() { "Value Is: " + this.value; }
+> };
+
+> ```
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#alternative-2>Alternative
+
+  
+> ```
+> attr MyType::value;
+> def MyType::MyType() { this.value = "a"; }
+> def MyType::get_value() { "Value Is: " + this.value; }
+
+> ```
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#using>Using
+
+  
+> ```
+> var m = MyType(); // calls constructor
+> print(m.get_value()); // prints "Value Is: a"
+> print(get_value(m)); // prints "Value Is: a"
+
+> ```
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#dynamic-objects>Dynamic Objects
+
+> All ChaiScript defined types and generic Dynamic_Object support dynamic parameters
+
+  
+> ```
+> var o = Dynamic_Object();
+> o.f = fun(x) { print(x); }
+> o.f(3); // prints "3"
+
+> ```
+
+> Implicit 'this' is allowed:
+
+  
+> ```
+> var o = Dynamic_Object();
+> o.x = 3;
+> o.f = fun(y) { print(this.x + y); }
+> o.f(10); // prints 13
+
+> ```
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#namespaces>Namespaces
+
+> Namespaces in ChaiScript are Dynamic Objects with global scope
+
+  
+> ```
+> namespace("math") // create a new namespace
+
+> math.square = fun(x) { x * x } // add a function to the "math" namespace
+> math.sum_squares = fun(x, y) { math.square(x) + math.square(y) }
+
+> print(math.square(4)) // prints 16
+> print(math.sum_squares(2, 5)) // prints 29
+
+> ```
+
+> ### <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#option-explicit>Option Explicit
+
+> If you want to disable dynamic parameter definitions, you can `set_explicit`.
+
+  
+> ```
+> class My_Class {
+>   def My_Class() {
+>     this.set_explicit(true);
+>     this.x = 2; // this would fail with explicit set to true
+>   }
+> };
+
+> ```
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#method_missing>method_missing
+
+> A function of the signature `method_missing(object, name, param1, param2, param3)` will be called if an appropriate method cannot be found
+
+  
+> ```
+> def method_missing(int i, string name, Vector v) {
+>   print("method_missing(${i}, ${name}), ${v.size()} params");
+> }
+
+> 5.bob(1,2,3); // prints "method_missing(5, bob, 3 params)"
+
+> ```
+
+> `method_missing` signature can be either 2 parameters or 3 parameters. If the signature contains two parameters it is treated as a property. If the property contains a function then additional parameters are passed to the contained function.
+
+> If both a 2 parameter and a 3 parameter signature match, the 3 parameter function always wins.
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#context>Context
+
+- `__LINE__` Current file line number
+- `__FILE__` Full path of current file
+- `__CLASS__` Name of current class
+- `__FUNC__` Name of current function
+
+> # <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#built-in-functions>Built In Functions
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#evaluation>Evaluation
+
+  
+> ```
+> eval("4 + 5") // dynamically eval script string and returns value of last statement
+> eval_file("filename") // evals file and returns value of last statement
+> use("filename") // evals file exactly once and returns value of last statement
+>                 // if the file had already been 'used' nothing happens and undefined is returned
+
+> ```
+
+> Both `use` and `eval_file` search the 'usepaths' passed to the ChaiScript constructor
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#json>JSON
+
+- `from_json` converts a JSON string into its strongly typed (map, vector, int, double, string) representations
+- `to_json` converts a ChaiScript object (either a `Object` or one of map, vector, int, double, string) tree into its JSON string representation
+
+> ## <https://github.com/ChaiScript/ChaiScript/blob/develop/cheatsheet.md#extras>Extras
+
+  
+> ChaiScript itself does not provide a link to the math functions defined in `&lt;cmath&gt;`. You can either add them yourself, or use the [ChaiScript_Extras](https://github.com/ChaiScript/ChaiScript_Extras) helper library. (Which also provides some additional string functions.)
+
+4) Just for fun, consider the Godot game engine integration and scripting abilities (<https://godotengine.org> )?
+
+> *Som, the basic idea here is that maybe, godot being a 2D and 3D game engine, we can utilise 2D and 3D graphics to our benefit for viewing Cracthit book keeping data in some flexible and interesting ways?*
+
+> *And, at the same time get scripting abilities though the scripting language options of the Godot game engine?*
+
+> *BEWARE - It seems I can extend (program) the Godot engine to behave like a Cratchit application, BUT this alos means Cratchit is NO LONGER a C++ console application but a Godot 2D game engine?! This means it will depend heavily on the Godot game engine being available and maintained cross all platforms?! *
+
+==&gt; This seems to be an overview of the Godot game engine specific GDScript language syntax (<https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html#doc-gdscript> )?
+
+==&gt; It seems we can "extend" a Godot game engine with our C++ cratchit application to make it operate on book keeping data (<https://docs.godotengine.org/en/stable/tutorials/scripting/gdnative/gdnative_cpp_example.html> )?
+
+...
+
+{% endraw %}

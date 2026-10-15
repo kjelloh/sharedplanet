@@ -1,0 +1,18 @@
+﻿
+	==> Also see “Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?”
+
+1) Consider this site showing composite piano action parts (http://www.pianodisc.eu/en/products/wng-wessell-nickel-gross/wng-parts/design.html <http://www.pianodisc.eu/en/products/wng-wessell-nickel-gross/wng-parts/design.html>)?
+
+“No longer limited by wood, WNG has created action parts that are highly customizable, adaptable, and able to meet almost any rebuilding need."
+
+	==> It seems the parts could be 3D printed (given we can find materials with the right behaviour)?
+
+	==> Wessel, Nickel & Gross seems to live here (https://www.wessellnickelandgross.com <https://www.wessellnickelandgross.com/>)?
+
+		==> But they only sell to piano manufacturer companies (Can ITFied apply)?
+		...
+
+…
+
+Consider to delve deeper into this idea to actually 3D print my own Piano Key Actions?
+...

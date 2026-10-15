@@ -1,0 +1,5 @@
+﻿Make first owl and bells app as a .NET app on itfied.se! It reads mails at todo@itfied.se and creates a todo-list.
+
+Iterate later into balloned list!
+
+Sent from my iPad

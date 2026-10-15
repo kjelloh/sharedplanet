@@ -1,0 +1,28 @@
+# Todo: Programming - Consider to design a GUI/Backgrounder interface that works with VCL applications BCC32 and upwards?
+
+```#7dbba1d9``` *As of 2015-12-29 20:19*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Reading and learning about Boost and C++11 updated threading libraries and Herb Sutter/Andrei Alexandrescu backgrunder/concurrent idioms it seems we should try to apply them to separate the main VCL thread of a BCC32 application from threaded code?
+
+1) Using BCC32 in RAD Studio XE7 we only have Boost 1.39 and no C++11 library support. What can we do?
+
+2) Using BCC64 in RAD Studio XE7 we have Boost 1.55 and C++11 support (possibly limited). What can we do?
+
+3) Consider to aim at applying the found solution to TestBench application?
+
+4) If so, can we implement the mechanism in BCC32/Boost 1.39 (possibly mimicking C++11, Boost 1.55 intercase)?
+
+5) If not, what are the risks involved in upgrading the TestBench to BCC64 (which we should do anyhow)?
+
+…
+
+Consider if it is worth the effort to first implement a BCC32 mechanism and then upgrade to BCC64?  
+…
+
+a) On Windows 8 machine - Created project “C:\\Users\\kjell-olov\\Documents\\Embarcadero\\Studio\\Projects\\MyGUIBackgrounderInterfaces\\build”  
+...
+
+{% endraw %}

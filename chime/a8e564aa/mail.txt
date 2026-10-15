@@ -1,0 +1,27 @@
+﻿The spoke length I got using DT Swiss spoke length calculator (https://spokes-calculator.dtswiss.com/en/ <https://spokes-calculator.dtswiss.com/en/> ) turned out to be too long so I need to redo this manually.
+
+0) It seems I actually used the wrong number of spokes (28 instead of 32) in the DT Swiss calculator?
+
+	==> If I enter 32 spokes I get a spoke length of left: 296 mm and right 297 mm (as opposed to left 299 and right 301 for 28 spokes) 
+
+
+	==> According to Parktool video (below) with this difference of only 1 mm I can simply use the longer length 297 for both side spokes?
+
+All I have to do (sigh) is to cut, ungrade and roll new threads to the spokes I already have? 
+
+1) Consider the ParkTool youtube video "Determining Spoke Length for Wheel Building" (https://youtu.be/kSFmvV3J99c <https://youtu.be/kSFmvV3J99c> )?
+
+
+2) This seems to be the "Spoke Length Worksheet" provided by PArkTool (https://www.parktool.com/assets/img/repairhelp/Spoke-Length-Worksheet.pdf <https://www.parktool.com/assets/img/repairhelp/Spoke-Length-Worksheet.pdf> )? 
+
+
+
+3) This seems to be the online spoke length calculator they use in the Parktool video "Determining Spoke Length for Wheel Building" (https://spokecalc.io <https://spokecalc.io/> )?
+
+
+
+
+
+
+
+...

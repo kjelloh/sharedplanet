@@ -1,0 +1,17 @@
+# Todo: Consider to animate truth-webs for SPC:s to create act-in-faiths to find Badiou-Events to enable the wanted changes emerge
+
+```#950e136f``` *As of 2015-09-12 12:40*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Is there a way to visualize, and possible even animate, truth-webs that may be applied to understand experience-as-it-is in such a way that we can change society to a sustainable and ”richer" one?
+
+1) Can we visualize a SPC wiki as a force directed graph of truth nodes and relations? Consider to think about we can create a 2D-donought shaped graph showing ungrounded axioms (What we believe create society as an emergence) and outer edge interface to the unknown (future society, economy, religion and future understanding of self)?  
+2) Consider to make the graph interactive by providing evidence of ”truth-nodes” and reason plus evidence of interconnectedness (follows from, wishful thinking).  
+3) The community should allow different truth-webs to ”compete” for the most effective contents and layout. This would allow the best truth-web to evolve. Consider to propose a way that different truth-webs can ”live” side-by-side for discussion and evaluation?  
+…
+
+For web-pages there seems to be open source available to generate force directed graphs? this would speak for using web-site-based interaction. On the other hand, if we could use Darwinet domain interaction we would get evolution to try out different proposed truth-webs?
+
+{% endraw %}

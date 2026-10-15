@@ -1,0 +1,332 @@
+﻿Consider it should be able to crack the iRealPro file format to be able to import sheet music to a better Darwinet App for sheet sharing?
+
+	==> Also see ”Todo: iRealPro Programming - Consider ways to import songs from iRealPro into a Darwinet app for music sheet sharing?”
+	==> Also see ””
+
+1) Consider this thread from 2016 implicitly defines the obfuscation algorithm (http://zubersoft.com/mobilesheets/forum/archive/index.php?thread-3215.html <http://zubersoft.com/mobilesheets/forum/archive/index.php?thread-3215.html>)?
+
+
+It really is scrambled using an obfuscation algorithm. For example, this is the data from a song:
+
+Code:
+xZL*mnLZ<*ZLxZL*m*A>oloSr_atiuG_:ortnI27GLZE*s44T[esreVE*m*L86*<S{_QyXQyXQXy]_GZL*m*EZLG|ZXyQ__ZLGZLZLD>),LZxLohC86*<|}_xZLGLZxZLCZLxZL*m*EZrus(sG>)s(ZL*m*ZxLZCR26*<|ZLxQZLGZ>LadoC_oT66*<xZLiff>ELCZLxS_ratm*LZ<*<{__QyXQyX]_Ge>niF_la_.S.D07*70Gui*EZLGCZLxZLZxLZrohC66*<|}_xZLZGLxZLCZLxZL*m*Eus>DLG>oloyXQyXCLZxL*m*EZLGZL*m*E>ffiR26*<|ZLxZLGZLZG_]ZLxZL07*<|*72VeGZLxZLCZLxZL*mE*ZLxZL,G>)s(esrLZx_}<{__QZLGZLs>DLZffiR26*<|ZLxZLZGLxZLCZLxZLCZLx>E*m*urohCL>adoZ<*68*m*EQ{__QyXQyX_]G>adoC_la_.S.D<*66CL*m*EZGLZE*m*LZG,<*426x>_}fG,U<*66Fine>_Z_
+
+All characters except for the last few have been swapped according to the obfuscation algorithm.
+
+Decoded:
+
+Code:
+[T44sn |<*72Intro:_Guitar_Solo>A*m* |x |G |E*m* |x |G |E*m* ||G |E*m* |G_]         _{S<*68   __Verse(s)>G, |x |E*m* |x |C |x |G |x_}|<*68Chorus(s)>D |x |C |x |C |x<*66To_Coda> |G |Qx ||<*62Riff>E*m* |G |E*m* |<*70D.S._al_Fine>G_]      __{<*70Guitar_Solo>G |x |E*m* |x |C |x |G |x_}|<*66Chorus>D |x |C |x |C |x |G |x ||<*62Riff>E*m* |G |E*m* |G_]      __{<*72Verse(s)>G, |x |E*m* |x |C |x |G |x_}|<*70Chorus>D |x |C |x |C |x |G |x ||<*62Riff>E*m* |G |E*m* |<*68D.S._al_Coda>G_]      __{QE*m*<*66Coda> |G |E*m* |G,<*426x>_}fG,U<*66Fine>_Z_
+
+Now you can see the measures, chords etc.
+
+	==> Consider to identify the scrambling algorithm from this example (and then apply it to mine below)?
+
+12345678901234567890123456789012345678901234567890
+xZL*mnLZ<*ZLxZL*m*A>oloSr_atiuG_:ortnI27GLZE*s44T[esreVE*m*L86*<S{_QyXQyXQXy]_GZL*m*EZLG|ZXyQ__ZLGZLZLD>),LZxLohC86*<|}_xZLGLZxZLCZLxZL*m*EZrus(sG>)s(ZL*m*ZxLZCR26*<|ZLxQZLGZ>LadoC_oT66*<xZLiff>ELCZLxS_ratm*LZ<*<{__QyXQyX]_Ge>niF_la_.S.D07*70Gui*EZLGCZLxZLZxLZrohC66*<|}_xZLZGLxZLCZLxZL*m*Eus>DLG>oloyXQyXCLZxL*m*EZLGZL*m*E>ffiR26*<|ZLxZLGZLZG_]ZLxZL07*<|*72VeGZLxZLCZLxZL*mE*ZLxZL,G>)s(esrLZx_}<{__QZLGZLs>DLZffiR26*<|ZLxZLZGLxZLCZLxZLCZLx>E*m*urohCL>adoZ<*68*m*EQ{__QyXQyX_]G>adoC_la_.S.D<*66CL*m*EZGLZE*m*LZG,<*426x>_}fG,U<*66Fine>_Z_
+
+
+12345678901234567890123456789012345678901234567890
+[T44sn |<*72Intro:_Guitar_Solo>A*m* |x |G |E*m* |x |G |E*m* ||G |E*m* |G_]         _{S<*68   __Verse(s)>G, |x |E*m* |x |C |x |G |x_}|<*68Chorus(s)>D |x |C |x |C |x<*66To_Coda> |G |Qx ||<*62Riff>E*m* |G |E*m* |<*70D.S._al_Fine>G_]      __{<*70Guitar_Solo>G |x |E*m* |x |C |x |G |x_}|<*66Chorus>D |x |C |x |C |x |G |x ||<*62Riff>E*m* |G |E*m* |G_]      __{<*72Verse(s)>G, |x |E*m* |x |C |x |G |x_}|<*70Chorus>D |x |C |x |C |x |G |x ||<*62Riff>E*m* |G |E*m* |<*68D.S._al_Coda>G_]      __{QE*m*<*66Coda> |G |E*m* |G,<*426x>_}fG,U<*66Fine>_Z_
+
+
+		==> It seems ’Z’ becomes ’|’ and ’L’ becomes <space>?
+		==> It seems ’x’ is ’%’ (repeat one bar)
+
+	==> In fact - it is 11..24 that is swapped with 40…27?
+
+12345678901234567890123456789012345678901234567890
+xZL*mnLZ<*ZLxZL*m*A>oloSr_atiuG_:ortnI27GLZE*s44T[esreVE*m*L86*<S{_QyXQyXQXy]_GZL*m*EZLG|ZXyQ__ZLGZLZLD>),LZxLohC86*
+
+
+12345678901234567890123456789012345678901234567890
+xZL*mnLZ<*72Intro:_Guitar_Solo>A*m*LZxLZGLZE*s44T[esreVE*m*L86*<S{_QyXQyXQXy]_GZL*m*EZLG|ZXyQ__ZLGZLZLD>),LZxLohC86*
+
+	==> And when we replace ’L’ with <space> and ’Z’ with |...
+
+12345678901234567890123456789012345678901234567890
+x| *mn |<*72Intro:_Guitar_Solo>A*m* |x |GLZE*s44T[esreVE*m*L86*<S{_QyXQyXQXy]_GZL*m*EZLG|ZXyQ__ZLGZLZLD>),LZxLohC86*
+
+2) Consider the the scrambled element in ”You'll Be In My Heart” sheet in Gb I made?
+
+	==> Consider the escaped (raw) URL?
+
+irealb://%59%6F%75%27%6C%6C%20%42%65%20%49%6E%20%4D%79%20%48%65%61%72%74%20(%44%69%73%6E%65%79%20%66%6F%72%6D%61%74)=%43%6F%6C%6C%69%6E%73%20%50%68%69%6C==%53%68%75%66%66%6C%65=%47%62=%31%30=%31%72%33%34%4C%62%4B%63%75%37%20%5A%4C%78%20%69%54%34%34%20%4C,%62%47,%53,%20%7B%20%51%79%58%5D%78%20%20%5A%4C%78%20%5A%4C%78%20%5A%4C,%62%47%5A%20%78%4C%5A%2A%5B%51%79%58%20%5A%4C%62%45%43%62%4C%5A%20%42%20%33%4E,%62%44%32%4E%7C%7D%20,%62%20%44%31%4E%5A%4C%2A%6D%2A%62%41 <irealb://%59%6F%75%27%6C%6C%20%42%65%20%49%6E%20%4D%79%20%48%65%61%72%74%20(%44%69%73%6E%65%79%20%66%6F%72%6D%61%74)=%43%6F%6C%6C%69%6E%73%20%50%68%69%6C==%53%68%75%66%66%6C%65=%47%62=%31%30=%31%72%33%34%4C%62%4B%63%75%37%20%5A%4C%78%20%69%54%34%34%20%4C,%62%47,%53,%20%7B%20%51%79%58%5D%78%20%20%5A%4C%78%20%5A%4C%78%20%5A%4C,%62%47%5A%20%78%4C%5A%2A%5B%51%79%58%20%5A%4C%62%45%43%62%4C%5A%20%42%20%33%4E,%62%44%32%4E%7C%7D%20,%62%20%44%31%4E%5A%4C%2A%6D%2A%62%41>%20%5A%4C%62%43%62%20%5D%7B%20%20%5A%4C%20%78%20%62%42%20%31%73%42%62,%42%20%5A%4C%2A%6D%2A%46%20%59%5A%4C%20%2A%6D%43%2A%20%5A%4C%2A%6D%2A%47%20%6C%7C%62%41%2F%62%44%62%4C%5A%4E%20%5A%4C%62%41%5A%4C,%62%41%4E%33%42%62,%62%41%51%7B%5D%20%20%62%42%20%3E%61%64%6F%20%43%6C%61%20%2E%53%2E%44%36%36%2A%3C%5A%4C%51%73%75%73,%20%20%32%4E%7C%7D%4C%62%44%20%5A%41%62,%4C%5A%20%5A%4C%2A%6D%2A%43%20%5A%4C%2A%6D%2A%46%32%20%46%5A%4C,%2A%6D%2A%46%20,%73%75%73%46%43%2A%6D%2A%4C%20,%32%62%41%6D%2A%44%20%5A%62,%7D%4C%5A%41%20%6C%7C%62%42%2F%43,%43%73%20%5A%4C%42%62%20%5A%4C%46%20%7B%5A%20%43%20%62%45%32%4E%2A%6D%2A,%4C%44%20%31%4E%5A%5A%4C%46%20%5A%47%2A%6D%2A%4C%4C%62%42%2F%36%46%73%20%7B%20%20%51%79%58%79%51%58%51%79%58%7D%20%43%20%5A%4C%62%45%20%5A%5A%6C%20%78%4C%20%5A%4C%20%2A%20%46%3C%2A%36%38%33%78%3E%20%7D%58%79%51%4C%5A%20%73%46%36%2F%42%62,%6C%4C%5A%20%78%20%5A%20%46%20%5A%55%20=%50%6F%70%2D%53%6D%6F%6F%74%68=%39%34=%31
+
+	==> This decodes to…
+
+irealb://You'll <irealb://You'll> Be In My Heart (Disney format)=Collins Phil==Shuffle=Gb=10=1r34LbKcu7 ZLx iT44 L,bG,S, { QyX]x  ZLx ZLx ZL,bGZ xLZ*[QyX ZLbECbLZ B 3N,bD2N|} ,b D1NZL*m*bA ZLbCb ]{  ZL x bB 1sBb,B ZL*m*F YZL *mC* ZL*m*G l|bA/bDbLZN ZLbAZL,bAN3Bb,bAQ{]  bB >ado Cla .S.D66*<ZLQsus,  2N|}LbD ZAb,LZ ZL*m*C ZL*m*F2 FZL,*m*F ,susFC*m*L ,2bAm*D Zb,}LZA l|bB/C,Cs ZLBb ZLF {Z C bE2N*m*,LD 1NZZLF ZG*m*LLbB/6Fs {  QyXyQXQyX} C ZLbE ZZl xL ZL * F<*683x> }XyQLZ sF6/Bb,lLZ x Z F ZU =Pop-Smooth=94=1
+
+	==> It seems in the new format it is only the 6’6h element (prefixed with ”1r34LbKcu7”) that is scrambled?
+
+”1r34LbKcu7 ZLx iT44 L,bG,S, { QyX]x  ZLx ZLx ZL,bGZ xLZ*[QyX ZLbECbLZ B 3N,bD2N|} ,b D1NZL*m*bA ZLbCb ]{  ZL x bB 1sBb,B ZL*m*F YZL *mC* ZL*m*G l|bA/bDbLZN ZLbAZL,bAN3Bb,bAQ{]  bB >ado Cla .S.D66*<ZLQsus,  2N|}LbD ZAb,LZ ZL*m*C ZL*m*F2 FZL,*m*F ,susFC*m*L ,2bAm*D Zb,}LZA l|bB/C,Cs ZLBb ZLF {Z C bE2N*m*,LD 1NZZLF ZG*m*LLbB/6Fs {  QyXyQXQyX} C ZLbE ZZl xL ZL * F<*683x> }XyQLZ sF6/Bb,lLZ x Z F ZU ”
+
+	==> Consider to identify normal or reversed chords?
+
+12345678901234567890123456789012345678901234567890
+ZLx iT44 L,bG,S, { QyX]x  ZLx ZLx ZL,bGZ xLZ*[QyX ZLbECbLZ B 3N,bD2N|} ,b D1NZL*m*bA ZLbCb ]{  ZL x bB 1sBb,B ZL*m*F YZL *mC* ZL*m*G l|bA/bDbLZN ZLbAZL,bAN3Bb,bAQ{]  bB >ado Cla .S.D66*<ZLQsus,  2N|}LbD ZAb,LZ ZL*m*C ZL*m*F2 FZL,*m*F ,susFC*m*L ,2bAm*D Zb,}LZA l|bB/C,Cs ZLBb ZLF {Z C bE2N*m*,LD 1NZZLF ZG*m*LLbB/6Fs {  QyXyQXQyX} C ZLbE ZZl xL ZL * F<*683x> }XyQLZ sF6/Bb,lLZ x Z F ZU 		
+
+		==> ”Cs ZLBb” seems to be about the small sized fond (’s’) for C/Bb ?
+		==> ”bB%2F6Fs” seems to be F6/Bb small (’s’) font reversed?
+
+	==> Consider the 50 char block size (and corresponding swapping)?
+
+		==> It seems we must first remove the prefix ”1r34LbKcu7”?
+
+12345678901234567890123456789012345678901234567890
+ZLx iT44 L,bG,S, { QyX]x  ZLx ZLx ZL,bGZ xLZ*[QyX ZLbECbLZ B 3N,bD2N|} ,b D1NZL*m*bA ZLbCb ]{  ZL x bB 1sBb,B ZL*m*F YZL *mC* ZL*m*G l|bA/bDbLZN ZLbAZL,bAN3Bb,bAQ{]  bB >ado Cla .S.D66*<ZLQsus,  2N|}LbD ZAb,LZ ZL*m*C ZL*m*F2 FZL,*m*F ,susFC*m*L ,2bAm*D Zb,}LZA l|bB/C,Cs ZLBb ZLF {Z C bE2N*m*,LD 1NZZLF ZG*m*LLbB/6Fs {  QyXyQXQyX} C ZLbE ZZl xL ZL * F<*683x> }XyQLZ sF6/Bb,lLZ x Z F ZU 		
+
+12345678901234567890123456789012345678901234567890
+ XyQ[T44 LZGb,LZ xLZ xLZ  x]XyQ { ,S,Gb, xLZ*i xLZZLbECbLZ B 3N,bD2N|} ,b D1NZL*m*bA ZLbCb ]{  ZL x bB 1sBb,B ZL*m*F YZL *mC* 
+
+	==> If we also replace ’L' with <space> and ’Z’ with ’|’ we get the first 50 characters correct?
+
+12345678901234567890123456789012345678901234567890
+ XyQ[T44  |Gb, | x | x |  x]XyQ { ,S,Gb, x |*i x |ZLbECbLZ B 3N,bD2N|} ,b D1NZL*m*bA ZLbCb ]{  ZL x bB 1sBb,B ZL*m*F YZL *mC* 
+
+	==> If we also replace ’,' with <space> it gets even better?
+
+12345678901234567890123456789012345678901234567890
+ XyQ[T44  |Gb  | x | x |  x]XyQ {  S Gb  x |*i x |ZLbECbLZ B 3N,bD2N|} ,b D1NZL*m*bA ZLbCb ]{  ZL x bB 1sBb,B ZL*m*F YZL *mC* 
+
+	==> So, what do we get if we do this to the whole example URL?
+
+		==> It seems we must first remove the prefix ”1r34LbKcu7” but NOT the following space (otherwise we do not get the "D.S. al Coda” correct in the result)? 
+
+ 12345678901234567890123456789012345678901234567890
+” ZLx iT44 L,bG,S, { QyX]x  ZLx ZLx ZL,bGZ xLZ*[QyX
+ XyQ[*iT44 Gb,LZ xLZ xLZ x ]XyQ { ,S Gb,LZ xLZ xLZ
+ 12345678901234567890123456789012345678901234567890
+  ZLbECbLZ B 3N,bD2N|} ,b D1NZL*m*bA ZLbCb ]{  ZL x
+ x LZ CbLZ CbLZ Ab*m*LZN1 Db, }|N2Db,N3 Bb ]{ EbLZ 
+ 12345678901234567890123456789012345678901234567890
+  bB 1sBb,B ZL*m*F YZL *mC* ZL*m*G l|bA/bDbLZN ZLbA
+ AbLZ sBb,Bb/Ab|l G*m*LZ C*m* LZY F*m*LZ DbLZN1 Bb 
+ 12345678901234567890123456789012345678901234567890
+ ZL,bAN3Bb,bAQ{]  bB >ado Cla .S.D66*<ZLQsus,  2N|}
+ }|N2 N3Bb,QLZ<*66D.S. al Coda> Bb  ]{QAbsus, Ab,ZL
+ 12345678901234567890123456789012345678901234567890
+ LbD ZAb,LZ ZL*m*C ZL*m*F2 FZL,*m*F ,susFC*m*L ,2bA
+ Ab2, Ab,LZFsus, F*m*,LZF2 F*m*LZ C*m*LZ C*m*LZ DbL
+ 12345678901234567890123456789012345678901234567890
+ m*D Zb,}LZA l|bB/C,Cs ZLBb ZLF {Z C bE2N*m*,LD 1NZ
+ ZN1 Db,}LZN2Eb C Z{ FLZ BbLZ sC,C/Bb|l A*m*,LZ D*m
+ 12345678901234567890123456789012345678901234567890
+ ZLF ZG*m*LLbB/6Fs {  QyXyQXQyX} C ZLbE ZZl xL ZL *
+ * LZ G*m*LZ EbLZ C }XyQXyQXyQ  { sF6/BbLZl xLZ FLZ
+ 12345678901234567890123456789012345678901234567890
+  F<*683x> }XyQLZ sF6/Bb,lLZ x Z F ZU ”
+  F<*683x> }XyQLZ sF6/Bb,lLZ x Z F ZU ”
+
+	==> Thus, it seems the final data string is:
+
+ 12345678901234567890123456789012345678901234567890
+" XyQ[*iT44 Gb,LZ xLZ xLZ x ]XyQ { ,S Gb,LZ xLZ xLZ
+ x LZ CbLZ CbLZ Ab*m*LZN1 Db, }|N2Db,N3 Bb ]{ EbLZ 
+ AbLZ sBb,Bb/Ab|l G*m*LZ C*m* LZY F*m*LZ DbLZN1 Bb 
+ }|N2 N3Bb,QLZ<*66D.S. al Coda> Bb  ]{QAbsus, Ab,ZL
+ Ab2, Ab,LZFsus, F*m*,LZF2 F*m*LZ C*m*LZ C*m*LZ DbL
+ ZN1 Db,}LZN2Eb C Z{ FLZ BbLZ sC,C/Bb|l A*m*,LZ D*m
+ * LZ G*m*LZ EbLZ C }XyQXyQXyQ  { sF6/BbLZl xLZ FLZ
+  F<*683x> }XyQLZ sF6/Bb,lLZ x Z F ZU ”
+
+	==> And after having replaced ”L” and ’,’ with <space> and ’Z’ with ’|’
+
+ 12345678901234567890123456789012345678901234567890
+" XyQ[*iT44 Gb  | x | x | x ]XyQ {  S Gb  | x | x |
+ x  | Cb | Cb | Ab*m* |N1 Db   }|N2Db  N3 Bb ]{ Eb | 
+ Ab | sBb  Bb/Ab|l G*m* | C*m*  |Y F*m* | Db |N1 Bb 
+ }|N2 N3Bb  Q |<*66D.S. al Coda> Bb  ]{QAbsus   Ab  | 
+ Ab2   Ab   |Fsus   F*m*   |F2 F*m* | C*m* | C*m* | Db 
+ |N1 Db  } |N2Eb C |{ F | Bb | sC  C/Bb|l A*m*   | D*m
+ *  | G*m* | Eb | C }XyQXyQXyQ  { sF6/Bb |  x | F |
+  F<*683x> }XyQ | sF6/Bb    | x | F |U ”
+
+	==> It seems ”*i” is for ”Intro”?
+	==> It seems ’U’ means ”END”?
+	==> It seems ’x’ means ’%’ (repeat previous bar)?
+	==> It seems ’Q’ is NOT ”coda” (it has something to do with the indentation i used (empty slots in the sheet)
+
+		==> My sheet begins with three empty slots (corresponds to the "<space>XyQ” in the string?
+		==> First row actually ends with an empty slot and next row starts with three empty slots (
+
+	==> It seems ’S’ is the ”Segno” (fifth bar)
+	==> It seems ’Y’ marks extra space between rows?
+	==> It seems ’{’ and ’}’ marks repition (||: and :||)?
+	==> It seems ’Nx’ marks alternate routes (i.e. the markings for first, second, third time branches in sheet)?
+	==> Hm…Maybe ’Q’ is the Coda sign after all (a bit unclear why it is repeated so much)?
+
+		==> The bar before the ”D.S. al Coda” bar is marked with the Coda sign in the sheet (and has a ’Q’ marking here)?
+
+	==> I have 11 empty slots in the sheet between the C and the F6/Bb (which seems to show as ”XyQXyQXyQ  ” which is actually 11 characters)?
+
+		==> But why the mix of XyQ…?
+		==> Is it just to prevent double characters in the string (but then, why the ’Q’ thjat seems to be the Segno)?
+		…
+
+	==> The last ||: … :|| is noted yo be repeated 3 times (and seems to turn up as ”<*683x>”)?
+
+		==> What is the ”<*68”?
+		...
+		
+3) Consider the terminating symbols remains the same as indicated in this github project file (https://github.com/ironss/accompaniser/blob/master/irealb_parser.lua <https://github.com/ironss/accompaniser/blob/master/irealb_parser.lua>)?
+
+prefix <- ’1r34LbKcu7'
+
+barline <- '[' / ']' / '{' / '}' / ’|'
+
+label <- '*' <labelchar>
+
+labelchar <- [ABCDvi]		
+
+symbol <- 'Q' -- coda
+        / 'S' -- segno
+        / 'f' -- fermata
+
+timesig <- 'T22' 
+         / 'T32'
+         / 'T24'
+         / 'T34'
+         / 'T44'
+         / 'T54'
+         / 'T64'
+         / 'T74'
+         / 'T68'
+         / 'T78'
+         / 'T98'
+         / 'T12'
+--         / 'T' %d %d
+
+
+chord <- ((<note> / 'W') <quality>?) <rootnote>?
+
+altchord <- '(' <chord> ’)'
+
+nochord <- ’n'
+
+note <- ([ABCDEFG] [#b]?)
+
+quality <-  ('*' [^*]* '*' ) / (( ( [-+^ho] / 'add')* <degree>? ( [#b]? <degree> )*  'sus'? )  'alt’?)
+
+degree <- '5' / '6' / '7' / '9' / '11' / ’13'
+
+rootnote <- '/' <note>
+
+stafftext <- '<' [^>]* ’>'
+
+ending <- 'N0'
+        / 'N1'
+        / 'N2'
+        / ’N3'
+
+repeatbar <- 'x'  -- repeat 1 bar 
+           / 'r'  -- repeat 2 bars
+           / 'p'  -- slash (beat)
+
+space <- ' ' / ',' / %nl
+
+vspace <- 'YYY' / 'YY' / ’Y'
+
+end <- ’Z'
+
+unknown <- 's' -- small size chord
+         / 'l' -- normal size chord
+         / 'U' -- ???
+         / 'L'
+         / 'X'
+         / 'y'
+         / 'K'
+         / 'c'
+
+		==> It seems the programmer of this project had not yet identified what these symbols represented?
+
+4) Consider to understand irealpro playlists?
+
+	==> Consider to study the playlist ”Jazz 1300” at this fomrum page (https://www.irealb.com/forums/showthread.php?12753-Jazz-1300-Standards)
+
+		==> The URL seems to decode to this beginning (it is very long in total)
+
+	irealb://26-2=Coltrane John==Medium Up Swing=F==1r34LbKcu7ZL7bD4F^7 ZL7F 7-CZL7C 7A^ZL7E 7^bDZL7bABb^7 4T[A* 7^AZA7LZD^bDZL7bA 7^F[A]* 7C 7-GZL7G 7-7 E7L 7^bGC[B*]-7 F7FZL7C 7^AZL7E ^7bDZL7bA 7^bBZL^7XyQCZL7C7^bD|LZE-7A|QyX7-bE|QyX7b^BZL7F 7^DZL7A b7XyQ7F 7-BZL7F-7 C7L7C 7^AZL7E 7^DbZL7bA 7^F[A*] ZC-7 G|QyXb^7 Ab7LZDb^7 E7LZA^7 C7LZF^7   Z==0=0===500 Miles High=Corea Chick==Bossa Nova=E-==1r34LbKcu77E|Qy-7XyQL lcKQyX7^bBZLl cKQyX7-GZL lcKZBh7XE44T[QyX7-|A-7XlcKQyX7-FZL lcQKyX7h#FZL lcKQy QLZCQyX9#KQyX7ZB7#9 lcKQyX7-CQ{Y Q yXQyXZ  lcKQyXLZAb^L lcKcl  }==0=0===502 Blues=Rowles Jimmy==Waltz=A-==1r34LbKcu7B|QyX-7XyQQyX7-A|QyX9#7EQ|yX7hB|QyX7^bD||Db^7A43T{F1NZL|E7#9-bA|QyX7^bB|Qy9Xb7F|QyX7-C|QyX7 Db7QyX7hX9b7BQ|B7bh#F2N|} 7E 5#7E^|QyX5#7^E|QyX97XyQ|yX7h#yQ|E-7XyQKcl  Z==0=0===52nd Street Theme=Monk Thelonious==Up Tempo Swing=C==1r34LbKcu7L7G 74C A--A CZL7G 7-DZL-7A CZL7G 7-DZL77LZD-4TA*{ZL lcLZCXy7DZL lcKQyX6FZ LlcKQyX,7CB*[}Q,XyQK7G CZ7-A CKcl  7-DZL7-A CZL7G7 -DZL7-A ,CA*[] G7LZQyX7GLZD-7 G7LZC G7LZCXyQZ ==0=0===9.20 Special=Warren Earl==Medium Swing=C==1r34LbKcu7A,7bB4C9,X,bB|QyX6-bE|Qy,X9C|QyX,6-bE|QyXyQ|s4TA*{,9Cl2,G7|NyXQyX}7G,7bAs 9,CZL,7o#F ,9Cl1Q LZN7bA,7 lcKQLZlC9EZL6bE ,bE|QyXb,BlB*[]bB,7Fs ,b6,Xy7o#F C|QyXXyQ|F|QyX,9CA*[] 7F  |QyX,9FZL,6F ,Eb-6,,9GZLs|, 7|Eb-69Cl|7G,7bA,7A,b7Bs|QyX,bB|QyX,, F#oQyX,9C6,F7,Bb,D9Z ==0=0===A Felicidade=Jobim Antonio-Carlos==Bossa Nova=A-==1r34LbKcu7|QyX94A-7(yX7-EZL lcKQyX^7CZL lcKQyX)7^CQ|B7b4T{A*ZL lc(Repe^CB*[} 7G 7-DZ7LA>)lanoitpO ta7XyQK< 7-EX7^F|Q|E7b|QyX7-GZL)7-bA (lcKQyX7-A|QyX9C7XyQyX7hBX7G|Q7XyQ|ZL9b7E 7hB|QyX-7A|QyX7D|QyX7-AA-7Xy-D|QyCZL7G[C^7LZLxZL7^FZL7CZL-7GZLxZL7^CZL7FZD-7LZC*]Qy7-A|QLZF#hl[D*],7G,7-D|,A7,7-EsZL9b7BZL7A-7XyxZL7^lcKQy|D7/FL9b7E 7hB|QyX7A-|QyXF/7-D|QyX#ZA-7XQyXG/  Z ==0=0===Ac-Cent-Tchu-Ate The Positive=Arlen Harold==Medium Swing=F==1r34LbKcu77^F 64F^7  7^F||QyX7C|Qy7X-GZL7^F 6FZL+FF+LZF4TA*{ 6Fl| C7LZ-Gs 7^bB|QyX7FQ|yX6FB*[} 7C 6F7,C7,7-GZLL7^F 6XyQ|F 7^FA*[]QyX7CQ|yX5#7G|QyX9b7D+LZF6FZL7CZG-7XyQ|C7XyQ||F^7 F+LZF6 F^7LZG-7 C7,LZF6 C7 Z ==0=0===Across The Valley From The Alamo=Greene Joe==Medium Swing=F==1r34LbKcu77C ,74F^7,L lcKQyX,7CZL  xZL x ZL lcKQyXZN1G-4TA*{X,7^b7,XyQ]QyX,7^FZL,7C 7,-G2NZL QyXQyX}Y[*BB^FZL,GZL,77,XyQD|QyX,7A|QyX,7F^ZL,7-bB ,7^bB|-7, G^F|Qy lcKQ|C7,XZL x ZL x ZL lKcQyX,7^FA*[Y]QyC7,XyQyX,7LZG-7, C7,LZF^7XyQZ ==0=0===Adam's Apple=Shorter Wayne==Even 8ths=Ab==1r34LbKcu7X7bGZb7XyQL x ZL x ZL x LZ x ZL x ZL lcKZ x LA44T[bD|Qy LZ xZL x ZL x ZL lKcQyX7bAZL x ZL Ab-7XlcKQy7XyQ|Bb-7XyQ|Eb7#9XyQ|Ab7XyQKcl LZ x LZ x  Z==0=0===African Queen, The=Silver Horace==Latin=C-==1r34LbKcu7|rQyX4C-9 ZL9bD ,9-CZLQy|XrQyXZL x ZL9bD x 
+
+	==> This seem to expand into the following list beginning
+
+		==> After element 0 it seems the list repeats 12 elements per song?
+		==> Tests on large play lists seem to indicate each song uses 10 elements and then there are 2 empty elements between each song?
+		==> Tetst also seem to show that the last element in a playlist is the list name (one orphan element after the last 12 song elements)
+		...
+
+BEGIN - URL Elements
+t0:irealb
+
+t1:26-2
+t2:Coltrane John
+t3:
+t4:Medium Up Swing
+t5:F
+t6:
+t7:*A[T44F^7 Ab7 |Db^7 E7 |A^7 C7 |C-7 F7 |Bb^7 Db7 |Gb^7 A7 |D-7 G7 |G-7 C7 ]*A[F^7 Ab7 |Db^7 E7 |A^7 C7 |C-7 F7 |Bb^7 Ab7 |Db^7 E7 |A^7 C7 |F^7XyQ]*B[C-7 F7 |E-7 A7 |D^7 F7 |Bb^7XyQ|Eb-7XyQ|Ab7XyQ|Db^7XyQ|G-7 C7 ]*A[F^7 Ab7 |Db^7 E7 |A^7 C7 |C-7 F7 |Bb^7 Ab7 |Db^7 E7 |A^7 C7 |F^7   |
+t8:
+t9:0
+t10:0
+t11:
+
+t12:
+t13:500 Miles High
+t14:Corea Chick
+t15:
+t16:Bossa Nova
+t17:E-
+t18:
+t19:[T44E-7XyQKcl  |G-7XyQKcl  |Bb^7XyQKcl  |Bh7XyQ|E7#9XyQ|A-7XyQKcl  |F#h7XyQKcl  |F-7XyQKcl Q |C-7XyQKcl  |B7#9XyQKcl  |XyQXyQ  Y{QC-7XyQKcl  |Ab^7XyQKcl  }
+t20:
+t21:0
+t22:0
+t23:
+
+t24:
+t25:502 Blues
+t26:Rowles Jimmy
+t27:
+t28:Waltz
+t29:A-
+t30:
+t31:{T34A-7XyQ|Db^7XyQ|Bh7XyQ|E7#9XyQ|A-7XyQ|Db^7XyQ|Bh7XyQ|E7#9XyQ|C-7XyQ|F7b9XyQ|Bb^7XyQ|Ab-7 Db7 |N1F#h7XyQ|B7b9XyQ|E^7#5XyQ|E^7#5 E7 }|N2F#h7XyQ|B7b9XyQ|E-7XyQKcl  |
+t32:
+t33:0
+t34:0
+t35:
+
+t36:
+t37:52nd Street Theme
+t38:Monk Thelonious
+t39:
+t40:Up Tempo Swing
+t41:C
+t42:
+t43:{*AT44C A-7 |D-7 G7 |C A-7 |D-7 G7 |C A-7 |D-7 G7 |C G7 |CXyQ}[*BC7,XyQKcl  |F6XyQKcl  |D7,XyQKcl  |G7XyQKcl  ][*AC, A-7 |D-7 G7 |C A-7 |D-7 G7 |C A-7 |D-7 G7 |C G7 |CXyQ| 
+t44:
+t45:0
+t46:0
+t47:
+
+t48:
+t49:9.20 Special
+t50:Warren Earl
+t51:
+t52:Medium Swing
+t53:C
+t54:
+t55:{*AT44C9,XyQ|Eb-6,XyQ|C9,XyQ|Eb-6XyQ|Bb,XyQ|sBb7,A7,Ab7,G7|N1lC9, F#o7, |C9, sAb7,G7}XyQXyQ  |N2lC9, F#o7 |lC9, sF7,Bb][*BlBb,XyQ|Eb, Eb6 |Eb6,XyQKcl  |G9,XyQ|F, F6, |F9,XyQ|  F7 ][*AC9,XyQ|Eb-6,XyQ|C9,XyQ|Eb-6,XyQ|Bb,XyQ|sBb7,A7,Ab7,G7|lC9, F#o7 ,|sC6,F7,Bb,D9| 
+t56:
+t57:0
+t58:0
+t59:
+t60:
+
+
+
+…
+
+Consider to study the iRealPro URL file format more to optionally be able to parse it in a Darwinet C++ application?
+...
+

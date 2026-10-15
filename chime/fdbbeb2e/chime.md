@@ -1,0 +1,27 @@
+# Todo: darwinet - Consider to use knowledge of distributed file systems for Darwinet file system?
+
+```#fdbbeb2e``` *As of 2015-09-26 15:19*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Distributed file systems is not something new. Consider to study whats out there and use it to make Darwinet domain file system really good from the start!
+
+1) This wikipedia page seems like a good source of information (https://en.wikipedia.org/wiki/Clustered_file_system#Distributed_file_systems)?  
+2) The wikipedia page provides the following listing of aspects to be adressed by distributed files systems. Could we use this as a list to adress Darwinet file system issues?
+
+”Design goals&#91;edit&#93;  
+Distributed file systems may aim for "transparency" in a number of aspects. That is, they aim to be "invisible" to client programs, which "see" a system which is similar to a local file system. Behind the scenes, the distributed file system handles locating files, transporting data, and potentially providing other features listed below.
+
+• Access transparency is that clients are unaware that files are distributed and can access them in the same way as local files are accessed.  
+• Location transparency; a consistent name space exists encompassing local as well as remote files. The name of a file does not give its location.  
+• Concurrency transparency; all clients have the same view of the state of the file system. This means that if one process is modifying a file, any other processes on the same system or remote systems that are accessing the files will see the modifications in a coherent manner.  
+• Failure transparency; the client and client programs should operate correctly after a server failure.  
+• Heterogeneity; file service should be provided across different hardware and operating system platforms.  
+• Scalability; the file system should work well in small environments (1 machine, a dozen machines) and also scale gracefully to huge ones (hundreds through tens of thousands of systems).  
+• Replication transparency; to support scalability, we may wish to replicate files across multiple servers. Clients should be unaware of this.  
+• Migration transparency; files should be able to move around without the client's knowledge.  
+”  
+...
+
+{% endraw %}

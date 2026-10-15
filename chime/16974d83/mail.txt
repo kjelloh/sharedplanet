@@ -1,0 +1,7 @@
+﻿At RAD Studio 10 seminar (29 september 2015 in Stockholm) Steven Ball talked about the mechanism ”Change Views” Embarcadero (he contributed) has added to their database InterBase.
+
+1) Consider to study this mechanism and relate it to Darwinet Deltas?
+2) The state that using ”Change Views” SQL-clients will be able to only receive ”what has changed” when they perform an SQL-request. So, how does the client (or server) remember each client state to be able to provide only the changes seems last call?
+…
+
+Consider to delve into this subject to see what information is available and how we may find good-to-know information to ge Darwinet Deltas to work efficiently?

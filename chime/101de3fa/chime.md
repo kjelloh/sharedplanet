@@ -1,0 +1,86 @@
+# Todo: Överväg att kalkylera på kostnaden för att leasa en ny Tesla Model 3?
+
+```#101de3fa``` *As of 2019-04-16 17:09*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Det verkar som om jag har alternativet att leasa en Tesla Model 3 via mitt företag för att slippa hosta upp hela beloppet privat för att köpa en?
+
+1) Överväg vad en Tesla model 3 egentligen kostar (<https://www.tesla.com/sv_SE/model3/design#battery> )?
+
+==&gt; Det verkar som i Sverige är (190416) den billigaste Model 2 än så länge Standard Range Plus för 531 700 SEK?
+
+![](<Screenshot 2019-04-16 at 16.20.29.png>)
+
+2) Det verkar som om jag får 60 000 i bonus (Bonus Malus) som en separat utbetalning om jag köper en Tesla (<https://www.transportstyrelsen.se/sv/vagtrafik/Fordon/bonus-malus/bonus/> )?
+
+==&gt; Det verkar som om jag själv måste ansöka om och separat få utbetalat en bonus på 60 000 SEK?
+
+> *“ För bilar med noll-utsläpp är den högsta bonusen 60 000 kronor.”*
+
+> *“**Utbetalning av bonus kommer att ske tidigast sex månader från köpet av klimatbonusbilen.**"*
+
+2) Överväg att försöka använda skatteverkets e-tjänst för att beräkna förmånsvärdet (<https://www.skatteverket.se/privat/skatter/arbeteochinkomst/formaner/bilforman/bilformansberakning.4.3f4496fd14864cc5ac9539d.html> )?
+
+==&gt; Det verkar som om förmånsvärdet för mig privat blir omrking 37 000 per år (jag uppskattade skatten till 1000 sek men hittade ingen uppgift)
+
+> ![](<Screenshot 2019-04-16 at 15.28.55.png>)
+
+==&gt; Notera att skatteverket endast hade Model 3 Long Range med ett förmånsgrundande pris på 639 800 (som är avsevärt högre än de 531 700 för Tesla Model 3 Standard Plus)?
+
+==&gt; Överväg hur DÅLIG skatteverkets e-tjänst för beräkning av förmånsvärde är dåp den INTE tillåter en beräkning utan att ha tillgång till reg-nummer?
+
+> *Jag försökte ju beräkna förmånsvärdet på en bil jag ännu inte köpt. Och jag hade inte tillgång till uppgifter om fordonsskatten. E-tjänsten tillhandahäll en tjänst att söka efter fordonsskatten baserat på registreringsnummer! Vilket ju är helt värdelöst då jag gör kalkylen i undersökande syfte. Jag har ju ingen faktiskt registrerad bil att beräkna på.*
+
+> *Det förvånar mig också att skatteverkets trots att den redan vet vilken bilmodell jag räknar på inte kan uppskatta vad fordonsskatten kommer att bli? Jag menar, ok att skatten baseras på utrustning och andra attiraljer. Men de borde väl kunna tillhandahålla räknesnurra som beräknar fordonsskatten om jag matar in sådana uppgifter? Som spekulant vill jag ju egentligen bara veta i vilket intervall ungefär förmånsvärdet kommer att hamna. Inte veta exakt på öret vad förmånsvärdet blir på en faktisk individ avd bil.*
+
+> *Bättring skatteverket!*
+
+==&gt; Ett förmånsvärde på 37000 med en nollinkomst så verkar skatteverkets e-tjänst säga att jag skall betala 2816 SEK i skatt (skatt på 37 000 efter grundavdrag 19700)
+
+![](<Screenshot 2019-04-16 at 15.39.35.png>)
+
+==&gt; Kostnaden i företaget verkar bli 87 000 i kontantinsats plus 3 800 ex moms i månaden under 36 månader.
+
+![](<Screenshot 2019-04-16 at 15.41.30.png>)
+
+==&gt; Jag antar att Teslas post “Incitament” avser trafikvertkets Bonus Malus på 60 000 (Som jag själv måste ansöka om och få utbetalt inom sex månader från köpet)?
+
+==&gt; Jag antar att Tesla anger så kallad “traditionell leasing” där kontantinsatsen är förhöjd första hyra följt av en månatlig hyra i 36 månader?
+
+> *I detta fall anger alltså Tesla leasingkonstanden som 86571 + 3710 \* 36 exklusive moms?*
+
+==&gt; Det verkar som om “bara” halva momsen är avdragsgill (<https://www.wasakredit.se/foretag/billeasing/billeasing-a-till-o/> )?
+
+==&gt; Leasingkostnaden i företaget blir alltså 3 800 SEK + 3 800 \* 0,25/2 = 3 800 + 950/2 = 4275 SEK?
+
+==&gt; Om jag bara haft oskattade pengar i företaget kunde jag ha betalat med dessa. Nu betalar jag med F-skattade pengar (nåja…)
+
+==&gt; Dock kan jag ju spara förlusten och dra av mot framtida intäkter?
+
+> *Det verkar alltså som min privata kostnad för att leasa en Tesla Model 3 i 36 månader blir 2816 SEK/månad i skatt = 101 376 SEK privat. Till det tillkommer kostanden i företaget på en förhöjd första hyra (kontantinsatsen) på 87 000 ex moms plus en månatlig leasingavgift i 36 månader på 3710 ex moms vilket blir 97875 + 36 \* 4275 SEK inc halva momsen = 251 775 SEK. Totalt alltså **353 151 SEK i faktiskt “brända” pengar**. Det är 9810 SEK / Månad!*
+
+> *Men så kan jag ansöka om och få Bonus Malus från trafikverket på 60 000. Drar jag av denna bonus så blir “brända pengar” 293 151 SEK vilket är 8143 SEK per månad i 36 månader.*
+
+> *Kvar har jag ett restvärde på bilen på, ja vad? Leasing-avtalet talar om ett beräknat restvärde på 53% av inköpspriset. I detta fall ett inköpspris på 531 700. Ett 53% restvärde skulle alltså i så fall vara 281 800. Dock verkar det som om det faktiska restvärdet avgörs efter leasingperioden slut? Eftersom det verkar virrigt att inte betala en för låg månadsavgift så att restvärdet inte stämmer med marknadsvärdet drar jag slutsatsen att vid avslut av leasingavtalet så regleras restvärdet mot marknadsvärdet? Om restvärdet är lägre än marknadsvärdet får jag tillbaka pengar. I annat fall måste jag betala mellanskillnaden till leasingföretaget?*
+
+> *Värt att notera här är att enligt leasingavtalet har bilen minskat i värde med 47% (restvärde 53%) vilket är 249 899. Men jag har betalt 353 151 SEK inklusive moms till staten! Okey att staten gett mig en separat Bonus Malus på 60 000. Faktum kvarstår ändå att det här bara måste vara en dålig affär!*
+
+> *Nåväl, för att köpa loss bilen måste jag som företager först köpa loss av leasingbolaget till avtalat restpris. I detta fall alltså 281 800 SEK? MEN Tesla garantera inte restvärdet! Så vad jag faktiskt måste betala för att få loss bilen är alltså oklart?*
+
+> *Usch - Det här känns INTE som en bra affär?*
+
+3) Överväg denna sida för teslaägare som verkar ha lite siffror på leasing av Tesla modell 3 (<http://teslaclubsweden.se/tesla-model-3-formansvarden/> )?
+
+==&gt; Det verkas som om jag får svårt att jämföra med de kalkyler de gör här med alla konstiga räntor och körsträckor utan att redovisa hur kalkylen görs (<https://www.teslakalkylen.com/view?id=5c17a6dbb4ebf30009785728> )?
+
+![](<Screenshot 2019-04-16 at 17.07.21.png>)
+
+*Vad farao är alla dessa siffror för något (Det här är INTE leasing)?*
+
+==&gt; Kostar det verkligen 5000 SEK per år att serva en Tesla (det är ju i paritet med en bensinbil)?
+
+...
+
+{% endraw %}

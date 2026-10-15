@@ -1,0 +1,80 @@
+﻿Consider it would be a good idea to have a way to denote ”any type” the same way as the term ’a’ is used in Haskel and Elm?
+
+1) Consider to understand how ’a’ (any or not yet defined) type is used and applied in the Haskel and Elm languages?
+
+	==> It seems to denote generic type in Haskel (See ”Type variables” in http://learnyouahaskell.com/types-and-typeclasses <http://learnyouahaskell.com/types-and-typeclasses>)?
+
+ghci> :t head  
+head :: [a] -> a  
+
+		==> Seems to read the type of (:t) identifier head is a function from a list of any-type (’a’) to any-type?
+		==> Q: Does this also read that a is the-same type on both sides?
+		==> YES: To denote different any-type we can use [a] -> b (any lower case character denotes a ”type variable”)
+
+	==> In Haskel it is called a ”type variable” and any lower case identifier will do?
+
+”Because it's not in capital case it's actually a type variable"
+
+	==> This seems to show that different lower-case characters can be used to denote different any-type types?
+
+ghci> :t fst  
+fst :: (a, b) -> a  
+
+		==> Seems to read: type of (:t) fst is a function that takes a tuple of two any-types and return something of the first tuple member type.
+		==> Q: It does not necessarily say it returns the first value in the tuple (only that it returns a value of the same type as the first member)?
+		...
+
+	==> In Elm the ’a’ seems to mean the same thing (https://guide.elm-lang.org/types/reading_types.html)?
+
+> []
+[] : List a
+		==> This seem to read: the empty list is of type List a (meaning a List of values with any-type ’a’)?
+
+	==> And Elm seem to use Haskel notion of using lower case names as type variables any-type ()?
+
+> (,)
+<function> : a -> b -> ( a, b )
+>
+
+		==> Seems to read: A function that takes any-type a and any-type b and returns a list (a , b)?
+
+2) Consider how we can provide an any-tipe meta-1 value named ’a’ in our Meta Value Model?
+
+ 	==> Consider we can provide the same functionality in Meh with the meta-1 value ’a’ declared as meta-2 value AnyDeFacto?
+
+		==> Consider if it is possible to provide a type constructor (meta-2 value) that is capable of constructing any meta-1 value?
+		==> Or, maybe thats is NOT the way to go (hard to define such meta-2 value given that meta-2 values may change over time)?
+
+	==> Instead, consider to have meta-1 identifier that is unbound (no meta-value declared nor value defined)?
+
+		==> Then we can use ’a’ to infer types using pattern matching?
+		==> Then we can define generic function fst as in Haskel?
+
+ghci> :t fst  
+fst :: (a, b) -> a  
+
+		==> In Meh we could implement the fst function as a generic ”return first in tuple” function?
+
+		Meh´> (identifier fst (function (list a b) (quote (b)))
+		fst : (function a b (b)) // Hm… is this good syntax (it is not lisp syntax)?
+
+		==> We can now instantiate fst by applying it to any list
+
+		Meh´> (fst (list 1 2 3 4 5))
+		1
+		Meh´>
+
+			==> Meh will infer the types for and by from the meta-value of the provided list?
+			==> Pattern matching will yield that a is 1 and can execute the body and return it?
+
+		NO! Now we have defined a and b as meta-0 generic values (not types)!
+
+		==> And, to be able to use a,b,c… as generic types we would have to fill meta-1 space with them in advance?
+
+	==> Hm… We need to give this more though?
+
+
+	...
+
+Consider to elaborate on this idea to have Meh denote any-type with lower case names a,b,c…?
+...

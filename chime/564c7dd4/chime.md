@@ -1,0 +1,47 @@
+# Todo: Consider to delve into the work and community of Sara Walker about the mechanism of life and its relation to the nature of physics and reailty?
+
+```#564c7dd4``` *As of 2021-07-10 13:03*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider the youtube video "Sara Walker: The Origin of Life on Earth and Alien Worlds | Lex Fridman Podcast [#198](https://www.youtube.com/hashtag/198)" (<https://youtu.be/-tDQ74I3Ovs> )?
+
+> ![](PastedGraphic-1.png)
+
+> EPISODE LINKS:  
+> Sara's Twitter: [https://twitter.com/Sara_Imari](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm9Id0Ztak1pdWxlUnljRWphQUdaQkNNTTl5UXxBQ3Jtc0tsY2sxamZCVGZwNWNzdmFrUVVsekh5U2hUTzBwbW5DV1hIRGpkaTF5b2tvQ1pCVDVETHl3dmdqSWRNWjNJdE1STGpBZXNJWFRWVE83b0tSVEpwSm1rM2xfTkVPZkxVbk5ockdCM3Jldkt2d0ZmUTQyZw&q=https%3A%2F%2Ftwitter.com%2FSara_Imari)  
+> Sara's Website: [http://emergence.asu.edu/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGM5MWY5TmRMVmI5OEdsQ1ZRNnJnZ2tyYWhhZ3xBQ3Jtc0ttVThTQ1ZGOUc0SzdxcFhhOEJzMngyUk4yUUFyM3hZM2x4Y2tMS2dBTHNEOGhhWjFEVmY5Q3lHOXU4ZDNfVktGc2NHcXlVbHo2SDJ5UnhkQlNMNmdIYmdUNjhyN2VkY3pwMkg1Nk1IOS13cTk5SEdIWQ&q=http%3A%2F%2Femergence.asu.edu%2F)
+
+> OUTLINE:  
+> [0:00](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=0s) - Introduction  
+> [1:53](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=113s) - Origin of life  
+> [9:46](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=586s) - Did aliens seed life on Earth?  
+> [14:57](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=897s) - What is life?  
+> [26:36](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=1596s) - Cellular automata  
+> [31:04](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=1864s) - The laws of physics may change with time  
+> [40:50](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=2450s) - Nobel Prize for the origin of life  
+> [46:09](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=2769s) - Is consciousness fundamental to the universe?  
+> [57:28](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=3448s) - Life is the most deterministic part of physics  
+> [1:00:03](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=3603s) - Free will  
+> [1:08:20](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=4100s) - How to detect alien life  
+> [1:22:57](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=4977s) - How many alien civilization are out there?  
+> [1:29:41](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=5381s) - Shadow biosphere  
+> [1:36:08](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=5768s) - UFO sightings  
+> [1:39:43](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=5983s) - Exponential population growth of AI lifeforms  
+> [1:46:50](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=6410s) - The role of death in life  
+> [1:50:54](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=6654s) - Advice for young people  
+> [1:56:40](https://www.youtube.com/watch?v=-tDQ74I3Ovs&t=7000s) - Meaning of life
+
+2) This seems to be Sara Walkers web site where she and her team publish results (<http://emergence.asu.edu> )?
+
+> *Research on our team, led by Sara Walker, is motivated to uncover the fundamental principles explaining life, including its origins. That is, we seek to answer the question "What is Life?" by identifying whether there are laws of life. Our idea is that if there are universal laws that describe living systems on Earth and elsewhere, these should ultimately have something to do with information and how it structures physical reality.  
+> *
+
+3) Consider to comment on the Lex Fridman video contents by realting what they talk about to my own idea to "Mind the model" in that Life is the universe dividing itself into one part being about the other parts for interaction to take part in the evolution of reality?
+
+> *When I watch the video talk between Lex Fridman and Sara Walker I see over and over how maybe I can add to the "music" by noting where they talk about "information" and "computation" without observing the axiom of first having building blocks of "about-ness" and the curious "about-ability" we rely on to even begin to represent information and then compute with that information.*
+
+...
+
+{% endraw %}

@@ -1,0 +1,350 @@
+# Todo: Programming - Consider to understand the different C++ options to develop Windows Desktop Application GUI on different platforms (Windows 7, 8.1, 10)?
+
+```#935c2ee3``` *As of 2016-04-19 18:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, it is not completely transparent what is the preferred or available methods to develop a Windows Desktop Application to run on Windows 7, 8.1 or 10?
+
+1) Seems we need to create an MFC fronted to be able to run on Windows 7 (<https://msdn.microsoft.com/en-us/library/hh875053.aspx>)?
+
+“A Windows desktop application is one way to create a native desktop application for Windows; the other way is an MFC application. MFC is the default choice for apps—especially enterprise-type apps—that have lots of user interface controls or custom user controls. MFC provides convenient helper classes for serialization, text manipulation, printing, and modern user interface elements such as the ribbon. These classes are not available to a Windows desktop application.”
+
+==&gt; The other alternative seem to develop a native “Windows Desktop Application”?
+
+2) It seems when using VS 2015 to create a "Visual C++”/“Win32”/“Win32 Project" we get an application with a default main window?
+
+==&gt; This seem to be “old school” with no support for WYSIWYG editing of user interface?
+
+> // Win32Project1.cpp : Defines the entry point for the application.  
+> //
+
+> #include "stdafx.h"  
+> #include "Win32Project1.h"
+
+> #define MAX_LOADSTRING 100
+
+> // Global Variables:  
+> HINSTANCE hInst; // current instance  
+> WCHAR szTitle&#91;MAX_LOADSTRING&#93;; // The title bar text  
+> WCHAR szWindowClass&#91;MAX_LOADSTRING&#93;; // the main window class name
+
+> // Forward declarations of functions included in this code module:  
+> ATOM MyRegisterClass(HINSTANCE hInstance);  
+> BOOL InitInstance(HINSTANCE, int);  
+> LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);  
+> INT_PTR CALLBACK About(HWND, UINT, WPARAM, LPARAM);
+
+> int APIENTRY wWinMain(_In_ HINSTANCE hInstance,  
+> _In_opt_ HINSTANCE hPrevInstance,  
+> _In_ LPWSTR lpCmdLine,  
+> _In_ int nCmdShow)  
+> {  
+> UNREFERENCED_PARAMETER(hPrevInstance);  
+> UNREFERENCED_PARAMETER(lpCmdLine);
+
+> // TODO: Place code here.
+
+> // Initialize global strings  
+> LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);  
+> LoadStringW(hInstance, IDC_WIN32PROJECT1, szWindowClass, MAX_LOADSTRING);  
+> MyRegisterClass(hInstance);
+
+> // Perform application initialization:  
+> if (!InitInstance (hInstance, nCmdShow))  
+> {  
+> return FALSE;  
+> }
+
+> HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_WIN32PROJECT1));
+
+> MSG msg;
+
+> // Main message loop:  
+> while (GetMessage(&msg, nullptr, 0, 0))  
+> {  
+> if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))  
+> {  
+> TranslateMessage(&msg);  
+> DispatchMessage(&msg);  
+> }  
+> }
+
+> return (int) msg.wParam;  
+> }
+
+> //  
+> // FUNCTION: MyRegisterClass()  
+> //  
+> // PURPOSE: Registers the window class.  
+> //  
+> ATOM MyRegisterClass(HINSTANCE hInstance)  
+> {  
+> WNDCLASSEXW wcex;
+
+> wcex.cbSize = sizeof(WNDCLASSEX);
+
+> wcex.style = CS_HREDRAW | CS_VREDRAW;  
+> wcex.lpfnWndProc = WndProc;  
+> wcex.cbClsExtra = 0;  
+> wcex.cbWndExtra = 0;  
+> wcex.hInstance = hInstance;  
+> wcex.hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_WIN32PROJECT1));  
+> wcex.hCursor = LoadCursor(nullptr, IDC_ARROW);  
+> wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);  
+> wcex.lpszMenuName = MAKEINTRESOURCEW(IDC_WIN32PROJECT1);  
+> wcex.lpszClassName = szWindowClass;  
+> wcex.hIconSm = LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_SMALL));
+
+> return RegisterClassExW(&wcex);  
+> }
+
+> //  
+> // FUNCTION: InitInstance(HINSTANCE, int)  
+> //  
+> // PURPOSE: Saves instance handle and creates main window  
+> //  
+> // COMMENTS:  
+> //  
+> // In this function, we save the instance handle in a global variable and  
+> // create and display the main program window.  
+> //  
+> BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)  
+> {  
+> hInst = hInstance; // Store instance handle in our global variable
+
+> HWND hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,  
+> CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr);
+
+> if (!hWnd)  
+> {  
+> return FALSE;  
+> }
+
+> ShowWindow(hWnd, nCmdShow);  
+> UpdateWindow(hWnd);
+
+> return TRUE;  
+> }
+
+> //  
+> // FUNCTION: WndProc(HWND, UINT, WPARAM, LPARAM)  
+> //  
+> // PURPOSE: Processes messages for the main window.  
+> //  
+> // WM_COMMAND - process the application menu  
+> // WM_PAINT - Paint the main window  
+> // WM_DESTROY - post a quit message and return  
+> //  
+> //  
+> LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)  
+> {  
+> switch (message)  
+> {  
+> case WM_COMMAND:  
+> {  
+> int wmId = LOWORD(wParam);  
+> // Parse the menu selections:  
+> switch (wmId)  
+> {  
+> case IDM_ABOUT:  
+> DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);  
+> break;  
+> case IDM_EXIT:  
+> DestroyWindow(hWnd);  
+> break;  
+> default:  
+> return DefWindowProc(hWnd, message, wParam, lParam);  
+> }  
+> }  
+> break;  
+> case WM_PAINT:  
+> {  
+> PAINTSTRUCT ps;  
+> HDC hdc = BeginPaint(hWnd, &ps);  
+> // TODO: Add any drawing code that uses hdc here...  
+> EndPaint(hWnd, &ps);  
+> }  
+> break;  
+> case WM_DESTROY:  
+> PostQuitMessage(0);  
+> break;  
+> default:  
+> return DefWindowProc(hWnd, message, wParam, lParam);  
+> }  
+> return 0;  
+> }
+
+> // Message handler for about box.  
+> INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)  
+> {  
+> UNREFERENCED_PARAMETER(lParam);  
+> switch (message)  
+> {  
+> case WM_INITDIALOG:  
+> return (INT_PTR)TRUE;
+
+> case WM_COMMAND:  
+> if (LOWORD(wParam) == IDOK || LOWORD(wParam) == IDCANCEL)  
+> {  
+> EndDialog(hDlg, LOWORD(wParam));  
+> return (INT_PTR)TRUE;  
+> }  
+> break;  
+> }  
+> return (INT_PTR)FALSE;  
+> }
+
+3) It seems if we install C++ MFC add-on we can create an old-school MFC default application with main-menu and default command buttons (new project/Visual C++/MFC/MFC Application)?
+
+==&gt; It seems developing MFC-applcaition requires installation of MFC add-on with the size of 2 GB?
+
+==&gt; The daft settings seem to create an application with a main window, default menu with all standard tabs (file, edit…) and a command button ribbon?
+
+==&gt; At my first try I got this application.
+
+![](MFCApplication1.tiff)
+
+> // MainFrm.h : interface of the CMainFrame class  
+> //
+
+> #pragma once  
+> #include "FileView.h"  
+> #include "ClassView.h"  
+> #include "OutputWnd.h"  
+> #include "PropertiesWnd.h"
+
+> class CMainFrame : public CFrameWndEx  
+> {  
+> protected: // create from serialization only  
+> CMainFrame();  
+> DECLARE_DYNCREATE(CMainFrame)
+
+> // Attributes  
+> public:
+
+> // Operations  
+> public:
+
+> // Overrides  
+> public:  
+> virtual BOOL PreCreateWindow(CREATESTRUCT& cs);  
+> virtual BOOL LoadFrame(UINT nIDResource, DWORD dwDefaultStyle = WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE, CWnd\* pParentWnd = NULL, CCreateContext\* pContext = NULL);
+
+> // Implementation  
+> public:  
+> virtual ~CMainFrame();  
+> #ifdef _DEBUG  
+> virtual void AssertValid() const;  
+> virtual void Dump(CDumpContext& dc) const;  
+> #endif
+
+> protected: // control bar embedded members  
+> CMFCMenuBar m_wndMenuBar;  
+> CMFCToolBar m_wndToolBar;  
+> CMFCStatusBar m_wndStatusBar;  
+> CMFCToolBarImages m_UserImages;  
+> CFileView m_wndFileView;  
+> CClassView m_wndClassView;  
+> COutputWnd m_wndOutput;  
+> CPropertiesWnd m_wndProperties;
+
+> // Generated message map functions  
+> protected:  
+> afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);  
+> afx_msg void OnViewCustomize();  
+> afx_msg LRESULT OnToolbarCreateNew(WPARAM wp, LPARAM lp);  
+> afx_msg void OnApplicationLook(UINT id);  
+> afx_msg void OnUpdateApplicationLook(CCmdUI\* pCmdUI);  
+> afx_msg void OnSettingChange(UINT uFlags, LPCTSTR lpszSection);  
+> DECLARE_MESSAGE_MAP()
+
+> BOOL CreateDockingWindows();  
+> void SetDockingWindowIcons(BOOL bHiColorIcons);  
+> };
+
+==&gt; To get a WYSIWYG-editor for the application it seems I must create the project using CFormView as base class (<http://stackoverflow.com/questions/20335066/mfc-wysiwyg-editor>)?
+
+==&gt; Note: The default is CView (and then the main frame is not editable in a WYSIWYG-mode).
+
+==&gt; Note: Visual Studio warns that no Printing Support will be provided when using base class CFormView?
+
+==&gt; Seems we should create the MFC Project with setting &lt;Project Style&gt; "MFC Standard” to not get a lot of default GUI controls added to our project?
+
+==&gt; Tried the default “Visual Studio” and got an application with a lot of Visual Studio controls (e.g. class viewer tree, build output pane etc.)
+
+==&gt; Also seems we should set &lt;Application Type&gt; to “Single Document” (to not get multiple child forms restricted to the window of the main form)?
+
+==&gt; Seems we need to play around with all the options for creating an MFC application using the wizard (there are a lot of options that affects what we get out-of-the-box)?
+
+==&gt; At one try using mostly default settings by setting base class to CForm I got this MFC application that was able to change style?
+
+> // This MFC Samples source code demonstrates using MFC Microsoft Office Fluent User Interface  
+> // (the "Fluent UI") and is provided only as referential material to supplement the  
+> // Microsoft Foundation Classes Reference and related electronic documentation  
+> // included with the MFC C++ library software.  
+> // License terms to copy, use or distribute the Fluent UI are available separately.  
+> // To learn more about our Fluent UI licensing program, please visit  
+> // <http://go.microsoft.com/fwlink/?LinkId=238214>.  
+> //  
+> // Copyright (C) Microsoft Corporation  
+> // All rights reserved.
+
+> // MainFrm.h : interface of the CMainFrame class  
+> //
+
+> #pragma once
+
+> class CMainFrame : public CFrameWndEx  
+> {  
+> protected: // create from serialization only  
+> CMainFrame();  
+> DECLARE_DYNCREATE(CMainFrame)
+
+> // Attributes  
+> public:
+
+> // Operations  
+> public:
+
+> // Overrides  
+> public:  
+> virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+
+> // Implementation  
+> public:  
+> virtual ~CMainFrame();  
+> #ifdef _DEBUG  
+> virtual void AssertValid() const;  
+> virtual void Dump(CDumpContext& dc) const;  
+> #endif
+
+> protected: // control bar embedded members  
+> CMFCRibbonBar m_wndRibbonBar;  
+> CMFCRibbonApplicationButton m_MainButton;  
+> CMFCToolBarImages m_PanelImages;  
+> CMFCRibbonStatusBar m_wndStatusBar;
+
+> // Generated message map functions  
+> protected:  
+> afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);  
+> afx_msg void OnApplicationLook(UINT id);  
+> afx_msg void OnUpdateApplicationLook(CCmdUI\* pCmdUI);  
+> DECLARE_MESSAGE_MAP()
+
+> };
+
+![](MFCApplication3.tiff)
+
+4) Q: So what do we get if we create a Universal Windows Application?
+
+**WE ARE HERE...**
+
+…
+
+Consider to delve into the options of Visual Studios 2015 to create different types of Desktop GUI Application?
+
+...
+
+{% endraw %}

@@ -1,0 +1,5 @@
+﻿Consdier to make a Darwinet App that enables you to hook up with friends and get help (social interaction) to do boring stuff.
+
+1. Challenge each other to get cleaning done.
+2. Interact during morning routines (send wake-up calls to eachother - voice-mails played at specified time).
+3. tick off tasks as they are done and enable others to follow.

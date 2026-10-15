@@ -1,0 +1,32 @@
+# Todo: Skriv om indignationssjukan och dess oförmåga att skapa förbättring
+
+```#52051083``` *As of 2015-07-30 16:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Indignationen verkar vara många debatters motor i mycket debatt idag. Upprördhet över politikers tillkortakommanden, brist på förväntat resultat av samhällsinstanser och jakten på skyldiga i än det ena än det andra fallet av misslyckanden.
+
+Men indignation är ett mycket kraftlöst instrument för att faktiskt driva fram förändring till ett bättre tillstånd av saker och ting.
+
+1) Indignation saknar riktning. Bara för att man är upprörd, och alltså emot, resultatet eller motiven för någons handlande så pekar man inte automatiskt ut en väg till förändring. Indignation talar bara om vad man inte ville skulle hända (men som alltså har hänt) eller vilka motiv man ifrågasätter (och som man antar varit i spel). Indignationen är alltså en signal att denna typ av handlingar, resultat eller motiv måste upphöra (borde aldrig ha fått tillåtas).  
+2) Indignation argumenterar bara för att bromsa och förhindra. Det som skett skall inte få tillåtas hända igen. Det som pågår måste upphöra. Ett motiv får inte tillåtas. Mer kontroll, sunt förnuft, insikt måste till. Ofta är indignationens föreslagna åtgärd att avsätta någon eller döma någon för lagbrott, avtalsbrott eller bara i största allmänhet för dålig moral eller orättvisa.  
+3) Indignation kan bara föreslå justeringar inom systemet, aldrig föreslå förändringar av systemet (reglerna och målet) som sådant. Eftersom Indignation alltid baseras sig på underförstådda regler om hur saker och ting borde fungera men inte gör det, så kan resultatet av indignation aldrig föreslå att faktiskt ändra på reglerna i sig. Indignationen föds alltid ur en observation (eller spekulation) i att de underförstådda reglerna inte följs och att förvänta utfall inte uppnås.  
+4) Indignationen skyller alltid på någon annan. Man är aldrig indignerad över sina egna handlingar eller åsikter. Därför är den indignerade alltid i någon form ett offer. Om bara den andra hade gjort eller tänk på ett annat sätt (handlat rätt och haft rätt värderingar) så hade den indignerade aldrig blivit drabbad.  
+5) Indignation uppstår bara vid upplevda brott mot existerande och beprövade sätt att göra och tänka. En nytänkare blir sällan indignerad om andra inte håller med. Denne förväntar sig inte i lika hög grad att dennes idéer skall följas eller accepteras utan diskussion och motstånd. men den indignerade förväntar sig detta. Indignationen tjänar alltså alltid till att försvara något som funnits och praktiserats och som ”alla” borde förstå och känna till.
+
+Indignation kan alltså aldrig i sig själv vara en drivkraft för att skapa nya vägar bort från icke önskvärda tillstånd. Den talar inte för att öppna upp för nya sätt att agera eller tänka hos andra. Den talar ännu mindre om att förändra den indignerades sätt att handla och tänka.
+
+Några exempel på indignation.
+
+a) SD-väljare känner stor indignation att den så kallade pk-maffian eller vänster-pressen dels inte gör sig till språkrör för den ”sanning” som de för fram, dels att de ”förbjuder” deras åsikter som omoraliska. Denna indignation talar om att sanningen mörkas och att det är en konspiratorisk (omoralisk) avsikt bakom detta agerande.  
+b) Det etablerade politiska etablissemanget är indignerade över de åsikter SD för fram. SD borde helt enkelt sluta upp att tycka ”fel”. De borde helt enkelt ”förstå” att så kan man inte tycka och att konsekvenserna av deras förslag blir mer eller mindre ”onda”.  
+c) När tågen är försenade och rälsen inte underhålls tillräckligt så rasar pressen indignerat att detta är inte OK. Varför gjorde inte den-och-den det-och-det. Varför slarvas våra skattepengar bort? Vem är ansvarig? Varför tillät denne att detta kunde ske?  
+d) All form av politikerförakt är baserat på indignation. Man spekulerar i politikers motiv och att brister i dessa ligger bakom varför samhället inte levererar tillräckligt bra tjänster till medborgarna.  
+e) Förakt för höga direktörslöner och rikas makt och privilegier är indignation. Man spekulerar i att de borde förstå att ta ett högre moraliskt ansvar.  
+f) Kvinnorörelse visar stor indignation över att män har mer makt och högre lön. Hur kan män acceptera denna ordning? Varför gör inte män mer för att koma tillrätta med denna orättvisa?  
+g) Miljörörelsen visar indignation över hur vi blint producerar och konsumerar långt över vad som är hållbart (eller ens rättvist). Vi rika borde inse och ta vårt ansvar och inte shoppa på det sätt vi gör. Hur kan vi köpa en T-short för 100 SEK när vi vet att det är barn som tillverkat den; att tillverkningen förorenar stora mängder dricksvatten; att tillräckliga löner inte betalas ut och att priset för miljöförstöringen inte räknas in?
+
+Problemet med indignation är inte att indignationen is sig inte är rättfärdig. Indignation är en stark och mycket reell signal om att något inte är som vi vill att det skall vara. Men vi måste inse att den bara kan vara en startpunkt. För att komma vidare måste alltid nästa steg bli att våga öppna sig för nya sätt att se på problemen. Är indignationen berättigad utifrån de mål vi har med samhället och våra egna liv? Vad är det Indignationen försöker beskydda och är beskydd av detta verkligen rätt? Är indignationens måltavla verkligen orsaken till det oönskade tillståndet?Om inte, hur kommer vi vidare till ett tillstånd där vi inte behöver vara indignerade?
+
+{% endraw %}

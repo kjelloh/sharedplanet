@@ -1,0 +1,65 @@
+﻿
+	==> Also see "Todo: Consider colour design tool chains Image -> RGB -> NCS colour codes on moodboards"
+	==> Also see "Todo: Consider to design a DIY "Color Reader" that can tell the NCS code of a surface like a wall, a fabric or some other (non glossy?) surface like the "NCS Colourpin SE"?"
+	==> Also see "Todo: Consider to document how I have painted my Apartment?"
+	==> Also see "Todo: Consider to understand the NCS (Natural Colour System) basics from the short tutorial on their site?"
+	==> Also see "Todo: Wall Painting - Consider to use Lime Wash (Swedish Kalkfärg) on my tv-room wall to get a more "alive" texture?"
+	==> Also see "Todo: Wall Painting - Consider to what degree the NCS Colour System is a colur coding system I can use to define colour of paint I buy from different vendors?"
+	==> Also see ""
+
+
+1) Consider to buy the green screen fabric?
+
+	==> Consider the fabrics of different sizes by (https://eventgross.se/shop/greenscreen/chromasoft/ <https://eventgross.se/shop/greenscreen/chromasoft/> )?
+
+
+CromaSoft 3m wide fabric from eventgross.se <http://eventgross.se/> for 210 SEK per m.
+
+"ChromaSoft
+
+Vår absolut mest sålda greenscreen. Produktionsbolag från hela norden jobbar med denna duk. Mjuk och följsam textil, men ändå kraftig. Flamskyddad. Bredden ligger på 3 meter."
+
+
+ChromaStretch från eventgross bredd 215 cm 320 SEK per meter (https://eventgross.se/shop/greenscreen/chromastretch/ <https://eventgross.se/shop/greenscreen/chromastretch/> )
+
+"ChromaStretch
+
+Greenscreen i stretch som skapar en skrynkelfri bakgrund till film och foto vid chromakey. Bredden är hela 215 cm.
+Spänns enkelt ut med hjälp av klämmor. "
+
+
+
+
+	==> Consider the 3x3 m Green Screen sold by Kjell&Co (https://www.kjell.com/se/produkter/dator/gaming/streaming-tillbehor/greenscreen-3x3-m-p57190?gclid=CjwKCAiAv4n9BRA9EiwA30WNDz2AowqE5bwOywtGlQP-Di8bVx1hHSFA76gz20tULl6SlRAP-FamIxoCpEgQAvD_BwE&gclsrc=aw.ds <https://www.kjell.com/se/produkter/dator/gaming/streaming-tillbehor/greenscreen-3x3-m-p57190?gclid=CjwKCAiAv4n9BRA9EiwA30WNDz2AowqE5bwOywtGlQP-Di8bVx1hHSFA76gz20tULl6SlRAP-FamIxoCpEgQAvD_BwE&gclsrc=aw.ds> )?
+
+
+Kjell & Company 3x3 m Green Screen NO STAND
+
+2) Consider a RGB and/or NCS encoding of a "good" green screen fabric?
+
+It is a bit unclear from a quick web survey but using my NCS ColourPIN to NCS sRGB (close to standard RGB?) to scan my NCS Index green colours and the EncolorPedia (https://encycolorpedia.se/paints?color=5a5f34 <https://encycolorpedia.se/paints?color=5a5f34> )website I kind of get that a close enough "Green Screen" could be something like RGB #00FF00 (pure RGB green) which is something like NCS S0560-G20Y (20% yellowish green) or RGB #00b140 that seems to be named "Green Screen" which is around NCS S1070-G10Y.
+
+Finally "Pure" NCS Green like S2060-G seems to be sRGB #009F6B which Colorpedia translates to NCS S2050-G (Close enough) :)
+
+My transformations between NCS index colours and RGB colours using ColourPIN (P) and Colorpedia website (E)
+
+3) It seems the colour "" is RGB and presumably close to a "Good" green screen colour /https://www.chromawall.com/blog//chroma-key-green <https://www.chromawall.com/blog//chroma-key-green> )?
+
+"Chroma green is valued at approximately 354C on the pantone color matching system (PMS). The green screen hex code is #00b140. Green screen RGB is: 0,177,64. Green screen CMYK is: 81,0,92,0. Green screen websafe color is: #009933  "
+
+
+	==> It seems there is also a "DigitalGreen" used for Green Screening in digital film production with RGB  #44C553 (http://www.hollywoodprops.co.nz/expendables/keying-products/filmpro-digital-green-10l/ <http://www.hollywoodprops.co.nz/expendables/keying-products/filmpro-digital-green-10l/> , http://www.perbang.dk/rgb/44C553/ <http://www.perbang.dk/rgb/44C553/> )?
+
+"Resene FilmPro professional set paint is a tough 100% acrylic flat finish designed to colour and enhance sets. With excellent intercoat and substrate adhesion, the Resene FilmPro range includes a selection of vibrant colours commonly used on sets, including Digital Blue, Digital Green, Chroma Key Blue (Resolution Blue), and Chroma Key Green (Japanese Laurel)."
+
+4) Consider to use my ColourPIN to by a green screen fabric from say IKEA?
+
+	TODO: Visit IKEA with my ColourPIN and sample some green fabrics for one close to NCS G..G20Y and/or RGB #00B140 or #00FF00?
+
+	==> It seems Digital Green RGB #44C553 is close to NCS S0570-G20Y (https://encycolorpedia.com/paints?color=44c553 <https://encycolorpedia.com/paints?color=44c553> )?
+
+	==> 201104 - Visited IKEA and found only some curtains that was "greenish", there was NO green fabric on shelf?
+
+
+
+...

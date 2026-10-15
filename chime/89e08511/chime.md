@@ -1,0 +1,17 @@
+# Todo: Explorer Darwinet options for local network p2p protocols (e.g. Bluetooth, wifi)
+
+```#89e08511``` *As of 2015-09-18 16:57*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+To really leverage Darwinet ability to get access to shared data from local nodes we need to find available protocols that enables local p2p communication.
+
+1) How does apple p2p over wifi work? Is that protocol open to implement or use?  
+2) What can we use Bluetooth for?  
+3) Can we leverage in web-site event driven mechanism? Like having two nodes open the same Darwinet-enabled web-page and having receiving node being told of sending node data using web-event mechanisms (e.g. Ajax)?  
+..
+
+Skickat från min iPhone
+
+{% endraw %}

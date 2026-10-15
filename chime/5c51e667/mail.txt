@@ -1,0 +1,17 @@
+﻿There seem to be vertical wind turbine and power system providers available online?
+
+	==> Also see “Todo: Wind Energy - Consider to try and train a neural network to optimise the power output of a wind turbine?"
+	==> Also see “Todo: DIY MPPT - Consider to study, understand and try out building my own Maximum Power Point Tracker (MPPT) Lithium Ion battery charging manager?"
+
+1) Consider the chines company “Mars Rock Solar”  on Aliexpress (https://www.aliexpress.com/store/400691?spm=2114.12010612.0.0.7f6acdhzvInS)?
+
+	==> Consider this cool vertical wind turbine (https://www.aliexpress.com/store/product/Vertical-Axis-Wind-Turbine-Generator-VAWT-100W-12-24V-F-Series-Light-and-Portable-Wind-Generator/400691_32570731927.html?spm=2114.10010108.1000023.5.50f720baoUULxR)?
+
+	==> They seems to have a range of different vertical windmills?
+
+
+
+	==> They also seem to provide MPPT controllers for solar and wind (https://www.aliexpress.com/store/group/MPPT-wind-solar-controller/400691_506984009.html?spm=2114.12010608.0.0.6a3dfffbYtutmz)?
+
+…
+

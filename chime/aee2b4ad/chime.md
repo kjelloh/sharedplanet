@@ -1,0 +1,73 @@
+# Todo: Consider to document the stop of my ODroid HC1 and HC2
+
+```#aee2b4ad``` *As of 2019-03-15 15:27*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what do I need to do to get my ODroid HC1 and HC2 “NAS” servers up and running?
+
+==&gt; It seems a Linux Image with OpenMediaVault can be dowloaded here (<https://sourceforge.net/projects/openmediavault/files/Odroid%20images/> )?
+
+==&gt; It seems I “only” has a plain XU4 Linux image like the one found here (<https://wiki.odroid.com/odroid-xu4/os_images/linux/ubuntu_4.14/ubuntu_4.14> )?
+
+==&gt; It seems any XU4 Linux image will be compatible with the HC 2 (<https://www.odroid.co.uk/ODROID-HC2> )?
+
+> “Any OS for XU4 is fully compatible with the HC2. <https://wiki.odroid.com/odroid-xu4/os_images/os_images>"
+
+==&gt; It seems I can ssh to the HC2 linux server as described here (<https://support.rackspace.com/how-to/connecting-to-linux-from-mac-os-x-by-using-terminal/> )?
+
++ I installed the 3,3” HDD into the HC2
+
++ I Inserted the SSD I purchased with the HC2
+
+==&gt; It seems I have ordered the Odroid XU4 Linux distribution (<https://wiki.odroid.com/odroid-xu4/os_images/linux/start> )?
+
+2 hours later!
+
++ I still have not been able to connect to the web interface of the ODroid!
+
++ I used an IP scanner “Superscan IP Scanner” that was free and figured out the IP address of the HC2 was probably 10.0.1.16 (device named “wibrain”).
+
++ But the browser rejects any connection.
+
++ Trying to curl to the HC2 also fails (connection
+
++ I Succeeded to connect to the ODroid HC2 Linux (too a while to figure out how)
+
+==&gt; It seems the root password is “odroid” (<https://wiki.odroid.com/odroid-xu4/os_images/linux/ubuntu_4.14/20181203-minimal#access_credentials> )?
+
+  
+> ## Access Credentials<https://wiki.odroid.com/odroid-xu4/os_images/linux/ubuntu_4.14/20181203-minimal#access_credentials>
+
+  
+> Username Password root odroid
+
+> Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ ssh [root@10.0.1.16](mailto:root@10.0.1.16)  
+> [root@10.0.1.16](mailto:root@10.0.1.16)'s password:  
+> Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 3.10.103-124 armv7l)
+
+> \* Documentation: <https://help.ubuntu.com>  
+> \* Management: <https://landscape.canonical.com>  
+> \* Support: <https://ubuntu.com/advantage>
+
+> 279 packages can be updated.  
+> 0 updates are security updates.
+
+> \*\*\* System restart required \*\*\*
+
+> The programs included with the Ubuntu system are free software;  
+> the exact distribution terms for each program are described in the  
+> individual files in /usr/share/doc/\*/copyright.
+
+> Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by  
+> applicable law.
+
+> Last login: Tue Oct 11 12:22:59 2016  
+> root@odroid:~#
+
+==&gt; Consider this youtube video “Odroid HC1 & HC2 NAS SBCs” that seems to show the basics to get up and running the HC1 and HC2 (<https://www.youtube.com/watch?v=AtHzhtkxIc8> )
+
+...
+
+{% endraw %}

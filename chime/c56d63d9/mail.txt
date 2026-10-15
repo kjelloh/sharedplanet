@@ -1,0 +1,49 @@
+﻿
+
+1) It seems one can set the "working directory" to be used when running a built c-code console application in <Product>/<Scheme>/<Edit Scheme>, tab <Options> and feature "Use custom working directory"?
+
+	==> It seems the setting "$(PROJECT_DIR)" makes the application run in root directory where the xcode project file resides? 
+
+
+
+
+
+
+	==> With this Scheme setting the following directory content works with the following c-code?
+
+
+
+int main(int argc, char *argv[])
+{
+    {
+        // Trace code to detect the runtime traits of this app when it is run
+        char cwd[PATH_MAX];
+        if (getcwd(cwd, sizeof(cwd)) != NULL) {
+            printf("Current working dir is: %s\n", cwd);
+        } else {
+            perror("getcwd() error");
+            return 1;
+        }
+    }
+    FILE *fp;
+    int ec;
+
+    fp = fpIn = fopen("resources/test.rtf", "r");
+    if (!fp)
+    {
+        printf ("Can't open test file!\n");
+        return 1;
+    }
+    if ((ec = ecRtfParse(fp)) != ecOK)
+        printf("error %d parsing rtf\n", ec);
+    else
+        printf("Parsed RTF file OK\n");
+    fclose(fp);
+    return 0;
+}
+
+Current working dir is: /Users/kjell-olovhogdal/Resilio Sync/XCode/MyRTFReader
+This is a Heading 1This is some body text.Parsed RTF file OK
+Program ended with exit code: 0
+
+...

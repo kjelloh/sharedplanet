@@ -1,0 +1,51 @@
+﻿It seems the Vruzend DIY battery kit is an alternative no-soldering system for assembling Li-Ion cells into battery modules?
+
+	==> Also see "Todo: Mobile 1kWh Battery - Consider to build a LiPo 1 kWh mobile battery power bank from Jehu Garcia DIY kits?"
+
+1) Consider the youtube video "New & improved Vruzend V2.1 no-weld 18650 kit" (https://www.youtube.com/watch?v=rylbFnTgFI8&t=1s <https://www.youtube.com/watch?v=rylbFnTgFI8&t=1s> )?
+
+
+2) The Vruzend DIY battery kit seem to be available here (https://vruzend.com <https://vruzend.com/> )?
+
+
+
+	
+	==> It seems each kit Vruzend Kit is $36 + shipping and is for 30 cells (https://vruzend.com/product/vruzend-battery-kit-v2-0/ <https://vruzend.com/product/vruzend-battery-kit-v2-0/> )?
+
+	
+	The Vruzend 30 cell V2.1 kit
+
+"Each basic kit includes:
+
+	• 60 cell terminal blocks with nickel coated copper alloy spring contacts (enough for 30 18650 cells)
+	• 60 screw terminals and nuts
+	• 80 pure copper bus bars coated in pure nickel for corrosion resistance and high conductivity
+	• 4 main wire clamps (for charge/discharge wires)
+	• 4 cable tie straps for securing the pack"
+
+	==> It seems the Vruzend web store also cells hexagonal 18650 holders in kits for 30 cells (https://vruzend.com/product/hexagonal-18650-battery-holders-3-cell/ <https://vruzend.com/product/hexagonal-18650-battery-holders-3-cell/> )?
+
+		NOTE: The Vruzend Hexagonal 18650 battery holders requires a separate solution to connect the batteries (e.g. spot welding)
+
+	
+	The Vruzend Hexagonal 18650 battery holders (30 cell pack)
+
+"What’s in the box?
+
+	• 20 pieces of 3-cell holders (enough to hold 30 cells)"
+
+3) It seems to get shipping to Sweden I need to e-mail them for more information (https://vruzend.com/international-orders/ <https://vruzend.com/international-orders/> )?
+
+
+
+	...
+
+4) Consider the book "DIY Lithium Batteries: How to Build Your Own Battery Packs"
+
+	==> The book "DIY Lithium Batteries: How to Build Your Own Battery Packs" seems to be available on Amazon (https://www.amazon.com/gp/product/0989906701/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=mlt0b-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0989906701&linkId=45c3806c7722e2e9ea823b075707e402 <https://www.amazon.com/gp/product/0989906701/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=mlt0b-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0989906701&linkId=45c3806c7722e2e9ea823b075707e402> )?
+
+	
+
+	==> The book "" seems to be available from Bokus (https://www.bokus.com/bok/9780989906708/diy-lithium-batteries-how-to-build-your-own-battery-packs/ <https://www.bokus.com/bok/9780989906708/diy-lithium-batteries-how-to-build-your-own-battery-packs/> )?
+	
+

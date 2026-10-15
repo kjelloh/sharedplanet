@@ -1,0 +1,25 @@
+﻿Could it be a good idea to view a C++ template as an optional type and a type as an optional value?
+
+1) Consider how this may be a way to layer templates on top of types on top of values?
+
+	Template: 	List
+
+	Type: 		List<int>
+
+	Value:		List<int> l;
+
+2) Consider the Compiler is able to perform Compile Time computation on all these three levels (creating a separation between compile-time and runt-time actions)?
+
+				Compile Time		Run Time
+
+	Template: 	List
+
+	Type: 		List<int>
+
+	Value:		List<int> my_list;	List_Type my_list;
+
+…
+
+Consider to elaborate on this idea of ”layered” compile-time mechanisms template = optional type, type = optional value?
+...
+

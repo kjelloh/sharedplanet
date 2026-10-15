@@ -1,0 +1,24 @@
+# Todo: Consider if in fact we all believe, know and trust the same model of reality and the difference we experience is the real illusion?
+
+```#763c5b69``` *As of 2020-01-07 23:37*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+We all seem to interact with reality more or less within a small set of different modes of action so then the story we tell about what we hold true is in fact about the same thing and it just sounds different?
+
+> *Just as an amusing stance I want to claim that maybe, despite how different we sound when we explain, we all in fact believe and trust very much the same things about reality? So much so that even Sam Harris models reality more or less exactly as any religious human being on the globe (and vice versa)?*
+
+> *At first this seems just like a crazy theory that we can easily shoot down with some simple observations about the conflicting truth claims, right? But is it really that easy? We must consider the possibility that although they on the surface seem to model reality quite differently. This still does not mean that these different models does not fit the same underpinning reality "out there". For one, we can not so readily just observe and then use the observations as claims to shoot the others truth claim down. Why? Well because a Sam Harris and say a Christian or Muslim would use quite different observations. So the argument about who is right does not seem to be about deduction from premises. The conflicting truth claims themselves live in very different systems of premises. So much so that in fact we can argue that they actually do NOT contradict each other. Maybe a model of reality as defined by the existence of God can be shown to be isomorphic with the Model of reality as a deterministic universe operating as defined by natural science laws expressed in mathematics?*
+
+> *It is interesting to listen to Sam Harris and Daneil Dennett and compare with how John Vervaeke, Jordan B Peterson and Paul VanderKlay talks about the "same" reality but seems to pick very different sets of postulates and observations to reason about. Whats if we can actually show that there are good reasons to believe they all experience the very exact same reality. They just model it differently, finds different "things" to exist giving them different names and thus just sound as if their explanations are in conflict?*
+
+> *One argument to why we may expect this to be the case is that as human beings we all have the same evolved "machinery" to interact with reality and thus we should expect just by surviving and coping with society their idea of what is "real" and how this "reality" works can NOT be that different?*
+
+> *In fact, all this talk about human cultures being so different. Is that actually still true if we just observe how humans treat each other and how they interact with the physichal reality? We all learn to walk and to talk. We all experience space and time. We all eat the same things within a quite small set of foods available to us. The few examples I have seen any human from any culture seem to be able to interact in simple work and social activities even if they do not speak the same language. Simply put - SO MUCH seems to be "the same" in our model of each others and reality at large that you are allowed to raise the question if we actually differ at all?*
+
+> *So then - What is God a model of that is also present in Sam Harris model of reality? Can we somehow look at the model of reality as implied in Christianity and map its topology and operations to Sam Harris Moral Landscape, Free Will and Deterministically framed conscious experiences to find that they actually describe the same or just different parts of our common reality we already know and trust (although only in our actions and just not aware in our expression in language)?*
+
+> *...*
+
+{% endraw %}

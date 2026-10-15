@@ -1,0 +1,46 @@
+# Todo: Consider to record the data for my TS100 soldering iron so I can DIY power supply and other accessories for it?
+
+```#864b9dc4``` *As of 2019-07-27 11:23*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I need a way to power my TS100 so I should write down the data of it so I can plan how to do this and optionally DIY other accessories for it.
+
+==&gt; Also see "Todo: Consider to check out Chineese Min company that sell those mini screwdriver, soldering iron and oscilloscope that Macro Reps done reviews on?"
+
+1) It seems the TS100 is powered through a male DC plug 5.5 x 2.5 mm (<https://www.banggood.com/sv/XT60-Male-Bullet-Connector-to-Male-DC-DC5525-Power-Cable-for-TS100-Electronic-Soldering-Iron-p-1219960.html?gmcCountry=SE&currency=SEK&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgs&utm_content=xibei&utm_campaign=pla-se-all-sv-pc&ad_id=324452396392&gclid=CjwKCAjw7O_pBRA3EiwA_lmtfoPeZQJNUzlyF8f0ajGSaoIoJTyxP32QRa0W9iqMOFNejqbPvVbuURoCbK4QAvD_BwE&cur_warehouse=USA> )?
+
+![](<Screenshot 2019-07-27 at 10.59.16.png>)
+
+*An example of an XT60 to Male DC 5.5 x 2.5 mm plug that can power the TS100 soldering iron*
+
+2) It seems the TS100 lives here on Bangood (<https://www.banggood.com/MINI-TS100-Digital-OLED-Programmable-Interface-DC-5525-Soldering-Iron-Station-Built-in-STM32-Chip-p-984214.html?akmClientCountry=SE&bid=48475&cur_warehouse=CN> )?
+
+![](<Screenshot 2019-07-27 at 10.55.34.png>)
+
+*The TS100 soldering iron by the Min company on BAngood*
+
+![](<Screenshot 2019-07-27 at 10.56.19.png>)
+
+*The TS100 soldering iron is powered through a female DC 5525 inlet (is powered by a Male DC plug 5.5 x 2.5 mm)*
+
+![](<Screenshot 2019-07-27 at 11.00.40.png>)
+
+*The TS100 soldering iron is stated to be compatible with "standard" DC power adapters that provides 12V to 24V*
+
+3) Consider I seem to have at least one power adapter that I can use to power my DC100 soldering iron?
+
+==&gt; It seems the AC power adaptor for my old LEPTO lap to is almost perfect to power my TS100 soldering iron?
+
+![](IMG_4650.jpeg)
+
+*My LEPTO Lap Top AC power adaptor provides 19V and 4.7 A which is around 90W (and in range 12V - 24V that the TS100 soldering iron accepts)*
+
+![](IMG_4651.jpeg)![](IMG_4653.jpeg)
+
+*My LEPTO Lap Top AC power adaptor provides power through a Male DC 5.5 x 2.5 mm plug (so it should fit the TS100 Female 5.5 x 2.5 mm DC inlet)*
+
+...
+
+{% endraw %}

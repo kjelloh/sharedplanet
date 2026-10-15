@@ -1,0 +1,85 @@
+﻿Tinning the code below in Xcode on Macbook Air I get strange outputs (some chars seem to be > 255)?
+
+1) Q: Why does this code generate the strange output of characters with values > 255?
+
+auto myNullTerminatedUnicodeString = u8"VÄLKOMMEN";
+        auto iter = &myNullTerminatedUnicodeString[0];
+        std::cout << "*iter type is " << typeid(*iter).name() << "\n";
+        std::cout << "*iter size is " << sizeof(*iter) << "\n";
+
+        std::cout << "\nListing *iter values" << "\n";
+        do {
+            std::cout << *iter << "\n";
+            ++iter;
+        } while (*iter != 0);
+
+        iter = &myNullTerminatedUnicodeString[0];
+        std::cout << "\nListing int ch = *iter values" << "\n";
+        do {
+            int ch = *iter;
+            std::cout << ch << "\n";
+            ++iter;
+        } while (*iter != 0);
+
+        iter = &myNullTerminatedUnicodeString[0];
+        std::cout << "\nListing unsigned *iter values" << "\n";
+        do {
+            unsigned int ch = *iter;
+            std::cout << ch << "\n";
+            ++iter;
+        } while (*iter != 0);
+
+	Output:
+
+*iter type is c
+*iter size is 1
+
+Listing *iter values
+V
+\303
+\204
+L
+K
+O
+M
+M
+E
+N
+
+Listing int ch = *iter values
+86
+-61
+-124
+76
+75
+79
+77
+77
+69
+78
+
+Listing unsigned *iter values
+86
+4294967235
+4294967172
+76
+75
+79
+77
+77
+69
+78
+Program ended with exit code: 0
+	==> Q: How can we get out put ”\303”?
+	==> How can we get output ”-61” and ”-124”?
+	==> How can we get output ” 4294967235” and ” 4294967172"
+
+
+2) Consider to test this code in Visual Studio on Windows 10 (will we get the same result)?
+
+	…
+
+3) Also consider to try the same code on Linux Mate (same output)?
+
+	...
+

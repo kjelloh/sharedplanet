@@ -1,0 +1,18 @@
+# Todo: Relate "balanced view" program to Emdividualism
+
+```#e95b6f76``` *As of 2015-10-08 08:27*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+What would the emdividualistic super curious have to say about the "balanced view" program (https://www.balancedview.org/en/allmedia/?media=4&topic=&album=&sorting=&trainer=&keyword=SEARCH)?
+
+1) What are the benefits this program provides and how does the super curious get access to the same benefits?  
+2) Consider to use the "balanced view" as a case study of self-empowerment and then use that as arguments for core-less-self and act-in-faith?  
+...
+
+Consider to study "balanced view" to find more aspects to use to explain the "illusion of self"?
+
+Skickat från min iPhone
+
+{% endraw %}

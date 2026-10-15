@@ -1,0 +1,26 @@
+# Todo: Consider we live in "Times of Indignation" and how I for some reason does not like nor understand the rationality of allowing indignation to run your actions?
+
+```#ca665b2e``` *As of 2020-11-01 14:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+==&gt; Also see Swedish "Todo: Skriv om indignationssjukan och dess oförmåga att skapa förbättring"
+
+> *So, tje basic idea is that one way to categorise what drives the public debate is Indignation! I find three things of interest here. Firstly how much of what drives public debates are Indignation based. Secondly to what degree the feeling of Indignation is a trustworthy compass to guide our actions. Thirdly why I get indignant when I see people act on indignation! I simply get irritated over the lack of self reflection when people act our in indignation. Especially when it seems to drive how news are reported. As if there must be someone to blame when things are not as good as we should have the right to demand.*
+
+> *A resent Swedish example is the news reporting on how medical protection equipment was destructed during the Corona pandemic. This news is reported from the viewpoint that this is upsetting as at the same time there was a lack of protection equipment for personell in elderly care and hospitals. Surely the destructed equipment could have been used in some form to alleviate the short comings?*
+
+> *==&gt; Also see "**Skyddsutrustning brändes upp i somras**" (*[*https://www.dagensmedicin.se/specialistomraden/medicinsk-teknik/skyddsutrustning-brandes-upp-i-somras/](https://www.dagensmedicin.se/specialistomraden/medicinsk-teknik/skyddsutrustning-brandes-upp-i-somras/) )*  
+> *==&gt; Also see "**Andningsskydd för alla svenskar brändes upp – utan protester**" (*[*https://www.aftonbladet.se/nyheter/kolumnister/a/BRXn37/andningsskydd-for-alla-svenskar-brandes-upp--utan-protester](https://www.aftonbladet.se/nyheter/kolumnister/a/BRXn37/andningsskydd-for-alla-svenskar-brandes-upp--utan-protester) **)*  
+> *==&gt; Also see "**Trots stora bristen – utrustning brändes**" (*[*https://www.expressen.se/nyheter/coronaviruset/trots-stora-bristen-darfor-brandes-skyddsutrustning/](https://www.expressen.se/nyheter/coronaviruset/trots-stora-bristen-darfor-brandes-skyddsutrustning/) **)*  
+> *==&gt; Also see "**Kaliber avslöjar: Skyddsutrustning eldades upp under pandemin**" (*[*https://sverigesradio.se/artikel/7582804](https://sverigesradio.se/artikel/7582804) **)*
+
+> *Another example is the Swedish report how the Swedish Forensic Agency had failed to report DNA samples that was not analysed due to little amount of material provided in the provided sample. Also here the initial stance is how wrong this must be. Surely it is not OK to just disregard these samples without telling the police or the lawyers in the process depending on the result.*
+
+> *==&gt; Also see "**Advokaten: Bortgallringen är allvarlig**" (*[*https://www.svt.se/nyheter/advokaten-bortgallringen-ar-allvarlig](https://www.svt.se/nyheter/advokaten-bortgallringen-ar-allvarlig) )*  
+> *==&gt; Also see "**Bortgallrade dna-spår i NFC:s källare – hade kunnat fälla brottslingar**" (*[*https://www.svt.se/nyheter/inrikes/nfc-s-okanda-metod-gallrar-bort-stora-mangder-dna-spar](https://www.svt.se/nyheter/inrikes/nfc-s-okanda-metod-gallrar-bort-stora-mangder-dna-spar) **)*
+
+> *...*
+
+{% endraw %}

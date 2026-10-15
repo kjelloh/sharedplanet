@@ -1,0 +1,30 @@
+﻿It seems I can enhance my Todo creation process and tools I use?
+
+
+1) Problem Nov 2017
+
+	==> The “Grab” tool creates tiff-images that MAC Mail inserts very inefficiently (they become ver large and even larger when compressed!)
+		==> I have to open them in viewer and export to PNG (which MAC mail inserts very efficiently)
+	==> MAC email attachment setting needs to be set to append and then back to insert to actually allow image pasting at cursor position (MAC bug?)
+		==> Hm… Could it be a global setting in my Mail configuration that overrides the per-mail setting?
+
+		AHA - I I select the Mail main window and go to <Edit>/<Attachments> I can de-seelct the “Always add attachments to end of mail”!
+
+		
+	...
+
+2) Consider to use MAC built in screen grab tool (https://support.apple.com/sv-se/HT201361 <https://support.apple.com/sv-se/HT201361>)?
+
+	==> It seems MAC has built in command options to grab different parts of the screen and user interface?
+
+Shift-Kommando (⌘)-3  Captures Whole screen
+Shift-Kommando (⌘)-4  Part of screen according to follow up actions 
+Drag to capture selected part of screen
+Press <Space>, move to select a window/menu and click to capture a window/menu.
+Part of screen works on menus if they are visible before issuing command.
+
+	==> It saves as PNG to desktop (Great!)
+
+…
+
+Consider to update this Todo when I find new information worth consideration?

@@ -1,0 +1,36 @@
+# Todo: Consider to delve into TED talk “A monkey economy as irrational as ours” by  Laurie Santos about our flaws to make good economic decisions?
+
+```#e8c691fc``` *As of 2016-03-19 11:49*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+In the TED talk “A monkey economy as irrational as ours” (http://www.ted.com/talks/laurie_santos) Laurie Santos seem to sum up quite good the flaws human have in dealing with the world we create for ourselves, explicitly when it comes to economic choices. She touches on the same findings as Kahneman talks about in his book “Think Fast and Slow”.
+
+1) Consider to remember this talk as a reference to argue for the society-of-the-future?
+
+2) She seem to give quite a good summary of what our flaws in economic decision can be understood.
+
+a) We value in relative terms (gains or losses)  
+b) We like gains and averse losses.  
+c) We play it safe to gain but take risks to avoid losses.
+
+3) Can we imagine we should use tools to measure relative some historical point rather than current state?
+
+==&gt; A tool for stock market trading could be to measure relate the price we bought stocks for?  
+==&gt; The trading state of a stock is gain or loss relative what we bought it for (not what it has been worth since then)?
+
+==&gt; The tool should help us have randomness work to our benefit (fight gut feeling of having control)?
+
+==&gt; What else can we imagine a tool could do to adjust (or play on) or flawed biases to our favour?
+
+4) Consider to quote her “...the irony is that it might only be in recognizing our limitations that we can really actually overcome them”.
+
+==&gt; More quotes…?
+
+…
+
+Consider to watch this talk and remember it for future reference to see what we can learn about Emdividuals, Syntheocracy, society-of-the-future and ideas in line with this thinking?  
+...
+
+{% endraw %}

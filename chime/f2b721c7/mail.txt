@@ -1,0 +1,24 @@
+﻿	==> Also see “Todo: Video - Ordering from China through Alibaba web-site"
+
+<script>
+
+Hello. I am Kjell-Olov. I live in outside Stockholm, Sweden, and this is my maker space bootstrap series. Here I tell you about my journey to create a compact living apartment makerspace from scratch.
+Today I’m going to show you how I made a bicycle trainer that harness the produced power into electricity.
+I wanted to buy the motor used by the german guy Thomas Senkel shown in his video “DIY Pedal Generator for Electric Bike or Trike”. I will try to remember to put a link in the show notes.
+As usual in these days the whole thing started with aggressively browsing the web for information on available information, products and providers.
+I ended up finding the products from Keyde on the Alibaba web site. From where I ordered it. How I did this and my experience of doping it I have told in a separate video if you are interested.
+...
+
+<story board>
+
+Clips from my makerspace bootstrap channel
+Clip of working final result (bicycle trainer with electrical generator mounted and working)?
+Cut from Thomas Senkel video
+??
+Clip from browsing motors on Keyde web site.
+...
+
+<show notes>
+
+“DIY Pedal Generator for Electric Bike or Trike” https://www.youtube.com/watch?v=7hfClQh3rxM
+

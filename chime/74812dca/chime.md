@@ -1,0 +1,102 @@
+# Todo: Consider a  renewable energy driven 3D print filament dryer box / chamber (for drying "wet" filaments)?
+
+```#74812dca``` *As of 2022-07-23 14:34*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I may need to dry filament materials like PETG and Nylon but putting them into an electrical drier seems expensive energy wise?
+
+0) Consider the basic idea for a 3D filament dryer box
+
+> *So, the basic idea here is if we can use **renewable energy to dry our filaments?***
+
+> *1) We can imagine to drive the dryer with **rechargeable batteries** (like power tool batteries) so we can charge them from a separate solar panel or other renewable energy harvest device?*
+
+> *2) We can imagine to drive the dryer directly with an **attachable solar panel**?*
+
+> *3) Maybe we can imagine some form of **passive (chemical) drying option** (however environmental friendly that can be)?*
+
+> *4) Or, is refrigerated drying (storing filament in dry but not heated air) the way to go?*
+
+> *The existing Sovol and SUNLU filament driers seems to "simply" heat the filament to between 35 and 50 degrees celsius?*
+
+> *From the interwebs I find that the specific heat fror PLA is 1180 .. 1210 J / (K and Kg)?*
+
+> *If we assume different plastics does not differ so much we can assume an upper limit of specific heat of **say 1.5 KJ per Kelvin and per Kg**?*
+
+> *If we operate the box "indoors" we already should have filaments at at least 18 degrees celsius so we need to heat it up 17 to 32 degrees C?*
+
+> *This would mean for a spool of 1 Kg we must be able to provide 32 degrees C \* 1.5 KJ per Kelvin and per K = 48 KJ.*
+
+> *So we need roughly 50 000 Ws or 50 000 Ws / 3600 s/h = 13.9 Wh, say **roughly 15 Wh**.*
+
+> *now, we need some convenient operating time (15 hours is somewhat slow) so we get 15/2 hours with a 30W heating element or 15/4 hours with a 60W heating element?*
+
+> *This seems to match the claims of the SUNLU filament drier that claims a drying time of **3-6 hours. And a 30W heating element** seems feasable?*
+
+> *Ideally* *we would also like the chamber to be able to determine the moisture contents of filaments in the chamber?*
+
+==&gt; Consider to make the box very good insulated and use some simple but effective heat exchanger to circulate the air in the chamber?
+
+> *The basic idea here is to make the box or chamber well insulated so that we do not waste energy to "heat the room", i.e., make the heat stay in the chamber?*
+
+> *I imagine we need to 1) insulate the chamber and 2) recycle the heat of the air we replace in the chamber to transport the humid out of the box?*
+
+> *OR, maybe we can speed up the drying process by adding some cooled element inside the chamber to have humid condense on and in this way remove water from the filament by drying the air?*
+
+==&gt; Consider we can add some simple **refrigerated dryer** into the chamber to further actually remove water from the air and filament in the chamber?
+
+> *So, the basic idea here is to add some cooled surface inside the chamber to have water condensate on it and thus remove the water from the air and filament?*
+
+> *I imagine a Peltier element attached to a plate of stainless steel and lead the **condensed water "dripping off"** out of the chamber through a simple channel?*
+
+> *E.g., see Wikipedia article chapter "Refrigerated dryers" in (<https://en.wikipedia.org/wiki/Compressed_air_dryer> )?*
+
+> *Actually - question is if it is more energy effective to remove humidity using refrigerated drying rather than just heating? The question here is that with refrigerated drying we cool the air rather than heating the filament. And we can imagine the filament being warmed up again by the surrounding room temperature and 3D printer heated chamber so that will be taken care of without adding anything to the drying chamber?*
+
+> *On the other hand, it may take a very long time for the filament to dry simply by being stored in dry air? Maybe we need to heat the filament to get a reasonable operating speed?*
+
+==&gt; Consider if we can reduce the energy consumption by **drying the filament "on demand"** only?
+
+> *So, depending on the drying time required for a single strand of filament, I imagine we could be tempted to feed the filament going out of the box through a "drying channel" so that we only dry the filament as needed as we print with it?*
+
+> *We can also imagine to try and use a filament tube all the way from the box to the print head into the 3D printer heated chamber to further keep the filament dry?*
+
+> *Actually - we can argue we should be tempted to heat the filament in a feeding tube only? So that we do not heat the filament storage box but instead only while it travels to the 3D printer heated chamber?*
+
+==&gt; Consider to design a **"filament dryer feeding tube"** instead of a dryer chamber for the whole roll of filament?
+
+> *The basic idea here is that by drying the filament on demand by feeding it through a heated feeding tube we can reduce the energy used to dry the filament?*
+
+> *In this way we can also reduce the size and complexity of the dryer (we need only a heated feeding tube of some reasonable length)?*
+
+> *So, will the filament be "dry" as soon as it reaches 50 degrees C or do it also need to be at that temperature for some unknown time?*
+
+> *...*
+
+1) Consider to study the Sovol $52 filament dryer (<https://sovol3d.com/products/large-filament-dryer-box?sca_ref=898171.zxzWJoemPk#> )?
+
+![](PastedGraphic-1.png)
+
+==&gt; It seems Sovol recommends 40-50 degrees for drying filaments?
+
+![](PastedGraphic-4.png)
+
+2) Consider to study the SUNLU 3D filament drying box (<https://www.sunlu.com/products/sunlu-filament-dryer-s1> )?
+
+![](PastedGraphic-2.png)
+
+==&gt; It seems it "simply" heats the filament to between 35 and 50 degrees Celsius?
+
+==&gt; It seems they claim a drying time between 3-6 hours?
+
+> *"**The default continuous drying time of the drying box is 6 hours, and you can also manually set the drying time. The time setting range is 0~24 hours. Commonly used 3D filament on the market under normal circumstances only need 3-6 hours of drying to achieve a good printing experience and printing effect.**"*
+
+3) Consider this article on physical properties of PLA (<https://aip.scitation.org/doi/pdf/10.1063/5.0033857> )?
+
+![](PastedGraphic-3.png)
+
+...
+
+{% endraw %}

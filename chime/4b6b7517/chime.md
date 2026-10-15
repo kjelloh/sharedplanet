@@ -1,0 +1,74 @@
+# Todo: Consider to delve into the Cardano blockchain with F# written contracts and ADA leveraged type system evaluation and proof of computation?
+
+```#4b6b7517``` *As of 2019-06-25 16:46*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider the youtube video "Manuel M T Chakravarty - Keynote - Rethinking Blockchain Contract Development | Lambda Days 19" (<https://www.youtube.com/watch?v=RGJ4FvsUQzo> )?
+
+==&gt; It seems Cardano is a "third generation" blockchain (whatever that means)?
+
+> *"KEYNOTE: RETHINKING BLOCKCHAIN CONTRACT DEVELOPMENT*  
+> *by Manuel M T Chakaravarty*
+
+> *ABSTRACT*  
+> *With the proliferation of blockchain designs, we see a proliferation of proposals for languages and systems to script the rules governing transactions on these blockchains, generally known as smart contract languages. Despite the name, these languages are usually fairly conventional programming languages used to impose constraints on the transactions permitted to transfer assets and manipulate data stored on the blockchain.*
+
+> *Given the high financial stakes and widely publicised exploits on first generation (Bitcoin) and second generation (Ethereum) blockchains, the third-generation Cardano blockchain places a strong emphasis on functional programming and formal methods. This includes a new approach to contract languages based on state-of-the art research in programming languages and the increased safety provided by functional programming. The benefits of functional programming go even further: instead of having to invent yet another custom language, we simply use Haskell for the job, we design a superior blockchain architecture, and we seamlessly combine on-chain and off-chain computations."*
+
+==&gt; It seems they use F# to leverage an existing language (and to get functional programming with transpiling to .NET, JavaScript and possible other run-time platforms)?
+
+![](<Screenshot 2019-06-25 at 14.40.00.png>)
+
+*The "Traditional" blockchain is the consensus approved Ledger*
+
+![](<Screenshot 2019-06-25 at 14.41.10.png>)
+
+*Cardano is a functional computed Cryptographic ledger with F# for ON-chain and Off-chain contract execution, Proof of Stake Consensus and formal validation (with ADA)*
+
+![](<Screenshot 2019-06-25 at 14.44.39.png>)
+
+*Cardano Ledger is represented as Dataflow Graphs than lends to functional computation*
+
+==&gt; It seems they model Cardano to run on an abstract virtual machine that uses System-F omega with recursive types (<https://youtu.be/RGJ4FvsUQzo?t=1648> )?
+
+![](<Screenshot 2019-06-25 at 14.46.26.png>)
+
+*Cardano computation is based on System-F omega with recursive types*
+
+2) The Cardano Blockchain project seems to live on this site (<https://www.cardano.org/en/home/> )?
+
+...
+
+3) Consider the exposed research papers related to the Cardano blockchain project (<https://www.cardano.org/en/academic-papers/> )?
+
+==&gt; Consider the paper "Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol. Aggelos Kiayias∗ Alexander Russell† Bernardo David‡ Roman Oliynykov§ August 21, 2017" (<https://iohk.io/research/papers/#ouroboros-a-provably-secure-proof-of-stake-blockchain-protocol> )?
+
+> *"We present “Ouroboros”, the first blockchain protocol based on proof of stake with rig- orous security guarantees. We establish security properties for the protocol comparable to those achieved by the bitcoin blockchain protocol. As the protocol provides a “proof of stake” blockchain discipline, it offers qualitative efficiency advantages over blockchains based on proof of physical resources (e.g., proof of work). We also present a novel reward mechanism for in- centivizing Proof of Stake protocols and we prove that, given this mechanism, honest behavior is an approximate Nash equilibrium, thus neutralizing attacks such as selfish mining. We also present initial evidence of the practicality of our protocol in real world settings by providing experimental results on transaction confirmation and processing."*
+
+==&gt; Consider the paper "Ouroboros Praos: An adaptively-secure, semi-synchronous proof-of-stake blockchain. Bernardo David⋆, Peter Gaˇzi⋆⋆, Aggelos Kiayias⋆ ⋆ ⋆, and Alexander Russell† November 14, 2017" (<https://iohk.io/research/papers/#ouroboros-praos-an-adaptively-secure-semi-synchronous-proof-of-stake-protocol> )?
+
+> *"Abstract. We present “Ouroboros Praos”, a proof-of-stake blockchain protocol that, for the first time, provides security against fully-adaptive corruption in the semi-synchronous setting: Specifically, the adversary can corrupt any participant of a dynamically evolving population of stakeholders at any moment as long the stakeholder distribution maintains an honest majority of stake; furthermore, the protocol tolerates an adversarially-controlled message delivery delay unknown to protocol participants.*
+
+> *To achieve these guarantees we formalize and realize in the universal composition setting a suitable form of forward secure digital signatures and a new type of verifiable random function that maintains unpredictability under malicious key generation. Our security proof develops a general combinatorial framework for the analysis of semi-synchronous blockchains that may be of independent interest. We prove our protocol secure under standard cryptographic assumptions in the random oracle model."*
+
+==&gt; Consider the paper "Kaleidoscope: An Efficient Poker Protocol with Payment Distribution and Penalty Enforcement. Bernardo David∗ Rafael Dowsley† Mario Larangeira∗" (<https://iohk.io/research/papers/#kaleidoscope-an-efficient-poker-protocol-with-payment-distribution-and-penalty-enforcement> )?
+
+> *"Abstract*
+
+> *The research on secure poker protocols without trusted intermediaries has a long history that dates back to modern cryptography’s infancy. Two main challenges towards bring- ing it into real-life are enforcing the distribution of the rewards, and penalizing misbehav- ing/aborting parties. Using recent advances on cryptocurrencies and blockchain technolo- gies, Andrychowicz et al. (IEEE S&P 2014 and FC 2014 BITCOIN Workshop) were able to address those problems. Improving on these results, Kumaresan et al. (CCS 2015) and Bentov et al. (ASIACRYPT 2017) proposed specific purpose poker protocols that made sig- nificant progress towards meeting the real-world deployment requirements. However, their protocols still lack either efficiency or a formal security proof in a strong model. Specifi- cally, the work of Kumaresan et al. relies on Bitcoin and simple contracts, but is not very efficient as it needs numerous interactions with the cryptocurrency network as well as a lot of collateral. Bentov et al. achieve further improvements by using stateful contracts and off-chain execution: they show a solution based on general multiparty computation that has a security proof in a strong model, but is also not very efficient. Alternatively, it proposes to use tailor-made poker protocols as a building block to improve the efficiency. However, a security proof is unfortunately still missing for the latter case: the security properties the tailor-made protocol would need to meet were not even specified, let alone proven to be met by a given protocol. Our solution closes this undesirable gap as it concurrently: (1) enforces the rewards’ distribution; (2) enforces penalties on misbehaving parties; (3) has efficiency comparable to the tailor-made protocols; (4) has a security proof in a simulation-based model of security. Combining techniques from the above works, from tailor-made poker protocols and from efficient zero-knowledge proofs for shuffles, and performing optimizations, we ob- tain a solution that satisfies all four desired criteria and does not incur a big burden on the blockchain.**"*
+
+==&gt; Consider the paper "SCRAPE: Scalable Randomness Attested by Public Entities. Ignacio Cascudo1⋆ and Bernardo David23⋆⋆1 Aalborg University, Denmark 2 Aarhus University, Denmark 3 IOHK, Hong Kong" (<https://iohk.io/research/papers/#scrape-scalable-randomness-attested-by-public-entities> )?
+
+> *"Abstract. Uniform randomness beacons whose output can be publicly attested to be unbiased are required in several cryptographic protocols. A common approach to building such beacons is having a number par- ties run a coin tossing protocol with guaranteed output delivery (so that adversaries cannot simply keep honest parties from obtaining random- ness, consequently halting protocols that rely on it). However, current constructions face serious scalability issues due to high computational and communication overheads. We present a coin tossing protocol for an honest majority that allows for any entity to verify that an output was honestly generated by observing publicly available information (even af- ter the execution is complete), while achieving both guaranteed output delivery and scalability. The main building block of our construction is the first Publicly Verifiable Secret Sharing scheme for threshold access structures that requires only O(n) exponentiations. Previous schemes re- quired O(nt) exponentiations (where t is the threshold) from each of the parties involved, making them unfit for scalable distributed randomness generation, which requires t = n/2 and thus O(n2) exponentiations."*
+
+==&gt; Consider the paper "Non-Interactive Proofs of Proof-of-Work. Aggelos Kiayias1, Andrew Miller2, and Dionysis Zindros3" (<https://iohk.io/research/papers/#non-interactive-proofs-of-proof-of-work> )?
+
+> *"Abstract. Open consensus protocols based on proof-of-work (PoW) mining are at the core of cryptocurrencies such Bitcoin and Ethereum, as well as many others. In this work, we construct a new primitive called Non-Interactive-Proofs-of-Proof-of-Work (NIPoPoWs) that can be adapted into existing PoW-based cryptocurrencies to improve their performance and extend their functionality. Unlike a traditional blockchain client which must verify the entire linearly-growing chain of PoWs, clients based on NIPoPoWs require resources only logarithmic in the length of the blockchain. NIPoPoWs are thus succinct proofs and require only a single message between the prover and the verifier of the transaction.*
+
+> *With our construction we are able to prove a broad array of useful predicates in the context of cross PoW-based blockchain transfers of assets, including predicates about facts buried deep within a blockchain which is necessary for the basic application of accepting payments. We provide empirical validation for NIPoPoWs through an implementation and benchmark study, in the context of two new applications: First, we consider a multi-client blockchain that supports all proof-of-work currencies rather than just one, with up to 90% reduction in bandwidth. Second, we discuss a “cross-chain ICO” application that spans multiple inde- pendent blockchains. Using our experimental data, we provide concrete parameters for our scheme."*
+
+...
+
+{% endraw %}

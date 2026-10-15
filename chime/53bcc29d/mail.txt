@@ -1,0 +1,147 @@
+﻿In my quest to reach a decision if the mac Pro 6.1 with twin D700 graphics cards are any useful in todays computing I want to understand what the GPU processing applications can utilise and require these days?
+
+-1) Consider my current “best bet” on what to aim for for my future computer?
+
+	==> Consider it seems Apple is no longer a good wagon to be on (they seems to aim for proprietary chips and Metal GPU apis)?
+
+Thinking out loud: “So, with the feeling that Apple no longer builds machines that last (lower shorter living hardware) combined  with the signs that indicates Apple is moving more and more down the proprietary rabbit hole while simultaneously providing more and more expensive solutions, I have every reason to doubt Apple to be able to produce the products I want to use?"
+
+	==> Given this back drop - Do I still think buying a Mac Pr 6.1 “trash can” a good idea?
+
+Thinking out loud: “I still trust the Mac Pro 6.1 to be very good designed hardware that will last for a long time. It seems to be the machine I wished Apple would still produce and update with high performance computing powers. It is built to compute with heavy loads whilst staying cool, error free and quiet. But what happens if Apple stops supporting the hardware? What If I can no longer use its computing abilities for video editing and Deep learning processing? I suppose it depends on what will happen with Metal and if apple will continue support of Metal for the D700 graphics cards in there?"
+
+1) Consider this article on GPU Deep Learning (https://blog.inten.to/hardware-for-deep-learning-part-3-gpu-8906c1644664 )?
+
+	==> It seems Deep Learning is mostly done on Nvidia GPUS and NOT on AMD GPUs?
+
+“Among GPUs the NVIDIA ones are beyond comparison, because almost every DL framework supports NVIDIA GPUs while have no support of AMD GPUs. So AMD almost lost this battle. "
+
+	==> It seems when messing FLOP we need to distinguish between what kind of operation we are actually measuring (where 32 bit floating point, FP32 is the one mostly referred to)?
+
+“Important: This is FP32, a single-precision float, performance. This is not the only option to measure, you’ll learn about FP16/FP64/INT8 soon. So, you may see other charts with larger numbers. But anyway, FP32 is a good common ground, because you’ll see that there are many caveats with others."
+
+	==> It would seem the Firepro D700 3.5 teraflops is a very slow GPU in todays market of GPUs (ranging in 8…16 teraflops)?
+
+	
+
+2) Consider sources to understand the jungle of graphics frameworks, the AMD vs Nvidia war and Apple support for OpenCL, Metal and drivers?
+
+	==> Consider the CopperSpice youtube channel video “Evolution of Graphics Technology” (https://www.youtube.com/watch?v=u5SNd9sKn94 )?
+
+		==> It seems one current path is to use MoltenVK and GLOVE to run OpenGL ES (embedded systems) to run on Apple Metal (https://youtu.be/u5SNd9sKn94?t=654 )?
+
+		
+		MoltenVK: Vulcan -> Metal and GLOVE: OpenGL ES -> Vulcan
+
+		==> It seems at around 2014 graphics card vendors started to address the problem of OpenGL/CL to be bloated and unable to feed commands fast enough to the GPU (https://youtu.be/u5SNd9sKn94?t=524 )?
+
+		
+		OpenGL successors that where multi threaded for better performance (as opposed to single threaded OpenGL)	
+
+		==> It seems Vulcan is the Khronos group update of previous AMD Mantle (https://youtu.be/u5SNd9sKn94?t=598 )?
+
+		
+
+2) Consider to understand what the AMD D700 in MAC Pro 6.1 actual are in terms of existing consumer ADM graphics cards?
+
+	==> Consider this article “The Mac Pro: So what’s a D300, D500 and D700 anyway? We have answers” /https://architosh.com/2013/10/the-mac-pro-so-whats-a-d300-d500-and-d700-anyway-we-have-answers/ )?
+
+		==> It seems the D700 is basically an AMD W9000 at a slightly lower clock frequency (resulting in D700 3.5 teraflops vs W9000 4 teraflops)?
+
+“So here’s the easiest part. The D700 has exact spec matches to the FirePro W9000, AMD’s highest performing workstation class GPU. Notable specs for both the D700 & W9000 include:
+
+	• 2048 Stream Processors (texture mapping units/unified shaders)
+	• 384-bit memory bus width
+	• 264 GB/s memory bandwidth
+	• 6 GB Vram GDDR5
+
+The W9000 specs at 4 teraflops single precision while Apple has the D700 at 3.5 teraflops. This could be because of a frequency delta for the core clock. On the W9000 it specs at 975 MHz core clock speed. Perhaps on the D700 it runs at 900? D700 is a Tahiti-based GPU.
+"
+
+	==> It seems originally the D700 in Mac Pro 6.1 was optimised for OpenCL?
+
+	==> But now Apple has ditched the support for OpenCL (as of Mac OS 10.14)?
+
+	==> Consider this article that seems to suggest the D700 is functionally an AMD 7970 (https://www.reddit.com/r/Amd/comments/8uq17y/what_about_the_future_of_radeon_in_macos_systems/ )?
+
+“The D300, D500 and D700's used in the Mac Pro trash-can (2013+) are rebranded Radeon parts. They lack the ECC memory of true FireGL cards and so they are branded as this D series which you can only find inside Apples Mac Pro, you can't get those GPU's anywhere else. This is a concession AMD made to get their cards used in the Mac Pro I feel. Functionally the D700 is a HD 7970."
+
+3) Consider Apples support page on OpenCL and OpenGL implementation (https://support.apple.com/sv-se/HT202823 )?
+
+	==> Consider Apple has actually deprecated OpenGL and OpenCL in Mac OS 10.14 (https://developer.apple.com/macos/whats-new/ )?
+
+“Deprecation of OpenGL and OpenCL
+
+Apps built using OpenGL and OpenCL will continue to run in macOS 10.14, but these legacy technologies are deprecated in macOS 10.14. Games and graphics-intensive apps that use OpenGL should now adopt Metal. Similarly, apps that use OpenCL for computational tasks should now adopt Metal and Metal Performance Shaders.
+Metal is designed from the ground up to provide the best access to the modern GPUs on iOS, macOS, and tvOS devices. Metal avoids the overhead inherent in legacy technologies and exposes the latest graphics processing functionality. Unified support for graphics and compute in Metal lets your apps efficiently utilize the latest rendering techniques.
+"
+
+	==> It seems Mac Pro 6.1 supports OpenCL 1.2 and OpenGL 4.1?
+
+“Mac Pro
+Modell
+Grafikprocessor
+OpenGL
+OpenCL 
+Mac Pro (sent 2013)
+AMD FirePro D300
+AMD FirePro D500
+AMD FirePro D700	
+4.1
+1.2
+
+“
+
+	==> It would seem my MacBook Pro Retina 15” mid 2014 uses MVIDIA Geforce GT750 Graphics (and thus quick sync)?
+
+"
+MacBook Pro (Retina-skärm, 15 tum, mitten av 2014)
+Intel Iris Pro Graphics
+NVIDIA Geforce GT 750M	
+4.1
+1.2
+
+"
+
+	==> It would seem the 2018 Mac Mini uses Intel UHD Graphics 630 (and the T2 chip for H.264 encoding)?
+
+“Mac mini
+Modell
+Grafikprocessor
+OpenGL
+OpenCL 
+Mac mini (2018)	Intel UHD Graphics 630	4.1	1.2
+
+"
+
+	==> It seems the 2017 iMac Pro uses the AMD radeon Pro 56 or 65 (with 8 vs 16 GB memory)?
+
+“iMac Pro
+Modell
+Grafikprocessor
+OpenGL
+OpenCL 
+iMac Pro (2017)	Radeon Pro Vega 56
+Radeon Pro Vega 65	4.1	1.2
+
+"
+
+4) Consider to understand the more performant Quicksync based H.264 ending over the Mac Pro 6.1 slower counterpart?
+
+	==> Consider Qucksync outperforms the Mac Pro 6.1 counterpart only for single-pass encoding (https://larryjordan.com/articles/mac-pro-video-compression/comment-page-1/ )?
+
+“One of the speed advantages of the iMac is that it uses an Intel technology called “QuickSync.” This is a special processor “engine” inside many consumer-grade Intel CPUs that accelerates H.264 compression for certain encoding settings; for example, when compressing for Apple devices, QuickTime or MPEG-4 movies using the H.264 codec. The Mac Pro Xeon CPU is considered “workstation-grade,” and doesn’t provide this hardware acceleration. This explains why the iMac is faster when encoding in single-pass mode, which enables hardware acceleration, but slower in multi-pass mode, which disables hardware acceleration."
+
+5) Consider the eGPU forums page for leads into combining a desktop with an external GPU (https://egpu.io )?
+
+	==> There seem to be something called “” to enable eGPU both from AMD and Nvidia for thunderbolt equipped MACs (https://egpu.io/forums/mac-setup/script-enable-egpu-on-tb1-2-macs-on-macos-10-13-4/ )?
+
+	
+
+5) Consider to document my questions about the Firepro D700/W9000 to try and find the answers for them?
+
+	==> Consider why the Firepro W9000 states it has a dedicated H.264 encoder part but the Mac Pro is still so slow for encoding (compared to the Intel Quicksyn or Apple T2 chip based H.264 encodings)?
+
+
+
+...

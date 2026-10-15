@@ -1,0 +1,147 @@
+# Todo: Programming - Consider to try out the "Awesomium" HTML cross platform front end?
+
+```#1185720a``` *As of 2016-06-18 18:24*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Inspired by a stack overflow question it seems like a good idea to check out the Awsomium HTML cross platform front-end?
+
+1) Consider to try and answer the stackjoverflow question here (<http://stackoverflow.com/questions/37775853/how-to-hide-close-minimize-and-maximize-buttons-and-the-surrounding-edges-in-awe>)
+
+2) Consider to install and try out awesomium on windows here (<http://wiki.awesomium.com/getting-started/setting-up-on-windows.html>)?
+
+==&gt; I downloaded the SDK from here (<http://www.awesomium.com/downloads/awesomium_1_7_5_1_sdk_win.exe>)
+
+==&gt; I installed it to “C:\\Program Files (x86)\\Awesomium Technologies LLC\\Awesomium SDK\\”
+
+==&gt; Installation seems to include a Visual Studio 2010 redistributable installation?
+
+![](<Awesomium Visual Studio 2010 redistributable install.tiff>)
+
+==&gt; Awesomium seems to be quite complex installation but it succeeded.
+
+![](<Awesomium Installation Complete.tiff>)
+
+==&gt; I created and configured my first Visual Studio C++ project to build an Awesomium based application as described on linked page.
+
+Create a new project in Microsoft Visual C++ (the Empty Project template is recommended).
+
+==&gt; Created empty C++ project at “C:\\Users\\kjell-olovhogdahl\\Documents\\Visual Studio 2015\\Projects\\MyFirstAwesomiumProject”
+
+== &gt;Note: Visual Studio does not recommend storing on shared “workplace” on network drive (security restrictions may cause errors)
+
+Add your C++ source files.
+
+==&gt; Created an application as defined in this tutorial (<http://wiki.awesomium.com/tutorials/tutorial-1-hello-awesomium.html>)
+
+==&gt; Note: I had to rename the cerated cpp-file created AND add it to the source code node go the project (tiresome)!!
+
+==&gt; Renaming was required as the tutorial proposed the file to have extension .cc.
+
+==&gt; But Visual Studio compiled it as C++ file ok.
+
+Right-click your project name, select Properties to open up the Property Pages dialog.
+
+Add $(AWE_DIR)include to Additional Include Directories (should be under Configuration Properties → C/C++ → General) for both Debug and Release configurations.
+
+Add $(AWE_DIR)build\\lib to Additional Library Directories (should be under Configuration Properties → Linker → General) for all build configurations.
+
+Add awesomium.lib to Additional Dependencies (should be under Configuration Properties → Linker → Input) for all build configurations.
+
+==&gt; Copied shared binaries to my project Debug folder (As I was being and running Debig configuration)
+
+avcodec-53.dll
+
+avformat-53.dll
+
+avutil-51.dll
+
+awesomium.dll
+
+awesomium_process.exe
+
+icudt.dll
+
+libEGL.dll
+
+libGLESv2.dll
+
+xinput9_1_0.dll
+
+==&gt; Used windows explorer with two windows and copy-paste - but this was still tiresome!
+
+==&gt; It now turns out the second tutorial is NOT based on the first one (<http://wiki.awesomium.com/tutorials/tutorial-2-displaying-your-first-page.html>)
+
+“It’s quite a bit of work to set up an empty Windows GDI or Mac OSX Cocoa application. To save some time we’ve gone ahead and done some of the work for you."
+
+==&gt; So I downloaded the code as instructed from here (<https://github.com/awesomium/tutorial-framework/archive/master.zip>)
+
+==&gt; The Readme-file is in markdown format so I had to open it in Visual Studio to read it (Seems I have WebEssentials installed which comes with md-editor)?
+
+==&gt; I did as the Readme-file instructed (but added the source to my existing project).
+
+==&gt; I had to configure the project to use Unicode Character Set (otherwise it did not compile)
+
+“If you want to compile with UNICODE, then change the options. If you are compiling from IDE, the set the following propery Configuration Properties -&gt; General -&gt; Project Defaults -&gt; Character Set -&gt; Use Unicode Character Set.” (<http://stackoverflow.com/questions/13977388/error-cannot-convert-const-wchar-t-13-to-lpcstr-aka-const-char-in-assi>)
+
+==&gt; After this the tutorial works just fine :)
+
+3) Consider to delve into the technologies available to provide HTML based UIs?
+
+==&gt; It seems Webkit is the behind the scenes web browser engine on Apple and optionally Linux (<https://webkit.org>)?
+
+“WebKit is the web browser engine used by Safari, App Store, and many other OS X, iOS, and Linux applications."
+
+==&gt; Consider this page to understand more about cross platform WebViews (<http://developer.telerik.com/featured/what-is-a-webview/>)?
+
+==&gt; It seems on Windows the Windows Runtime API provides a WebView class (<https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.webview.aspx>)?
+
+==&gt; It seems Awesomium C++ framework on creates a hwnd-window used as parent to the WebView object?
+
+web_view_ = WebCore::instance()-&gt;CreateWebView(width,
+
+height,  
+0,
+
+Awesomium::kWebViewType_Window);
+
+...
+
+hwnd_ = CreateWindow(…
+
+...
+
+web_view_-&gt;set_parent_window(hwnd_);
+
+==&gt; Consider to study the Awesomium example for MAC to understand WebView on MacOS (MAC code included in the link above)
+
+==&gt; Apple Cocoa WebView seem to be defined here (<https://developer.apple.com/library/mac/documentation/Cocoa/Reference/WebKit/Classes/WebView_Class/>)?
+
+web_view_ = WebCore::instance()-&gt;CreateWebView(width,
+
+height,  
+0,  
+Awesomium::kWebViewType_Window);
+
+…
+
+window_ = &#91;&#91;&#91;NSWindow alloc&#93; initWithContentRect:NSMakeRect(0, 0, width, height)
+
+styleMask:NSTitledWindowMask | NSResizableWindowMask | NSClosableWindowMask  
+backing:NSBackingStoreBuffered defer:NO&#93;  
+autorelease&#93;;
+
+…
+
+win_delegate_.webView = web_view_;
+
+…
+
+…
+
+Consider to elaborate more on this information to understand better the options to use it as a cross platform UI front-end?
+
+...
+
+{% endraw %}

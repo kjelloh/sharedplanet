@@ -1,0 +1,19 @@
+# Todo: Follow up on “Defining the Anthropocene” on Science in Action
+
+```#6ecfc1cc``` *As of 2015-09-14 15:38*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Listened to the episode “Defining the Anthropocene” (archived at http://www.bbc.co.uk/programmes/p02l9s4s).
+
+1. Vi lever i en ny era skapad av människan. Tidigare eror skapades av naturen (istid etc)
+2. Människan är idag i kontroll över det enda stället i universum där liv finns!
+3. Uppdatera spb och spc med knowledge och power.
+4. Lyssna och plocka ut namn på nya eran och de vetenskapsmän som nämns. Googla dem och läs mer.
+
+a) The episode interviews two scientist about where the Anthropocene epoch could have started? - “There are two good candidates according to ecologist, Dr Simon Lewis, and physical geographer, professor Mark Maslin from University College London. They are 1964, the year after the Nuclear Test Ban Treaty was put into force, giving us a golden spike of radionucleotides in various deposits. But their favourite is 1610, when the collision of the New and Old Worlds a century earlier, were first felt globally. The spread of diseases, like smallpox, from the Old to the New World killed off over 50 million people, who were mostly farmers. This meant a wholesale cessation in agriculture in South America, leading to the native forests re-growing, using up carbon dioxide in the atmosphere and resulting, in 1610, with a dip in the atmospheric gas which can be seen in ice cores.”  
+b) Dr Simon Lewis (http://www.geog.ucl.ac.uk/about-the-department/people/academic-staff/simon-lewis)  
+c) professor Mark Maslin (http://www.geog.ucl.ac.uk/about-the-department/people/academic-staff/mark-maslin)
+
+{% endraw %}

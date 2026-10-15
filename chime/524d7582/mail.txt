@@ -1,0 +1,9 @@
+﻿I want an interplanetary shared immutable data model and OS and Urbit seems to head in the 'same' direction.
+
+1) 'Urbit' seems to live here (https://urbit.org <https://urbit.org/> )?
+
+	==> It seems to expose technical aspects and not any semantics or usability?
+
+￼
+
+...

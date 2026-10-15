@@ -1,0 +1,42 @@
+# Todo: Is Peter Thiel actually a Syntheist "in disguise"?
+
+```#88b84a7d``` *As of 2016-06-11 13:34*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Reading Peter Thiels book ”Zero to One” I get curious as what he says rimes with Syntheism but what he proposes seems to support neoliberal capitalism?
+
+1) He talks about the problem of ”indefinite future” which sounds very much like syntheism call to restore faith in a future utopia?
+
+==&gt; He argues that Europe is shaped by ”Pessimistic Indeterminism” and USA by ”optimistic indeterminism”  
+==&gt; But where Syntheism argues for collaborative meaningfulness he is for individualistic monopolism?
+
+2) He states ”competition is for losers” which seems to rime with syntheistic collaborative engagement but he actually argues for ”being unique” as in lack of competitors?
+
+==&gt; Consider that he sees the same ”reality” but draws completely opposite conclusions?
+
+3) He states ”What important truth do very few people agree with you upon?” which seems to rime with syntheistic truth-as-an-act (truth created by the event)?
+
+==&gt; He seems to argue that there are ”truths” out there which we do not see because we all act-in-faith to contemporary truths?  
+==&gt; But he still seem to argue that new truth are worth seeking due to the possibility to turn them into value as a business?
+
+4) He seems to argue against much of the idioms of competitive freedom seeking neo capitalism but still argues to act within that framework?
+
+==&gt; He still seems to argue that chafe-for-the-better comes from innovative companies?  
+==&gt; So, although he argues philosophically in line with syntheism he still proposes act-in-faith to capitalism?  
+…
+
+5) He over-rate our rational ability when discussing ”What to do with the power law” he argues we should think hard about what will be valuable in the future?
+
+==&gt; He seem to argue that those who invents something new has be able to do so by skillful planning?  
+==&gt; But he then does not see the power of doing what seems meaningful and plain ”fun”?  
+==&gt; Could we boot argue that is it something we can say for sure, it is that we are poor at rationally predict the future and what will be of future value?  
+==&gt; Further, as Kahneman has shown, we are not rational and the value of future inventions does largely depend of a mix of future events NOT related to the invention itself?
+
+==&gt; So, Thiel is correct in that we must act-in-faith. But we must understand the importance of being emotionally driven creatures, not ration ones?  
+==&gt; Thiel actually acknowledge the power of being optimistic to create daring actions to find the new?  
+==&gt; But he incorrectly interprets this as a rational decision, not a brave engagement in that which feels right?  
+...
+
+{% endraw %}

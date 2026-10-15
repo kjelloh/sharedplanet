@@ -1,0 +1,65 @@
+# Todo: C++ Coding Guidelines - Consider to study and reflect on the set of existing C++ coding / Programming guidelines / standards as proposed in youtube video "CppCon 2019: Michael Price “A Critical Look at the Coding Standards Landscape”"?
+
+```#3ebcad16``` *As of 2020-05-07 10:46*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I am interested in the philosophy of coding and how "coding guidelines" may be seen as a model of how to program.
+
+1) The youtube video "CppCon 2019: Michael Price “A Critical Look at the Coding Standards Landscape”" seems to live here (<https://youtu.be/5XfSM-vDYUs> )?
+
+2) Consider the URLs to the coding guidelines that Michael Price presents at around 07:00 into the youtube video "CppCon 2019: Michael Price “A Critical Look at the Coding Standards Landscape”" (<https://youtu.be/5XfSM-vDYUs?t=420> )?
+
+3) Consider the list of coding standards listed in an article on [isocpp.org](http://isocpp.org) site (<https://isocpp.org/wiki/faq/coding-standards> )?
+
+> ### What are some good C++ coding standards? <https://isocpp.org/wiki/faq/coding-standards#coding-std-wars> <https://isocpp.org/wiki/faq/coding-standards#>
+
+> Thank you for reading this answer rather than just trying to set your own coding standards.
+
+> The main point of a C++ coding standard is to provide a set of rules for using C++ for a particular purpose in a particular environment. It follows that there cannot be one coding standard for all uses and all users. For a given application (or company, application area, etc.), a good coding standard is better than no coding standard. On the other hand, we have seen many examples that demonstrate that a bad coding standard is worse than no coding standard. Please choose your rules with care and with solid knowledge of your application area. Some of the worst coding standards (we won’t mention names “to protect the guilty”) were written by people without solid knowledge of C++ together with a relative ignorance of the application area (they were “experts” rather than developers) and a misguided conviction that more restrictions are necessarily better than fewer. The counter example to that last misconception is that some features exist to help programmers having to use even worse features. Anyway, please remember that safety, productivity, etc. is the sum of all parts of the design and development process – and not of individual language features, or even of whole languages.
+
+> With those caveats, we recommend four things:
+
+- Look at [the C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). They’re a collaborative effort led by Bjarne Stroustrup, much like the C++ language itself. They are the result of many person-years of discussion and design across a number of organizations. Their design encourages general applicability and broad adoption but they can be freely copied and modified to meet your organization’s needs.
+- Look at [Sutter and Alexandrescu: “C++ Coding Standards”](http://www.amazon.com/exec/obidos/ASIN/0321113586/). It provides 101 rules, guidelines and best practices. The authors and editors produced some solid material, then did an unusually good job of energizing the peer-review team. All of this improved the book. Buy it. It has good specific rules, but won’t cover every rule that might apply to your team. So also view it as an exemplar and guide to what a good, more specific, set of coding rules should look like. If you are writing a coding standard, you ignore this book at your peril.
+- Look at [the JSF air vehicle C++ coding standards](http://stroustrup.com/JSF-AV-rules.pdf). Stroustrup considers it a pretty good set of rules for safety critical and performance critical code. If you do embedded systems programming, you should consider it. If you don’t build hard-real time systems or safety critical systems, you’ll find these rules overly restrictive – because then those rules are not for you (at least not all of those rules).
+
+
+
+> ...
+
+> ### Are there any other sources of coding standards? <https://isocpp.org/wiki/faq/coding-standards#other-coding-stds> <https://isocpp.org/wiki/faq/coding-standards#>
+
+> Yep, there are several.
+
+> In my opinion, the best source is [Sutter and Alexandrescu, C++ Coding Standards, 220 pgs, Addison-Wesley, 2005, ISBN 0-321-11358-6](http://www.amazon.com/exec/obidos/ASIN/0321113586/). I had the privilege of serving as an advisor on that book, and the authors did a great job of energizing the pool of advisors. Everyone collaborated with an intensity and depth that I have not seen previously, and the book is better for it.
+
+> Here are a few other sources that you can use as starting points for developing your organization’s coding standards (in random order) (some are out of date, some might even be bad; I’m not endorsing any; caveat emptor):
+
+- ``[www.codingstandard.com/](http://www.codingstandard.com/)
+- ``[cdfsga.fnal.gov/computing/coding_guidelines/CodingGuidelines.html](http://cdfsga.fnal.gov/computing/coding_guidelines/CodingGuidelines.html)
+- ``[www.nfra.nl/~seg/cppStdDoc.html](http://www.nfra.nl/~seg/cppStdDoc.html)
+- ``[www.cs.umd.edu/users/cml/resources/cstyle](http://www.cs.umd.edu/users/cml/resources/cstyle)
+- ``[www.cs.rice.edu/~dwallach/CPlusPlusStyle.html](http://www.cs.rice.edu/~dwallach/CPlusPlusStyle.html)
+- ``[cpptips.hyperformix.com/conventions/cppconventions_1.html](http://cpptips.hyperformix.com/conventions/cppconventions_1.html)
+- ``[www.objectmentor.com/resources/articles/naming.htm](http://www.objectmentor.com/resources/articles/naming.htm)
+- ``[www.arcticlabs.com/codingstandards/](http://www.arcticlabs.com/codingstandards/)
+- ``[www.possibility.com/cpp/CppCodingStandard.html](http://www.possibility.com/cpp/CppCodingStandard.html)
+- ``[www.cs.umd.edu/users/cml/cstyle/Wildfire-C++Style.html](http://www.cs.umd.edu/users/cml/cstyle/Wildfire-C++Style.html)
+- The Ellemtel coding guidelines are available at
+  - ``[www.doc.ic.ac.uk/lab/cplus/c++.rules/](http://www.doc.ic.ac.uk/lab/cplus/c++.rules/)
+  - ``[www.mgl.co.uk/people/kirit/cpprules.html](http://www.mgl.co.uk/people/kirit/cpprules.html)
+
+> Notes:
+
+- The Ellemtel guide is dated, but is listed because of its seminal place: it was the **first widely distributed** and widely adopted set of coding guidelines for C++. It was also the first to castigate the use of protected data.
+- Industrial Strength C++ is also dated, but was the first widely published place to mention the use of protected non-virtual destructors in base classes.
+
+
+
+4) Consider the old and now dated (but still known and revered?) Ellemtel Telecommunication Systems Laboratories, Box 1505, 125 25 Älvsjö, Sweden - C++ coding standards (<http://www.doc.ic.ac.uk/lab/cplus/c++.rules/> )?
+
+...
+
+{% endraw %}

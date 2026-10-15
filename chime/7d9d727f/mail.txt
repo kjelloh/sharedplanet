@@ -1,0 +1,111 @@
+﻿Just a hunch but I like the intro made by Robert Harper in "Computational Type Theory [1/5] - Robert Harper - OPLSS 2018" so I suspect it would be worth delving into this lecture series to see what I can extract from it?
+
+-1) If only these guys diving deep into abstract land of type theory could also bring some real-world intuition on what we are actually abstracting about?
+
+My first impression of just sampling different locations of Robert Harper five lectures "Computational Type Theory - Robert Harper - OPLSS 2018" is that he never leaves the abstraction to somehow explain how to "act-in-faith" to these abstractions and experience how actual real-life computer programs, or computer languages, will or can emerge? It is as if the abstractions becomes self referential to the degree that it is unclear how to manifest anything that can execute on a CPU from these models?
+
+"give me a function and so of course I can say oh and by the way that means there's a function" Robert Harper states mid into lecture number three. Ok, so what is he trying to convey?
+
+It's a trick - "those which are equal to themselves, are the things we call types" is another quote from lecture three. I get the hunch he is trying to circumvent something "self evident" and does so by almost embarrassingly observe he has written down something of a tautology?
+
+
+1) Consider this youtube play list "2018 - Computational Type Theory - Robert Harper" (https://www.youtube.com/playlist?list=PL0DsGHMPLUWXXA8RHzVZ2B5E5hP8CD15Z <https://www.youtube.com/playlist?list=PL0DsGHMPLUWXXA8RHzVZ2B5E5hP8CD15Z> )?
+
+2) Consider the youtube video "Computational Type Theory [1/5] - Robert Harper - OPLSS 2018" (https://www.youtube.com/watch?v=LE0SSLizYUI&t=300s <https://www.youtube.com/watch?v=LE0SSLizYUI&t=300s> )?
+
+"Topics:
+
+  - fundamental premise of constructivism
+  - type theory as basis for all mathematics
+  - type theory as a programming language
+  - theory of truth vs. theory of formal proof
+  - deterministic operational semantics
+  - abstract syntax with binding, scope, and substitution
+  - forms of expression
+  - judgment forms: values and transition rules
+  - derived notion
+  - binary decision diagrams
+  - types are specifications of program behavior
+  - judgments as forms of expression
+  - algorithms as communication
+  - behavioral vs. structural expressions
+  - types and values are programs
+  - families of types
+  - type-indexed families of types (a.k.a., dependent types)
+  - hypothetical/general judgments
+  - functionality: respecting equality of indices
+  - what is equality of types?
+  - equi-satisfaction
+  - preview of higher-dimensional/cubical type theory
+  - meanings of judgments, a.k.a., meaning explanations, a.k.a., computational semantics
+  - equality of canonical types, a.k.a., type-values
+  - head expansion lemma, a.k.a., reverse execution"
+
+
+	
+	Introduction by Robert Harper, Carnegie Mellon University to "Computational Type Theory [1/5] - Robert Harper - OPLSS 2018"
+
+	
+
+	==> It seems Robert Harper makes a clear distinction between Semantics (as in meaning) and Formalism (as in syntax)?
+
+"...I want to [04:18] present a contrast between semantics and syntax; and everyone is kind of stressing the syntax and losing track of the semantics. And so that's the thing, the main thing, that I want to do..." 
+
+	==> It seems Robert Harper will include 
+
+"... I hope to bring you up to [04:36] date on the most recent developments in type theory, and what is called cubicle type theory. maybe you've heard about this, or higher dimensional fact theory? I want to explain a little bit about this about higher dimensional type theory..."
+
+	
+	Mid lecture (38:40 ) by Robert Harper, Carnegie Mellon University to "Computational Type Theory [1/5] - Robert Harper - OPLSS 2018" (https://youtu.be/LE0SSLizYUI?t=2320 <https://youtu.be/LE0SSLizYUI?t=2320> )
+
+3) Consider the youtube video "Computational Type Theory [2/5] - Robert Harper - OPLSS 2018" (https://www.youtube.com/watch?v=1U4w0159-Ls <https://www.youtube.com/watch?v=1U4w0159-Ls> )?
+
+	
+	Starting point by by Robert Harper, Carnegie Mellon University to "Computational Type Theory [2/5] - Robert Harper - OPLSS 2018"
+
+	
+
+	
+	Mid lecture (40:04) by Robert Harper, Carnegie Mellon University to "Computational Type Theory [1/5] - Robert Harper - OPLSS 2018" (https://youtu.be/1U4w0159-Ls?t=2404 <https://youtu.be/1U4w0159-Ls?t=2404> )
+
+
+4) Consider the youtube video "Computational Type Theory [3/5] - Robert Harper - OPLSS 2018" (https://www.youtube.com/watch?v=GzPMZ6RsihU <https://www.youtube.com/watch?v=GzPMZ6RsihU> )?
+
+	
+	03:29: It's a trick - "those which are equal to themselves, are the things we call types" (https://youtu.be/GzPMZ6RsihU?t=209 <https://youtu.be/GzPMZ6RsihU?t=209> )
+
+
+"...it turns out to be more technically [03:30] efficient so simply write down when two things are equal. And then those which are equal to themselves, are the things we call types. Where it happens to be reflexive are the types. So rather than assume their types and make it reflexive; I define equality and say oh, and when it's reflexive that's what it means to be a type. So it's a trick. I guess you could say it's a common trick so that's what we do..."
+
+	
+
+	
+	"give me a function and so of course I can say oh and by the way that means there's a function" (https://youtu.be/GzPMZ6RsihU?t=2462 <https://youtu.be/GzPMZ6RsihU?t=2462> )
+	
+"... in other [41:06] words, the only possible way you can prove something is to give me a function and so of course I can say oh and by the way that means there's a function..."
+
+5) Consider the youtube video "Computational Type Theory [4/5] - Robert Harper - OPLSS 2018" (https://www.youtube.com/watch?v=pfOQ97iCIsk <https://www.youtube.com/watch?v=pfOQ97iCIsk> )?
+
+	
+	Introduction (recapitulation)  "Computational Type Theory [4/5] - Robert Harper - OPLSS 2018"
+
+	
+
+	
+	"Least reflective relation" mid lecture of "Computational Type Theory [4/5] - Robert Harper - OPLSS 2018" (https://youtu.be/pfOQ97iCIsk?t=2255 <https://youtu.be/pfOQ97iCIsk?t=2255> )
+
+6) Consider the youtube video "Computational Type Theory [5/5] - Robert Harper - OPLSS 2018" (https://www.youtube.com/watch?v=RhDuRmg-SdA <https://www.youtube.com/watch?v=RhDuRmg-SdA> )?
+
+	
+	Introduction to "Computational Cartesian Cubical Type Theory" in lecture "Computational Type Theory [5/5] - Robert Harper - OPLSS 2018"
+
+
+	
+
+	
+	"Swap will be a type" 39:06 into lecture "Computational Type Theory [5/5] - Robert Harper - OPLSS 2018" (https://youtu.be/RhDuRmg-SdA?t=2342 <https://youtu.be/RhDuRmg-SdA?t=2342> )
+
+"...Swap will be a [39:05] type. Identifications of types will be types. And the elements of those types are going to themselves be identifications within the endpoints..."
+
+
+...

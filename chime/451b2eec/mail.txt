@@ -1,0 +1,89 @@
+﻿
+	==> Also see "Todo: Consider the Raspberry Pi 12 MP HQ Camera?"
+	==> Also see "Todo: Consider to check out the "Foldscope" - The paper microscope. A cardboard based super cheap but still seemingly capable microscope with a mission to provide scientific exploration capabilities to the whole world?"
+	==> Also see "Todo: Electronics Lab - Consider to buy a trinocular electronics work microscope?"
+	==> Also see "Todo: Consider to document a wish-list for components for my Electronics lab?"
+	==> Also see "Todo: Electronics Lab - Consider to buy a trinocular electronics work microscope?"	
+	==> Also see "Todo: Consider to follow up on components and products used and described on the Macro Reps youtube channel?"
+
+-1) Consider the bottom line of what I think I know about mounting a the Raspberry Pi HQ camera to a trinocular electronics work microscope?
+
+Choose a 0,7x to 6,5x zoom objective (flexible magnification and good working distance under the microscope)
+
+Use 10x eyepiece and camera mount lenses (results in 7x-65x magnification)
+
+Choose a trinocular microscope that accepts a C-mount camera on its camera port (or provides an adapter for the C-mount of the Raspberry Pi HQ ca,era)
+
+
+1) Consider what we need to know to design a way to mount the Raspberry Pi HQ Camera to a trinocular electronics work microscope?
+
+It seems I may be able to mount the Raspberry Pi camera directly to the microscope camera port if it has a C-mount (or using an adapter for the microscope to have it accept a C-mount camera)? What I have yet to understand is if a need a lens also (like the 10x lens for the eyepieces). I suspect the recommendation for a microscope for electronics work is to use no magnification or even a reduction main lens (below 1x magnification). This gives me a good working distance to be able to use tools (e.g., a soldering iron, tweezers and pliers) under the microscope. Or use a zoom lens from say a reduction 0,7x upp to magnification 6,5x. In this case I need a 10x lens for the eye-pieces and thus also a 10x lens for the camera?
+
+2) Consider this article that seems to suggest the Raspberry Pi HQ Camera can mount to a microscope camera port using its C-mount (http://www.microscopy-uk.org.uk/mag/indexmag.html?http://www.microscopy-uk.org.uk/mag/artsep20/hw-Pi_HQ.html <http://www.microscopy-uk.org.uk/mag/indexmag.html?http://www.microscopy-uk.org.uk/mag/artsep20/hw-Pi_HQ.html> )?
+
+"When Raspberry Pi came out with a new $50 12.3mp HQ camera that has a C/CCS adapter, it looked like I finally had found something with plenty of pixels and standard interfaces. It easily paired with a C mount microscope adapter and its 0.5 lens meant the Sony sensor was fully lit."
+
+	==> It seems he prefers viewing on a separate display rather that through the eye-piece?
+
+"Being able to do all my work from a 22 inch monitor brings a lot of the enjoyment back, no eye strain or uncertainty of the focus.  I can capture exactly what I am seeing."
+
+	==> He seems to be using a Bauch & Lomb monocular microscope with 4x, 10x and 40x objectives?
+
+"Technical Details Microscope: Bauch & Lomb monocular, 4x, 10x and 40x objectives."
+
+3) Consider what we can learn from this Amscope C-mount 10MP USB digital camera (https://www.amscope.com/cameras/10mp-usb2-0-microscope-digital-camera-software.html <https://www.amscope.com/cameras/10mp-usb2-0-microscope-digital-camera-software.html> )?
+
+
+Amscope 10MP USB 2.0 Color CMOS C-Mount Microscope Camera with Reduction Lens
+
+	==> It seems Amscope microscopes uses 23 mm, 30 mm, 30,5 mm or C-mount tor their eyepiece / camera mounts?
+
+"Fits four mounting sizes: 23mm, 30mm, 30.5mm, and C-mount (two mounting adapters included)"
+
+	==> It seems we need a lens to adapt the camera to the "microscope photo port"?
+
+
+https://www.amscope.com/adapter-converting-photo-port-to-c-mount.html <https://www.amscope.com/adapter-converting-photo-port-to-c-mount.html>  
+
+	==> Consider we should use a 0,5x reduction lens to mount a 1/2" sensor camera to an Amscope microscope photo port?
+
+
+https://www.amscope.com/0-5x-c-mount-reduction-lens-for-mu-series-cameras.html <https://www.amscope.com/0-5x-c-mount-reduction-lens-for-mu-series-cameras.html> 
+
+
+4) Consider this article on microscope requirements for electronics work (https://www.bresser.de/c/en/support/ratgeber/mikroskopie/microscope-for-electronics-technicians/ <https://www.bresser.de/c/en/support/ratgeber/mikroskopie/microscope-for-electronics-technicians/> )?
+
+	==> It seems we may consider a microscope with less than 1x magnification to increase working distance under the scope?
+
+" Opticswith factor < 1x (e. g. 0.7x) increase the working distance, optics >1x (e. g. 2.0x) reduce it. "
+
+	==> It seems it is the eyepiece magnification multiplied with the scope magnification that defines final magnification?
+
+"A magnification of 10x or 20x is sufficient, also for soldering of small SMD components. This is usually achieved by a combination of 1x objective magnification and a 10x or 20x pair of eyepieces. Especially when working under the microscope, a low magnification is advantageous because a larger field can be viewed at a time. Movements when handling the part or tool are magnified less, so you get a steady image and work is less tiring."
+
+	==> It seems I have no reason to choose an eyepiece with a magnification below 10x?
+
+"A low-magnification 5x eyepiece achieves, gives only a slightly larger field of view than a 10x eyepiece, because the maximum possible field of view is limited by the diameter of the eyepiece barrel or prism diameter."
+
+	==> Consider the Biorit ICD CS for leads into what makes a good electronics work microscope?
+
+"The Biorit ICD CS ideally suited for soldering and is equipped with an objective with an especially long working distance. Between the object to be examined and the lower edge of the lens, 230mm are free, so that you can work comfortably with tools. The optics are also better protected against contamination by soldering fumes and spatters of solder. The desk under the microscope is free. The head can be swivelled and tilted in different positions, so that the board can also be viewed diagonally or laterally. The Biorit ICD CS is therefore ideally suited for soldering work or quality control on PCBs."
+
+
+The 230 mm working distance (no zoom?) Bresser microscope recommended for electronics work
+
+
+	==> It seems Bresser recommend to view the work object on a display when working for long periods with electronics?
+
+"Many users have already switched from looking through the eyepieces themselves to just looking at the monitor. This is much more convenient, especially when working on the microscope for long periods of time and at high magnifications."
+
+	==> I seems a zoom up to 6,25x can be suitable for more flexible electronics work
+
+"The Science ETD-201 has the highest zoom factor (6.25x) and a high working distance (105mm) for microscopes of this type. "
+
+
+	==> Consider this Bresser 0,8x-5x (8x-50x) scientific microscope for leads to what I would like to have as my electronics microscope (https://www.bresser.de/Mikroskopie/Mikroskope/BRESSER-Science-ETD-201-8-50x-Trino-Zoom-Stereomikroskop-30.html <https://www.bresser.de/Mikroskopie/Mikroskope/BRESSER-Science-ETD-201-8-50x-Trino-Zoom-Stereomikroskop-30.html> )?
+
+
+
+...

@@ -1,0 +1,26 @@
+﻿
+1) It seems the "best" maps are available at "Min Karta" at Swedish Lantmäteriet (https://www.lantmateriet.se/sv/Kartor-och-geografisk-information/Kartor/min-karta/ <https://www.lantmateriet.se/sv/Kartor-och-geografisk-information/Kartor/min-karta/> )?
+
+	==> It seems I can log in as a Swedish Citizen with my Mobile ID (and alternatives)?
+
+
+
+	==> It seems Lantmäteriet provides service on who owns a property as well as other property related information services?
+
+
+
+
+2) This seems to be the URL to login and search for owners of properties (https://www.lantmateriet.se/sv/Fastigheter/vem-ager-fastigheten/ <https://www.lantmateriet.se/sv/Fastigheter/vem-ager-fastigheten/> )?
+
+3) Consider to document how to locate a property, and find the owner?
+
+	==> When logged in it seems I can just click on the map and a pop-up will show the ID of the property?
+
+
+
+
+	==> I can then search the property ID in the Lantmäteriet "Vem ägen fastigheten"?
+
+
+
+...

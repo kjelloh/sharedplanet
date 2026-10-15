@@ -1,0 +1,92 @@
+# Todo: Consider to understand how to copy folders in Linux shell?
+
+```#8830e966``` *As of 2026-10-01 12:59*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I still have not understood how I can copy a whole folder from one location to another in Linux (I get only the content copied, not the folder itself)
+
+1) It seems 'cp -r source target' easilly just copies the content of a source folder into the target folder?
+
+==&gt; It seems 'cp -r ../plaiground/session/afaa732d/mail_to_chime/ ./temp' copies only the content of a folder from source to destination?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % cp -r ../plaiground/session/afaa732d/mail_to_chime/ ./temp  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % tree temp  
+> temp  
+> ├── __pycache__  
+> │ ├── eml_to_chime.cpython-314.pyc  
+> │ ├── eml_to_html.cpython-314.pyc  
+> │ ├── html_to_markdown.cpython-314.pyc  
+> │ ├── init_new.cpython-314.pyc  
+> │ ├── test_eml_to_chime.cpython-314-pytest-9.1.1.pyc  
+> │ └── test_html_to_markdown.cpython-314-pytest-9.1.1.pyc  
+> ├── eml_to_chime.py  
+> ├── eml_to_html.py  
+> ├── emls_to_chimes.py  
+> ├── html_to_markdown.py  
+> ├── init_new.py  
+> ├── pytest.ini  
+> ├── test_eml_to_chime.py  
+> ├── test_html_to_markdown.py  
+> └── update_index.py
+
+> 2 directories, 15 files  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime %
+
+==&gt; Using target ending with '/' does also NOT copy the source folder?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % cp -r ../plaiground/session/afaa732d/mail_to_chime temp/  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % tree temp  
+> temp  
+> ├── __pycache__  
+> │ ├── eml_to_chime.cpython-314.pyc  
+> │ ├── eml_to_html.cpython-314.pyc  
+> │ ├── html_to_markdown.cpython-314.pyc  
+> │ ├── init_new.cpython-314.pyc  
+> │ ├── test_eml_to_chime.cpython-314-pytest-9.1.1.pyc  
+> │ └── test_html_to_markdown.cpython-314-pytest-9.1.1.pyc  
+> ├── eml_to_chime.py  
+> ├── eml_to_html.py  
+> ├── emls_to_chimes.py  
+> ├── html_to_markdown.py  
+> ├── init_new.py  
+> ├── pytest.ini  
+> ├── test_eml_to_chime.py  
+> ├── test_html_to_markdown.py  
+> └── update_index.py
+
+> 2 directories, 15 files  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime %
+
+2) Maybe the trick is to NOT use ending '/' in the paths?
+
+==&gt; This seem to work?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % cp -r ../plaiground/session/afaa732d/mail_to_chime temp  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime % tree temp  
+> temp  
+> └── mail_to_chime  
+> ├── __pycache__  
+> │ ├── eml_to_chime.cpython-314.pyc  
+> │ ├── eml_to_html.cpython-314.pyc  
+> │ ├── html_to_markdown.cpython-314.pyc  
+> │ ├── init_new.cpython-314.pyc  
+> │ ├── test_eml_to_chime.cpython-314-pytest-9.1.1.pyc  
+> │ └── test_html_to_markdown.cpython-314-pytest-9.1.1.pyc  
+> ├── eml_to_chime.py  
+> ├── eml_to_html.py  
+> ├── emls_to_chimes.py  
+> ├── html_to_markdown.py  
+> ├── init_new.py  
+> ├── pytest.ini  
+> ├── test_eml_to_chime.py  
+> ├── test_html_to_markdown.py  
+> └── update_index.py
+
+> 3 directories, 15 files  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/chime %
+
+...
+
+{% endraw %}

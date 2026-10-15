@@ -1,0 +1,60 @@
+# Todo: Consider Monoids are to operators what Monads are to functions (a composition pattern that can beneficially be applied on a meta-level)?
+
+```#5ef7bc48``` *As of 2020-09-28 22:22*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I find myself always wanting to "understand" things on a more abstract (meta) level and monoids and monads seem to share some traits?
+
+1) Consider this Cppcon talk "Building an Intuition for Composition - Sy Brand - CppCon 2020" (<https://youtu.be/AGRWRwi7rD0?t=675> )?
+
+2) Consider Monoids are to operators what Monads are to functions?
+
+> *So the basic intuition here is that if Monoids are mathematical objects with a binary operator that compose by "folding" members into a single member, then maybe a Monad can be said to compose by "folding" functions into a function where all functions are "members" of the environment defined by the Monad?*
+
+> *Now, at this stage this is just a hunch whispered to me from the depth of my **unconscious in the form of a curiosity driven by an intuition. Can we manifest something more substantial from what we know about Monoids and Monads?*
+
+> *So the Monoid is "simple". If you have a set of member "quantities" (objects, values) and a binary operator that composes two members into a single one in the same set; and further there is one member that composes with "no effect" AND the order of the members does not matter, then you have a Monoid. So for example, the set of integers together with the plus operator forms a Monoid. Because for a, b and c being integers ; a + b = c and the integer 1 has "no effect" in that 1 + a = a.*
+
+> *Now, for Monads the picture is more complex. A "Monad" is a mathematical object that enables us to take an environment with composable functions f : a -&gt; b and "transform" them (map them) to functions F: M a-&gt; M b where M is the transformation defined by the Monad "M" and the transformed functions M f compose in the "same way" as the originals functions f does.*
+
+> *Take for example the **Optional data type**. If we have functions f that operates on "plain" quantities (objects, values) **f: a -&gt; b**, then a monad is the thing that transforms these functions into new functions **F : Maybe a - &gt; Maybe b**. Further, the Monad also defines how to get from f to F as well as from a to M a, and b to M b and **Back Again**! *
+
+> ---- M A ----- ---- M B -----  
+> | | | |  
+> | Members Ma | ---&gt; F ---&gt; | Members Mb |  
+> | | ^ | |  
+> -------------- | --------------  
+> ^ | ^  
+> | | |  
+> M A M f M B  
+> | | |  
+> | | |  
+> ----- A ------ | ----- B ------  
+> | | | | |  
+> | Members a | ---&gt; f ---&gt; | Members b |  
+> | | | |  
+> ------------- --------------
+
+> *Now, at this stage it seems my intuition is not quite correct in that the Monad does not seem to "fold" function compositions into function? At least, it is not a key feature of the Monad? Or is it?*
+
+> *So the Monad allows composition of functions on "plain" values (members of A and B) to be "lifted" to composition of functions on "lifted" values (Members of M A and M B)?*
+
+> *To add to our intuition we not only have the example of Maybe but also of functions where we add an error code to be passed as an argument. To re-use the functions that we already have that do NOT transfer an error code as an argument we can use the Monad composition pattern where we lift functions f : a -&gt; b into functions F : (a -&gt; ErrorCoded a) -&gt; (b -&gt; ErrorCoded b). So just as we re-used functions f: a -&gt; b in "lifted" code F : (a -&gt; Maybe a) -&gt; (b -&gt; Maybe b) we can do the same with a monad that operates on "Error Coded" arguments.*
+
+> *But in practice it seems this is not how a Monad is typically defined. Instead the focus is on the "lifting" F: a -&gt; M b used in something called "bind" so that bind : a -&gt; (a -&gt; M b) -&gt; M b.*
+
+> *In our example for Maybe this becomes bind: a -&gt; (a -&gt; Maybe b) -&gt; Maybe b. And for ErrorCoded we get bind: a -&gt; (a -&gt; ErrorCoded b) -&gt; ErrorCoded b.*
+
+> *It seems the "fog" that obscures what is actually quite easy is the naming of "stuff" that goes into the Monad? Like we have the fmap : (a -&gt; b) -&gt; M a -&gt; M b. Now if we look closely this can be read as "lifting" our existing (un-lifted) functions f : a -&gt; b into "lifted" functions F: M a -&gt; M b. Thus what is traditionally called fmap can be understod as a "function map" F: f -&gt; M f. And this F is now able to operate on "lifted" M a and map them to M b.*
+
+> *Further it is confusing that the function return : a -&gt; M a is in fact the "lifting" of values and NOT what you would expect a "return" to do (I suppose you would guess "return" to the values back from M a -&gt; a?).*
+
+> *Also adding to the confusion is that a Monad seems to need a "secret sauce" that unwraps a "double lifted" M (M a) into a "single lifted" M a. I suspect this requirement comes from what happens when we generalise the pattern into the Monadic pattern. That is, somewhere we end up with lifting values a second time and we need to be able to unwrap those to stay and the "Monadic Value level"?*
+
+> *...*
+
+...
+
+{% endraw %}

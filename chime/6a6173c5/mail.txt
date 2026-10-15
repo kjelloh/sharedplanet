@@ -1,0 +1,110 @@
+﻿It seems the term “closure” is what we are looking for to define how Tha should model functions?
+
+-1) It seems closures are in fact function calls with bound arguments?
+
+	==> Also see “Todo: Tha function types - Consider we can actually extend normal value-functions to also allow type-functions and kind-functions?”
+
+	==> Thus, a closure is modelled as binding of arguments in functions!
+	...
+
+	==> Seems currying thus is a sequence of binding each argument into a closure until the whole function call is “closed” and can be evaluated with the bound arguments?
+	...
+
+1) Consider this wikipedia page on Closures (https://en.wikipedia.org/wiki/Closure_(computer_programming) <https://en.wikipedia.org/wiki/Closure_(computer_programming)> )?
+
+	==> It seems a closure is a record aggregating an environment with a function (binding function body free variables to the environment)?
+
+“ Operationally, a closure is a record storing a function together with an environment: a mapping associating each free variable of the function (variables that are used locally, but defined in an enclosing scope) with the value or reference to which the name was bound when the closure was created.[b] A closure—unlike a plain function—allows the function to access those captured variables through the closure's copies of their values or references, even when the function is invoked outside their scope."
+
+	==> Consider we shall stick with the term “value” both for data and code (as in functions)?
+
+“...both a and b are closures—or rather, variables with a closure as value—in both cases produced by returning a nested function with a free variable from an enclosing function, so that the free variable binds to the parameter x of the enclosing function."
+“Note especially that the nested function definitions are not themselves closures: they have a free variable, which is not yet bound. Only once the enclosing function is evaluated with a value for the parameter is the free variable of the nested function bound, creating a closure, which is then returned from the enclosing function."
+
+	==> It seems we can model this in C++?
+
+	==> Consider to get some insight into Tha model using a C++ model of closures?
+
+		==> See “/Users/kjell-olovhogdahl/BitTorrent Sync/XCode/MyClosureModelPlayground/MyClosureModelPlayground”
+
+template <typename... FArgs>
+struct environment {
+  std::tuple<FArgs...> members;
+  environment(FArgs... args) : members{args...} {}
+};
+
+template <typename... FArgs>
+struct closure {
+  environment<FArgs...> e;
+  closure(FArgs... args) : e{args...} {}
+};
+
+struct my_closure : public closure<int> {
+  my_closure(int k) : closure{k} {}
+  int operator()(int x) {
+    return (x*x)+std::get<0>(e.members); // models f x = x*x + k
+  }
+};
+
+int main(int argc, const char * argv[]) {
+  my_closure mc{2};
+  std::cout << '\n' << "my_closure(4) = {4*4 + 2} " << mc(4);
+  std::cout << std::endl;
+  return 0;
+}
+
+		==> In this way the closure constructor captures free variables (stored in a std::tuple)
+		==> And the user closure may be defined to capture free variables at construction and the use these in the lambda (operator() definition)?
+		==> But - It seems a bit awkward to access the bound environment using indexed storage (the tuple members have no names)?
+		==> And - there is no way in C++ to create a map of names to tuple members at compile time?
+
+			==> Hm… we could use compile time generated she values of names and then look them up using run-time hash values of the same names?
+			==> But the - van we be sure the same hash function is used compile time and run-time?
+
+
+2) Consider this wikipedia page on lambda calculus (https://en.wikipedia.org/wiki/Lambda_calculus <https://en.wikipedia.org/wiki/Lambda_calculus>)
+
+	==> It seems lambda calculus is about lambda terms and how to reduce them into (values?)
+
+Lambda calculus consists of constructing lambda terms and performing reduction operations on them. In the simplest form of lambda calculus, terms are built using only the following rules:
+Syntax	Name	Description
+a	Variable	A character or string representing a parameter or mathematical/logical value
+(λx.M)	Abstraction	Function definition (M is a lambda term). The variable x becomes bound in the expression.
+(M N)	Application	Applying a function to an argument. M and N are lambda terms.
+
+
+	==> It seems there are two ways to reduce lambda terms?
+The reduction operations include:
+Operation	Name	Description
+(λx.M[x]) → (λy.M[y])	α-conversion	Renaming the bound (formal) variables in the expression. Used to avoid name collisions <https://en.wikipedia.org/wiki/Name_collision>.
+((λx.M) E) → (M[x:=E])	β-reduction	Substituting the bound variable by the argument expression in the body of the abstraction
+
+		==> alpha conversions seems to be about renaming variables in abstractions (variable “x” in an abstraction can be converted into equivalent abstraction using variable “y”)?
+		==> Beta conversions seems to be about replacing a variable bound in an expression with the body of the bound expression (e.g., f(x) : x*x in f(x)*2 becomes (x*x)*2)?
+		…
+
+	==> It seems the syntax M[…] is used to apply operations to members of M (e.g. M[x] refers to x-bindings in M and M[x:=E] refers to replacement of all x with E within M)?
+
+	==> It seems in C++ we are in fact talking about simply typed lambda calculus (https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus <https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus>)?
+
+“The simply typed lambda calculus , a form of type theory, is a typed interpretation of the lambda calculus with only one type constructor: ->  that builds function types."
+
+3) Consider how C++ lambdas map very well to Closures?
+
+	==> Consider the syntax of a C++ lambda?
+
+	[…1…](…2…) {…3…}
+
+		==> 1 captures (binds) all free variables (those defined in enclosing scope os closure instantiation)
+		==> 2 declares the function arguments (this that will be bound at calls to the closure)
+		==> 2 defines the function body (variables are bound to captures free variables AND declared arguments)
+
+	==> But NO - The lambda still has free arguments - so it is not a closure?
+	==> But we can define a new lambda that binds the arguments of another one and thus get a lambda that is a closure?
+	...
+
+…
+
+Consider to delve deeper into closures and how we want to model functions and closures in Tha?
+...
+

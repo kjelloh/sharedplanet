@@ -1,0 +1,9 @@
+﻿There are some good source on how how understand RAD Studio App Tethering.
+
+1) Skill-Sprint blog-post on App Tethering (http://delphi.org/2014/07/mobile-summer-school-lesson-5-app-tethering-round-up/)
+2) The actual skill-sprint video on App Tethering (https://youtu.be/TXmlOXoN2d0)
+3) App Tethering has a feature called AutoConnect. What does this mean? Will it discover all available apps using the App tethering technology and connect to them?
+4) App Tethering uses UDP broadcasts to find others to connect to. What does this mean in secure fire-walled TCP/IP environments like Swedbank Authorization networks?
+5) RAD Studio documentation on App Tethering (http://docwiki.embarcadero.com/RADStudio/XE6/en/Using_App_Tethering)
+6) Can’t find anything on ”Encryption Hooks”? How may we encrypt communication between tethered apps?
+...

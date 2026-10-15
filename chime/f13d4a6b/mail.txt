@@ -1,0 +1,38 @@
+﻿
+	==> Se även ”Todo: köksredskap Cordon Bleu”
+	==> Se även ”Todo: Chokladfabriken Regeringsgatan 58, 111 56 Stockholm”
+	==> Se även ”Todo: Göra chokladpraliner - Chokladfabriken Sankt Eriksplan 2"
+
+1) Överväg att köpa en enkel kökstermometer med tillräcklig nogrannhet?
+
+	==> Överväg Kjell & Company 199 SEK Labbtermometer, noggrannhet +-0.8C (https://www.kjell.com/se/sortiment/hem-kontor-fritid/termometrar-vaderstationer/matlagningstermometrar/labbtermometer-p48667 <https://www.kjell.com/se/sortiment/hem-kontor-fritid/termometrar-vaderstationer/matlagningstermometrar/labbtermometer-p48667>)?
+
+		
+
+	==> Överväg Clas Ohlsson 99 SEK +-1C (https://www.clasohlson.com/se/Digital-kökstermometer/34-2149 <https://www.clasohlson.com/se/Digital-k%C3%B6kstermometer/34-2149>)?
+
+		
+
+	…
+
+2) Överväg att mäta choklad-temperatur med IR-termometer?
+	...
+
+3) Överväg att automatisera choklad-tillkverkning med Arduino programmering, sensorer och motorer?
+
+	==> Överväg att bygga egen Arduino värmekamera (https://learn.adafruit.com/adafruit-amg8833-8x8-thermal-camera-sensor/overview)?
+	==> Överväg att använda “Far infrared thermal sensor array (32x24 RES)” Melexis MLX90640 when it is available in April 2018  (https://www.melexis.com/en/product/MLX90640/Far-Infrared-Thermal-Sensor-Array)?
+	==> Överväg Wikipedias artikel om värmekamera (https://sv.wikipedia.org/wiki/Värmekamera)?
+	...
+
+4) Överväg att kombinera choklad med 3D printing?
+
+	==> Överväg att 3D printa formar för praliner?
+	==> Överväg att 3D printa choklad?
+	...
+
+
+…
+
+Överväg att leta upp information om choklad och ena ideer vad jag kan göra med choklad (och hur jag kan göra det)?
+

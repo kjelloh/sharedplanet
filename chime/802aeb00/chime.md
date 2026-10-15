@@ -1,0 +1,27 @@
+# Todo: Darwinet - Consider to compare with "Offline first" movement and the Hood framework?
+
+```#802aeb00``` *As of 2017-01-16 19:23*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+When listening to the NDC talk by Max Stoiber I heard him reference the ”Offline First” movement and the hood Framework and thought this sounds like something to look into to compare with my own incitements for the Darwinet network?
+
+1) The hood open source framework lives here (http://hood.ie)?
+
+2) The Offline First movement seem to live here (http://offlinefirst.org)?
+
+3) Consider to delve deeper into this CDN talk where I first heard about the hood framework and he importance to design for Offline (https://vimeo.com/channels/ndcoslo2016/171317290)?
+
+==&gt; At 05:45 he mentions hood and the Offline First movement and the hood team.  
+==&gt; At 07:30 he refers to AppCash and states that it is ”crap” and discontinued.  
+==&gt; At 09:55 he instead talks about the better solution ”ServiceWorker”.
+
+==&gt; It seems to be kind of a local web service that can locally provide for the Web-app if the actual web-server is offline?
+
+4) Consider to delve deeper into the ServiceWorker specification (https://w3c.github.io/ServiceWorker/)?
+
+==&gt; Consider if we should have the local Darwinet Client expose a ServiceWorker that processes MIV stored html?  
+…
+
+{% endraw %}

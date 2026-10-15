@@ -1,0 +1,120 @@
+﻿Consider if it could have valuable meaning to extend the concept of value-functions (mappings between types) to also talk about type-functions and kind-functions?
+
+1) Consider the Tha modelling of “normal” value-functions (type mappings)?
+
+	==> Consider a value-function maps values form one type to values of another type?
+
+	value_f: type_1 - > type_2
+
+	==> Consider a function declaration binds a name to an instance of the function argument environment?
+
+	int f(int x);
+
+	   type: “_” ----> {{“x”, “int", null}, {“_”,”int", null}} // type: int -> int
+                  ^
+                  |
+	  value: “f” ----> null // name “f” not yet defined = no body
+
+		==> Thus, the function type can be modelled as an environment listing the mappings x -> y -> z (the last binding is the return meta-value declaration)?
+
+	==> Consider a call to a declared function instantiates a “call environment” and binds provided arguments in this call environment?
+
+	const int k = 4;
+	int f(int x) {
+	    return x*x + k;
+	}
+	void main() {
+	    int a;
+	    int y = f(a); // binds “k” to call environment (stack frame)
+	}
+
+
+	declaration_namespace {
+	    // models int -> int
+	    int x; // argument name
+	    int _; // last = return value (no name)
+	}
+	definition_namespace {
+	    int k = 4;
+	}
+	execution_namespace {
+		scope env = {definition_namespace, declaration_namespace}
+		body = vector<statements>;
+		operator(environment arguments) {
+		    // evaluate statements in the our environment
+		}
+	}
+
+	==> Hm… still a bit fuzzy (we need a clear way of modelling environments from declaration, definition and call to functions)
+
+		function declaration: instantiate an argument and return value environment (argument bindings)?
+		function definition: instantiate an execution environment with bound (captured) free and local names?
+		function call: Create a call-environment where function arguments are bound to the passed one.
+
+			==> Then pass the call-environment to the function to evaluate the body in this context (captured plus called values)
+			...
+
+2) Consider to generalise value-functions to any value->meta-value reaction?
+
+	==> Consider a the-function maps values of one meta-value to values of another meta-value?
+
+	tha_f: meta-value-1 -> meta-value-2
+
+	==> Consider a tha-function declaration binds a name to an instance of the function argument environment?
+
+	meta-value-name-2 f(meta-value-name-1 x);
+
+	   meta: “_” ----> {{“x”, meta-value-name-1, null}, {“_”,meta-value-name-2, null}} // type: meta-value-name-1 -> meta-value-name-2
+	defacto: “f” ----> null // not yet defined = no body
+
+		==> Thus, the function type can be modelled as an environment listing the mappings x -> y -> z (the last binding is the return meta-value declaration)?
+
+3) Then a type-function would map types of one kind into types of another kind?
+
+	type_f: kind_1 -> kind_2
+
+	==> Now, what would type-functions mean?
+
+		==> It seems they are close to “concepts” (they define what types the function accepts and what types it produces)?
+		==> A function template with type arguments would be a C++ type-function?
+
+template <typename T>
+struct F {};
+
+template <>
+struct F<int> {
+    using type = char;
+}
+
+template <>
+struct F<bool> {
+    using type = int;
+}
+
+		==> Which is a type-function?
+
+		f int = char
+		f bool = int
+
+4) Now, what would a kind-function mean?
+
+	==> First problem is we still don’t know what we shall call meta-4 values (kind of kinds)?
+
+	kind_f: kind-of-kinds-1 -> kind-of-kinds-2
+
+	==> Consider of mapping between C++ kinds can have any meaning at all?
+
+		kind_f struct = struct; // Identity - no operation?
+		kind_f struct = class; // Would enable a type_f to query a type of its kind (meta(some_type)) and then create a class-type of a struct-type?
+		kind_f struct = enum; // Just nonsense (the struct kind and enum kind share no properties that can be transferred)?
+		…
+
+	==> It seems we can give kind-functions meaning for user defined kinds?
+
+		==> A my_enum ind that enumerates the members of a struct instance?
+		...
+
+…
+
+Consider to elaborate on if the “function concept” can be re-used on any Tha-value level?
+...

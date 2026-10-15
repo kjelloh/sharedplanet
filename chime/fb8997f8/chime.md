@@ -1,0 +1,171 @@
+# Todo: Consider to document how I installed and configured to use LLVM 16 using macOS Brew package manager?
+
+```#fb8997f8``` *As of 2023-04-23 18:09*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to use LLVM 16 and installing it with the Brew package manager seems a good candidate?
+
+0) Consider the bottom line to understand how to interface the brew installed LLVM 16?
+
+==&gt; It seems it is installed to **/usr/local/Cellar/llvm/16.0.2**
+
+==&gt; It seems Brew uses symlinks "/usr/local/opt/llvm" to actual "/usr/local/Cellar/llvm/16.0.2"
+
+==&gt; It seems I can tell the compiler to link with libc++ with **-L/usr/local/Cellar/llvm/16.0.2/lib/c++ -Wl,-rpath,/usr/local/Cellar/llvm/16.0.2/lib/c++**
+
+NOTE: The "-L" is to link at runtime and the "-Wl,..." is to make dynamic linking at runtime find the correct library (hard coded libc++ in the LLVM 16 bundle)
+
+1) It seems "brew install llvm" does most of the work to get llvm 16 (latest) installed (<https://formulae.brew.sh/formula/llvm> )?
+
+> *"**llvm*  
+> *Install command: **brew install llvm**  
+> Also known as: llvm@16**"*
+
+==&gt; Consider what I can learn from reading the console output of the brew install llvm?
+
+> Last login: Sun Apr 23 16:27:02 on console  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew install llvm  
+> Running \`brew update --auto-update\`...  
+> ==&gt; **Downloading <https://formulae.brew.sh/api/formula.jws.json>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://formulae.brew.sh/api/cask.jws.json>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Auto-updated Homebrew!**  
+> Updated 1 tap (freecad/freecad).  
+> No changes to formulae or casks.
+
+> llvm is already installed but outdated (so it will be upgraded).  
+> ==&gt; **Fetching dependencies for llvm: ****ca-certificates****, ****openssl@1.1****, ****sqlite****, ****xz****, ****python@3.11****, ****z3** **and ****zstd**  
+> ==&gt; **Fetching ****ca-certificates**  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2023-01-10>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:11fe9d0a98a2ac454fa1db95762a697c3340f46560ff27e5e9db8fdeb003f17e>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:11fe9d0a98a2ac454fa1db95762a697c3340f46560ff27e5e9db8fdeb>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Fetching ****openssl@1.1**  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/openssl/1.1/manifests/1.1.1t>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:43c00851b8447bd5d1fba3e8140b74ca3d4a5b19343e64ec50bafae376f95454>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:43c00851b8447bd5d1fba3e8140b74ca3d4a5b19343e64ec50bafae37>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Fetching ****sqlite**  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.41.2>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:a4f10bac36c302931738f59315eac2bb068c8e35066dc23ba5b47141779751cd>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:a4f10bac36c302931738f59315eac2bb068c8e35066dc23ba5b471417>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Fetching ****xz**  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/xz/manifests/5.4.2>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:e374ae9bec525b5811432f833cd09f6cd29f3299e1b0927d6d3cac04938176d1>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:e374ae9bec525b5811432f833cd09f6cd29f3299e1b0927d6d3cac049>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Fetching ****python@3.11**  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/python/3.11/manifests/3.11.3>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/python/3.11/blobs/sha256:e86210ffc0380bf4ccff3e3081e4dbd9c9ee3c2f72574d41498a817050f1ef86>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:e86210ffc0380bf4ccff3e3081e4dbd9c9ee3c2f72574d41498a81705>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Fetching ****z3**  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/z3/manifests/4.12.1-1>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:f2dc9b5807fbc14942bd69e2a01a88ce53d05d97180815f47f77f2b8fe3cc4e7>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f2dc9b5807fbc14942bd69e2a01a88ce53d05d97180815f47f77f2b8f>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Fetching ****zstd**  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/zstd/manifests/1.5.5>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:9c1cfe9158a48f6bd3eeb92608ed2799a048d1d27e70e7acef82d5eb4a7a1cea>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:9c1cfe9158a48f6bd3eeb92608ed2799a048d1d27e70e7acef82d5eb4>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Fetching ****llvm**  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/llvm/manifests/16.0.2>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/llvm/blobs/sha256:49d4e530c6b33423589b0982ded3200540859fec7b0125805c207d9af7aad1de>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:49d4e530c6b33423589b0982ded3200540859fec7b0125805c207d9af>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Installing dependencies for llvm: ****ca-certificates****, ****openssl@1.1****, ****sqlite****, ****xz****, ****python@3.11****, ****z3** **and ****zstd**  
+> ==&gt; **Installing llvm dependency: ****ca-certificates**  
+> ==&gt; **Pouring ca-certificates--2023-01-10.all.bottle.tar.gz**  
+> ==&gt; **Regenerating CA certificate bundle from keychain, this may take a while...**  
+> 🍺 /usr/local/Cellar/ca-certificates/2023-01-10: 3 files, 216.9KB  
+> ==&gt; **Installing llvm dependency: ****openssl@1.1**  
+> ==&gt; **Pouring openssl@1.1--1.1.1t.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/openssl@1.1/1.1.1t: 8,101 files, 18.5MB  
+> ==&gt; **Installing llvm dependency: ****sqlite**  
+> ==&gt; **Pouring sqlite--3.41.2.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/sqlite/3.41.2: 11 files, 4.4MB  
+> ==&gt; **Installing llvm dependency: ****xz**  
+> ==&gt; **Pouring xz--5.4.2.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/xz/5.4.2: 162 files, 2.5MB  
+> ==&gt; **Installing llvm dependency: ****python@3.11**  
+> ==&gt; **Pouring python@3.11--3.11.3.monterey.bottle.tar.gz**  
+> Warning: These files were overwritten during the \`brew link\` step:  
+> /usr/local/bin/2to3  
+> /usr/local/bin/idle3  
+> /usr/local/bin/pydoc3  
+> /usr/local/bin/python3  
+> /usr/local/bin/python3-config  
+> /usr/local/share/man/man1/python3.1  
+> /usr/local/lib/pkgconfig/python3-embed.pc  
+> /usr/local/lib/pkgconfig/python3.pc  
+> /usr/local/Frameworks/Python.framework/Headers  
+> /usr/local/Frameworks/Python.framework/Python  
+> /usr/local/Frameworks/Python.framework/Resources  
+> /usr/local/Frameworks/Python.framework/Versions/Current
+
+> They have been backed up to: /Users/kjell-olovhogdal/Library/Caches/Homebrew/Backup  
+> ==&gt; **/usr/local/Cellar/python@3.11/3.11.3/bin/python3.11 -m ensurepip**  
+> ==&gt; **/usr/local/Cellar/python@3.11/3.11.3/bin/python3.11 -m pip install -v --no-deps --no-index --upgrade --isolated --target=/usr/local/lib/py**  
+> ==&gt; **Summary**  
+> 🍺 /usr/local/Cellar/python@3.11/3.11.3: 3,176 files, 61.4MB  
+> ==&gt; **Installing llvm dependency: ****z3**  
+> ==&gt; **Pouring z3--4.12.1.monterey.bottle.1.tar.gz**  
+> 🍺 /usr/local/Cellar/z3/4.12.1: 144 files, 31.5MB  
+> ==&gt; **Installing llvm dependency: ****zstd**  
+> ==&gt; **Pouring zstd--1.5.5.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/zstd/1.5.5: 31 files, 2.5MB  
+> ==&gt; **Installing ****llvm**  
+> ==&gt; **Pouring llvm--16.0.2.monterey.bottle.tar.gz**  
+> ==&gt; **Caveats**  
+> To use the bundled **libc++** please add the following LDFLAGS:  
+> LDFLAGS="**-L/usr/local/opt/llvm/lib/c++ -Wl,-rpath,/usr/local/opt/llvm/lib/c++**"
+
+> llvm is **keg-only**, which means it was **not symlinked into /usr/local**,  
+> because macOS already provides this software and installing another version in  
+> parallel can cause all kinds of trouble.
+
+> If you need to have llvm first in your PATH, run:  
+> echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' &gt;&gt; ~/.zshrc
+
+> **For compilers to find llvm** you may need to set:  
+> export LDFLAGS="**-L/usr/local/opt/llvm/lib**"  
+> export CPPFLAGS="**-I/usr/local/opt/llvm/include**"  
+> ==&gt; **Summary**  
+> 🍺 **/usr/local/Cellar/llvm/16.0.2**: 6,779 files, 1.6GB  
+> ==&gt; **Running \`brew cleanup llvm\`...**  
+> Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.  
+> Hide these hints with HOMEBREW_NO_ENV_HINTS (see \`man brew\`).  
+> Removing: /usr/local/Cellar/llvm/15.0.3... (6,408 files, 1.3GB)  
+> Warning: Use python3.9 instead of deprecated freecad/freecad/python3.9  
+> Error: Could not get runtime dependencies from /usr/local/opt/pyside2/.brew/pyside2.rb!  
+> Warning: No available formula with the name "freecad/freecad/shiboken2@5.15.2". Did you mean freecad/freecad/shiboken2@5.15.5 or freecad/freecad/pyside2@5.15.5?  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ %
+
+==&gt; It seems Brew REMOVED LLVM 15?
+
+> **Removing**: /usr/local/Cellar/**llvm/15.0.3**... (6,408 files, 1.3GB)
+
+==&gt; It seems Brew sets up symlinks to LLVM 16 in
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro opt % ls -la /usr/local/opt/llvm  
+> lrwxr-xr-x 1 kjell-olovhogdal admin 21 Apr 23 16:40 **/usr/local/opt/llvm** -&gt; ../Cellar/llvm/16.0.2  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro opt %
+
+==&gt; This would make "/usr/local/opt/llvm" into actual "/usr/local/Cellar/llvm/16.0.2"
+
+...
+
+{% endraw %}

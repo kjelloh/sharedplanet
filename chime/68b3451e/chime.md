@@ -1,0 +1,53 @@
+# Todo: Consider the 'Unison' content addressable code as base or inspiration for Darwninet distributed program execution?
+
+```#68b3451e``` *As of 2026-03-01 17:48*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+0) Consider the bottom line as I uncderstand it?
+
+> *I get hints that it is a compiled functional language?*
+
+> *When compiled the function is stored as immutable 'code' keyed with a hash?*
+
+> *You can create distributed systems where execution nodes query the network for missing code?*
+
+> *And because code is content-adressed the distribution is a little like BitTorrent (although cutting up code in snippets may not be required for Unison code tarnsfer?)*
+
+> *All code exists and executes localy in a 'git-style' way (developers do ucm pull / ucm push to share with remotes)*
+
+> *I don't quite get how the runtime get hold of code though?*
+
+==&gt; AHA! So Unison does NOT separate the concept of local vs remote with some defined 'environment or network of nodes'?
+
+==&gt; BUT I want darwinet to behave as a shared state where synchronising is about chosing what state to track (and NOT what remote to pull from or push to)
+
+> *Still, Unison HAVE the notion of content adressable code (stripped from identifiers and based on structure and function only). That mirrors my own idea of a C++ where the compiler cares only about the AST as a DAG, and NOT about identifiers or absolute locations. It seems like a viable idea. And I WANT it!*
+
+> *ANd in that aspect it would be very suitable for code in a Darwinet immutable model! Code with the same functional conetnt and structure IS the same. And code can be executed locally or remote in the immutable shared state. The resukt is 'simply' a new immutable shared state (with function result cached)?*
+
+1) Consider youtube video 'Dejan Miličić - Unison: A New Programming Paradigm' (<https://youtu.be/mQHo2Csqs5w> )?
+
+==&gt; Consider the time stamps created by a commenter?
+
+> Timestamps:  
+> [8:50](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=530s) easy propagating renaming and elimination of name competition problems  
+> [15:34](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=934s) perfect incremental compilation, no batch builds, no unnecessary recompilation  
+> [17:27](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=1047s) diffs show changed functions even if the name did not change (other aspects missed and not shown here)  
+> [18:49](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=1129s) inherent security that you get the code you asked for  
+> [19:58](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=1198s) inherent multiple version coexistence support breaks the diamond problem and dependency hell  
+> [23:22](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=1402s) no more web framework plumbing, serialization is inherent  
+> [24:26](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=1466s) easy data schema migration  
+> [26:00](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=1560s) tests cached and only ever rerun when what they test has actually changed  
+> [28:13](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=1693s) small code to big data - no longer big data to small code - "adaptive service graph compression"  
+> [30:26](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=1826s)  
+> "just in time deployment"  
+> [31:02](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=1862s) microservices without webframework serialization plumbing (again)  
+> [34:38](https://www.youtube.com/watch?v=mQHo2Csqs5w&t=2078s) questions
+
+2) It seems Unison lives here (<https://www.unison-lang.org> )?
+
+...
+
+{% endraw %}

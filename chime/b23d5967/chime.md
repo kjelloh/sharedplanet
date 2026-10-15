@@ -1,0 +1,15 @@
+# Todo: SPC Commercial - select existing commercials as role models
+
+```#b23d5967``` *As of 2015-03-29 15:36*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to select some good commercials as role models for SPB/SPC commercial (tell the world what it is about)
+
+1. Select commercials that you like and seem to convey a message in a convincing way
+2. FGind the form of that commercial (in what order do they communicate different aspects of ”what if”, ”now”, ”what could be”, ”the solution/new way” etc)
+3. Focus heavily to convey ”why” and not ”what” (in the sense consumers supports the ”why” and not the ”what”). They want to sympathize with the goal and means.
+4. Also focus on the model use in Martin Luther Kings ”I Have a dream” (switch back and forth between ”how it is now” and ”how it could be”)
+
+{% endraw %}

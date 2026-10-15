@@ -1,0 +1,31 @@
+﻿I have migrated my Parallels VM with RAD Studio and have made some initial tests and found that the performance is worse (!) on the more and faster CPUs on my Mac Pro - Why?
+
+1) Consider the initial performance tests of Compiling the Testbench on MacBook Pro mid 2014 vs Mac Pro "Trash Can"?
+
+	==> It seems with screen capture on the MacBook Pro mid 2014 compiles in around 3:30 compared to Mac Pro around 5:30 (+ 2minutes or almost 60% longer!)
+
+Internal SSD MacBook Pro mid 2014 3:31, 3:28
+TB2 SSD MacBook Pro mid 2014 3:34, 3:46
+
+TB2 SSD Mac Pro 5:37, 5:41 (without screen capture 4:40,...) 
+
+
+	==> It seems if I compile without screen cast the Mac Pro compiles in around one minute shorter?
+
+		
+
+On Mac Pro it seems the process VTEncoderXPCService runs to service screen capture and this process consumes a large portion of the available CPU capacity (350% .. 400%!). Now the CPU usage 350% seems ridiculous, what on earth does 350% even mean? Is it 3.5 CPU on full throttle? Anyhow, it seems to be a fact that if I do NOT use screen capture the process VTEncoderXPCService keeps silent and compilation is reduced from 5:30 to 4:30 so screen capturing is costly on the Trash Can Mac Pro?
+
+2) Consider to figure out why the Mac OS Activity Monitor, Windows 10 Task Manager and Parallels own resource monitor shows so disparate different values?
+
+When compiling in Windows 10 Parallels VM on Mac Pro "Trash Can" the Mac OS Activity Monitor shows only about 100% CPU usage for the VM Process. The corresponding value on my MAcPro is around 200%. Now this computer has six cores as opposed to the MacBook Pro mid 2014 that has four cores so it is not totally clear what this value actually mean?
+
+
+
+What is maybe even more opaque is why Mac OS Activity Monitor during compilation in the VM shows that user CPU utilisation is 30% and 60% is idling?! Thats not good? But what does that mean?
+
+
+
+
+
+...

@@ -1,0 +1,18 @@
+﻿I want a way to make my sliding workspace wall into a panel saw using my handheld circular saw.
+
+1) Consider Openbuilds V-slot plus gantry system (https://openbuildspartstore.com <https://openbuildspartstore.com/> )?
+
+	==> It seems I can use two ready-to-assemble V-slot gantries (https://openbuildspartstore.com/mini-v-gantry-kit/ <https://openbuildspartstore.com/mini-v-gantry-kit/> )?
+
+
+The mini V Gantry Kit for a 20x20 V-slot linear rail
+
+NOTE: I would need 4 of theese to make a sled for my circualr saw! That's 136€...
+
+
+
+	==> It seems a 2m 20x20mm V-slot lienar rail would set me back 21€?
+
+
+
+...

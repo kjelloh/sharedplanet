@@ -1,0 +1,246 @@
+# Todo: Consider to start scripting my youtube videos (to see if this makes my story telling abilities better)?
+
+```#444eeb41``` *As of 2018-08-30 00:00*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems I should try scripting my youtube videos to see if that makes me better at making the videos telling compelling stories?
+
+-1) Consider a script for “180829 Miter Saw mount and Router mount planning”?
+
+> I am building a flippable miter saw and router table module - for my indoor shed.
+
+> Time has come to mount the miter saw and the router to this module!
+
+> Well, how hard can it be?
+
+> Stay tuned to see how I made progress on this project in my very cramped 2-by-2 meters indoor shed!
+
+> ------------------------------------------------------------------------------------------------------------------------------------
+
+> I started of by ensuing my miter saw was mounted in a way so that the fence was squared with my indoor shed fence.
+
+> I went for mounting the miter saw with M6 bolts.
+
+> After a trial and error drill I decided to clamp the saw so it does not move when I drill the mounting wholes.
+
+> Now it was easy to drill the 6mm wholes.
+
+> As usual - I needed to vacuum the dust.
+
+> Note to self - I really need to incorporate a vacuum connection - so that I can vacuum saw dust into my indoor shed dust extraction system!
+
+> This time I simply used my hand held dyson. It got the job done.
+
+> Now the mounting of the bolts with washer and nuts was as easy as it can be.
+
+> Ok! How easy is it now to actually flip this miter saw - router module?
+
+> Well - manageable…
+
+> 1) The fitting to the module frame was not perfect - And I had to fiddle a bit to get it to fit.
+
+> ==&gt; Note to self - I should try to create some draft or fillet to the 25 mm dowels and the wholes to make them slip together more smoothly?
+
+> 2) And the miter saw clamp fell out and the adjustable fence moved in the flip operation. I suppose I have to learn how to prepare this flipping to prevent this from happening.
+
+> Now, how should I mount the router to the router table side of this flippable module?
+
+> I decided to mount the router centered so that the router bit is aligned to the same distance from the indoor shed fence as the miter saw fence.
+
+> In this way at least I know the miter saw fence and the router table fence will end up at the same distance from the indoor shed fence.
+
+> Just seems like a good idea for now.
+
+> Now - transferring the measurement of the router base to the melanin sheet needed some planning.
+
+> How do I find the center of of the drill bit?
+
+> I went for using the accessory of the my Makita RT0700 router that I at this stage though was some kind of “Centerring bushing"
+
+> At first it did not seem to fit?
+
+> It did not fit the base protector?
+
+> And it did not fit the base inside?
+
+> Time to consult the manual!
+
+> After searching the manual - I figured out that the accessory I was trying to use was a “template guide"
+
+> And it was to be mounted between the router base and the router base protector.
+
+> No time to spare. I unscrewed the base protector and mounted the the template guide.
+
+> The guide of course protruded a bit - but the router was still able to stand on it.
+
+> Now I was able to place the base - centered where I wanted it - with an accuracy I though should be good enough.
+
+> Marking the outline of the base - proved to be my next obstacle to overcome.
+
+> Due to the guide protrusion the distance between the base and the melanin board - was enough to make it hard to do accurate markings.
+
+> I detected this after my first try.
+
+> So - I simply had to repeat this operation!
+
+> **==&gt; The maker god keeps telling me to step up my game i presume? **
+
+> No worries - The markings now seems good enough!
+
+> Next - got the brilliant idea to use my drill press stand.
+
+> It should fit under the router table melanin board?
+
+> Well, it took some effort - and it kind of did fit.
+
+> But now the mounting bolts of the miter saw was in the way - for me to be able move the drill stand - so I could drill the wholes where they should be!
+
+> \*sigh\*!
+
+> Wait! Maybe it can work if I turn the frame 90 degrees?
+
+> Maybe - in that orientation the mounting bolts are further apart (and thus not in the way)?
+
+> Well - Dream on maker boy!
+
+> ==&gt; Video ARGH (me addressing the maker good)
+
+> Wait! If I place some scrap wood to create distance to the miter saw mounting bolts?
+
+> Yes, that seems to work!
+
+> Now I got my next great idea!
+
+> I should swap drills to my newer Bosh PBR 240 RE machine?
+
+> ==&gt; I had previously discovered that the black and decker machine simply lacked the power and the speed control to make drilling a good experience.
+
+> ==&gt; Maybe my newer Bosh machine would prove a better work horse for this purpose?
+
+> Well, said and done. The swap was easy enough!
+
+> I also had to mount the corrects chuck.
+
+> And ensure the Bosh machine was set to “Drilling”
+
+> ==&gt; as a side Note: The PBR 240 RE is a drill hammer that can operate as an ordinary drill.
+
+> ==&gt; So setting it to “drill action” is crucial.
+
+> Now we are all set - are we not?
+
+> Time to fetch and attach my vacuum to the indoor shed dust extraction system.
+
+> Connect the drill to the mains.
+
+> And hold my 3D printed drill press dust extraction near the drill.
+
+> Here goes!
+
+> Well - Drilling the wholes this ways was quite fiddly and complicated.
+
+> I had to adjust the drill press extension and position for each hole to drill.
+
+> But I got it done!
+
+> And at least in the process I familiarised myself some more with this Wabeco drill press stand!
+
+> Now some more gymnastics to remove the drill press stand again.
+
+> And time to inspect the result.
+
+> And - Not good enough!
+
+> ==&gt; Note to self - I'm still is not able to measure with enough accuracy to pull this kind of drilling off!
+
+> Well - I suppose this is easily fixed by fixating the router base in the two wholes that actually fit.
+
+> And then just hand drill the two that needs adjustment.
+
+> ==&gt; Note to self - I should of course have hand drilled these holes from the beginning? Hm…
+
+> Any-whoo - Now I have to figure out how to countersink the router base into the melanin board.
+
+> It seems I should route the base protector plate pattern into the board to make it flush with the top surface.
+
+> A plunge base should be ideal for this kind of job.
+
+> Now, I don’t have the plunge base for my Makita router.
+
+> I wonder if I can still free-hand this pattern?
+
+> Well, I decided to call it the day here.
+
+> And later that evening I actually ordered the Makita plunge base.
+
+> It was available on the web for roughly 800 SEK (including shipping).
+
+> So I have now decided to wait for this plunge base to arrive before continuing this work.
+
+> And when it comes I will mount that one instead of my existing Makita base.
+
+> And also use it to do any routing required to mount the plunge base flush with the melanin board.
+
+> So - there you have it!
+
+> I hope you learned something from viewing me stumbling along in boot strapping my maker space and build my indoor shed.
+
+> Tank you for watching - And see you next time!
+
+0) Consider a script for “180827 Support Material Removal fail and success”?
+
+> My drill press dust extraction design printed with supports in the extraction channels.
+
+> And these channels were hard to reach.
+
+> So - What to do? What can I use to remove the support material inside this model?
+
+> I imagined I could use some form of very small saw blades?
+
+> So I went to my nearest Bauhaus store - and bough two types that they had on the shelf.
+
+> And here they are!
+
+> Lets see if I can use them to remove the inside supports of my 3d print!
+
+> Well, this blade was just to thick to fit into the space between the support and the printed model.
+
+> Who would have guessed?
+
+> How about the thinner and longer blades I bough?
+
+> Well, to begin with - they had this irritatingly protruding “thingies” - at the ends.
+
+> This caused them to be useless for my purpose.
+
+> No worries, We just remove it with a side cutter.
+
+> (It was surprisingly easy! I wonder about the quality of these blades… hmmm...)
+
+> Well, I am now able to insert the blade at least some distance.
+
+> But the plastic is just to stiff and the blade to weak to enable me to accomplish any real damage to the supports.
+
+> I finally ended up using a a simple plier to hold plain screws and nails and poke **increasingly fiercely** into my model!
+
+> It took an hour or so. And my fingers hurt. But - I GOT THE JOB DONE!
+
+> So here it is - My three-dee printed drill press dust extraction (all extraction channels free to suck up any innocent dust that happens to come in the way…)
+
+> **But I learned one thing - Never again three-dee print a model that needs support inside in hard-to-reach places!**
+
+> **==&gt; The next time I will experiment with either designing my models so - no support is required.**
+
+> **==&gt; OR… I may try to simply force my slicer to NOT add any support - to see what amount of overhang my Cetus Three-Dee printer is able to print free-standing?**
+
+> So, there you have it!
+
+> I hope you found something interesting in this short story about my struggle to remove inside-model support material?
+
+> Thanks for watching - And see you NEXT TIME!
+
+…
+
+{% endraw %}

@@ -1,0 +1,36 @@
+﻿It seems we should be able to build a turn table with a camera that takes photos of a 3D object and then rises the images to MeshRoom to produce a digital 3D Model of the object?
+
+	==> Also see “Todo: Consider to use re-used laptop web-cams to build a 3D scanner?"
+	==> Also see “Todo: Consider to check out Meshroom to use it for 3D scanning of objects (to be used in CAD and CAM)?” 
+
+1) Consider some simple design of a turn table, a camera and some SBC to automate the 3D scanning process using MeshRoom?
+
+	…
+
+2) Consider we can use a DSLR camera with controlled shutter and then process images from an SD card?
+
+	==> This would be a way to re-use a more capable camera to be used as input in the 3D scanning process?
+
+	
+
+
+	==> Consider we need to be able to position the camera in an arc vertically and radially in relation to the object?
+
+3) Consider we can speed up the 3D scanning by filming the object and then create a sufficient set of still images that covers the object dimensions for Meshroom processing?
+
+	==> Consider we can automate FFmpeg to turn the film into a set of images to feed to Meshroom?
+	...
+
+4) Consider the OpenScan project that seems to do exactly what I imagined above (https://www.openscan.eu/?lang=en )?
+
+	==> It seems OpenScan can use several different photogrammetry applications (among then MeshRoom) (https://www.openscan.eu/software?lang=en)?
+
+		
+
+	==> Consider this interview "Automatic Smartphone 3D Scanner" by Sanlander of the inventor of Open Scan (https://www.youtube.com/watch?v=m7ee4jLk_As )?
+
+	
+
+…
+
+Consider 

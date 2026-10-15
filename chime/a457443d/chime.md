@@ -1,0 +1,185 @@
+# Todo: Consider to document the basics installs I made on Ubuntu Machine?
+
+```#a457443d``` *As of 2016-04-06 01:48*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, I have re-created a fresh Ubuntu 14 Parallels machine on my MAC. Perhaps it would be a good idea to document for future use the operations I made to configure it to my taste?
+
+1) I created the Ubuntu 14 machine using Parallels built in “new machine” wizard of Parallel Desktop Control Center (the upper-right-corner plus-sign)
+
+![](Parallels_Add_New_Button.tiff)
+
+==&gt; The machine was created from downloaded iso-image and created user “parallels” (as root)
+
+2) I executed the Software updater until it showed “…however there is an upgrade to 15 available”.
+
+==&gt; I ran the upgrade to version 15.
+
+==&gt; It took 2-3 hours for the download part to finish (be patient)
+
+==&gt; The upgrade actually seem to have failed (it hanged on restart and failed to reboot after being stopped)
+
+==&gt; I decided finally to scrap this whole installation and start over from fresh.
+
+==&gt; I decided to simply stick with 14 and upgrade when appropriate (14 seem to be the current “standard”)?
+
+...
+
+3) I configured Ubuntu to use Swedish MAC keyboard.
+
+==&gt; Clicked the cogs-wheel button in ubuntu main window upper right corner.
+
+==&gt; Selected System Settings.
+
+==&gt; In Dialog, selected “Text Entry”
+
+==&gt; In dialog - pressed left pane “input sources to use” bottom button ‘+’
+
+==&gt; In dialog - selected “Swedish (Macintosh)”
+
+==&gt; Back in “Text Entry” Dialog - selected US Keyboard and pressed ‘-‘ (to remove)
+
+==&gt; Now Ubuntu console window used Swedish Keyboard layout ok.
+
+4) Installed Clang on Ubuntu MATE 16.04 machine
+
+==&gt; In &lt;System&gt; / &lt;Administration&gt; launched “Software Boutique"
+
+![](MATE_Software_Boutique_Synaptic.tiff)
+
+==&gt; In “Software Boutique” installed “Synaptic Package Manager” (success)
+
+==&gt; Launched the Synaptic Package Manager and searched fro llvm.
+
+==&gt; Checked all llvm 3.9 entries
+
+==&gt; Clicked Apply
+
+==&gt; A dialog opened showing download and install progress (success)
+
+![](Synaptic_Package_Manager_llvm.tiff)
+
+5) Installed Clang on Ubuntu Machine.
+
+==&gt; Available downloads seem to be published here (<http://llvm.org/releases/download.html>)?
+
+==&gt; LLVM seem to support the apt command (advanced packaging tool) of ubuntu on this page (<http://llvm.org/apt/>)?
+
+==&gt; It seems we first has to enter “deb” entries to file “/etc/apt/sources.list” (<https://gist.github.com/fyears/745da3cf6b19dbff3d0e>)
+
+> > parallels@ubuntu:/etc/apt/sources.list.d$ sudo bash -c "cat &gt;&gt; /etc/apt/sources.list" &lt;&lt; LLVMAPT
+
+> > &gt; deb <http://llvm.org/apt/trusty/> llvm-toolchain-trusty main
+
+> > &gt; deb-src <http://llvm.org/apt/trusty/> llvm-toolchain-trusty main
+
+> > &gt; deb <http://llvm.org/apt/precise/> llvm-toolchain-precise-3.5 main
+
+> > &gt; deb-src <http://llvm.org/apt/precise/> llvm-toolchain-precise-3.5 main
+
+> > &gt; deb <http://llvm.org/apt/precise/> llvm-toolchain-precise-3.6 main
+
+> > &gt; deb-src <http://llvm.org/apt/precise/> llvm-toolchain-precise-3.6 main
+
+> > &gt; LLVMAPT
+
+> > &#91;sudo&#93; password for parallels:
+
+==&gt; This seem to open up and editor to enter lines into the /etc/apt/sources.list file?
+
+==&gt; It seems the “&lt;&lt; LLVMAPT” defines how to end input (because entering the last LLVMAPT ends the input of line)?
+
+==&gt; The deb-entries into sources.list seem to be defined in this thread (<http://askubuntu.com/questions/233064/why-am-i-getting-command-deb-not-found/233069>)?
+
+“'deb' is not a command. It is used in sources.list file to indicate a Debian software repository"
+
+==&gt; It seems one now just enters these two commands?
+
+sudo apt-get update -y
+
+sudo apt-get install -y clang-3.6 lldb-3.6 libc++-dev libc++abi-de
+
+==&gt; This actually seem to work (at least ubuntu starts downloading and processing a lot of files)?
+
+==&gt; NOTE: It seems Ubuntu 14 only supports clang 3.6 or lower (trying with 3.7 or higher gives an error)
+
+==&gt; the apt-get command seem to be defined here (<https://help.ubuntu.com/lts/serverguide/apt-get.html>)?
+
+“The apt-get command is a powerful command-line tool, which works with Ubuntu's Advanced Packaging Tool”
+
+==&gt; This failed on my machine!
+
+> > parallels@ubuntu:~$ **wget** -O - <http://llvm.org/apt/llvm-snapshot.gpg.key|sudo> apt-key add -  
+> > --2016-04-05 19:18:34-- <http://llvm.org/apt/llvm-snapshot.gpg.key>
+
+> > Resolving [llvm.org](http://llvm.org) ([llvm.org](http://llvm.org))... 192.17.58.186
+
+> > Connecting to [llvm.org](http://llvm.org) ([llvm.org](http://llvm.org))|192.17.58.186|:80... connected.
+
+> > HTTP request sent, awaiting response... 200 OK
+
+> > Length: 3145 (3.1K) &#91;application/pgp-keys&#93;
+
+> > Saving to: ‘STDOUT’
+
+> > 100%&#91;===============================================================================================&gt;&#93; 3,145 --.-K/s in 0s
+
+> > 2016-04-05 19:18:34 (195 MB/s) - written to stdout &#91;3145/3145&#93;
+
+> > OK
+
+> > parallels@ubuntu:~$
+
+> > parallels@ubuntu:~$ sudo **apt-get** install clang-3.7 lldb-3.7
+
+> > Reading package lists... Done
+
+> > Building dependency tree
+
+> > Reading state information... Done
+
+> > E: Unable to locate package clang-3.7
+
+> > E: Couldn't find any package by regex 'clang-3.7'
+
+> > E: Unable to locate package lldb-3.7
+
+> > E: Couldn't find any package by regex 'lldb-3.7'
+
+> > parallels@ubuntu:~$
+
+==&gt; This seem to provide a good overview on repositories, packages and both GUI and command line editing of sources.list (<https://help.ubuntu.com/community/Repositories/Ubuntu#Adding_PPAs>)?
+
+**WE ARE HERE...**
+
+==&gt; Also, this youtube channel seem to give basic understanding to apt-get (<https://www.youtube.com/watch?v=p0k6Ok-Xuqw&list=PL9n5xWGy9hoAL_U2sqt6ryaJVyYoRU3sh&index=2>)?
+
+==&gt; Q: How can I choose to install 3.8 (<http://llvm.org/releases/3.8.0/clang+llvm-3.8.0-x86_64-linux-gnu-ubuntu-14.04.tar.xz>)?
+
+a) Sidenote: about AMD64 versus EM64T(<https://en.wikipedia.org/wiki/X86-64>)
+
+==&gt; It seems compilers normally produce instructions in the common set of AMD64 and EM64T?
+
+“Compilers generally produce executables (i.e. machine code) that avoid any differences, at least for ordinary application programs”
+
+==&gt; Thus it seems Ubuntu deployments marked for AMD64 is also for x64 platforms?
+
+(<https://www.maketecheasier.com/can-i-install-amd64-ubuntu-on-my-intel-64-bit-machine/>)
+
+“Back to the Ubuntu ISO download issue, if you are using a 32-bit computer, you will download the i386 version. If you are using a 64-bit computer, you will download the amd64 version, regardless what brand of CPU you are using”
+
+“A 32-bit architecture is often referred to as i386 or x86 while a 64-bit architecture is widely known as any of the following: AMD64/EM64T/x86-64/x64, depending on the products and the manufacturers”
+
+(<http://askubuntu.com/questions/54296/difference-between-the-i386-download-and-the-amd64>)
+
+“i386 refers to the 32-bit edition and amd64 (or x86_64) refers to the 64-bit edition for Intel and AMD processors”
+
+…
+
+Consider to document leads to how to install, upgrade and configure Ubuntu to my taste and needs?
+
+...
+
+{% endraw %}

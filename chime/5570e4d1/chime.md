@@ -1,0 +1,14 @@
+# Todo: Write about SPC Darwinet app reading SPC-pin and showing citizen information!
+
+```#5570e4d1``` *As of 2015-08-12 17:40*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It would be really nice with an SPC Darwinet app that are able to read an spc QR-pin and form that access a global database in an spc darwinet domain for information about the citizen with pin-defined spc-hashtag!
+
+1) Good proof of concept for global data fetched from other nodes when needed (this is another form of spatial-related data but in this case dependent on what users that are on the same location, not the location per se).  
+2) What a great social platform! One can connect url and virtually through the same spc-hashcode!  
+3) The hash-code concept can be expanded to refer to other artifacts like blog-entries, publications, reports and so on. We would then go for a knowledge, power and action groups of hash-codes!
+
+{% endraw %}

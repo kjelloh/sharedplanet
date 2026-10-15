@@ -1,0 +1,37 @@
+# Todo: Jordan B. Petersson - Consider it would be meaningful to follow up on his latest podcasts on his own, Sam Harris and Joe Rogan?
+
+```#4986c152``` *As of 2017-04-09 12:19*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Listening to Petersson podcast episode 14 a lot of things started to fall into place for me and I felt it must be valuable to listen to this and the Tom Harris and Joe Rogan podcasts with Petersson more to try and produce my owns thoughts guided by the topics brought up in them?
+
+1) This seems to be the home of Petersson podcast episode 14 (http://jordanbpeterson.com/2017/04/episode-14/)?
+
+2) This seems to be the home of the two Petersson talks in Sam Harris podcast (https://www.samharris.org/podcast/item/what-is-true and https://www.samharris.org/podcast/item/meaning-and-chaos)?
+
+==&gt; Consider to make comments and notes rom the subjects and arguments brought forward in ”Meaning and Chaos. A Conversation with Jordan Peterson” episode (https://www.samharris.org/podcast/item/meaning-and-chaos)?  
+==&gt; Consider to make comments and notes rom the subjects and arguments brought forward in ”What is True?. A Conversation with Jordan B. Peterson” episode (https://www.samharris.org/podcast/item/what-is-true)?
+
+3) This seems to be the home of the Petersson talk on Joe Rogan podcast (https://youtu.be/04wyGK6k6HE)?
+
+==&gt; It seems to be the podcast episode 877 (http://podcasts.joerogan.net/podcasts/jordan-peterson)?
+
+4) Consider to expand a lost of notes and Todo:s produced by me when listening top these talks?
+
+==&gt; Consider Logos and how humanity may strike the balance between Chaos and Order (Jordan talking about Logos producing ”facts” that leads to action to ”fight the dragon” (chaos) and protect the castle (order))?  
+==&gt; Consider how to frame the proposal that Sam Harris notion of ”truth” will fail to produce the human action required to find balance between order and chaos?  
+==&gt; Consider Logos as the ”make or truth rafts” to travel the seam of the unknown (and unknownable)?
+
+==&gt; Consider to invent a ”God” that encapsulates Logos in the story of the ”Maker of rafts” (self referencing ungrounded truth webs) to survive on the sea of the unknwon?  
+==&gt; Consider drowning in the sea of unknown is giving up to chaos?  
+==&gt; Consider not making new truths rafts as being unable to travel (giving up to order)?  
+...
+
+…
+
+Consider to come back to these interviews and use them to harvest their and my own thoughts to produce Todo:s, blogposts and possible other offsprings of actions?  
+...
+
+{% endraw %}

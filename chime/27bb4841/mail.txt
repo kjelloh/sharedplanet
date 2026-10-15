@@ -1,0 +1,29 @@
+﻿This tool was mentioned on Cppcast episode 160625 (http://cppcast.com/2016/06/herb-sutter/) in the introduction news section.
+
+1) The ANTLR seem to live here (https://www.youtube.com/watch?v=EJtqHLvAIZE&list=PLs3KjaCtOwSZ2tbuV1hx8Xz-rFZTan2J1)?
+
+	“ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. It's widely used to build languages, tools, and frameworks. From a grammar, ANTLR generates a parser that can build and walk parse trees.”
+
+2) Consider this page on using ANTLR Parse Generator (http://www.antlr.org/about.html)?
+
+	“From a formal language description called a grammar, ANTLR generates a parser for that language that can automatically build parse trees, which are data structures representing how a grammar matches the input. ANTLR also automatically generates tree walkers that you can use to visit the nodes of those trees to execute application-specific code. “
+
+3) Consider to delve into this Github project publishing a HUGE set of grammars for all kind of “languages” (https://github.com/antlr/grammars-v4)?
+
+	==> Consider the C++ grammar here (https://github.com/antlr/grammars-v4/tree/master/cpp)?
+	…
+
+4) Consider to study the Jetbrains (Clion) ANTLR plugins (https://plugins.jetbrains.com/plugin/7358?pr=)?
+
+	“This plugin is for ANTLR v4 grammars and includes ANTLR 4.5.3. It works with Intellij 13.x-15, 2016.1. It should work in other Jetbrains IDEs. I have tested in PyCharm 4.5 and CLion 1.2.”
+
+	==> Sidenote: This seem to be an official listing of Third-Party software used by CLion (https://confluence.jetbrains.com/display/CLION/Third-Party+Software+Used+by+CLion)?
+	...
+
+5) The CLion intellij-plugin-v4 seem to live here on Github (https://github.com/antlr/intellij-plugin-v4/releases)?
+
+	…
+…
+
+Consider to delve into what ANTLR can be used for in terms of encode decode of data messages as well as C++ parsing?
+...

@@ -1,0 +1,146 @@
+﻿Right now I have the hunch the Lambda Calculus can be viewed as the original notation to be able to talk about computation in a way that can also be translated into actual executable Turing machines?
+
+1) Consider youtube video "Lambda Calculus - Computerphile" by Professor Graham Hutton (https://www.youtube.com/watch?v=eis11j_iGMs <https://www.youtube.com/watch?v=eis11j_iGMs> )?
+
+	==> It seems in this video Professor Graham Hutton explains lambda syntax for a function and how we can use this to define TRUE, FALSE and Recursion?
+
+	
+	Lamda Calculus syntax for a function that takes variable x and returns the result of the computation x+1
+
+	==> It seems he begins with stating that lambda calculus has no types or values of types and then moves on to define TRUE and FALSE as functions (https://youtu.be/eis11j_iGMs?t=390 <https://youtu.be/eis11j_iGMs?t=390> )?
+
+"What I'd like to end up with is [06:32] a couple of little examples of what you can do with it. So, the Lambda Calculus has basically got nothing in it: it's got variables, it's got a way of building functions, and it's got a way of applying functions. It doesn't have any built-in data types like numbers, logical values, recursion and things like that. So if you want to do these things in the Lambda Calculus, you need to encode them. So I'll end up showing you a simple encoding, and the encoding which I'm going to show you is the logical values TRUE and FALSE. "
+
+	==> It seems he uses the term "value" as meaning the lambda function that encodes the behaviour of TRUE and FALSE?
+
+2) Consider youtube video "Essentials: Functional Programming's Y Combinator - Computerphile" by Professor Graham Hutton (https://www.youtube.com/watch?v=9T8A89jgeTI <https://www.youtube.com/watch?v=9T8A89jgeTI> )?
+
+3) Consider youtube video "Lambda Calculus - Fundamentals of Lambda Calculus & Functional Programming in JavaScript" by Gabriel Lebec at Fullstack Academy of Code (https://www.youtube.com/watch?v=3VQ382QG-y4&t=10s <https://www.youtube.com/watch?v=3VQ382QG-y4&t=10s> )?
+
+	==> It seems material for this talk including slides are here on Github (https://github.com/glebec/lambda-talk <https://github.com/glebec/lambda-talk> )?
+
+	==> It seems he ends with a good set of references to more information on Lambda Calculus, Combinators and stuff related to this ()?
+
+	
+
+Additional Resources
+
+Combinator Birds · Rathman <http://bit.ly/2iudab9>
+To Mock a Mockingbird · Smullyan <http://amzn.to/2g9AlXl>
+To Dissect a Mockingbird · Keenan <http://dkeenan.com/Lambda>
+A Tutorial Introduction to the Lambda Calculus · Rojas <http://bit.ly/1agRC97>
+Lambda Calculus · Wikipedia <http://bit.ly/1TsPkGn>
+The Lambda Calculus · Stanford <http://stanford.io/2vtg8hp>
+History of Lambda-calculus and Combinatory Logic · Cardone, Hindley <http://bit.ly/2wCxv4k>
+An Introduction to Functional Programming through Lambda Calculus · Michaelson <http://amzn.to/2vtts56>
+
+
+	==> Consider the web-based Calculator "Combinator Birds" (http://www.angelfire.com/tx4/cus/combinator/birds.html <http://www.angelfire.com/tx4/cus/combinator/birds.html> )?
+	==> Consider the book "To Mock a Mocking Bird: Including an Amazing Adventure in Combinatory Logic" by Raymond M. Smullyan (https://www.amazon.com/gp/product/0192801422/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i8 <https://www.amazon.com/gp/product/0192801422/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i8> )?
+ 
+	
+
+I get the hunch from the youtube talk  "Lambda Calculus - Fundamentals of Lambda Calculus & Functional Programming in JavaScript" by Gabriel Lebec at Fullstack Academy of Code (https://www.youtube.com/watch?v=3VQ382QG-y4&t=10s <https://www.youtube.com/watch?v=3VQ382QG-y4&t=10s> ) that this book explains lambda calculus and the computation it is able to express throughn its syntax and semantics, as birds singing in response to hearing the song of other birds. So the computation is defined by the bird and the result is a song. So bird song serves as the isomorphic representation of expressions and the birds themselves as functions defining a computation of bird song? If so I like this way of modelling computation!
+
+	==> Consider the book "An Introduction to Functional Programming Through Lambda Calculus " by Greg Michaelson (https://www.amazon.com/Introduction-Functional-Programming-Calculus-Mathematics/dp/0486478831 <https://www.amazon.com/Introduction-Functional-Programming-Calculus-Mathematics/dp/0486478831> )?
+	
+	==> Consider the paper "To Dissect a Mockingbird: A Graphical Notation for the Lambda Calculus with Animated Reduction. David C Keenan, 27-Aug-1996, last updated 1-Apr-2014" (http://dkeenan.com/Lambda/ <http://dkeenan.com/Lambda/> )
+
+"Abstract
+
+The lambda calculus, and the closely related theory of combinators, are important in the foundations of mathematics, logic and computer science. This paper provides an informal and entertaining introduction by means of an animated graphical notation."
+
+		==> Consider it seems this paper expresses lambda calculus (computation) as 2-dimensional graphs using arrows between pictograms instead of variable names?
+
+"So I am going to introduce you to some of the strange characters that inhabit the world of combinators by using a two-dimensional notation that I developed. This notation started from the idea that, instead of the bound variables we could draw arrows connecting each lambda symbol to blank spaces in the expression where its variable would have appeared."
+
+
+	
+	Ear-to-Throat "Idiot Bird" that just sings what it hears (also called "Identity")
+
+	
+	The Ear-to-mocked-bird-applicator-to-throat that can "become" or sing-like another bird
+
+	==> Consider the paper "A Tutorial Introduction to the Lambda Calculus Rau ́l Rojas∗ FU Berlin, WS-97/98" (http://www.inf.fu-berlin.de/lehre/WS03/alpi/lambda.pdf <http://www.inf.fu-berlin.de/lehre/WS03/alpi/lambda.pdf> )?
+
+"Abstract
+
+This paper is a short and painless introduction to the λ calculus. Originally developed in order to study some mathematical properties of effectively com- putable functions, this formalism has provided a strong theoretical foundation for the family of functional programming languages. We show how to perform some arithmetical computations using the λ calculus and how to define recur- sive functions, even though functions in λ calculus are not given names and thus cannot refer explicitly to themselves."
+
+	==> It seems there is also a PART II "A Flock of Functions: Combinators, Lambda Calculus, & Church Encodings in JS - Part II" of this talk available here (https://www.youtube.com/watch?v=pAnLQ9jwN-E <https://www.youtube.com/watch?v=pAnLQ9jwN-E> )?
+
+		TODO: Watch also this second part of this Talk?
+		...
+
+	==> It seems the original (untyped) Lambda Calculus syntax is expression being either a variable, an application, a function abstraction and parenthesis grouping?
+
+	
+
+	==> He seems to give a good overview of (here bird named) combinators (https://youtu.be/3VQ382QG-y4?t=2014 <https://youtu.be/3VQ382QG-y4?t=2014> )?
+
+	
+	
+
+		==> Consider he gives a short but good comprehensive history of "the formulation of mathematical logic" (https://youtu.be/3VQ382QG-y4?t=1354 <https://youtu.be/3VQ382QG-y4?t=1354> )?
+
+	
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+4) Consider youtube video "What is a Monad? - Computerphile" by Professor Graham Hutton (https://www.youtube.com/watch?v=t1e8gqXLbsU <https://www.youtube.com/watch?v=t1e8gqXLbsU> )?
+
+	==> Consider he makes a good attempt to show the "Monad Pattern" of function + Effects composition by transforming division on Integers to division on Maybe-Integers?
+
+	
+	Original function that evaluates division
+
+	
+	The transform of divide into a "safe divide" that returns a Maybe-Int instead of an Int
+
+	
+	The modified evaluator that operates on our new "safe divide" (so we now have Maybe-Int as input and output) 
+
+	
+	Identifying the pattern "case Maybe-Int" into return of Nothing or f(Just x) 
+
+So, the pattern we are looking at is that when we transformed our computation on Integers into computation on Maybe-Integers we had to add a step of examining the actual content of the input Maybe and only continue with the computation if it actually contain something. And using the Maybe-type we express "something" as being of Type "Just".
+
+	
+	Defining the sub-pattern "Nothing or f(Just x)" as "m sequenced with f" denoted with the ">>=" operator
+
+	
+	Abstracting our specific return "Just n" into general "return n" (thus our specific becomes return n = Just n)
+
+	
+	The division with Maybe-Int expressed with morphisms "return" and sequencing application ">>="
+
+	
+	Final computation using Haskel Do-notation
+
+So in Haskel the Do notation is a short-hand for applying the sequencing operator to compose with computations on Maybe-Int (call next with the result of the previous one). The not so obvious but important observation is that the functions we actually compose with are those that take an Int but returns a Maybe-Int! These do not trivially compose as the output type does NOT macth the input type. But with the sequencing operator ">>=" they do! So what we have done is to first transform unsafe-division into safe-division by introducing an error-carrying option into the result type. Then solved the problem of composing with such functions using the special sequencing operator ">>=" that can deal with inputs of Maybe-Int and still utilise functions that operates in Ints. In this case the safediv was of type int->int->Maybe-Int so it kinds of "lifts" division of Ints to a level of Safe-Ints. On this "safe" level we can use "return" to get back a normal Int or continue with more computation using ">>=" and be able to utilise the "lifted" function Ints -> Maybe-Ints on any result in the sequence of computation.
+
+So, the pattern we are trying to see is the "safe" level we can "get to and from" using a Monad! The Monad is the "thing" that provides the operations or computations required to compose with "lifted" computations. But it seems we need to recognise that the actual "lift" function must be provided separately. The Monad can NOT create that one for us. We had to choose to use the "Maybe" type and write the safediv that returns Maybe values and THEN provide that to the "Maybe Monad" to get to the "lifted" level of computation.
+
+...
+
+

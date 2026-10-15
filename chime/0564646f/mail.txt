@@ -1,0 +1,6 @@
+﻿
+1) Consider youtube video "How Clay's UI Layout Algorithm Works" (https://youtu.be/by9lQvpvMIc )?
+
+2) The Clay library seems to live at Github here (https://github.com/nicbarker/clay/tree/main )
+
+

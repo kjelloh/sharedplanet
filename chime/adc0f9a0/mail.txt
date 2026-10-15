@@ -1,0 +1,108 @@
+﻿I want to svae my EPS16+ OS and music files in some format I can use to process them on modern OS and possibly replace the floppy drive with an USB stick based emmulator.
+
+-1) It seems as the first step I need an USB connected 720K floppy disk reader to be able to read the files from the floppy disks to some digital media?
+
+	TODO: Search the web for 720K 3.5" floppy disk readers
+
+	==> It seems the EPS16+ has a DD floppy disk drive that can read 740 kB 3.5" floppies (https://en.wikipedia.org/wiki/Floppy_disk#%E2%80%8B3_1%E2%81%842-inch_disk <https://en.wikipedia.org/wiki/Floppy_disk#%E2%80%8B3_1%E2%81%842-inch_disk> )?
+
+"IBM started using the 720 KB double-density ​3 1⁄2-inch microfloppy disk on its Convertible laptop computer in 1986"
+
+	==> It seems we can suspect that a HD (1.44 MB) 3.5" floppy disk reader can read but not write 720 kB floppy disks as these floppy disks share the same 135 track-per-inch format?
+
+From wikipedia and other sources I get the information that a 720 kB DD 3.5" floppy disk is an 80 track 500 kB per side disk and an 1.44 MB HD 3.5" floppy disk is an 80 track 1 MB per side floppy disk (See https://en.wikipedia.org/wiki/List_of_floppy_disk_formats <https://en.wikipedia.org/wiki/List_of_floppy_disk_formats> ). This would then mean that they share the same 135 track-per-inch density and the difference is "only" that the DD uses a lower 8717 bit-per-inch record density while the HD can sport 17 434 bits-per-inch. From this we should be able to suspect that a HD floppy disk reader should be able to pick up the recorded bits on a DD disk.
+
+BUT - We should also suspect that a HD floppy disk driver may NOT be able to write reliably to a DD floppy disk. The magnetic substrate on the DD floppy disk is 2 µm magnetic iron oxide while on the HD disk it is 1.2 µm cobalt-doped iron oxide.
+
+
+1) Consider ways to actually copy my existing EPS16+ DD floppy disks into raw binary files for later copy to SD card and use in floppy drive emulator?
+
+	==> It seems the DD (720 kB) floppies and the HD (1.44 MB) floppies differ both in magnetic material substance, thickness and track layout (https://en.wikipedia.org/wiki/Floppy_disk <https://en.wikipedia.org/wiki/Floppy_disk> )?
+
+"Typical ​3 1⁄2-inch disk magnetic coating materials are:[20]
+
+	• DD: 2 µm magnetic iron oxide
+	• HD: 1.2 µm cobalt-doped iron oxide
+	• ED: 3 µm barium ferrite"
+
+
+Visualization of magnetic information on floppy disk (image recorded with CMOS-MagView)
+
+	==> But it seems 720 kB DD and 1.44 MB HD 3.5" floppies use the same track-per-inch , tpi) layout (https://en.wikipedia.org/wiki/List_of_floppy_disk_formats <https://en.wikipedia.org/wiki/List_of_floppy_disk_formats> )?
+
+
+Double Density (DD) 3.5" floppy disks with 2x500 kB (i.e., double sided 720kB floppy) share the 135 track per inch density with the HD floppy disks 
+
+1) Consider this youtube video "Installing a HxC SD Floppy Emulator for Ensoniq EPS" of a guy swapping the EPS floppy drive for a "Lotharek HxC Rev F SD Card floppy emulator" (https://youtu.be/vYvUVjMAoIo?t=465 <https://youtu.be/vYvUVjMAoIo?t=465> )?
+
+
+The 
+
+2) This seems to be the home page where the "SD HxC Floppy Emulators" lives (http://hxc2001.free.fr/floppy_drive_emulator/index.html <http://hxc2001.free.fr/floppy_drive_emulator/index.html> )?
+
+	==> It seems the "SD HxC Floppy Emulators" supports a wide variety of old hardware and behaves as an 720 kB or 1.4 MB 3.5" floppy drive hardware (http://hxc2001.free.fr/floppy_drive_emulator/index.html#SDCARDFloppyemulator <http://hxc2001.free.fr/floppy_drive_emulator/index.html#SDCARDFloppyemulator> )?
+
+"Floppy bitrate supported
+
+- 125/150/250Kbits/s (FM/SD floppies)
+- 250/300Kbits/s (MFM/DD floppies)
+- 500Kbits/s (HD floppies)
+- (others special bitrates support available)"
+
+
+
+3) Consider this "Ensoniq" forum for the "HxC Floppy Drive Emulator" (https://torlus.com/floppy/forum/viewforum.php?f=17&sid=bb71a8d7bf7fc158548fad436c55e892 <https://torlus.com/floppy/forum/viewforum.php?f=17&sid=bb71a8d7bf7fc158548fad436c55e892> )?
+
+
+4) Consider some open source projects with potentially source code to access (process) EPS16+ files?
+
+	==> Consider "asr10utils" (https://sourceforge.net/projects/asr10utils/ <https://sourceforge.net/projects/asr10utils/> )?
+
+asr10utils: access to disks & files of Ensoniq EPS/EPS+/ASR samplers
+Brought to you by: kmi9000
+
+	==> Consider "EnDiskEx" (https://sourceforge.net/projects/endiskex/ <https://sourceforge.net/projects/endiskex/> )?
+
+Bulk extractor for Ensoniq-formatted disk images
+Brought to you by: davmp
+
+"EnDiskEx is a command-line tool that bulk extracts instruments, sequences, songs, and banks from Ensoniq-formatted disk images (RAW, GKH, EDE, and EDA) for the EPS/ASR family of samplers. The extracted files are saved as EFE / SMF / TXT files.
+
+EnDiskEx is designed to extract Ensoniq banks for re-creation within a different DAW. It will track down the instrument and song files from bank references even if they were saved on another disk. There also exists a disk mapping feature to correct for any errors in this process caused by having relabeled disks, forgotten to label disks, etc.
+
+EnDiskEx has been tested and validated against a variety of RAW, GKH, EDE, and EDA images files the dev team has, including but not limited to, the ASR factory disks, the EPS 16+ factory disks, and the EPS (classic) factory disks.
+
+Features
+	• Reads images of disks formatted for Ensoniq EPS / EPS 16+ / ASR samplers.
+	• Reads RAW, GKH, EDE, and EDA disk image formats.
+	• Builds an in-memory library of all images you point it at (can list multiple directories or explicit files).
+	• Can bulk extract all files on all images.
+	• Can find all bank files, parse them, and then extract each bank to its own sub-directory.
+	• Allows mapping specifications to correct for errors in bank references.
+	• Extracts all Ensoniq instruments to EFE formatted files on the PC.
+	• Extracts sequences/songs to type 1 SMF/MIDI files
+	• Expands song steps to MIDI, overlays song tracks on top, then saves as additional SMF/MIDI file"
+
+	==> Consider the "Total Commander" plugin to read and analyse EPS16 files (https://sourceforge.net/projects/ensoniqfs/ <https://sourceforge.net/projects/ensoniqfs/> )?
+
+"EnsoniqFS - A filesystem plugin for Total Commander to access Ensoniq formatted media"
+
+	NOTE: Maybe this plugin is NOT what I want as it seems to process raw files only (on file system level). So it allows me to mount, read and copy EPS16+ files but NOT to get help to understand what the content represents?
+
+"With EnsoniqFS you can mount the following Ensoniq file systems:
+- SCSI & IDE harddisks
+- SCSI & IDE removable disks (i. e. ZIP drives)
+- SCSI & IDE CDROMs
+- floppy disks (direct file access, using driver OmniFlop, see below)
+- image files ISO, IMG, Mode1CDROM (BIN), GKH, EDE, EDA, EDT, EDV
+
+Once mounted, on a file system you can do the following with Total Commander:
+- read, write, copy, move, rename, delete files on Ensoniq media
+- copy, move files from/to Windows drives
+- create, rename, copy, move whole directories"
+
+5) Consider the file format reader "Total Commander" that can be expanded with plugins to read a wide variety of file formats (https://en.wikipedia.org/wiki/Total_Commander <https://en.wikipedia.org/wiki/Total_Commander> )?
+
+"Total Commander (formerly Windows Commander) is an orthodox file manager for Windows, Windows Phone, Windows Mobile/Windows CE[7][8] and  Android, developed by the Swiss Christian Ghisler. Originally coded using Delphi, latest Windows 64-bit versions were done with Lazarus. It features a built-in FTP client, tabbed interface, file compare, archive file navigation, and a multi-rename tool with regular expression support. It is for the most part compatible with Linux using Wine.[9]"
+
+...

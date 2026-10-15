@@ -1,0 +1,135 @@
+﻿It seems it could be a good idea to investigate end delve into the initiative by LeapMotion to provide a hand tracking device product combined with an open source SDK and framework to develop hand tracking augmented reality user interfaces?
+
+	==> Also see “Todo: Consider to build heads up protection glasses that can project maker space sensor information directly into the eyes?”
+	==> Also see “ Consider to build the "Arduino Glasses a HMD for Multimeter" (Head Mount Display) Glasses as shown on lackaday.io <http://lackaday.io/>?”
+	==> Also see “Todo: Consider to check out (maybe buy) the Magic Leap One augmented reality headset (glasses)"
+
+1) The LeapMotion web site seems to live here (https://www.leapmotion.com <https://www.leapmotion.com/>)?
+
+2) The LeapMotion hand tracking device seems to be a product that can be paced on any headset or on the desktop to use vision to interpret hand motions (https://www.leapmotion.com/technology/ <https://www.leapmotion.com/technology/>)?
+
+	
+
+	
+
+3) It seems “Project North Star” is the open source framework that LeapMotion provides to develop software and solutions based on their Hadn’t Tracking device and open source SDK (https://developer.leapmotion.com/northstar <https://developer.leapmotion.com/northstar> )?
+
+	==> Consider this blogpost where the Project North Star laugh is announced (http://blog.leapmotion.com/northstar/ <http://blog.leapmotion.com/northstar/> )?
+
+	==> It seems Project North Star provides an open source (free to download and build) headset design to attach the LeapMotion hand tracking device and mount LCD displays for projecting augmented reality into the sight of vision?
+
+	
+
+	==> It seems the LeapMotion Project North Star one source headset design lives here on GitHub (https://github.com/leapmotion/ProjectNorthStar <https://github.com/leapmotion/ProjectNorthStar>)?
+
+	==> The mechanical design and files for 3d-printing of the LeapMotion Project North Star headset seems to live here (https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical <https://github.com/leapmotion/ProjectNorthStar/tree/master/Mechanical>)?
+
+“
+Getting Started
+
+The assembly drawing PDF in this repository illustrates each sub-assembly that makes up the headset. The headset has two main sub-assemblies that come together at the end: the optics bracket and the headgear, designated #100-000 and #200-000 respectively. To get started, collect the items in the Bill of Materials (BOM) and assemble the optics and headgear sub-assemblies as illustrated by the assembly drawing PDF.
+
+Each part and sub-assembly in the project is given a part number. The first three digits of a part number designate the sub-assembly, while the last three are part identifiers. For example, part #120-002 belongs to a child sub-assembly of the optics bracket (#100-000) since it begins with a ‘1’ digit. The sub-assembly part #120-002 belongs to is #120-000. In the lower right corner of assembly drawing PDF’s page 6, we find the HALO ELECTRONICS MODULE ASSEMBLY which lists #120-002 as item 2 in the sub-assembly.
+"
+
+	
+
+	==> This seems to be the pdf with the design, build and assembly instructions for the project North Star LeapMotion hand tracking device headset (Assm Drawing North Star Release 3.pdf <https://github.com/leapmotion/ProjectNorthStar/blob/master/Mechanical/Assm%20Drawing%20North%20Star%20Release%203.pdf>)?
+
+	
+
+	==> This seems to be a BOM with links to where to purchase components and what to 3D-print (BOM_North Star Assm - Release 3 Rev 1.tsv <https://github.com/leapmotion/ProjectNorthStar/blob/master/Mechanical/BOM_North%20Star%20Assm%20-%20Release%203%20Rev%201.tsv>)?
+
+		==> It seems the refer to USA based McMaster-Carr for sourcing of components  (https://www.mcmaster.com <https://www.mcmaster.com/>)?
+
+4) The LeapMotion product seems to sell on Amazon (https://www.amazon.com/stores/node/8532032011?_encoding=UTF8&field-lbr_brands_browse-bin=Leap%20Motion&ref_=bl_dp_s_web_8532032011 <https://www.amazon.com/stores/node/8532032011?_encoding=UTF8&field-lbr_brands_browse-bin=Leap%20Motion&ref_=bl_dp_s_web_8532032011>)?
+
+	==> It is not obvious why the prices for the bundled LeapMotion hand tracking device varies to such a degree?
+
+	
+	The LeapMotion hand tracking device seems to come in a range of variants with very different pricing?
+
+	==> Consider the $92 “Leap Motion Controller for Mac or PC (Retail Packaging and Updated Software)” (https://www.amazon.com/Leap-Motion-Controller-Packaging-Software/dp/B00HVYBWQO?ref_=bl_dp_s_web_8532032011 <https://www.amazon.com/Leap-Motion-Controller-Packaging-Software/dp/B00HVYBWQO?ref_=bl_dp_s_web_8532032011>)?
+
+“Product Features
+
+	• Accurate, sub-millimeter hand tracking with near-zero latency
+	• Real 3D interaction: 150° field of view creates a wide interactive space between you and your computer
+	• Quick setup: download the Leap Motion software, plug the device into your USB port, and you’re ready to go
+	• Download free apps for desktop and virtual reality on the Leap Motion Gallery"
+
+	 
+	The $92 Leap Motion Controller for Mac or PC (Retail Packaging and Updated Software) on Amazon
+
+	==> Consider the $90 “Leap Motion Universal VR Developer Bundle (VR-UAZ)” (https://www.amazon.com/Leap-Motion-Universal-Developer-VR-UAZ/dp/B01G7FP7PO?ref_=bl_dp_s_web_8532032011 <https://www.amazon.com/Leap-Motion-Universal-Developer-VR-UAZ/dp/B01G7FP7PO?ref_=bl_dp_s_web_8532032011>)?
+
+“Product description
+
+Bring your hands into virtual and augmented reality with the Universal VR Developer Bundle from Leap Motion. The bundle includes: (1) Leap Motion Controller and (1) Universal VR Developer Mount, designed to work with consumer VR headsets such as the Oculus Rift CV1 and HTC Vive. VR HEADSETS NOT INCLUDED. The Leap Motion Controller and Universal VR Developer Mount are compatible with Leap Motion's latest Orion SDK beta*. Leap Motion technology uses stereoscopic cameras and infrared light to detect hand motions in 3D space, providing high-speed, marker-less, intuitive 3D hand input for VR/AR. Snap the Leap Motion Controller into the Universal VR Developer Mount, attach it to your VR headset, download and launch the latest Leap Motion Orion SDK (Orion beta currently Windows only), and start building with the most natural 3D input for VR. Minimum system requirements for the Leap Motion Controller**: Windows 7+; AMD Phenom II or Intel Core i3, i5, or i7 processor; 2GB RAM; USB 2.0 port; Internet connection; Leap Motion Orion SDK beta*. *Orion SDK beta currently only available for Windows. **VR headsets and applications may require higher system specifications than the Leap Motion Controller specs listed here, please refer to manufacturer of VR headset for optimal specs.
+"
+
+	 
+	The $90 Leap Motion Universal VR Developer Bundle (VR-UAZ) on Amazon
+
+	==> Consider the $226 “Leap Motion Controller, Gesture Motion Control for PC or MAC” (https://www.amazon.com/Leap-Motion-Controller-Gesture-Control/dp/B00E3CP9UM?ref_=bl_dp_s_web_8532032011 <https://www.amazon.com/Leap-Motion-Controller-Gesture-Control/dp/B00E3CP9UM?ref_=bl_dp_s_web_8532032011>)?
+
+“Product description
+
+The Leap Motion Controller is a tiny USB device that goes where no device has gone before: it lets you interact with your computer without touching it! The Leap Motion Controller senses how you move your hands, and makes the space between you and your computer interactive and three-dimensional. So instead of clicks, taps, and drag-and-drops, you can point, reach, and grab - even pick something up and put it down. Just like in real life! Thanks to the Leap Motion Controller, you are bringing the future into the present. 
+
+The Leap Motion Controller tracks both hands and all 10 fingers with pinpoint precision and incredible speed. Setup is easy: just plug into your PC or Mac and launch Airspace, your home for Leap Motion apps. Play, create, and explore in a whole new way. In Airspace, the Leap Motion App store, you'll find a wide variety of specially designed free and paid apps for gaming, music, art creation, science, productivity, and more. Apps from the Airspace app store let you interact with your computer just by moving your hands through the air. To get you started, the Leap Motion Controller comes with a set of apps included. 
+
+Features Simple USB connectivity - Two USB 2.0 cables with microUSB 3.0 connectors are included with the Leap Motion controller, in lengths suitable for both laptop and desktop computers.Specifications Compatibility - Windows 7 or 8 or Mac OS X 10.7 Mountain Lion (minimum requirements - AMD Phenom II or Intel Core i3, i5 or i7 processor; 2GB RAM; USB 2.0 port; Internet connection) Mac Compatible - Yes Length of Cord - 24and 60 Type of Cable - USB 2.0 (microUSB 3.0 connectors) Type of Pointing Device - Motion controller Connection Type - USB Port Connection - USB Dimensions - 0.5 x 1.2 x 3
+"
+
+	
+	The $226 Leap Motion Controller, Gesture Motion Control for PC or MAC on Amazon
+
+	==> Consider the $110 “Leap Motion Controller, Gesture Motion Control for PC or MAC” (https://www.amazon.com/Leap-Motion-Controller-Gesture-Control-PC/dp/B07MTWV15Y?ref_=bl_dp_s_web_8532032011 <https://www.amazon.com/Leap-Motion-Controller-Gesture-Control-PC/dp/B07MTWV15Y?ref_=bl_dp_s_web_8532032011> )?
+
+“
+Product description
+Brand : Leap Motion
+
+Hardware Platform : PC, Mac
+
+Item weight : 7.2 ounces
+
+Width : 2.99 inches / 76mm
+
+Length : 1.18 inches / 30mm
+
+Height : 0.5 inches / 12.7mm
+
+CPU : Up to Intel Core i3
+
+Ram : Up to 2GB
+
+OS : Up to Windoes 7, Mac 10.6
+
+USB : Up to 2.0 Port
+
+Recommended Specification
+
+CPU : Up to Intel Core i5
+
+Ram : 2GB
+
+OS : Up to Windoes 7, Mac 10.7
+
+USB : Up to 2.0 Port
+
+Box Composition : Leap Motion Controller, USB Cable 2Pcs, Welcome card, Manual
+
+The Leap Motion Controller is a tiny USB device that goes where no device has gone before: it lets you interact with your computer without touching it! The Leap Motion Controller senses how you move your hands, and makes the space between you and your computer interactive and three-dimensional. So instead of clicks, taps, and drag-and-drops, you can point, reach, and grab - even pick something up and put it down. Just like in real life! Thanks to the Leap Motion Controller, you are bringing the future into the present.
+
+The Leap Motion Controller tracks both hands and all 10 fingers with pinpoint precision and incredible speed. Setup is easy: just plug into your PC or Mac and launch Airspace, your home for Leap Motion apps. Play, create, and explore in a whole new way. In Airspace, the Leap Motion App store, you'll find a wide variety of specially designed free and paid apps for gaming, music, art creation, science, productivity, and more. Apps from the Airspace app store let you interact with your computer just by moving your hands through the air. To get you started, the Leap Motion Controller comes with a set of apps included.
+"
+
+	
+	The $110 Leap Motion Controller, Gesture Motion Control for PC or MAC on Amazon
+
+	...
+
+
+

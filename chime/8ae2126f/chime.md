@@ -1,0 +1,22 @@
+# Todo: Own House - Consider to design and find a place to build a house of my own?
+
+```#8ae2126f``` *As of 2016-01-02 18:27*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Would it now be nice to live in a house that is at a nice location, is cheap to live in, that is sustainable and that will last for several hundred years?
+
+1) Consider to find a place to build reasonable near Stockholm that is a nice location and that I can afford?  
+2) I don’t invite visitors much anyhow so I should be able to live distanced from Stockholm anyhow?  
+3) I can compensate for distance with providing good transportation and quarters (sleep over space)?  
+4) According to architect-brother (Eyvind?) to Ibb and Odd on Vega it costs 500 000 to design a house?  
+6) What tools can I use to designa house “on spot” myself?  
+7) What tools are available to photograph a location and get a 3600 3D view to use in a virtual reality of the house?  
+8) Can I plan to get the house built without taking any loans (or only take a loan until I sell my apartment)?
+
+…
+
+Consider this idea to start investigating bustling a house of my own?
+
+{% endraw %}

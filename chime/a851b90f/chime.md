@@ -1,0 +1,18 @@
+# Todo: Consider contemporary polarisation and culture war is like an over reactive allergic reaction let loose in the name of "freedom"?
+
+```#a851b90f``` *As of 2019-12-23 20:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could we draw conclusions on the reactive and trigger happy polarisation climate we have in fact comes from us acting-in-faith to "Freedom" with the result that previously healthy error correction mechanisms in the human society gets unregulated, as in is let free, and looses its ability to converge the social fabric into a coherent fabric in which all can live good lives?
+
+> *So the idea here is to observe the similarities between the biological allergic reactions raising because our biological systems are not "trained" because we live free from infectious threats. And the reactiveness in the war between left and right, religious and atheists and science versus new age mysticism.*
+
+> *We can speculate that through humanity history our reactions to the organisation of society was bounded by the fact that no one could leave. We had to live together and thus all struggle had to result in some form of error correction and compromise. Now, when we have reached individual freedom to live almost any way we want the reactions to how society is does NOT get negotiated and brought to a compromise. Instead each fraction can hyper reacts to any injustice or error in social systems and then go to war with get those who do not agree or care for different things.*
+
+> *So, in a way our social mechanisms to care for change over reacts because for one we have not trained our system to "real" threats and secondly there are no boundaries that forces us to come to a conclusion that we can all agree on.*
+
+> *...*
+
+{% endraw %}

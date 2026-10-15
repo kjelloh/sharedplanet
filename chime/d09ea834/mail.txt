@@ -1,0 +1,115 @@
+﻿It seems the C++ library VMime may be a good candidate to write code that is able to read Todo: mails from an IMAP account?
+
+	==> Also See “Todo: C++ - Consider to investigate and try out good ways to read and parse e-mail messages from an IMAP Server?”)
+
+	==> Also see “Todo: Programming - Consider to make an application that processes Todo: mails and generates a cross referenced HTML document?”
+	==> Also see “Todo: Programming - Consider to understand the e-mail protocols and authentication methods applied and programming libraries to apply them in code?”
+
+	==> Also see “Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?”
+	==> Also see “Todo: Programming - Consider to make an application that synchronises Mail-Todo:s with in-app Todo:s?”
+	==> Also see “==> Also see explicit “Todo: Programming - Consider to study the POCO C++ standard Internet protocol library (ftp, pop3)””
+
+
+
+1) The mime project seems to live here (https://www.vmime.org)?
+
+	==> Consider this “developer guide” to vmime (https://www.vmime.org/public/documentation/book/vmime-book.pdf)?
+	==> This seems to be the Git repository (https://github.com/kisli/vmime)?
+	==> It seems to support TLS access using OpenSSL (https://www.vmime.org/about.html <https://www.vmime.org/about.html>)?
+
+2) Consider to clone the Mime github project for use on my Windows 10 machine?
+
+	==> I cloned VMime to “C:\Users\kjell-olovhogdahl\Documents\GitHub\vmime”
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub>git clone https://github.com/kisli/vmime.git
+Cloning into 'vmime'...
+remote: Counting objects: 15091, done.
+remote: Total 15091 (delta 0), reused 0 (delta 0), pack-reused 15091R
+Receiving objects: 100% (15091/15091), 6.12 MiB | 1.29 MiB/s, done.
+
+Resolving deltas: 100% (11885/11885), done.
+Checking out files: 100% (589/589), done.
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub>
+
+	==> This seems to be the content of the cloned mime git project?
+
+	
+
+	==> I had to install CMake 3.8 to be able to generate Visual Studio 2017 project with CMake -G “Visual Studio 15 2017 Win64”
+
+		==> Side note: CMake 3.8 installed as “Unknown Publisher” (they also think Windows Code Signing is to expensive)?
+
+		
+
+	==> ERROR: CMake seems to be unable to generate the Visual Studio tool-chain (missing GNU libraries)?
+
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+GNUTLS_INCLUDE_DIR (ADVANCED)
+   used as include directory in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+   used as include directory in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+   used as include directory in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+   used as include directory in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+GNUTLS_LIBRARY (ADVANCED)
+    linked by target "vmime" in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+GSASL_INCLUDE_DIR (ADVANCED)
+   used as include directory in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+   used as include directory in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+   used as include directory in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+   used as include directory in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+GSASL_LIBRARIES (ADVANCED)
+    linked by target "vmime" in directory C:/Users/kjell-olovhogdahl/Documents/GitHub/vmime
+
+		==> Consider this thread (https://www.codeproject.com/Articles/719490/vmime-NET-Smtp-Pop-Imap-Library-for-Cplusplus-and?msg=4777257#xx4777257xx)?
+
+“But this library is a Gnu project that was developed and tested mainly in the Mac / Linux world. Theoretically it should be possible to compile it on Windows with the Cmake compiler, but that threw a lot of cryptic error messages that I never saw before, so I gave up."
+
+“Then vmime depends on several other Gnu projects which I had to download separately:
+
+	• GnuTLS or OpenSSL library for encryption,
+	• iconv, a character set converter library,
+	• gsasl, an authentication libary"
+
+
+“I wasted a lot of time with this [GnuTLS] library, finally I moved to OpenSSL which works perfectly.
+
+The iconv library also caused me problems because there is no precompiled 64 Bit version for Windows and this library has apparently never been compiled for 64 Bit. Finally I replaced it with my own code that uses the Windows Codepage conversion API instead.
+"
+
+	==> SEEMS VMime does not build in Visual Studio yet?
+
+2) Consider to use the mime-net clone instead (https://github.com/shuaiharry/vmime_visualstudio)?
+
+	==> I cloned it to my Windows 10 machine “C:\Users\kjell-olovhogdahl\Documents\GitHub\vmime_visualstudio”
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub>git clone https://github.com/shuaiharry/vmime_visualstudio.git
+Cloning into 'vmime_visualstudio'...
+remote: Counting objects: 862, done.
+remote: Compressing objects: 100% (597/597), done.
+Rremote: Total 862 (delta 254), reused 862 (delta 254), pack-reused 0
+Receiving objects: 100% (862/862), 19.59 MiB | 2.09 MiB/s, done.
+
+Resolving deltas: 100% (254/254), done.
+Checking out files: 100% (775/775), done.
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub>
+
+	==> It seems Visual Studio 2017 converted the project “” when I opened it?
+
+	
+
+	==> ERROR: Failed to load because the project required C# support (and my Visual Studio is installed with C# support left out)
+
+		==> Consider to install C# support to be able to load the project?
+
+		WE ARE HERE...
+
+2) Consider to try out some example codes to see how it works?
+
+	==> This seemx to be a console source code to connect to an IMAP server (TLS support built in) (https://github.com/kisli/vmime/blob/master/examples/example6.cpp <https://github.com/kisli/vmime/blob/master/examples/example6.cpp>)?
+
+…
+
+Consider to delve into the Vmime C++ library for IMAP support to understand how and for what we can use it for?
+...

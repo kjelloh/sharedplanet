@@ -1,0 +1,303 @@
+﻿I want to package my cratchit console app as a conan package.
+
+1) Consider what conan did to my local file system for my init_tool_chain.zsh script?
+
+	==> I tried this script.
+
+#!/bin/zsh
+
+# Function to check if a command is available
+check_command() {
+    command -v "$1" >/dev/null 2>&1 || { echo "$1 is not installed. Please install it and try again."; exit 1; }
+}
+
+# Check if CMake is installed
+check_command cmake
+
+# Check if Conan is installed
+check_command conan
+
+# Get the generator name from the parent folder's tool_chain.txt
+GENERATOR_NAME=$(cat tool_chain.txt)
+
+# Check if a generator name was read from the tool_chain.txt
+if [ -z "$GENERATOR_NAME" ]; then
+    echo "Error: No generator name found in '../tool_chain.txt'."
+    exit 1
+fi
+
+# Define the sub-folder name based on the generator name
+BUILD_FOLDER="$GENERATOR_NAME"
+
+# Create the sub-folder with the generator name
+mkdir -p "$BUILD_FOLDER"
+
+# Change into the newly created sub-folder
+cd "$BUILD_FOLDER" || exit
+
+# Run Conan profile detect to create a default profile if it doesn't exist
+echo "Running Conan profile detect..."
+conan profile detect
+
+# Install dependencies using Conan (this prepares the project and generates the conan_toolchain.cmake file)
+echo "Running Conan install..."
+conan install .. --build=missing
+
+# Check if Conan installation was successful
+if [ $? -ne 0 ]; then
+    echo "Error: Conan install failed."
+    exit 1
+fi
+
+# Run CMake with the generator name as the argument, including the conan_toolchain.cmake
+echo "Running CMake configuration..."
+cmake -G "$GENERATOR_NAME" -DCMAKE_TOOLCHAIN_FILE=../conan_toolchain.cmake ../
+
+# Check if CMake configuration was successful
+if [ $? -ne 0 ]; then
+    echo "Error: CMake configuration failed."
+    exit 1
+fi
+
+echo "Build folder '$BUILD_FOLDER' is ready and dependencies have been installed."
+
+
+	==> And conan reported this to the console output
+
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % ./init_tool_chain.zsh
+Running Conan profile detect...
+detect_api: Found apple-clang 16.0
+detect_api: apple-clang>=13, using the major as version
+
+Detected profile:
+[settings]
+arch=armv8
+build_type=Release
+compiler=apple-clang
+compiler.cppstd=gnu17
+compiler.libcxx=libc++
+compiler.version=16
+os=Macos
+
+WARN: This profile is a guess of your environment, please check it.
+WARN: Defaulted to cppstd='gnu17' for apple-clang.
+WARN: The output of this command is not guaranteed to be stable and can change in future Conan versions.
+WARN: Use your own profile files for stability.
+Saving detected profile to /Users/kjell-olovhogdahl/.conan2/profiles/default
+Running Conan install...
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=armv8
+build_type=Release
+compiler=apple-clang
+compiler.cppstd=gnu17
+compiler.libcxx=libc++
+compiler.version=16
+os=Macos
+
+Profile build:
+[settings]
+arch=armv8
+build_type=Release
+compiler=apple-clang
+compiler.cppstd=gnu17
+compiler.libcxx=libc++
+compiler.version=16
+os=Macos
+
+
+======== Computing dependency graph ========
+lua/5.4.4: Not found in local cache, looking in remotes...
+lua/5.4.4: Checking remote: conancenter
+lua/5.4.4: Downloaded recipe revision 819e5ca314a59367413e0ba6c9581325
+Graph root
+    conanfile.py (cratchit/1.0): /Users/kjell-olovhogdahl/Documents/GitHub/cratchit/conanfile.py
+Requirements
+    lua/5.4.4#819e5ca314a59367413e0ba6c9581325 - Downloaded (conancenter)
+
+======== Computing necessary packages ========
+lua/5.4.4: Main binary package '8d8333d2a65cc6c88b59632f08ba21a4b5ac260a' missing
+lua/5.4.4: Checking 13 compatible configurations
+lua/5.4.4: Compatible configurations not found in cache, checking servers
+lua/5.4.4: 'f749f3ba19db7023313f75cbddc7fda7351bfb38': compiler.cppstd=98
+lua/5.4.4: 'faeb53856d86f61db6d72e1e3c418ce987a4a56a': compiler.cppstd=gnu98
+lua/5.4.4: '9cc1b9ebfcb50705a3393543ae7f56eb5cbc5271': compiler.cppstd=11
+lua/5.4.4: 'eae3cca41894d13245185c064bee0c12bb16e833': compiler.cppstd=gnu11
+lua/5.4.4: '2d0d4d1d2127c8126de5fd5ba52f0fb077434a31': compiler.cppstd=14
+lua/5.4.4: 'e75c1f7193bd57f199469307e881d9c114c44149': compiler.cppstd=gnu14
+lua/5.4.4: '2a4f1d50b1872181e7f71e8f087f1ba79b65623b': compiler.cppstd=17
+lua/5.4.4: 'ca4407664522abb4fbe2febf2cbdd3b0d026975c': compiler.cppstd=20
+lua/5.4.4: 'd3c565393d397d3d4f80efce026a254ed5746e37': compiler.cppstd=gnu20
+lua/5.4.4: '38653310fa64a803d92ad5e10c3406999a70003b': compiler.cppstd=23
+lua/5.4.4: 'b07d34086b489f31b764e3449c745d832440ce82': compiler.cppstd=gnu23
+lua/5.4.4: '4a05f345ec3e676c84efd31bb39fa4c172ed731f': compiler.cppstd=26
+lua/5.4.4: 'bf91f421f03a4a1aff91a9d516477c47e3f4dbcc': compiler.cppstd=gnu26
+Requirements
+    lua/5.4.4#819e5ca314a59367413e0ba6c9581325:8d8333d2a65cc6c88b59632f08ba21a4b5ac260a - Build
+
+======== Installing packages ========
+lua/5.4.4: Sources downloaded from 'conancenter'
+lua/5.4.4: Calling source() in /Users/kjell-olovhogdahl/.conan2/p/luad5e049eebbd46/s/src
+lua/5.4.4: Unzipping lua-5.4.4.tar.gz to .
+
+-------- Installing package lua/5.4.4 (1 of 1) --------
+lua/5.4.4: Building from source
+lua/5.4.4: Package lua/5.4.4:8d8333d2a65cc6c88b59632f08ba21a4b5ac260a
+lua/5.4.4: Copying sources to build folder
+lua/5.4.4: Building your package in /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/b
+lua/5.4.4: Calling generate()
+lua/5.4.4: Generators folder: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/b/build/Release/generators
+lua/5.4.4: CMakeToolchain generated: conan_toolchain.cmake
+lua/5.4.4: CMakeToolchain generated: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/b/build/Release/generators/CMakePresets.json
+lua/5.4.4: Generating aggregated env files
+lua/5.4.4: Generated aggregated env files: ['conanbuild.sh', 'conanrun.sh']
+lua/5.4.4: Calling build()
+lua/5.4.4: apply_conandata_patches(): No patches defined in conandata
+lua/5.4.4: Running CMake.configure()
+lua/5.4.4: RUN: cmake -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE="generators/conan_toolchain.cmake" -DCMAKE_INSTALL_PREFIX="/Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p" -DCMAKE_POLICY_DEFAULT_CMP0091="NEW" -DCMAKE_BUILD_TYPE="Release" "/Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/b/src/.."
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Using Conan toolchain: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/b/build/Release/generators/conan_toolchain.cmake
+-- Conan toolchain: Setting CMAKE_POSITION_INDEPENDENT_CODE=ON (options.fPIC)
+-- Conan toolchain: Defining libcxx as C++ flags: -stdlib=libc++
+-- Conan toolchain: C++ Standard 17 with extensions ON
+-- Conan toolchain: Setting BUILD_SHARED_LIBS = OFF
+-- The C compiler identification is AppleClang 16.0.0.16000026
+-- The CXX compiler identification is AppleClang 16.0.0.16000026
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at build/Release/generators/conan_toolchain.cmake:68 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted variables like "CMAKE_C_STANDARD" will no longer be dereferenced
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  CMakeLists.txt:9223372036854775807 (conan_modify_std_watch)
+  CMakeLists.txt:45 (ADD_LIBRARY)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/b/build/Release
+
+lua/5.4.4: Running CMake.build()
+lua/5.4.4: RUN: cmake --build "/Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/b/build/Release" -- -j11
+[  6%] Building C object CMakeFiles/lua.dir/src/src/lctype.c.o
+[  6%] Building C object CMakeFiles/lua.dir/src/src/lauxlib.c.o
+[  9%] Building C object CMakeFiles/lua.dir/src/src/ldblib.c.o
+[ 12%] Building C object CMakeFiles/lua.dir/src/src/lbaselib.c.o
+[ 15%] Building C object CMakeFiles/lua.dir/src/src/lcorolib.c.o
+[ 21%] Building C object CMakeFiles/lua.dir/src/src/lcode.c.o
+[ 21%] Building C object CMakeFiles/lua.dir/src/src/ldump.c.o
+[ 24%] Building C object CMakeFiles/lua.dir/src/src/lapi.c.o
+[ 27%] Building C object CMakeFiles/lua.dir/src/src/ldebug.c.o
+[ 30%] Building C object CMakeFiles/lua.dir/src/src/ldo.c.o
+[ 33%] Building C object CMakeFiles/lua.dir/src/src/lfunc.c.o
+[ 36%] Building C object CMakeFiles/lua.dir/src/src/lgc.c.o
+[ 39%] Building C object CMakeFiles/lua.dir/src/src/linit.c.o
+[ 42%] Building C object CMakeFiles/lua.dir/src/src/liolib.c.o
+[ 45%] Building C object CMakeFiles/lua.dir/src/src/llex.c.o
+[ 48%] Building C object CMakeFiles/lua.dir/src/src/lmathlib.c.o
+[ 51%] Building C object CMakeFiles/lua.dir/src/src/lmem.c.o
+[ 54%] Building C object CMakeFiles/lua.dir/src/src/loadlib.c.o
+[ 60%] Building C object CMakeFiles/lua.dir/src/src/lopcodes.c.o
+[ 60%] Building C object CMakeFiles/lua.dir/src/src/lobject.c.o
+[ 63%] Building C object CMakeFiles/lua.dir/src/src/loslib.c.o
+[ 66%] Building C object CMakeFiles/lua.dir/src/src/lparser.c.o
+[ 69%] Building C object CMakeFiles/lua.dir/src/src/lstate.c.o
+[ 72%] Building C object CMakeFiles/lua.dir/src/src/lstrlib.c.o
+[ 75%] Building C object CMakeFiles/lua.dir/src/src/ltable.c.o
+[ 78%] Building C object CMakeFiles/lua.dir/src/src/lstring.c.o
+[ 81%] Building C object CMakeFiles/lua.dir/src/src/ltablib.c.o
+[ 87%] Building C object CMakeFiles/lua.dir/src/src/lundump.c.o
+[ 87%] Building C object CMakeFiles/lua.dir/src/src/ltm.c.o
+[ 90%] Building C object CMakeFiles/lua.dir/src/src/lutf8lib.c.o
+[ 93%] Building C object CMakeFiles/lua.dir/src/src/lvm.c.o
+[ 96%] Building C object CMakeFiles/lua.dir/src/src/lzio.c.o
+[100%] Linking C static library liblua.a
+[100%] Built target lua
+
+lua/5.4.4: Package '8d8333d2a65cc6c88b59632f08ba21a4b5ac260a' built
+lua/5.4.4: Build folder /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/b/build/Release
+lua/5.4.4: Generating the package
+lua/5.4.4: Packaging in folder /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p
+lua/5.4.4: Calling package()
+lua/5.4.4: Running CMake.install()
+lua/5.4.4: RUN: cmake --install "/Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/b/build/Release" --prefix "/Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p"
+-- Install configuration: "Release"
+-- Installing: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p/lib/liblua.a
+-- Installing: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p/include/lualib.h
+-- Installing: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p/include/lua.h
+-- Installing: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p/include/luaconf.h
+-- Installing: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p/include/lauxlib.h
+-- Installing: /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p/include/lua.hpp
+
+lua/5.4.4: package(): Packaged 1 '.txt' file: COPYING.txt
+lua/5.4.4: package(): Packaged 4 '.h' files: luaconf.h, lualib.h, lauxlib.h, lua.h
+lua/5.4.4: package(): Packaged 1 '.hpp' file: lua.hpp
+lua/5.4.4: package(): Packaged 1 '.a' file: liblua.a
+lua/5.4.4: Created package revision 9b7ec4dc7457ee22eeb571ba06df825a
+lua/5.4.4: Package '8d8333d2a65cc6c88b59632f08ba21a4b5ac260a' created
+lua/5.4.4: Full package reference: lua/5.4.4#819e5ca314a59367413e0ba6c9581325:8d8333d2a65cc6c88b59632f08ba21a4b5ac260a#9b7ec4dc7457ee22eeb571ba06df825a
+lua/5.4.4: Package folder /Users/kjell-olovhogdahl/.conan2/p/b/lua32d56a5ca25c1/p
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py (cratchit/1.0): Writing generators to /Users/kjell-olovhogdahl/Documents/GitHub/cratchit/build/Release/generators
+conanfile.py (cratchit/1.0): Generator 'CMakeDeps' calling 'generate()'
+conanfile.py (cratchit/1.0): CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(lua)
+    target_link_libraries(... lua::lua)
+conanfile.py (cratchit/1.0): Generator 'CMakeToolchain' calling 'generate()'
+conanfile.py (cratchit/1.0): CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py (cratchit/1.0): CMakeToolchain: Preset 'conan-release' added to CMakePresets.json.
+    (cmake>=3.23) cmake --preset conan-release
+    (cmake<3.23) cmake <path> -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=generators/conan_toolchain.cmake  -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Release
+conanfile.py (cratchit/1.0): CMakeToolchain generated: /Users/kjell-olovhogdahl/Documents/GitHub/cratchit/build/Release/generators/CMakePresets.json
+conanfile.py (cratchit/1.0): CMakeToolchain generated: /Users/kjell-olovhogdahl/Documents/GitHub/cratchit/CMakeUserPresets.json
+conanfile.py (cratchit/1.0): Generating aggregated env files
+conanfile.py (cratchit/1.0): Generated aggregated env files: ['conanbuild.sh', 'conanrun.sh']
+Install finished successfully
+Running CMake configuration...
+CMake Error at /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineSystem.cmake:152 (message):
+  Could not find toolchain file: ../conan_toolchain.cmake
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+Error: CMake configuration failed.
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit %
+
+2) Consider what conan did to my local file system after having told it to use a sub-folder in my project?
+
+	==> I tried to tell conan to use a project local folder (as sugested by chatGPT)
+
+# Set the CONAN_USER_HOME environment variable to point to a project-specific directory
+export CONAN_USER_HOME="../.conan"
+
+
+	==> OK, That had no effect and also did not other suggestions so I gave up for now...
+
+
+
+...

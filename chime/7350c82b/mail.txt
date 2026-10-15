@@ -1,0 +1,55 @@
+﻿It seems it would be a good idea to learn and document my journey into the command line Windows 10 - What exists in windows 10 command line world; How does it work
+
+	==> Also See “Todo: Programming - Consider to document and understand the basics of MacOS usage and configuration?"
+	==> Also See “Todo: Programming - Consider to document and understand the basics of Linux OS usage and configuration?”
+
+	==> Windows 10 Native Linux updated in “Todo: Windows 10 Linux - Consider to try out Windows 10 distribution of Linux (running Linux natively in Windows 10)?"
+
+1) Consider good command line tool and how to install them on Windows 10
+
+	==> It seems like a good idea to install and use the chocolatey package manager for windows?
+
+		==> Chocolate seem to be a NuGet extension (https://chocolatey.org/ <https://chocolatey.org/>)?
+	
+		“Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind.”
+
+		==> It seems to provide a lot of packages of interest (https://chocolatey.org/packages <https://chocolatey.org/packages>)?
+
+		==> Note: Ensure to always run the chocolatey command line in a powershell as administrator (See below)
+
+	==> Q: Is there a tree command line tool somewhere (it does not seem to be one provided through chocolate)?
+
+		==> Consider to write a command line tree tool in C++ on GitHub and distribute it as chocolatey package?
+		
+2) Consider tips and tricks to use the Windows 10 command line environment efficiently?
+
+	==> Seems one starts command line window “as administrator” by right-click the command-icon and select “Run as Administrator”?
+
+		==> E.g. use Desktop meny “Search”, enter “cmd” and right click the “Command Prompt”
+		
+
+	
+
+		==> The same goes for starting a Pwershell as administration (e.g. to run the Chocolatey Package Manager with Administrator privileges)
+
+3)Consider to check out the beta bash on Windows add-on (
+
+	==> It seems it may be possible to run a bash shell directly in windows (https://msdn.microsoft.com/en-us/commandline/wsl/about <https://msdn.microsoft.com/en-us/commandline/wsl/about>)?
+
+	==> Installation instructions seem to be here (http://answers.microsoft.com/en-us/insider/wiki/insider_wintp-insider_install/how-to-enable-the-windows-subsystem-for-linux/16e8f2e8-4a6a-4325-a89a-fd28c7841775 <http://answers.microsoft.com/en-us/insider/wiki/insider_wintp-insider_install/how-to-enable-the-windows-subsystem-for-linux/16e8f2e8-4a6a-4325-a89a-fd28c7841775>)?
+
+		"You need to have 14316, 14328 or 14322 installed. 
+		Also, you need to have the 64 bit version installed. “
+
+		==> I had Version 1511.
+
+		==> This link suggests I have to wait for my OS to recognise I am now a member of the Windows Insider Program (http://answers.microsoft.com/en-us/insider/wiki/insider_wintp-insider_install/how-to-install-the-latest-windows-10-build/d8c389ae-31c4-42a2-97df-4815d82dd2b6 <http://answers.microsoft.com/en-us/insider/wiki/insider_wintp-insider_install/how-to-install-the-latest-windows-10-build/d8c389ae-31c4-42a2-97df-4815d82dd2b6>)
+
+			==> When My OS recognises this I should be able to use the Advance settings of my Windows Update to get the required updates and get bash installed?
+
+			==> Continued in “Todo: Windows 10 Linux - Consider to try out Windows 10 distribution of Linux (running Linux natively in Windows 10)?”
+			...
+…
+
+Consider to update this list when appropriate to remember what I did and how I used the environment?
+...

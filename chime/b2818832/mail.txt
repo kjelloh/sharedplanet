@@ -1,0 +1,107 @@
+﻿It seems I would like to glue 3D printed parts in PLA to either an acrylic sheet or as an alternative to a transparent sheet of PVC (to build tool storage wall for my indoor shed from the 3 mm Acrylic sheet and the 1,5 mm PVC transparent sheet I bought)?
+
+1) Consider the wikipedia page on PLA, Polylactic Acid (https://en.wikipedia.org/wiki/Polylactic_acid <https://en.wikipedia.org/wiki/Polylactic_acid>)?
+
+	
+
+	==> It seems PLA has hight surface energy (and thus we may conclude it is not hard do bond with adhesives)?
+
+“With high surface energy, PLA has easy printability which makes it widely used in 3-D printing."
+
+2) Consider the wikipedia page on Poly(methyl methacrylate), Acrylic (https://en.wikipedia.org/wiki/Poly(methyl_methacrylate) <https://en.wikipedia.org/wiki/Poly(methyl_methacrylate)> )?
+
+	
+
+	==> It seems CA (cyanoacrylate, i.e. “superglue”) work well as acrylic adhesives but we may also melt (weld) it with heat or by dissolving it with dichloromethane  or trichloromethane (Chloroform!!) ?
+
+“PMMA can be joined using cyanoacrylate cement (commonly known as superglue), with heat (welding), or by using solvents such as di- or trichloromethane[18] to dissolve the plastic at the joint, which then fuses and sets, forming an almost invisible weld."
+
+	==> It seems Chloroform is an organic compound so a chemical respirator filter for such compounds should keep me safe (https://en.wikipedia.org/wiki/Chloroform <https://en.wikipedia.org/wiki/Chloroform>)?
+
+“Chloroform, or trichloromethane, is an organic compound with formula CHCl3. It is a colorless, sweet-smelling, dense liquid that is produced on a large scale as a precursor to PTFE."
+
+	==> It seems dichloromethane is a known plastic dissolver and “weld” substance (https://en.wikipedia.org/wiki/Dichloromethane <https://en.wikipedia.org/wiki/Dichloromethane>)?
+
+“Methylene dichloride (DCM, or methylene chloride, or dichloromethane) is a geminalorganic compound with the formula CH2Cl2. This colorless, volatile liquid with a moderately sweet aroma is widely used as a solvent.”
+
+“DCM chemically welds certain plastics. For example, it is used to seal the casing of electric meters. Often sold as a main component of plastic welding adhesives, it is also used extensively by model building hobbyists for joining plastic components together. It is commonly referred to as "Di-clo.""
+		
+
+3) Consider wikipedia page on PVC (https://en.wikipedia.org/wiki/Polyvinyl_chloride <https://en.wikipedia.org/wiki/Polyvinyl_chloride>)?
+
+	
+
+
+4) Consider the wikipedia page on MEK, methyl ethyl ketone i.e., Butanone (https://en.wikipedia.org/wiki/Butanone <https://en.wikipedia.org/wiki/Butanone>)?
+
+	
+
+	==> It seems to share properties with Acetone and di- or trichloromethane in that it dissolves some plastics and may be used in plastic welding?
+
+“It [Butatnone] has similar solvent properties to acetone but boils at a higher temperature and has a significantly slower evaporation rate.”
+
+“As butane dissolves polystyrene and many other plastics, it is sold as "model cement" for use in connecting parts of scale model kits. Though often considered an adhesive, it is actually functioning as a welding agent in this context."
+
+	==> It seems products for plastic welding may be found by googling “Plastic weld” or “plastic cement”?
+
+	...
+
+5) It seems we need special adhesives to bond with “Low Surface Energy” materials like Acrylic and Poly Ethylene / Propylene?
+
+	==> Consider this 3M commercial on “3M™ 300LSE Low Surface Energy Acrylic Adhesive” (https://www.youtube.com/watch?v=_KbqCMcNHmg <https://www.youtube.com/watch?v=_KbqCMcNHmg>)?
+
+	==> Consider 3M marketing and informational material on Acrylic Adhesives (https://www.3m.com/3M/en_US/bonding-and-assembly-us/structural-adhesives/acrylic-adhesives/ <https://www.3m.com/3M/en_US/bonding-and-assembly-us/structural-adhesives/acrylic-adhesives/>)?
+
+	==> Consider this 3M pdf on the problem of bonding to low surface energy (LSE) materials (https://multimedia.3m.com/mws/media/755526O/innovations-in-bonding-to-low-surface-energy-white-paper.pdf <https://multimedia.3m.com/mws/media/755526O/innovations-in-bonding-to-low-surface-energy-white-paper.pdf>)?
+
+	
+
+
+		==> It seems adhesives can be differentiated into “Structural” (e.g., epoxy), “Non Structural” (e.g., hot melt) and “pressure sensitive” (tape)?
+
+“… structural adhesives (epoxy, acrylic, urethane), non-structural adhesives (hot melt, contact adhesives) and pressure sensitive adhesives (peel and stick bonding tapes). "
+
+		==> But non of these adhesives has historically worked with LSE materials lice acrylic and PE?
+
+“… until recently these adhesives were not used on tougher to bond thermoplastic materials including TPO, polypropylene and polyethylene because of their surface characteristics. "
+
+		==> It seems “Surface Energy” is the excess energy available for bonding that the material surface molecules have (the energy not used to bond to surrounding molecules)?
+
+“Surface energy is the excess energy that exists at the surface ... of a solid; this excess energy exists because molecules at the surface cannot interact with as many like neighbors as molecules in the bulk are able to do; therefore, they have excess interaction energy. “
+
+
+Solid Surface 
+Critical Surface Tension (mN/m) 
+Polytetrafluoroethylene (PTFE) 
+18.5 
+Silicone 
+24 
+Poly(vinylidene fluoride) 
+25 
+Polyethylene (PE) 
+31 
+Polypropylene (PP) 
+31 
+Polystyrene 
+33 
+Poly(vinyl chloride) (PVC) 
+39 
+Nylon-6,6 
+43 
+Poly(ethylene terephthalate) (PET; Polyester) 
+43 
+Aluminum 
+~500 
+Glass 
+~1000 
+Iron Oxide 
+~1350 
+
+
+		==> It seems adhesive has a hard time to “wet” a surface with low surface energy (because the surface has so little excess energy to bond)?
+ 
+		
+
+		
+
+	...

@@ -1,0 +1,14 @@
+﻿Could it be a good idea to start a video series on things I identify that “not very good” and ways to improve them?
+
+1) Consider to start documenting things to improve?
+
+	==> Consider how installation and update of software should actually work?
+	==> Consider ways to reduce installation hazels (time, intrusion and need for user input)?
+	==> Consider my EOS 60D filming-LED being invisible from the front of the camera?
+	==> Consider Youtube Video Upload giving all kind of confusing (and clearly incorrect) status information?
+	==> Consider iMovie confusion on share result (files are large while share to youtube more optimised)?
+	…
+
+…
+
+Consider to update this list as I find more interesting things to rant on and to propose solutions to?

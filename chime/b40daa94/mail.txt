@@ -1,0 +1,70 @@
+﻿What do I need to do to be able to plug in and use my Makita 18V power tool batteries as power source for other projects (e.g., my paint wash up station waste water pumps)?
+
+1) Consider the data on my Makita 18V batteries?
+
+	==> It seems my brushless Makita jigsaw and circular saws uses only three terminals to connect to the battery?
+
+	
+	Makita DJV181 brushless circular saw battery terminal
+
+	
+	Makita DHS680 brushless circular saw battery terminal
+
+	==> It seems Makita BL1840B 18V battery has three main energy terminals and a 7 pin yellow "charge control" terminal?
+
+	
+	Makita BL1840B 18V battery terminals
+
+2) Consider resources on the web for creating or buying Makita 18V battery terminals?
+
+	==> It seems the battery terminal spare part according to DHS680 specification is 644808-8 (https://www.icmsmakita.eu/cms/custom/fi/attachments/part_drawings/DHS680.pdf <https://www.icmsmakita.eu/cms/custom/fi/attachments/part_drawings/DHS680.pdf> )?
+
+		
+
+	==> It seems the battery terminal spare part according to DJV181 specification is 643899-6 (https://www.icmsmakita.eu/cms/custom/fi/attachments/part_drawings/DJV181.pdf <https://www.icmsmakita.eu/cms/custom/fi/attachments/part_drawings/DJV181.pdf> )?
+
+	
+
+	==> Consider ebay uk (https://www.ebay.co.uk/itm/MAKITA-Battery-Connecting-Terminal-Box-643852-2-LXDT04-XDT04-LXFD01-XRJ01-LXPH01/264247319625?hash=item3d865e1c49:g:QLsAAOSwAvNck-Z2 <https://www.ebay.co.uk/itm/MAKITA-Battery-Connecting-Terminal-Box-643852-2-LXDT04-XDT04-LXFD01-XRJ01-LXPH01/264247319625?hash=item3d865e1c49:g:QLsAAOSwAvNck-Z2> )?
+
+	
+	MAKITA Battery Connecting Terminal Box 643852-2
+
+	==> Consider MakitaTerminal 643899-6 for DHS680 circular saw from from UK based Partshopdirect (https://www.partshopdirect.co.uk/makita-terminal-p644808-8/ <https://www.partshopdirect.co.uk/makita-terminal-p644808-8/> )?
+
+		
+
+	==> Consider MakitaTerminal 643899-6 for DJV181 jig saw from from UK based Partshopdirect (https://www.partshopdirect.co.uk/makita-terminal-p643899-6/ <https://www.partshopdirect.co.uk/makita-terminal-p643899-6/> )?
+
+	
+
+	==> Consider Makita Terminal Bur181/bum168/btd146/ 643852-2 from UK based Partshopdirect (https://www.partshopdirect.co.uk/makita-terminal-bur181bum168btd146-p643852-2/ <https://www.partshopdirect.co.uk/makita-terminal-bur181bum168btd146-p643852-2/> )?
+
+		Note: Does this fit the same battery as MakitaTerminal 643899-6 for DHS680 and MakitaTerminal 643899-6 for DJV181 does?
+
+	
+	Makita Terminal Bur181/bum168/btd146/ 643852-2
+
+	==> Consider this thingiverse holder bracket for a Makita 18V battery terminal (https://www.thingiverse.com/thing:352094 <https://www.thingiverse.com/thing:352094> )?
+
+		Note: Does this fit the same battery as MakitaTerminal 643899-6 for DHS680 and MakitaTerminal 643899-6 for DJV181 does?
+
+	
+
+	==> Consider this thingiverse 3D printed 18V Makita battery terminal (https://www.thingiverse.com/thing:2156290 <https://www.thingiverse.com/thing:2156290> )?
+
+		Note: Does this fit the same battery as MakitaTerminal 643899-6 for DHS680 and MakitaTerminal 643899-6 for DJV181 does?
+
+	
+	3D printed Makita 18V battery terminal with cut and bent 1 mm sheet metal as connectors
+
+	==> Consider this thingiverse 3D printed 18V Makita battery terminal (https://www.thingiverse.com/thing:863257 <https://www.thingiverse.com/thing:863257> )?
+
+		Note: Does this fit the same battery as MakitaTerminal 643899-6 for DHS680 and MakitaTerminal 643899-6 for DJV181 does?
+
+	
+	3D printed Makita 18V battery terminal with cut and bent 1 mm sheet metal as connectors
+
+...
+
+

@@ -1,0 +1,113 @@
+﻿
+
+1) Consider some sources of information with suggested "good" ergonomic computer sitting desk with display?
+
+
+
+2) Consider the "best" measurements for my own sitting work desk?
+
+	==> It seems I should go for a desk top heigh of 70 cm which would place the keyboard to at around 71-72 cm?
+
+	==> 70 cm also seems to be my elbow height if a measure with a water level?
+
+	==> DISREGARD! 15 degree view angle top-to-bottom of my 34 cm image height LED Cinema Display gives display distance 134 cm (Absurd!)
+
+	==> Consider the display distance should match the image resolution so that it is "easy" to read which seems to sugest a working distance of 50-70 cm?
+
+YES - If I test to sit 50 cm from my 27" LED Cinema display its feels "good" :)
+
+	==> It seems my LED Cinema display sits on the desktop so the top edge is about the same height as my eyes which is the recommended display heigh ok :)
+
+Desktop heigh: 70 cm
+Display "depth" (eye to display) : > 50 cm
+Distance to eye from desktop edge: > 12 cm (sitting with body touching edge)
+Distance desktop edge to display :  > 38 cm (50 cm - 12 cm)
+Distance desktop edge to foot front edge (for correct view distance): > 32 cm
+
+Desktop edge to center keyboard: < 22 cm (body touching edge and elbows "straight down" side of body)
+Display foot front to display surface: 6 cm
+Keyboard depth: 14 cm
+Display foot front to keyboard center: > 7,5 cm
+
+Distance desktop edge to display foot front edge (for room for keyboard) : > 30 cm (22 cm + 7,5 cm)
+
+Distance display foot front to foot back (depth) : 21 cm
+
+==> Desktop depth: > 53 cm (32 cm + 21 cm)
+
+
+
+
+
+
+
+3) Consider this Apple support page with data on my Apple 27" LED Cinema Display (https://support.apple.com/kb/sp597?locale=sv_SE <https://support.apple.com/kb/sp597?locale=sv_SE> )?
+
+"
+LED Cinema Display (27 tum) - Teknisk information
+Mått och vikt
+Höjd:
+49.1 cm
+Bredd:
+65 cm
+Djup (med stativ):
+20.7 cm
+Vikt:
+10.7 kg
+ 
+Systemkrav
+Mac med Mini DisplayPort-kontakt
+Mac OS X 10.6.4 eller senare
+Miljörapport
+LED Cinema Display har utformats med följande delar och åtgärder som minskar dess miljöpåverkan:
+
+Arsenikfritt glas i skärmen
+Kvicksilverfri
+Fri från bromerade flamskyddsmedel
+PVC-fri
+Återvinningsbart hölje av aluminium och glas
+Uppfyller kraven för ENERGY STAR 5.0
+EPEAT Gold-klassad*
+Bildskärm
+27-tums (diagonal bildyta) LCD-bildskärm med aktiv matris (TFT) och IPS-teknik (in-plane switching).
+
+Upplösningar som stöds: 2560 x 1440 bildpunkter, 1920 x 1080 bildpunkter, 1280 x 720 bildpunkter
+Färger (max): 16,7 miljoner
+Bildförhållande: 16:9
+Betraktningsvinkel: 178° horisontellt, 178° vertikalt
+Ljusstyrka (normalt): 375 cd/m2
+Kontrast (normalt): 1000:1
+Svarstid (normalt): 12 ms
+Ljud och video
+Kamera och mikrofon:
+Inbyggd iSight-kamera med mikrofon
+Högtalare: Inbyggt 2.1-
+högtalarsystem (max 49 W)
+Mini DisplayPort-kontakt med stöd för ljud
+Vad ingår?
+LED Cinema Display
+Nätsladd
+Tryckt dokumentation
+Tillbehör och kablar
+Tre strömförsörjda USB 2.0-portar
+Fäste för Kensington-lås
+En kabel med tre kontakter: Mini DisplayPort med stöd för ljud, universell MagSafe (upp till 85 W), USB 2.0
+Nätsladd
+Strömförsörjning och omgivning
+Spänning in: 100 till 240 V växelström, 50-60 Hz
+Högsta effekt: 250 W (LED Cinema Display vid laddning av MacBook Pro)
+Energisparläge: 1 W eller lägre
+Omgivning
+Temperatur vid användning: 10 till 35°C
+Temperatur vid förvaring: –20 till 47°C
+Relativ luftfuktighet: 20 till 80%
+icke-kondenserande
+Höjd över havet vid användning: max 3 000 m
+Extra tillval
+VESA-monteringspaket
+AppleCare Protection Plan
+* 27-tums LED Cinema Display har certifierats med EPEAT Gold i USA, Kanada, Frankrike, Tyskland och Storbritannien.
+
+Publiceringsdatum: 24 sep. 2010"
+
+...

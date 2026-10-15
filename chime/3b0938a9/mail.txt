@@ -1,0 +1,14 @@
+﻿Seems we currently have come to the conclusion that the design of a generic engine for data modelling should be based on a list of type, a model of chained types and a record of instances of types rules by the model?
+
+1) All types should be listed in an array for access from anywhere in the model?
+2) The model shall define “chains” of types connected by “relations” (where “aggregates” is the most common one for data models)?
+3) Each model node is the of a “Type” and is defined by its path of relations (i.e. each node in the path is a relation)?
+4) To instance a modelled object one needs a model path to the object to instance?
+5) If the last relation of the model path to instance is an “aggregates” then we know where to store te instance (in the aggregating instance)?
+…
+
+We seem to still have some question marks regarding how to identify (where and how to store instances) but the general approach seem a good one?
+
+a) How to we handle instances that are aggregated by one object and then also referenced by other objects? Should that be up to the application using the data model or should the modelling engine figure that out by itself? Is that even possible based on modelling data only?
+b) Can we imagine the model also defining “constructors” that knows how to correctly update all relations to and from a cleared object?
+...

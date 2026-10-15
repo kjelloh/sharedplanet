@@ -1,0 +1,44 @@
+﻿Seem we would like to have the workings of an asio TCP object (client or server) to be defined by an MSM (Meta State Machine) and also have threaded actors implement the Active idiom?
+
+1) We would like to have a link protocol engine to be a threaded msm state machine (an actor with state)
+2) We would like the Event handlers of the asio object post to be processed by the msm state machine.
+
+3) So what is needed to have the protocol layered engines ”asynchronously" signal up and down the chain?
+
+	higher layer ==> Event ==> Link Layer Engine ==> MSM state machine ==> asio TCP Object
+	higher layer <== Event <== Link Layer Engine <== MSM state machine <== asio TCP Object
+
+4) Seem we need to have both the MSM Engine and the asio TCP object threaded?
+
+	==> Link MSM needs its own thread to dispatch messages from both upstream engines and downstream asio TCP object?
+	==> And the TCP Object needs its own threading to be ablo to block in actual send/receive?
+
+5) Now, this would mean we’d like the Link Engine MSM AND the asio TCP Link object (call it connection?) to be Active objects? 
+
+	==> Downstream is pretty straight forward (1 = main VCL thread, 2 and 3 each Active object threads)
+
+	higher layer =(1)=> Active[Link Layer Engine =(2)=> MSM state machine] =(2)=> Active[asio TCP Object =(3)=> io_service]
+
+	==> Perfectly ok for Active::2 thread to call asio TCP object directly.
+	==> Upstream is trickier (each upstream thread needs to be awaken to dispatch downstream posted event)
+
+	higher layer <=(1)= Active[Link Layer Engine <=(2)= MSM state machine] <=(?)= Active[asio TCP Object <-(3)- ios_service]
+
+	==> How does Active::2 fetch and process Event from Active::3?
+	==> And how does main thread 1 fetch and process event from Active::2?
+
+6) Active::2 may be awaken on Event posted to its Event queue from Active::3 (Active::3 posts to Active::2 queue)?
+
+	             Active[Link Layer Engine <=(2)= MSM state machine]::Queue23 <=(3)= Active[asio TCP Object <-(3)- ios_service]
+
+
+7) Main VCL thread may be awaken by a Windows Message triggering a poll of Active::2 upstream queue?
+
+	              Queue12::Active[Link Layer Engine <=(2)= MSM state machine]::Queue23 <=(3)= Active[asio TCP Object <-(3)- ios_service]
+	WM_MSG <=(2)= Queue12::Active[Link Layer Engine <=(2)= MSM state machine]
+	Main::1 — poll —> Queue12::Active::2
+	higher layer <=(1)= Queue::Active::2
+
+…
+
+Elaborate on this design to see what is most convenient and easy to tread code to implement this threading?

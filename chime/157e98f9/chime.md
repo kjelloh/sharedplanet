@@ -1,0 +1,14 @@
+# Todo: Suggest things the super-curious human can start doing today!
+
+```#157e98f9``` *As of 2015-08-16 21:06*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+To really ignite the movement to take on the challenge of humanity we need a very simple message to get behind and also provide beneficial things to start doing from day one!
+
+1) Know the power of emergent changes - adopt the shared planet citizen ideas - Feel less worried about the future  
+2) Understand the need to get paid for ones planet share - vote for politicians what want to implement it - Feel proud of contributing to eradicating poverty  
+...
+
+{% endraw %}

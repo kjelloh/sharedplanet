@@ -1,0 +1,24 @@
+﻿1) Boost Kamada-Kawai spring layout (http://www.boost.org/doc/libs/1%5F38%5F0/libs/graph/doc/kamada%5Fkawai%5Fspring%5Flayout.html)
+2) Boost Fruchterman-Reingold force directed layout (http://www.boost.org/doc/libs/1%5F38%5F0/libs/graph/doc/fruchterman%5Freingold.html)
+…
+
+Boost could be the way to go with Embarcadero RAD Studio to enable cross-platform applications?
+
+a) Can we design a Firemonkey component and then compile it for iOS, Android and Windows 10? Or do we need to program in Delphi (Boost not available)
+b) Seems to be able to use C++ (https://www.youtube.com/watch?v=3nTnqrwTePY)
+c) Embarcadero provides this help page (http://docwiki.embarcadero.com/RADStudio/XE8/en/Creating_a_FireMonkey_Component_(C%2B%2B))
+d) At least there is a C++ compiler Embarcadero uses for iOS (http://docwiki.embarcadero.com/RADStudio/XE8/en/BCCIOSARM64.EXE,_the_C%2B%2B_Compiler_for_the_64-bit_iOS_Device)
+e) Boost graph library seems to be headers-only which would suggest that they may be used cross-platform as long as they do not rely on some unsupported C++ language feature?
+…
+
+So, if we customise a 2D-graphics Firemonkey component we should be able to code a cross-platform force directed graph components based on Boost algorithms?
+
+i) A guy called Ian Calegory has adapted boost 1.53 for Android At http://www.mandelmania.net/boost.html. This would indicate that Borland has not?
+ii) On Embarcaderos site they only state boost for windows and OSX. There is no mentioning about boost for iOS or Android.
+iii) The reason boost does not officially support Andorid and iOS (among others) seems to be that ether is no one performing regular regression tests for those platforms (http://stackoverflow.com/questions/14036311/official-boost-library-support-for-android-and-ios). 
+iv) Boost reports main branch regression test results for the graph library as passed for android, linux and windows compilers (http://www.boost.org/development/tests/master/developer/summary.html). Note that the report lists gcc and microsoft compilers. no Apple platform compiler is listed!
+v) A guy posting at youtube ”Meeting C++”  has used the boost graph library to both draw and animate the graph of the boost libraries dependencies themselves (https://www.youtube.com/watch?v=4yZG8gbw0sQ). So the graph libraries may be used for animation :)
+vi) This seems to be a good introduction to boost graph library (https://www.youtube.com/watch?v=uYvBH7TZlFk). Most strikingly is that the graph library uses global functions that works on templetized graphs instead of using inheritance and member functions. The other is the use of property maps to separate the graph from properties about vertices and edges of graphs. Thus a property map is used to assign weighs to edges and stuff like that. This should be good to know when coding for the force directed graph algorithms?
+vii) It seems a layout is calculated by providing the graph and creation parameters to the layout constructor (e.g. a spring layout). In an example (http://www.boost.org/doc/libs/1_34_0/libs/graph/example/fr_layout.cpp) at first sight it seems the profess_display is a callback that may be used to animate the progress of the graph. But a second look suggests this progress is only for a progress bar, not a way to animate the actual graph during calculation?
+...
+

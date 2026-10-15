@@ -1,0 +1,73 @@
+# Todo: VSCode - Consider to document how to add a symlink to Visual Studio Code - Insiders as "icode"?
+
+```#038362fc``` *As of 2022-01-04 15:42*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I am actually not satisfied with the house of cards it is to maintain a software development environment on any computer but it is what it is...
+
+1) The Visual Studio Code seems to be available as an "insiders" version for download from here (<https://code.visualstudio.com/insiders/> )?
+
+2) It seems I only need to drag the downloaded app directly to the "Applications" folder and it is installed?
+
+==&gt; I downloaded Visual Studio Code - Insiders and dragged the downloaded file to the "Applications folder" ok.
+
+3) It seems I can add a symlink in "/usr/local/bin/code" to and call it "icode" to distinguish it from the link "code" I already have added to the official Visual Studio Code installation?
+
+==&gt; It seems I already haver added a symlink named "code" to the official Visual Studio Code in the /Applications folder?
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % where code  
+> /usr/local/bin/code  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin %
+
+==&gt; It seems the command to add a "symlink" (symbolic link) is the ln command with option -s?
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % ln -s "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code" /usr/local/bin/icode  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % ls -l /usr/local/bin/icode  
+> lrwxr-xr-x 1 kjell-olovhogdal admin 79 Jan 4 15:37 /usr/local/bin/icode -&gt; /Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin %
+
+==&gt; It seems the symlink is confusingly a python script
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % **cat /usr/local/bin/icode **  
+> #!/usr/bin/env bash  
+> #  
+> # Copyright (c) Microsoft Corporation. All rights reserved.  
+> # Licensed under the MIT License. See License.txt in the project root for license information.
+
+> function realpath() { **python** -c "import os,sys; print(os.path.realpath(sys.argv&#91;1&#93;))" "$0"; }  
+> CONTENTS="$(dirname "$(dirname "$(dirname "$(dirname "$(realpath "$0")")")")")"  
+> ELECTRON="$CONTENTS/MacOS/Electron"  
+> CLI="$CONTENTS/Resources/app/out/cli.js"  
+> ELECTRON_RUN_AS_NODE=1 "$ELECTRON" "$CLI" --ms-enable-electron-run-as-node "$@"  
+> exit $?
+
+==&gt; It seems confusingly that the ln command with no option provided also works (but creates something else?)
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % **ln** "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code" /usr/local/bin/icode  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % **where icode**  
+> **/usr/local/bin/icode**  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % cat /usr/local/bin/icode  
+> #!/usr/bin/env bash  
+> #  
+> # Copyright (c) Microsoft Corporation. All rights reserved.  
+> # Licensed under the MIT License. See License.txt in the project root for license information.
+
+> function realpath() { python -c "import os,sys; print(os.path.realpath(sys.argv&#91;1&#93;))" "$0"; }  
+> CONTENTS="$(dirname "$(dirname "$(dirname "$(dirname "$(realpath "$0")")")")")"  
+> ELECTRON="$CONTENTS/MacOS/Electron"  
+> CLI="$CONTENTS/Resources/app/out/cli.js"  
+> ELECTRON_RUN_AS_NODE=1 "$ELECTRON" "$CLI" --ms-enable-electron-run-as-node "$@"  
+> exit $?  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin %
+
+==&gt; It seems the ln command confusingly requires the first argument to be the target and the second the link name?
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin % ln /usr/local/bin/icode "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code"  
+> ln: /usr/local/bin/icode: No such file or directory  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro bin %
+
+...
+
+{% endraw %}

@@ -1,0 +1,11 @@
+﻿Could we imagine a simple way to design a camera rig for mobile phones to easily capture drawings and document?
+
+1) Consider a mobile phone camera moment and drawing scan rig design?
+
+		
+
+2) Consider to use a threaded rod and nuts to adjust the camera height?
+
+	…
+
+

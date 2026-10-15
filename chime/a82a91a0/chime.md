@@ -1,0 +1,96 @@
+# Todo: Överväg att börja skissa på en plan till mitt nya boende (mitt egenbyggda hus)?
+
+```#a82a91a0``` *As of 2019-04-16 14:51*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Jag verkar ha lätt för att prokrastinera men att jag borde kunna tugga i mig elefanten genom att bryta ner den i små bitar och i alla fall spekulera mig igenom denna resa till att bygga mitt egna hus?
+
+==&gt; Se också “Todo: Överväg att spekulera i mina drömmar om ett meningsfullt boende?”
+
+==&gt; Se också “Todo: Eget Hus - Överväg tre "Drömhus" (På häll i skog, på klippa över "hav" och Vid sjö)?”
+
+==&gt; Se också “Todo: Eget Hus - Överväg att ha flera separata vattensystem för olika behov i huset för att effektivisera (minimera) vatten och energiförbrukning?”
+
+==&gt; Se också “Todo: Bygga eget hus - Anteckna det jag hittat på nätet som kan hjälpa mig bygga ett trähus?”
+
+==&gt; Se också “Todo: Bygga eget hus - Försök förstå det där med fastighetsavgift och fastighetsskatt?”
+
+==&gt; Se också “Todo: Gå en knuttimringskurs (timra eget hus?) :)”
+
+==&gt; Se också “Todo: Bygga Hus - Överväg att rita och göra en kostnadskalkyl på ett "standard" träregel-hus utan "mankemang" (enligt boken Praktisk Husbyggnadsteknik)?”
+
+==&gt; Se också “Todo: Överväg att hitta tomt och bygga (fritids)hus?”
+
+==&gt; Se också “Todo: Bygga hus - Överväg att hitta bra 3D-program för att rita hus "på plats”"
+
+==&gt; Se också “Todo: Bygga Hus - Överväg att rita ett hus som är en direkt kopia på min nuvarande lägenhet?”
+
+==&gt; Se också “Todo: Överväg att bygga ett hus i en lagerlokal som jag sedan kan placera på en tomt någonstans?”
+
+==&gt; Se också “Todo: Bygga hus - Kolla upp nyckelfärdiga hus på tillhandahållen eller egen tomt?”
+
+\*) Montera mina kickstarter-skruvstäd på min nya arbetsbänk.
+
+\*) Bygg min arbetsbänk för Twin Turbo Vise att monteras på
+
+\*) Köp material till min Twin Turbo Vise arbetsbänk
+
+\*) Designa i Fusion 360 min nya arbetsbänk för Twin Turbo Vise
+
+\*) Res ett byggtält på platformen för att ha regnskyddat utrymme att bygga delar till huset.
+
+\*) Köp ett byggtält eller byggställning med presenning.
+
+> *Med ett byggtält vet jag att jag själv kan resa ett utrymme där jag i skydd från regn kan arbeta med trä. Ett byggtält kan dock inte värmas upp så det får jag tänka på. Det kan bli kallt och rått. Så även om det är skyddat mot regn så är det INTE skyddat mot fukt!*
+
+\*) Bygg en plattform att bygga på (optimalt samma platform för hus, lager, arbetsbod och bostadsbarack)?
+
+> *Det verkar som om fördelen med en stor platform är att jag kan monetär en travers som löper längs hela plattformen och på den ha en kran för att lyft och flytta tunga saker under bygget? Det blir också lättare att förflytta delar med pirra eller kärra på hjul om hela byggarbetsplatsen är i samma plan.*
+
+> *Jag kan också överväga att backa upp en villavagn så den sluter samman i samma plan som platformen?*
+
+> *Jag kan till och med överväga att helt enkelt bygga mitt hus som en villavagn?*
+
+\*) Köp system med vindgenerator och montera upp på tomten och anslut till befintliga batteribanker.
+
+> *Helst vill jag så klart ha separat batteribanker som jag kan flytta runt för laddning eller förbrukning. På det sättet slipper jag dra ett komplicerat nät av laddkablar och förbrukningskablar på tomten. Det är också dyrt att dra kabel för 12 eller 24 volt då den höga strömmen gör att jag behöver tjocka kablar. Det verkar mer flexibelt och ekonomiskt om jag kan ha vädertåliga batteribanekr som jag med en pirra kan flytta runt och använda för förbrukning.*
+
+\*) Hitta system med vindgenerator och laddare för att skörda el på tomten.
+
+\*) Köp system med solceller och batteribank för att skörda elektricitet på tomten.
+
+\*) Hitta ett system som gör att jag kan driva batteridrivna verktyg direkt från el som produceras av solceller eller vindturbiner
+
+> *Jag är nyfiken om det kan vara möjligt att försöka driva batteridrivna verktyg direkt från den el som för stunden produceras av vind eller el för att slippa förluster från att först ladda batteribanken.*
+
+> *Sämst effektivitet borde det vara att först ladda batteribanken. Sedan ladda verktygsbatterier med 220V-laddare via inverter. För att till sist kunna driva verktyget med det laddade batteriet.*
+
+> *Vo borde kunna bruka energin lite böter om vi åtminstone kunde ladda verktygsbatterier direkt från solceller eller vindturbin? Det skulle vara möjligt om vi hade en intelligent laddare som simultant kunde ladda batterier med olika karakteristik från samma el-producent (sol eller vind).*
+
+> *Men bäst effektivitet borde vi få om vi direkt kunde driva verktygen med el som balanserats för förbrukning från laddare av batteribanker. Om denna laddare var intelligent så kunde den från solceller och eller vindturbin skapa el för flera simultana förbrukare där direktförbrukning och laddning av batteribanker är några exempel?*
+
+\*) Hitta system för laddning av batteribanker som också kan ladda verktygsbatterier direkt?
+
+> *Enklast är ju så klart att ladda verktygsbatterier med de 220 V laddare som de kommer med. Men då behöver jag använda en 220V inverter och jag tror intuitivt att jag då förlorar energi i onödan på de extra omvandlingsstegen i laddkedjan?*
+
+\*) Hitta solceller och batterier för att skörda el på min nya tomt
+
+> *Jag behöver minst en komplett anläggning med solceller, laddare och en batteribank som tål att stå ute och skörda el på tomten. Kan jag köpa system färdigt genom att till exempel köpa ett system för en sommarstuga och sedan montera det i en liten väderskyddad låda?*
+
+\*) Köp släpvagn för att frakta material till och från arbetsplatsen där jag bygger mitt nya hus
+
+\*) Köp elbil för att frakta material till och från arbetsplatsen där jag bygger mitt nya hus
+
+\*) Hitta en släpvagn att köpa
+
+\*) Hitta en bil (elbil) att köpa
+
+\*) Köp en tomt
+
+\*) Hitta en tomt att köpa
+
+\*) Skissa på minst ett färdigt hus baserats på design av min nuvarande lägenhet (enkelt)
+
+{% endraw %}

@@ -1,0 +1,9 @@
+﻿In ”The Singular Universe and the reality of Time” Unger and Smolin proposes that we must study our universe as a stand-alone singular self complete one with no interaction with anything external to it. All interactions are carried out within itself.
+
+Now, what can Gödels Theorem about incompleteness say about this?
+
+From https://en.wikipedia.org/wiki/Gödel%27s_incompleteness_theorems: ”The first incompleteness theorem states that no consistent system of axioms whose theorems can be listed by an "effective procedure" (e.g., a computer program, but it could be any sort of algorithm) is capable of proving all truths about the relations of the natural numbers (arithmetic). For any such system, there will always be statements about the natural numbers that are true, but that are unprovable within the system. The second incompleteness theorem, an extension of the first, shows that such a system cannot demonstrate its own consistency.”
+
+1) Seems that if we try to list axioms to completely describe the universe, there will be things about the universe that is true that we can’t prove. The mathematical (logical) model of the universe will either be incomplete or inconsistent (carries contradictions)?
+
+Now it seems Unger and Smolin argues that mathematics in itself has flaws that disqualifies it as the sole tool to describe the universe. So I suppose that they thus also avoid the implications of Gödels theorem?

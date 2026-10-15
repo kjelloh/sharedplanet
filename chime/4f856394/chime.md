@@ -1,0 +1,38 @@
+# Todo: House Build - Consider the open source (open hardware) "Electrodacus" Solar Panel battery Management System (BMS)?
+
+```#4f856394``` *As of 2020-02-23 17:44*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to build my own solar panel battery system for my own house and like the idea of using some open hardware solution for the BMS.
+
+==&gt; Also see "Mobile Solar Power" home page on Raw LiFePO4 batteries to buy and use for power wall (<https://www.mobile-solarpower.com/raw-lifepo4-deals-page.html> )?
+
+1) Consider the youtube video "Electrodacus -Open Source- Solar Battery Management System: Introduction and Setup" (<https://youtu.be/eCspxDLZR9U> )?
+
+2) This seems to be the home site for the Electrodacus pen hardware BMS (<https://electrodacus.com> )?
+
+> ![Solar BMS SBMS0](connections0.png)  
+> *Electrodacus SBMS0 battery management system with DSSR20 solar cell charge controllers and shunt monitored charge and external load*
+
+==&gt; It seems the Electrodacus is for off grid 12 or 24 V systems?
+
+> "*Solar BMS (Solar Battery Management System) is a solar charge controller designed to replace the Lead Acid solar charge controllers most people use today in Offgrid, RV, Boats and multiple other applications with 12V and 24V systems.*  
+> *Solar BMS can be used with **3 up to 8 Lithium cells **in series (any type) or even supercapacitors.  
+> Any number of parallel cells are no different from a single larger capacity cell so it will just count as one.  
+> The new SBMS0 plus DSSR20 is replacing all other models and can handle up to 30kW of solar PV using multiple DSSR20. *"
+
+3) Consider the open source zip files for the Electrodacus BMS product as listed in the user manual (<https://electrodacus.com/SBMS0/SBMS0.pdf> )?
+
+==&gt; This seems to the the listed URLs in the user manual to the zip files with the open source and hardware?
+
+> *SW and HW files for SBMS40 and SBMS120
+
+> HW : <http://electrodacus.com/SBMS120/HW/SBMS_HW.zip>  
+> SW : <http://electrodacus.com/SBMS120/SW/SBMS_v3.2h.zip>  
+> Firmware binary : <http://electrodacus.com/SBMS120/SW/SBMS_v3.2h_bin.zip> *
+
+...
+
+{% endraw %}

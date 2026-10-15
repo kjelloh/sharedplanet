@@ -1,0 +1,93 @@
+# Todo: Darwinet - Consider to make a Smart Card into a personal Darwinet Client?
+
+```#b7048182``` *As of 2016-06-26 21:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to program a smart card into a personal Darwinet Client for different applications?
+
+1) Consider to delve into how to buy and program a smart card to be executed in a standard smart card reader?
+
+2) Consider to implement a crypto currency Darwinet wallet on the card?
+
+3) Consider to implement a medical records Darwinet application on the card?
+
+==&gt; Consider the card can then be used to store once personal medical records by sharing them with the doctor at medical treatments?
+
+4) Consider how to make such a smart card able to synchronise with the Darwinet network when read by the reader?
+
+==&gt; Can we imagine a Darwinet network Kernel to be implemented by the card Reader (to be used by the Darwinet Client on the chip to access the network)?
+
+…
+
+5) Consider how to make an SL comment ticket card as a Darwinet Smart Card Client?
+
+==&gt; Consider implement such a Smart Card using the contactless standard applied by existing SL readers?
+
+==&gt; Consider to implement the Card Reader Device Darwinet Kernel as C++ open source (cross platform) library?
+
+==&gt; Consider to design the kernel to provide both “gate services” and “payment filling services”?
+
+==&gt; Consider to enable a standard Darwinet Client at smartphone device or computer to be member of the same domain and thus always show current state of the comment card?
+
+...
+
+==&gt; Consider to follow up on the ITfied Arbetsdagbok entry “150107 – SL API och Accesskort"
+
+> 150107 – SL API och Accesskort  
+> Study of what data is accessible from SL and their systems.
+
+> SL Access card. Bottom line: The Card uses non-standad NFC and store and forward clearing. Means NFC phones may or may not be able to read the card and a central API will provide data that is up to 48 hours “late”.
+
+> • • I can find no API to central systems that allows reading of card saldo.  
+> • • There is an Android App using NFC to read the card saldo.  
+> • • <https://play.google.com/store/apps/details?id=se.supertips.android.ressaldo&hl=sv>  
+> • • <http://sv.wikipedia.org/wiki/SL_Access> gives some clues to the system.  
+> • • The SL Access Card seems to be a <http://en.wikipedia.org/wiki/Octopus_card>?  
+> • • “The Octopus card uses the Sony 13.56 MHz FeliCa radio frequency identification (RFID) chip”.  
+> • • “Octopus uses a nonstandard system for RFID instead of the more popular ISO/IEC 14443 standards”.  
+> • • “Octopus is specifically designed so that card transactions are relayed for clearing on a store and forward basis, without any requirement for reader units to have realtime round-trip communications with a central database or computer”.  
+> • • “The Octopus card uses encryption for all airborne communication and performs mutual authentication between the card and reader based on the ISO 9798-2 three-pass mutual authentication protocol”.
+
+==&gt; Computer sweden seem to report that SL-access uses MIFARE and MIFARE plus samrtcard technology (<http://www.nxp.com/video/tap-into-mifare:TAP-INTO-MIFARE>)?
+
+==&gt; The computer sweden article is here (<http://computersweden.idg.se/2.2683/1.618301/sl-byter-ut-korten--for-att-stoppa-hackare>)
+
+*“Dagens cyanblå SL-accesskort använder den nu hackade korttekniken Mifare Classic. De nya smartare SL-korten och använder korttekniken Mifare Plus"*
+
+6) Consider if it would be possible to enable even a contactless Darwinet Smart Card to have time to synchronise on a single “tap”?
+
+==&gt; Is it theoretically possible to have time to have the Smart Card Darwinet Client to synchronise within the time frame of the tap?
+
+==&gt; Can we imagine we can have a user interface that signals if the user needs to “tap” the card again or to hold it there?
+
+==&gt; Can we imagine the first “tap” enables the Darwinet Client on the chip to send its state to the network?
+
+==&gt; Then the Card Reader can request a second tap when an answer (with deltas to the client) arrives to the terminal?
+
+…
+
+Card ==&gt; Device Kernel ==&gt; Request for MIV state update on Domain+Application+User?
+
+...
+
+(Device waits for response)
+
+…
+
+Card &lt;== Device Kernel &lt;== Deltas
+
+…
+
+Consider this process may be repeated until Card (Darwinet Client) is up-to-date?
+
+…
+
+…
+
+Consider to delve into this idea to implement a Darwinet Client on a “standard” smart card together with a Card Reader Device Darwinet “Kernel”?
+
+...
+
+{% endraw %}

@@ -1,0 +1,7 @@
+﻿Write a program that reads my mails and understands Todos.
+
+Install the program on a server at home or at office.
+
+A Mac mini?
+
+Skickat från min iPhone

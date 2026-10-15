@@ -1,0 +1,33 @@
+﻿It seems the services of choice to automate Github projects builds on different platforms are Travis Ci and AppVeyor?
+
+1) Travis Ci seems to live here (https://travis-ci.org/ <https://travis-ci.org/>)?
+
+2) It seems AppVeyor lives here (https://www.appveyor.com <https://www.appveyor.com/>)?
+
+3) It seems the combo Travis CI and AppVeyor is the one used by Eric Niebler for Ranges V3 (https://github.com/ericniebler/range-v3 <https://github.com/ericniebler/range-v3>)?
+
+	==> The fact that Niebler are using Travis CI and AppVeyor seems like a strong argument that this is the combo to go for to automate build and test of GitHub projects?
+
+4) Sidenote: Consider how Darwinet may be used to provide the same services?
+
+	==> Consider to make it easy to expose an immutable view of GitHub projects in a Darwinet Domain?
+	==> Consider to have the Domain a local file system (suitable for the Node Platform)?
+
+		==> Consider on Windows the File System are NTFS?
+		==> Consider on Linux the File System is whatever Linux File System are provided?
+		==> Consider on MAC OS the File System is whatever is on MAC OS?
+
+	==> Consider to enable a way to define a script to be run on Darwinet Domain changes to the File System state?
+
+		==> Consider different mechanisms to take advantage that Darwinet actually knows exactly what has changed?
+		==> Or consider to just trigger the same script to run on whatever changed that was detected?
+		==> Consider a Darwinet Domain may detect when Build is complete by triggering on a State Change to some “final” file (e.g. the built binaries)?
+		…
+
+	==> Consider the mechanism the Darwinet Domain may share the state of the locally built files (as members of the Darwinet Domain)?
+	…
+
+…
+
+Consider to try out these services and possibly elaborate on some Darwinet implementation of the same services?
+...

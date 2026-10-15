@@ -1,0 +1,46 @@
+﻿Could it be a good idea to initiate a C++ Open Source library for building Test Frameworks for validating the behaviour of highly asynchronous, remote configured, asynchronously interacting test targets like Payment Terminals?
+
+1) Consider a good name for such a C++ State-Mirroring Event-listening Test Framework?
+
+	==> Consider the name “eve” (as a reference to the infamous intermediate eaves-dropper of the communication between Alice and Bob)?
+	==> Consider a name from wikipedia discussion on archetypal characters in field of cryptography (https://en.wikipedia.org/wiki/Alice_and_Bob <https://en.wikipedia.org/wiki/Alice_and_Bob>)?
+	==> Consider a name that refers to some famous “tester” or “teller of truth” in mythology or culture?
+	==> Consider a name that refers to testing-for-concurrence?
+	... 
+	 
+
+2) Consider to base the Framework on “mirroring state machines”?
+
+	==> Consider the Test Framework listens to the test object messaging with the environment and uses identified events to mirror the test object state (res defined states)?
+	==> Consider the Test Framework test result is then (simply?) a state transition into failure states?
+
+		==> Consider the example of Payment Terminal Online Approval Time Out must result in next call carrying an Offline Advice?
+		…
+
+	==> Consider the “Requirement Specification” is coded as a state-machine “when this then next this”?
+
+3) Consider the Framework to be based on concurrent state machines (each test runs in parallel to test co-realted behaviours simultaneously)?
+
+	==> Consider that when a Payment Terminal has sent an Approval Request there are a large set of Requirements that in term of future behaviour of T that must be activated?
+	...
+
+
+4) Consider the Frameworks processing engine to be totally implemented as tag-path based decoing into element events?
+
+	==> Consider in this way we know the state machines will be exposed to all events of interest?
+	==> Consider this enables the state machine to aggregate more complex events based on combinations of decoded element event sequences?
+	...
+
+5) Consider the framework to stress the point that the Tests are NOT the Requirements (they test behavioural concurrence with required behaviour)?
+
+	...
+
+6) Consider such Framework would need extra Event-mirroring of physical user interface actions (e.g., Payment Termina card insert, cancel press)?
+
+	==> Consider to make the Framework being able to listen to several Event sources (allowing build of physical interface event listeners)?
+	…
+
+…
+
+Consider to delve into this idea of a state machine based Test Framework processing eavesdropped and tag-path decoded protocol messages?
+... 

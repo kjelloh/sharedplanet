@@ -1,0 +1,20 @@
+# Todo: Consider to delve deeper into Yuval Hariris proposal that Memetics, Post Modernism and Game Theory are just variants to explain how ideas affect the second order chaotic system of human history?
+
+```#6eb22ff0``` *As of 2015-12-14 11:47*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Yuval Hariri in his ”Sapiens” talks compelling about how we try to relate to the human history being a chaotic system of second order (it reacts on predictions about itself).
+
+1) In chapter 13.2 (”Hemligheten bakom framgången” ”Den blinda Klio”) he proposes that Memetics, Post Modernism and Game Theory are three approaches with the same core idea (ideas may act as a kind of infectious parasite)  
+2) We are agents to these ideas and the idea may thrive although we, the agents does not (as an example he states the Arm Race of countries).  
+3) How does this relate to e.g. Social Organisms (is our ability to relate to a ”them” based assumptions how they act-in-faith our way of coping with second order chaotic systems)?  
+4) Seems we may argue that "Social Organisms” may in fact be emergent phenomena in society (second order chaotic system)?  
+5) If so, our ability to ”imagine” these social organisms helps us better relate to ”them” and decide how to act ourselves?  
+…
+
+Consider to elaborate more on this ”dance” between Emdividuals, Emergent Social Organisms and human collaboration being a second order chaotic system?  
+...
+
+{% endraw %}

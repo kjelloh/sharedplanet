@@ -1,0 +1,6 @@
+﻿Could gaming be brought to executes whilst also generating IRL usable energy (e.g. electric power for phones and gadgets)?
+
+1) One could provide ones character with ”life points” and strength by actually making physical effort. Thus the gamer would conquer obstacles in the game by trying to excel in both brain and physical efforts
+2) One could consider to power the device on one which plays with physical power? Thus the ability to connect with the virtual world requires physical effort.
+3) Design user interface to always show generated power with at least one decimal that is not zero. Low power may then start at 0,000001 W and build up to 500,0 W? The applied scale adapts to produced energy to encourage a feel of doing well.
+...

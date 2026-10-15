@@ -1,0 +1,28 @@
+# Todo: Programming - Consider to download and work with Tortoise Git C++ Open Source in VS 2015 to learn Windows Explorer shell and Git Protocols
+
+```#981000cf``` *As of 2016-02-22 11:48*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to download, study and learn Tortoise Git windows client which is Open Source and written in C++/Boost?
+
+1) Consider to download and build in VS 2015 (son-project seem to be provided)
+
+2) Code seem to be hosted Gitlab (<https://gitlab.com/tortoisegit/tortoisegit/>)?
+
+3) Consider to find the Windows Explorer Extension to learn how it works and perhaps re-use in Darwinet File Explorer?
+
+4) Consider to study the Git interface and protocols?
+
+5) Consider to elaborate on the idea to move the project into Gittorrent to see how (and if) it works?
+
+==&gt; Are we allowed to do this according to the license?
+
+…
+
+Consider to study this source to see what we can learn about Git and what we may re-use in Darwinet?
+
+...
+
+{% endraw %}

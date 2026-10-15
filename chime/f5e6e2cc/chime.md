@@ -1,0 +1,32 @@
+# Todo: Consider to buy a 47,7 mm diameter coffee tamper for my ROK manual coffee machine porta filter
+
+```#f5e6e2cc``` *As of 2020-05-27 13:50*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I need a proper tamper for my ROK porta filter.
+
+1) It seems ROK sells a 49,7 mm tamper in the web shop (<https://www.rok.coffee/#Shop> )?
+
+> ![](PastedGraphic-1.png)  
+> *The ROK 49,7 mm tamper to fit their port filter*
+
+**TODO: Wait for my order to arrive (I ordered this tamper from ROK as os 27 May 2020)**
+
+2) It seems my ROK porta filer is 49 mm in diameter?
+
+==&gt; It seems my ROK porta filter requires a 49 or 50 mm tamper?
+
+> ![](IMG_4616.jpeg)  
+> *My ROK porta filter is around 49 mm in diameter*
+
+3) It seems this thread argues a 49,5 mm is an "exact" fit but a 51 mm will fit above the bottom rim (<https://www.home-barista.com/advice/50-mm-tamper-for-rok-t41394.html> )?
+
+> *"I use a 49.5mm tamper which allows me to tamp below the ring if necessary,..."*
+
+> *"I have used a 51mm tamper when I overdosed (above the ridge) and its fine. 49mm for if you need to go below the ridge."*
+
+...
+
+{% endraw %}

@@ -1,0 +1,77 @@
+﻿Can we relate C++ value categories (rvalue, lvalue, xvalue, prvalue) to Tha identifiers bound in different ways?
+
+	==> Also see “Todo: Programming - Study C++ lazy-evaluation in C++14 proposed "Stream" and future C++ support? “
+
+1) Consider that C++11 move semantics is in fact just a compile-time dispatching mechanism (compiler binds different expressions with different code to optimise for “movable” data instances to eliminate copying)?
+
+	==> Consider to find examples where we “know” that some data is temporary (function value returns and expiring data values)?
+
+	...
+
+2) Consider that to support move semantics C++11 refined the original lvalue, rvalue categories into lvalue,xvalue, rvalue (http://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues <http://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues>)?
+
+	==> This post seems to refer to C++ proposal N
+
+Quoting n3055 <http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3055.pdf>:
+
+An lvalue (so-called, historically, because lvalues could appear on the left-hand side of an assignment expression) designates a function or an object.  [Example: If E is an expression of pointer type, then *E is an lvalue expression referring to the object or function to which Epoints. As another example, the result of calling a function whose return type is an lvalue reference is an lvalue.]
+An xvalue (an “eXpiring” value) also refers to an object, usually near the end of its lifetime (so that its resources may be moved, for example). An xvalue is the result of certain kinds of expressions involving rvalue references.  [Example: The result of calling a function whose return type is an rvalue reference is an xvalue.]
+A glvalue (“generalized” lvalue) is an lvalue or an xvalue. 
+An rvalue (so-called, historically, because rvalues could appear on the right-hand side of an assignment expression) is an xvalue, a temporary object or subobject thereof, or a value that is not associated with an object. 
+A prvalue (“pure” rvalue) is an rvalue that is not an xvalue.  [Example: The result of calling a function whose return type is not a reference is a prvalue]
+
+	==> C++11 prvalues maps to previous C++ plain (movable) rvalues (right hand side referenced values).
+	==> C++11  lvalues are unchanged (unmovable) left hand side (named) values.
+	==> C++11 xvalues are the new implicitly movable lvalue (std::move returns an xvalue to provided lvalue reference) 
+
+	
+
+3) Consider the C++ document N3055 “A Taxonomy of Expression Value Categories" (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3055.pdf <http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3055.pdf>)?
+
+	==> It seems a reference (bound) to an expiring object (thus a kind of rvalue) is called an xvalue (expiring value)
+
+“
+The traditional dichotomy between lvalues and rvalues is subdivided into five overlapping categories. The result of binding an rvalue reference to an object is called an “xvalue” (inspired by the fact that the canonical use of an rvalue reference is to move the resources of a value that is “eXpiring,” i.e., at the end of its lifetime). Traditional lvalues retain that name. Together, xvalues and lvalues are called “glvalues” (“generalized” lvalues). Rvalues, as currently known in the core language clauses, are renamed to “prvalues” (“pure” rvalues). Together, prvalues and xvalues are called “rvalues,” reflecting the use of that term in the library clauses and the intended uses in reference binding, overload resolution, and template argument deduction.
+
+"
+
+	==> It seems generalised lvalues are the that designates objects in memory or in functions?
+
+“...This taxonomy provides the means to refer collectively to expressions that designate objects in memory or functions (“glvalues”) ..."
+
+	==> It seems rvalue references can be initialised by expressions
+
+“...and to expressions that can be used to initialize rvalue references (the new “rvalues”), as well as to designate the specific kinds of values when that is necessary. "
+
+	==> It seems move semantics are based on some implicit lvalue-to-rvalue conversion?
+
+“Whenever a glvalue appears in a context where a prvalue is expected, the glvalue is converted to a prvalue; see 4.1, 4.2, and 4.3. [Note: An attempt to bind an rvalue reference to an lvalue is not such a context; see 8.5.3 .—end note]"
+
+	==> Consider to understand std::forward as means to also understand the & and && reference syntax (http://en.cppreference.com/w/cpp/utility/forward <http://en.cppreference.com/w/cpp/utility/forward>)?
+
+template< class T >
+T&& forward( typename std::remove_reference <http://en.cppreference.com/w/cpp/types/remove_reference><T>::type& t ) noexcept;
+// Forwards lvalues as either lvalues or as rvalues, depending on T
+
+template< class T >
+T&& forward( typename std::remove_reference <http://en.cppreference.com/w/cpp/types/remove_reference><T>::type&& t ) noexcept;
+// Forwards rvalues as rvalues and prohibits forwarding of rvalues as lvalues 
+
+	==> Consider to understand std::move as means to also understand the & and && reference syntax (http://en.cppreference.com/w/cpp/utility/move <http://en.cppreference.com/w/cpp/utility/move>)?
+
+		...
+
+4) Consider  a C++11 rvalue is a defined Tha identifier (type and value) with no name (a temporary)?
+
+	==> Or rather, it also has a value that exists in a temporary context (it does not have a value on the stack or on the heap)?
+	==> Thus, the C++ compiler will be able to dispatch such values at compile time to code that can emplace them in a target lvalue?
+
+	==> Hm… this seems to be enough for pure rvalues (prvalues) but not for xvalues (expiring values)?
+	==> An Expiring value has a name (but the programmer can instruct the compiler to std::move it to execute “move-code” on it?
+	...
+
+
+…
+
+Well, I don’t know if this was a good idea but consider to delve deeper into this to see if we can get some grip on C++ dispatching rules on move semantics?
+...

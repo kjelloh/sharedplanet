@@ -1,0 +1,24 @@
+﻿I switched to the Free online Fusion 360 version and was unable to export my design as STL the way I was used to.
+
+1) If seems the free version of Fusion 360 is "browser like" (runs online) and you have to <File> / <Export> to generate an STL file?
+
+
+Select main meny <File> and drop down <Export>
+
+
+In the pop-up, klick the drop-down for "Type:"
+
+
+
+In the drop-down list select "STL Files (*.stl)"
+
+
+You get a "Job Status" window showing the progress of the export
+
+
+When status is "Complete" you can click "Show in Finder" to have macOS open a finder window where the STL-file has been downloaded
+
+
+The Finder in macOS is able to show a pre-view of STL-files :)
+
+... 

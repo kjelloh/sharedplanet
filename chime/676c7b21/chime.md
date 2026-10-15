@@ -1,0 +1,180 @@
+# Todo: Programming - Consider to study the C++ standard proposal for a 2D graphics standard front-end library?
+
+```#676c7b21``` *As of 2016-06-27 18:49*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Listening to Herb Sutter talking about the C++17 standard committee meeting in a Cppcats episode (<http://cppcast.com/2016/06/herb-sutter/>) he mentions the proposal to provide a C++ standard “Hello World” for 2D graphic user interface front-ends.
+
+1) The Proposal seem to live here (<http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0267r0.pdf>)?
+
+==&gt; It seems to be identified as Document Number: P0267R0, Date: 2016-02-12, Revises: N4073
+
+==&gt; N4073 sems to live here (<https://isocpp.org/files/papers/N4073.pdf>)?
+
+==&gt; It seems to be identified as Document Number: N4073, Project: JTC1/SC22/WG21 Programming Language C++/SG13 - Graphics, date: 2014-07-03
+
+==&gt; There seem to be an older version N3888 (<https://isocpp.org/files/papers/N3888.pdf>)?
+
+==&gt; It seems to be identified as Document Number: N3888, Project: JTC1/SC22/WG21 Programming Language C++/SG13 - Graphics, Date: 2014-01-18
+
+2) There also seems to be a proposal for 2D graphics input (<http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0249r0.pdf>)?
+
+==&gt; The document seems to be identified as Document Number: P0249, Date: 02/05/2016?
+
+==&gt; Consider to study how it proposes to standardise “message loops” and event handlers to be platform agnostic?
+
+...
+
+2) Consider to find C++ reference implementations out there for the C++ 2D graphics standard library (?
+
+==&gt; Consider to try out the reference implementation on Github (<https://github.com/mikebmcl/N3888_RefImpl>)?
+
+==&gt; Q: Is this a good enough reference implementation to base a C++ course examples “Hello World” example on?
+
+==&gt; Consider this fork of mikebmcl implementation above (<https://github.com/cristianadam/io2d>)?
+
+==&gt; Q: In what ways is this fork “better” (is it just the CMake support that is added)?
+
+3) Consider to find example “Hello World” code for the C++ P0267 2D graphics proposal?
+
+==&gt; Consider this article (<https://cristianadam.eu/20160228/introducing-c-plus-plus-experimental-io2d/>)?
+
+```
+#include <io2d.h>
+
+#include <fstream>
+#include "tga_header.h"
+
+namespace io2d = std::experimental::io2d;
+
+void save_surface_to_tga_file(io2d::image_surface& surface,
+                              std::string const& fileName)
+{
+    tga::header tga_header;
+    tga_header.image_type = tga::image_type::true_color;
+    tga_header.image_spec.width = surface.width();
+    tga_header.image_spec.height = surface.height();
+    tga_header.image_spec.depth = 32;
+    tga_header.image_spec.descriptor.top = 1;
+
+    std::ofstream ofs(fileName, std::ofstream::binary);
+    ofs.write(reinterpret_cast<const char*>(&tga_header), sizeof(tga_header));
+
+    auto bytes = surface.data();
+    ofs.write(reinterpret_cast<const char*>(&bytes[0]), bytes.size());
+}
+
+int main ()
+{
+    io2d::image_surface image(io2d::format::argb32, 240, 80);
+
+    io2d::simple_font_face consolas("Consolas", io2d::font_slant::normal,
+                                    io2d::font_weight::bold);
+    image.font_face(consolas);
+    image.font_size(32.0);
+
+    io2d::brush cyan(io2d::rgba_color::cyan());
+    image.brush(cyan);
+
+    image.render_text("Hello World", {20.0, 50.0});
+
+    save_surface_to_tga_file(image, "hello.tga");
+}
+```
+
+==&gt; It seems to use tag_header.h with the content defined by user brandon in this thread (<http://stackoverflow.com/questions/14025735/problems-displaying-targa-tga>)?
+
+```
+typedef uint8_t byte;
+
+enum class color_map_type : byte {
+    absent  = 0,
+    present = 1,
+};
+
+enum class image_type : byte {
+    none             = 0,
+    color_mapped     = 1,
+    true_color       = 2,
+    black_white      = 3,
+    rle_color_mapped = 9,
+    rle_true_color   = 10,
+    rle_black_white  = 11,
+};
+
+struct color_map_spec {
+    uint16_t first_entry_index;
+    uint16_t length;
+    byte     entry_size;
+};
+static_assert(sizeof(color_map_spec) == 5, "bad size");
+
+struct image_descriptor {
+    byte alpha    : 4;
+    byte right    : 1;
+    byte top      : 1;
+    byte reserved : 2;
+};
+static_assert(sizeof(image_descriptor) == 1, "bad size");
+
+struct image_spec {
+    uint16_t         x_origin;
+    uint16_t         y_origin;
+    uint16_t         width;
+    uint16_t         height;
+    byte             depth;
+    image_descriptor descriptor;
+};
+static_assert(sizeof(image_spec) == 10, "bad size");
+
+struct header {
+    byte           id_length;
+    color_map_type color_map_type;
+    image_type     image_type;
+    color_map_spec color_map_spec;
+    image_spec     image_spec;
+};
+static_assert(sizeof(header) == 18, "bad size");
+
+struct footer {
+    uint32_t ext_area_offset;
+    uint32_t dev_dir_offset;
+    char     signature[16];
+    char     dot_terminator;
+    char     null_terminator;
+} 
+```
+
+==&gt; But this code seems to generate a tag-file (not actually render a 2D-window)?
+
+==&gt; If we remove the “save_surface_to_tga_file(image, "hello.tga");” call and function we are left with a rending code only?
+
+4) Consider to compare this proposal with the Cinder C++ library approach (<https://libcinder.org>)?
+
+5) Consider to compare this proposal with the Open Effects standard API (<https://en.wikipedia.org/wiki/OpenFX_(API))?>
+
+==&gt; Consider to find available C++ API implementing the Open Effects standard?  
+…
+
+6) Herb Sutter seems to say that the proposal is based on the Cairo C 2D graphics library (<https://cairographics.org>)?
+
+==&gt; This seems to also be mentioned in N4073 (and the older N3888)?
+
+“V. Design Decisions
+
+A. LeveragingtheCairoAPI
+
+1. Reasoning
+
+The use of cairo as a starting point allows several goals to be met. Cairo is a C graphics library that provides cross-platform support for advanced 2D drawing and is used in many well-known, widely-used software projects (e.g. Mozilla Firefox, Mono, GTK+)."
+
+...
+
+…
+
+Consider to delve into the C++ standard discussions to adress the lack of a standard 2D font-end library for C++?  
+...
+
+{% endraw %}

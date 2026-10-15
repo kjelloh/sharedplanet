@@ -1,0 +1,53 @@
+﻿I need to clean up a directory structure from old files, unused files, files to be moved to an archive etc.
+
+1) It seems I can sort files by size using command line: 
+
+	ls -lR | awk '/^-/ {print $5 " " $8 " " $6 " " $7 " " substr($0,index($0,$9))}' | awk '!/:/ {print}' | sort -n
+
+2) It seems I can sort files by "date" using command line:
+
+	ls -lR | awk '/^-/ {print $8 " " $6 " " $7 " " substr($0,index($0,$9))}' | awk '!/:/ {print}' | sort
+
+
+3) It seems I can get a tree-formatted directory listing by installing and use the "tree" command?
+
+	tree -RN
+
+	
+4) Consider to identify files already at another location by sorting the two directory listings and identify pair of equal entries?
+
+	kjell-olovhogdal@Kjell-Olovs-Mac-Pro Dropbox % ls -lR . > ../brf_ekbladet_files.txt
+
+
+
+	kjell-olovhogdal@Kjell-Olovs-Mac-Pro Dropbox % ls -lR ../Brf\ Ekbladet\ Arkiv  >> ../brf_ekbladet_files.txt        
+
+
+
+	kjell-olovhogdal@Kjell-Olovs-Mac-Pro Dropbox % cd ..
+	kjell-olovhogdal@Kjell-Olovs-Mac-Pro Dropbox % cat brf_ekbladet_files.txt | awk '/^-/ {print $8 " " $6 " " $7 " " substr($0,index($0,$9))}' | awk '!/:/ {print}' | sort
+
+
+
+
+
+This seems to ge me a file listing from the two directories sorted so that files in both directories shows up as pairs of equal entries in the final output.
+
+The first ls command lists all files in the current directory and streams the result to a text file.
+The second ls command lists all files in a parallell directory and appends the output to the same text file.
+The final command streams the created text file into the awk and sort command pipe to produce the final output.
+
+
+	kjell-olovhogdal@Kjell-Olovs-Mac-Pro Dropbox % awk 'visited[$0]++' brf_ekbladet_sorted_files.txt 
+
+
+
+
+This awk command outputs a list of all the doublets i.e., all files that are present in both directory listings in the text file with the sorted listing of both directory listings.
+
+In theory we should be safe if we delete these files from the first directory as the same file is already present in the second directory?
+
+	kjell-olovhogdal@Kjell-Olovs-Mac-Pro Dropbox % awk '!visited[$0]++' brf_ekbladet_sorted_files.txt
+
+This awk command does the opposite, it outputs all unique entries i.e., all the files that are present in only ONE of the directory listings.
+... 

@@ -1,0 +1,531 @@
+# Todo: C++ Programming IDE - Consider to compare the default project directory structure for different IDEs?
+
+```#6649c721``` *As of 2017-07-29 20:23*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what can we learn from studying the default project folder structure cerated by different IDEs that I use (or want to use)?
+
+==&gt; Also see “Todo: Cross Platform Programming - Consider to try out the src, ide, cmake, build project structure?”
+
+==&gt; Also see “Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?”
+
+==&gt; Also see “Todo: Cross Platform Programming - Consider to try out the src, ide, cmake, build project structure?”
+
+1) Consider an Xcode default C++ Console Application project folder structure?
+
+==&gt; This seems to be the content (including hidden files) of a freshly created Xcode C++ Console App?
+
+> Kjell-Olovs-MacBook-Pro:MyDefaultXcodeCppConsoleApp kjell-olovhogdahl$ tree -a  
+> .  
+> ├── .DS_Store  
+> ├── .git  
+> │ ├── COMMIT_EDITMSG  
+> │ ├── HEAD  
+> │ ├── config  
+> │ ├── description  
+> │ ├── hooks  
+> │ │ └── README.sample  
+> │ ├── index  
+> │ ├── info  
+> │ │ └── exclude  
+> │ ├── logs  
+> │ │ ├── HEAD  
+> │ │ └── refs  
+> │ │ └── heads  
+> │ │ └── master  
+> │ ├── objects  
+> │ │ ├── 05  
+> │ │ │ └── 627d45c926c32587e2e2e1c81c9656616c3876  
+> │ │ ├── 19  
+> │ │ │ └── cd71a8fa4adbfa47682fda08d975b93d4f199d  
+> │ │ ├── 37  
+> │ │ │ └── d77b104fcb2b0af5e0d2a036f81cca313def3f  
+> │ │ ├── 4b  
+> │ │ │ └── 07380ca48b4ec1370a4be8ff4d742e441fae7f  
+> │ │ ├── 53  
+> │ │ │ └── c0efa1cd5e43b8406ca1aa859dbfcd54088126  
+> │ │ ├── 86  
+> │ │ │ └── 3fa32db5d5ce79c326262951ed311f8c009d2e  
+> │ │ ├── a4  
+> │ │ │ └── 734fb9f1d873ae6e3aea48b67c94313ea26e76  
+> │ │ ├── b4  
+> │ │ │ └── 22b1dd08a78b57d3720fb04ad66c35d4505e62  
+> │ │ ├── bd  
+> │ │ │ └── 38c5cd3f87607bf7b0ba7f3f05e2f918368f87  
+> │ │ ├── c7  
+> │ │ │ └── 28d2def92c1b2967786a2fb365a407ae0b2cf5  
+> │ │ ├── e4  
+> │ │ │ └── 051f588b1d7a391d72fe59ddd533c5743e8aef  
+> │ │ ├── e6  
+> │ │ │ └── c8bd934b7f72875d0c86e371e4e58b99e432cf  
+> │ │ ├── ec  
+> │ │ │ └── eccb6575e06a0d3aaea19e6e627a3e0e258a17  
+> │ │ ├── info  
+> │ │ └── pack  
+> │ └── refs  
+> │ ├── heads  
+> │ │ └── master  
+> │ └── tags  
+> ├── MyDefaultXcodeCppConsoleApp  
+> │ └── main.cpp  
+> └── MyDefaultXcodeCppConsoleApp.xcodeproj  
+> ├── project.pbxproj  
+> ├── project.xcworkspace  
+> │ ├── contents.xcworkspacedata  
+> │ └── xcuserdata  
+> │ └── kjell-olovhogdahl.xcuserdatad  
+> │ └── UserInterfaceState.xcuserstate  
+> └── xcuserdata  
+> └── kjell-olovhogdahl.xcuserdatad  
+> └── xcschemes  
+> ├── MyDefaultXcodeCppConsoleApp.xcscheme  
+> └── xcschememanagement.plist
+
+==&gt; It seems to build and run from a location totally outside the project folder structure?
+
+> int main(int argc, const char \* argv&#91;&#93;) {  
+> // insert code here...  
+> std::cout &lt;&lt; "\\nHello! I am " &lt;&lt; argv&#91;0&#93;;  
+> std::cout &lt;&lt; std::endl;  
+> return 0;  
+> }
+
+> Prints...
+
+> **Hello! I am /Users/kjell-olovhogdahl/Library/Developer/Xcode/DerivedData/MyDefaultXcodeCppConsoleApp-fxzpemyqddqpgmcuyjktrutcugck/Build/Products/Debug/MyDefaultXcodeCppConsoleApp**
+
+2) Consider files added by MAC OS VSCode IDE?
+
+==&gt; On MAC OS Visual Studio Code seems to add a root folder “.vscode” containing son configuration files for building and debugging applications from within VS Code?
+
+> Kjell-Olovs-MacBook-Pro:MyDefaultXcodeCppConsoleApp kjell-olovhogdahl$ code .
+
+> … In VS Code, added a launch configuration
+
+> Kjell-Olovs-MacBook-Pro:MyDefaultXcodeCppConsoleApp kjell-olovhogdahl$ tree -a  
+> .
+
+> ...
+
+> ├── .vscode  
+> │ └── launch.json  
+> ...
+
+3) Consider MAC OS CLion default C++ project folder structure?
+
+> Kjell-Olovs-MacBook-Pro:MyDefaultCLionCppConsoleApp kjell-olovhogdahl$ pwd  
+> /Users/kjell-olovhogdahl/CLionProjects/MyDefaultCLionCppConsoleApp  
+> Kjell-Olovs-MacBook-Pro:MyDefaultCLionCppConsoleApp kjell-olovhogdahl$ tree -a  
+> .  
+> ├── .idea  
+> │ ├── MyDefaultCLionCppConsoleApp.iml  
+> │ ├── misc.xml  
+> │ ├── modules.xml  
+> │ └── workspace.xml  
+> ├── CMakeLists.txt  
+> ├── cmake-build-debug  
+> │ ├── CMakeCache.txt  
+> │ ├── CMakeFiles  
+> │ │ ├── 3.8.2  
+> │ │ │ ├── CMakeCCompiler.cmake  
+> │ │ │ ├── CMakeCXXCompiler.cmake  
+> │ │ │ ├── CMakeDetermineCompilerABI_C.bin  
+> │ │ │ ├── CMakeDetermineCompilerABI_CXX.bin  
+> │ │ │ ├── CMakeSystem.cmake  
+> │ │ │ ├── CompilerIdC  
+> │ │ │ │ ├── CMakeCCompilerId.c  
+> │ │ │ │ ├── a.out  
+> │ │ │ │ └── tmp  
+> │ │ │ └── CompilerIdCXX  
+> │ │ │ ├── CMakeCXXCompilerId.cpp  
+> │ │ │ ├── a.out  
+> │ │ │ └── tmp  
+> │ │ ├── CMakeDirectoryInformation.cmake  
+> │ │ ├── CMakeOutput.log  
+> │ │ ├── CMakeTmp  
+> │ │ ├── Makefile.cmake  
+> │ │ ├── Makefile2  
+> │ │ ├── MyDefaultCLionCppConsoleApp.dir  
+> │ │ │ ├── DependInfo.cmake  
+> │ │ │ ├── build.make  
+> │ │ │ ├── cmake_clean.cmake  
+> │ │ │ ├── depend.make  
+> │ │ │ ├── flags.make  
+> │ │ │ ├── link.txt  
+> │ │ │ └── progress.make  
+> │ │ ├── TargetDirectories.txt  
+> │ │ ├── clion-environment.txt  
+> │ │ ├── clion-log.txt  
+> │ │ ├── cmake.check_cache  
+> │ │ ├── feature_tests.bin  
+> │ │ ├── feature_tests.c  
+> │ │ ├── feature_tests.cxx  
+> │ │ └── progress.marks  
+> │ ├── Makefile  
+> │ ├── MyDefaultCLionCppConsoleApp.cbp  
+> │ └── cmake_install.cmake  
+> └── main.cpp
+
+> 10 directories, 38 files  
+> Kjell-Olovs-MacBook-Pro:MyDefaultCLionCppConsoleApp kjell-olovhogdahl$
+
+==&gt; CLion seems to create a cmake based project by default?
+
+==&gt; It seems to save its IDE files into a sub-folder “.idea” (below source code)?
+
+==&gt; CLion seems to build and run from a folder in the project folder structure?
+
+> ```
+> int main(int argc, const char * argv[]) {  
+>     // insert code here...  
+>     std::cout << "\nHello! I am " << argv[0];  
+>     std::cout << std::endl;  
+>     return 0;  
+> }
+> ```
+
+  
+> … yields
+
+> Hello! I am /Users/kjell-olovhogdahl/CLionProjects/**MyDefaultCLionCppConsoleApp/cmake-build-debug/MyDefaultCLionCppConsoleApp**
+
+4) Consider a MAC OS Qt Creator Widgets Application?
+
+==&gt; I used the Project wizard in QT creator to create a “Qt Wizards Application” (named MyFirstMacOsQtWidgetsApplication)
+
+==&gt; The wizard selected to use Kit “Desktop Qt 5.9.1 **clang** 64 Bit”
+
+==&gt; The project seems to be created in new folder at my logged in user root (“/Users/kjell-olovhogdahl”)?
+
+> Kjell-Olovs-MacBook-Pro:MyFirstMacOsQtWidgetsApplication kjell-olovhogdahl$ pwd  
+> **/Users/kjell-olovhogdahl/MyFirstMacOsQtWidgetsApplication**  
+> Kjell-Olovs-MacBook-Pro:MyFirstMacOsQtWidgetsApplication kjell-olovhogdahl$ tree -a  
+> .  
+> ├── MyFirstMacOsQtWidgetsApplication.pro  
+> ├── MyFirstMacOsQtWidgetsApplication.pro.user  
+> ├── main.cpp  
+> ├── mainwindow.cpp  
+> ├── mainwindow.h  
+> └── mainwindow.ui
+
+> 0 directories, 6 files  
+> Kjell-Olovs-MacBook-Pro:MyFirstMacOsQtWidgetsApplication kjell-olovhogdahl$
+
+5) Consider a Linus Mate (Ubuntu 16.04) QT Creator Widgets Application?
+
+==&gt; I used the Project wizard in QT creator to create a “Qt Wizards Application” (named MyDefaultLinuxQtWizardsApplication)
+
+==&gt; The wizard selected to use Kit “Desktop Qt 5.9.1 **GCC** 64 Bit”
+
+==&gt; The project seems to be created in new folder at my logged in user root (“/home/kjell-olovhogdahl")?
+
+> kjell-olovhogdahl@ubuntu:~/MyDefaultLinuxQtWizardsApplication$ pwd  
+> **/home/kjell-olovhogdahl/MyDefaultLinuxQtWizardsApplication**  
+> kjell-olovhogdahl@ubuntu:~/MyDefaultLinuxQtWizardsApplication$ tree -a  
+> .  
+> ├── main.cpp  
+> ├── mainwindow.cpp  
+> ├── mainwindow.h  
+> ├── mainwindow.ui  
+> ├── MyDefaultLinuxQtWizardsApplication.pro  
+> └── MyDefaultLinuxQtWizardsApplication.pro.user
+
+> 0 directories, 6 files  
+> kjell-olovhogdahl@ubuntu:~/MyDefaultLinuxQtWizardsApplication$
+
+...
+
+6) Consider a Windows 10 QT Creator Widgets Application?
+
+==&gt; I used the Project wizard in QT creator to create a “Qt Wizards Application” (named MyDefaultWindows10QtWizardsApplication)
+
+==&gt; The wizard selected to use Kit “Desktop Qt 5.9.1 **MSVC 2015** 64 Bit”
+
+==&gt; The project seems to be created in new folder at my logged in user Documents folder (“C:\\Users\\kjell-olovhogdahl\\Documents")?
+
+> **C:\\Users\\kjell-olovhogdahl\\Documents\\MyDefaultWindows10QtWizardsApplication**&gt;tree /F  
+> Folder PATH listing  
+> Volume serial number is 0000005C D49B:BB89  
+> C:.  
+> main.cpp  
+> mainwindow.cpp  
+> mainwindow.h  
+> mainwindow.ui  
+> MyDefaultWindows10QtWizardsApplication.pro  
+> MyDefaultWindows10QtWizardsApplication.pro.user
+
+> No subfolders exist
+
+> C:\\Users\\kjell-olovhogdahl\\Documents\\MyDefaultWindows10QtWizardsApplication&gt;
+
+...
+
+...
+
+7) Consider a Windows 10 Visual Studio Win32 Console Application default project folder structure?
+
+> C:\\Users\\kjell-olovhogdahl\\Documents\\Visual Studio 2017\\Projects\\MyDefaultVSCppConsoleApp&gt;tree /F  
+> Folder PATH listing  
+> Volume serial number is 000000D1 D49B:BB89  
+> C:.  
+> │ .gitattributes  
+> │ .gitignore  
+> │ MyDefaultVSCppConsoleApp.sln  
+> │  
+> ├───Debug  
+> └───MyDefaultVSCppConsoleApp  
+> │ MyDefaultVSCppConsoleApp.cpp  
+> │ MyDefaultVSCppConsoleApp.vcxproj  
+> │ MyDefaultVSCppConsoleApp.vcxproj.filters  
+> │ ReadMe.txt  
+> │ stdafx.cpp  
+> │ stdafx.h  
+> │ targetver.h  
+> │  
+> └───Debug  
+> └───MyDefaul.E49D640A.tlog
+
+> C:\\Users\\kjell-olovhogdahl\\Documents\\Visual Studio 2017\\Projects\\MyDefaultVSCppConsoleApp&gt;
+
+==&gt; The console seems to run from a folder in the project directory structure?
+
+> #include "stdafx.h"  
+> #include &lt;iostream&gt;  
+> #include &lt;string&gt;
+
+> int main(int argc, const char \* argv&#91;&#93;) {  
+> // insert code here...  
+> std::cout &lt;&lt; "\\nHello! I am " &lt;&lt; argv&#91;0&#93;;  
+> std::cout &lt;&lt; std::endl;  
+> std::string entry;  
+> std::getline(std::cin, entry);  
+> std::cin &gt;&gt; entry;  
+> return 0;  
+> }
+
+> Yields...
+
+> Hello! I am C:\\Users\\kjell-olovhogdahl\\documents\\visual studio 2017\\Projects\\MyDefaultVSCppConsoleApp\\Debug\\MyDefaultVSCppConsoleApp.exe
+
+8) Consider Windows 10 Visual Studio Win32 Application project folder structure?
+
+==&gt; It seems we get a “palin old” MFC application if we create a &lt;Windows 32&gt; &lt;Windows Application&gt;?
+
+==&gt; The project folder structure seems to be the following?
+
+> C:\\Users\\kjell-olovhogdahl\\Documents\\Visual Studio 2017\\Projects\\MyDefaultWin32Application&gt;tree /F  
+> Folder PATH listing  
+> Volume serial number is 00000041 D49B:BB89  
+> C:.  
+> │ .gitattributes  
+> │ .gitignore  
+> │ MyDefaultWin32Application.sln  
+> │  
+> └───MyDefaultWin32Application  
+> MyDefaultWin32Application.cpp  
+> MyDefaultWin32Application.h  
+> MyDefaultWin32Application.ico  
+> MyDefaultWin32Application.rc  
+> MyDefaultWin32Application.vcxproj  
+> MyDefaultWin32Application.vcxproj.filters  
+> ReadMe.txt  
+> Resource.h  
+> small.ico  
+> stdafx.cpp  
+> stdafx.h  
+> targetver.h
+
+==&gt; And the entry-point seems to be this code?
+
+==&gt; See “Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?"
+
+9) Consider Windows 10 RAD Studio Console Application default project folder structure?
+
+==&gt; It seems RAD Studio does not create a project root folder by default (I had to manually create a project folder and a build sub-folder as I has been doing on Windows)?
+
+==&gt; This then seems to be the RAD Studio default project folder structure and content for a Console Application?
+
+> C:\\Users\\kjell-olovhogdahl\\Documents\\Embarcadero\\Studio\\Projects\\MyDefaultRADStudioConsoleCppApp&gt;tree /F  
+> Folder PATH listing  
+> Volume serial number is 000000CD D49B:BB89  
+> C:.  
+> └───build  
+> File1.cpp  
+> MyDefaultRADStudioConsoleCppApp.cbproj  
+> MyDefaultRADStudioConsoleCppApp.cbproj.local  
+> MyDefaultRADStudioConsoleCppAppPCH1.h
+
+==&gt; Note that the tree command line works differently on Windows (it does not state the current folder)?
+
+==&gt; Note that I manually created MyDefaultRADStudioConsoleCppApp/build and pointed RAD Studio to save the project content there (not default by the IDE)
+
+==&gt; The application seems to generated and run from a folder in the project folder structure?
+
+> #include &lt;stdio.h&gt;  
+> #include &lt;iostream&gt;  
+> #include &lt;string&gt;
+
+> int _tmain(int argc, _TCHAR\* argv&#91;&#93;)  
+> {  
+> // insert code here...  
+> std::cout &lt;&lt; "\\nHello! I am " &lt;&lt; argv&#91;0&#93;;  
+> std::cout &lt;&lt; std::endl;  
+> std::string entry;  
+> std::getline(std::cin, entry);  
+> std::cin &gt;&gt; entry;  
+> return 0;  
+> }
+
+> Yields…
+
+> Hello! I am C:\\Users\\kjell-olovhogdahl\\Documents\\Embarcadero\\Studio\\Projects\\**MyDefaultRADStudioConsoleCppApp\\build\\Win32\\Debug\\MyDefaultRADStudioConsoleCppApp.exe**
+
+==&gt; And this seems to be the project folder structure content after a debug build?
+
+> C:\\Users\\kjell-olovhogdahl\\Documents\\Embarcadero\\Studio\\Projects\\**MyDefaultRADStudioConsoleCppApp**&gt;tree /F  
+> Folder PATH listing  
+> Volume serial number is 000000B1 D49B:BB89  
+> C:.  
+> └───build  
+> │ File1.cpp  
+> │ MyDefaultRADStudioConsoleCppApp.cbproj  
+> │ MyDefaultRADStudioConsoleCppApp.cbproj.local  
+> │ MyDefaultRADStudioConsoleCppApp.dsk  
+> │ MyDefaultRADStudioConsoleCppApp.res  
+> │ MyDefaultRADStudioConsoleCppApp.stat  
+> │ MyDefaultRADStudioConsoleCppApp.~dsk  
+> │ MyDefaultRADStudioConsoleCppAppPCH1.h  
+> │  
+> └───Win32  
+> └───**Debug**  
+> File1.obj  
+> **MyDefaultRADStudioConsoleCppApp.exe**  
+> MyDefaultRADStudioConsoleCppApp.map  
+> MyDefaultRADStudioConsoleCppApp.tds  
+> MyDefaultRADStudioConsoleCppAppPCH1.pch
+
+10) Consider Windows 10 RAD Studio VCL (windows) Application default project folder structure?
+
+==&gt; It seems RAD Studio does not create a project root folder by default (I had to manually create a project folder and a build sub-folder as I has been doing on Windows)?
+
+==&gt; This then seems to be the RAD Studio default project folder structure and content for a VCL application?
+
+> C:\\Users\\kjell-olovhogdahl\\Documents\\Embarcadero\\Studio\\Projects\\MyDefaultRADStudioVCLCppApp&gt;tree /F  
+> Folder PATH listing  
+> Volume serial number is 000000BF D49B:BB89  
+> C:.  
+> └───build  
+> MyDefaultRADStudioVCLApp.cbproj  
+> MyDefaultRADStudioVCLApp.cbproj.local  
+> MyDefaultRADStudioVCLApp.cpp  
+> MyDefaultRADStudioVCLAppPCH1.h  
+> Unit1.cpp  
+> Unit1.dfm  
+> Unit1.h
+
+==&gt; And this seems to be the entry-point code for the default VCL Windows application?
+
+==&gt; See “Todo: GUI Programming - Consider to document the different IDE created entry points of default applications on different platforms and User Interface frameworks?"
+
+n) Just for “fun” - Consider an Xcode Cross Platform project folder structure?
+
+==&gt; This seems to be the Xcode cross platform project folder structure?
+
+> Kjell-Olovs-MacBook-Pro:MyXCodeCrossPlatformTryOut kjell-olovhogdahl$ tree  
+> .  
+> ├── **MyXCodeCrossPlatformTryOut.xcodeproj**  
+> │ ├── project.pbxproj  
+> │ ├── project.xcworkspace  
+> │ │ ├── contents.xcworkspacedata  
+> │ │ └── xcuserdata  
+> │ │ └── kjell-olovhogdahl.xcuserdatad  
+> │ │ └── UserInterfaceState.xcuserstate  
+> │ └── xcuserdata  
+> │ └── kjell-olovhogdahl.xcuserdatad  
+> │ └── xcschemes  
+> │ ├── iOS.xcscheme  
+> │ ├── macOS.xcscheme  
+> │ ├── tvOS.xcscheme  
+> │ ├── watchOS\\ App.xcscheme  
+> │ └── xcschememanagement.plist  
+> ├── Shared  
+> │ ├── Actions.sks  
+> │ ├── Assets.xcassets  
+> │ │ ├── AppIcon.appiconset  
+> │ │ │ └── Contents.json  
+> │ │ ├── Contents.json  
+> │ │ ├── tvOS\\ App\\ Icon\\ &\\ Top\\ Shelf\\ Image.brandassets  
+> │ │ │ ├── App\\ Icon\\ -\\ Large.imagestack  
+> │ │ │ │ ├── Back.imagestacklayer  
+> │ │ │ │ │ ├── Content.imageset  
+> │ │ │ │ │ │ └── Contents.json  
+> │ │ │ │ │ └── Contents.json  
+> │ │ │ │ ├── Contents.json  
+> │ │ │ │ ├── Front.imagestacklayer  
+> │ │ │ │ │ ├── Content.imageset  
+> │ │ │ │ │ │ └── Contents.json  
+> │ │ │ │ │ └── Contents.json  
+> │ │ │ │ └── Middle.imagestacklayer  
+> │ │ │ │ ├── Content.imageset  
+> │ │ │ │ │ └── Contents.json  
+> │ │ │ │ └── Contents.json  
+> │ │ │ ├── App\\ Icon\\ -\\ Small.imagestack  
+> │ │ │ │ ├── Back.imagestacklayer  
+> │ │ │ │ │ ├── Content.imageset  
+> │ │ │ │ │ │ └── Contents.json  
+> │ │ │ │ │ └── Contents.json  
+> │ │ │ │ ├── Contents.json  
+> │ │ │ │ ├── Front.imagestacklayer  
+> │ │ │ │ │ ├── Content.imageset  
+> │ │ │ │ │ │ └── Contents.json  
+> │ │ │ │ │ └── Contents.json  
+> │ │ │ │ └── Middle.imagestacklayer  
+> │ │ │ │ ├── Content.imageset  
+> │ │ │ │ │ └── Contents.json  
+> │ │ │ │ └── Contents.json  
+> │ │ │ ├── Contents.json  
+> │ │ │ ├── Top\\ Shelf\\ Image\\ Wide.imageset  
+> │ │ │ │ └── Contents.json  
+> │ │ │ └── Top\\ Shelf\\ Image.imageset  
+> │ │ │ └── Contents.json  
+> │ │ └── tvOS\\ LaunchImage.launchimage  
+> │ │ └── Contents.json  
+> │ ├── GameScene.sks  
+> │ └── GameScene.swift  
+> ├── iOS  
+> │ ├── AppDelegate.swift  
+> │ ├── Base.lproj  
+> │ │ ├── LaunchScreen.storyboard  
+> │ │ └── Main.storyboard  
+> │ ├── GameViewController.swift  
+> │ └── Info.plist  
+> ├── macOS  
+> │ ├── AppDelegate.swift  
+> │ ├── Base.lproj  
+> │ │ └── Main.storyboard  
+> │ ├── GameViewController.swift  
+> │ └── Info.plist  
+> ├── tvOS  
+> │ ├── AppDelegate.swift  
+> │ ├── Base.lproj  
+> │ │ └── Main.storyboard  
+> │ ├── GameViewController.swift  
+> │ └── Info.plist  
+> ├── watchOS\\ App  
+> │ ├── Base.lproj  
+> │ │ └── Interface.storyboard  
+> │ └── Info.plist  
+> └── watchOS\\ Extension  
+> ├── ExtensionDelegate.swift  
+> ├── Info.plist  
+> └── InterfaceController.swift
+
+…
+
+Consider to update this Todo when we have new information on possible project folder structure fro different IDEs and platforms?
+
+...
+
+{% endraw %}

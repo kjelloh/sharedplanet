@@ -1,0 +1,137 @@
+﻿So now it is time again to install and use VSCode and this time on my "new" Mac Pro 2013 (Trashcan)
+
+	==> Also see "Todo: Programming - Consider to check out Visual Studio Code for Windows, MAC and Linux?"
+
+1) It seems Visual Studio Code is available for all OS here (https://code.visualstudio.com/download <https://code.visualstudio.com/download> )?
+
+	==> It seems clicking on this link downloads VSCode and shows the "Getting started" page (https://code.visualstudio.com/docs/?dv=osx <https://code.visualstudio.com/docs/?dv=osx> )?
+
+	==> It seems VSCode is a single executable file and I need to drag it to the macOS "Applications" folder manually (https://code.visualstudio.com/docs/setup/mac <https://code.visualstudio.com/docs/setup/mac> )?
+
+"Installation
+	• Download Visual Studio Code for macOS.
+	• Double-click on the downloaded archive to expand the contents.
+	• Drag Visual Studio Code.app to the Applications folder, making it available in the Launchpad.
+	• Add VS Code to your Dock by right-clicking on the icon to bring up the context menu and choosing Options, Keep in Dock."
+
+
+	==> It seems I have to Open VSCode and THEN right click the icon in the navigation bar and select <Options> / <Keep in Dock>?
+
+	
+	You have to Open VSCode (run it) to be able to right click the icon in the navigation bar and select <Option> / <Keep in Dock>
+
+	==> It seems VSCode has a built in function to add itself to the $PATH (and thus enable it to be started by executing "code")?
+
+"• Launch VS Code.
+• Open the Command Palette (⇧⌘P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command."
+
+	
+	Shift + Command + P (⇧⌘P) in VSCode and search for "shell" enables you to execute "Shell Command: Install 'code' command in PATH"
+
+	==> Consider the content of the $PATH environment variable before having VSCode add itself to it?
+
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ printenv
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/bash
+TERM=xterm-256color
+TMPDIR=/var/folders/h1/w8wsr9316md0l3jtptr9wnx80000gn/T/
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.jSI42sJ95w/Render
+TERM_PROGRAM_VERSION=421.2
+TERM_SESSION_ID=A58447A6-1F03-420A-9C84-DAF57437F715
+USER=kjell-olovhogdal
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.9eievtNc1c/Listeners
+PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PWD=/Users/kjell-olovhogdal
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/kjell-olovhogdal
+LOGNAME=kjell-olovhogdal
+LC_CTYPE=UTF-8
+_=/usr/bin/printenv
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ code
+-bash: code: command not found
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ 
+
+
+
+	
+	VSCode warns with a dialog that to add itself to $PATH it will have to run a script that in turn will require the user to authorise it to be run
+
+
+	
+	macOS requires you to authorise running the script that will add VSCode to the $PATH environment variable
+
+	==> Consider the content of the $PATH environment HAS NOT CHANGED after VSCode has added itself to it (but now "code" will start VSCode)?
+
+Last login: Fri Aug  9 16:40:31 on ttys000
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ printenv
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/bash
+TERM=xterm-256color
+TMPDIR=/var/folders/h1/w8wsr9316md0l3jtptr9wnx80000gn/T/
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.jSI42sJ95w/Render
+TERM_PROGRAM_VERSION=421.2
+TERM_SESSION_ID=BBCDEE1C-02B5-4E27-BE22-F661E2271F67
+USER=kjell-olovhogdal
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.9eievtNc1c/Listeners
+PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PWD=/Users/kjell-olovhogdal
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/kjell-olovhogdal
+LOGNAME=kjell-olovhogdal
+LC_CTYPE=UTF-8
+_=/usr/bin/printenv
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ code
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ 
+
+	==> It seems VSCode has made NO CHANGES to any of the "usual suspects" that affects the PATH environment variable?
+
+Last login: Fri Aug  9 16:47:17 on ttys000
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ cat /etc/profile
+# System-wide .profile for sh(1)
+
+if [ -x /usr/libexec/path_helper ]; then
+	eval `/usr/libexec/path_helper -s`
+fi
+
+if [ "${BASH-no}" != "no" ]; then
+	[ -r /etc/bashrc ] && . /etc/bashrc
+fi
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ cat ~/.bash_profile
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ cat ~/.bash_login
+cat: /Users/kjell-olovhogdal/.bash_login: No such file or directory
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ cat ~/.profile
+cat: /Users/kjell-olovhogdal/.profile: No such file or directory
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ ls /etc/paths.d
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ cat /etc/paths
+/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ ls -l /etc/paths.d
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ cat ~/.bash_profile
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ echo $PATH
+/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+Kjell-Olovs-Mac-Pro:~ kjell-olovhogdal$ 
+
+	THIS SUCKS!! What changes are VSCode doing to my macOS system to make "code" command start VSCode (when the PATH has NOT changed)?
+
+	==> Anyhow, it works now so I suppose I have to just "accept" it (but it annoys me as this knowledge can be crucial to solve future erroneous behaviour of my macOS system)?
+
+	
+
+...

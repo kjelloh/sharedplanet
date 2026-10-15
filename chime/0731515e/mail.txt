@@ -1,0 +1,21 @@
+﻿Could it be a good idea to make an open source social Darwinet app for Meeting C++?
+
+1) Consider to design a simple sharing App for Meeting C++ on a Darwinet Domain?
+
+2) Consider too use e-mail as node-to-node messaging?
+
+3) Consider what data to share to provide some basic functionality?
+
+	==> Consider each Meeting group to have its own domain (members only share within reach C++ meeting group)?
+	==> Consider a ”global” domain to share Meeting C++ information (Jens Weller)?
+
+	==> Consider the service to start chat-threads?
+	==> Consider the service to publish and chat about meetings?
+	...
+
+4) Consider it would be a boost to open source for C++ programmers (and thus have the members contribute to the development)?
+
+…
+
+Consider to delve into this idea to make a Darwinet App for Meeting C++ social activities and thus enable C++ programmers contribute to an app they use themselves?
+...

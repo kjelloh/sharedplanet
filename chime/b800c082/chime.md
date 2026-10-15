@@ -1,0 +1,74 @@
+# Todo: Consider to design and implement a thermo electric generator to harvest energy from shower waste water?
+
+```#b800c082``` *As of 2018-01-15 01:43*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It feels like an interesting project to see how much electricity I could be able to harvest from the waste water of single shower session?
+
+==&gt; Also see iMovie Project “Episode X (1 jan 2018) - How many batteries goes down the drain each single Shower”
+
+1) Consider the mechanism we may use to turn heat into electricity?
+
+==&gt; Consider using a Sterling Engine and a mechanical electric generator?
+
+==&gt; Consider to use a Thermo Electric Generator (Customised Peltier Element)?
+
+2) Consider to watch “EEVblog #664 - Peltier TEG Energy Harvesting Experiments” (<https://www.youtube.com/watch?v=9aSPopIcKLQ&t=300s>)?
+
+==&gt; It seems turning heat into electricity is called the “Seebeck Effect”?
+
+==&gt; It seems the LTC3108 is a “Ultralow Voltage Step-Up Converter and Power Manager” (<http://cds.linear.com/docs/en/datasheet/3108fc.pdf>)?
+
+> “The LTC®3108 is a highly integrated DC/DC converter ideal for harvesting and managing surplus energy from extremely low input voltage sources such as TEGs (thermoelectric generators), thermopiles and small solar cells."
+
+3) Consider the Würth Electronic “Energy Harvesting Solution To Go” kit (<http://www.we-online.com/web/en/electronic_components/produkte_pb/demoboards/energy_harvesting/solution_to_go/energy_harvesting.php>)?
+
+![](<Screen Shot 2018-01-14 at 23.34.33.png>)
+
+==&gt; It seems to sell for €199?
+
+==&gt; It seems to come with a board that has both a TEG (Thermo Electric Generator) plate AND a solar panel on the board?
+
+![](<Screen Shot 2018-01-14 at 23.34.13.png>)
+
+==&gt; The board seem to also allow input from inductive generators (e.g., a wind turbine)?
+
+==&gt; It seems to come with a very energy efficient micro controller board (<http://www.we-online.com/web/en/electronic_components/produkte_pb/demoboards/energy_harvesting/solution_to_go/energy_harvesting___SiliconLabs.php>)?
+
+![](<Screen Shot 2018-01-14 at 23.38.17.png>)
+
+> “ • Evaluation of the world’s most **energy friendly microcontroller** EFM32 Gecko Family  
+> • On board: EFM32GG990F1024 with ARM Cortex M3, 48MHz, 1024KB Flash, 128KB RAM, LCD Controller, USB, Low Energy Sense, Backup Power Domain, etc.  
+> • 200µA/MHz in active mode and **Deep Sleep Mode with 1.1µA** with various functions running in this mode on 1µA level"
+
+==&gt;
+
+4) Consider what TEG manufacturer and modules that may be available to purchase from?
+
+==&gt; Consider “TEG2 Thermoelectric Power Module” (<http://thermoelectric-generator.com/thermoelectric-lower-temperature-power-module-selections/>)?
+
+==&gt; It seems to generate 0.2V \* 0.045A = 9mW into 4.5Ω for 40C to 30C plate difference (<http://thermoelectric-generator.com/wp-content/uploads/2015/11/SPEC-SHEET-TEG2-126LDT.pdf>)?
+
+==&gt; It seems to be 4x4 cm and 5,45mm thick?
+
+==&gt; It seems to sell for $29 (<http://thermoelectric-generator.com/product-category/thermoelectric-modules-10c-to-180c-low-temperature/>)?
+
+==&gt; Consider TEG modules from (<http://www.tegmart.com/thermoelectric-generator-modules/tegpro-thermoelectric-generator-module-1-watt-2-vdc-low-temp/>)?
+
+> “The Tegpro 40 mm 1 Watt TEG module is specifically designed for power generation from **low temperature** heat sources **such as body heat** or hot water"
+
+==&gt; Consider low temperature TEG from Russian company RMT Ltd (<http://www.rmtltd.ru/products/tegenerators/>)?
+
+> “There are two key application areas - high temperature differences, created artificially (oven heat, open fire, automotive engines and etc) and **low temperature differences**, that present naturally (human **body heat**, ground and **air day-night temperature** changes, natural heat sources). RMT Ltd is focused on miniature thermoelectric generators for low temperature difference applications and green energy harvesting."
+
+==&gt; Hm… The models are really small (few mm)
+
+…
+
+Consider to delve deeper into the field of low temperature energy harvesting of warm waste water?
+
+...
+
+{% endraw %}

@@ -1,0 +1,65 @@
+# Todo: Kartlägg de intressanta svenska tankesmedjorna
+
+```#e4ca7da5``` *As of 2015-10-01 09:41*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Vilka tankesmedjor finns i Sverige och vilka av dessa är intressanta?
+
+1) Arena Idé (http://www.arenaide.se). Sandro Scocco är chefsekonom här. Känns sympatisk?  
+2) Tankesmedjan Captus verkar var starkt liberal och värnar privat ägande och låga skatter (http://captus.nu). Överväg att använda som underlag för motargument.  
+…
+
+Gör en studie för att se om någon ligger nära mina egna idéer?
+
+\*) Wikipedia listar smedjor (https://sv.wikipedia.org/wiki/Kategori:Svenska_tankesmedjor)  
+”A  
+• Arbetarrörelsens ekonomiska råd  
+• Arbetarrörelsens Tankesmedja  
+• Arena Idé  
+C  
+• Captus  
+• Civitas  
+• Claphaminstitutet  
+• Cogito  
+D  
+• Den Nya Välfärden  
+E  
+• Entreprenörskapsforum  
+• Eudoxa  
+F  
+• Fores  
+• Frivärld  
+G  
+• Global utmaning  
+H  
+• Humtank  
+I  
+• Idé & Tendens  
+• Infontology  
+J  
+• Jämställdhetsakademin  
+K  
+• Katalys (tankesmedja)  
+L  
+• Ludwig von Mises - Institutet i Sverige  
+O  
+• Ohlininstitutet  
+• Ordfront  
+P  
+• Piratbyrån  
+R  
+• Reforminstitutet  
+S  
+• Seglora smedja  
+• Sektor 3  
+• Skolsmedjan  
+• Studieförbundet Näringsliv och Samhälle  
+• Säkerhet för Näringsliv och Samhälle  
+T  
+• Tankesmedjan Helios  
+• Tankesmedjan Tiden  
+• Timbro"
+
+{% endraw %}

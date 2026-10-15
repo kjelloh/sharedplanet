@@ -1,0 +1,67 @@
+﻿
+	==> Also see "Todo: Consider to try and understand the DT Swiss MTB Rims - naming and available proerties?"
+	==> Also see "Todo: Consider to document my "Engineers Dream MTB Build" with where to buy, cost and weight of all the parts?"
+	==> Also see "Todo: Consider to choose an Onyx back hub to go with the Pinion Gearbox drive train?"
+
+0) Consider my actual order of Rim, spokes and nipples? 
+
+Rim: ERD: 607mm "DT Swiss XR 391 - 29" Disc MTB Rim - black"
+Spokes: DT Swiss Champion Spokes Black 20 Pack
+Nipples: DT Swiss Pro Lock Spoke Nipples Black 40 Pack
+
+1) Consider the data on my Onyx MFU Rear MTB ISO HGSS 142/12mm back hub (https://onyxrp.com/store/mtb-hubs/mtb-iso-hgss/mtb-iso-hgss-142-12mm-thru/ <https://onyxrp.com/store/mtb-hubs/mtb-iso-hgss/mtb-iso-hgss-142-12mm-thru/> )?
+
+	
+
+	
+
+A - Hub Center To Flange Center, Non-Drive Side (mm)  : 	30.85 mm
+B - Hub Center To Flange Center, Drive Side (mm) :		34.92 mm
+Spoke Hole Circle Diameter (both sides):				60 mm
+
+
+2) Consider the available rims I can buy to a reasonable price and delivery time?
+
+
+
+	==> Consider my order of 800 SEK ERD: 607mm "DT Swiss XR 391 - 29" Disc MTB Rim - black" (https://www.bike24.com/p2235313.html <https://www.bike24.com/p2235313.html> )
+
+ERD: 607mm
+
+	==> Consider the 405 SEK "E-XM 430 20 MTB-fälg 29"" through Bikester (https://www.bikester.se/mavic-e-xm-430-20-mtb-falg-29-M982617.html?cgid=84751 <https://www.bikester.se/mavic-e-xm-430-20-mtb-falg-29-M982617.html?cgid=84751> )?
+
+It seems the rim diameter is 595 mm?
+
+It seems the Onyx spoke length calculator states I need 288 mm spokes for 3-cross 32 spoke holes?
+
+
+	==> Consider the 212 SEK "Rodi Blackrock Disc MTB rim" through Rosiebikes (https://www.rosebikes.se/rodi-blackrock-disc-mtb-rim-870615?product_shape=black&article_size=29%27%27 <https://www.rosebikes.se/rodi-blackrock-disc-mtb-rim-870615?product_shape=black&article_size=29%27%27> )?
+
+ERD 29": 611 mm
+
+It seems the Onyx spoke length calculator states I need 296 mm spokes for 3-cross 32 spoke holes?
+
+3) Consider the available spokes I can buy and from where I can buy them?
+
+
+	32 x 294 mm for ERD: 607mm "DT Swiss XR 391 - 29" Disc MTB Rim - black": Order from Rosebise.se <http://rosebise.se/>
+
+DT Swiss Pro Lock Spoke Nipples Black 40 Pack
+Färg: schwarz
+Storlek: 14mm
+Antal: 1                                                       71,26 SEK
+
+DT Swiss Champion Spokes Black 20 Pack
+Färg: schwarz
+Storlek: 294mm
+Antal: 2                                                       99,10 SEK
+
+	32 x 288 mm for "E-XM 430 20 MTB-fälg 29"": ??
+	32 x 296 mm for  "Rodi Blackrock Disc MTB rim": DT Swiss Competition Spokes Black 20 Pack x 2 (https://www.rosebikes.se/dt-swiss-competition-spokes-black-20-pack-48036?product_shape=black&article_size=296mm <https://www.rosebikes.se/dt-swiss-competition-spokes-black-20-pack-48036?product_shape=black&article_size=296mm> )?
+
+ Thread: 2.0 mm
+
+	Nipples for " DT Swiss Competition Spokes Black"
+
+
+...

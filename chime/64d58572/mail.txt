@@ -1,0 +1,57 @@
+﻿It seems the company Amfeltec sells an "insert" that sits between Mac Pro 2013 original SSD and proprietary PCIe bus connector that breaks out two additional standard M.2 slots?
+
+-1) Also see macrumors thread on Mac Pro SSD (https://forums.macrumors.com/threads/nvme-with-st-ngff2013-c-vega-internal-gpu-mac-pro-2013-6-1.2085886/ <https://forums.macrumors.com/threads/nvme-with-st-ngff2013-c-vega-internal-gpu-mac-pro-2013-6-1.2085886/> )?
+
+	==> Consider this video that seems to show how a "PC PARTS 239" adapter enables insertion of an ordinary M.2 SSD into the Mac Pro 6.1 proprietary connector (https://www.dropbox.com/s/emb558u38whfdmm/20171202_000342.mp4?dl=0 <https://www.dropbox.com/s/emb558u38whfdmm/20171202_000342.mp4?dl=0> )?
+
+	 
+
+	==> It seems to be available on this Chinese site (http://www.pcparts239.com/?pid=116007724 <http://www.pcparts239.com/?pid=116007724> )?
+
+	NOTE: There seems to be optional Issues to use NVMe SSDs (drivers) on mac pro 2013 (Ivy Bridge issues) (https://forums.macrumors.com/threads/nvme-with-st-ngff2013-c-vega-internal-gpu-mac-pro-2013-6-1.2085886/ <https://forums.macrumors.com/threads/nvme-with-st-ngff2013-c-vega-internal-gpu-mac-pro-2013-6-1.2085886/> )?
+
+	==> Consider this mac Rumors thread on Macbook "Upgrading 2013/2014 Macbook Pro SSD to M.2 NVMe" (https://forums.macrumors.com/threads/upgrading-2013-2014-macbook-pro-ssd-to-m-2-nvme.2034976/ <https://forums.macrumors.com/threads/upgrading-2013-2014-macbook-pro-ssd-to-m-2-nvme.2034976/> )?
+
+1) The Angelshark Carrier Board seems to live here (https://amfeltec.com/products/mac-pro-late-2013-cylinder-ssd-upgrade/ <https://amfeltec.com/products/mac-pro-late-2013-cylinder-ssd-upgrade/> )? 
+
+	==> It seems to be a complete additional board?
+
+	 
+
+	==> Does it attach to the power of the underlaying Mac Pro board?
+
+	
+
+	==> I wonder about the Power Consumption of the additional drives (Compare with the OWC special SSD that requires an extra power connector and cooling with copper fins touching the MAc Pro outer cylinder)?
+
+	==> Consider to read the user manual (https://amfeltec.com/pdf/AngelShark_SKU-088-01_hwmanual_v1.0.pdf <https://amfeltec.com/pdf/AngelShark_SKU-088-01_hwmanual_v1.0.pdf> )?
+
+	
+
+	==> Aha - It seems the Angleshark Carrier Board attaches to MAc Pro existing "Power Screws" (it seems to be the sam as the ones used by OWC drive)?
+
+"5) Use the screwdriver with Torx T8s bit (item #2) to remove the two power screws (top-right corner). These screws are no longer required, because they will be replaced (with power standoffs items #3 & #4)."
+
+	
+	Mac Pro 2013 SSD board power screws
+
+2) Consider this page with a kind-of review of the Angelshark Carrier Board (http://barefeats.com/hard230.html <http://barefeats.com/hard230.html> )?
+
+	==> They seem to suggest that the original Apple SSD is slow compared with the newer Samsung (1496 vs 1134 MB/s read and 1327 vs 975 MB/s Write)?
+
+	
+	
+	
+
+	==> Thee seen to suggest the OWC SSDs tops out at 
+
+3) The Amfeltec Angelshark NVMe PCIe SSD 3-Slot Adapter Card for Mac Pro 6,1 (2013) seem to sell on eBay for approximately 6000 SEK (https://www.ebay.com/itm/NEW-Amfeltec-Angelshark-NVMe-PCIe-SSD-3-Slot-Adapter-Card-for-Mac-Pro-6-1-2013/123278895296?hash=item1cb3fea8c0:g:SvEAAOSwPWtcFZNM:rk:2:pf:0 <https://www.ebay.com/itm/NEW-Amfeltec-Angelshark-NVMe-PCIe-SSD-3-Slot-Adapter-Card-for-Mac-Pro-6-1-2013/123278895296?hash=item1cb3fea8c0:g:SvEAAOSwPWtcFZNM:rk:2:pf:0> )?
+
+	
+
+3) Consider the mac Pro 2013 compatible SSDs by (http://www.transintl.com/super-blade-flash-storage-ssd/mac-pro.html <http://www.transintl.com/super-blade-flash-storage-ssd/mac-pro.html> )?
+
+	
+
+
+...

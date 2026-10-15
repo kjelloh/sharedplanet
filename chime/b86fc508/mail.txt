@@ -1,0 +1,169 @@
+﻿It seems like a good idea to generalize any parsing into a first step where the input vector is mapped into identified fields defines by iterator-ranges?
+
+1) The no data is required to be copied in the mapping phase (copy performed only when required by transformation)?
+
+2) Consider to generate a vector of ”split points” to effectively use the insight that each range ”begin” point also previous range ”end” pint (i.e. last element + 1)
+
+	==> Thus we eliminate storing intermediate point iterators twice ( prev-range-end == next-range-begin)
+
+3) Layers of parsing may leverage on the design that each parsing maps one input range into a vectors of sub-ranges?
+
+	==> This mapping may be iterated any number of times until a top-range has been divided into sub-ranges och sub-ranges as required?
+	==> In Testbench application we thus may start with a raw TCP/IP frame and then parse for sub-ranges to find TCP/IP length, ACISTD frame ranges, SPDH Fid ranges etc?
+	==> Hm - No, in the Testbench example anges also needs to be transformed (remove-parity from SPDH Range, Unencrypt PIN/PAN block of Fid with encrypted content)?
+
+4) Consider to find a generic way of applying map->transform in an iterative way (creating new transformed data ranges when required)?
+
+	==> Can we design a object representation that may hold all layers of map/transform in one composite structure?
+	==> Can we design a mechanism to ”build up” (parse = map/dis-assemble+decode) and ”stream” (encode + assemble)? 
+	==> If so, we have a design for Optimus Prime (general encode/decode engine)?
+	…
+
+5) Consider to creat an application to play with these concepts?
+
+	==> Consider to try concepts out on Testbench TCP/IP frames layered into ACISTD/SPDH/Clear Text Log structures?
+	==> Consider to try out on TestBench PPL files layered into File/BERTLV/Clear Text value structures?
+	==> A really special case would be PPL Key files with Keys encrypted by keys encrypted by keys in structures not defined by the actual composite stored in the file?
+		==> In this case, from the point the key values are decoded, a series of iteration must be performed to get actual keys uncovered in clear text (iterative decoding)?
+
+6) Consider the pattern [range] —> F(patterns, decodings) —> [list of ranges]
+
+	==> This is a range (e.g. vector) split-and-decode transformation (range in —> ranges out)
+
+	==> We mean that each iteration starts with a range {begin,end}.
+	==> It parses this range using provided ”patterns” (e.g. some context free grammar?) and produces a list of ranges.
+	==> At finals stage each identified ranges are decoded as defined by decodings (e.g. removal of parity bit or decrypting a cipher text)
+	==> For decoded ranges the list of ranges must be updated.
+
+	==> Hm… May we mix decoded ranges with ones that are nor decoded?
+		==> Probably not as the decoded ranges refers to another vector (we can’t use the same iterator as the decoded range will be in a new vector)?
+		==> It would be programmatically possible if we define a special iterator that is able to ”swing” from range to range in the list (possible as long as the data referenced by each iterator are of the same type).
+
+	==> Decoded ranges poses tricky problems!
+		==> Suppose we decode an UTF-16 string into an UTF8 string. Then we may not even be able to iterate over it (UTF8-strings uses escape sequences for code points above 0xFF)?
+		==> Suppose we part of a byte array into an ASCII-string. Then one range iterator still returns ”bytes” while the decoded range returns char?
+	
+	==> Maybe each range must define its own representation so we may mix representations between ranges.
+		==> Each range defines what type its iterator returns (and also what a value of that type represents)?
+
+	==> We may have each iteration define a complete new list of ranges but provide adapter-iteators for ranges where data-cloning is not required?
+		==> Thus, if one range is decrypted, the decrypted data is stored in a new vector and the range uses iterator if that vector.
+		        But all other ranges are ”cloned” using adaptor-iterators that still iterates over data in the inout-vector?
+		==> Each iteration thus creates a complete list of ranges that all return the same data type with the same representation.
+		==> This enables each ”layer” to exclude ranges (representing data not part of the representation nor structure of that layer)
+		==> For this to work each range must link to next- and pref-layer range if mapping exist (enabling client to detect ranges that has no representation in higher/lower layers)?
+			==> This enables BERTLV layer to map to next layer without length-encoding-ranges or end-mark ranges?
+
+		==> Consider to use list of shared_ptr to ranges (to easily re-use ranges with the same representation)?
+			==> Each iteration may decode some (or all ranges) but ranges with unchanged representation just references the same range as the layer below.
+			==> Only decoded ranges creates a new range referring to decoded range.
+
+	==> So, does this work also for ISO-8583 kind of parsing (where the bitfield has a complex relation to element membership)?
+
+		==> All the talk above are layered vector-representations (each layer splits and decodes ranges)
+		==> ISO-8583 bitfield and element membership is about composition.
+
+7) Consider to add a pattern [list of ranges] —> F(data-model) —> Composite?
+
+	==> This would mean that any of the layers from iterative split-and-decode may be represented as a composite defined by a data model?
+	==> Each node of the Composite (tree node) defines a ”value” defined by a range (refers to corresponding range in the range-list)
+	==> the data-model may be UML-like in that it defines structure, cardinality and element names
+	==> mapping a range-list to a Composite may require range-content to carry a key defined by the data-model (e.g. a BERTLV range defines a type that the model defines to be the element name)?
+	==> The composite node may now query the range for lower layer ranges and thus be able to list the ”same” range encoded differently in different layers (e.g. decrypted, encrypted or with/without parity bit)?
+
+8) Consider to use Boost 1.55 Sprit to parse ranges into sub-ranges?
+
+	a==> This may be a good talk on youtube about Qi and Karma (https://www.youtube.com/watch?v=9iU9_45DoFc&index=73&list=PLlV-f5Ed71tfmz0VLoY1_ttOJ6WhA_zxW <https://www.youtube.com/watch?v=9iU9_45DoFc&index=73&list=PLlV-f5Ed71tfmz0VLoY1_ttOJ6WhA_zxW>)?
+
+		==> On Windows 10 machine created “V:\workplace\RAD_Studio\MyQiPlayground” (V: == Shared on MAC)
+
+		==> Qi returns the “value” from each matching rule as a “Synthesised Attribute” (at 27:30 into talk)
+			
+ 
+			std::string input( "1234" );
+			    std::string::iterator iter = input.begin();
+			    std::string::iterator end_iter = input.end();
+			    int result;
+			    parse( iter, end_iter,
+			           int_,
+			           result );
+
+
+		==> Works because int_ “rule" produces an attribute of type int. So passing an int to qi::parse tells it to synthesise the int attribute to it.
+
+		==> This means parsers CAN NOT be used to generate ranges - the produces attributes (and the location in the parsed input is lost)?
+
+		==> What we would like is range_list list = parse(range,rule)
+
+		==> Or, we we could be satisfied with getting back a result copy (parse directly into a composite)?		
+		
+		…
+		WE ARE HERE
+
+
+	b==> Boost Spirit seems to be documented here (http://www.boost.org/doc/libs/1_55_0/libs/spirit/doc/html/spirit/introduction.html <http://www.boost.org/doc/libs/1_55_0/libs/spirit/doc/html/spirit/introduction.html>)?
+
+		“The general methodology is to use the token sequence generated by Spirit.Lex as the input for a parser generated by Spirit.Qi. On the opposite side of the equation, the hierarchical data structures generated by Spirit.Qi are used for the output generators created using Spirit.Karma. "
+
+	c==> Seems Lex is about splitting “text” into “tokens” (http://www.boost.org/doc/libs/1_55_0/libs/spirit/doc/html/spirit/lex/lexer_introduction.html <http://www.boost.org/doc/libs/1_55_0/libs/spirit/doc/html/spirit/lex/lexer_introduction.html>)
+		==> This would take care of input that separates text elements by space, separator characters, new-line etc?
+		==> I suppose this is to not have the Grammar (Parsed by Qi) to deal with the tokenisation of the text?
+		==> In our Protocol-stack-layer element mapping this would correspond to one layer of splitting text into tokens?
+
+		==> It seems Lex is about handling text-parsing formatted for humans to read?
+
+		==> May we use Boost Lex for range-mapping (i.e. will Lex enables us to identify “skipped” separators to represent their location in the stream with a range)?
+
+	d==> This seem like a good starting point to understand Qi (http://www.boost.org/doc/libs/1_55_0/libs/spirit/doc/html/spirit/qi/tutorials/quick_start.html <http://www.boost.org/doc/libs/1_55_0/libs/spirit/doc/html/spirit/qi/tutorials/quick_start.html>)?
+
+		“Spirit.Qi is designed to be a practical parsing tool. The ability to generate a fully-working parser from a formal EBNF specification inlined in C++ significantly reduces development time.”
+
+		" Programmers typically approach parsing using ad hoc hacks with primitive tools such as scanf. Even regular-expression libraries (such as boost regex) or scanners (such as Boost tokenizer) do not scale well when we need to write more elaborate parsers. Attempting to write even a moderately-complex parser using these tools leads to code that is hard to understand and maintain."
+
+	==> Q: Hm, seems Qi also focuses on parsing text?
+	==> Q: Also seems Qi only accepts (is hard coded to) ASCII texts (no support for EBCDIC or escaped-encoded texts like UTF8, 16 ir even multi-byte Code Points)?
+	==> Could be good enough though as most web-protocols are text based (also PPL, SPDH)
+	==> Q: But may we extend Qi to parse raw BERTLV?
+		==> Seems at least 1.60 Qi has binary parsers (http://www.boost.org/doc/libs/1_60_0/libs/spirit/doc/html/spirit/qi/reference/binary.html <http://www.boost.org/doc/libs/1_60_0/libs/spirit/doc/html/spirit/qi/reference/binary.html>)?
+		==> Oh, its a member already in 1.41 (http://www.boost.org/doc/libs/1_41_0/libs/spirit/doc/html/spirit/qi/reference/binary.html <http://www.boost.org/doc/libs/1_41_0/libs/spirit/doc/html/spirit/qi/reference/binary.html>)
+		==> Consider to try out parsing BERTLV using binary Qi parser?
+
+	==> This page seem to indicate that both different character sets and binary parsing is in Qi to some degree (http://www.boost.org/doc/libs/1_41_0/libs/spirit/doc/html/spirit/qi/reference/basics.html#spirit.qi.reference.basics.examples <http://www.boost.org/doc/libs/1_41_0/libs/spirit/doc/html/spirit/qi/reference/basics.html#spirit.qi.reference.basics.examples>)?
+
+10) Consider the following design of iterative-range-mapping?
+
+	==> Each iteration uses a rule to parse one range into a list of ranges.
+	==> Each range in the list is in a touple together with an ID assigned by the rule (thus each “element” gets an ID)
+	==> Each iteration ends with applying decodings to ranges as mapped from provided decoders and range-ids.
+	==> Each range that is decoded results in creation of a new vector to hold decoded data and having the range changed to refer to decoded data.
+	==> End result is a list of couples of ranges (each having an unique ID) and some referring to new (decoded) data.
+	==> The list carries enabled or disabled ranges (disabled ranges used to remember ranges active on lower levels but now excluded)
+	==> Each range has the same interface but may be a range of vector iterators to source data, a range of adapter iterators (performing byte-by-byte transform of source) or range of new (decoded) vector data).  
+
+	==> Provide a special concatenate-iterator that “lifts” a list or ranges into a single range again
+	==> The concatenate-iterator skips disabled iterators and iterates only through each active range in the list (making it appear as one range)
+
+	==> Now the range-list produced by one iteration may be used as input to the next (using new rule and list of decodings)
+
+	==> We may use Spirit ONLY if each rule returns a vector<octet_type> (preserving vector processing) and we accept total cloning and each iteration?
+
+		std::vector<octet_type> source;
+		std::vector<std::pair<oprime::id, vector<octet_type>> target;
+		qi::parse(source.begin(), source.end(),rule,target); // parse input vector to list of vectors
+		oprime::decode(target,decoders); // decode each vector with an id matching a decoder id
+		  
+
+		…
+		WE ARE HERE
+
+9) Seems Context Free Grammar versus Regular Expressions is about wether we like to map the whole input stream (parse with a grammar) or just pick out explicit pairs (search using expression)?
+
+	...
+
+…
+
+Consider to elaborate on this idea using levels of iterative map+decode and the reverse encode+assemble for multi-encoded (protocol stack like) data structures?
+
+a) Consider to try Qi on BERTLV encoding (and down the lane to iPOS, PPL, EMV) to see if it may be used for sub-range-generation?
+b) If Qi may be used for parsing a binary range into sub-ranges, then see if we may define Qi-grammar in XML (serialise to/from persistent storage, e.g. interface-specification-files)?
+...

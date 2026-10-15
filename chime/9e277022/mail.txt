@@ -1,0 +1,67 @@
+﻿It seems there are a number of different applied workflows when using Git for version control of source code?
+
+1) Consider to study the Github workflow leads here (https://help.github.com/articles/what-is-a-good-git-workflow/ <https://help.github.com/articles/what-is-a-good-git-workflow/>)
+
+	==> Github flow seem to be a branched based workflow (https://guides.github.com/introduction/flow/ <https://guides.github.com/introduction/flow/>)?
+
+		
+
+	“When you create a branch in your project, you're creating an environment where you can try out new ideas.”
+
+		
+
+	“Whenever you add, edit, or delete a file, you're making a commit, and adding them to your branch.”
+
+		
+	“Pull Requests initiate discussion about your commits. “
+
+		==> Q: Where does the pull-request discussion live (on the Github server)?
+		==> Q: Is it possible to e-mail a pull-request (as it seem possible to mail git repositories round)?
+
+	“If you're using a Fork & Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider.”
+
+		==> Q: What is the “Fork & Pull Model”?
+			==> A “Fork” seem to be detached copy of a Git repository (https://help.github.com/articles/fork-a-repo/)
+			“"
+
+	“If you're using a Shared Repository Model, Pull Requests help start code review and conversation about proposed changes before they're merged into the master branch.”
+
+		==> Q: What is the “Shared Repository Model”?
+
+	
+
+	
+	“If someone comments that you forgot to do something or if there is a bug in the code, you can fix it in your branch and push up the change.”
+
+		==> Seems one then uses Github server to push/pull to exchange changes to the branch?
+		==> Q: As the whole repository is always stored together the push/pull always transfer the while repository around (possibly piggy-backing the branches of other developers)?
+
+	
+
+	
+	“Once your pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing master into production.”
+
+		==> Q: What does “deploy” imply (it does not seem to involve merge)?
+		==> Q: What does mean to rollback by “deploying existing master” into production?
+
+	
+	“Once merged, Pull Requests preserve a record of the historical changes to your code.”
+
+		==> Q: Why is it the pull-request-comments and not the commit comments that preserve the record of changes in the branch (commits on the branch does not survive the merge)?
+
+
+2) Consider to understand the “rebase workflow” as described here (http://randyfay.com/content/rebase-workflow-git)?
+
+	
+
+	
+
+a) Sidenote: Consider what we can learn from these workflows in relation to how darwinet should behave for shared file folders?
+
+	==> Consider that Darwinet should apply some default “workflow” in how it handles branching and merging of conflicting Delta-trails?
+	...
+
+…
+
+Consider to study interesting Git Workflows to see what we can learn, how they relate to possible Darwinet File-folder-behavior and what workflow to use for myself?
+...

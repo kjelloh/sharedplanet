@@ -1,0 +1,33 @@
+# Todo: Consider it is "always" the case that Rational Reasoning will make you NOT see the Gorilla?
+
+```#db9f205b``` *As of 2020-01-16 13:49*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to get some grip on how we can understand better why rational reasoning and caring seems to observe so disparate different truths about reality?
+
+> *So the idea here is to use the interesting and famous experiment of "The basketball pass counting making the Gorilla Invisible" experiment (*  
+> [*https://en.wikipedia.org/wiki/The_Invisible_Gorilla](https://en.wikipedia.org/wiki/The_Invisible_Gorilla) ). If we use this experiment as an example of how we may rationally try to focus on a problem to solve in fact makes us less observant on what really goes on. As the very effort to compute from facts about reality shuts off our ability to take in new facts (observations).*
+
+> *Can this be the case for any rational task? So that when we are trying very hard to compute rational answers we are at the same time limiting our ability to "see" aspects of reality that could potentially affect the outcome of our reasoning?*
+
+> *I wonder if this is to some part what is going on in the discussion between religious people and Atheists? To a large degree the Atheist argument for Gods non-existence is observed fact and deduced conclusion based. So the Atheist would state observations about "reality" and point out how inconclusive these observations are to deduce that a God should be believed to exist.*
+
+> *Now, from a meta perspective that when you engage in rational computing to deduce an answer you can't see the "Gorilla" we can hypothesise that God is the Gorilla? The reason you can not see the Gorilla is because you are so focused on observing how the ball is passed?*
+
+> *For the Invisible Gorilla experiment to be isomorphic to the Invisible God we seem to need to make the Gorillas existence in the basketball game important somehow. I mean, God is important in the lives of believers. But the Gorilla in the basketball experiment has no interaction with the basketball players.*
+
+> *Still, I like this metaphor in that it seems to point at some relevant relation between how we may to step out of rational reasoning to enhance relevant observations to be made. And to hone what to conclude from our observations we need wise rational reasoning from relevant observations. They complement each other. And if you find Sam Harris "dismissing the Gorilla" we may at least suspect that he has leaned a little too hard on the faith that only rational reasoning focused on "how the ball is passed" (trusting only currently scientifically acceptable conclusions)?*
+
+> *Question now becomes - how can we tell? Is there a Gorilla on the basketball court and if so, is it relevant to the game as a whole?*
+
+> *We can extend the metaphor by observing that even if you do not see the Gorilla you still can not move to a position where the Gorilla is standing. So we may use this as a metaphor for what moves you are "allowed" to do. So the Gorilla may be seen as prohibiting some moves in the game just like a moral intuition would prevent you from making "moves" in real life.*
+
+> *Also, we can imagine that some players actually see the Gorilla, so they are able to plan their moves and avoid bouncing into the Gorilla. This we could transform into real life where acting as if God exist avoids "moves" that if tried turns out to be immoral or unethical as in leading to bad outcomes.*
+
+> *Further, maybe the Gorilla must be inferred from what moves you seem to be able to do on the basketball court? So that no one actually observe the Gorilla in the space time physical world with any of their senses? So some end up inferring there is a Gorilla in the court and that is the rational why some moves are bad moves. Like some moves in real life are immoral? Then the question becomes more about wether a model of reality as if there is an invisible Gorilla on the court is "better" than one where you try to find some more cause-and-effect reason for why some moves seems to be "impossible". This then translates to arguing in real life if some "moves" are immoral "because God" or is there may be discoverable cause-and-effect reasons al'a Sam Harris moral landscape model?*
+
+> *... *
+
+{% endraw %}

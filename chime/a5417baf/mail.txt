@@ -1,0 +1,46 @@
+﻿It seems from the observation that coffee made with percolation extracts more coffee out of the beans than infusion we should base a paint removal process on perculation?
+
+	
+	==> Also see "Todo: Consider the potential logical fallacy in the intuition that you need less coffee in an infusion process than in percolation one (when in fact an expert claims it is the opposite)?"
+	==> Also see "Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+
+1) Consider some easy to build first try to percolate water through paint brushes and rollers to extract all paint with minimal water consumption?
+
+	==> Consider we would like the process to be closed to not risk spilling paint into the surrounding?
+
+	==> Consider we should insist on putting only the roller, not the roller holder into the percolator (to not get paint into the roller bearings)?
+
+	==> Consider we would like to be able to squeeze the water through the brush or the roller (apply some mechanical force to "massage" the water into the paint soaked material)?
+
+	==> Consider to use an upside-down PET bottle for roller percolation?
+
+	
+	Upside-down PET bottle for percolation-cleaning of paint rollers
+
+	==> It seems we may percolate into a file of containers to get the leftmost container carry the thickest solution of paint?
+
+	
+	Idea to percolate into a file of containers and re-use them shifted left each time
+
+Consider we can make the percolation process more efficient in terms of paint we can extract and re-use and how much fresh water we need to add to each cleaning process?
+
+Start off with say four (4) empty containers for extracted paint. 
+Fill container 2,3 and 4 with some amount of fresh water. 
+Percolate water from container 2 trough the PET with roller into container 1.
+Then percolate water from container 3 through the PET with roller into now empty container 2.
+End with percolating water from container 4 trough the PET with roller into now empty container 3.
+DONE?
+
+The idea here is that in each step we use water with less paint than in the roller to percolate out paint from the roller. In the process getting a paint solution with increasingly high amount of paint. That is, the leftmost container will have the highest paint concentration.
+
+Now assume the leftmost container potentially has a paint concentration that we actually can re-use? Then we can empty it back into the container of paint? Lest also assume we can store the content in container 2 and 3 by putting a lid on them and re-use them the next time we like to clean a roller? This means any succeeding percolation cleaning process will start of with some paint solution in container 2 and 3.
+
+Start off with container 2 and 3 having the saved paint solution from previous percolation process.
+Fill container 4 with some fresh water.
+Percolate solution in container 2 trough the PET with roller into container 1.
+Then percolate solution in container 3 through the PET with roller into now empty container 2.
+End with percolating fresh water from container 4 trough the PET with roller into now empty container 3.
+DONE?
+
+Sounds simple enough? Could this be worth trying out?
+...

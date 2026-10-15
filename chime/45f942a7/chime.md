@@ -1,0 +1,17 @@
+# Todo: Write about how the "story of self" makes that self emerge
+
+```#45f942a7``` *As of 2015-09-14 20:36*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it not be that we become ourselves what we believe is our ”true self” in the same way as we make the society emerge in line with what we believe is our true ability to collaborate.
+
+1) In our search of our true self we ”find” the self that we already believe is true.  
+2) If this is so we can explain this by stating that we both program our system 1 and uses the veto power of System 2 to make the dvidual we believe is our true self emerge?  
+3) We must believe in that which results in emergent dividuals of benefits to us?  
+…
+
+Consider to elaborate more round the idea that both Social Organisms and personal dividuals are created by act-in-faith to our beliefs? Both are self-organizing emergences, Social Organisms by interaction of dividuals, and dividuals as the result of brain processing of sensory input using and programming truth-webs.
+
+{% endraw %}

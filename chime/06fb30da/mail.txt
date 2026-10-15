@@ -1,0 +1,45 @@
+﻿So, what do we get if we write a C++ main() console application and generate a build environment using CMake for the three major platforms?
+
+	==> Compare with “Todo: Programming - Consider to design a C++ console application source and environment setup that will cross compile on Windows, MacOS and Linux?”
+
+1) Consider to find out the absolute minimum CMake input and generated make environment of the three environments?
+
+	==> Q: What CMake inout script file do we need for each platform (can we design a common one)?
+
+2) Consider to document below the generated build environment for the three platforms?
+
+	==> Q: What Visual Studio Project is generated on Windows 10?
+
+	==> Q: What Xcode project is generated on MacOS?
+
+	==> What make-script is generated on Linus MATE?
+
+3) Consider to compare these build environments with the default one found in previous Todo?
+
+	==> See “Todo: Programming - Consider to design a C++ console application source and environment setup that will cross compile on Windows, MacOS and Linux?”
+
+	==> Consider to digg the text-files for each platform that defines the build environment?
+
+		==> The vcproj-file for Visual Studio?
+		==> The pbxproj-file (xml) in folder .xcodeproj (yes, this is a folder although finder shows it as a file)
+
+Kjell-Olovs-MacBook-Pro:MyDEfaultCOmmandLineTool.xcodeproj kjell-olovhogdahl$ pwd
+/Shared/workplace/Xcode/MyDEfaultCOmmandLineTool/MyDEfaultCOmmandLineTool.xcodeproj
+Kjell-Olovs-MacBook-Pro:MyDEfaultCOmmandLineTool.xcodeproj kjell-olovhogdahl$ cat project.pbxproj 
+
+		==> the make-file on Linus MATE.
+
+			==> Consider to also investigate if Clion keeps an IDE project file ot its own?
+
+		...
+
+	==> What differs between CMake generated and default one for Visual Studio?
+
+	==> What differs between CMake generated and default one for Xcode?
+
+	==> What differs between CMake generated and Clion generated default one for Linus MATE?
+
+…
+
+Consider to investigate the platform build environments from the angel of having the same CMake script generate on for each one of them?
+...

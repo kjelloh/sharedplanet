@@ -1,0 +1,32 @@
+# Todo: Consider the provocative metaphor that Atheists are "flat minders" in that like "flat earthers" they derive a model of the whole from the close-environment-facts?
+
+```#1e433754``` *As of 2019-04-12 19:26*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider we can make a provocative yet valuable observation that Atheists constructs a to small model of our minds very much like flat earthers constructs a to small model of the earth?
+
+1) Consider the similarities between Atheist model of mind being “to small” to help us navigate life just as flat earthers model of the universe it to small to go to the moon?
+
+==&gt; Consider an Atheist distrusts religious or spiritual experiences based on the same narrow set of “truths” just as flat earthers don’t trust we have gone to the moon?
+
+> *The thing that a flat earthers seem to do is to make a model of reality based on observations made close by, disregarding any phenomena that appears if taking measurements on a much larger scale. The earth is flat because it is easy to see that the earth is flat. And a curved surface just can’t hold water. Thats just self evident. We simply have no personal observations of the earth being a globe. And also we have no personal observations that water can stick to a curved surface. Ergo, we should model the earth as being flat. And cram everything else we seem to be able to do on earth into this flat earth model.*
+
+> *Now we can make the same observation about Atheists relation to any religious belief or claims of the existence of something resembling “God”. An atheist would claim that we simply have no personal observation of a God. And we also have no personal observation that God can do miracles. Miracles just does not happen. Nature follows the laws we have discovered and that’s all we need to say about that. Ergo, we should model our reality as one located only in the material universe. And cram any experience or valuable practice found in religious or spiritual practices into this model of a material reality.*
+
+==&gt; Consider how we may argue there are reasons for an Atheist to allow for a larger model of experienced reality just as there are reasons for Flat Earthers to allow for modelling earth as a globe?
+
+> *Although I am personally still an Atheist in the sense that I do not believe in a split world and a super natural being. I do think we need a model of the reality we experience to exist and operate in that enables us to represent us as conscious actors that cares about stuff. The materialistic model of reality just does not enable us to represent the problems we as human encounters when we navigate though life. Just as the flat earthers can’t use the flat earth model to plan a route cross the South Pole. In the same manner no human can use the standard model of physics to plan getting a family or decide how to process the death of a parent.*
+
+> *And just as the model of earth as a globe actually encapsulates the observation of a local flat earth, we should try to find a model of human lives that locally, in routine tasks, encapsulates the atheist materialistic observation of a non existing deity?*
+
+> *The Bret Weinstein acceptance of “Metaphorical truth” can be seen as a step in the direction of an expanding the materialistic model into a model of human reality. By accepting that human reality may contain metaphorical truth we can act-in-faith to theories that enables flourishing human societies to emerge. A scientist would say a “Metaphorical truth” is in fact an alternative model of reality. A model that may to some degree actually be inaccurate with what we know from other observations. But the power of models is that we can apply the model that best suits the problem and aim for accurate outcome rather that accurate representation.*
+
+> *From science we know that if we act as if atoms are made up of a core with encircling electrons we can do a lot of chemistry. We know from quantum physics that this is not a fully accurate model of the atom, but the outcome fits the predictions. So why should we not accept the same multi-model to deal with problems in the human reality?*
+
+> *Now, the atheist would say the outcome of acting in faith to a religion is mainly destructive and the model of reality as provided by the “words of God” clearly is totally false. AND to that I would say, yes, the model has to be modified to accommodate what we have observed in the natural sciences. But then to be honest, in science we allow competing and even contradicting models to remain until a new model is found that can be applied instead of the competing models.*
+
+2) ...
+
+{% endraw %}

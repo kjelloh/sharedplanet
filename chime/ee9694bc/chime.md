@@ -1,0 +1,40 @@
+# Todo: Överväg att skriva om "Livshygien" som en variant på personlig hygien för att undvika måste-skuld i sitt liv så man får råd att göra det meningsfulla?
+
+```#ee9694bc``` *As of 2017-01-15 13:30*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Försök att använda begreppet ”Hygien” för att beskriva det där man måste göra rent praktiskt i sitt liv för att undvika det som hindrar en att göra det där meningsfulla?
+
+1) Överväg att jämföra det man måste ”hålla rent" i sitt liv på samma sätt som man måste hålla sin kropp ren?
+
+==&gt; Att inte handla mat betyder att man inte har mat hemma om man till exempel skall åka skridsko (man har en mat-skuld och har inte skött sin livshygien så man kan åka skridsko)?  
+==&gt; Att inte ha pengar att köpa mat för är ett exempel på att ha nedsatt livshygien ( i varje fall så länge pengar är det som behövs för att få mat)?  
+==&gt; Att inte ha betalt sina räkningar är ett exempel på misskött livshygien (man har en måste-skuld som hindrar en både tidsmässigt och känslomässigt att umgås med andra)?
+
+2) Överväg att diskutera hur livs-skulder (en dålig livshygien) påverkar ens känsla av självrespekt eller upplevt värde inför andra?
+
+==&gt; Överväg att en måste-skuld kan göra att man inte känner sig värd att umgås med andra (man skäms inför sig själv och andra)?  
+==&gt; Överväg att dålig livshygien kan resultera i dålig fysik (man rör sig för lite och äter fel) vilket i sin tur manifesterar sig i dålig självkänsla och skam (dålig livshygien manifesterar sig i fysiskt nedsatt hälsa)?  
+…
+
+3) Överväg att skapa en digital coach som fokuserar på att hjälpa en hålla en god livshygien?
+
+==&gt; Den digitala coachen skall i första hand använda morötter för att få en att vilja göra det som skapar bra livshygien?
+
+4) Överväg att den digitala livscoachen skall använda Deep Learning algoritmer för att forma sitt beteende tillsammans med den emdivid den coachar?
+
+==&gt; Överväg att applicera en Emdividualistisk modell av människan?  
+==&gt; Överväg att använda Darwinet för att dela algoritmer som fungerar för att också ”coacha” för att skapa en bra Synteokrati?  
+…
+
+…
+
+Överväg att hitta några frön till axiom och modeller för vad en bra livshygien kan vara, hur en digital coach kan hjälpa en få en bra livshygien och hur digitala coacher kan samverka på Darwinet för att ”coacha” som en eller flera bra Synteokratier kan emergera?
+
+==&gt; NOTERA VILKET STORT SCOPE DETTA HAR!! EMERGENS AV NYA EMDIVIDER SOM SAMVERKAR I NYA RELIGIONER UR VILKET NYA SYNTEOKRATIER EMERGERAR!!
+
+...
+
+{% endraw %}

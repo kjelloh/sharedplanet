@@ -1,0 +1,22 @@
+# Todo: Consider to build a mechanical automated ships bell to chime the passage of time the "Pomodoro" time-slicing way?
+
+```#f0bef671``` *As of 2020-07-29 08:40*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I like the sound of ship bells and desk service bells and why not build one to friendly communicate the passage of time in some suitable chunks?
+
+1) Consider to design and build an automated mechanical ships bell?
+
+> *The idea here is basically to chime the passage of time on a real bell in time chunks as they did during the night watch on boats in the "old age"?*
+
+> *For one I like the sound of ship bells and bells in general. Secondly I suspect the chimes could help me get reminded of the passage of time and enable me to focus on breaking down tasks into manageable sizes and enhance progress and also reduce stress?*
+
+> *It seems to me to also be a fun project to develop the electronics and the mechanical clapper :).*
+
+> *it would also be nice if the automated ship bell is very conservative with energy consumption! An SBC with very low sleep mode poser consumption woken up by a deep sleep interrupt to chime the bell comes to mind.*
+
+...
+
+{% endraw %}

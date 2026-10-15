@@ -1,0 +1,265 @@
+﻿Tinning the code below in Xcode on Macbook Air I get strange outputs (some chars seem to be > 255)?
+
+1) Consider to list and understand the utf-8 code on MacOS?
+
+//
+//  main.cpp
+//  MyCppStringPlayground
+//
+//  Created by Kjell-Olov Högdahl on 2016-07-09.
+//  Copyright © 2016 Kjell-Olov Högdahl. All rights reserved.
+//
+
+#include <iostream>
+
+int main(int argc, const char * argv[]) {
+    
+
+    {
+        auto myNullTerminatedUnicodeString = u8"VÄLKOMMEN";
+        auto iter = &myNullTerminatedUnicodeString[0];
+        std::cout << "*iter type is " << typeid(*iter).name() << "\n";
+        std::cout << "*iter size is " << sizeof(*iter) << "\n";
+        std::cout << "myNullTerminatedUnicodeString = \"" << myNullTerminatedUnicodeString << "\"\n"; // cout will fail to interpret UTF-8
+        
+        std::cout << "\n** Listing *iter values **" << "\n";
+        std::cout << "<char>" << '\t' << "<signed>" << '\t' << "<unsigned>" << "\n";
+        do {
+            std::cout << *iter << '\t' << static_cast<int>(*iter) << "\t\t" << static_cast<int>(static_cast<unsigned char>(*iter)) << "\n";
+            ++iter;
+        } while (*iter != 0);
+    }
+    
+    
+    return 0;
+}
+
+	Output:
+
+*iter type is c
+*iter size is 1
+myNullTerminatedUnicodeString = "VÄLKOMMEN"
+
+** Listing *iter values **
+<char>	<signed>	<unsigned>
+V	86		86
+\303	-61		195
+\204	-124		132
+L	76		76
+K	75		75
+O	79		79
+M	77		77
+M	77		77
+E	69		69
+N	78		78
+
+	==> Q: Why do we get the ’\303' and ’\204’ outputs?
+
+2) Consider to test this code in Visual Studio on Windows 10 (will we get the same result)?
+
+	==> Created “C:\Users\kjell-olovhogdahl\Documents\Visual Studio 2015\Projects\MyCppStringPlayground” on Windows 10 machine
+
+	==> The output in Visual Studio win32 console on Windows 10 is slightly different?
+		==> Note: We probably have a different locale on Windows 10?
+
+*iter type is char
+*iter size is 1
+
+Listing *iter values
+V
+├
+ä
+L
+K
+O
+M
+M
+E
+N
+
+Listing int ch = *iter values
+86
+-61
+-124
+76
+75
+79
+77
+77
+69
+78
+
+Listing unsigned *iter values
+86
+4294967235
+4294967172
+76
+75
+79
+77
+77
+69
+78
+
+	==> Q: Where does the ‘├’ come from and hos is the ‘ä’ generated (surely -124 is not an ‘ä’)?
+
+	==> Realised the erroneous unsigned int assignment and edited the code (See “static_cast<int>(static_cast<unsigned char>(*iter))” which correctly get the signed byte value of the negative char values).
+
+// MyCppStringPlayground.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+
+int main()
+{
+	auto myNullTerminatedUnicodeString = u8"VÄLKOMMEN";
+	auto iter = &myNullTerminatedUnicodeString[0];
+	std::cout << "*iter type is " << typeid(*iter).name() << "\n";
+	std::cout << "*iter size is " << sizeof(*iter) << "\n";
+	std::cout << "myNullTerminatedUnicodeString = \"" << myNullTerminatedUnicodeString << "\"\n"; // cout will fail to interpret UTF-8
+
+	std::cout << "\n** Listing *iter values **" << "\n";
+	std::cout << "<char>" << '\t' << "<signed>" << '\t' << "<unsigned>" << "\n";
+	do {
+		std::cout << *iter << '\t' << static_cast<int>(*iter) << "\t\t" << static_cast<int>(static_cast<unsigned char>(*iter)) << "\n";
+		++iter;
+	} while (*iter != 0);
+
+    return 0;
+}
+
+
+	==> The output is now correct.
+
+*iter type is char
+*iter size is 1
+myNullTerminatedUnicodeString = "V├äLKOMMEN"
+
+** Listing *iter values **
+<char>  <signed>        <unsigned>
+V       86              86
+├       -61             195
+ä       -124            132
+L       76              76
+K       75              75
+O       79              79
+M       77              77
+M       77              77
+E       69              69
+N       78              78
+
+	==> Now we can recognise the escape sequence for UTF-8 ‘Ä’ as 195, 132 (i.e., 0xC3, 0x84) (http://www.utf8-chartable.de <http://www.utf8-chartable.de/>)
+
+
+	…
+
+3) Also consider to try the same code on Linux Mate (same output)?
+
+	==> Created project “/home/kjell-olovhogdahl/ClionProjects/myCppStringPlayground”
+
+		==> Note: Used my 30 minutes allowance of Clion evaluation license.
+
+	==> Using the corrected code from above the output is now correct
+
+*iter type is c
+*iter size is 1
+myNullTerminatedUnicodeString = "VÄLKOMMEN"
+
+** Listing *iter values **
+<char>	<signed>	<unsigned>
+V	86		86
+�	-61		195
+�	-124		132
+L	76		76
+K	75		75
+O	79		79
+M	77		77
+M	77		77
+E	69		69
+N	78		78
+
+4) Here is the original code with an erroneous conversion to unsigned int from signed char (which yields a very large number due to erroneous two’s complement application)
+
+	==> Q: Why does this code generate the strange output of characters with values > 255?
+
+        auto myNullTerminatedUnicodeString = u8"VÄLKOMMEN";
+        auto iter = &myNullTerminatedUnicodeString[0];
+        std::cout << "*iter type is " << typeid(*iter).name() << "\n";
+        std::cout << "*iter size is " << sizeof(*iter) << "\n";
+
+        std::cout << "\nListing *iter values" << "\n";
+        do {
+            std::cout << *iter << "\n";
+            ++iter;
+        } while (*iter != 0);
+
+        iter = &myNullTerminatedUnicodeString[0];
+        std::cout << "\nListing int ch = *iter values" << "\n";
+        do {
+            int ch = *iter;
+            std::cout << ch << "\n";
+            ++iter;
+        } while (*iter != 0);
+
+        iter = &myNullTerminatedUnicodeString[0];
+        std::cout << "\nListing unsigned *iter values" << "\n";
+        do {
+            unsigned int ch = *iter;
+            std::cout << ch << "\n";
+            ++iter;
+        } while (*iter != 0);
+
+	Output:
+
+*iter type is c
+*iter size is 1
+
+Listing *iter values
+V
+\303
+\204
+L
+K
+O
+M
+M
+E
+N
+
+Listing int ch = *iter values
+86
+-61
+-124
+76
+75
+79
+77
+77
+69
+78
+
+Listing unsigned *iter values
+86
+4294967235
+4294967172
+76
+75
+79
+77
+77
+69
+78
+Program ended with exit code: 0
+	==> Q: How can we get out put ”\303”?
+	==> How can we get output ”-61” and ”-124”? ==> Because we have values > 127 stored in a signed char (-128…+127)
+	==> How can we get output ” 4294967235” and ” 4294967172” ==> Because we interpret a signed char as an unsigned int (two’s complement error)
+…
+
+Consider to save this expiration for the C++ String talk?
+
+	==> Also see (http://stackoverflow.com/questions/23471935/how-is-u8-literals-suppose-to-work <http://stackoverflow.com/questions/23471935/how-is-u8-literals-suppose-to-work>)?
+
+...
+

@@ -1,0 +1,42 @@
+# Todo: Consider the human languages as "Protocols" for Meme-expression and Exchange?
+
+```#f184900b``` *As of 2016-06-04 14:52*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be valuable model of human languages to explain them to be the mechanism for Memes to be expressed (come to existence) and exchanged (moved and processed by new brains)?
+
+1) Consider the reason why moral, ethics and truths are so slippery to define is that they are language manifestation of Meme processing, not something that ”exists” per se?
+
+==&gt; Consider Moral as an act-in-faith propelled ”truth” rather than something that actually exists?  
+==&gt; Consider when we speak about things-that-exist we are a in fact exchanging the truth about existence of things the Meme tries to bring into existence as well as the existence of the Meme itself?  
+…
+
+2) Consider our language is just encode Memes while we experience we are expressing our will or truths about reality?
+
+==&gt; Consider this is the root to all paradoxes we experience when we try to logically deconstruct our language?  
+==&gt; Consider that when we express a predicate ”It is morally with to do X” we are actually transferring some Meme Y of which the predicate is a part?  
+==&gt; Consider we are not aware of the Meme Y and gets confused when we try to understand the part-of-Y as a meaning-of-its-own?  
+==&gt; Consider the Meme Y evolves into existence by how it succeeds to make us act-in-faith to its part-truths?  
+…
+
+3) Consider our language also is a protocol to encode the will of genes (in the form af Memes as agents of the gene-will)?
+
+==&gt; Consider the predicate ”One should Marry before having sex” is a predicate of a Meme Z that is the agent of our genes ”will” to multiply?  
+==&gt; Consider this means that the predicate is true only in the sense it affects how we act, not if if is true in a logical sense or if it is a ”truth” that exists out-there?  
+…
+
+4) Consider philosophical discussions on the meaning of expressions in human language as part of the Meme ”execution” in our brains?
+
+==&gt; Consider our brains are Meme and Gene processors that ”executes” imperative instructions to compete in what they succeeds to make us do (act)?  
+==&gt; Consider the pleasure we find from discussing philosophical issues is there to have us process Memes?  
+==&gt; Consider we have a very faint knowledge of what Memes we are executing when trying to logically apply and deconstruct language expressions?  
+…
+
+…
+
+Consider to elaborate on the hidden layer of processing where the language is just an encoding of Meme-parts for processing and exchange between brains?  
+...
+
+{% endraw %}

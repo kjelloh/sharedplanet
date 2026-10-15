@@ -1,0 +1,11 @@
+﻿I would like to be able to do 2D animations for youtube videos.
+
+	==> Also see "Todo: Consider to delve into the Melt open source video editing backend (and compare with ffmpeg as base for my own composable video editor)?"
+
+1) It seems Synfig 2D editor lives here (https://www.synfig.org <https://www.synfig.org/> )?
+
+
+
+2) Consider this Synfig 2D editor tutorial in english (https://synfig.gumroad.com/l/synfig-course-v3-en <https://synfig.gumroad.com/l/synfig-course-v3-en> )?
+
+...

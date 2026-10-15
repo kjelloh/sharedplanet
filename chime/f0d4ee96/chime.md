@@ -1,0 +1,22 @@
+# Todo: Consider how the "existence" of time seems to contradict a deterministic universe but somewhat suggest support for existence of "will"?
+
+```#f0d4ee96``` *As of 2019-12-16 19:36*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+While listening to Sam Harris and Bret Weinstein discussing "free will" and the deterministic universe I come to wonder why we experience "time" having to pass between cause end effect if the outcome is deterministic in the first place.
+
+> *The idea here is that our observation to live in a universe where things take time and we experience and talk about the importance of "making choices" does NOT fit the model of a deterministic universe. At least it leaves room for another model that we can actually use to navigate our reality.*
+
+> *Our observations tells us that the universe have to consume something we call "time" to transform reality from a cause to and effect. If we compare with functional programming where the goal is to define computing where time does not matter, there are no intermediate states that affects the outcome, we have to wonder why we live in a reality where the intermediate states actually matters to us. We care. We evaluate and think about how things are. We seem to use time to process the state of reality to determine how to act in response.*
+
+> *Now, if the universe is truly deterministic, then time should not matter. The outcome should always be the same not matter how we as actors uses that time. We will always act the same way each time we, and the universe are in the exact same state and gets affected by the same causes.*
+
+> *At the end of the day this is not what our user interface to the universe allows us to do. We are in fact unable to not caring. We are in fact unable to not searching for answers. We are in fact unable to not trying to find out "the truth", the "meaning of life" or at each moment care about hor to treat each other and act in the world to get a "good" life.*
+
+> *Our model of the "objective" universe may leave us unable to choose how objects in this model will behave. But in the world fiolled with human actors and self consciousness of our own existence in it we are unable to NOT care and choose how to act.*
+
+> *We need a model that both explain how these two models of reality can co-exist and we need this model to be applicable in our personal experienced life to navigate to where we care to be!*
+
+{% endraw %}

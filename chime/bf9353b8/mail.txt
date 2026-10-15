@@ -1,0 +1,75 @@
+﻿Could it be a good idea to actually identity different digital worlds as kind-of parallel digital universes and explain e.g. computer programming, Text representation and identity in terms of Digital Object Transformation between these “worlds”?
+
+-2) Consider to summarise the aspects that comes into play to talk about digital object identity?
+
+	==> Seems we need to address “sameness” in identity, value and meaning?
+	==> It keeps identity when moved or transferred (streamed) to a remote location?
+		==> In that sense move-assign/construct moves the identity?
+		==> Steraming an object should be considered a “move” of identity (the object is moved to the remote location)
+	==> It gets separate identity when copy constructed or assigned (two objects gets sameness in value)?
+	==> It is the meaning-of-life of an object that defines whether it is an identity-copy (same identity) or an identity-look-alike (same value)?
+		==> If the meaning of an object is to transfer an identity it has sameness in identity ot the original.
+		==> If the meaning of an object allows it to mutate its value independently of other objects - then it is the same in value but different in identity?
+	...
+
+-1) Consider to define semantics to define digital worlds?
+
+	==> A digital world is a set of digital “objects" with defined “meanings” to “entities” that “lives” in the world?
+	==> Consider a C++ file is an object that has meaning to a c++ pre-processor in a world of c++ source code files?
+
+	==> Consider the entities in the physical world to be us interacting with physical objects as books or displays (representation of Text)?
+	==> Consider a linker to be an entity that lives in a world of some defined “object files” (e.g. ELF, COFF objects)
+
+	==> OR: Consider entities that lives between-worlds (e.g. c++ pre-processor mirrors c++ files in one world to c++ translation units in another world)?
+	...
+
+1) Consider a Digital Universe as a closed space of digital object representation and operations?
+
+	==> Consider C++ Source Code Files as objects in a world of C++ source code files?
+
+
+	==> Consider Pre-processing as a transformation from the world of macro-fide source into into pure C++ source code?
+
+		world<c++ file> —> word<c++ translation units>
+
+
+	==> Consider C++ template instantiation as a transform from C++ meta-code into C++ source code?
+
+		world<meta-c++ translation units> —> world<pure c++ translation unit>
+
+	==> Consider front-end compilation as a transform from pure c++ translation units to some byte-code
+
+		world<pure c++ translation units> —> world<llvm byte code>
+
+	…
+
+2) Consider digital-identity is closely related to digital object construct, assignment, equal-operator and destruct?
+
+	==> Consider to relate to Michael Cassie cppcon 2014 talk on “The Canonical Class” (https://www.youtube.com/watch?v=ECoLo17nG5c&list=PLs3KjaCtOwSasUd0xLN8pQaa9umYIzOvP&nohtml5=False <https://www.youtube.com/watch?v=ECoLo17nG5c&list=PLs3KjaCtOwSasUd0xLN8pQaa9umYIzOvP&nohtml5=False>)
+	==> Consider to model these aspects from the view of “sameness”?
+	==> C++ equal operator is about “sameness” in value?
+	==> What can we say about copy-construct (sameness in value but not in identity)?
+
+3) Consider to elaborate on the concept of the “meaning of life” for digital objects?
+
+	==> Can two objects with same value (operator== returns true) have different meaning of existence?
+	==> Does copy constructing an object create a clone that is “the same” in meaning of existence?
+	==> Can we imagine an object that are streamed over a network to a remote location as an object with the same meaning as the one sent?
+	==> Can we imagine the indentation of copy constructing sometimes is to create an object with the same “meaning” (represents the same individual) and sometimes is a new individual that just looks like the original (but is a new individual)?
+	...
+
+4) Consider Text may exist in parallel digital universes representing Text objects in different worlds of Code Points?
+
+	==> Consider IRL Text to exist on paper, display etc to be readable by human eye?
+	==> Consider another IRL space where text exists as tactile representation (e.g. for blind reading)
+	==> Consider another IRL space where a Text may exist in audible form (e.g. read by a human or computer voice)
+
+	==> Consider how each of these representations all may carry the same “meaning” but with different degree of “completeness” (e.g. audible text may not convey punctuation in text fully)?
+
+	==> Consider digital text representation as different form of Code Point Spaces (e.g. ASCII, Unicode)?
+	==> Consider how Text representation may differ (the digital object representation) if the are encoded using excaped-ebcodings (UTF-8, UTF-16) or unescaped-encodings (ASCII, UCS-4, UTF-32)?
+
+…
+
+Consider to name and define this “Digital Multiverse Model” to see how we can apply it to define different digital transform concepts otherwise kind of messy (like computer program tool-chain bulls and different Text representation in IRL and digital form)?
+...

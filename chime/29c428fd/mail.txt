@@ -1,0 +1,70 @@
+﻿Could it be a good idea to make a Darwinet domain with a data model that can hold and share 3D CAD models of vendor parts?
+
+	==> Also see “Todo: Consider to build a table saw rip fence from aluminum profiles and accessories (from motedis web shop)?”
+	==> Also see “Todo: Consider to build a table saw rip fence from CNC machine parts (from swedish JBCNC web shop)?”
+	==> Also see “Todo: Consider to build a table saw rip fence from wood working tool vendors (from Deutch Fine Tools web shop)? “
+	==> Also see “Todo: Consider to build a table saw rip fence using 3D printed parts (e.g., thingiverse models)?"
+
+	==> Also see “Todo: Fusion 360 - Consider to do the exercises provides by Autodesk?"
+
+1) Consider what file formats we should support?
+
+	==> Consider .stp (step) files?
+	…
+
+2) Consider how we can make Autodesk Fusion 360 to access 3D files in the Darwinet Domain?
+
+	==> Also see “Todo: Fusion 360 - Consider to do the exercises provides by Autodesk?"
+	
+
+3) Consider parts provided by Motedis (https://www.motedis.se/shop/Linjaera-produkter/Gear-rack-Pinions/Gear-Rack-Pignons-Modul-1/Gear-rack-15x15-Module-1-999mm::999995071.html <https://www.motedis.se/shop/Linjaera-produkter/Gear-rack-Pinions/Gear-Rack-Pignons-Modul-1/Gear-rack-15x15-Module-1-999mm::999995071.html>)?
+
+	==> They seem to provide stp-files of the parts they sell?
+	…
+
+3) Consider models provided in “OpenBuilds” in 3D Warehouse (https://3dwarehouse.sketchup.com/search/?q=OpenBuilds&backendClass=collection)?
+
+	==> They seem to provide skp-files?
+
+	==> AHA - 3D Warehouse is for/by Sketchup and all files (skp-files) are sketchup files?
+
+4) Consider parts provided by Thingiverse (https://www.thingiverse.com/thing:1911500/#files <https://www.thingiverse.com/thing:1911500/#files>)?
+
+	==> They seem to provide stl-files uploaded by the users?
+	...
+5) Consider parts provided by igus (https://www.igus-cad.com/Default.aspx <https://www.igus-cad.com/Default.aspx>)?
+
+	==> It seems we need to install some form of application to access CAD files?
+
+		
+
+	==> It seems they support Windows only?
+
+		
+
+	==> It seems we may download and install an exe-file?
+
+		
+
+
+
+	
+
+		
+
+	
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		Phew! TEDIOUS!
+	

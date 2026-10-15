@@ -1,0 +1,128 @@
+# Todo: Consider to delve into the macOS XCode command line tools?
+
+```#2ab77834``` *As of 2021-11-28 20:22*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I have spent some time trying to understand if I can compile C++20 code on macOS and maybe the XCode command line tools can provide some help?
+
+1) It seems the XCode command line tools (when installed) are located in /Library/Developer/CommandLineTools/usr/bin/?
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % ls -l /Library/Developer/CommandLineTools/usr/bin/  
+> total 643656  
+> lrwxr-xr-x 1 root wheel 64 Aug 26 2020 2to3 -&gt; ../../Library/Frameworks/Python3.framework/Versions/3.8/bin/2to3  
+> lrwxr-xr-x 1 root wheel 68 Aug 26 2020 2to3-3.8 -&gt; ../../Library/Frameworks/Python3.framework/Versions/3.8/bin/2to3-3.8  
+> -rwxr-xr-x 1 root wheel 336096 Aug 14 2020 DeRez  
+> -rwxr-xr-x 1 root wheel 167184 Aug 14 2020 GetFileInfo  
+> -rwxr-xr-x 1 root wheel 168912 Aug 14 2020 ResMerger  
+> -rwxr-xr-x 1 root wheel 337904 Aug 14 2020 Rez  
+> -rwxr-xr-x 1 root wheel 167408 Aug 14 2020 SetFile  
+> -rwxr-xr-x 1 root wheel 168416 Aug 14 2020 SplitForks  
+> -rwxr-xr-x 1 root wheel 169840 Aug 14 2020 ar  
+> -rwxr-xr-x 1 root wheel 152240 Aug 14 2020 as  
+> -rwxr-xr-x 1 root wheel 166752 Aug 14 2020 asa  
+> -rwxr-xr-x 1 root wheel 532720 Aug 14 2020 bison  
+> -rwxr-xr-x 1 root wheel 417184 Aug 14 2020 bitcode_strip  
+> lrwxr-xr-x 1 root wheel 5 Aug 26 2020 c++ -&gt; clang  
+> lrwxr-xr-x 1 root wheel 12 Aug 26 2020 c++filt -&gt; llvm-cxxfilt  
+> -rwxr-xr-x 1 root admin 167648 Aug 14 2020 c89  
+> -rwxr-xr-x 1 root admin 167680 Aug 14 2020 c99  
+> lrwxr-xr-x 1 root wheel 5 Aug 26 2020 cc -&gt; clang  
+> -rwxr-xr-x 1 root wheel 176945664 Aug 14 2020 clang  
+> lrwxr-xr-x 1 root wheel 5 Aug 26 2020 clang++ -&gt; clang  
+> -rwxr-xr-x 1 root wheel 75349344 Aug 14 2020 clangd  
+> -rwxr-xr-x 1 root wheel 350320 Aug 14 2020 cmpdylib  
+> -rwxr-xr-x 1 root wheel 417024 Aug 14 2020 codesign_allocate  
+> lrwxr-xr-x 1 root wheel 17 Aug 26 2020 codesign_allocate-p -&gt; codesign_allocate  
+> -rwxr-xr-x 1 root admin 3344 Aug 10 2020 cpp  
+> -rwxr-xr-x 1 root wheel 167952 Aug 14 2020 ctags  
+> -rwxr-xr-x 1 root wheel 417056 Aug 14 2020 ctf_insert  
+> -rwxr-xr-x 1 root wheel 63634512 Aug 14 2020 dsymutil  
+> lrwxr-xr-x 1 root wheel 14 Aug 26 2020 dwarfdump -&gt; llvm-dwarfdump  
+> -rwxr-xr-x 1 root wheel 1493376 Aug 14 2020 dwarfdump-classic  
+> -rwxr-xr-x 1 root wheel 508192 Aug 14 2020 dyldinfo  
+> -rwxr-xr-x 1 root wheel 239 Aug 10 2020 easy_install-3.8  
+> -rwxr-xr-x 1 root wheel 696512 Aug 14 2020 flex  
+> -rwxr-xr-x 1 root wheel 696512 Aug 14 2020 flex++  
+> lrwxr-xr-x 1 root wheel 3 Aug 26 2020 g++ -&gt; gcc  
+> -rwxr-xr-x 1 root wheel 103188 Aug 10 2020 gatherheaderdoc  
+> -rwxr-xr-x 1 root admin 167120 Aug 14 2020 gcc  
+> lrwxr-xr-x 1 root wheel 8 Aug 26 2020 gcov -&gt; llvm-cov  
+> -rwxr-xr-x 1 root wheel 5449728 Aug 14 2020 git  
+> lrwxr-xr-x 1 root wheel 3 Aug 26 2020 git-receive-pack -&gt; git  
+> -rwxr-xr-x 1 root wheel 3259776 Aug 14 2020 git-shell  
+> lrwxr-xr-x 1 root wheel 3 Aug 26 2020 git-upload-archive -&gt; git  
+> lrwxr-xr-x 1 root wheel 3 Aug 26 2020 git-upload-pack -&gt; git  
+> -rwxr-xr-x 1 root wheel 401360 Aug 14 2020 gm4  
+> -rwxr-xr-x 1 root wheel 436448 Aug 14 2020 gnumake  
+> -rwxr-xr-x 1 root wheel 300992 Aug 14 2020 gperf  
+> -rwxr-xr-x 1 root wheel 168800 Aug 14 2020 hdxml2manxml  
+> -rwxr-xr-x 1 root wheel 162025 Aug 10 2020 headerdoc2html  
+> -rwxr-xr-x 1 root wheel 234544 Aug 14 2020 indent  
+> -rwxr-xr-x 1 root wheel 417024 Aug 14 2020 install_name_tool  
+> -rwxr-xr-x 1 root wheel 5748384 Aug 14 2020 ld  
+> -rwxr-xr-x 1 root wheel 230 Aug 10 2020 lex  
+> -rwxr-xr-x 1 root wheel 418144 Aug 14 2020 libtool  
+> -rwxr-xr-x 1 root wheel 251536 Aug 14 2020 lipo  
+> -rwxr-xr-x 1 root wheel 810480 Aug 14 2020 lldb  
+> -rwxr-xr-x 1 root wheel 8052032 Aug 14 2020 llvm-cov  
+> -rwxr-xr-x 1 root wheel 829952 Aug 14 2020 llvm-cxxfilt  
+> -rwxr-xr-x 1 root wheel 17126096 Aug 14 2020 llvm-dwarfdump  
+> -rwxr-xr-x 1 root wheel 20552624 Aug 14 2020 llvm-nm  
+> -rwxr-xr-x 1 root wheel 23327536 Aug 14 2020 llvm-objdump  
+> -rwxr-xr-x 1 root wheel 185024 Aug 14 2020 llvm-otool  
+> -rwxr-xr-x 1 root wheel 3471040 Aug 14 2020 llvm-profdata  
+> -rwxr-xr-x 1 root wheel 6660944 Aug 14 2020 llvm-size  
+> -rwxr-xr-x 1 root wheel 3567 Aug 10 2020 lorder  
+> -rwxr-xr-x 1 root wheel 401360 Aug 14 2020 m4  
+> -rwxr-xr-x 1 root wheel 436448 Aug 14 2020 make  
+> -rwxr-xr-x 1 root wheel 7837 Aug 10 2020 mig  
+> lrwxr-xr-x 1 root wheel 7 Aug 26 2020 nm -&gt; llvm-nm  
+> -rwxr-xr-x 1 root wheel 383616 Aug 14 2020 nm-classic  
+> -rwxr-xr-x 1 root wheel 450256 Aug 14 2020 nmedit  
+> lrwxr-xr-x 1 root wheel 12 Aug 26 2020 objdump -&gt; llvm-objdump  
+> lrwxr-xr-x 1 root wheel 10 Aug 26 2020 otool -&gt; llvm-otool  
+> -rwxr-xr-x 1 root wheel 1404912 Aug 14 2020 otool-classic  
+> -rwxr-xr-x 1 root wheel 383424 Aug 14 2020 pagestuff  
+> -rwxr-xr-x 1 root wheel 221 Aug 10 2020 pip3  
+> -rwxr-xr-x 1 root wheel 221 Aug 10 2020 pip3.8  
+> -rwxr-xr-x 1 root wheel 167952 Aug 14 2020 projectInfo  
+> lrwxr-xr-x 1 root wheel 66 Aug 26 2020 pydoc3 -&gt; ../../Library/Frameworks/Python3.framework/Versions/3.8/bin/pydoc3  
+> lrwxr-xr-x 1 root wheel 68 Aug 26 2020 pydoc3.8 -&gt; ../../Library/Frameworks/Python3.framework/Versions/3.8/bin/pydoc3.8  
+> lrwxr-xr-x 1 root wheel 67 Aug 26 2020 python3 -&gt; ../../Library/Frameworks/Python3.framework/Versions/3.8/bin/python3  
+> lrwxr-xr-x 1 root wheel 74 Aug 26 2020 python3-config -&gt; ../../Library/Frameworks/Python3.framework/Versions/3.8/bin/python3-config  
+> lrwxr-xr-x 1 root wheel 69 Aug 26 2020 python3.8 -&gt; ../../Library/Frameworks/Python3.framework/Versions/3.8/bin/python3.8  
+> lrwxr-xr-x 1 root wheel 76 Aug 26 2020 python3.8-config -&gt; ../../Library/Frameworks/Python3.framework/Versions/3.8/bin/python3.8-config  
+> lrwxr-xr-x 1 root wheel 7 Aug 26 2020 ranlib -&gt; libtool  
+> -rwxr-xr-x 1 root wheel 239792 Aug 14 2020 resolveLinks  
+> -rwxr-xr-x 1 root wheel 267296 Aug 14 2020 rpcgen  
+> -rwxr-xr-x 1 root wheel 201632 Aug 14 2020 segedit  
+> lrwxr-xr-x 1 root wheel 12 Aug 26 2020 size -&gt; size-classic  
+> -rwxr-xr-x 1 root wheel 350320 Aug 14 2020 size-classic  
+> -rwxr-xr-x 1 root wheel 16256112 Aug 14 2020 sourcekit-lsp  
+> -rwxr-xr-x 1 root admin 341584 Aug 14 2020 stapler  
+> -rwxr-xr-x 1 root wheel 350800 Aug 14 2020 strings  
+> -rwxr-xr-x 1 root wheel 485008 Aug 14 2020 strip  
+> -rwxr-xr-x 1 root wheel 206061856 Aug 14 2020 swift  
+> -rwxr-xr-x 1 root admin 21973632 Aug 14 2020 swift-build  
+> -rwxr-xr-x 1 root wheel 1580752 Aug 14 2020 swift-demangle  
+> -rwxr-xr-x 1 root admin 21973696 Aug 14 2020 swift-package  
+> -rwxr-xr-x 1 root admin 21973584 Aug 14 2020 swift-run  
+> -rwxr-xr-x 1 root wheel 189760 Aug 14 2020 swift-stdlib-tool  
+> lrwxr-xr-x 1 root wheel 5 Aug 26 2020 swift-symbolgraph-extract -&gt; swift  
+> -rwxr-xr-x 1 root admin 21973616 Aug 14 2020 swift-test  
+> lrwxr-xr-x 1 root wheel 5 Aug 26 2020 swiftc -&gt; swift  
+> -rwxr-xr-x 1 root wheel 29521984 Aug 14 2020 tapi  
+> -rwxr-xr-x 1 root wheel 3058736 Aug 14 2020 tapi-analyze  
+> -rwxr-xr-x 1 root wheel 168528 Aug 14 2020 unifdef  
+> -rwxr-xr-x 1 root wheel 2946 Aug 10 2020 unifdefall  
+> -rwxr-xr-x 1 root wheel 207840 Aug 14 2020 unwinddump  
+> -rwxr-xr-x 1 root wheel 185616 Aug 14 2020 vtool  
+> -rwxr-xr-x 1 root wheel 202048 Aug 14 2020 xml2man  
+> -rwxr-xr-x 1 root wheel 135 Aug 10 2020 yacc  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ %
+
+...
+
+{% endraw %}

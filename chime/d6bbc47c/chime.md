@@ -1,0 +1,38 @@
+# Todo: Consider humans are Social Emergence Programmers i.e., Conscious Ants?
+
+```#d6bbc47c``` *As of 2019-04-22 21:34*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It feels I am homing in on how to better understand why humans seems wired to act-in-faith rather than based on reason?
+
+1) Consider humans are "Social Emergence Programmers"?
+
+> *The basic idea here is that Humans by their ability to both self reflect and reflect on collective social behaviour, i.e., experience being self conscious, then it is reasonable to understand this as that, the conscious view of reality is what enables us to participate as actors, to have valuable collective social behaviour actually emerge?*
+
+> *Now, we are trying to focus on a very special form of emergence here. The emergence of a beneficial collective intelligent behaviour based on some truth about reality that none of us humans participating as actors in the social system are, or even can be, aware of.*
+
+> *So, like the collective beliefs of a religion have us home in both individually and collectively, on a set of interlocking practices. Practices we then also represent in stories as rules about how we ought to act.*
+
+> *I suspect that our ability to reason is mainly to add an extra dimension of analysis to our model of reality. What reson enables us to do, is to veto what older evolved experience of reality tells us to do. There are several observations about our ability to reason that makes me infer its restricted purpose and powers. For one we can only reason with that we are aware of. Or to put in another way, we can only think about what we know and what Occams razor enable us to, by pruning it, reveal. We also know that we can only reason with less than about ten observations at any given moment. This means we need to put in a lot of effort and time to prune any model of reality to come within these limits of less than ten input parameters. The observation that our ability to reason seems a very late addition to our abilities to model reality also tells me we should accept it surely has limited application in any day-to-day human navigation through life. In fact we know that we engage it only on demand when our older systems warns us that reality potentially does not make sense or needs spicing up with a little rational skepticism and negotiating logic.*
+
+2) Consider Humans are "Conscious Ants"?
+
+> *The bewildering intelligent behaviour of ant societies we know are emergent collective behaviours. Based on each ant acting as defined by a small set of rules applied to exchanged chemical signals and state of their surroundings, they collective come to valuable decisions on how to act. The conception that the queen somehow is the brain of the ant society is a false one. And the ant society does not run any computing algorithm to reach these decisions. Instead each ant is an actor in a complex unstable system in just such a way that collectively they implement a much more intelligent and insightful organism than any single ant can ever be.*
+
+> *Now what if we assume that humans are actors in unstable social systems just as ants are. But in addition we are conscious "ants". Where our very ability to internally experience to both self reflect as well as reflect on our collective behaviour. Could this not mean we now have the ability to not only be actors in the emergence of intelligent collective social behaviour? We are in fact able to both observe as well as care about these behaviours. We care how we ourselves acts. And we care about how we collectively act. To me this strongly suggests that we are able to participate and effect what collective social behaviour that actually emerges. Where ants just carry on acting as they always have and thus the same ant society behaviour emerge through millennia, we humans can actually have new intelligent collective social behaviour emerge!*
+
+3) Consider "God" is actually our model of the intelligent collective social behaviour we want to have emerge?
+
+...
+
+4) Consider the things we refer to "Moral Behaviour" or "Ethical Societies" are the rules on how to act to foster emergence of a specific social system?
+
+> *The reason different cultures though different times in human history has had seemingly disparate set of moral rules and social ethics can now be understood as the representation in language of the observed behaviour that kept that specific social system in existence as an emergent stable behaviour.*
+
+> *This also explains the recurse-ability requirement of the moral and ethical systems that has stood the test of time. If the rules on how to behave as individuals and as a society was not applicable again after having applied many times before, then they could simply be at the core of any stable emergency of collective social behaviour. *
+
+...
+
+{% endraw %}

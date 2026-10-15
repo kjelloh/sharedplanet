@@ -1,0 +1,22 @@
+﻿So, what can we say about the usability or impact on move-semantics when applying functional programming and immutable (persistent) data structures?
+
+1) Consider move-construct from non-const rvalues are ok?
+
+	==> Consider non-const r-values are constructed temporaries (unnamed and thus not shared)?
+
+2) Consider what ”moves” that are NOT allowed in the immutable and functional world of things?
+
+	==> We can’t allow move-from a named object?
+
+		==> The moved-from object will be mutated (and if it is also shared we can’t allow this)?
+
+	==> We can’t allow perfect forwarding of non r-value references?
+
+		==> This would potentially allow a move-from the referenced object by someone in the call chain?
+
+	…
+
+…
+
+Consider to elaborate more on this clash between move-semantic and immutable data objects?
+...

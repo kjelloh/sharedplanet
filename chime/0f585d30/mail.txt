@@ -1,0 +1,49 @@
+﻿I would be fun to have the latest actual C++  standard as well as follow the progress of the standard.
+
+1) Consider the C++ Weekly youtube video "C++ Weekly - Ep 253 - C++20 is Official! How To Get Your Copy of the Standard" (https://youtu.be/fWWBG7zekL8 <https://youtu.be/fWWBG7zekL8> )?
+
+https://www.iso.org/standard/79358.html <https://www.iso.org/standard/79358.html> 
+https://eel.is/c++draft/ <https://eel.is/c++draft/> 
+https://en.cppreference.com/w/cpp/links <https://en.cppreference.com/w/cpp/links> 
+https://github.com/timsong-cpp/cppwp <https://github.com/timsong-cpp/cppwp> 
+https://github.com/cplusplus/draft <https://github.com/cplusplus/draft> 
+
+2) Consider to buy the actual ISO C++ 20 Standard document (https://www.iso.org/standard/79358.html <https://www.iso.org/standard/79358.html> )?
+
+
+3) Consider the C++ standard draft generated from Github (https://eel.is/c++draft/ <https://eel.is/c++draft/> )?
+
+	Note: This seems to be unstable and gets updated as the current standard work is progressed?
+
+4) Consider the pdfs of the C++ standard freely available up to the point of becoming actual official documents (https://en.cppreference.com/w/cpp/links <https://en.cppreference.com/w/cpp/links> )?
+
+	==> It seems N4860 from 2020-03-31 may actually be (or be very close) to the actual published standard (https://isocpp.org/files/papers/N4860.pdf <https://isocpp.org/files/papers/N4860.pdf> )?
+
+
+C++ Language and library references
+JTC1/SC22/WG21 <http://www.open-std.org/jtc1/sc22/wg21/> - The C++ Standards Committee, includes draft C++ language standards, proposals, and defect reports
+n3337.pdf <http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3337.pdf> - C++11 first post-publication draft
+n4140.pdf <https://github.com/cplusplus/draft/blob/master/papers/n4140.pdf?raw=true> - C++14 final working draft
+n4659.pdf <http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf> - C++17 final working draft
+n4860.pdf <https://isocpp.org/files/papers/N4860.pdf> - C++20 final working draft
+n4878.pdf <http://open-std.org/JTC1/SC22/WG21/docs/papers/2020/n4878.pdf> - C++23 latest working draft
+eel.is/c++draft <http://eel.is/c++draft/> - HTML version of current draft
+ansi.org <https://webstore.ansi.org/RecordDetail.aspx?sku=INCITS%2fISO%2fIEC+14882%3a2017+(2018)> Official C++ ISO/IEC 14882:2017 for purchase
+Apache <http://stdcxx.apache.org/doc/stdlibref/index.html> - Reference manual for the Apache implementation of the C++ standard library 
+IBM AIX 13.1.3 <https://www.ibm.com/support/knowledgecenter/en/SSGH3R_13.1.3/kc_gen/com.ibm.xlcpp1313.aix.doc_toc-gen3.html> IBM zOS 2.3.0 <https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.cbclx01/toc.htm> Reference manual for the IBM implementation of C and C++ core languages
+IBM AIX 13.1.3 <https://www.ibm.com/support/knowledgecenter/en/SSGH3R_13.1.3/com.ibm.xlcpp1313.aix.doc/standlib/header_files.html> Reference manual for the IBM implementations of the C++ standard library
+MSDN <https://docs.microsoft.com/en-us/cpp/cpp/cpp-language-reference> - Reference manual for the Microsoft implementation of the C++ core language
+MSDN <https://docs.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference> - Reference manual for the Microsoft implementation of the C++ library
+dinkumware <http://web.archive.org/web/20120204111500/http://www.dinkumware.com/manuals/default.aspx> - C++ Standard Library implementation that ships with Microsoft Visual C++
+GNU libstdc++ <http://gcc.gnu.org/onlinedocs/libstdc++/api.html> - Reference manual for the GNU implementation of the C++ library 
+HP <http://h20565.www2.hpe.com/hpsc/doc/public/display?sp4ts.oid=7792031&docId=emr_na-c02133105&docLocale=en_US> - Reference manual for the Dinkumware implementation of the C++ library (as licensed to HP)
+cplusplus.com <http://cplusplus.com/reference> - Unofficial C++ standard library reference 
+SGI STL (hosted on rrsd.com) <http://www.rrsd.com/software_development/stl/stl/index.html> - Reference for STL, the 1994 library that introduced many concepts later adopted by the C++ standard library
+
+
+
+
+
+
+...
+

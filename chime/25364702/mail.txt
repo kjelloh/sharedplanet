@@ -1,0 +1,28 @@
+﻿
+1) The Cetus 3D printer seems to be 32 x 35 x 32 cm?
+
+	Width: 28 + Cable connections = 32 cm
+	Depth: Max 35 cm
+	Height: 32 cm
+
+2) Consider we can put the printer into an aquarium?
+
+	==> Consider Hornbach aquariums (https://www.hornbach.se/shop/Akvaristik/Akvarium/Akvarium-glas/S17555/artikel-listning.html)?
+
+	==> Consider this 80x35x40 cm (https://www.hornbach.se/shop/Helglasakvarium-80x35x40cm/3477392/artikel-detaljer.html)?
+
+	
+
+		==> It seems we may fit also the filament holder?
+
+3) Consider to build using glass and profiles from this web-shop (https://www.glasgiganten.se)?
+
+	==> It seems I can order window glass for 290 SEK m2 (https://www.glasgiganten.se/byggnadsglas/1-float-klarglas.html)?
+	
+
+	==> And I can fetch it from Spånga?
+
+	
+
+…
+

@@ -1,0 +1,36 @@
+# Todo: Consider if to Buy or DIY Swedish rice porrige (which one should I prefer given time, cost and life quality)?
+
+```#c587bf16``` *As of 2020-11-23 18:24*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I find myself more and more leaning to make stuff myself instead of having to work, get paid and then buy what I want (adding the problem of finding someone that has solved the problem as I experience it).
+
+1) Consider I can buy 1 kg prefabricated porrige on sale for 15 SEK, ordinary price 20 SEK and the raw ingredients costs around 20 SEK.
+
+> *The recipe for Swedish rice porrige contains the ingredients,*
+- **2,5 dl (1 cup or 240 g) short-grain rice (“porridge rice”)*
+- *5 dl (2 cups) water*
+- *0,5 tsp salt*
+- *8 dl (3,4 cups) milk*
+- *optional: a cinnamon stick*
+
+  
+> The cost of these ingredients are around 1/4\* 20 SEK (1 kg short grained rice), 8/10 \* 12 SEK (1 litre of milk). If we treat the cost of water and salt and cook with no cinnamon stick the cost of these ingredients are around 15 SEK.
+
+> Question is, how much porrige is this? I speculate that not very much water will leave during cooking so we should get around 8 dl milk + 5 dl water + 240 g rice also after cooking? This is roughly 1,5 kg. Which give the cost of 1 kg porrige to be **10 SEK**?
+
+> This would mean my home made porrige is half the price and possibly of better quality. No add ons and only simple and fresh ingredients.
+
+> If I read the ingredient list of my purchased porrige though it seems this also is only plain vanilla rice, water and milk?
+
+> ![](IMG_5650.jpeg)  
+> The ingredients of Swedish rice porrige from Felix
+
+> The **purchased** porrige is declared to contain **14% rice** while my **home made** recipe should give me porrige with 240 g / 1300 g = **20% rice?**  
+> *
+
+...
+
+{% endraw %}

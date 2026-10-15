@@ -1,0 +1,149 @@
+﻿Sometimes I need to unpack RAR files on Mac OS but there is no native way of doing that.
+
+1) Consider to build the unrar command line tool from C++ source provided by RARLAB that owns (?) the RAR archive format (https://www.rarlab.com/rar_add.htm <https://www.rarlab.com/rar_add.htm> )?
+
+	==> It seems the source code can be downloaded from this URL (https://www.rarlab.com/rar/unrarsrc-5.9.4.tar.gz <https://www.rarlab.com/rar/unrarsrc-5.9.4.tar.gz> )?
+
+
+
+2) It seems I can install a version of unrar distributed through the brew package manager?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew install unrar
+==> Downloading https://homebrew.bintray.com/bottles/unrar-5.9.4.catalina.bottle.tar.gz
+==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/90e0f209046471dda292a622ded80ed410e237cb7fc8e1d2653f0d57c470fc6b?response-content-disposition=attachment%3Bfilename%3D%22unrar-5.9.4.catalina.bottle.tar.gz%22&Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHAqOi8vZDI5dnprNG93MDd3aTcuY2xvdWRmcm9udC5uZXQvOTBlMGYyMDkwNDY0NzFkZGEyOTJhNjIyZGVkODBlZDQxMGUyMzd
+######################################################################## 100.0%
+==> Pouring unrar-5.9.4.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/unrar/5.9.4: 6 files, 503.5KB
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+
+3) Consider the unrar command aline tool argument and usages?
+
+	==> It seems the unrar command line tool prints a help page if no arguments are provided?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % unrar
+
+UNRAR 5.91 freeware      Copyright (c) 1993-2020 Alexander Roshal
+
+Usage:     unrar <command> -<switch 1> -<switch N> <archive> <files...>
+               <@listfiles...> <path_to_extract\>
+
+<Commands>
+  e             Extract files without archived paths
+  l[t[a],b]     List archive contents [technical[all], bare]
+  p             Print file to stdout
+  t             Test archive files
+  v[t[a],b]     Verbosely list archive contents [technical[all],bare]
+  x             Extract files with full path
+
+<Switches>
+  -             Stop switches scanning
+  @[+]          Disable [enable] file lists
+  ad            Append archive name to destination path
+  ag[format]    Generate archive name using the current date
+  ai            Ignore file attributes
+  ap<path>      Set path inside archive
+  c-            Disable comments show
+  cfg-          Disable read configuration
+  cl            Convert names to lower case
+  cu            Convert names to upper case
+  dh            Open shared files
+  ep            Exclude paths from names
+  ep3           Expand paths to full including the drive letter
+  f             Freshen files
+  id[c,d,p,q]   Disable messages
+  ierr          Send all messages to stderr
+  inul          Disable all messages
+  kb            Keep broken extracted files
+  n<file>       Additionally filter included files
+  n@            Read additional filter masks from stdin
+  n@<list>      Read additional filter masks from list file
+  o[+|-]        Set the overwrite mode
+  ol[a]         Process symbolic links as the link [absolute paths]
+  or            Rename files automatically
+  ow            Save or restore file owner and group
+  p[password]   Set password
+  p-            Do not query password
+  r             Recurse subdirectories
+  sc<chr>[obj]  Specify the character set
+  sl<size>      Process files with size less than specified
+  sm<size>      Process files with size more than specified
+  ta[mcao]<d>   Process files modified after <d> YYYYMMDDHHMMSS date
+  tb[mcao]<d>   Process files modified before <d> YYYYMMDDHHMMSS date
+  tn[mcao]<t>   Process files newer than <t> time
+  to[mcao]<t>   Process files older than <t> time
+  ts[m,c,a,p]   Save or restore time (modification, creation, access, preserve)
+  u             Update files
+  v             List all volumes
+  ver[n]        File version control
+  vp            Pause before each volume
+  x<file>       Exclude specified file
+  x@            Read file names to exclude from stdin
+  x@<list>      Exclude files listed in specified list file
+  y             Assume Yes on all queries
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	==> It seems the command 'e' unpacks into a flat structure while the command 'x' re-creates the folder structure?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro Downloads % unrar e Strain\ Wave\ Gear\ -\ Harmonic\ Drive\ STL\ Files.rar 
+
+UNRAR 5.91 freeware      Copyright (c) 1993-2020 Alexander Roshal
+
+
+Extracting from Strain Wave Gear - Harmonic Drive STL Files.rar
+
+Extracting  BearingSpacer.stl                                         OK 
+Extracting  BearingSpacer2.stl                                        OK 
+Extracting  Circular Spline v2.stl                                    OK 
+Extracting  Circular Spline.stl                                       OK 
+Extracting  Flex Spline v2.stl                                        OK 
+Extracting  Flex Spline.stl                                           OK 
+Extracting  Housing.stl                                               OK 
+Extracting  Motor moiunt - Lid.stl                                    OK 
+Extracting  NEMA 17 Shaft Coupler.stl                                 OK 
+Extracting  Output shaft.stl                                          OK 
+Extracting  Output.stl                                                OK 
+Extracting  Spline output.stl                                         OK 
+Extracting  Wave Generator p1 Module 1.75.stl                         OK 
+Extracting  Wave Generator p1.stl                                     OK 
+Extracting  Wave Generator p2 Module 1.75.stl                         OK 
+Extracting  Wave Generator p2.stl                                     OK 
+All OK
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro Downloads % 
+
+
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro Downloads % unrar x Strain\ Wave\ Gear\ -\ Harmonic\ Drive\ STL\ Files.rar
+
+UNRAR 5.91 freeware      Copyright (c) 1993-2020 Alexander Roshal
+
+
+Extracting from Strain Wave Gear - Harmonic Drive STL Files.rar
+
+Creating    STL Files                                                 OK
+Extracting  STL Files/BearingSpacer.stl                               OK 
+Extracting  STL Files/BearingSpacer2.stl                              OK 
+Extracting  STL Files/Circular Spline v2.stl                          OK 
+Extracting  STL Files/Circular Spline.stl                             OK 
+Extracting  STL Files/Flex Spline v2.stl                              OK 
+Extracting  STL Files/Flex Spline.stl                                 OK 
+Extracting  STL Files/Housing.stl                                     OK 
+Extracting  STL Files/Motor moiunt - Lid.stl                          OK 
+Extracting  STL Files/NEMA 17 Shaft Coupler.stl                       OK 
+Extracting  STL Files/Output shaft.stl                                OK 
+Extracting  STL Files/Output.stl                                      OK 
+Extracting  STL Files/Spline output.stl                               OK 
+Extracting  STL Files/Wave Generator p1 Module 1.75.stl               OK 
+Extracting  STL Files/Wave Generator p1.stl                           OK 
+Extracting  STL Files/Wave Generator p2 Module 1.75.stl               OK 
+Extracting  STL Files/Wave Generator p2.stl                           OK 
+All OK
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro Downloads % unrar e Strain\ Wave\ Gear\ -\ Harmonic\ Drive\ STL\ Files.rar
+
+
+3) It seems RARLAB provides a ready to use binary of unrar from its download page (https://www.rarlab.com/download.htm <https://www.rarlab.com/download.htm> )?
+
+
+It seems RARLAB RAR 5.91 for macOS is a trial only (it is not free?)
+
+...

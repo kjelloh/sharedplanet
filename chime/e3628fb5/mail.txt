@@ -1,0 +1,61 @@
+﻿It seems I can learn a lot about Neural Networks, Deep Learning and AI from experimenting with the new Intel Movidius™ Neural Compute Stick?
+
+	==> Also see “Todo: Personal AI - Consider to use the AI Single Board Computers from 96boards.ai as the base to build my personal AI?”
+	==> Also see “Todo: Consider to train a neural network to classify my company book keeping vouchers for registration automation?"
+
+1) The Intel Movidius™ Neural Compute Stick seems to live here (https://developer.movidius.com <https://developer.movidius.com/>)?
+
+	
+
+2) The Intel Movidius™ Neural Compute Stick seems to sell from Mauser here (https://www.mouser.se/new/Intel/intel-movidius-stick/ <https://www.mouser.se/new/Intel/intel-movidius-stick/>)?
+
+	==> I ordered one stick from Mauser :)
+
+		
+
+	…
+
+3) The SDK for the Neural Compute Stick (ncs) seems to live on GitHub here (https://github.com/movidius/ncsdk <https://github.com/movidius/ncsdk>)?
+
+	==> It seems the SDK is for Ubuntu OS and gnu make (https://developer.movidius.com/start <https://developer.movidius.com/start>)?
+
+“
+mkdir -p ~/workspace
+
+cd ~/workspace
+
+git clone https://github.com/movidius/ncsdk.git
+
+cd ~/workspace/ncsdk
+
+make install
+"
+
+	==> It seems the Neural Compute Stick is for executing a previously trained model (https://movidius.github.io/ncsdk/ <https://movidius.github.io/ncsdk/>)?
+
+	
+
+
+	==> This seems to be a step-by-step on how to use the Movidius Neural Compute Stick SDK (https://movidius.github.io/ncsdk/configure_network.html <https://movidius.github.io/ncsdk/configure_network.html>)?
+
+	==> It seems we can use the output from Google Tensorflow and Berkley Caffe neural network frameworks?
+
+“Neural Compute SDK currently supports two Deep Learning frameworks.
+Caffe <https://movidius.github.io/ncsdk/Caffe.html>: Caffe is a deep learning framework from Berkeley Vision Labs.
+TensorFlow™ <https://movidius.github.io/ncsdk/TensorFlow.html>: TensorFlow™ is a deep learning framework from Google."
+	==> This seems to be the home of Moviduius Neural Compute Stick SDK for Berkley Caffe community (https://movidius.github.io/ncsdk/Caffe.html <https://movidius.github.io/ncsdk/Caffe.html>)?
+
+	==> It seems we can use pre-trained image recognition models from the Tensorflow community (https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models <https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models>)?
+	…
+
+…
+
+Consider to continue to delve into neural network application with the Movidius Neural Compute Stick?
+...
+
+
+	
+
+...
+
+	

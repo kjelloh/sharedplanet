@@ -1,0 +1,28 @@
+# Todo: Consider to design a small modular thermal battery to use in a caravan, camper van or off-grid living spaces?
+
+```#754c2b68``` *As of 2024-07-04 18:18*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to be able to store heat to not having to waste it going through electricity storage with the 80% losses we can expect doing it that way.
+
+1) Consider the basic idea of a small modular thermal battery?
+
+> *The basic idea is to design a thermal battery based on isolated sand with an air exchange system to store or withdraw heat from it.*
+
+> *To have the battery store more heat I imagine I would like it to hold up to say 1000 degrees C?*
+
+> *I want to be able to harvest heat from burning wood (so that I can heat the battery when it is convenient to 'burn stuff' and use the heat when I need the heat, e.g., during the night).*
+
+> *It should be feasible to design a small wood or pallet stove and use air circulation to heat the battery?*
+
+> *And it should also be feasible to then connect the thermal battery to the caravan and have a heat exchange system to withdraw the heat with air circulation and heat say a water based central heating system.*
+
+> *Optionally it would be nice if I can also harvest low temperature waste heat and charge the battery up to its internal 1000 degrees temperature? I wonder, would it be possible to use a heat pump to harvest battery charging waste heat around 30 - 50 degrees C and pump it up to 1000 degrees C? *
+
+> *If it is possible to use a heat pump to harvest 30 - 50 degrees and produce 200 - 300 degrees C I will also be able to design a heat pump stove top and oven for cooking?*
+
+...
+
+{% endraw %}

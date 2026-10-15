@@ -1,0 +1,11 @@
+﻿I want easy to follow along videos on how to do stuff and navigate around in FreeCad.
+
+1) Consider youtube channel "MangoJelly Solutions for FreeCAD" (https://www.youtube.com/@MangoJellySolutions <https://www.youtube.com/@MangoJellySolutions> )?
+
+	==> Consider youtube video "FreeCAD For Beginners 33 | Gear Assembly, Animation and Export to Video File" on animation using Assembly 4 workbench (https://youtu.be/lBtnTuwqhqc?list=LL <https://youtu.be/lBtnTuwqhqc?list=LL> )?
+
+
+https://youtu.be/lBtnTuwqhqc?list=LL&t=8 <https://youtu.be/lBtnTuwqhqc?list=LL&t=8> 
+
+
+...

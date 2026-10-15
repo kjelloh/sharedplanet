@@ -1,0 +1,148 @@
+﻿Could we imagine that Haskell typ classes are in fact in Tha just meta values that defines a set of types that fulfills the type class ”contract”?
+
+1) Consider this definition of Haskell type classes (http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101 <http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101>)?
+
+	==> It seems a types can be a ”member” of a type class?
+
+”A typeclass is a sort of interface that defines some behavior. If a type is a part of a typeclass, that means that it supports and implements the behavior the typeclass describes. "
+
+	==> It seems Haskell shows type class membership as part of a type using the ”=>” symbol?
+
+ghci> :t (==)  
+(==) :: (Eq a) => a -> a -> Bool
+
+		==> Which seem to read: The ”==” operator takes a value of any type a and another of any type a and returns a bool (given a i the member of the type class Eq)?
+
+
+	==> It seems a lot of functions and constants are in fact generic on the members of a type class?
+
+”minBound and maxBound are interesting because they have a type of (Bounded a) => a. In a sense they are polymorphic constants.”
+
+ghci> minBound :: Int  
+-2147483648  
+ghci> maxBound :: Char  
+'\1114111'  
+ghci> maxBound :: Bool  
+True  
+ghci> minBound :: Bool  
+False  
+
+		==> Note: ”::” is used to provide a type annotation (telling the compiler what type the expression should have)
+		==> Thus, using the Int type annotation the generic minBound that returns an Int is called (dispatched to)?
+
+	==> So, how do we make a type into a member of a type class?
+
+		…
+
+2) Consider this tutorial on how to define your own types and type classes (http://learnyouahaskell.com/making-our-own-types-and-typeclasses <http://learnyouahaskell.com/making-our-own-types-and-typeclasses>)?
+
+	==> It seems Haskell types are defined as a Set of values?
+
+”data means that we're defining a new data type. The part before the = denotes the type, which is Bool. The parts after the =are value constructors. They specify the different values that this type can have.”
+
+data Bool = False | True
+
+data Int = -2147483648 | -2147483647 | ... | -1 | 0 | 1 | 2 | ... | 2147483647  
+
+		==> Note: Pseudo-code. Its impractical to define Int this way (although theoretical possible)?
+
+	==> Thus, in Haskell a new type is defined using the keyword ”data”?
+
+	==> It seems Haskell types act as value constructor (and uses lisp like operator syntax)?
+
+”Value constructors are actually functions that ultimately return a value of a data type.”
+
+ghci> :t Circle  
+Circle :: Float -> Float -> Float -> Shape  
+
+		==> Would read: The type of Circle is a function that takes three Floats and return a Shape?
+
+	==> It seems in Haskell one makes a type of member of type call by using the keyword ”deriving”?
+
+data Shape = Circle Float Float Float | Rectangle Float Float Float Float deriving (Show)  
+
+		==> Would read: Declare the type ”Shape” as the Set of type constructors ”Circle” or ”Float”, both members of type class ”Show”?
+
+”Haskell automagically makes that type part of the Show typeclass.”
+
+
+	==> It seems the type class ”Show” is able to infer ”to string” operators for its member class values (in this case for our new type Shape)?
+
+		==> Q: How does it do that?
+		==> Q: Could it be that it break down any type into atomic Haskell types (for which there is already ”to string” operators)?
+
+	==> Anyhow, after defining our type ”Shape” to be member of type class ”Show” we are able to request Haskell to print Shape values?
+
+ghci> Circle 10 20 5  
+Circle 10.0 20.0 5.0  
+
+		==> If Shape had not been declared as member of ”Show” this would have failed with an error (Haskell would be unable to turn Circle into a string representation for output)?
+
+	==> It seems Haskell uses the same keyword to declare type constructors (”Type parameters” in http://learnyouahaskell.com/making-our-own-types-and-typeclasses <http://learnyouahaskell.com/making-our-own-types-and-typeclasses>)?
+
+”type constructors can take types as parameters to produce new types.”
+
+data Maybe a = Nothing | Just a  
+
+		==> Seem to read: Type constructor ”Maybe” takes any type a and defines the Set of the types ”Nothing” or ”Just a"
+
+	==> Consider Haskell type constructors are Tha meta-2 values?
+
+		==> Meta-2 values defines a set of meta-1 values (i.e. constructs types) just as Haskell type constructors do?
+
+3) Consider how Haskell type classes are able to infer operatons on user declared types made members of them (
+
+	==> Haskell type class Show seems able to infer ”to string” operation on our own records (vector of declared identifiers)?
+
+data Person = Person { firstName :: String  
+                     , lastName :: String  
+                     , age :: Int  
+                     , height :: Float  
+                     , phoneNumber :: String  
+                     , flavor :: String  
+                     } deriving (Show)   
+
+		==> Note how this closely mirrors how records are declared in other languages (as a list of declared identifiers, i.e., name-type pairs)?
+		==> Q: Again - How is the type-class ”Show” able to infer a ”to string” operation to this record type?
+
+	==> It seems in Haskell type constructors are Generic Types declared using lower case ”any types”?
+
+data Car a b c = Car { company :: a  
+                     , model :: b  
+                     , year :: c   
+                     } deriving (Show)  
+
+		==> Would read: Car is a generic type taking any type a,b and c and return a record with members declared using provided types?
+
+			==> Consider in Meh we can accomplish this with a meta-2 value that can be used to infer unbound member identifier types from provided types (or values)?
+			==> See ”Todo: Tha - Consider to define mtea-2 value "inferred" that constructs generic meta-1 value (they apply pattern matching to define meta-0 values)?”
+			...
+
+		==> Compare the corresponding non-generic type?
+
+data Car = Car { company :: String  
+               , model :: String  
+               , year :: Int  
+               } deriving (Show)  
+
+	==> It seems one uses the ”=>” syntax to declare type class constraints in the type declaration (not recommended) and to function type declarations (aiming type constraints only when required by operation)?
+
+data (Ord k) => Map k v = ...  
+
+		==> Not recommended - but defines generic ”Map” on any type k and v with restriction on k to be a member of type class Ord?
+		==> Instead one should apply the ”(Ord k) => ” restriction to function declarations that actually requires the restriction to work?
+		...
+
+4) It actually seems one declares a type as member of a type class by ”deriving” from it (See ”Derived instances” in http://learnyouahaskell.com/making-our-own-types-and-typeclasses)?
+
+”A type can be made an instance of a typeclass if it supports that behavior."
+
+	==> It seems it is actually true that Haskell can infer user type operations derived from a set of some common type classes?
+
+”Haskell can automatically make our type an instance of any of the following typeclasses: Eq, Ord, Enum, Bounded, Show, Read."
+
+	…
+
+…
+
+Consider to elaborate more on how we may model Haskell type classes application for type constraints in Tha meta-model?

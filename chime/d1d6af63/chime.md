@@ -1,0 +1,38 @@
+# Todo: Consider to build my house on gabion cages and possibly other walls and foundations?
+
+```#d1d6af63``` *As of 2024-03-19 21:01*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I do not want to use concrete and also be able to use material from the location for the house foundation and gabion cages filled with stones and gravel has caught my interest.
+
+0) Consider my initial idea on how agabion cage can be use in a foundation build?
+
+> *So, the basic idea is that it should be possible to place a house on gravel directly on the ground. At least. given we ensure the gravel can't erode away or otherwise move under the house.*
+
+> *My hunch is that a gabon cage can be utilised to kepp the gravel in a more rectangular shape. The horizontal forces on the side of the cage should be considerably less than the horizontal force?*
+
+> *Also, if we shape the gabon cage outer sides with a slope less than the angle of repose given the load of the house? Then, the cage would only be there to reduce erosion?*
+
+> *...*
+
+1) Consider this article "GABION WALLS - WHAT IS A GABION CAGE & HOW TO BUILD WITH THEM?" on using Gabions for eco homes (<https://www.ecohome.net/guides/3565/what-are-gabion-walls-complete-guide-building-with-gabion-cage/> )?
+
+![](PastedGraphic-1.png)
+
+2) Consider the wikipedia article "Gabion" (<https://en.wikipedia.org/wiki/Gabion> )?
+
+![](PastedGraphic-2.png) ![](PastedGraphic-3.png)![](PastedGraphic-4.png)
+
+==&gt; The article seems to sugest a gabion cage made with pvc coated wire has a life span of 60 years?
+
+> *"**The life expectancy of gabions depends on the lifespan of the wire, not on the contents of the basket. The structure will fail when the wire fails. Galvanized steel wire is most common, but PVC-coated and stainless steel wire are also used. PVC-coated galvanized gabions have been estimated to survive for 60 years.&#91;3&#93; Some gabion manufacturers guarantee a structural consistency of 50 years.&#91;4&#93;**"*
+
+3) Consider this youtube video "A MODERN FAMILY HOME IN POLAND | GABION HOUSE |HOUSE TOUR | LOOK AT A HOUSE" about a house with gabions and outer walls (<https://youtu.be/cawwRN9MLTU> )?
+
+![](PastedGraphic-6.png)
+
+...
+
+{% endraw %}

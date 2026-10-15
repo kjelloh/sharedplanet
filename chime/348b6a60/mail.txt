@@ -1,0 +1,13 @@
+﻿
+1) It seems we get error "Xcode 1.5 not supported" if the macOS for some reason can't find what Xcode installation we are using?
+
+	==> If cmake finds the "wrong" Xcode (or npone at all) it seems to produce the error ""
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro build % cmake -G Xcode ..
+CMake Error:
+  Xcode 1.5 not supported.
+...
+	==> This seems to be the fix for me to have cmake use my installed Xcode-beta?
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro build %sudo /usr/bin/xcode-select --switch /Applications/Xcode-beta.app    
+
+2) Consider the Gist I created that shows the console output and fix of this error  (https://gist.github.com/kjelloh/409c16dc395c97c2df4aa458a00976eb <https://gist.github.com/kjelloh/409c16dc395c97c2df4aa458a00976eb> )?

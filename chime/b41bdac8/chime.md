@@ -1,0 +1,126 @@
+# Todo: C++ Tha - Consider we should be able to create Sum, Product and Function "Sets" on all meta-levels?
+
+```#b41bdac8``` *As of 2018-04-30 12:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems we should be tempted to aim for C++ Tha to allow Set operations Sum, Product and Function on each meta-level members?
+
+-1) It seems we need a syntax to get Set Sum, Product and Functions semantics independent of meta-level of the Sets?
+
+==&gt; Consider a “general” Sum operation for index or name tagging of **tagged-union-members**?
+
+==&gt; Consider a “general” Product operation for index or name tagging of members **tagged_tuple_members**?
+
+==&gt; Consider a “general” morphism syntax with semantics for **morphism** f: set -&gt; set, for a meta-layer member sets?
+
+1) Consider Meta-1 variables-as-sets?
+
+indexe-tagged-Sum-Set: ?? (an index would be used to semantically define the instantiated type, out of possible summed types, of the variable)
+
+name-tagged-Sum-Set: The **enum**-kind-type-instance and **union**-kind-type-instance (the name is used semantically to define the instantiated type, out of possible summed types, of the variable)
+
+indexed-tagged-tuple-Set: The **Array**-type-instance (the index semantically defines a tuple member)
+
+named-tagged-tuple-Set: The **struct** or **class** type-instance. (the name semantically defines a tuple member)
+
+function-Set: The **C-function** and **C++ lambda** instance: value -&gt; value (maps a value of one set to a value in another set)
+
+2) Consider Meta-2 types-as-sets
+
+indexe-tagged-Sum-Set: ??
+
+name-tagged-Sum-Set: A **union**-kind-type (alternatives of different types) and An enum-kind-type (all alternatives singleton type form the same type)
+
+indexed-tagged-tuple-Set: An **Array**-kind-instance
+
+named-tagged-tuple-Set: A **struct** and **class** kind-instance
+
+function-Set: The **C-function** and **C++ lambda** instance: type -&gt; type
+
+3) Consider Meta-3 Kinds-as-sets
+
+Sum-kinds with index-tagged members: ??
+
+Sum-kinds with name-tagged-members:
+
+> as-if:
+
+> union my_sum_kind {  
+> struct msg_kind_1; // this kind  
+> struct msg_kind_2; // our this kind  
+> union msg_kind_3; // or this kind  
+> }
+
+Product-kinds with index-tagged-members:
+
+> as-if:
+
+> struct my_product_kind&#91;3&#93;; // each index semantically defines a struct
+
+> as-if could-be-instantiated-as-type:
+
+> using my-product_kind_type = my_product_kind {msg_type_0, msg_type_1, msg_type_2...}
+
+Product-kinds with name-tagged-members:
+
+> as-if:
+
+> struct my_product_kind {  
+> struct msg_kind;  
+> struct sender_kind;  
+> enum sender_enumeration;  
+> }
+
+Kind-functions f: kind -&gt; kind
+
+??: Note that we want a function that takes a set-of-kinds (sorts) and returns a set-of-kinds?
+
+
+
+> I suppose “template” is in fact in some sense a kind-&gt;kind (its implementation can take a type-of-a-kind and return another-type-of-a-another-kind)
+
+4) Consider Meta-4: Sorts
+
+**TODO: C++ only has one Sort (the “template” sort that can instantiate struct,calss and function kinds)?**
+
+Sum-sorts with index-tagged members: ?? (as-if an indexed, not named, enumeration of different sorts)
+
+Sum-sorts with name.tagged members: ?? (an enumeration of sorts, each one given a name)
+
+> as-if:
+
+> enum my_sum_sort : template {  
+> template_1  
+> ,template_2  
+> ...  
+> }
+
+> // ==&gt; But then each member sort must act as a constructor for kinds taking an index 0…n as argument?
+
+Product-sorts with index-tagged members: ??
+
+> as-if:
+
+> template my_product_sort&#91;3&#93;;
+
+Product_sort with name-tagged members: ??
+
+> as-if:
+
+> struct my_product_sort {  
+> template template_1;  
+> template template_2;  
+> ...  
+> };
+
+Sort-functions: f: sort -&gt; sort ??
+
+…
+
+Continue to delve into this idea to find some common (preferably existing) syntax with a semantics to create Sum-sets, Product-sets and Function set-&gt;set sets?
+
+...
+
+{% endraw %}

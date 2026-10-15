@@ -1,0 +1,34 @@
+﻿It seems we may implement immutable objects with function members that memoize return results as long as the mutation is not visible from the outside (each member function still returns the same result whether it actually does the processing or returns a previously calculated result)?
+
+1) Consider this confirming example by Milewski (https://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/ <https://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/>)
+
+	==> Although he goes a bit further and implements memoization as mutating the internal function actually called (Exactly what I implemented as experiment for JIT getters :) )
+
+”Initially, the thunk is set to thunkForce, which calls the method setMemo. This method evaluates the function, stores the result in _memo, switches the thunk to thunkGet, and returns the memoized value. On subsequent calls get goes through the getMemo thunk which simply returns the memoized value."
+
+2) It seems we may make a mutable object wrap an observed immutable one to explicitly express where we cross from immutable-land into the mutable one?
+
+	==> Consider a class Observer<Persistent>?
+
+		Persistent my_persistent; // Some Persistent Data Structure
+		Observer<Persistent> observed_persistent_data(my_persistent); // An observer of my_persistent object
+		auto current = observed_persistent_data.get(); // Returns an immutable copy of the latest state?
+
+		template<typename T>
+		class Observer {
+			Latest<T> get() {
+				// 1) Apply some mechanism to retrieve the most recent instance of T (T being a Persistent Data Structure Object)?
+				// 2) Return an instance of type Latest<T> that does somehow gets rid of older parts not referenced anymore (deleted part of the structure)?
+			}
+		};
+	
+	==> Consider we aim for an object that mutates (we can keep only one instance to query over and over)
+	==> But we like the get() function to return the last instance of the chain of immutable object instance we observe?
+	
+	…
+
+…
+
+Consider to elaborate on this aspect of immutability and how to express where we cross over to mutable land in the code?
+...
+		 

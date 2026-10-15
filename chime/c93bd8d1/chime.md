@@ -1,0 +1,26 @@
+# Todo: Try to calculate earnings per user for social services
+
+```#c93bd8d1``` *As of 2015-09-12 21:01*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what is the data provided by each user actually worth in terms of profit?
+
+1) We should calculate the earnings from commercials? This is more closely related to the worth of having users to expose commercials to?  
+2) But total earnings per user has its value to? I mean, it is a social service so it is the potential value of having the ability to trade user information and/or sell the right to target users for commercials.
+
+&lt;Facebook&gt;
+
+a) For Q4 2014 the net profit was 696 miljon dollars - ”696 miljoner dollar, eller 54 cent per aktie”. The turnover for adds was 3,59 Biljon dollars ”Annonsomsättningen ökade med 53 procent jämfört med förra året och landade på 3,59 miljarder dollar” (http://www.svd.se/starkt-delar-av-facebook)  
+b) Number of active users at end of 2014 was 1,39 biljon ”Enligt Facebook var antalet aktiva månatliga användare 1,39 miljarder den 31 december 2014”.
+
+This would mean the net profit per users during Q4 2014 was 0,689/1,39 dollars = 50 cent per user. This would mean 0,5 \* 12 = 6 dollars a year and user. That is not so expensive?
+
+c) This site states the average add revenue worldwide to about 10 dollars and 25 dollars for the european market (http://www.statista.com/statistics/251328/facebooks-average-revenue-per-user-by-region/). Note that this is revenue and not net earnings.  
+d) The following site states add revenue for Facebook 2012 (http://techcrunch.com/2012/05/03/stats-facebook-made-9-51-in-ad-revenue-per-user-last-year-in-the-u-s-and-canada/).  
+e) The following site states earnings per user in feb 2014 but the scale and period is not defined? (https://twitter.com/aitmit/status/437708951279652864)  
+f) The value we are looking for seems to be ”ARPU: Average Revenue Per User Probably the most common monetization metric, ARPU is your average earnings per user. The benchmark for ARPU varies widely depending on the type and genre of your game, although recent reports have indicated ranges of $0.18 - $11.89 for major mobile titles. ARPU = &#91;Total Revenue&#93; / &#91;Total Number of Users&#93; Relevant Articles: Superdata Research (http://www.superdataresearch.com/blog/us-digital-games-market/)” (https://unity3d.com/learn/tutorials/analytics/glossary-of-metrics)  
+...
+
+{% endraw %}

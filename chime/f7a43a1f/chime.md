@@ -1,0 +1,16 @@
+# Todo: Relate New Age "Energies" with the Emdividual you created to interact with the current environment
+
+```#f7a43a1f``` *As of 2015-10-18 20:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could we say that the the New Age idea about ”Energies” is the same as the model about the Emdividual (you created to interact with current situation)?
+
+1) The New Age ”Energy” (e.g. radiated by artifacts in your apartment) feels like Energies by the Emdividual interacting with them? If ones truth-web defines these energy-satiating-artifacts to be ”true”, then the Emdividual created to interact with them will ”feel” this energy?  
+2) Also, if the Emdividual created depends on how one feel about the surrounding, then we actually come to be a different Emdividual when we surround ourself with things we like?  
+…
+
+Consider to elaborate on this idea how New Age ”Energies” can be explained by the Emdividual model? We simply come to existence as one that ”feels” these energies due to us having this as nodes in our truth-web?
+
+{% endraw %}

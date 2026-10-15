@@ -1,0 +1,144 @@
+﻿It seems like a good idea to use a C++ template syntax Value<n> for level dependent Value types and have standard member functions as_function, as_value and as_text to define implementation?
+
+1) It seems most Values can be defined by specifying them on three relative meta layers 2, 1 and 0?
+
+	==> Consider Value<2> would refer to an Atomic value that constructs Value<1> instances from Value<1> argument?
+	==> Consider Value<1> would refer to an intermediate Composite (or Atomic) that constructs Value<0> from Value<0> argument?
+	==> Consider Value<0> would refer to a Composite (or Atomic) on terminating meta-layer?
+
+2) Consider each Value Implementation has member operations as_function, as_value and as_text?
+
+	==> Consider Value<2> would refer to an Atomic value that constructs Value<1> instances from Value<1> argument?
+		as_function = Constructs Value<1> from argument Value<1>
+		as_value = self
+		as_text = script representation of value
+	==> Consider Value<1> would refer to an intermediate Composite (or Atomic) that constructs Value<0> from Value<0> argument?
+		as_function = Constructs Value<1> from argument Value<0>
+		as_value = self
+		as_text = script representation of value
+	==> Consider Value<0> would refer to a Composite (or Atomic) on terminating meta-layer?
+		as_function = ErrorValue or forward to function definition (if function value)
+		as_value = self
+		as_text = script representation of value
+
+3) Consider how this relates to Lisp syntax (name names) evaluates to (as_function(name) as_value(names)) and name evaluates to as_value(name)?
+
+	==> Consider identifier-list evaluation?
+
+		evaluate(list) = evaluate(as_function(head list) as_value (tail list))?
+
+	==> Consider identifier evaluation
+
+		evaluate(identifier) = as_value(identifier)
+
+	==> Consider as_text is used to produce text representation to communicate with humans?
+
+		==> Consider REPL print?
+
+		evaluate(expression) ==> as_text(evaluate(expression))?
+
+		==> Consider creating message for ErrorValue?
+
+			==> Error message can compose into a stack-dump using as_text on argument and return ErrorValue(error message)?
+
+			evaluate(expression) ==> as_text(evaluate(expression)) would then print a stack-dump if returned value is ErrorValue?
+			...
+
+3) It seems we thus have a really small set of built-in value abstractions?
+
+	==> We have ErrorValue (Composes an error message)
+		ErrorValue
+			as_function = self	// Pass the error back
+			as_value = self
+			as_text = error message
+
+	==> We have UndefinedValue (A special value which represents ”no value”)
+		UndefinedValue<2> 
+			as_function = constructor of UndefinedValue<1>
+			as_value = self
+		UndefinedValue<1> 
+			as_function = constructor of UndefinedValue<0>
+			as_value = self
+		UndefinedValue<0> 
+			as_function = ErrorValue(”Undefined Value")
+			as_value = self
+
+	==> We have Atomic values (No members)
+		Atomic<2>
+			as_function = constructor of Atomic<1>
+
+	==> We have Bool value (Defines the Set {”true", ”false”}
+		Bool<1> = number with Set {1,0} // Restricted number
+			”bool” = Bool<1>
+			as_function = constructor of Bool<0>
+		Bool<0>
+			”true” = number{1}
+			”false” = number{0}
+
+	==> We have Optional value (A Variant Value or UndefinedValue, to enable ISO-8583-like composition of Composite versus Constructed values)
+		<2> TBD
+		<1> TBD
+		<0> TBD
+
+	==> We have Conditional value (A Predicated value, to enable ISO-8583-like composition of Composite versus Constructed values)
+		<2> TBD
+		<1> TBD
+		Conditional<0>
+			as_function = bool predicate(arguments)?
+
+	==> We have Pair of values (Compose two values)
+		<2> TBD
+		<1> TBD
+		<0> TBD
+
+	==> We have Array of values (Compose array of values)
+		<2> TBD
+		<1> TBD
+		<0> TBD
+
+	==> We have Variant value (compose an OR ”one-of” value)
+		<2> TBD
+		<1> TBD
+		<0> TBD
+
+	==> We have a Function value (Compose argument value and return value)
+		Function<2>
+			as_function = Construct Function<1> 
+		Function<1>
+			as_function = Construct Function<0>
+		Function<0> (Compose argument name and script)		
+			as_function = bind-argument and evaluate(script)
+			as_value = self
+			as_text = the script
+	==> We have Identifier value (Compose a name, a meta-value and an optional value)
+		Identifier<2> (Atomic)
+			as_function = Construct Identifier<1>
+		Identifier<1> (Compose name and Value<2>) 
+			as_function = Construct Identifier<0> from Value<0>
+			”identifier” 
+		Identifier<0> 
+			as_function = forward to as_function(value)
+
+		(identifier count number)	// Would then declare name ”count” as Value<1> ”number”
+		(define count 5) // Would then define count to value 5 (Normal Lisp style)?
+
+	==> We have Custom values (additional values manifested by Meta Value Model implementation)
+		Custom<2>
+			as_function = Constructor of Custom<1>
+			as_value = self
+			as_text = custom
+		Custom<1>
+			as_function = Constructor of Custom<0>
+			as_value = self
+			as_text = custom
+		Custom<0>
+			as_function = custom // E.g., a function or ErrorValue(”Undefined Value")
+			as_value = self
+			as_text = custom
+	…
+
+
+…
+
+Consider to elaborate on this syntax to specify built-in Value meta-level operations and syntax relation?
+...

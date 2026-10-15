@@ -1,0 +1,321 @@
+﻿It seems it could be time and also good learning to build a custom desktop computer workstation?
+
+	==> Also see “Todo: Consider to actually build a hackintosh?"
+
+-4) It seems I should go for an AMD 580 graphics card for a Hackintosh build (https://youtu.be/KXBSJ5NW9FA?t=202 <https://youtu.be/KXBSJ5NW9FA?t=202>)?
+
+	==> Dustin seems to sell an AMD 580 card for 3000 SEK  (https://www.dustin.se/product/5011075573/radeon-rx-580-armor-8gb <https://www.dustin.se/product/5011075573/radeon-rx-580-armor-8gb>)?
+
+	
+
+
+	
+
+-3) It seems the 8’th generation Intel CPUs require a mother board from the 300 series chipset (https://www.dustin.se/product/5011068312/rx-560-aero-itx-4g-oc <https://www.dustin.se/product/5011068312/rx-560-aero-itx-4g-oc>)?
+
+	
+
+
+-2) Consider to understand form factors M.2 and PCIe versus electrical interface SATA vs NVMe (http://www.velocitymicro.com/blog/nvme-vs-m-2-vs-sata-whats-the-difference/ <http://www.velocitymicro.com/blog/nvme-vs-m-2-vs-sata-whats-the-difference/>)?
+
+	==> It seems NVMe is “Non Volatile memory Express”, a disk drive interface for high speed read and write and successor of SATA?
+
+“Enter NVMe. Standing for “Non-Volatile Memory Express,” NVMe is an open standard developed to allow modern SSDs to operate at the read/write speeds their flash memory is capable of. "
+
+	==> It seems M.2 and PCIe are form factors (not to be confused with electrical interface)?
+
+“M.2 is just the form factor. M.2 drives can come in SATA versions (like the Crucial MX300 M.2 for example) and NVMe versions (like the Samsung 960 Pro), which describes the bus they use to electrically communicate with the other PC components."
+
+
+	==> No, PCIe is both an electrical interface as well as a Form Factor (https://en.wikipedia.org/wiki/PCI_Express <https://en.wikipedia.org/wiki/PCI_Express>)?
+
+
+
+		
+
+
+	==> It seems M.2 is basically the Form factor and is designed to supersede (https://en.wikipedia.org/wiki/M.2 <https://en.wikipedia.org/wiki/M.2>)?
+
+“ It replaces the mSATA standard, which uses the PCI Express Mini Card physical card layout and connectors."
+
+	
+
+
+
+-1) Consider the restrictions I must place on the build?
+
+	==> Consider I need Display Port video output (to connect my 27” LED Cinema Display)?
+
+Gigabyte Z370 AORUS Gaming 5
+Gigabyte Z370 AORUS Gaming 7
+Gigabyte Z370N WIFI
+Gigabyte H370M DS3H
+Gigabyte H370N WIFI
+ASUS ROG Strix H370-F Gaming
+ASUS TUF H370-Pro Gaming WIF
+ASUS ROG STRIX Z370-G GAMING (WI-FI AC)
+ASUS ROG Strix H370-I Gaming
+MSI H370 GAMING PLUS
+MSI H370 GAMING PRO CARBON
+ASUS ROG STRIX Z370-H GAMING
+ASUS ROG STRIX Z370-F GAMIN
+ASUS ROG STRIX Z370-E GAMING
+ASUS ROG MAXIMUS X HERO (WI-FI AC)
+ASUS ROG MAXIMUS X HERO
+ASUS PRIME Z370-A 
+ASRock Z370 Taichi 
+ASRock Fatal1ty Z370 Professional Gaming i7
+MSI Z370 GAMING PRO CARBON
+MSI Z370 GAMING PLUS
+MSI Z370 GAMING M5
+
+	==> Consider we also would like a small footprint (i.e., micro ATX 24,4 cm square ro Mini ITX 17 cm square)?
+
+Gigabyte Z370N Wi-Fi [Mini ITX]
+Gigabyte H370M DS3H [mATX]
+Gigabyte H370N WIFI [mATX]
+ASUS ROG STRIX Z370-G GAMING (WI-FI AC) [mATX]
+ASUS ROG Strix H370-I Gaming [mini-ITX]
+
+	==> Consider to buy from Dustin?
+
+		Gigabyte Z370N Wi-Fi [Mini ITX]
+
+		
+
+
+		Gigabyte H370M DS3H [mATX]
+
+
+		Gigabyte H370N WIFI [mATX]
+		ASUS ROG STRIX Z370-G GAMING (WI-FI AC) [mATX]
+
+		
+
+
+		ASUS ROG Strix H370-I Gaming [mini-ITX]
+
+		
+
+
+
+	==> Consider this Small (Mini ITX) build 
+
+	
+	
+
+
+	Tot: 5260 SEK
+
+
+	==> Consider this Small (Mini ITX) build with AMD RX 560 graphics card?
+
+	
+
+
+
+
+
+
+1) Consider one on the list at (https://www.tonymacx86.com/buyersguide/june/2018/ <https://www.tonymacx86.com/buyersguide/june/2018/>)?
+
+	==> Consider the “Budget” Hackintosh build?
+	
+	
+	
+	
+
+
+	“Gigabyte H370 HD3”
+
+	
+
+
+	“Core i3-8100”
+
+	
+
+
+	
+	Crucial DDR4 16 GB (Did not find the one recommended but this should work)?
+
+	
+
+
+	“Samsung 860 Evo 250 GB” (seems to replace the recommended Samsung 850 Evo?)
+
+	
+
+
+	“Corsair 550W PSU” (Did not find the "Corsair CS 550 Watt” but this one should work?)
+
+	
+
+
+
+	“Corsair Carbide Series 300R”
+
+	
+
+
+	“TP-Link Archer T9E 802.11AC AC1900”
+
+	
+
+
+
+
+	Tot: 6111 SEK (ex moms)
+
+	==> Consider how to make it smaller and more quiet?
+
+2) Consider to use leads in this “Ryzen 3 1300x Build” youtube video (https://www.youtube.com/watch?v=Oc4FTlHWrN4&t=600s <https://www.youtube.com/watch?v=Oc4FTlHWrN4&t=600s>)
+
+	==> They seem to use the AMD Ryzen 3 CPU (https://www.dustin.se/product/5011036908/ryzen-3-1300x-37-ghz-with-wraith-stealth-cooler <https://www.dustin.se/product/5011036908/ryzen-3-1300x-37-ghz-with-wraith-stealth-cooler>)?
+
+		
+
+
+	==> They seem to use the “ASRock Fatal1ty AB350” mother board (https://www.dustin.se/product/5011063089/fatal1ty-ab350-gaming-itxac <https://www.dustin.se/product/5011063089/fatal1ty-ab350-gaming-itxac>)?
+
+	
+
+
+	==> They seem to use the Swedish design “Fractal Design Focus G” case (https://www.dustin.se/product/5011028969/focus-g-window <https://www.dustin.se/product/5011028969/focus-g-window>)?
+
+	
+
+
+		==> It seems Focus G already has two Silent Seriers 120 mm fans?
+
+
+	==> It seems they used a EVGA GeForce GTX 1060 graphics card (https://www.dustin.se/product/5011067036/geforce-gtx-1060-acx-20-3gb <https://www.dustin.se/product/5011067036/geforce-gtx-1060-acx-20-3gb>)?
+
+		
+
+
+		NOTE: Not sure though what is the difference between the ACX 2.0 3GB, SC Gaming, Gaming 6GB and SC Gaming 6GB
+
+	==> It seems we also need a 350 - 400W PSU?
+
+		
+
+
+		==> It seems I need to buy the power cord separately?
+
+		
+
+
+	==> It seems I also need DDR4 SDRAM 8 - 16 GB (DIMM 288-pin to fit the mother board)?
+
+		
+
+
+		==> Note: Anything over 2400 MHz requires overclocking of the ASRock Fatal1ty AB350 mother board.
+
+
+	==> It seems I need a hard drive?
+
+		TODO: Pick an SSD hard drive.
+
+		==> It seems AsRock “Ultra M.2.” is 4 PCI Express 3.0 (https://www.kitguru.net/components/motherboard/anton-shilov/asrock-doubles-bandwidth-of-m-2-ssds-with-ultra-m-2-but-there-is-a-catch/ <https://www.kitguru.net/components/motherboard/anton-shilov/asrock-doubles-bandwidth-of-m-2-ssds-with-ultra-m-2-but-there-is-a-catch/>)?
+
+“ the Ultra M.2 slot relies on PCI Express 3.0 x4 interconnection"
+
+		
+	==> It seems Dustin provides PCI Express 3.0 x 4?
+
+		
+
+
+		
+
+
+		TODO: Confirm that an M.2 “NVMe” is actually compatible with AsRock “Ultra M.2”?
+
+
+	TOTAL: 10932 SEK?
+
+	NOTE: I should be able to use a Windows 10 licence from my Microsoft MSDN subscription?
+
+3) Consider to study this 2017 “The Quietest Mac Ever Made” (https://www.youtube.com/watch?v=OLmk_XsRgOQ <https://www.youtube.com/watch?v=OLmk_XsRgOQ>)?
+
+	==> The parts list seems to still live here (https://tonyk.cc/blog/the-quietest-mac-ever-by-snazzy-labs <https://tonyk.cc/blog/the-quietest-mac-ever-by-snazzy-labs>)?
+
+	==> Consider the Pc Parts Picker web service for this build (https://pcpartpicker.com/list/LbtyBP <https://pcpartpicker.com/list/LbtyBP>)?
+
+Compatibility Check: No issues/incompatibilities found.Edit This Part List <https://pcpartpicker.com/list/LbtyBP#partlist_edit>
+Component		Selection	Base	Promo	Shipping	Tax	Price	Where	
+CPU <https://pcpartpicker.com/products/cpu/>	 <https://pcpartpicker.com/product/tdmxFT/intel-cpu-bx80662i76700k>
+ <https://pcpartpicker.com/product/tdmxFT/intel-cpu-bx80662i76700k>	
+Intel - Core i7-6700K 4GHz Quad-Core Processor <https://pcpartpicker.com/product/tdmxFT/intel-cpu-bx80662i76700k>	$383.99 <https://pcpartpicker.com/mr/superbiiz/tdmxFT>		FREE		$383.99 <https://pcpartpicker.com/mr/superbiiz/tdmxFT>	SuperBiiz <https://pcpartpicker.com/mr/superbiiz/tdmxFT>	Buy <https://pcpartpicker.com/mr/superbiiz/tdmxFT>
+CPU Cooler <https://pcpartpicker.com/products/cpu-cooler/>		Streacom S​T-LH6 CPU ​Heatpipe K​it for DB4 <https://pcpartpicker.com/list/LbtyBP#view_custom_part>					$39.00 <https://pcpartpicker.com/list/LbtyBP#view_custom_part>		
+Motherboard <https://pcpartpicker.com/products/motherboard/>	 <https://pcpartpicker.com/product/TykwrH/asus-motherboard-z170iprogaming>
+ <https://pcpartpicker.com/product/TykwrH/asus-motherboard-z170iprogaming>	
+Asus - Z170I PRO GAMING Mini ITX LGA1151 Motherboard <https://pcpartpicker.com/product/TykwrH/asus-motherboard-z170iprogaming>							
+Memory <https://pcpartpicker.com/products/memory/>	 <https://pcpartpicker.com/product/3CdFf7/gskill-ripjaws-v-series-16gb-2-x-8gb-ddr4-3000-memory-f4-3000c15d-16gvkb>
+ <https://pcpartpicker.com/product/3CdFf7/gskill-ripjaws-v-series-16gb-2-x-8gb-ddr4-3000-memory-f4-3000c15d-16gvkb>	
+G.Skill - Ripjaws V Series 16GB (2 x 8GB) DDR4-3000 Memory <https://pcpartpicker.com/product/3CdFf7/gskill-ripjaws-v-series-16gb-2-x-8gb-ddr4-3000-memory-f4-3000c15d-16gvkb>	$179.99 <https://pcpartpicker.com/mr/newegg/3CdFf7>		FREE		$179.99 <https://pcpartpicker.com/mr/newegg/3CdFf7>	Newegg <https://pcpartpicker.com/mr/newegg/3CdFf7>	Buy <https://pcpartpicker.com/mr/newegg/3CdFf7>
+Storage <https://pcpartpicker.com/products/internal-hard-drive/>	 <https://pcpartpicker.com/product/2VWrxr/crucial-mx300-525gb-25-solid-state-drive-ct525mx300ssd1>
+ <https://pcpartpicker.com/product/2VWrxr/crucial-mx300-525gb-25-solid-state-drive-ct525mx300ssd1>	
+Crucial - MX300 525GB 2.5" Solid State Drive <https://pcpartpicker.com/product/2VWrxr/crucial-mx300-525gb-25-solid-state-drive-ct525mx300ssd1>	$139.35 <https://pcpartpicker.com/mr/neweggmkt/2VWrxr>		FREE		$139.35 <https://pcpartpicker.com/mr/neweggmkt/2VWrxr>	Newegg Marketplace <https://pcpartpicker.com/mr/neweggmkt/2VWrxr>	Buy <https://pcpartpicker.com/mr/neweggmkt/2VWrxr>
+Case <https://pcpartpicker.com/products/case/>		Streacom D​B4 Fanless​ Chassis <https://pcpartpicker.com/list/LbtyBP#view_custom_part>					$299.00 <https://pcpartpicker.com/list/LbtyBP#view_custom_part>		
+Power Supply <https://pcpartpicker.com/products/power-supply/>		Streacom S​T-ZF240 Ze​roFlex 240​W Passive ​PSU <https://pcpartpicker.com/list/LbtyBP#view_custom_part>					$175.00 <https://pcpartpicker.com/list/LbtyBP#view_custom_part>		
+Total:	$1216.33			
+	==> Consider what 2018 upgrade we can imagine to build?
+
+		==> The Streacom fanless chassis seems to still exist (http://www.streacom.com/products/chassis/ <http://www.streacom.com/products/chassis/>)?
+
+		
+
+
+		==> It seems DB4 now supports fanless GPU cards through passive GPU heat sink, Max TDP 65-75W (http://www.streacom.com/products/gpu-cooling-kit-for-db4/ <http://www.streacom.com/products/gpu-cooling-kit-for-db4/>)?
+
+TODO: Pick a case and power supply together with 8th generation Intel CPU and Motherboard
+
+
+3) Consider to learn by studying Dustins proposed Intel based build kit (https://www.dustin.se/product/5011010945/diy-aura-mini-itx <https://www.dustin.se/product/5011010945/diy-aura-mini-itx>)?
+
+Paketet innehåller:
+
+Fractal Design Define Nano S Svart med fönster (art. nr. 5010897594) <https://www.dustin.se/product/5010897594>
+Corsair SF450 450W 80+Guld SFX Modulär (art. nr. 5010911164) <https://www.dustin.se/product/5010911164>
+NEW! Corsair SFX till ATX PSU Adapter 2.0 (art. nr. 5011058097) <https://www.dustin.se/product/5011058097>
+Corsair Type 4 Sleeved Black 24-Pin ATX Cable (art. nr. 5011025220 <https://www.dustin.se/product/5011025220>
+ASUS Strix Z270i Gaming S-1151 m-ITX (art. nr. 5011007088) <https://www.dustin.se/product/5011007088>
+Intel Core i7 7700K 4.2GHz (No Fan) (art. nr. 5010991011) <https://www.dustin.se/product/5010991011>
+ASUS GeForce GTX 1070 Strix Gaming OC 8GB GDDR5 (art. nr. 5010964146) <https://www.dustin.se/product/5010964146>
+Corsair Vengeance LPX 16GB (2x8GB) 2133MHz DDR4 (art. nr. 5010880391) <https://www.dustin.se/product/5010880391>
+Corsair Force MP500 240GB M.2 PCIe NVMe SSD (art. nr. 5011004120) <https://www.dustin.se/product/5011004120>
+Be Quiet Pure Rock CPU-kylare (art. nr. 5010821990) <https://www.dustin.se/product/5010821990>
+Microsft Windows 10 Home 64-bit DVD (art. nr. 5010877347) <https://www.dustin.se/product/5010877347>
+
+	
+4) Consider tweaks to enhance the build to the specs I care about?
+
+	==> Consider I should go for an AMD GPU because FCPX is optimised for OpenCL and thus AMD GPU?
+
+		==> Consider Radeon RX 560 (that seems roughly equal in performance to GTX 1050)?
+
+		==> Consider this article on RX 560 native support on OS X High Sierra and advantage over Nvidia graphics cards (https://hackintosher.com/blog/good-amd-graphics-cards-hackintosh/ <https://hackintosher.com/blog/good-amd-graphics-cards-hackintosh/>)?
+
+		
+
+	==> Consider how to make the computer “Really Quiet”?
+
+	==> Consider a CPU with more cores (to optimise for more virtual machines)?
+
+	==> Consider to build a machine that can run as a Hackintosh?
+
+	…
+
+…
+
+
+Consider to delve deeper into this idea to build a proper desktop WorkStation to replace my MacBook Pro 2014?
+...
+
+
+		
+
+		

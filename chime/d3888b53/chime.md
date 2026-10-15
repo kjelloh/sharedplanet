@@ -1,0 +1,14 @@
+# Todo: C++ - Consider to check out Jonathan Müller type_safe library?
+
+```#d3888b53``` *As of 2016-11-03 11:49*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems like a good idea to try out Jonathan Müllers C++ hard type library to enable compile time detection of incompatible use of types that would normallu be built in types (like string, int, enum, bool)?
+
+1) The C++11 type_safe library seems to live here (https://github.com/foonathan/type_safe)?
+
+2) He seems to have a good blog too that lives here (https://foonathan.github.io)?
+
+{% endraw %}

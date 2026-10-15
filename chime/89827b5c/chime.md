@@ -1,0 +1,23 @@
+# Todo: So what happens with ur understanding of value hierarchies if value comparison is Non Transitive?
+
+```#89827b5c``` *As of 2019-12-17 17:04*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+What happens to value hierarchies if value comparison is non transitive so that you can strive for higher and higher values and still end up at something with a lower value?
+
+==&gt; Also see "Todo: Consider how it is possible to create a closed loop of probability relations between dices that is NOT transitive (so called Non Transitive Dices)?"
+
+> *So the idea here is to investigate and discuss what we can say about value hierarchies if the tiers of "higher" values is not ordered in a transitive way. Meaning, you can value thing B higher than thing A and then thing C higher than thing B and still end up with thing C having lower value than thing A.*
+
+> *I starting point to get at some intuition and understanding what non transitive value could be about is to compare with the non transitive dices I have purchased (See "*  
+> *Todo: Consider how it is possible to create a closed loop of probability relations between dices that is NOT transitive (so called Non Transitive Dices)?**"). The "value" of a set of these dices are captured by how often a throw with the dices will "win" over another set. These dices are designed so that throws of set B more often than not will gain higher scores that throws of set A. The same goes for throws with set C that will win over set B over time. And still set A will win over set C!*
+
+> *Can we imagine things we value to behave in the same way? Say we value "do not lie" over "follow the rules". And then we value "Be kind" over "do not lie". Can we than imagine that we find we value "follow the rules" more valuable than "be kind"? I don't know. But I think this is worth investigating.*
+
+> *For one, what is required of the things we value for them to compare to each other, to nest into hierarchies, so that their individual order of value is not transferred to a transitive ordering of the values? It seems if the "value" is a composition of sub-values, that is are complex enough to contain competing value components, then when we compare these values we may discover we do not get an overall ordering of values?*
+
+> *...*
+
+{% endraw %}

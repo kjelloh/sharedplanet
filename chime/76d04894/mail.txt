@@ -1,0 +1,132 @@
+﻿It seems it could be a good idea to start listing web-shops that I can potentially use to buy maker materials and parts I can use to build stuff in my maker space?
+
+	==> Also see “Todo: Electronic Lab - Consider to find a good enough Lab Oscilloscope?”
+	==> Also see “Todo: Consider to check out Chineese Min company that sell those mini screwdriver, soldering iron and oscilloscope that Macro Reps done reviews on?"
+
+	==> Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from Accu web shop)?”
+
+	==> Also see “Todo: Motion Control - Consider to experiment with the Trinamic TMC160xx MotionCookie micro controller?”
+
+	==> Also see “Todo: DIY - Consider to build a power feeder for my table saw module?”
+	==> Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from Accu web shop)?”
+	==> Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from CNC parts (from ratRig provider)?”
+	==> Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from Conrad web-shop parts?”
+	==> Also see “Todo: Table Saw Power Feeder - Consider to design a Power Feeder from self balancing electric skateboard or cycle wheel?"
+
+	==> Also see “Todo: Table Saw Power Feeder  + Table Saw Rip Fence - Consider Adafruit CNC and Robot parts?”
+	==> Also see “Todo: Consider to build a table saw rip fence using igus low profile linear guide system?”
+	==> Also see “Todo: Consider to build a table saw rip fence using a threaded rod in an Incra T-slot?”
+	==> Also see “Todo: Consider to build a table saw rip fence from aluminum profiles and accessories (from motedis web shop)?”
+	==> Also see “Todo: Consider to build a table saw rip fence from CNC machine parts (from swedish JBCNC web shop)?”
+	==> Also see “Todo: Consider to build a table saw rip fence from wood working tool vendors (from Deutch Fine Tools web shop)? “
+	==> Also see “Todo: Consider to build a table saw rip fence from wood working tool vendors (from Swedish woodworking web shop)? “
+
+	==> Also see “Todo: Consider to build a table saw rip fence using 3D printed parts (e.g., thingiverse models)?"
+	
+	
+1) Consider electronics web-shops?
+
+	==> Consider RS Online (https://se.rs-online.com/web/ <https://se.rs-online.com/web/>)?
+	==> Consider Sparkfun (https://www.sparkfun.com <https://www.sparkfun.com/>)?
+	==> Consider Electro:Kit web-shop (https://www.electrokit.com <https://www.electrokit.com/>)?
+	==> Consider iFixit (https://www.ifixit.com <https://www.ifixit.com/>)?
+	==> Consider Farnell (https://se.farnell.com <https://se.farnell.com/>)?
+	==> Consider Mouser (https://www.mouser.se <https://www.mouser.se/>)?
+	==> Consider Arduino (https://www.arduino.cc <https://www.arduino.cc/>)?
+	==> Consider The Chinese MIN company seems to sell their products on Banggood (https://www.banggood.com/brands-MINI-b-741.html <https://www.banggood.com/brands-MINI-b-741.html>)?
+	==> Consider e-bay uk (https://www.ebay.co.uk <https://www.ebay.co.uk/>)?
+	==> Consider sunfounder (https://www.sunfounder.com <https://www.sunfounder.com/>)?
+	...	
+
+2) Consider the Swedish web-shop with materials and tools for makers and hobbyists (http://www.materialbutiken.se <http://www.materialbutiken.se/>)?
+
+	==> They also seem to have a shop near medborgarplatsen (Folkkungagatan 60)?
+
+	
+
+	==> They seems to have good prices on metal sheets?
+	==> They alos seem to have an interesting sortiment of lab equipment (burners, flasks, physics experiments…)?
+
+3) Consider to search for “openbuilds” and find european suppliers on the web?
+
+	==> Consider Swedish located CreativeTools (https://www.creativetools.se <https://www.creativetools.se/>)?
+	==> Consider Danish MakerSupplies (http://makersupplies.dk <http://makersupplies.dk/>)?
+	==> Consider Portuguese located RatRig (http://www.ratrig.com <http://www.ratrig.com/>)?
+	==> Cconsider Kjell&Company “Ratrig” sortiment (https://www.kjell.com/se/sok?query=ratrig <https://www.kjell.com/se/sok?query=ratrig>)?
+	==> Consider v-slot europe (http://www.vslot-europe.com <http://www.vslot-europe.com/>)?
+	==> Consider UK located Ooznest (http://ooznest.co.uk <http://ooznest.co.uk/>)?
+	==> Consider Belgium Trnixmaker (https://tronixmaker.com/en/ <https://tronixmaker.com/en/>)?
+	==> Consider Alibaba search for OpenBuilds (https://www.alibaba.com/countrysearch/CN/openbuilds.html <https://www.alibaba.com/countrysearch/CN/openbuilds.html>)?
+	==> Consider AliExpress search for OpenBuilds (https://www.aliexpress.com/store/group/Openbuilds/718699_505826804.html <https://www.aliexpress.com/store/group/Openbuilds/718699_505826804.html>)?
+	…
+
+4) Consider other web-shops for engineering and automation makers I happen to stumble upon?
+
+	==> Consider e-bay store of Swiss located vendor of used industry automation equipment (https://www.ebay.co.uk/str/Tanotec?_trksid=p2047675.l2563 <https://www.ebay.co.uk/str/Tanotec?_trksid=p2047675.l2563> )?
+
+	==> Consider UK based MOTIONCO that seems to sell small automation and mechanics parts (https://www.motionco.co.uk <https://www.motionco.co.uk/> )?
+
+	==> Consider USA based McMaster-Carr for sourcing of components  (https://www.mcmaster.com <https://www.mcmaster.com/>)?
+
+		
+		USA based McMaster-Carr seems to sell everything a maker can possibly need?
+
+	==> Consider Swedish tool and assessor shop with seemingly good prices, sortiment and quality (https://www.swedendro-tools.se <https://www.swedendro-tools.se/>)?
+	==> Consider RS Online (https://se.rs-online.com/web/ <https://se.rs-online.com/web/>)?
+	==> Consider Sparkfun (https://www.sparkfun.com <https://www.sparkfun.com/>)?
+
+	==> Consider Robot Shop eu web-shop (https://www.robotshop.com/eu/en/ <https://www.robotshop.com/eu/en/>)?
+	==> Consider the AccuGroup (https://www.accu.co.uk/en/ <https://www.accu.co.uk/en/>)?
+	==> Consider AdaFruit (https://www.adafruit.com/category/227 <https://www.adafruit.com/category/227>)?
+	==> Consider igus (https://www.igusab.se <https://www.igusab.se/>)?
+	==> Consider Wood shop tools from Fine Tools (https://www.fine-tools.com <https://www.fine-tools.com/>)?
+	==> Consider Motedis (https://www.motedis.se/shop/index.php <https://www.motedis.se/shop/index.php>)?
+	==> Consider JBCNC (https://www.jbcnc.se/en/ <https://www.jbcnc.se/en/>)?
+	==> Consider WoodWorking web shop (https://www.woodworking.se <https://www.woodworking.se/>)?
+	==> Consider Conrad web-shop )https://www.conrad.se/Automatiseringsteknik.htm?websale8=conrad-swe&ci=SHOP_AREA_14743 <https://www.conrad.se/Automatiseringsteknik.htm?websale8=conrad-swe&ci=SHOP_AREA_14743>)?
+	==> Consider Sorotec web-shop (https://www.sorotec.de/shop/ <https://www.sorotec.de/shop/>)?
+		==> Also see “Sorotec - Order Confirmation/ Order: A18-88388”
+	==> Consider Welectron web-shop (https://www.welectron.com <https://www.welectron.com/>)?
+	==> Consider National Instruments Digilent electronics, open source and robots products (https://store.digilentinc.com <https://store.digilentinc.com/>)?
+
+		==> Consider Swedish Electro:kit sortiment of Digilent products (https://www.electrokit.com/productsearch?id=1&q=digilent&cathandle=search <https://www.electrokit.com/productsearch?id=1&q=digilent&cathandle=search>)?
+
+	==> Coinsider Metrix electrical and electronics lab instruments (https://www.metrix-electronics.com/shop-category/ <https://www.metrix-electronics.com/shop-category/> )?
+
+	==> Consider ebay (https://www.ebay.com/sch/Parts-Accessories/11332/i.html?_fsrp=1 <https://www.ebay.com/sch/Parts-Accessories/11332/i.html?_fsrp=1>)?
+	==> Consider “ElectronicFans” on AliExpress (https://www.aliexpress.com/store/1414081?spm=2114.10010108.100005.1.420d2479ssbWDw <https://www.aliexpress.com/store/1414081?spm=2114.10010108.100005.1.420d2479ssbWDw>)?
+	
+5) Consider Open Source hardware and similar shared designs?
+
+	==> Consider Thingiverse (https://www.thingiverse.com <https://www.thingiverse.com/>)?
+	
+6) Consider dedicated vendors of gears, spurs, drive and automation?
+
+	==> Consider UK based “HPC Gears” (https://www.hpcgears.com/n/left_menu/contacts/contacts.php <https://www.hpcgears.com/n/left_menu/contacts/contacts.php>)?
+
+		==> Their catalogue seems to live here (https://www.hpcgears.com/pdf_c33/download.php?file=cat-c37.pdf <https://www.hpcgears.com/pdf_c33/download.php?file=cat-c37.pdf>)?
+
+	==> Consider Swedish based (Täby!) “Translev AB” (http://www.translev.se/index.htm <http://www.translev.se/index.htm>)?
+
+		==> Consider to VISIT them?
+
+	==> Consider “Mekanex” with office in Sollentuna (https://www.mekanex.se <https://www.mekanex.se/>)?
+
+		
+
+	...
+
+…
+
+Consider to update this Todo with information on purchase experiences, delivery costs and optional web places to order from?
+...
+
+	
+
+	
+
+	
+
+	
+
+	

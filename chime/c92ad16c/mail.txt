@@ -1,0 +1,10 @@
+﻿For large files of binary data it would be very memory consuming to use the large sequence length required to perform file diffs (sequence size must be in parity with file size to detect matching parts)?
+
+1) Consider to define file-window partitioning algorithms able to efficiently identify parts of two files that match (and does not need diff application)?
+2) Elaborate on the problem of finding translated data in file (i.e. identify window size and location in new file)
+3) Consider using check-sum/hash value comparison of sliding windows?
+4) Consider to apply covariance to identify translated data (matching window in new file)?
+...
+
+Consider to elaborate on this idea to partition compared file into windows and apply efficient algorithms to identify translated windows in the new files?
+...

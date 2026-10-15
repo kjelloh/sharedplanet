@@ -1,0 +1,7 @@
+﻿The problem of knowing who owns a resource and who is responsible to delete it is a constant problem when values are passed between interfaced components of code. What does Herb Sutter (and possible others) have to say, and why, when it comes to C++ code design?
+
+1) Herb Sutter seem to give a good discussion and proposals at this page (http://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/)?
+…
+
+Consider to delve into this matter and come up with some guidelines and motivations for those in C++ programming?
+...

@@ -1,0 +1,51 @@
+# Todo: House Build - Consider to document some key sources of information about electrical installations data and standards (Sweden and Europe)?
+
+```#3913351f``` *As of 2019-10-14 10:21*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Top build my house I need some good sources of information as base for my decisions and design.
+
+-1) Consider to delve into my ordered books about elctrical installations standards and recommendations?
+
+> ![](PastedGraphic-1.png)
+
+1) Consider the Swedish site "Svensk Elstandard" ([https://elstandard.se](https://elstandard.se/) )?
+
+==&gt; It seems they are a non profit organisation assigned by the Swedish government to organise and lobby for Swedish electrical installation standars (<https://elstandard.se/om-sek-svensk-elstandard/> )?
+
+> *"SEK är svensk nationalkommitté i IEC, International Electrotechnical Commission. IEC och det internationella standardiseringsarbetet är stommen i SEKs verksamhet och standarder från IEC ligger till grund för de flesta europeiska och svenska standarder inom det elektrotekniska området."*
+
+> *"**SEK Svensk Elstandard är en ideell organisation som drivs utan vinstintresse och som är utsedd av regeringen att ansvara för all standardisering inom det elektrotekniska området i Sverige.**"*
+
+==&gt; It seems "Svensk Elstandard" has gathered a good list of FAQ regarding electrical installations (<https://elstandard.se/faq/> )?
+
+==&gt; It seems Swedish electrical installations must comply with SS 436 40 00?
+
+==&gt; It seems "Svensk Elstandard" sels a good book "SEK Handbok 444, utg 2.1:2019" that I can rely on for electrical installation standards for my House Build (<https://shop.elstandard.se/Produkt/2069601/SEK-Handbok-444--utg-2-1-2019> )?
+
+> ![](PastedGraphic-4.png)
+
+==&gt; It seems "Svensk Elstandard" sels a good book "SEK Handbok 436, utg 3.1:2017" that seems to be a compact reference guide for electrical installations (<https://shop.elstandard.se/Produkt/1884901/SEK-Handbok-436--utg-3-1-2017> )?
+
+> ![](PastedGraphic-3.png)
+
+2) Consider to verify this table of cable areas for different fuse installations?
+
+==&gt; It seems according to this discussion thread there is a quite clear correlation between required cable dimension and the fuse we must install for the such circuit (<https://www.varmepumpsforum.com/vpforum/index.php?topic=23561.0> )?
+
+> "Hej Crille! Om det är frågan om en fast installation så skall det enligt bestämmelserna vara en min kabelarea på 1,5 mm2, och denna kabelstorlek är då avsedd för 10 Amp säkring enligt följande ordning:
+
+> **10A = 1,5 mm.  
+> 16A = 2,5 mm.  
+> 20A = 4,0 mm.  
+> 25A = 6,0 mm.  
+> 32A = 10 mm  
+> 63A = 16 mm**"
+
+**TODO: Check in books from "Svensk Elstandard" ("SEK Handbok 436" and "SEK Handbok 444" that these dimensions and fuse requirements are correct? **
+
+...
+
+{% endraw %}

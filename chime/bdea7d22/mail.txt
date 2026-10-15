@@ -1,0 +1,31 @@
+﻿I want to have access to more "self generated" electricity and a heat engine seems a good choice?
+
+1) Consider the basic idea of generating electricity from the heating system?
+
+The basic idea is that Caravans almost always have gas driven heating systems. So the shortest path to generate electricity is to steal some of the heat and drive a heat engine coupled with an electric generator.
+
+I imagine, especially in colder climates like Sweden, I already need to heat my caravan most of the year anyways. So stealing some heat and turn into electricity could be done with high efficiency as long as the rest heat is still needed (consumed)?
+
+Ok, so with a better insulated caravan the excess heat produced to generate the electricity I need may be more than I can make use of?
+
+Lets assume I want electricity for a lap top, a phone, lighting and some smaller motors like radiator pumps and water pumps. Also a compressor refrigerator would be preferred? I wonder how much electricity this would amount to each day.
+
+Let's say, in worst case scenario, I need 22 kg of propane for heating in seven day (allegedly from my cousin in cold winter camping). With 14 kWh / kg for propane this amounts to 308 kWh, 44 kWh per day i.e., 1900 W continuously.
+
+If I could steal all this heat to drive a Stirling engine I assume I can expect an efficiency of say 15 - 20 %? This would mean 285W electricity and still have around 1600W left as heat?
+
+In ten hours I could charge a 2 kWh battery? And I would have 6,8 kWh electricity available per day?
+
+That should be more than enough?  
+
+2) Consider the energy consumption of an electric refrigerator and freezer?
+
+There is something in me that thinks a good fridge and freezer should only operate against the outdoor temperature? In that way, in Sweden, we would need to actually cool the fridge only in summertime and the freezer much less in the winter times.
+
+So, is there a reason that fridges and freezers don't take outdoor air to use as coolant?
+
+I speculate that a normal fridge is optimised to operate in room temperature and uses a thermal cycle and refrigerant that boils at a temperature that fits a room temperature surroundings?
+
+Anyhow, we also have heat pumps that are able to operate at different outdoor temperatures. So there should be a way to design a fridge and freezer as such a heat pump? Also adopting the ability to reverse the heat transfer when required (cooler outside than in the fridge or freezer?).
+
+...

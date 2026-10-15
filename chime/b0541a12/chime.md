@@ -1,0 +1,18 @@
+# Todo: Konstruera en rodd-cykel
+
+```#b0541a12``` *As of 2015-07-25 23:47*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Det borde vara möjligt att göra en rodd-cykel som fungerar som en rodd-båt gör fast med ännu snävare svängradie.
+
+1. Man ror med både armar och ben (sätet rör sig).
+2. Kraften omformas till två hjul (cykel) och man färdas i blick-riktningen.
+3. Man styr genom att applicera olika kraft på höger och vänster sida (är detta hörbart mekaniskt?)
+4. Man kan också styra genom att ”bromsa” med en paddel samtidigt som man paddlar med den andra (på samma sätt som när man ror)
+
+http://www.rowingbike.com/en/ (men man stur inte med ”åror”)  
+https://www.youtube.com/watch?v=SIaQxdcGcEI
+
+{% endraw %}

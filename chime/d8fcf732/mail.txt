@@ -1,0 +1,15 @@
+﻿It just sruck me that if we can make a Tha aware compiler infer types and data structures from meta 0 level (raw data) we may very well have found the most powerful feature of Tha?
+
+1) Consider what "infer from meta 0" as in inferring data structures from raw data into Tha models could actually be all about?
+
+So the idea here is that with the infer operator that tries to match an instance to a meta value that can instantiate it we should be able to take also meta 0 data, as in raw data on a file for example, and trying to infer it to say an XML format model? For this to work we need the infer operator being able to query existing types for their correlation between constructor arguments and instantiated data. Let's say we begin by actually writing an XML data type that when instantiated on meta-1 level as an object is able to generate XML formatted output. Now normally we do this in run time. Like in C++ we code some XML generator object that in meta-0 code generates Meta-0 data that is XML output. But if we instead with a Tha aware compiler could instantiate a meta-1 object that generates XML output when compiled? Hm... No, that won't fly. So far I have not imagined the compiler to be able to compile stuff into XML data. What would that even mean? We want the compiler to generate code that will execute on a CPU. Anything else would just be confusing would it not?
+
+Still, there is no way around it that XML data exists on the meta-0 level form the Tha model view of things. So we are in fact stuck with the requirement that for a Tha aware compiler to be able to infer any meta-1 variables, meta-2 types and meta-3 compositions we need the compiler to also produce the same XML data down to the meta-0 layer. Ok, let's assume we are able to express on meta-1 level a defacto constructor that takes meta-1 values (literals and constants) and generates XML formatted meta-0 data. Then the compiler should in theory also be able to apply the reverse "infer" operator (a C++ auto on steroids) to figure out and instantiate such an object from raw data too? First of all, it only needs to consider meta-1 objects (i.e., named variables) that has a defacto member operator. Then it need a way to reverse-engener  what the defacto operator does and then infer the inout arguments to feed to this operator to get the actual XML data it is currently using as inout?
+
+So, the result of inferring an XML generating defacto operator (constructor) fromXML data is the values of the input argument to that constructor.
+
+Hm... I need to give this more thought. At this stage of first impression of the value of this idea is a bit confusing and perhaps disappointing. So we may be able to generate a bunch of constant values and literals from an XML file. But how useful it that? My intuition was more along the lines of using "infer from meta-0 raw data" to actually be able to get types and data structures. Maybe taht is also possible by applying infer again to get to meta-2 and meta-3 constructs? On the other hand, being able to generate constants and literals from raw data inpout could be existing too?
+
+TO BE CONTINUED...
+
+...

@@ -1,0 +1,38 @@
+# Todo: Consider to delve into the work of mathematician Norman J. Wildberger and computer scientist Alexander Stepanov as sugested by Swedencpp talk by Petter Holmberg?
+
+```#4ba620b0``` *As of 2019-06-26 15:24*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+From Petter Holmberg Swedencpp talk in june I got the incitement to look into the work of mathematician Norman J. Wildberger and computer scientist Alexander Stepanov.
+
+1) Consider the swedencpp talk "Petter Holmberg: Ancient Math / Modern C++" (<https://www.youtube.com/watch?v=mjEI7pO62PM&t=120s> )?
+
+> *So far I think this was the best Swedencpp talk I have attended. I also found the talk one of the best on the subject of programming, C++ and mathematics.*
+
+2) Consider the youtube channel "Insights into Mathematics" of mathematician Norman J. Wildberger (<https://www.youtube.com/user/njwildberger/featured> )?
+
+> *I am very curious and excited about the potential that Norman J. Wildberger may in fact be talking about a foundation of mathematics that looks suspiciously at the notion of infitesimals and infinity. It seems he heading down the path I have had an intuition about that mathematics is in fact "just" a way to abstractly enumerate "things" as in abstractly naming individuals of some identified "category" to enable computation on shared properties as count, count of counts (area) and count of count of count (volumes)? In my intuition I suspect the model of infinitesimals and infinity is "just" a way to ensure that the computation we do is abstract enough to encompass anything we may encounter in the real world? But in the real world there are no things that are infinitesimal small or infinitely large?*
+
+> *I am looking forward to see if professor Norman J. Wildberger would somehow agree with me in this intuition of mine?*
+
+==&gt; Consider wikipedia on Infinitesimals (<https://en.wikipedia.org/wiki/Infinitesimal> )?
+
+> *"In mathematics, infinitesimals are things so small that there is no way to measure them. The insight with exploiting infinitesimals was that entities could still retain certain specific properties, such as angle or slope, even though these entities were quantitatively small."*
+
+3) Consider materials produced by Alexander Stepanov?
+
+==&gt; Consider the playlist "Four Algorithmic Journeys Part 1: Spoils of the Egyptians" (<https://www.youtube.com/playlist?list=PLHxtyCq_WDLV5N5zUCBCDC2WqF1VBDGg1> )?
+
+==&gt; Consider the playlist "Four Algorithmic Journeys Part 2: Heirs of Pythagoras" (<https://www.youtube.com/playlist?list=PLHxtyCq_WDLW0NqZCcrrQUa24H_af6Mrn> )?
+
+==&gt; Consider the playlist "Four Algorithmic Journeys Part 3: Successors of Peano" (<https://www.youtube.com/playlist?list=PLHxtyCq_WDLXrHwcaay14-4FXdzQBIMGx> )?
+
+==&gt; Consider the playlist "Four Algorithmic Journeys: Epilogue" (<https://www.youtube.com/playlist?list=PLHxtyCq_WDLVQPzEm3igPiYOR68HQcMZT> )?
+
+==&gt; Consider the youtube playlist "AlexFest!" (<https://www.youtube.com/playlist?list=PLHxtyCq_WDLWyNjTNTxEow-6EgF2roZOu> )?
+
+![](<Screenshot 2019-06-26 at 15.11.34.png>)
+
+{% endraw %}

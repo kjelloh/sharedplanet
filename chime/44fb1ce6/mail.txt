@@ -1,0 +1,39 @@
+﻿It seems we need some elegant and concise way to ”know” where identifiers and values created by the Repl evaluator gets stored?
+
+1) Consider how to mutate identifier and value presence in the actual Meta Value Model?
+
+	==> Consider that in our Meta Value Model values are all there is?
+
+		==> Thus values, meta-values and Identifiers are all values (and there is nothing else in there)?
+		==> Thus the problem is to define where defined values gets stored?
+
+	==> Consider the Repl keeps track of ”current environment” (e.g., by default the Model tree root)?
+
+		>(declaration count meta.number) // would store created Identifier
+
+	…
+
+2) Consider we need this mechanism also for execution of modelled functions (functions in the model)?
+
+	==> Functions in the model must execute in some environment to have access to values and be able to mutate values in the model)?
+
+	==> Consider how modelled functions shall execute in environments they mutate (new state)?
+
+		==> Consider to study how Lisp and Scheme does this (they have a mutable environment)?
+		==> Consider how Clojure and Elm does this (they do not mutate their own environment)?
+
+	==> Consider how modelled functions shall return mutated version of the model they mutate?
+
+		…
+
+	==> Consider mutation of the environment is not a problem for the mutating function?
+
+		==> The function will operate on its own immutable values (so it will be able to access the mutated state through its local instances)?
+		==> And new model instances is created as side-effects?
+		..
+
+…
+
+Consider to find a good design for this in our Repl (possibly applying a scheme from some of the existing language Repls like Lisp, Clojure or Elm)?
+... 
+

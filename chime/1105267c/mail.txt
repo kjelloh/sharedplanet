@@ -1,0 +1,70 @@
+﻿It seems like a good idea to document how I moved the compressor destination in FCPX to re-use them in my Mac Pro 2013 machine?
+
+1) It seems the settings are as files with extension ".cmprstng" in sub-folder "Application Support/Compressor/Settings/Video Uploads/" in user folder "Library"?
+
+	==> Consider the compressor settings file "/Users/kjell-olovhogdahl/Library/Application Support/Compressor/Settings/Video Uploads/My Youtube Upload Setting.cmprstng"?
+
+It seems a file like my "/Users/kjell-olovhogdahl/Library/Application Support/Compressor/Settings/Video Uploads/My Youtube Upload Setting.cmprstng" is a settings file that FCPX finds and uses to show a destination called "My Youtube Upload Setting"?
+
+	
+	
+	Final Cut Pro lists the destination "My Youtube Upload Setting" as a result of finding the file "My Youtube Upload Setting.cmprstng" in user path "../Library/Application Support/Compressor/Settings/Video Uploads/"
+	
+	==> It seems I can access the "Library" folder in Mac OS by holding down the "alt" (option) key and select <Go>/<Library> in Finder?
+
+2) Consider how I transferred my Compressor destination settings files to my Mac Pro and made them work there?
+
+	(1) On my Macbook Pro 2014 I opened Apple Compressor and from the "Settings" pane I dragged the files under <CUSTOM>/<Video Uploads> to this mail (See attached files below)
+	(2) On my Mac Pro I dragged the compressor settings files from this mail to the "Settings" pane and the folder <CUSTOM> / <Video Uploads>  
+
+		
+		
+		Apple Compressor settings files can be dragged and dropped for sharing (e.g., to an email to be transferred to another computer)
+
+		==> Also see Apple support "Compressor: Create and work with custom settings" (https://support.apple.com/kb/PH21177?locale=en_US&viewlocale=en_US <https://support.apple.com/kb/PH21177?locale=en_US&viewlocale=en_US> )?
+
+"Save and share custom settings
+
+You can save a custom setting as a file and share it with colleagues or move it from one system to another.
+
+	• Drag a setting from the Settings pane in Compressor to the Desktop.
+
+The setting will be saved as a file, which can then be moved, copied, emailed or otherwise transferred to another user’s Mac. The recipient just needs to drag the file into the Custom folder of the Settings pane in Compressor.
+
+Tip: You can even drag the custom setting directly to (and from) the body of an email message in Mail."
+
+
+
+
+
+		NOTE: I had to drag one file at a time (the email only added one file if I tried two drag two files there)
+
+	==> It seems if I drag and drop compressor settings files into the "Settings" pane some magic happens and not FCPX can "see" them as addable compressor settings?
+
+	
+	Custom Compressor settings available to add in final cut pro after the settings files has been dropped into Compressor application "Settings" pane
+
+3) Consider to understand what is happening "behind the scenes" when I transfer Compressor settings files between computers?
+
+	==> It seems some "magic" happens if I drop compressor settings files into the "Settings" pane of the compressor application?
+
+First I tried to manually copy compressor setting files to the inferred location users folder "../Library/Application Support/Compressor/Settings/Video Uploads". But then I failed to see any of these settings being available to add as compressor settings in final cut pro. But when I dropped the files into the "Settings" pane of the Compressor application, then they DO show up in final cut pro. So there is probably some magic going on under the hood when dropping the files into the compressor app. I can only guess but I suppose there are some more configuration files that need to be updated for Compressor and Final Cut Pro to be in agreement on what settings are available to share between them?
+
+	==> It seems On my Macbook Pro 2014 the compressor settings files are in users folder "../Library/Application Support/Compressor/Settings/Video Uploads" into this mail (Se attached files)
+
+		NOTE: In finder you must hold the "alt" (option) key and do <Go> / <Library> and navigate to "Application Support/Compressor/Settings/Video Uploads"
+
+	==> It seems it is NOT enough to just copy the compressor destination settings files to the new computer to the folder users folder "/Application Support/Compressor/Settings/Video Uploads"
+
+		NOTE: I tried and had to create the folder "Video Uploads"
+
+		NOTE: The settings now showed in Compressor but was NOT available (visible) in FCPX as destinations
+
+		
+		
+
+		Compressor destination settings files copied to "/Application Support/Compressor/Settings/Video Uploads" of user folder "Library" (alt + <Go>/<Library> in Finder)
+
+	
+
+...

@@ -1,0 +1,14 @@
+# Todo: spc - when proven wrong I will accept to change opinion
+
+```#f0a72512``` *As of 2015-04-02 21:27*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I will seek information about what works and what does not. When reason and information is in favour of a new way to do things I will do my best to accept the new way.
+
+I will let desire empower me to take action and reason and information to do what works best.
+
+Skickat från min iPhone
+
+{% endraw %}

@@ -1,0 +1,44 @@
+﻿It seems we may define all Tha infer operations as matching operations between binding lists?
+
+	==> Also see “Todo: Tha - Consider to define mtea-2 value "inferred" that constructs generic meta-1 value (they apply pattern matching to define meta-0 values)?”
+	==> Also see ”Todo: Meta Value Model - Consider in Meh we define meta-1 name "a" as a generic (any) type to be inferred from (Haskel and Elm style)?”
+	==> Also see ”Todo: Meta Value Model - Consider mechanisms to create and apply pattern matching using existing model meta-values and explicit UML-like model patterns?”
+	==> Also see ”Todo: Meta Value Model - Consider to implement a value-to-meta-value-contract matching ability as implemented by Clojure.spec?”
+
+1) Consider what inference operations we can implement just based on [binding] -> [binding] operations?
+
+	==> Consider infer is a Tha operation?
+
+	infer: [binding] -> [binding] -> [binding] // matches two binding lists and returns a resulting binding list
+
+	==> Consider infer succeeds if the inferred list of bindings carries the information required (we may infer structure, declaration, definitions or names)?
+
+	==> Consider the result of infer is a list that is isomorphic in structure to the source binding list?
+
+		==> In this way we can match a record to a tuple or a list or any sequenced data structure?
+		==> Also see Clojure.spec (Se referenced Todo above)
+		…
+
+2) Consider to compare with C++ binding lists (and identified C++ inferences)?
+
+	==> It seems we can make some observations regarding how different forms of “lists” are expressed and defined in C++?
+
+		==> It seems C++ functions are declared using (binding, binding, binding) for the argument-list (http://en.cppreference.com/w/cpp/language/function <http://en.cppreference.com/w/cpp/language/function>)
+		==> So (binding, binding, binding) <=> {binding;binding;binding} is syntactic sugar to make functions look like its mathematical counterpart?
+		==> C++ also uses the syntax {literal, literal, literal} for initialiser-lists, also called braced-initilizer-list (http://en.cppreference.com/w/cpp/utility/initializer_list <http://en.cppreference.com/w/cpp/utility/initializer_list>)?
+		==> AND - the initialiser-list can only contain literals (it is a compile-time only instance) (http://en.cppreference.com/w/cpp/utility/initializer_list/initializer_list <http://en.cppreference.com/w/cpp/utility/initializer_list/initializer_list>)?
+		==> Further - Lambda captures defines the capture list on the form [binding, binding, binding] (http://en.cppreference.com/w/cpp/language/lambda#Lambda_capture <http://en.cppreference.com/w/cpp/language/lambda#Lambda_capture>)?
+
+		{binding, binding; binding} = environment member list (braced comma separated list)
+		(binding, binding, binding) = function argument list (parenthesised comma separated list)
+		{literal, literal, literal} = std::initialiser_list (braced coma separated list
+		[binding, binding, binding] = lambda capture list (bracketed comma separated list)
+
+		{binding, binding; binding} = {literal, literal, literal} // environment definition = value binding
+		[binding, binding, binding] = {binding, binding, binding} // lambda capturing
+		{binding, binding; binding} = {binding, binding; binding} // copy instantiation
+	...
+
+…
+
+Consider to elaborate in this proposal to define an infer operation that operates solely on list of bindings?

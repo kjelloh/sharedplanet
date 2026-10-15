@@ -1,0 +1,32 @@
+# Todo: Consider to impact-drive a circular saw blade (potentially "hack" through the material on safe and lower rotation speed)?
+
+```#cba7e4f9``` *As of 2018-12-06 22:31*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be possible to “impact-drive” a circular saw blade (and possibly get some unthought of benefits vs a fast rotating circular saw blade)?
+
+1) Consider to test to “simply” try driving a circular saw blade using an impact driver for screws?
+
+==&gt; Consider we can mount the saw blade on an drive shaft with a hex head that fit an impact screw driver bit?
+
+![](IMG_0013.jpeg)
+
+==&gt; Consider to test how “impact-drving” the saw blade will actually cut the wood?
+
+2) Consider the possible benefits from “impact-driving” a circular saw blade?
+
+==&gt; Consider we can spin the circular saw blade at much slower rate (the teeth will still cut at hight speed at each impact)?
+
+==&gt; Consider tests may show that the blade cuts better (less splintering or cleaner cuts)?
+
+==&gt; Consider we can cut through wood spending less energy (I have ni idea, but physics can surprise) ;)
+
+…
+
+…
+
+Consider to delve into this idea of impact-driving a circular saw blade to see if there are any benefits to e.g., cutting wood?
+
+{% endraw %}

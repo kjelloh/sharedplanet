@@ -1,0 +1,142 @@
+﻿Are there alternative "low noise" wind harvesting mechanisms we can investigate ( and trade less energy efficiency for lower noise operation)?
+
+	==> Also see "Todo: Wind Energy - Consider to try and train a neural network to optimise the power output of a wind turbine?"
+	==> Also see "Todo: Consider a compliant mechanism wind energy harvester ("turbine") based on "flapping" movement of magnet caused by Bernoulli  effect or some flapping wing shape?"
+	==> Also see "Todo: Consider to design and build my own vertical axis wind turbine?"
+	==> Also see "Todo: Consider to research and perhaps build the 3D Printer Wind Turbine "WindPowerPrint"?"
+	==> Also see "Todo: Consider available Computational Fluid Dynamics (CFD) software to use to simulate things like wind turbines and dust and coagulant  extraction and cyclone separators?"
+	==> Also see "Todo: Wind Power - Consider to try out existing vertical wind generator products?"
+	==> Also see "Todo: Wind Energy - Consider to research on wind energy using a drone brushless engine and DIY wind tunnel and controller?"
+
+
+1) Consider to elaborate on a design where we utilise the lift force of a wing to drive a fly wheel?
+
+
+Can we utilise the lift force of a wing to drive a fly wheel?
+
+The main idea here is to utilise the lift force on a wing in the wind to drive a fly wheel and then an electric generator.
+
+To make this work we have to add an additional mechanism so that we can change the wing attack angle when we re-position the wing into its low position for a new cycle. Either we do something with the orientation of the wing so that we do not have to loose energy fighting the wind when we lower the wing again. But even better would be to somehow position the wing so that in the down stroke the wind actually produces a down force. In effect driving the wing in both the up-stroke and down-stroke movement.
+
+2) Consider if we can even design a "three phase" version of this flapping wing wind energy harvester?
+
+
+
+
+
+
+From a one-wing design we should be able to build a "three phase" solution where three wings drive the fly wheel each 120 degrees offset relative each other. If we also have the wings operate on different heights we may be able to have each wing harvest its own layer of wind flow. Also, the angle offset may allow us to reduce the inertia requirements of the fly wheel as the three phase arrangement will by itself always drive the wheel in the same direction?
+
+3) Consider to compare with this paper "VERTICAL-STALK FLAPPING-LEAF GENERATOR FOR WIND ENERGY HARVESTING" (http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.375.7777&rep=rep1&type=pdf <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.375.7777&rep=rep1&type=pdf> )?
+
+It seems in this paper they investigate the use of piezo electric materials to convert the "flapping" of "leafs" into electric energy. So this is a little different than my idea of forcing a wing to move in a pure sinusoidal pattern and drive a fly wheel. But it is still an interesting look into how we may harvest pseudo-random movement of flapping "leaves" into electric energy.
+
+
+
+
+
+
+	==> Consider to follow up on the references as leads into more work of "flapping mechanism" wind harvesting mechanisms?
+
+REFERENCES
+
+[1] Anton, S.R., and Sodano, H.A., 2007, “A Review of Power Harvesting Using Piezoelectric Materials (2003- 2006),” Smart Materials and Structures, 16, pp.R1-R21.
+
+[2] Paradiso, J.A., Starner, T., 2005, “Energy Scavenging for Mobile and Wireless Electronics,” IEEE Pervasive Computing, 4(1), pp. 18-27.
+
+[3] Sodano, H.A., Park, G. and Inman, D.J., 2004, “A Review of Power Harvesting from Vibration using Piezoelectric Materials,” The Shock and Vibration Digest, 36(3), pp.197-205.
+
+[4] Priya, S., 2007, “Advances in Energy Harvesting Using Low Profile Piezoelectric Transducers,” Journal of Electroceramics, 19(1), PP. 167-184.
+
+[5] Roundy, S., Wright, P.K., and Rabaey, J., 2003, “A Study of Low Level Vibrations as a Power Source for Wireless Sensor Nodes,” Computer Communications, 26(11), pp. 1131-1144.
+
+[6] Roundy, S., and Wright, P.K., 2004, “A Piezoelectric Vibration Based Generator for Wireless Electronics,” Smart Materials and Structures, 13(11), pp.1131-1142.
+
+[7] Shen, D., Choe, S., and Kim, D., 2007, “Analysis of Piezoelectric Materials for Energy Harvesting Devices under High-g Vibrations” Japanese Journal of Applied Physics, 46(10A), pp.6755-6760.
+
+[8] Sodano, H.A., Park, G. and Inman, D.J., 2004, “Estimation of Electric Charge Output for Piezoelectric Energy Harvesting,” Journal of Strain, 40(2), pp.49-58.
+
+[9] Taylor, G. W., Burns, J. R., Kamman, S. M., Powers, W. B., and Welsh, T. R., 2001,“The Energy Harvesting Eel: A Small Subsurface Ocean/River Power Generator,” IEEE Journal of Oceanic Engineering, 26(4), pp. 539-547.
+
+[10] Allen, J. J., and Smits, A.J., 2001, “Energy Harvesting Eel” Journal of Fluids and Structures, 15, pp.629-640.
+
+[11] Priya, S., 2005, “Modeling of Electric Energy Harvesting Using Piezoelectric Windmill,” Applied Physics Letter, 87, pp.184101
+
+	• [12]  Myers, R., Vickers, M., Kim, H., and Priya, S., 2007, “Small Scale Windmill,” Applied Physics Letter, 90, pp. 054106.
+
+	• [13]  Ward, L. "Wind Belt - the Latest in Wind Power." Ecofriend. Nov. 2007. Popular Mechanics. 30 Jan. 2008.
+
+	• [14]  Piezoelectric Trees-aesthetically pleasing wind power, 2002,http://www.halfbakery.com/idea/Piezoelectric_20Tre es.
+
+	• [15]  Dickson, R.M., 2008, “New Concepts in Renewable Energy,” pp. 33-34, http://newrenewables.net/
+
+	• [16]  Williamson, C.H.K., 1996, “Vortex Dynamics in the Cylinder Wake,” Annual Review of Fluid Mechanics, 28, pp.477-539.
+
+	• [17]  Measurement Specialties, Inc, 2008, “Piezo Film Product Guide and Price List,”pp.4-6.
+
+	• [18]  Shukla, S., Govardhan, R.N., and Arakeri, J.H., 2009, “Flow Over a Cylinder with a Hinged-Splitter Plate,” Journal of Fluids and Structures, article in press, doi:10.1016/j.jfluidstructs.2008.11.004
+
+	• [19]  Huang, L., 1995, “Flutter of Cantilever Plates in Axial Flow,” Journal of Fluids and Structures, 9, pp. 127-147.
+
+	• [20]  Argentina, M., and Mahadevan, L., 2005, “Fluid-Flow- Induced Flutter of a Flag,” Proceedings of the National Academy of Sciences, 102, pp. 1829-1834.
+
+	• [21]  Tang, L., and Païdoussis, M.P., 2007, “On the Instability and the Post-Critical Behavior of Two-Dimensional Cantilevered Flexible Plates in Axial Flow,” Journal of Sound and Vibration, 305, pp. 97-115.
+
+	• [22]  Eloy, C. Souilliez, C., and Schouveiler, L., 2007, “Flutter of a Rectangular Plate,” Journal of Fluids and Structures, 23, pp. 904-919.
+
+	• [23]  Zhang, J., Childress, S., Libchaber, A., and Shelley, M., 2000, “Flexible Filaments in a Flowing Soap Film as a Model for One-Dimensional Flags in a Two-Dimensional Wind,” Nature, 408, pp. 835-839.
+
+[24] Connell, B.S.H., and Yue, D.K.P., 2007, “Flapping Dynamics of a Flag in a Uniform Stream,” Journal of Fluid Mechanics.581, pp.33-67.
+
+[25] Mustafa, G., and Ertas, A., 1996, “Dynamics and Bifurcations of a Coupled Column-Pendulum Oscillator,” Journal of Sound and Vibration, 182(3), pp.393-413.
+
+[26] Cuvalci, O., and Ertas, A., 1996, “Pendulum as Vibration Absorber: Experiments and Theory,” Journal of Vibration and Acoustics, 118, pp.558-566.
+
+[27] Cuvalci, O., 2000, “The Effect of Detuning Parameters on the Absorption Region for a Coupled System: a Numerical and Experimental Study,” Journal of Sound and Vibration, 229(4), pp.837-857.
+
+[28] Nayfeh, A.H., and Mook, D.T., 1995, “Energy transfer from high-frequency to low-frequency modes in structures,” Journal of Vibration and Acoustics, 117, pp.186-195.
+
+[29] Alben, S., and Shelley, M., 2008, “Flapping States of a Flag in an Inviscid Fluid: Bistability and the Transition to Chaos,” Physical Review Letters, 100, pp.074301.
+
+[30] Wang, Z., and Xu, Y., 2007, “Vibration Energy Harvesting Device based on Air-Spaced Piezoelectric Cantilevers” Applied Physics Letter, 90, pp.263512.
+
+[31] Kim, H.W., Batra, A., Priya, S., Uchino, K., Markley, D., Newnham, R.E., and Hofmann, H.F., 2004, “Energy Harvesting Using a Piezoelectric ‘Cymbal’ Transducer in Dynamic Environment,” Japanese Journal of Applied Physics, 43, pp. 6178-6183.
+
+[32] Chen, C.T., Islam, R.A., and Priya, S., “Electric Energy Generator,” IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control, 53(3), pp.656-661.
+
+[33] Vestas Wind Systems A/S, Wind Turbine Products’ Brochures of V52-850 kW and V90-3.0 MW, http://www.vestas.com/
+
+[34] Bryant M., Garcia E. (2009) “Aeroelastic Vibration Power Harvester Design”, Dynamics, Systems and Control Seminar Series, Ithaca NY, March 27, 2009.
+
+4) Consider this research paper "Portable Wind Energy Harvesters for Low-Power Applications: A Survey" (https://www.researchgate.net/publication/305414684_Portable_Wind_Energy_Harvesters_for_Low-Power_Applications_A_Survey <https://www.researchgate.net/publication/305414684_Portable_Wind_Energy_Harvesters_for_Low-Power_Applications_A_Survey> )?
+
+"The electrical power generation methods of portable wind energy harvesters are surveyed in three major groups, piezoelectric-, electromagnetic-, and electrostatic-based generators. The paper also takes another view of this area by gauging the required mechanisms for trapping wind flow from ambient environment. In this regard, rotational and aeroelastic mechanisms are analyzed for the portable wind energy harvesting devices. The comparison between both mechanisms shows that the aeroelastic mechanism has promising potential in producing an energy harvester in smaller scale although how to maintain the resonator perpendicular to wind flow for collecting the maximum vibration is still a major challenge to overcome for this mechanism. "
+
+5) Consider this active rectifier bridge design (https://www.researchgate.net/publication/305414684_Portable_Wind_Energy_Harvesters_for_Low-Power_Applications_A_Survey#pf17 <https://www.researchgate.net/publication/305414684_Portable_Wind_Energy_Harvesters_for_Low-Power_Applications_A_Survey#pf17> )?
+
+
+An example of an active rectifier bridge
+
+6) Consider the Humming-Bird-inspired flapping wing design of the wind turbine designed by tyer Wind (http://www.tyerwind.com <http://www.tyerwind.com/> )?
+
+
+
+
+
+
+
+
+7) Consider the flapping-wing design of the Festo vendor wind energy harvester (https://www.festo.com/group/en/cms/10222.htm <https://www.festo.com/group/en/cms/10222.htm> )?
+
+
+
+
+https://www.festo.com/group/en/repo/assets/media/dualwinggenerator-en-SD.mp4 <https://www.festo.com/group/en/repo/assets/media/dualwinggenerator-en-SD.mp4> 
+
+
+https://www.festo.com/group/en/repo/assets/media/dualwinggenerator-en-SD.mp4 <https://www.festo.com/group/en/repo/assets/media/dualwinggenerator-en-SD.mp4> 
+
+
+
+...
+

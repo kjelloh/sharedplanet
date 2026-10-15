@@ -1,0 +1,15 @@
+﻿By designing a unit that one may charge using any human driven electric generator and that is then able to provide standard electric power outlet it could be used for any household needs?
+
+1) Charge and use for brewing a cup of expresso?
+2) Charge and use to power household vacuum cleaner?
+3) Charge and use LED lights at home?
+4) Consider to install a special household electric circuit that is only powered by thus human charged unit? Several inlets may be installed to allow charging from several places in the household. And several outlets allows plugin different electrical equipment where needed.
+
+Now, the application is limited to equipment that may be powered within the range available to a reasonable time of 100 W charging power. A human is estimated to provide 70 W over 8 hours of heavy labour up to 500 watts of shorter period (trained athletes). On a site (http://mapawatt.com/2009/07/19/bicycle-power-how-many-watts-can-you-produce) the writer provides information that a human may be able to produce an aware of 300 W over one hour and in races cyclers produce an average of 250 W peeking in climbings to about 400-500 W.
+
+This would indicate that a the electrical power we may produce for the household could be from say 100 Wh or 0.1 KWh (100 W in one hour or 200 W in half an hour).
+
+a) What losses can we expect in turning the produced 100 W of energy produced into what is available for consumption by the electric machine? The loss would be mainly in the efficiency of the generator and the losses when turning electricity into batter store energy and than the losses of getting it back again as electric energy.
+b) Here seems to be a good page about human energy outputs, battery charging and calorie versus Joule compoarrisson! (http://scienceshareware.com/bicycle-generator-faq.htm#power). For example, powering a 100W TV for one hour would require burning 86 Calories (25 % efficiency of the human body and 1000 Calories = 4184 J).
+
+...

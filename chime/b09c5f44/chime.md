@@ -1,0 +1,23 @@
+# Todo: Darwinet - Consider MIV model to mimic the ontology of the Swift language
+
+```#b09c5f44``` *As of 2015-09-14 12:52*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+In the apple Swift language they apply a very consistent ontology regarding variables, values and interactions between model, view and controller.
+
+1) All variables are string typed but one type is optional meaning it may be not set (nil) or set to specified strong type (e.g. an optional string or an optional boolean). Consider to mimic this in the ontology of the MIV. A V may be of type optional (meaning it may or may not be set) or always be set (not optionally unset)  
+2) All variables in Swift must be initialized (also optionals that may be initialized to not-set). Let that be true also for V:s. When created they must define an initial value.
+
+Thus:
+
+\* The M of a variable must define its type where optimal is one of the structural types (as array and record)  
+\* The I of a variable must state the initial value (an initial V must be provided)  
+\* The V must array the current value of type defined by M.
+
+It seems we would like to have M carry all current I and each I carry its current V where an I of type optional may lack the V (not yet set).
+
+Consider to map this ontology to C++, C and Java in the Darwinet design manual to better explain how the ontologies maps for those acquainted with other languages.
+
+{% endraw %}

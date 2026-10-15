@@ -1,0 +1,34 @@
+﻿Could it be a good idea to make a Darwinet REPL?
+
+1) Consider a Darwinet REPL as a Console Application?
+
+	==> Consider what commands and semantics to use in the REPL language?
+
+		<Consider queries>
+		==> Consider some way to view MIV member state history (e.g. last 10 mutations)?
+		==> Consider some way to view whole current MIV state (all tree?)?
+		…
+
+		<Consider mutations>
+		==> Consider Set MIV member atom values?
+		==> Consider Create/Destroy MIV member atom instances?
+		==> Consider Create/Destroy Model member atoms?
+		==> Consider Create/Destroy Model Member Structures (Lists, Records, Sets)?
+		==> Consider Model member properties (Cardinality, more…)?
+		…
+
+		<Consider Monitoring>
+		==> Consider default mode for Node is to log Delta Processing?
+		==> Consider trun logging off/on?
+		...
+ 
+2) Consider a Darwinet REPL as a 2D GUI Application (possible also cross-platform to test on Phone or Pad)?
+
+	==> Consider to provide Console 2D Windows in the GUI (implementing the whole REPL semantics as Command Line Interface)?
+	==> Consider some Tree View of the MIV (Model Tree, Instance sub-nodes with atomic elements showing value)?
+	…
+
+…
+
+Consider to elaborate on how a Darwinet REPL could behave?
+...

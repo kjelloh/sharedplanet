@@ -1,0 +1,24 @@
+﻿Consider it could be a good idea to understand and document (as gist?) the flow interface (operator+ chaining style), the builder design pattern and a simple C++ Maybe-Monad described in May Clion C++ video talk?
+
+1) The talk seems to live here (https://www.youtube.com/watch?v=j9arNRRoPe8 <https://www.youtube.com/watch?v=j9arNRRoPe8>)?
+
+2) Consider to try the code in Xcode project?
+
+	==> Created Xcode project “/Users/kjell-olovhogdahl/Documents/XCode/FlowIfcBuilderAndMonads”
+
+	==> Note that C++14 support is required (and Xcode has C++11 support as standard)
+
+	
+
+	…
+
+3) Consider the design patterns we may recognise in this talk?
+
+	==> Consider the “Flow Interface” design pattern (operator/methid returns reference to *this to allow call chains)?
+	==> Consider the Builder design pattern (builder aggregates built object as result and only builder are allowed to create result types)?
+	==> Consider to identify and understand the Monad pattern (in this case the Maybe-monad that takes care of applying provided function only if target exists)?
+	...
+
+…
+
+Consider to publish some gists on the design patterns identified in this talk?

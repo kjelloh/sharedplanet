@@ -1,0 +1,86 @@
+﻿So, what can we do with RAD Studio Firemonkey 3D user interface components?
+
+1) Consider this to be a good start to learn the concepts and idioms (http://docwiki.embarcadero.com/RADStudio/Seattle/en/Tutorial:_Creating_a_FireMonkey_3D_Application)?
+
+	==> See  “V:\workplace\RAD_Studio\MyFmxPandoraPlayground"
+
+	==> First phase is “Creating the User Interface” (http://docwiki.embarcadero.com/RADStudio/Seattle/en/Creating_the_User_Interface_(FireMonkey_3D_Tutorial))
+
+	==> When creating a 3D Multidevice Application the main form inherits from TForm3D.
+
+	class TMainForm : public TForm3D
+
+	==> The example suggests adding a TCube and a TLight to the form thus indicating and object and a light is the basic building blocks?
+
+	==> At this point the application with a default cube and a default light has already some interesting properties.
+
+		==> When resizing the Form the member cube and light are scaled to fit the new size.
+
+		==> The light seem to always be relative the cube (moving the light also moves the cube)?
+		==> NO - It was just because i happened to place the cube as a child to the light object :)
+
+		==> Running the application shows the cube but is has no visible structure (no sider or edges can be seen (it is all uniform red)
+
+	==> The visible object (the cube) has rotate handles on each side and a corner handle for resizing.
+
+		==> The rotate x,y,z are located at each z,y,z face.
+		==> The resize handle has an x,y,z face for resizing that face (plane).
+		==> Resizing applies to selected face (i.e. both with and height of each face can be resized).
+
+	==> Objects textures seem to be added as invisible Fmx components?
+
+		==> Adding a TTextureMaterialSource (as the example suggests) does not show the added components in the visual form?
+
+			==> If copied a jpeg from the internet and saved to bitmap using Windows Paint (got an 1536 x 864 bitmap image)
+
+			==> NOTE_ Later discovered we may load any image-format (jpeg, tiff, gif…)
+
+		==> Set the “MaterialSource” property of one cube to the added TTextureMaterialSource object.
+
+		==> Q: Why doe the added texture only cover 1/10:th of each corner of the cube (I mean, it is 1536x864 pixels)?
+		==> Q: How can I make the selected texture scale to the surface of the cube?
+		==> Q: What is the purpose of “WrapMode” (none of the modes fit, scale, wrap, stretch) seem to make the structure cover the cube surface?
+
+		==> It seems if I load a jpeg image it w i l l wrap the whole cube (strange)?
+
+	==> Seems we need a TLightMaterialSource to make lightening have any effect on the view of the object (make structure/texture visible)?
+
+		==> Added TLightMaterialSource
+
+	==> The design at this stage looked like this (two cubes and one light source)
+
+
+	==> And running it looks like this.
+ 
+	
+
+	==> Second phase is “Creating a 2D Interface in a 3D Application” (http://docwiki.embarcadero.com/RADStudio/Seattle/en/Creating_a_2D_Interface_in_a_3D_Application_(FireMonkey_3D_Tutorial))
+
+	==> Added a TLayer3D to the form.
+
+		==> It seems any 2D fire monkey controls to be added to it?	
+
+	==> Adding a TButton as child to the TLayer3D object and setting its “Projection” to “Screen” seem to make it appear as if a normal 2D panel?
+
+	==> The TTextLayer3D does not seem to allow multiple lines of text?
+
+		==> To show Pandora View of Source Code we need a 2D Richtext Control on a TLayer3D?
+		==> No, there seem to be no Richest component (we need to use a plain TMemo component)?
+		=>= Also see (https://forums.embarcadero.com/message.jspa?messageID=700498&tstart=0)?
+
+	==> The final application according to the example needed up like below.
+
+
+
+		==> Note that TMemo with source-code in the middle.
+		==> Q: Can we make some visual concept images of Pandora C++ Soucre code view in this way (although TMemo does not allow text colouring)? 
+
+
+	WE ARE HERE...
+
+
+	
+
+	
+
+

@@ -1,0 +1,13 @@
+﻿Could the upcoming community platform Gitter be a good candidate for community interactions?
+
+1) It seems to live here (https://gitter.im)?
+
+2) Consider to try the ”early bird” contract for a paid-plan with more features?
+
+3) It seems to be a platform for chat, messaging and content sharing?
+
+4) it seems to integrate well with other sharing services like Github, Bitbucket etc…?
+
+…
+
+Consider to create some communities and try this platform out?

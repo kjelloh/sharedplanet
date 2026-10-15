@@ -1,0 +1,82 @@
+﻿So, could it be worth the investment to buy in to a robotic arm that I can use to experiment with Payment Terminal Testing and different home production?
+
+-1) It seems robot arms can be of “SCARA” type or “Cartesian” type?
+
+	==> Consider the Wikipedia Article on “SCARA” (https://en.wikipedia.org/wiki/SCARA)?
+
+“The SCARA acronym stands for Selective Compliance Assembly Robot Arm or Selective Compliance Articulated Robot Arm.
+
+In 1981, Sankyo Seiki, Pentel and NEC presented a completely new concept for assembly robots. The robot was developed under the guidance of Hiroshi Makino, a professor at the University of Yamanashi. The robot was called Selective Compliance Assembly Robot Arm, SCARA. Its arm was rigid in the Z-axis and pliable in the XY-axes, which allowed it to adapt to holes in the XY-axes. [1] [2]
+
+By virtue of the SCARA's parallel-axis joint layout, the arm is slightly compliant in the X-Y direction but rigid in the 'Z' direction, hence the term: Selective Compliant. This is advantageous for many types of assembly operations, i.e., inserting a round pin in a round hole without binding.
+" 
+	
+
+	==> Consider the Wikipedia article on Cartesian Coordinate Robot (https://en.wikipedia.org/wiki/Cartesian_coordinate_robot)?
+
+“A cartesian coordinate robot (also called linear robot) is an industrial robot whose three principal axes of control are linear (i.e. they move in a straight line rather than rotate) and are at right angles to each other"
+
+	
+
+1) Consider the DoBot Robots?
+
+	==> Consider the DoBot M1 (https://www.dobot.cc/dobot-m1/product-overview.html)?
+
+
+	
+
+
+	==> It seems I can order it form Swedish retailer as a kit for 60 000 (https://identsystem.se/product/dobot-m1/)?
+
+		
+
+	==> It seems for that price I get a whole kit of accessories?
+
+		
+
+	==> Consider the DoBot Magician for ~ 15 000 SEK (https://identsystem.se/product/dobot-magician/)?
+
+		
+
+		==> It seems with the Education kit I also get some production accessories?
+
+		
+
+
+2) Consider the Mecademic Cartesian Robotic Arm (https://www.mecademic.com/products/Meca500-small-robot-arm)?
+
+	
+
+3) Consider the Flux Integration ALLY Model: FLX.ARM.S16.Z10 SCARA Robot Arm (http://www.fluxintegration.com/ally)?
+
+	
+
+	==> It seems to sell for $4300 (http://www.fluxintegration.com/store/ally-flxarms16z10)?
+
+	==> It seems to be available from UK Distributor for £3,400.00 Excluding VAT (https://hagenautomation.com/products/flx-arm-s16)?
+
+4) Consider Presice Automation Scara PF3400 (http://preciseautomation.com/PF3400.html)?
+
+	
+
+5) Consider igus robolink designs (https://robolink-designer.igus.tools/construction?cfg=AANVBytESZFsADSxgAaQAA)?
+
+	
+
+	
+
+6) Consider to design my own SCARA robotic arm?
+
+	==> Consider this “Homemade Scara Robot Arm DIY Robotic Frame Projects Laser 3D Printer Chassis Draw Arduino Control d” youtube video (https://www.youtube.com/watch?v=om05nyXL4TA)?
+
+	==> Consider this “Scara robot” youtube video (https://www.youtube.com/watch?v=l31-OEQNY0A)?
+
+		
+
+	==> Consider this “Scara robot 3D printer 2.0v” 3D Prining SCARA robot (https://www.youtube.com/watch?v=axZ54HZlSCY)?
+
+		
+
+
+
+

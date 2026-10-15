@@ -1,0 +1,57 @@
+﻿It seems I should be able to process my "Todo mails" into documentation using some python script?
+
+	==> Also see "Todo: Python - Consider to document how I got Python "up and running" on my new Mac Pro?"
+	==> Also see "Todo: Python Programming - Consider to learn Python and try Web scraping and IMAP mail fetching using Python Scripts?"
+	==> Also see "Todo: Consider to take the online "Global Warming I" and "Global Warming II" where the latter is building models in Python?"
+
+1) Consider the actual steps I took and the script I ended up writing to read Todo mails using Python?
+	
+	*) I installed official Python 3.7.3 for Mac OS (see "Todo: Python - Consider to document how I got Python "up and running" on my new Mac Pro?")
+
+	*) I followed the steps of youtube video "How to Read Emails using IMAP Download Attachments Python 3 for Beginners 2018" (https://www.youtube.com/watch?v=e-OZeAHFpkw&t=177s <https://www.youtube.com/watch?v=e-OZeAHFpkw&t=177s> )
+
+	*) I created the file "Python Todo Mail Reader.py" on the Desktop and opened it with the IDLE app.
+
+2) Consider this youtube video "How to Read Emails using IMAP Download Attachments Python 3 for Beginners 2018" (https://www.youtube.com/watch?v=e-OZeAHFpkw&t=177s <https://www.youtube.com/watch?v=e-OZeAHFpkw&t=177s> )?
+
+	==> He seems to "simply" use a python console and a text editor to edit a python script (and he is on Windows)?
+
+	NO! He is using the IDLE app!
+
+	==> It seems in IDLE I can run the script in the editor by pressing key F5?
+
+
+3) Consider the python script progress that I have working so far?
+
+	
+
+	==> It seems I was successful to read from my darwinet2@itfied.se <mailto:darwinet2@itfied.se> (running the script in IDLE using key F5)?
+
+<IDLE Edit>
+
+import imaplib, email
+
+user = 'darwinet2@itfied.se'
+password = 'darw1n3t2'
+imap_url = 'imap01.binero.se'
+
+con = imaplib.IMAP4_SSL(imap_url)
+con.login(user,password)
+ 
+<IDLE Console>
+
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 16:52:21) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+==== RESTART: /Users/kjell-olovhogdal/Desktop/Python Todo Mail Reader.py ====
+>>> 
+==== RESTART: /Users/kjell-olovhogdal/Desktop/Python Todo Mail Reader.py ====
+>>> con.list()
+('OK', [b'(\\HasNoChildren) "." "Deleted Messages"', b'(\\HasNoChildren) "." "Sent Messages"', b'(\\HasNoChildren) "." INBOX'])
+>>> 
+
+
+...
+
+

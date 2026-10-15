@@ -1,0 +1,27 @@
+﻿So, would it be a good idea to try and implement some lightweight GSL for older C++ and the RAD Studio Seattle tool chain?
+
+1) The Latest written (naked) guidelines seems to be published here (http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines.html#S-gsl)?
+
+2) Microsoft implementation of GSL seem to be published here (https://github.com/Microsoft/GSL)
+
+3) It seems one can become a Microsoft C++ Core Guidelines/Library Contributor by obtaining a contributing license (https://github.com/Microsoft/GSL/blob/master/CONTRIBUTING.md)?
+
+	==> Seems one need a ”Contributor License Agreement (CLA)” by applying digitally here (https://cla.microsoft.com/)?
+
+4) Consider to publish the GSL on my account on Github for input and discussions?
+
+5) Consider if Encode-aware text-views are something that can be part of a GSL?
+
+	==> Can we imagine some small zero-overhead annotations that helps code keep track of encoding of at least some texts?
+	...
+
+6) Consider to plug this project into my cross-platform development environment (MAC, Linux 16.04, Windows 10)?
+
+	==> RAD Studio Seattle code may be tested on Windows, OS X, iOS and Android (its own cross-platform)?
+	==> C++98 GSL may be tested on all platforms?
+	==> C++11 GSL may be tested on all platforms?
+	...
+…
+
+Consider to look into this idea to implement a GSL for broader use than Microsoft GSL C++14 and above?
+...

@@ -1,0 +1,118 @@
+# Todo: Meh and Tha - Consider to compare Haskell library Servant with the Meh language and Tha meta-model?
+
+```#2b6ac0bb``` *As of 2017-07-31 13:13*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems the Haskel library Servant kind of confirms we are on the right track being types as meta-values defining sets of possible “creatbale” defacto values?
+
+==&gt; Also see “Todo: Tha model - Consider the meta-layers of Tha repeating the f: meta -&gt; meta pattern bears strong resemblance to higher order lambda systems expressed as System F?"
+
+1) The Haskel servant library tutorial seems to live here (<http://haskell-servant.readthedocs.io/en/stable/tutorial/index.html>)?
+
+...
+
+2) Consider this talk “Servant: Web APIs at the Type Level - Erlend Hamberg” that hints at the relation between type-constructors, types and values (<https://www.youtube.com/watch?v=UTgxdcADGa0&list=PL03Lrmd9CiGewi0lbnahxEpisoP5WZocX&index=64>)?
+
+...
+
+3) Consider Type Level Programming is in fact an actual term in functional programming?
+
+==&gt; Consider Type Level Programming in Scala (<https://www.scala-lang.org>)?
+
+==&gt; Scala seems to be a java-like language that runs on the JVM (
+
+> > “*Scala is a Java-like programming language which unifies object-oriented and functional programming. It is a pure object-oriented language in the sense that every value is an object.*"
+
+==&gt; Consider Type Level Programming in Haskel (<https://www.haskell.org>)?
+
+==&gt; Consider the type level programming library in Haskel (<https://hackage.haskell.org/package/type-level>)?
+
+==&gt; Consider this blog post (<http://www.parsonsmatt.org/2017/04/26/basic_type_level_programming_in_haskell.html>)?
+
+==&gt; Consider Generalised Algebraic Dat Types in Haskel (<https://wiki.haskell.org/Generalised_algebraic_datatype>)?
+
+> > “*Generalised Algebraic Datatypes (GADTs) are datatypes for which a constructor has a non standard type. *"
+
+==&gt; Consider this for-dummies page on GADTs (<https://wiki.haskell.org/GADTs_for_dummies>)?
+
+...
+
+==&gt; Consider the Idris language type interdependence language (<https://www.idris-lang.org>)?
+
+==&gt; Consider this project to encode Internet Protocols into the types system of Idris (<http://docs.idris-lang.org/en/latest/st/examples.html>)?
+
+…
+
+==&gt; Consider that Dependant types refers in some way to map an “index” value to a type (<https://en.wikipedia.org/wiki/Dependent_type>)?
+
+> “In computer science and logic, a dependent type is a type whose definition depends on a value. A "pair of integers where the second is greater than the first" is a **dependent type** because of the dependence on the value. It is an overlapping feature of type theory and type systems. In intuitionistic type theory, dependent types are used to encode logic's quantifiers like "for all" and "there exists". In functional programming languages like Agda, ATS, Coq, Epigram, Idris, and Shen, dependent types prevent bugs by allowing *extremely expressive types*."
+
+> “*Loosely speaking, dependent types are similar to the type of an indexed family of sets. More formally, given a type A: u in a universe of types U, one may have a family of types B: A - U, which assigns to each term a : A a type B(a). We say that the type B(a) varies with a*."
+
+==&gt; It would seem in Tha we can model dependent types using meta_2 type constructors that create meta_1 types with constructors that applies composition restrictions on the instantiated meta_0 values?
+
+meta_2: dependant_type_constructor: meta_1::args -&gt; dependant_type
+
+meta_1: dependant_type: meta_0::args -&gt; dependant_type::defacto
+
+meta_0: \* The instantiated value is of a type that depended on the values passed to its construction (e.g., an ordered pair of integers)?
+
+==&gt; Q: Can we have dependant types where we construct a different atomic type depending on the value passed?
+
+==&gt; E.g., can we define mapping 0,1,2 to types bool, int float?
+
+meta_1::dependant_type: meta_0::value
+
+case 0: -&gt; bool false
+
+case 1: -&gt; int 1
+
+case 2: -&gt; float 2.0
+
+**??**
+
+==&gt; Consider this blog-post “” on dependant types in Haskel (<https://blog.jle.im/entry/practical-dependent-types-in-haskell-1.html>)?
+
+==&gt; It seems we should delve into what is called “Dependently Typed Programming”?
+
+==&gt; Consider this talk “ICFP 2014: Depending on Types - Stephanie Weiricc" (<https://www.youtube.com/watch?v=rhWMhTjQzsU>)?
+
+==&gt; She seems to refer to GHC as the Glascow Haskel Compiler (<https://wiki.haskell.org/GHC>)?
+
+![](<Red-Black Tree value composition constraint captured in a type - Stephanie Weirich Example.tiff>)
+
+==&gt; It seems the constructor for Tree (Color -&gt; N -&gt; Set) takes a Color and a tree depth and returns a Set?
+
+==&gt; It seems we call the mapping (Color -&gt; N) to a Set as “indexing” (The type depends on both Color and tree depth)?
+
+==&gt; This seems to indicate that in Tha we can express this as meta_1::Tree defines three sets of defacto values E, TR and TB?
+
+==&gt; Now, in Tha E, TR and TB are themselves meta-values (sets of possible defacto values)?
+
+==&gt; The E defacto-set is the single black node with index 0?
+
+==&gt; The TR defacto-set are all Trees with a Red root node?
+
+==&gt; The TB defacto-set are all Trees with a Black root node?
+
+==&gt; And to construct a meta_0 value of a tree the constructor will select if to pick a value from the E, TR our TB set of defacto-values depending on the Color and the index of the passed node (the root-node), in effect transform the passed tree if it does not comply with the Red-Black tree constraints?
+
+==&gt; It seems {n : N} is Agda syntax for inferring concrete type n from generic type N?
+
+...
+
+4) Consider meta programming seems to mean something slightly different than the Tha meta-model of value - meta value layering (<https://en.wikipedia.org/wiki/Metaprogramming>)?
+
+==&gt; Meta programming seems to be about the ability to treat the program itself as a value (manipulating code as part of the program)?
+
+…
+
+…
+
+Consider to delve deeper into these terms “Type Level Programming”, “Dependant Type” and it spin offs into lambda calculus and System F implementations in relevant and interesting programming languages?
+
+...
+
+{% endraw %}

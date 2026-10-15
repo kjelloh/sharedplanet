@@ -1,0 +1,40 @@
+﻿It seems we need the composition ”pair” to be able to operate on arrays (lists) as head-tail pairs?
+
+	==> Also see ”Todo: Meta Value Model - Consider all values (and the whole mode) is immutable (all mutations create new instance)?”
+	==> Also see ”Todo: Meta Value Model - Consider to enable "Meta Value Lisp" scripting language to allow name-paths to refer to structure members ”
+	==> Also see ”Todo: Meta Value Model - Consider to define built-in value compositions using syntax Value<level 2,1,0> and members as_function, as_value, as_text?"
+
+1) Consider the Pair<meta-n> meta-layer Values?
+
+	Pair<meta2> would be the unstructured (Atomic) meta-value that defines the Set { …any Pair<meta1>… } // Initial meta-layer
+		Identifier ”pair” defined to value Pair<meta2>
+		Function defacto(Value<meta1> first, Value<meta1> second) returns Value Pair<meta1>
+
+	Pair<meta1> would be the structured (pair {first_type, second_type}) meta-value that defines the Set { … any Pair<meta0> …} , defacto(Value<meta0>, Value<meta0>)
+		Value operation (”first” Pair<meta1>) returns first pair member Value<meta1>
+		Value operation (”second” Pair<meta1>) returns second pair member Value<meta1>
+
+	Pair<meta0> would be structured (pair {first_value, second_value}) value that defines Set { void }, defacto = void // Terminating meta-layer
+		Value operation (”first” Pair<meta0>) returns first pair member Value<meta0>
+		Value operation (”second” Pair<meta0>) returns second pair member Value<meta0>
+	...
+
+2) Consider the Array<meta-n> meta-layer Values?
+
+	Array<meta2> would be unstructured (Atomic) meta-value that defines the Set {… any Array<meta1> …} // Initial meta-layer
+		Identifier ”array” bound to value Array<meta2>
+		Function defacto(Value<meta1> value_type)
+
+	Array<meta1> would be structured (aggregates Identifier<meta1> value_type) meta-value that defines the Set {… any Array<meta0> …}
+
+	Array<meta0>
+		Value operation (”append” Array<meta1> Value<meta1> ) returns Array<meta1> with argument array extended with argument value
+		Value operation (”head” Array<meta0>) returns the first Value<meta0> in the array.
+		Value operation (”tail” Array<meta0>) returns an Array<meta0> which is the original array with first value removed
+
+	...
+
+
+…
+
+

@@ -1,0 +1,23 @@
+# Todo: Darwinet - Consider to build an application just to design Darwinet Messaging?
+
+```#1505c883``` *As of 2016-01-02 18:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, we know darwinet shall exchange Deltas, but how do we design these as messages?
+
+1) Consider to design them to be posted in mails (e.g. as text or Mime data attachments)?  
+2) Consider to define am encoding neutral definition and back up with a number of possible encodings (as Text being one)?  
+3) Consider to correlate message encoding with Node-to-Node interfaces?  
+4) Consider to have each Node define and expose to the domain what messaging (interface) the support for input?  
+5) One messaging protocol should be using e-mail?  
+6) What other message protocols can we imagine and try put?  
+…
+
+Consider to build an application just to implement and try out Darwinet Node-to-node messaging?
+
+a) In Windows 8 machine created “C:\\Users\\kjell-olov\\Documents\\Embarcadero\\Studio\\Projects\\MyDarwinetMessaging\\build”  
+...
+
+{% endraw %}

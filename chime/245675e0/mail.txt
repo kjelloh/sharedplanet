@@ -1,0 +1,25 @@
+﻿Could it be fun to build a protocol analyser based on my idea for a general C++ library for serialised composites?
+
+	==> Also see “Todo: Maker CPU Boards - Consider to check out the Udoo x86 series of Arduino compatible board?"
+
+1) Consider what micro controller to use as the base of the protocol analyser?
+
+	==> Consider the Single Board Computers playlist on Explaining Computers youtube channel (https://www.youtube.com/watch?v=izceGfkUtZU&list=PL2m2YvnrOYxLq2nlNjUxMaaRxUYKZSk28 <https://www.youtube.com/watch?v=izceGfkUtZU&list=PL2m2YvnrOYxLq2nlNjUxMaaRxUYKZSk28>)?
+
+		NOTE: This list is not about micro controllers (like Arduino)?
+
+		
+
+	==> Consider some Arduino?
+	==> Consider a Raspberry Pi?
+
+		==> Consider to put it into a PiTop (https://pi-top.com <https://pi-top.com/>)?
+
+
+			
+	
+
+2) Consider to compare with existing protocol analysers?
+
+	==> Consider this Siglent Protocol Analyser (https://www.electrokit.com/sds2000dc-protokollanalysator-option.52062 <https://www.electrokit.com/sds2000dc-protokollanalysator-option.52062>)?
+	...

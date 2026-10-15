@@ -1,0 +1,112 @@
+# Todo: Consider to check out the Azure Sphere development kit from Microsoft & Avnet (a secure IoT platform for Azure or other cloud backend)?
+
+```#003a903e``` *As of 2019-07-16 16:48*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I saw the unboxing of the Azure Sphere development kit from Microsoft & Avnet on [hackster.io](http://hackster.io) youtube channel and thought it was worth to delve into for potential future use?
+
+1) Consider the youtube video "Azure Sphere Unboxing // MCU Monday" (<https://www.youtube.com/watch?v=LqfCSTquXUs> )?
+
+> "We're stoked on the new Azure Sphere development kit from Microsoft & Avnet! This system is designed to bring IoT security to the next level, with a three-layer model encompassing everything from the MCU to the cloud.
+
+> // [https://www.avnet.com/shop/us/product...](https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.avnet.com%2Fshop%2Fus%2Fproducts%2Favnet-engineering-services%2Faes-ms-mt3620-sk-g-3074457345636825680%2F&redir_token=wPGxRmmr1QoxoCRlCLtnOPfWeMZ8MTU2MzM3MTM4MEAxNTYzMjg0OTgw&event=video_description&v=LqfCSTquXUs)  
+> // [https://www.avnet.com/wps/portal/us/r...](https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.avnet.com%2Fwps%2Fportal%2Fus%2Fresources%2Ftechnical-articles%2Farticle%2Fiot%2Fiot-security-in-hardware-software-and-at-the-edge%2F&redir_token=wPGxRmmr1QoxoCRlCLtnOPfWeMZ8MTU2MzM3MTM4MEAxNTYzMjg0OTgw&event=video_description&v=LqfCSTquXUs)  
+> // [https://azure.microsoft.com/en-us/ser...](https://www.youtube.com/redirect?q=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fservices%2Fazure-sphere%2F&redir_token=wPGxRmmr1QoxoCRlCLtnOPfWeMZ8MTU2MzM3MTM4MEAxNTYzMjg0OTgw&event=video_description&v=LqfCSTquXUs)  
+> // [https://azure.microsoft.com/en-us/blo...](https://www.youtube.com/redirect?q=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fblog%2Fanatomy-of-a-secured-mcu%2F&redir_token=wPGxRmmr1QoxoCRlCLtnOPfWeMZ8MTU2MzM3MTM4MEAxNTYzMjg0OTgw&event=video_description&v=LqfCSTquXUs)  
+> // [https://docs.microsoft.com/en-us/azur...](https://www.youtube.com/redirect?q=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure-sphere%2Finstall%2Foverview&redir_token=wPGxRmmr1QoxoCRlCLtnOPfWeMZ8MTU2MzM3MTM4MEAxNTYzMjg0OTgw&event=video_description&v=LqfCSTquXUs)  
+> // [https://www.seeedstudio.com/Grove-Sta...](https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.seeedstudio.com%2FGrove-Starter-Kit-for-Azure-Sphere-MT3620-Development-Kit.html&redir_token=wPGxRmmr1QoxoCRlCLtnOPfWeMZ8MTU2MzM3MTM4MEAxNTYzMjg0OTgw&event=video_description&v=LqfCSTquXUs)  
+> // [https://www.mikroe.com/click](https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.mikroe.com%2Fclick&redir_token=wPGxRmmr1QoxoCRlCLtnOPfWeMZ8MTU2MzM3MTM4MEAxNTYzMjg0OTgw&event=video_description&v=LqfCSTquXUs)  
+> // [https://blog.hackster.io/](https://www.youtube.com/redirect?q=https%3A%2F%2Fblog.hackster.io%2F&redir_token=wPGxRmmr1QoxoCRlCLtnOPfWeMZ8MTU2MzM3MTM4MEAxNTYzMjg0OTgw&event=video_description&v=LqfCSTquXUs)"
+
+2) Consider Avnet web shop for the AES-MS-MT3620-SK-G pcb (<https://www.avnet.com/shop/emea/products/avnet-engineering-services/aes-ms-mt3620-sk-g-3074457345640184625/> )?
+
+![](<Screenshot 2019-07-16 at 16.29.49.png>)
+
+NOTE: It is definitely a serious price?
+
+3) Consider the Avnet article "Avnet and Microsoft Azure Sphere: IoT security in hardware, software and at the edge" (<https://www.avnet.com/wps/portal/us/resources/technical-articles/article/iot/iot-security-in-hardware-software-and-at-the-edge/> )?
+
+==&gt; It seems Microsoft has developed a dedicated MCU, an OS and an Azure Cloud end-to-end secure solution for IoT devices?
+
+> *"Avnet and Microsoft Azure Sphere: IoT security in hardware, software and at the edge
+
+> ...*
+
+> *To protect microcontroller units from vulnerabilities, you must unite the hardware, the software and the cloud in one secure solution. Microsoft identified this need several years ago and developed an end-to-end solution, Azure Sphere, based on their research into the seven critical properties that need to be secured:
+
+> *  
+> *• hardware root of trust  
+> *  
+> *• defense in depth  
+> *  
+> *• small trusted computing base  
+> *  
+> *• dynamic compartments  
+> *  
+> *• certificate-based authentication  
+> *  
+> *• failure reporting  
+> *  
+> *• renewable security  
+> *
+
+> *In a suite of three components, Microsoft products can secure the hardware, software and cloud in your IoT solution:
+
+> *  
+> *• **Azure Sphere MCU**  
+> *  
+> *• **Azure Sphere OS**  
+> *  
+> *• **Azure Sphere Security**  
+> *
+
+**==&gt; It seems they also provide more or less useful information as part of their promotion (BS?)*
+
+*
+
+  
+> *"Because securing the Internet of Things requires comprehensive security, Azure Sphere—and the partners who support it—must be comprehensive as well. That’s why the software giant trusted Avnet’s hardware expertise, choosing us as the first technology provider to distribute Azure Sphere, due to our experience with not only hardware-based security, but also MCUs and our own overall IoT capabilities.
+
+> Azure Sphere and Edge Analytics
+
+> IoT connected devices are growing and according to Statista, they are expected to grow to 31 billion units worldwide by the year 2020. This enormous increase in the number of connected devices is expected to generate data of more than 500 zettabytes, out of which companies could derive useful insights through data analytics.
+
+> Today, most of this data is processed in the cloud. But since certain applications require real-time analysis, companies are now focusing on processing and analyzing the data at the device or at the edge level. Edge computing and analytics match the capabilities of the public cloud by bringing intelligence closer to the devices with a short and fast moving track.
+
+> Companies are integrating edge analytics capabilities along with their IoT platform, including Avnet with its SmartEdge Agile offering that leverages Microsoft Azure.
+
+> Edge computing is important because it supports:
+
+> *  
+> *• Low operating costs  
+> *  
+> *• Quick response times  
+> *  
+> *• Real-time data analysis  
+> *  
+> *• Less network traffic  
+> *  
+> *• Continuous operations with intermittent connectivity  
+> *  
+> *• Remote asset management  
+> *
+
+> *The impact of Azure Sphere on IoT deployments
+
+> Because security is built into the silicon chips and improved by the cloud services, the Azure Sphere suite will improve how IoT networks recognize dangers and, as a result, build trust IoT overall. With the assurance of this new level of end-to-end security, companies will truly be able to go from minor IoT deployments to large-scale business deployments—especially in areas like manufacturing. Because Azure Sphere’s ecosystem makes the deployment, management and security of predictive maintenance systems easier, it helps manufacturers enhance and enlarge their field services.
+
+> Security and scaling challenges have been the prime concern of IoT deployments in the past. Azure Sphere is an opportunity to reshape your business from its foundation and truly achieve new value and insight. With security threats addressed, you can focus more energy and attention to bigger IoT goals that have truly additive benefits to your business, including incorporating artificial intelligence and machine learning into your networks.
+
+> See how we’re putting Azure and Azure Sphere to use in our IoT digital solutions."*
+
+4) It seems there are a large set of extension boards with Grove sensors available for the Azure Sphere MT3620 Development Kit (<https://www.seeedstudio.com/Grove-Starter-Kit-for-Azure-Sphere-MT3620-Development-Kit.html> )?
+
+![](<Screenshot 2019-07-16 at 16.40.51.png>)
+
+*Grove Starter Kit for Azure Sphere MT3620 Development Kit*
+
+...
+
+{% endraw %}

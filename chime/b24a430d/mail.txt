@@ -1,0 +1,76 @@
+﻿I really like what Macro Reps on youtube shows and uses so it seems like a good idea to make an inventory of the interesting stuff he presents there?
+
+	==> Consider this German electronics web-shop (http://www.watterott.com/index.php?page=index)?
+	==> Consider the pololu automation electronics web-shop (https://www.pololu.com/category/120/stepper-motor-drivers)?
+	==> Consider this forum for maker engineers (https://www.cnczone.com/forums/linear-and-rotary-motion/)?
+	==> Consider this USA based prouser automation maker web-shop (http://www.automation4less.com/store/motion.asp)?
+
+		==> NOTE: They say nothing about shipping to Europe (over sees)?
+
+		
+
+
+1) The Macro Reps youtube channels seems to live here (https://www.youtube.com/channel/UC1O0jDlG51N3jGf6_9t-9mw <https://www.youtube.com/channel/UC1O0jDlG51N3jGf6_9t-9mw>)?
+
+	...
+
+2) Consider to make an inventory of parts and links provided in a selected sets of the Macro Reps channel?
+
+
+	==> Consider “” (Precision motion control: ODrive Servo? Trinamic Stepper? Chinese Hybrid? <https://www.youtube.com/watch?v=p4ltHDpxrbI>)?
+
+	
+		
+
+		==> See “Todo: Consider to study Rotary Controllers for servo motors and what we can use them for?"
+
+	==> Consider “” (New CNC Machine EP01: Spindle Motor and YL620 Variable Frequency Drive <https://www.youtube.com/watch?v=vpN3VO5IHjA>)?
+
+		
+
+	==> Consider “” (ES121 - Better, faster revision of the ""Open Source Screwdriver""! <https://www.youtube.com/watch?v=yqlfHeZiRTA&t=162s>)?
+
+		
+	==> Consider “” (Real stereoscopic or USB microscope? Or both? <https://www.youtube.com/watch?v=7EfMRKujWAY>)?
+
+		
+
+	==> Consider “” (Modified Cetus 3D printing ABS and Polycarbonate, Revolutionary timelapse <https://www.youtube.com/watch?v=5JZ6yT_WM58>)?
+
+		
+	==> Consider “” (Important upgrades for the EleksMaker PCB laser CNC machine <https://www.youtube.com/watch?v=ZzO9skEYqwY>)?
+
+		
+
+		==> Consider this “Silent” and effective Stepper Motor Driver (http://www.watterott.com/index.php?page=product&info=4799)?
+
+		
+
+		==> Scott seems to replace the EleksMaker Olulu drivers with a slightly modified SilentStick driver?
+
+			
+
+		==> This seems to be the EleksMaker Driver FirmWare (http://wiki.eleksmaker.com/doku.php?id=eleksmana_se)?
+
+			
+
+		==> This seems to be the originals stepper motor drivers in the Eleksmaker (https://www.pololu.com/category/156/a4988-stepper-motor-driver-carriers)?
+
+			
+
+		==> Consider the Laser Engraver CNC machine on Bangood (https://www.banggood.com/2500mW-A3-30x40cm-Desktop-DIY-Violet-Laser-Engraver-Picture-CNC-Printer-Assembling-Kits-p-1003863.html?p=KR28032004379201507P&utm_campaign=2004379_1003863&utm_content=1500&cur_warehouse=CN)?
+
+		
+
+		==> Consider this Laser Diode (https://www.banggood.com/2500mW-A3-30x40cm-Desktop-DIY-Violet-Laser-Engraver-Picture-CNC-Printer-Assembling-Kits-p-1003863.html?p=KR28032004379201507P&utm_campaign=2004379_1003863&utm_content=1500&cur_warehouse=CN)?
+
+		
+
+
+	==> Consider “” (New laser machine for PCBs, Aluminium and more <https://www.youtube.com/watch?v=1hFNj86L7sk>)?
+
+		
+
+	==> Consider (TS100: The open source Weller-Killer for under 50 bucks <https://www.youtube.com/watch?v=HgrB5P-rDLw>)?
+
+		

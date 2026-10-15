@@ -1,0 +1,33 @@
+﻿What can we learn from trying to model the C++ build tool chain as a series of functional transformation of immutable ”files” (octet-ranges)?
+
+	==> Also see ”Todo: Programming - Consider to elaborate on the idea of modeling source code compilation and linking as a series of transformation between code-spaces?"
+	==> Also see ”Todo: C++ - Consider we should aim at starting to add transpires that generates C++ code for us (extend the asm mechanism for inline assembly)?”
+	==> Also see ”Todo: C++ Programming - Consider to discuss how to eliminate (automate) C++ Source Files (zero overhead pre-processing)?”
+	==> Also see ”Todo: Programming - Consider to assemble a 3D example of a "Pandora View" of a piece of C++ code from Pre-processor macros, through templates all the way down to actual assembly?"
+	==> Also see ”Todo: programming - Consider to argue that C++ pre-processing must go (error-prone because language-agnostic)?"
+
+1) Consider to what degree current build tool-chains may be modeled as composition of immutable-file transformations?
+
+	 ...
+
+2) Consider what we could gain from modeling having C++ source code being turned into asynchronous token streams and processed into ”Reactive streams”?
+
+	==> Consider a C++ translation using in fact can we broken down into ”tokens” (e.g., classes, functions, code blocks) and processed in semi-parallel (as if separate translation units)?
+
+		==> The linker should be able to bind symbols in these sub-transaltion units in just the same way as separate object files are linked?
+
+	...
+
+3) Consider if it would be possible to ”wrap” existing tools (pre-processor, C++ front-end, LLVM back-end…) into compose-able transform-functions?
+
+	==> Consider if we can wrap the Clang front-end and LLVM back-end into C++ composable functions (and say write the tool-chain using RxCpp)?
+	...
+
+4) Consider this should potentially making it easier to compose new tool-chains as well as extend the C++ front-end with DSL-to-C++ transpilers?
+
+	==> Also see ”Todo: C++ - Consider we should aim at starting to add transpires that generates C++ code for us (extend the asm mechanism for inline assembly)?”
+
+…
+
+Consider to delve deeper into this idea of modeling the C++ build tool chain as steps of transformations of immutable data using pure functions?
+...

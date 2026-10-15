@@ -1,0 +1,23 @@
+﻿Could it be fun to actually physically build the year-week-day scheduler using RFID on wheels to detect and show schedule on a display?
+
+	==> Also see “Todo: Programming - Consider to visualise a calendar as gear of days within gear of weeks within gear of months within gear of years within gear of 10 years and life?”
+
+1) Consider a design with a year-wheel/gear with 365 RFID tags?
+
+	
+
+	==> By turning the wheel a new RFID tag moves into the reader and is picked up by micro controller?
+	==> The micro controller is in deep sleep until interrupted by someone pushing a button or turning the wheel?
+	==> The micro controller uses LoRa to synchronise internal schedule with personal domain (e.g., an app on a desktop)?
+	==> The Micro Controller shows schedule on a (touch?) display?
+	==> Consider to have the wheel spin to correctly show the current date and time?
+
+2) Consider to build a PoC using only a year-wheel?
+
+	…
+
+3) Consider to expand the design to one that actually has the year-week and day wheels?
+
+	…
+
+

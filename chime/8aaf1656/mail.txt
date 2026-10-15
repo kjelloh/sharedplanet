@@ -1,0 +1,20 @@
+﻿Could we imagine a soul network application where the users may design and share user interfaces, functionality and behaviour of the network themselves and have the most popular traits be the ones used based on some evolutionary mechanism (e.g. usage or voting)?
+
+1) How can we imagine to provide “re-prgramming” using available building blocks through the user interface (not by actual writing new code)?
+
+2) To what extent may we implement this by having the application run “code” (e.g. scripts) without violating Apple rules of not allowing interpreter applications?
+
+3) What traits of an application should we make “programmable”?
+
+	==> Consider making the user interface changeable (e.g. skins, organisation or items, enabling, disabling operations)?
+	==> Consider making sharing-traits configurable (e.g. who sees what I do, what do they se, grouping and subgrouping of sharing networks)?
+	==> Consider making networking traits to be “programmable” (e.g. invites only network, offline operation and online synchronisation, interface to commercial operators)?
+	==> Consider to enable connection with payment transaction operations (e.g. P2P payments, purchases, benefit coupon transfer)?
+	…
+
+4) Consider to implement this application as a Darwinet App?
+
+…
+
+Consider to elaborate more on this idea to put “programming” or design of social network applications in the hands of the users?
+...

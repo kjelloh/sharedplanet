@@ -1,0 +1,608 @@
+﻿I want to try and build FreeCad on my mac OS to see if I can perhaps do some own fiddling with what this app can do.
+
+1) This seems to be the mac OS build instructions URL (https://wiki.freecadweb.org/Compile_on_MacOS <https://wiki.freecadweb.org/Compile_on_MacOS> )?
+
+2) This seems to be the console output for installing the FreeCad dependencies on my Mac Pro 2013?
+
+	==> OH MY GOD! Now I have really polluted my Mac Pro have I not?!!
+
+
+
+	==> How do I uninstall all this crap when/if I do not need it?
+
+
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew tap freecad/freecad 
+...
+==> Tapping freecad/freecad
+Cloning into '/usr/local/Homebrew/Library/Taps/freecad/homebrew-freecad'...
+...
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew install eigen
+...
+/usr/local/Cellar/eigen/3.3.8_1: 493 files, 6.6MB
+...
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % brew install --only-dependencies freecad --with-packaging-utils
+...
+
+Cloning into '/usr/local/Homebrew/Library/Taps/freecad/homebrew-freecad'...
+🍺  /usr/local/Cellar/eigen/3.3.8_1: 493 files, 6.6MB
+  /usr/local/share/emacs/site-lisp/cmake
+🍺  /usr/local/Cellar/cmake/3.18.4: 6,263 files, 60.3MB
+  /usr/local/opt/ccache/libexec
+🍺  /usr/local/Cellar/ccache/3.7.12: 66 files, 288.8KB
+🍺  /usr/local/Cellar/libpng/1.6.37: 27 files, 1.2MB
+🍺  /usr/local/Cellar/freetype/2.10.3: 64 files, 2.3MB
+🍺  /usr/local/Cellar/gdbm/1.18.1_1: 25 files, 641KB
+  /usr/local/etc/openssl@1.1/certs
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+🍺  /usr/local/Cellar/openssl@1.1/1.1.1h: 8,067 files, 18.5MB
+readline is keg-only, which means it was not symlinked into /usr/local,
+  export LDFLAGS="-L/usr/local/opt/readline/lib"
+  export CPPFLAGS="-I/usr/local/opt/readline/include"
+🍺  /usr/local/Cellar/readline/8.0.4: 48 files, 1.5MB
+sqlite is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+  export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+🍺  /usr/local/Cellar/sqlite/3.33.0: 11 files, 4MB
+🍺  /usr/local/Cellar/xz/5.2.5: 92 files, 1.1MB
+The formula built, but is not symlinked into /usr/local
+Target /usr/local/bin/2to3
+  rm '/usr/local/bin/2to3'
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/2to3
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/idle3
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/pydoc3
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.7/bin/python3-config
+==> /usr/local/Cellar/python@3.8/3.8.6/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/l
+==> /usr/local/Cellar/python@3.8/3.8.6/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/l
+==> /usr/local/Cellar/python@3.8/3.8.6/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/l
+  /usr/local/bin/python3
+  /usr/local/opt/python@3.8/libexec/bin
+  /usr/local/lib/python3.8/site-packages
+🍺  /usr/local/Cellar/python@3.8/3.8.6: 4,341 files, 69.7MB
+icu4c is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.zshrc
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+  export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+🍺  /usr/local/Cellar/icu4c/67.1: 258 files, 71.2MB
+🍺  /usr/local/Cellar/boost/1.73.0: 14,538 files, 509.6MB
+🍺  /usr/local/Cellar/gmp/6.2.0: 20 files, 3.2MB
+🍺  /usr/local/Cellar/isl/0.22.1: 72 files, 4.7MB
+🍺  /usr/local/Cellar/mpfr/4.1.0: 29 files, 5.1MB
+🍺  /usr/local/Cellar/libmpc/1.2.0: 12 files, 382.9KB
+🍺  /usr/local/Cellar/gcc/10.2.0: 1,463 files, 338.7MB
+🍺  /usr/local/Cellar/hwloc/2.3.0: 914 files, 9.6MB
+🍺  /usr/local/Cellar/libevent/2.1.12: 57 files, 1.9MB
+🍺  /usr/local/Cellar/open-mpi/4.0.5: 752 files, 11.3MB
+openblas is keg-only, which means it was not symlinked into /usr/local,
+  export LDFLAGS="-L/usr/local/opt/openblas/lib"
+  export CPPFLAGS="-I/usr/local/opt/openblas/include"
+🍺  /usr/local/Cellar/openblas/0.3.10_1: 23 files, 120MB
+🍺  /usr/local/Cellar/pkg-config/0.29.2_3: 11 files, 623.8KB
+🍺  /usr/local/Cellar/boost-python3/1.73.0: 472 files, 18.1MB
+🍺  /usr/local/Cellar/xerces-c/3.2.3: 1,684 files, 36.6MB
+qt is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/qt/lib"
+  export CPPFLAGS="-I/usr/local/opt/qt/include"
+  export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
+🍺  /usr/local/Cellar/qt/5.15.1: 10,691 files, 370.4MB
+libffi is keg-only, which means it was not symlinked into /usr/local,
+  export LDFLAGS="-L/usr/local/opt/libffi/lib"
+  export CPPFLAGS="-I/usr/local/opt/libffi/include"
+  export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+🍺  /usr/local/Cellar/libffi/3.3: 16 files, 489.4KB
+  LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+llvm is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/llvm/lib"
+  export CPPFLAGS="-I/usr/local/opt/llvm/include"
+🍺  /usr/local/Cellar/llvm/10.0.1_2: 7,029 files, 1GB
+🍺  /usr/local/Cellar/numpy/1.19.2: 490 files, 15.7MB
+🍺  /usr/local/Cellar/shiboken2/5.15.0: 65 files, 2.5MB
+🍺  /usr/local/Cellar/pyside2/5.15.0: 232 files, 37.9MB
+🍺  /usr/local/Cellar/pyside2-tools/5.15.0: 15 files, 1.5MB
+🍺  /usr/local/Cellar/jpeg/9d: 21 files, 775.2KB
+🍺  /usr/local/Cellar/libtiff/4.1.0: 247 files, 3.7MB
+🍺  /usr/local/Cellar/webp/1.1.0: 39 files, 2.1MB
+🍺  /usr/local/Cellar/freeimage/3.18.0: 13 files, 29.9MB
+🍺  /usr/local/Cellar/tbb/2020_U3: 144 files, 3.0MB
+🍺  /usr/local/Cellar/opencascade/7.4.0_1: 9,320 files, 167.2MB
+🍺  /usr/local/Cellar/orocos-kdl/1.4.0: 97 files, 991.9KB
+The formula built, but is not symlinked into /usr/local
+Target /usr/local/bin/f2py
+/usr/local/bin/f2py -> /usr/local/Cellar/numpy/1.19.2/bin/f2py
+/usr/local/bin/f2py3 -> /usr/local/Cellar/numpy/1.19.2/bin/f2py3
+/usr/local/bin/f2py3.8 -> /usr/local/Cellar/numpy/1.19.2/bin/f2py3.8
+🍺  /usr/local/Cellar/matplotlib/2.1.1: 1,647 files, 37.4MB
+🍺  /usr/local/Cellar/szip/2.1.1_1: 11 files, 111.9KB
+hdf5@1.10 is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/hdf5@1.10/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/hdf5@1.10/lib"
+  export CPPFLAGS="-I/usr/local/opt/hdf5@1.10/include"
+🍺  /usr/local/Cellar/hdf5@1.10/1.10.7: 263 files, 18MB
+🍺  /usr/local/Cellar/med-file/4.0.0: 100 files, 8.7MB
+==> /usr/local/Cellar/fontconfig/2.13.1/bin/fc-cache -frv
+🍺  /usr/local/Cellar/fontconfig/2.13.1: 531 files, 3.4MB
+🍺  /usr/local/Cellar/hdf5/1.12.0_1: 268 files, 16.3MB
+🍺  /usr/local/Cellar/netcdf/4.7.4_1: 90 files, 6.2MB
+🍺  /usr/local/Cellar/sip/4.19.24: 15 files, 976.2KB
+🍺  /usr/local/Cellar/pyqt/5.15.1: 961 files, 28MB
+vtk@8.2 is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/vtk@8.2/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/vtk@8.2/lib"
+  export CPPFLAGS="-I/usr/local/opt/vtk@8.2/include"
+🍺  /usr/local/Cellar/vtk@8.2/8.2.0: 3,986 files, 131.2MB
+🍺  /usr/local/Cellar/nglib/v6.2.2007: 378 files, 9.4MB
+🍺  /usr/local/Cellar/coin/4.0.0: 921 files, 9.6MB
+🍺  /usr/local/Cellar/pivy/0.6.5: 36 files, 13.7MB
+🍺  /usr/local/Cellar/pcre/8.44: 204 files, 5.5MB
+🍺  /usr/local/Cellar/swig/4.0.2: 725 files, 5.4MB
+The formula built, but is not symlinked into /usr/local
+Target /usr/local/bin/node
+  rm '/usr/local/bin/node'
+/usr/local/bin/node
+/usr/local/include/node/common.gypi
+/usr/local/include/node/config.gypi
+/usr/local/include/node/libplatform/libplatform-export.h
+/usr/local/include/node/libplatform/libplatform.h
+/usr/local/include/node/libplatform/v8-tracing.h
+/usr/local/include/node/node.h
+/usr/local/include/node/node_api.h
+/usr/local/include/node/node_api_types.h
+/usr/local/include/node/node_buffer.h
+/usr/local/include/node/node_object_wrap.h
+/usr/local/include/node/node_version.h
+/usr/local/include/node/openssl/aes.h
+/usr/local/include/node/openssl/archs/BSD-x86_64/asm/crypto/buildinf.h
+...
+/usr/local/include/node/openssl/asn1.h
+...
+/usr/local/include/node/uv/aix.h
+...
+/usr/local/include/node/uv.h
+...
+/usr/local/share/doc/node/gdbinit
+/usr/local/share/doc/node/lldb_commands.py
+/usr/local/share/man/man1/node.1
+/usr/local/share/systemtap/tapset/node.stp
+/usr/local/lib/dtrace/node.d
+  /usr/local/etc/bash_completion.d
+🍺  /usr/local/Cellar/node/14.13.1_1: 4,698 files, 62.0MB
+🍺  /usr/local/Cellar/oniguruma/6.9.5-rev1: 16 files, 1.3MB
+🍺  /usr/local/Cellar/jq/1.6: 18 files, 1MB
+  /usr/local/share/emacs/site-lisp/cmake
+  /usr/local/opt/ccache/libexec
+  /usr/local/etc/openssl@1.1/certs
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+  export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+readline is keg-only, which means it was not symlinked into /usr/local,
+  export LDFLAGS="-L/usr/local/opt/readline/lib"
+  export CPPFLAGS="-I/usr/local/opt/readline/include"
+  export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+sqlite is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+  export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+  export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+  /usr/local/bin/python3
+  /usr/local/opt/python@3.8/libexec/bin
+  /usr/local/lib/python3.8/site-packages
+icu4c is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.zshrc
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+  export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+  export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+openblas is keg-only, which means it was not symlinked into /usr/local,
+  export LDFLAGS="-L/usr/local/opt/openblas/lib"
+  export CPPFLAGS="-I/usr/local/opt/openblas/include"
+  export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
+qt is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/qt/lib"
+  export CPPFLAGS="-I/usr/local/opt/qt/include"
+  export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
+libffi is keg-only, which means it was not symlinked into /usr/local,
+  export LDFLAGS="-L/usr/local/opt/libffi/lib"
+  export CPPFLAGS="-I/usr/local/opt/libffi/include"
+  export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+  LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+llvm is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/llvm/lib"
+  export CPPFLAGS="-I/usr/local/opt/llvm/include"
+hdf5@1.10 is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/hdf5@1.10/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/hdf5@1.10/lib"
+  export CPPFLAGS="-I/usr/local/opt/hdf5@1.10/include"
+vtk@8.2 is keg-only, which means it was not symlinked into /usr/local,
+  echo 'export PATH="/usr/local/opt/vtk@8.2/bin:$PATH"' >> ~/.zshrc
+  export LDFLAGS="-L/usr/local/opt/vtk@8.2/lib"
+  export CPPFLAGS="-I/usr/local/opt/vtk@8.2/include"
+  /usr/local/etc/bash_completion.d
+
+
+3) This seems to be the console output for cloning the FreeCAD GitHub project?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro FreeCAD % git clone https://github.com/FreeCAD/FreeCAD FreeCAD-git
+Cloning into 'FreeCAD-git'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 246320 (delta 3), reused 0 (delta 0), pack-reused 246312
+Receiving objects: 100% (246320/246320), 1.02 GiB | 3.11 MiB/s, done.
+Resolving deltas: 100% (207492/207492), done.
+Updating files: 100% (10581/10581), done.
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro FreeCAD % 
+
+4) It seems cmake fails to generate make files for my mac OS envrionment (Can't find VTK library)?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro build % cmake \ 
+  -DCMAKE_BUILD_TYPE="Release"   \
+  -DBUILD_QT5=1                  \
+  -DWITH_PYTHON3=1               \
+  -DCMAKE_PREFIX_PATH="/usr/local/opt/qt5/lib/cmake/"  \
+  -DPYTHON_EXECUTABLE="/usr/local/bin/python3" \
+  -DFREECAD_USE_EXTERNAL_KDL=1   \
+  -DCMAKE_CXX_FLAGS='-std=c++14' \
+  -DBUILD_FEM_NETGEN=1           \
+  -DFREECAD_CREATE_MAC_APP=1     \
+  -DCMAKE_INSTALL_PREFIX="./.."  \
+  ../FreeCAD-git/
+-- The C compiler identification is AppleClang 12.0.0.12000031
+-- The CXX compiler identification is AppleClang 12.0.0.12000031
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Compiler: AppleClang, version: 12.0.0.12000031
+-- Looking for GL/gl.h
+-- Looking for GL/gl.h - not found
+-- Looking for C++ include istream
+-- Looking for C++ include istream - found
+-- Looking for C++ include ostream
+-- Looking for C++ include ostream - found
+-- Looking for C++ include fstream
+-- Looking for C++ include fstream - found
+-- Looking for C++ include sstream
+-- Looking for C++ include sstream - found
+-- Looking for C++ include ios
+-- Looking for C++ include ios - found
+-- Looking for C++ include iostream
+-- Looking for C++ include iostream - found
+-- Looking for C++ include iomanip
+-- Looking for C++ include iomanip - found
+-- Looking for C++ include iostream
+-- Looking for C++ include iostream - found
+-- Check for STD namespace
+-- Check for STD namespace - found
+-- Force BOOST_PP_VARIADICS=1 for clang
+-- prefix: /Users/kjell-olovhogdal/Documents/Github/FreeCAD
+-- bindir: bin
+-- datadir: share
+-- docdir: share/doc/FreeCAD
+-- includedir: include
+-- libdir: lib
+-- cmake: 3.18.4
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+=====================================================
+Doxygen not found, will not build documentation.     
+=====================================================
+
+-- Detected Homebrew install at /usr/local
+-- Found PythonInterp: /usr/local/bin/python3 (found version "3.7.3") 
+-- Found PythonLibs: /Library/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib (found suitable exact version "3.7.3") 
+-- Found Boost: /usr/local/lib/cmake/Boost-1.73.0/BoostConfig.cmake (found suitable version "1.73.0", minimum required is "1.55") found components: filesystem program_options regex system thread 
+-- Found Xerces-C: /usr/local/lib/libxerces-c.dylib
+-- Found ZLIB: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd (found version "1.2.11") 
+-- PyCXX found:
+--   Headers:  /Users/kjell-olovhogdal/Documents/Github/FreeCAD/FreeCAD-git/src
+--   Sources:  /Users/kjell-olovhogdal/Documents/Github/FreeCAD/FreeCAD-git/src/CXX
+--   Version:  6.2.8
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:273 (message):
+  The package name passed to `find_package_handle_standard_args` (OCC) does
+  not match the name of the calling package (OpenCasCade).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cMake/FindOpenCasCade.cmake:114 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  cMake/FreeCAD_Helpers/SetupOpenCasCade.cmake:4 (find_package)
+  CMakeLists.txt:52 (SetupOpenCasCade)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OCC: /usr/local/include/opencascade (found version "7.4.0") 
+-- -- Found OCE/OpenCASCADE version: 7.4.0
+-- -- OCE/OpenCASCADE include directory: /usr/local/include/opencascade
+-- -- OCE/OpenCASCADE shared libraries directory: /usr/local/lib
+CMake Error at cMake/FreeCAD_Helpers/SetupSalomeSMESH.cmake:29 (find_package):
+  Could not find a package configuration file provided by "VTK" with any of
+  the following names:
+
+    VTKConfig.cmake
+    vtk-config.cmake
+
+  Add the installation prefix of "VTK" to CMAKE_PREFIX_PATH or set "VTK_DIR"
+  to a directory containing one of the above files.  If "VTK" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:53 (SetupSalomeSMESH)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/kjell-olovhogdal/Documents/Github/FreeCAD/build/CMakeFiles/CMakeOutput.log".
+See also "/Users/kjell-olovhogdal/Documents/Github/FreeCAD/build/CMakeFiles/CMakeError.log".
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro build %
+
+	==> I updated PATH environment variable with path to installed VTK as indicated in brew formulae log for VTK installation
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro build % export PATH="/usr/local/opt/vtk@8.2/bin:$PATH"
+
+
+	==> Now cmake seems to complain about incompatible Python 3.7 vs 3.8?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro build % cmake \         
+  -DCMAKE_BUILD_TYPE="Release"   \
+  -DBUILD_QT5=1                  \
+  -DWITH_PYTHON3=1               \
+  -DCMAKE_PREFIX_PATH="/usr/local/opt/qt5/lib/cmake/"  \
+  -DPYTHON_EXECUTABLE="/usr/local/bin/python3" \
+  -DFREECAD_USE_EXTERNAL_KDL=1   \
+  -DCMAKE_CXX_FLAGS='-std=c++14' \
+  -DBUILD_FEM_NETGEN=1           \
+  -DFREECAD_CREATE_MAC_APP=1     \
+  -DCMAKE_INSTALL_PREFIX="./.."  \
+  ../FreeCAD-git/
+-- Compiler: AppleClang, version: 12.0.0.12000031
+-- Force BOOST_PP_VARIADICS=1 for clang
+-- prefix: /Users/kjell-olovhogdal/Documents/Github/FreeCAD
+-- bindir: bin
+-- datadir: share
+-- docdir: share/doc/FreeCAD
+-- includedir: include
+-- libdir: lib
+-- cmake: 3.18.4
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+=====================================================
+Doxygen not found, will not build documentation.     
+=====================================================
+
+-- Detected Homebrew install at /usr/local
+-- Found Xerces-C: /usr/local/lib/libxerces-c.dylib
+-- PyCXX found:
+--   Headers:  /Users/kjell-olovhogdal/Documents/Github/FreeCAD/FreeCAD-git/src
+--   Sources:  /Users/kjell-olovhogdal/Documents/Github/FreeCAD/FreeCAD-git/src/CXX
+--   Version:  6.2.8
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:273 (message):
+  The package name passed to `find_package_handle_standard_args` (OCC) does
+  not match the name of the calling package (OpenCasCade).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cMake/FindOpenCasCade.cmake:114 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  cMake/FreeCAD_Helpers/SetupOpenCasCade.cmake:4 (find_package)
+  CMakeLists.txt:52 (SetupOpenCasCade)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- -- Found OCE/OpenCASCADE version: 7.4.0
+-- -- OCE/OpenCASCADE include directory: /usr/local/include/opencascade
+-- -- OCE/OpenCASCADE shared libraries directory: /usr/local/lib
+-- VTK components: vtkCommonCore;vtkCommonDataModel;vtkFiltersVerdict;vtkIOXML;vtkFiltersCore;vtkFiltersGeneral;vtkIOLegacy;vtkFiltersExtraction;vtkFiltersSources;vtkFiltersGeometry;vtkhdf5;vtkRenderingCore;vtkInteractionStyle;vtkRenderingFreeType;vtkRenderingOpenGL2
+-- Check for medfile (libmed and libmedc) ...
+-- Found MEDFile: /usr/local/include  
+-- Found PkgConfig: /usr/local/bin/pkg-config (found version "0.29.2") 
+-- We guess that libmed was built using hdf5-serial version
+-- Checking for one of the modules 'hdf5-serial'
+-- Found HDF5: /usr/local/Cellar/hdf5/1.12.0_1/lib/libhdf5.dylib;/usr/local/opt/szip/lib/libsz.dylib;/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd;/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/lib/libdl.tbd;/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/lib/libm.tbd (found version "1.12.0")  
+-- Checking for one of the modules 'ompi-cxx'
+-- Could NOT find Netgen (missing: Netgen_DIR)
+-- Cannot find NETGEN library.
+-- Found SWIG: /usr/local/bin/swig (found version "4.0.2")  
+-- Found Eigen3: /usr/local/include/eigen3 (found suitable version "3.3.8", minimum required is "2.91.0") 
+-- Found Freetype: /usr/local/lib/libfreetype.dylib (found version "2.10.3") 
+-- Found OpenGL: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework   
+-- Found OpenGLU: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework
+-- Coin3D libraries found
+-- Could NOT find Spnav (missing: SPNAV_LIBRARY SPNAV_INCLUDE_DIR) 
+-- Shiboken2Config: Using default python: .cpython-38-darwin
+-- Found PythonInterp: /usr/local/bin/python3 (found suitable version "3.7.3", minimum required is "3") 
+-- Found PythonLibs: /Library/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib (found suitable version "3.7.3", minimum required is "3") 
+CMake Error at /usr/local/lib/cmake/Shiboken2-5.15.0/shiboken_helpers.cmake:468 (message):
+  The detected Python minor version is not compatible with the Python minor
+  version which was used when Shiboken was built.  Consider building shiboken
+  with FORCE_LIMITED_API set to '1', so that only the Python major version
+  matters.
+
+  Built with: '3.8' Detected: '3.7'
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/Shiboken2-5.15.0/Shiboken2Config.cpython-38-darwin.cmake:45 (shiboken_check_if_built_and_target_python_are_compatible)
+  /usr/local/lib/cmake/Shiboken2-5.15.0/Shiboken2Config.cmake:5 (include)
+  cMake/FreeCAD_Helpers/SetupShibokenAndPyside.cmake:25 (find_package)
+  CMakeLists.txt:70 (SetupShibokenAndPyside)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/kjell-olovhogdal/Documents/Github/FreeCAD/build/CMakeFiles/CMakeOutput.log".
+See also "/Users/kjell-olovhogdal/Documents/Github/FreeCAD/build/CMakeFiles/CMakeError.log".
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro build % 
+
+
+	==> But from the brew Log we can see that Python 3.8 has been downloaded (but not properly installed or configured)?
+
+==> Installing freecad/freecad/freecad dependency: python3
+==> Pouring python@3.8-3.8.6.catalina.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.8
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run python@3.8
+
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/2to3
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/idle3
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/pydoc3
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.7/bin/python3-config
+==> /usr/local/Cellar/python@3.8/3.8.6/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/l
+==> /usr/local/Cellar/python@3.8/3.8.6/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/l
+==> /usr/local/Cellar/python@3.8/3.8.6/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/l
+==> Caveats
+Python has been installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python@3.8/libexec/bin
+
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.8/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /usr/local/Cellar/python@3.8/3.8.6: 4,341 files, 69.7MB
+
+	==> I upgraded my "main" official python install to latest version 3.9 and tried again :)
+
+	==> Now I get back the VTK problem!
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro build2 % cmake \
+  -DCMAKE_BUILD_TYPE="Release"   \
+  -DBUILD_QT5=1                  \
+  -DWITH_PYTHON3=1               \
+  -DCMAKE_PREFIX_PATH="/usr/local/opt/qt5/lib/cmake/"  \
+  -DPYTHON_EXECUTABLE="/usr/local/bin/python3" \
+  -DFREECAD_USE_EXTERNAL_KDL=1   \
+  -DCMAKE_CXX_FLAGS='-std=c++14' \
+  -DBUILD_FEM_NETGEN=1           \
+  -DFREECAD_CREATE_MAC_APP=1     \
+  -DCMAKE_INSTALL_PREFIX="./.."  \
+  ../FreeCAD-git/
+-- The C compiler identification is AppleClang 12.0.0.12000031
+-- The CXX compiler identification is AppleClang 12.0.0.12000031
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Compiler: AppleClang, version: 12.0.0.12000031
+-- Looking for GL/gl.h
+-- Looking for GL/gl.h - not found
+-- Looking for C++ include istream
+-- Looking for C++ include istream - found
+-- Looking for C++ include ostream
+-- Looking for C++ include ostream - found
+-- Looking for C++ include fstream
+-- Looking for C++ include fstream - found
+-- Looking for C++ include sstream
+-- Looking for C++ include sstream - found
+-- Looking for C++ include ios
+-- Looking for C++ include ios - found
+-- Looking for C++ include iostream
+-- Looking for C++ include iostream - found
+-- Looking for C++ include iomanip
+-- Looking for C++ include iomanip - found
+-- Looking for C++ include iostream
+-- Looking for C++ include iostream - found
+-- Check for STD namespace
+-- Check for STD namespace - found
+-- Force BOOST_PP_VARIADICS=1 for clang
+-- prefix: /Users/kjell-olovhogdal/Documents/Github/FreeCAD
+-- bindir: bin
+-- datadir: share
+-- docdir: share/doc/FreeCAD
+-- includedir: include
+-- libdir: lib
+-- cmake: 3.18.4
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+=====================================================
+Doxygen not found, will not build documentation.     
+=====================================================
+
+-- Detected Homebrew install at /usr/local
+-- Found PythonInterp: /usr/local/bin/python3 (found version "3.9") 
+-- Found PythonLibs: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib (found suitable exact version "3.9.0") 
+-- Found Boost: /usr/local/lib/cmake/Boost-1.73.0/BoostConfig.cmake (found suitable version "1.73.0", minimum required is "1.55") found components: filesystem program_options regex system thread 
+-- Found Xerces-C: /usr/local/lib/libxerces-c.dylib
+-- Found ZLIB: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd (found version "1.2.11") 
+-- PyCXX found:
+--   Headers:  /Users/kjell-olovhogdal/Documents/Github/FreeCAD/FreeCAD-git/src
+--   Sources:  /Users/kjell-olovhogdal/Documents/Github/FreeCAD/FreeCAD-git/src/CXX
+--   Version:  6.2.8
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.18.4/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:273 (message):
+  The package name passed to `find_package_handle_standard_args` (OCC) does
+  not match the name of the calling package (OpenCasCade).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cMake/FindOpenCasCade.cmake:114 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  cMake/FreeCAD_Helpers/SetupOpenCasCade.cmake:4 (find_package)
+  CMakeLists.txt:52 (SetupOpenCasCade)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OCC: /usr/local/include/opencascade (found version "7.4.0") 
+-- -- Found OCE/OpenCASCADE version: 7.4.0
+-- -- OCE/OpenCASCADE include directory: /usr/local/include/opencascade
+-- -- OCE/OpenCASCADE shared libraries directory: /usr/local/lib
+CMake Error at cMake/FreeCAD_Helpers/SetupSalomeSMESH.cmake:29 (find_package):
+  Could not find a package configuration file provided by "VTK" with any of
+  the following names:
+
+    VTKConfig.cmake
+    vtk-config.cmake
+
+  Add the installation prefix of "VTK" to CMAKE_PREFIX_PATH or set "VTK_DIR"
+  to a directory containing one of the above files.  If "VTK" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:53 (SetupSalomeSMESH)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/kjell-olovhogdal/Documents/Github/FreeCAD/build2/CMakeFiles/CMakeOutput.log".
+See also "/Users/kjell-olovhogdal/Documents/Github/FreeCAD/build2/CMakeFiles/CMakeError.log".
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro build2 % 
+
+	==> But what I can se from the dependency install brew log it HAS downloaded the ATK?
+
+...
+==> Installing freecad/freecad/freecad dependency: opencas
+==> Pouring opencascade-7.4.0_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/opencascade/7.4.0_1: 9,320 files, 167.2MB
+...
+
+	JAG GER UPP * THIS SUCKS! *
+
+
+...

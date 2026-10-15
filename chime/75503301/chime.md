@@ -1,0 +1,44 @@
+# Todo: C++ and STL - Consider to learn more about Meng Lee who worked with Alexander Stepanov to publish the C++ STL Library?
+
+```#75503301``` *As of 2019-06-28 12:18*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems to be hard to find any information on Meng Lee who co-authored the C++ STL paper with Alexander Stepanov?
+
+1) Consider this interview "An Interview with A. Stepanov by Graziano Lo Russo. Edizioni Infomedia srl " (<http://www.stlport.org/resources/StepanovUSA.html> )?
+
+> *"Meng Lee was a perfect collaborator at the stage when it was necessary to move from beautiful ideas to a complete implementation. **She kept me focused** - I tend to lose interest after the problem is solved - if I know the solution, why bother making it known to the rest of the world. **She was putting grueling hours into the code and the document.** In a sense, she was the only person who believed that something practical could come out of the stuff; I think, that at that point both Dave Musser and I actually lost hope that we could explain to anybody what we had been doing for quite a while. "*
+
+2) Consider this InformIT entry on Meng Lee (<https://www.informit.com/authors/bio/d736b0c5-923b-4d32-bee6-471dcf0846c9> )?
+
+> *"Meng Lee is currently a Technical Contributor at Hewlett-Packard Research Labs where she and Stepanov developed the original STL. The STL was proposed to and accepted by the ANCI/ISO C++ Standards Committee."*
+
+3) Consider how Meng Lee is referenced in Wikipedia article on STL (<https://en.wikipedia.org/wiki/History_of_the_Standard_Template_Library> )?
+
+> *"Stepanov experimented with many architectural and algorithm formulations, first in C and later in C++. Musser collaborated in this research and **in 1992 Meng Lee joined Stepanov's project at HP and became a major contributor.**"*
+
+4) Consider this interview "Al Stevens Interviews Alex Stepanov" (<http://stepanovpapers.com/drdobbs-interview.html> )?
+
+> *"In 1992, when the project was formed, there were eight people in it. Gradually the group diminished, **eventually becoming two people, me and Meng Lee.** While Meng was new to the area---**she was doing compilers for most of her professional life**---she accepted the overall vision of generic programming research, and believed that it could lead to changing software development at the point when very few people shared this belief. I do not think that I would be able to build STL without her help. (After all, STL stands for Stepanov and Lee...) We wrote a huge library, a lot of code with a lot of data structures and algorithms, function objects, adaptors, and so on. There was a lot of code, but no documentation. Our work was viewed as a research project with the goal of demonstrating that you can have algorithms defined as generically as possible and still extremely efficient. We spent a lot of time taking measurements, and we found that we can make these algorithms as generic as they can be, and still be as efficient as hand-written code."*
+
+5) Consider why it is so hard to find any information on Meng Lee that co-published the C++ STL paper?
+
+![](<Screenshot 2019-06-28 at 12.10.55.png>)
+
+*From <https://youtu.be/3Lpz7TwB_XI?t=72> *
+
+> *For one, is it telling that in Paul McJones "AlexFest" at A9 does mention Meng Lee but shows no picture of her, why not?*
+
+> *And Sean Parent makes a joke about how he for a while initially did not know if a picture he had was of Alexander Stepanov or of Meng Lee? With a vague reference to what Meng looked like with *
+
+> ![](<Screenshot 2019-06-28 at 12.14.00.png>)  
+> <https://youtu.be/1P_K4aGYSsw?t=209>
+
+> *"...at this point in time that's the only &#91;03:35&#93; picture that I had of Alex and I was never sure whether that was Alex or Meng. So **for people in know who Ming is, that***  
+> ***was a huge mistake.**.." (*<https://youtu.be/1P_K4aGYSsw?t=209>)
+
+...
+
+{% endraw %}

@@ -1,0 +1,372 @@
+﻿I want to have some form of momentarily electrical energy meter and interpreting the flashing diod on my (EON provided) Echelon TYPE 83330-3IHA household power meter
+
+1) It seems the Echelon meter information lives here on the web (https://www.echelon.com/assets/bltc1e4347bb1a04c1c/Smart-Meter-MTR-3000-IEC-Poly-Phase-datasheet.pdf <https://www.echelon.com/assets/bltc1e4347bb1a04c1c/Smart-Meter-MTR-3000-IEC-Poly-Phase-datasheet.pdf> )?
+
+	NOTE: This site is insecure (it has a stale HTTPS certificate)?
+
+2) It seems one diod flashes in a rate 1000 flashed / kWh?
+
+
+
+3) Consider this project that seems to contain a program for an Arduino and a photo sensor module to translate pulses to kW (https://www.mysensors.org/build/pulse_power <https://www.mysensors.org/build/pulse_power> )?
+
+ 
+
+
+	==> Consider the code on GitHub for the Arduino here (https://github.com/mysensors/MySensors/blob/master/examples/EnergyMeterPulseSensor/EnergyMeterPulseSensor.ino <https://github.com/mysensors/MySensors/blob/master/examples/EnergyMeterPulseSensor/EnergyMeterPulseSensor.ino> )?
+
+/*
+   The MySensors Arduino library handles the wireless radio link and protocol
+   between your home built sensors/actuators and HA controller of choice.
+   The sensors forms a self healing radio network with optional repeaters. Each
+   repeater and gateway builds a routing tables in EEPROM which keeps track of the
+   network topology allowing messages to be routed to nodes.
+
+   Created by Henrik Ekblad <henrik.ekblad@mysensors.org>
+   Copyright (C) 2013-2019 Sensnology AB
+   Full contributor list: https://github.com/mysensors/MySensors/graphs/contributors
+
+   Documentation: http://www.mysensors.org
+   Support Forum: http://forum.mysensors.org
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 2 as published by the Free Software Foundation.
+
+ *******************************
+
+   REVISION HISTORY
+   Version 1.0 - Henrik Ekblad
+   Version 1.1 - Peter Andersson added millis watt calculation if time between pulses > 1h
+
+   DESCRIPTION
+   This sketch provides an example how to implement a LM393 PCB
+   Use this sensor to measure kWh and Watt of your house meter
+   You need to set the correct pulsefactor of your meter (blinks per kWh).
+   The sensor starts by fetching current kWh value from gateway.
+   Reports both kWh and Watt back to gateway.
+
+   Unfortunately millis() won't increment when the Arduino is in
+   sleepmode. So we cannot make this sensor sleep if we also want
+   to calculate/report watt value.
+   http://www.mysensors.org/build/pulse_power
+*/
+
+// Enable debug prints
+#define MY_DEBUG
+
+// Enable and select radio type attached
+#define MY_RADIO_RF24
+//#define MY_RADIO_NRF5_ESB
+//#define MY_RADIO_RFM69
+//#define MY_RADIO_RFM95
+
+#include <MySensors.h>
+
+#define DIGITAL_INPUT_SENSOR 3  // The digital input you attached your light sensor.  (Only 2 and 3 generates interrupt!)
+#define PULSE_FACTOR 1000       // Number of blinks per kWh of your meter. Normally 1000.
+#define SLEEP_MODE false        // Watt value can only be reported when sleep mode is false.
+#define MAX_WATT 10000          // Max watt value to report. This filters outliers.
+#define CHILD_ID 1              // Id of the sensor child
+
+uint32_t SEND_FREQUENCY =
+    20000; // Minimum time between send (in milliseconds). We don't want to spam the gateway.
+double ppwh = ((double)PULSE_FACTOR) / 1000; // Pulses per watt hour
+bool pcReceived = false;
+volatile uint32_t pulseCount = 0;
+volatile uint32_t lastBlinkmicros = 0;
+volatile uint32_t lastBlinkmillis = 0;
+volatile uint32_t watt = 0;
+uint32_t oldPulseCount = 0;
+uint32_t oldWatt = 0;
+double oldkWh;
+uint32_t lastSend;
+MyMessage wattMsg(CHILD_ID, V_WATT);
+MyMessage kWhMsg(CHILD_ID, V_KWH);
+MyMessage pcMsg(CHILD_ID, V_VAR1);
+
+#if defined(ARDUINO_ARCH_ESP8266) || defined(ARDUINO_ARCH_ESP32)
+#define IRQ_HANDLER_ATTR ICACHE_RAM_ATTR
+#else
+#define IRQ_HANDLER_ATTR
+#endif
+
+void IRQ_HANDLER_ATTR onPulse()
+{
+	if (!SLEEP_MODE) {
+		uint32_t newBlinkmicros = micros();
+		uint32_t newBlinkmillis = millis();
+		uint32_t intervalmicros = newBlinkmicros - lastBlinkmicros;
+		uint32_t intervalmillis = newBlinkmillis - lastBlinkmillis;
+		if (intervalmicros < 10000L && intervalmillis < 10L) { // Sometimes we get interrupt on RISING
+			return;
+		}
+		if (intervalmillis < 360000) { // Less than an hour since last pulse, use microseconds
+			watt = (3600000000.0 / intervalmicros) / ppwh;
+		} else {
+			watt = (3600000.0 / intervalmillis) /
+			       ppwh; // more thAn an hour since last pulse, use milliseconds as micros will overflow after 70min
+		}
+		lastBlinkmicros = newBlinkmicros;
+		lastBlinkmillis = newBlinkmillis;
+	}
+	pulseCount++;
+}
+
+void setup()
+{
+	// Fetch last known pulse count value from gw
+	request(CHILD_ID, V_VAR1);
+
+	// Use the internal pullup to be able to hook up this sketch directly to an energy meter with S0 output
+	// If no pullup is used, the reported usage will be too high because of the floating pin
+	pinMode(DIGITAL_INPUT_SENSOR, INPUT_PULLUP);
+
+	attachInterrupt(digitalPinToInterrupt(DIGITAL_INPUT_SENSOR), onPulse, RISING);
+	lastSend = millis();
+}
+
+void presentation()
+{
+	// Send the sketch version information to the gateway and Controller
+	sendSketchInfo(F("Energy Meter"), F("1.1"));
+
+	// Register this device as power sensor
+	present(CHILD_ID, S_POWER);
+}
+
+void loop()
+{
+	uint32_t now = millis();
+	// Only send values at a maximum frequency or woken up from sleep
+	bool sendTime = now - lastSend > SEND_FREQUENCY;
+	if (pcReceived && (SLEEP_MODE || sendTime)) {
+		// New watt value has been calculated
+		if (!SLEEP_MODE && watt != oldWatt) {
+			// Check that we don't get unreasonable large watt value, which
+			// could happen when long wraps or false interrupt triggered
+			if (watt < ((uint32_t)MAX_WATT)) {
+				send(wattMsg.set(watt));  // Send watt value to gw
+			}
+			Serial.print("Watt:");
+			Serial.println(watt);
+			oldWatt = watt;
+		}
+
+		// Pulse count value has changed
+		if (pulseCount != oldPulseCount) {
+			send(pcMsg.set(pulseCount));  // Send pulse count value to gw
+			double kWh = ((double)pulseCount / ((double)PULSE_FACTOR));
+			oldPulseCount = pulseCount;
+			if (kWh != oldkWh) {
+				send(kWhMsg.set(kWh, 4));  // Send kWh value to gw
+				oldkWh = kWh;
+			}
+		}
+		lastSend = now;
+	} else if (sendTime && !pcReceived) {
+		// No pulse count value received from controller. Try requesting it again.
+		request(CHILD_ID, V_VAR1);
+		lastSend = now;
+	}
+
+	if (SLEEP_MODE) {
+		sleep(SEND_FREQUENCY, false);
+	}
+}
+
+void receive(const MyMessage &message)
+{
+	if (message.getType()==V_VAR1) {
+		pulseCount = oldPulseCount = message.getLong();
+		Serial.print("Received last pulse count value from gw:");
+		Serial.println(pulseCount);
+		pcReceived = true;
+	}
+}
+
+4) Consider this instructables article on maming a device that interprets the flashes on a household power meter (https://www.instructables.com/Read-Your-Main-Power-Electricity-Meter-ESP8266-WiF/ <https://www.instructables.com/Read-Your-Main-Power-Electricity-Meter-ESP8266-WiF/> )?
+
+
+
+	==> It seems the code for this project is on github here (https://github.com/Wim3d/Main_power_meter <https://github.com/Wim3d/Main_power_meter> )?
+
+/*
+   Written by W. Hoogervorst
+   Main electricity power meter
+   jan 2018
+*/
+#include <ESP8266WiFi.h>
+#include <PubSubClient.h>
+#include <credentials.h>      //mySSID, myPASSWORD
+
+// define times
+#define SECOND 1e3  // 1e3 ms is 1 second
+#define MINUTE SECOND*60  // 60e3 ms is 60 seconds = 1 minute
+#define HOUR MINUTE*60 // number of millis in an hour
+#define DAY HOUR*24 // number of millis in a day
+#define MEASUREMENT MINUTE
+
+#define PULSE_MAX_LENGTH 45   // actual LED pulse of power meter is 38 ms
+#define PULSE_MIN_LENGTH 25   // actual LED pulse of power meter is 38 ms
+#define TOTALDELAY 1000        // publish value of counter every ## counts
+#define WIFI_CONNECT_TIMEOUT_S 10
+#define MQTT_RECONNECT_DELAY 10000
+#define INPUTPIN 1
+#define DEBUGPIN 3
+#define LEDPIN 0
+
+const char* mqtt_server = "192.168.10.104";
+
+WiFiClient client;
+PubSubClient MQTTclient(client);
+
+// global variables
+// use 64 byte otherwise the calculation fails after 2^32 millis = ca. 50 days 
+uint64_t time_elapsed, time1, time2, pulsebegin, measurementbegin, lastpulse, lastReconnectAttempt = 0;
+uint16_t pulselength, pulsecount = 0;
+uint32_t totalcounter = 0;
+boolean pulsestate = false; // false: not detecting a pulse
+boolean measurement = false;   // not measuring yet
+boolean debug = false;        // switched by mechanical switch, if true debug messages are published via MQTT
+
+String tmp_str; // String for publishing the int's as a string to MQTT
+char buf[5];
+
+void setup() {
+  WiFi.setOutputPower(0); // 0 is lowest (close to AP), 20.5 is highest (http://www.esp8266.com/viewtopic.php?f=32&t=13496)
+  WiFi.mode(WIFI_STA);
+  pinMode(LEDPIN, OUTPUT);
+  pinMode(INPUTPIN, INPUT);
+
+  time1 = millis();
+  MQTTclient.setServer(mqtt_server, 1883);
+
+  WiFi.begin(mySSID, myPASSWORD);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(50);
+    time2 = millis();
+    if (((time2 - time1) / 1000) > WIFI_CONNECT_TIMEOUT_S)  // wifi connection lasts too long
+    {
+      break;
+    }
+  }
+  MQTTclient.connect("ESP-01_2-Client");
+  MQTTclient.publish("ESP-01_2/state", "Up and running");
+}
+
+void loop()
+{
+  if (!client.connected())
+  {
+    if (millis() > lastReconnectAttempt + MQTT_RECONNECT_DELAY)
+    {
+      lastReconnectAttempt = millis();
+      // Attempt to reconnect
+      if (reconnect()) {
+        lastReconnectAttempt = 0;
+      }
+    }
+  }
+
+  if (digitalRead(DEBUGPIN) == HIGH) {      // switch on GPIO3 determines the state of 'debug'
+    debug = true;
+  }
+  else {
+    debug = false;
+  }
+
+  if (pulsestate == false)
+  {
+    if (digitalRead(INPUTPIN) == LOW)   // a pulse started
+    {
+      pulsestate = true;
+      pulsebegin = millis();
+    }
+  }
+
+  if (pulsestate == true && digitalRead(INPUTPIN) == HIGH)    // pulse ended
+  {
+    pulselength = millis() - pulsebegin;
+    if (pulselength <  PULSE_MIN_LENGTH || pulselength > PULSE_MAX_LENGTH) // pulse too short  or too long
+    {
+      pulsestate = false;
+    }
+
+    else    // this was a good pulse
+    {
+      if (measurement == false)
+      {
+        measurementbegin = millis();           // start the measurement period
+        measurement = true;                    // we are in a measurement
+      }
+      pulsestate = false;         // end pulse state
+      pulsecount++;               // increase counters
+      totalcounter++;
+      lastpulse = millis();       // measure te moment of the last pulse in the measurement
+      if (debug)      // publish debug messages?
+      {
+        tmp_str = String(pulselength); //converting count to a string
+        tmp_str.toCharArray(buf, tmp_str.length() + 1);
+        MQTTclient.publish("ESP-01_2/pulselength", buf);
+        MQTTclient.publish("ESP-01_2/state", "total counts:");
+        tmp_str = String(totalcounter); //converting int to a string
+        tmp_str.toCharArray(buf, tmp_str.length() + 1);
+        MQTTclient.publish("ESP-01_2/state", buf);
+      }
+      if (totalcounter % TOTALDELAY == 0)      // publish value every ## times as status update
+      {
+        MQTTclient.publish("ESP-01_2/state", "total counts:");
+        tmp_str = String(totalcounter); //converting count to a string
+        tmp_str.toCharArray(buf, tmp_str.length() + 1);
+        MQTTclient.publish("ESP-01_2/state", buf);
+      }
+      digitalWrite(LEDPIN, HIGH);     // blink led
+      delay(100);
+      digitalWrite(LEDPIN, LOW);
+    }
+
+  }
+  if (measurement == true && millis() > (measurementbegin + MEASUREMENT))
+  {
+    if (debug)      // publish debug messages
+    {
+      MQTTclient.publish("ESP-01_2/state", "measurement ended");
+    }
+    tmp_str = String(pulsecount); //converting count to a string
+    tmp_str.toCharArray(buf, tmp_str.length() + 1);
+    MQTTclient.publish("ESP-01_2/count", buf);
+
+    // new calculation
+    time_elapsed = lastpulse - measurementbegin;  // the last detected pulse defines the actual measurement period
+    int hourcount = (pulsecount - 1) * ((HOUR) / (time_elapsed - pulselength));      //the last pulse must be substracted, because we should measure until the beginning of the pulse
+    tmp_str = String(hourcount); //converting number to a string
+    tmp_str.toCharArray(buf, tmp_str.length() + 1);
+    //MQTTclient.publish("ESP-01_2/state", buf);
+    MQTTclient.publish("sensor/powerW", buf);
+
+    // clean up values
+    pulsecount = 0;
+    measurement = false;
+  }
+}
+
+boolean reconnect()
+{
+  if (WiFi.status() != WL_CONNECTED) {    // check if WiFi connection is present
+    WiFi.begin(mySSID, myPASSWORD);
+    time1 = millis();
+    while (WiFi.status() != WL_CONNECTED) {
+      delay(50);
+      time2 = millis();
+      if (((time2 - time1) / 1000) > WIFI_CONNECT_TIMEOUT_S)  // wifi connection lasts too long
+      {
+        break;
+      }
+    }
+  }
+  MQTTclient.connect("ESP-01_2-Client");
+  return client.connected();
+}
+
+...

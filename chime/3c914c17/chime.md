@@ -1,0 +1,16 @@
+# Todo: Write about that maybe we should aim at having society enable evolution of itself in the face of fact that we know we can never know how it should be?
+
+```#3c914c17``` *As of 2015-09-11 18:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, we know that each brain is itself to small to grasp the truth about what society is the ”best” for us. Thus suggests that we should go for a society that allows evolutionary forces to shape it.
+
+1) So, what criteria should we propose for evolution of society to our benefits?  
+2) Is it not so that such evolution is in fact going on? Can we identify those evolutionary powers? And if so, can we use our power of reasoning to speed things up?  
+3) Should we pay special attention to not allow ”evolution” try out ”bad” societies? In the face of society changes perhaps being intransitive (Good-better-better-better may be worse), how do we know what societies to avoid? Or should we just decide that we should always minimize suffering in the current society regardless of how much better society we may have by doing so (e.g. we should not allow violent revolutions, holocausts or wars as necessary tools)?  
+4) What is a good evaluation of the ”greatness” of a society? If we are restricted to experience-as-it-is validated by truth-webs we should be aware that we are able to affect the experience by applying different truth-webs. Then, is a society a great one if it feels great just because we apply false beliefs for example?  
+...
+
+{% endraw %}

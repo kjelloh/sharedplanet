@@ -1,0 +1,27 @@
+# Todo: spc, the goal of declaration of dependence
+
+```#0525f53e``` *As of 2015-08-11 10:53*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+The declaration shall state 1) what you depend on others to share with you and 2) What you like to share with others to make your and others life rich.
+
+Each human a) Occupies space, b) Requires resources in form of space, energy, food and water, air etc. and c) Occupies a node in the web of society. All this defines the dependency we all are on sharing with others and for others to share with us. No man is an iland and for the optimal life we all need a fair share of our commons.
+
+\*) A secure future (sustainable production and consumption)  
+\*) ability to make a difference  
+\*) fresh air, corral reefs, green forests  
+\*) healthy food  
+\*) freedom to love who you want  
+\*) respect  
+\*) means to pursue happiness  
+\*) correct information to make decisions  
+\*) fair share of resources and wealth  
+\*) sufficient health care
+
+One should state in priority order what one depends on others to share to make it possible.
+
+Skickat från min iPhone
+
+{% endraw %}

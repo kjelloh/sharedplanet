@@ -1,0 +1,177 @@
+﻿The ODrive seems like a really fun and interesting project to delve into!
+
+-1) NOTE: With Darwinet I should only have had to select to enter (join) the ODrive domain and set my view to “devel” (entered the devel state-of-things)
+
+	==> Darwinet would then have mounted this view.
+	==> Darwinet would then have triggered all execution required to get my local machine in sync with the ODrive domain
+	==> Preferably dependancies should also have been in Darwinet Domains (so that Darwinet simply could have nested them)
+
+		==> In this way no local operations to modify my local state would have been necessary?
+		..
+
+
+A Lot of tedious “manual state setting operations” now follows...
+
+1) The ODrive GutHub project seems to live here (https://github.com/madcowswe/ODrive)?
+
+2) Consider to Clone and create the ODrive software and firmware tool chain on OS X?
+
+	==> I seem to have cloned ODrive and switched to the devel branch?
+
+
+
+	
+
+	==> This seems to be the instructions to build the tool chain (https://github.com/madcowswe/ODrive/blob/devel/Firmware/README.md)?
+
+“To customize the compile time parameters, copy or rename the file Firmware/tup.config.default to Firmware/tup.config and edit the parameters in that file:"
+
+	==> I copied this Firmware/tup.config.default
+
+# Copy this file to tup.config and adapt it to your needs
+# make sure this fits your board
+#CONFIG_BOARD_VERSION=v3.4-24V
+CONFIG_USB_PROTOCOL=native
+CONFIG_UART_PROTOCOL=ascii
+CONFIG_STEP_DIR=n
+
+	==> I created the file Firmware/tup.config with the default content (Removed comment on copy)
+
+# Compile time parameters
+# make sure this fits your board
+#CONFIG_BOARD_VERSION=v3.4-24V
+CONFIG_USB_PROTOCOL=native
+CONFIG_UART_PROTOCOL=ascii
+CONFIG_STEP_DIR=n
+
+	==> I Installed the required tool chain compoentners from brew as instructed.
+
+	
+
+		NOTE: I now may have two installations of osxfuse (this one from brew and the previous one from manually installed the osxfuse package)?
+
+		*SUCKS* - That installations can get fucked up in this way (To much details for user to manage)!
+
+	==> I decided to not install the eprom programmer “openocd” at this time…
+
+	==> Now make fails due to me not configured all compile time parameters (AHA, CONFIG_BOARD_VERSION was commented out)!
+
+Kjell-Olovs-MacBook-Pro-2014:Firmware kjell-olovhogdahl$ make
+Initializing .tup in /Users/kjell-olovhogdahl/Documents/GitHub/ODrive/Firmware
+.tup repository initialized.
+ 1) new variant: tup.config
+ [ ] 100%
+tup error [string "Tupfile.lua"]:27: board version not specified - take a look at tup.config.default
+stack traceback:
+	[C]: in function 'error'
+	[string "Tupfile.lua"]:27: in main chunk
+ [          ETA~=<1s Remaining=42            ]   2%                                                                                         
+ *** tup: 1 job failed.
+make: *** [all] Error 1
+Kjell-Olovs-MacBook-Pro-2014:Firmware kjell-olovhogdahl$
+
+# Compile time parameters
+# make sure this fits your board
+CONFIG_BOARD_VERSION=v3.4-24V
+CONFIG_USB_PROTOCOL=native
+CONFIG_UART_PROTOCOL=ascii
+CONFIG_STEP_DIR=n
+
+	==> Now make seems to work?
+
+Kjell-Olovs-MacBook-Pro-2014:Firmware kjell-olovhogdahl$ make
+ 1) updated variant: tup.config
+ [ ] 100%
+ [          ETA~=<1s Remaining=0             ] 100%                                                                                         
+ *** tup errors ***                                                                                                                         
+tup warning: Writing to hidden file '/Users/kjell-olovhogdahl/Documents/GitHub/ODrive/.git/index'
+ 67) [0.011s] arm-none-eabi-size build/ODriveFirmware.elf                                                                                   
+   text	   data	    bss	    dec	    hex	filename
+  96584	  67644	  28656	 192884	  2f174	build/ODriveFirmware.elf
+ [                   ETA~=<1s Remaining=0  Active=0                    ] 100%                                                               
+tup warning: Update resulted in 1 warning
+Kjell-Olovs-MacBook-Pro-2014:Firmware kjell-olovhogdahl$                                                                                    
+
+	==> It seems we can use VSCode as the IDE (https://github.com/madcowswe/ODrive/blob/devel/Firmware/configuring-vscode.md)?
+
+		==> It is actually Cmd + Shift + X that opens the extension installer in VSCode on Mac (Not ctrl + shift + X)
+
+		==> I reloaded the C++ add-on and VSCode upgraded a bunch of components.
+
+Downloading package 'C/C++ language components (OS X)' (6525 KB) .................... Done!
+Downloading package 'ClangFormat (OS X)' (806 KB) .................... Done!
+Downloading package 'Mono Framework Assemblies' (4751 KB) .................... Done!
+Downloading package 'Mono Runtime (OS X)' (1549 KB) .................... Done!
+Downloading package 'LLDB 3.8.0 (OS X)' (19125 KB) .................... Done!
+
+Installing package 'C/C++ language components (OS X)'
+Installing package 'ClangFormat (OS X)'
+Installing package 'Mono Framework Assemblies'
+Installing package 'Mono Runtime (OS X)'
+Installing package 'LLDB 3.8.0 (OS X)'
+
+Finished
+
+
+		*SUCKS* - Why does not VSCode keep itself up to date?
+
+		==> Failed to install “Cortex-Debug” (Wrong version of VSCode)
+
+		*SUCKS* - Why does not VSCode keep itself up to date?
+
+		==> Strange; According to this article VSCode should actually auto-update both itself and add-ons (https://code.visualstudio.com/docs/supporting/FAQ)?
+
+			 
+
+		==> Maybe my VSCode is to old (it does not have the auto-update functionality)?
+
+			==> VSCode downloads as a single file to be placed manually in the Applications folder (or where ever the user wants)
+
+
+			*SUCKS* - Why does not VSCode come with an installer?
+
+
+				
+
+			*SUCKS* - Why does not VSCode come with an installer?
+
+
+	==> But after this hustle I seem to have succeeded to install all recommended add-ons?
+
+		
+
+	==> I opened the ODrive provide VSCode workspace file by double-clicking it from OS X Finder (opening the file from within VSCode does NOTHING)
+
+		*SUCKS* - Why does not VSCode detect the presence of a workspace file when I do “open folder” in VSCode (or provide an option to apply workspace settings on <File><Open>)?
+
+	…
+
+3) It seems the ODrive uses BLDC drivers from STMicroelectronics (http://www.st.com/en/applications/motor-control/pmsm-bldc-motors.html)?
+
+	==> See comment in /Users/kjell-olovhogdahl/Documents/GitHub/ODrive/Firmware/Board/v3/Src/adc.c
+
+Copyright (c) 2018 STMicroelectronics International N.V. 
+  * All rights reserved.
+
+	==> OR - It uses the STM ARM CPU STM32F4xx (http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f4-series.html?querycriteria=productId=SS1577)?
+
+	==> See file /Users/kjell-olovhogdahl/Documents/GitHub/ODrive/Firmware/Board/v3/Src/system_stm32f4xx.c ?
+
+4) It seems ODrive code is in C++?
+
+	==> See directory /Users/kjell-olovhogdahl/Documents/GitHub/ODrive/Firmware/MotorControl
+	==> It seems to use FreeRTOS (https://www.freertos.org)?
+
+ "${workspaceRoot}/Board/v3/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS",
+                "${workspaceRoot}/Board/v3/Middlewares/Third_Party/FreeRTOS/Source/include",
+                "${workspaceRoot}/Board/v3/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+
+	…
+
+…
+
+Consider to continue to delve into the ODrive, buy it, use it and see what I can learn from it (and maybe contribute)?
+...
+	
+
+	

@@ -1,0 +1,23 @@
+﻿It seems it could be a good idea to do the exercises provides by Autodesk to more quickly learn how to use Fusion 360 for my maker purposes?
+
+1) The courses seems to live here (http://f360ap.autodesk.com/courses)?
+
+2) Consider to also practice with using the CAD files for the parts sold by Motedis (https://www.motedis.co.uk/shop/index.php)?
+
+3) Consider to do a Youtube Video about me learning to use Motedis parts in my Table Saw Rip Fence design?
+
+	TODO: Record the steps of downloading Motedis 3D CAD files and use them in Rip Fence Design in Fusion 360?
+
+	==> Consider to go through the exercises and jump in on my Rip Fence Design when I learned something useful?
+	…
+
+4) Consider to do a youtube video of 3D printing my first design in Fusion 360?
+
+	TODO: Decide what to design and Print?
+
+	==> Consider to design and print a simple star-handle for a threaded Rod clamp?
+	...
+
+…
+
+Consider to continue to delve into learning and using Fusion 360 for my maker space designs and creations?

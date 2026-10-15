@@ -1,0 +1,424 @@
+# Todo: Tha View - Consider to have the Tha View apply mutations to a transient copy of the Tha before applying the tatted state back to the persistent Tha?
+
+```#0ea1d22d``` *As of 2017-06-26 16:58*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to have the Tha View (The client) mutations being applied to a Transient Tha Copy before melding resulting state back to the persistent Tha?
+
+==&gt; Also see ”Todo: Tha Repl - Consider to document the different mechanisms of the Elm idiom run-time system as we have designed them for the Repl (and possibly for the Darwinet View run-time)?"
+
+==&gt; Also see ”Todo: Darwinet run-time - It seems wee need to understand how the run-time handles the state branching?"
+
+1) Consider in this way we may allow the View to control at which states to meld mutations made by the client back to the viewed Tha?
+
+==&gt; Consider a ”File System Client” to require meld of file mutation back to the Tha on file close?
+
+==&gt; Consider a Tha View Client may require meld of mutated Tha state back to persistent Tha on Client close?
+
+…
+
+==&gt; Generally - Consider having the Client operate on a Transient Tha reduces the persistent Tha mutations to transactions of all mutations made during some time period defined by the Client?
+
+==&gt; Clients that implements some messaging application may apply instant mutation of Tha for each message to synchronize to the domain peers?
+
+==&gt; Clients that implements some document based interface may require Tha mutation on document close?
+
+…
+
+2) Consider the Tha view run-time may apply update and view on the Transient Tha (Tha´) while the Client has not committed mutations back to the persistent Tha?
+
+==&gt; Consider how Op Msg flows from the Client to the update function (using Transient Tha´ as model)?
+
+| **update**  |
+
+| ^ Application |
+
+------------------------------------|--------------------------------------------
+
+{ Tha´ |
+
+,Msg} |
+
+------------------------------------|--------------------------------------------
+
+| Persistent Tha  |  run-time |
+
+|  **| ** |
+
+| ----------------------- |
+
+| | **run** | |
+
+| | msg-loop | |
+
+| | | |
+
+| | Transient **Tha´** | |
+
+| -----------------------   |
+
+|  ^  |
+
+|  |   |
+
+---------------------------|-----------------------------------------------------
+
+|
+
+{Op Msg} |
+
+==&gt; Consider how Tha´ (Model) flows from update to view?
+
+| **update** **view** |
+
+| | ^ Application |
+
+-------------------------------------|--------------------------|----------------
+
+| { Mod Tha´ {Mod Tha´} |
+
+| ,Cmd Msg} |
+
+-------------------------------------|--------------------------|----------------
+
+|  |  | run-time |
+
+|  **v ** | |
+
+| ----------------------- | |
+
+| | **run** | | |
+
+| | msg-loop |------------------ |
+
+| | | |
+
+| | | |
+
+| -----------------------   |
+
+==&gt; Consider how View Op flows from view to Client?
+
+| **view** |
+
+|  | Application |
+
+-----------------------------------------------------------------|----------------
+
+| { View
+
+| ,Op Msg}
+
+-----------------------------------------------------------------|-------------------
+
+|   | run-time |
+
+|   | |
+
+| ----------------------- | |
+
+| | **run** | | |
+
+| | msg-loop | | |
+
+| | |&lt;------------------ |
+
+| | | |
+
+| | | |
+
+| -----------------------   |
+
+|  |  |
+
+|  |  |
+
+--------------------------------------------|------------------------------------
+
+|
+
+| {View, Op Msg}
+
+v
+
+==&gt; Consider Op Msg to and from Client carries a Model State ID (**state_key**) to find original Persistent Tha state (instance)?
+
+| view sets **state_key** |
+
+| in created Op Msg |
+
+| **view** |
+
+|  | Application |
+
+-----------------------------------------------------------------|----------------
+
+| { View
+
+| ,Op Msg}
+
+-----------------------------------------------------------------|-------------------
+
+|   | run-time |
+
+| Op Msg {   | |
+
+| Payload { ----------------------- | |
+
+| state_key | **run** | | |
+
+| } | msg-loop | | |
+
+| msg | |&lt;------------------ |
+
+| } | Transient **Tha´** | |
+
+| -----------------------   |
+
+|  ^ |  |
+
+|  |  |  |
+
+---------------------------|----------------|------------------------------------
+
+{Op Msg} | |
+
+|
+
+*Client uses* | {View, Op Msg}
+
+*received Op Msg* |
+
+*to copy construct* |
+
+*Op Msg Events* v
+
+carrying **state_key**
+
+back to run-time
+
+==&gt; Consider the run-time applies the Client mutations on the Transient Tha´ and feeds that through the update-view loop to provide Client view update?
+
+==&gt; Consider actual meld of Transient Tha´ back to persistent Tha is made on special Msg from the Client?
+
+3) Consider how run-time may feed Transient Tha´ through the update-view loop to have Client operate on it separate from persistent Tha?
+
+|  |
+
+| (4) Mutates **Tha´** (7) Creates View of **Tha´** |
+
+| **update** **view** |
+
+| ^| ^| Application |
+
+------------------------------------||--------------------------||---------------
+
+(3) || (5) (6) || (8)
+
+{ **Tha´** ||{ Mod **Tha´** { Mod **Tha´**} || { View
+
+,Msg} || ,Cmd Msg}  || ,Op Msg}
+
+------------------------------------||--------------------------||---------------
+
+| Persistent Tha  ||  || run-time |
+
+|  **|v ** || |
+
+| ----------------------- || |
+
+| | **run** |-----------------|| |
+
+| | msg-loop | | |
+
+| | |&lt;------------------ |
+
+| | Transient **Tha´** | |
+
+| |  | |
+
+| | (2) Pairs Msg with | |
+
+| | **Tha´** and feeds it | |
+
+| | to update. | |
+
+| -----------------------   |
+
+|  ^ |  |
+
+|  |  |  |
+
+---------------------------|----------------|------------------------------------
+
+(1) | |
+
+{Op Msg} | |
+
+| (9)
+
+*Client uses *| {View, Op Msg}
+
+*received View (10)* |
+
+*to transform *|
+
+Action to  |
+
+*Op Msg * v
+
+View*: Action -&gt; Op Msg*
+
+(1) Asynchronous - Client sends Op Msg created from Client Actions.
+
+(2) The run-time pairs received Msg with Transient Tha´
+
+(3) The run-time sends {Tha´, Msg} to update for mutation.
+
+(4) The update function applies mutations defined by Msg to Tha´(returns mutated Transient Tha´)
+
+(5) The update returns {Mod Msg, Tha´} back to run-time.
+
+(6) The run-time transfers {Mod Tha´} to view.
+
+(7) The view function creates a View from Transient Tha´.
+
+(8) The view function returns {View, Op Msg}
+
+(9) The run-time transfers {View, Op Msg} to client for Client update according to View.
+
+4) Consider the mechanisms to apply to meld Client Transient Tha´ state back to new Persistent Tha state?
+
+==&gt; Consider the update function recurse on Syn message (requesting run.time to provide original Tha to meld with)?
+
+|  |
+
+| (4) Detects Msg == Syn. |
+
+| Returns Cmd Syn |
+
+| **update** |
+
+| ^| |
+
+------------------------------------||-------------------------------------------
+
+(3) || (5)
+
+{ **Tha' **||{ Mod **Tha´**
+
+,Syn} || ,Cmd Syn}
+
+------------------------------------||-------------------------------------------
+
+| Persistent Tha  ||  run-time |
+
+| |  **|v ** |
+
+| | ----------------------- |
+
+| | | **run** | |
+
+| | | msg-loop | |
+
+| | | | |
+
+| | | (6) Dispatch | |
+
+| ---------------&gt;| Cmd Syn.  | |
+
+| | state_key -&gt; Tha | |
+
+| | -&gt; {Tha, Mld}  | |
+
+| |  | |
+
+==&gt; Consider it is the run-time that updates the Transient Tha´ after it has been updated and before forwarding {View, Op Msg} to Client?
+
+|  |
+
+| (8) Detects Msg == Mld. |
+
+| Melds Tha´in Mld with Tha. |
+
+| Returns new Tha  (7) Creates View of **Tha** |
+
+| **update** **view** |
+
+| ^| ^ Application |
+
+------------------------------------||--------------------------|----------------
+
+(7) || (9) (6) |
+
+{ **Tha ** ||{ Mod **Tha ** {Mod **Tha**} |
+
+,Mld} || ,Cmd Msg}  |
+
+------------------------------------||--------------------------|----------------
+
+| Persistent Tha  ||  | run-time |
+
+|  **|v ** | |
+
+| ----------------------- | |
+
+| | **run** |-----------------| |
+
+| | msg-loop | |
+
+| | | |
+
+| | (10) Updates | |
+
+| | Persistent Tha | |
+
+| |  | |
+
+| -----------------------   |
+
+|  |  |
+
+|   |  |
+
+--------------------------------------------|------------------------------------
+
+|
+
+|
+
+| (9)
+
+*Client uses *| {View, Op Msg}
+
+*received View (10)* |
+
+*...* v
+
+5) It seems the run-time would need to manage both the Confluent Persistent Tha AND the Transient Client Tha´?
+
+==&gt; Consider what design to use to have the run-time hold on to both the Confluent Persistent Tha ADN the Client Transient Tha?
+
+==&gt; Consider the run-time already stores a history of persistent Tha instances (one head Tha per branch)?
+
+==&gt; Thus we can make update and view functions operate on Transient Tha only (both efficient and convenient)?
+
+==&gt; Then - It is the run-time that performs the meld of Transient Tha´ with its source Tha (looking it up in the Tha history)?
+
+==&gt; Consider the run-time does this on special Cmd from update (e.g. Cmd Syn)?
+
+==&gt; Thus only the Transient Tha´gets mutated and looped until the Client requests a Synchronization (meld) with persistent Tha?
+
+...
+
+...
+
+…
+
+Consider to elaborate on this idea to use a Transient Tha in the interface between the run-time persistent Tha and the Client Tha mutations?
+
+...
+
+{% endraw %}

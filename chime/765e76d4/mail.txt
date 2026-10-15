@@ -1,0 +1,6 @@
+﻿I have at some point "hacked" the ComHem coax. connection for IT so the Bedroom IT outlet is disconnected and the now free splitter outlet goes directly to the modem.
+
+	
+	In my apartment the ComHem modem is directly connected to the ComHem IT feed splitter in the IT connection box
+
+...

@@ -1,0 +1,24 @@
+﻿I often want to capture web information that is available only as text captured as images. But I have now discovered at least one way of capturing such a list and turn it into a CSV text format.
+
+1) Consider using OS X screen capture + online OCR service and OS X numbers to get a CSV format of text in the image?
+
+	==> Consider this captured drop down list of vendors (https://cam.autodesk.com/hsmposts?_ga=2.215634775.1537792395.1537295631-1478464243.1529090184 <https://cam.autodesk.com/hsmposts?_ga=2.215634775.1537792395.1537295631-1478464243.1529090184>)?
+
+		
+
+	==> Consider using this OCR online web service to create a windows Excel file (https://onlineocr.net <https://onlineocr.net/>)?
+
+	
+
+	==> Then consider to open it in OS X Numbers and save it as a CSV file?
+
+	
+
+	SEEMS TO WORK PRITTY WELL?
+
+	…
+
+…
+
+Consider to document more ways to capture text from screen captured images?
+...

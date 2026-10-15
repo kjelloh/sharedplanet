@@ -1,0 +1,141 @@
+# Todo: Consider to delve into the Melt open source video editing backend (and compare with ffmpeg as base for my own composable video editor)?
+
+```#71dfc937``` *As of 2022-01-20 13:22*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to be able to automate or at least operate on video clips in a functional manner.
+
+==&gt; Also see "Todo: Consider to try out Synfig 2D Editor (open source and cross platform)?"
+
+1) It seems MLT actually uses FFMpeg under the hood as plug-in for video processing and playback ([https://en.wikipedia.org/wiki/Media_Lovin%27_Toolkit](https://en.wikipedia.org/wiki/Media_Lovin'_Toolkit) )?
+
+> *"Through FFmpeg, MLT is able to support nearly all audio and video formats with optimized operations."*
+
+2) It seems the Multimedia Framework (MLT) lives here (<https://www.mltframework.org> )?
+
+3) It seems I can use MLT to cut together clips as ranges based on frame counts (<https://www.mltframework.org/docs/framework/> )?
+
+> #### Introducing the Mix
+
+> The mix is the simplest way to introduce transitions between adjacent clips on a playlist.
+
+> Consider the following playlist:
+
+> ```
+> +-+----------------------+----------------------------+-+
+> |X|A                     |B                           |X|
+> +-+----------------------+----------------------------+-+
+
+> ```
+
+> Let’s assume that the ‘X’ is a ‘black clip’ of **50 frames long**.
+
+> When you play this out, you’ll get a 50 frames of black, abrupt cut into A, followed by an abrupt cut into B, and finally into black again.
+
+> The intention is to convert this playlist into something like:
+
+> ```
+> +-+---------------------+-+------------------------+-+
+> |X|A                    |A|B                       |B|
+> |A|                     |B|                        |X|
+> +-+---------------------+-+------------------------+-+
+
+> ```
+
+> Where the clips which refer to 2 clips represent a transition. Notice that the representation of the second playlist is shorter than the first - this is to be expected - a single transition of 50 frames between two clips will reduce the playtime of the result by 50 frames.
+
+> This is done via the use of the mlt_playlist_mix method. So, assuming you get a playlist as shown in the original diagram, to do the first mix, you could do something like:
+
+  
+> ```
+> // Create a transition
+> mlt_transition transition = mlt_factor_transition( "luma", NULL );
+
+> // Mix the first and second clips for 50
+> mlt_playlist_mix( playlist, 0, 50, transition );
+
+> // Close the transition
+> mlt_transition_close( transition );
+
+> ```
+
+  
+> This would give you the first transition, subsequently, you would apply a similar technique to mix clips 1 and 2. Note that this would create a new clip on the playlist, so the next mix would be between 3 and 4.
+
+> As a general hint, to simplify the requirement to know the next clip index, you might find the following simpler:
+
+  
+> ```
+> // Get the number of clips on the playlist
+> int i = mlt_playlist_count( );
+
+> // Iterate through them in reverse order
+> while ( i -- )
+> {
+>     // Create a transition
+>     mlt_transition transition = mlt_factor_transition( "luma", NULL );
+
+>     // Mix the first and second clips for 50
+>     mlt_playlist_mix( playlist, i, 50, transition );
+
+>     // Close the transition
+>     mlt_transition_close( transition );
+> }
+
+> ```
+
+  
+> There are other techniques, like using the mlt_playlist_join between the current clip and the newly created one (you can determine if a new clip was created by comparing the playlist length before and after the mix call).
+
+
+
+4) MLT seems to live as open source on Github here (<https://github.com/mltframework/mlt> )?
+
+5) MLT seems to be written in, or at least have wrappers for C++ (<https://github.com/mltframework/mlt/blob/master/src/examples/play.cpp> )?
+
+> #include &lt;Mlt.h&gt;  
+> using namespace Mlt;
+
+> void play(const char \*filename)  
+> {  
+> Profile profile; // defaults to dv_pal  
+> Producer producer(profile, filename);  
+> Consumer consumer(profile); // defaults to sdl
+
+> // Prevent scaling to the profile size.  
+> // Let the sdl consumer do all scaling.  
+> consumer.set("rescale", "none");
+
+> // Automatically exit at end of file.  
+> consumer.set("terminate_on_pause", 1);
+
+> consumer.connect(producer);  
+> consumer.run();  
+> consumer.stop();  
+> }
+
+> int main( int, char \*\*argv )  
+> {  
+> Factory::init();  
+> play(argv&#91;1&#93;);  
+> Factory::close();  
+> return 0;  
+> }
+
+6) It seems video editor Kdenlive is based on MLT (<https://www.mltframework.org/projects/> )?
+
+> ![](PastedGraphic-2.png)
+
+7) It seems 2D animation software Synfig is based on MLT (<https://www.mltframework.org/projects/> )?
+
+> ![](PastedGraphic-3.png)
+
+8) It seems video editor Flowblade is based on MLT (<https://www.mltframework.org/projects/> )?
+
+> ![](PastedGraphic-4.png)
+
+...
+
+{% endraw %}

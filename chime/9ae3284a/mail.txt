@@ -1,0 +1,57 @@
+﻿It seems a good application of Function Cyrrying is to turn Constructors for records into builders of these structures using function composition?
+
+1) Consider a Constructor in C++ taking member values to use in construction?
+
+	struct A {
+	private:
+		int m_x;
+		bool m_b;
+		string m_s;
+	public:
+		A(int x, bool b, string s);
+	};
+
+	==> Consider the Constructor is in fact a function taking three parameters (one for each member in the struct to construct)?
+	==> Consider with Currying we can break down into composition of three functions, each building one member value into A?
+
+	A a = builder<A>()
+		.x(3)
+		.b(false)
+		.s(”Wow”);
+
+	==> Consider this also enables us to enforce a correct full build of A?
+
+		==> It seems we require the client to build A by composing builder functions in the correct order (not leaving one out)?
+	
+	==> Consider what this would look like in C++?
+
+	struct A {
+	private:
+		int m_x;
+		bool m_b;
+		string m_s;
+		auto s_builder(A& a) {return [&a](string& s){a.m_s = s; return a;}}
+		auto b_builder(A& a) {return [&a](bool b) {this->m_b = b; return s_builder(this);}}
+	public:
+		auto builder() {return [this](int x) {this->m_x = x; return b_builder(this);}};
+	};
+	
+		==> Hm… We can do better?
+		…
+
+2) Consider the ”Builder Pattern” seems strongly correlated with Clojure ”Transient Types”?
+
+	==> It seems the Transient Type is mutable but only to allow it to be ”built” using function composition?
+	==> This seems to correspond to the ”builder” functions we get from Currying the Constructor and compose into a builder function (where each intermediate builder operates on a Transient A)?
+	
+		Builder of A: int —> bool —> string —> A
+
+	==> Consider what A and Transient A can look like in C++?
+
+		…
+
+…
+
+Consider to elaborate on this idea of applying Currying to transform a C++ constructor into a builder pattern of composition of a builder function for each member of A using a Transient A?
+...
+

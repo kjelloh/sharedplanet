@@ -1,0 +1,33 @@
+﻿
+
+1) Consider the Sorotec Mafell QTC (Quck tool change) mounting plate technical drawing (https://www.upload.sorotec.de/doku/manuals/ZBP.AP0024.pdf <https://www.upload.sorotec.de/doku/manuals/ZBP.AP0024.pdf> )?
+
+
+
+2) Consider the Mafell FM 1000 PV-WS user manual drawing of the mounting plate (https://produkte.mafell.de/gb/media/pdf/d7/c2/ab/fm800_fm1000_170558_0322_l.pdf <https://produkte.mafell.de/gb/media/pdf/d7/c2/ab/fm800_fm1000_170558_0322_l.pdf> )?
+
+
+
+	==> Also consider (for future use) the bottom plate for mounting something around the milling area?
+
+
+
+2) Consider to make a printable pdf that I can use directly as a drilling template with required accuracy?
+
+	==> Consider this macOS pages document?
+
+	==> Consider this pdf?
+
+
+	IMPORTANT! Ensure to print at 100%!!
+
+
+
+
+	macOS default to printing the pdf at 96% or 97% (never 100% unless I force it to)? 
+
+
+	I forced macOS to print at 100%!
+
+
+...

@@ -1,0 +1,19 @@
+﻿It seems when I study Haskel that what Haskel calls “the kind of a type” is in fact what we in Tha calls the meta-2 value (the type constructor)?
+
+1) Consider this blog post (http://www.parsonsmatt.org/2017/04/26/basic_type_level_programming_in_haskell.html <http://www.parsonsmatt.org/2017/04/26/basic_type_level_programming_in_haskell.html>)?
+
+	==> Its seems pretty clear that the author claims Haskel “kind value” defines a meta-2 value?
+
+Well, it turns out that types don’t have types (kind of, sort of). Types have kinds. We can ask GHCi about the kind of types with the :kind command:
+
+λ> :kind Maybe
+Maybe :: * -> *
+
+		==> And ‘*’ seems to represent types that has values?
+		==> Q: Can Haskel have types that does not carry values (empty value sets)?
+		…
+
+…
+
+Consider to delve deeper into how the Tha model maps to the Haskel type system?
+...

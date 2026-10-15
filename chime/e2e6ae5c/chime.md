@@ -1,0 +1,16 @@
+# Todo: Use Stephen Hicks attack on Post Modernism as an example of the problem of absolute truth
+
+```#e2e6ae5c``` *As of 2015-08-27 12:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+When Stephen Hicks argues against Post Modernism he does that from the platform of arguing for an absolute truth, Post Modernism is just plain wrong and Modernism is just plain right. This creates a locked position in both camps so that instead of finding out what the ”best truth” or ”” most beneficial” truth could be no one gets their point accepted by the opposite camp.
+
+1) A dialectic of saying there is no final truth but we should still find the most beneficial truth or best informed truth should a better stand? So we may argue that we may or may not understand reality-as-it-is. But if we leave that aside for now we should at least be able to ask - is truth about reality-as-it-is of value to us?. And if so, should we at least try to get closer to it? And if not - what would be a beneficial ”illusion" for us to hold on to?  
+2) Stephen Hicks fails to apply the tools he attacks Post Modernism with to his own reasoning. If, when faced by facts that contradicts what we really believe, then we are tempted to disregard those facts to be able to continue to keep our faith. This is of course true also for fre market believers and neo liberals? It is not that there are lacks of facts they seriously questions how beneficial neo liberalism really is. Again, being Super Curious would allow also liberalists to question their own beliefs and the facts they may be missing out on.  
+3) Hicks seems to define progress and enhancement as monetary richness and freedom to choose. Well, in the lights of what Deep Richness may include it is of course questionable how valuable progress in monetary terms really is?
+
+So, can Hicks book be a stance for define the Super Curious approach as the Second Enlightenment as a dialectic between modernism and Post Modernism?
+
+{% endraw %}

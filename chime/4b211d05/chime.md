@@ -1,0 +1,27 @@
+# Todo: Darwinet - Consider a REST-interfaced web-server Peer?
+
+```#4b211d05``` *As of 2016-08-06 14:57*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could we imagine to implement a web-server Darwinet Peer (node) with a REST interface?
+
+1) Consider a JavaScript node transpiled from core C++?
+
+==&gt; Would it be possible to transpile the Node using Emsriptem?
+
+2) Consider to use Odysseus to detect Emscriptem transpilation and apply REST backend?
+
+3) Consider how make it easy for contributors to inject code into their web-service to make it a Darwinet member?
+
+4) Consider to enable the web-peer restrict its data consumption?
+
+==&gt; Consider the Peer to be configurable to the amount of used MB per months/day/hour to ensure it consumes only a fixed percentage of a subscription plan quota?  
+...
+
+Consider to elaborate on this idea to implement a web-server Darwinet Peer with a REST interface?
+
+Skickat från min iPhone
+
+{% endraw %}

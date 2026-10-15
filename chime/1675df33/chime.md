@@ -1,0 +1,13 @@
+# Todo: Tankesmedjan Vidare om äldrevård
+
+```#1675df33``` *As of 2015-10-01 21:01*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Tittar på Landgång i SVT 1 oktober 2015 där hon besöker ett äldreboende på tjörn.
+
+1) En i personalen säger ”man skall kunna fortsätta leva som man gjort även när man blir gammal”. det är en bra devis. Fundera på hur tankesmedjan Vidare kan tänka ut en bättre äldrevård där livet forsätter. Där fokus inte är vård (och ännu mindre förvaring). Utan där ålderdomen blir till liv. En ålderdom där man enligt Unger bara behöver dö en gång, när det är dags.  
+...
+
+{% endraw %}

@@ -1,0 +1,107 @@
+﻿I want to try out running an LLM locally on my laptop.
+
+1) Consider youtube video "Run Deepseek R1 at Home on Hardware from $250 to $25,000: From Installation to Questions" (https://youtu.be/e-EG3B5Uj78 )?
+
+2) Consider to follow the suggestions on the ollama site (https://ollama.com <https://ollama.com/> )?
+
+	==> It seems after having downloaded the ollamap app I do not get a GUI app but a CLI app?
+
+	==> It seems I run as well as download the 7 billion parameter Deepseek model with the command 'ollama run deepseek-r1:7b'?
+
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % ollama run deepseek-r1:7b
+pulling manifest 
+pulling 96c415656d37... 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏ 4.7 GB                         
+pulling 369ca498f347... 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏  387 B                         
+pulling 6e4c38e1172f... 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏ 1.1 KB                         
+pulling f4d24e9138dd... 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏  148 B                         
+pulling 40fb844194b2... 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏  487 B                         
+verifying sha256 digest 
+writing manifest 
+success 
+>>> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % ollama run deepseek-r1:7b
+... pulling manifest 
+... Send a message (/? for help)
+
+	==> It seems I chat with the model by entering plain text and message the ollama CLI with command that starts with '/'?
+
+... Hello, who are you?
+<think>
+Okay, the user tried running Ollama with "ollama run deepseek-r1:7b pulling manifest" and got a greeting. They also asked "Hello, who are you?" 
+
+Hmm, maybe they're new to Ollama or not sure how it works yet. The first command didn't work as expected. It's possible the syntax is incorrect. I remember that Ollama typically uses commands like `ollama run 
+--model MODEL_NAME:VERSION` and `ollama chat`.
+
+So perhaps the user intended to start a conversation but made a typo in their command. They might not be familiar with using Ollama properly yet.
+
+I should suggest the correct way to use Ollama, maybe provide both starting a model and initiating a chat as examples. That way, they can choose which one they need.
+</think>
+
+It seems like you're trying to start an interaction with DeepSeek-R1:7B via Ollama. Let me help clarify how to do this correctly.
+
+First, make sure you have Ollama installed and running on your system. If you haven't already, here's a step-by-step guide:
+
+1. **Install Ollama**: Download and run the appropriate Ollama executable for your system (macOS, Linux, or Windows).
+2. **Start Ollama**: Once installed, open Ollama from your application menu.
+
+To start an interaction with DeepSeek-R1:7B, you can use the following command:
+
+```bash
+ollama run --model deepseek-r1:7b
+```
+
+If you want to directly interact with it like a chatbot, you can also do:
+
+```bash
+ollama chat --model deepseek-r1:7b
+```
+
+After running either of these commands, Ollama will start and be ready for your interactions. You can type `hi` or any other command.
+
+If you need further assistance, feel free to ask!
+
+>>> Send a message (/? for help)
+
+...
+
+>>> What can you tell me about the swedish accouning system called 'BAS'?
+<think>
+Okay, so I'm trying to figure out what the user is asking here. They sent a message saying, "What can you tell me about the swedish accounting system called 'BAS'?" Alright, let's break this down.
+
+First, they mentioned "swedish accounting system" and specifically "BAS". I know that Sweden has its own tax authorities, so maybe they're referring to the general ledger or accounting system used by 
+companies there. But I'm not entirely sure what "BAS" stands for in this context.
+
+I've heard of the "Basis" concept before in accounting terms, but I think it's more related to financial statements rather than a specific system name. Maybe they're mixing up some terms or abbreviations. 
+Could "BAS" be an acronym or shorthand for something else?
+
+Wait, perhaps they're referring to the "Social Accounting System" used by Sweden? I recall that many countries have their own social accounting frameworks to measure and report on social performance. But I'm 
+not sure if Sweden has a specific system called "BAS".
+
+Alternatively, maybe they're asking about the general ledger or chart of accounts commonly used in Sweden for businesses. In that case, it would be helpful to explain how companies there organize their 
+financial data.
+
+I should also consider that the user might have some confusion between different accounting systems or terms. Maybe they saw something online and are trying to understand what it refers to.
+
+To make sure I'm on the right track, I'll look up "BAS Sweden" to see if it's a recognized term or system. If not, I can explain related concepts like how Sweden manages social accounting metrics such as GDP, 
+welfare spending, etc.
+
+Overall, my approach will be:
+1. Check if "BAS" refers to an established Swedish accounting system.
+2. If not, explain related financial and social accounting practices in Sweden.
+3. Ensure clarity on any possible abbreviations or misinterpretations.
+
+This way, the user gets a clear understanding of what they're asking about, even if there was some initial confusion with terminology.
+</think>
+
+It seems like you're asking about "BAS," but it's not immediately clear what specific system or concept you're referring to. However, based on your mention of Sweden and accounting systems, I'll assume you're 
+asking about a specific accounting framework used in Sweden.
+
+In Sweden, companies typically use their own general ledger or chart of accounts, which is tailored to their business needs and regulatory requirements. The Swedish tax authorities (the Tax Administration) 
+provide guidelines for bookkeeping and financial reporting, but the exact structure can vary depending on the type of business and industry.
+
+If you were referring to a specific system named "BAS," please clarify, and I'd be happy to help further!
+
+>>> /bye
+kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % 
+
+
+...

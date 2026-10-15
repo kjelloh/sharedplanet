@@ -1,0 +1,20 @@
+# Todo: Find a name of "truths" that provide real value but only to believers (e.g. money or God)
+
+```#5ccdc0eb``` *As of 2015-09-03 12:50*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+What could be a good name on the type of truths one may invest faith in and that provides value purely by the effects a collaborative act-in-faith provides?
+
+This type of truths have the following characteristics.
+
+1) It is faith in a fictional object. The object shall come to be and be experienced only in the mind (e.g. money or God)  
+2) It may have representations in the objective world (e.g. coins and noter or God depictions or artifacts)  
+3) The object has a value only to those who believes in it. To those who does not believe or state that the object ”does not exist” it has no value.  
+4) The value of the object is at least emotional (experienced) but can also be ”objective”. Objective values are defined by the benefits the believer may get from actin-in-faith to the object. In the case of money the believer benefits by acting to earn money. In the case of God the believer benefits by acting in faith with Gods commands.  
+…
+
+So, what is a good name for the fictitious object of the kind that Money and God is?
+
+{% endraw %}

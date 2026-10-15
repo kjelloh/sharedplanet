@@ -1,0 +1,23 @@
+# Todo: The time I become an Emdividual asking Expresso House to turn of the running tap
+
+```#aecbfe75``` *As of 2015-10-30 16:19*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Just visited Expresso House at Stenbergs Torg in Kista and could not stand they had the tap running. Is this not an example of Me becoming an Emdividual with different traits than the girl running the pace?
+
+1) Argue that it was the situation at hand and my truth-web that made my brain create this "turn of the tap" Emdividual?  
+2) The truth-web of the girl running the place made her run the tap without concerns?  
+...
+
+Consider to tell this story as an example to illustrate his thd Emdividual model if self explains our behaviour?
+
+A) I become one that irritates in the running tap. I'm not always that one. In other situations I may become one that gS the tap running?  
+B) Would the girl become an Emdividual with my "save water" traits would she carry my truth-web?  
+C) Would I become an Emdividual with the girls "consume water" traits if I had her job and thus part of her truth-web?  
+...
+
+Skickat från min iPhone
+
+{% endraw %}

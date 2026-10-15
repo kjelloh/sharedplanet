@@ -1,0 +1,58 @@
+# Todo: Consider to buy Blüm (IKEA compatible) hinges from Swedish web shop Theofilis?
+
+```#9e3bde05``` *As of 2024-03-17 10:29*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I am transforming my IKEA glass wardrobe door to be installed with an inset and need a convenient way to shop for IKEA compatible hinges.
+
+0) Consider the base observations I can make to be able to mount the hinges I have?
+
+> *So, basically it seems I can widen the holes on the inset Blüm clock on 110 degree concealed hinges to fit the screws from IKEA so I can mount them to the glass door?*
+
+> *And the mounting plates I can mount with wood screws as they are designed for. I have 20 mm wood screws that should do the job quite nicely?*
+
+> *But the information below can come in handy in the future should I decide to design furniture with Blüm concealed hinges again and on a larger scale (buy their industry packs and optionally also their drilling jigs for sped up mounting hole creation)?*
+
+> *...*
+
+1) Consider the Swedish web shop Theofilis to shop for IKE / Blüm 35 mm bole drill pattern hinges (<https://www.theofils.se/gangjarn/blum-dolda-gangjarn-35-mm/?pagination=2> )?
+
+==&gt; It seems Theofilis lists Blüm hinges in a for me convenient way (Easy to find 35 mm hole pattern inset bole hinges and mount plates)?
+
+![](PastedGraphic-12.png)
+
+2) It seems I can only order 2 or 4 or damped inset 100 degree hinges (<https://www.theofils.se/gangjarn/blum-dolda-gangjarn-35-mm/gangjarn-blum-dampade-110-innanforliggande-47026/> )?
+
+Note: I tried the undamped ones but then I could only order a "industripack" (more than 50?)
+
+![](PastedGraphic-13.png)
+
+3) COnsider Theofilis web shop has a convenient and easy to navigate page for Blüm mounting plates (<https://www.theofils.se/gangjarn/monteringsplattor/?pagination=2> )?
+
+![](PastedGraphic-15.png)
+
+==&gt; Consider the mounting plate I would like with "snap on" and pre-mounted "system screws" (<https://www.theofils.se/gangjarn/monteringsplattor/blum-monteringsplatta-systemskruv-22181/> )?
+
+![](PastedGraphic-16.png)
+
+==&gt; Note that the drilling pattern they suggest does NOT concur with what I measured for my Inset Blüm 110 degree hinges?
+
+![](PastedGraphic-17.png)
+
+4) Consider the drill templates / gigs that Theofilis provides for creating mounting holes for Blüm concealed hinges (<https://www.theofils.se/gangjarn/gangjarnsmallar/> )?
+
+==&gt; Consider the templates are quite pricy for mouning only one or two doors but maybe worth the expense for future house build projects?
+
+![](PastedGraphic-18.png)
+
+5) Consider the Theofilis prodided sets of "system screws" for Blüm hidden hinges and mounting plates ()?
+
+==&gt; Consider this "longes" (14 mm) system screw that seems to be compatible with IKEA Blüm hinges with pre-mounted 11,5 mm system screws?
+
+![](PastedGraphic-19.png)
+
+...
+
+{% endraw %}

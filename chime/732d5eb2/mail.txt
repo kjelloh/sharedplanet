@@ -1,0 +1,44 @@
+﻿I often feel trapped and uncomfortable with the user interface of "stuff" I own like the micro wave oven, the operating system of my computer or phone or phone, computer and webb-apps that I am using and would like to be able to modify the interface to my liking.
+
+1) Consider it could be a "good" thing if users could modify and share the user interface of digital stuff we are using to enable self organising forces to mould then to our advantage instead of being trapped to use only what the programmer designed driven by the incitement to compete and make profit?
+
+So the basic idea here is that I feel the user interface of all the programmable (digital) stuff we are using is not optimally evolving into the "best" one for us human to use. Is it possible to "free" the user interface part so that users can modify it as they see fit and then share the modified version to have good user interfaces evolve based on "survival of the fittest" darwinian mechanisms?
+
+It seems step one is to come up with a technical solution that allows the user to modify the user interface of any digital device and then also share that modified user interface for others to try and use or reject. So we have two parts to design.
+
+
+2) Consider some technical solutions to break "free" any programmable user interface to enable it to be modified by the user?
+
+Now, let's set the problem of having all developers of devices with programmable user interfaces adapt a common standard. And instead start with trying to find a technical solution that may or may not be adapted?
+
+I have for some time had the hunch that a user interface can be modelled in a Tha model. This means any user interface can be mapped to a model of "parts" composed into Products (this and this and this) and Sums (this or this or this). And it seems we should be able to identify a quite small set of user interface "parts" that we compose in these two ways.
+
+So we have any user interface occupy a flat surface (screen) divided into areas where "parts" lives. If we have severals such "screens" then the main surface is a Sum composition of this screen OR this screen OR this screen.
+
+Similarly each part of such a "screen" (flat surface) can itself be a composition of this AND this AND this. Or it can be a composition of this OR this OR this.
+
+A menu for example is a this AND this AND this composition in a linear array form. WhIle a drop down list have a SUM "part" holding this OR this OR this as selected from the list (the list itself being a this AND this AND this).
+
+Now the main problem may be how to select the set of basic (atomic) parts that makes up "all" user interfaces if interest.
+
+3) Consider the "secret sauce" to model any "screen" user interface is to define a "infer" function to map from the model to a manifest user interface of the device in question?
+
+The basic idea here is to keep the Tha model of the user interface abstract and only model the semantics and topology of the user interface and then apply an "infer" operation that maps this model into a "physical" user interface of "parts" that is actually implemented in the framework run by the device.
+
+So we can imagine an abstract user interface for a word processor that we then "infer" into a macOS implementation or a Windows implementation using the graphical components available on that platform.
+
+We have now (in theory) transformed the problem from being a design time problem of knowing how to implement a specific user interface using the components available on the platform (macOS, Android, Windows, Linux...) of the device, to a problem of inferring what components to use given what the model defines the topology and semantics of the component to be.
+
+So a model that defines a button with an action can (in theory) be inferred into a macOS button and Action or a a Windows Button and Action.
+
+	==> It seems the main problem is to infer the code to be executed (the actions of the user interface) as required by the different platforms and the actual API for that action on each platform?
+
+I need to think more about this.
+
+Q: How do we model code in an abstract way so that we can infer the actual code to call the actual API on the target platform?
+
+I mean, as a programmer we may be able to identify that a Button have an Action that we can implement on each platform. But how do we "invent" some abstract code that we can then infer into actual platform code in a reliable way?
+
+...
+
+...

@@ -1,0 +1,17 @@
+# Todo: Follow up on futurist Ray Kurzweil
+
+```#7ed2ce47``` *As of 2015-07-10 17:37*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+https://en.wikipedia.org/wiki/Ray_Kurzweil
+
+He uses the well observed exponential progress on all kind of development to predict a singularity point after which we can’t predict or see what’s going to happen (much as the event horizon of a black hole).
+
+Consider to follow up on his references to research and future predictions to build politics for the future.
+
+1) The political solutions must try to aim at the observable exponential trends!  
+2) This must lead us to scrap current school system! Instead education must try to prepare students to cope with the singularity(?) or at the least with the known unknown.
+
+{% endraw %}

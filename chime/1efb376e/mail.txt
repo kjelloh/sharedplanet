@@ -1,0 +1,144 @@
+﻿When studying different c++ linker target formats (See “Todo: Programming - Understand binary target files for different build platforms (VS, RAD Studio, Unix/gcc)”) I found an open source application that seem to be able to transform between Visual Studio PE format and RAD Studio (Clang) ELF format?
+
+1) The objconf application seem to be published at this site (http://agner.org/optimize/ <http://agner.org/optimize/>), 
+
+
+	“Object file converter - This utility can be used for converting object files between COFF/PE, OMF, ELF and Mach-O formats for all 32-bit and 64-bit x86 platforms. Can modify symbol names in object files. Can build, modify and convert function libraries across platforms. Can dump object files and executable files. Also includes a very good disassembler supporting the SSE4, AVX, AVX2, AVX512, FMA3, FMA4, XOP and Knights Corner instruction sets. Source code included (GPL). Manual. File name: objconv.zip, size: 1010456, last modified: 2015-Dec-09.”
+
+	==> Downloaded and unzipped to “C:\temp\objconv”
+
+
+
+	==> Note the exe-file “objconv.exe” is provided!
+
+2) Consider to try it out on the Coco library built for 64-bit windows using provided Visual Studio build files?
+
+	==> See succes in “Todo: Programming - Consider to study the POCO C++ standard Internet protocol library (ftp, pop3)”
+
+	==> Copied objconv.exe to “C:\temp\poco-1.6.1\bin64” to be able to use it locally without having to edit PATH system variable.
+
+	==> Created “C:\temp\poco-1.6.1\lib64\elf64” for *.a versions of the Windows PE *.lib files.
+
+	== >Tried objconv to convert from one lib file to its elf counterpart.
+
+	>objconv -felf64 -nu PocoNet.lib PocoNet.a
+
+	==> This did not work because PocoNet.lib is an import library (DLL stubs) and can’t be converted to static PocoNet.a (implicit static as we did not provide an output format parameter?)
+	
+	Error 2507: PocoNet.lib is an import library. Cannot convert to static library
+
+	==> Tried with the static mt version instead.
+
+	>objconv -felf64 -nu CppUnitmt.lib CppUnitmt.a
+
+C:\temp\poco-1.6.1\lib64>objconv -felf64 -nu CppUnitmt.lib CppUnitmt.a
+
+Input library: CppUnitmt.lib, Format: COFF64, Output: CppUnitmt.a, Format: ELF64
+
+Warning 1301: Image-relative address converted to absolute. Assumes image base = 400000
+Warning 1214: Symbol ?$TSS0@?1???$_Immortalize@V_Iostream_error_category@std@@@std@@YAAEAV_Iostream_error_category@1@XZ@4HA defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ?$TSS0@?1???$_Immortalize@V_Iostream_error_category@std@@@std@@YAAEAV_Iostream_error_category@1@XZ@4HA defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z defined in both modulesTextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@PEBD@Z defined in both modules TestFailure.o and TestCase.o
+Warning 1214: Symbol ??$_Immortalize@V_Iostream_error_category@std@@@std@@YAAEAV_Iostream_error_category@0@XZ defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??$_Immortalize@V_Iostream_error_category@std@@@std@@YAAEAV_Iostream_error_category@0@XZ defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??$__vcrt_va_start_verify_argument_type@QEBD@@YAXXZ defined in both modules TextTestResult.obj and TestCase.o
+Warning 1214: Symbol ??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??$use_facet@V?$ctype@D@std@@@std@@YAAEBV?$ctype@D@0@AEBVlocale@0@@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??$use_facet@V?$ctype@D@std@@@std@@YAAEBV?$ctype@D@0@AEBVlocale@0@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??$use_facet@V?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@@std@@YAAEBV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@0@AEBVlocale@0@@Z defined in both modules TextTestResult.obj and TestCase.o
+Warning 1214: Symbol ??$use_facet@V?$numpunct@D@std@@@std@@YAAEBV?$numpunct@D@0@AEBVlocale@0@@Z defined in both modules TextTestResult.obj and TestCase.o
+Warning 1214: Symbol ??0TestResult@CppUnit@@QEAA@XZ defined in both modules TextTestResult.obj and TestCase.o
+Warning 1214: Symbol ??0_Locinfo@std@@QEAA@PEBD@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??0_Locinfo@std@@QEAA@PEBD@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??0_System_error@std@@QEAA@AEBV01@@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??0_System_error@std@@QEAA@AEBV01@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??0bad_cast@std@@QEAA@AEBV01@@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??0bad_cast@std@@QEAA@AEBV01@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??0exception@std@@QEAA@AEBV01@@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??0exception@std@@QEAA@AEBV01@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??0failure@ios_base@std@@QEAA@AEBV012@@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??0failure@ios_base@std@@QEAA@AEBV012@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??0runtime_error@std@@QEAA@AEBV01@@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??0runtime_error@std@@QEAA@AEBV01@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??0system_error@std@@QEAA@AEBV01@@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??0system_error@std@@QEAA@AEBV01@@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??0system_error@std@@QEAA@Verror_code@1@PEBD@Z defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??0system_error@std@@QEAA@Verror_code@1@PEBD@Z defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??1?$_Yarn@D@std@@QEAA@XZ defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??1?$_Yarn@D@std@@QEAA@XZ defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??1?$_Yarn@_W@std@@QEAA@XZ defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??1?$_Yarn@_W@std@@QEAA@XZ defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ defined in both modules TestRunner.o and TestFailure.o
+Warning 1214: Symbol ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ defined in both modules TestFailure.o and TestCase.o
+Warning 1214: Symbol ??1?$ctype@D@std@@MEAA@XZ defined in both modules TextTestResult.obj and TestRunner.o
+Warning 1214: Symbol ??1?$ctype@D@std@@MEAA@XZ defined in both modules TestRunner.o and TestCase.o
+Warning 1214: Symbol ??1?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MEAA@XZ defined in both modules TextTestResult.obj and TestCase.o
+Warning 1214: Symbol ??1?$numpunct@D@std@@MEAA@XZ defined in both modules TextTestResult.obj and TestCase.o
+Warning 1214: Symbol ??1?$vector@PEAVTestFailure@CppUnit@@V?$allocator@PEAVTestFailure@CppUnit@@@std@@@std@@QEAA@XZ defined in both modules TextTestResult.obj and TestCase.o
+Warning 1214: Symbol ??1ExclusiveZone@TestResult@CppUnit@@QEAA@XZ defined in both modules TextTestResult.obj and TestResult.o
+Warning 1214: Symbol ??1ExclusiveZone@TestResult@CppUnit@@QEAA@XZ defined in both modules TestResult.o and TestCase.o
+Supressing further warning messages
+
+538 Debug sections removed
+565 Exception sections removed
+
+C:\temp\poco-1.6.1\lib64>
+
+	==> Reading manual for objconv it seems that converting to ELF format assumes unix operating system ()?
+
+	“10.1 Call stubs for 64-bit conversions.  It is necessary to use call stubs when converting 64-bit compiler-generated code between Windows and Linux systems. Call stubs are not needed for 32-bit code or when converting between different Unix systems. “
+
+	==> Does this mean converting to ELF for linking in windows will not work?
+
+	==> The try to link to the generated -a files from RAD Studio?
+
+2) Made batch scripts to convert all lib files
+
+	==> ALLPOCO2ELF.BAT
+
+FOR %%F IN (*.LIB) DO CALL LIB2ELF %%~nF
+
+	==> LIB2ELF.BAT
+
+objconv -felf64 -nu %1.LIB .\elf64\%1.a
+PAUSE
+
+	==> The following files was created (static libs failed all the PocoUtilxx.lib files, program crashed)
+
+ Directory of C:\temp\poco-1.6.1\lib64\elf64
+
+2015-12-17  20:05           550ÿ010 CppUnitmd.a
+2015-12-17  20:05         2ÿ159ÿ972 CppUnitmdd.a
+2015-12-17  20:05         1ÿ039ÿ820 CppUnitmt.a
+2015-12-17  20:05         2ÿ975ÿ136 CppUnitmtd.a
+2015-12-17  20:06         2ÿ886ÿ592 PocoJSONmd.a
+2015-12-17  20:06         8ÿ814ÿ626 PocoJSONmdd.a
+2015-12-17  20:06         3ÿ609ÿ962 PocoJSONmt.a
+2015-12-17  20:06         9ÿ975ÿ344 PocoJSONmtd.a
+2015-12-17  20:06         9ÿ169ÿ180 PocoNetmd.a
+2015-12-17  20:06        26ÿ727ÿ890 PocoNetmdd.a
+2015-12-17  20:07        13ÿ692ÿ212 PocoNetmt.a
+2015-12-17  20:07        33ÿ672ÿ982 PocoNetmtd.a
+2015-12-17  20:12         3ÿ955ÿ844 PocoXMLmd.a
+2015-12-17  20:12        11ÿ562ÿ146 PocoXMLmdd.a
+2015-12-17  20:12         4ÿ518ÿ326 PocoXMLmt.a
+2015-12-17  20:12        12ÿ429ÿ176 PocoXMLmtd.a
+
+3) If this works we may have a path to use latest boost libraries built using Visual Studio in RAD Studio XE7 for 64-bit targets?
+
+	==> Or will the header files not match the library files?
+	==> Is that a problem or can we just avoid using stuff in the header files that are not in the built libraries?
+	==> Note: BCC64 (RAD Studio 64-bit C++ compiler) will present itself to the source code as a clang compiler. This would suggest the header files will match the built libraries as long as VS C++ compiler is as capable as the clang compiler?
+	==> Or will actually VS C++ compiler be less capable than the clang compiler meaning the header file will appear to carry more stuff to BCC64 than VS actually built into the libraries?
+	…
+
+Consider to try this path out to see what we can do with ELF-libraries transformed from VS built lib-files?
+... 

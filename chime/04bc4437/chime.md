@@ -1,0 +1,22 @@
+# Todo: Consider to use an "earth ship" house as an energy storage by having it be raisable on ratchet and pinion based brushless motor and electric generator mechanism?
+
+```#04bc4437``` *As of 2019-04-22 17:07*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Just though it was a fun and potentially valuable idea to have a house rest on a vertical ratchet and pinion system so that it could be raised to store energy as potential energy?
+
+1) Consider the amount of energy we may potentially store as pure potential energy of the weight of the house raised some distance?
+
+==&gt; Consider the house is some form of unattached "earth ship" with water tanks included in the house weight?
+
+> *The idea here is that if we make the house some form of "earth ship" we can have everything including the stored water tanks attached to the house itself. Then the weight of the house will include both any stored fresh water as well as any currently stored waist in the form of extracted excrements that has not yet been collected for disposal.*
+
+![](IMG_4471.jpeg)
+
+*The House stores energy by being raised to some height using a rack and pinion system *
+
+...
+
+{% endraw %}

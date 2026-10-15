@@ -1,0 +1,17 @@
+# Todo: Design cloud based electronic payment system with global plug-in and auto-learning trust and service cost
+
+```#60b45eac``` *As of 2015-09-10 13:30*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to design a electronic payment system that automatically tests and learn to trust clients based on performance and actions.
+
+1) Eliminate the need to test and certify by enabling the system itself to evaluate clients based on their behavior. The more and longer they does not break the rules not the trust they climb to cheaper and better performing systems.  
+2) make the system cloud-based and global accessible. The system shall rely on information trust and not hardware nor human monitoring trust.  
+3) The system shall be plug-and-play and learn the interface of the client. As long as the client is compliant with sufficient security and service requirements they shall be able to process electronic fund transfer.  
+…
+
+The basic goal is to eliminate the need of human action to program and maintain client connections. Consider to try in design how far we may reduce human interaction from an electronic fund transfer processing Host?
+
+{% endraw %}

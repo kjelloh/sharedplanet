@@ -1,0 +1,27 @@
+﻿I am tempted to build my own portable cabin and the insight into caravan design may be of interest.
+
+1) Consider this Swedish youtube video "Så tillverkas din KABE" from Kabe (https://youtu.be/GQpo8k-VmFU <https://youtu.be/GQpo8k-VmFU> )?
+
+	==> They seem to use PVC beams?
+
+
+
+	==> They seems to isolate with a product called "Ecoprim"?
+
+
+
+	Note: Searching Paric web site it seems this product is no longer available?
+
+2) Consider the Ecoprim product is also called "PAROC XES 200j" (https://se.paroc.com/-/media/files/certificates/se_bvd3_ecoprim_se.pdf <https://se.paroc.com/-/media/files/certificates/se_bvd3_ecoprim_se.pdf> )?
+
+
+
+
+
+	Note: It is a bit strange that I failed to search the Paroc web site for "XES 200j" (they have renamed their product)?
+
+	==> Also see (https://www.beijerbygg.se/wcsstore/BeijerCAS/HPMAssets/d120001/medias/docus/19/PAROC_XES_200j_datasheet_130516_085221_0026.pdf <https://www.beijerbygg.se/wcsstore/BeijerCAS/HPMAssets/d120001/medias/docus/19/PAROC_XES_200j_datasheet_130516_085221_0026.pdf> )?
+
+"Kyl- och frysrumsisolering, flytande golv, sandwichkonstruktioner, flytbryggor. Betongtak terrasser, gårdsbjälklag, p-däck, etc där normal belastning förväntas, isolering av källarytterväggar med högt jordtryck. Kantutformning: Falsad"
+
+...

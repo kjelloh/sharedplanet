@@ -1,0 +1,100 @@
+# Todo: Consider when shopping from Dustin it is more expensive to purchase as a company than as a private person?
+
+```#7afd22a4``` *As of 2019-04-10 14:23*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider this order that sums up to 5221 SEK including shipping and fees when purchased as a company?
+
+> Produkter i kundvagnen  
+> Ändra  
+> • ![G-Technology G-DRIVE Mobile Pro GDMOPTB3WB5001DBB](g-drive-mobile-pro-gdmoptb3wb5001dbb.png)  
+> G-Technology G-DRIVE Mobile Pro GDMOPTB3WB5001DBB  
+> 1 st, **3 245,00 kr**  
+> • ![Apple Thunderbolt 3 to Thunderbolt 2 Adapter](thunderbolt-3-to-thunderbolt-2-adapter.jpg)  
+> Apple Thunderbolt 3 to Thunderbolt 2 Adapter  
+> 1 st, **519,00 kr**  
+> • ![Kingston High-Speed Media Reader](high-speed-media-reader.jpg)  
+> Kingston High-Speed Media Reader  
+> 1 st, **245,00 kr**
+
+> Totalkostnad  
+> 5 221,25 kr  
+> Inkl. moms  
+> 3 produkter  
+> 4 009,00 kr  
+> Frakt från  
+> 139,00 kr  
+> Fakturaavgift  
+> 29,00 kr  
+> Moms  
+> 1 044,25 kr
+
+2) Consider the same order sums up to 5225 including shipping and fees when purchased as private person?
+
+> Du har 3 varor i din kundvagn  
+> EnhetsprisAntalTotalt  
+> • ![G-Technology G-DRIVE Mobile Pro GDMOPTB3WB5001DBB 0.488TB Svart](g-technology-g-drive-mobile-pro-gdmoptb3wb5001dbb-0488tb-svart.png)  
+> G-Technology G-DRIVE Mobile Pro GDMOPTB3WB5001DBB 0.488TB Svart  
+> Artikelnummer: 5011105496  
+> **4 229,00 kr**  
+> 4 229,00 kr  
+> −  
+> +  
+> Ta bort  
+> Lägg till notering  
+> Välj tillbehör  
+> Kan skickas inom 48h  
+> • ![Apple Thunderbolt 3 to Thunderbolt 2 Adapter](apple-thunderbolt-3-to-thunderbolt-2-adapter.jpg)  
+> Apple Thunderbolt 3 to Thunderbolt 2 Adapter  
+> Artikelnummer: 5010994142  
+> **649,00 kr**  
+> 88 kvar  
+> 649,00 kr  
+> −  
+> +  
+> Ta bort  
+> Lägg till notering  
+> Kan skickas omgående  
+> • ![Kingston High-Speed Media Reader](kingston-high-speed-media-reader.jpg)  
+> Kingston High-Speed Media Reader  
+> Artikelnummer: 5010849379  
+> **345,00 kr**  
+> 46 kvar  
+> 345,00 kr  
+> −  
+> +  
+> Ta bort  
+> Lägg till notering  
+> Kan skickas omgående  
+> Totalt: 3 produkter5 223,00 kr
+
+> Totalt  
+> **5 252,00 kr**  
+> Inkl. moms  
+> 3 produkter 5 223 kr  
+> Frakt från **0,00 kr**  
+> Fakturaavgift **29,00 kr**  
+> Produkter i kundvagnen  
+> • 1 x G-Technology G-DRIVE Mobile Pro GDMOPTB3WB5001DBB 0.488TB Svart  
+> • 1 x Apple Thunderbolt 3 to Thunderbolt 2 Adapter  
+> • 1 x Kingston High-Speed Media Reader
+
+3) Consider to compare the pricing between ordering as a company and ordering as a private person?
+
+==&gt; It seems the G-Technology G-DRIVE Mobile Pro GDMOPTB3WB5001DBB 0.488TB is 4056 vs 4229 (inc VAT)
+
+==&gt; It seems the Apple Thunderbolt 3 to Thunderbolt 2 Adapter is 649 vs 649 (inc. VAT)
+
+==&gt; It seems the Kingston High-Speed Media Reader is 306 vs 345 (Inc. vat)
+
+==&gt; It seems shipping and fees are 139 + 29 SEK vs 0 + 29 SEK
+
+==&gt; So, in some clever way Dustin provides a little better single item prices for me as a company but then adds a 139 SEK fee that I as a private person is not charged?
+
+==&gt; So, all in all, this time the final cost is the same regardless of wether I purchase as a company or as a private person?
+
+...
+
+{% endraw %}

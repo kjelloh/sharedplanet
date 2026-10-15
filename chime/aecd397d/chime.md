@@ -1,0 +1,94 @@
+# Todo: Programming - Consider to study C++ Facebook Open Source library "Folly"?
+
+```#aecd397d``` *As of 2016-01-12 13:01*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+In his talk ”C++ and beyond 2012” (<https://sec.ch9.ms/ch9/31e0/0220c632-8fd7-490e-843e-c54caee331e0/CB2012AndreiAlexandrescuSystematicErrorHandling_mid.mp4>) Alexandrescu refers to a Facebook C++ open source library called ”Folly”. Consider to look into that to see what can be learned and used?
+
+1) The Folly project seem to be published here (<https://github.com/facebook/folly>)?
+
+==&gt; This seem to be a good starting point to understand Folly (<https://github.com/facebook/folly/blob/master/folly/docs/Overview.md>)?
+
+”Folly (acronymed loosely after Facebook Open Source Library) is a library of C++11 components designed with practicality and efficiency in mind”
+
+==&gt; Source code folder structure uses the ”stuttering” scheme.
+
+”At the top level Folly uses the classic "stuttering" scheme folly/folly used by Boost and others. The first directory serves as an installation root of the library (with possible versioning a la folly-1.0/), and the second is to distinguish the library when including files, e.g. #include &lt;folly/FBString.h&gt;."
+
+2) The ”folly” c++ open source project motivation and content seem to be published here (<https://www.facebook.com/notes/facebook-engineering/folly-the-facebook-open-source-library/10150864656793920>)?
+
+”Similarly, folly::format is less clumsy than iostream manipulators, and, unlike other options available to C++, does not sacrifice either type safety or performance. ”
+
+”you'll find Folly complements some existing high quality C++ libraries, such as Boost or the Standard Library, both of which we use heavily.”
+
+3) Consider to delve into selected parts of the Folly library that seem interesting regarding useful problems?
+
+==&gt; They seem to implement an interesting synchronization-idiom (<https://github.com/facebook/folly/blob/master/folly/docs/Synchronized.md>)
+
+class AdPublisherHandler : public AdPopulatorIf,
+
+```
+                               public fb303::FacebookBase,
+                               public ZkBaseApplication {
+      ...
+      Synchronized<OnDemandUpdateIdMap>
+        adsToBeUpdated_,
+        limitsToBeUpdated_,
+        campaignsToBeUpdated_;
+      ...
+    };
+
+    void AdPublisherHandler::requestUpdateAdId(const int64_t adId,
+                                               const int32_t dbId) {
+      checkDbHandlingStatus(dbId);
+      SYNCHRONIZED (adsToBeUpdated_) {
+        adsToBeUpdated_[dbId][adId] = 1;
+      }
+      adPublisherMonitor_->addStatValue("request_adId_update", 1, dbId);
+      LOG(INFO) << "received request to update ad id " << adId;
+    }
+```
+
+==&gt; They implement an interesting thread-safe lock-free Producer-Consumer queue (<https://github.com/facebook/folly/blob/master/folly/docs/ProducerConsumerQueue.md>)?
+
+==&gt; Note that the queue aims in posting data, not functors (although it may of course do that to)
+
+folly::ProducerConsumerQueue&lt;folly::fbstring&gt; queue;
+
+```
+
+    std::thread reader([&queue] {
+      for (;;) {
+        folly::fbstring str;
+        while (!queue.read(str)) {
+          //spin until we get a value
+          continue;
+        }
+
+        sink(str);
+      }
+    });
+
+    // producer thread:
+    for (;;) {
+      folly::fbstring str = source();
+      while (!queue.write(str)) {
+        //spin until the queue has room
+        continue;
+      }
+    }
+```
+
+==&gt; This codePointToUtf8() seem to be a very compact and easy-to-use UTC Code point to UTF8 sequence (<https://github.com/facebook/folly/blob/master/folly/Unicode.cpp>)?
+
+4) The folly library may be downloaded as zip-file here (<https://github.com/facebook/folly/archive/master.zip>)?
+
+…
+
+Consider to look into this library and perhaps ”steal” (if ok and apache license does not infect the code it is used in) parts of interest?
+
+...
+
+{% endraw %}

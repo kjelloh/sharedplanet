@@ -1,0 +1,42 @@
+﻿I find it interesting to keep in touch with the diagnostics interface of cars over the ODB2 connector.
+
+1) Consider youtube video "Exploring a cheap OBD2 vehicle diagnostics module" (https://youtu.be/HrL6fDFt-Rs )?
+
+	==> At around 1:43 it seems he shows and describe the ODB2 connector nicely (https://youtu.be/HrL6fDFt-Rs?t=103 )?
+
+￼
+
+2) Consider the CAN bus protocol as defined by ISO 15765-4 (https://www.iso.org/standard/78384.html )
+
+"This document specifies requirements for CAN-based communication systems between the in-vehicle network and the diagnostic link connector of the vehicle. "
+
+	==> Also see Wikipedia "CAN Bus" (https://en.wikipedia.org/wiki/CAN_bus )
+
+"A controller area network (CAN) is a vehicle bus standard designed to enable efficient communication primarily between electronic control units (ECUs). Originally developed to reduce the complexity and cost of electrical wiring in automobiles through multiplexing, the CAN bus protocol has since been adopted in various other contexts, such as 3D printing[1]."
+
+3) Consider the ODB2 connector as defined by ISO 9141 (https://www.iso.org/obp/ui/en/#iso:std:iso:9141:ed-1:v1:en )
+
+	==> Also see Wikipedia "On-board diagnostics" (https://en.wikipedia.org/wiki/On-board_diagnostics )
+
+	==> It seems 'big clive' has used the wikipedia available coloured view of the ODB2 connector pins?
+
+￼
+(https://en.wikipedia.org/wiki/File:OBD-II_type_A_female_connector_pinout.svg )
+
+4) Consider SAE J1850 PWM and VPW is part of ODB2 (https://en.wikipedia.org/wiki/On-board_diagnostics#SAE_standards_documents_on_OBD-II )
+
+Standards documents
+SAE standards documents on OBD-II
+J1962 – Defines the physical connector used for the OBD-II interface.
+J1850 – Defines a serial data protocol. There are two variants: 10.4 kbit/s (single wire, VPW) and 41.6 kbit/s (2 wire, PWM). Mainly used by US manufacturers, also known as PCI (Chrysler, 10.4K), Class 2 (GM, 10.4K), and SCP (Ford, 41.6K)
+J1978 – Defines minimal operating standards for OBD-II scan tools
+J1979 – Defines standards for diagnostic test modes
+J2012 – Defines standards trouble codes and definitions.
+J2178-1 – Defines standards for network message header formats and physical address assignments
+J2178-2 – Gives data parameter definitions
+J2178-3 – Defines standards for network message frame IDs for single byte headers
+J2178-4 – Defines standards for network messages with three byte headers
+J2284-3 – Defines 500K CAN physical and data link layer
+J2411 – Describes the GMLAN (Single-Wire CAN) protocol, used in newer GM vehicles. Often accessible on the OBD connector as PIN 1 on newer GM vehicles
+
+...

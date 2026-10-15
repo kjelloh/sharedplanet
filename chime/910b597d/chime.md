@@ -1,0 +1,290 @@
+# Todo: Programming - Consider to study available ABC 80 emulation software and technologies?
+
+```#910b597d``` *As of 2016-06-29 12:21*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be fun and lead to new learnings about C++ programming by studying available ABC 80 emulation softwares and initiatives?
+
+1) An ABC 80 org site seems to publish an ABC 80 emulator for both windows and Linux (<http://www.abc80.org>)?
+
+2) This ”abc80sim” seems to be a downloadable C-source for a Windows ABC 80 emulator (<http://www.abc80.org/pub/abc80sim/>)?
+
+3) This ”ABCWin2” seems to be a downloadable C-sourtce for Linux ABC 80 emulator but it does not work (<http://www.abc80.org/pub/abcwin/>)?
+
+4) This seems to be a Github project with ABC 80 programs and leads to ABC 80 simulators (<https://github.com/mobluse/abc80-mob>)?
+
+==&gt; It seems to refer to this site for BASIC programs ([http://www.df.lth.se.orbin.se/%7Emikaelb/abc/80/](http://www.df.lth.se.orbin.se/~mikaelb/abc/80/))?
+
+==&gt; It seems to refer to this thread for leads and discussion for Rasperry Pi ABC 80 emulator source (<https://www.raspberrypi.org/forums/viewtopic.php?p=534518#p534518>)?
+
+==&gt; This seems to be the link to the Raspberry PI ABC 80 emulator ([http://df.lth.se.orbin.se/~mikaelb/abc/ … spi.tar.gz](http://df.lth.se.orbin.se/~mikaelb/abc/80/abc80sim-2.1-raspi.tar.gz))?
+
+==&gt; The README file says: ”This is a binary release for Raspberry Pi with Raspbian by M.O.B. This realease has NO WARRANTY and the source code is at [abc80.org](http://abc80.org).”
+
+==&gt; It seems to be a binary distribution of the abc80sim at (<http://www.abc80.org/pub/abc80sim/>)?
+
+5) Consider to try to build and run the Linux (macOS?) abc80sim ([abc80sim-2.1.tar.gz](http://www.abc80.org/pub/abc80sim/abc80sim-2.1.tar.gz))?
+
+==&gt; The makefile seems to be for gnu make and also work in Cygwin (MinGW) for windows?
+
+> #  
+> # Makefile for the ABC80 emulator  
+> #
+
+> top_srcdir = @top_srcdir@  
+> srcdir = @srcdir@  
+> VPATH = @srcdir@  
+> prefix = @prefix@  
+> exec_prefix = @exec_prefix@  
+> bindir = @bindir@  
+> mandir = @mandir@  
+> datarootdir = @datarootdir@
+
+> CC = @CC@  
+> CFLAGS = @CFLAGS@  
+> LDFLAGS = @LDFLAGS@  
+> LIBS = @LIBS@
+
+> MKDIR = mkdir  
+> PERL = perl  
+> RM_F = rm -f
+
+> # For Windows/MinGW use obj and .exe  
+> O = @OBJEXT@  
+> X = @EXEEXT@
+
+> GENO = abcrom40.$(O) abcrom80.$(O) ufddos.$(O) printrom.$(O)  
+> GENC = abcrom40.c abcrom80.c ufddos.c printrom.c
+
+> OBJS = abc80.$(O) clock.$(O) sdlscrn.$(O) z80.$(O) abc80_mem.$(O) io.$(O) \\  
+> abcfont.$(O) disk.$(O) \\  
+> abcprint.$(O) print.$(O) fileop.$(O) \\  
+> z80dis.$(O) $(GENO)  
+> SRCS = abc80.c clock.c sdlscrn.c z80.c abc80_mem.c io.c \\  
+> abcfont.c disk.c \\  
+> abcprint.c print.c fileop.c \\  
+> z80dis.c abcrom40.c abcrom80.c $(GENC)  
+> HDRS = clock.h screen.h z80.h patchlevel.h
+
+> .SUFFIXES: .c .h .$(O) .bin
+
+> all: abc80
+
+> install: abc80$(X)  
+> $(MKDIR) -p $(INSTALLROOT)$(bindir)  
+> $(INSTALL_PROGRAM) abc80$(X) $(INSTALLROOT)$(bindir)  
+> $(MKDIR) -p $(INSTALLROOT)$(mandir)/man1  
+> $(INSTALL_DATA) abc80.man $(INSTALLROOT)$(mandir)/man1/abc80.1
+
+> abc80$(X): $(OBJS)  
+> $(CC) $(LDFLAGS) -o abc80$(X) $(OBJS) $(LIBS)
+
+> .bin.c:  
+> $(PERL) bin2c.pl $&lt; &gt; $@ || ( rm -f $@ ; false )
+
+> abcrom40.c: abcrom40.bin bin2c.pl  
+> abcrom80.c: abcrom80.bin bin2c.pl  
+> printrom.c: printrom.bin bin2c.pl  
+> ufddos.c: ufddos.bin bin2c.pl
+
+> printrom.bin: printrom.asm  
+> z80asm/z80asm -l printrom.lst -o printrom.bin printrom.asm
+
+> abc80.$(O): clock.h screen.h z80.h patchlevel.h  
+> clock.$(O): clock.h z80.h  
+> sdlscrn.$(O): screen.h z80.h  
+> z80.$(O): z80.h
+
+> clean:  
+> $(RM_F) abc80$(X) \*.$(O) \*~ core \*.lst  
+> $(RM_F) $(GENC)
+
+==&gt; The abc80.c seems to be the main file?
+
+> #include &lt;stdio.h&gt;  
+> #include &lt;string.h&gt;
+
+> #define MAIN  
+> #include "clock.h"  
+> #include "screen.h"  
+> #include "z80.h"  
+> #include "rom.h"  
+> #include "patchlevel.h"
+
+> static char __version_string&#91;&#93; = VERSION;
+
+> int events_in_queue = 1;  
+> volatile int event_pending = 1;
+
+> /\*  
+> \* Read a two digit hex number from a string  
+> \* and return its numeric value.  
+> \*/  
+> static char \*hexstring = "0123456789ABCDEF";  
+> static uint8_t gethex(char \*p)  
+> {  
+> return (uint8_t)(((strchr(hexstring, \*p) - hexstring) &lt;&lt; 4)  
+> + (strchr(hexstring, \*(p + 1)) - hexstring));  
+> }
+
+> /\*  
+> \* Load in Intel-hex file into memory.  
+> \* No checking of the checksum is performed.  
+> \*/  
+> static void  
+> load_sysfile(FILE \*sysfile)  
+> {  
+> uint8_t \*memory;  
+> char line&#91;128&#93;;  
+> char \*pos;  
+> int len;  
+> int type;
+
+> while ( !feof(sysfile) ) {  
+> memory = mem_rom_address();  
+> fgets(line, 128, sysfile);  
+> if (line&#91;0&#93; != ':') {  
+> fprintf(stderr, "Invalid Intel-hex file.\\n");  
+> exit(1);  
+> }  
+> pos = line + 1;  
+> len = gethex(pos); pos += 2;  
+> memory += (gethex(pos) &lt;&lt; 8); pos += 2;  
+> memory += gethex(pos); pos += 2;  
+> type = gethex(pos); pos += 2;  
+> if (type == 1)  
+> break; /\* End of file record \*/  
+> if (type != 0)  
+> continue; /\* Not a data record \*/  
+> while (len--) {  
+> \*memory++ = gethex(pos);  
+> pos += 2;  
+> }  
+> }  
+> }
+
+> /\*  
+> \* Load an internal ROM  
+> \*/  
+> static void load_rom(const struct rom \*rom)  
+> {  
+> uint8_t \*memory = mem_rom_address();
+
+> memcpy(memory + rom-&gt;offset, rom-&gt;data, rom-&gt;size);  
+> }
+
+> /\*  
+> \* Load the BASIC interpretor into memory.  
+> \*/  
+> static int no_basic = 0;
+
+> void load_basic(int mode40)  
+> {  
+> if (!no_basic)  
+> load_rom(mode40 ? &abcrom40 : &abcrom80);  
+> }
+
+> /\*  
+> \* Print usage message  
+> \*/  
+> static void  
+> usage(void)  
+> {  
+> fprintf(stderr, "Usage: abc80 &#91;-v&#93; &#91;-b&#93; &#91;-d&#93; &#91;hexfile...&#93;\\n");  
+> exit(1);  
+> }
+
+> extern int optind;  
+> extern int getopt(int, char \*\*, char \*);
+
+> int main(int argc, char \*\*argv)  
+> {  
+> char sysfile_name&#91;256&#93;;  
+> FILE \*sysfile;  
+> int no_device = 0;  
+> int c;
+
+> while ((c = getopt(argc, argv, "bdv")) != EOF) {  
+> switch (c) {
+
+> case 'v':  
+> printf("ABC80 emulator version %s\\n", __version_string);  
+> exit(0);  
+> break;
+
+> case 'b':  
+> no_basic = 1;  
+> break;
+
+> case 'd':  
+> no_device = 1;  
+> break;
+
+> default:  
+> usage();  
+> exit(1);  
+> break;  
+> }  
+> }
+
+> screen_init();  
+> mem_init();  
+> io_init();
+
+> /\*  
+> \* Load the device driver code unless  
+> \* we are asked not to.  
+> \*/  
+> if (!no_device) {  
+> load_rom(&ufddos);  
+> load_rom(&printrom);  
+> }
+
+> /\*  
+> \* Load any other program files the  
+> \* user gave on the command line.  
+> \*/  
+> while (optind &lt; argc) {  
+> strcpy(sysfile_name, argv&#91;optind&#93;);  
+> if ((sysfile = fopen(sysfile_name, "r")) == NULL) {  
+> fprintf(stderr, "ABC80: Can't open file: %s\\n", sysfile_name);  
+> exit(1);  
+> }  
+> load_sysfile(sysfile);  
+> fclose(sysfile);  
+> optind++;  
+> }
+
+> /\*  
+> \* Off we go...  
+> \*/  
+> z80_reset();  
+> clock_init();
+
+> z80_run(TRUE);
+
+> screen_reset();  
+> exit(0);  
+> }
+
+6) Consider to mail the authors for permission to publish on Github?
+
+...
+
+7) Consider to try and convert the source to modern C++?
+
+...
+
+8) Consider to find and publish the disassembly I had and extended in the 80’s?
+
+...
+
+…
+
+Consider to try to build and run this code to see what we can learn about emulation and cross platform compilation?
+
+...
+
+{% endraw %}

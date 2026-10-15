@@ -1,0 +1,42 @@
+﻿So, how should one write and propose C++ standard changes?
+
+1) This seem to be a good page defining the procedure to propose changes to the standard library (https://isocpp.org/std/submit-a-proposal)?
+
+	==> This seem to be the latest (2016-03 pre-jacksonville) listing of papers (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/#mailing2016-03)?
+	==> This seem to be the (current?) ranges library proposal (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4128.html)?
+
+2) This seem to be how the committee and the work is organised (https://isocpp.org/std/the-committee)?
+
+	==> There is no specific “Swedish” appointed group?
+
+	“Typically experts from 8-10 national bodies attend each meeting. Recently attending nations include Canada, Finland, France, Netherlands, Spain, Switzerland, United Kingdom, and United States.”
+
+	==> Consider to “dream” of having Swedish Meeting C++ groups to some Swedish presence in the standard committee? 
+
+3) It seems the recommend (require) one should attend at least one standard committee meeting before proposing core language features?
+
+	==> This seem to be a listig of current C++ language proposals (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/)?
+
+	==> Consider to read this C++ Modules proposal as an example of how a core standard proposal may look like (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4465.pdf)? 
+
+	==> This seem to be the official lead to how to propose core language features (https://isocpp.org/std/submit-a-proposal)?
+
+Q: ...How do I propose a new feature for the C++ core language itself?
+
+Carefully; that’s a much higher bar, both technically and strategically. If you are interested in proposing a new feature for the core language, we strongly suggest you first come to at least one face-to-face committee meeting to participate in person. Experience has shown this is necessary to avoid spending your time on proposals that are not sufficiently “baked” and/or unaligned with the direction of the C++ language. The intent is not to exclude anyone – our meetings are open and observers and new participants are welcome – but rather to point out that the expertise and experience required to make a good core language proposal is far higher than to propose a new library feature. We want new proposals to succeed, and the orientation you get in person has proven to be essential for that.
+
+	==> Consider to attend to the midsummer committee meeting in Finland 2016?
+
+4) Consider to study the current C++ standard proposals (that are yet to be decided) to understand what is going on and how to formulate core features?
+
+	==> This seem to be the pdf that defines all current proposals (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/n4582.pdf)?
+
+5) Consider to design how the standard Committee may use a Darwinet Domain to evolve standard documentation?
+
+	==> It seems they do not use a version control system (http://www.open-std.org/jtc1/sc22/wg21/docs/)
+
+		==> Note how this site carries a lot of zip-archives with historic contents?
+…
+
+Consider to delve deeper into this idea of participating in the C++ committee with identified enhancement options (e.g. std::text, compile-time-build-detection)?
+...

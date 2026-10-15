@@ -1,0 +1,17 @@
+# Todo: Check out Christof Koch on Consciousness
+
+```#e0e4451e``` *As of 2015-09-14 00:20*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+”Christof Koch (/kɑːx/;&#91;1&#93; born November 13, 1956) is an American neuroscientist best known for his work on the neural bases of consciousness” (http://en.m.wikipedia.org/wiki/Christof_Koch)
+
+1) Check out this conversation about ”The Thinking Ape: The Enigma of Human Consciousness” (https://www.youtube.com/watch?v=F_MTuVozQzw#t=1m20s)  
+2) Check out Koch book ”Consciousness; Confessions of a Romantic Reductionist” (http://www.bokus.com/bok/9780262017497/consciousness/)  
+3) I suppose I stumbled on Koch on TED? (https://www.youtube.com/watch?v=QHRbnNwIg1g)  
+4) Compare and relate to Max Tegmark TED Talk about consciousness as a mathematical pattern (https://www.youtube.com/watch?v=GzCvlFRISIM)
+
+Skickat från min iPhone
+
+{% endraw %}

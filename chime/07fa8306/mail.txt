@@ -1,0 +1,65 @@
+﻿I would like to measure the power I put into my bike.
+
+1) Consider a shoe insole that can measure the downward force of the foot down through the shoe sole?
+
+The basic idea here is to design a pressure sensitive insole with the ability to measure the total downward force of the foot down to the shoe.
+
+This could be an alternative to having a pedal mounted power meter?
+
+for this to work wee a insole design that is able to correctly enough measure the total downward force of the foot.
+
+Now, I suspect the push will mostly go down through the middle of the front of the foot sole?  At least, that is how I imagine I crank my bike, having the shoe rest on the pedals at the a location slightly in front of the middle of the foot.
+
+But I can be wrong. Maybe you are normally actually pressing down on the heel too?
+
+
+
+2) Consider a shoe insole power meter can not measure the upward force when using clip-in pedals?
+
+The basic assumption here is that when you use clip-in pedals you are able to pull the pedals up on the back stroke of the cranks and this will not be picked up by the pressure sensor of the insole?
+
+
+3) Consider what design criteria we can imagine to have for our force measuring insole to work as part of a bicycle pedalling power meter?
+
+I imagine the maximum downward force is limited by body weight and ability to accelerate or "jump" on the pedals?
+
+If so, we can expect a maximum downward force to be between the riders weight (up to 100 kg or 1000N?) and 1 1G additional acceleration (to jump of the ground?) which gives us 2G or 200 kg and 2000N?
+
+We can check these numbers by imaging a rider making 2 "jumps" of 100 cm each second. A maximum power output could then be say 2000N times 0,1m times two = 400J per second or 400W.
+
+Well, it is in the ballpark so to say :)
+
+Although I have heard that an elite cyclist can output up to 2000W?
+
+If we imagine a human running uphill a 2000W output would mean an elevation of mgh = 2000J every second. This is an elevation of h = 2m every second for a 100kg heavy runner. That is a LOT!!
+
+But again, actually in the ballpark of what I have seen elite skiers do on video? 
+
+2) Consider what pressure sensitive insoles there already are on the market?
+
+	==> Consider (https://www.tekscan.com/applications/force-sensitive-insole <https://www.tekscan.com/applications/force-sensitive-insole> )?
+
+"... Incorporating ultra-thin sensors into a "smart shoe" known as the iShoe. iShoe insoles contain FlexiForce™ force sensorsto measure and analyze force distribution on a patient’s foot..."
+
+
+
+
+	==> Consider the sensors provided by Tekscan (https://www.tekscan.com/force-sensors <https://www.tekscan.com/force-sensors> )?
+
+"FlexiForce™ force sensors can measure force between almost any two surfaces and are durable enough to stand up to most environments. Our sensors are available off-the-shelf for prototyping or can be customized to meet the specific needs of your product design and application requirements. See below for sensor specifications."
+
+
+
+It seems these sensors actually have a small sesning area at the tip of the stripe?
+
+
+Calibrating the sensor using a calibration rig with a pressure piston acting on the small sensor at the stripe end.
+
+
+
+It seems the B201 (USB) and the WB201 (Wireless) sensors comes in variants where the toughest one can handle up to 4500 N (450 kg)
+
+
+
+
+...

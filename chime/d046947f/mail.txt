@@ -1,0 +1,62 @@
+﻿The drive behind Darwinet is to make ones Digital Person into one (bringing together all Service-oriented digital identities). Consider to start to write down identified aspects and inconveniences that occur when using user-based services of current society?
+
+a) Note that in human history one was always one person when interacting with others (using a thumb print, name signature or home address to identify one-self with others).
+b) With the dawn of digital services one started to become “virtual identities” (e-mail-based, user names).
+c) How can Darwinet bring them all together into one “Digital Person” (avatar?) again?
+
+<151106> Installed Bahnhof OpenVPN solution on my MAC and phone
+
+a) I Began my installing the VPN on my MAC
+
+1) First obstacle was to catch that I was to read “Installationsguide OpenVPN” not “Installationsguide PPTP” (https://www.bahnhof.se/kundservice/privat#vpn <https://www.bahnhof.se/kundservice/privat#vpn>)
+2) I then installed the software and configured it through a set of manual steps (manual meaning I did things I potentially did not understand the consequences of and which intruded the integrity of my computer).
+3) I ended up with an Icon on the desktop main menu (Do I need to remember to click this now each time I connect to wifi?)
+4) I configured the installed Banhof OpenVPN application by logging in with my VPN user name and password (a password I needed to change by logging in to my banhof account, find and change).
+
+==> Thus, at this time I had to administrate one account at Banhof and one App installed in my system together with remembering user and password settings in both of them.  
+
+b) I then went on to install and activate on mi iPhone 4s.
+1) Reading “Installationsguide OpenVPN” on banhof site (see above) again.
+2) I installed "OpenVPN Connect” from app-store (I had to remember and correctly enter the App Store password which I first failed to do).
+3) I then had to download a configuration file to my MAC and then transfer it to my iPhone using iTunes (connecting my phone to my lap-top).
+4) Instructions where to download and open a zip-file but MAC automacially unzipped the file so the result was that I run the config file on my computer instead of on my phone! (sigh!)
+
+==> The state right now was that my MAC VPN connection was shutting down to install the phone configuration file!
+==> I selected to Disconnect my MAC VPN tunnel to prevent it from acting on the phone config file (which failed, it run anyways).
+==> I now re-run the MAC config file again to ensure my MAC is running the correct config file (not the phone config file)
+
+5) Back on track I opened iTunes and spent some time finding the OpenVPN app (at first it did not seem to show and searching for it failed = delay until iTunes found it in the device?).
+	==> A while I suspected I needed to synch the phone with my MAC but it seem I do not need to do this (yet)?
+6) The instruction now stated I should add all downloaded files (but my MAC automatically unpacked the zip-file so I did not now how many files was downloaded).
+	==> I had to download again into s separate folder to see what files needed up there (Turned out it was only one “Bahnhof_v3.tblk”).
+	==> But I now realised I re-configured by MAC with the wrong talk-file (I assumed “Bahnhof_v3.tblk” was for my MAC?)
+	==> Had to redo download of the MAC config file to ensure I know which one is correct for the MAC (Turned out they where the same. “Bahnhof_v3-2.tblk” simply is MAC way of adding a number “-2” when saving a file with the same name as an existing one) *sigh*.
+
+7) Very well, continued with iOS by starting the OpenVPN app and configure and activate as instructed.
+8) Had to dis-regards the note “your user name is prefixed with “wx” (my user name started with “in…” and that worked).
+	==> Tried adding “wx” and replacing “in” with “wx” but then authentication failed.
+
+==> At this point I had the APP installed and activated on my phone.
+==> I did not know if I was using the right user name (not prefixed with “wx” as in the instruction)
+==> I did not know what would be required of me the next time a connect to a wifi (will OpenVPN be used automatically?)
+
+Summary:
+
+a) How do we automate these steps?
+b) Can we design Darwinet to enable the service provider (Bahnhof) to provide configuration and apps to my devices through a shared Darwinet Domain?
+c) On MAC one could imagine the Darwinet Domain provides a dmg that Darwinet file system opens up on detection and the user just has to approve the open and then click the installation to make it happen?
+d) Can a Darwinet App provided by Bahnhof also configure and open the VPN app?
+
+c) On iPhone one could one imagine the downloaded app to be a Darwinet APP that thus gets its configuration through the shared domain with the service provider (Bahnhof)? In that case download to MAC and synch. with iTunes is not needed?
+
+<151103> Applied for a library card at Solna Stadsbibliotek. 
+
+1) Then I first applied for a library card at the library web-site (https://bibliotek.solna.se/100643/sv/content-pages/skaffa-bibliotekskort <https://bibliotek.solna.se/100643/sv/content-pages/skaffa-bibliotekskort>).
+2) Then I tried to login to their wifi-network. I sometimes succeeded but there was no login so I was unsure if the wifi was fake or insecure?
+3) I was told I needed to create a user account separately (https://bibliotek.solna.se/login?ReturnUrl=%2fmy-pages <https://bibliotek.solna.se/login?ReturnUrl=/my-pages>) but failed (the site did not accept my card-number). Did I enter my card number incorrectly?
+4) I could also enter my personal number but I did not feel comfortable to do that (the service should work with the card number). So why did it not?
+5) I also received an actual plastic card and was told it was a “value item”. But it is inconvenient to get both a physical and a digital entity to administrate for each digital service I want to use.
+
+==> a) Basic problem here is that I, as a user, need to administrate my user account information and understand how (and why not) they work. This is NOT convenient! My digital life should be easier, not more complicated, than my physical life?
+==> b) Darwinet would create a Domain shared by the Darwinet person and the digital service. In this case the library may publish information to me in this domain as an app, files or any type of convenient media.
+==> c) Note that Darwinet would need to be accessible through a Web-node (provided by the state or paid for by the user)? In this way the user is always guaranteed he/she may, and will continue to, exist as a Darwinet Person regardless of private devices?

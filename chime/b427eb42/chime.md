@@ -1,0 +1,20 @@
+# Todo: Write how the Super-Curious human may adress life and enable a revolutionary way to a better existence
+
+```#b427eb42``` *As of 2015-08-16 15:00*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+At the Core the Super-Curious human replaces the goal of enlightenment with a strategy for ever searching. It is like a hiker that no longer is heading for a specific goal but rather travels with the aim to make the journey as pleasant as possible. Life shall be good now and if possible even better tomorrow. The - even better tomorrow - ensures that we are not tempted to take a path that, although very pleasant for the time being, takes us to a future unpleasant place. For example this is why we need to adress things like pur environmental issues. We may like the fruits of over consumption today, but the tomorrow we then risk facing we should avoid.
+
+a) The super curious human collects valuable questions and are ready to trade answers when found beneficial. In the face of our groundless relation to reality and truth, our best aims are to keep asking the most valuable questions we can imagine. And then apply answers that we find be the most plausible true that we can find.
+
+b) The super curious human puts at the core of beliefs that there is no core of any knowledge we can have. Whatever belief system we build there will always be a question mark, an empty unknown, at the center of it. This emptiness of the core comes from our groundlessness. Not matter what truth we states there will always be some core ones that we can’t answer. And the super curious human takes great care to identify those and understand that those marks the boundary of current knowledge into the unknown. When talking about those truths, the ones on which she bases the view of life, she always make it clear that they are deliberately chosen. She can say to trust that humans are basically deep inside good. Or she may say to belief there is a god that will guide me through life. Another ungrounded truth may be that socialist democracy if the best way to organize society, or she may say liberalism is the view to favor.
+
+c) It is an open debate if a super curios human can interface the empty core with beliefs that are to a large degree in conflict with verifiable knowledge. For example, could one be super curious and still base ones life on the belief that the god Thor is going to make things alright in the future? From a and b that this would be allowed as long as the super curious human clearly states that the view of Thor is ungrounded and open for debate. But then, how does that rime with the ”apply answers that we find be the most plausible true that we can find”. Applying Thor as an answer to ”what is my purpose in life” is not the most plausible truth we can come up with, is it?
+
+d) I suggest the super curious human aims to keep the future as open as it is possible in the light of the truth we choose to adopt as the ones that best fits what we know. On the other hand, the super curious human should also aim to close the futures that there seems to be no fitting truth to support. For example, we have no observations that would suggest that we are not going to die. We should then not keep the door open to a future where we will not die. The reason we should close futures of that kind is that if we do not, we weakens our abilities to find truths that actually is going to enhance our lives today. Closing futures that tells us to wait for a better life disables us to search for paths that enables us to life today. The power of favoring paths we know we can actually travel over those that instructs us to just cope and wait shall not be underestimated. To really try and live know we must favor faiths that lead to actions to make that happen now and tomorrow and never to stop.
+
+Now, is that enough as a basis for the super curious human? Embracing the ever eluding truth and our core-less knowledge and thus switch from ”trying to ge there” with ”travel in delight”!
+
+{% endraw %}

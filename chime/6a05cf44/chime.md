@@ -1,0 +1,35 @@
+# Todo: Consider to define content and disposition of "A Manifest for the Emdividualistic Society"
+
+```#6a05cf44``` *As of 2015-11-25 12:18*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+To make "A Manifest for the Emdividualistic Society” come true I need a proposal for its content and disposition. What defines the start and end of this manifest. And how do I arrange the parts in between?
+
+1) See "Todo: Consider to write "A Manifest for the Emdividualistic Society”” where the manifest is proposed and what may go into such a manifest.  
+2) Consider to start the manifest with a motivating text that draws the reader into it?  
+3) Consider to end the manifest with a proposal to how to apply the manifest to make society evolve (emerge) into the ”better” one suggested by the introduction?  
+4) Consider to use the term ”Super Curious” (Todo: Consider to use "attentive" as what characterize the Super Curious)  
+5) Consider to use the proposed ideals of the Super Curious (Todo: Write about Super-curious as the ideal of the second enlightenment)  
+6) Gather all related Todo:s and incorporate (place them) in the book.  
+…
+
+Consider to propose a set of possible disposition and contents of this manifest.
+
+Motivation (Why this Manifest and for whom)  
+The Emdividual Manifest  
+Prefer Direction-Attentive over Goal-oriented  
+Prefer act-in-faith over enlightenment.  
+Treasure high-quality-questions over final-truths  
+...  
+What a Society should enable and provide for its citizens  
+Adress the irreparable flaws in human nature  
+Repeatedly enhanced strategies to cope with change  
+A Society always emerges from the power of Syntheocracy  
+Conclusion (What to trust, how to act and what result to obtain)  
+Be attentive to what you trust makes you do (trust that which make you do what is good for us)  
+Allow experimentation (try out what organisation and faiths that works ”best” to create a society that does not belittle us)  
+...
+
+{% endraw %}

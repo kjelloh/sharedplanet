@@ -1,0 +1,17 @@
+﻿I have had a fungus infection on my left foot for ages and suspect some form of regular foot baths could be able to treat it efficiently?
+
+The main idea is to design an automated foot bath that can treat my feet with some efficient water solution and possibly UV radiation and heat (or what have you) to mitigate and even treat fungus infections.
+
+I have already found that by washing my feet regularly  with soap and water reduces the effect of the fungus infection. Filing my feet also seems to ease the symptoms? I have also tried a foot "bathing salt" that may or may not conquer the fungus infections. It sattes on the product that it creates either carbon oxide or an alkaline solution that the fungus does not like? It is not yet clear to me what the actual argument is?
+
+Finally I speculate that fungus does not like UV radiation (like sunlight)? If that is so one should be able to perhaps affect a fungus infection with an UV lamp?
+
+Also, keeping the feet dry should reduce the risk of getting and also reduce the effect of a fungus infection?
+
+All this leads me to think that perhaps we can design an open source foot bath that is able to provide a plethora of proposed treatments and also report back the result of different treatments to have some good treatment emerge through collective collaboration?
+
+I imagine a foot bath that can mix chemicals with water and fill and empty the bowl to apply it to the feet dipped therein. I also imagine the foot bath should be able to warm and perhaps also cool the water to create different treatment effects. With an UV lamp and some clever robotics we may also be able to trea the feet with UV lights of different effects and from different angles and targeting different areas? As a final touch it would be nice if the could "file" the feats and nails in some safe and comfortable way? Could vibrating sant or gravel work? Or do we need to have a filing mechanism that can reach relevant areas of the feet and also be safe to use?
+
+Fun idea, can we combine the foot bath with an aquarium where we have those "feet nibbling fiches" so that we can release them on pour feet in an automated or manual way?
+
+...

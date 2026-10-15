@@ -1,0 +1,115 @@
+﻿-4) Consider the new rsync command to backup from my new 4TB Lacie drive to the 4TB Seagate backup drive?
+
+sudo rsync -vaE --delete --progress "/Volumes/LaCie 4TB" /Volumes/Seagate_4TB
+
+	NOTE: For this to work I first renamed the previous "LaCie" folder on the Seagate drive to "LaCie 4TB".
+
+Basically, the source path  "/Volumes/LaCie 4TB" refers to the drive as-a-folder soo it will be copied to the target  "/Volumes/Seagate_4TB/LaCie 4TB. And as the previous drive was named LaCie I had to rename it to the new drive name to have rsync transfer to the correct target (where the previous backups was located).
+
+-3) Consider to document how to backup to new 4TB Seagate HD?
+
+	==> I Used OS X “Disk Utility” to erase the new Seagate 4TB drive (and renamed it to “Seagate_4TB”) setting the file system to MAC OS X Extended (Journaled)
+	==> Thus the path to the new drive when connected is “/Volumes/Seagate_4TB”
+	==> I decided to use the previous Backup 2TB disk “LaCie” as my new working drive (I needed the 2TB space)
+
+	==> Thus, the rsync command to backup from the LaCie drive to the new should be: /Volumes/Seagate_4TB
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ sudo rsync -vaE --delete --progress /Volumes/LaCie /Volumes/Seagate_4TB
+
+-2) It seems i need to use rsync with a parameter that ensures the target is a mirror of the source (don’t keep files that are no longer present in the source)?
+
+	==> It seems i should use the argument —delete?
+
+Kjell-Olovs-MacBook-Pro-2014:~ kjell-olovhogdahl$ sudo rsync -vaE --delete --progress /Volumes/Kjell-Olovs\ Passport\ Hard\ Drive /Volumes/LaCie
+
+	==> Consider to save the result of rsync with delete from my external youtube gard drive to an empty LaCie drive?
+
+		
+
+
+	==> Consider to save the result of rsync with delete argument when there is nothing to copy?
+
+		
+
+
+
+-1) Consider to enter the latest rsync command I used in this entry (for reuse to create a backup from /Volumes/Kjell-Olovs Passport Hard Drive to /Volumes/LaCie?
+
+	==> Note: The escaped spaces.
+
+Kjell-Olovs-MacBook-Pro-2014:Volumes kjell-olovhogdahl$ sudo rsync -vaE --progress /Volumes/Kjell-Olovs\ Passport\ Hard\ Drive /Volumes/LaCie
+building file list ... 
+85957 files to consider
+Kjell-Olovs Passport Hard Drive/
+Kjell-Olovs Passport Hard Drive/.DS_Store
+...
+
+1) This seems to be a good three on using rsync (https://apple.stackexchange.com/questions/117465/fastest-and-safest-way-to-copy-massive-data-from-one-external-drive-to-another/117469#117469 <https://apple.stackexchange.com/questions/117465/fastest-and-safest-way-to-copy-massive-data-from-one-external-drive-to-another/117469#117469>)?
+
+“remote sync, rsync <https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/rsync.1.html>, is a reliable choice for copying large amounts of data. You can prepare the command and perform a dry-run before committing to the copy; add --dry-run to simulate the copy.
+Your final command will be fairly simple:
+
+sudo rsync -vaE --progress /Volumes/SourceName /Volumes/DestinationName
+The flags are:
+
+v increases verbosity.
+a applies archive settings to mirror the source files exactly, including symbolic links and permissions.
+E copies extended attributes and resource forks (OS X only).
+progress provides a count down and transfer statistics during the copy.
+sudo, is used to ensure rsync has appropriate rights to access and read all files on your drive regardless of owner. This also allows rsync to write the files to the new drive recreating the original owner information.
+
+rsync is likely the best choice because it can be rerun in case of problems, offers detailed logging, and is as fast as can be while remaining safe.
+
+There are numerous guides for getting the most from rsync, rsync command examples <http://www.thegeekstuff.com/2010/09/rsync-command-examples/> provides relevant examples. As @GordonDavisson comments below, take care with the trailing slashes; these can make a world of difference if your copy starts with a folder.
+
+Alternative tools include ditto and cp. Both very reasonable choices but offering differing syntax"
+
+2) It seems I succeeded to use rsync to backup my main USB 3 drive to a second one?
+
+	==> It seems to avoid spelling errors I succeeded to use “auto complete” in the OS X command shell to get the paths to the two drives correctly?
+
+Kjell-Olovs-MacBook-Pro-2014:/ kjell-olovhogdahl$ cd Volumes/
+Kjell-Olovs-MacBook-Pro-2014:Volumes kjell-olovhogdahl$ ls
+Kjell-Olovs Passport Hard Drive	Macintosh HD
+LaCie
+Kjell-Olovs-MacBook-Pro-2014:Volumes kjell-olovhogdahl$ cd Kjell-Olovs\ Passport\ KKKKKKKKKKjKKKKjKKKjKKjKKKjKjKjKjKjKKjKKKjKKKjKKKKKKKKjell-Olovs-MacBook-Pro-2014:Kjell-Olovs Passport Hard Drive kjell-olovhogdahl$ pwd
+/Volumes/Kjell-Olovs Passport Hard Drive
+Kjell-Olovs-MacBook-Pro-2014:Kjell-Olovs Passport Hard Drive kjell-olovhogdahl$ cd ..
+Kjell-Olovs-MacBook-Pro-2014:Volumes kjell-olovhogdahl$ cd LaCie/
+Kjell-Olovs-MacBook-Pro-2014:LaCie kjell-olovhogdahl$ pwd
+/Volumes/LaCie
+Kjell-Olovs-MacBook-Pro-2014:LaCie kjell-olovhogdahl$ cd ..
+Kjell-Olovs-MacBook-Pro-2014:Volumes kjell-olovhogdahl$ pwd
+/Volumes
+Kjell-Olovs-MacBook-Pro-2014:Volumes kjell-olovhogdahl$ 
+
+
+	==> Although in this way I did not get the escapes for spaces in the drive paths correct?
+
+	==> It seems using “” to indicate text does not work with OS X shell command?
+
+Kjell-Olovs-MacBook-Pro-2014:Volumes kjell-olovhogdahl$ sudo rsync -vaE --progress “/Volumes/Kjell-Olovs Passport Hard Drive” "/Volumes/LaCie"
+Password:
+building file list ... 
+rsync: link_stat "/Volumes/?\#200\#234/Volumes/Kjell-Olovs" failed: No such file or directory (2)
+rsync: link_stat "/Volumes/Passport" failed: No such file or directory (2)
+rsync: link_stat "/Volumes/Hard" failed: No such file or directory (2)
+rsync: link_stat "/Volumes/Drive?\#200\#235" failed: No such file or directory (2)
+0 files to consider
+
+sent 29 bytes  received 20 bytes  98.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files could not be transferred (code 23) at /BuildRoot/Library/Caches/com.apple.xbs/Sources/rsync/rsync-52/rsync/main.c(996) [sender=2.6.9]
+Kjell-Olovs-MacBook-Pro-2014:Volumes kjell-olovhogdahl$ 
+
+	==> But if I remove the “” it seems to work?
+
+sudo rsync -vaE --progress /Volumes/Kjell-Olovs Passport Hard Drive /Volumes/LaCie
+...
+
+	…
+
+…
+
+Consider to update this Todo when appropriate to document the latest progress and application of this backup method?
+

@@ -1,0 +1,69 @@
+# Todo: Consider that my "dream" bicycle suspension fork is an upside down coil fork?
+
+```#04ce9da2``` *As of 2021-08-30 01:41*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want a first-principle "good" front fork suspension for my bicycle and find the friction of air forks are simply to large for my taste (am I wrong)?
+
+==&gt; Also see "Todo: Consider the "seal drag" off a Fox 36 bicycle front suspension fork is between 60N (unserviced) and 50N (Serviced)?"
+
+1) Consider my arguments for an upside down coil suspension fork vs a "normal" or upside down air spring fork?
+
+> *So, basically, it seems my dream suspension fork is an upside down coil fork with enclosed low maintenance oil damper?*
+
+> *The pros are:*
+
+> *1) A Coil fork has low low friction (no air seals that stick to the sliding tubes)*  
+> *2) A coil fork has linear suspension (same small force movement throughout the whole travel range)*  
+> *3) A coil fork is low maintenance (no air seals to maintain nor friction heating that degrades components)*  
+> *4) Long life and low owner cost (much less parts that can break and those that do are cheaper to get hold of)*
+
+> *5) An upside down fork has slightly lower unsprung mass (although I have not calculated how large of an impact that has)*  
+> *6) An upside down fork lubricates stanchion bushings and seals better (gravity pulls oil down towards bushings and seals)*  
+> *7) An Upside down fork is more protected from getting dust, dirt and water into the stanchions (gravity helps keeping unwanted elements out of the stanchions)*  
+> *8) An upside down fork is stiffer front-to-back due to the uppers that takes the torque are larger in diameter (compared to a "normal" fork where the thinner stanchions has to take the front-back torque). *
+
+> *The cons are:*
+
+> *1) With a coil fork a change of vehicle weight like when bike packing requires change of coil (or ride with a sagging bike)*  
+> *2) A coil fork is around 500g heavier that an air spring fork.*
+
+> *3) An upside down fork has lower torsion stiffness (requires brass sliders or something to hinder the stanchions to twist around the steerer tube when turning)*
+
+> *it seems to me the reason we wee air spring suspension being so "popular" is the lower weight and the easier adjustability to different riders and bike weights?*
+
+> *But if I can find me a coil that fits my riding weight and a second one for bike packing then adjustability is not a large factor for me?*
+
+> *And if I can live with the extra weight, that is an added 500g that affects my uphill performance then I will be just fine?*
+
+> *I am just speculating here but bike mass seems to me to affect two things. One is how heavy it is to pedal uphill and the second one the dynamics of handling the bike depending on where on the bike the mass is?*
+
+> *A 500g heavier front of the bike may affect the center of mass of the bike and thus how it behaves when taking tight corners?*
+
+> *On the other hand, on the flats and downhill some added mass can also be a good thing as it enhances suspension (larger sprung vs unsprung mass) and adds some extra kinetic energy to maintain speed?*
+
+> *Well, problem is that there seems to be NO upside down coil suspension fork (LOL!)*
+
+2) Consider this article "COIL FORK VS AIR FORK: PROS AND CONS" that seems to confirm my suspicion that coil forks are actually lower maintenance and hight suspension performance although heavier and less adjustable (<https://wheretheroadforks.com/coil-fork-vs-air-fork-pros-and-cons/> )?
+
+3) Consider my dream suspension fork is actually a linkage fork with friction damping?
+
+> The basic idea here is that the "simplest" way to get suspension is with a linear coil or other springy thing.
+
+> And a very simple way to get rid of kinetic energy is friction as in any ordinary brakes?
+
+> So taken together the engineers dream suspension is a linear spring with friction damping?
+
+> And we can imagine three categories of mechanics to put that on the steering tube and wheel of a bicycle.
+
+> 1) Linear up and down motions using stanchions and legs.  
+> 2) A linkage based system resulting in some form of up-and-down motion of the wheel.  
+> 3) A rotational system on each side of the wheel with the wheel axes following some radial curve of the suspension.
+
+> Ok, I need to come back to these designs :)
+
+...
+
+{% endraw %}

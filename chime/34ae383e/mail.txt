@@ -1,0 +1,245 @@
+﻿Currently I have work on both a Windows 7 and Windows 8 machine.
+
+1) What would it take to move all this work to my Windows 10 machine?
+
+	==> Just kill the Windows 8 machine for now (Keep the 7 and 10 machines)
+
+2) Is there any reason to keep the Windows 7 machine?
+
+	==> Yes - To have a TestBench Windows 7 development environment machine.
+
+	==> Keep to have Office 2010?
+	==> Keep to have Doc-to-Help that works with Office 2010 (e.g. Darwinet documents)?
+
+3) Is there any reason to keep the Windows 8 machine?
+
+	==> No - Remove it (Replaced with Windows 10 Machine)
+
+	==> Keep to have Office 2013?
+	==> Keep to have Doc-to-Help that works with Office 2013 (and all Swedbank documents)
+		==> Re-install Doc-to-help on Windows 10 (or on Windows 7 whatever it is forward or backward compatible)
+
+2) Consider to map the files on my Windows 7 machine that I need to move?
+
+3) Consider to map the files on my Windows 8 machine that I need to move?
+
+	==> None. I have not started my Windows 8 machine the last 6 months. Let it go.
+
+4) Consider to have all my work in Shared, Dropbox or Subversion?
+
+	==> Decide on how to share version controlled code?
+		==> We want to version-control code?
+		==> Can we share version controlled code on a MAC disk?
+		==> Or do we have to mirror it through repository on each virtual machine?
+
+	==> Do I have any residue files in Subversion I need to keep in 7 or 8?
+		==> See listing below
+
+	==> Ensure I have a backup of all Swedbank Projects?
+	==> Ensure I have a backup of XE2 and XE7 Testbench working files?
+		==> Check that check-out files compiles in Windows 10 (this ensures subversion repository is consistent)
+		==> Check if we confined any unversioned files we should back-up just in case?
+
+5) Consider to find all Visual Studio Projects in 7 and 8 and choose which to save?
+
+	==> Consider to search for *.sln to find all candidates?
+
+		==> NO win7 sln-files needed to be saved (all were product provided or in subversion already)
+
+		==> From Windows 8 there seem to be the following code we would like to move?
+
+			Move/Share c:\subversion\itfied\main\trunk\CppExamples\boost_examples ?
+			Check-out c:\subversion\llvm ? 
+			Move/Share c:\temp\boost_1_59_0 ?
+			Move/Share c:\temp\poco-1.6.1 ?
+			
+
+		==> See attached dir_win8_snl.txt
+
+	
+
+
+
+		WE ARE HERE...
+
+6) Consider to find all RAD Studio Projects in 7 and 8 and choose which to save?
+
+	==> Consider to search for *.cbproj to find all candies?
+		==> See attached dir_win7_cbproj.txt
+
+
+
+		==> Move/Upgrade C:\subversion\babs_internal\branches\TestBench\141001_RADStudioXE7_Code\build
+		==> Move/Upgrade C:\subversion\babs_internal\branches\TestBench\141001_RADStudioXE7_Code\build\dllUkptServer
+		==> Move/Upgrade C:\subversion\babs_internal\branches\TestBench\141001_RADStudioXE7_Code\build\externals\SwedbankRADLib
+
+		==> Tag latest Testbench release (See previous C:\subversion\babs_internal\tags\TestBench 2.0.2)
+
+		==> Move/Upgrade C:\subversion\babs_internal\trunk\Software development\Breq\build
+		==> Set to correct tag C:\subversion\babs_internal\trunk\Software development\Breq\build\externals\SwedbankRADLib
+
+		==> Move/Make work C:\subversion\babs_internal\trunk\Software development\Breq\build\WordActiveXInterface
+			==> Generated component not versioned controlled nor installed on windows 10 machine (nor in RAD Studio 10)?
+
+		==> Attend to C:\subversion\babs_internal\trunk\Software development\SwedbankRADLib\build
+			==> What IDE si required?
+			==> How should we mirror required IDE in repository location?
+			==> Add guard in code to get feed-back if build with wrong IDE?
+
+		==> Move to new repository (even make Git) C:\subversion\babs_internal\trunk\Software development\TestBench\build ?
+			==> Including C:\subversion\babs_internal\trunk\Software development\TestBench\build\dllUkptServer?
+			==> Including C:\subversion\babs_internal\trunk\Software development\TestBench\build\externals\SwedbankRADLib?
+
+		==> Attend to purchased C:\subversion\babs_internal\trunk\Software development\tmssoftware\TREELIST\tldXE2 2011-07-12  08:35            10ˇ218 TreeListPkgCXE2.cbproj
+
+			==> Does it work only in XE2?
+
+		==> Attend to Darwinet RAD Studio Code?
+
+			==> Upgrade/Terminate C:\subversion\darwinet\code\trunc\Software\targets\DarwinetCOMServerXE\build?
+			==> Upgrade/Terminate C:\subversion\darwinet\code\trunc\Software\targets\DarwinetCoreTestXE\build?
+			==> Upgrade/Terminate C:\subversion\darwinet\code\trunc\Software\targets\DarwinetRADLibXE\build?
+			
+			==> Upgrade/Terminate C:\subversion\darwinet\code\trunc\Software\targets\MIVConsoleFM\build?
+			==> Upgrade C:\subversion\darwinet\code\trunc\Software\targets\MIVConsoleXE\build?
+
+		==> Attend to old Testbench repository C:\subversion\ipos_internal ?
+
+			==> Terminate C:\subversion\ipos_internal\branches\TestBench?
+			
+				 Directory of C:\subversion\ipos_internal\branches\TestBench\100929_RADStudio2009_Code\TestBench
+				 Directory of C:\subversion\ipos_internal\branches\TestBench\100929_RADStudio2009_Code\TestBench\ukpt
+				 Directory of C:\subversion\ipos_internal\branches\TestBench\110113_pdoEchoProblemFix\build
+				 Directory of C:\subversion\ipos_internal\branches\TestBench\110113_pdoEchoProblemFix\build\dllUkptServer
+				 Directory of C:\subversion\ipos_internal\branches\TestBench\120118_RADStudioXE2_Code\build
+				 Directory of C:\subversion\ipos_internal\branches\TestBench\120118_RADStudioXE2_Code\build\dllUkptServer
+				 Directory of C:\subversion\ipos_internal\tags\TestBench\100929_RADStudio2009_Code\TestBench
+				 Directory of C:\subversion\ipos_internal\tags\TestBench\100929_RADStudio2009_Code\TestBench\ukpt
+				 Directory of C:\subversion\ipos_internal\tags\TestBench\101203_RADStudioXE_Code\TestBench
+				 Directory of C:\subversion\ipos_internal\tags\TestBench\101203_RADStudioXE_Code\TestBench\build
+				 Directory of C:\subversion\ipos_internal\tags\TestBench\101203_RADStudioXE_Code\TestBench\build\dllUkptServer
+				 Directory of C:\subversion\ipos_internal\tags\TestBench\Release 1.11.3\build
+				 Directory of C:\subversion\ipos_internal\tags\TestBench\Release 1.11.3\build\dllUkptServer
+
+
+		==> Upgrade C:\subversion\itfied\main\trunk\Concur\build?
+			==> Also upgrade RADLib?
+
+		==> Upgrade/Move C:\subversion\itfied\main\trunk\Monery\Build?
+			==> This carries a working calculation of Tax Agency calculations?
+
+		==> Upgrade/Attend to C:\subversion\itfied\main\trunk\Optimus Prime\build
+
+
+		==> See attached dir_win8_cbproj.txt
+
+	
+
+
+
+			==> Consider to Move/version control c:\subversion\itfied\main\trunk\Optimus Prime 2\build?
+			==> Consider to Move/Version control c:\subversion\itfied\main\trunk\unsource\build?
+		
+			==> Consider to document and test Testbench build script that generates c:\temp\TestBench\build?
+
+			==> Attend as for Win7 version controlled projects?
+
+			 Directory of c:\subversion\babs_internal\branches\TestBench\141001_RADStudioXE7_Code\build
+			 Directory of c:\subversion\babs_internal\branches\TestBench\141001_RADStudioXE7_Code\build\dllUkptServer
+			 Directory of c:\subversion\babs_internal\branches\TestBench\141001_RADStudioXE7_Code\build\externals\SwedbankRADLib
+			 Directory of c:\subversion\babs_internal\branches\TestBench\141001_RADStudioXE7_Code\build\PlaygroundTestBench
+
+			 Directory of c:\subversion\babs_internal\tags\TestBench 2.0.2
+
+			 Directory of c:\subversion\babs_internal\trunk\Software development\Breq\build
+			 Directory of c:\subversion\babs_internal\trunk\Software development\Breq\build\externals\SwedbankRADLib
+			 Directory of c:\subversion\babs_internal\trunk\Software development\Breq\build\WordActiveXInterface
+
+
+			 Directory of c:\subversion\babs_internal\trunk\Software development\SwedbankRADLib\build
+			 Directory of c:\subversion\babs_internal\trunk\Software development\TestBench\build
+			 Directory of c:\subversion\babs_internal\trunk\Software development\TestBench\build\dllUkptServer
+			 Directory of c:\subversion\babs_internal\trunk\Software development\TestBench\build\externals\SwedbankRADLib
+			
+
+			 Directory of c:\subversion\darwinet\code\trunk\Software\targets\DarwinetCOMServerXE\build
+		 	 Directory of c:\subversion\darwinet\code\trunk\Software\targets\DarwinetCoreTestXE\build
+			 Directory of c:\subversion\darwinet\code\trunk\Software\targets\DarwinetGarageFM\build
+			 Directory of c:\subversion\darwinet\code\trunk\Software\targets\DarwinetRADLibXE\build
+			 Directory of c:\subversion\darwinet\code\trunk\Software\targets\MIVConsoleFM\build
+			 Directory of c:\subversion\darwinet\code\trunk\Software\targets\MIVConsoleXE\build
+
+			 Directory of c:\subversion\ipos_internal\trunk\TestBench\build
+			 Directory of c:\subversion\ipos_internal\trunk\TestBench\build\dllUkptServer
+			 Directory of c:\subversion\ipos_internal\trunk\TestBenchTest
+
+			 Directory of c:\subversion\itfied\main\trunk\Concur\build
+			 Directory of c:\subversion\itfied\main\trunk\Concur\build\cryptopp
+
+			 Directory of c:\subversion\itfied\main\trunk\Monery\Build
+
+			==> Attend to  Directory of c:\subversion\itfied\main\trunk\MyCppPlayGround1
+				==> Is it version controlled?
+				==> Move to shared instead?
+
+			==> Attend to  Directory of c:\subversion\itfied\main\trunk\unsource\build
+				==> Make it version controlled?
+				==> Move it to shared instead?
+
+			==> Move/Save c:\subversion\itfied\main\trunk\CppExamples\boost_examples\mpi_01?
+				==> Make this part of CPPExamples and move to shared?
+
+
+		WE ARE HERE...
+
+	==> Consider to save only those that compiles in RAD Studio 10?
+
+7) Consider to fond all Doc-to-help projects in 7 and 8 and choose which to save?
+
+8) Consider to list all installed application in windows 7?
+
+
+
+
+9) Consider to list all installed applications in windows 8?
+
+	
+
+
+	==> Consider to list those we’d imagine we like to have also in Windows 10?
+
+		Git Version 2.6.3
+		Office Proofing svenska
+		SpeedLedger?
+		Doc-to-Help
+		InstallShield 2015
+		Microsoft Visual Studio 2015
+		Tortoise SVN
+		Winzip?
+		Embarcadero XE7?
+		
+
+a) Move InstallShield license to Windows 10
+	==> Release from Windows 7
+	==> Activate on Windows 10
+
+	==> Check that we can build Testbench Release
+
+b) Move Doc-to-help to Windows 10
+
+	==> Consider to upgrade to latest version?
+
+c) Move Visual Studio 2015 to Windows 10
+
+	==> Check that all moved projects builds ok?
+
+d) Install RAD Studio 10 on Windows 10
+
+	==> Check that all moved RAD Studio projects builds ok?
+	==> Make a list of those that needs to be upgraded?
+
+e) List other special tools I imagine I will need on Windows 10?
+
+	==> Visual Studio hex editor?
+	==> WireShark TCP/IP monitor?
+

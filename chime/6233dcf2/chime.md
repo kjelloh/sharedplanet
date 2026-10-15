@@ -1,0 +1,15 @@
+# Todo: Write about a static or oscillating happy condition versus a dynamic continuously changing one
+
+```#6233dcf2``` *As of 2015-08-24 13:54*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be that the Curious imagines happiness to be some static state of being. If change is allowed to occur it shall be some osculating or repeating pattern of state changes where being happy is one but the one to strive for is one that repeats in the same pattern, thus being a static best pattern of changes. How does that view relate to the Super Curious that believe that a better model is one where our state of being continuously changes in intransitive transitions (you can never take a bath in the same river twice because you and the river will have changed). The Super Curious understands our experience of a fixed self living in a fixed pattern of changes is an illusion created by our consciousness. In fact we are always experience reality as a new dividual with new memories and new experiences.
+
+1) So why is the Super Curious view of happiness a better one? What better happiness can be reached with this view?  
+2) Consider to touch on the subject or ability to synthesize happiness. We seem to be wired to experience happiness with the conditions as they are. (Find the TED talk about this, should be in a Todo?)  
+3) Our ability to synthesize happiness seems to really on ”burning bridges”. We are more happy with our choices if we are unable to change them. Now, does this mean the Super Curious that adopts the open future will be less able to take advantage of this aspect of synthesized happiness? Or should we propose that the Super Curious should embrace such findings about synthesized happiness and act to ”burn the bridges” for choices to the highest degree possible?  
+...
+
+{% endraw %}

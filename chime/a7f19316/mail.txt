@@ -1,0 +1,78 @@
+﻿It may be a good idea for me to update my electrical authorisation to be legally allowed to do my own electrical installations?
+
+1) Consider the Swedish law regarding required authorisation for electrical installation work (https://www.elsakerhetsverket.se/om-oss/lag-och-ratt/foreskrifter/elsak-fs-20174/ <https://www.elsakerhetsverket.se/om-oss/lag-och-ratt/foreskrifter/elsak-fs-20174/> )?
+
+	...
+
+2) Consider it may be so that I still have class B limited authorisation for electrical installations?
+
+B Begränsad auktorisation
+
+Auktorisationens omfattning
+
+Alla elinstallationsarbeten.
+
+Alla elinstallationsarbeten på lågspännings- anläggningar.
+
+Elinstallationsarbeten på lågspännings- anläggningar begränsat till arbete i befintlig gruppledning som innebär
+
+	• 1  att installera och flytta ljusarmaturer, elkopplare och uttag med tillhörande kablar,
+
+	• 2  att fast ansluta elektrisk utrustning som förbrukar el med tillhörande don samt förläggning och anslutning av kablar som tillhör donen, samt
+
+	• 3  att koppla loss elektrisk utrustning som förbrukar el med tillhörande don och kablar.
+
+En beviljad auktorisation gäller tills vidare.
+
+
+	==> It seems I need to apply for an authorisation with Elsäkerhetsverket (https://www.elsakerhetsverket.se/fragor-och-svar/Arkiv-fragor/har-jag-auktorisation-nar-utbildningen-ar-klar/ <https://www.elsakerhetsverket.se/fragor-och-svar/Arkiv-fragor/har-jag-auktorisation-nar-utbildningen-ar-klar/> )?
+
+"
+HAR JAG AUKTORISATION NÄR UTBILDNINGEN ÄR KLAR
+
+Fråge-id: 164004
+Det var ett tag sedan jag gick på gymnasiet men jag minns att det nämndes att man var behörig för begränsad behörighet (det som idag heter begränsad auktorisation, B) när man genomgått utbildningen. Stämmer det, har jag en auktorisation?
+
+Svar
+För att få en auktorisation som elinstallatör ställs ett utbildningskrav och ett krav om praktisk erfarenhet och man måste göra en ansökan till Elsäkerhetsverket, som prövar om kraven är uppfyllda. Man kan alltså inte få en auktorisation enbart genom att ha gått en utbildning."
+
+	==> It seems I can phone elsäkerhetsverket and ask regarding my authorisation (https://www.elsakerhetsverket.se/skola-utbildning/elutbildning/ <https://www.elsakerhetsverket.se/skola-utbildning/elutbildning/> )?
+
+"	• Telefon auktorisationsgruppen: 010-168 05 00 (välj alternativ 3) "
+
+	==> I suspect strongly that I may have the theoretical foundation for the "old" BB2 authorisation (https://www.elsakerhetsverket.se/yrkespersoner/elinstallator/vad-ar-auktorisation/auktorisationstyper/ <https://www.elsakerhetsverket.se/yrkespersoner/elinstallator/vad-ar-auktorisation/auktorisationstyper/> )?
+
+"BB1, BB2 och BB3 Branschanpassad
+Har omvandlats till B-auktorisation."
+
+	==> I strongly suspect I have the theoretical education for class B authorisation (
+
+"
+B-auktorisation omfattar elinstallationsarbeten på lågspänningsanläggningar begränsat till arbete i befintlig gruppledning som innebär:
+
+	• att sätta upp och flytta ljusarmaturer, elkopplare och uttag med tillhörande kablar.
+	• att fast ansluta elektrisk utrustning som förbrukar el med tillhörande don samt förläggning och anslutning av kablar som tillhör donen.
+	• att koppla loss elektrisk utrustning som förbrukar el med tillhörande don och kablar.
+Utbildning
+För att uppfylla utbildningskravet för en B-auktorisation ska du med godkänt resultat ha gått en utbildning som omfattar de kunskaps- och färdighetskrav som framgår i bilaga 3 i Elsäkerhetsverkets föreskrifter ELSÄK-FS 2017:4.
+
+Exempelvis kan man uppnå utbildningskravet genom att läsa följande kurser inom dagens gymnasieskola (GY2011).
+
+	• Praktisk ellära 100 poäng (ELLPRA0)
+	• Elkraftteknik 100 poäng (ELRELF0)"
+
+	==> It seems 100 points means about 100 hours of education (https://skolvarlden.se/artiklar/en-kurs-kan-avgora-gymnasieexamen-100-poang-ska-vara-100-timmar <https://skolvarlden.se/artiklar/en-kurs-kan-avgora-gymnasieexamen-100-poang-ska-vara-100-timmar> )?
+
+	==>It seems I need two year practice under supervision by authorised electrician to actually get a B authorisation (https://www.voltimum.se/glossary/begransad-behorighet-bb2 <https://www.voltimum.se/glossary/begransad-behorighet-bb2> )?
+
+"Begränsad behörighet - BB2
+
+Begränsad behörighet - BB2 omfattar fast anslutning och losskoppling av maskin, apparat, bruksföremål eller annan anordning med tillhörande styr-, regler-, säkerhets- och indikeringsdon samt förläggning och anslutning av kablar tillhörande donen.
+
+BB2 gäller för vissa elinstallationsarbeten på anläggning med systemspänning högst 1000 V.
+
+Praktiken för BB2 ska vara två års elinstallationsarbete under behörig elinstallatörs överinseende och vara av den art som den begränsade behörigheten omfattar. Praktiken ska intygas av behörig elinstallatör med lägst den behörighet som söks."
+
+	==> It seems to apply for an authorisation I need copies of my education plus a certificate from approved practice work (https://www.elsakerhetsverket.se/ansok-om-auktorisation <https://www.elsakerhetsverket.se/ansok-om-auktorisation> )?
+
+...

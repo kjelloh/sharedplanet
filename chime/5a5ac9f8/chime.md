@@ -1,0 +1,17 @@
+# Todo: Evaluate the ficttive stories domestic society believe from the view of how beneficial the emergence they create are
+
+```#5a5ac9f8``` *As of 2015-09-03 20:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+In what ways does the believes we currently put faith in when it comes to what they want us to do and the effects of these actions on our ability to live rich lives in a sustainable way.
+
+1) Our faith in the idea of money. What actions result in emergences that are beneficial to us? What actions result in emergences that hurt us?  
+2) Our faith in true truth being the best?  
+3) Our belief that we have an inner true self that we should try to find?  
+4) The different religious beliefs? Examine upsides and downsides of the emergences from acting according to christian, islam, djewish faiths?  
+5) The different contemporary spiritual beliefs (new age, self empowerment etc)? Elaborate specially on ideas like those of Ekhart Tolle and for example how such inner peace may disable us from actually act to change the emergent society.  
+...
+
+{% endraw %}

@@ -1,0 +1,157 @@
+﻿Could it be worth the initial learning curve (and become boost dependent) to try to implement the Meh parser using Boost Spirit Qi?
+
+	==> Also see ”Todo: Meta Value Model - It seems to parse and evaluate Meh expressions I really need to get a grip on s-expressions explicitly and grammar parsing i general?"
+
+1) Consider this Boost X3 example with a complete Grammar C++ X3 based Repl including an AST and AST printer (https://github.com/djowel/spirit_x3/blob/master/example/x3/calc5.cpp)
+
+	==> It seems this is a good role model for our Meh Repl and in modern C++?
+	...
+
+2) Consider this Github published Cpp-file that implements a Lisp interpreter (https://github.com/klmr/lisp.cpp <https://github.com/klmr/lisp.cpp>)?
+
+	==> It seems to apply fairly modern C++ coding standards by relying on variants and smart memory objects?
+
+	==> The repl is really nice looking!
+
+auto repl(std::string prompt) -> void {
+    auto global_env = get_global_environment();
+    
+    for (;;) {
+        std::cout << prompt << std::flush;
+        auto line = std::string{};
+        if (not getline(std::cin, line))
+        return;
+        
+        try {
+            auto&& expr = klmr::lisp::read_full(begin(line), end(line));
+            if (not expr)
+                return;
+            auto&& result = eval(*expr, global_env);
+            std::cout << result << '\n';
+        }
+        catch (klmr::lisp::error const& err) {
+            std::cerr << err.what() << '\n';
+        }
+    }
+}
+
+		==> Nice - using read: string -> expr (the AST) and then eval(expr,env). Very clean :)
+
+	==> And the Lisp grammar seem to fit in just a few lines when using Qi?
+
+template <typename Iterator>
+struct lisp_grammar : qi::grammar<Iterator, value(), qi::ascii::space_type> {
+    template <typename Signature>
+    using rule_t = qi::rule<Iterator, Signature, qi::ascii::space_type>;
+    
+    rule_t<value()> start;
+    rule_t<symbol()> sym;
+    rule_t<value()> lit;
+    rule_t<literal<bool>()> boolean;
+    rule_t<literal<double>()> number;
+    rule_t<literal<std::string>()> string;
+    rule_t<list()> lst;
+    
+    lisp_grammar() : lisp_grammar::base_type{start} {
+        using namespace qi;
+        using namespace boost::phoenix;
+        start %= sym | lit | lst;
+        sym %= eps >> lexeme[+(char_("A-Za-z") | char_('-') | char_("+*/%~&|^!=<>?"))];
+        lit %= boolean | number | string;
+        boolean %=
+        qi::lit("#t")[_val = construct<literal<bool>>(true)] |
+        qi::lit("#f")[_val = construct<literal<bool>>(false)];
+        number %= double_;
+        string %= eps >> lexeme['"' >> *(char_ - '"') >> '"'];
+        lst %= '(' >> *start >> ')';
+    }
+};
+
+		==> It seems one first defines the non-terminal symbols rule_t variables?
+		==> Then one composes production rules using operator ”%=” on terminal and non-terminal symbols?
+
+	==> TODO: Make it compile in Xcode (for now it does not find 
+
+3) Consider this JSon parser in C++ using Qi (http://codegist.net/snippet/c/jsoncpp_yamamushi_c <http://codegist.net/snippet/c/jsoncpp_yamamushi_c>)
+
+#include <boost/any.hpp>
+#include <boost/spirit/include/qi.hpp>
+#include <boost/fusion/include/std_pair.hpp> 
+ 
+#include <vector>
+#include <map>
+#include <iostream>
+ 
+namespace json {
+ 
+namespace qi = boost::spirit::qi;
+namespace ascii = boost::spirit::ascii;
+ 
+struct nullptr_t_ : qi::symbols< char, void * > {
+    nullptr_t_() {
+        add( "null", nullptr );
+    }
+} nullptr_;
+ 
+template< typename Iterator >
+struct Grammar : qi::grammar< Iterator, boost::any(), ascii::space_type > {
+    Grammar(): Grammar::base_type( start ) {
+        using qi::lexeme;
+        using qi::double_;
+        using qi::bool_;
+        using ascii::char_;
+ 
+        start = value_rule.alias();
+        object_rule = '{' >> pair_rule % ',' >> '}';
+        pair_rule = string_rule >> ':' >> value_rule;
+        value_rule = object_rule | array_rule | string_rule | nullptr_ | double_ | bool_;
+        array_rule = '[' >> value_rule % ',' >> ']';
+        string_rule = lexeme[ '\"' >> *( char_ - '\"' ) >> '\"' ];
+    }
+ 
+    qi::rule< Iterator, boost::any(), ascii::space_type > start;
+    qi::rule< Iterator, std::map< std::string, boost::any >(), ascii::space_type > object_rule;
+    qi::rule< Iterator, std::pair< std::string, boost::any >(), ascii::space_type > pair_rule;
+    qi::rule< Iterator, boost::any(), ascii::space_type > value_rule;
+    qi::rule< Iterator, std::vector< boost::any >(), ascii::space_type > array_rule;
+    qi::rule< Iterator, std::string(), ascii::space_type > string_rule;
+};
+ 
+}
+ 
+int main() {
+    const std::string source = "[ null ]";
+    json::Grammar< std::string::const_iterator > g;
+    boost::any v;
+    auto bit = source.begin();
+    auto eit = source.end();
+    bool r = boost::spirit::qi::phrase_parse( bit, eit, g, boost::spirit::ascii::space, v );
+    if( r ) {
+        auto a = boost::any_cast< std::vector< boost::any > >( v );
+        for( auto it = a.begin(); it != a.end(); ++it ) {
+            std::cout << boost::any_cast< void * >( *it ) << std::endl;
+        }
+    }
+    return 0;
+}
+
+4) It seems we may like to decorate the AST generated by Qi to bind the AST back to the original code evaluated?
+
+	==> Consider this live video of a guy answering a stack overflow question about this (https://www.liveedu.tv/sehe/ZWroO-answering-boost-questions-daily/poyDG-enriching-ast-for-variable-references-vs-qd/ <https://www.liveedu.tv/sehe/ZWroO-answering-boost-questions-daily/poyDG-enriching-ast-for-variable-references-vs-qd/>)?
+
+	==> This is the stack overflow question with a solution on how to make Qi decorate the produced AST while parsin (https://stackoverflow.com/questions/32500379/how-to-print-the-variables-matched-by-the-symbol-table-in-boost-spirit-parser/32501192#32501192 <https://stackoverflow.com/questions/32500379/how-to-print-the-variables-matched-by-the-symbol-table-in-boost-spirit-parser/32501192#32501192>)?
+
+	==> Consider we may want to do this to be able to point out syntax errors to the user when we fail to produce the AST (parsing error)?
+	…
+
+…
+
+
+Consider to elaborate on this idea to use Boost Spriti Qi (or newer Boost X3) to implement a Meh evaluator?
+...
+
+
+
+
+
+	

@@ -1,0 +1,61 @@
+# Todo: Consider to delve into GPT-3 to follow up on leads into understanding how to use it and possibly apply it to enhance a C++ code editor or automate book keeping tasks?
+
+```#810a40b6``` *As of 2020-08-10 08:34*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Sp GPT-3 is the latest deep learning
+
+1) Consider this youtube video "OpenAI GPT-3 - Good At Almost Everything! 🤖" for leads into what GPT-3 is and what I can use it for (<https://youtu.be/_x9AwxfjxvE> )?
+
+> 📝 The paper "Language Models are Few-Shot Learners" is available here:  
+> - [https://arxiv.org/abs/2005.14165](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Farxiv.org%2Fabs%2F2005.14165&redir_token=QUFFLUhqa1VSakhVRklVRjlNRkZySWhtdWEzYlhBNktvQXxBQ3Jtc0tuVzloV1A0SVdnRklWSW9zM2pFQTZSdG8zQXB2UDVTWnV3YVF0Wkwzek15UG8tMzNYUzRuaTV2a0t5dm9oWENjMlRwSEs4RndRVWF5bXVUOHZtRXRSM1NBb1Y2eHJ1c25IN1V3SVdNSFpHSnJ2cjcyRQ%3D%3D&v=_x9AwxfjxvE)  
+> - [https://openai.com/blog/openai-api/](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Fopenai.com%2Fblog%2Fopenai-api%2F&redir_token=QUFFLUhqblM3VUpMakEtUF9fQTk1TE14MFRNdGpNU3pxQXxBQ3Jtc0trVldMWk56NnMyaDBhSUxhaER3NXo0TGJCUVVTbXNjVzB3UkhaSFZoelprSEcyeWtaSHR5eVFYeU1USHpRNjE2Wkk5eENGUk1uRUF1QWNYS2p5UXg2aHliNGdNMWZCQ0ZYZ0t1QW1EQkxucUdITS16MA%3D%3D&v=_x9AwxfjxvE)
+
+> Credits follow for the tweets of the applications. Follow their authors if you wish to see more!  
+> Website layout: [https://twitter.com/sharifshameem/sta...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Fsharifshameem%2Fstatus%2F1283322990625607681&redir_token=QUFFLUhqbnZSN2gwNXNiRllPR2NleU5NVkQ1YTZnOTAxd3xBQ3Jtc0tudFBzZ1dibTB0YU5EVklqdU1RcFprb1pZOGVobXNfVFcwNXhwMkY2eEszdThHVUMzY2FTSlBRNHAwWnBZcTQtVVN1ZndsQWVRanpBWU9uMWQ4VFVxTl9mUVBaTXRkN1k0SFNkc29oR2Y0dl82WnBFNA%3D%3D&v=_x9AwxfjxvE)  
+> Plots: [https://twitter.com/aquariusacquah/st...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Faquariusacquah%2Fstatus%2F1285415144017797126%3Fs%3D12&redir_token=QUFFLUhqbkhUQVJkTTZBa1hicVE0TU4yX0czUmU4dlBUZ3xBQ3Jtc0ttMkVwcmpuUzZuYTV1WVRBUVhXV1QtVDNRYnV0d0xna3ljWTFWU29Qb1pkbkEyNTBwSFZfS21RaGt0aVhPZlBEa2V2QTFtMXItMDRkVjk4cmp2Z0FackFjUnltSmU1dW14WnJueGRseFM5TTJZT2RSQQ%3D%3D&v=_x9AwxfjxvE)  
+> Typesetting math: [https://twitter.com/sh_reya/status/12...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Fsh_reya%2Fstatus%2F1284746918959239168&redir_token=QUFFLUhqbVhLaGowVVpWZzhsRkcxaWgzNjJ2MnBjWlVFUXxBQ3Jtc0tsblNhNFNlOXVHOHlPYjh3enVleXRhbE1XLWk5M2lNZ3ppQkowa1RpODdCbEh3RXZNUl9CU0tCQzdSclhHaFloSVJHa05tbmpnSWxoUU9VWDNoMkFlYmFwenh3dGFGU1hzUWxVaFZJbmhXVDV6YXdFWQ%3D%3D&v=_x9AwxfjxvE)  
+> Population data: [https://twitter.com/pavtalk/status/12...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Fpavtalk%2Fstatus%2F1285410751092416513&redir_token=QUFFLUhqbDBPUWdBajBwcVZySnRZcFZjRXFXR0RrSGthQXxBQ3Jtc0ttWTdURmZTc0xOdHpKRjdoRjhZcDRuZjNrZFdxWDEzdEpuSWNhUk4yZ1MtMHpqV3dIQ3J0X3VvOE42WFJLMVBYU0t0RnhDbFM4WHlfTlRRUnBmR29tY0xybnQ3c0xRRklwQzFCY2ZwbmhlVy1IRUJvdw%3D%3D&v=_x9AwxfjxvE)  
+> Legalese: [https://twitter.com/f_j_j_/status/128...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Ff_j_j_%2Fstatus%2F1283848393832333313&redir_token=QUFFLUhqazQxcTVDN2RGclRVWWNDT19OYnMwNnltWTY2Z3xBQ3Jtc0tuOFNXcVN1SHlBbnZkT08tbTZGcjIxUlhmWnJ3UWEzbkxPZl84dWZEalNrRHZDdEo1RkNTT2xoUXdPTnRENFdhQTNUa2ktUzUydDdYckxmZEgydG42MWVCYXhqTFdvUmlMa1AxWnBaZW1mTXlOdV9sQQ%3D%3D&v=_x9AwxfjxvE)  
+> Nutrition labels: [https://twitter.com/lawderpaul/status...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Flawderpaul%2Fstatus%2F1284972517749338112&redir_token=QUFFLUhqa3JGQXJqT1JSYjlGbk1RZFNMZE5WaWpQLTBoUXxBQ3Jtc0tueVZIZ2Z4LUdYWTdrREJyTU9YVW1zVWNtaWlpU1VldzN5ZDB6VWpldk9ja3RkQ1dJbU5icEszMFc1YXByR0dVZjlIZXJfc19TZDFVeDVDWGY4TkNuTzZrd2Z6MHBrQ2ZLU0tvZ1NPbWZDVjg0RUdfUQ%3D%3D&v=_x9AwxfjxvE)  
+> User interface design: [https://twitter.com/jsngr/status/1284...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Fjsngr%2Fstatus%2F1284511080715362304&redir_token=QUFFLUhqbERhRC1pNEFRMW9GT0pfTEQxTExQVkZRcEdOQXxBQ3Jtc0tuU1JFTG9GZkpodHhITmx3RTh0OXJrZ3VKcGxTNV9pcW9xTVhUNllMSWExZnpHN05NdkNFRXpqaDRTcmhnNmFqLWZuRnFhTmVxVXdDb2tGTVBtLVlLSGpnYnNFWFNaYnRmdUpVY2FOSHZSS3E4MkZaRQ%3D%3D&v=_x9AwxfjxvE)
+
+> More cool applications:  
+> Generating machine learning models - [https://twitter.com/mattshumer_/statu...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Fmattshumer_%2Fstatus%2F1287125015528341506%3Fs%3D12&redir_token=QUFFLUhqbldUU2Y0dXZoSktHNEFoQmxmZllZUTBKN2dtZ3xBQ3Jtc0ttb2M4eEZFTDJGVEpIRzNYelktR0FSZmZ2VEtNUy1vX2pGLWV3X0JZZmNCVEs1Z251Uko5R3A5NXB2QjBVQ1AwLXh5cWxiYU5ERGVDcjlORi15NHFrU3F4eU52Mkt2SGZvVVdXa0JHcTJ6bmMzNGZFWQ%3D%3D&v=_x9AwxfjxvE)  
+> Creating animations - [https://twitter.com/ak92501/status/12...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Fak92501%2Fstatus%2F1284553300940066818&redir_token=QUFFLUhqbnFKTUtLcV9QRzk3YnJiTENpeHF2ZTB6SlJjUXxBQ3Jtc0trQ0NtazdYMjNmcWl0S2xQUlZEekpBWGxFVXV6UEZKeEJVQTdMbmRRdkdDZEIwNXJlZ2JDZkZVUndUMXdQSmJWaFRuYkszMWRFRnZBUVlvaTFYWDRBa3RqZkZMQ085cjROMVRUc0xYeW1sNEhYNm45Zw%3D%3D&v=_x9AwxfjxvE)  
+> Command line magic - [https://twitter.com/super3/status/128...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Fsuper3%2Fstatus%2F1284567835386294273%3Fs%3D12&redir_token=QUFFLUhqbllDT1BBa3VkaFEyLU45MjYteUN5dFpDS1hYQXxBQ3Jtc0tuYmZfbnhYeUFqeWpFMGFhVnJ6T0t4eEJQNU8zdk9sTl9qWnFYZkxTaEl2b1VNNjRma2JockFicXpBcmNOcDdsZ0ZNUXVhY1kwUUxJeFJYUVA5VzhtcWZKSnFrZDZMN040T21penNFaVExNEtGR0Vrdw%3D%3D&v=_x9AwxfjxvE)  
+> Analogies: [https://twitter.com/melmitchell1/stat...](https://www.youtube.com/redirect?event=video_description&q=https%3A%2F%2Ftwitter.com%2Fmelmitchell1%2Fstatus%2F1291170016130412544%3Fs%3D12&redir_token=QUFFLUhqbjNRZVJhNWhnWlQ4ZmNnQUJpNGtnVTUzQ3ZyQXxBQ3Jtc0ttS1FuZkl2RHFjblJTMWhnTW9JNEVWajBVSy1DRVVPYkwzdTRJX1dJNFZ3NEhrYjNWVTl3QUNaOHM0RjF6dWYzT0NKVXBxSnZCQVNKWmNZRzZ3dkpLb1hSdm81aFdjaVdoQmIxbUhocFhzRDg0WFM2SQ%3D%3D&v=_x9AwxfjxvE)
+
+2) Consider the wikipedia page on GPT-3 (<https://en.wikipedia.org/wiki/GPT-3> )?
+
+> "*Generative Pre-trained Transformer 3 (GPT-3) is an autoregressive language model that uses deep learningto produce human-like text. It is the third-generation language prediction model in the GPT-n series created by OpenAI, a San Francisco-based artificial intelligenceresearch laboratory.&#91;2&#93; *"
+
+> *"Prior to the release of GPT-3, the largest language model was Microsoft's Turing NLG, introduced in February 2020, with a capacity ten times less than that of GPT-3.&#91;4&#93;"*
+
+> *"**GPT-3 can design websites, answer questions, and prescribe medications.&#91;6&#93;**"*
+
+3) Consider the test web page "OpenAI API" on the OpenAI domain (<https://openai.com/blog/openai-api/> )?
+
+> *"We’re releasing an API for accessing new AI models developed by OpenAI. Unlike most AI systems which are designed for one use-case, the API today provides a general-purpose “text in, text out” interface, allowing users to try it on virtually any English language task. You can now request access in order to integrate the API into your product, develop an entirely new application, or help us explore the strengths and limits of this technology."*
+
+> *"Today the API runs models with weights from the GPT-3 family with many speed and throughput improvements."*
+
+4) Consider if we can use a GPT3 based network to generate C++ code from programmers input description?
+
+> *So the basic idea here is to investigate if a GPT-3 based neural network model can generate C++ code from input text descriptions from a programmer. So like the programmer tells the C++ editor to "Create class" and the AI generates code like "class NoName {};" or something along those lines.*
+
+> *And can we imagine a C++ refactoring code editor where the programmer can say "make copy constructible" and the AI refactors the class at the cursor to have member methods to make it copy constructible?*
+
+> *...*
+
+5) Consider if we can use a GPT-3 based neural network to automate book keeping tasks?
+
+> *So the basic idea here is if it is possible for a GPT-3 based neural network to learn the pattern of book keeping vouchers and based on that generate new ones as described by the user of the program. So we can imagine the application being able to first OCR generate text from an image of a voucher and then correctly turn that text into a correct book keeping entry?*
+
+> *...*
+
+...
+
+{% endraw %}

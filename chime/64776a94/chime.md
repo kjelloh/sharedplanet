@@ -1,0 +1,14 @@
+# Todo: Write about becoming an antivirus in a "virus infected" society
+
+```#64776a94``` *As of 2015-10-17 23:19*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Watching ”Cyberbrott: Nätets nya kriminella” on svtplay (http://www.svtplay.se/video/4194537/cyberbrott-natets-nya-kriminella/cyberbrott-natets-nya-kriminella-avsnitt-6) Satarday 17 october 2015 a about ”nigeria letters” a Nigerian artist stated ”in a sick society you should be an antivirus. If you blame society and take advantage you are part of the sickness. You are a virus yourself.”
+
+1) I like to be an ”anti virus” in the current neo liberal capitalistic society. I want to point out the ”sickness” and act to change in the direction of ”health”.  
+2) What more can we do with the metaphor ”be an anti virus”? Is this along the lines of ”believe what makes you want to do what is good for you” and ”” act-in-faith”?  
+...
+
+{% endraw %}

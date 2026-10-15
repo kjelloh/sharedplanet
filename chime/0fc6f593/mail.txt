@@ -1,0 +1,35 @@
+﻿Studying the latest proposal for C++ “Contracts” it seems the “Wining Code” idiom is in fact a way to implement “Contract Violation”?
+
+1) Consider Gabriel dos Reis Contract Proposal at 33:50 into talk (https://channel9.msdn.com/events/CPP/CppCon-2015/CPPConD03V025 <https://channel9.msdn.com/events/CPP/CppCon-2015/CPPConD03V025>)?
+
+	==> The C++ Contract pre-condition [[expects: <predicate>]] corresponds to LOG_DEISGN_INSUFFICIENCY for false predicate?
+
+	==> Wining Code does not have any post-condition part (post-condition violation are caught by pre-condition Wining Code later on)?
+
+	==> The C++ Proposal for Contracts is to use C++11 attribute-syntax [[<attribute>]] (http://en.cppreference.com/w/cpp/language/attributes <http://en.cppreference.com/w/cpp/language/attributes>)
+
+2) Consider if there is a way to have Wining Code (LOG_DESIGN_INSUFFICIENCY) to close up to proposed C++ contracts?
+
+	==> C++ Contracts may be disabled invisible to the ABI (Application Binary Interface) of the code.
+	==> Wining Code can only disable LOG_DESIGN_INSUFFICIENCY (define macro empty) but the predicate is still active in the code.
+	==> Could we make Wining Code removable by macros?
+
+		if (<predicate>) WINE({
+		})
+		else {
+			…
+
+		==> If WINE macro is defined empty, then compiler will optimise away the if-clause?
+
+3) Consider where Wining Code differs from C++ Contracts?
+
+	==> LOG_DESIGN_INSUFFICIENCY focuses on detection of events (situations) that the code is not designed to handle.
+	==> This is not always a Contract Violation (it may also be a valid event that just is not yet handled in code)?
+	==> Thus, a Design Insufficiency sometimes lead to Contract Violation, but not always (sometimes the code just not yet fulfils the Contract)?
+
+	The Code Wines either for Contract Violation or Failure to comply with the Contract?(!)
+
+…
+
+Consider to elaborate more on this idea to have Wining Code close up to C++ proposal for contracts?
+...

@@ -1,0 +1,22 @@
+﻿Could it be a good idea to try and use the tag-path based encode/decode idiom to try and encode software packages for popular package managers?
+
+1) Consider to try and encode a chocolate package for windows (https://github.com/chocolatey/choco/wiki/GettingStarted#what-are-chocolatey-packages)?
+
+	”Chocolatey packages are known as nupkg files, which is a compiled NuSpec or a fancy zip file that knows about package metadata (including dependencies and versioning). These packages are an enhanced NuGet package, they have additional metadata that is specific to Chocolatey. Chocolatey is also compatible with vanilla NuGet packages. A Chocolatey package can contain embedded software and/or automation scripts.”
+
+	==> Consider what a seed to a C++ library could look like to provide chocolate package encoding services?
+
+2) Consider what a good name for such a package encoder C++ library could be?
+
+	==> Consider ”santa” (as a reference to christmas and santa Clause)?
+
+	…
+
+3) Consider how this C++ library should extend the more general tag-path based encode/decode service library?
+
+	==> Consider that ”santa” should just be a specialization of the tag-path based codec services?
+	…
+…
+
+Consider to delve into this idea of a ”santa” C++ library to encode software packages using the tag-path based codec idiom?
+...

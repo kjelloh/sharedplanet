@@ -1,0 +1,29 @@
+# Todo: Skriv på engelska om att "Förnuftet spelar strutfotboll"?
+
+```#87cd5e51``` *As of 2016-07-30 22:24*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Överväg att argumentera att Förnuftet till sin natur ser väldigt Sankt - om världen är en fotbollsmatch så spelar förnuftet strutfotboll?
+
+1) Överväg att förnuftets uppgift är att förenkla = Förstå i form av kondenserade utsagor?
+
+2) Överväg att förnuftet bara "ser" en mycket smal och tolkad bild av verkligheten?
+
+3) Överväg att förnuftet är en mycket ung påbyggnad ovanpå alla evolutionens äldre system?
+
+4) Överväg att förnuftet förbrukar mycket energi och därför används minimalt?
+
+5) Överväg att förnuftet ger möjlighet till logiska (simulerade) sanningar ovanpå känslor och undermedvetna handlingsskapande sanningar?
+
+6) Överväg att den upplevda sanningen alltid är starkare än förnuftets sanning (sim ofta känns jobbig och fel)
+
+7) Överväg att hitta referenser till "Tänka snabbt och långsamt"?  
+,,,
+
+Överväg att argumentera och spekulera under denna rubrik - fast på engelska?
+
+Skickat från min iPhone
+
+{% endraw %}

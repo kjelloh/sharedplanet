@@ -1,0 +1,11 @@
+﻿Would it not be nice if our phone could tells us suggestions of whats on the agenda for the day?
+
+1) Have tha app implement the ”focus” approach (i.e. intend of tasks the app helps planning what to focus on).
+2) Have each ”focus” define ”why” and ”where” (as defined in previous idea about virtual calendar)
+3) Enable one to talk into the app for replay when ”focuses” are proposed by the app. In this way the app is made able to talk back what one has oneself recored.
+4) Make the app social so that friends (or even strangers?) may provide recordings of phrases the app may use when talking back to the user.
+5) Make the app enable to work as an ”alarm” clock. It shall then wake one up by proposing what is up for the day using the recorded phrases for the proposed ”focuses” and why one should focus on those.
+…
+
+The core idea is to have an app that can talk back and read the proposed ”todos” with a voice one recognize. It may also be more personal to hear the voice of an actual living person that knows you and wants you well? The social aspect of being able to record phrases for others calendars could also be fun?
+...

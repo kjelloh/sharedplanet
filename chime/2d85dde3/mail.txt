@@ -1,0 +1,54 @@
+﻿Could it be a good idea to view source code compilation and linking from a mathematical point of view transforming information between something we may call ”code spaces”?
+
+1) Pre-processing a file transform the content from having pre-processor directives to one that does not.
+	==> Representation does not change but content does (it is still ”text”)
+	==> But we may be tempted to view the transformation as one from a source code file to a compilation unit?
+
+2) Compilation is a transformation from a compilation unit to some ”machine code” of an existing or virtual machine (e.g. cpu instructions or internal representation)
+	==> We may be tempted to see this as a transformation from compilation unit space to machine code space.
+	==> resulting ”machine code” are still unbound (i.e. each compilation unit may have unbound references to data and functions in other units)
+
+3) We may assume ”compilation” may occur in several steps through one or more intermediate machine code representations?
+	==> The LLVM expects front-ends (e.g. language specific compilers) to generate an Intermediate Representation (IR) (https://en.wikipedia.org/wiki/LLVM)
+	”LLVM supports three isomorphic forms of IR: a human-readable assembly format, a C++ object format suitable for frontends, and a dense bitcode format for serialization”
+	==> Java compilation transforms java source code to Java Machine byte code.
+
+4) May we view optimization as a transformation where representation doe not change (IR remains)?
+
+5) Linking is not actually a transformation (or is it)?
+	==> In the link process the representation does not change but unbound parts are bound together (less units)
+	==> Known end results are libraries or executable programs.
+	==> A library is code that other code may bind to and may also have dependencies that must be bound.
+	==> In an executable program the code will bind to the execution environment which will execute dedicated run time code as a ”program” (as defined by the environment)
+
+6) Can we make the term ”code space” meaningful (can we give ”location” any meaning)?
+	==> The term ”space” met imply we can use coordinates in one space mean something and correlate to coordinates in the transformed space.
+	==> Pre-processing macro expansion and compilation template expansion seem to mean a single location in source ”space” transforms to several locations in target space?
+	==> If so, is this actually a well behaving transformation?
+	==> In any case - we operate in discrete space (code spaces carries digital data with only discrete ”positions” possible)?
+	… 
+
+7) So, what transformation may we identify?
+
+	==> Pre-processing text to text
+	==> Compilation source code text to IR representation (target IR must be known)
+	==> Compilation of one IR to another (e.g. IR to target CPU compilation)
+	==> IR to IR optimizations?
+
+8) How far may we model program build process using chains of transformations (target = F(source))?
+
+9) Consider to study LLVM architecture and understand the complexity of optimization (http://www.aosabook.org/en/llvm.html)?
+	==> Optimization may occur at any stage of transformation (e.g. compile time, link time)
+	==> Optimization may be seen as a many-to-may problem with cross-transfoprmation dependencies (a back-end optimization may need front-end available information)?
+	==> Different Optimizations may contradict each other and we may have local optimas hiding the the best optimization?
+	==> Could we argue that finding the best chain of optimizations are in fact the traveling-salesmen problem?
+
+10) The LLVM seem to define ”passes” as transformations (http://llvm.org/docs/WritingAnLLVMPass.html)
+	==> So they already adopts the notion of ”transformations”?
+	==> Do LLVM transformations (passes) transform between ”spaces” or between ”representations”?
+	==> Is LLVM ”Pass” definition to answer the question of a ”code space location” is meaningful or not (can we settle that it is not)?
+	...   
+…
+
+Consider to elaborate on this idea of modeling program component builds as mathematical transformations between "code-spaces"?
+...

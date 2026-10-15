@@ -1,0 +1,32 @@
+# Todo: C++ Tha - Consider to implement Tha meta-tier.model in the immutable data structure library Immer?
+
+```#8cbd727b``` *As of 2018-05-28 09:35*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to implement Tha meta-tier-model as an immutable data structure using the C++ Immer library?
+
+1) Consider how we may model SUM, PRODUCT and FUNCTION in existing Immer data structures?
+
+…
+
+2) Consider how we may use PATH to navigate the Tha model instantiated as an Immer data structure composition?
+
+…
+
+3) Consider how we may produce and represent deltas between different Tha states as diffs between corresponding Immer data structure instances (states)?
+
+==&gt; Consider each mutation of an Immer Data Structure results in a mutation-path (the new path to the mutation) with shared un-muted part of previous instance?  
+…
+
+4) Consider to elaborate on the duality between a Tha distributed in space versus a Tha distributed in time (streamed)?
+
+==&gt; Consider how a mutation-path is in fact a Darwinet Delta and how such a Delta distributed in time is how we may send it to sharing peers of the Darwinet Domain Network?  
+…
+
+…
+
+Consider to delve onto this idea of implementing a Tha in C++ immutable data structures library “Immer”?
+
+{% endraw %}

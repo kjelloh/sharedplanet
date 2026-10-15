@@ -1,0 +1,38 @@
+# Todo: Programming - Consider to study and learn CLion IDE for C++ on Linux?
+
+```#8ad7cefe``` *As of 2016-04-13 00:38*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Maybe the CLion IDE is the way to go for C++ development on Linux?
+
+1) CLion IDE seem to be published for download here (<https://www.jetbrains.com/clion/download/#section=linux-version>)
+
+==&gt; It seems we are to download and install as described (no package-distribution available)?
+
+“Installation Instructions
+
+• Unpack the CLion-\*.tar.gz file using the following command:
+
+**tar xfz CLion-\*.tar.gz**
+
+• Run CLion.sh from the bin subdirectory”
+
+==&gt; MATE Firefox “Save File” downloads the file to “/home/kjell-olovhogdahl/Downloads”
+
+> kjell-olovhogdahl@ubuntu:/usr$ **cd ~**  
+> kjell-olovhogdahl@ubuntu:~$ **ls**  
+> Desktop Downloads Music Public Videos  
+> Documents fontconfig Pictures Templates  
+> kjell-olovhogdahl@ubuntu:~$ **cd Downloads**  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **ls**  
+> CLion-2016.1.1.tar.gz  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **tar xfz CLion-\*.tar.gz**  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **ls**  
+> clion-2016.1.1 CLion-2016.1.1.tar.gz  
+> kjell-olovhogdahl@ubuntu:~/Downloads$
+
+==&gt; Moved the unpacked clion-2016.1.1 to /home/usr/opt (as suggested by “Todo: Programming - Consider to document and understand the basics of Linux OS usage and configuration?)”
+
+{% endraw %}

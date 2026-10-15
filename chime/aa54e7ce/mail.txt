@@ -1,0 +1,94 @@
+﻿So, how does C++ Boost Template Meta Programming Library placeholder _1, _2 and so on, actually “work”?
+
+1) Consider to see what we can learn from “C++ Template Metaprogramming” by David Abrahams and Aleksey Gutrovoy?
+
+		// page 42
+		// Iterates two sequences of types in parallel and creates a new sequence of elements BinaryOperation<T1,T2>::type
+		template <class Sequence1, class Sequence2, class BinaryOperation>
+		struct transform;
+
+		// Page 43
+		// mpl::plys binary operator
+		// result will be initialised to compile time calculated value 5.
+		int result = mpl::plus<mpl::int_<2>, mpl::int_<3> >::type::value;
+
+		// From page 43 we deduce we can’t provide mpl::plus as template parameter for BinaryOperator (it is not a type but a template)
+		// Note: This is “old” C++? We now allow Template template parameters?
+		…
+		typedef mpl::transform<D1,D2, mpl::plus>::type type; // Wont compile, mpl::plus is a template, not a type
+		
+		// Page 44, mpl::transform expects BinaryOperator to be a Metafunction class (a class with template function member apply)
+		struct plus_f {
+			template <class T1, class T2>
+			struct apply {
+				typedef typename mpl::plus<T1,T2>::type type;
+			};
+		}
+		// This is the preferred way to pass Metafunctions round as types (possible template parameters)
+
+		…
+		typedef mpl::transform<D1,D2, plus_f>::type type; // Ok. plus_f is a Metafunction class. mpl::transform will “call" plus_f::apply<T1,T2> (i.e. compile plus_f::apply<T1,T2>::type)
+		
+		// At page 47 they define a shortcut to writing the boilerplate Metafunction class plus_f
+		…
+		typedef mpl::transform<D1,D2, mpl::plus<_1,_2> >::type type; // Ok (?). mpl::plus<_1,_2> is a Metafunction class with member apply with the following properties
+
+		mpl::plus<_1,_2> <==>	template <class A1, class A2, class A3, class A4>
+							struct plus {
+								template <class T1 = A1, class T2 = A2>
+								struct apply {
+									typedef typename plus_impl<T1,T2>::type type;
+								}
+							};
+
+		mpl::plus<_3,_1> <==>	template <class A1, class A2, class A3, class A4>
+							struct plus {
+								template <class T1 = A3, class T2 = A1>
+								struct apply {
+									typedef typename plus_impl<T1,T2>::type type;
+								}
+							};
+
+		// Page 54, A placeholder is a metafunction class of the form template <int N> struct arg.
+
+		template <int N> struct arg; // forward
+		struct void_; // No type
+		
+		template <>
+		struct arg<1> {
+			template <class A1, class A2 = void_, class A3 = void_ /* … and so on */>
+			struct apply {
+				typedef A1 type; // “Return” the first argument, i.e. apply::type is the type A1
+			};
+		}
+		typedef arg<1> _1;
+
+		template <>
+		struct arg<2> {
+			template <class A1, class A2, class A3 = void_ /* … and so on */>
+			struct apply {
+				typedef A2 type; // “Return” the second argument, i.e. apply::type is the type A2
+			};
+		}
+		typedef arg<2> _2;
+
+		// On page 50 they recognise that mpl::plus<mpl::int_<2>, mpl::int_<3> > is different from mpl::plus<_1,_2>
+		typedef mpl::plus<mpl::int_<2>,mpl::int_<3> >::type concrete_plus; // Ok. type is mpl::int_<5>.
+		typedef mpl::plus<_1,_2>::type lamda_plus; // Fails (?). _1 and _2 are Metafiction classes, not Metafunctions.
+		// _1::apply<T>: IS a metafunction.
+
+		// At page 51 they define the mpl::lamda metafunction to cope with this.
+		// mpl::lambda generates an anonymous Metafiction Class from provided Metafunction.
+
+		==> To re-capitulate
+
+			==> Metafunctions are Templates with member type executed by compiling meta_function<Args>::type.
+			==> Metafiction Classes are Class Types with template member apply executed by compiling meta_function_class::apply<Args>::type.
+			==> Lamda Metafunctions are unnamed Metafunction Classes created by mpl::lamda metafunction executed by compiling mpl::lambda<meta_function>::apply<Args>::type;
+			==> The apply metafunction does the same job when compiled as mpl::apply<meta_function,Args>::type.
+
+			==> Thus, if we have a meta_function “called” with place-holders we get mpl::lamda metafunction executed by compiling mpl::lambda<meta_function<_1> >::apply<Args>::type;		
+			==> And when used in call to apply as mpl::apply<meta_function<_1>,Args>::type;
+			…
+
+			WE ARE HERE...

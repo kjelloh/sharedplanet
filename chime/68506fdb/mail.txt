@@ -1,0 +1,98 @@
+﻿It seems it’s beginning to be time to select and buy a lab power supply for my maker space?
+
+	==> Also see “Todo: Consider to buy AliExpress RD Power Supply Modules (Units i.e., PSU) and USB Power Meeter modules?"
+
+-1) Consider the requirements I have on my PSU?
+
+	==> I need at least two channel 5V/3.3V, 30V/3A output?
+	==> I Need the security of quick and reliable current protection?
+
+	==> Consider two separate PSU (One fix 5V/3.3V and One 30V/3A variable)?
+
+1) Consider the Power Supply used by Youtubers I watch?
+
+	==> Consider LearnElectronics uses a Pevono PS305  (https://www.youtube.com/watch?v=mKCAxwjfs0I&t=22s <https://www.youtube.com/watch?v=mKCAxwjfs0I&t=22s>)?
+
+		
+
+		==> Consider this review of the Pevono PS305 (https://www.youtube.com/watch?v=5LlUcqxO5ik <https://www.youtube.com/watch?v=5LlUcqxO5ik>)?
+		==> Seems to sell and ship from Amazon (https://www.amazon.com/Pevono-Digital-Adjustable-Switching-Regulated/dp/B076TMJB35/ref=as_li_ss_tl?ie=UTF8&qid=1518402963&sr=8-1-spons&keywords=pevono+ps305&psc=1&linkCode=sl1&tag=airbornesurfe-20&linkId=8ed9fad44d10655095b30a9234e48eed <https://www.amazon.com/Pevono-Digital-Adjustable-Switching-Regulated/dp/B076TMJB35/ref=as_li_ss_tl?ie=UTF8&qid=1518402963&sr=8-1-spons&keywords=pevono+ps305&psc=1&linkCode=sl1&tag=airbornesurfe-20&linkId=8ed9fad44d10655095b30a9234e48eed>)?
+
+			
+
+		==> Seems to seem as a four digit version on Amazon (https://www.amazon.com/Pevono-Adjustable-Switching-Regulated-UL-Listed/dp/B01F9GQM9M/ref=as_li_ss_tl?ie=UTF8&qid=1518402963&sr=8-2&keywords=pevono+ps305&linkCode=sl1&tag=airbornesurfe-20&linkId=fe48085f4620f17ae287d71f30319b62 <https://www.amazon.com/Pevono-Adjustable-Switching-Regulated-UL-Listed/dp/B01F9GQM9M/ref=as_li_ss_tl?ie=UTF8&qid=1518402963&sr=8-2&keywords=pevono+ps305&linkCode=sl1&tag=airbornesurfe-20&linkId=fe48085f4620f17ae287d71f30319b62>)?
+
+			
+
+
+	==> Consider MacoReps uses the Siglent SPD3303X (https://youtu.be/p4ltHDpxrbI?t=120 <https://youtu.be/p4ltHDpxrbI?t=120>)?
+
+		
+
+		==> Consider EEVBlog teardown of Siglent SPD3303X (https://www.youtube.com/watch?v=mdOauVzY9OU <https://www.youtube.com/watch?v=mdOauVzY9OU>)?
+
+	==> Consider EEVBlog uses the Rigol DP832 (https://youtu.be/qWAqSSLwBtw?t=146 <https://youtu.be/qWAqSSLwBtw?t=146>)?
+
+
+
+
+2) Consider SPD3303X / SPD3303X-E Series Programmable DC Power Supply (http://www.siglent.com/ENs/pdxx.aspx?id=1132&tid=17&T=2 <http://www.siglent.com/ENs/pdxx.aspx?id=1132&tid=17&T=2>)?
+
+	==> DigiKey does not seem to sell Siglent?
+	
+3) Consider where to buy lab bench power supply?
+
+	==> Actually consider the Chinese RD power supply module vendor on Aliexpress (https://rdtech.aliexpress.com/store/923042 <https://rdtech.aliexpress.com/store/923042>)?PS305
+
+		==> See “Todo: Consider to buy AliExpress RD Power Supply Modules (Units i.e., PSU) and USB Power Meeter modules?"
+		
+
+			
+
+
+	==> Consider DigiKey power supplies (https://www.digikey.se/products/en/test-and-measurement/equipment-power-supplies-test-bench/633?FV=ffe00279&quantity=&ColumnSort=1000011&page=1&pageSize=25 <https://www.digikey.se/products/en/test-and-measurement/equipment-power-supplies-test-bench/633?FV=ffe00279&quantity=&ColumnSort=1000011&page=1&pageSize=25>)?
+
+		==> Consider this 80W/16V/5A  800 SEK Cheapest DigiKey Bench Power Supply (https://www.digikey.se/product-detail/en/global-specialties/1325/GS1325-ND/7606532 <https://www.digikey.se/product-detail/en/global-specialties/1325/GS1325-ND/7606532>)?
+
+		
+
+			==> NO! Does not work with 220V AC?
+
+		
+		==> Consider this nice design single channel PSU (https://www.digikey.se/product-detail/en/global-specialties/1410/GS1410-ND/7606526 <https://www.digikey.se/product-detail/en/global-specialties/1410/GS1410-ND/7606526>)?
+
+		
+
+
+		==> Consider DigiKey 3 channel PSU (https://www.digikey.se/products/en/test-and-measurement/equipment-power-supplies-test-bench/633?k=&pkeyword=&pv2211=i3&FV=ffe00279&quantity=0&ColumnSort=1000011&page=1&pageSize=25 <https://www.digikey.se/products/en/test-and-measurement/equipment-power-supplies-test-bench/633?k=&pkeyword=&pv2211=i3&FV=ffe00279&quantity=0&ColumnSort=1000011&page=1&pageSize=25>)?
+
+			==> Consider this 3 channel 12V, 5/3,3V, 30V/3A 1600 SEK PSU (https://www.digikey.se/product-detail/en/global-specialties/1405/GS1405-ND/7606525 <https://www.digikey.se/product-detail/en/global-specialties/1405/GS1405-ND/7606525>)?
+
+			
+				I Actually bough this one :)
+
+
+			==> Consider this fix 12 & 5 V 500 mA and variable 30V/3A PSU (https://www.digikey.se/product-detail/en/flir/382203/382203-ND/7785816 <https://www.digikey.se/product-detail/en/flir/382203/382203-ND/7785816>)?
+
+			
+
+
+	==> Consider Electro Kit (https://www.electrokit.com/productsearch?id=1&q=labbaggregat&cathandle=search <https://www.electrokit.com/productsearch?id=1&q=labbaggregat&cathandle=search>)?
+
+		
+
+	==> Consider Elfa Lab Bench Power Supplies (https://www.elfa.se/sv/maetteknik/baenknaetaggregat-kaellor-och-belastningar/naetaggregat-av-bordsmodell/c/cat-DNAV_PL_140102?sort=Price%3Aasc <https://www.elfa.se/sv/maetteknik/baenknaetaggregat-kaellor-och-belastningar/naetaggregat-av-bordsmodell/c/cat-DNAV_PL_140102?sort=Price:asc>)?
+
+		==> Elfa does not seem to sell Siglent?
+
+			
+
+		==> Consider Elfa cheapest 30V/3A Lab Bench Power Supply (https://www.elfa.se/sv/naetaggregat-av-bordsmodell-gw-instek-gps-3030d/p/16985240?q=*&sort=Price:asc&filter_Utspänning+1+max%7E%7EVDC=30&filter_Category3=Nätaggregat+av+bordsmodell&filter_Buyable=1&filter_Utström+1+max%7E%7EA=3&page=1&origPos=273&origPageSize=50&simi=99.65 <https://www.elfa.se/sv/naetaggregat-av-bordsmodell-gw-instek-gps-3030d/p/16985240?q=*&sort=Price:asc&filter_Utsp%C3%A4nning+1+max~~VDC=30&filter_Category3=N%C3%A4taggregat+av+bordsmodell&filter_Buyable=1&filter_Utstr%C3%B6m+1+max~~A=3&page=1&origPos=273&origPageSize=50&simi=99.65>)?
+
+			
+
+		==> Consider GW Instec (https://www.elfa.se/sv/naetaggregat-av-bordsmodell-gw-instek-gps-4303/p/16985493?q=*&sort=Price:asc&filter_Utspänning+1+max%7E%7EVDC=30&filter_Category3=Nätaggregat+av+bordsmodell&filter_Buyable=1&filter_Utström+1+max%7E%7EA=3&page=9&origPos=347&origPageSize=50&simi=99.65 <https://www.elfa.se/sv/naetaggregat-av-bordsmodell-gw-instek-gps-4303/p/16985493?q=*&sort=Price:asc&filter_Utsp%C3%A4nning+1+max~~VDC=30&filter_Category3=N%C3%A4taggregat+av+bordsmodell&filter_Buyable=1&filter_Utstr%C3%B6m+1+max~~A=3&page=9&origPos=347&origPageSize=50&simi=99.65>)?
+
+			
+
+		==>

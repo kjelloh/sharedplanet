@@ -1,0 +1,1185 @@
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro local % brew upgrade llvm   
+==> Upgrading 1 outdated package:
+llvm 10.0.1_2 -> 13.0.0_1
+==> Downloading https://ghcr.io/v2/homebrew/core/gdbm/manifests/1.22
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gdbm/blobs/sha256:f7e29005a4a9232965f67ef89364193e3ab95b249b169164be10db9e56f7f22e
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f7e29005a4a9232965f67ef89364193e3ab95b249b169164be10db9e56f7f22e?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/2.5.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:1a8314428019cec85756be0ea10bc4703cd754ef78a4cb560ddcc559af616a72
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:1a8314428019cec85756be0ea10bc4703cd754ef78a4cb560ddcc559af616a72?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2021-10-26
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:1bbd45c16a0b9912174c553a6d7ae1b67b11abbeb3155eaf03109bb62d8e5381
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:1bbd45c16a0b9912174c553a6d7ae1b67b11abbeb3155eaf03109bb62d8e5381?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/1.1/manifests/1.1.1l_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:eb4e1d96f1a9eac8d096220550e3ca97a46d59747ec2324e2ff74351f8319c2b
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:eb4e1d96f1a9eac8d096220550e3ca97a46d59747ec2324e2ff74351f8319c2b?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.1.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:7a6136c28be474faf630922495ca617ecad1275baa4ef8646bbc31eece3809f4
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:7a6136c28be474faf630922495ca617ecad1275baa4ef8646bbc31eece3809f4?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.36.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:3665b75356219a7823309efad0304b40bbccc369576685e8faef280a539e8600
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:3665b75356219a7823309efad0304b40bbccc369576685e8faef280a539e8600?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.9/manifests/3.9.9
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:caf2da2ca0e6a30c004aa0cddef2d9b077e5c5c8982dcc223caed2a11704aa26
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:caf2da2ca0e6a30c004aa0cddef2d9b077e5c5c8982dcc223caed2a11704aa26?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/llvm/manifests/13.0.0_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/llvm/blobs/sha256:dbcd8e6f48bf03b4730b92f4fe6351af97addc2db3eefde3ba85402b120368f5
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:dbcd8e6f48bf03b4730b92f4fe6351af97addc2db3eefde3ba85402b120368f5?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Upgrading llvm
+  10.0.1_2 -> 13.0.0_1 
+
+==> Installing dependencies for llvm: gdbm, mpdecimal, ca-certificates, openssl@1.1, readline, sqlite and python@3.9
+==> Installing llvm dependency: gdbm
+==> Pouring gdbm--1.22.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gdbm/1.22: 24 files, 956.4KB
+==> Installing llvm dependency: mpdecimal
+==> Pouring mpdecimal--2.5.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/mpdecimal/2.5.1: 71 files, 2.1MB
+==> Installing llvm dependency: ca-certificates
+==> Pouring ca-certificates--2021-10-26.all.bottle.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+🍺  /usr/local/Cellar/ca-certificates/2021-10-26: 3 files, 208.5KB
+==> Installing llvm dependency: openssl@1.1
+==> Pouring openssl@1.1--1.1.1l_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/openssl@1.1/1.1.1l_1: 8,073 files, 18.5MB
+==> Installing llvm dependency: readline
+==> Pouring readline--8.1.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/readline/8.1.1: 48 files, 1.6MB
+==> Installing llvm dependency: sqlite
+==> Pouring sqlite--3.36.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/sqlite/3.36.0: 11 files, 4.2MB
+==> Installing llvm dependency: python@3.9
+==> Pouring python@3.9--3.9.9.catalina.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.9
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run python@3.9
+
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3
+/usr/local/bin/2to3-3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3-3.9
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3
+/usr/local/bin/idle3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3.9
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3
+/usr/local/bin/pydoc3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3.9
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3-config
+/usr/local/bin/python3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+/usr/local/bin/python3.9-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9-config
+==> /usr/local/Cellar/python@3.9/3.9.9/bin/python3 -m ensurepip
+==> /usr/local/Cellar/python@3.9/3.9.9/bin/python3 -m pip install -v --no-deps --no-index --upgrade --isolated --target=/usr/local/lib/python3.9/site-packages /usr/loc
+==> Summary
+🍺  /usr/local/Cellar/python@3.9/3.9.9: 3,080 files, 55MB
+==> Installing llvm
+==> Pouring llvm--13.0.0_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/llvm/13.0.0_1: 10,841 files, 1.8GB
+==> `brew cleanup` has not been run in the last 30 days, running now...
+Removing: /usr/local/Cellar/gdbm/1.18.1_1... (25 files, 641KB)
+Removing: /usr/local/Cellar/llvm/10.0.1_2... (7,029 files, 1GB)
+Removing: /usr/local/Cellar/openssl@1.1/1.1.1h... (8,067 files, 18.5MB)
+Removing: /usr/local/Cellar/readline/8.0.4... (48 files, 1.5MB)
+Removing: /usr/local/Cellar/sqlite/3.33.0... (11 files, 4MB)
+Removing: /Users/kjell-olovhogdal/Library/Logs/Homebrew/tree... (64B)
+Pruned 0 symbolic links and 4 directories from /usr/local
+==> Upgrading 13 dependents:
+boost-python3 1.73.0 -> 1.76.0, freecad/freecad/nglib v6.2.2007 -> 6.2.2101, numpy 1.19.2 -> 1.21.4, open-mpi 4.0.5 -> 4.1.1_2, python@3.8 3.8.6 -> 3.8.12_1, opencascade 7.4.0_1 -> 7.6.0, pyqt 5.15.1 -> 6.2.0, freecad/freecad/shiboken2 5.15.0 -> 5.15.2, freecad/freecad/pyside2 5.15.0 -> 5.15.2, freecad/freecad/pyside2-tools 5.15.0 -> 5.15.2, sip 4.19.24 -> 6.4.0, tbb 2020_U3 -> 2021.4.0, vtk@8.2 8.2.0 -> 8.2.0_7
+==> Downloading https://ghcr.io/v2/homebrew/core/gmp/manifests/6.2.1_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:5ee7a460668864c28e541db15420e1480c3d31c5f216797a453a5310106fbc97
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:5ee7a460668864c28e541db15420e1480c3d31c5f216797a453a5310106fbc97?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/isl/manifests/0.24
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/isl/blobs/sha256:f33ee49a23fbde05392be23110d14add72aaed390ffd3aefc400645eeb1772d4
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f33ee49a23fbde05392be23110d14add72aaed390ffd3aefc400645eeb1772d4?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libmpc/manifests/1.2.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libmpc/blobs/sha256:8c037df4b551058d00351676dc2c5ec395bd69c88545fac9ccfd0749dadb8ee2
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:8c037df4b551058d00351676dc2c5ec395bd69c88545fac9ccfd0749dadb8ee2?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/zstd/manifests/1.5.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:571d031a8fe1b96f68c4c50c2e72532adbad273c565420cb0825cf4745f512bc
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:571d031a8fe1b96f68c4c50c2e72532adbad273c565420cb0825cf4745f512bc?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gcc/manifests/11.2.0_3
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gcc/blobs/sha256:229de4c4575d807495c21a3d7d1746229f8aec13a974fe4bbded0e391e6412c8
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:229de4c4575d807495c21a3d7d1746229f8aec13a974fe4bbded0e391e6412c8?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openblas/manifests/0.3.18
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openblas/blobs/sha256:ae3b33c6bce2bbcce84f507067634fd9a2de2fda8d5cf7690f6dd26e46ba27ec
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:ae3b33c6bce2bbcce84f507067634fd9a2de2fda8d5cf7690f6dd26e46ba27ec?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/numpy/manifests/1.21.4
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/numpy/blobs/sha256:3281f550910f6b4d1b3accf5b1fbd2f08bb1d1eb42b2a424f286d09f8d8ee694
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:3281f550910f6b4d1b3accf5b1fbd2f08bb1d1eb42b2a424f286d09f8d8ee694?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/qt/5/manifests/5.15.2_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/qt/5/blobs/sha256:ead09d3345cf3c4088f73d585c0e40615e89848ce060d8313d1173d8d189b54f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:ead09d3345cf3c4088f73d585c0e40615e89848ce060d8313d1173d8d189b54f?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://github.com/FreeCAD/homebrew-freecad/releases/download/shiboken2@5.15.2-5.15.2/shiboken2%405.15.2-5.15.2.catalina.bottle.tar.gz
+==> Downloading from https://github-releases.githubusercontent.com/18778796/46e3589f-bb02-4090-b49d-0cfd94ef8d1c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA
+######################################################################## 100.0%
+==> Downloading https://github.com/FreeCAD/homebrew-freecad/releases/download/pyside2-5.15.2/pyside2-5.15.2.catalina.bottle.1.tar.gz
+==> Downloading from https://objects.githubusercontent.com/github-production-release-asset-2e65be/18778796/f37bb73b-e1b4-4794-bf55-480e6a0ad3cc?X-Amz-Algorithm=AWS4-HM
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/tcl-tk/manifests/8.6.12
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/tcl-tk/blobs/sha256:0a7368698d7fe08e77efc96a99d2d20ae0611906bac7454e64049790cc298e77
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:0a7368698d7fe08e77efc96a99d2d20ae0611906bac7454e64049790cc298e77?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.8/manifests/3.8.12_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.8/blobs/sha256:d4cb99ba879e231fe4527f171f6fd41bdd36a805421ad31d0987e83af5738b98
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:d4cb99ba879e231fe4527f171f6fd41bdd36a805421ad31d0987e83af5738b98?se=2021-11-27T12%
+######################################################################## 100.0%
+Warning: vtk@8.2 has been deprecated because it is a versioned formula!
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/manifests/69.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:3f75c907dadc6e7e647920506e740a312e56279369f3c9708cac54b018410120
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:3f75c907dadc6e7e647920506e740a312e56279369f3c9708cac54b018410120?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/manifests/1.76.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/blobs/sha256:758658d7f1f8cf6c6790609f2a0b0f8349993653c8afce66869ea91d57b1f26f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:758658d7f1f8cf6c6790609f2a0b0f8349993653c8afce66869ea91d57b1f26f?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/freetype/manifests/2.11.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/freetype/blobs/sha256:619ef51d198b0c4451e55d02f750c0f8f41614dcf7e108904c57e9eecca2fff1
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:619ef51d198b0c4451e55d02f750c0f8f41614dcf7e108904c57e9eecca2fff1?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hdf5/manifests/1.12.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hdf5/blobs/sha256:aa4930768cb12d3a2a82e3670c0d9c5cf4089e487d0cbf4865880a5520b375d0
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:aa4930768cb12d3a2a82e3670c0d9c5cf4089e487d0cbf4865880a5520b375d0?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libtiff/manifests/4.3.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:e413c1170e33242eb941683d14ae51de594a013b8c6e5151f53b3352358b26fe
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:e413c1170e33242eb941683d14ae51de594a013b8c6e5151f53b3352358b26fe?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/netcdf/manifests/4.8.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/netcdf/blobs/sha256:2a6b950057dd40e4dee39245943c92ea7bc5d8141b1f70a8946d240a348cbf9e
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:2a6b950057dd40e4dee39245943c92ea7bc5d8141b1f70a8946d240a348cbf9e?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pyqt/5/manifests/5.15.6
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pyqt/5/blobs/sha256:548edca3fe604dafee249c9d30952abd1a34981bf7224e01b784c84dfefab5bf
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:548edca3fe604dafee249c9d30952abd1a34981bf7224e01b784c84dfefab5bf?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/vtk/8.2/manifests/8.2.0_7-1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/vtk/8.2/blobs/sha256:5fbc2c1c449782fe77a92febe6872dee0b2487e5da4462f3255318e84e1a9292
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:5fbc2c1c449782fe77a92febe6872dee0b2487e5da4462f3255318e84e1a9292?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hwloc/manifests/2.6.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hwloc/blobs/sha256:1afc6fa8a1b6ea25ed30da61fe81d6071d53cc57e91c59ef56a22b9c0cf8b0d8
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:1afc6fa8a1b6ea25ed30da61fe81d6071d53cc57e91c59ef56a22b9c0cf8b0d8?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/open-mpi/manifests/4.1.1_2
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/open-mpi/blobs/sha256:27f25156376078df9cb6e41a57c370cb030f16092ee7dfe85d7a8000f252240e
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:27f25156376078df9cb6e41a57c370cb030f16092ee7dfe85d7a8000f252240e?se=2021-11-27T12%
+######################################################################## 100.0%
+Warning: tbb@2020 has been deprecated because it is not supported upstream!
+==> Downloading https://ghcr.io/v2/homebrew/core/tbb/2020/manifests/2020_U3
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/tbb/2020/blobs/sha256:65adefc9242c9bcadfa22eeb8fbe67c8ac750d59107b7ea69da3715d1c2cbd78
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:65adefc9242c9bcadfa22eeb8fbe67c8ac750d59107b7ea69da3715d1c2cbd78?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/opencascade/manifests/7.6.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/opencascade/blobs/sha256:f1c22070ff63571066b1308b1bc31271155dcb91c6125f7834f7a6ccab2d5ebf
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f1c22070ff63571066b1308b1bc31271155dcb91c6125f7834f7a6ccab2d5ebf?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/boost-python3/manifests/1.76.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/boost-python3/blobs/sha256:2f905a84c2f81d6037d16215e55e31feff2d5cccedb170e7294726d2ec3f80d9
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:2f905a84c2f81d6037d16215e55e31feff2d5cccedb170e7294726d2ec3f80d9?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://www.bytereef.org/contrib/decimal.diff
+######################################################################## 100.0%
+==> Downloading https://files.pythonhosted.org/packages/88/fc/d17731c0cc67a5a8e385e4f47c3b0b186720e198b70f076ccb4676804a8f/setuptools-57.0.0.tar.gz
+######################################################################## 100.0%
+==> Downloading https://files.pythonhosted.org/packages/4d/0c/3b63fe024414a8a48661cf04f0993d4b2b8ef92daed45636474c018cd5b7/pip-21.1.3.tar.gz
+######################################################################## 100.0%
+==> Downloading https://files.pythonhosted.org/packages/ed/46/e298a50dde405e1c202e316fa6a3015ff9288423661d7ea5e8f22f589071/wheel-0.36.2.tar.gz
+######################################################################## 100.0%
+==> Downloading https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tar.xz
+######################################################################## 100.0%
+==> Downloading https://github.com/freecad/homebrew-freecad/releases/download/07.28.2021/numpy%401.19.4-1.19.4.catalina.bottle.tar.gz
+==> Downloading from https://objects.githubusercontent.com/github-production-release-asset-2e65be/18778796/79264d66-12ca-4ade-b77e-b901ad7aec46?X-Amz-Algorithm=AWS4-HM
+######################################################################## 100.0%
+==> Downloading https://github.com/freecad/homebrew-freecad/releases/download/07.28.2021/qt5152-5.15.2.catalina.bottle.tar.gz
+==> Downloading from https://github-releases.githubusercontent.com/18778796/bf0b365a-8aec-4989-8f9d-6b10f3432efb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA
+######################################################################## 100.0%
+==> Downloading https://github.com/freecad/homebrew-freecad/releases/download/07.28.2021/shiboken2-5.15.2.catalina.bottle.tar.gz
+==> Downloading from https://objects.githubusercontent.com/github-production-release-asset-2e65be/18778796/29dfbb07-727d-48c6-b91d-946e7e3f4226?X-Amz-Algorithm=AWS4-HM
+######################################################################## 100.0%
+==> Downloading https://github.com/FreeCAD/homebrew-freecad/releases/download/pyside2-5.15.2/pyside2-5.15.2.catalina.bottle.1.tar.gz
+Already downloaded: /Users/kjell-olovhogdal/Library/Caches/Homebrew/downloads/730004a9b6c2db3c4504507cc2fe54afee656b796621bb911aba0ed9727df1ad--pyside2-5.15.2.catalina.bottle.1.tar.gz
+==> Downloading https://github.com/freecad/homebrew-freecad/releases/download/07.28.2021/pyside2-tools-5.15.2.catalina.bottle.tar.gz
+==> Downloading from https://github-releases.githubusercontent.com/18778796/3e922e4b-2c6d-4c1a-a82e-667991c97cfd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/sip/manifests/6.4.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/sip/blobs/sha256:a8fdec4f61e9c8d5b1b1e4444987b697ae432d1052db071687f78202f5484a8a
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:a8fdec4f61e9c8d5b1b1e4444987b697ae432d1052db071687f78202f5484a8a?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/tbb/manifests/2021.4.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/tbb/blobs/sha256:ceab79696162f301977698d1274dfc220de372ba473845c0b89ce29572e2c54b
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:ceab79696162f301977698d1274dfc220de372ba473845c0b89ce29572e2c54b?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/assimp/manifests/5.1.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/assimp/blobs/sha256:652c965c646bae5a64d9ac8382accde938417d7d1111cbcd23fcd68b1ddd338b
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:652c965c646bae5a64d9ac8382accde938417d7d1111cbcd23fcd68b1ddd338b?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/brotli/manifests/1.0.9
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:a382d95787cc2a5742a1d713f939bbc91ca6e097aee7f49f95cc111dca9fa9d7
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:a382d95787cc2a5742a1d713f939bbc91ca6e097aee7f49f95cc111dca9fa9d7?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/dbus/manifests/1.12.20
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/dbus/blobs/sha256:23513ea5d75203fe4374ab37cc4226f23f34ec604449ef572fd6a2b48a612ff3
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:23513ea5d75203fe4374ab37cc4226f23f34ec604449ef572fd6a2b48a612ff3?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/manifests/3.1.5_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/blobs/sha256:20b93e20891d48912ffbfbdf3ef470f7305684df2381ef93056a11cedd95c65f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:20b93e20891d48912ffbfbdf3ef470f7305684df2381ef93056a11cedd95c65f?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.21
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:cdea54f52b7c36ebcb5fe26a1cf736d7cd6fd5f2fd016dd8357a8624ffd6b5f8
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:cdea54f52b7c36ebcb5fe26a1cf736d7cd6fd5f2fd016dd8357a8624ffd6b5f8?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libffi/manifests/3.4.2
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:6dbeaf8209b24c0963a5c87cd99d68f8bf61ea532c1c55bec8467a621b64da1b
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:6dbeaf8209b24c0963a5c87cd99d68f8bf61ea532c1c55bec8467a621b64da1b?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre/manifests/8.45
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre/blobs/sha256:180d88dc2230e98162685b86d00436903db4349aac701f9769997d61adb78418
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:180d88dc2230e98162685b86d00436903db4349aac701f9769997d61adb78418?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/glib/manifests/2.70.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:45d42214c7944c5ad5bf31fa4bd754391df6c1b4eea879475913a8ca08988153
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:45d42214c7944c5ad5bf31fa4bd754391df6c1b4eea879475913a8ca08988153?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hunspell/manifests/1.7.0_2-1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hunspell/blobs/sha256:d5144178eba9ff325c297a5a0ae05f1caa9b1d567803250d5dbd86876e0718a3
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:d5144178eba9ff325c297a5a0ae05f1caa9b1d567803250d5dbd86876e0718a3?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/jasper/manifests/2.0.33
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:7c7ae386ed0221d5b04f50b0258afddda977ec8e968f3dcb1e099a1826bb30d7
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:7c7ae386ed0221d5b04f50b0258afddda977ec8e968f3dcb1e099a1826bb30d7?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libb2/manifests/0.98.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libb2/blobs/sha256:fb9f331b6c556a09558cf8098c3934f3f9196c3076e2511fd6ed816439fb8936
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:fb9f331b6c556a09558cf8098c3934f3f9196c3076e2511fd6ed816439fb8936?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/md4c/manifests/0.4.8
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/md4c/blobs/sha256:8368b905e33301b5019e8520f7d010e3a57f74855ebd5cbbbf87aa1d8ded50a7
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:8368b905e33301b5019e8520f7d010e3a57f74855ebd5cbbbf87aa1d8ded50a7?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.39
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:583378673b021a431d4f987ae609fe2a53f834c4e37bca20178e48e94efe77cd
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:583378673b021a431d4f987ae609fe2a53f834c4e37bca20178e48e94efe77cd?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/giflib/manifests/5.2.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:ad97d175fa77f7afb4a1c215538d8ae9eff30435de7feaa6a5d2e29fca7fef4d
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:ad97d175fa77f7afb4a1c215538d8ae9eff30435de7feaa6a5d2e29fca7fef4d?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/webp/manifests/1.2.1_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:9782ff133700cc676327f9f1046c9d3b01e5179345d315734593df79dcb70e2e
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:9782ff133700cc676327f9f1046c9d3b01e5179345d315734593df79dcb70e2e?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/qt/manifests/6.2.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/qt/blobs/sha256:948e7e7b155f2f3f876d9b879deee284d7a080d6016cb87e54c905b0cd0ec6a8
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:948e7e7b155f2f3f876d9b879deee284d7a080d6016cb87e54c905b0cd0ec6a8?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pyqt/manifests/6.2.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pyqt/blobs/sha256:b5d8b96aead59e1f9c7905d6a5841a6da1fd5d4b6b923c8598a9f65f72136715
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:b5d8b96aead59e1f9c7905d6a5841a6da1fd5d4b6b923c8598a9f65f72136715?se=2021-11-27T12%
+######################################################################## 100.0%
+==> Downloading https://github.com/freecad/homebrew-freecad/releases/download/07.28.2021/tbb%402020_u3-2020_U3_1.catalina.bottle.tar.gz
+==> Downloading from https://github-releases.githubusercontent.com/18778796/96ad5c02-d693-4505-808d-04c824176c7d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA
+######################################################################## 100.0%
+==> Downloading https://github.com/freecad/homebrew-freecad/releases/download/07.28.2021/opencascade%407.5.0-7.5.0.catalina.bottle.tar.gz
+==> Downloading from https://objects.githubusercontent.com/github-production-release-asset-2e65be/18778796/ea513d9d-d25c-4b49-b0f5-74ed30b22303?X-Amz-Algorithm=AWS4-HM
+######################################################################## 100.0%
+==> Downloading https://github.com/freecad/homebrew-freecad/releases/download/07.28.2021/nglib-6.2.2101.catalina.bottle.tar.gz
+==> Downloading from https://github-releases.githubusercontent.com/18778796/dc638664-cdb4-4fc0-be7b-8c86f5525971?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA
+######################################################################## 100.0%
+==> Upgrading numpy
+  1.19.2 -> 1.21.4 
+
+==> Installing dependencies for numpy: gmp, isl, libmpc, zstd, gcc and openblas
+==> Installing numpy dependency: gmp
+==> Pouring gmp--6.2.1_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gmp/6.2.1_1: 21 files, 3.3MB
+==> Installing numpy dependency: isl
+==> Pouring isl--0.24.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/isl/0.24: 73 files, 7.1MB
+==> Installing numpy dependency: libmpc
+==> Pouring libmpc--1.2.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libmpc/1.2.1: 13 files, 423.9KB
+==> Installing numpy dependency: zstd
+==> Pouring zstd--1.5.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/zstd/1.5.0: 31 files, 3.5MB
+==> Installing numpy dependency: gcc
+==> Pouring gcc--11.2.0_3.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gcc/11.2.0_3: 2,163 files, 459.7MB
+==> Installing numpy dependency: openblas
+==> Pouring openblas--0.3.18.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/openblas/0.3.18: 23 files, 128.8MB
+==> Installing numpy
+==> Pouring numpy--1.21.4.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/numpy/1.21.4: 714 files, 20MB
+Removing: /usr/local/Cellar/numpy/1.19.2... (490 files, 15.7MB)
+==> Upgrading freecad/freecad/pyside2
+  5.15.0 -> 5.15.2 
+
+==> Installing dependencies for freecad/freecad/pyside2: qt@5 and freecad/freecad/shiboken2@5.15.2
+==> Installing freecad/freecad/pyside2 dependency: qt@5
+==> Pouring qt@5--5.15.2_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/qt@5/5.15.2_1: 10,688 files, 367.9MB
+==> Installing freecad/freecad/pyside2 dependency: freecad/freecad/shiboken2@5.15.2
+==> Pouring shiboken2
+🍺  /usr/local/Cellar/shiboken2@5.15.2/5.15.2: 66 files, 2.6MB
+==> Installing freecad/freecad/pyside2
+==> Pouring pyside2-5.15.2.catalina.bottle.1.tar.gz
+🍺  /usr/local/Cellar/pyside2/5.15.2: 233 files, 40.8MB
+Removing: /usr/local/Cellar/pyside2/5.15.0... (232 files, 37.9MB)
+==> Upgrading python@3.8
+  3.8.6 -> 3.8.12_1 
+
+==> Installing dependencies for python@3.8: tcl-tk
+==> Installing python@3.8 dependency: tcl-tk
+==> Pouring tcl-tk--8.6.12.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/tcl-tk/8.6.12: 3,046 files, 51.8MB
+==> Installing python@3.8
+==> Pouring python@3.8--3.8.12_1.catalina.bottle.tar.gz
+==> /usr/local/Cellar/python@3.8/3.8.12_1/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python@3.8/3.8.12_1/bin -
+==> /usr/local/Cellar/python@3.8/3.8.12_1/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python@3.8/3.8.12_1/bin -
+==> /usr/local/Cellar/python@3.8/3.8.12_1/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python@3.8/3.8.12_1/bin -
+🍺  /usr/local/Cellar/python@3.8/3.8.12_1: 4,451 files, 72.0MB
+Removing: /usr/local/Cellar/python@3.8/3.8.6... (4,341 files, 69.7MB)
+==> Upgrading vtk@8.2
+  8.2.0 -> 8.2.0_7 
+
+==> Installing dependencies for vtk@8.2: icu4c, boost, freetype, hdf5, libtiff, netcdf and pyqt@5
+==> Installing vtk@8.2 dependency: icu4c
+==> Pouring icu4c--69.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/icu4c/69.1: 259 files, 72.8MB
+==> Installing vtk@8.2 dependency: boost
+==> Pouring boost--1.76.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/boost/1.76.0: 15,150 files, 512.9MB
+==> Installing vtk@8.2 dependency: freetype
+==> Pouring freetype--2.11.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/freetype/2.11.0: 66 files, 2.5MB
+==> Installing vtk@8.2 dependency: hdf5
+==> Pouring hdf5--1.12.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/hdf5/1.12.1: 273 files, 18.3MB
+==> Installing vtk@8.2 dependency: libtiff
+==> Pouring libtiff--4.3.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libtiff/4.3.0: 249 files, 4.4MB
+==> Installing vtk@8.2 dependency: netcdf
+==> Pouring netcdf--4.8.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/netcdf/4.8.1: 89 files, 6.3MB
+==> Installing vtk@8.2 dependency: pyqt@5
+==> Pouring pyqt@5--5.15.6.catalina.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/pylupdate5
+Target /usr/local/bin/pylupdate5
+is a symlink belonging to pyqt. You can unlink it:
+  brew unlink pyqt
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite pyqt@5
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run pyqt@5
+
+Possible conflicting files are:
+/usr/local/bin/pylupdate5 -> /usr/local/Cellar/pyqt/5.15.1/bin/pylupdate5
+/usr/local/bin/pyrcc5 -> /usr/local/Cellar/pyqt/5.15.1/bin/pyrcc5
+/usr/local/bin/pyuic5 -> /usr/local/Cellar/pyqt/5.15.1/bin/pyuic5
+==> Summary
+🍺  /usr/local/Cellar/pyqt@5/5.15.6: 1,327 files, 31.7MB
+==> Installing vtk@8.2
+==> Pouring vtk@8.2--8.2.0_7.catalina.bottle.1.tar.gz
+🍺  /usr/local/Cellar/vtk@8.2/8.2.0_7: 3,986 files, 140.0MB
+Removing: /usr/local/Cellar/vtk@8.2/8.2.0... (3,986 files, 131.2MB)
+==> Upgrading open-mpi
+  4.0.5 -> 4.1.1_2 
+
+==> Installing dependencies for open-mpi: hwloc
+==> Installing open-mpi dependency: hwloc
+==> Pouring hwloc--2.6.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/hwloc/2.6.0: 961 files, 10.1MB
+==> Installing open-mpi
+==> Pouring open-mpi--4.1.1_2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/open-mpi/4.1.1_2: 760 files, 15.9MB
+Removing: /usr/local/Cellar/open-mpi/4.0.5... (752 files, 11.3MB)
+==> Upgrading opencascade
+  7.4.0_1 -> 7.6.0 
+
+==> Installing dependencies for opencascade: tbb@2020
+==> Installing opencascade dependency: tbb@2020
+==> Pouring tbb@2020--2020_U3.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/tbb@2020/2020_U3: 144 files, 3MB
+==> Installing opencascade
+==> Pouring opencascade--7.6.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/opencascade/7.6.0: 9,454 files, 169MB
+Removing: /usr/local/Cellar/opencascade/7.4.0_1... (9,320 files, 167.2MB)
+==> Upgrading boost-python3
+  1.73.0 -> 1.76.0 
+
+==> Pouring boost-python3--1.76.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/boost-python3/1.76.0: 472 files, 18.5MB
+Removing: /usr/local/Cellar/boost-python3/1.73.0... (472 files, 18.1MB)
+==> Upgrading freecad/freecad/shiboken2
+  5.15.0 -> 5.15.2 
+
+==> Installing dependencies for freecad/freecad/shiboken2: freecad/freecad/python@3.9.6, ./numpy@1.19.4 and ./qt5152
+==> Installing freecad/freecad/shiboken2 dependency: freecad/freecad/python@3.9.6
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 12.4.
+
+==> Patching
+==> Applying decimal.diff
+patching file Modules/_decimal/_decimal.c
+Hunk #1 succeeded at 3279 (offset -1 lines).
+Hunk #2 succeeded at 3288 (offset -1 lines).
+patching file setup.py
+==> ./configure --prefix=/usr/local/Cellar/python@3.9.6/3.9.6_3 --enable-ipv6 --datarootdir=/usr/local/Cellar/python@3.9.6/3.9.6_3/share --datadir=/usr/local/Cellar/py
+==> make
+==> make install PYTHONAPPSDIR=/usr/local/Cellar/python@3.9.6/3.9.6_3
+==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python@3.9.6/3.9.6_3/share/python@3.9.6
+==> /usr/local/Cellar/python@3.9.6/3.9.6_3/bin/python3 -m venv /private/tmp/pythonA3.9.6-20211127-12834-1qwc6n7/Python-3.9.6/whl_build
+==> /private/tmp/pythonA3.9.6-20211127-12834-1qwc6n7/Python-3.9.6/whl_build/bin/pip3 install -v --no-deps --no-binary :all: --no-index --no-build-isolation .
+==> /private/tmp/pythonA3.9.6-20211127-12834-1qwc6n7/Python-3.9.6/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-build-isolation --wheel-dir=/
+==> /private/tmp/pythonA3.9.6-20211127-12834-1qwc6n7/Python-3.9.6/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-build-isolation --wheel-dir=/
+==> /private/tmp/pythonA3.9.6-20211127-12834-1qwc6n7/Python-3.9.6/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-build-isolation --wheel-dir=/
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.9.6
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run python@3.9.6
+
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3
+/usr/local/bin/2to3-3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/2to3-3.9
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3
+/usr/local/bin/idle3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/idle3.9
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3
+/usr/local/bin/pydoc3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/pydoc3.9
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3-config
+/usr/local/bin/python3.9 -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9
+/usr/local/bin/python3.9-config -> /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9-config
+==> /usr/local/Cellar/python@3.9.6/3.9.6_3/bin/python3 -m ensurepip
+==> /usr/local/Cellar/python@3.9.6/3.9.6_3/bin/python3 -m pip install -v --no-deps --no-index --upgrade --isolated --target=/usr/local/lib/python3.9/site-packages /usr
+==> Summary
+🍺  /usr/local/Cellar/python@3.9.6/3.9.6_3: 7,831 files, 118.5MB, built in 5 minutes 56 seconds
+==> Installing freecad/freecad/shiboken2 dependency: ./numpy@1.19.4
+==> Pouring numpy
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/f2py
+Target /usr/local/bin/f2py
+is a symlink belonging to numpy. You can unlink it:
+  brew unlink numpy
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite numpy@1.19.4
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run numpy@1.19.4
+
+Possible conflicting files are:
+/usr/local/bin/f2py -> /usr/local/Cellar/numpy/1.21.4/bin/f2py
+/usr/local/bin/f2py3 -> /usr/local/Cellar/numpy/1.21.4/bin/f2py3
+/usr/local/bin/f2py3.9 -> /usr/local/Cellar/numpy/1.21.4/bin/f2py3.9
+/usr/local/lib/python3.9/site-packages/numpy/LICENSE.txt -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/LICENSE.txt
+/usr/local/lib/python3.9/site-packages/numpy/__config__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/__config__.py
+/usr/local/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd
+/usr/local/lib/python3.9/site-packages/numpy/__init__.pxd -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/__init__.pxd
+/usr/local/lib/python3.9/site-packages/numpy/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/_distributor_init.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/_distributor_init.py
+/usr/local/lib/python3.9/site-packages/numpy/_globals.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/_globals.py
+/usr/local/lib/python3.9/site-packages/numpy/_pytesttester.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/_pytesttester.py
+/usr/local/lib/python3.9/site-packages/numpy/compat/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/compat/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/compat/_inspect.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/compat/_inspect.py
+/usr/local/lib/python3.9/site-packages/numpy/compat/py3k.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/compat/py3k.py
+/usr/local/lib/python3.9/site-packages/numpy/compat/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/compat/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/compat/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/compat/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/compat/tests/test_compat.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/compat/tests/test_compat.py
+/usr/local/lib/python3.9/site-packages/numpy/conftest.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/conftest.py
+/usr/local/lib/python3.9/site-packages/numpy/core/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_add_newdocs.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_add_newdocs.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_asarray.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_asarray.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_dtype.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_dtype.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_dtype_ctypes.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_dtype_ctypes.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_exceptions.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_exceptions.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_internal.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_internal.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_methods.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_methods.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_multiarray_tests.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_multiarray_tests.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/core/_operand_flag_tests.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_operand_flag_tests.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/core/_rational_tests.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_rational_tests.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/core/_string_helpers.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_string_helpers.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_struct_ufunc_tests.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_struct_ufunc_tests.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/core/_type_aliases.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_type_aliases.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_ufunc_config.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_ufunc_config.py
+/usr/local/lib/python3.9/site-packages/numpy/core/_umath_tests.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/_umath_tests.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/core/arrayprint.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/arrayprint.py
+/usr/local/lib/python3.9/site-packages/numpy/core/cversions.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/cversions.py
+/usr/local/lib/python3.9/site-packages/numpy/core/defchararray.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/defchararray.py
+/usr/local/lib/python3.9/site-packages/numpy/core/einsumfunc.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/einsumfunc.py
+/usr/local/lib/python3.9/site-packages/numpy/core/fromnumeric.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/fromnumeric.py
+/usr/local/lib/python3.9/site-packages/numpy/core/function_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/function_base.py
+/usr/local/lib/python3.9/site-packages/numpy/core/generate_numpy_api.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/generate_numpy_api.py
+/usr/local/lib/python3.9/site-packages/numpy/core/getlimits.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/getlimits.py
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/__multiarray_api.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/__multiarray_api.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/__ufunc_api.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/__ufunc_api.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/_numpyconfig.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/_numpyconfig.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/arrayobject.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/arrayscalars.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/arrayscalars.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/halffloat.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/halffloat.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/multiarray_api.txt -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/multiarray_api.txt
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/ndarrayobject.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/ndarrayobject.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/ndarraytypes.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/ndarraytypes.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/noprefix.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/noprefix.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/npy_3kcompat.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/npy_3kcompat.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/npy_common.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/npy_common.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/npy_cpu.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/npy_cpu.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/npy_endian.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/npy_endian.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/npy_interrupt.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/npy_interrupt.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/npy_math.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/npy_math.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/npy_no_deprecated_api.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/npy_no_deprecated_api.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/npy_os.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/npy_os.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/numpyconfig.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/numpyconfig.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/old_defines.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/old_defines.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/oldnumeric.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/oldnumeric.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/random/bitgen.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/random/bitgen.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/random/distributions.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/random/distributions.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/ufunc_api.txt -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/ufunc_api.txt
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/ufuncobject.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/ufuncobject.h
+/usr/local/lib/python3.9/site-packages/numpy/core/include/numpy/utils.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/include/numpy/utils.h
+/usr/local/lib/python3.9/site-packages/numpy/core/lib/libnpymath.a -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/lib/libnpymath.a
+/usr/local/lib/python3.9/site-packages/numpy/core/lib/npy-pkg-config/mlib.ini -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/lib/npy-pkg-config/mlib.ini
+/usr/local/lib/python3.9/site-packages/numpy/core/lib/npy-pkg-config/npymath.ini -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/lib/npy-pkg-config/npymath.ini
+/usr/local/lib/python3.9/site-packages/numpy/core/machar.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/machar.py
+/usr/local/lib/python3.9/site-packages/numpy/core/memmap.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/memmap.py
+/usr/local/lib/python3.9/site-packages/numpy/core/multiarray.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/multiarray.py
+/usr/local/lib/python3.9/site-packages/numpy/core/numeric.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/numeric.py
+/usr/local/lib/python3.9/site-packages/numpy/core/numerictypes.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/numerictypes.py
+/usr/local/lib/python3.9/site-packages/numpy/core/overrides.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/overrides.py
+/usr/local/lib/python3.9/site-packages/numpy/core/records.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/records.py
+/usr/local/lib/python3.9/site-packages/numpy/core/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/core/setup_common.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/setup_common.py
+/usr/local/lib/python3.9/site-packages/numpy/core/shape_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/shape_base.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/_locales.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/_locales.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/data/astype_copy.pkl -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/data/astype_copy.pkl
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/data/recarray_from_file.fits -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/data/recarray_from_file.fits
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test__exceptions.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test__exceptions.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_abc.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_abc.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_api.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_api.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_arrayprint.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_arrayprint.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_conversion_utils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_conversion_utils.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_cpu_features.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_cpu_features.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_datetime.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_datetime.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_defchararray.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_defchararray.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_deprecations.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_deprecations.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_dtype.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_dtype.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_einsum.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_einsum.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_errstate.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_errstate.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_extint128.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_extint128.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_function_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_function_base.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_getlimits.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_getlimits.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_half.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_half.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_indexerrors.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_indexerrors.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_indexing.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_indexing.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_item_selection.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_item_selection.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_longdouble.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_longdouble.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_machar.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_machar.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_mem_overlap.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_mem_overlap.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_memmap.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_memmap.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_multiarray.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_multiarray.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_nditer.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_nditer.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_numeric.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_numeric.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_numerictypes.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_numerictypes.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_overrides.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_overrides.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_print.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_print.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_protocols.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_protocols.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_records.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_records.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_regression.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_regression.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_scalar_ctors.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_scalar_ctors.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_scalar_methods.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_scalar_methods.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_scalarbuffer.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_scalarbuffer.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_scalarinherit.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_scalarinherit.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_scalarmath.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_scalarmath.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_scalarprint.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_scalarprint.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_shape_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_shape_base.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_ufunc.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_ufunc.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_umath.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_umath.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_umath_accuracy.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_umath_accuracy.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_umath_complex.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_umath_complex.py
+/usr/local/lib/python3.9/site-packages/numpy/core/tests/test_unicode.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/tests/test_unicode.py
+/usr/local/lib/python3.9/site-packages/numpy/core/umath.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/umath.py
+/usr/local/lib/python3.9/site-packages/numpy/core/umath_tests.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/core/umath_tests.py
+/usr/local/lib/python3.9/site-packages/numpy/ctypeslib.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ctypeslib.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/__config__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/__config__.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/_shell_utils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/_shell_utils.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/ccompiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/ccompiler.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/autodist.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/autodist.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/bdist_rpm.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/bdist_rpm.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/build.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/build.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/build_clib.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/build_clib.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/build_ext.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/build_ext.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/build_py.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/build_py.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/build_scripts.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/build_scripts.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/build_src.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/build_src.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/config.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/config.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/config_compiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/config_compiler.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/develop.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/develop.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/egg_info.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/egg_info.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/install.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/install.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/install_clib.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/install_clib.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/install_data.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/install_data.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/install_headers.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/install_headers.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/command/sdist.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/command/sdist.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/conv_template.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/conv_template.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/core.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/core.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/cpuinfo.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/cpuinfo.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/exec_command.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/exec_command.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/extension.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/extension.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/absoft.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/absoft.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/compaq.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/compaq.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/environment.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/environment.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/g95.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/g95.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/gnu.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/gnu.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/hpux.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/hpux.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/ibm.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/ibm.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/intel.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/intel.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/lahey.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/lahey.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/mips.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/mips.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/nag.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/nag.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/none.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/none.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/nv.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/nv.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/pathf95.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/pathf95.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/pg.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/pg.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/sun.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/sun.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/fcompiler/vast.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/fcompiler/vast.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/from_template.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/from_template.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/intelccompiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/intelccompiler.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/lib2def.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/lib2def.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/line_endings.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/line_endings.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/log.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/log.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/mingw/gfortran_vs2003_hack.c -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/mingw/gfortran_vs2003_hack.c
+/usr/local/lib/python3.9/site-packages/numpy/distutils/mingw32ccompiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/mingw32ccompiler.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/misc_util.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/misc_util.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/msvc9compiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/msvc9compiler.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/msvccompiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/msvccompiler.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/npy_pkg_config.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/npy_pkg_config.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/numpy_distribution.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/numpy_distribution.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/pathccompiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/pathccompiler.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/site.cfg -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/site.cfg
+/usr/local/lib/python3.9/site-packages/numpy/distutils/system_info.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/system_info.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_exec_command.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_exec_command.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_fcompiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_fcompiler.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_fcompiler_gnu.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_fcompiler_gnu.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_fcompiler_intel.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_fcompiler_intel.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_fcompiler_nagfor.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_fcompiler_nagfor.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_from_template.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_from_template.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_mingw32ccompiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_mingw32ccompiler.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_misc_util.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_misc_util.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_npy_pkg_config.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_npy_pkg_config.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_shell_utils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_shell_utils.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/tests/test_system_info.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/tests/test_system_info.py
+/usr/local/lib/python3.9/site-packages/numpy/distutils/unixccompiler.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/distutils/unixccompiler.py
+/usr/local/lib/python3.9/site-packages/numpy/doc/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/doc/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/doc/constants.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/doc/constants.py
+/usr/local/lib/python3.9/site-packages/numpy/doc/ufuncs.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/doc/ufuncs.py
+/usr/local/lib/python3.9/site-packages/numpy/dual.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/dual.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/__main__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/__main__.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/__version__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/__version__.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/auxfuncs.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/auxfuncs.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/capi_maps.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/capi_maps.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/cb_rules.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/cb_rules.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/cfuncs.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/cfuncs.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/common_rules.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/common_rules.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/crackfortran.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/crackfortran.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/diagnose.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/diagnose.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/f2py2e.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/f2py2e.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/f2py_testing.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/f2py_testing.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/f90mod_rules.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/f90mod_rules.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/func2subr.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/func2subr.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/rules.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/rules.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/src/fortranobject.c -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/src/fortranobject.c
+/usr/local/lib/python3.9/site-packages/numpy/f2py/src/fortranobject.h -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/src/fortranobject.h
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/array_from_pyobj/wrapmodule.c -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/array_from_pyobj/wrapmodule.c
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/.f2py_f2cmap -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/.f2py_f2cmap
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/foo_free.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/foo_free.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/foo_mod.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/foo_mod.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/foo_use.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/foo_use.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/precision.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/assumed_shape/precision.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/common/block.f -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/common/block.f
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/kind/foo.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/kind/foo.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/mixed/foo.f -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/mixed/foo.f
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/mixed/foo_fixed.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/mixed/foo_fixed.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/mixed/foo_free.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/mixed/foo_free.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_both.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_both.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_compound.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_compound.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_integer.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_integer.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_non_compound.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_non_compound.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_real.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/parameter/constant_real.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/regression/inout.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/regression/inout.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/size/foo.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/size/foo.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/src/string/char.f90 -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/src/string/char.f90
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_array_from_pyobj.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_array_from_pyobj.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_assumed_shape.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_assumed_shape.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_block_docstring.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_block_docstring.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_callback.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_callback.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_common.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_common.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_compile_function.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_compile_function.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_crackfortran.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_crackfortran.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_kind.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_kind.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_mixed.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_mixed.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_parameter.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_parameter.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_quoted_character.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_quoted_character.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_regression.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_regression.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_return_character.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_return_character.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_return_complex.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_return_complex.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_return_integer.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_return_integer.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_return_logical.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_return_logical.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_return_real.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_return_real.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_semicolon_split.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_semicolon_split.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_size.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_size.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/test_string.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/test_string.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/tests/util.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/tests/util.py
+/usr/local/lib/python3.9/site-packages/numpy/f2py/use_rules.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/f2py/use_rules.py
+/usr/local/lib/python3.9/site-packages/numpy/fft/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/fft/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/fft/_pocketfft.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/fft/_pocketfft.py
+/usr/local/lib/python3.9/site-packages/numpy/fft/_pocketfft_internal.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/fft/_pocketfft_internal.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/fft/helper.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/fft/helper.py
+/usr/local/lib/python3.9/site-packages/numpy/fft/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/fft/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/fft/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/fft/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/fft/tests/test_helper.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/fft/tests/test_helper.py
+/usr/local/lib/python3.9/site-packages/numpy/fft/tests/test_pocketfft.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/fft/tests/test_pocketfft.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/_datasource.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/_datasource.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/_iotools.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/_iotools.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/_version.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/_version.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/arraypad.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/arraypad.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/arraysetops.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/arraysetops.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/arrayterator.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/arrayterator.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/format.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/format.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/function_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/function_base.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/histograms.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/histograms.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/index_tricks.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/index_tricks.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/mixins.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/mixins.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/nanfunctions.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/nanfunctions.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/npyio.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/npyio.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/polynomial.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/polynomial.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/recfunctions.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/recfunctions.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/scimath.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/scimath.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/shape_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/shape_base.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/stride_tricks.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/stride_tricks.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/data/py2-objarr.npy -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/data/py2-objarr.npy
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/data/py2-objarr.npz -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/data/py2-objarr.npz
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/data/py3-objarr.npy -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/data/py3-objarr.npy
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/data/py3-objarr.npz -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/data/py3-objarr.npz
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/data/python3.npy -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/data/python3.npy
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/data/win64python2.npy -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/data/win64python2.npy
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test__datasource.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test__datasource.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test__iotools.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test__iotools.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test__version.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test__version.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_arraypad.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_arraypad.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_arraysetops.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_arraysetops.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_arrayterator.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_arrayterator.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_format.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_format.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_function_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_function_base.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_histograms.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_histograms.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_index_tricks.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_index_tricks.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_io.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_io.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_mixins.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_mixins.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_nanfunctions.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_nanfunctions.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_packbits.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_packbits.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_polynomial.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_polynomial.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_recfunctions.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_recfunctions.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_regression.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_regression.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_shape_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_shape_base.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_stride_tricks.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_stride_tricks.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_twodim_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_twodim_base.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_type_check.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_type_check.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_ufunclike.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_ufunclike.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/tests/test_utils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/tests/test_utils.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/twodim_base.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/twodim_base.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/type_check.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/type_check.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/ufunclike.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/ufunclike.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/user_array.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/user_array.py
+/usr/local/lib/python3.9/site-packages/numpy/lib/utils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/lib/utils.py
+/usr/local/lib/python3.9/site-packages/numpy/linalg/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/linalg/_umath_linalg.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/_umath_linalg.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/linalg/lapack_lite.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/lapack_lite.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/linalg/linalg.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/linalg.py
+/usr/local/lib/python3.9/site-packages/numpy/linalg/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/linalg/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/linalg/tests/test_build.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/tests/test_build.py
+/usr/local/lib/python3.9/site-packages/numpy/linalg/tests/test_deprecations.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/tests/test_deprecations.py
+/usr/local/lib/python3.9/site-packages/numpy/linalg/tests/test_linalg.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/tests/test_linalg.py
+/usr/local/lib/python3.9/site-packages/numpy/linalg/tests/test_regression.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/linalg/tests/test_regression.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/bench.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/bench.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/core.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/core.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/extras.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/extras.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/mrecords.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/mrecords.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/tests/test_core.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/tests/test_core.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/tests/test_deprecations.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/tests/test_deprecations.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/tests/test_extras.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/tests/test_extras.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/tests/test_mrecords.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/tests/test_mrecords.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/tests/test_old_ma.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/tests/test_old_ma.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/tests/test_regression.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/tests/test_regression.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/tests/test_subclassing.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/tests/test_subclassing.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/testutils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/testutils.py
+/usr/local/lib/python3.9/site-packages/numpy/ma/timer_comparison.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/ma/timer_comparison.py
+/usr/local/lib/python3.9/site-packages/numpy/matlib.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matlib.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/defmatrix.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/defmatrix.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/tests/test_defmatrix.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/tests/test_defmatrix.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/tests/test_interaction.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/tests/test_interaction.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/tests/test_masked_matrix.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/tests/test_masked_matrix.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/tests/test_matrix_linalg.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/tests/test_matrix_linalg.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/tests/test_multiarray.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/tests/test_multiarray.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/tests/test_numeric.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/tests/test_numeric.py
+/usr/local/lib/python3.9/site-packages/numpy/matrixlib/tests/test_regression.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/matrixlib/tests/test_regression.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/_polybase.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/_polybase.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/chebyshev.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/chebyshev.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/hermite.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/hermite.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/hermite_e.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/hermite_e.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/laguerre.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/laguerre.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/legendre.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/legendre.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/polynomial.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/polynomial.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/polyutils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/polyutils.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/test_chebyshev.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/test_chebyshev.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/test_classes.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/test_classes.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/test_hermite.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/test_hermite.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/test_hermite_e.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/test_hermite_e.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/test_laguerre.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/test_laguerre.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/test_legendre.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/test_legendre.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/test_polynomial.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/test_polynomial.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/test_polyutils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/test_polyutils.py
+/usr/local/lib/python3.9/site-packages/numpy/polynomial/tests/test_printing.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/polynomial/tests/test_printing.py
+/usr/local/lib/python3.9/site-packages/numpy/random/__init__.pxd -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/__init__.pxd
+/usr/local/lib/python3.9/site-packages/numpy/random/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/random/_bounded_integers.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_bounded_integers.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/random/_bounded_integers.pxd -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_bounded_integers.pxd
+/usr/local/lib/python3.9/site-packages/numpy/random/_common.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_common.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/random/_common.pxd -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_common.pxd
+/usr/local/lib/python3.9/site-packages/numpy/random/_examples/cffi/extending.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_examples/cffi/extending.py
+/usr/local/lib/python3.9/site-packages/numpy/random/_examples/cffi/parse.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_examples/cffi/parse.py
+/usr/local/lib/python3.9/site-packages/numpy/random/_examples/cython/extending.pyx -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_examples/cython/extending.pyx
+/usr/local/lib/python3.9/site-packages/numpy/random/_examples/cython/extending_distributions.pyx -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_examples/cython/extending_distributions.pyx
+/usr/local/lib/python3.9/site-packages/numpy/random/_examples/cython/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_examples/cython/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/random/_examples/numba/extending.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_examples/numba/extending.py
+/usr/local/lib/python3.9/site-packages/numpy/random/_examples/numba/extending_distributions.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_examples/numba/extending_distributions.py
+/usr/local/lib/python3.9/site-packages/numpy/random/_generator.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_generator.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/random/_mt19937.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_mt19937.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/random/_pcg64.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_pcg64.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/random/_philox.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_philox.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/random/_pickle.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_pickle.py
+/usr/local/lib/python3.9/site-packages/numpy/random/_sfc64.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/_sfc64.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/random/bit_generator.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/bit_generator.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/random/bit_generator.pxd -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/bit_generator.pxd
+/usr/local/lib/python3.9/site-packages/numpy/random/c_distributions.pxd -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/c_distributions.pxd
+/usr/local/lib/python3.9/site-packages/numpy/random/lib/libnpyrandom.a -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/lib/libnpyrandom.a
+/usr/local/lib/python3.9/site-packages/numpy/random/mtrand.cpython-39-darwin.so -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/mtrand.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/numpy/random/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/data/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/data/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/data/mt19937-testset-1.csv -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/data/mt19937-testset-1.csv
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/data/mt19937-testset-2.csv -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/data/mt19937-testset-2.csv
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/data/pcg64-testset-1.csv -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/data/pcg64-testset-1.csv
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/data/pcg64-testset-2.csv -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/data/pcg64-testset-2.csv
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/data/philox-testset-1.csv -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/data/philox-testset-1.csv
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/data/philox-testset-2.csv -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/data/philox-testset-2.csv
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/data/sfc64-testset-1.csv -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/data/sfc64-testset-1.csv
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/data/sfc64-testset-2.csv -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/data/sfc64-testset-2.csv
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_direct.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_direct.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_extending.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_extending.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_generator_mt19937.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_generator_mt19937.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_generator_mt19937_regressions.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_generator_mt19937_regressions.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_random.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_random.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_randomstate.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_randomstate.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_randomstate_regression.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_randomstate_regression.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_regression.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_regression.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_seed_sequence.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_seed_sequence.py
+/usr/local/lib/python3.9/site-packages/numpy/random/tests/test_smoke.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/random/tests/test_smoke.py
+/usr/local/lib/python3.9/site-packages/numpy/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/_private/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/_private/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/_private/decorators.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/_private/decorators.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/_private/noseclasses.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/_private/noseclasses.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/_private/nosetester.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/_private/nosetester.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/_private/parameterized.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/_private/parameterized.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/_private/utils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/_private/utils.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/print_coercion_tables.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/print_coercion_tables.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/setup.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/setup.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/tests/test_doctesting.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/tests/test_doctesting.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/tests/test_utils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/tests/test_utils.py
+/usr/local/lib/python3.9/site-packages/numpy/testing/utils.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/testing/utils.py
+/usr/local/lib/python3.9/site-packages/numpy/tests/__init__.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/tests/__init__.py
+/usr/local/lib/python3.9/site-packages/numpy/tests/test_ctypeslib.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/tests/test_ctypeslib.py
+/usr/local/lib/python3.9/site-packages/numpy/tests/test_matlib.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/tests/test_matlib.py
+/usr/local/lib/python3.9/site-packages/numpy/tests/test_numpy_version.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/tests/test_numpy_version.py
+/usr/local/lib/python3.9/site-packages/numpy/tests/test_public_api.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/tests/test_public_api.py
+/usr/local/lib/python3.9/site-packages/numpy/tests/test_reloading.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/tests/test_reloading.py
+/usr/local/lib/python3.9/site-packages/numpy/tests/test_scripts.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/tests/test_scripts.py
+/usr/local/lib/python3.9/site-packages/numpy/tests/test_warnings.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/tests/test_warnings.py
+/usr/local/lib/python3.9/site-packages/numpy/version.py -> /usr/local/Cellar/numpy/1.21.4/lib/python3.9/site-packages/numpy/version.py
+==> Summary
+🍺  /usr/local/Cellar/numpy@1.19.4/1.19.4: 491 files, 16.3MB
+==> Installing freecad/freecad/shiboken2 dependency: ./qt5152
+==> Pouring qt5152-5.15.2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/qt5152/5.15.2: 10,688 files, 367.9MB
+==> Installing freecad/freecad/shiboken2
+==> Pouring shiboken2-5.15.2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/shiboken2/5.15.2: 66 files, 2.6MB
+Removing: /usr/local/Cellar/shiboken2/5.15.0... (65 files, 2.5MB)
+==> Upgrading freecad/freecad/pyside2-tools
+  5.15.0 -> 5.15.2 
+
+==> Pouring pyside2-tools-5.15.2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pyside2-tools/5.15.2: 14 files, 1.6MB
+Removing: /usr/local/Cellar/pyside2-tools/5.15.0... (15 files, 1.5MB)
+==> Upgrading sip
+  4.19.24 -> 6.4.0 
+
+==> Pouring sip--6.4.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/sip/6.4.0: 707 files, 10.1MB
+Removing: /usr/local/Cellar/sip/4.19.24... (15 files, 976.2KB)
+==> Upgrading tbb
+  2020_U3 -> 2021.4.0 
+
+==> Pouring tbb--2021.4.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/tbb/2021.4.0: 185 files, 2MB
+Removing: /usr/local/Cellar/tbb/2020_U3... (144 files, 3.0MB)
+==> Upgrading pyqt
+  5.15.1 -> 6.2.0 
+
+==> Installing dependencies for pyqt: assimp, brotli, dbus, double-conversion, gettext, libffi, pcre, glib, hunspell, jasper, libb2, md4c, pcre2, giflib, webp and qt
+==> Installing pyqt dependency: assimp
+==> Pouring assimp--5.1.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/assimp/5.1.1: 101 files, 9.7MB
+==> Installing pyqt dependency: brotli
+==> Pouring brotli--1.0.9.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/brotli/1.0.9: 25 files, 2.3MB
+==> Installing pyqt dependency: dbus
+==> Pouring dbus--1.12.20.catalina.bottle.tar.gz
+==> /usr/local/Cellar/dbus/1.12.20/bin/dbus-uuidgen --ensure=/usr/local/var/lib/dbus/machine-id
+🍺  /usr/local/Cellar/dbus/1.12.20: 76 files, 2.1MB
+==> Installing pyqt dependency: double-conversion
+==> Pouring double-conversion--3.1.5_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/double-conversion/3.1.5_1: 24 files, 242.3KB
+==> Installing pyqt dependency: gettext
+==> Pouring gettext--0.21.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gettext/0.21: 1,953 files, 19.0MB
+==> Installing pyqt dependency: libffi
+==> Pouring libffi--3.4.2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libffi/3.4.2: 17 files, 599.8KB
+==> Installing pyqt dependency: pcre
+==> Pouring pcre--8.45.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre/8.45: 204 files, 5.8MB
+==> Installing pyqt dependency: glib
+==> Pouring glib--2.70.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/glib/2.70.1: 444 files, 21MB
+==> Installing pyqt dependency: hunspell
+==> Pouring hunspell--1.7.0_2.catalina.bottle.1.tar.gz
+🍺  /usr/local/Cellar/hunspell/1.7.0_2: 38 files, 1.8MB
+==> Installing pyqt dependency: jasper
+==> Pouring jasper--2.0.33.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/jasper/2.0.33: 41 files, 1.3MB
+==> Installing pyqt dependency: libb2
+==> Pouring libb2--0.98.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libb2/0.98.1: 8 files, 242.3KB
+==> Installing pyqt dependency: md4c
+==> Pouring md4c--0.4.8.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/md4c/0.4.8: 19 files, 286.5KB
+==> Installing pyqt dependency: pcre2
+==> Pouring pcre2--10.39.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre2/10.39: 230 files, 6.2MB
+==> Installing pyqt dependency: giflib
+==> Pouring giflib--5.2.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/giflib/5.2.1: 19 files, 383.5KB
+==> Installing pyqt dependency: webp
+==> Pouring webp--1.2.1_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/webp/1.2.1_1: 41 files, 2.5MB
+==> Installing pyqt dependency: qt
+==> Pouring qt--6.2.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/qt/6.2.1: 11,602 files, 237.9MB
+==> Installing pyqt
+==> Pouring pyqt--6.2.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pyqt/6.2.0: 1,130 files, 33MB
+Removing: /usr/local/Cellar/pyqt/5.15.1... (961 files, 28MB)
+==> Upgrading freecad/freecad/nglib
+  v6.2.2007 -> 6.2.2101 
+
+==> Installing dependencies for freecad/freecad/nglib: ./tbb@2020_u3 and ./opencascade@7.5.0
+==> Installing freecad/freecad/nglib dependency: ./tbb@2020_u3
+==> Pouring tbb
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink include/tbb/blocked_range.h
+Target /usr/local/include/tbb/blocked_range.h
+is a symlink belonging to tbb. You can unlink it:
+  brew unlink tbb
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite tbb@2020_u3
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run tbb@2020_u3
+
+Possible conflicting files are:
+/usr/local/include/tbb/blocked_range.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_range.h
+/usr/local/include/tbb/blocked_range2d.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_range2d.h
+/usr/local/include/tbb/blocked_range3d.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_range3d.h
+/usr/local/include/tbb/blocked_rangeNd.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/blocked_rangeNd.h
+/usr/local/include/tbb/cache_aligned_allocator.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/cache_aligned_allocator.h
+/usr/local/include/tbb/combinable.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/combinable.h
+/usr/local/include/tbb/concurrent_hash_map.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_hash_map.h
+/usr/local/include/tbb/concurrent_lru_cache.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_lru_cache.h
+/usr/local/include/tbb/concurrent_map.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_map.h
+/usr/local/include/tbb/concurrent_priority_queue.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_priority_queue.h
+/usr/local/include/tbb/concurrent_queue.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_queue.h
+/usr/local/include/tbb/concurrent_set.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_set.h
+/usr/local/include/tbb/concurrent_unordered_map.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_unordered_map.h
+/usr/local/include/tbb/concurrent_unordered_set.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_unordered_set.h
+/usr/local/include/tbb/concurrent_vector.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/concurrent_vector.h
+/usr/local/include/tbb/enumerable_thread_specific.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/enumerable_thread_specific.h
+/usr/local/include/tbb/flow_graph.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/flow_graph.h
+/usr/local/include/tbb/flow_graph_abstractions.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/flow_graph_abstractions.h
+/usr/local/include/tbb/global_control.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/global_control.h
+/usr/local/include/tbb/info.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/info.h
+/usr/local/include/tbb/memory_pool.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/memory_pool.h
+/usr/local/include/tbb/null_mutex.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/null_mutex.h
+/usr/local/include/tbb/null_rw_mutex.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/null_rw_mutex.h
+/usr/local/include/tbb/parallel_for.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/parallel_for.h
+/usr/local/include/tbb/parallel_for_each.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/parallel_for_each.h
+/usr/local/include/tbb/parallel_invoke.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/parallel_invoke.h
+/usr/local/include/tbb/parallel_reduce.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/parallel_reduce.h
+/usr/local/include/tbb/parallel_scan.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/parallel_scan.h
+/usr/local/include/tbb/parallel_sort.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/parallel_sort.h
+/usr/local/include/tbb/partitioner.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/partitioner.h
+/usr/local/include/tbb/queuing_mutex.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/queuing_mutex.h
+/usr/local/include/tbb/queuing_rw_mutex.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/queuing_rw_mutex.h
+/usr/local/include/tbb/scalable_allocator.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/scalable_allocator.h
+/usr/local/include/tbb/spin_mutex.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/spin_mutex.h
+/usr/local/include/tbb/spin_rw_mutex.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/spin_rw_mutex.h
+/usr/local/include/tbb/task.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/task.h
+/usr/local/include/tbb/task_arena.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/task_arena.h
+/usr/local/include/tbb/task_group.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/task_group.h
+/usr/local/include/tbb/task_scheduler_observer.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/task_scheduler_observer.h
+/usr/local/include/tbb/tbb.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/tbb.h
+/usr/local/include/tbb/tbb_allocator.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/tbb_allocator.h
+/usr/local/include/tbb/tbbmalloc_proxy.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/tbbmalloc_proxy.h
+/usr/local/include/tbb/tick_count.h -> /usr/local/Cellar/tbb/2021.4.0/include/tbb/tick_count.h
+Error: Could not symlink lib/cmake/TBB/TBBConfig.cmake
+Target /usr/local/lib/cmake/TBB/TBBConfig.cmake
+is a symlink belonging to tbb. You can unlink it:
+  brew unlink tbb
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite tbb
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run tbb
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro local %                  

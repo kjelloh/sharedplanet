@@ -1,0 +1,22 @@
+# Todo: Consider "Your inner flat earther" as a way to discuss the basic view of reality we all have based on the self-evident that we don't have time, energy or information enough to actually question?
+
+```#016bf07d``` *As of 2020-07-30 11:39*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I am always more interested in what we don't see than what we hold true and maybe we can use flat earth society movement as an indication we all have a "self-evident" truth observation machine that we just can't escape.
+
+==&gt; Also see "Todo: Consider the provocative metaphor that Atheists are "flat minders" in that like "flat earthers" they derive a model of the whole from the close-environment-facts?"
+
+1) Consider to postulate we all have an inner "flat earther" that has to base reality on some observed axioms that we seldom come around to question?
+
+2) Consider the reason there is a problem that "God is dead" is that without a common value at the top of value hierarchy for everyone our model of reality will diverge due to our natural inclination to lean to different "elf evident" observations?
+
+> *If we assume we have evolved to optimise the potential of the reality we find ourselves in it is easy to propose we are born and raised to care about different traits about our reality. And thus we should suspect that the observation we find relevant and the things we decide to be self evidently true will differ. They differ because when applied in concert within a tribe, a village or a society the collective observations will more likely find potential ways to interact with reality than a single individual can.*
+
+> *But in contemporary societies we have elevated individual freedom to such a high level that the cohesion of scarce resources and tight tribal and family bounds has almost but disappeared and we have become free to diverge into movements with only part of reality correct. We no longer need to integrate our different values and agree on what to commonly strive for that we now find ourselves striving in several different directions simultaneously. As if conservatism or progressivism is somehow mutually exclusive...*
+
+...
+
+{% endraw %}

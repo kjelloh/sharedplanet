@@ -1,0 +1,172 @@
+﻿Could it be a good model to actually view a ”thread” as stack-frame-based message passing between functions on the same stack?
+
+	==> Also see ”Todo: Programming - Consider a Language Semantics where we can use abstractions to model subroutines, coroutines and coroutines as well as how we engage with them?”
+	==> Also see ”Todo: Programming - Consider sub-routines (stack-based), Coroutines (heap-based) and Goroutines (Message passing functions) are just three forms of one basic idea of function composition?"
+
+1) Consider to a thread is stack-frame messaging passing between routines (processes) that are suspended and resumed in a ”subroutine” manner?
+
+	==> Consider this talk ”CppCon 2015: Gor Nishanov “C++ Coroutines - a negative overhead abstraction”" (https://www.youtube.com/watch?v=_fu0gx-xseY <https://www.youtube.com/watch?v=_fu0gx-xseY>)?
+
+		
+
+		==> S = Suspend (remember state and stop executing)
+		==> A = Activate (Callee State Execution in response to a trigger from caller)
+		==> Y = Yield (back to caller)
+		==> C = Terminate (but what wth the C, Cancel?)
+
+		==> S+A = subroutine call
+		==> C+Y = subroutine return
+
+		
+
+		==> S+Y (Suspend and yield to caller) is the additional ability of resumable routines (coroutines).
+		==> Note: Now the caller S+A (Suspend and Activate) means the coroutine will resume execution in the state it suspended.
+		==> So, caller and callee may take turns executing
+
+                ----------------|						-------------------------
+		|		|						|			|
+		|		v						v			|
+		|	caller::Suspend 		—> 		Callee::Activate (Resume)	|
+		|	caller::Activate (Resume)	<— 		Callee::Suspend_and_Yeld	|
+		|		|			|			|			|
+		-----------------			|			————————————
+					   Request/Response Messaging
+
+		...
+
+2) Consider a ”thread” can be viewed as an execution mechanism applying Suspend+Activate (request) and Cancel+Yield (response) using stack-frames for messaging?
+
+	result = f(x)		caller::suspend —> message: x —> f::activate, f::cancel_and_yeld —> message: f(x) —> caller::resume
+	...
+
+
+3) Consider in what ways we can use this message model as a base to understand subroutines, coroutines and goroutines as flavors of a common meta-model of processes exchanging messages?
+
+	==> Consider to apply a general model of two routines exchanging request-response messages and implementing suspend, activate, cancel, yield and resume?
+
+                ----------------|						-------------------------
+		|		|						|			|
+		|		v						v			|
+		|	caller::Suspend 		—> 		Callee::Activate (Resume)	|
+		|	caller::Activate (Resume)	<— 		Callee::Suspend_and_Yeld	| // Subroutines can’t do this!
+		|	caller::Activate (Resume)	<— 		Callee::Cancel_and_Yeld		| // terminate
+		|		|			|			|			|
+		-----------------			|			————————————
+					   Request/Response Messaging
+
+		==> Consider the cases where caller and callee are subrotuines, coroutines and goroutines?
+		==> Consider we can make any combination work by applying appropriate messaging and activate,resume and yield implementations?
+
+		==> It seems a subrotuine and coroutine share its state (its frame) with the caller?
+		==> It seems a goroutine shares nothing with its caller?
+		==> It seems subrotuines and coroutines uses the shared state to exchange messages with the caller?
+		==> It seems gorotutines uses call and response channels to exchange messages?
+ 
+	==> Consider S+A (Suspend+Activate) can be defined also also to activate a Coroutine and a Goroutine?
+
+		call f(x) expands to:		caller::suspend —> message: x —> f::activate
+
+		subroutine::suspend + coroutine::activate
+
+			==> Works if we just apply the appropriate caller::suspend (store state in stack-frame)?
+			==> In this case coroutine::activate must accept a heap-frame shared with the caller (coroutine must store its state to live on after yield)?
+			==> Thus, the message: x must live in the heap-frame (its part of coroutine state) ?
+			==> Note: A coroutine shares its state instance with the caller (used by caller to interact with coroutine)?
+
+		subroutine::suspend + goroutine::activate
+
+			==> Works if we just apply the appropriate caller::suspend (store in stack frame)
+			==> In this case goroutine::activate must accept a channeled message
+			==> Thus the goroutine gets its own copy of the message to store in its ”process” local memory?
+			==> Note: A goroutine shares nothing with the caller (goroutine can be executing on completely remote hardware)
+
+	==> Consider callee C+Y (Cancel and Yield) is trivial for coroutine and goroutine?
+
+		f(x) {return result} expand to:	f::cancel —> message: result —> caller::resume
+
+		coroutine::cancel + subroutine::resume
+
+			==> Works if we just apply appropriate caller::resume (needs to accept final value on the shared heap-frame)
+			==> It seems we require the caller to detect that the coroutine has canceled and thus delete the heap-frame (after having acquired the returned value)?
+
+		goroutine::cancel + subroutine::resume
+
+			==> Works if we just apply appropriate subroutine::resume (needs to accept a message copy from callee response channel)
+			==> It seems we require the caller to detect that the goroutine has canceled and thus close the channel (after having acquired the return value)?
+			==> Consider we may use a buffered stateful (open/closed state) channel that is garbage collected when it is empty and closed (the goroutine may thus close the channel after having sent the response)?
+
+	==> Consider callee S+Y can be defined for both coroutines and goroutines?
+
+		f(x) { yield} expands to:	callee::yield —> message: ?? —> caller::resume
+
+		coroutine::yield + subroutine::resume
+
+			==> Works if we can define what message::?? carries?
+			==> For yield = await (yield back to caller while waiting for a future event) we need message: future<x> (something the caller can recognize as not yet available)?
+			==> For yield = yield y (yield a value back to caller) we need message: y (something the caller can recognize as one value with more to come)?
+
+		==> goroutine::yield + subroutine::resume
+
+			==> Works the same ways as for coroutine above (but the messaging must be made over the response_channel using messages that encode a value or a future value)?
+			==> It seems here coroutines and goroutines differ only in the message scheme?
+
+4) Consider some C++ code to try out possible semantics to be able to compose with subrotunes, coroutines and gorotutines?
+
+	==> Consider this approach?
+
+struct Subroutine {
+    template <typename X>
+    auto operator()(X x) const { return 1;} // Dummy stacked fucntion
+};
+struct Coroutine {
+    template <typename X>
+    auto operator()(X x) const { return 1;} // Todo: Implement heap-based frame to return the value (coroutine style)
+};
+struct Goroutine {
+    template <typename X>
+    auto operator()(X x) const { return 1;} // Todo: Implement message copying thriough channels (goroutine-style)
+};
+
+template <typename Caller, typename Callee>
+auto combine(Caller caller, Callee callee) {}; // Primary template never used
+
+template <>
+auto combine<Subroutine,Subroutine>(Subroutine caller, Subroutine callee) {
+    return [=](auto x) {
+        return caller(callee(x));
+    };
+};
+
+template <>
+auto combine<Subroutine,Coroutine>(Subroutine caller, Coroutine callee) {
+    return [=](auto x) {
+        return caller(callee(x)); // Todo: implement some example heap-based shared state
+    };
+};
+
+template <>
+auto combine<Subroutine,Goroutine>(Subroutine caller, Goroutine callee) {
+    return [=](auto x) {
+        return caller(callee(x));
+    };
+};
+
+
+int main(int argc, const char * argv[]) {
+    Subroutine sub_f;
+    Coroutine co_f;
+    Goroutine go_f;
+    combine(sub_f,sub_f)(3);
+    combine(sub_f,co_f)(3);
+    combine(sub_f,go_f)(3);
+    return 0;
+}
+
+	==> Consider to apply boost::coroutines for struct Coroutine and still make combine work?
+	==> Consider to apply boost::fiber to implement Goroutine and still make combine semantics to work?
+	==> Consider it is ok for now to block on actual invokation of combined function (we may later provide ways to turn the whole combine-chain to a sub-,co- or go-routine)?
+	...
+…
+
+Consider to elaborate on this idea to model a thread as function-messaging using stack-frames?
+...

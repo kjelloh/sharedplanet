@@ -1,0 +1,51 @@
+﻿Could we think something interesting by reasoning that a paradox is in fact a kind of circular (self referencing) reasoning but using a "möbius strip” referencing topology?
+
+1) Consider a statement from which follows its opposite and from which follows the original statement as isomorphic to the möbius strip?
+
+	==> Consider this wikipedia page about the Möbius Strip (https://en.wikipedia.org/wiki/Möbius_strip)?
+
+	
+
+	==> Consider the paradox: From A follows NOT A from which follows A as a circular reference in two loops (with the intermediate negation NOT A).
+	==> Consider this seems topologically isomorphic to traveling the Möbius Strip where the first lap leads to its opposite side and the second lap takes you back to where you started?
+	...
+
+2) Consider a Paradox may be seen as a self-contradiciting reference as opposed to a plain self reference that carries no information at all?
+
+	==> Consider ”Pär is member of the group of Men like him” follows ”Pär is like himself” is a self reference that carries no information at all (it is not recursive nor paradoxal)?
+	...
+
+3)  Consider the Russels Paradox in the form of the Barber Paradox (https://en.wikipedia.org/wiki/Barber_paradox)?
+
+”The barber is the "one who shaves all those, and those only, who do not shave themselves." The question is, does the barber shave himself?[2]
+
+Answering this question results in a contradiction. The barber cannot shave himself as he only shaves those who do not shave themselves. As such, if he shaves himself he ceases to be a barber. Conversely, if the barber does not shave himself, then he fits into the group of people who would be shaved by the barber, and thus, as the barber, he must shave himself."
+
+
+	==> It seems from the fact ”The Barber does NOT shave himself” follows ”The Barber MUST shave Himself” from which Follows ”The Barber does NOT shave himself”?
+	==> This seems like circular (self referencing) reasoning on ”two loops”, with an intermediate loop leading the its own contradiction (thus isomorphic to the Möbius Strip topology)?
+	...
+
+4) Consider that noting the ”Möbius Strip” topology of reasoning enables us to solve logical puzzles that requires two unknowns to find a solution?
+
+	==> Consider the ”Truth Town” riddle (http://riddledude.com/brain-riddle/truth-town/)?
+
+”A man trying to travel to truth town stops at a fork in the road. He knows one of them leads to liar town, and the other to Truth Town. All people from truth town tell the truth, and people from liar town all lie. There is a citizen in the fork, but the man doesn’t know if the citizen is from Liar town or Truth town. by only saying one thing, how can he get the citizen to take the man to truth town?"
+
+		==> Consider we may see this as logical reasoning where applying the lier leads to an answer that is NOT A and applying the truth-teller leads to A (A being an answer to question Q)?
+		==> Now we like fro the lier that from NOT A follows A while from the truth teller we like from A follows A?
+		==> This, it seems we like a question Q to the lier to follows a Möbius Band reasoning (From the wrong answer follows the correct answer)?
+		…
+
+	==> Consider the question ”Where do you Live?”
+
+		==> For the truth-teller follows he will point to his hometown from which follows he will point to the Truth Town (Plain Self referencing)?
+		==> For the lier follows he will NOT point to his hometown from which follows he will point at the Truth Town (Möbius Strip self reference)?
+		…
+
+…
+
+Consider to elaborate more on this idea of comparing Paradoxes as self-refernce isomorphic to a Möbius Strip?
+...
+		
+

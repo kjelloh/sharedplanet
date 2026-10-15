@@ -1,0 +1,109 @@
+﻿
+
+I need to repair my hollow dry wall in my living room.
+
+It seems a Dry Wall is basically made of Gypsum between sheets of paper - but the gypsum can be mixed with reinforcing fibres.
+
+I have no clue wether my dry wall plaster boards are pure gypsum or are reinforced with fibres.
+
+And I wonder what the difference is between these products?
+
+Krone Moulding Plaster, Casco "GipsFiller" 3679, Casco "HusFix" 3676 and Jotun Medium Spackle?
+
+From what I can tell from googling the Krone Moulding Plaster is more or less 100% gypsum (that is Calcium Sulfate).
+
+The Casco "GipsFiller" (in english approximately "Gypsum Filler") has gypsum mixed with 25-50 % Kalcium Carbonate.
+
+The Casco "HusFix" (translates to english as "House Fix") is on the other hand is basically Portland Cement mixed with 25-50 % Aluminium Silicate (and 20-25% additives)
+
+And finally Jotun medium Spackle is basically Calcium Magnesium Carbonate from fine grind Dolomite Marble with some unspecified cellulose derivative binding additive.
+
+Now chemistry has never been my strong suit but it seems all these materials somewhat lives in the same realm of chemistry?
+
+But they have of course very different properties and I wonder how I should choose to know my repair restores the integrity of my dry wall?
+
+Now pure gypsum may be the way to go as at least it matches the gypsum content of my wall?
+
+But then pure gypsum have no reinforcement in the form of added fibres, nor does it contain any helper additives to help with bonding to the wall.
+
+The Casco "GipsFiller" (gypsum filler) sounds more like a product for my problem if I go by the marketing information alone.
+
+But then I do not know if the added Kalcium Carbonate has any benefits to my repair job.
+
+Now the Jotun Spackle should not be a good choice as from my experience it is not used for structural repair.
+
+But then again, it does contain Dolomite Marble with adhesives so maybe it is not so different in strength from pure gypsum when push comes to shove?
+
+But no, I have to choose between the other products to feel safe this time.
+
+So I decided to try pure gypsum and the Casco "GipsFiller" for my dry wall repair.
+
+Deciding to NOT use the cement based Casco "HusFix" as my intuition tells me cement is much harder than gypsum and thus will not marry well with my gypsum based dry wall sheeting.
+
+
+1) Consider to document some of my findings trying to understand fixing my Drywall with the products Krone Moulding Plaster, Casco Gypsum Filler 3679, Casco House Fix 3676 and Casco Medium Spackle?
+
+	==> It seems dry walls are made from mainly Gypsum mixed with some fibres between sheets of paper (https://en.wikipedia.org/wiki/Drywall <https://en.wikipedia.org/wiki/Drywall> )?
+
+"Drywall (also known as plasterboard, wallboard, sheet rock, gypsum board, or gypsum panel) is a panel made of calcium sulfate dihydrate (gypsum), with or without additives, typically extruded between thick sheets of facer and backer paper, used in the construction of interior walls and ceilings.[1] The plaster is mixed with fiber (typically paper, fiberglass, asbestos, or a combination of these materials), plasticizer, foaming agent, and various additives that can reduce mildew, flammability, and water absorption."
+
+	==> It seems Gypsum binders are subject to EU standard EN 13279-1:2005 (https://www.sis.se/api/document/preview/40003/ )?
+
+
+EU standard EN 13279-1:2005 definition of gypsum binder families
+
+
+
+	==> It seems Krone Moulding Plaster in more or less pure gypsum grind to a fine powder (https://krone-gips.de/en/content/products/for-painters/spezialprodukte/moulding-plaster.html )
+
+
+KRONE Modelling Plaster (gypsum) physical properties
+ 
+	==> It seems Casco Gypsum Filler is 50-75% Calcium Sulfate and 25-50 % Kalcium Carbonate (https://media-pms2.schoenox.net/casco/docs/cascogipsfiller_se_se_eds.pdf )?
+
+
+It seems Casco Gypsum Filler is 50-75% Calcium Sulfate and 25-50 % Kalcium Carbonate (https://media-pms2.schoenox.net/casco/docs/cascogipsfiller_se_se_eds.pdf )?
+
+
+	NOTE: Casco "GipsFiller" is no longer part of the Casco sortiment (Replaced by "Casco WallFiller" https://www.casco.eu/se/casco-produkter/?pc=165&p=5470 <https://www.casco.eu/se/casco-produkter/?pc=165&p=5470> )?
+
+
+Casco® WallFiller safety declaration indicates it consists of Calcium Sulfate and Calcium Carbonate (
+https://media-pms2.schoenox.net/casco/docs/cascowallfiller_se_en_msds.pdf <https://media-pms2.schoenox.net/casco/docs/cascowallfiller_se_en_msds.pdf> )
+
+	==> It seems Casco House Fix ("Husfix") is a 25-50% portland cement and 25-50% Aluminium Silicate (https://media-pms2.schoenox.net/casco/docs/cascohusfix_se_se_eds.pdf )?
+
+
+
+It seems Casco House Fix ("Husfix") is a 25-50% portland cement and 25-50% Aluminium Silicate (https://media-pms2.schoenox.net/casco/docs/cascohusfix_se_se_eds.pdf )?
+
+
+	==> It seems we can understand Aluminium Silicate as being "Kaolinite" - The main ingredient in clay for porcelain making (https://en.wikipedia.org/wiki/Kaolinite <https://en.wikipedia.org/wiki/Kaolinite> )?
+
+	==> It seems Jotun Medium Spackle is specified as a generic product based on fine grind Dolomite Marble mixed with cellulose derived filling additives (https://www.jotun.com/Datasheets/Download?url=%2fTDS%2fTDS__11440__JOTUN+Spackel+vägg+och+tak+-+medium__Swe__SE.pdf <https://www.jotun.com/Datasheets/Download?url=/TDS/TDS__11440__JOTUN+Spackel+v%C3%A4gg+och+tak+-+medium__Swe__SE.pdf> )?
+
+"Baserad på cellulosaderivat tillsatt lätta fyllnadsmedel kombinerat med finkrossad dolomitmarmor."
+
+	==> It seems Dolomite Marble is basically recrystallised Dolomite (https://en.wikipedia.org/wiki/Marble <https://en.wikipedia.org/wiki/Marble> )?
+
+	==> It seems Dolomite is basically Calcium Magnesium Carbonate (https://en.wikipedia.org/wiki/Dolomite_(mineral) <https://en.wikipedia.org/wiki/Dolomite_(mineral)> )?
+
+2) Consider links to information relating to the products KRONE Moudlign Plaster, Casco "GipsFiller", Casco "Husfix" and Casco Spackle?
+
+	==> Consider the wikipedia article on "Drywall" (https://en.wikipedia.org/wiki/Drywall <https://en.wikipedia.org/wiki/Drywall> )?
+	==> Consider wikipedia article on "Gypsum" (https://en.wikipedia.org/wiki/Gypsum <https://en.wikipedia.org/wiki/Gypsum> )?
+	==> Consider Casco product page for "GipsFiller - Utgått" (https://www.casco.eu/se/casco-produkter/?pc=165&p=1224 <https://www.casco.eu/se/casco-produkter/?pc=165&p=1224> )?
+	==> Consider Casco technical declaration for "Casco Gipsfiller" (https://media-pms2.schoenox.net/casco/docs/cascogipsfiller_se_se_eds.pdf <https://media-pms2.schoenox.net/casco/docs/cascogipsfiller_se_se_eds.pdf> )?
+	==> Consider Casco product page for "HusFix" (https://www.casco.eu/se/casco-produkter/?pc=165&p=1225 <https://www.casco.eu/se/casco-produkter/?pc=165&p=1225> )?
+	==> Consider "Casco HusFix" (https://media-pms2.schoenox.net/casco/docs/cascohusfix_se_se_eds.pdf <https://media-pms2.schoenox.net/casco/docs/cascohusfix_se_se_eds.pdf> )?
+	==> Consider wikipedia article on "Calcium Carbonate" (https://en.wikipedia.org/wiki/Calcium_carbonate <https://en.wikipedia.org/wiki/Calcium_carbonate> )?
+	==> Consider Danish KRONE vendor page on  "KRONE MODELLGIPS (MOULDING PLASTER)" (https://krone-gips.de/en/content/products/for-painters/spezialprodukte/moulding-plaster.html <https://krone-gips.de/en/content/products/for-painters/spezialprodukte/moulding-plaster.html> )?
+	==> Consider Swedish SIS standard containg EU standard EU standard EN 13279-1:2005 "EN 13279-1:2005 (E)" (https://www.sis.se/api/document/preview/40003/ <https://www.sis.se/api/document/preview/40003/> )?
+	==> Consider wikipedia article on "Portland Cement" (https://en.wikipedia.org/wiki/Portland_cement <https://en.wikipedia.org/wiki/Portland_cement> )?
+	==> Consider wikipedia on "Cement" (https://en.wikipedia.org/wiki/Cement <https://en.wikipedia.org/wiki/Cement> )?
+	==> Consider wikipedia article on "Kaoline" (https://en.wikipedia.org/wiki/Kaolinite <https://en.wikipedia.org/wiki/Kaolinite> )?
+	==> Consider Jotun page on "JOTUN Spackel vägg & tak - medium" (https://www.jotun.com/se/se/b2c/products/professional/jotun-sparkel-vegg-og-tak-medium.aspx <https://www.jotun.com/se/se/b2c/products/professional/jotun-sparkel-vegg-og-tak-medium.aspx> )?
+	==> Consider the wikipedia article on "Marble"
+	==> Consider the wikipedia article on "Dolomite" (https://en.wikipedia.org/wiki/Dolomite_(mineral) <https://en.wikipedia.org/wiki/Dolomite_(mineral)> )?
+
+...

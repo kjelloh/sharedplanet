@@ -1,0 +1,55 @@
+# Todo: Programming - Consider to compare programming with Recipes, Process Descriptions and Requirement Specifications?
+
+```#902a45f5``` *As of 2017-02-05 10:31*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, can we understand Programming as just a special variant of the same ”Rules for assembling something” we can identify in other types of information?
+
+1) Consider a Recipe as a program to cook a meal?
+
+==&gt; Consider the Recipe is the Code?  
+==&gt; Consider you are the Processor (Executing the code)  
+==&gt; Consider the Ingredients are the data objects (instances of types of ingredients)?  
+…
+
+2) Consider a Process Description as a program to perform a task within an organisation?
+
+==&gt; Consider the Process Description is the Code?  
+==&gt; Consider a ”Role” as the Processor (executing the code)?  
+==&gt; Consider ”Documents” and ”Messages” are normally the data objects (instances of type of information transformed and exchanged)?  
+…
+
+3) Consider a Requirement Specification as ”Code” that may be compiled into a ”Program” (A product executing according to the rules in the specification)?
+
+==&gt; Consider the Requirement Specification is the ”Code"?  
+==&gt; Consider the ”Code" defines an Executor (A product that when built behaves according to the ”Code”)?  
+==&gt; Consider the Readers of the Specification as ”Compilers” (They process the code and generates different types of output as defined by the Code)?  
+==&gt; Consider one result of Compilation is the ”Product" defined by the ”Code” (The Code is compiled into the Product by the Reader of the Specification)?  
+==&gt; Consider the Specification may be compiled into Tests (e.g., for certification of the product)?  
+==&gt; Consider the Specification may be compiled into Computer Programs (The Specification defines a Software System)?
+
+==&gt; The The Specification is compiled into computer code that is the compiled into a computer program (several steps of compilation and interpretation)?  
+…
+
+4) Consider the laws for a country as a Requirement Specification for a society of a country?
+
+==&gt; Consider the Laws are the ”Code” (Instructions on how to behave)?  
+==&gt; Consider Officials as ”Compilers” that turn Code into Institutions?
+
+==&gt; Or, Are ”Laws” mostly about Restrictions (Not ”recipes” for how to act as a citizen)?  
+==&gt; Consider ”Culture” and ”Social Rules” as the part that is the ”Code” that citizens execute?  
+…
+
+5) Consider a ”Religion” as Code that believers compile into a Society?
+
+==&gt; Consider a Religion as the top-most Code defining how a Life should be ”Executed”?  
+…
+
+…
+
+Consider to elaborate on this idea that ”Programs” can be found in many shapes, not just a Code executed by Computers?  
+...
+
+{% endraw %}

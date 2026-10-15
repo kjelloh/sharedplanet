@@ -1,0 +1,19 @@
+﻿
+
+So, the basic idea is to have normal people commuting in a town to be able to bring packages with them and have them being delivered to a recipient. I imagine the system to be without any backing company or administration. The only thing each person needs to know and do is to pass on their phone number and the package to each new person. The package is marked with the postal address. And each transaction adds to a "block-chain" of each transaction until the package reaches the recipient.
+
+To have this work I Imagine the sender and receiver provides some secret only they know. The sender needs to initiate the block-chain with sender private Key and receiver public key. Then in each transaction the person transferring the package to a new deliverer adds the transaction of the package to the block-chain embedding the phone number to be used for final reimbursement using a phone number based payment system.
+
+I speculate that if we do this correctly a simple app on the phone can be used to update the block-chain of the delivery transactions in s simple, secure and convenient way?
+
+When the package arrives at the receiver he or she signs off with her private key and the whole chain of transactions are unwinded and each participant gets paid for their part of delivering the package.
+
+Maybe the sender initiates the transaction by locking in the delivery amount to be paid out to the participants? Then it is this amount that later gets distributed to the participants in the delivery?
+
+It should now be hard for someone to fake their way in to the chain of participants of the delivery? For one they need to about the delivery. They also needs access to the delivery blockchain. Finally they need to somehow change the state of teh blockchain of the delivery transactions that is exposed to the receiver. All this seems pretty unlikely?
+
+We can imagine that one of the participants tries to fake the blockchain the actually takes part in by erasing any previous participants? And in doing so makes their of part of the payment grow larger. So wee need to have the blockchain strong enough so that is not feasible to do in the amount of time available before th delivery needs to be made.
+
+We can also imagine that the sender actually gets notifications sent to him or her each time the blockchain of transactions changes?
+
+Maybe we should also considering that the last transaction can be reversed in case the new carrier changes his or her mind before the hand-over person leaves? We can accomplish this by simply do a new transaction back to the previous person and the new person is now taken out of the chain and will not get payed in the end?

@@ -1,0 +1,10 @@
+﻿So, what sources can we imagine to use to get good references, explanations, examples and best practices on using C++ in good ways?
+
+1) Consider this well praised site (http://www.cppsamples.com)?
+
+	==> It was mentioned on this CppCast (http://cppcast.com/2015/04/vittorio-romeo/)
+
+…
+
+Consider to  expand the list with more sites as I find them useful?
+...

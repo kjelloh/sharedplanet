@@ -1,0 +1,42 @@
+# Todo: Consider that the game Rock, paper, scissors as an example the Tomkins Paradox in that "better than" is not transitive for these items?
+
+```#b03cf64c``` *As of 2016-06-25 19:14*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+In fact, the game Rock, paper scissors is a fun game just precisely because the relations that rock &lt; paper &lt; scissors &lt; rock...
+
+==&gt; Also see ”Todo: Consider to follow up on the Larry Temkin "Temkin's Paradox" that moral judgement can't assume transitive "better than" function?”
+
+1) Consider to refer to this game to give an example how ”better than” (or progress) may not actually end up in a truly ”better” state?
+
+==&gt; Consider in society we define ”progress” as changes so that society state c ”is better” than b and b ”is better than” a then we made progress and c ”is better than” a.
+
+==&gt; But if the changes are more like rock, scissor, paper then we can make ”progress” in steps so that the end state of society is not better than before we made all this progress?
+
+...
+
+2) Consider if it is possible to relate the circular ”better than” relation of the Rock, paper, scissor items to the circular (closed) interactions of objects in the universe and the idea that any truth were hold is itself based on a circular argument?
+
+3) Consider the wikipedia definition of Transitive relation R (<https://en.wikipedia.org/wiki/Transitive_relation>)?
+
+==&gt; R is transitive if from aRb and bRc it follows that aRc?
+
+…
+
+4) Consider to follow up on leads found on Larry Temkin wikipedia page (<https://en.wikipedia.org/wiki/Larry_Temkin>)?
+
+==&gt; It seems Tempkin aims to criticize moral reasoning (or the trouble arguing that we are able to use reasoning to find moral ground)?
+
+”Temkin has given a series of powerful arguments that call into question deeply held assumptions about value and about the nature of practical reasoning that play a central role in philosophy and in decision theory. According to decision theory, rational preferences must satisfy four fundamental axioms: Completeness (requiring preferences over, or indifference between, any pair of outcomes), Independence (requiring that one’s preference between a given pair of options does not depend on what other options are available), Continuity (requiring that if one prefers A to B and B to C, then one is indifferent between B and some gamble in which A and C are the two possible outcomes), and Transitivity (requiring that if you prefer A to B and B to C, then you prefer A to C). Temkin’s arguments have called into question each one of these fundamental axioms, and his recent manuscript can be seen as a systematic account of the ways in which these axioms fail in cases involving moral reasoning. Thus, in addition to shedding light on the complexities of the moral domain, it arguably constitutes the most thorough challenge to the standard formal theory of practical rationality."
+
+...
+
+…
+
+Consider to elaborate on how this game may relate to Tomkins Paradox, Circular Reasoning, the Closed Universe all-interacts-with-all (circular) and other philosophic thinking related?
+
+...
+
+{% endraw %}

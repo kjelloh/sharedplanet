@@ -1,0 +1,38 @@
+# Todo: Consider to write and record a script for the build of my microphone arm using an IKEA desk lamp arm?
+
+```#59343d9d``` *As of 2019-08-03 11:28*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, how well does my IKEA desk lamp arm microphone holder work for me to record narratives of different forms?
+
+> --- 0 minutes = start ----
+
+> So, I have built this microphone arm from an IKEA desk lamp.
+
+> It holds, not only the microphone, but also the sound card as a counterweight here on the other side.
+
+> To make this all come together I have designed and 3D printed these plastic parts.
+
+> As a result, I would say, it is more a working prototype than a final design.
+
+> For one, I had to add this bracket and some rubber bands to actually have the sound card stay more firmly attached to the arm.
+
+> Also, these plastic clamps are in my opinion probably overly complicated. But they work so I will use them like this for now.
+
+> I will also have to see how long it holds up until I have to remake parts of it.
+
+> For now I have 3D printed the parts will very low infill, like below 20%, just to see if they work.
+
+> And now when they do, I have decided not to reprint them with more infill until I discover if and when I actually need to do so.
+
+> It all comes down to how PLA will deform over time. Maybe they will be just fine for some time.
+
+> I have published all the model files on thingiverse if you would like to try this build for yourself.
+
+> On thingverse I also provide links to my Fusion 3D project files if you would like to use them as a base for your own design.
+
+> ------ 2 minutes -----
+
+{% endraw %}

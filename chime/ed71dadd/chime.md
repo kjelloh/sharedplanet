@@ -1,0 +1,299 @@
+# Todo: EU och Import-Moms Eget Företag - Det verkar som om jag "nollar ut" men ända räknar ut och deklarerar svensk moms?
+
+```#ed71dadd``` *As of 2018-05-18 14:50*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Det verkar som om vid inköp inom EU så skall mitt företag alltid deklarerar moms (men både som ingående och utgående så den nollas ut)?
+
+-2) det verkar som om jag förstår hela förloppet bäst genom att dela upp transaktioner mellan ITfied, Säljare, Tullverket och Skatteverket?
+
+A) ITfied &lt;—&gt; Säljare “Köp”
+
+2440 mot kostnadskonto (till exempel 4010 Inköp av material och varor)
+
+B) ITfied &lt;—&gt; Tullverket “Deklaration”
+
+\*ingen bokföring\*
+
+C) ITfied &lt;—&gt; Tullverket “Tullräkning”
+
+2440 mot 4810 Tull och speditionskostnader (bi-kostnader?)
+
+4545 mot 4549 Totalkostnad import-inköp (varans värde + tull + bikostnader)
+
+**2615** mot 2641 Ingående och utgående moms (nollad importmoms)
+
+D) ITfied &lt;—&gt; Säljare “Betalning”
+
+2440 mot betalande konto (till exempel 1920 kort/pg/bg konto)
+
+E) ITfied &lt;—&gt; Skatteverket “Momsdeklaration”
+
+**2615** mot 2645 ruta 60 utgående 25% moms import (NOLLAR 2615 och 2645)
+
+2640 mot 1650 Ingående moms mot Momsfordran (Nollar PERIODEN okt-dec 2640 och blir ökad fordran i 1650)
+
+3740 för öresutjämnings (moms redovisas i hela kronor)
+
+F) ITfied &lt;—&gt; Skatteverket “Reglering Skattekonto” (in eller utbetalning av moms)
+
+==&gt; Det verkar som om detta flöde förenklas (förändras) beroende på olika vanliga omständigheter?
+
+A) Köp mot faktura eller direktbetalning (Ingen separat betalning D).
+
+B) Egen importdeklaration eller hanterad av Budfirma (Ingen tullräkning C, budfirma skickar faktura och uppgifter för momsdeklaration)
+
+-1) Överväg att sammanställa aktuella insikter gällande Moms?
+
+==&gt; När jag handlar som företag (på mitt VAT-nummer) är jag som köpare Omvänt Skattskyldig (och skall INTE betala moms till säljaren MEN redovisa moms i Sverige) (<https://www.skatteverket.se/foretagochorganisationer/moms/sarskildamomsregler/omvandskattskyldighet.4.47eb30f51122b1aaad28000258292.html>)?
+
+> “Vid **handel inom EU**:s momsområde gäller omvänd skattskyldighet i följande fall:
+
+> • när en vara transporteras mellan två länder och under förutsättning att **köparen åberopar ett giltigt VAT-nummer** (momsregistreringsnummer) i sitt land  
+> • vid försäljning av en tjänst enligt huvudregeln till en beskattningsbar person i ett annat EU-land (då anses tjänsten omsatt, och ska beskattas, i det land där köparen är etablerad)."
+
+==&gt; Jag måste alltid redovisa svensk moms på inköp utomlands MEN får också alltid dra av momsen på “vanligt sätt”
+
+> “Som köpare ska du redovisa inköpen i momsdeklarationen i någon av följande rutor:
+
+> • ruta 20: Inköp av varor från annat EU-land  
+> • ruta 21: Inköp av tjänster från annat EU-land  
+> • ruta 22: Inköp av tjänster från land utanför EU  
+> • ruta 23: Inköp av varor i Sverige  
+> • ruta 24 Inköp av tjänster i Sverige."
+
+> “Vid omvänd skattskyldighet kan du som köpare ha **avdragsrätt** för den **ingående momsen, som du själv beräknar**, enligt de allmänna bestämmelserna. Det innebär att nettot blir 0 om du har full avdragsrätt (dvs. får dra av hela momsen). Ändå får du inte göra någon "tyst kvittning" utan **måste redovisa både utgående och ingående moms** i momsdeklarationen. Den ingående momsen redovisar du i ruta 48."
+
+==&gt; Förvirringen uppstår eftersom ett inköp från utlandet har en virtuell “Ingående Moms” (25% moms pop inköpet) men som Momsdeklareras i ruta 30 som “Utgående Moms”?!!
+
+==&gt; MEN - Ingående Moms år ju definierad som “Moms på Inköp” (alltså moms på utgifter)!
+
+**Q: Kan det vara så att moms på inköp från annat EU-land kallas “Utgående Moms” på momsdeklarationen eftersom den uppstår ur förhållandet “Omvänd Skattskyldighet”. Kravet att betala Momsen faller på säljaren och är alltså Ingående moms för denne och köparen bokför som Utgående Moms. På detta sätt framgår av momsredovisningen att omvänd skattskyldighet har förelegat i affären?**
+
+==&gt; Inom EU - Ange VAT till säljaren så att denne INTE fakturerar moms?
+
+==&gt; Om jag betalar moms till annat EU-land så måste jag själv kräva tillbaka denna moms (olika regler för olika länder)?
+
+==&gt; “Import” avser endast inköp från länder UTANFÖR EU
+
+==&gt; Vid import bokför och redovisar jag enligt underlag från tullverket (annars gör jag ingenting)?
+
+==&gt; Inköp från länder utanför EU utan tulldeklaration är FEL (jag smiter från tullavgifter)?
+
+==&gt; För varor som transporteras av transportfirmor så hanterar de tullen åt mig?
+
+TODO: Fortsätt gräva i hur jag tulldeklarerar varor?
+
+1) Överväg detta youtube-klipp “Hantering av importmoms i Visma Administration” från Visma Ekonomi (<https://www.youtube.com/watch?v=ETML0UnBHa4>)
+
+==&gt; Visar verkar rekommendera ett sätt där man bokför faktura utan moms och tullräkning med moms separat?
+
+==&gt; Här verkar visar rekommendera att faktura från säljare utanför EU bokförs till hela sitt belopp utan moms-koppling (<https://youtu.be/ETML0UnBHa4?t=58>)?
+
+![](<Screen Shot 2018-05-16 at 11.08.12.png>)
+
+==&gt; Här verkar Visa rekommendera att tullräkningen bokförs som leverantörsfaktura med totalkostnad ink. tull samt nollad in och utgående moms (<https://youtu.be/ETML0UnBHa4?t=86>)?
+
+![](<Screen Shot 2018-05-16 at 11.10.01.png>)
+
+2440 mot 4810 Tull och speditionskostnader (bi-kostnader?)
+
+4545 mot 4549 Totalkostnad import-inköp (varans värde + tull + bikostnader)
+
+2615 mot 2641 Ingående och utgående moms (nollad importmoms)
+
+==&gt; Det verkar som om momsrapporten enligt Visma genereras ur konto 4545, 2615 samt 2641
+
+![](<Screen Shot 2018-05-16 at 11.17.36.png>)
+
+**4545 Momsrapport ruta 50 (totalkostnad import)**
+
+**2615 Momsrapport ruta 60 (25% importmoms utgående)**
+
+**2641 Momsrapport ruta 48 (25% moms ingående)**
+
+==&gt; Det verkar enligt Visma som om man själv beräknar moms på import utan tullkostnad (<https://youtu.be/ETML0UnBHa4?t=225>)?
+
+![](<Screen Shot 2018-05-16 at 11.20.32.png>)
+
+==&gt; Enligt Visma skapar man en “manuell verifikation”
+
+**INGEN 2440 mot 4810 Tull och speditionskostnader (bi-kostnader?)**
+
+**4545 mot 4549 Totalkostnad import-inköp (varans värde + tull + bikostnader)**
+
+**2615 mot 2641 Ingående och utgående moms (nollad importmoms)**
+
+==&gt; Det verkar som on ITfied har en annan kontoplan?
+
+**2641 och 2640 är utbytbara (ITfied har 2640)?**
+
+**4810 och 5720 är utbytbara (ITfied har 5720)?**
+
+**4549 och 4511 verkar vara utbytbara (ITfied har 4511)?**
+
+**&lt;Tullräkning För ITfied&gt;**
+
+**Tull : 2440 mot 5720**
+
+**Totalkostnad import-inköp (varans värde + tull + bikostnader): 4545 mot 4511**
+
+**Ingående och utgående moms (nollad importmoms): 2615 mot 2640**
+
+2) Överväg den här korta videon för ledtrådar till hur moms inom EU bokförs (<https://youtu.be/g7JKR3hpbdc?t=61>)?
+
+==&gt; Detta verkar vara hur man bokför inköp av tjänster från annat EU-land?
+
+![](<Screen Shot 2018-05-16 at 11.35.00.png>)
+
+1930 mot 4535 betalning Totalkostnad av inköp av tjänst från annat EU-land
+
+**2645 mot 2614 Beräknad ingående moms och utgående moms tjänster EU (nollas)**
+
+==&gt; Enligt Lars-Gösta Elmermark (Möte 15 Maj 2018) så används moms-konto 2615 för beräknad utgående moms på EU-inköp av vara?
+
+1930 mot 4535 betalning Totalkostnad av inköp av tjänst från annat EU-land
+
+**2645 mot 2615 Beräknad ingående moms och utgående moms varor EU (nollas)**
+
+3) Överväg att tänka ut hur bara momsen flödar genom bokföringen till momsredovisningen?
+
+==&gt; det verkar som om moms på varuinköp **inom EU** momsdeklareras till värde i ruta 20 och 25% moms i ruta 30?
+
+NOTERA: Det är upp till mig att handla UTAN MOMS (på mitt VAT till säljaren så att säljaren EJ debiterar Moms)
+
+**==&gt; Sedan räknar jag själv ut en svensk 25% moms och bokför som utgående EU-Moms samt Ingående Moms**
+
+**4515 —&gt; ruta 20 (varuvärde exkl. 25% moms inom EU)**
+
+**2614 —&gt; ruta 30 (utgående 25% moms på varuvärde inköp EU-land)**
+
+**2641 —&gt; ruta 48 (Ingående moms att dra av = Nolla mot 2614)**
+
+==&gt; Det verkar som om moms på **Import** (inköp **utanför EU**) momsdeklareras till kostnad i ruta 50 och 25% moms i ruta 60.
+
+NOTERA: Inköp från säljare utanför EU är ALLTID utan Moms (de ingår inte i något Moms-sammarbete)
+
+**==&gt; Jag räknar själv ut en svensk 25% moms och bokför som utgående Import-Moms samt Ingående Moms**
+
+**4545 —&gt; ruta 50 (importkostnad pris + tull + bi-kostnader, alltså total kostnad för införsel till EU + transport till företaget)**
+
+**2615 —&gt; ruta 60 (25% moms på import-värde)**
+
+**2641 —&gt; ruta 48 (****Ingående moms att dra av = ****Nolla mot 2615)**
+
+**==&gt; det verkar som om hela iden med bokföringen av EU-moms samt import-moms är för att skatteverket skall kunna spåra Moms (men företaget betalar ändå ALDRIG momsen)**
+
+==&gt; Nu kan vi modifiera bokföringen beroende på om inköp är med direktbetalning (bankonto) eller faktura (leverantörskuld)
+
+1930 Direktbetalning från bankkonto
+
+2440 Leverantörsskuld
+
+**TODO: Mina inköp från annat land är INTE bokförda på något kostnadskonto (ej heller bokförda som inventarier)? **
+
+4) Överväg denna sida från skatteverket (<https://www.skatteverket.se/foretagochorganisationer/moms/kopavarorochtjanster/inkopfranandraeulander/kopavarorfranandraeulander.4.3a7aab801183dd6bfd380005738.html>)?
+
+> “*När du köper varor från en momsregistrerad säljare i ett annat EU-land ska du redovisa **moms i Sverige**. Det är då du **själv** som ska **beräkna** den **utgående momsen** på varuvärdet och redovisa den i momsdeklarationen*"
+
+==&gt; Men jag skall samtidigt ta upp den som som ingående Moms?
+
+> “*I momsdeklarationen redovisar du **varuvärdet** (i SEK) i **ruta 20** och den beräknade **utgående momsen** i någon av **rutorna 30-32**. Den **ingående momsen** redovisar du i **ruta 48**.*"
+
+==&gt; Det här verkar vara en korrekt bokföring av EU-moms?
+
+![](<Screen Shot 2018-05-15 at 22.11.22.png>)
+
+Debet **4615** "Inköp av varor annat EU-land 25%"  ==&gt; Antagligen kopplad till **ruta 20** “Inköp av varor från annat EU-land”
+
+Debet **2645** Beräknad ingående Moms från utlandet ==&gt; Antagligen kopplat till **ruta 48** “Ingående Moms att dra av”
+
+Kredit **2615** Utgående Moms import av varor 25% ==&gt; Antagligen kopplat till **ruta 30** “Utgående Moms 25% ruta 20…24"
+
+Hm… Det är nog FEL ändå. Jag VET ju momsen? Så den borde bokföras som 2614 mot 2641?
+
+2) Det verkar som om FortKnox momsrapport drar FEL slutsats ur den gjorda bokföringen?
+
+NEJ! Den drar nog rätt slutsats. MEN SE-konsult har bokfört fel (Se ovan)?
+
+==&gt; SE-konsult verkar momsdeklarera så att 2645 och **2615** nollar ut varandra men EU-momsen ändå redovisas i **ruta 30**?
+
+==&gt; Medan Fortknox INTE nollar ut importmomsen (dock oklart vad den gör) och dessutom redovisar **2615 i ruta 50**!
+
+JA - Fortknox gör rätt. 2615 är totalkostnad import-köp (ex Moms) som skall in i ruta 50!
+
+==&gt; Överväg att försöka förstå den här mappningen som FortKnox anger att de använder för att generera momsrapporten (<https://support.fortnox.se/hc/sv/articles/208330895-Skapa-momsrapport>)?
+
+==&gt; Det verkar som om man själv sätter moms-koder i kontoplanen?
+
+> > “*Vilket/vilka belopp som läggs på varje ruta på din momsrapport beror på vilken momskod som du har satt på dina konton i kontoplanen. Såhär blir redovisningen på en skattedeklaration (baserat på varje momskod):*"
+
+![](Momsrapport.png)
+
+==&gt; Min slutsats verkar svar att ITfied skall använda ruta 20 & 30 för inom-EU-inköp samt 50 & 60 för Import (utom-EU) inköp?
+
+==&gt; **EU-inköp** på IVEU konto **4515** (pris utan moms) och UOS1 konto **2614** (uträknad 25% moms på pris utan moms)
+
+==&gt; **Import** (Utom EU) på BI konto **4545** (totalkostnad import-inköp inkl tull och bi-kostnader) och UI25 konto **4615** (uträknad 25% moms på varans pris / monetära värde)
+
+NOTERA: Om tulldeklarerad så kommer tullräkning som blir verifikat för Import
+
+==&gt; Om jag köper mot faktura så verkar det som om jag för både EU-inköp och Import skall bokföra “uppskattad Moms” i samband med köpet?
+
+==&gt; I så fall bokför jag momsen så att säga två gånger (andra gången för att klarera den faktiska momsen)
+
+Import-inköp 1) Moms: 2645 Beräknad Ingående moms på inköp från utlandet mot 2641 Ingående Moms (nollad moms)
+
+Pris: 4511 Import mot
+
+Import-betalning 2) Faktisk 2615 25% Import-moms mot 4615
+
+==&gt; Borde jag använda konto 2619 Utgående Moms EU-land?
+
+==&gt; Det här verkar vara en lista över alla möjliga momskoder som FortKnox använder (Se &lt;Register&gt;/&lt;Kontoplan&gt; “Utökad Sökning” under rullgardinslisten för momskoder)
+
+![](<Screen Shot 2018-05-16 at 00.19.34.png>)
+
+3) Det verkar som om varuinköp inom EU INTE är import?
+
+==&gt; Se denna sida av BL Info (<https://www.blinfo.se/2017/12/sa-fungerar-momsen__7847>)?
+
+> “*Handel med varor inom EU räknas inte som export och import utan som unionsintern handel.*"
+
+==&gt; Se skatteverkets sida för inköp av varor från länder utanför EU (<https://www.skatteverket.se/foretagochorganisationer/moms/kopavarorochtjanster/inkopfranlanderutanforeu/kopavarorfranlanderutanforeu.4.361dc8c15312eff6fd37208.html>)?
+
+> “*När du köper varor från länder utanför EU kallas det för import.*"
+
+==&gt; Det verkar som om hela processen skall vara knuten till tullverkets process för import?
+
+> “*Datumet i tullräkningen eller tullkvittot bestämmer när du ska redovisa moms vid import.*"
+
+==&gt; Det verkar som informationen jag fick från TNT egentligen är från tullverket “via ombud”?
+
+> “*Datumet finns också med i det meddelande om fastställda värden och avgifter som Tullverket skickar till ditt ombud, om du har ett **ombud** som **tulldeklarerar** för din räkning. Detta meddelande ska ombudet sedan skicka till dig, och av datumet i meddelandet kan du se i vilken redovisningsperiod du ska redovisa momsen.*"
+
+> “*Det monetära tullvärdet framgår av tullräkningen eller tullkvittot. Om du har använt dig av ett ombud/speditionsföretag ska det monetära tullvärdet framgå av det meddelande om fastställda värden och avgifter som ombudet skickar till dig*"
+
+==&gt; Det verkar som om tullvärdet faktiskt inkluderar allt utom momsen, dvs. varans värde + avgifter + bi-kostnader?
+
+> “*Beskattningsunderlaget för momsen vid import beräknar du själv genom att lägga ihop…varans värde för tulländamål…tull och andra statliga skatter utom moms…bi-kostnader för transport av varan från införselplatsen...*"
+
+4) Det verkar som om företaget ALDRIG betalar någon moms (den nollas alltid ut)?
+
+==&gt; Det verkar som om inköp inom EU skall deklareras med beräknad svensk moms som samtidigt lyfts (nollas) som ingående moms?
+
+> “***Köper** du något från ett annat **EU-land** deklarerar du själv en ”**förvärvsmoms**” på köpet. Samtidigt **lyfter du denna moms**, precis **som** all annan ­**ingående moms**.*"
+
+==&gt; Det verkar enligt BL Info som om även import-moms skall “nollas” (<https://www.blinfo.se/2017/12/sa-fungerar-momsen__7847>)?
+
+> “*På **importerade varor** (och vissa tjänster) från länder utanför EU **läggs moms på**, inte av säljaren, utan **av köparen** om denne är momsregistrerad och registrerad med ett EORI-nummer hos Tullverket. Köparen **beräknar** då **utgående moms** på beskattningsunderlag för importmoms (det monetära **tullvärdet** 1MT i normala fall) och **lyfter samma belopp** som **ingående moms** om inköpet görs till en momspliktig verksamhet. Det blir **alltså omvänd moms** precis som vid EU-förvärv av varor exempelvis. Om köparen inte är momsregistrerad lägger Tullverket på utgående moms på importen.*"
+
+5) Överväg att bara moms-deklarera import på underlag från tullverket (eller via ombud som Dell, TNT etc)?
+
+TODO: Försök kolla upp om det finns fall då jag borde beräkna egen importmoms (även om den nollas ut)?
+
+...
+
+{% endraw %}

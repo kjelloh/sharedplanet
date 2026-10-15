@@ -1,0 +1,115 @@
+﻿So, what tablets are out there; what can I use them for and to what price can I get one suitable for my needs?
+
+-1) Consider to list selected tablets with a small set of specification traits to consider?
+
+	
+							
+1) Consider commercially available tablets?
+
+	==> Commercial Tablets seems to run Android, Chrome, Windows and iOS?
+
+	==> The latest Android seems to “Android 9 Pie” (https://www.android.com/versions/pie-9-0/ <https://www.android.com/versions/pie-9-0/>)?
+
+		
+
+2) Consider a commercial Linux based tablets (if there are any)?
+
+3) Consider some SBC based tablet?
+
+	==> Can I get some valuable work done on a Raspberry Pi based tablet?
+
+	…
+
+4) Consider web-sources on tablets, reviews and opinions?
+
+	==> Consider 2018 Techradar on Android/Google tablets (https://www.techradar.com/news/mobile-computing/tablets/15-best-android-tablets-in-the-world-905504 <https://www.techradar.com/news/mobile-computing/tablets/15-best-android-tablets-in-the-world-905504>)?
+
+“Tablets like the Samsung Galaxy Tab S3 and Asus ZenPad 3S 10 give Apple a real run for its money, and there are some strong Android tablets for tighter budgets too."
+
+5) Consider a selection of tablets to study and consider to buy?
+
+	==> Consider Huawei tablets (https://consumer.huawei.com/se/tablets/ <https://consumer.huawei.com/se/tablets/>)?
+
+		...
+
+	==> Consider Huawei Mediatab T5 (https://consumer.huawei.com/se/tablets/mediapad-t5/ <https://consumer.huawei.com/se/tablets/mediapad-t5/>)?
+
+		==> It seems to sell at Dustin for (https://www.dustin.se/product/5011095430/mediapad-t5?ssel=false&LGWCODE=5011095430;89813;5443&gclid=CjwKCAjw0JfdBRACEiwAiDTALm4gYQ-CgfV9-43qGU26vs8UZH11pR5HQ5-7tAYGZuP1IO21-XxEBRoCYyIQAvD_BwE&_ga=2.11580093.829233136.1537631154-1375728282.1537631154&_gac=1.263277182.1537631154.CjwKCAjw0JfdBRACEiwAiDTALm4gYQ-CgfV9-43qGU26vs8UZH11pR5HQ5-7tAYGZuP1IO21-XxEBRoCYyIQAvD_BwE <https://www.dustin.se/product/5011095430/mediapad-t5?ssel=false&LGWCODE=5011095430;89813;5443&gclid=CjwKCAjw0JfdBRACEiwAiDTALm4gYQ-CgfV9-43qGU26vs8UZH11pR5HQ5-7tAYGZuP1IO21-XxEBRoCYyIQAvD_BwE&_ga=2.11580093.829233136.1537631154-1375728282.1537631154&_gac=1.263277182.1537631154.CjwKCAjw0JfdBRACEiwAiDTALm4gYQ-CgfV9-43qGU26vs8UZH11pR5HQ5-7tAYGZuP1IO21-XxEBRoCYyIQAvD_BwE>)?
+
+		
+
+	==> Consider iPads?
+
+		
+
+		Consider iPad mini 4 ()?
+
+		==> It seems to sell at computersalg for 4600 SEK (https://www.computersalg.se/i/1202566/apple-ipad-mini-4-wi-fi-surfplatta <https://www.computersalg.se/i/1202566/apple-ipad-mini-4-wi-fi-surfplatta>)?
+
+		
+
+	Consider iPad (https://www.apple.com/ipad-9.7/specs/ <https://www.apple.com/ipad-9.7/specs/>)?
+
+	==> It seems the latest version is the “6’th generation” and it sells at computersalg fro 3700 SEK (https://www.computersalg.se/i/4469367/apple-9-7-inch-ipad-wi-fi-6-e <https://www.computersalg.se/i/4469367/apple-9-7-inch-ipad-wi-fi-6-e>)?
+
+		
+
+	Consider 10,5” iPad Pro (https://www.apple.com/ipad-pro/specs/ <https://www.apple.com/ipad-pro/specs/>)?
+
+	==> It seems to sell at apple.se <http://apple.se/> for 7500 SEK (https://www.apple.com/se/shop/buy-ipad/ipad-pro/10,5-tums-skärm-64gb-rymdgrå-wifi <https://www.apple.com/se/shop/buy-ipad/ipad-pro/10,5-tums-sk%C3%A4rm-64gb-rymdgr%C3%A5-wifi>)?
+
+	
+
+	==> It seems to sell at computersalg for 7400 SEK (https://www.computersalg.se/i/3637742/apple-10-5-inch-ipad-pro-wi-fi <https://www.computersalg.se/i/3637742/apple-10-5-inch-ipad-pro-wi-fi>)?
+
+	
+
+	Consider 12,9” iPAd Pro (https://www.apple.com/ipad-pro/specs/ <https://www.apple.com/ipad-pro/specs/>)?
+
+	==> It seems to sell at apple.se <http://apple.se/> for 8900 SEK (https://www.apple.com/se/shop/buy-ipad/ipad-pro/12,9-tums-skärm-64gb-rymdgrå-wifi <https://www.apple.com/se/shop/buy-ipad/ipad-pro/12,9-tums-sk%C3%A4rm-64gb-rymdgr%C3%A5-wifi>)?
+
+	
+
+	==> The 2’nd generation iPad Pro seems to sell at computersalg for 9300 SEK (https://www.computersalg.se/i/3637739/apple-12-9-inch-ipad-pro-wi-fi-2nd <https://www.computersalg.se/i/3637739/apple-12-9-inch-ipad-pro-wi-fi-2nd>)?
+
+	
+
+	Consider (Discontinued) iPad Air 2?
+
+	==> It seems to sell at computersalg for 3100 SEK (https://www.computersalg.se/i/1933469/apple-ipad-air-2-wi-fi-surfplatta <https://www.computersalg.se/i/1933469/apple-ipad-air-2-wi-fi-surfplatta>)?
+
+	
+
+	==> Consider Microsoft Surface Go (https://www.microsoft.com/sv-se/p/surface-go/8v9dp4lnknsz?activetab=pivot:techspecstab <https://www.microsoft.com/sv-se/p/surface-go/8v9dp4lnknsz?activetab=pivot:techspecstab>)?
+
+		==> It seems to sell on computersalg for 4900 SEK (https://www.computersalg.se/i/4621500/microsoft-surface-go-surfplatta?sq=surface+go <https://www.computersalg.se/i/4621500/microsoft-surface-go-surfplatta?sq=surface+go>)?
+
+		
+
+	==> Consider Googles rumoured chroma OS tablet “Nocturne” maybe released 9’th of October (https://www.theverge.com/circuitbreaker/2018/9/20/17882484/google-chrome-os-tablet-nocturne-detchable-keyboard-leak <https://www.theverge.com/circuitbreaker/2018/9/20/17882484/google-chrome-os-tablet-nocturne-detchable-keyboard-leak>)?
+
+“Google’s rumored Chrome OS tablet, codenamed “Nocturne,” which some are speculating will be announced alongside the Pixel 3 and Pixel 3 XL phones on October 9th."
+
+	==>  Consider Acer Chromebook Tab 10?
+
+		==> The reviews seems to suggest that Chrome is not yet ready for tablets (https://www.youtube.com/watch?v=r1ErdU6gwXg <https://www.youtube.com/watch?v=r1ErdU6gwXg>)?
+
+			TODO: Consider to wait for the Google 9’th October event?
+
+		==> It seems to sell on Computersalg for 4000 SEK (https://www.computersalg.se/i/4474610/acer-chromebook-tab-10-d651n-k5p7?utm_source=prisjaktSe&utm_medium=prisjaktSeLINK&utm_campaign=prisjaktSe <https://www.computersalg.se/i/4474610/acer-chromebook-tab-10-d651n-k5p7?utm_source=prisjaktSe&utm_medium=prisjaktSeLINK&utm_campaign=prisjaktSe>)?
+
+		
+
+	==> Consider Samsung Galaxy Tab S3?
+
+		==> It seems to sell on computersalg for 5000 SEK (https://www.computersalg.se/i/3437290/samsung-galaxy-tab-s3-surfplatta <https://www.computersalg.se/i/3437290/samsung-galaxy-tab-s3-surfplatta>)?
+
+		
+
+	==> Consider Asus ZenPad 3S 10?
+
+		==> Asus seems to provide a 10,1” and one 9,7” Zenpad (https://www.asus.com/se/Tablets/All-Series/ <https://www.asus.com/se/Tablets/All-Series/>)?
+
+
+		
+

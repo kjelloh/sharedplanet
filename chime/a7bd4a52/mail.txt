@@ -1,0 +1,8 @@
+﻿Consider it would be a good idea if ini-paths could be transformed to and from Paths?
+
+1) Consider this as a good source for understanding XPath (http://www.w3schools.com/xsl/xpath_syntax.asp)?
+
+…
+
+Consider to elaborate more on how XPath “works” and how we can incorporate its mechanisms into the ibi library?
+...

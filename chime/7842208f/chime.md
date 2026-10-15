@@ -1,0 +1,24 @@
+# Todo: API-fy Web page user interfaces to enable programatic access
+
+```#7842208f``` *As of 2015-08-03 16:03*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to find a way to interface web-pages using an application that turns then into some more or less generalö programming API.
+
+If web-pages designed as interfaces for human interaction could be turned into programming API:s accessible by programs, then it would be possible to synthesize several web applications onto new ones with totally new interfaces.
+
+1) Make a social network client that interface Facebook, Twitter and Instagram at the same time! These services allow only restricted access throng their existing API:s. But if a program would be able to access them as any user would, then all user information stored at that service would be accessible and re-used in other services.  
+2) Make Darwinet applications that synchronize all ones personal data cross several web services. Current API:s of these services does not allow such synchronization. Ones user information are locked in and ”owned” by the service. But through the web page all information is accessible if one could just extract it in a programatic way!
+
+Consider to give this project and goal a name! This could very well be a fund project to attract open source developers to engage in :)
+
+\* UnWebMe  
+\* Mine  
+\* Homer  
+\* UnDivide  
+\* IMeMyself  
+\* MegaMee
+
+{% endraw %}

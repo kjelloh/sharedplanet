@@ -1,0 +1,6 @@
+﻿I just got a library card for Solna Stadsbibliotek and tried the library wifi.
+
+1) The “SolnaBibliotek” wifi does not require log-in and is not password protected?
+
+2) It provided quite poor performance (fake wifi?)
+

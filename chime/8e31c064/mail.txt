@@ -1,0 +1,84 @@
+﻿It seems I never documented the resources and the screen data when I purchased the OASYS resistive touch screen from Alibaba and mounted it into my OASYS 88?
+
+1) Consider this is the “4 Wire 10.4 Inch 228X175 Resistive Touch Screen Korg Oasys 76 88” URL to the OASYS 88 resistive touch screen on Alibaba (https://www.alibaba.com/product-detail/4-Wire-10-4-Inch-228X175_60773195346.html?spm=a2756.order-detail-ta-ta-b.0.0.399b2fc2FUNOk8 <https://www.alibaba.com/product-detail/4-Wire-10-4-Inch-228X175_60773195346.html?spm=a2756.order-detail-ta-ta-b.0.0.399b2fc2FUNOk8>)?
+
+	==> The Korg OASYS screen seem to be a 10,4 inch 4:3 format screen?
+
+	==> It seems to be specified as outside dimension 228 x 175 mm?
+
+SPECIFICATION
+ MECHANICAL
+ 
+Diagonal Size
+10.4 inch
+Outline Dimension
+228.0W x 175.0H mm
+Active Area
+/
+Wire Number
+4
+USB Controller Card
+Optional / Standard included
+Input Method
+Finger or gloved hand (rubber, cloth or leather)
+Touch Times
+More than 1 million touches
+Touch Activation Force
+20-80g
+Surface Durability
+Meet pencil hardness 3H (per ASTM D3363)
+PERFORMANCE
+Linearity Error
+<1.5%
+Response Speed
+<10ms
+OPTICAL
+ 
+Light Transmission
+80% (Meet ASTM D1003
+ENVIROMENTAL
+Temperature
+Operating Range: -10℃ ~60℃ 
+ 
+Storage Range: -10℃ ~60℃ 
+Relative Humidity
+Operating Range: 0%~90% RH (no dew falls)
+ 
+Storage Range: 0%~95% RH (no dew falls)
+Altitude
+Up to 3,000m
+ELECTRICAL
+Operation Voltage
+Typical + DC 5V
+Power Supply
+USB or RS232
+Interface
+Full Duplex USB 2.0(Full Speed) Plug and play compatible
+ 
+Serial RS-232
+Current
+5mA - 25mA
+Resistance
+300
+Agency Approvals
+CE, FCC, RoHS
+Operation System
+Linux / Dos / Windows ME 95 98 NT4.0 XP 2000 Win7 Win10/ MacOS
+
+2) Consider what I learned and documented on video about my OASYS 88 touch screen purchase and replacement?
+
+	Also see FCPX Event “180912 Alibaba Resistive touch screen order confusion “
+	Also see FCPX Event “180912 OASYS Disassembly Touch Screen observation”
+	Also see FCPX Event “180913 Confusing Alibaba and Nordea fund transfer”
+	Also see FCPX Event “180918 Alibaba Shipment of Touch screen”
+	Also see FCPX Event “180926 OASUS Touch Screen Unbox”
+	Also see FCPX Event “181011 OASYS Touch Screen fix (works but no glue)”
+	Also see FCPX Event “181018 OASYS Touch Screen * REPAIRED*"
+
+	==> It seems I measured the new screen dimensions to 227 x 176 mm (almost spot on to the specified 228 x 175 mm off the screen I bought from Alibaba)?
+
+	 
+
+	...
+
+

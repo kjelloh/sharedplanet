@@ -1,0 +1,52 @@
+# Todo: Consider if "Word Sallad" is a trustworthy indication of sloppy (wishful) thinking?
+
+```#b74a19d0``` *As of 2019-04-18 13:14*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I can’t stop wondering what it is we are picking up emotionally when we experience that someone seems to be speaking “word sallad”.
+
+==&gt; Also see “Todo: Consider to understand the arguments for Intelligent design vs Creationism and to what degree this model of reality somehow enables us to better interact with it?"
+
+1) Consider if detection of “Word Sallad” is an indication that the one speaking is not in contact with the true reality?
+
+==&gt; Consider this atheist youtube vlog “Jordan Peterson or Word Salad with Matt Dillahunty, James Boone, Eric Murphy and GMS” (<https://www.youtube.com/watch?v=Mzu5hV92NHo> )?
+
+==&gt; Also see “Todo: Consider to understand the arguments for Intelligent design vs Creationism and to what degree this model of reality somehow enables us to better interact with it?"
+
+> *It seems in this video the panel atheists self identifying as rationalists and anti-theist based on religion being just wishful thinking, should be careful with using detection of “word sallad” as any argument to reason with? But they happily goes along playing this game of trying to distinguish quotes by Jordan B Peterson and Deepak Chopra from the output of a random word sallad generator. It seems clear from watching this video that the joy they feel from mocking these thinkers based on how incomprehensible it is to them, they take as somehow meaning these thinkers are saying just rubbish?*
+
+> *I found this intriguing because to me, if someone does not make sense it could mean I have yet to understand what they are talking about. It seems rational to assume that if someone has made some new discovery or proposes a new model to understand reality, it will sound like word sallad in a non sense making way. So a mantra for a rationalist thinker should be that you are not allowed to dosmiss anything until you have been able to internalise and understand it. Because it is not until you have bult a replica of your own of the model of reality someone else is trying to convey, you are not in a position to say anything about its lilies to conform to reality?*
+
+> *Maybe what is going on here is reflecting how we look at language ability to represent model of reality? From my work as writing requirement specifications to be used as testable models of technical system behaviour, I have learned that there is always a gap needed to be filled in between words and the meaning of the words. That a word is simply a representation of parts of models of reality we have internalised. To use language to represent such models very close two things are required. Either the model we are describing is well know and already internalised by those listening - like “there is a cat on the sofa” - or you need to go deep into elaborating what the words in this specificities context are explicitly meaning - like for “the electron wave function collapses…".*
+
+==&gt; Consider that “Word Sallad” may be the result of confusing specifying what words mean with interpreting words as they assume they should be?
+
+> *When I heard the heated discussion between Jordan B Peterson and Sam Harris on the nature of Truth I got the impression that Petersson was trying to use Truth to refer to a process that repeats while Sam Harris kept coming back to the more standard notion of Truth being something that exists out there like facts. AS a writer of technical specification I have often found myself in the position of having to re-use existing words to mean something broader or something very narrow. In both cases using the context of what the specification is talking about to also come with requirements to have words mean something specific. Thus I was able to at least get the notion that this was what Petersson was doing. He was trying to re-use the word “True” in a way to allow “True” to express something more than just true-as-observed or true-at-this-moment.*
+
+> *Now, regardless of whether this was a good move or not, it seems we should at least try to see the gap between how words are used in any discourse and the model of our internalised reality we are discussing?*
+
+> *It seems symptomatic that rational anti-theist always disregards there is any gap between words and their meaning in that they often go to a dictionary to look up the meaning of a word and then uses that defined meaning as an argument to refute something their opponent are saying. But in this way they are in fact making a false assumption that words are this closely related to a specific meaning. When in fact one of the power of the human language is that it can be re-shaped to represent anything we can internalise as a model about reality and communicate it to others. But it requires that **both the one speaking and the one listening are both keen on homing in on the exact context and meaning of what is exchanged**!*
+
+2) Consider how “Word Sallad” detection is an emotional response and how this is an example of how we do, and must, apply also emotional truths when reasoning about reality?
+
+==&gt; Consider these rational atheists “care” for listening to those who makes sense (and not making sense feels like “word sallad”)?
+
+...
+
+3) Consider how Sam Harris bases his reasoning on “Well Being” and “Making Sense” as if they are fact instead of product of our “there ought to be“ algorithms?
+
+==&gt; Consider Sam Harris tries to find a model of reality applicable by humans to native through life that does NOT really on subjective truths?
+
+> *To me its seems plausible that we are, as any living organism, a there-ought-to-be producing algorithm in that we are always focused on detecting what reality is and from that figure out how we should act to make it into an there-ought-to-be state. But this proposition does not rime well with Sam Harris quest for a non-subjective model of reality. Not only dos Harris argue for a model of reality that is based on casue-and-effect models of space time matter and energy, it still tries to leverage subjective truth about reality in the form of “feeling well” and “making sense”. Both of the latter are truths produced by our there-ought-to-be machinery. Although we imagine whatever these there-ought-to-be producing algorithms are themselves encoded into reality and thus in practise could be computed by some non-living machine. Still, we have as of yet, any clue on how to do this. And should we try to design such an algorithm we would still be left with only one way of determining if what we created works, namely to test it against what a human would comply with.*
+
+4) Consider how we may use “word sallad” detection and response to argue that a model of human reality must be able to model how we care about things?
+
+==&gt; Consider we should actually aim for a balance where what we care about should also align with what is reasonable in a context where caring exists?
+
+> *The idea here is that we humans live an a reality where we care about stuff. We experience an urge to strive to create some states of reality and avoid creating other states. Now Sam Harris may call the compass to navigate tis reality for “the moral landscape”. Religious people may call this “the kingdom of God”. New Atheists may call this “become your true self”. What is common is that we are all there-ought-to-be driven creatures. And unless we outsource to an AI to decide what there-ought-to-be we have to internalise a model of human reality to which we can act-in-faith both individually and cooperatively to have the “best” there-ought-to-be emerge?*
+
+...
+
+{% endraw %}

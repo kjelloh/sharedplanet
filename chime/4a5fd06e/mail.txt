@@ -1,0 +1,132 @@
+﻿It seems it could be a learning endeavour to try put the GODOT game engine to see what it can do and what I can use it for?
+
+1) Consider this youtube video “This game engine will disrupt the industry... introducing the Godot Engine” that aimed my attention at the GODOT game engine (https://www.youtube.com/watch?v=IPCv6F-IgXU&t=300s <https://www.youtube.com/watch?v=IPCv6F-IgXU&t=300s> )?
+
+	==> Consider this comment that seems to list an open source tool chain for Linux game development?
+
+“so... Linux OS (PC system)+ Godot (game engine)+ blender(3d models, CGI effects and animations, also has built in game engine) + Krita ( or Inkscape/Gimp/etc for textures and graphics editing) + audacity/ardour/LMMS (sound editing)+ LibreOffice (text, notes, plans, spreadsheets) + open domain assets for study/sounds/images  = "completely free set of tools for complete games development" (not counting needed time nor hardware) to create games on Linux.
+
+am i missing anything here? probably, but the mainstay is there.﻿"
+
+
+	==> It seems to be available for Linux, Mac OS and Windows (https://godotengine.org/download/osx <https://godotengine.org/download/osx> )?
+
+	==> It seems to require OpenGL 2.1 (and thus will become incompatible on OS X that will only support Apples Metal framework going forward)?
+
+		==> Consider Apple as of macOS 10.14 the support for OpenGL is deprecated (https://developer.apple.com/macos/whats-new/ <https://developer.apple.com/macos/whats-new/> )?
+
+“Apps built using OpenGL and OpenCL will continue to run in macOS 10.14 (Mojave), but these legacy technologies are deprecated in macOS 10.14. Games and graphics-intensive apps that use OpenGL should now adopt Metal. Similarly, apps that use OpenCL for computational tasks should now adopt Metal and Metal Performance Shaders."
+
+	==> It seems macOS supports OpenGL 4.1 or 3.3 on older hardware (roughly pre 2010) (https://support.apple.com/en-us/HT202823 <https://support.apple.com/en-us/HT202823> )?
+
+“
+Mac Pro (Late 2013)
+Or newer...
+AMD FirePro D300
+AMD FirePro D500
+AMD FirePro D700	
+4.1
+1.2
+Mac Pro (Mid 2012)
+ATI Radeon HD 5770
+ATI Radeon HD 5870	
+4.1
+1.2
+Mac Pro (Mid 2010)
+ATI Radeon HD 5770
+ATI Radeon HD 5870	
+4.1
+1.2
+Mac Pro (Early 2009)
+Or older...
+NVIDIA Geforce GTX 285
+NVIDIA Geforce Quadro FX 4800
+NVIDIA GeForce GT 120
+ATI Radeon HD 4870	
+3.3
+1.0
+
+iMac (27-inch, Mid 2010)
+Or newer
+ATI Radeon HD 5670
+ATI Radeon HD 5750	
+4.1
+1.2
+iMac (21-inch, Mid 2010)
+Or older
+ATI Radeon HD 4670
+ATI Radeon HD 5670	
+3.3
+1.0
+
+MacBook Pro (15-inch, Late 2011)
+Or newer...
+ATI Radeon HD 6750M
+ATI Radeon HD 6770M	
+4.1
+1.2
+MacBook Pro (13-inch, Late 2011)
+Intel HD Graphics 3000
+3.3
+—
+MacBook Pro (17-inch, Early 2011)
+ATI Radeon HD 6750M
+4.1
+1.2
+MacBook Pro (15-inch, Early 2011)
+ATI Radeon HD 6490M
+ATI Radeon HD 6750M	
+4.1
+1.2
+MacBook Pro (13-inch, Early 2011)
+Or older...
+Intel HD Graphics 3000
+3.3
+—
+
+
+MacBook Air (Mid 2012)
+Or newer...
+Intel HD Graphics 4000
+4.1
+1.2
+MacBook Air (Mid 2011)
+Or older...
+Intel HD Graphics 3000
+3.3
+—
+
+
+Mac mini (Mid 2012)
+Or newer
+Intel HD 4000
+4.1
+1.2
+Mac mini (Mid 2011)
+Intel HD 3000
+3.3
+—
+Mac mini (Mid 2011)
+AMD Radeon HD 6630
+4.1
+1.2
+Mac mini (Early 2010)
+Or older
+NVIDIA GeForce 9400M
+3.3
+1.0
+
+
+"
+
+	…
+
+2) This seems to be where the GODOT game engine project lives (https://godotengine.org <https://godotengine.org/> )?
+
+3) Consider to research if and how Godot can run on Vulcan (OpenGL to Metal 2 facade drivers) on macOS?
+
+	TODO: Investigate the state of Vulcan on macOS and the Godot game engine support for Vulcan?
+
+
+
+...

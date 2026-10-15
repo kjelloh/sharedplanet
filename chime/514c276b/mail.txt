@@ -1,0 +1,21 @@
+﻿My largest FCPX library called "Backlog" has been "broken" for some time but I still could use it, but now FCPX needs to update it (new version) and that fails so I am stuck!
+
+0) Consider the two problems I seem to have with my FCPX libraries?
+
+Problem number one is that my "Backlog" is what FCPX calls "broken". And problem number two is that I have sporadic and a growing number of "missing media files" i all my libraries. 
+
+1) Consider this article "Relink clips to media files in Final Cut Pro for Mac" that seems to indicate FCPX has built in functionality to "relink" lost media (https://support.apple.com/en-gb/guide/final-cut-pro/ver26f5c8c9/mac <https://support.apple.com/en-gb/guide/final-cut-pro/ver26f5c8c9/mac> )?
+
+"When media files are missing: If you move or rename externally linked files in the Finder, or if you move an event or a project to a different location, you need to relink the event or project clips (which appear as red frames with yellow alert triangles) to the files"
+
+2) It seems when I try the "relink" command I get information telling me a "move" from backlog to "published" has failed?
+
+I tried to "relink" a missing media file in my "Published..." library and FCPX tells me it has lost the link to a file in the "Backlog" library named "something something _Async copy something". This makes me think that at some point the media file was involved in an asynchronous copy process? The operation that comes to mind is "Move to library" which seems to be asynchronous when viewed through the GUI! So maybe, I speculate, the move failed for some reason? And the file remained "unmoved"? If so, I can imagine this can work as long as the file is present in the other library? But them at some point, the file was either removed or renamed in the other library. And now the link is broken?
+
+... 
+
+3) Consider what can be "broken" with my "backup" library?
+
+
+
+... 

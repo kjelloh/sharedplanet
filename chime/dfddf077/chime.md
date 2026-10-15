@@ -1,0 +1,14 @@
+# Todo: Write about caotic systems creating complex organized behavior
+
+```#dfddf077``` *As of 2015-07-11 18:56*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Write about the best clue to how life could have sprung into existence as a self organizing behavior caused by a chaotic sled-coupled system.
+
+1) Find the Veteskapens Värld program that showed the ”animations” created by a camera that filmed its own image. First the picture was an infinite ”picture within picture”. Then at some threshold point it transformed into an animation looking somewhat like the ”life” game. is this emergent higher order of behavior that is the spark-of-life that through survival-of-the-fittiest harness ever fitter forms of life?
+
+This could be a starting point? http://www.sourceintegralis.org/Art%20Self-Org.html
+
+{% endraw %}

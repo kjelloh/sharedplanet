@@ -1,0 +1,46 @@
+# Todo: Programming - Consider to design Bang to create C++ digital "worlds" for "submodules" as project members or toll-chain members?
+
+```#af52615e``` *As of 2016-09-22 11:38*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, can we imagine Bang to be used to cope with C++ projects sharing libraries in the form of sub-modules as either project members (e.g., Git submodules) or as tool-chain members (e.g., C++ standard library or Boost library)?
+
+1) Consider the problem of sharing open source projects in proprietary C++ projects?
+
+==&gt; The shared open source may be a member of the C++ project (e.g., as a Git submodule)?
+
+==&gt; Or the shared open source may be a member of the tool chain (e.g., accessed through an "INCLUDE PATH” to a locally installed set of source files)?
+
+2) Consider that Bang may be used to inspect a particular C++ project and from that automatically create (download and install) the defendant open source as required?
+
+==&gt; Consider Bang may identify Git submodules and apply a more efficient way to download and install them to be used by the C++ project?
+
+==&gt; Consider Bang may identify known "INCLUDE PATH” content and download and install common libraries to be used by the tool chain (e.g. Boost Library)?
+
+==&gt; Consider other Bang options to ”equip” a C++ project with the defendant external source to enable it to build and link?
+
+3) Consider Bang to be able to generate a project customized pre-processor that is able to interpret existing #include statements and from that download and install required source for the project?
+
+==&gt; Consider the Bang pre-processor to turn #include into curl get from web URL:s and cache downloaded source files?
+
+…
+
+4) Consider to design some form of Product Composite Idiom that enables a C++ project to depend on sub-products of other source and binaries of specific versions?
+
+==&gt; Could we imagine a way for a C++ project to use a specific version of a sub-project (product)?
+
+==&gt; E.g., depend on Boost library but enable changing what version of Boost use in one simple setting?
+
+==&gt; Consider what it would take to enable a C++ project to be made up of a tree of components (sub-products), each being version controlled?
+
+==&gt; Consider to elaborate on how to apply the ”Excoconf” idiom (Composite Product version made up of sub-product versions)?  
+...
+
+…
+
+Consider to elaborate on this idea to enable C++ projects to be ”decorated” with additional required source code using the Bang ”digital world” creator idiom?  
+...
+
+{% endraw %}

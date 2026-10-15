@@ -1,0 +1,8 @@
+﻿Licensiera företag och citizens att deklarera sig själva
+
+Licens kräver 
+* måste publicera datum för licens (vilken licens)
+* måste publicera manifest 
+* måste deklarera information för att möjliggöra extern granskning/bedömning
+
+Skickat från min iPhone

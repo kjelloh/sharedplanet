@@ -1,0 +1,199 @@
+﻿It seems I should look into video representations to get a better understanding of how video is represented in different stages of usage?
+
+1) Consider how a vide frame is represented in size and encoding in different screen resolutions?
+
+	==> Consider good leads on this video size calculator (https://www.omnicalculator.com/other/video-frame-size#how-to-calculate-the-video-frame-size <https://www.omnicalculator.com/other/video-frame-size#how-to-calculate-the-video-frame-size> )?
+
+		==> It seems the frame size in bytes are simply Pixel Count x Pixel Colour bit depth?
+
+"The higher the color depth, the bigger the data size of every pixel. If you use 8-bit colors, each pixel has to store 8 bits of information (equivalent to 1 byte <https://www.omnicalculator.com/conversion/byte-converter>). 16-bit colors need 2 bytes of information per pixel, 24-bit need 3 bytes.
+Once you know the resolution and color depth, you can find the frame size according to the following equation:
+
+frame size = V * H * CD
+
+where
+
+V is the vertical resolution,
+H is the horizontal resolution, and
+CD is the color depth." 
+		==> And then uncompressed video is simply the frame size times the frame rate times the length of the video?
+
+"video size = frame size * fps * time
+where
+
+time is the duration of the video, and
+fps is the number of frames displayed per second. This number can range from 12 fps to even 60 fps; the most common value, however, is 24 frames per second."
+	
+
+2) consider how we may find good ways to enhance video encoding on an Apple OS X machine (e.g. my mac pro 2013)?
+
+	==> Consider Apple Compressor would support any hardware accelerator with Metal 2 support?
+
+		Hm... No actually it does not seem Metal 2 is strongly correlated with hardware (GPU) accelerated video encoding?
+
+	==> Consider this blog post "Optimize Apple Compressor for Greater Speed" (https://larryjordan.com/articles/optimize-apple-compressor-for-greater-speed/ <https://larryjordan.com/articles/optimize-apple-compressor-for-greater-speed/> )?
+
+		==> It seems mainly on OS X we can choose to compress through Apple Compressor or Adobe Media Encode?
+
+"I know of only two high-quality software tools specifically designed for media compression – Adobe Media Encoder and Apple Compressor – that run on a Mac."
+
+		==> It seems in 2019 Apple will remove transcoding ability for codecs implemented as 32 bit applications (https://larryjordan.com/blog/important-dont-lose-access-to-older-media/ <https://larryjordan.com/blog/important-dont-lose-access-to-older-media/> )
+
+"With the release of macOS Mojave (10.14), Apple is continuing its conversion to 64-bit applications that it first began many years ago. In the next major version of macOS after Mojave, this conversion will affect media which relies on older 32-bit codecs."
+
+	==> It seems FFMeg has issues for future applications (there are reasons to find more future proof compression applications on OS X)?
+
+"WHY THIS IS IMPORTANT
+Telestream Episode is no longer available.
+Sorensen Squeeze is no longer available.
+ffMPEG has significant legal/licensing issues."
+3) Consider good resources on how Macs interacts with an eGPU for video tasks?
+
+
+	==> It seems we should be able to use an eGPU with the Mac Pro 2013 by using Apples Thunderbolt 2 to Thunderbolt 3 cable and supported AMD Solaris graphics card external enclosure?
+
+		==> Consider (https://www.reddit.com/r/eGPU/comments/9mw57r/thunderbolt_2_to_thunderbolt_3_for_egpu/ <https://www.reddit.com/r/eGPU/comments/9mw57r/thunderbolt_2_to_thunderbolt_3_for_egpu/> )?
+
+"thunderbolt 2 should be just fine. you will need the official apple thunderbolt 3 to 2 adapter though: https://www.apple.com/ca/shop/product/MMEL2AM/A/thunderbolt-3-usb-c-to-thunderbolt-2-adapter <https://www.apple.com/ca/shop/product/MMEL2AM/A/thunderbolt-3-usb-c-to-thunderbolt-2-adapter>
+to figure out how to make it work: go to http://egpu.io/build-guides/ <http://egpu.io/build-guides/> and find a build that is similar to yours and see how they did it."
+
+		==> Consider (https://egpu.io/build-guides/ <https://egpu.io/build-guides/> )?
+
+	==> Consider this youtube video "The Best Mac... Apple Doesn't Make!" (https://www.youtube.com/watch?v=pNd5_kxpPc4 <https://www.youtube.com/watch?v=pNd5_kxpPc4> )?
+
+		==> He seems to use a Mac Pro 2013 with an external AMD RX 480?
+
+		==> he seems to conclude that Apple natively supports AMD Polaris architecture due to Macbook Pro late 2016 base model supporting (Mobile) ADM Radeon Pro 450 or 455 or a configured model with 460.
+
+		
+
+		==> This seems to be confirmed here at every mac for "Apple MacBook Pro "Core i7" 2.9 15" Touch/Late 2016 Specs" (https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.9-15-late-2016-retina-display-touch-bar-specs.html <https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.9-15-late-2016-retina-display-touch-bar-specs.html> )?
+
+
+		==> Her seems to utilise 60% of the RX 480 over Thunderbolt 2?
+
+		
+
+		
+		Mac Pro 2013 with Thunderbolt 2 AMD RX 480 eGPU in OpenGL jan 2017 (but note Apple has mid 2018 deprecated OpenGL in favour of Metal 2)
+
+		
+		Mac Pro 2013 with Thunderbolt 2 AMD RX 480 eGPU in 4K FCPX Export jan 2017 (note that mac pro Xeon E5 CPU does NOT have QuickLink hardware accelerated H.264 acceleration)
+
+		==> TODO: do this test with my D700 Mac Pro (should compare with loaded Mac Pro but with 6 core instead of loaded mac 12 core)?
+
+	
+
+"*This model [Apple MacBook Pro "Core i7" 2.9 15" Touch/Late 2016] has dual graphics processors. Depending on its base configuration, it is configured by default with either an AMD Radeon Pro 450 or 455 with 2 GB of dedicated GDDR5 SDRAM and an Intel HD Graphics 530 graphics processor that shares system memory. At the time of system purchase, this model also could be configured with an AMD Radeon Pro 460 at additional cost. The system automatically switches between graphics systems based on use (when applications use OpenGL, Core Graphics or other graphically demanding technologies, the system will use the dedicated AMD graphics, otherwise it will use the integrated Intel graphics to conserve battery life)."
+
+	==> Consider this youtube video "macOS Mojave eGPU Performance" (https://www.youtube.com/watch?v=SXtHl_LFuL8&t=30s <https://www.youtube.com/watch?v=SXtHl_LFuL8&t=30s> )
+
+		==> He seems to use a 2014 mac Mini with Thunderbolt 2 to an ADM radeon RX470 vide card in a Sonnet eGPU case?
+
+		
+		
+		
+
+		==> It seems the MSI Armor radeon Rx 470 is discontinued (https://www.amazon.com/gp/offer-listing/B01N3TCNNW/ref=dp_olp_0?ie=UTF8&condition=all <https://www.amazon.com/gp/offer-listing/B01N3TCNNW/ref=dp_olp_0?ie=UTF8&condition=all> )
+		
+	==> Consider the Sonnet line-up of external GPU enclosures with Thunderbolt 2 or 3 connection (https://www.sonnettech.com/product/thunderbolt/index.html <https://www.sonnettech.com/product/thunderbolt/index.html> )?
+
+		==> Consider if I can use the AMD Radeon RX 560 (Or RX 570) eGPU "Puck" (https://www.sonnettech.com/product/egfx-breakaway-puck.html <https://www.sonnettech.com/product/egfx-breakaway-puck.html> )
+
+	
+	Sonnet assures their eGFX Breakaway Puck Radeon RX 570 is macOS compatible
+
+	NOTE: Some say the Rx 560 Puck does not work with mcOS while others seems to show that it does?
+
+		RX 560 with macOS works feb 2019 https://www.youtube.com/watch?v=ENzsNZbUnoI <https://www.youtube.com/watch?v=ENzsNZbUnoI> ?
+
+	==> It seems Apple official lists what AMD eGPU cards they do support over thunderbolt 3 and RX 570 is but RX 560 is NOT (yet?) among them (https://support.apple.com/sv-se/HT208544 <https://support.apple.com/sv-se/HT208544> )?
+
+"eGPU stöds av alla Thunderbolt 3-utrustade Mac-datorer1 med macOS High Sierra 10.13.4 eller senare."
+
+	==> It seems Apple officially supports BlackMagic and Sonnet RX 570 Puck?
+
+"Thunderbolt 3 allt-i-ett eGPU-produkter
+
+Dessa produkter innehåller en kraftfull inbyggd GPU och ger tillräcklig effekt för att ladda din MacBook Pro.
+
+Rekommenderade Thunderbolt 3 allt-i-ett eGPU:er:
+
+	• Blackmagic eGPU och Blackmagic eGPU Pro4
+	• Sonnet Radeon RX 570 eGFX Breakaway Puck"
+
+	==> It seems Apple officially indicates support for a set of AMD cards based on the Polaris architecture?
+
+"AMD Radeon RX 470, RX 480, RX 570, RX 580 och Radeon Pro WX 7100
+
+Dessa grafikkort baseras på AMD Polaris-arkitekturen. Rekommenderade grafikkort inkluderar Sapphire Pulse-serien och AMD WX-serien.
+
+Rekommenderade Thunderbolt 3-chassier för dessa grafikkort:
+	• OWC Mercury Helios FX4
+	• PowerColor Devil Box
+	• Sapphire Gear Box
+	• Sonnet eGFX Breakaway Box 350W
+	• Sonnet eGFX Breakaway Box 550W4
+	• Sonnet eGFX Breakaway Box 650W4"
+
+	==> It seems Apple officially indicates support for AMD RX Vega 56 and 64?
+
+"AMD Radeon RX Vega 56
+Dessa grafikkort baseras på AMD Vega 56-arkitekturen. Rekommenderade grafikkort inkluderar Sapphire Vega 56 och XFX Vega 56.
+Rekommenderade Thunderbolt 3-chassier för dessa grafikkort:
+	• OWC Mercury Helios FX4
+	• PowerColor Devil Box
+	• Sonnet eGFX Breakaway Box 550W4
+	• Sonnet eGFX Breakaway Box 650W4
+
+AMD Radeon RX Vega 64, Vega Frontier Edition Air och Radeon Pro WX 9100
+Dessa grafikkort baseras på AMD Vega 64-arkitekturen. Rekommenderade grafikkort inkluderar Sapphire Vega 64, XFX Vega 64, AMD Frontier Edition air-cooled och AMD Radeon Pro WX 9100.
+Rekommenderade Thunderbolt 3-chassier för dessa grafikkort:
+	•  Sonnet eGFX Breakaway Box 650W4"
+
+	==> It seems Apple states that their usb-c thunderbolt 3 to thunderbolt 2 cable DOES allow connection between a Thunderbolt 2 mac with a thunderbolt 3 device (https://support.apple.com/en-us/HT207266 <https://support.apple.com/en-us/HT207266> )?
+
+"This adapter is bidirectional, which means you can use it to connect Thunderbolt 3 devices to a Mac that has a Thunderbolt or Thunderbolt 2 port. In that case, the Mac must be using macOS Sierra or later, and the device using Thunderbolt 3 (USB-C) must provide its own power."
+
+3) Consider how Apple Metal 2 supports hardware accelerated (GPU) video encoding?
+
+	==> Consider Apple developer page on Metal 2 (https://developer.apple.com/metal/ <https://developer.apple.com/metal/> )?
+
+	==> It seems Metal is for GPU rendering and NOT video compression?
+
+	Q: What Amd products are available to OS X for video compression?
+
+4) Consider Kush Amerasinghe "paper" from 209 "H.264 for the rest of us"?
+
+	==> It seems this is the Adobe home of "H.264 for the rest of us" but the link to the pdf is broken (https://www.adobe.com/devnet/adobe-media-server/articles/h264_primer.html <https://www.adobe.com/devnet/adobe-media-server/articles/h264_primer.html> )
+
+	==> Consider this link to ""H.264 for the rest of us"" file named "h264_primer.pdf" still works (H264 Web delivery compression - Edit  <https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjdi5LJlu3gAhVTxMQBHUT9BMUQFjAAegQICRAC&url=http%3A%2F%2Feditspecialists.com%2FDCTRAINING%2Fh264_primer.pdf&usg=AOvVaw2p6WjzoIMztlZMBxI7FhzZ>Specialistseditspecialists.com/DCTRAINING/h264_primer.pdf <http://specialistseditspecialists.com/DCTRAINING/h264_primer.pdf> )?
+
+	
+
+	==> Consider the "Kush Gauge Equation" for determining a somewhat subjective but good enough bit rate requirement for a wanted "quality" of a H.264 compressed video?
+
+"After numerous experiments, I noticed a certain pattern of what could be considered a “constant” or base
+value (for most commonly used video frame-size and frame-rate ranges). When rounded
+off, that value is 0.07 bps per pixel, per frame, per motion rank value.
+In other words, to estimate the optimal H.264 bit rate value that would give what is
+considered “good quality” results for a given video, you could multiply the target pixel
+count by the frame rate; then multiply the result by a factor of 1, 2 or 4, depending on its
+motion rank; and then multiply that result by 0.07 to get the bit rate in bps"
+
+"Practical example
+1280 Å~ 720 @24fps, medium motion (rank 2):
+1280 Å~ 720 Å~ 24 Å~ 2 Å~ 0.07 = 3,096,576 bps = ~ 3000 kbps
+If the motion is high (rank 4), it’s about 6000 kbps.
+On the other hand, if the same clip is still usable at 5fps, and the motion is low:
+1280 Å~ 720 Å~ 5 Å~ 1 Å~ 0.07 = 32,256 bps = ~ 320 kbps
+A reduction in frame size can dramatically reduce the bit-rate requirements:
+640 Å~ 360 Å~ 5 Å~ 1 Å~ 0.07 = 80,640 bps = ~ 80 kbps"
+
+		
+
+3) Consider good resources on video compression algorithms (codecs)?
+
+	==> Consider wikipedia on video codecs (https://en.wikipedia.org/wiki/Comparison_of_video_codecs <https://en.wikipedia.org/wiki/Comparison_of_video_codecs> )?
+
+	==> Consider Adobes paper on compression and H.264 (https://web.archive.org/web/20070317214348/http://www.adobe.com/products/dvcoll/pdfs/compprimer_0306.pdf <https://web.archive.org/web/20070317214348/http://www.adobe.com/products/dvcoll/pdfs/compprimer_0306.pdf> )?

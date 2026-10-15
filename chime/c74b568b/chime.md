@@ -1,0 +1,106 @@
+# Todo: Dollow up on Deep Learning lecture at KTH 5 October 2015
+
+```#c74b568b``` *As of 2015-10-05 15:27*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Visited the lecture “Deep Learning and Data Science" (<https://www.kth.se/aktuellt/kalender/forelasningar-seminarier/deep-learning-and-data-science-1.594136?date=2015-10-05&orgdate=2015-10-05&length=1&orglength=0>) “ In Deep learning classical programming is replaced by the empirical collection of labeled examples of data used to train generic computational structures”. Tid: Må 2015-10-05 kl 10.15. Plats: Q1, Qsquldas väg 6.
+
+1) The lecture was held by Stefan Carlsson from Computer Science Group (<https://www.kth.se/profile/stefanc/>)
+
+2) Own note: Consider to elaborate on that “Deep” here kind of resembles the usage in the term “Deep Freedom” by Unger. “Deep Learning” according to Carlsson carries the implication that the network learns both data representation and classifiers in that the network in itself is generic and only raw data is feed into it.
+
+3) Many services on the web uses deep learning in their algorithms (e.g. Google, Netflix, Facebook, Chinese search engine Baidu).
+
+4) Own node: Consider to try out the Chinese search engine Baidu? Or maybe not (<http://www.baidu.com>), it is only in Chinese! There is an english add on but that is not part of Baidu (<http://www.baiduinenglish.com>)
+
+5) Search is based on labelling data and function so that label = f(data).
+
+6) Own note: Consider to relate this to the model of “truth-webs” of the brain?
+
+7) Training is always made on a training set.
+
+8) Deep Learning learns Representation and the Classifiers together (The actual network is not architected in any special way according to any pre-conceptions about what is to be classified).
+
+9) Deep Learning applies “Convolutional Networks”
+
+==&gt; CNN means Convolutional Neural Network (<http://deeplearning.net/tutorial/lenet.html>)
+
+==&gt; The wikipedia on CNN seems to use images that resembles images on the slides used by Carlsson (<https://en.wikipedia.org/wiki/Convolutional_neural_network>). Has he been editing the Wiki-page?
+
+==&gt; CNN is also called ConvNet (See wikipedia above)
+
+10) The Convolutional Networks are layered (<http://cs231n.github.io/assets/nn1/neural_net2.jpeg>).
+
+![](images.jpeg)
+
+11) The Networks are basically Neural Networks developed in late 90’s.
+
+12) Example: 1.2 Miljon Images ==&gt; Multi-layered CNN with 60 million parameters ==&gt; 1000 classifier outputs
+
+13) Carlsson states that one would expect optimisation to find only local minima. It seems this is also what happens but for some reason these optima are still very good. It works!
+
+14) Own note: How can we apply Deep Learning to recognise and implement computer protocols?
+
+==&gt; Consider to delve into this idea?
+
+==&gt; Could we then classify messages into different request and response messages?
+
+==&gt; If so, how do we sub-class messages into fields and “learn” the framework of messages (encoding) and field contents (cargo representation)?
+
+15) Carlson asks: Why does Deep Learning Work? And Answers - We Don’t Know!
+
+16) Seems with Deep Learning we just move the problem of understanding how to "recognise images” to “understand the network”. In that sense we end up with the same problem of understanding how our brains recognises images.
+
+17) He talks about ConvNet. Is this an existing available network with research?
+
+==&gt; No, ConvNet is another name for CNN (Convolutional Neural Network) (<https://en.wikipedia.org/wiki/Convolutional_neural_network>), “… In machine learning, a convolutional neural network (CNN, or ConvNet) is a type of feed-forward artificial neural network ..."
+
+18) Mobileye is the worlds most successful company to apply image recognition (<http://mobileye.com/en-en/>). They existed before Deep Learning and has now applied it.
+
+==&gt; They seem to develop road assistants for cars (<http://mobileye.com/en-en/technology/>)?
+
+19) AlchemyAPI has been bought by IBM to make Watson better at Deep Learning (<https://www-03.ibm.com/press/us/en/pressrelease/46205.wss>)
+
+==&gt; AlchemyAPI seems to be services for language recognition (<http://www.alchemyapi.com/?cm_mc_uid=93855384367514331600061&cm_mc_sid_50200000=1444049635>)?
+
+==&gt; Clatifying image (<http://www.alchemyapi.com/sites/default/files/bhag2.png>)?
+
+![](bhag2.png)
+
+==&gt; IBM Cognitive Computing (<http://www.research.ibm.com/cognitive-computing/index.shtml#fbid=pbACTTp2_Qm>)
+
+20) Carlsson predicts, In the future a doctor may be replaced by a trained Deep Learning network. A large part of the profession of a doctor is to find patterns in the symptoms of the patient. A CNN will be more capable of recognising different types of data like DNA-information, symptoms, part health history and so on.
+
+21) Own Note: Consider to follow up on CNN applied as Physician.
+
+22) Assisting speaker Hossein Azizpour (<http://www.csc.kth.se/~azizpour/>) stated four major code libraries to develop CNNs.
+
+==&gt; The CUDA ConvNet seems to be a C++ library to build CNNs (<https://code.google.com/p/cuda-convnet/> and <https://code.google.com/p/cuda-convnet2/>)?
+
+==&gt; Caffe (<http://caffe.berkeleyvision.org>) is developed by BERKELEY VISION AND LEARNING CENTER. It seems to be based on CUDA?
+
+==&gt; It has its own project on GitHub (<https://github.com/BVLC/caffe>)
+
+23) Asked a question about CNN learning from moving images. Basically they then use feed-back from layers back to the input to create “memory” of previous data results.
+
+==&gt; One uses Recurring Neural Networks, RNN (<https://en.wikipedia.org/wiki/Recurrent_neural_network>), “A recurrent neural network (RNN) is a class of artificial neural networkwhere connections between units form a directed cycle. This creates an internal state of the network which allows it to exhibit dynamic temporal behavior”.
+
+==&gt; Another algorithm is Long short-term memory (LSTM) (<https://en.wikipedia.org/wiki/Long_short-term_memory>) - “Unlike traditional RNNs, an LSTM network is well-suited to learn from experience to classify, process and predict time series when there are very long time lags of unknown size between important events”.
+
+23) Talked to Hossein Azizpour (<http://www.csc.kth.se/~azizpour/>) after the lecture and got som interesting information and leads to follow up. Had an interesting talk about if these networks can be able to model “experience”, “Understanding” and even “Consciousness”.
+
+24: Own note: Is seems to me that human ability to “understand” is part of our way of self-learning? We may argue that when we understand something we are able to apply that understanding as inout to more learning. We learn new patterns about information and are able to apply these patterns to further learning?
+
+Follow ups:
+
+a) Found a page about cvv (<http://libccv.org/doc/doc-convnet/>) that seem to provide software and good links?
+
+b) ImageNet seem to be a publicly available database of classified images (<http://www.image-net.org/index>)?
+
+c) This seems to be a good page of information (<http://cs231n.github.io/convolutional-networks/>)?
+
+d)
+
+{% endraw %}

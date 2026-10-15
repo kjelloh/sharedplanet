@@ -1,0 +1,22 @@
+﻿Given the humidity in Sweden all year around I may be able to extract the water I need directly from the air (especially if I don't waste it once I got it)?
+
+	==> Also see "Todo: Consider to store solar energy in the summer in the form of compressed hydrogen gas?"
+	==> Also see "Todo: Consider if I use Hydrogen Fuel Cells I can actually use the resulting water for drinking and other household applications?"
+
+1) Consider wikipedia on Atmospheric Water Generator (https://en.wikipedia.org/wiki/Atmospheric_water_generator <https://en.wikipedia.org/wiki/Atmospheric_water_generator> )
+
+"An atmospheric water generator (AWG) is a device that extracts water from humid ambient air. Water vapor in the air can be extracted by condensation - cooling the air below its dew point, exposing the air to desiccants, or pressurizing the air."
+
+2) Consider to generate (refresh) the water supply during summer using excess solar energy?
+
+The idea here is that with some interval I may need to refresh the water I have circulating in my "earth ship" house? Just as a precaution? And at least if I have excess energy in the summer months from solar I can use that excess to refresh the water supply so I last through the winter?
+
+3) Consider how I can add minerals to distilled water (and rain water) to make it taste good?
+
+	TODO: Try to get through all the "distilled water religion" on the web and actually find a reliable source of what to add to the water to get it to taste like sporing water (add minerals, change pH or more)?
+
+	...
+
+
+
+...

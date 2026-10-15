@@ -1,0 +1,20 @@
+# Todo: Consider to write the Emdividualistic Guide to Life
+
+```#46eb6b9d``` *As of 2015-12-09 18:20*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Maybe it is better to go all-in with Emdividualism and simply propose a philosophy of How instead of arguing Why?
+
+1) Propose ways of living instead of argument on why?  
+2) Begin with proposed practices based on drawn conclusions.  
+3) Put the arguments in an appendix for discussions .  
+4) Go for Kajsas advice - Make the book short and small to fit in a picket (easy to carry around)  
+...
+
+Consider this approach to get "the word out"?
+
+Skickat från min iPhone
+
+{% endraw %}

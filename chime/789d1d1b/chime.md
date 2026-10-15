@@ -1,0 +1,69 @@
+# Todo: Consider what I learned for enhancing Cratchit from completing book keeping for Q3 2022?
+
+```#789d1d1b``` *As of 2022-11-13 23:26*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to make Cratchit help me do my book keeping much easier, more correct and much faster.
+
+1) Consider the errors I keep doing when I use Fortnox Web-based book keeping software?
+
+- I keep booking on the wrong date.
+- I keep booking on the wrong series.
+- I keep mixing up debit and credit on VAT accounts (Debt accounts)
+- I keep forgetting how to book EU-VAT
+- I often want to replace a recorded journal entry with a correct one (correct series, correct signs, correct accounts)
+- I often manually search for an E-entry (order / invoice) to know how to register a D-series counterpart (payment)
+- I have a hard time finding errors when 1920 does not match Bank Account statements on the date
+- I have often forgot if a payment must cancel out a booked vendor debt (I can't see from money being drawn from the bank account has been booked as an invoice / order debt)
+- In Fortnox the date changes somewhat randomly after I have entered it if I change series (and perhaps other controls) - it is PAIN!
+
+2) Consider the work arounds I do in Fortnox to fix my errors or ensure I register everything correctly?
+
+- I have to remember to update current years in-balance if I make corrections to last year book keeping (I have to generate a balance report)
+- I often generate a main book report to see how I booked previous transactions on accounts
+- I often go back to a previous entry to copy data
+- I often go back to a previous entry to edit it
+- I often list entries by date to search for an E-series (order / invoice) entry to be able to copy Fnr or order number for the D-series payment entry.
+- I manually check 1920 against bank accoutn statements by reading the main ledger report (1920 transactions sorted on date)
+
+3) Consider the tasks I end up doing to complete my book keeping
+
+- I spend a lot of time printing and searching for good vouchers on mail for my orders and purchases (it is a PAIN!)
+- I use the bank statements as verification entries for 1920 transactions (usually A-series for receipts and E-series for payments to orders / invoices)
+- I mark on the bank account statement the E- and D-series entry that corresponds to the transaction
+- I search for errors an 1920 account by comparing with the bank statement report (See problems with receipt date not matching account trans date)
+
+4) Consider what I imagine could help if Cratchit behaved in a good way?
+
+- I imagine cratchit should fixate Date Amount and heading before doing anything else (it is PAIN to have Fortnox pulling the rug out under my feet when changing series etc. and have entered data changed or blanked out)
+- If cratchit could search my mailbox for invoices I would be very glad indeed!
+- It seems transtext on 2440 (leverantörsskulder) should be the order ID or invoice Id (possibly with some text to find "mottagare" on the bank statement)?
+- I imagine transtext on inventory accounts 1226, 1227 the name of the inventory makes for automation of the end-of-books (avskrivning och nedskrivning)?
+  - Anything with amount &lt; SKV Limit can be written off directly
+  - Anything above SKV-limit can be written off each year for 5 years?
+
+- i imagine it would be nice to get help to book on 1226 (Labb verktyg) and 1227 (Labb lager) separate posts for each think on the same journal entry (purchase / order)?
+- I imagine I want to create journal entries in an "open" mode so I can edit, rearrange and check them before committing them to fixed series and sequence number?
+- I imagine I want a function to replace one entry with another one (transform it to another series)?
+- I imagine I want to take a journal entry and from that create its following "conclusion" (like an order / invoiced transaction and from this crate the actual payment. e.g., series D -&gt; series E)?
+- I imagine If I at least could search for an amount or Fnr or order number to find an E-series entry from which to create a D-series payment I could get by better?
+- I imagine listing journal entries WITH the gross amount is good for tracing what is going on (and find information while doing the book keeping)?
+- I imagine I want to be able to "slap on" EU VAT to a journal entry?
+- I imagine I want to check bank / skv statements against 1920, 1930 and SKV account (1630 Avräkning för skatter och avgifter (skattekonto))
+- I Imagine I want to created I-series entries (end of year) from inventories 1221 Inventarier?
+- I Imagine I want to create I-series entries (end of year) from Labb 1226 Elektroniklabb - Verktyg och maskiner?
+- I imagine I want to create I-series entries (end of year) from 1227 Elektroniklabb - Lager?
+- I imagine I want cratchit to help me check for 1920 errors by de-confuse the receipt date vs actual account transaction date (it takes a day or two before the money is actually drawn)
+- I want cratchit to always keep in sync with changes regardless on what year the changes are made to (Fortnox does not update next year in-balance if I change previous year)
+- I imagine being able to list and pick a transaction on 2440 (provider debt) to pick the counter account for any 1920 trasnaction?
+
+5) Consider the questions I still have on how to best do the book keeping?
+
+- How should I make the dates match for an order, followed by an invoice, followed by a PayPal or card transaction followed by when the transaction actually shows up on the account statements?
+-
+
+...
+
+{% endraw %}

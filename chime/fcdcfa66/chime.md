@@ -1,0 +1,31 @@
+# Todo: Consider to delve into the thoughts of Jonathan Haidt
+
+```#fcdcfa66``` *As of 2016-12-23 16:59*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider his TED talk on how to step outside ones ”Moral Matrix” (https://www.ted.com/talks/jonathan_haidt_on_the_moral_mind)?
+
+2) Consider this TED interview where he lay out the new threat of ”Disgust polarisation” of human societies (https://www.ted.com/talks/jonathan_haidt_can_a_divided_america_heal)?
+
+==&gt; It seems he identifies that the new battle for human societies are about the failure to unite Liberalism with Conservatism (https://www.ted.com/talks/jonathan_haidt_can_a_divided_america_heal)?
+
+3) Consider to use Jonathan Haidt philosophy to argue that we need a Political movement trying to unite Mp, Fi and SD?
+
+==&gt; It would seem he actually argues what we need to do is unite the ”truth webs” (moral matrixes) that re today divided by Disgust?  
+==&gt; This seem to strengthen the arguments that a political movement trying to unite Mp, Fi and SD is actually the right thing to go for?  
+…
+
+4) Consider to find correlations between my own ideas on ”Truth Webs”, Emdividuality, Syntheocracy etc. with his ideas?
+
+==&gt; His ”Moral Matrixes” seems to corelate quite well with my own ”Truth Webs” or ”Rafts of Truth on the sea of the unknown”?  
+==&gt; His idea to ”Step outside our Moral Matrix” seem to correlate quite well with the idea of letting go of Absolute Truth and go for the ”Truth that works”?  
+...
+
+…
+
+Consider to delve into Jonathan Haidt thinking about how to, and the importance of, stepping out of our Moral Matrixes, and use that as a base to initiate the ”Onward” political movement with the goal to unite the Conservative and Liberal ”truths”?  
+...
+
+{% endraw %}

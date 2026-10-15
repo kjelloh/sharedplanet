@@ -1,0 +1,20 @@
+﻿Could it be a good idea to try out the Cloud9 service where one gets an online programming environment providing simultaneous editing and build of source files?
+
+1) Cloud9 Seems to live here (https://c9.io)?
+
+2) Consider to create a free account and try it out for a C++ hacking meeting?
+
+	==> it seems the service allows simultaneous editing by several users of the same source file at the same time?
+	==> Could this be a good platform to perform a C++ meetup hackaton?
+	…
+
+3) Just when I made this Todo: I stumbled cross Jens Weller posting about the same idea (http://meetingcpp.com/index.php/br/items/collaborative-online-c-compiler.html <http://meetingcpp.com/index.php/br/items/collaborative-online-c-compiler.html>)?
+
+	==> This is in ”the air” it seems :)
+	==> Consider to make a C++ meetup to try them out?
+	...
+
+…
+
+Consider to check out this service to see if it may be used for realt-time collaborative programming in C++?
+...

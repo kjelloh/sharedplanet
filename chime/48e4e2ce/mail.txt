@@ -1,0 +1,55 @@
+﻿Could it be that the cheapest way to get hold of glass frames (for e.g., 3D printer enclosure and teleprompter design) is to buy photo frames with glass?
+
+1) Consider IKEA glass foto frames?
+
+	==> NO! It seems none of their photo frames uses glass (they use styrene plastic)?
+
+	==> And it seems they use hardened glass where they use glass (e.g. in doors and shelfs)?
+
+	==> It seems hardened glass can’t be cut (it is moulded with built in tension to get the tightened strength)?
+
+	...
+
+2) Consider Glasgiganten in Spånga (https://www.glasgiganten.se/content/4-Om-GlasGiganten <https://www.glasgiganten.se/content/4-Om-GlasGiganten>)?
+
+	180923 Ordered 2x 280 x 310 and 1x 380 x 310 as an experiment and proof-of-concept :)
+
+3) Consider required glass dimensions for an enclosure of my Cetus 3D printer?
+
+	==> It seems the actual build plate is 185 x 185 mm?
+
+	==> But it moves forth and back (X) to require a space of 380 mm ?
+
+	==> The head moves left to right (Y) 280 mm (including the perturbing stepper motor and fan)?
+
+	==> The head moves up (Z) to at least 310 mm (but more room is required for cables)?
+
+	==> So - The bottom plate of the enclosure seems to need to be inside free {x: 380, y: 280}
+
+4) It seems we should make the enclosure from metal sheet bottom and glass enclosure?
+
+	==> It seems we actually would require glass enclosure only from front and right side (minimum)?
+
+	==> Thus we at minimum need glass sheets of 380 x 310 mm (Right side) and 280 x 310 (front side)
+
+	Q: How can we design the enclosure top (to accommodate the wiring and feeding of filament)?
+
+5) Consider to design a glass enclosure for my Cetus 3D in Fusion 360?
+
+	...
+
+6) Consider to design a simple teleprompter from plastic photo frame and black cloth?
+
+	==> It seems I need at least a frame of 100 x 100 mm to cover the lease of my EOS 60D?
+
+	==> It seems I need at least a frame of size 160 x 100 to fit the image of my CAT S60 phone display?
+
+	==> But as the frame will tilt at 45 degrees I need a frame of at least 160 x 141 mm (square root of 2 is 1,41)
+
+	==> So a suitable frame would be say + 10 mm on each size for fitting = 180 x 160 mm?
+
+	==> Consider a frame > 180 x 160 mm?
+
+...
+
+ 

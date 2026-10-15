@@ -1,0 +1,28 @@
+# Todo: House Build - Consider the physical strength information by vendor Joma on their house construction metal brackets and pole feet?
+
+```#ecde4c60``` *As of 2019-10-02 12:56*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I need data on the physical strength of metal brackets and stud feet to correctly design a structurally sound house.
+
+1) Consider the Joma pdf "BERÄKNINGSHANDBOK. ANVISNINGAR FÖR BYGGBESLAG ENLIGT EUROKOD 5 VER. 3" with technical data on their metal house construction products (<https://joma.se/file/handbok-version-3.pdf> )?
+
+==&gt; Consider page 319 about stilt feet type A (Stolpsko typ A)?
+
+> ![](PastedGraphic-1.png)
+
+> "*Dimensionerande bärförmåga för stolpsko typ A anges i tabell 2. Värdena i tabell 2 gäller vid lastvarighetsklass M (kmod = 0,8). I tabell 3 anges vilken faktor dimensionerande bärförmåga skall multipliceras med när lastvarighetsklassen avviker ifrån M.*
+
+> *Tabellernas värden gäller vid klimatklass 1 och 2. Vid klimatklass 3 skall värdena för kraft- riktning F2 multipliceras med faktorn 0,80. Värdena för kraftriktning F1 och F3 gäller oberoende av lastvarighetsklass och klimatklass.*"
+
+> ![](PastedGraphic-2.png)
+
+==&gt; It seems the units in Joma document is in KN so the vertical force 25 KN corresponds to a weight of 2,5 tons?
+
+> *Now the house I imagine to build will amount to about 800 kg / m2 times 70 m2 = 56 tons. Say we should allow for 100 tons to allow for all the stuff that goes into the hous in the form of furniture, a grand piano as well as room for ageing. So a house on four "stilts" must be able to take **25 tons each**.*
+
+...
+
+{% endraw %}

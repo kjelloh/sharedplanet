@@ -1,0 +1,16 @@
+# Todo: Speculate in that the reason capitalism is such a success is because money is the only thing we do all believe
+
+```#b8ab8fcb``` *As of 2015-09-03 12:35*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It is interesting to propose that money is in fact the only thing all humans can believe in. And still money is a fictions object that works only based on faith. In that sense money is as fictions as God. God also only ”works”, provides you benefits and values, among those who believe.
+
+1) So, is this why liberal capitalism seems to ”win” over socialist ideas globally?  
+2) This may also explain why we treat and relate with ”the market” in the same way we relate to a God? If we please the market (God) then the market (God) will provide for our needs?  
+3) So, i fact the socialist idea is not per se inferior to liberalism. Its just that socialism has not found this fictions story that makes socialism work. If socialism had as powerful idea as money, then a socialist society could also work?  
+4) Further, if we want a society where we minimize hurt and maximize rich lives, then what we need is thus idea of the same caliber as money, that makes this better society emerge?  
+...
+
+{% endraw %}

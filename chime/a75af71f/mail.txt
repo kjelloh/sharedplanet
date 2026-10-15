@@ -1,0 +1,38 @@
+﻿So, what 2D graphical frameworks exists and what do I have to do to use them cross platform for application nations with GUI frontends?
+
+	==> Also see “Todo: Programming - Consider to study the C++ standard proposal for a 2D graphics standard front-end library?"
+	==> Also see “Todo: C++ Teaching - Consider to enable tutorials to select a UI that is either Textual (Console-ial), 2D Graphical or 3D-graphical through some rudimentary Open Source library developed for that purpose?”
+	…
+
+1) Consider to look into the Cairo C 2D graphics library (https://www.cairographics.org <https://www.cairographics.org/>)?
+
+	==> Consider to try and get some example code to run on OS X, Linux MATE and Windows?
+	==> Consider to use the Cairo library with some OpenGL backend (https://www.cairographics.org/OpenGL/ <https://www.cairographics.org/OpenGL/>)?
+	...
+
+2) The OpenGL initiative seems to live here (https://www.khronos.org/opengl/wiki/Getting_Started <https://www.khronos.org/opengl/wiki/Getting_Started>)?
+
+	==> It seems Khronos is the organisation behind OpenGL as well as other open standards for graphics (https://www.khronos.org/about/ <https://www.khronos.org/about/>)?
+
+“ Today, Khronos is a not for profit, member-funded consortium dedicated to the creation of royalty-free open standards for 3D graphics, Virtual and Augmented Reality, Parallel Computing, Neural Networks, and Vision Processing on a wide variety of platforms and devices from the desktop to embedded and safety critical devices."
+
+“Khronos Standards are key technologies in their respective markets, such as Vulkan and OpenGL in graphics and gaming, WebGL in 3D web graphics, and OpenVX and OpenCL in embedded vision and compute and NNEF in Machine Learning."
+
+	…
+
+3) Consider ways to use an Electron (Javascript in web-browser) based user interface?
+
+	==> Consider we can build the C++ backend to be a Single Atom Architecture using TCP/IP (or other OS-supported interprocess mechanism) to call the GUI to view the updated model (model-update-view architecture)?
+	...
+
+4) Consider ways to actually use native OS windows interfaces (e.g., Windows, OS X and Linux)?
+
+	==> Consider the Qt (or copperspice) C++ GUI frameworks is the way to go?
+	...
+
+THIS IS A LITTLE OVERWHELMING! Consider to keep breaking this complex beast down until a tussle that works will emerge?
+
+…
+
+Consider to continue to try out different 2D (preferable OpenGL based) C++ libraries to see what works and what we would like to use for a cross platform 2D UI C++ application?
+...

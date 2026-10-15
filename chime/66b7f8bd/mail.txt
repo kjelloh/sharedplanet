@@ -1,0 +1,67 @@
+﻿So, what C++ related topics may I consider to give as a talk at the first C++ User Group Event 28 September?
+
+1) Consider ”Why C++ Strings Sucks and how to Fix Them”?
+
+	==> A C++ String is an array of character, right? - Wrong!.
+	==> s= ”Välkommen”; means s[1] == ’ä’; Right? - Wrong!
+	==> String ”Välkommen” is well defined and understood in flight, right? - Wrong!
+	==> IRL Text + Character Set Encoding ==> Array of Code Points.
+	==> All Code Points are of the same size, right? - Wrong!
+	==> Character Set Hell for non English Texts
+	==> Not even ASCII is ”safe” (The 7-bit Swedish encoding Card Payment issues)
+	==> Even EBCDIC is still alive
+	==> Code Point Adaptor Iterator to rescue?
+		==> No, An adaptor Iterator is not a true Iterator for the same reason the Bitfield Iterator is not.
+	==> Nieblers Range Adaptors to the rescue?
+		==> Todo: Try it out to state an opinion?
+	==> Widestring to the rescue, right? - Wrong.
+	==> We need a true Code Point Array Text class? - Maybe
+		==> Implement using raw Code Points (memory inefficient)
+		==> Implement as Range Adaptor (run-time inefficient)?
+		==> Implement as compile-time Code-Point-Aware template class?
+			==> Enable compile-time encoding optimization (char array for englioeh text, wide char array for western languages and full Unicode Code Point for Chinese Text)?
+			==> But not even C++ String Literals are Encode Specified at compile-time (depend on source file encoding)?
+			==> Todo: Test ”Välkommen” in Linux Source File?
+			==> -”- in Windows ASCII Source File (non UTF-8 source file)?
+	==> Three levels of Text Classes (client encode awareness, object encode awareness, object text awareness)?
+		==> Most existing String classes requires client-encode-awareness?
+		==> Encode-aware-string objects allows text sameness API between objects using same encoding.
+		==> Text-aware objects allows text sameness APIs regardless of encoding?
+	==> Compile-time encode awareness
+		==> Encode aware versus Encode unaware C++ string literals
+	==> Run-time Encode Awareness Failures
+		==> Mail with faces or question marks - Why
+		==> Text Files with question marks - why?
+		...
+	==> Run-time encode awareness
+		==> BOM encoding of text files
+		==> Windows API Unicode UTF-16 implicit requirement.
+		==> Web APIs Encoding-definition-element (MIME-style)
+			==> ASCII-endcoded header defines encoding followed by encode-specific body.
+		==> Card Payment ISO-8583 text encode freedom heaven and hell.
+	==> Adding run-time encoding markers using non intrusive data?
+		==> White-space encoding of Code Point Set and encoding?
+	==> Open Source Initiative?
+		==> Contribute!
+	==> Thanks!
+
+2) Consider ”The Meaning of Life of C++ objects”?
+
+	==> Consider the meaning of constructor and destructor?
+	==> Consider the meaning of original and copy (which instance is the live one)?
+	==> Consider the meaning of a moved-from object?
+	==> Consider what it means to be copy-constructible (clone-able)?
+	==> Consider what it means to be assignable (who am I after assignment)?
+	==> Consider the meaning of life and the RAII (What do I take with me into the grave)?
+	==> Consider the difference between ”dead" and ”living” (entity) objects?
+	==> Consider state-full objects versus pure functions (no state nor history)
+	…
+…
+
+Consider to add proposals for a 15 minute talk at the first C++ User Group Meeting?
+...
+
+
+
+
+

@@ -1,0 +1,33 @@
+﻿How can we imagine a user can interact with ones Darwinet Domain from public computers like those at internet cafes, libraries, government facitilities?
+
+1) Consider to design a solution for me printing documents from a library computer?
+
+	==> I'd like to have my files in a my "Darwinet Desktop” (apply Filesystem idiom)?
+	==> I’d like to be able to interact with this “Desktop” from the library computer.
+	==> Consider to enable access through a Web Browser?
+		==> It seems we then would have top host a Darwinet Node on a web server?
+		==> And it must be hosted so that the server is not blocked by the Library Network?
+	==> Ee can’t expect to be able to use any special client applications other than the “standard” ones (Web-browser, pdf-reader, Microsoft Word?, Google Docs)?
+ 
+2) Consider to compare this Darwinet Desktop with Google Docs and other similar services that does more or less the same stuff?
+
+	==> How can we make Darwinet Desktop “Better” that Google Docs?
+	==> How can we make Darwinet better that DropBox?
+	==> How can we make Darwinet better that SkyDrive?
+	…more…?
+
+3) What “Web-apps” can we imagine a Web Datrwinet Node must provide?
+
+	==> How can we provide document editing (word, text, other)?
+	==> How can we provide social network service integration?
+		==> Facebook integration?
+		==> Twitter integration?
+		==> Instagram integration?
+		...
+		
+		==> Generally, how can integrate with any web-based REST interface existing or future?
+		... 
+…
+
+Consider to delve into this aspect of darwinte public access from computers with only “standard” local services?
+...

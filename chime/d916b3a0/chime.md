@@ -1,0 +1,19 @@
+# Todo: Write how much money each swede must provide to eradicate poverty
+
+```#d916b3a0``` *As of 2015-08-05 23:17*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Elaborate with figures that shows how seden may eradicate poverty.
+
+1) How much money to raise the living standard of all that live under one dollar a day to the double for one year.  
+2) How much money to eradicate poverty in a country (select a large one with many poor)  
+3) How much money to help all romans to a decent life.  
+4) How much money to provide loans to enable poor to grow and pay back.  
+5) How much money to provide also good care of our elder.  
+… and so on.
+
+Play on the pride we would feel to do that. Play with what we would need to give up and if it would be worth it? Play on how must more secure we would become here in Sweden.
+
+{% endraw %}

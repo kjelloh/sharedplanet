@@ -1,0 +1,17 @@
+# Todo: Consider if "facts" (i.e. consistent and agreed upon observations) are like "non newtonian fluids" in that they seem firm when "smacked" but give way when pushed over time?
+
+```#2235ca60``` *As of 2020-02-20 15:42*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I have a growing interest in what truth "is" in a reality where we can ground nothing.
+
+> *So the idea here is to poke at "facts" from the perspective of applying an isomorphism to non newtonian fluids (*  
+> [*https://en.wikipedia.org/wiki/Non-Newtonian_fluid](https://en.wikipedia.org/wiki/Non-Newtonian_fluid) ). Such a fluid can stiffen up (become more solid) when under force (although some becomes more fluid under stress). Anyhow, if we take a non newtonian fluid like cornstarch that is fluid in rest but becomes almost solid when "smacked". We can play with the idea that a "fact" is something that is true momentarily (as in right now and under close examination) but its "truthness" becomes more fluid ove time under less "stress"?*
+
+> *So to us something can seem firmly "true" just as cornstarch seems solid in the moment when we assert examination or force. But the truth becomes "fluid" just as cornstarch does when we keep the stress over time.*
+
+> *...*
+
+{% endraw %}

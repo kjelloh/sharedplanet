@@ -1,0 +1,32 @@
+# Todo: Programming - Consider he possibility to add runtime programming using Clang LLVM to mind craft worlds?
+
+```#655a74dc``` *As of 2016-10-31 13:03*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be possible to add programming abilities to mind craft worlds by using runtime compilation of C++ represented in some graphical form in mind craft?
+
+1) Consider ways to represent code (e.g., C++ code) in mind craft graphical form (e.g., Not in text form)?
+
+==&gt; Can we imagine using Thomas Backlund Blockie graphical representation of algorithms?  
+==&gt; Can we imagine using Apple Swift Playground 3D code representation (http://www.apple.com/swift/playgrounds/)?  
+…
+
+2) Consider ways to engage the Clang-LLVM tool chain behind-the-scenes to get actual runtime compiled code to execute close-to-metal?
+
+==&gt; Could we imagine ways to provide a way to define programs in mindcraft-terms and still have the code compile and run using Clang and LLVM behind the scenes?  
+…
+
+3) Consider to discuss this as a topic in the Sweden C++ user group community?
+
+==&gt; Can we imagine invite to a discussion evening on this topic to see what spina-offs this would create?  
+==&gt; Consider ways to select attendees that really understands this idea and are willing to contribute (not attract those that come and argue this si not possible)?  
+...
+
+…
+
+Consider to delve into this idea to see what we can learn from thinking about it and do a survey on the initiatives in this direction already existing out there?  
+...
+
+{% endraw %}

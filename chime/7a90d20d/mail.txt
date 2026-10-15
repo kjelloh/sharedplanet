@@ -1,0 +1,34 @@
+﻿It seems I could prove to be a good idea to document the technical specs of my 27" Apple LED Cinema display (mid 2010?) and determine how I may connect it to other physical connections and transfer protocols?
+
+1) Consider the Apple specification for the LED Cinema Display (https://support.apple.com/kb/SP597?locale=en_US )?
+
+	
+
+	==> It seems it sports 3x "self powered" USB-2 connectors on the back?
+
+
+"Peripherals and cables
+
+	• Three self-powered USB 2.0 ports
+	• Kensington security slot
+	• One cable with three connectors: Mini DisplayPort with audio support, universal MagSafe (up to 85W), USB 2.0
+	• AC power cord"
+
+	==> It seems for correct operation it requires a Mini Display Connection + an USB-2 connection to a MAC (display port for actual image + sound and USB-2 for control of iSight camera, brightness)?
+
+"Peripherals and cables
+
+	• Three self-powered USB 2.0 ports
+	• Kensington security slot
+	• One cable with three connectors: Mini DisplayPort with audio support, universal MagSafe (up to 85W), USB 2.0
+	• AC power cord"
+
+2) Consider the Mac Pro 2013 can connect directly to the Apple LED Cinema Display?
+
+	==> It seems the MAC Pro sports ThunderBolt 2 ports that also acts as Mini Display ports?
+
+	==> It seems because USB-3 accepts USB-2 connections we can connect Apple LED Cinema USB-2 to the one Mac Pro 2013 USB-3 ports?
+
+	...
+
+...

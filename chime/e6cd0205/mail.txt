@@ -1,0 +1,22 @@
+﻿Could we imagine to mark the lines in a note sweet to indicate if notes on that line is raised or lowered?
+
+1) Consider to make the lines that are raised or lowered?
+
+	==> Consider this example from Bach Air first three bars?
+
+	
+
+		==> Consider we may work out some way of marking both white and black lines to indicate if notes on that line are raised or lowered?
+		==> Note how the “reset” markers cancels the previous raise/lower state (discontinue the line marker)
+		…
+
+2) Consider to play with different tomes of graphical modifications to mark both white and black lines to indicate raised/lowered status of notes on that line?
+
+	==> Consider three different lines depending on if notes on that lines are flat, raised or lowered?
+	==> Consider to change the shape of the note depending on wether it is flat, raised or lowered?
+	…
+
+…
+
+Consider to elaborate on this idea of enhancing note sheets to better show if notes on a line are flat, raised or lowred
+...

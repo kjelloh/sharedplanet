@@ -1,0 +1,160 @@
+﻿Would it not be fun to read and understand C++ Meta Programming better, e.g. by reading "C++ Template Metaprogramming" by Abrahams/Gurtovoy?
+
+1) Consider to list the current top-insights about Template Metaprogramming as I learn the techniques?
+
+	==> C++ Meta-functions (MF) operates on types in a similar way runtime functions (RF) operate on values.
+		==> Meta-Functions could be read as “about functions”
+
+	==> C++ Metaprogramming heavily relies on templates instantiated with different types are in themselves different types regardless of provided types are manifested in runtime code!
+
+		template <class A, class B>
+		struct my_struct {};
+
+			Then: my_struct<int,int> is NOT the same type as my_struct<int,char>
+
+	==> A C++ Meta-function takes template arguments as input and returns a type
+
+		MF: Meta-function<Template Args>::type
+		RF:  type function(args)
+
+	==> Meta-functions can be seen as “executed” at compile-time (by the C++ compiler) similar to runtime-functions being executed by the computer
+
+		==> A C++ Meta-function is “executed” by compiling it!
+		==> And the result of a Meta-function is a type (optionally a type that carries a constant value type::value)
+
+	==> Meta-function execution flow control can use “if” and “recursion” in the form of template-specialisations.
+
+		==> “If” is accomplished “calling” a template-specialisation on boolean value true/false (matching appropriate meta-function)
+		==> Recursion is accomplished by “calling” a new specialisation one one-self (bathing either the same or a terminating specialisation) 
+
+	// Meta-function “if” example in semi-pseudo-code (Almost C++)
+	template <bool flag> struct my_if_function {}
+	template <> struct my_if_function<true> {typedef … type;}	// specialised for true
+	template <> struct my_if_function<false> {typedef … type;}	// specialised for false
+
+	template <args> struct use_true_instance {const type value = …;} // specialised into struct with a value true or false
+
+	template <args> struct my_meta_function { typedef my_if_function<use_true_instance<args>::value>::type type; }
+
+	// Meta-function recursion example in semi-pseudo-code (Almost C++)
+	template <args> struct my_recursive_function {}
+	template <variable-part> struct <fixed-part> my_recursive_function {typedef my_recursive_function<specialised-args>::type type;} // specialised for recursive “call"
+	template <> struct <fixed-part> my_recursive_function {typedef static-type type;} // specialised for “termination” call
+		
+	==> Meta-function execution failures are reported as compile errors
+
+	==> BOOST_STATIC_ASSERT() generates a compiler error similar to runtime assert() generates and exception.
+
+	==> A Meta-function that operates on and returns other Meta-functions are called Higher-order Meta-function.
+	==> A C++ Meta-function is a template, not a type (and can thus not be operated on, passed to, a meta-function)
+	==> A C++ higher-order Meta-Function is implemented as a Meta-function Class (a static type with a template member apply).
+
+		==> “Execute” the Meta-function Class “higher_order_meta_function” by compiling higher_order_meta_function::template apply<args>
+		==> The “result” is also a Meta-function class (a type that also have a member template called apply)
+
+	==> A C++ Meta-function can forward its “call” to another Meta-function using C++ inheritance.
+
+		==> template <args> struct meta_function : other_meta_function<args> {}
+
+			“Executing” meta_function<args>::type will “Execute” inherited other_meta_function<args>::type.
+
+		==> template <args> struct higher_meta_function : other_higher_meta_function::template apply<args> {}
+
+			“Executing” higher_meta_function::template apply<args> will “Execute” inherited other_higher_meta_function::template apply<args>
+
+	==> Meta-function results (types) turn up in the runtime code ONLY if the are used to generate runtime code.
+	==> Meta-function “execution” can also be used only to yield a compile-time result :)
+
+		==> A weird way to display the result is to turn it into a compiler error (readable by the user)!
+
+2) Page 31 seem to sum up the basics of meta-programming in chapter “2.9 Details”
+
+	<meta-function programming>
+	==> C++ Metadata is a “value” (e.g. a type or a type::value) that can be manipulated by the C++ compile time machinery.
+		==> 	The Compile Time Part of C++ shall be seen as a “Pure Functional Language” in that it uses Metadata which can’t be mutated and thus no meta-functions has side effects (are pure)
+	==> C++ Meta-Functions are template structs on the form meta-function<template parameters>::type
+	==> C++ Numerical Meta Functions are meta-functions where the ::type has a member ::value (In boost library accessible directly though meta-function<args>::value)
+
+		==> Compile-time Meta-function<Arg1, Arg2>::type is equivalent of runtime-function(arg1,arg2)
+
+	==> Avoid “Blobs” (meta-functions that is used to return more than one ::type) as these break polymorphic application of the function.
+	==> Meta-function Polymorphism refers to “having many forms” and is best leveraged by restricting all meta-functions to the one-form meta-function<args>::type (optionally ::value)
+	==> A C++ Nullary Meta-function is one that can be called without any type arguments 
+	==> C++ Traits is a technique to non-intrusively use template specialisation to define associations between Metadata.
+	==> C++ Type Traits is the Boost Meta-Function library to support C++ Traits that returns “traits of types” (using the meta-function<args>::type (::value) idiom)
+	
+	<template mechanisms>
+	==> Template specialisation refers to the two cases of 1) Full or partial specialisation declaration and 2) Referred to (written) with all type argument “known” (e.g. in a variable definition)
+	==> Template specialisation mechanism comprises Primary Template (general with no specialisations) followed by Partial- and Full- Specialisation.
+	==> Template instantiations happens when meta-function<args>::type is used in a definition (e.g. a variable definition)
+	==> Template member definitions are NOT instantiated until “accessed in code” (see page 32)
+
+3) Page 17: meta-function-name<type parameters>::type
+
+	==> Seems like a good base definition of what a meta-function is (i.e. a compile time function that operates on types)?
+
+4) page 13 initiates traits-type as a meta-function that returns a “blob” with traits about provided type(s)
+
+	==> traits-type-name<type(s)>::trait_n seem to be the general form (where trait_n symbolises one to many members that defines the traits)
+
+5) page 16 defines “blobs” with compile-time defined member names (e.g. traits-type members) as an anti-pattern (an idiom to avoid)
+
+	==> “Blobs” contains polymorphism in that one can only provide blobs with the correct compile-time named members.
+
+6) Page 22 sem to initiate definition of Meta-Programming “if” mechanisms?
+
+	a) Forward declare a template struct xxx_impl specialised for bool value
+	b) define a use_xxx bool value made up of meta-functions whore “return types” carries a ::value member of type bool (e.g. boost::is_same and boost::is_reference)
+		Example: bool const use_xxx = boost::is_same<T1,T2>::type::value (shorthand  boost::is_same<T1,T2>::value)
+	c) Specialise template struct xxx_imp for boolean value true and false and provide a static member function xxx_impl::do_it(….)
+		==> static member enables calling it without having to construct an object (the struct is there just to enable partial specialisation which is not allowed for template functions)
+	d) Now the meta-function “if” is written as xxx_impl<use_xxx>::do_it(…)
+		==> Corresponds to meta-code "if (use_xxx) xxx_impl<true> else xxx_impl<false>”
+
+7) Page 30 concludes ALL meta-functions shall provide::type and Boolean value meta-functions shall provide ::value
+
+8) Page 31 defines Explicit- (full) and Partial- specialisation as the key tool for meta-function programming
+
+	a) General Partial Specialisation is written in C++ on the form:
+
+	template <variable-part>
+	struct template-name<fixed-part>
+	
+		==> At least one parameter in the fixed-part depends on members in variable-part (is specialised).
+
+	b) And Explicit (full)  specialisation is just when the variable part is empty
+
+	template <>
+	struct template-name<fixed part>
+
+9) Consider as side-track to study “Iterators using proxy references” on page 21
+
+	==> The Iterator::operator* returns a proxy temporary (reference type)
+	==> The Proxy::operator= accepts a value of the true type (the type the proxy stands in for)
+	==> The Proxy has a type-cast member operator to provide implicit conversion to the “real” type (allow real_value = proxy_value)
+	==> In this way *iter1 = *iter2 will be translated to Iterator::operator=(Proxy<type> proxy_value)
+
+	==> See std::vector<bool>::iterator that is specialised to use bitwise internal storage and still allow iterating as if an array of bool (it uses proxies to map to/from internal bits)
+
+		==> The vector<bool>::reference seem to be defined here (http://en.cppreference.com/w/cpp/container/vector_bool/reference <http://en.cppreference.com/w/cpp/container/vector_bool/reference>)?
+		==> It defines an operator= to allow assignment TO the proxied value.
+		==> And an operator bool to allow assignment FROM the proxied value
+		==> std::vector<bool>::operator[] returns a proxy that thus may be assigned TO or assigned FROM based on proxy members above. 
+
+operator=
+ 
+assigns a bool to the referenced bit 
+(public member function)
+operator bool
+ 
+returns the referenced bit 
+(public member function)
+
+
+	==> NOTE: Wont work for general swap!
+		1) Compiler gives an error when asked to type-cast a temporary proxy to non-const ref to value as input to swap (it does not know our proxy actually would work)
+
+	==> It seems the general rule for proxied iterators is to provide and apply a specialised swap of two proxies (e.g. as for vector<bool>::reference http://en.cppreference.com/w/cpp/container/vector_bool/swap <http://en.cppreference.com/w/cpp/container/vector_bool/swap>)
+…
+
+Consider to continue to study C++ meta-programming to gather knowledge about MPL explicitly and other insight in general

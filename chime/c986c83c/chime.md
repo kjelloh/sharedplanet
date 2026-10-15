@@ -1,0 +1,20 @@
+# Todo: Write about how grades in education comes from our view of value as expressed in money
+
+```#c986c83c``` *As of 2015-08-12 23:07*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be that our obsession with grading student results comes from the basic society idea of ”progress” and ”value” that actually stems from the idea of Money and ”profit”.
+
+We tend to forget why we earn money and what we should use them for to best express their value to us. Instead we just focus on the amount of money we may eran or that something costs. We forget that this does not tell us what true value we may get from that. If what we value is of low cost also a small amour of money is a good result! More money is then not necessarily better as we may value time or other activities more than the extra money we earn by working more.
+
+May it be that we see the same problem in school. We focus only on the grades. We forget what education is for and what the purpose of school actually is. A good grade has no value if what is graded is not of value. Also, we tend to forget that grading is hard and thus we often tend what is easy to grade rather than how well the student has learnt something of value.
+
+The key issue here is that we confuse the point system that grades value with the actually value in itself. Money is a way to grade the value of anything on the same scale although this in fact not possible. The value of something is a very volatile property that depends on the need, the current mood and a thousand of other things affecting each other. Grading of education faces the same problem in that we try to grade very different aspects of ”learning” that in fact can’t be compared on the same scale!
+
+We need to get our eyes open to our groundlessness, our core-less belief systems. The proser of control has sever limits and we need to understand also the power of understanding our blindness and keep an open mind to ”see” better and get where we want.
+
+At the end of the day, why do we do anything? And where do we want to go and why? We need to keep asking these questions because the answer will keep chaining as far as we know for ever!
+
+{% endraw %}

@@ -1,0 +1,70 @@
+# Todo: Darwinet - Consider a Darwinet "One click build environment" creation solution (e.g., from any GitHub repository)?
+
+```#cdc3973a``` *As of 2018-09-18 12:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems we could solve the problem of assembling the correct state of source files and binaries to execute build tool-chains for (GitHub) open source projects? We would like a “One Click build environment creation” solution?
+
+-1) It seems we want to use Darwinet THA to enable **local replication of any Github open source project build environment with correct content and in correct state**?
+
+...
+
+1) Consider to provide an “API” that exposes the file system as a Merkle Tree?
+
+==&gt; Consider a Merkle tree of a file system directory would enable both state and file ID in a stable and secure way?
+
+==&gt; Consider Darwinet then “only” needs to provide a “glue” from file paths to hasch key paths to ensure a local copy of required files for any build?
+
+…
+
+2) Consider ways to implement a Darwinet snap-shot of any open source build tool-chain and dependencies for one-click local build?
+
+==&gt; Consider we need a way to define a complete local copy of installed tools, source files and binaries (e.g., libraries)?
+
+==&gt; Consider we need a way to clone required files from a list of GitHub repositories (modelled as an appropriate merle tree)?
+
+==&gt; Consider we need a way to model package manager execution to ensure local installation of required build tool-chain?
+
+==&gt; Consider ways to ensure the correct build tool-chain is locally installed (the local tool chain is in the correct state)?
+
+Q: Can we model also locally installed tools as merkle trees (with hash paths representing installed tools)?
+
+Q: How can we manage or allow local tools to be installed at different locations (as long as they are executable as required by the build tool chain)?
+
+…
+
+3) It seems we would like a simple way to model a GitHub repository as a Darwinet Persistent Data Structure THA instantiated as a local file system modelled as a Merkle Tree?
+
+Q: How can we “clone” a GitHub repository into a THA Model stored in a Darwinet domain?
+
+Q: How can we keep synchronising the Darwinet THA model with revision changes of a Github Repository?
+
+Q: How can we provide a user interface that allows checking that a local copy of a Darwinet THA is in sync with a specific Github Repository revision?
+
+…
+
+4) It seems we would like a simple way to model any build tool chain as a Darwinet THA for local replication?
+
+Q: How can we make it simple to represent any build tool chain as a Darwinet THA (define all tools and how to install them)?
+
+Q: How can we make it simple to ensure a local environment is equipped with the correct tools (including their state) as defined by a THA representation of a build tool chain?
+
+Q: How can we have a Darwinet Application execute required tool installation to transition the state of local build tool-chain to be the required one according to the THA representation?
+
+==&gt; It seems we need to know what tools that needs to be installed, what version of these tools are required and what tools to execute (e.g., package managers) to install them?
+
+5) It seems generally we need to be able to define a DAG of any installable set of tools?
+
+==&gt; Consider a DAG would enable us to model the dependencies between tools?
+
+==&gt; Consider a DAG would enable us to model a build tool-chain?
+
+…
+
+…
+
+Consider to delve into this idea of how to implement open source builds as locally replicable Darwinet THA models (freeing the user from having to assemble the local environment contents and state themselves)?
+
+{% endraw %}

@@ -1,0 +1,113 @@
+﻿It seems I now have to learn how the ESC is controlled and what power source to use to make some progress in my “Ducted Fan” based indoor shed vacuum?
+
+	==> Also see “Todo: Consider to understand Radio Controllers and if and how to build my own ones?”
+	==> Also see “Todo: Consider to understand how to design and build my own Brushless DC Motor speed controller driver (for my ducted fan vacuum motor and other motor applications)?"
+
+-1) Consider to condense what I have learned so far?
+
+	==> It seems the ESC acts as a “Servo” controlled through the “Servo Wire”?
+	==> My (and most) ESC provides the 5V power to the receiver controlled electronics tryout a built in BEC (Battery Eliminator Circuit) through the Servo Wire
+	==> All servo wires are electrically “the same” plus-ground-signal but comes in two basic colour schemes (red-black-white and red-brown-orange) with minor variations.
+	==> All servo wires signal wire uses PWM (Pulse Width Control)!
+
+	==>
+
+If I use my RC ESC I must implement the “standard RC servo PWM signal” (50 Hz 1-2 mS pulse width modulation) AND perform a startup-and-calibration-sequence. 
+
+The ESC-to-transmitter calibration power-up sequence is stated in the manual as transmitter full throttle, ESC power on, transmitter zero-throttle (each step synchronised with acknowledge beeps from the ESC)
+
+Each start-flying power-up sequence is stated in the manual as transmitter zero-throttle, ESC power on.
+
+
+1) The manual for my Hobbywing Skywalker 60A ESC seems to live here (http://www.hobbywing.com/goods.php?id=407&filter_attr=6345.6463 <http://www.hobbywing.com/goods.php?id=407&filter_attr=6345.6463>)?
+
+	==> Consider to store the pdf in this Todo-mail?
+
+		
+
+
+	==> The manual seems to be only two pages? ;)
+
+	==> The manual does not seem to define any protocol for how to control the controller?
+
+2) Consider to understand what protocol the ESC expects to be receiving commands over?
+
+	==> Consider this web-page on RC ESC (https://os.mbed.com/users/4180_1/notebook/using-a-dc-brushless-motor-with-an-rc-esc/ <https://os.mbed.com/users/4180_1/notebook/using-a-dc-brushless-motor-with-an-rc-esc/>)?
+
+	==> Consider this wikipedia page on Electronic Speed Control (https://en.wikipedia.org/wiki/Electronic_speed_control <https://en.wikipedia.org/wiki/Electronic_speed_control>)?
+
+	==> Consider this page about different so called “Rx Protocols” (https://oscarliang.com/pwm-ppm-sbus-dsm2-dsmx-sumd-difference/ <https://oscarliang.com/pwm-ppm-sbus-dsm2-dsmx-sumd-difference/>)?
+
+		==> It seems ESC usually uses PWM over the servo wire?
+
+RC Devices that use PWM Pulses:
+
+	• Servos
+	• Electronic Speed Controllers
+	• R/C receivers
+	• Data loggers
+	• Autopilot/Stabilization systems
+	• Servo Controller
+
+	==> Consider this page about PWM vs PPM (https://oscarliang.com/pwm-ppm-difference-conversion/ <https://oscarliang.com/pwm-ppm-difference-conversion/>)?
+
+		==> It seems PPM is “simply” a fixed with pulse on the falling edge of the corresponding PWM signal (thus providing the same modulated time distance)?
+
+			NOTE: PPM also serialise several channels into the same wire (a PPM pulse per channel)
+
+			
+
+
+
+	==> Consider this page about PPM vs SBUS servo wire protocol (https://oscarliang.com/ppm-sbus-d4r-ii-x4r-sb/ <https://oscarliang.com/ppm-sbus-d4r-ii-x4r-sb/>)?
+
+		==> AHA! It seems SBUS and PPM are Reveiver-protocols (NOT servo wire protocols)?
+
+“PPM and SBUS are both receiver protocols. PPM (aka CPPM) is an old, analogue signal. SBUS is a newer, digital signal."
+
+	==> Consider this page that seems to state that all Services Wires uses PWM signalling (https://www.dronetrest.com/t/rc-radio-control-protocols-explained-pwm-ppm-pcm-sbus-ibus-dsmx-dsm2/1357 <https://www.dronetrest.com/t/rc-radio-control-protocols-explained-pwm-ppm-pcm-sbus-ibus-dsmx-dsm2/1357>)?
+
+“PWM has been around for a long time in the radio control hobby and is the protocol that your ESC’s and servos talk to each other on. The analogue signal takes the form of a pulse, and the length of the pulse represents a specific value, with 1000 being minimum, and 2000 being the maximum value.
+
+Each channel has its own single wire, so if you have an 8 channel receiver you will need to connect 8 wires to read the inputs into your flight controller."
+
+
+			==> There seem to exist an Arduino Based servo controller?
+
+			
+
+
+				NO: Ardupilot is an open source software for flight controllers (http://ardupilot.org/about <http://ardupilot.org/about>)?
+
+	==> Consider My Hobbywing “Skywalker 60A” ESC to be compatible with the RX Protocols of the receivers of some listed vendors (https://www.turbines-rc.com/en/50a-and-over/1722-freewing-hobbywing-skywalker-60a-esc-2-6s-sbec-5a.html <https://www.turbines-rc.com/en/50a-and-over/1722-freewing-hobbywing-skywalker-60a-esc-2-6s-sbec-5a.html>)?
+
+“
+This ESC can be used with the following freewing and Flightline RC models and any model from other brands :
+	• P-38L Lightning
+	• F7F-3 Tigercat"
+
+	==>
+
+3) Consider good youtube videos with information about how to choose and assemble BL motor electric radio controlled rc models?
+
+	==> Consider the youtube video on the basics of radion controlled model components (https://www.youtube.com/watch?v=j61Q3e8AFR4 <https://www.youtube.com/watch?v=j61Q3e8AFR4>)?
+
+	==> Consider this youtube video that seems to indicate that the servo wire red-black-white is a “Futaba style” wire (https://www.youtube.com/watch?v=Q8pPtS8UhrA <https://www.youtube.com/watch?v=Q8pPtS8UhrA>)?
+
+		
+
+
+	…
+
+4) Consider DroneBot youtube video “Using Servo Motors with Arduino” (https://www.youtube.com/watch?v=kUHmYKWwuWs&t=331s <https://www.youtube.com/watch?v=kUHmYKWwuWs&t=331s>)?
+
+	==> The Accompanying article with code seems to live here (https://dronebotworkshop.com/servo-motors-with-arduino/ <https://dronebotworkshop.com/servo-motors-with-arduino/>)?
+
+	
+
+	…
+
+…
+
+Consider to continue to document the progress of understanding how to drive the speed of my ducted fan with my RC ESC (Radio Controlled Electric Speed Controller)?
+...

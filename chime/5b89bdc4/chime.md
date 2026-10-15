@@ -1,0 +1,32 @@
+# Todo: Consider to keep this "Wish List" of things to buy - updated?
+
+```#5b89bdc4``` *As of 2018-12-08 21:25*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems I can try to keep a wish-list of things to remember or consider to buy in the form of this kind of Todo e-mail?
+
+\*) Consider filters for my Trend Air Stealth P3 (R) Safety Respirator?
+
+\*) Consider a better tape measure
+
+\*) Consider better glue clamping solution?
+
+\*) Consider a laser level to make into a height gauge for hard-to-reach locations (of my indoor shed)?
+
+\*) Consider Makers Muse book tips
+
+\*) Consider hard chocolate moulds
+
+\*) Consider a beginners kit for bear brewing?
+
+\*) Consider tools to “stop measure” and “start marking” (ref actual objects instead of model measures)?
+
+\*) Consider a marking knife (e.g., Veritas $10 one)?
+
+\*) Consider a Marking gauge (preferably a cutting gauge)?
+
+\*) Consider a divider?
+
+{% endraw %}

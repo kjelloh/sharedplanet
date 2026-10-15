@@ -1,0 +1,54 @@
+# Todo: http://sanningarmedmodifikationer.blogspot.se/2017/04/hej-emdivid.html - "Hej Emdivid!"
+
+```#018e7651``` *As of 2017-04-12 21:34*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+[![](2-202478-Main-476x357-4.jpg)](https://1.bp.blogspot.com/-zZSww2hNHDA/WO5vps_GPoI/AAAAAAAAACI/HUHCLswntCk7cxndwKTrAdyIO3I19nQYQCLcB/s1600/2-202478-Main-476x357-4.jpg)
+
+Vi uppstår som svar på omgivningen?
+
+Hur skall vi förstå oss själva när vi förstått att vi inte är individer? Är vi Divider (flera personer och roller i en). Eller är vi Emdivider (emeregnta divider) som uppstår som anpassad till varje situation så som jag tänker föreslå här?
+
+### Inte Individ?
+
+Först bara - varför är vi inte individer? Det vet väl alla att vi är individer? Nej, så enkelt är det faktiskt inte! Problemet är nämligen att Individualismen helt enkelt inte förklarar särskilt bra hur vi kan bete oss som vi gör. Det stämmer i och för sig att vi känner oss som individer. Men så fort vi börjar studera vilka beslut vi tar, vilka värderingar vi utrycker och hur vi handlar mot oss själva och andra så går det dåligt ihop med idén om Individen. Ja, vi har bara en kropp och en hjärna. Men som aktörer byter vi ständigt roller, åsikter och sanningar allt efter omständigheter och tid på dygnet. Men den här artikeln är inte för dig som ännu håller fast vid tanken på dig själv som individ. Du kan sluta läsa här. No hard feelings! Om du vill läsa mer om det så tipsar jag om Psykologen och Nobellprisvinnaren Daniel Kahnemans bok ”Tänka Snabbt och Långsamt”. Men var försiktig. Du kan komma att ifrågasätta mycket av din självbild om du verkligen vågar ta bokens innehåll på allvar.
+
+[![](1df592e7e5e97d5e6d6ec3fc35f86fd9.jpg)](https://1.bp.blogspot.com/-dLlJgppggFc/WO5tm0X_VyI/AAAAAAAAAB8/9VZNHU66cCQQufur2cmPSh4xIHPapmWowCLcB/s1600/1df592e7e5e97d5e6d6ec3fc35f86fd9.jpg)
+
+© Pinterest
+
+### Emergent Divid?
+
+För oss som på allvar börjat inse att individualismen har grava problem att förklara vilka vi är i oss själva och mot varandra lanserar jag nu i stället idén om *Emdividen.* Att varje människa uppstår (emergerar) i varje stund som en Divid (en delbar personlighet) anpassad att interagera med det som sker och det vi upplever sker. Att vårt medvetna jag är liksom skummet på ytan av en kokande gryta. Skummets egenskaper är resultat av vad vi kokar, vilken temperatur vi har under grytan och hur länge det kokat. Att vårt medvetna jag uppstår som aktiviteten i en myrstack när du petar på den. Stacken har ett beteende om du bara står nära, ett helt annat om du viftar med en pinne nära den och ett tredje när du avlägsnat dig. Vi upplever att vi hela tiden är samma person eftersom vi delar minnen med alla Emdivider vi varit eller kommer att bli. Den Emdivid vi i varje stund är upplever sig som centrum och allenarådande i oss själva.
+
+### Godmorgon Emdivid!
+
+Låt oss börja med något enkelt som vi alla upplever varje dag - vi vaknar från vår nattsömn. Vi är så vana vid det att vi inte tänker på det men varje morgon "uppstår vi" från sömnens mörker (eller ibland från en inre fantasi i form av en dröm) till vår vakna medvetna existens. Vi är till största delen omedvetna när vi sover. Och vi är till viss del medvetna när vi drömmer (ibland kommer vi medvetet ihåg våra drömmar). Vårt medvetna ”jag" uppstår till viss del när vi drömmer och till fullo när vi vaknar. Vi kan alltså ganska enkelt se detta som ett exempel på hur vårt medvetna uppstår som ett resultat av att vi utsätts för en skapad (drömd) eller verklig verklighet (sinnevärlden) . I vaket tillstånd befinner vi oss i den sinnevärld vår hjärna skapar åt oss. När vi drömmer befinner vi oss i en drömvärld som vår hjärna skapar åt oss. I båda fallen *uppstår* vårt medvetande som ett resultat av den sinnevärld vi *interagerar* med.
+
+Något annat vi alla känner igen är hur vi kan drömma oss bort. När vi dagdrömmer är vi fortfarande medvetna men vi är inte längre i sinnevärlden utan i vår *tankevärld*. Jag vet inte hur det är för er men mina dagdrömmar kan skapa mycket tydliga synintryck. Jag ser de människor jag tänker på. Jag ser hur det ser ut på den där semesterorten jag drömmer om. Jag drömmer mig tillbaka till ställen jag varit på och återupplever känslor från händelser på dessa platser. Återigen - vi uppstår som ett medvetande som interagerar med med den ”verklighet” vi befinner oss i (drömd, föreställd eller skapad av sinnesintryck från riktiga världen).
+
+[![](heuristics.jpg)](https://3.bp.blogspot.com/-S7bsPOpPOgE/WO5xtZJqxNI/AAAAAAAAACU/MkZ6j9lUg4AyCKSZLkl15S76hkQvhWs4ACLcB/s1600/heuristics.jpg)
+
+Den tredje gruppen av, kanske mindre uppenbara, exempel på hur vi uppstår som respons på vår omgivning är alla de exempel som Kahneman beskriver i sin bok ”Tänka Snabbt och Långsamt”. I kapitel efter kapitel beskriver han försök där vi människor fattar till synes irrationella beslut, försök där vi oförklarligt byter åsikt eller där vi på riktigt byter egenskaper och förmågor. Och vi gör det utan att ha en aning om det. Han visar med all önskvärd tydlighet att vi kan vara 100% övertygande att vi är de vi är - och ändå är vi inte alls det. Även här kan vi förklara detta beteende med att vi uppstår som Emdivider för att interagera med den verklighet vi upplever oss vara i. Genom att förändra olika egenskaper i verkligheten i de olika försöken så uppstår vi också som olika personer. Vi blir till som olika Emdivider som upplever sig själva som samma som för en stund sedan, men som vid varje tillfälle har lite andra värderingar eller mål med sina handlingar och beslut.
+
+Värdet av att se oss som ständigt ständigt tillkomna Emdivider, i varje stund med lite andra egenskaper beroende på omständigheter, är att det kan göra oss uppmärksamma på saker som är viktiga för oss. Saker som vi inte uppmärksammar om vi ser oss själva och varandra som oföränderliga individer. *Som Emdivider förstår vi att vad jag gör mot andra och vad andra gör mot mig är ett ständigt växelspel mellan hur vi föreställer sig de andras drömmar och värderingar och hur de andra föreställer sig våra*. Vi är inte oföränderliga individer som vi kan beskriva med fakta och på så sätt förstå vad som är rätt och fel om det samhälle vi skapar. I stället ingår vi i en ständigt dans där vi tillsammans söker en självbild och en bild av varandra och samhället som kan uppnå en balans. En balans där allas våra tre typer av sanning, vår sinnevärld, vår känslovärld och vår rationella värld, vägs mot varandra. Det vi ser, det vi tror och det vi vet om oss själva och varandra letar efter en balans.
+
+Nu kanske du tycker att detta låter lite väl invecklat? Om vi som Emdivider måste börja dribbla med all denna dynamik - vad har vi då vunnit? Blir det inte för komplicerat helt enkelt? Mitt svar är nej. För mig känns det som en trovärdig väg vidare från den låsning vi ser i världen idag. Kriget om ”sanningen” verkar ha fastnat på en spelplan där alla leker samma lek i samma modell - modellen av oss som individer. Så länge kriget förs inom ramen för oföränderliga individer blir alla förlorare och det enda vi uppnår är segregation. I kriget om vem som som talar sanning och vem som ljuger i en fixerad verklighet degenererar argumentationen till en debatt om vems fakta som är ”fakta" och vems som är ”alternativa fakta”.
+
+Som Emdivider kan vi öppna upp oss för en annan diskussion - den om vilka vi blir när vi agerar i tillit till det vi håller för sant. Och vilka upplevda verkligheter som uppstår som svar på Emdividers interaktioner. Länge hörde jag till dem som resonerade som Sam Harris och Richard Dawkins. Men med tiden blev denna modell av mänsklig samvaro för dekonstruerad och fattig som verktyg att förstå mänsklig samvaro och min roll i den. Människans framgång i att ta den materiella makten över planeten beror inte bara vår förmåga att se den materiella sanningen verifierad av mätbara fakta. Vår superkraft är att tillsammans skapa sanningar om oss själva och samhället och agera i tillit till dem. Jag finner det både troligt och värdefullt att se mänsklig samvaro så som Yuval Hariri (författare till boken ”Sapiens”) och psykologen Jordan B. Petersson försöker förklara den. Och här passar Emdivid-modellen av oss själva in som hand i handske!
+
+### Refrenser
+
+\* Wikipedia "Emergens" (<https://sv.wikipedia.org/wiki/Emergens#Levande.2C_biologiska_system>)
+
+\* Tom Amarque podcast ”Dr. Jordan B. Peterson (PC-Culture, Postmodernism and Maps of meaning)” (<http://www.tom-amarque.de/lateralconversations/2017/3/30/dr-jordan-b-peterson-pc-culture-postmodernism-and-maps-of-meaning-engl>)
+
+\* Yuval Harari ”What explains the rise of humans?” (<https://www.ted.com/talks/yuval_noah_harari_what_explains_the_rise_of_humans>)
+
+\* Sam Harris podcast ”Reality and the Imagination. A Conversation with Yuval Noah Harari” (<https://www.samharris.org/podcast/item/reality-and-the-imagination>)
+
+\* Sam Harris podcast "Meaning and Chaos. A Conversation with Jordan Peterson” episode (<https://www.samharris.org/podcast/item/meaning-and-chaos>)?
+
+{% endraw %}

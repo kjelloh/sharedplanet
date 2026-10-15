@@ -1,0 +1,26 @@
+# Todo: Consider an indikator that shows if a press fit stud has moved out from the wall (has lost its grip)?
+
+```#07f7d344``` *As of 2024-03-06 15:42*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I have made studs that I press between the floor and the roof as a base for wall storage solutions. But I am worried I may fail to detect if they lose their pressure and risk falling out from the wall!
+
+1) Consider an indikator based on a through hole with an axel that presses to the wall and is connected to a dial that shows if it has moved?
+
+> *So, the basic idea is to implement a "dial indicator" that is placed in a through hole in the stud and that shows on a dial on the front if the stud has moved away from the wall.*
+
+> *I imagine we can make a very crude but reliable mechanism that transfers the horizontal movement of an axel pressing to the wall, to a dial showing if the stud has moved. The mechanism should be quite sensitive I thing. We do want to get a warning in the range of 1 mm of movement?*
+
+2) Consider an alternative warning indikator that shows how the pressure of the stud towards the ceiling changes?
+
+> *The basic idea here is to implement a pressure gauge that shows the pressure of the stud towards the ceiling.*
+
+> *I imagine this mechanism is more complicated to implement but still, if we can find some elastic "springy" material that bends to the pressure we can then implement a dial indicator to show the change in the bending?*
+
+> *...*
+
+...
+
+{% endraw %}

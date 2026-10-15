@@ -1,0 +1,20 @@
+# Todo: Wood Joinery - Consider to try out and learn traditional Japanese wood joinery techniques?
+
+```#e7d31c3c``` *As of 2017-10-25 14:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems using Japanese wood joinery techniques one can build wood constructions without nails?
+
+1) Consider the the twitter account ”” where a large set of joins are published as animated gifs (https://twitter.com/TheJoinery_jp?ref_src=twsrc%5Etfw)?
+
+2) Consider this site ”” that posts digital CNC files for 50 wood joints (http://www.flexiblestream.org/Digital-Wood-Joints-001.php)?
+
+3) Consider this project ”” of building a speaker using a CNC router and one of the 50 digital wood joints above (https://amazingdiy.wordpress.com/2012/05/05/davetone-mixcubes/)?
+
+…
+
+Consider to delve deeper into this world of digital CNC wood carving techniques?
+
+{% endraw %}

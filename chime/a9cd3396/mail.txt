@@ -1,0 +1,76 @@
+﻿One problem with existing GUI components like VCL and FMX is that they forces business logic and data model to be integrated into the GUI event mechanism and code.
+
+1) What models for view separation from buses logic are up as good alternatives (e.g. MVC)?
+
+	==> This seem to be a good wikipedia page about MVC (https://en.wikipedia.org/wiki/Model–view–controller <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>)?
+
+
+		“The MVC pattern has subsequently evolved,[7] giving rise to variants such as HMVC, MVA, MVP, MVVM, and others that adapted MVC to different contexts."
+
+	==> HMVC “Hierarchical Model View Controller” is described as a variant of PAC “Presentation Abstraction Controller” model here (https://en.wikipedia.org/wiki/Hierarchical_model–view–controller <https://en.wikipedia.org/wiki/Hierarchical_model%E2%80%93view%E2%80%93controller>)
+	==> MVVM “Model View Viewmodel "(https://en.wikipedia.org/wiki/Model–view–viewmodel <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel>)
+
+		“MVVM is a variation of Martin Fowler's Presentation Model design pattern”
+
+		“MVVM was developed by Microsoft architects Ken Cooper and Ted Peters specifically to simplify event-driven programming of user interfaces—by exploiting features of Windows Presentation Foundation (WPF) (Microsoft's .NET graphics system) and Silverlight (WPF's Internet application derivative).[1]”
+
+	==> Martin Fowlers Presentation Model design pattern seem to be a sleeping idea that is already part of MVVM and Visual Works Smalltalk as Application Model (http://martinfowler.com/eaaDev/PresentationModel.html <http://martinfowler.com/eaaDev/PresentationModel.html>)?
+
+
+		“The essence of a Presentation Model is of a fully self-contained class that represents all the data and behavior of the UI window, but without any of the controls used to render that UI on the screen.”
+
+	==> The MVA “Model View Adapter” seem to be an approach where the view and the data model is totally decoupled from each other (https://en.wikipedia.org/wiki/Model–view–adapter <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93adapter>)?
+
+
+		“Model is intentionally oblivious of views”
+		“View is intentionally oblivious of models"
+
+	
+	==> The MVP “Model View Presenter” also seem to totally decouple the model from the view using a middle man “Presenter” (https://en.wikipedia.org/wiki/Model–view–presenter <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter>)?
+
+
+		“In MVP the presenter assumes the functionality of the "middle-man". In MVP, all presentation logic is pushed to the presenter.[1]"
+
+		In the .NET environment “The same model and presenter class can be used to support multiple interfaces, such as an ASP.NET Web application, a Windows Forms application, or a Silverlight application. "
+
+	==> The Observer Pattern may be seen as part of all the View-Data separation models available (https://en.wikipedia.org/wiki/Observer_pattern <https://en.wikipedia.org/wiki/Observer_pattern>)?
+
+
+		“The observer pattern can cause memory leaks, known as the lapsed listener problem, because in basic implementation it requires both explicit registration and explicit deregistration, as in the dispose pattern, because the subject holds strong references to the observers, keeping them alive. This can be prevented by the subject holding weak references to the observers."
+
+	WE ARE HERE
+
+2) Would it be a good idea to specialise existing VCL/FMX controls to connect with a view indifferent data model?
+
+	==> At least VCL controls assumes they are to update the view when mutating viewed data (e.g. entering text into an edit box) which makes it tricky to allow view update as result of data model changes?
+	==> Or, the VCL view update is synchronous whilst an MVP design would apply asynchronous (observer like) view update?
+
+3) How do we design a view platform independent data-model-event callback mechanism (e.g. windows messaging based on windows)?
+4) Consider to apply this strategy on the Testbench application to separate GUI from business logic? 
+…
+	WE ARE HERE
+
+
+Consider to elaborate on this idea and try put what may be possible and perhaps already available?
+
+a) The observer pattern is known for the problem of memory leaks by subjects keeping disposed observers alive (failed de-registration). But for asynchronous view-data model the other way around must also be true (the view continues to exist after subject destruction)? At least that is the problem we have identified in Testbench application design for decoupling the view from the business logic. We there proposed to let the view have a weak reference to the observed subject (not the other way around)?
+
+	==> But with a totally decoupled view and data model (e.g. using a mediator as in MVP or MVA) the mediator may be made into handling such asynchronous lives of observers and subjects)?
+
+b) In Darwinet we must pay special attention to how we decouple the Darwinet Application from the Darwinet Engine and Viewed MIV!
+
+	==> The Application must be an asynchronous observer (as data may be updated in run-time at other nodes)?
+	==> Or should we define all application operations during its life time as a “transaction” (all Domain interaction synchronous whilst alive) and synchronise when application shits-down (disconnects)? 
+	…
+
+c) Consider that multiple-view design is like having the observer-pattern in reverse (multiple views may mutate the same observed data)?
+
+	==> Could it be that having each view record its own path os deltas enables the mediator to “merge” the views into the same current state (as long as the mutations does not conflict)?
+	==> This is the opposite of server-based-synchronisation where only one view at a time are allowed access and current state is always updated before mutation is allowed (e.g. web-based user interfaces to relation database registers)?
+	==> Imagine we should design a new pattern where the mediator holds the delta-trail of mutation made by each view with some configurable mechanisms to auto-merge mutations made by different views to the same data?
+	==> Consider to call it “Evolving Model Value View Model” and describe it as a multi-view of data model and value that is in an evolution race for most common followers?
+	==> In such a race the “survival of the fittest” is measured in the number of instances of the same MIV state?
+...
+
+WE ARE HERE
+

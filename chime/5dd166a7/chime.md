@@ -1,0 +1,103 @@
+# Todo: Programming - Consider to understand available P2P mechanisms used e.g. by BitTorrent, Kanemlia and Freenet?
+
+```#5dd166a7``` *As of 2016-02-21 14:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what techniques are used by the latest P2P technologies in use? What are available as Open Source and what may we re-use them for?
+
+1) This BitTorrent wikipedia page seem like a good starting point for leads (<https://en.wikipedia.org/wiki/Libtorrent>)?
+
+2) This library Libtorrent in C++/C seem like a good Open Source to study and learn (<http://www.libtorrent.org/reference-Create_Torrents.html#overview>)?
+
+3) This seem to be the Github location of the Libtorrent C++/C library (<https://github.com/arvidn/libtorrent>)?
+
+4) This seem to be a publication f the BTP (BitTorrent Protocol) version 1.0 (<http://jonas.nitro.dk/bittorrent/bittorrent-rfc.html#anchor20>)?
+
+==&gt; Where is the latest specification?
+
+5) Consider to study the BitTorrent Project Maelstrom to build a web on BitTorrent networks (<http://blog.bittorrent.com/2014/12/10/project-maelstrom-the-internet-we-build-next/>)?
+
+==&gt; I signed up with my @itfied adress to he mailing list of this project.
+
+6) This seem to be the publication of the DHT (Digital Hash Table) routing mechanism of BitTorrent (<http://www.bittorrent.org/beps/bep_0005.html>)?
+
+==&gt; Consider to study how each node keeps track of its closes eight nodes using XOR distances between Node IDs?
+
+7) This seem like an interesting article about the Bitoorent company founders (<http://www.fastcompany.com/3027441/the-infinite-lives-of-bittorrent>)?
+
+8) This seem to be a thread with leads on the subject of P2P between NAT:ed nodes (<http://superuser.com/questions/104462/how-does-bittorrent-work-with-only-outbound-connections>)?
+
+==&gt; It suggests this 15 minutes Audio podcast by Cullen Jennings at Cisco on the subject of NAT being an obstacle for P2P (<http://web.archive.org/web/20130729202546id_/http://itc.conversationsnetwork.org/shows/detail4131.html>)
+
+==&gt; Good talk!
+
+==&gt; Slides seem to be published here (<http://www.slideshare.net/eCommConf/17-cullen-jennings>)?  
+==&gt; Hole Punching uses an Echo-server to get ones public IP adress back (Server captures public IP from the request)  
+==&gt; Media Server Idiom menas a public server relays information from other Peers to me (using the Media Servers adress i tell the Peer to use)  
+==&gt; Note: Using e-mail for P2P messaging is in fact a Media Server approach?
+
+==&gt; This seem to be another good talk by Cullen Jennings on WebRTC (<https://youtu.be/jKz-Fjbw2mA>)?
+
+9) This seem like a good wikipedia page on the NAT-PMP (NAT Port Mapping) Protocol that enables NAT:ed clients to get hold of their public IP (<https://en.wikipedia.org/wiki/NAT_Port_Mapping_Protocol>)?
+
+10) This seem like a good wikipedia page about general NAT traversal techniques (<https://en.wikipedia.org/wiki/NAT_traversal>)?
+
+11) This wikipedia page seem like a good starting point on the TURN (Traversal Using Relays around NAT) idiom/Protocol (<https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT>)
+
+“is a protocol that assists in traversal of network address translators (NAT) or firewalls for multimedia applications”
+
+==&gt; TURN for IPv4 seems to be defined in RFC 5766 (<https://tools.ietf.org/html/rfc5766>)?  
+==&gt; TURN for IPv6 seems to be defined in RFC 6156 “Traversal Using Relays around NAT (TURN) Extension for IPv6” (<https://tools.ietf.org/html/rfc6156>)?
+
+**WE ARE HERE...  
+**  
+12) Consider to study RFC 5128 about “State of Peer-to-Peer (P2P) Communication across Network Address Translators (NATs)” for leads on NAT obstacles for TCP (<https://tools.ietf.org/html/rfc5128>)?
+
+13) Consider to study RFC 4787 “Network Address Translation (NAT) Behavioural Requirements for Unicast UDP” on leads NAT obstacles for UDP P2P (<https://tools.ietf.org/html/rfc4787>)?
+
+11) This seem like a thread giving some compressed leads into the problem of P2P between NAT:ed clients (<http://stackoverflow.com/questions/20939222/udp-tcp-hole-punching-vs-upnp-vs-stun-vs>)?
+
+==&gt; STUN “Session Traversal Utilities for NAT” seem to be defined by wikipedia here (<https://en.wikipedia.org/wiki/STUN>)
+
+“STUN is a lightweight client–server network protocol. Its purpose is to allow an application running on a host to determine whether or not it is located behind a network device that is performing address translation"
+
+==&gt; STUN seem to be defined in RFC 5389 “Session Traversal Utilities for NAT (STUN)” (<https://tools.ietf.org/html/rfc5389>)
+
+==&gt; The STUN URL Scheme seem to be defined in RFC 7064 “URI Scheme for the Session Traversal Utilities for NAT (STUN) Protocol” (<https://tools.ietf.org/html/rfc7064>)
+
+12) This BitTorrent Engineering Blog may prove to hold interesting details about the BitTorrent protocol (<https://engineering.bittorrent.com>)?
+
+13) This seem to be a good start ti learn about the uTorrent Open Source implementation of the BTP (<http://blog.bittorrent.com/2010/05/21/µtp-open-source-implementation/>)?
+
+14) This seem to the the Github home of the uTorrent Open Source Project (<https://github.com/bittorrent/libutp>)?
+
+15) This seem to be the publication of the uTorrent Protocol Specification (<http://www.bittorrent.org/beps/bep_0029.html>)?
+
+“The uTorrent transport protocol was designed by Ludvig Strigeus, Greg Hazel, Stanislav Shalunov, Arvid Norberg and Bram Cohen.”
+
+“The motivation for uTP is for BitTorrent clients to not disrupt internet connections, while still utilizing the unused bandwidth fully."
+
+16) This may be a good starting point to understand Kademlia DHT Protocol on which BitTorrent DHT is based (<https://en.wikipedia.org/wiki/Kademlia>)?
+
+17) This seem to be the home of the Freenet Project (<https://freenetproject.org>)?
+
+“Freenet is under the GPL, version 2 or later"
+
+18) This seem to be the Freenet Project repositories on Github (<https://github.com/freenet>)?
+
+==&gt; Most projects are in Java, some in PHP and Shell and a few in C# (only two in C++)?  
+==&gt; This C++ project is 6 years old (<https://github.com/freenet/wxFCP>)?
+
+18) This Github Project “KadNode” in plain C may be worth studying for P2P and NAT Traversal concepts (<https://github.com/mwarning/KadNode>)?
+
+“KadNode is a small P2P DNS resolution daemon based on a Distributed Hash Table (DHT)”
+
+“The DHT is identical to the one used in the Transmission Bittorrent client and works on the Internet as well as on local networks”  
+…
+
+Consider to delve deeper into the mechanisms of these (and other) P2P concepts used by e.g. BitTorrent, Kademlia, Freenet?  
+...
+
+{% endraw %}

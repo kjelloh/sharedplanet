@@ -1,0 +1,22 @@
+﻿To me the hot glue gun I have for "real life" glueing (my 3M glue guns) feels just to large to be used for model making so why not DIY a smaller one?
+
+1) Consider a design of a small hot glue gun using a 3D printer hot end nozzle?
+
+	==> Consider the Cetus 3D hotend (https://shop.tiertime.com/product/cetus-extruder-heater-kit-v2-steel-nozzles-uk-stock/ <https://shop.tiertime.com/product/cetus-extruder-heater-kit-v2-steel-nozzles-uk-stock/> )?
+
+	
+	An example of a Cetus 3D hot end ($40)
+
+	
+2) Consider to compare with existing small hot glue guns (are there already existing small usable hot glue guns for model making)?
+
+	
+	Example of a small hot glue gun (uses 7mm glue sticks)
+
+3) Consider to try using a 3D "Pen" with some filament as a hot glue gun for model making?
+
+	
+	
+	Example of a 3D Pen for 1.75 mm filaments (driven by 5V 2 A = 10W USB)
+
+...

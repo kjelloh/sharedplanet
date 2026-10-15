@@ -1,0 +1,6 @@
+﻿https://www.youtube.com/watch?v=KQUGFFN4M90 <https://www.youtube.com/watch?v=KQUGFFN4M90>
+
+This may be a good tutorial for UML Composite Structure Diagrams.
+
+* Components and classes connected using ports and interfaces.
+* Collaboration diagrams showing object collaboration by task.

@@ -1,0 +1,20 @@
+# Todo: The revolution that comes from the super curious deep insight in the form of deep doubt
+
+```#ecf6ef99``` *As of 2015-08-17 15:29*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+The changes to our daily lives that comes from an act-in-faith to the deep insight that we must apply deep doubt to our truths enables a revolution.
+
+Planting Deep doubt at the core of our truths means we must accept that all truths are at some level ungrounded and thus more or less open for change. Accepting this view but still allow ourselves to keep searching places ourselves in relation to our activities in a new light.
+
+1) We shall not be goal seekers (trying to get to an end destination) but instead become the best navigators we can imagine.  
+2) We shall not try to find ourselves but instead lovingly become aquatinted with the ever changing divids we become conscious as.  
+3) We shall not stock-in-barns but act instead circulate what you have by acting-in-faith. To get deeply rich we should collaborate with others and ourselves in thoughts and actions.  
+4) We shall not perform but seek out deep rich state of being. We may choose peace-of-mind (mediate), excitement (parachuting, dance, make love) or feel flow (concentrate in thoughts or work). The joy of performing (e.g. sport) is just one form of deep richness, not the number one to aim for in life activities.  
+5) We shall not put faith in a religion with a fixed story but instead gather with others in awe that we even exist and celebrate and comfort each other as vulnerable and confused nomads of life.  
+6) We shall not fight to fixate society but instead engage in making what it currently is and what it is changing into the best one to provide for our needs as deep rich seeking divids.  
+….
+
+{% endraw %}

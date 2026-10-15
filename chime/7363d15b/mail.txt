@@ -1,0 +1,13 @@
+﻿The interface between a Darwinet enabled application and the Darwinet engine itself must be designed to work on different devices, different platforms and using different frameworks. Consider to build an application just to try out different possible local application Darwinet interfaces?
+
+1) Consider the interface to be a query-able (run-time discovered) one?
+2) Consider to have the interface to be event driven (the application gets notified about changes)?
+3) How do we expose both the Data Model and the actual Data instance state?
+4) The interface should have a mechanism to allow time-travel (i.e. provide a time-windows-view)?
+5) Should the interface perform automatic-model-translation between versions of the model (allowing application to use an older model on a MIV that has evolved to a new one)?
+…
+
+Consider this idea to build a separate application just to try out a Darwinet-to-Applciation interface?
+
+a) In windows 8 machine created “C:\Users\kjell-olov\Documents\Embarcadero\Studio\Projects\MyDarwinetAppInterface\build"
+

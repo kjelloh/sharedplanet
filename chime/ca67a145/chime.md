@@ -1,0 +1,91 @@
+# Todo: Consider to check out the Bangood Daniu ADS5012H 100MHz oscilloscope hand held oscilloscope?
+
+```#ca67a145``` *As of 2019-07-16 15:49*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I saw the review on youtube learnelectronics channel and thought this lead to a cost effective (?) handheld oscilloscope was worth remembering.
+
+-1) As a side note also consdier the equipment list he lists he is using in his lab?
+
+> "Here is all the gear I currently use:
+
+> Oscilloscope: Micsig STO1104c  
+> <https://amzn.to/2UPPZeg>
+
+> ![](<Screenshot 2019-07-16 at 15.30.13.png>)
+
+> Power Supply 1: TekPower TP3005N  
+> <https://amzn.to/2TeQnxI>
+
+> ![](<Screenshot 2019-07-16 at 15.31.02.png>)
+
+> Power Supply 2: RUIDENG DP50V5A  
+> <https://amzn.to/2sNicSe>
+
+> ![](<Screenshot 2019-07-16 at 15.32.45.png>)
+
+> Signal Generator: JS2800  
+> <https://ban.ggood.vip/d9vk>
+
+> ![](<Screenshot 2019-07-16 at 15.33.26.png>)
+
+> DMM1: Owon18B  
+> <https://amzn.to/2SbIGLs>
+
+> ![](<Screenshot 2019-07-16 at 15.33.53.png>)
+
+> DMM2: Aneng 8008  
+> <https://amzn.to/2sNQncI>
+
+> ![](<Screenshot 2019-07-16 at 15.38.35.png>)
+
+> DMM3: Aneng 8009  
+> <https://amzn.to/2S5qeEp>
+
+> ![](<Screenshot 2019-07-16 at 15.35.49.png>)
+
+> DMM4: Uni-T UT801  
+> <https://amzn.to/2S89SuL>
+
+> ![](<Screenshot 2019-07-16 at 15.39.54.png>)
+
+> Soldering Station1: Zeny (Yihua)862D+  
+> <https://amzn.to/2S49z4e>
+
+> ![](<Screenshot 2019-07-16 at 15.41.57.png>)
+
+> Soldering Station2: KSGR T12  
+> <https://amzn.to/2Wk7Dn9>
+
+> ![](<Screenshot 2019-07-16 at 15.43.14.png>)
+
+> Light Meter Smart Sensor AS803  
+> <https://amzn.to/2B2gyRg> "
+
+> ![](<Screenshot 2019-07-16 at 15.45.07.png>)
+
+1) Consider the youtube video "Daniu ADS5012H 100MHz oscilloscope from Banggood" (<https://www.youtube.com/watch?v=ZNemJTAMw_M> )?
+
+==&gt; This seems to be the url to the Daniu ADS5012H on Bangood we site (<https://www.banggood.com/DANIU-ADS5012H-Digital-2_4-inch-TFT-Screen-Anti-burn-Oscilloscope-500MSs-Sampling-Rate-100MHz-Analog-Bandwidth-Support-Waveform-Storage-and-Built-in-Large-3000mah-Capacity-Lithium-Battery-p-1469066.html?akmClientCountry=America&rmmds=category&cur_warehouse=CN> )?
+
+![](<Screenshot 2019-07-16 at 15.13.46.png>)
+
+*The DANIU ADS5012H Digital 2.4-inch TFT Screen Anti-burn Oscilloscope 500MS/s Sampling Rate 100MHz Analog Bandwidth Support Waveform Storage and Built-in Large 3000mah Capacity Lithium Battery*
+
+2) It seems Daniu is a brand that lives on the Banggood web site (<https://www.banggood.com/brands-DANIU-b-230.html> )?
+
+=&gt;= At least I can't find a web site for the Daniu brand?
+
+3) The Dinau ADS5012H 100MHz oscilloscope seems to get a somewhat half hearted thumbs up on this EEVBlog thread (<https://www.eevblog.com/forum/testgear/daniu-ads5012h-100mhz-500-mss-portable-scope-for-$80-usd/> )?
+
+> *"I took a second look. It is indeed real time. **The HC148 chips are used as 8-3 encoders, and reference voltage is logic threshold. **They seem to use two 148s interleaved to achieve claimed sample rate. **Ingenious, and stupidly unreliable over temperature."*
+
+> *"...*There are 8 vertical divisions, a 4-bit converter would yield half-div resolution, but I'm pretty sure I can see wiggles smaller than that in the square waveform. Is it a two-stage conversion with three bits per stage for an idealized 6 bits, using the outputs of the first stage to subrange the second stage?*"*
+
+> *"AD9288 or something, probably there is second one on the bottom side, it is 2x125MSps ADC, probably overclocked 80MSpS version anyway. Typical 10yrs old DSO design"*
+
+...
+
+{% endraw %}

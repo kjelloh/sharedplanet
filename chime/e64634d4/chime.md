@@ -1,0 +1,31 @@
+# Todo: Överväg att skriva egna slogans för att slå hål på individualismen
+
+```#e64634d4``` *As of 2016-05-12 23:41*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Den som tror du kan välja hur det känns  
+Har inte förstått slump och emergens.
+
+Ett garanterat sätt att bli olycklig  
+Är att göra lycka till ditt livsmål.
+
+Varför skulle vårt medvetande finnas kvar när vi dör  
+När det inte ens är kvar då vi somnar?
+
+Vårt medvetande är det enda som tror  
+Att det fortsätter existera när det inte är där att observerar sig själv.
+
+Lycka är en oväntad belöning när du gjort något meningsfullt.
+
+Vi finns bara medan vi observerar vår upplevelse av att finnas.
+
+Vår själ är vacker och magisk som lågan på ett ljus.  
+Det betyder inte att lågan lever vidare efter vi blåst ut det.
+
+...
+
+Skickat från min iPhone
+
+{% endraw %}

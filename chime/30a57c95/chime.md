@@ -1,0 +1,53 @@
+# Todo: Hitta boende på Visingsö
+
+```#30a57c95``` *As of 2016-07-03 17:03*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Överväg att samla ihop referenser så jag kan boka boende på Visingsö på resan ner?
+
+1) Det här verkar vara en bra sida som listar boende på Visingsö (http://visingso.net/en/boende)?
+
+Tempelgården  
+Konstnärsgård i en unik miljö. Här finns övernattningsstugor, konsthall med tavlor av gårdens skapare Visingsökonstnären Olle Krantz, skulpturpark, och en kaffestuga där du kan njuta av hembakat kaffebröd eller en enkel smörgås i en härligt avstressande miljö. Vi kan ordna olika festarrangemang och konferenser efter önskemål.  
+Tfn: 073-8126810 Epost: tempelgarden@tele2.se Hemsida: www.tempelgarden.se
+
+Wisingsö Hotell & Konferens  
+Hotellanläggingen har totalt 96 bäddar. Vi erbjuder också boende i enklare standard, bed & breakfast.  
+Tfn: 0390-566 00 Epost: info@wisingso.se Hemsida: www.wisingso.se (http://www.wisingso.se/sida/kontakt)
+
+Visingsö Vandrarhem  
+Vandrarhem beläget mitt på ön. Rum med dusch & wc i korridor. Möjligheter till självhushåll. Erbjuder även Bed & Breakfast boende.  
+Tfn: 0390-401 91 Epost: info@visingso-vandrarhem.se Hemsida: www.visingsövandrarhem.se  
+Mobil: 070-744 01 91.  
+Vandrarhemsvärdar: Bodil Ödeen, Frida Berglund
+
+Visingsö Pensionat  
+Ett stenkast från hamnen ligger Visingsö Pensionat. Rum med dusch & wc, tv, dvd och wifi. Restaurang med fullständiga rättigheter. Öppet hela året!  
+Tfn: 0390-401 69 Epost: info@visingsopensionat.se Hemsida: www.visingsopensionat.se
+
+Visingsö Stugorna  
+Mindre stugby med övernattingsstugor. Beläget mitt på ön. Varje stuga utrustad för 4 personer. Servicebyggnad med duschar och wc.  
+Tfn: 0390-406 88 Epost: info@obergskafe.se Hemsida: www.visingso.nu
+
+Hostel Gyllene Knorren  
+Lantligt boende beläget på öns västra sida med underbar kvällssol.  
+Kom och träffa minigrisarna Nöffe och Valle, miniatyrhästarna Bilbo och Frodo och många fler!  
+Tfn: 036-299 12 11 Epost: info@gyllene-knorren.se Hemsida: www.gyllene-knorren.se
+
+Svensgården/Segersnäs  
+Sommarboende på Visingsö. Om ni nu bestämt er för att åka till Visingsö, stanna då gärna några extra dagar för att njuta av denna underbara Ö.  
+Vi hyr ut dygn/veckor eller månad.  
+Tfn: 0390-405 13 Epost: svensgarden@svensgarden.nu Hemsida: www.svensgarden.se
+
+Visingsöbostäder AB  
+Visingsöbostäder AB är ett kommunalt bostadsbolag som erbjuder boende i hyresrätt på Visingsö. Vi erbjuder villor, lägenheter i parhus och lägenheter i anslutning till äldreboendet Annero. Läs mer här  
+Tfn: 0390-403 53 Epost: visingsobostader@telia.com Hemsida:
+
+2) Visingsö turistbyrå verkar finnas i Visingsö hamn (http://visingso.net/information)
+
+Tel: 036-103889  
+info@visingso.se
+
+{% endraw %}

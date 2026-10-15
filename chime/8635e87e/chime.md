@@ -1,0 +1,21 @@
+# Todo: Överväg att skriva Sanningsnätsbönen?
+
+```#8635e87e``` *As of 2016-05-30 15:14*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Kan det vara en kul idé att formulera och fokusera på idén om sanningsnätet som ett andligt verktyg att relatera till världen?
+
+”Sanningsnätsbönen”
+
+Med denna bön vill vi uppmärksamma vårt sanningsnät.  
+Det nät av sanningar som i handling skapar meningsfullhet.  
+Vi bygger vårt sanningsnät genom att i tanke och handling utforska våra relationer till världen.  
+Vårt sanningsnät belönar oss med känslor och svar som leder till meningsfulla handlingar.  
+Genom vårt sanningsnät ter sig världen begriplig.  
+Vi håller det för sant att nyfiket hålla vårt sanningsnät så klart och rent vi mäktar med och förmår.  
+Vårt sanningsnät ger oss vila och inspiration i en värld av slump och emergens.  
+Vi känner tacksamhet för det vårt sanningsnät gör det möjligt för oss att tänka och känna.
+
+{% endraw %}

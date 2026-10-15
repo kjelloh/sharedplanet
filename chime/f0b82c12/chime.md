@@ -1,0 +1,62 @@
+# Todo: Consider to understand Radio Controllers and if and how to build my own ones?
+
+```#f0b82c12``` *As of 2018-09-10 14:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems radio controllers are available also for makers to be designed and implement with e.g., arduino shields and sketches?
+
+-1) Consider to document what I have learned so far?
+
+==&gt;
+
+> If I use my RC ESC I must implement the “standard RC servo PWM signal” (50 Hz 1-2 mS pulse width modulation) AND perform a startup-sequence sending max-speed signal and then zero-speed signal for the ESC to calibrate and enter operation mode.
+
+...
+
+1) Consider Electronoob youtube video on making an Arduino based 2.4 GHz radio controller sender and receiver (<https://youtu.be/aztm_8qGVfc>)?
+
+==&gt; It seems he uses an NRF24L01 board both as sender and receiver?
+
+==&gt; It seems there are NRF24L01 with external antenna (<https://www.ebay.com/itm/NRF24L01-PA-LNA-SMA-Antenna-Wireless-Transceiver-communication-module-2-4G-1100m/310651702557?epid=1939169401&hash=item485448cd1d:g:Dm0AAOSwzJ5XfLKS>)
+
+![](<Screen Shot 2018-09-09 at 17.39.41.png>)
+
+==&gt; Electro:kit seems to sell the nRF24L01 with on-board antenna for 59 SEK (<https://www.electrokit.com/produkt/tradlos-modul-med-nrf24l01/?gclid=Cj0KCQjwidPcBRCGARIsALM--eMckTuQjLAwl1MK8nEIQtTM2OUiSKooezX8gIy7WcrdM1E9_VSL8OkaAlbpEALw_wcB>)
+
+![](<Screen Shot 2018-09-09 at 17.44.10.png>)
+
+==&gt; It seems electro:kit sells nRF24L01 with an external antenna and amplifier for 199 SEK (<https://www.electrokit.com/produkt/tradlos-nrf24l01-2-4g-modul-med-pa-och-lna/?gclid=Cj0KCQjwidPcBRCGARIsALM--eMt6d7vXmXnCV_lkrxaytE_0mPW5KLSlwvhMqZNrlOlUPW40m-0XfcaAjeuEALw_wcB>)?
+
+![](<Screen Shot 2018-09-09 at 17.45.32.png>)
+
+2) Consider Great Scott video on Generic RF, NRF24 and Lora arduino based radio senders and receivers (<https://www.youtube.com/watch?v=nP6YuwNVoPU>)?
+
+==&gt; It seems electro:kit sells a 433 MHz RF-link for 89 SEK (<https://www.electrokit.com/produkt/rf-link-433mhz-sandare-och-mottagare/>)?
+
+![](<Screen Shot 2018-09-09 at 17.47.12.png>)
+
+3) Consider this web-page on using Brushless DC motors with an RC ESC (<https://os.mbed.com/users/4180_1/notebook/using-a-dc-brushless-motor-with-an-rc-esc/>)?
+
+==&gt; It seems an RC ESC (Radio Controlled Electric Speed Controller) accepts “standard RC servo signals” of 50HZ pulses of width 1-2 ms?
+
+> *The speed control input signal used in most ESCs for drones works the same as standard RC servo signals, a 1-2ms. wide pulse every 20ms.*
+
+==&gt; It seems most modern RC ESC requires a startup-sequence of max-throttle then min throttle to calibrate the speed range before entering operation mode?
+
+> *The tricky bit is that ESCs require a special **startup** calibration and arming **sequence**. The ESC uses the motor to send beep codes at power up and during the arming procedure. When the ESC powers up, three beeps sound. Next, a **full throttle** signal is sent, followed by a **low throttle**. On an RC radio control module, the **user** moves the **stick up**, waits for a beep code and pulls the **stick down** all the way followed by another beep code. *
+
+…
+
+4) Consider DroneBot youtube video “Using Inexpensive 433 MHz RF Modules with Arduino” (<https://www.youtube.com/watch?v=b5C9SPVlU4U>)?
+
+==&gt; It seems this is the article defining this project (<https://dronebotworkshop.com/433mhz-rf-modules-arduino/>)?
+
+![](<Screen Shot 2018-09-10 at 14.05.56.png>)
+
+==&gt; The Arduino library to operate the 433 MHz transmittera and receiver seems to live here (<https://www.arduino.cc/en/Reference/SPI>)?
+
+...
+
+{% endraw %}

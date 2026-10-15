@@ -1,0 +1,13 @@
+﻿It seems a recurring need to get a listing of sub-folders that carry file(s) that complies to a predicate (e.g. project file folders)
+
+1) The Testbench application need to list sub-folders in the workspace that corresponds to different testbench configurations (project folder idiom)
+2) When creating Visual Studio solution with a lot of boost examples turned into console application projects I needed to list sub-folder carrying main.cpp but not yet a VS project/solution file.
+…
+
+Consider to solve this problem using boost filesystem functionality in some generic way.
+
+a) Consider a folder iterator that accepts a folder-content-predicate that iterates over all folders for which the predicate is true?
+b) Mechanism should support also a for_each to allow batch modification of these folders (e.g. delete redundant sln-file for visual studio project folder and modify property-file for Testbench folders)
+c) Note that with KeyPathArray we may refer to elements in structured files by appending a file + file-structure-path to each sub-folder-path (e.g. path=[“C:\Users\Public\Documents\Swedbank Testbench Workspace\default”, “default.ini”, “iPOS.Terminal.InterfaceFile”]).
+…
+

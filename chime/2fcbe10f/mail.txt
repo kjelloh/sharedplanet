@@ -1,0 +1,60 @@
+﻿Så, vad kan vi lära oss och förbättra genom att försöka skapa en karta över hur mitt digitala liv ser ut, hur det relaterar till mitt IRL i tid och rum?
+
+	==> Överväg att all digital aktivitet mellan digitala identiteter kan (borde) automatiseras?
+	==> Överväg att det är min "Digitala Sekreterare" som har till uppgift att utföra dessa digitala sysslor?
+	==> Överväg att målet är att förenkla det digitala livet genom att låta datorer göra det datorer är bra på?
+
+-1) Överväg att lista digitala aktiviteter som är schemalagda under året?
+
+	==> Deklarationer
+	==> Bokföring
+	==> Betalning av räkningar
+	==> Bokslut och årsredovisningar
+	==> Årsstämma
+
+	==> Överväg hur dessa digitala aktiviteter kan automatiseras?
+
+1) Överväg att lista vilka juridiska personer jag representerar?
+
+	a) Mig Själv
+	b) The ITfied
+	c) KOH-Innovation (är detta en egen identitet eller en näringsverksamhets-"divid" av mig?
+
+2) Överväg att lista alla digitala identiteter jag har?
+
+	==> Överväg att lista alla e-post-adresser jag har?
+	==> Överväg att lista alla aktiva digitala konton jag har?
+	==> Vilka andra digitala identiteter har jag (telefon, personnummer, BankId, certificat)?
+
+3) Överväg att lista alla digitala identiteter jag har en relation med?
+
+	==> Överväg att identifiera dessa som alla de som e-posta mig?
+		==> Avsändaren av e-post identifierar en digital identitet
+		==> Notera att många e-post-identiteter är enkelriktade (kan bara kommunicera med monologer) som e.g. no-reply@xxxx?
+		...
+
+	==> Bolagsverket ( ITfied <-- the@itfied.se --> Bolagsverket)
+	==> Skatteverket
+			(Jag <-- ?? --> Skatteverket)
+			(The ITffied <-- ?? --> Skatteverket)
+	==> Leverantörertill The ITfied
+		The ITfied <--> Telia
+		
+	==> Leverantörer till KOH-Innovation
+
+	==> Leverantörer till mig privat
+
+
+3) Överväg att kartlägga alla relationer mellan mina och andras digitala identiteter?
+
+	==> The ITfied verkar relatera till Bolagsverket med digitala identiteten the@itfied.se?
+	...
+
+4) Överväg att utöka denna kartläggning också med IRL-identiteter och relationer (e.g. "fysisk" relation med Skatteverket)?
+
+	==> Vilka relationer ingår jag i som inte är "digital"?
+	==> Kan jag räkna relationer till mina vänner som "icke digitala"?
+	...
+
+...
+

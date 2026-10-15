@@ -1,0 +1,31 @@
+# Todo: Consider to try and understand the DT Swiss MTB Rims - naming and available proerties?
+
+```#2d38d241``` *As of 2021-11-28 14:32*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I need an MTB Rim for my Urkraft bike frame build.
+
+0) Consider to list potential DT Swiss rims for my bike build?
+
+==&gt; XM 481 29 30 mm DB VI / RDXM4829P32S011433 (<https://www.dtswiss.com/en/components/rims-mtb/all-mountain/xm-481> )?
+
+> - 29" / 700C
+> -  Reference diameter ERD  601 mm
+> -  [Inner Width]()  30 mm
+> -  Outer width  35 mm
+> -  [Rim Height]()  21 mm
+> - 525 g
+> -
+> -  recommended system weight max.  120 kg
+> -  ASTM classification  4
+
+
+1) Consider to list the DT Swiss MTB Rim properties in a spread sheet to try and understand the naming scheme and properties available ()?
+
+## Attachments
+
+- [Dt Swiss Rims.numbers](<Dt Swiss Rims.numbers>)
+
+{% endraw %}

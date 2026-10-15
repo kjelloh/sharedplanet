@@ -1,0 +1,42 @@
+﻿After the meeting with Olof Åstrand I got even more engaged to get and set-up a LoRa network access point!
+
+	==> Also see “Todo: Darwinet - Consider LoRa and Sigfox IoT radio connected and synchronised darwinist domain nodes?”
+	==> Also see “Todo: Consider a stand-by killer we can wake up over a Lora network to activate say a WiFi printer?"
+
+1) This seems to be where the LoRa community lives (https://www.thethingsnetwork.org <https://www.thethingsnetwork.org/>)?
+
+	==> I created an Account as user “kjelloh"
+	==> It seems I can become the first gateway in Kallhäll :)
+
+		
+
+	…
+
+2) Consider the best and most cost effective way to get hold of a LoRa access point?
+
+	TODO: Find where to buy a LoRa access point?
+
+	==> Consider the Andreas youtube video “#115 How to build a LoRa / LoraWAN Gateway and connect it to TTN? Using an IC880a Board” (https://www.youtube.com/watch?v=ZFVA6cQyheY <https://www.youtube.com/watch?v=ZFVA6cQyheY>)?
+
+	==> It seems I must use the 868 MHz band (Europe)?
+
+	==> It seems Andreas i building the loRa Gateway according to the GitHub project and shopping list (https://github.com/ttn-zh/ic880a-gateway/wiki#ordering-the-parts <https://github.com/ttn-zh/ic880a-gateway/wiki#ordering-the-parts>)?
+
+	==> The iC880A-SPI LoRaWAN Concejtrator board seems to be available here (https://shop.imst.de/wireless-modules/lora-products/8/ic880a-spi-lorawan-concentrator-868-mhz <https://shop.imst.de/wireless-modules/lora-products/8/ic880a-spi-lorawan-concentrator-868-mhz>)?
+
+		
+
+
+	
+
+	…
+
+3) I cant find a Meetup for Lora?
+
+	TODO: Create a LoRa Meetup?
+	…
+
+…
+
+Consider to take part and explore the LoRa community in Stockholm :)
+...

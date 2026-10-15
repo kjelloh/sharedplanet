@@ -1,0 +1,176 @@
+﻿
+1) This seems to be the home for downloading Blender (https://www.blender.org/download/ <https://www.blender.org/download/> )?
+
+	==> It seems, on macOS, we get a dmg with a stand-alone app to just drag-and-drop to the applications folder?
+
+
+	==> It seems, on MacOS, we need to manually eject the dmg and the also manually drag it to the bin?
+
+	
+
+
+	==> It seems on macOS,  the Blender application has an approved signature so that it is NOT denied by macOS (but we still need to authorise it)?
+
+	 
+
+2) Blender seems to be open source in C/C++ and lives here on Github (https://github.com/blender/blender <https://github.com/blender/blender> )?
+
+3) This seems to be the home of CAD Sketcher (https://www.cadsketcher.com <https://www.cadsketcher.com/> )?
+
+4) Consider youtube video "CAD Modeling In Blender 3.2 | Using CAD Sketcher" (https://youtu.be/1jNDLUDL0gc?list=LL <https://youtu.be/1jNDLUDL0gc?list=LL> )? 
+
+	==> The creator seesm to provide a list of useful links to resources to learn about Blender and CAD Sketcher?
+
+MAKER TALES ACADEMY
+ - - Learn Blender Fast Through 3D Print Design Paid Course - - -
+https://academy.makertales.com/p/how-... <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblc1T0YxeWRRcWxfelNUcWttNHJYMDNTZU5vZ3xBQ3Jtc0ttSUFJX3VRQTBrZjJOSndmaEZOXzVDbXhxbXBhMlF0UHlEMFd2LXpIbkZIMTlkcEJqeTZrajgtR0Y5cWgyZVk2TTNIZnJfUGxKdFpqbHFJcmtWbUJLVENETTNOUFJhcHFXdV9mVlhMSVZtd1NsTmNFOA&q=https%3A%2F%2Facademy.makertales.com%2Fp%2Fhow-to-use-blender-for-3d-printing&v=1jNDLUDL0gc>
+
+-- Useful Links --
+Download CAD Sketcher: https://makertales.gumroad.com/l/CADs... <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGZkbUZXUjBCTlJKOURJZDRhbkRSbzlrLXB1QXxBQ3Jtc0traHozbVgxRURDdU1GWENmejgyNVc3SVFqNE1vWm1DM2JWcjZTLUVycGxoYnBuc2tOMEU2MXlUZTlGampjb0RLMnhka2VBRDh3ZWdMckdiVlgySWJxZGRZMnpZR3hKSWhORHNtel9SMHYzaFJoOGtKVQ&q=https%3A%2F%2Fmakertales.gumroad.com%2Fl%2FCADsketcher&v=1jNDLUDL0gc> 
+Technical Drawing Exercise: https://makertales.gumroad.com/l/gxsywv <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm5lNWF5a20yMDVxLTRXVmY4elhBSW1tWEdQUXxBQ3Jtc0ttT0pkR1EtMHdjN3ljSUE2YUNOblRZS2FMZmxld2hwSmk2aVQ3SGtFYjZSLVVIdFcweFNPZnVEOENZYUt6NmZvQUdLaUozNXk3OWRXOUM0WDdDSjE0cE0tOXBYajVJZWYtdEM3dTVNM1o0dURtbkNZYw&q=https%3A%2F%2Fmakertales.gumroad.com%2Fl%2Fgxsywv&v=1jNDLUDL0gc>
+Shortcut Sheet: https://makertales.gumroad.com/l/dpzwt <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbENFUTBfQlNacTZOTXZQa3FFWlBNTVN6dGtTZ3xBQ3Jtc0tuYVM2MVZaOGF2QlNGMDR0dS1mbkI2N1NuY29sQ2RId1dvWHZSNm5ldWVEV09Yajc4OWt2eUZGeGFqZUxPQTBQUnk1WWxZWjZYdE1MYXRvNkNTdERVLXowalFNRV9RTWE1TEJqenBtRlByWUlub2QtWQ&q=https%3A%2F%2Fmakertales.gumroad.com%2Fl%2Fdpzwt&v=1jNDLUDL0gc>
+
+Support CAD Skecher Open Collective: https://opencollective.com/cadsketcher <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbk9PZ1ExOWV6bVdnTG1PLVdwUEx2TEJHTWd1Z3xBQ3Jtc0ttUWpjQVFGYnhscTlGVWl0UXVZVGo2dndGTlJRdEczMWVjb3hpQ2FSX3NNcFlQYlZyZklOelJoYm1Bbmd3OGZ5cUhvX09ieThVb0lBS1NzTGJrdkxLMU1CTzNvbXBoMWhTenYzdF9SaVVIcXIwd0RtSQ&q=https%3A%2F%2Fopencollective.com%2Fcadsketcher&v=1jNDLUDL0gc>
+
+What is CAD Sketcher: https://youtu.be/V452ModEqqo <https://www.youtube.com/watch?v=V452ModEqqo&t=0s>
+3D Print Tool Box Video: https://youtu.be/0rgrLWFUjlk <https://www.youtube.com/watch?v=0rgrLWFUjlk&t=0s>
+CAD Sketcher Workflows: https://youtu.be/4Al3yw2klHA <https://www.youtube.com/watch?v=4Al3yw2klHA&t=0s>
+
+CAD Sketcher Discord: https://bit.ly/CADsDIS <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnMtSHUwRU5fZi1ramxrZ0N2SEZjZTFITy1Ud3xBQ3Jtc0traEQ4TTY0bXE2Vk10RU50VjFydWUtTFJvX1ZldWJJemVmaFBQX2NQc0ZDOTZ3N0RDWThacTFRcG54THZjOVlMaVF1WUlBYnczaE5hOE04M25TbjhGalNrVkJmVllCd2lmUExUVjYzM2FLa25GQXQ2OA&q=https%3A%2F%2Fbit.ly%2FCADsDIS&v=1jNDLUDL0gc>
+CAD Sketcher Wiki: https://bit.ly/CADsWIKI <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFhGNlFkamFuMlJDa0dJTWpZYjB3T3dSbFM4QXxBQ3Jtc0tuZ0NFNU9HTS0wUVRQZ21vV3hpdktoeXAxdUt3MjFHVVlmVC1pbVE4aVRjU0MtTUhxWmVOdW9tcXpSZ2ZaWE1NQjF3MWhFTTR2MHQ0dnVMQTMwM3ZRcXdPVlJBdEhjenNJTkRoX2lyOU43M21lMjh6RQ&q=https%3A%2F%2Fbit.ly%2FCADsWIKI&v=1jNDLUDL0gc>
+Code Contribute to CAD Sketcher: https://bit.ly/38ghc0T <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbUtkOWxVbTFCMS1vZlptLVM0Ml9ramZEY2hCd3xBQ3Jtc0ttN1FuVVZvRUE0dFFJVUhLbW82eFN3eXJ0RExOMk1DVFJ5dFdDS0F0MWZHaEJodVJ6MmhIeUd4Rk9lanBFeEtlODNualhWbU5kcF9iR2hJRHFrd1lCQUpoeDUzaGVMNHp1TzY1YU14MFRfcFgyOUtZWQ&q=https%3A%2F%2Fbit.ly%2F38ghc0T&v=1jNDLUDL0gc>
+CAD Sketcher Simple Roadmap: https://bit.ly/3wG2lpn <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmV2VzFfUnIyR1pmTS1Oa1d0ZVA4UUtUQTJVQXxBQ3Jtc0ttSVBtMm5VTnlHb1k4SjB6TnYzVVdScnNOSTJCU1hSa0NqRnVJWTFZVlNnS1NuYmhkR1RwcXpQbVc4Qnl4QkxicVFnVW92MDROX2U1V1FLaFpKb2ZVRXhwMTRCYU5zWEhNVFZFSEZjb29WdlRCYUZNMA&q=https%3A%2F%2Fbit.ly%2F3wG2lpn&v=1jNDLUDL0gc>
+CAD Sketcher Github Roadmap: https://bit.ly/3MJTk5v <https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDZSek9TZExidGx4STZOQ2hZZWFKX1hOZmhrUXxBQ3Jtc0ttZGQ2enRyUmUxZnRQUnZOWEJDdEVsemREQmh5OTAzWkptLTkzcWlBWGNJZy1DMFlMSEFqM1dJMFNqODdzclZySW05ckhUTlIzOHUxNV8ybmtDTTNJMGpuQmVUQ2xVM3RneVpsaWNJMWVDWGxVYnItbw&q=https%3A%2F%2Fbit.ly%2F3MJTk5v&v=1jNDLUDL0gc>
+
+Learn Blender 2.9+/3.0 through a precision modelling playlist:
+https://www.youtube.com/playlist?list... <https://www.youtube.com/playlist?list=PL6Fiih6ItYsXzUbBNz7-IvV7UJYHZzCdF>
+
+5) This seems to be the preferred location where to get the CAD sketcher plugin (https://makertales.gumroad.com/l/CADsketcher <https://makertales.gumroad.com/l/CADsketcher> )?
+
+	==> It seems we need to download a ZIP-file and then tell Blender how to access ind install from this ZIP-file?
+
+Addon installation
+
+Download the ZIP archive <https://github.com/hlorus/CAD-Sketcher/archive/refs/heads/main.zip> (do not unpack it after downloading)
+Open Blender and go to: Edit > Preferences > Add-ons > Press "Install..." button
+Browse to the location of the ZIP and select it, then press "Install Add-on"
+Enable the addon by pressing the checkbox
+Dependency installation
+
+CAD sketcher heavily depends on the solvespace python module <https://pypi.org/project/py-slvs/> and won't be functional without it.
+
+Inside the addon's preferences check the "Solver Module" tab to see if the module is already available
+Press "Install from PyPi"
+Check the wiki installation <https://hlorus.github.io/CAD_Sketcher/installation> chapter for in-depth instructions.
+
+	==> So the actual ZIP-file seems to be available at the Github repository of CAD-Sketcher (https://github.com/hlorus/CAD-Sketcher/archive/refs/heads/main.zip <https://github.com/hlorus/CAD-Sketcher/archive/refs/heads/main.zip> )?
+
+6) This seems to be the home at Github of the CAD-sketcher plugin (https://github.com/hlorus/CAD_Sketcher <https://github.com/hlorus/CAD_Sketcher> )?
+
+	==> So the actual ZIP-file seems to be available at the Github repository of CAD-Sketcher (https://github.com/hlorus/CAD-Sketcher/archive/refs/heads/main.zip <https://github.com/hlorus/CAD-Sketcher/archive/refs/heads/main.zip> )?
+
+7) Consider to document my experience of installing Blender and the CAD-Sketcher plugin?
+
+	==> It seems installing Blender on macOS is just a matter of downloading the dmg and drag-and-drop the stand-alone application to the Applications folder (See download above)
+
+	==> It seems to install the CAD-sketcher we have to download "it" as a ZIP-file and then in Blender do Edit > Preferences > Add-ons > Press "Install..." button (as instructed by the plugin download page)?
+
+
+
+
+
+
+
+	==> Here I stumbled into some confusion - WHERE IS THE ADD ON It does not show up in the list or I can't find it, not search for it)?? 
+
+	==> It seems, on macOS the downloaded ZIP-file is automatically unzipped so we need to ZIP-it again to make Blender be able to install it?
+
+
+
+
+
+
+
+
+	==> It seems we get an ERROR (and I guess it is that we need to first install the "Solver Module" as instructed in the add-on download page)?
+
+
+
+
+	==> Now I am CONFUSED again as I can't find the "Solver Module" tab (Nothing called "solver" in the LIST of add-ons and NO TAB named "Solver")?
+
+	==> I guessed I need to install the Pythin library linked to at the CAD-sketcher download page (https://pypi.org/project/py-slvs/ <https://pypi.org/project/py-slvs/> )?
+
+	==> It seems I do not have pip installed?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % pip install py-slvs
+zsh: command not found: pip
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	==> It seems I have installed, and want to use, Python 3 where the command is actually pip3?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % pip3 install py-slvs
+DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621 <https://github.com/Homebrew/homebrew-core/issues/76621>
+Collecting py-slvs
+  Downloading py_slvs-1.0.4-cp39-cp39-macosx_10_9_universal2.whl (404 kB)
+     |████████████████████████████████| 404 kB 2.3 MB/s            
+Installing collected packages: py-slvs
+DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621 <https://github.com/Homebrew/homebrew-core/issues/76621>
+Successfully installed py-slvs-1.0.4
+WARNING: You are using pip version 21.3.1; however, version 22.2 is available.
+You should consider upgrading via the '/usr/local/opt/python@3.9/bin/python3.9 -m pip install --upgrade pip' command.
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	==> Side note (detour) - I was instructed to upgrade my pip-version; did so and now I also have the pip-command correctly linked to pip3?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % /usr/local/opt/python@3.9/bin/python3.9 -m pip install --upgrade pip
+DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621 <https://github.com/Homebrew/homebrew-core/issues/76621>
+Requirement already satisfied: pip in /usr/local/lib/python3.9/site-packages (21.3.1)
+Collecting pip
+  Downloading pip-22.2-py3-none-any.whl (2.0 MB)
+     |████████████████████████████████| 2.0 MB 3.4 MB/s            
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.3.1
+    Uninstalling pip-21.3.1:
+      Successfully uninstalled pip-21.3.1
+DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621 <https://github.com/Homebrew/homebrew-core/issues/76621>
+Successfully installed pip-22.2
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % pip3 install py-slvs                                                
+Requirement already satisfied: py-slvs in /usr/local/lib/python3.9/site-packages (1.0.4)
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % pip install py-slvs 
+Requirement already satisfied: py-slvs in /usr/local/lib/python3.9/site-packages (1.0.4)
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	==> Now that I have installed py-slvs I GOT STUCK (Blender still does NOT find the py-slvs module)!!
+
+	...
+
+	==> It seems, on macOS, Blender uses its own Python installation at /Applications/Blender.app/Contents/Resources/3.2/python/bin/python3.10?
+
+Last login: Thu Jul 21 20:54:53 on console
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % /Applications/Blender.app/Contents/Resources/3.2/python/bin/python3.10 -m pip install --upgrade pip
+Requirement already satisfied: pip in /Applications/Blender.app/Contents/Resources/3.2/python/lib/python3.10/site-packages (21.2.4)
+Collecting pip
+  Using cached pip-22.2-py3-none-any.whl (2.0 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.2.4
+    Uninstalling pip-21.2.4:
+      Successfully uninstalled pip-21.2.4
+Successfully installed pip-22.2
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % /Applications/Blender.app/Contents/Resources/3.2/python/bin/pip install py-slvs     
+Collecting py-slvs
+  Downloading py_slvs-1.0.4-cp310-cp310-macosx_10_9_universal2.whl (404 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 405.0/405.0 kB 4.7 MB/s eta 0:00:00
+Installing collected packages: py-slvs
+Successfully installed py-slvs-1.0.4
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	==> And NOW - I can activate the "CAD Sketcher" add on OK :)
+
+	
+
+...

@@ -1,0 +1,210 @@
+# Todo: Consider the Swedish Tax Agency CSV-file format for upload of "Periodisk Sammanställning" (and some info on SRU based declarations)
+
+```#f11ad335``` *As of 2022-04-28 14:11*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to make cratchit able to interact with the API:s os Swedish Tax Agency and SRU-files is one of their file formats for data transfer.
+
+==&gt; Also see "Todo: Consider the Swedish Tax Agency XML format for upload of declaration of employer data?"
+
+-1) Consider the english terms defines by Swedish Tax Agency (
+
+==&gt; Is seems "Periodisk sammanställning" is "EU sales list (recapitulative statement)" or just "EU sales list" (<https://www.skatteverket.se/servicelankar/otherlanguages/inenglish/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/vat/vatitemsboxbybox.4.3dfca4f410f4fc63c8680004502.html> )?
+
+1) Consider this is the web page "Lämna periodisk sammanställning via e-tjänsten Filöverföring" that (kind of) defines how to assemble a file (SRU File?) to send to SKV for "Periodisk Sammanställning" (<https://www.skatteverket.se/foretag/moms/deklareramoms/periodisksammanstallning/lamnaperiodisksammanstallningmedfiloverforing.4.7eada0316ed67d72822104.html> )?
+
+==&gt; It seems on this page there is a link to a test site
+
+> ## Testa filer
+
+> Testa att dina filer uppfyller Skatteverkets krav på det tekniska formatet. Du behöver ingen e-legitimation för att använda tjänsten.
+
+- [Testa filer![länk till annan webbplats](externallink.png)](https://www1.skatteverket.se/fv/fv_web/login.do)
+
+
+
+==&gt; **It seems the file to send is in fact a CSV-file using ';' as separator?**
+
+> *"Filformat och filens innehåll*
+
+> *Filen som förs över via filöverföringstjänsten ska vara en textfil som är **avgränsad med semikolon**. En sådan fil består av ett antal rader där uppgifterna skiljs åt av ett semikolon. Filen ska enbart innehålla text och kan ha ändelsen .txt eller .csv. Det är möjligt att exportera innehållet i en Excel-fil till .csv-format. En fil med uppgifter för periodisk sammanställning ska innehålla nedanstående uppgifter. Du hittar exempel på hur en fil kan se ut längst ner på sidan."*
+
+==&gt; It seems the first entry (row 1) in the file must be the "SKV574008" mark?
+
+> *"På första raden anger du SKV574008 för att visa att filen avser en periodisk sammanställning."*
+
+==&gt; It seems the second row (row 2) is defined to contain a kind of "header" to define the sender and the period the data is about?
+
+> På den andra raden anger du i tur och ordning:
+
+> • Det 12-siffriga momsregistreringsnumret för den som är skyldig att lämna uppgifterna. Med eller utan landskoden SE.  
+> • Månads- eller kvartalskoden för den månad eller det kalenderkvartal uppgifterna gäller, till exempel 2012 för december 2020, 2101 för januari 2021, 20-4 för fjärde kvartalet 2020 eller 21-1 för första kvartalet 2021.  
+> • Namnet på personen som är ansvarig för de lämnade uppgifterna (högst 35 tecken).  
+> • Telefonnummer till den som är ansvarig för uppgifterna (endast siffror, med bindestreck efter riktnumret eller utlandsnummer, som inleds med plustecken (högst 17 tecken)).  
+> • Frivillig uppgift om e-postadress till den som är ansvarig för uppgifterna.
+
+==&gt; Compare the example at the bottom of the web page:
+
+> 556000016701;2001;Per Persson;0123-45690; [post@filmkopia.se](mailto:post@filmkopia.se)
+
+==&gt; It seems the phone number is to be represented as a NO_SPACE character string (digits and '+' and '-') based on this description on Wikipedia (<https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers#Sweden> )?
+
+> ### Sweden
+
+  
+> [Swedish telephone numbers](https://en.wikipedia.org/wiki/Telephone_numbers_in_Sweden) are between eight and ten digits long. They start with a two to four digit area code. A three digit code starting with 07 indicates that the number is for a mobile phone. All national numbers start with one leading 0, and international calls are specified by 00 or +. The numbers are written with the area code followed by a hyphen, and then two to three groups of digits separated by spaces.[&#91;6&#93;](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers#cite_note-12.1.7-6)  
+> TypeFormatNational 10 digit
+
+> ```
+> 0A-XXX XXX XX or
+> 0AA-XXX XX XX or
+> 0AAA-XX XX XX
+
+> ```
+
+> National 9 digit
+
+> ```
+> 0A-XXX XX XX or
+> 0AA-XX XX XX or
+> 0AAA-XXX XX
+
+> ```
+
+> National 8 digit
+
+> ```
+> 0A-XX XX XX or
+> 0AA-XXX XX
+
+> ```
+
+> Mobile 10 digit
+
+> ```
+> 07A-XXX XX XX or
+> 07AA-XX XX XX
+
+> ```
+
+> International
+
+> ```
+> +CC AAA-XXX XX XX or
+> 00CC AAA-XXX XX XX
+> ```
+
+==&gt; It seems the third and following rows (row 3...n) each defines an actual reported data about EU sales divided on goods and services with VAT separately provided?
+
+> *"På den tredje och följande rader anges i tur och ordning:*
+
+> *• Köparens momsregistreringsnummer (VAT-nummer) med inledande landskod.  
+> *  
+> *• Värde av varuleveranser (högst 12 siffror inklusive eventuellt minustecken).  
+> *  
+> *• Värde av trepartshandel (högst 12 siffror inklusive eventuellt minustecken).  
+> *  
+> *• Värde av tjänster enligt huvudregeln (högst 12 siffror inklusive eventuellt minustecken)."*
+
+==&gt; Compare the example rows at the bottom of the web page:
+
+> FI01409351;16400;;;
+
+> DK31283522;21700;13600;;
+
+> ESA28480514;3200;;15300;
+
+> DE262875793;X;;
+
+==&gt; Which for entry "FI01409351;16400;;;" would mean:
+
+> VAT Orgno: FI01409351  
+> Amount sold Goods: 16400  
+> Amount thre-party busness:  
+> Amount sold services:
+
+NOTE: The inconsistency between the example lines having sometimes four separators and sometimes only three (error in the example)?
+
+> *The observation is that is ';' is used as a separator then only three ';' should be used to define four values. And four ';' would mean we have separated five values?*
+
+> *Todo: Test this out when trying out files to send to SKV?*
+
+2) Consider this example file at the bottom on web page "Lämna periodisk sammanställning via e-tjänsten Filöverföring" (<https://www.skatteverket.se/foretag/moms/deklareramoms/periodisksammanstallning/lamnaperiodisksammanstallningmedfiloverforing.4.7eada0316ed67d72822104.html> )?
+
+> Exempel 1  
+> Fil med uppgifter om varuförsäljning, trepartshandel, tjänsteförsäljning samt överföring till avropslager. Bokstaven X i sista raden indikerar att uppgifterna avser en överföring till den avsedda köparen med VAT-nummer DE262875793.
+
+> SKV574008;
+
+> 556000016701;2001;Per Persson;0123-45690; [post@filmkopia.se](mailto:post@filmkopia.se)
+
+> FI01409351;16400;;;
+
+> DK31283522;21700;13600;;
+
+> ESA28480514;3200;;15300;
+
+> DE262875793;X;;
+
+> Exempel 2  
+> Fil med ändring av tidigare redovisade uppgifter avseende överföring till avropslager. Uppgifterna visa att varor har återförts till Sverige från lagret i Tyskland. I filen ska anges den tidigare avsedda köparen samt bokstaven Y.
+
+> SKV574008;
+
+> 556000016701;2004;Per Persson;0123-45690; [post@filmkopia.se](mailto:post@filmkopia.se)
+
+> DE262875793;Y;;
+
+> Exempel 3  
+> Fil med ändring av redovisad avsedd köpare. Först anges VAT-nummer för den nya köparen. Därefter anges bokstaven Z som indikerar att uppgifterna avser byte av köpare och sedan anges den tidigare avsedda köparen. I exemplet nedan har köparen med VAT-nummer DE283993535 ersatt den tidigare avsedda köparen med VAT-nummer DE262875793.
+
+> SKV574008;
+
+> 556000016701;2005;Per Persson;0123-45690; [post@filmkopia.se](mailto:post@filmkopia.se)
+
+> DE283993535;Z;DE262875793;
+
+3) Consider as stated on web page (Fill in the VAT return) that the amount in box 35 on the "VAT Return" must also be entered into the "EU sales list (recapitulative statement)" form (<https://www.skatteverket.se/servicelankar/otherlanguages/inenglish/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/vat/vatitemsboxbybox.4.3dfca4f410f4fc63c8680004502.html> )?
+
+> *"**EU sales list (recapitulative statement)*
+
+> *Amounts that you enter in box 35 must also be reported in your EU sales list.**"*
+
+4) Consider the Swedish Tax Agency web page "Information om filöverföringstjänst för sru-uppgifter" (<https://www.skatteverket.se/foretag/etjansterochblanketter/allaetjanster/tjanster/filoverforing/informationomsruuppgifter.4.3dfca4f410f4fc63c86800020896.html> )?
+
+==&gt; It seems I need to create two SRU-files named "INFO.SRU" and "BLANKETTER.SRU"?
+
+> "*Vid filöverföring av sru-uppgifter till Skatteverket är det två filer som ska överföras:*
+
+> *INFO.SRU  
+> BLANKETTER.SRU*"
+
+==&gt; Consider the technical documentation SKV 269 (<https://www.skatteverket.se/foretag/etjansterochblanketter/blanketterbroschyrer/broschyrer/info/269.4.39f16f103821c58f680007305.html?q=skv+269> )?
+
+5) Consider Swedish Tax Agency web page "Periodisk sammanställning för varor och tjänster" about the form for "Periodisk Sammanställning" (<https://www.skatteverket.se/foretag/moms/deklareramoms/periodisksammanstallning.4.58d555751259e4d661680001093.html> )?
+
+==&gt; It seems the Swedish Tax Agency Form "Periodisk Sammanställning" has the code SKV 5740?
+
+> Använd blankett SKV 5740. Du kan få blanketten på följande sätt:
+
+- [Beställ blanketten Periodisk sammanställning (SKV 5740) till din brevlåda](https://www.skatteverket.se/privat/etjansterochblanketter/blanketterbroschyrer/blanketter/bestallningstjanst/bestallablanketter.4.f2987d710a66729816800055.html)
+
+
+
+NOTE: THERE SEEMS TO BE NO WAY TO FIND AN ACTUAL DEFINITION OF THE SRU CODE TO PROVIDE FOR "Periodisk Sammanställning"?
+
+6) It seems SKV 278 used to define how to send "Periodisk Sammanställning" to SKV but is now replaced by a web page (<https://www.skatteverket.se/privat/etjansterochblanketter/broschyrenharblivitwebbsidor.4.2cf1b5cd163796a5c8b433c.html?q=SKV+278> )?
+
+> "  
+> *Broschyrer har blivit webbsidor
+
+> Den här sidan har du kommit till eftersom du har sökt efter en broschyr som inte längre finns.
+
+> Den största delen av informationen i de borttagna broschyrerna finns nu som webbsidor istället, se länkar i tabellen. Du kan även använda vår sökfunktion för att hitta information. Skriv in det du hoppades hitta i broschyren, till exempel "gifta mig", "dödsbo" eller "värdepapper".*  
+> "
+
+...
+
+{% endraw %}

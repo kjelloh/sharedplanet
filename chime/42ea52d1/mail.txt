@@ -1,0 +1,42 @@
+﻿Autum is coming so I should replace my inlines wheels and bearings so I can continue to exersice when the rain and cold comes.
+
+1) I seem to have Hyper X-360 76mm Durometer 78A wheels with twin "standard" 608 bearings?
+
+I have yet to get out the bearings from the wheels. But the width of the wheel assembly is 24 mm. This fits with the assumption I have twin 608 bearings with should be 7mm each in with. So the spacer should be 10mm?
+
+The bolt is 34 mm long and 8mm in diameter.
+
+The wheels are marked to be 76mm with durometer 78A. So quite soft which maybe is to allow skating on rough asfalt?
+
+2) Consider that Hyper seems to still exist and sell wheels for Inlines, race fitness and hickey (https://www.hyperwheels.com/pages/brand <https://www.hyperwheels.com/pages/brand> )?
+
+	==> It seems I should go for "fitness" wheels (https://www.hyperwheels.com/collections/fitness <https://www.hyperwheels.com/collections/fitness> )?
+
+	==> It seems Hyper NX360 kind of resembles the wheels I have but harder and larger 84A and 80mm (https://www.hyperwheels.com/collections/fitness/products/nx360-blue?variant=12723630374954 <https://www.hyperwheels.com/collections/fitness/products/nx360-blue?variant=12723630374954> )?
+
+" It fit with all fitness skates that are using wheels with 24mm of thikness."
+
+
+
+3) Consider this article "" about inline skate bearings (https://www.liveabout.com/differences-in-types-of-bearings-1963772 <https://www.liveabout.com/differences-in-types-of-bearings-1963772>)?
+
+"Most inline and roller skate wheel bearings are the standard 608 size, with an 8mm bore, a 22mm diameter, and 7mm wide (open, sealed or non-serviceable and shielded) used for inline skates, scooters, skateboards and some quad speed skates."
+
+	==> It seems the numbering of bearings are a bit strange but the last digit seem to designate the bore diameter in mm?
+
+"Other sizes Include:
+	• 627 size, with a 7mm bore, a 22mm diameter, and 7mm wide (open, sealed or shielded) used on artistic and recreational quad skates and some quad speed skates.
+	• 688 size, with an 8mm bore, a 16mm diameter, and 4mm wide (unsealed) or 5mm wide (two shields). This extra light micro bearing is used with some of the new speed skate wheels. 
+	• 698 size, with an 8mm bore, a 19mm diameter, and 6mm wide (open, sealed or shielded). This extra light micro bearing is used with some of the new speed skate wheels. "
+
+4) Consider SKF page for 608Z bearing (https://www.skf.com/group/products/bearings-units-housings/ball-bearings/deep-groove-ball-bearings/deep-groove-ball-bearings/index.html?designation=608-2Z&nfp=NFP-608-2Z <https://www.skf.com/group/products/bearings-units-housings/ball-bearings/deep-groove-ball-bearings/deep-groove-ball-bearings/index.html?designation=608-2Z&nfp=NFP-608-2Z> )?
+
+
+
+	==> Consider this page from SKF on different bearing seals (https://www.skf.com/group/products/bearings-units-housings/principles/bearing-selection-process/sealing-mounting-dismounting/external-sealing/index.html <https://www.skf.com/group/products/bearings-units-housings/principles/bearing-selection-process/sealing-mounting-dismounting/external-sealing/index.html> )?
+
+
+Non contact seals, Contact radial shaft seal, gasket and o-ring static seals
+
+
+...

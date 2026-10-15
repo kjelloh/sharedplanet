@@ -1,0 +1,34 @@
+# Todo: http://sanningarmedmodifikationer.blogspot.se - "Hellre en fruktbar lögn än en trist sanning?"
+
+```#329e6510``` *As of 2017-04-06 19:00*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+![](i285415639361093336._szw480h1280_.jpg)
+
+Vad är så himla bra med att söka sanningen egentligen? Jag menar , vi vet att vi tycker det är viktigt. Och vår nyfikenhet driver oss att söka den. Vi vill förstå. Vi vill förklara hur det egentligen är med saker och ting. Men kan vi förstå varför det är så? Finns det något resonemang som kan visa oss varför vi skulle få det bättre ju närmare sanningen vi kommer? Frågan känns provocerande eller hur? Och just därför blir det så intressant!
+
+Låt oss börja med ett påhittat scenario. Antag att mänskligheten tar emot ett meddelande från aliens i yttre rymden. De säger att vi måste få ner koldioxidhalten i jordens atmosfär till den nivå den hade för 150 år sedan! För de tänker upprätta en koloni på jorden och kan inte leva med de koldioxid-nivåer vi har idag. Egentligen lever de i en atmosfär där människor inte kan leva. Men en kompromiss är möjlig där både de och människor kan leva i samma atmosfär. Men så lägger de till - att om vi inte sänker koldioxidnivån , ja då kommer de helt enkelt att terraforma jorden enligt deras egna önskemål. Och då kommer allt mänskligt liv att utplånas!
+
+![](images.jpeg)
+
+Nu blir det panik på jorden! Alla nyhetskanaler sprider nyheten om detta hot från yttre rymden. Regeringschefer tävlar om att ta hotet på allvar och föreslå åtgärder. Människor i fattiga och rika länder kräver snabba åtgärder. Alla vill hjälpa till. Inget är längre lika viktigt som att rensa vår atmosfär från koldioxid. Och alla är överens om att inga maskiner eller apparater får finnas som släpper ut denna gas i luften. Allt måste samlas upp och tas omhand på olika sätt. Alla bilar förses med avgas-uppsamlare. Alla fabriker och kraftverk förses med reningsverk.
+
+Resultatet blir att på bara 20 år har mänskligheten slutat släppa ut koldioxid! Vi har också rensat bort det överskott vi släppt ut. Jordens atmosfär har nu samma koldioxidniuvå som 1850. Och som ett brev på posten har också jorden uppvärmning avsevärt stannat av. Vår produktion och konsumtion har blivit nästan helt hållbar. Vi använder nu olika former av energikällor som inte producerar överskott av koldioxid. Och i kölvattnet på all denna tekniska omställning har också skett en omorganisering av våra mänskliga samhällen. Fördelningen av välfärd har blivit mycket mer rättvis. Extrem fattigdom är nästan helt utrotad! Och det är inte längre några få rika som sitter på en majoritet av världens resurser och kapital. Allt har helt enkelt blivit mycket bättre!
+
+![](Zone+libellule_SCIP_Chine%C2%A9SUEZ.jpg)
+
+Tänkare tittar nu tillbaka på all denna förändring och förundras över hur snabbt det gick. Allt som behövdes var ett yttre hot! Då slöt sig mänskligheten samman som aldrig förr och inget var längre omöjligt! Hur kunde det komma sig att vi inte kunde göra allt detta tidigare? Vi visste ju sedan länge att mänskligheten levde ohållbart. Men den sanningen tog vi inte till oss. Den sanningen var antingen inte trovärdig, eller så kändes det hopplöst att göra något åt situationen. Mäktiga intressen stod i vägen. Och den enskilda människan kände sig maktlös och kunde inte förändra något med sina val av inköp eller val av politiker. Nå, detta är så klart ett konstruerat scenario. Vi vet inte om ett hot från yttre rymden skulle fungera på detta sätt. Men antag för en stund att det skulle fungera så här? Ett yttre hot skulle faktiskt få oss att lösa problemet av ren och skär överlevnadsinstinkt!
+
+Lägg nu till att allt detta var en bluff! Att efter 20 år då all denna goda förändring skett så kommer det fram att det inte fanns några aliens. Att hela historien var ett påhitt av en liten grupp forskare! Dom hade lyckats lura hela världen och dessutom hålla tyst om det hela tiden! Kan vi nu resonera som så att denna lögn faktiskt var bättre än den sanning vi hade? Lögnen om aliens som hotade att utplåna oss fick oss att göra det som vi behövde göra? Någon som sanningen om jordens uppvärmning inte kunde få oss att göra?
+
+![](4254681996_27b1ed7ff0.jpg)
+
+Det här är så klart ett konstruerat exempel. Men precis som tänkare som Yuval Harari påpekar så verkar människans superkraft vara att sammarbeta effektivt (både konstruktivt och destruktivt) i mycket stort antal endast sammanbundna a fiktiva historier. Det kan vara historien om gudar, nationer, kulturer, ideologier och folkslag. Genom historien har vi byggt pyramider och kyrkor, krigat, fördelat rikedomar, huggit ner skogar, avlat fram domesticerade djur och byggt vägar och städer. Allt i tillit till en eller flera historier om vad som håller oss samman. Och vi vet så här efteråt att mycket av det vi trott var sant i verkligheten inte var det. Men det spelade ingen roll. Tor och Oden fanns inte men vikingarna skapade samhällen och färdades över världen ändå. Guld och pengar har inget värde i sig själva för oss (det går inte att äta eller dricka guld, mynt eller papperspengar) - ändå har mänskligheten ägnat stor energi åt kapitalism och på så sätt skapat hög materiell standard i vilken tillgång på mat, dryck och tak över huvudet kommit på köpet.
+
+Mycket tyder i alltså på att människan föredrar sanning som skapar fruktbart samarbete. Snarare än en rationell faktisk sanning? Kan detta vara en pusselbit till att förstå Trump, Brexit och den växande populism som växer fram idag? Kan vi trovärdigt hävda att de har fel om det är så att de lider i de samhällen som bygger på de etablerade "sanningarna"?
+
+Så vilken sanning söker vi? Och vilken sanning förlitar vi oss på? Borde vi kanske börja diskutera hur fruktbara olika sanningar är snarare än hur "sanna" de verkar vara? I varje fall till dess vi hittar den faktiska sanning som alla kan tro på. En på vilket framtidens mänsklighet kan bygga sitt fredliga, hållbara och rättvisa samhälle?
+
+{% endraw %}

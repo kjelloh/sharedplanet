@@ -1,0 +1,27 @@
+# Todo: Consider if we have an "experience-as-it-is" and one "reality-as-it-is" weave of truths
+
+```#946694d1``` *As of 2015-09-01 18:03*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+From the model of the Consciousness being separated from reality-as-it-is by a user interface we may build a model of how consciousness then deals with reality-as-it-is and the human inner world (experience-as-it-is).
+
+1) Suppose we have found that we need two webs of truths. One for us to relate in the most beneficial way with reality-as-it-is. And another to relate in the most beneficial way with experience-as-it-is.  
+2) Then we could argue that it is only if we think we are able to have the same web of truths to relate with experience-as-it-is and reality-as-it-is that we get into problems.  
+3) Before we had science and had discovered mathematics and logic we had no problem. Our religious and experienced environment did not contradict, but rather work together to provide a coherent faith. And we could act in faith to these beliefs and know it to be beneficial to us.  
+4) Our web of truths for reality-as-it-is are based on the ungrounded truths about reality and provides a web of truths that enables us to interact with reality to provide us with energy and tools.  
+5) Our web of truths for experience-as-it-is are based quite a large sets of contradicting ungrounded truths. But because a subset of our experiences are processes, feelings, and emergences only exists in our brains and are only experienced by our consciousness our ability to provide evidence that supports one web of truths over another are limited indeed.  
+6) Maybe we should propose that the best thing to do for web of truths about experience-as-it-is is to allow us to have several contradicting ones. The only thing we can say about these truths is that when we act in belief to them we do what is most beneficial to us. This would allow us to believe in a creator, only we have to ask ourselves what value we can get from that. We should then also be able to argue that it is not beneficial to us if our web of truths for experience-as-it-is tells us to act in contradiction to what the web of truths about reality-as-it-is tells us (like jump from a cliff because our god has told us we can fly).  
+7) Note how the two webs for reality-as-it-is for two humans are closer than the two webs for experience-as-it-is. Scientists may require an experiment to be repeatable by two separate humans, which is to say they will be able to agree on the same web of truths by interacting with the single objective world. But two humans can’t agree on the same web for experience-as-it-is as two humans put in the same situation will always experience it differently, feel differently. Even the same human may experience the same situation differently if exposed to it twice. Here lies the the problem if we try to treat them as one and the same. At the very least they differ very much in how obscure they are to study and agree on.  
+8) Note that reality-as-it-is in some sense also suffers from obscurity. Two experiments can only be the same to some level of accuracy. But as long as we believe reality-as-it-is is consistent in space and time (e.g. as follows from gauge theory) we may agree on the same scientific truth web.  
+9) Consider to explain that we benefit from trusting the same experience-as-it-is for collaboration reasons (what we belief does not have to be in reality-as-it-is) while we benefit form trussing the same reality-as-it-is by being able to share information about how to best relate with the objective world. These two benefits are quite different in character!
+
+Elaborate on this dual-truth-web concept? It seems it could be a pedagogic way to provide a dialectic between feeling-focused Philosophy (Heidegger, Focoult) and real it-as-it-is based modernists.
+
+a) Consider to have the Super Curious adopt this dialectic?  
+b) The Curious is then the modernist, goal seeking, reality-as-it-is-focused human?  
+c) Can we find arguments to why the two webs must be kept separated or the opposite, if we should try to unite them? Combining the two webs would imply all our experiences are fully defined by intrinsic properties about reality-as-it-is. Consider to try to combine ”I know God exists” and ”I experience that God exists”. In the former one places God in reality-as-it-is and in the latter in experience-as-it-is.  
+...
+
+{% endraw %}

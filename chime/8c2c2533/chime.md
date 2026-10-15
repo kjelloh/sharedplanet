@@ -1,0 +1,16 @@
+# Todo: try to design a p2p network that enables evolution about reality-as-it-is
+
+```#8c2c2533``` *As of 2015-08-30 14:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+A problem in this dawning era of internet is to make sense of all the information put there. We already talk about filter-bubbles and how to ”authorize” information, i.e. provide its value in relation to reality-as-it-is.
+
+Now, could out be that we should turn to nature and what we seem to know about how nature enables ”truth” to be processed to the advantage of life? If so, one immediately comes to think of evolution - survival of the fittest. The creature that adopts a ”truth” that when it acts-in-faith to the truth prevails is able to spread that ”truth” to offspring and can be said to have found the most true ”truth”?
+
+1) Consider to design a global p2p network where ”truths” can evolve based on its fitness relative reality-as-it-is. The network shall over time grind down filter bubbles and provide beter and better ”authorized” ”truths” based on its ability to survive in the face of critique and ”evidence”.  
+2) Is the definition ”best fitted truth” the one to go for? Will this evolve to truth about reality-as-it-is? And if not, do we care if the truths we find still is more beneficial to us?  
+...
+
+{% endraw %}

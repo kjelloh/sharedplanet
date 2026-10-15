@@ -1,0 +1,20 @@
+# Todo: Consider what I learned from the Balcony Floor fix work 190616?
+
+```#03d47c24``` *As of 2019-06-16 18:41*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I finally got the balcony floor fixed so that it does not bend in the sun to hinder the door from opening!
+
+> *I learned that using a jig-saw I need to really pay attention to ensure the blade does not hit anything! I managed to move the saw in some tight spaces so that it it got caught against some wood and I bent the whole blade! (Got in on video!)*
+
+> *I learned that I did not pay attention that the threshold protection towards the balcony floor ended 25 mm above the concrete while the support board I fastened only was 22 mm! This caused the wood I put on to to bend upwards making contact with the door even more than the existing balcony floor did!*
+
+> *I learned that I could put washers between the fastened wood beam and the top wood so that it was more or less levelled and then the balcony door could open freely.*
+
+> *I learned I do NOT have teh ability to plane wood in my indoor shed! The workbench is not sturdy enough! And sitting on the floor trying to hold the wood with my knees or sitting on it just barley worked.*
+
+> *I learned NOT to work in the sun!! I future projects - plan so I work in the shade. Also - ensure I work between meals!! In this way I do not have to stress.*
+
+{% endraw %}

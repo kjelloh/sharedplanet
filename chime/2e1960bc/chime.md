@@ -1,0 +1,34 @@
+# Todo: Consider to delve into the Chinese Electronic Currency initiative and how it fits to other initiatives to create a national digital currency (blockchain based or not)?
+
+```#2e1960bc``` *As of 2020-10-20 10:38*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider the Jönköping University paper "Central Bank Digital Currencies: Towards a Chinese Approach" from May 2020 (<https://www.diva-portal.org/smash/get/diva2:1433870/FULLTEXT01.pdf> )?
+
+> ![](PastedGraphic-1.png)
+
+> *"**Because of the problem of decentralization, some digital currencies are differing from the traditional currencies rather than controlling by the different governments, which presents some potential security problems (Ali, Barrdear, Clews, & Southgate, 2014). For example, it destroys financial stability and affects a country’s monetary stability. According to Bjerg (2017), some countries have proposed that a centralized digital currency, controlled by the government, can effectively alleviate the instability of digital currency. Therefore, The Bank of England was the first organization to announce a global discussion on the prospects for CBDC in 2015 (Bjerg, 2017). CBDC is the digital of fiat money. A currency supported as money by government regulation, monetary authority, or the law (Yao, 2018). CBDCs are different from conventional E-money and cryptocurrency, which are not issued by the state and lack the legal tender status held by the government (Yao, 2018). In addition to the UK, countries such as Canada and Singapore have also proposed CBDC, and Sweden has pioneered a central digital currency called E-krona (Koumbarakis and Gobrauz, 2019). Furthermore, Libra currency, launched by Facebook, also came out with a white paper in June 2019 (Libra-white paper, 2020). Although it is a digital currency launched by a commercial company with the same purpose as the CBDC, its mission is enabled to create a simple global payment system and financial infrastructure for global people (Taskinsoy, 2019).**"*
+
+> *"**In November 2019, the People’s Bank of China (hereinafter abbreviated as PBOC) had revealed few characteristics of China’s own CBDC strategy: DCEP project (Goh, 2019), which has been developed within five years and published more details in PBOC’s presentations to publish DCEP soon.**"*
+
+> *"**Goh, B., & Shen, S. (2019). China’s proposed digital currency more about policing than progress. Reuters. Retrieved from <https://www.reuters.com/article/us-china-markets-> digital-currency/chinas-proposed-digital-currency-more-about-policing-than-progress- idUSKBN1XB3QP**"*
+
+> *"**Koumbarakis,A and Gobrauz,G. (2019). Central Bank Digital Currency- Benefits and drawbacks. PWC. Retrieved from [www.pwc.ch](http://www.pwc.ch).**"*
+
+2) Consider the reference article "China's proposed digital currency more about policing than progress" ([https://www.reuters.com/article/us-china-markets-%20digital-currency/chinas-proposed-digital-currency-more-about-policing-than-progress-%20idUSKBN1XB3QP](<https://www.reuters.com/article/us-china-markets- digital-currency/chinas-proposed-digital-currency-more-about-policing-than-progress- idUSKBN1XB3QP>) )?
+
+> *"**China’s central bank has revealed few specifics of its Digital Currency Electronic Payment (DCEP) project, one that’s been five years in the making, though more details have trickled out over the past few weeks in the bank’s presentations on the subject.**"*
+
+> *"**More than **50 patents filed by the PBOC** and Mu’s comments indicate that the PBOC plans to distribute the digital currency through commercial banks, much like how it does currently with physical yuan.**"*
+
+3) Consider the reference article "Central Bank Digital Currency: Benefits and Drawbacks" (<https://www.researchgate.net/publication/325023632_Central_Bank_Digital_Currency_Benefits_and_Drawbacks> )?
+
+4) Consider the Swedish Riksbank project to create a digital "E-Krona" (<https://www.riksbank.se/en-gb/payments--cash/e-krona/> )?
+
+> The question of whether Sweden should introduce a state-issued digital krona is one that will affect the whole of society. The Riksbank has therefore submitted a proposal to the Riksdag (the Swedish Parliament) that the need for an e-krona should be investigated by a group of experts in different areas, see: [The Riksbank proposes a review of the concept of legal tender.](https://www.riksbank.se/en-gb/press-and-published/notices-and-press-releases/press-releases/2019/the-riksbank-proposes-a-review-of-the-concept-of-legal-tender/) The Riksdag (the Swedish Parliament) agrees with the Riksbank that an inquiry is needed, read more on the Riksdag’s website (in Swedish only): [Statens roll på den digitala betalningsmarknaden bör utredas](https://www.riksdagen.se/sv/dokument-lagar/arende/betankande/statens-roll-pa-betalningsmarknaden_H601FiU44).
+
+...
+
+{% endraw %}

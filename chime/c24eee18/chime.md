@@ -1,0 +1,10 @@
+# Todo: Write how Super Curious with different cores are more able to cooperate and avoid dead-locks
+
+```#c24eee18``` *As of 2015-08-16 15:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+As super curious people are open with how they choose to define the boundary to the empty unknown core of their beliefs, they are thus able to bridge their different views on the basis of sharing and treasure the same questions. And with the aim of trying to be open to trade held truths for ”better” ones they are at least in theory able to avoid conflicts that stems from the view that one is ”right” and the other is ”wrong”. Of course, they may still argue who is ”more right” or whose truths are best fitting what we know or what truth that is most beneficial. But that is a more fruitful debate than trying to beat the other down as being ”totally wrong” in which case no cross-breeding of knowledge is possible.
+
+{% endraw %}

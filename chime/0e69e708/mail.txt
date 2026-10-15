@@ -1,0 +1,23 @@
+﻿So, what tools and algorithms can we find that tries to analyze audio music files to determine their harmonic contents and rhythmic composition?
+
+1) Consider to follow up on this paper ”REAL-TIME CHORD RECOGNITION FOR LIVE PERFORMANCE” (http://eecs.qmul.ac.uk/~markp/2009/StarkPlumbley09-icmc.pdf)?
+
+2) Consider this plugin ”HoRNet SongKey MK2” (https://www.hornetplugins.com/plugins/hornet-songkey-mk2/)?
+
+	==> It seems to support the formats
+
+”Audio Units VST2.4, VST3, RTAS and AAX format."
+
+	==> This seems to mean we may use the Plugin in Audio Units in Garageband (https://support.apple.com/en-us/HT201532)?
+
+”Audio Units are plug-ins that can be used to process audio by applications such as Logic Pro, Logic Express, Soundtrack Pro, GarageBand, and others. All Mac computers include a collection of Apple Audio Units, and many other manufacturers distribute plug-ins in Audio Units format."
+
+
+	==> Yes - According to this youtube clip it seem to work in Garageband (https://www.youtube.com/watch?v=8A8s_5PrToo)?
+
+3) Consider to follow up on this stackoverflow thread (http://stackoverflow.com/questions/3141927/algorithms-for-determining-the-key-of-an-audio-sample)?
+
+…
+
+Consider to continue to update this list of fiondings and follow up (perhaps also try out) tools and algorithms find on the way?
+...

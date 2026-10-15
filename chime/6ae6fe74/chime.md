@@ -1,0 +1,54 @@
+# Todo: Programming - Consider to follow up on Bloomberg approach to Open Source their large cross-platform C++ development base (BDE and BSL) and using the Google waf build environment generator?
+
+```#6ae6fe74``` *As of 2016-08-18 14:02*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) The Bloomberg open source Standard Library (BSL) as part of their Development Environment (BDE) seems to live here (<http://www.bloomberglabs.com/basic-development-environment/libraries/basic-standard-library/>)?
+
+2) The BSL github home seems to be here (<https://github.com/bloomberg/bde>)?
+
+==&gt; It seems to use Google WAF to generate build environments?
+
+> *“BDE uses a build system based on waf, which is located in the BDE Tools repository. This build system must be set up before being used:"*
+
+…
+
+3) Consider to compare Bloomberg initiative with my own Sisyphus library approach?
+
+==&gt; Does the Bloomberg libraries also map tool-chain macro identification to a compile-time type specialisation mechanisms?
+
+==&gt; Are Bloomberg pre-processor macro-baed include of environment an approach Sisyphus can build on (re-use)?
+
+...
+
+4) Consider to study how BDE isolates source code from the build environment?
+
+==&gt; How do they avoid to pollute core code from environment settings (e.g. macros and platform include file differences)?
+
+==&gt; Consider to study this file that seems to be a pre-processing selection of C++ standard includes ([https://github.com/bloomberg/bde/blob/master/groups/bsl/bsl%2Bstdhdrs/algorithm](https://github.com/bloomberg/bde/blob/master/groups/bsl/bsl+stdhdrs/algorithm))?
+
+==&gt; Q: How do they populate the bel namespace with the selected (or all) of std namespace?
+
+==&gt; Do they just put in a “using” statement (or do the cherry-pick and adapt to expose core to fixed set of environment)?
+
+...
+
+5) The Google waf build environment generator seems to live here (<https://github.com/waf-project/waf>)?
+
+==&gt; WAF seems to be based on Python?
+
+> *"Waf is a Python-based framework for configuring, compiling and installing applications. Here are perhaps the most important features of Waf:"*
+
+==&gt; Consider how easy it seems to generate xml using python by studying this python script that seems to generate Visual Stuido solution files (<https://github.com/waf-project/waf/blob/master/waflib/extras/msvs.py>)?
+
+==&gt; Consider how all build environment generators are in fact a form of specialised Bang “world creator”?
+
+…
+
+Consider to delve into this initiative to have large C++ projects isolated and compartment-ized to allow control cross-platform and cross-tool-chain build and development?
+
+...
+
+{% endraw %}

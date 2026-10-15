@@ -1,0 +1,87 @@
+﻿It seems there is a popular glue used in the states under the name E6000. Consider to understand what it is, if I want to use it and if so, what I can use it for?
+
+1) Consider this youtube video “What’s the Best Type of E6000 Glue?” testing different E6000 glue products (https://www.youtube.com/watch?v=UnlctRS97nM <https://www.youtube.com/watch?v=UnlctRS97nM>)?
+
+2) It seems this is the manufacturer page for the E6000 adhesive products (
+
+	==> It seems it quite versatile but does NOT work with Polystyrene nor dry cleaning?
+
+“Not recommended for use on polystyrene, polyethylene, polypropylene, Styrofoam™ or paper products. Not recommended for any items that come into contact with food, drinking water or animals. Do not dry clean."
+
+	==> This seems to rime well with the fact that E6000 uses Styrene and Tetrachloroethylene as solvent (and thus will act as a solvent for polystyrene and be soluble by dry cleaning agents containing Tetrachloroethylene)?
+
+
+3) Consider this data sheet on the E6000 adhesive (http://eclecticproducts.com/downloads/tds/tds-e6000-industrial-english-clear-us_ca-mex.pdf <http://eclecticproducts.com/downloads/tds/tds-e6000-industrial-english-clear-us_ca-mex.pdf>)?
+
+	==> It seems E6000 uses perchloroethylene as a solvent (which causes cancer)?
+
+“HEALTH and SAFETY
+This product contains perchloroethylene. Before working with this product, read and become familiar with information concerning hazards, proper use and handling.
+
+To request a hard copy of the SDS, please send an e-mail to sds@eclecticproducts.com.
+
+⚠WARNING: This product can expose you to chemicals including perchloroethylene which is known to the State of California to cause cancer. For more information go to www.p65warnings.ca.gov."
+
+4) This seems to be the SDS for E6000 from the manufacturer site (http://eclecticproducts.com/downloads/sds-e6000-black-english.pdf <http://eclecticproducts.com/downloads/sds-e6000-black-english.pdf>)?
+
+	==> E6000 seems to mostly consist of Tetrachloroethylene and Styrene (1,3-butadiene polymer)?
+
+	
+	
+
+5) Consider the wikipedia page on Tetrachloroethylene (https://en.wikipedia.org/wiki/Tetrachloroethylene <https://en.wikipedia.org/wiki/Tetrachloroethylene>)?
+
+	
+
+	==> It seems Tetrachloroethylene is also called Perchloroethylene?
+
+“Tetrachloroethylene, also known under the systematic name tetrachloroethene, or perchloroethylene ("perc" or "PERC"), and many other names, is a chlorocarbon with the formula Cl2C=CCl2"
+
+	==> It seems Tetrachloroethylene is mainly used as a dry cleaning substance?
+
+“It is a colorless liquid widely used for dry cleaning of fabrics, hence it is sometimes called "dry-cleaning fluid"." 
+
+	==> It seems Tetrachloroethylene is NOT an adhesive (so it is not the working compound in E6000 glue)?
+
+6) Consider the wikipedia page on Styrene (https://en.wikipedia.org/wiki/Styrene <https://en.wikipedia.org/wiki/Styrene>)?
+
+	
+
+	==> It seems Styrene is an organic compound?
+
+“Styrene, also known as ethenylbenzene, vinylbenzene, and phenylethene, is an organic compound with the chemical formula C6H5CH=CH2"
+
+	==> It seems Styrene transforms into polystyrene (and thus may act as an active ingredient of E6000 adhesive)?
+
+“In 1839, the German apothecary Eduard Simon isolated a volatile liquid from the resin (called storax or styrax (Latin)) of the American sweetgum tree (Liquidambar styraciflua). He called the liquid "Styrol" (now: "styrene").[7][8] He also noticed that when Styrol was exposed to air, light, or heat, it gradually transformed into a hard, rubber-like substance, which he called "Styroloxyd" (styrol oxide, now: "polystyrene")."
+
+7) Consider the wikipedia page on Polystyrene (https://en.wikipedia.org/wiki/Polystyrene <https://en.wikipedia.org/wiki/Polystyrene>)?
+
+	
+
+	==> It seems Polystyrene is the most commonly used  plastic (e.g., as transparent bottles, disposable cutleries and cases for CDs)?
+
+“Polystyrene is one of the most widely used plastics, the scale of its production being several million tonnes per year.[7]Polystyrene can be naturally transparent, but can be coloured with colourants. Uses include protective packaging (such as packing peanuts and CD and DVD cases), containers, lids, bottles, trays, tumblers, disposable cutlery [6] and in the making of models."
+
+	==> This wikipedia page seems to confirm that polystyrene is styrene in polymer form?
+
+	
+
+	==> It seems Styrofoam is a branded variant of polystyrene foam (https://en.wikipedia.org/wiki/Styrofoam <https://en.wikipedia.org/wiki/Styrofoam>)?
+
+“Styrofoam is a trademarked brand of closed-cell extruded polystyrene foam (XPS), commonly called "Blue Board" "
+
+	==> Extruded Polystyrene (EPS) foams looks suspiciously very much like the plastic foam sheets we call “Frigolit” in Sweden?
+
+	
+
+
+	==> It seems Extruded Polystyrene (EPS) foam is known under the brand “Frigolit” in Sweden (https://sv.wikipedia.org/wiki/Frigolit <https://sv.wikipedia.org/wiki/Frigolit>)?
+
+		
+
+“Egentligen är Frigolit i princip bara ett degenererat varumärke för expanderad polystyren(EPS/Cellplast) ursprungligen från Nordiska Frigolit Aktiebolaget i Halmstad[2], men namnet har rotat sig hos allmänheten och används idag som ett neutralt materialnamn. När varumärket Frigolit såldes på Blocket hösten 2009 för 112 000 kr tillverkades cellplast inte längre under varumärket.[3][2]
+
+Bland finlandssvenskar kallas frigolit för styrox.[4]"
+
+...

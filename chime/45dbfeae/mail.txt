@@ -1,0 +1,19 @@
+﻿
+1) Consider how they refer to the work of Andrej Karpathy and Software 2.0 in youtube video "Chris Lattner: The Future of Computing and Programming Languages | Lex Fridman Podcast #131" (https://youtu.be/nWTvXbQHwWs?t=8070 )?
+
+2) Consider this article "Software 2.0" (https://developer20.com/software2.0/ )?
+
+"There are, at least, two excellent articles about Software 2.0. Andrzej Karpathy and Carlos E. Perezwrote blog posts which cover the topic. In this article, I will explain how I understand the term “Software 2.0” what, I hope, will give you a different point of view on the main topic."
+
+
+3) Consider this article "Software 2.0" by Andrej Karpathy  (https://medium.com/@karpathy/software-2-0-a64152b37c35 )?
+
+"Neural networks are not just another classifier, they represent the beginning of a fundamental shift in how we write software. They are Software 2.0."
+
+
+
+4) Consider this article "Is Deep Learning “Software 2.0”?" by Carlos E. Perez (https://medium.com/intuitionmachine/is-deep-learning-software-2-0-cc7ad46b138f )?
+
+"Andrej Karpathy wrote an article about what he calls “Software 2.0”. Karpathy (Director of AI at Tesla) makes the argument that Neural Networks (or Deep Learning) is a new kind of software. I do agree that there indeed exists a trend towards “teachable machines” as opposed to the more conventional programmable machines, however I do have an issue with some of the benefits that Karpathy mentions to back-up his thesis."
+
+...

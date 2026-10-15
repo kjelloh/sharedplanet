@@ -1,0 +1,19 @@
+# Todo: Darwinet - Consider to design a domain for WikiHouse projects?
+
+```#0d7012ac``` *As of 2015-11-05 12:01*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+WikiHouse now seem to be based on Google Docs (?). Consider to make a Darwinet domain for Wikihouse projects?
+
+0) Wikihouse home site (http://www.wikihouse.cc)  
+1) WikiHouse Commons seem to favor Google Docs (http://www.wikihouse.cc/commons/)?  
+2) Wikihouse planning software seem to be on GitHub (https://github.com/wikihouse/). Consider to propose this to be a Darwinet app instead?  
+3) A demo of Wikihouse Setup viewer seem to be at this site (http://wikihouse.github.io/viewer-experiments/display-wikihouse-stepup1/display-wikihouse-stepup1-r2.html). Consider this to be a Darwinet app instead?  
+4) Elaborate on what Domain properties we need to allow Wikihouse to exist and evolve in Darwinet?  
+…
+
+Consider if and how the Wikihouse project can live and evolve in Darwinet domains?
+
+{% endraw %}

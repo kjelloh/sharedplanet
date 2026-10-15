@@ -1,0 +1,132 @@
+﻿I want a stable and trustworthy way to keep my C++ tool chains updated on macOS, Linux and Windows.
+
+	==> Also see "Todo: Consider to try out macPorts on macOS Monterey and use it to install LLVM 15?"
+	==> Also see "Todo: Consider to make VSCode use latest Brew installed g++ on my macOS Monterey on Intel mac Pro "Trashcan"?"
+
+1) It seems macPort provide an installation of gcc12 (https://ports.macports.org/port/gcc12/ <https://ports.macports.org/port/gcc12/> )?
+
+
+
+	==> It seems macPorts install off gcc12 went well?
+
+		NOTE: So Gcc 12 depends on LLVM-14 (I have just installed LLVM 15)! ...The code bloat...
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % sudo port install gcc12
+Password:
+--->  Computing dependencies for gcc12
+The following dependencies will be installed: 
+ clang-14
+ gcc_select
+ gmp
+ isl
+ libgcc
+ libgcc12
+ libmpc
+ llvm-14
+ mpfr
+Continue? [Y/n]: Y
+--->  Fetching archive for llvm-14
+--->  Attempting to fetch llvm-14-14.0.6_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/llvm-14
+--->  Attempting to fetch llvm-14-14.0.6_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/llvm-14
+--->  Installing llvm-14 @14.0.6_0
+--->  Activating llvm-14 @14.0.6_0
+--->  Cleaning llvm-14
+--->  Fetching archive for clang-14
+--->  Attempting to fetch clang-14-14.0.6_0+analyzer+libstdcxx.darwin_21.x86_64.tbz2 from https://packages.macports.org/clang-14
+--->  Attempting to fetch clang-14-14.0.6_0+analyzer+libstdcxx.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/clang-14
+--->  Installing clang-14 @14.0.6_0+analyzer+libstdcxx
+--->  Activating clang-14 @14.0.6_0+analyzer+libstdcxx
+--->  Cleaning clang-14
+--->  Fetching archive for gcc_select
+--->  Attempting to fetch gcc_select-0.1_10.darwin_21.noarch.tbz2 from https://packages.macports.org/gcc_select
+--->  Attempting to fetch gcc_select-0.1_10.darwin_21.noarch.tbz2.rmd160 from https://packages.macports.org/gcc_select
+--->  Installing gcc_select @0.1_10
+--->  Activating gcc_select @0.1_10
+--->  Cleaning gcc_select
+--->  Fetching archive for gmp
+--->  Attempting to fetch gmp-6.2.1_1.darwin_21.x86_64.tbz2 from https://packages.macports.org/gmp
+--->  Attempting to fetch gmp-6.2.1_1.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/gmp
+--->  Installing gmp @6.2.1_1
+--->  Activating gmp @6.2.1_1
+--->  Cleaning gmp
+--->  Fetching archive for isl
+--->  Attempting to fetch isl-0.24_1.darwin_21.x86_64.tbz2 from https://packages.macports.org/isl
+--->  Attempting to fetch isl-0.24_1.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/isl
+--->  Installing isl @0.24_1
+--->  Activating isl @0.24_1
+--->  Cleaning isl
+--->  Fetching archive for libgcc12
+--->  Attempting to fetch libgcc12-12.2.0_0+stdlib_flag.darwin_21.x86_64.tbz2 from https://packages.macports.org/libgcc12
+--->  Attempting to fetch libgcc12-12.2.0_0+stdlib_flag.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/libgcc12
+--->  Installing libgcc12 @12.2.0_0+stdlib_flag
+--->  Activating libgcc12 @12.2.0_0+stdlib_flag
+--->  Cleaning libgcc12
+--->  Fetching archive for libgcc
+--->  Attempting to fetch libgcc-6.0_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/libgcc
+--->  Attempting to fetch libgcc-6.0_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/libgcc
+--->  Installing libgcc @6.0_0
+--->  Activating libgcc @6.0_0
+--->  Cleaning libgcc
+--->  Fetching archive for mpfr
+--->  Attempting to fetch mpfr-4.1.0_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/mpfr
+--->  Attempting to fetch mpfr-4.1.0_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/mpfr
+--->  Installing mpfr @4.1.0_0
+--->  Activating mpfr @4.1.0_0
+--->  Cleaning mpfr
+--->  Fetching archive for libmpc
+--->  Attempting to fetch libmpc-1.2.1_0.darwin_21.x86_64.tbz2 from https://packages.macports.org/libmpc
+--->  Attempting to fetch libmpc-1.2.1_0.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/libmpc
+--->  Installing libmpc @1.2.1_0
+--->  Activating libmpc @1.2.1_0
+--->  Cleaning libmpc
+--->  Fetching archive for gcc12
+--->  Attempting to fetch gcc12-12.2.0_0+stdlib_flag.darwin_21.x86_64.tbz2 from https://packages.macports.org/gcc12
+--->  Attempting to fetch gcc12-12.2.0_0+stdlib_flag.darwin_21.x86_64.tbz2.rmd160 from https://packages.macports.org/gcc12
+--->  Installing gcc12 @12.2.0_0+stdlib_flag
+--->  Activating gcc12 @12.2.0_0+stdlib_flag
+--->  Cleaning gcc12
+--->  Scanning binaries for linking errors
+--->  No broken files found.
+--->  No broken ports found.
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro ~ % 
+
+	==> It seems I can now query macPorts for the location of gcc12 installed files?
+
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % port contents gcc12 > port_contents_gcc12.txt
+kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % 
+
+
+
+	==> It seems I can now edit VSCode tasks.json for my C++ project to contain a build task using the macPorts installed gcc12 tool chain?
+
+If I copy an existing gcc build task for macOS, e.g., 
+
+      {
+        "type": "cppbuild",
+        "label": "macOS C/C++: Brew installed g++-12 build cratchit",
+        "command": "/usr/local/Cellar/gcc/12.2.0/bin/g++-12",
+        "args": [
+          "--sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+          "-fdiagnostics-color=always",
+          "-std=c++20",
+          "-g",
+          "${file}",
+          "-o",
+          "${workspaceFolder}/cratchit.out"
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "group": "build",
+        "detail": "compiler: /usr/local/Cellar/gcc/12.2.0/bin/g++-12"
+      },
+
+... and paste it as a new one and edit the compiler path and name,
+
+
+
+...
+...

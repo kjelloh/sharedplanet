@@ -1,0 +1,3257 @@
+﻿Could it be fun and a good idea to adapt and create a pull request for changes to the Microsoft GSL Github project?
+
+1) The original Microsoft GSL project seem to live here (https://github.com/Microsoft/GSL <https://github.com/Microsoft/GSL>)?
+
+2) Consider to fork it to my private Github account?
+
+	==> I forked it to my account and created RAD Studio 10 branch (https://github.com/kjelloh/GSL/tree/RAD-Studio-10-Adaption <https://github.com/kjelloh/GSL/tree/RAD-Studio-10-Adaption>)
+
+3) Consider to understand the difference between DOS, Cygwin and MSYS2 shells?
+
+	==> MSYS2 seems to be a subset of Cygwin (Linux shell on windows) that targets Windows build tools (https://sourceforge.net/p/msys2/wiki/How%20does%20MSYS2%20differ%20from%20Cygwin/ <https://sourceforge.net/p/msys2/wiki/How%20does%20MSYS2%20differ%20from%20Cygwin/>)
+
+		“MSYS2 provies a minimal shell required to run autotools and other build systems…"
+
+	==> Cygwin seems to aim to bring the whole Linux shell to windows (https://cygwin.com/index.html <https://cygwin.com/index.html>)?
+
+		“...a large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows.”
+
+	==> The DOS shell seem to be what is proivided by cmd.exe (https://technet.microsoft.com/en-us/library/bb490890.aspx <https://technet.microsoft.com/en-us/library/bb490890.aspx>)?
+
+		“Command-line tools must be run at the prompt of the Cmd.exe command interpreter."
+
+3) Consider to understand and document how CMake does to generate make files for a tool-chain?
+
+	==> It seems cmake generates a log we can read to see what has happened and it is stored at “.\CMakeFiles\CMakeOutput.log” for success and “.\CMakeFiles\CMakeError.log” if failed?
+
+	==> It seems Cmake copies a test program and uses the output to detect the ABI of the applied compiler?
+
+	==> This seems to be the actions for <cmake --build . --config Debug> after <cmake .. -DCMAKE_CXX_COMPILER=clang++ -G "MSYS Makefiles”>  (“.\CMakeFiles\CMakeOutput.log”)
+
+...
+Building CXX object CMakeFiles/cmTC_aa479.dir/testCXXCompiler.cxx.obj
+
+/C/msys64/mingw64/bin/clang++.exe      -o CMakeFiles/cmTC_aa479.dir/testCXXCompiler.cxx.obj -c /C/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_aa479.exe
+
+/C/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_aa479.dir/objects.a
+/C/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_aa479.dir/objects.a "CMakeFiles/cmTC_aa479.dir/testCXXCompiler.cxx.obj" 
+/C/msys64/mingw64/bin/clang++.exe       -Wl,--whole-archive CMakeFiles/cmTC_aa479.dir/objects.a -Wl,--no-whole-archive  -o cmTC_aa479.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang/CMakeFiles/CMakeTmp’
+...
+
+		==> Consider to interpret the provide command line options to clang++.exe?
+      
+	-o CMakeFiles/cmTC_aa479.dir/testCXXCompiler.cxx.obj	“Write output to <file>"
+	-c 							“Only run preprocess, compile, and assemble steps"
+
+	==> This seems to be the action for failed <cmake .. -DCMAKE_CXX_COMPILER=bcc64 -G "MSYS Makefiles"> (“.\CMakeFiles\CMakeError.log”)?
+
+Building CXX object CMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj
+
+"/C/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe"  -tR -DWIN32   -Od -v   -oCMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj -P -c /C/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Embarcadero C++ 6.90 for Win64 Copyright (c) 2012-2014 Embarcadero Technologies, Inc.
+
+Embarcadero Technologies Inc. bcc64 version 3.1 (34288.0798eef.b47f481) (based on LLVM 3.1svn)
+
+Target: x86_64-pc-win32-elf
+
+		==> Consider to interpret the provided command line options to bcc64 as actually the ones for borland bcc32 (make assumes borland compiler based on name)?
+
+			-tR			“Target uses the Dynamic RTL."
+			-DWIN32		“#ifdef WIN32 macro defined” 
+			-Od 			“Disable all optimizations"
+			-v			“Turn on source debugging"
+			-oCMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj	“Set output filename"
+			-P			“Perform C++ compile regardless of source extension"
+			-c			“Compile to object file only, do not link"
+
+		==> Consider how bcc32c and bcc64 would actually try to ingrate them?
+
+			<bcc32c>
+			-tR			“Target uses the dynamic RTL”
+			-DWIN32		“-D<name> defines 'name' as a null string” 
+			-Od 			“Disable all optimizations"
+			-v			“Show commands to run and use verbose output"
+			-oCMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj	“Write output to <file>"
+			-P			“Perform C++ compile regardless of source extension"
+			-c			“Only run preprocess, compile, and assemble steps"
+
+			<bcc64>
+			-tR			“Target uses the dynamic RTL” (assuming same definition as bcc32?)
+			-DWIN32		“??” 
+			-Od 			“??"
+			-v			“Show commands to run and use verbose output"
+			-oCMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj	“Write output to <file>"
+			-P			“??"
+			-c			“Only run preprocess, compile, and assemble steps"
+
+
+3) Consider to compare the compiler options between different compilers for toolchains make may generate?
+
+	==> Consider the command line options for MinGW clang compiler?
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang
+$ clang++ --help
+OVERVIEW: clang LLVM compiler
+
+USAGE: clang++.exe [options] <inputs>
+
+OPTIONS:
+  -###                    Print (but do not run) the commands to run for this compilation
+  --analyze               Run the static analyzer
+  -arcmt-migrate-emit-errors
+                          Emit ARC errors even if the migrator can fix them
+  -arcmt-migrate-report-output <value>
+                          Output path for the plist report
+  --cuda-device-only      Do device-side CUDA compilation only
+  --cuda-host-only        Do host-side CUDA compilation only
+  --cuda-path=<value>     CUDA installation path
+  -cxx-isystem <directory>
+                          Add directory to the C++ SYSTEM include search path
+  -c                      Only run preprocess, compile, and assemble steps
+  -dD                     Print macro definitions in -E mode in addition to normal output
+  -dependency-dot <value> Filename to write DOT-formatted header dependencies to
+  -dependency-file <value>
+                          Filename (or -) to write dependency output to
+  -dM                     Print macro definitions in -E mode instead of normal output
+  -emit-ast               Emit Clang AST files for source inputs
+  -emit-llvm              Use the LLVM representation for assembler and object files
+  -E                      Only run the preprocessor
+  -faltivec               Enable AltiVec vector initializer syntax
+  -fansi-escape-codes     Use ANSI escape codes for diagnostics
+  -fapple-kext            Use Apple's kernel extensions ABI
+  -fapple-pragma-pack     Enable Apple gcc-compatible #pragma pack handling
+  -fapplication-extension Restrict code to those available for App Extensions
+  -fblocks                Enable the 'blocks' language feature
+  -fborland-extensions    Accept non-standard constructs supported by the Borland compiler
+  -fbuild-session-file=<file>
+                          Use the last modification time of <file> as the build session timestamp
+  -fbuild-session-timestamp=<time since Epoch in seconds>
+                          Time when the current build session started
+  -fcolor-diagnostics     Use colors in diagnostics
+  -fcomment-block-commands=<arg>
+                          Treat each comma separated argument in <arg> as a documentation comment block command
+  -fcoverage-mapping      Generate coverage mapping to enable code coverage analysis
+  -fcxx-exceptions        Enable C++ exceptions
+  -fdata-sections         Place each data in its own section (ELF Only)
+  -fdebug-prefix-map=<value>
+                          remap file source paths in debug info
+  -fdebug-types-section   Place debug types in their own section (ELF Only)
+  -fdeclspec              Allow __declspec as a keyword
+  -fdelayed-template-parsing
+                          Parse templated function definitions at the end of the translation unit
+  -fdiagnostics-parseable-fixits
+                          Print fix-its in machine parseable form
+  -fdiagnostics-print-source-range-info
+                          Print source range spans in numeric form
+  -fdiagnostics-show-note-include-stack
+                          Display include stacks for diagnostic notes
+  -fdiagnostics-show-option
+                          Print option name with mappable diagnostics
+  -fdiagnostics-show-template-tree
+                          Print a template comparison tree for differing templates
+  -fdollars-in-identifiers
+                          Allow '$' in identifiers
+  -femit-all-decls        Emit all declarations, even if unused
+  -femulated-tls          Use emutls functions to access thread_local variables
+  -fexceptions            Enable support for exception handling
+  -ffast-math             Enable the *frontend*'s 'fast-math' mode. This has no effect on optimizations, but provides a preprocessor macro __FAST_MATH__ the same as GCC's -ffast-math flag
+  -ffixed-r9              Reserve the r9 register (ARM only)
+  -ffixed-x18             Reserve the x18 register (AArch64 only)
+  -ffp-contract=<value>   Form fused FP ops (e.g. FMAs): fast (everywhere) | on (according to FP_CONTRACT pragma, default) | off (never fuse)
+  -ffreestanding          Assert that the compilation takes place in a freestanding environment
+  -ffunction-sections     Place each function in its own section (ELF Only)
+  -fgnu-keywords          Allow GNU-extension keywords regardless of language standard
+  -fgnu-runtime           Generate output compatible with the standard GNU Objective-C runtime
+  -fgnu89-inline          Use the gnu89 inline semantics
+  -fimplicit-module-maps  Implicitly search the file system for module map files.
+  -finstrument-functions  Generate calls to instrument function entry and exit
+  -fintegrated-as         Enable the integrated assembler
+  -flto=<value>           Set LTO mode to either 'full' or 'thin'
+  -flto                   Enable LTO in 'full' mode
+  -fmath-errno            Require math functions to indicate errors by setting errno
+  -fmax-type-align=<value>
+                          Specify the maximum alignment to enforce on pointers lacking an explicit alignment
+  -fmodule-file=<file>    Load this precompiled module file
+  -fmodule-map-file=<file>
+                          Load this module map file
+  -fmodule-name= <name>   Specify the name of the module to build
+  -fmodules-cache-path=<directory>
+                          Specify the module cache path
+  -fmodules-decluse       Require declaration of modules used within a module
+  -fmodules-ignore-macro=<value>
+                          Ignore the definition of the given macro when building and loading modules
+  -fmodules-prune-after=<seconds>
+                          Specify the interval (in seconds) after which a module file will be considered unused
+  -fmodules-prune-interval=<seconds>
+                          Specify the interval (in seconds) between attempts to prune the module cache
+  -fmodules-search-all    Search even non-imported modules to resolve references
+  -fmodules-strict-decluse
+                          Like -fmodules-decluse but requires all headers to be in modules
+  -fmodules-user-build-path <directory>
+                          Specify the module user build path
+  -fmodules-validate-once-per-build-session
+                          Don't verify input files for the modules if the module has been successfully validated or loaded during this build session
+  -fmodules-validate-system-headers
+                          Validate the system headers that a module depends on when loading the module
+  -fmodules               Enable the 'modules' language feature
+  -fms-compatibility-version=<value>
+                          Dot-separated value representing the Microsoft compiler version number to report in _MSC_VER (0 = don't define it (default))
+  -fms-compatibility      Enable full Microsoft Visual C++ compatibility
+  -fms-extensions         Accept some non-standard constructs supported by the Microsoft compiler
+  -fmsc-version=<value>   Microsoft compiler version number to report in _MSC_VER (0 = don't define it (default))
+  -fno-access-control     Disable C++ access control
+  -fno-assume-sane-operator-new
+                          Don't assume that C++'s global operator new can't alias any pointer
+  -fno-autolink           Disable generation of linker directives for automatic library linking
+  -fno-builtin-<value>    Disable implicit builtin knowledge of a specific function
+  -fno-builtin            Disable implicit builtin knowledge of functions
+  -fno-common             Compile common globals like normal definitions
+  -fno-constant-cfstrings Disable creation of CodeFoundation-type constant strings
+  -fno-coverage-mapping   Disable code coverage analysis
+  -fno-declspec           Disallow __declspec as a keyword
+  -fno-diagnostics-fixit-info
+                          Do not include fixit information in diagnostics
+  -fno-dollars-in-identifiers
+                          Disallow '$' in identifiers
+  -fno-elide-constructors Disable C++ copy constructor elision
+  -fno-elide-type         Do not elide types when printing diagnostics
+  -fno-gnu-inline-asm     Disable GNU style inline asm
+  -fno-integrated-as      Disable the integrated assembler
+  -fno-lax-vector-conversions
+                          Disallow implicit conversions between vectors with a different number of elements or different element types
+  -fno-lto                Disable LTO mode (default)
+  -fno-math-builtin       Disable implicit builtin knowledge of math functions
+  -fno-merge-all-constants
+                          Disallow merging of constants
+  -fno-objc-infer-related-result-type
+                          do not infer Objective-C related result type based on method family
+  -fno-operator-names     Do not treat C++ operator name keywords as synonyms for operators
+  -fno-profile-instr-generate
+                          Disable generation of profile instrumentation.
+  -fno-profile-instr-use  Disable using instrumentation data for profile-guided optimization
+  -fno-reroll-loops       Turn off loop reroller
+  -fno-rtti               Disable generation of rtti information
+  -fno-sanitize-blacklist Don't use blacklist file for sanitizers
+  -fno-sanitize-cfi-cross-dso
+                          Disable control flow integrity (CFI) checks for cross-DSO calls.
+  -fno-sanitize-coverage=<value>
+                          Disable specified features of coverage instrumentation for Sanitizers
+  -fno-sanitize-memory-track-origins
+                          Disable origins tracking in MemorySanitizer
+  -fno-sanitize-recover=<value>
+                          Disable recovery for specified sanitizers
+  -fno-sanitize-trap=<value>
+                          Disable trapping for specified sanitizers
+  -fno-short-wchar        Force wchar_t to be an unsigned int
+  -fno-show-column        Do not include column number on diagnostics
+  -fno-show-source-location
+                          Do not include source location information with diagnostics
+  -fno-signed-char        Char is unsigned
+  -fno-signed-zeros       Allow optimizations that ignore the sign of floating point zeros
+  -fno-spell-checking     Disable spell-checking
+  -fno-stack-protector    Disable the use of stack protectors
+  -fno-standalone-debug   Limit debug information produced to reduce size of debug binary
+  -fno-threadsafe-statics Do not emit code to make initialization of local statics thread safe
+  -fno-trigraphs          Do not process trigraph sequences
+  -fno-unroll-loops       Turn off loop unroller
+  -fno-use-cxa-atexit     Don't use __cxa_atexit for calling destructors
+  -fno-use-init-array     Don't use .init_array instead of .ctors
+  -fobjc-arc-exceptions   Use EH-safe code when synthesizing retains and releases in -fobjc-arc
+  -fobjc-arc              Synthesize retain and release calls for Objective-C pointers
+  -fobjc-exceptions       Enable Objective-C exceptions
+  -fobjc-gc-only          Use GC exclusively for Objective-C related memory management
+  -fobjc-gc               Enable Objective-C garbage collection
+  -fobjc-runtime=<value>  Specify the target Objective-C runtime kind and version
+  -fobjc-weak             Enable ARC-style weak references in Objective-C
+  -fpack-struct=<value>   Specify the default maximum struct packing alignment
+  -fpascal-strings        Recognize and construct Pascal-style string literals
+  -fpcc-struct-return     Override the default ABI to return all structs on the stack
+  -fplugin=<dsopath>      Load the named plugin (dynamic shared object)
+  -fprofile-generate=<directory>
+                          Generate instrumented code to collect execution counts into <directory>/default.profraw (overridden by LLVM_PROFILE_FILE env var)
+  -fprofile-instr-generate=<file>
+                          Generate instrumented code to collect execution counts into <file> (overridden by LLVM_PROFILE_FILE env var)
+  -fprofile-instr-generate
+                          Generate instrumented code to collect execution counts into default.profraw file (overriden by '=' form of option or LLVM_PROFILE_FILE env var)
+  -fprofile-instr-use=<value>
+                          Use instrumentation data for profile-guided optimization
+  -fprofile-sample-use=<value>
+                          Enable sample-based profile guided optimizations
+  -fprofile-use=<pathname>
+                          Use instrumentation data for profile-guided optimization. If pathname is a directory, it reads from <pathname>/default.profdata. Otherwise, it reads from file <pathname>.
+  -freciprocal-math       Allow division operations to be reassociated
+  -freg-struct-return     Override the default ABI to return small structs in registers
+  -freroll-loops          Turn on loop reroller
+  -fsanitize-address-field-padding=<value>
+                          Level of field padding for AddressSanitizer
+  -fsanitize-blacklist=<value>
+                          Path to blacklist file for sanitizers
+  -fsanitize-cfi-cross-dso
+                          Enable control flow integrity (CFI) checks for cross-DSO calls.
+  -fsanitize-coverage=<value>
+                          Specify the type of coverage instrumentation for Sanitizers
+  -fsanitize-memory-track-origins=<value>
+                          Enable origins tracking in MemorySanitizer
+  -fsanitize-memory-track-origins
+                          Enable origins tracking in MemorySanitizer
+  -fsanitize-memory-use-after-dtor
+                          Enable use-after-destroy detection in MemorySanitizer
+  -fsanitize-recover=<value>
+                          Enable recovery for specified sanitizers
+  -fsanitize-trap=<value> Enable trapping for specified sanitizers
+  -fsanitize=<check>      Turn on runtime checks for various forms of undefined or suspicious behavior. See user manual for available checks
+  -fshort-enums           Allocate to an enum type only as many bytes as it needs for the declared range of possible values
+  -fshort-wchar           Force wchar_t to be a short unsigned int
+  -fshow-overloads=<value>
+                          Which overload candidates to show when overload resolution fails: best|all; defaults to all
+  -fsized-deallocation    Enable C++14 sized global deallocation functions
+  -fslp-vectorize-aggressive
+                          Enable the BB vectorization passes
+  -fslp-vectorize         Enable the superword-level parallelism vectorization passes
+  -fstack-protector-all   Force the usage of stack protectors for all functions
+  -fstack-protector-strong
+                          Use a strong heuristic to apply stack protectors to functions
+  -fstack-protector       Enable stack protectors for functions potentially vulnerable to stack smashing
+  -fstandalone-debug      Emit full debug info for all types used by the program
+  -fstrict-enums          Enable optimizations based on the strict definition of an enum's value range
+  -fstrict-vtable-pointers
+                          Enable optimizations based on the strict rules for overwriting polymorphic C++ objects
+  -fthinlto-index=<value> Perform ThinLTO importing using provided function summary index
+  -ftrap-function=<value> Issue call to specified function rather than a trap instruction
+  -ftrapv-handler=<function name>
+                          Specify the function to be called on overflow
+  -ftrapv                 Trap on integer overflow
+  -ftrigraphs             Process trigraph sequences
+  -funique-section-names  Use unique names for text and data sections (ELF Only)
+  -funroll-loops          Turn on loop unroller
+  -fuse-init-array        Use .init_array instead of .ctors
+  -fveclib=<value>        Use the given vector functions library
+  -fvectorize             Enable the loop vectorization passes
+  -fvisibility-inlines-hidden
+                          Give inline C++ member functions default visibility by default
+  -fvisibility-ms-compat  Give global types 'default' visibility and global functions and variables 'hidden' visibility by default
+  -fvisibility=<value>    Set the default symbol visibility for all global declarations
+  -fwrapv                 Treat signed integer overflow as two's complement
+  -fwritable-strings      Store string literals as writable data
+  -fzvector               Enable System z vector language extension
+  -F <value>              Add directory to framework include search path
+  --gcc-toolchain=<value> Use the gcc toolchain at the given directory
+  -gcodeview              Generate CodeView debug information
+  -gdwarf-2               Generate source-level debug information with dwarf version 2
+  -gdwarf-3               Generate source-level debug information with dwarf version 3
+  -gdwarf-4               Generate source-level debug information with dwarf version 4
+  -gdwarf-5               Generate source-level debug information with dwarf version 5
+  -gline-tables-only      Emit debug line number tables only
+  -gmodules               Generate debug info with external references to clang modules or precompiled headers
+  -g                      Generate source-level debug information
+  -help                   Display available options
+  -H                      Show header includes and nesting depth
+  -idirafter <value>      Add directory to AFTER include search path
+  -iframework <value>     Add directory to SYSTEM framework search path
+  -imacros <file>         Include macros from file before parsing
+  -include-pch <file>     Include precompiled header file
+  -include <file>         Include file before parsing
+  -index-header-map       Make the next included directory (-I or -F) an indexer header map
+  -iprefix <dir>          Set the -iwithprefix/-iwithprefixbefore prefix
+  -iquote <directory>     Add directory to QUOTE include search path
+  -isysroot <dir>         Set the system root directory (usually /)
+  -isystem <directory>    Add directory to SYSTEM include search path
+  -ivfsoverlay <value>    Overlay the virtual filesystem described by file over the real file system
+  -iwithprefixbefore <dir>
+                          Set directory to include search path with prefix
+  -iwithprefix <dir>      Set directory to SYSTEM include search path with prefix
+  -iwithsysroot <directory>
+                          Add directory to SYSTEM include search path, absolute paths are relative to -isysroot
+  -I <value>              Add directory to include search path
+  -mabicalls              Enable SVR4-style position-independent code (Mips only)
+  -mcrc                   Allow use of CRC instructions (ARM only)
+  -MD                     Write a depfile containing user and system headers
+  -meabi <value>          Set EABI type, e.g. 4, 5 or gnu (default depends on triple)
+  -mfix-cortex-a53-835769 Workaround Cortex-A53 erratum 835769 (AArch64 only)
+  -mfp32                  Use 32-bit floating point registers (MIPS only)
+  -mfp64                  Use 64-bit floating point registers (MIPS only)
+  -MF <file>              Write depfile output from -MMD, -MD, -MM, or -M to <file>
+  -mgeneral-regs-only     Generate code which only uses the general purpose registers (AArch64 only)
+  -mglobal-merge          Enable merging of globals
+  -MG                     Add missing headers to depfile
+  -mhvx-double            Enable Hexagon Double Vector eXtensions
+  -mhvx                   Enable Hexagon Vector eXtensions
+  --migrate               Run the migrator
+  -mincremental-linker-compatible
+                          (integrated-as) Emit an object file which can be used with an incremental linker
+  -mios-version-min=<value>
+                          Set iOS deployment target
+  -mllvm <value>          Additional arguments to forward to LLVM's option processing
+  -mlong-calls            Generate an indirect jump to enable jumps further than 64M
+  -mmacosx-version-min=<value>
+                          Set Mac OS X deployment target
+  -MMD                    Write a depfile containing user headers
+  -mms-bitfields          Set the default structure layout to be compatible with the Microsoft compiler standard
+  -mmsa                   Enable MSA ASE (MIPS only)
+  -MM                     Like -MMD, but also implies -E and writes to stdout by default
+  -mno-abicalls           Disable SVR4-style position-independent code (Mips only)
+  -mno-fix-cortex-a53-835769
+                          Don't workaround Cortex-A53 erratum 835769 (AArch64 only)
+  -mno-global-merge       Disable merging of globals
+  -mno-hvx-double         Disable Hexagon Double Vector eXtensions
+  -mno-hvx                Disable Hexagon Vector eXtensions
+  -mno-implicit-float     Don't generate implicit floating point instructions
+  -mno-incremental-linker-compatible
+                          (integrated-as) Emit an object file which cannot be used with an incremental linker
+  -mno-long-calls         Restore the default behaviour of not generating long calls
+  -mno-movt               Disallow use of movt/movw pairs (ARM only)
+  -mno-ms-bitfields       Do not set the default structure layout to be compatible with the Microsoft compiler standard
+  -mno-msa                Disable MSA ASE (MIPS only)
+  -mno-restrict-it        Allow generation of deprecated IT blocks for ARMv8. It is off by default for ARMv8 Thumb mode
+  -mno-unaligned-access   Force all memory accesses to be aligned (AArch32/AArch64 only)
+  -mnocrc                 Disallow use of CRC instructions (ARM only)
+  -module-dependency-dir <value>
+                          Directory to dump module dependencies to
+  -momit-leaf-frame-pointer
+                          Omit frame pointer setup for leaf functions
+  -MP                     Create phony target for each dependency (other than main file)
+  -mqdsp6-compat          Enable hexagon-qdsp6 backward compatibility
+  -MQ <value>             Specify name of main file output to quote in depfile
+  -mrelax-all             (integrated-as) Relax all machine instructions
+  -mrestrict-it           Disallow generation of deprecated IT blocks for ARMv8. It is on by default for ARMv8 Thumb mode.
+  -mrtd                   Make StdCall calling convention the default
+  -msoft-float            Use software floating point
+  -mstack-alignment=<value>
+                          Set the stack alignment
+  -mstack-probe-size=<value>
+                          Set the stack probe size
+  -mstackrealign          Force realign the stack at entry to every function
+  -mthread-model <value>  The thread model to use, e.g. posix, single (posix by default)
+  -MT <value>             Specify name of main file output in depfile
+  -munaligned-access      Allow memory accesses to be unaligned (AArch32/AArch64 only)
+  -MV                     Use NMake/Jom format for the depfile
+  -M                      Like -MD, but also implies -E and writes to stdout by default
+  --no-system-header-prefix=<prefix>
+                          Treat all #include paths starting with <prefix> as not including a system header.
+  -nobuiltininc           Disable builtin #include directories
+  -nostdinc++             Disable standard #include directories for the C++ standard library
+  -ObjC++                 Treat source input files as Objective-C++ inputs
+  -objcmt-atomic-property Make migration to 'atomic' properties
+  -objcmt-migrate-all     Enable migration to modern ObjC
+  -objcmt-migrate-annotation
+                          Enable migration to property and method annotations
+  -objcmt-migrate-designated-init
+                          Enable migration to infer NS_DESIGNATED_INITIALIZER for initializer methods
+  -objcmt-migrate-instancetype
+                          Enable migration to infer instancetype for method result type
+  -objcmt-migrate-literals
+                          Enable migration to modern ObjC literals
+  -objcmt-migrate-ns-macros
+                          Enable migration to NS_ENUM/NS_OPTIONS macros
+  -objcmt-migrate-property-dot-syntax
+                          Enable migration of setter/getter messages to property-dot syntax
+  -objcmt-migrate-property
+                          Enable migration to modern ObjC property
+  -objcmt-migrate-protocol-conformance
+                          Enable migration to add protocol conformance on classes
+  -objcmt-migrate-readonly-property
+                          Enable migration to modern ObjC readonly property
+  -objcmt-migrate-readwrite-property
+                          Enable migration to modern ObjC readwrite property
+  -objcmt-migrate-subscripting
+                          Enable migration to modern ObjC subscripting
+  -objcmt-ns-nonatomic-iosonly
+                          Enable migration to use NS_NONATOMIC_IOSONLY macro for setting property's 'atomic' attribute
+  -objcmt-returns-innerpointer-property
+                          Enable migration to annotate property with NS_RETURNS_INNER_POINTER
+  -objcmt-whitelist-dir-path=<value>
+                          Only modify files with a filename contained in the provided directory path
+  -ObjC                   Treat source input files as Objective-C inputs
+  -omptargets=<value>     Specify comma-separated list of triples OpenMP offloading targets to be supported
+  -o <file>               Write output to <file>
+  -pg                     Enable mcount instrumentation
+  -pipe                   Use pipes between commands, when possible
+  -print-file-name=<file> Print the full library path of <file>
+  -print-ivar-layout      Enable Objective-C Ivar layout bitmap print trace
+  -print-libgcc-file-name Print the library path for "libgcc.a"
+  -print-prog-name=<name> Print the full program path of <name>
+  -print-search-dirs      Print the paths used for finding libraries and programs
+  -pthread                Support POSIX threads in generated code
+  -P                      Disable linemarker output in -E mode
+  -Qunused-arguments      Don't emit warning for unused driver arguments
+  -relocatable-pch        Whether to build a relocatable precompiled header
+  -rewrite-legacy-objc    Rewrite Legacy Objective-C source to C++
+  -rewrite-objc           Rewrite Objective-C source to C++
+  -Rpass-analysis=<value> Report transformation analysis from optimization passes whose name matches the given POSIX regular expression
+  -Rpass-missed=<value>   Report missed transformations by optimization passes whose name matches the given POSIX regular expression
+  -Rpass=<value>          Report transformations performed by optimization passes whose name matches the given POSIX regular expression
+  -R<remark>              Enable the specified remark
+  -save-temps=<value>     Save intermediate compilation results.
+  -save-temps             Save intermediate compilation results
+  -serialize-diagnostics <value>
+                          Serialize compiler diagnostics to a file
+  -std=<value>            Language standard to compile for
+  -stdlib=<value>         C++ standard library to use
+  --system-header-prefix=<prefix>
+                          Treat all #include paths starting with <prefix> as including a system header.
+  -S                      Only run preprocess and compilation steps
+  --target=<value>        Generate code for the given target
+  -time                   Time individual commands
+  -traditional-cpp        Enable some traditional CPP emulation
+  -trigraphs              Process trigraph sequences
+  -undef                  undef all system defines
+  --verify-debug-info     Verify the binary representation of debug output
+  -verify-pch             Load and verify that a pre-compiled header file is not stale
+  -v                      Show commands to run and use verbose output
+  -Wa,<arg>               Pass the comma separated arguments in <arg> to the assembler
+  -Wl,<arg>               Pass the comma separated arguments in <arg> to the linker
+  -working-directory <value>
+                          Resolve file paths relative to the specified directory
+  -Wp,<arg>               Pass the comma separated arguments in <arg> to the preprocessor
+  -W<warning>             Enable the specified warning
+  -w                      Suppress all warnings
+  -Xanalyzer <arg>        Pass <arg> to the static analyzer
+  -Xassembler <arg>       Pass <arg> to the assembler
+  -Xclang <arg>           Pass <arg> to the clang compiler
+  -Xlinker <arg>          Pass <arg> to the linker
+  -Xpreprocessor <arg>    Pass <arg> to the preprocessor
+  -x <language>           Treat subsequent input files as having type <language>
+  -z <arg>                Pass -z <arg> to the linker
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang
+$
+
+	==> Consider the command line options for Borland bcc32c clang-based compiler?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>bcc32c --help
+Embarcadero C++ 7.10 for Win32 Copyright (c) 2012-2015 Embarcadero Technologies, Inc.
+Available options (* = default setting, xxx = has sub-options: use -h -X):
+(Note: -X- or -w-XXX will usually undo whatever was set or unset by -X or -wXXX.
+ If two options conflict, the last one specified will be used.)
+--sysroot (Note: -X- or -w-XXX will usually undo whatever was set or unset by -X or -wXXX.
+
+--sysinc  Set the system include file search path
+          (if specified, sysroot will be prepended)
+--syslib  Set the system library file search path
+          (if specified, sysroot will be prepended)
+--savemem Set maximum SAVEMEM memory (in Mb)
+          (This is the contiguous memory allocated to store global symbols and
+           similar constructs.  Pre-compiled headers use this memory)
+--version Show compiler version
+--replacehdr Replace header name (e.g. --replaceHeader=a.h=b.h)
+--xrtti   Generate extended rtti information
+  -3      Generate 80386 protected-mode compatible instructions
+  -4      Generate 80386/80486 protected-mode compatible instructions
+  -5      Generate Pentium instructions
+  -6      Generate Pentium Pro instructions
+  -Axxx   Enable ANSI conformance
+  -B      Compile to .ASM (-S), then assemble to .OBJ
+  -Cxxx   Enable nested comments
+  -D      -D<name> defines 'name' as a null string, or use -D<name>=<value>
+  -E      Specify which assembler to use
+  -G      Optimize for size/speed; use -O1 and -O2 instead
+  -Hxxx   Generate and use precompiled headers
+  -I      Set the include file search path
+  -Jxxx   Template generation options
+  -K      Set default character type to unsigned
+  -L      Library file search path
+  -M      Create a linker map file
+  -N      Hodgepodge of miscellanity (see -h -N)
+  -Nd     Macros get a value of "1" by default (-DX => -DX=1)
+  -Nt     GNU __typeof(var) support
+  -Nv     Allow void& as a valid type
+  -O      Optimize jumps
+  -P      Perform C++ compile regardless of source extension
+  -Q      Extended compiler error information
+  -Rxxx   Include browser information in generated .OBJ files
+  -S      Compile to assembly
+  -T      Specify assembler option, e.g. -Tx
+  -U      Undefine any previous definitions of name
+  -Vxxx   Compatibility options
+  -W      Target is a Windows application
+  -X      Disable compiler autodependency output
+  -Y
+  -Zd     Output global defs as DocBook specs; to specify: -Zd=<file>.c
+  -Zn     Disable and/or don't define CodeGear builtins
+  -Zx     Output global definitions to XML file.
+              Sub Options:
+                -Zx=<filename> Emit only types/declarations in <filename>
+                -Zxf[=filename] Skip base type members
+                -Zxm[=filename] Emit macros
+                -Zxp[=filename] Emit file & line position
+  -axxx   Set data alignment boundary.  Default is -a8; -a- means -a1
+  -b      Enable -bi and treat enums as ints from a typechecking point of view
+* -bi     Make sizeof(enum x) == sizeof(int) unless explicitly stated otherwise
+  -c      Compile to object file only, do not link
+  -d      Merge duplicate strings
+  -dc     Put strings into the read-only data segment
+  -dw     Put strings into the (writeable) data segment
+  -e      Specify target executable pathname
+  -ff     Fast floating point
+  -fp     Correct Pentium FDIV flaw
+  -fq     Use quiet floating point compare instruction (FUCOMP)
+  -g      Stop batch compilation after n warnings (Default = 255)
+  -h      Request help ('-h -' shows all help).  Can be specific: -h -V
+  -i      Set maximum significant identifier length (Default = 250)
+  -j      Stop batch compilation after n errors (Default = 50)
+  -k      Generate standard stack frames
+  -l      Pass options to the linker; example: -ls -l-x
+  -m      Generate makefile dependency information
+  -md     Put dependency info in .d files, not in the object file
+  -mm     Ignore system header files while generating dependency info
+  -mo     Specify the output file for dependency info
+  -n      Set output directory for object files
+  -o      Set output filename (-o<filename> or -o <filename> supported)
+  -pxxx   Use Pascal calling convention
+  -q      Suppress compiler identification banner
+  -r      Use register variables
+  -rd     Use register variables only when register keyword is employed
+  -s      Link using the system's non-incremental linker
+  -t      Specify target executable
+  -u      Generate underscores on symbol names
+  -vxxx   Turn on source debugging
+  -w      Display all warnings
+  -w!     Return non-zero from compiler on warnings
+  -xxxx   Enable exception handling
+  -y      Debug line numbers on
+  -z      Options for redefining standard segment names
+Use '-h <OPT>' for help on a specific option, or
+    '-h -' to see all available options.
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>bcc32c -h -t
+Embarcadero C++ 7.10 for Win32 Copyright (c) 2012-2015 Embarcadero Technologies, Inc.
+Available options (* = default setting, xxx = has sub-options: use -h -X):
+(Note: -X- or -w-XXX will usually undo whatever was set or unset by -X or -wXXX.
+ If two options conflict, the last one specified will be used.)
+  -t      Specify target executable
+  -tC     Target is a console application
+  -tW     Target is a Windows application
+  -tV     Target uses the VCL GUI framework
+  -tR     Target uses the dynamic RTL
+  -tD     Generate a shared library
+  -tJ     Target uses Delphi
+  -tP     Generate a package
+  -tM     Target is multi-threaded
+  -tU     Generate a Unicode application
+Note: sub-options for '-t' can be combined into a single option (-XA -XB => -XAB).
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>bcc32c -h -O
+Embarcadero C++ 7.10 for Win32 Copyright (c) 2012-2015 Embarcadero Technologies, Inc.
+Available options (* = default setting, xxx = has sub-options: use -h -X):
+(Note: -X- or -w-XXX will usually undo whatever was set or unset by -X or -wXXX.
+ If two options conflict, the last one specified will be used.)
+  -O      Optimize jumps
+  -O1     Generate smallest possible code
+  -O2     Generate fastest possible code
+  -OS     Enable Pentium instruction scheduling
+  -Ob     Dead store elimination
+  -Oc     Eliminate duplicate expressions within basic blocks and functions
+  -Od     Disable all optimizations
+  -Oi     Expand common intrinsic functions
+  -Or     Use register variables
+  -Ov     Enable loop induction variable and strength reduction
+  -OI     =nnn Maximum inlining cost (0 = off, 100 = no max., 50 = default)
+Note: sub-options for '-O' can be combined into a single option (-XA -XB => -XAB).
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>bcc32c -h -v
+Embarcadero C++ 7.10 for Win32 Copyright (c) 2012-2015 Embarcadero Technologies, Inc.
+Available options (* = default setting, xxx = has sub-options: use -h -X):
+(Note: -X- or -w-XXX will usually undo whatever was set or unset by -X or -wXXX.
+ If two options conflict, the last one specified will be used.)
+  -v      Turn on source debugging
+  -v4     Generate CodeView4 compatible debug info
+  -vG     All Codeguard options on
+  -vG0    Codeguard level 0
+  -vG1    Codeguard level 1
+  -vG2    Codeguard level 2
+  -vG3    Codeguard level 3
+  -vGc    Monitor inline pointer access
+  -vGd    Monitor global and stack data accesses
+  -vGt    Monitor 'this' pointer on member function entry
+  -vg     Toggle the profiler
+* -vi     Generate inline functions inline (use -vi- for out-of-line)
+  -vu     Do not prefix underbars to exported symbol names
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>
+
+	==> Consider the command line options for Embarcadero bcc64 flag based compiler?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>bcc64 -help
+Embarcadero C++ 6.90 for Win64 Copyright (c) 2012-2014 Embarcadero Technologies, Inc.
+bcc64: error: no input files
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>bcc64 --help
+Embarcadero C++ 6.90 for Win64 Copyright (c) 2012-2014 Embarcadero Technologies, Inc.
+OVERVIEW: Embarcadero C/C++ compiler driver for Win64
+
+USAGE: bcc64 [options] <inputs>
+
+OPTIONS:
+  -###                    Print the commands to run for this compilation
+  --analyze               Run the static analyzer
+  --help                  Display available options
+  --ilink-no-cfg          Do not use cfg file for borland linker
+  --migrate               Run the migrator
+  --relocatable-pch       Build a relocatable precompiled header
+  --serialize-diagnostics <value>
+                          Serialize compiler diagnostics to a file
+  -E                      Only run the preprocessor
+  -ObjC++                 Treat source input files as Objective-C++ inputs
+  -ObjC                   Treat source input files as Objective-C inputs
+  -Qunused-arguments      Don't emit warning for unused driver arguments
+  -S                      Only run preprocess and compilation steps
+  -Wa,<arg>               Pass the comma separated arguments in <arg> to the assembler
+  -Wl,<arg>               Pass the comma separated arguments in <arg> to the linker
+  -Wp,<arg>               Pass the comma separated arguments in <arg> to the preprocessor
+  -Xanalyzer <arg>        Pass <arg> to the static analyzer
+  -Xassembler <arg>       Pass <arg> to the assembler
+  -Xclang <arg>           Pass <arg> to the clang compiler
+  -Xdriver <arg>          Do not convert <arg> from older bcc32 to Clang.
+  -Xlinker <arg>          Pass <arg> to the linker
+  -Xpreprocessor <arg>    Pass <arg> to the preprocessor
+  -arcmt-migrate-emit-errors
+                          Emit ARC errors even if the migrator can fix them
+  -arcmt-migrate-report-output <value>
+                          Output path for the plist report
+  -c                      Only run preprocess, compile, and assemble steps
+  -emit-ast               Emit Clang AST files for source inputs
+  -emit-llvm              Use the LLVM representation for assembler and object files
+  -external-linker <arg>  Select <arg> as external linker
+  -fcatch-undefined-behavior
+                          Generate runtime checks for undefined behavior.
+  -flimit-debug-info      Limit debug information produced to reduce size of debug binary
+  -fno-limit-debug-info   Do not limit debug information produced to reduce size of debug binary
+  -ftrap-function=<value> Issue call to specified function rather than a trap instruction
+  -gcc-toolchain <value>  Use the gcc toolchain at the given directory
+  -mcdecl                 Make CDecl calling convention the default
+  -mfastcall              Make FastCall calling convention the default
+  -mno-cdecl              Do not make CDecl calling convention the default
+  -mno-fastcall           Do not make FastCall calling convention the default
+  -mno-stdcall            Do not make StdCall calling convention the default
+  -mstdcall               Make StdCall calling convention the default
+  -n <directory>          Specify the output directory for intermediate files
+  -objcmt-migrate-literals
+                          Enable migration to modern ObjC literals
+  -objcmt-migrate-subscripting
+                          Enable migration to modern ObjC subscripting
+  -o <file>               Write output to <file>
+  -pipe                   Use pipes between commands, when possible
+  -print-file-name=<file> Print the full library path of <file>
+  -print-libgcc-file-name Print the library path for "libgcc.a"
+  -print-prog-name=<name> Print the full program path of <name>
+  -print-search-dirs      Print the paths used for finding libraries and programs
+  -q                      Suppress compiler identification banner
+  -rewrite-legacy-objc    Rewrite Legacy Objective-C source to C++
+  -rewrite-objc           Rewrite Objective-C source to C++
+  -save-temps             Save intermediate compilation results
+  -target <value>         Generate code for the given target
+  -time                   Time individual commands
+  -t<value>               Specify Borland target executable
+  -verify                 Verify output using a verifier.
+  -v                      Show commands to run and use verbose output
+  -working-directory <value>
+                          Resolve file paths relative to the specified directory
+  -x <language>           Treat subsequent input files as having type <language>
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>
+
+	==> Consider the command line options for Borland bcc32?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-bcc64>bcc32 -h
+Embarcadero C++ 6.90 for Win32 Copyright (c) 1993-2014 Embarcadero Technologies, Inc.
+Available options (* = default setting, xxx = has sub-options: use -h -X):
+(Note: -X- or -w-XXX will usually undo whatever was set or unset by -X or -wXXX.
+ If two options conflict, the last one specified will be used.)
+--sysroot Sets the logical root directory for headers, libraries and frameworks
+          (Paths specified in --sysinc or --syslib and those in -F that begin
+           with '/' are prefixed with this value)
+--sysinc  Set the system include file search path
+          (if specified, sysroot will be prepended)
+--syslib  Set the system library file search path
+          (if specified, sysroot will be prepended)
+--savemem Set maximum SAVEMEM memory (in Mb)
+          (This is the contiguous memory allocated to store global symbols and
+           similar constructs.  Pre-compiled headers use this memory)
+--version Show compiler version
+--replacehdr Replace header name (e.g. --replaceHeader=a.h=b.h)
+--xrtti   Generate extended rtti information
+  -3      Generate 80386 protected-mode compatible instructions
+  -4      Generate 80386/80486 protected-mode compatible instructions
+  -5      Generate Pentium instructions
+  -6      Generate Pentium Pro instructions
+  -Axxx   Enable ANSI conformance
+  -B      Compile to .ASM (-S), then assemble to .OBJ
+  -Cxxx   Enable nested comments
+  -D      -D<name> defines 'name' as a null string, or use -D<name>=<value>
+  -E      Specify which assembler to use
+  -G      Optimize for size/speed; use -O1 and -O2 instead
+  -Hxxx   Generate and use precompiled headers
+  -I      Set the include file search path
+  -Jxxx   Template generation options
+  -K      Set default character type to unsigned
+  -L      Library file search path
+  -M      Create a linker map file
+  -N      Hodgepodge of miscellanity (see -h -N)
+  -Nd     Macros get a value of "1" by default (-DX => -DX=1)
+  -Nt     GNU __typeof(var) support
+  -Nv     Allow void& as a valid type
+  -O      Optimize jumps
+  -P      Perform C++ compile regardless of source extension
+  -Q      Extended compiler error information
+  -Rxxx   Include browser information in generated .OBJ files
+  -S      Compile to assembly
+  -T      Specify assembler option, e.g. -Tx
+  -U      Undefine any previous definitions of name
+  -Vxxx   Compatibility options
+  -W      Target is a Windows application
+  -X      Disable compiler autodependency output
+  -Zd     Output global defs as DocBook specs; to specify: -Zd=<file>.c
+  -Zn     Disable and/or don't define CodeGear builtins
+  -Zx     Output global definitions to XML file.
+              Sub Options:
+                -Zx=<filename> Emit only types/declarations in <filename>
+                -Zxf[=filename] Skip base type members
+                -Zxm[=filename] Emit macros
+                -Zxp[=filename] Emit file & line position
+  -axxx   Set data alignment boundary.  Default is -a8; -a- means -a1
+  -b      Enable -bi and treat enums as ints from a typechecking point of view
+* -bi     Make sizeof(enum x) == sizeof(int) unless explicitly stated otherwise
+  -c      Compile to object file only, do not link
+  -d      Merge duplicate strings
+  -dc     Put strings into the read-only data segment
+  -dw     Put strings into the (writeable) data segment
+  -e      Specify target executable pathname
+* -ff     Fast floating point
+  -fp     Correct Pentium FDIV flaw
+* -fq     Use quiet floating point compare instruction (FUCOMP)
+  -g      Stop batch compilation after n warnings (Default = 255)
+  -h      Request help ('-h -' shows all help).  Can be specific: -h -V
+  -i      Set maximum significant identifier length (Default = 250)
+  -j      Stop batch compilation after n errors (Default = 50)
+* -k      Generate standard stack frames
+  -l      Pass options to the linker; example: -ls -l-x
+  -m      Generate makefile dependency information
+  -md     Put dependency info in .d files, not in the object file
+  -mm     Ignore system header files while generating dependency info
+  -mo     Specify the output file for dependency info
+  -n      Set output directory for object files
+  -o      Set output filename (-o<filename> or -o <filename> supported)
+  -pxxx   Use Pascal calling convention
+  -q      Suppress compiler identification banner
+  -r      Use register variables
+  -rd     Use register variables only when register keyword is employed
+  -s      Link using the system's non-incremental linker
+  -t      Specify target executable
+* -u      Generate underscores on symbol names
+  -vxxx   Turn on source debugging
+  -w      Display all warnings
+  -w!     Return non-zero from compiler on warnings
+  -xxxx   Enable exception handling
+  -y      Debug line numbers on
+  -z      Options for redefining standard segment names
+Use '-h <OPT>' for help on a specific option, or
+    '-h -' to see all available options.
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-bcc64>bcc32 -h -O
+Embarcadero C++ 6.90 for Win32 Copyright (c) 1993-2014 Embarcadero Technologies, Inc.
+Available options (* = default setting, xxx = has sub-options: use -h -X):
+(Note: -X- or -w-XXX will usually undo whatever was set or unset by -X or -wXXX.
+ If two options conflict, the last one specified will be used.)
+  -O      Optimize jumps
+  -O1     Generate smallest possible code
+  -O2     Generate fastest possible code
+  -OS     Enable Pentium instruction scheduling
+  -Ob     Dead store elimination
+  -Oc     Eliminate duplicate expressions within basic blocks and functions
+  -Od     Disable all optimizations
+  -Oi     Expand common intrinsic functions
+  -Or     Use register variables
+  -Ov     Enable loop induction variable and strength reduction
+  -OI     =nnn Maximum inlining cost (0 = off, 100 = no max., 50 = default)
+Note: sub-options for '-O' can be combined into a single option (-XA -XB => -XAB).
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-bcc64>bcc32 -h -v
+Embarcadero C++ 6.90 for Win32 Copyright (c) 1993-2014 Embarcadero Technologies, Inc.
+Available options (* = default setting, xxx = has sub-options: use -h -X):
+(Note: -X- or -w-XXX will usually undo whatever was set or unset by -X or -wXXX.
+ If two options conflict, the last one specified will be used.)
+  -v      Turn on source debugging
+  -v4     Generate CodeView4 compatible debug info
+  -vG     All Codeguard options on
+  -vG0    Codeguard level 0
+  -vG1    Codeguard level 1
+  -vG2    Codeguard level 2
+  -vG3    Codeguard level 3
+  -vGc    Monitor inline pointer access
+  -vGd    Monitor global and stack data accesses
+  -vGt    Monitor 'this' pointer on member function entry
+  -vg     Toggle the profiler
+* -vi     Generate inline functions inline (use -vi- for out-of-line)
+  -vu     Do not prefix underbars to exported symbol names
+
+3) The tests seem to be made for and by the ctest command line tool (https://cmake.org/Wiki/CMake/Testing_With_CTest <https://cmake.org/Wiki/CMake/Testing_With_CTest>)?
+
+	==> Cmake test scripting seem to be described here (https://cmake.org/Wiki/CMake_Scripting_Of_CTest <https://cmake.org/Wiki/CMake_Scripting_Of_CTest>)?
+	...
+
+4) Consider to study and document how to build and run the tests on possible Windows tool chains (as a base to decide how to test using RAD Studio)?
+
+	==> The tests seem to use a base as a git submodule (https://github.com/Microsoft/unittest-cpp/tree/dc6b90838014ab985bf3cd74ac17ad9d00e1fbcb <https://github.com/Microsoft/unittest-cpp/tree/dc6b90838014ab985bf3cd74ac17ad9d00e1fbcb>)?
+	==> The tests seem to assume the tool chain to be build able by make (https://github.com/Microsoft/GSL <https://github.com/Microsoft/GSL>)?
+
+Building the tests
+To build the tests, you will require the following:
+CMake <http://cmake.org/>, version 2.8.7 or later to be installed and in your PATH. 
+UnitTest-cpp <https://github.com/Microsoft/unittest-cpp>, to be cloned under the tests/unittest-cpp <applewebdata://1810BF2D-00D7-4936-A432-414F8851F09D/kjelloh/GSL/blob/RAD-Studio-10-Adaption/tests/unittest-cpp> directory of your GSL source.
+These steps assume the source code of this repository has been cloned into a directory named c:\GSL.
+Create a directory to contain the build outputs for a particular architecture (we name it c:\GSL\build-x86 in this example).
+cd GSL
+md build-x86
+cd build-x86
+Configure CMake to use the compiler of your choice (you can see a list by running cmake --help).
+cmake -G "Visual Studio 14 2015" c:\GSL
+Build the test suite (in this case, in the Debug configuration, Release is another good choice). 
+cmake --build . --config Debug
+Run the test suite. 
+ctest -C Debug
+	==> It seems I ended up doing several different generations and not at C:\GSL
+		==> xxx denotes any of the tried tool chains
+		==> SHELL: denotes the uses command line shell (e.g. cmd.exe or Cygwin) at “C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL"
+
+	SHELL\> md build-xxx
+	SHELL\> cd build-xxx
+			a) CMD\build-xxx>cmake ..
+		b) CYGWIN\build-xxx$ cmake .. -G "MSYS Makefiles"
+	SHELL\build-xxx>cmake --build . --config Debug
+	SHELL\build-xxx>ctest -C Debug
+
+	==> The default make target tool chain (Visual Studio 2015) seem to build and final test run and pass ok?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub>cd GSL
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>md build-x86
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>cd build-x86
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86>cmake ..
+-- Building for: Visual Studio 14 2015
+-- The CXX compiler identification is MSVC 19.0.24210.0
+-- Check for working CXX compiler using: Visual Studio 14 2015
+-- Check for working CXX compiler using: Visual Studio 14 2015 -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The C compiler identification is MSVC 19.0.24210.0
+-- Check for working C compiler using: Visual Studio 14 2015
+-- Check for working C compiler using: Visual Studio 14 2015 -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86>cmake --build . --config Debug
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/17/2016 11:11:16 PM.
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" on node 1 (default targets).
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Win32\Debug\ZERO_CHECK\".
+  Creating directory "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\Debug\".
+  Creating directory "Win32\Debug\ZERO_CHECK\ZERO_CHECK.tlog\".
+InitializeBuildStatus:
+  Creating "Win32\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Checking Build System
+  CMake does not need to re-run because C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/CMakeFiles/generate.s
+  tamp is up-to-date.
+  CMake does not need to re-run because C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/CMakeFiles/gene
+  rate.stamp is up-to-date.
+  CMake does not need to re-run because C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/unittest-cpp/CM
+  akeFiles/generate.stamp is up-to-date.
+FinalizeBuildStatus:
+  Deleting file "Win32\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
+  Touching "Win32\Debug\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ZERO_CHECK.vcxproj" (default targets).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\TestUnitTest++.vcxproj" (3) on node 1 (default targets).
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\TestUnitTest++.vcxproj" (3) is bu
+ilding "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\UnitTest++.vcxproj" (4) on node 1
+(default targets).
+PrepareForBuild:
+  Creating directory "UnitTest++.dir\Debug\".
+  Creating directory "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\Debug\".
+  Creating directory "UnitTest++.dir\Debug\UnitTest++.tlog\".
+InitializeBuildStatus:
+  Creating "UnitTest++.dir\Debug\UnitTest++.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/unittest-cpp/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\CM
+  akeFiles\generate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\." /Zi /nologo /W3 /WX- /Od /Ob0
+  /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1
+   /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"UnitTest++.dir\Debug\\" /Fd"UnitTest++.dir\Debug\Un
+  itTest++.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cp
+  p\UnitTest++\AssertException.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\Chec
+  ks.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\CompositeTestReporter.cpp" "C:
+  \Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\CurrentTest.cpp" "C:\Users\kjell-olovhogd
+  ahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\DeferredTestReporter.cpp" "C:\Users\kjell-olovhogdahl\Document
+  s\GitHub\GSL\tests\unittest-cpp\UnitTest++\DeferredTestResult.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\t
+  ests\unittest-cpp\UnitTest++\MemoryOutStream.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp
+  \UnitTest++\ReportAssert.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\Test.cpp
+  " "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\TestDetails.cpp" "C:\Users\kjell-olo
+  vhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\TestList.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHu
+  b\GSL\tests\unittest-cpp\UnitTest++\TestReporter.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest
+  -cpp\UnitTest++\TestReporterStdout.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest+
+  +\TestResults.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\TestRunner.cpp" "C:
+  \Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\TimeConstraint.cpp" "C:\Users\kjell-olovh
+  ogdahl\Documents\GitHub\GSL\tests\unittest-cpp\UnitTest++\XmlTestReporter.cpp" "C:\Users\kjell-olovhogdahl\Documents\
+  GitHub\GSL\tests\unittest-cpp\UnitTest++\Win32\TimeHelpers.cpp"
+  AssertException.cpp
+  Checks.cpp
+  CompositeTestReporter.cpp
+  CurrentTest.cpp
+  DeferredTestReporter.cpp
+  DeferredTestResult.cpp
+  MemoryOutStream.cpp
+  ReportAssert.cpp
+  Test.cpp
+  TestDetails.cpp
+  TestList.cpp
+  TestReporter.cpp
+  TestReporterStdout.cpp
+  TestResults.cpp
+  TestRunner.cpp
+  TimeConstraint.cpp
+  XmlTestReporter.cpp
+  TimeHelpers.cpp
+  Generating Code...
+Lib:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"C:\Users\kjell-olovhogdahl\Documents\GitHub\
+  GSL\build-x86\tests\unittest-cpp\Debug\UnitTest++.lib" /NOLOGO  /machine:X86 UnitTest++.dir\Debug\AssertException.obj
+  UnitTest++.dir\Debug\Checks.obj
+  UnitTest++.dir\Debug\CompositeTestReporter.obj
+  UnitTest++.dir\Debug\CurrentTest.obj
+  UnitTest++.dir\Debug\DeferredTestReporter.obj
+  UnitTest++.dir\Debug\DeferredTestResult.obj
+  UnitTest++.dir\Debug\MemoryOutStream.obj
+  UnitTest++.dir\Debug\ReportAssert.obj
+  UnitTest++.dir\Debug\Test.obj
+  UnitTest++.dir\Debug\TestDetails.obj
+  UnitTest++.dir\Debug\TestList.obj
+  UnitTest++.dir\Debug\TestReporter.obj
+  UnitTest++.dir\Debug\TestReporterStdout.obj
+  UnitTest++.dir\Debug\TestResults.obj
+  UnitTest++.dir\Debug\TestRunner.obj
+  UnitTest++.dir\Debug\TimeConstraint.obj
+  UnitTest++.dir\Debug\XmlTestReporter.obj
+  UnitTest++.dir\Debug\TimeHelpers.obj
+  UnitTest++.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\Debug\UnitTest++.l
+  ib
+CopyFilesToOutputDirectory:
+  Copying file from "UnitTest++.dir\Debug\UnitTest++.pdb" to "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86
+  \tests\unittest-cpp\Debug\UnitTest++.pdb".
+FinalizeBuildStatus:
+  Deleting file "UnitTest++.dir\Debug\UnitTest++.tlog\unsuccessfulbuild".
+  Touching "UnitTest++.dir\Debug\UnitTest++.tlog\UnitTest++.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\UnitTest++.vcxproj"
+ (default targets).
+
+PrepareForBuild:
+  Creating directory "TestUnitTest++.dir\Debug\".
+  Creating directory "TestUnitTest++.dir\Debug\TestUnitTest++.tlog\".
+InitializeBuildStatus:
+  Creating "TestUnitTest++.dir\Debug\TestUnitTest++.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/unittest-cpp/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\CM
+  akeFiles\generate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\." /Zi /nologo /W3 /WX- /Od /Ob0
+  /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1
+   /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"TestUnitTest++.dir\Debug\\" /Fd"TestUnitTest++.dir\
+  Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest
+  -cpp\tests\Main.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestAssertHandler.cpp"
+   "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestCheckMacros.cpp" "C:\Users\kjell-olovh
+  ogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestChecks.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL
+  \tests\unittest-cpp\tests\TestCompositeTestReporter.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unitt
+  est-cpp\tests\TestCurrentTest.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestDefe
+  rredTestReporter.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestExceptions.cpp" "
+  C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestMemoryOutStream.cpp" "C:\Users\kjell-olo
+  vhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestTest.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL
+  \tests\unittest-cpp\tests\TestTestList.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests
+  \TestTestMacros.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestTestResults.cpp" "
+  C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestTestRunner.cpp" "C:\Users\kjell-olovhogd
+  ahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestTestSuite.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL
+  \tests\unittest-cpp\tests\TestTimeConstraint.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp
+  \tests\TestTimeConstraintMacro.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestUni
+  tTestPP.cpp" "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\unittest-cpp\tests\TestXmlTestReporter.cpp"
+  Main.cpp
+  TestAssertHandler.cpp
+  TestCheckMacros.cpp
+  TestChecks.cpp
+  TestCompositeTestReporter.cpp
+  TestCurrentTest.cpp
+  TestDeferredTestReporter.cpp
+  TestExceptions.cpp
+  TestMemoryOutStream.cpp
+  TestTest.cpp
+  TestTestList.cpp
+  TestTestMacros.cpp
+  TestTestResults.cpp
+  TestTestRunner.cpp
+  TestTestSuite.cpp
+  TestTimeConstraint.cpp
+  TestTimeConstraintMacro.cpp
+  TestUnitTestPP.cpp
+  TestXmlTestReporter.cpp
+  Generating Code...
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\Debug\TestUnitTest++.exe" /INCREMENTAL /NOLOGO kernel32.lib user
+  32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib Debug\UnitTest++.
+  lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olovhogda
+  hl/Documents/GitHub/GSL/build-x86/tests/unittest-cpp/Debug/TestUnitTest++.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBA
+  SE /NXCOMPAT /IMPLIB:"C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/unittest-cpp/Debug/TestUnitTest
+  ++.lib" /MACHINE:X86 /SAFESEH  /machine:X86 TestUnitTest++.dir\Debug\Main.obj
+  TestUnitTest++.dir\Debug\TestAssertHandler.obj
+  TestUnitTest++.dir\Debug\TestCheckMacros.obj
+  TestUnitTest++.dir\Debug\TestChecks.obj
+  TestUnitTest++.dir\Debug\TestCompositeTestReporter.obj
+  TestUnitTest++.dir\Debug\TestCurrentTest.obj
+  TestUnitTest++.dir\Debug\TestDeferredTestReporter.obj
+  TestUnitTest++.dir\Debug\TestExceptions.obj
+  TestUnitTest++.dir\Debug\TestMemoryOutStream.obj
+  TestUnitTest++.dir\Debug\TestTest.obj
+  TestUnitTest++.dir\Debug\TestTestList.obj
+  TestUnitTest++.dir\Debug\TestTestMacros.obj
+  TestUnitTest++.dir\Debug\TestTestResults.obj
+  TestUnitTest++.dir\Debug\TestTestRunner.obj
+  TestUnitTest++.dir\Debug\TestTestSuite.obj
+  TestUnitTest++.dir\Debug\TestTimeConstraint.obj
+  TestUnitTest++.dir\Debug\TestTimeConstraintMacro.obj
+  TestUnitTest++.dir\Debug\TestUnitTestPP.obj
+  TestUnitTest++.dir\Debug\TestXmlTestReporter.obj
+  TestUnitTest++.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\Debug\TestUnit
+  Test++.exe
+PostBuildEvent:
+  Description: Running unit tests
+  setlocal
+  Debug\TestUnitTest++.exe
+  if %errorlevel% neq 0 goto :cmEnd
+  :cmEnd
+  endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+  :cmErrorLevel
+  exit /b %1
+  :cmDone
+  if %errorlevel% neq 0 goto :VCEnd
+  :VCEnd
+  Success: 227 tests passed.
+  Test time: 0.32 seconds.
+FinalizeBuildStatus:
+  Deleting file "TestUnitTest++.dir\Debug\TestUnitTest++.tlog\unsuccessfulbuild".
+  Touching "TestUnitTest++.dir\Debug\TestUnitTest++.tlog\TestUnitTest++.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\unittest-cpp\TestUnitTest++.vcxp
+roj" (default targets).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\assertion_tests.vcxproj" (5) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "assertion_tests.dir\Debug\".
+  Creating directory "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\".
+  Creating directory "assertion_tests.dir\Debug\assertion_tests.tlog\".
+InitializeBuildStatus:
+  Creating "assertion_tests.dir\Debug\assertion_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\CMakeFiles\gene
+  rate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\..\include" /I"C:\Users\kjell-olovhogdahl\Docu
+  ments\GitHub\GSL\tests\.\unittest-cpp" /Zi /nologo /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GSL_THROW
+  _ON_CONTRACT_VIOLATION /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:
+  precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"assertion_tests.dir\Debug\\" /Fd"assertion_tests.dir\Debug\vc140.
+  pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\assertion_tests.cpp"
+  assertion_tests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\Debug\assertion_tests.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32
+  .lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "unittest-cpp\Debug\UnitTest+
+  +.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olovho
+  gdahl/Documents/GitHub/GSL/build-x86/tests/Debug/assertion_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOM
+  PAT /IMPLIB:"C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/assertion_tests.lib" /MACHINE:X86
+  /SAFESEH  /machine:X86 assertion_tests.dir\Debug\assertion_tests.obj
+  assertion_tests.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\assertion_tests.exe
+FinalizeBuildStatus:
+  Deleting file "assertion_tests.dir\Debug\assertion_tests.tlog\unsuccessfulbuild".
+  Touching "assertion_tests.dir\Debug\assertion_tests.tlog\assertion_tests.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\assertion_tests.vcxproj" (defaul
+t targets).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\at_tests.vcxproj" (6) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "at_tests.dir\Debug\".
+  Creating directory "at_tests.dir\Debug\at_tests.tlog\".
+InitializeBuildStatus:
+  Creating "at_tests.dir\Debug\at_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\CMakeFiles\gene
+  rate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\..\include" /I"C:\Users\kjell-olovhogdahl\Docu
+  ments\GitHub\GSL\tests\.\unittest-cpp" /Zi /nologo /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GSL_THROW
+  _ON_CONTRACT_VIOLATION /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:
+  precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"at_tests.dir\Debug\\" /Fd"at_tests.dir\Debug\vc140.pdb" /Gd /TP /
+  analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\at_tests.cpp"
+  at_tests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\Debug\at_tests.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib wi
+  nspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "unittest-cpp\Debug\UnitTest++.lib"
+  /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olovhogdahl/D
+  ocuments/GitHub/GSL/build-x86/tests/Debug/at_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C
+  :/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/at_tests.lib" /MACHINE:X86 /SAFESEH  /machine:X8
+  6 at_tests.dir\Debug\at_tests.obj
+  at_tests.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\at_tests.exe
+FinalizeBuildStatus:
+  Deleting file "at_tests.dir\Debug\at_tests.tlog\unsuccessfulbuild".
+  Touching "at_tests.dir\Debug\at_tests.tlog\at_tests.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\at_tests.vcxproj" (default targe
+ts).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\bounds_tests.vcxproj" (7) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "bounds_tests.dir\Debug\".
+  Creating directory "bounds_tests.dir\Debug\bounds_tests.tlog\".
+InitializeBuildStatus:
+  Creating "bounds_tests.dir\Debug\bounds_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\CMakeFiles\gene
+  rate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\..\include" /I"C:\Users\kjell-olovhogdahl\Docu
+  ments\GitHub\GSL\tests\.\unittest-cpp" /Zi /nologo /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GSL_THROW
+  _ON_CONTRACT_VIOLATION /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:
+  precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"bounds_tests.dir\Debug\\" /Fd"bounds_tests.dir\Debug\vc140.pdb" /
+  Gd /TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\bounds_tests.cpp"
+  bounds_tests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\Debug\bounds_tests.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.li
+  b winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "unittest-cpp\Debug\UnitTest++.l
+  ib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olovhogda
+  hl/Documents/GitHub/GSL/build-x86/tests/Debug/bounds_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /I
+  MPLIB:"C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/bounds_tests.lib" /MACHINE:X86 /SAFESEH
+   /machine:X86 bounds_tests.dir\Debug\bounds_tests.obj
+  bounds_tests.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\bounds_tests.exe
+FinalizeBuildStatus:
+  Deleting file "bounds_tests.dir\Debug\bounds_tests.tlog\unsuccessfulbuild".
+  Touching "bounds_tests.dir\Debug\bounds_tests.tlog\bounds_tests.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\bounds_tests.vcxproj" (default t
+argets).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\notnull_tests.vcxproj" (8) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "notnull_tests.dir\Debug\".
+  Creating directory "notnull_tests.dir\Debug\notnull_tests.tlog\".
+InitializeBuildStatus:
+  Creating "notnull_tests.dir\Debug\notnull_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\CMakeFiles\gene
+  rate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\..\include" /I"C:\Users\kjell-olovhogdahl\Docu
+  ments\GitHub\GSL\tests\.\unittest-cpp" /Zi /nologo /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GSL_THROW
+  _ON_CONTRACT_VIOLATION /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:
+  precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"notnull_tests.dir\Debug\\" /Fd"notnull_tests.dir\Debug\vc140.pdb"
+   /Gd /TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\notnull_tests.cpp"
+  notnull_tests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\Debug\notnull_tests.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.l
+  ib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "unittest-cpp\Debug\UnitTest++.
+  lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olovhogd
+  ahl/Documents/GitHub/GSL/build-x86/tests/Debug/notnull_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT
+  /IMPLIB:"C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/notnull_tests.lib" /MACHINE:X86 /SAFES
+  EH  /machine:X86 notnull_tests.dir\Debug\notnull_tests.obj
+  notnull_tests.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\notnull_tests.exe
+FinalizeBuildStatus:
+  Deleting file "notnull_tests.dir\Debug\notnull_tests.tlog\unsuccessfulbuild".
+  Touching "notnull_tests.dir\Debug\notnull_tests.tlog\notnull_tests.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\notnull_tests.vcxproj" (default
+targets).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\owner_tests.vcxproj" (9) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "owner_tests.dir\Debug\".
+  Creating directory "owner_tests.dir\Debug\owner_tests.tlog\".
+InitializeBuildStatus:
+  Creating "owner_tests.dir\Debug\owner_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\CMakeFiles\gene
+  rate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\..\include" /I"C:\Users\kjell-olovhogdahl\Docu
+  ments\GitHub\GSL\tests\.\unittest-cpp" /Zi /nologo /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GSL_THROW
+  _ON_CONTRACT_VIOLATION /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:
+  precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"owner_tests.dir\Debug\\" /Fd"owner_tests.dir\Debug\vc140.pdb" /Gd
+   /TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\owner_tests.cpp"
+  owner_tests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\Debug\owner_tests.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib
+   winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "unittest-cpp\Debug\UnitTest++.li
+  b" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olovhogdah
+  l/Documents/GitHub/GSL/build-x86/tests/Debug/owner_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMP
+  LIB:"C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/owner_tests.lib" /MACHINE:X86 /SAFESEH  /m
+  achine:X86 owner_tests.dir\Debug\owner_tests.obj
+  owner_tests.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\owner_tests.exe
+FinalizeBuildStatus:
+  Deleting file "owner_tests.dir\Debug\owner_tests.tlog\unsuccessfulbuild".
+  Touching "owner_tests.dir\Debug\owner_tests.tlog\owner_tests.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\owner_tests.vcxproj" (default ta
+rgets).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\span_tests.vcxproj" (10) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "span_tests.dir\Debug\".
+  Creating directory "span_tests.dir\Debug\span_tests.tlog\".
+InitializeBuildStatus:
+  Creating "span_tests.dir\Debug\span_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\CMakeFiles\gene
+  rate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\..\include" /I"C:\Users\kjell-olovhogdahl\Docu
+  ments\GitHub\GSL\tests\.\unittest-cpp" /Zi /nologo /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GSL_THROW
+  _ON_CONTRACT_VIOLATION /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:
+  precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"span_tests.dir\Debug\\" /Fd"span_tests.dir\Debug\vc140.pdb" /Gd /
+  TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\span_tests.cpp"
+  span_tests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\Debug\span_tests.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib
+  winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "unittest-cpp\Debug\UnitTest++.lib
+  " /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olovhogdahl
+  /Documents/GitHub/GSL/build-x86/tests/Debug/span_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLI
+  B:"C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/span_tests.lib" /MACHINE:X86 /SAFESEH  /mach
+  ine:X86 span_tests.dir\Debug\span_tests.obj
+  span_tests.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\span_tests.exe
+FinalizeBuildStatus:
+  Deleting file "span_tests.dir\Debug\span_tests.tlog\unsuccessfulbuild".
+  Touching "span_tests.dir\Debug\span_tests.tlog\span_tests.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\span_tests.vcxproj" (default tar
+gets).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\strided_span_tests.vcxproj" (11) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "strided_span_tests.dir\Debug\".
+  Creating directory "strided_span_tests.dir\Debug\strided_.3222C6D1.tlog\".
+InitializeBuildStatus:
+  Creating "strided_span_tests.dir\Debug\strided_.3222C6D1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified
+  .
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\CMakeFiles\gene
+  rate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\..\include" /I"C:\Users\kjell-olovhogdahl\Docu
+  ments\GitHub\GSL\tests\.\unittest-cpp" /Zi /nologo /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GSL_THROW
+  _ON_CONTRACT_VIOLATION /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:
+  precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"strided_span_tests.dir\Debug\\" /Fd"strided_span_tests.dir\Debug\
+  vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\strided_span_t
+  ests.cpp"
+  strided_span_tests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\Debug\strided_span_tests.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gd
+  i32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "unittest-cpp\Debug\UnitTe
+  st++.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olo
+  vhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/strided_span_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE
+  /NXCOMPAT /IMPLIB:"C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/strided_span_tests.lib" /MAC
+  HINE:X86 /SAFESEH  /machine:X86 strided_span_tests.dir\Debug\strided_span_tests.obj
+  strided_span_tests.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\strided_span_test
+  s.exe
+FinalizeBuildStatus:
+  Deleting file "strided_span_tests.dir\Debug\strided_.3222C6D1.tlog\unsuccessfulbuild".
+  Touching "strided_span_tests.dir\Debug\strided_.3222C6D1.tlog\strided_span_tests.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\strided_span_tests.vcxproj" (def
+ault targets).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\string_span_tests.vcxproj" (12) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "string_span_tests.dir\Debug\".
+  Creating directory "string_span_tests.dir\Debug\string_s.35BE0347.tlog\".
+InitializeBuildStatus:
+  Creating "string_span_tests.dir\Debug\string_s.35BE0347.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\CMakeFiles\gene
+  rate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\..\include" /I"C:\Users\kjell-olovhogdahl\Docu
+  ments\GitHub\GSL\tests\.\unittest-cpp" /Zi /nologo /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GSL_THROW
+  _ON_CONTRACT_VIOLATION /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:
+  precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"string_span_tests.dir\Debug\\" /Fd"string_span_tests.dir\Debug\vc
+  140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\string_span_test
+  s.cpp"
+  string_span_tests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\Debug\string_span_tests.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi
+  32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "unittest-cpp\Debug\UnitTes
+  t++.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olov
+  hogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/string_span_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /N
+  XCOMPAT /IMPLIB:"C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/string_span_tests.lib" /MACHIN
+  E:X86 /SAFESEH  /machine:X86 string_span_tests.dir\Debug\string_span_tests.obj
+  string_span_tests.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\string_span_tests.
+  exe
+FinalizeBuildStatus:
+  Deleting file "string_span_tests.dir\Debug\string_s.35BE0347.tlog\unsuccessfulbuild".
+  Touching "string_span_tests.dir\Debug\string_s.35BE0347.tlog\string_span_tests.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\string_span_tests.vcxproj" (defa
+ult targets).
+
+Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (1) is building "C:\Users\kjell-o
+lovhogdahl\Documents\GitHub\GSL\build-x86\tests\utils_tests.vcxproj" (13) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "utils_tests.dir\Debug\".
+  Creating directory "utils_tests.dir\Debug\utils_tests.tlog\".
+InitializeBuildStatus:
+  Creating "utils_tests.dir\Debug\utils_tests.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/tests/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\CMakeFiles\gene
+  rate.stamp is up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\G
+  SL\build-x86" /I"C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\..\include" /I"C:\Users\kjell-olovhogdahl\Docu
+  ments\GitHub\GSL\tests\.\unittest-cpp" /Zi /nologo /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D GSL_THROW
+  _ON_CONTRACT_VIOLATION /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:
+  precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"utils_tests.dir\Debug\\" /Fd"utils_tests.dir\Debug\vc140.pdb" /Gd
+   /TP /analyze- /errorReport:queue "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\tests\utils_tests.cpp"
+  utils_tests.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\kjell-olovhogda
+  hl\Documents\GitHub\GSL\build-x86\tests\Debug\utils_tests.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib
+   winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "unittest-cpp\Debug\UnitTest++.li
+  b" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kjell-olovhogdah
+  l/Documents/GitHub/GSL/build-x86/tests/Debug/utils_tests.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMP
+  LIB:"C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86/tests/Debug/utils_tests.lib" /MACHINE:X86 /SAFESEH  /m
+  achine:X86 utils_tests.dir\Debug\utils_tests.obj
+  utils_tests.vcxproj -> C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\Debug\utils_tests.exe
+FinalizeBuildStatus:
+  Deleting file "utils_tests.dir\Debug\utils_tests.tlog\unsuccessfulbuild".
+  Touching "utils_tests.dir\Debug\utils_tests.tlog\utils_tests.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\tests\utils_tests.vcxproj" (default ta
+rgets).
+
+PrepareForBuild:
+  Creating directory "Win32\Debug\ALL_BUILD\".
+  Creating directory "Win32\Debug\ALL_BUILD\ALL_BUILD.tlog\".
+InitializeBuildStatus:
+  Creating "Win32\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\CMakeFiles\generate.s
+  tamp is up-to-date.
+FinalizeBuildStatus:
+  Deleting file "Win32\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild".
+  Touching "Win32\Debug\ALL_BUILD\ALL_BUILD.tlog\ALL_BUILD.lastbuildstate".
+Done Building Project "C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\ALL_BUILD.vcxproj" (default targets).
+
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:22.78
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86>ctest -C Debug
+Test project C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-x86
+    Start 1: span_tests
+1/9 Test #1: span_tests .......................   Passed    0.02 sec
+    Start 2: strided_span_tests
+2/9 Test #2: strided_span_tests ...............   Passed    0.02 sec
+    Start 3: string_span_tests
+3/9 Test #3: string_span_tests ................   Passed    0.02 sec
+    Start 4: at_tests
+4/9 Test #4: at_tests .........................   Passed    0.00 sec
+    Start 5: bounds_tests
+5/9 Test #5: bounds_tests .....................   Passed    0.02 sec
+    Start 6: notnull_tests
+6/9 Test #6: notnull_tests ....................   Passed    0.02 sec
+    Start 7: assertion_tests
+7/9 Test #7: assertion_tests ..................   Passed    0.02 sec
+    Start 8: utils_tests
+8/9 Test #8: utils_tests ......................   Passed    0.00 sec
+    Start 9: owner_tests
+9/9 Test #9: owner_tests ......................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.18 sec
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86>
+
+		==> Note: The test command is part of the cmake distribution.
+
+			==> The path to the test.exe file seems to be revealed in “C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86\CMakeCache.txt”?
+
+...
+//Path to ctest program executable.
+CMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files (x86)/CMake/bin/ctest.exe
+...
+
+		==> The generated structure and content seem to be the following?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86>tree /F
+Folder PATH listing
+Volume serial number is D49B-BB89
+C:.
+│   ALL_BUILD.vcxproj
+│   ALL_BUILD.vcxproj.filters
+│   ALL_BUILD.vcxproj.user
+│   CMakeCache.txt
+│   cmake_install.cmake
+│   CTestTestfile.cmake
+│   GSL.sln
+│   GSL.VC.db
+│   INSTALL.vcxproj
+│   INSTALL.vcxproj.filters
+│   RUN_TESTS.vcxproj
+│   RUN_TESTS.vcxproj.filters
+│   ZERO_CHECK.vcxproj
+│   ZERO_CHECK.vcxproj.filters
+│
+├───CMakeFiles
+│   │   cmake.check_cache
+│   │   CMakeOutput.log
+│   │   feature_tests.bin
+│   │   feature_tests.cxx
+│   │   generate.stamp
+│   │   generate.stamp.depend
+│   │   generate.stamp.list
+│   │   TargetDirectories.txt
+│   │
+│   ├───3.5.1
+│   │   │   CMakeCCompiler.cmake
+│   │   │   CMakeCXXCompiler.cmake
+│   │   │   CMakeDetermineCompilerABI_C.bin
+│   │   │   CMakeDetermineCompilerABI_CXX.bin
+│   │   │   CMakeRCCompiler.cmake
+│   │   │   CMakeSystem.cmake
+│   │   │
+│   │   ├───CompilerIdC
+│   │   │   │   CMakeCCompilerId.c
+│   │   │   │   CompilerIdC.exe
+│   │   │   │   CompilerIdC.vcxproj
+│   │   │   │
+│   │   │   └───Debug
+│   │   │       │   CMakeCCompilerId.obj
+│   │   │       │
+│   │   │       └───CompilerIdC.tlog
+│   │   │               CL.command.1.tlog
+│   │   │               CL.read.1.tlog
+│   │   │               CL.write.1.tlog
+│   │   │               CompilerIdC.lastbuildstate
+│   │   │               link.command.1.tlog
+│   │   │               link.read.1.tlog
+│   │   │               link.write.1.tlog
+│   │   │
+│   │   └───CompilerIdCXX
+│   │       │   CMakeCXXCompilerId.cpp
+│   │       │   CompilerIdCXX.exe
+│   │       │   CompilerIdCXX.vcxproj
+│   │       │
+│   │       └───Debug
+│   │           │   CMakeCXXCompilerId.obj
+│   │           │
+│   │           └───CompilerIdCXX.tlog
+│   │                   CL.command.1.tlog
+│   │                   CL.read.1.tlog
+│   │                   CL.write.1.tlog
+│   │                   CompilerIdCXX.lastbuildstate
+│   │                   link-VCTIP.delete.1.tlog
+│   │                   link-VCTIP.delete.21.tlog
+│   │                   link-VCTIP.delete.28.tlog
+│   │                   link-VCTIP.delete.41.tlog
+│   │                   link-VCTIP.read.1.tlog
+│   │                   link-VCTIP.read.13.tlog
+│   │                   link-VCTIP.read.15.tlog
+│   │                   link-VCTIP.read.20.tlog
+│   │                   link-VCTIP.read.21.tlog
+│   │                   link-VCTIP.read.22.tlog
+│   │                   link-VCTIP.read.23.tlog
+│   │                   link-VCTIP.read.28.tlog
+│   │                   link-VCTIP.read.41.tlog
+│   │                   link-VCTIP.read.7.tlog
+│   │                   link-VCTIP.read.9.tlog
+│   │                   link-VCTIP.write.1.tlog
+│   │                   link-VCTIP.write.15.tlog
+│   │                   link-VCTIP.write.21.tlog
+│   │                   link-VCTIP.write.28.tlog
+│   │                   link-VCTIP.write.41.tlog
+│   │                   link.command.1.tlog
+│   │                   link.read.1.tlog
+│   │                   link.write.1.tlog
+│   │
+│   ├───7d942e84833e037ff00628364b6e8236
+│   │       INSTALL_force.rule
+│   │       RUN_TESTS_force.rule
+│   │
+│   ├───CMakeTmp
+│   ├───d7710e7a4f6284f688363f2d1d87f53e
+│   │       INSTALL_force.rule
+│   │       RUN_TESTS_force.rule
+│   │
+│   └───e23936bc6279ce15335c55dbd126cb7d
+│           generate.stamp.rule
+│           INSTALL_force.rule
+│           RUN_TESTS_force.rule
+│
+├───Debug
+├───Testing
+│   └───Temporary
+│           CTestCostData.txt
+│           LastTest.log
+│
+├───tests
+│   │   ALL_BUILD.vcxproj
+│   │   ALL_BUILD.vcxproj.filters
+│   │   assertion_tests.vcxproj
+│   │   assertion_tests.vcxproj.filters
+│   │   at_tests.vcxproj
+│   │   at_tests.vcxproj.filters
+│   │   bounds_tests.vcxproj
+│   │   bounds_tests.vcxproj.filters
+│   │   cmake_install.cmake
+│   │   CTestTestfile.cmake
+│   │   GSLTests.sln
+│   │   INSTALL.vcxproj
+│   │   INSTALL.vcxproj.filters
+│   │   notnull_tests.vcxproj
+│   │   notnull_tests.vcxproj.filters
+│   │   owner_tests.vcxproj
+│   │   owner_tests.vcxproj.filters
+│   │   RUN_TESTS.vcxproj
+│   │   RUN_TESTS.vcxproj.filters
+│   │   span_tests.vcxproj
+│   │   span_tests.vcxproj.filters
+│   │   strided_span_tests.vcxproj
+│   │   strided_span_tests.vcxproj.filters
+│   │   string_span_tests.vcxproj
+│   │   string_span_tests.vcxproj.filters
+│   │   utils_tests.vcxproj
+│   │   utils_tests.vcxproj.filters
+│   │
+│   ├───assertion_tests.dir
+│   │   └───Debug
+│   │       │   assertion_tests.obj
+│   │       │   vc140.pdb
+│   │       │
+│   │       └───assertion_tests.tlog
+│   │               assertion_tests.lastbuildstate
+│   │               CL.command.1.tlog
+│   │               CL.read.1.tlog
+│   │               CL.write.1.tlog
+│   │               custombuild.command.1.tlog
+│   │               custombuild.read.1.tlog
+│   │               custombuild.write.1.tlog
+│   │               link.command.1.tlog
+│   │               link.read.1.tlog
+│   │               link.write.1.tlog
+│   │
+│   ├───at_tests.dir
+│   │   └───Debug
+│   │       │   at_tests.obj
+│   │       │   vc140.pdb
+│   │       │
+│   │       └───at_tests.tlog
+│   │               at_tests.lastbuildstate
+│   │               CL.command.1.tlog
+│   │               CL.read.1.tlog
+│   │               CL.write.1.tlog
+│   │               custombuild.command.1.tlog
+│   │               custombuild.read.1.tlog
+│   │               custombuild.write.1.tlog
+│   │               link.command.1.tlog
+│   │               link.read.1.tlog
+│   │               link.write.1.tlog
+│   │
+│   ├───bounds_tests.dir
+│   │   └───Debug
+│   │       │   bounds_tests.obj
+│   │       │   vc140.pdb
+│   │       │
+│   │       └───bounds_tests.tlog
+│   │               bounds_tests.lastbuildstate
+│   │               CL.command.1.tlog
+│   │               CL.read.1.tlog
+│   │               CL.write.1.tlog
+│   │               custombuild.command.1.tlog
+│   │               custombuild.read.1.tlog
+│   │               custombuild.write.1.tlog
+│   │               link.command.1.tlog
+│   │               link.read.1.tlog
+│   │               link.write.1.tlog
+│   │
+│   ├───CMakeFiles
+│   │       generate.stamp
+│   │       generate.stamp.depend
+│   │
+│   ├───Debug
+│   │       assertion_tests.exe
+│   │       assertion_tests.ilk
+│   │       assertion_tests.pdb
+│   │       at_tests.exe
+│   │       at_tests.ilk
+│   │       at_tests.pdb
+│   │       bounds_tests.exe
+│   │       bounds_tests.ilk
+│   │       bounds_tests.pdb
+│   │       notnull_tests.exe
+│   │       notnull_tests.ilk
+│   │       notnull_tests.pdb
+│   │       owner_tests.exe
+│   │       owner_tests.ilk
+│   │       owner_tests.pdb
+│   │       span_tests.exe
+│   │       span_tests.ilk
+│   │       span_tests.pdb
+│   │       strided_span_tests.exe
+│   │       strided_span_tests.ilk
+│   │       strided_span_tests.pdb
+│   │       string_span_tests.exe
+│   │       string_span_tests.ilk
+│   │       string_span_tests.pdb
+│   │       utils_tests.exe
+│   │       utils_tests.ilk
+│   │       utils_tests.pdb
+│   │
+│   ├───notnull_tests.dir
+│   │   └───Debug
+│   │       │   notnull_tests.obj
+│   │       │   vc140.pdb
+│   │       │
+│   │       └───notnull_tests.tlog
+│   │               CL.command.1.tlog
+│   │               CL.read.1.tlog
+│   │               CL.write.1.tlog
+│   │               custombuild.command.1.tlog
+│   │               custombuild.read.1.tlog
+│   │               custombuild.write.1.tlog
+│   │               link.command.1.tlog
+│   │               link.read.1.tlog
+│   │               link.write.1.tlog
+│   │               notnull_tests.lastbuildstate
+│   │
+│   ├───owner_tests.dir
+│   │   └───Debug
+│   │       │   owner_tests.obj
+│   │       │   vc140.pdb
+│   │       │
+│   │       └───owner_tests.tlog
+│   │               CL.command.1.tlog
+│   │               CL.read.1.tlog
+│   │               CL.write.1.tlog
+│   │               custombuild.command.1.tlog
+│   │               custombuild.read.1.tlog
+│   │               custombuild.write.1.tlog
+│   │               link.command.1.tlog
+│   │               link.read.1.tlog
+│   │               link.write.1.tlog
+│   │               owner_tests.lastbuildstate
+│   │
+│   ├───span_tests.dir
+│   │   └───Debug
+│   │       │   span_tests.obj
+│   │       │   vc140.pdb
+│   │       │
+│   │       └───span_tests.tlog
+│   │               CL.command.1.tlog
+│   │               CL.read.1.tlog
+│   │               CL.write.1.tlog
+│   │               custombuild.command.1.tlog
+│   │               custombuild.read.1.tlog
+│   │               custombuild.write.1.tlog
+│   │               link.command.1.tlog
+│   │               link.read.1.tlog
+│   │               link.write.1.tlog
+│   │               span_tests.lastbuildstate
+│   │
+│   ├───strided_span_tests.dir
+│   │   └───Debug
+│   │       │   strided_span_tests.obj
+│   │       │   vc140.pdb
+│   │       │
+│   │       └───strided_.3222C6D1.tlog
+│   │               CL.command.1.tlog
+│   │               CL.read.1.tlog
+│   │               CL.write.1.tlog
+│   │               custombuild.command.1.tlog
+│   │               custombuild.read.1.tlog
+│   │               custombuild.write.1.tlog
+│   │               link.command.1.tlog
+│   │               link.read.1.tlog
+│   │               link.write.1.tlog
+│   │               strided_span_tests.lastbuildstate
+│   │
+│   ├───string_span_tests.dir
+│   │   └───Debug
+│   │       │   string_span_tests.obj
+│   │       │   vc140.pdb
+│   │       │
+│   │       └───string_s.35BE0347.tlog
+│   │               CL.command.1.tlog
+│   │               CL.read.1.tlog
+│   │               CL.write.1.tlog
+│   │               custombuild.command.1.tlog
+│   │               custombuild.read.1.tlog
+│   │               custombuild.write.1.tlog
+│   │               link.command.1.tlog
+│   │               link.read.1.tlog
+│   │               link.write.1.tlog
+│   │               string_span_tests.lastbuildstate
+│   │
+│   ├───unittest-cpp
+│   │   │   ALL_BUILD.vcxproj
+│   │   │   ALL_BUILD.vcxproj.filters
+│   │   │   cmake_install.cmake
+│   │   │   CTestTestfile.cmake
+│   │   │   INSTALL.vcxproj
+│   │   │   INSTALL.vcxproj.filters
+│   │   │   RUN_TESTS.vcxproj
+│   │   │   RUN_TESTS.vcxproj.filters
+│   │   │   TestUnitTest++.vcxproj
+│   │   │   TestUnitTest++.vcxproj.filters
+│   │   │   UnitTest++.sln
+│   │   │   UnitTest++.vcxproj
+│   │   │   UnitTest++.vcxproj.filters
+│   │   │
+│   │   ├───CMakeFiles
+│   │   │       generate.stamp
+│   │   │       generate.stamp.depend
+│   │   │
+│   │   ├───Debug
+│   │   │       TestUnitTest++.exe
+│   │   │       TestUnitTest++.ilk
+│   │   │       TestUnitTest++.pdb
+│   │   │       UnitTest++.lib
+│   │   │       UnitTest++.pdb
+│   │   │
+│   │   ├───TestUnitTest++.dir
+│   │   │   └───Debug
+│   │   │       │   Main.obj
+│   │   │       │   TestAssertHandler.obj
+│   │   │       │   TestCheckMacros.obj
+│   │   │       │   TestChecks.obj
+│   │   │       │   TestCompositeTestReporter.obj
+│   │   │       │   TestCurrentTest.obj
+│   │   │       │   TestDeferredTestReporter.obj
+│   │   │       │   TestExceptions.obj
+│   │   │       │   TestMemoryOutStream.obj
+│   │   │       │   TestTest.obj
+│   │   │       │   TestTestList.obj
+│   │   │       │   TestTestMacros.obj
+│   │   │       │   TestTestResults.obj
+│   │   │       │   TestTestRunner.obj
+│   │   │       │   TestTestSuite.obj
+│   │   │       │   TestTimeConstraint.obj
+│   │   │       │   TestTimeConstraintMacro.obj
+│   │   │       │   TestUnitTestPP.obj
+│   │   │       │   TestXmlTestReporter.obj
+│   │   │       │   vc140.pdb
+│   │   │       │
+│   │   │       └───TestUnitTest++.tlog
+│   │   │               CL.command.1.tlog
+│   │   │               CL.read.1.tlog
+│   │   │               CL.write.1.tlog
+│   │   │               custombuild.command.1.tlog
+│   │   │               custombuild.read.1.tlog
+│   │   │               custombuild.write.1.tlog
+│   │   │               link.command.1.tlog
+│   │   │               link.read.1.tlog
+│   │   │               link.write.1.tlog
+│   │   │               TestUnitTest++.lastbuildstate
+│   │   │
+│   │   └───UnitTest++.dir
+│   │       └───Debug
+│   │           │   AssertException.obj
+│   │           │   Checks.obj
+│   │           │   CompositeTestReporter.obj
+│   │           │   CurrentTest.obj
+│   │           │   DeferredTestReporter.obj
+│   │           │   DeferredTestResult.obj
+│   │           │   MemoryOutStream.obj
+│   │           │   ReportAssert.obj
+│   │           │   Test.obj
+│   │           │   TestDetails.obj
+│   │           │   TestList.obj
+│   │           │   TestReporter.obj
+│   │           │   TestReporterStdout.obj
+│   │           │   TestResults.obj
+│   │           │   TestRunner.obj
+│   │           │   TimeConstraint.obj
+│   │           │   TimeHelpers.obj
+│   │           │   UnitTest++.pdb
+│   │           │   XmlTestReporter.obj
+│   │           │
+│   │           └───UnitTest++.tlog
+│   │                   CL.command.1.tlog
+│   │                   CL.read.1.tlog
+│   │                   CL.write.1.tlog
+│   │                   custombuild.command.1.tlog
+│   │                   custombuild.read.1.tlog
+│   │                   custombuild.write.1.tlog
+│   │                   Lib-link.read.1.tlog
+│   │                   Lib-link.write.1.tlog
+│   │                   lib.command.1.tlog
+│   │                   UnitTest++.lastbuildstate
+│   │
+│   └───utils_tests.dir
+│       └───Debug
+│           │   utils_tests.obj
+│           │   vc140.pdb
+│           │
+│           └───utils_tests.tlog
+│                   CL.command.1.tlog
+│                   CL.read.1.tlog
+│                   CL.write.1.tlog
+│                   custombuild.command.1.tlog
+│                   custombuild.read.1.tlog
+│                   custombuild.write.1.tlog
+│                   link.command.1.tlog
+│                   link.read.1.tlog
+│                   link.write.1.tlog
+│                   utils_tests.lastbuildstate
+│
+└───Win32
+    └───Debug
+        ├───ALL_BUILD
+        │   └───ALL_BUILD.tlog
+        │           ALL_BUILD.lastbuildstate
+        │           custombuild.command.1.tlog
+        │           custombuild.read.1.tlog
+        │           custombuild.write.1.tlog
+        │
+        └───ZERO_CHECK
+            └───ZERO_CHECK.tlog
+                    custombuild.command.1.tlog
+                    custombuild.read.1.tlog
+                    custombuild.write.1.tlog
+                    ZERO_CHECK.lastbuildstate
+
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-x86>
+
+	==> The MSYS generated target (In MinGW console) seems to build, run tests and reports passed?
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-mingw64
+$ cmake .. -G "MSYS Makefiles"
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The C compiler identification is GNU 5.4.0
+-- Check for working C compiler: C:/msys64/mingw64/bin/gcc.exe
+-- Check for working C compiler: C:/msys64/mingw64/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test COMPILER_SUPPORTS_CXX14
+-- Performing Test COMPILER_SUPPORTS_CXX14 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-mingw64
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-mingw64
+$ cmake --build . --config Debug
+Scanning dependencies of target UnitTest++
+[  1%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.obj
+[  3%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.obj
+[  5%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.obj
+[  7%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.obj
+[  8%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.obj
+[ 10%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.obj
+[ 12%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.obj
+[ 14%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.obj
+[ 15%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.obj
+[ 17%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.obj
+[ 19%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.obj
+[ 21%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.obj
+[ 22%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.obj
+[ 24%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.obj
+[ 26%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.obj
+[ 28%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.obj
+[ 29%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.obj
+[ 31%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Win32/TimeHelpers.cpp.obj
+[ 33%] Linking CXX static library libUnitTest++.a
+[ 33%] Built target UnitTest++
+Scanning dependencies of target string_span_tests
+[ 35%] Building CXX object tests/CMakeFiles/string_span_tests.dir/string_span_tests.cpp.obj
+[ 36%] Linking CXX executable string_span_tests.exe
+[ 36%] Built target string_span_tests
+Scanning dependencies of target at_tests
+[ 38%] Building CXX object tests/CMakeFiles/at_tests.dir/at_tests.cpp.obj
+[ 40%] Linking CXX executable at_tests.exe
+[ 40%] Built target at_tests
+Scanning dependencies of target bounds_tests
+[ 42%] Building CXX object tests/CMakeFiles/bounds_tests.dir/bounds_tests.cpp.obj
+[ 43%] Linking CXX executable bounds_tests.exe
+[ 43%] Built target bounds_tests
+Scanning dependencies of target owner_tests
+[ 45%] Building CXX object tests/CMakeFiles/owner_tests.dir/owner_tests.cpp.obj
+[ 47%] Linking CXX executable owner_tests.exe
+[ 47%] Built target owner_tests
+Scanning dependencies of target strided_span_tests
+[ 49%] Building CXX object tests/CMakeFiles/strided_span_tests.dir/strided_span_tests.cpp.obj
+[ 50%] Linking CXX executable strided_span_tests.exe
+[ 50%] Built target strided_span_tests
+Scanning dependencies of target span_tests
+[ 52%] Building CXX object tests/CMakeFiles/span_tests.dir/span_tests.cpp.obj
+[ 54%] Linking CXX executable span_tests.exe
+[ 54%] Built target span_tests
+Scanning dependencies of target notnull_tests
+[ 56%] Building CXX object tests/CMakeFiles/notnull_tests.dir/notnull_tests.cpp.obj
+[ 57%] Linking CXX executable notnull_tests.exe
+[ 57%] Built target notnull_tests
+Scanning dependencies of target assertion_tests
+[ 59%] Building CXX object tests/CMakeFiles/assertion_tests.dir/assertion_tests.cpp.obj
+[ 61%] Linking CXX executable assertion_tests.exe
+[ 61%] Built target assertion_tests
+Scanning dependencies of target utils_tests
+[ 63%] Building CXX object tests/CMakeFiles/utils_tests.dir/utils_tests.cpp.obj
+[ 64%] Linking CXX executable utils_tests.exe
+[ 64%] Built target utils_tests
+Scanning dependencies of target TestUnitTest++
+[ 66%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/Main.cpp.obj
+[ 68%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestAssertHandler.cpp.obj
+[ 70%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestCheckMacros.cpp.obj
+[ 71%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestChecks.cpp.obj
+[ 73%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestCompositeTestReporter.cpp.obj
+[ 75%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestCurrentTest.cpp.obj
+[ 77%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestDeferredTestReporter.cpp.obj
+[ 78%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestExceptions.cpp.obj
+[ 80%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestMemoryOutStream.cpp.obj
+[ 82%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTest.cpp.obj
+[ 84%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestList.cpp.obj
+[ 85%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestMacros.cpp.obj
+[ 87%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestResults.cpp.obj
+[ 89%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestRunner.cpp.obj
+[ 91%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestSuite.cpp.obj
+[ 92%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTimeConstraint.cpp.obj
+[ 94%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTimeConstraintMacro.cpp.obj
+[ 96%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestUnitTestPP.cpp.obj
+[ 98%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestXmlTestReporter.cpp.obj
+[100%] Linking CXX executable TestUnitTest++.exe
+Running unit tests
+Success: 228 tests passed.
+Test time: 0.25 seconds.
+[100%] Built target TestUnitTest++
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-mingw64
+$ ctest -C Debug
+Test project C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-mingw64
+    Start 1: span_tests
+1/9 Test #1: span_tests .......................   Passed    0.00 sec
+    Start 2: strided_span_tests
+2/9 Test #2: strided_span_tests ...............   Passed    0.02 sec
+    Start 3: string_span_tests
+3/9 Test #3: string_span_tests ................   Passed    0.02 sec
+    Start 4: at_tests
+4/9 Test #4: at_tests .........................   Passed    0.02 sec
+    Start 5: bounds_tests
+5/9 Test #5: bounds_tests .....................   Passed    0.00 sec
+    Start 6: notnull_tests
+6/9 Test #6: notnull_tests ....................   Passed    0.00 sec
+    Start 7: assertion_tests
+7/9 Test #7: assertion_tests ..................   Passed    0.00 sec
+    Start 8: utils_tests
+8/9 Test #8: utils_tests ......................   Passed    0.00 sec
+    Start 9: owner_tests
+9/9 Test #9: owner_tests ......................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.10 sec
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-mingw64
+$
+		==> The following folder structure and content seem to have been produced?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-mingw64>tree /F
+Folder PATH listing
+Volume serial number is D49B-BB89
+C:.
+│   CMakeCache.txt
+│   cmake_install.cmake
+│   CTestTestfile.cmake
+│   Makefile
+│
+├───CMakeFiles
+│   │   cmake.check_cache
+│   │   CMakeDirectoryInformation.cmake
+│   │   CMakeOutput.log
+│   │   feature_tests.bin
+│   │   feature_tests.c
+│   │   feature_tests.cxx
+│   │   Makefile.cmake
+│   │   Makefile2
+│   │   progress.marks
+│   │   TargetDirectories.txt
+│   │
+│   ├───3.6.0
+│   │   │   CMakeCCompiler.cmake
+│   │   │   CMakeCXXCompiler.cmake
+│   │   │   CMakeDetermineCompilerABI_C.bin
+│   │   │   CMakeDetermineCompilerABI_CXX.bin
+│   │   │   CMakeRCCompiler.cmake
+│   │   │   CMakeSystem.cmake
+│   │   │
+│   │   ├───CompilerIdC
+│   │   │       a.exe
+│   │   │       CMakeCCompilerId.c
+│   │   │
+│   │   └───CompilerIdCXX
+│   │           a.exe
+│   │           CMakeCXXCompilerId.cpp
+│   │
+│   └───CMakeTmp
+├───Testing
+│   └───Temporary
+│           CTestCostData.txt
+│           LastTest.log
+│
+└───tests
+    │   assertion_tests.exe
+    │   at_tests.exe
+    │   bounds_tests.exe
+    │   cmake_install.cmake
+    │   CTestTestfile.cmake
+    │   Makefile
+    │   notnull_tests.exe
+    │   owner_tests.exe
+    │   span_tests.exe
+    │   strided_span_tests.exe
+    │   string_span_tests.exe
+    │   utils_tests.exe
+    │
+    ├───CMakeFiles
+    │   │   CMakeDirectoryInformation.cmake
+    │   │   progress.marks
+    │   │
+    │   ├───assertion_tests.dir
+    │   │       assertion_tests.cpp.obj
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │
+    │   ├───at_tests.dir
+    │   │       at_tests.cpp.obj
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │
+    │   ├───bounds_tests.dir
+    │   │       bounds_tests.cpp.obj
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │
+    │   ├───notnull_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       notnull_tests.cpp.obj
+    │   │       objects.a
+    │   │       progress.make
+    │   │
+    │   ├───owner_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       owner_tests.cpp.obj
+    │   │       progress.make
+    │   │
+    │   ├───span_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │       span_tests.cpp.obj
+    │   │
+    │   ├───strided_span_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │       strided_span_tests.cpp.obj
+    │   │
+    │   ├───string_span_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │       string_span_tests.cpp.obj
+    │   │
+    │   └───utils_tests.dir
+    │           build.make
+    │           cmake_clean.cmake
+    │           CXX.includecache
+    │           depend.internal
+    │           depend.make
+    │           DependInfo.cmake
+    │           flags.make
+    │           objects.a
+    │           progress.make
+    │           utils_tests.cpp.obj
+    │
+    └───unittest-cpp
+        │   cmake_install.cmake
+        │   CTestTestfile.cmake
+        │   libUnitTest++.a
+        │   Makefile
+        │   TestUnitTest++.exe
+        │
+        └───CMakeFiles
+            │   CMakeDirectoryInformation.cmake
+            │   progress.marks
+            │
+            ├───TestUnitTest++.dir
+            │   │   build.make
+            │   │   cmake_clean.cmake
+            │   │   CXX.includecache
+            │   │   depend.internal
+            │   │   depend.make
+            │   │   DependInfo.cmake
+            │   │   flags.make
+            │   │   objects.a
+            │   │   progress.make
+            │   │
+            │   └───tests
+            │           Main.cpp.obj
+            │           TestAssertHandler.cpp.obj
+            │           TestCheckMacros.cpp.obj
+            │           TestChecks.cpp.obj
+            │           TestCompositeTestReporter.cpp.obj
+            │           TestCurrentTest.cpp.obj
+            │           TestDeferredTestReporter.cpp.obj
+            │           TestExceptions.cpp.obj
+            │           TestMemoryOutStream.cpp.obj
+            │           TestTest.cpp.obj
+            │           TestTestList.cpp.obj
+            │           TestTestMacros.cpp.obj
+            │           TestTestResults.cpp.obj
+            │           TestTestRunner.cpp.obj
+            │           TestTestSuite.cpp.obj
+            │           TestTimeConstraint.cpp.obj
+            │           TestTimeConstraintMacro.cpp.obj
+            │           TestUnitTestPP.cpp.obj
+            │           TestXmlTestReporter.cpp.obj
+            │
+            └───UnitTest++.dir
+                │   build.make
+                │   cmake_clean.cmake
+                │   cmake_clean_target.cmake
+                │   CXX.includecache
+                │   depend.internal
+                │   depend.make
+                │   DependInfo.cmake
+                │   flags.make
+                │   link.txt
+                │   progress.make
+                │
+                └───UnitTest++
+                    │   AssertException.cpp.obj
+                    │   Checks.cpp.obj
+                    │   CompositeTestReporter.cpp.obj
+                    │   CurrentTest.cpp.obj
+                    │   DeferredTestReporter.cpp.obj
+                    │   DeferredTestResult.cpp.obj
+                    │   MemoryOutStream.cpp.obj
+                    │   ReportAssert.cpp.obj
+                    │   Test.cpp.obj
+                    │   TestDetails.cpp.obj
+                    │   TestList.cpp.obj
+                    │   TestReporter.cpp.obj
+                    │   TestReporterStdout.cpp.obj
+                    │   TestResults.cpp.obj
+                    │   TestRunner.cpp.obj
+                    │   TimeConstraint.cpp.obj
+                    │   XmlTestReporter.cpp.obj
+                    │
+                    └───Win32
+                            TimeHelpers.cpp.obj
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-mingw64>
+
+		==> Note that the console output does not reveal the actual compile command?
+
+			==> Can we assume it has generated options to call the gcc compiler (https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html#Option-Summary <https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html#Option-Summary>)?
+			==> Q: Can we find the compiler calls in some log file?
+
+			WE ARE HERE...
+
+		==> Note: The test command is part of the cmake distribution.
+
+			==> The path to the ctest.exe file seems to be revealed in “C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-mingw64\CMakeCache.txt”?
+
+...
+//Path to ctest program executable.
+CMAKE_CTEST_COMMAND:INTERNAL=C:/msys64/mingw64/bin/ctest.exe
+...
+
+			==> In Cygwin we can also use the linux which command to find it.
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/G
+$ which ctest
+/mingw64/bin/ctest
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-mingw64
+$
+
+	==> Using MinGW console seems to work to generate MSYS2 make files to build and run the tests?
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang
+$ cmake .. -DCMAKE_CXX_COMPILER=clang++ -G "MSYS Makefiles"
+-- The CXX compiler identification is Clang 3.8.0
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/clang++.exe
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/clang++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The C compiler identification is GNU 5.4.0
+-- Check for working C compiler: C:/msys64/mingw64/bin/gcc.exe
+-- Check for working C compiler: C:/msys64/mingw64/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test COMPILER_SUPPORTS_CXX14
+-- Performing Test COMPILER_SUPPORTS_CXX14 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang
+$
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang
+$ cmake --build . --config Debug
+Scanning dependencies of target UnitTest++
+[  1%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/AssertException.cpp.obj
+[  3%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Checks.cpp.obj
+[  5%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CompositeTestReporter.cpp.obj
+[  7%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/CurrentTest.cpp.obj
+[  8%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestReporter.cpp.obj
+[ 10%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/DeferredTestResult.cpp.obj
+[ 12%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/MemoryOutStream.cpp.obj
+[ 14%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/ReportAssert.cpp.obj
+[ 15%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Test.cpp.obj
+[ 17%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestDetails.cpp.obj
+[ 19%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestList.cpp.obj
+[ 21%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporter.cpp.obj
+[ 22%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestReporterStdout.cpp.obj
+[ 24%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestResults.cpp.obj
+[ 26%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TestRunner.cpp.obj
+[ 28%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/TimeConstraint.cpp.obj
+[ 29%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/XmlTestReporter.cpp.obj
+[ 31%] Building CXX object tests/unittest-cpp/CMakeFiles/UnitTest++.dir/UnitTest++/Win32/TimeHelpers.cpp.obj
+[ 33%] Linking CXX static library libUnitTest++.a
+[ 33%] Built target UnitTest++
+Scanning dependencies of target string_span_tests
+[ 35%] Building CXX object tests/CMakeFiles/string_span_tests.dir/string_span_tests.cpp.obj
+[ 36%] Linking CXX executable string_span_tests.exe
+[ 36%] Built target string_span_tests
+Scanning dependencies of target at_tests
+[ 38%] Building CXX object tests/CMakeFiles/at_tests.dir/at_tests.cpp.obj
+[ 40%] Linking CXX executable at_tests.exe
+[ 40%] Built target at_tests
+Scanning dependencies of target bounds_tests
+[ 42%] Building CXX object tests/CMakeFiles/bounds_tests.dir/bounds_tests.cpp.obj
+[ 43%] Linking CXX executable bounds_tests.exe
+[ 43%] Built target bounds_tests
+Scanning dependencies of target owner_tests
+[ 45%] Building CXX object tests/CMakeFiles/owner_tests.dir/owner_tests.cpp.obj
+[ 47%] Linking CXX executable owner_tests.exe
+[ 47%] Built target owner_tests
+Scanning dependencies of target strided_span_tests
+[ 49%] Building CXX object tests/CMakeFiles/strided_span_tests.dir/strided_span_tests.cpp.obj
+[ 50%] Linking CXX executable strided_span_tests.exe
+[ 50%] Built target strided_span_tests
+Scanning dependencies of target span_tests
+[ 52%] Building CXX object tests/CMakeFiles/span_tests.dir/span_tests.cpp.obj
+[ 54%] Linking CXX executable span_tests.exe
+[ 54%] Built target span_tests
+Scanning dependencies of target notnull_tests
+[ 56%] Building CXX object tests/CMakeFiles/notnull_tests.dir/notnull_tests.cpp.obj
+[ 57%] Linking CXX executable notnull_tests.exe
+[ 57%] Built target notnull_tests
+Scanning dependencies of target assertion_tests
+[ 59%] Building CXX object tests/CMakeFiles/assertion_tests.dir/assertion_tests.cpp.obj
+[ 61%] Linking CXX executable assertion_tests.exe
+[ 61%] Built target assertion_tests
+Scanning dependencies of target utils_tests
+[ 63%] Building CXX object tests/CMakeFiles/utils_tests.dir/utils_tests.cpp.obj
+[ 64%] Linking CXX executable utils_tests.exe
+[ 64%] Built target utils_tests
+Scanning dependencies of target TestUnitTest++
+[ 66%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/Main.cpp.obj
+[ 68%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestAssertHandler.cpp.obj
+[ 70%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestCheckMacros.cpp.obj
+[ 71%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestChecks.cpp.obj
+[ 73%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestCompositeTestReporter.cpp.obj
+[ 75%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestCurrentTest.cpp.obj
+[ 77%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestDeferredTestReporter.cpp.obj
+[ 78%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestExceptions.cpp.obj
+[ 80%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestMemoryOutStream.cpp.obj
+[ 82%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTest.cpp.obj
+[ 84%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestList.cpp.obj
+[ 85%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestMacros.cpp.obj
+[ 87%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestResults.cpp.obj
+[ 89%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestRunner.cpp.obj
+[ 91%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTestSuite.cpp.obj
+[ 92%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTimeConstraint.cpp.obj
+[ 94%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestTimeConstraintMacro.cpp.obj
+[ 96%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestUnitTestPP.cpp.obj
+[ 98%] Building CXX object tests/unittest-cpp/CMakeFiles/TestUnitTest++.dir/tests/TestXmlTestReporter.cpp.obj
+[100%] Linking CXX executable TestUnitTest++.exe
+Running unit tests
+Success: 228 tests passed.
+Test time: 0.31 seconds.
+[100%] Built target TestUnitTest++
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang
+$
+
+		==> It seems the following directory structure and content is created?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-MSYS2-clang>tree /F
+Folder PATH listing
+Volume serial number is D49B-BB89
+C:.
+│   CMakeCache.txt
+│   cmake_install.cmake
+│   CTestTestfile.cmake
+│   Makefile
+│
+├───CMakeFiles
+│   │   cmake.check_cache
+│   │   CMakeDirectoryInformation.cmake
+│   │   CMakeOutput.log
+│   │   feature_tests.bin
+│   │   feature_tests.c
+│   │   feature_tests.cxx
+│   │   Makefile.cmake
+│   │   Makefile2
+│   │   progress.marks
+│   │   TargetDirectories.txt
+│   │
+│   ├───3.6.0
+│   │   │   CMakeCCompiler.cmake
+│   │   │   CMakeCXXCompiler.cmake
+│   │   │   CMakeDetermineCompilerABI_C.bin
+│   │   │   CMakeDetermineCompilerABI_CXX.bin
+│   │   │   CMakeRCCompiler.cmake
+│   │   │   CMakeSystem.cmake
+│   │   │
+│   │   ├───CompilerIdC
+│   │   │       a.exe
+│   │   │       CMakeCCompilerId.c
+│   │   │
+│   │   └───CompilerIdCXX
+│   │           a.exe
+│   │           CMakeCXXCompilerId.cpp
+│   │
+│   └───CMakeTmp
+└───tests
+    │   assertion_tests.exe
+    │   at_tests.exe
+    │   bounds_tests.exe
+    │   cmake_install.cmake
+    │   CTestTestfile.cmake
+    │   Makefile
+    │   notnull_tests.exe
+    │   owner_tests.exe
+    │   span_tests.exe
+    │   strided_span_tests.exe
+    │   string_span_tests.exe
+    │   utils_tests.exe
+    │
+    ├───CMakeFiles
+    │   │   CMakeDirectoryInformation.cmake
+    │   │   progress.marks
+    │   │
+    │   ├───assertion_tests.dir
+    │   │       assertion_tests.cpp.obj
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │
+    │   ├───at_tests.dir
+    │   │       at_tests.cpp.obj
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │
+    │   ├───bounds_tests.dir
+    │   │       bounds_tests.cpp.obj
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │
+    │   ├───notnull_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       notnull_tests.cpp.obj
+    │   │       objects.a
+    │   │       progress.make
+    │   │
+    │   ├───owner_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       owner_tests.cpp.obj
+    │   │       progress.make
+    │   │
+    │   ├───span_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │       span_tests.cpp.obj
+    │   │
+    │   ├───strided_span_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │       strided_span_tests.cpp.obj
+    │   │
+    │   ├───string_span_tests.dir
+    │   │       build.make
+    │   │       cmake_clean.cmake
+    │   │       CXX.includecache
+    │   │       depend.internal
+    │   │       depend.make
+    │   │       DependInfo.cmake
+    │   │       flags.make
+    │   │       objects.a
+    │   │       progress.make
+    │   │       string_span_tests.cpp.obj
+    │   │
+    │   └───utils_tests.dir
+    │           build.make
+    │           cmake_clean.cmake
+    │           CXX.includecache
+    │           depend.internal
+    │           depend.make
+    │           DependInfo.cmake
+    │           flags.make
+    │           objects.a
+    │           progress.make
+    │           utils_tests.cpp.obj
+    │
+    └───unittest-cpp
+        │   cmake_install.cmake
+        │   CTestTestfile.cmake
+        │   libUnitTest++.a
+        │   Makefile
+        │   TestUnitTest++.exe
+        │
+        └───CMakeFiles
+            │   CMakeDirectoryInformation.cmake
+            │   progress.marks
+            │
+            ├───TestUnitTest++.dir
+            │   │   build.make
+            │   │   cmake_clean.cmake
+            │   │   CXX.includecache
+            │   │   depend.internal
+            │   │   depend.make
+            │   │   DependInfo.cmake
+            │   │   flags.make
+            │   │   objects.a
+            │   │   progress.make
+            │   │
+            │   └───tests
+            │           Main.cpp.obj
+            │           TestAssertHandler.cpp.obj
+            │           TestCheckMacros.cpp.obj
+            │           TestChecks.cpp.obj
+            │           TestCompositeTestReporter.cpp.obj
+            │           TestCurrentTest.cpp.obj
+            │           TestDeferredTestReporter.cpp.obj
+            │           TestExceptions.cpp.obj
+            │           TestMemoryOutStream.cpp.obj
+            │           TestTest.cpp.obj
+            │           TestTestList.cpp.obj
+            │           TestTestMacros.cpp.obj
+            │           TestTestResults.cpp.obj
+            │           TestTestRunner.cpp.obj
+            │           TestTestSuite.cpp.obj
+            │           TestTimeConstraint.cpp.obj
+            │           TestTimeConstraintMacro.cpp.obj
+            │           TestUnitTestPP.cpp.obj
+            │           TestXmlTestReporter.cpp.obj
+            │
+            └───UnitTest++.dir
+                │   build.make
+                │   cmake_clean.cmake
+                │   cmake_clean_target.cmake
+                │   CXX.includecache
+                │   depend.internal
+                │   depend.make
+                │   DependInfo.cmake
+                │   flags.make
+                │   link.txt
+                │   progress.make
+                │
+                └───UnitTest++
+                    │   AssertException.cpp.obj
+                    │   Checks.cpp.obj
+                    │   CompositeTestReporter.cpp.obj
+                    │   CurrentTest.cpp.obj
+                    │   DeferredTestReporter.cpp.obj
+                    │   DeferredTestResult.cpp.obj
+                    │   MemoryOutStream.cpp.obj
+                    │   ReportAssert.cpp.obj
+                    │   Test.cpp.obj
+                    │   TestDetails.cpp.obj
+                    │   TestList.cpp.obj
+                    │   TestReporter.cpp.obj
+                    │   TestReporterStdout.cpp.obj
+                    │   TestResults.cpp.obj
+                    │   TestRunner.cpp.obj
+                    │   TimeConstraint.cpp.obj
+                    │   XmlTestReporter.cpp.obj
+                    │
+                    └───Win32
+                            TimeHelpers.cpp.obj
+
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-MSYS2-clang>
+
+	==> It seems we must NOT call cmake from DOS shell to generate MSYS make files (Cmake will find Windows tools rather that MSYS tools)?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-MSYS2-clang>cmake .. -DCMAKE_CXX_COMPILER=clang++ -G "MSYS Makefiles"
+-- The CXX compiler identification is Clang 3.7.0
+CMake Error: CMAKE_AR was not found, please set to archive program.
+-- Check for working CXX compiler: C:/Program Files/Emscripten/clang/e1.35.0_64bit/clang++.exe
+-- Check for working CXX compiler: C:/Program Files/Emscripten/clang/e1.35.0_64bit/clang++.exe -- broken
+CMake Error at C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeTestCXXCompiler.cmake:54 (message):
+  The C++ compiler "C:/Program
+  Files/Emscripten/clang/e1.35.0_64bit/clang++.exe" is not able to compile a
+  simple test program.
+
+  It fails with the following output:
+
+   Change Dir: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang/CMakeFiles/CMakeTmp
+
+
+
+  Run Build Command:"C:/PROGRA~2/EMBARC~1/Studio/15.0/bin/make.exe"
+  "cmTC_36f56/fast"
+
+  MAKE Version 5.41 Copyright (c) 1987, 2014 Embarcadero Technologies, Inc.
+
+  Error makefile 11: Colon expected
+
+  *** 1 errors during make ***
+
+
+
+
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:3 (project)
+
+
+CMake Error: CMAKE_AR was not found, please set to archive program.
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-MSYS2-clang/CMakeFiles/CMakeError.log".
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-MSYS2-clang>
+
+		==> Cmake found the Emscripen distribution clang compiler?
+		==> CMake finds Embarcadero make tool? 
+		==> CMake fails to find archive tool that “...specifies the name of the program that creates archive or static libraries.” (https://cmake.org/cmake/help/v3.0/variable/CMAKE_AR.html <https://cmake.org/cmake/help/v3.0/variable/CMAKE_AR.html>)?
+
+3) Consider how to run the tests in RAD Studio 10?
+
+	==> Consider to try and make a simulate clang-to-bccxx front-end to fall the cmake generated tool-chain engage the RAD studio compiler and linker?
+
+		==> Consider to make GitHub project work to compile GSL with different bcc-compilers (https://github.com/kjelloh/clang-bcc <https://github.com/kjelloh/clang-bcc>)?
+
+			==> Consider to rename it now that we know we can’t fool cmake it is using a clang compiler?
+			==> Consider a better name for a front-end that accepts a set of parameters and adopts them to bcc-options (different for bcc32, bcc32c and bcc64)?
+
+				WE ARE HERE... 
+
+		==> It seems cmake will find the tool in current directory before one found in the PATH?
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-clang-bcc-frontend
+$ ls
+clang++.exe          CMakeCache.txt  CTestTestfile.cmake  tests
+cmake_install.cmake  CMakeFiles      Makefile
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-clang-bcc-frontend
+$ cmake .. -DCMAKE_CXX_COMPILER=clang++ -G "MSYS Makefiles"
+-- The CXX compiler identification is Clang 3.8.0
+-- Check for working CXX compiler: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-clang-bcc-frontend/clang++.exe
+-- Check for working CXX compiler: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-clang-bcc-frontend/clang++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The C compiler identification is GNU 5.4.0
+-- Check for working C compiler: C:/msys64/mingw64/bin/gcc.exe
+-- Check for working C compiler: C:/msys64/mingw64/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test COMPILER_SUPPORTS_CXX14
+-- Performing Test COMPILER_SUPPORTS_CXX14 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-clang-bcc-frontend
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-clang-bcc-frontend
+$
+
+		==> Consider to make a simple clang front-end that calls corresponding bcc compiler (with the correct command line options)?
+
+		
+
+	==> Consider how to create and run the tests with RAD Studio using the cmake tool chain as defined by GSL?
+
+		==> Consider to use make to generate make files for different targets and try to manually change the compiler and linker to the one of RAD Studio?
+
+			==> Cmake generators seems to be defined here (https://cmake.org/cmake/help/v3.0/manual/cmake-generators.7.html <https://cmake.org/cmake/help/v3.0/manual/cmake-generators.7.html>)?
+
+			==> Consider to try using MinGW64 and generate gcc or clang tool chain (and then edit to RAD Studio build)?
+			==> Consider to try using Cygwin64 and generate gcc or clang tool chain (and then edit to RAD Studio build)?
+			==> Consider to try generating for tool-chain Visual Studio Clang/C2 (“>cmake .. -DCMAKE_CXX_COMPILER=clang++ -G"MSYS Makefiles"")?
+			==> Consider to try generating for tool chain Visual Studio Clang/LLVM (“>cmake .. -TLLVM-vs2014 -G"Visual Studio 14 2015 Win64””)?
+			…
+
+	==> Consider to try out starting with generated Borland Makefiles (closest to RAD studio we can think of)?
+
+		==> Seems generating for bcc32 kind-of-works but make detects bcc32 does NOT have C++11 not C++14 support?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>md build-borland
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>cd build-borland
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-borland>cmake .. -G "Borland Makefiles"
+-- The CXX compiler identification is Embarcadero 6.90.34256
+-- Check for working CXX compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc32.exe
+-- Check for working CXX compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc32.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- The C compiler identification is Embarcadero 6.90.34256
+-- Check for working C compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc32.exe
+-- Check for working C compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc32.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Performing Test COMPILER_SUPPORTS_CXX14
+-- Performing Test COMPILER_SUPPORTS_CXX14 - Failed
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Failed
+-- The compiler C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc32.exe has no C++11 support. Please use a different C++ compiler.
+-- The compiler C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc32.exe has no C++11 support. Please use a different C++ compiler.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-borland
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-borland>
+
+		==> It seems there is no make clean so the way to go is to delete the build folder and start over?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-borland>cd ..
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>rm build-borland
+'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>del build-borland
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-borland\*, Are you sure (Y/N)? Y
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>md borland-build
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL>cd borland-build
+
+		==> Seems if we define the compiler to be bcc64 it will not go well with the borland parameters generated by cmake?
+
+			==> It seems cmake tries the compiler by asking it to compile a test program and this fails?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\borland-build>cmake .. -DCMAKE_CXX_COMPILER=bcc64 -G "Borland Makefiles"
+-- The CXX compiler identification is Embarcadero 6.90.34181
+-- Check for working CXX compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe
+-- Check for working CXX compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe -- broken
+CMake Error at C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeTestCXXCompiler.cmake:54 (message):
+  The C++ compiler "C:/Program Files
+  (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe" is not able to compile a
+  simple test program.
+
+  It fails with the following output:
+
+   Change Dir: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/borland-build/CMakeFiles/CMakeTmp
+
+
+
+  Run Build Command:"make" "cmTC_e3876\fast"
+
+  MAKE Version 5.41 Copyright (c) 1987, 2014 Embarcadero Technologies, Inc.
+
+        make -f CMakeFiles\cmTC_e3876.dir\build.make -l -o
+  CMakeFiles\cmTC_e3876.dir\build
+
+  MAKE Version 5.41 Copyright (c) 1987, 2014 Embarcadero Technologies, Inc.
+
+  Building CXX object CMakeFiles/cmTC_e3876.dir/testCXXCompiler.cxx.obj
+
+        C:\PROGRA~2\EMBARC~1\Studio\15.0\bin\bcc64.exe -tR -DWIN32 -tM -Od -v
+  -oCMakeFiles\cmTC_e3876.dir\testCXXCompiler.cxx.obj -P -c
+  C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\borland-build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+
+
+  Embarcadero C++ 6.90 for Win64 Copyright (c) 2012-2014 Embarcadero
+  Technologies, Inc.
+
+  Embarcadero Technologies Inc.  bcc64 version 3.1 (34288.0798eef.b47f481)
+  (based on LLVM 3.1svn)
+
+  Target: x86_64-pc-win32-elf
+
+  Thread model: posix
+
+
+  C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\borland-build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx:
+
+
+   "C:/PROGRA~2/EMBARC~1/Studio/15.0/bin/bcc64.exe" -cc1 -triple x86_64-pc-win32-elf -emit-obj -disable-llvm-verifier -tR -tM -main-file-name testCXXCompiler.cxx -pic-level 1 -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -momit-leaf-frame-pointer -v -P -coverage-file "CMakeFiles\\cmTC_e3876.dir\\testCXXCompiler.cxx.obj" -nobuiltininc -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\crtl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\dinkumware64" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\rtl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\vcl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\sdk" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\vcl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\rtl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\crtl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\sdk" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\dinkumware64" -D WIN32 -fmodule-cache-path "C:\\Users\\KJELL-~1\\AppData\\Local\\Temp\\clang-module-cache" -Od -fdeprecated-macro -ferror-limit 19 -fmessage-length 0 -backend-option -force-align-stack -mstackrealign -fno-use-cxa-atexit -fborland-extensions -std=c++11 -fcxx-exceptions -fexceptions -fseh -fdiagnostics-show-option -o "CMakeFiles\\cmTC_e3876.dir\\testCXXCompiler.cxx.obj" -x c++ "C:\\Users\\kjell-olovhogdahl\\Documents\\GitHub\\GSL\\borland-build\\CMakeFiles\\CMakeTmp\\testCXXCompiler.cxx"
+
+  error: invalid integral value 'd' in '-Od'
+
+  error: invalid integral value 'd' in '-Od'
+
+
+
+  ** error 1 ** deleting CMakeFiles\cmTC_e3876.dir\testCXXCompiler.cxx.obj
+
+
+
+  ** error 1 ** deleting cmTC_e3876\fast
+
+
+
+
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:3 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/borland-build/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/borland-build/CMakeFiles/CMakeError.log".
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\borland-build>
+
+		==> It seems trying bcc64 with MSYS tool-chain fails in DOS shell because it tries to use borland make (which cant execute the generated make file)?
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-bcc64>cmake .. -DCMAKE_CXX_COMPILER=bcc64 -G "MSYS Makefiles"
+-- The CXX compiler identification is Embarcadero 6.90.34181
+-- Check for working CXX compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe
+-- Check for working CXX compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe -- broken
+CMake Error at C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeTestCXXCompiler.cmake:54 (message):
+  The C++ compiler "C:/Program Files
+  (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe" is not able to compile a
+  simple test program.
+
+  It fails with the following output:
+
+   Change Dir: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp
+
+
+
+  Run Build Command:"C:/PROGRA~2/EMBARC~1/Studio/15.0/bin/make.exe"
+  "cmTC_64788/fast"
+
+  MAKE Version 5.41 Copyright (c) 1987, 2014 Embarcadero Technologies, Inc.
+
+  Error makefile 11: Colon expected
+
+  *** 1 errors during make ***
+
+
+
+
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:3 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeError.log".
+
+C:\Users\kjell-olovhogdahl\Documents\GitHub\GSL\build-bcc64>
+
+		==> It seems running in the Cygwin console requires setting of the PATH so that cmake may find the bcc64 compiler?
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$ cmake .. -DCMAKE_CXX_COMPILER=bcc64 -G "MSYS Makefiles"
+-- The CXX compiler identification is unknown
+CMake Error at CMakeLists.txt:3 (project):
+  The CMAKE_CXX_COMPILER:
+
+    bcc64
+
+  is not a full path and was not found in the PATH.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CXX" or the CMake cache entry CMAKE_CXX_COMPILER to the full path
+  to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeError.log".
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$
+
+
+		==> The Cygwin environment seems to carry the following settings?
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$ printenv | sort
+!::=::\
+_=/usr/bin/printenv
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\kjell-olovhogdahl\AppData\Roaming
+AWE_DIR=C:\Program Files (x86)\Awesomium Technologies LLC\Awesomium SDK\1.7.5.1\
+BOOST_LIBRARYDIR=C:\local\boost_1_60_0\lib32-msvc-14.0
+BOOST_ROOT=C:\local\boost_1_60_0
+ChocolateyInstall=C:\ProgramData\chocolatey
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+COMPUTERNAME=KJELL-OLOVHA74E
+COMSPEC=C:\Windows\system32\cmd.exe
+CONFIG_SITE=/mingw64/etc/config.site
+EMSCRIPTEN=C:\Program Files\Emscripten\emscripten\1.35.0
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING=Default
+HOME=/home/kjell-olovhogdahl
+HOMEDRIVE=C:
+HOMEPATH=\Users\kjell-olovhogdahl
+HOSTNAME=KJELL-OLOVHA74E
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info
+LANG=en_US.UTF-8
+LOCALAPPDATA=C:\Users\kjell-olovhogdahl\AppData\Local
+LOGONSERVER=\\MicrosoftAccount
+MANPATH=/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man
+MINGW_CHOST=x86_64-w64-mingw32
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+MINGW_PREFIX=/mingw64
+MSYSCON=mintty.exe
+MSYSTEM_CARCH=x86_64
+MSYSTEM_CHOST=x86_64-w64-mingw32
+MSYSTEM_PREFIX=/mingw64
+MSYSTEM=MINGW64
+NUMBER_OF_PROCESSORS=2
+OLDPWD=/home/kjell-olovhogdahl
+ORIGINAL_PATH=/c/Windows/System32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/
+ORIGINAL_TEMP=/c/Users/KJELL-~1/AppData/Local/Temp
+ORIGINAL_TMP=/c/Users/KJELL-~1/AppData/Local/Temp
+OS=Windows_NT
+PATH=/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/c/Windows/System32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+PRINTER=Officejet Pro 8000 A809
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 70 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=4601
+ProgramData=C:\ProgramData
+ProgramFiles(x86)=C:\Program Files (x86)
+PROGRAMFILES=C:\Program Files
+ProgramW6432=C:\Program Files
+PS1=\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[35m\]$MSYSTEM\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+PWD=/c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+SESSIONNAME=Console
+SHELL=/usr/bin/bash
+SHLVL=1
+SYSTEMDRIVE=C:
+SYSTEMROOT=C:\Windows
+TEMP=/tmp
+temp=C:\Users\KJELL-~1\AppData\Local\Temp
+TERM=xterm
+TMP=/tmp
+tmp=C:\Users\KJELL-~1\AppData\Local\Temp
+TZ=Europe/Budapest
+USER=kjell-olovhogdahl
+USERDOMAIN_ROAMINGPROFILE=KJELL-OLOVHA74E
+USERDOMAIN=KJELL-OLOVHA74E
+USERNAME=kjell-olovhogdahl
+USERPROFILE=C:\Users\kjell-olovhogdahl
+VS140COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+VSSDK140Install=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\
+WINDIR=C:\Windows
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$
+
+		==> It seems when we add “/C/Program Files (x86)/Embarcadero/Studio/15.0/bin/“ to PATH make will find the bcc64 compiler?
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$ printenv | grep PATH
+HOMEPATH=\Users\kjell-olovhogdahl
+MANPATH=/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man
+ORIGINAL_PATH=/c/Windows/System32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/
+PATH=/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/c/Windows/System32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$ PATH=$PATH:/C/Program\ Files\ \(x86\)/Embarcadero/Studio/15.0/bin/
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$ printenv | grep PATH
+HOMEPATH=\Users\kjell-olovhogdahl
+MANPATH=/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man
+ORIGINAL_PATH=/c/Windows/System32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/
+PATH=/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/c/Windows/System32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/C/Program Files (x86)/Embarcadero/Studio/15.0/bin/
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$
+
+		==> It seems with the correct path the bcc64 compiler now does not accept the parameters provided to it?
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$ cmake .. -DCMAKE_CXX_COMPILER=bcc64 -G "MSYS Makefiles"
+-- The CXX compiler identification is Embarcadero 6.90.34181
+-- Check for working CXX compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe
+-- Check for working CXX compiler: C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe -- broken
+CMake Error at C:/msys64/mingw64/share/cmake-3.6/Modules/CMakeTestCXXCompiler.cmake:54 (message):
+  The C++ compiler "C:/Program Files
+  (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe" is not able to compile a
+  simple test program.
+
+  It fails with the following output:
+
+   Change Dir: C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp
+
+
+
+  Run Build Command:"C:/msys64/usr/bin/make.exe" "cmTC_2c464/fast"
+
+  /usr/bin/make -f CMakeFiles/cmTC_2c464.dir/build.make
+  CMakeFiles/cmTC_2c464.dir/build
+
+  make[1]: Entering directory
+  '/c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp'
+
+
+  Building CXX object CMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj
+
+  "/C/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe" -tR -DWIN32
+  -Od -v -oCMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj -P -c
+  /C/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+
+
+  Embarcadero C++ 6.90 for Win64 Copyright (c) 2012-2014 Embarcadero
+  Technologies, Inc.
+
+  Embarcadero Technologies Inc.  bcc64 version 3.1 (34288.0798eef.b47f481)
+  (based on LLVM 3.1svn)
+
+  Target: x86_64-pc-win32-elf
+
+  Thread model: posix
+
+
+  C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp/testCXXCompiler.cxx:
+
+
+   "C:/Program Files (x86)/Embarcadero/Studio/15.0/bin/bcc64.exe" -cc1 -triple x86_64-pc-win32-elf -emit-obj -disable-llvm-verifier -tR -main-file-name testCXXCompiler.cxx -pic-level 1 -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -momit-leaf-frame-pointer -v -P -coverage-file CMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj -nobuiltininc -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\crtl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\dinkumware64" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\rtl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\vcl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\sdk" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\vcl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\rtl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\crtl" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\windows\\sdk" -isystem "C:\\Program Files (x86)\\Embarcadero\\Studio\\15.0\\include\\dinkumware64" -D WIN32 -fmodule-cache-path "C:\\Users\\KJELL-~1\\AppData\\Local\\Temp\\clang-module-cache" -Od -fdeprecated-macro -fdebug-compilation-dir C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -backend-option -force-align-stack -mstackrealign -fno-use-cxa-atexit -fborland-extensions -std=c++11 -fcxx-exceptions -fexceptions -fseh -fdiagnostics-show-option -o CMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj -x c++ C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+
+  error: invalid integral value 'd' in '-Od'
+
+  error: invalid integral value 'd' in '-Od'
+
+  make[1]: *** [CMakeFiles/cmTC_2c464.dir/build.make:66:
+  CMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj] Error 1
+
+  make[1]: Leaving directory
+  '/c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp'
+
+
+  make: *** [Makefile:126: cmTC_2c464/fast] Error 2
+
+
+
+
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:3 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeError.log".
+
+kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64
+$
+
+			==> It seems make somehow identified bcc compiler and provided bcc32 compiler options (http://docwiki.embarcadero.com/RADStudio/Seattle/en/BCC32.EXE,_the_C%2B%2B_32-bit_Command-Line_Compiler <http://docwiki.embarcadero.com/RADStudio/Seattle/en/BCC32.EXE,_the_C++_32-bit_Command-Line_Compiler>)?
+
+			-tR			“Target uses the Dynamic RTL."
+			-DWIN32		“Defines WIN32 macro” 
+			-Od 			“Disable all optimizations"
+			-v			“Turn on source debugging"
+			-oCMakeFiles/cmTC_2c464.dir/testCXXCompiler.cxx.obj	“Set output filename"
+			-P			“Perform C++ compile regardless of source extension"
+			-c			“Compile to object file only, do not link"
+			/C/Users/kjell-olovhogdahl/Documents/GitHub/GSL/build-bcc64/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+		…
+…
+
+Consider to delve into this idea to adapt GSL to RAD Studio 10 as a fun and meaningful activity?
+...
+
+

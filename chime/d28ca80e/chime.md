@@ -1,0 +1,24 @@
+# Todo: Eget Hus - Överväg att studera och inspireras Huset "Lådan" av Ralph Erskines?
+
+```#d28ca80e``` *As of 2020-04-05 12:00*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Jag vill bygga litet men effektivt, lättskött och hållbart.
+
+1) Överväg wikipedias artikel av Huset "Lådan" av Ralph Erskines ([https://sv.wikipedia.org/wiki/Lådan_(bostad)](<https://sv.wikipedia.org/wiki/L%C3%A5dan_(bostad)>) )?
+
+> "*Det lilla huset innehöll endast ett rum på 6 × 3,6 meter, men det rymde alla viktiga funktioner. Mitt i stugan fanns den stora eldstaden, som fungerade som rumsdelare och som öppnade sig mot rummet, kokvrån och ut mot verandan. Verandan var vänd mot söder och uppglasad för att kunna släppa in ljus och värme, övriga fasader var tämligen slutna. Gavlarna målades i Falu rödfärg, resten av väggarna oljades. Den begränsade golvytan användes mycket listigt, nästan som i en båt. Makarnas dubbelsäng kunde hissas upp i taket eller omvandlas till soffa. Ralph Erskine hade även sin arbetsplats i huset och när ritbordet inte användes fälldes det upp mot väggen.*"
+
+> ![](352px-Ladan_2007a.jpg) ![](316px-Lådan,_baksidan,_2017.jpg)
+
+2) Överväg att hitta och studera planritningen för huset "Lådan" av Ralph Erskines?
+
+==&gt; Det här verkar vara en artikel med en planritning över huset "Lådan" ([https://plansofarchitecture.tumblr.com/post/124377195668/ralf-erskine-lådan-1941-1942-stockholm-sweden](https://plansofarchitecture.tumblr.com/post/124377195668/ralf-erskine-l%C3%A5dan-1941-1942-stockholm-sweden) )?
+
+> ![](PastedGraphic-3.png)
+
+...
+
+{% endraw %}

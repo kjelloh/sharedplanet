@@ -1,0 +1,39 @@
+# Todo: Programming - Consider to understand functional programming and how it may be applied to "enhance" OO programs
+
+```#d2e6279d``` *As of 2016-01-19 10:28*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Functional programming seems to be all about “no side effects” (i.e. pure functional operations input —&gt; output) and thus lends itself very well to create stable, thread and concurrent safe programs?
+
+1) The functional programming language Haskel seems to live at this site (https://www.haskell.org)
+
+2) This seem to be a good talk about functional programming (https://www.youtube.com/watch?v=7Zlp9rKHGD4)
+
+==&gt; Note the introduction that is about “where does air come from” - fun :)  
+==&gt; Consider to follow up on argument that stageful programs was invented when memory was expensive (functional programs consumes more memory)  
+...
+
+3) Is it possible to create user-interfaced programs using functional programming?
+
+==&gt; If so, how do we handle the state of the user interface?  
+==&gt; Is it even possible to create an interactional program using pure functional programming?  
+…
+
+4) Consider to compare with C++ boost Phoenix library (http://www.boost.org/doc/libs/1_55_0/libs/phoenix/doc/html/index.html)?
+
+==&gt; Q: How does C++ Boost Phoenix functional library stand-up in the face of functional programming?  
+…
+
+5) Consider to study “Structure and Interpretation of Computer Programs” by Harold Abelson and Gerald Jay Sussman with Julie Sussman again (https://mitpress.mit.edu/sicp/full-text/book/book.html)?
+
+==&gt; Re-visit the amazing insight that they introduce “assignment” (i.e. state) to programs not until well into the middle of the book (among with a list of all the problems it causes)  
+...
+
+…
+
+Consider to study functional programming concepts. libraries and languages to understand what design patterns  
+...
+
+{% endraw %}

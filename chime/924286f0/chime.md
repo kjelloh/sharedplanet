@@ -1,0 +1,24 @@
+# Todo: Document The old tube Radio Menuett from Radionette (in my childhood home täfteböle)
+
+```#924286f0``` *As of 2015-10-27 13:55*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) The model seems to have been manufactured 1969 (<http://www.radiomuseum.org/r/radionette_menuett_2_fm.html>)
+
+2) The first year price was 598 Norwegian crowns. ”The equivalent of 598 NOK on 31/01/1969 is **5 285.93 NOK** on 27/10/2015 (click on the links to convert amounts to other currencies)
+
+Inflation over the period : 783.93 %, used index:NOCPI2013, Initial Index: 12.08, End Index: 106.81” according to (<http://fxtop.com/en/inflation-calculator.php?A=598&C1=NOK&INDICE=NOCPI2013&DD1=31&MM1=01&YYYY1=1969&DD2=27&MM2=10&YYYY2=2015&btnOK=Compute+actual+value>)
+
+3) Asuming the price was in Swedish kronor the same site states ”The equivalent of 598 SEK on 31/01/1969 is 4 944.33 SEK on 27/10/2015 (click on the links to convert amounts to other currencies)
+
+Inflation over the period : 726.81 %, used index:SECPI1956, Initial Index: 1.59, End Index: 13.11”.
+
+4) The models is stated to have both tubes and transistors; ”Valves / Tubes 3: ECH81 EBF89 ECL86. Semiconductors (the count is only for transistors) 2: Transistors: AF124 and AF125”.
+
+5) Norwegian wikipedia states that Raionette was founded 1928 and continued to 1972 when it was bought by Tandberg that itself ended 1978 (<https://no.wikipedia.org/wiki/Radionette>)
+
+…
+
+{% endraw %}

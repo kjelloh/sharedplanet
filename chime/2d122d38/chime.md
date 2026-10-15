@@ -1,0 +1,42 @@
+# Todo: Consider we always model reality to enable us to reason about the things we care about?
+
+```#2d122d38``` *As of 2019-08-12 13:40*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be that we model reality to enable us to reason about the things we care about?
+
+==&gt; Also see "Todo: Consider to reverse engineer the "woke culture" model of reality from anarchist Vaush youtube video "What is Gender Abolitionism?"?"
+
+1) Consider to reflect on different model of reality and how they fit this observation that each model is honed to enable reasoning about the things those holding the model for true cares about?
+
+> From trying to reverse engineer the model of woke culture from the Vaush video "What is Gender Abolitionism?" my mind leapt to an idea that in fact we always create a model of reality that enables us to reason about the things we care about? And maybe not only that. We also hone this model in such a way that it supports our argument to why this model is the right one.
+
+> And maybe this should not be seen as a bad thing. A good model or reality is one that is we act-in-faith to it being a correct representation of how reality is and should be, we are in fact doing the best we can to navigate life?
+
+> So when new atheists are arguing why religion causes more harm than good they do it using a model of reality that shows all the harm religious beliefs in fact causes?
+
+> So when woke culture argues that value structures causes harm they do this with argument based in a model filled with observations about harm being caused by value structures?
+
+> So when post modernism argues against the value of reason, they do this based in a model of reality filled with observations about how reason has failed?
+
+> So when Jordan B Petersson argues for truth in acting-in-faith to the proposed actions and outcomes told in archetypical stories he does this based in a model filled with observations about stories that have these traits?
+
+> ...
+
+2) Consider how models that places something discoverable and interactional at the border to the unknown seems to have an advantage over those models that do not?
+
+> *So the idea here is to try and model different models about reality to distinguish those models that enables interaction with the yet unknown or possibly discoverable at the border between what the model does explain and what it does not as favourable to those models that proclaim themselves to be all covering and all knowing?*
+
+> *So, what we are aiming at here is to be able to discuss the model of reality as proclaimed by religion in general and christianity in particular and compare it to competing models like ideologies like woke culture and globalism and the scientific model of truth seeking. So in christianity we can observe that at the border to the unknown we place a deity, God, tho whom we can speak and from whom we may get answers. So at the border of the model of reality proposed by christianity we can relate to what we do not know and what we may never know as being occupied by or having this knowledge held by a sentient being or something of that sort. So that when we are in doubt to how to act in reality of how to cope with things we care about not being as we want it to be, then we have means to express these problems and wants and potentially finding out what the right way to go on with business is.*
+
+> *In the scientific model of reality the border to the not yet known or the never knowable we place the process of observation and comparison with the model predictions. So in a way the scientific model of reality is concerned with two strong values. One is to not model anything that does not explicitly require changes to the model to fit the observations. Secondly the scientific model clearly states that you should NOT model what may or may not be outside that of which the model is able to explain. On the other hand, the scientific model of reality regards identification and compartmentation of ignorance as "sacred". never jump to conclusions. Know what you know and what you do not know. And never interact with the unknown with any presumptions! The unknown you should only poke at and observe how it responds with very great care.*
+
+> *So in a way the christian model of reality enables you to interact with the unknown through introspection (you can pray, contemplate, read the scriptures and talk to religiously learned) while the scientific model enables you to interact with the unknown by experimentation, observation and reasoning. A religious person can talk with the unknown while the scientist must only observe.*
+
+> *...*
+
+...
+
+{% endraw %}

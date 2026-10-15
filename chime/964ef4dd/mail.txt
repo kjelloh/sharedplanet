@@ -1,0 +1,50 @@
+﻿I have broken my ZAG-K additional stop used to reference new holes 32 mm from an existing hole and I have trouble finding a vendor that sells them!
+
+	==> Also see "Todo: Consider to document how I can use the Mafell Duo Doweler to build an IKEA PAX closet frame clone?"
+
+
+-1) I ended up order a set of ZAG from https://www.mikestoolshop.at <https://www.mikestoolshop.at/> for nearly 500 SEK!!
+
+
+
+0) This seems to be the spare part list that defines the ZAG set as "spare part number 206125" with EAN code 4032689201672 (https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj-ss26yuX_AhVIavEDHbKnBpkQFnoECBYQAQ&url=https%3A%2F%2Fservice.mafell.com%2Findex.php%3FIdProduct%3D34120%26pdf%3Dtrue%26tpl%3Dpdf_product_spare&usg=AOvVaw3uftQtkSQpJ8WivnF108Ug&opi=89978449 <https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj-ss26yuX_AhVIavEDHbKnBpkQFnoECBYQAQ&url=https://service.mafell.com/index.php?IdProduct=34120&pdf=true&tpl=pdf_product_spare&usg=AOvVaw3uftQtkSQpJ8WivnF108Ug&opi=89978449> )? 
+
+
+
+
+
+
+
+
+	==> Also see https://service.mafell.com/index.php?plugin=hotspot_index&show=table&IdTreeGroup=12975&IdProduct=33960 <https://service.mafell.com/index.php?plugin=hotspot_index&show=table&IdTreeGroup=12975&IdProduct=33960> 
+
+1) It seems the product number for the Mafell extra end stops (ZAG) is 206125 (https://www.gepet.lt/zag-additional-stop-set-mafell-206125.html <https://www.gepet.lt/zag-additional-stop-set-mafell-206125.html> )?
+
+2) It seems this shop sells and deliver the ZAG additional stop set to Sweden (https://www.dakl-shop.de/mafell-zusatzanschlag-set-zag <https://www.dakl-shop.de/mafell-zusatzanschlag-set-zag> )?
+
+3) This seems to be the german product page for the DDF40 duo doweler (https://produkte.mafell.de/en/drilling/duodoweler/duodoweler-ddf-40 <https://produkte.mafell.de/en/drilling/duodoweler/duodoweler-ddf-40> )?
+
+	==> This seems to be the DDF40 operating manual (https://produkte.mafell.de/media/pdf/72/a3/fa/ddf40_west_170519_0419_c.pdf <https://produkte.mafell.de/media/pdf/72/a3/fa/ddf40_west_170519_0419_c.pdf> )?
+
+
+
+
+4) It seems the permanent springed distance pin on the machine places the drilled hole 15,5 mm from edge of material?
+
+
+
+5) It seems the drill is placed 49 mm from the actual edge face of the machine?
+
+
+
+6) It seems I need the additional stop ZAG-K and optionally the SA extension set to 320 mm to drill a series of 32 mm spaced holes (IKEA and Euro-standard)?
+
+
+
+
+
+ 7) This seems to be the Mafell video "Mafell DDF: Zusatzanschlag-Set ZAG" about how to use the ZAG set (https://www.youtube.com/watch?v=mErZg4dqZlQ <https://www.youtube.com/watch?v=mErZg4dqZlQ> )?
+
+
+
+...

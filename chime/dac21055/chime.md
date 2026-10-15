@@ -1,0 +1,10 @@
+# Todo: Write that act-in-faith is the way to participate in the lottery you like to win
+
+```#dac21055``` *As of 2015-08-24 16:35*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+When existence is incomprehensible and no action seems to be able to affect the state of things the act-in-faith may be proposed as a way to at least be part of a lottery you want to win. If you do not act you are truly unable to contribute at all. If you don’t act you have to rely on others to act. You risk of becoming a victim to your own and others inability to take action. But if you do act you will affect things in ways you can’t comprehend and you may also induce other to act and then the wanted state of things may come about through emergence. Emergence are to its very nature always incomprehensible (the simple interacting rules seem unrelated to the emergent behavior) and it also has the property of having tipping points. Up until the time the new state actually comes into being there seem to be no evidence that it is going to happen. Thus, an act-in-faith is always the option to go for.
+
+{% endraw %}

@@ -1,0 +1,17 @@
+# Todo: Write about why life came to existence only once on earth?
+
+```#4fefda57``` *As of 2015-09-02 16:01*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+An interesting question would be why life came into existence here on earth only once? We seem to understand it happened only once because genealogy shows all life stems from the same original ”first” cell.
+
+1) Is it so improbable to happen that we are just lucky it happened at least once and it just happened to be here it did?  
+2) If the ”right conditions” caused it to happen then why, while that window was open, did it not happen at least twice?  
+3) Is there something in the way life affects its environment that prohibits new life to be created from nothing again?  
+4) Or did life actually come into existence at several places, life that does not inherit the same ”first cell”? What about life at the bottom of the see that thrives on volcanic evaporations and heat?  
+5) Have we misunderstood our ancestry? Is there cross breeding of life that came into existence separately? We know that viruses ”cross breed” with cells to make up up genome. Does this mean virus is a different life form that came into existence separate from the first cells?  
+...
+
+{% endraw %}

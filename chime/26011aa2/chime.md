@@ -1,0 +1,119 @@
+# Todo: C++ Tha - Consider we should allow use of constexpr functions or value directly in meta-scopes?
+
+```#26011aa2``` *As of 2019-06-21 17:55*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+As C++ already contains compile-time evaluation of defined values and functions we should allow use of them in C++ Tha meta-scopes.
+
+1) Consider C++ specification on constexpr (<https://en.cppreference.com/w/cpp/language/constexpr> )?
+
+==&gt; It seems the basic requirement for C++ constexpr variable and function is that it operates on "LiteralType"?
+
+> A **constexpr variable** must satisfy the following requirements:
+- its type must be a [LiteralType](https://en.cppreference.com/w/cpp/named_req/LiteralType).
+
+  
+> ...
+
+> A **constexpr function** must satisfy the following requirements:
+- it must not be [virtual](https://en.cppreference.com/w/cpp/language/virtual)
+
+> (until C++20)
+- its return type must be a [LiteralType](https://en.cppreference.com/w/cpp/named_req/LiteralType)
+- each of its parameters must be a [LiteralType](https://en.cppreference.com/w/cpp/named_req/LiteralType)
+
+  
+> ...
+
+2) Consider it is not super clear what explicitly is valid constexpr operations and expressions (valid constexpr is to a large degree defines as in what is NOT allowed)?
+
+==&gt; Consider what we can say about constexpr from the specification on a Constant Expression (<https://en.cppreference.com/w/cpp/language/constant_expression> )?
+
+> "A *core constant expression* is any expression whose evaluation ***would not*** evaluate any one of the following:
+
+> ... here follows 27 bullet points defining what the expression MUST NOT evaluate to ...  
+> "
+
+==&gt; Consider it is interesting that constexpr functions can pass values between them as long as the passed value does not get passed to a new constexpr?
+
+> ```
+> constexpr int incr(int& n) {
+>   return ++n;
+> }
+> constexpr int g(int k) {
+>   constexpr int x = incr(k); // error: incr(k) is not a core constant
+>                              // expression because lifetime of k
+>                              // began outside the expression incr(k)
+>   return x;
+> }
+> constexpr int h(int k) {
+>   int x = incr(k); // OK: x is not required to be initialized with a core
+>                    // constant expression
+>   return x;
+> }
+> constexpr int y = h(1); // OK: initializes y with the value 2
+>                         // h(1) is a core constant expression because
+>                         // the lifetime of k begins inside the expression h(1)
+> ```
+
+
+
+3) Consider C++ specification on Literal Type (<https://en.cppreference.com/w/cpp/named_req/LiteralType> )?
+
+==&gt; Consider how C++ now allows some compile time string manipulation (function "countlower" is constexpr and can feed an integer to template "constN" instantiation)?
+
+> ```
+> #include <iostream>
+> #include <stdexcept>
+>  
+> class conststr
+> {
+>     const char* p;
+>     std::size_t<http://en.cppreference.com/w/cpp/types/size_t> sz;
+> public:
+>     template<std::size_t<http://en.cppreference.com/w/cpp/types/size_t> N>
+>     constexpr conststr(const char(&a)[N]) : p(a), sz(N - 1) {}
+>  
+>     constexpr char operator[](std::size_t<http://en.cppreference.com/w/cpp/types/size_t> n) const
+>     {
+>         return n < sz ? p[n] : throw std::out_of_range<http://en.cppreference.com/w/cpp/error/out_of_range>("");
+>     }
+>     constexpr std::size_t<http://en.cppreference.com/w/cpp/types/size_t> size() const { return sz; }
+> };
+>  
+> constexpr std::size_t<http://en.cppreference.com/w/cpp/types/size_t> countlower(conststr s, std::size_t<http://en.cppreference.com/w/cpp/types/size_t> n = 0,
+>                                              std::size_t<http://en.cppreference.com/w/cpp/types/size_t> c = 0)
+> {
+>     return n == s.size() ? c :
+>            s[n] >= 'a' && s[n] <= 'z' ? countlower(s, n + 1, c + 1) :
+>                                         countlower(s, n + 1, c);
+> }
+>  
+> // output function that requires a compile-time constant, for testing
+> template<int n>
+> struct constN
+> {
+>     constN() { std::cout<http://en.cppreference.com/w/cpp/io/cout> << n << '\n'; }
+> };
+>  
+> int main()
+> {
+>     std::cout<http://en.cppreference.com/w/cpp/io/cout> << "the number of lowercase letters in \"Hello, world!\" is ";
+>     constN<countlower("Hello, world!")>(); // implicitly converted to conststr
+> }
+> ```
+
+  
+> Output:
+
+> ```
+> the number of lowercase letters in "Hello, world!" is 9
+> ```
+
+
+
+...
+
+{% endraw %}

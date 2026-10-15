@@ -1,0 +1,33 @@
+# Todo: Consider ways to descale my espresso machine (and other browsers)?
+
+```#b8de6e08``` *As of 2018-09-24 20:30*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems I can use citric acid or vinegar to descale (remove lime stone) from brewers and coffee machines?
+
+1) Consider this article on using vinegar or critic acid to (<https://www.homegrounds.co/how-to-descale-an-espresso-machine/>)?
+
+==&gt; It seems this article is not based on very form grounds (it refers to vinegar being redeemed as “not so effective” according to “…some…”)?
+
+So the writer does not actually know if the descaling works?
+
+...
+
+2) It seems Cirtic Acid may or may not be corrosive on Aluminium?
+
+==&gt; Consider this article on Cirtic Acid strengthening Aluminium corrosion resistance up to a critical value (<https://www.tandfonline.com/doi/abs/10.1179/174327807X214770?journalCode=ycst20>)?
+
+> “The **inhibition** effect of citric acid on the **corrosion** behaviour of **aluminium** in 2M NaCl solution (**pH 2**) was studied with the help of potentiodynamic polarisation, electrochemical impedance spectroscopy (EIS) and linear polarisation resistance (LPR) techniques. The experimental results showed that citric acid inhibits the corrosion of aluminium in NaCl solution and the inhibition efficiency depends on its concentration. The protection efficiency increases with citric acid concentration up to a critical value of 1·0 × 10−5M. At higher concentrations, the inhibition efficiency reduced again with increasing concentration. The mechanism of inhibition was attributed to the adsorption of citric acid onto the metal surface.  
+> "
+
+hm… The aluminium was in Natrium Chloride (so the Citric Acid actually raised the pH from a very low level)?
+
+…
+
+Consider to delve deeper into what we can effectively and safely use to remove lime scale from boilers and espresso machines?
+
+...
+
+{% endraw %}

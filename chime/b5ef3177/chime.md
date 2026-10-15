@@ -1,0 +1,30 @@
+# Todo: Audio Programming - Consider to check out the JACK framework for desktop invariant audio stream cooperation?
+
+```#b5ef3177``` *As of 2017-01-26 12:49*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems JACK could be a viable framework to develop software that exchange real time audio streams with each other on desktop OS-es?
+
+1) JACK seem to live here (<http://jackaudio.org/api/>)?
+
+> ”*It can connect several client applications to an audio device, and allow them to share audio with each other. Clients can run as separate processes like normal applications, or within the JACK server as "plugins".*"
+
+==&gt; Also consider the JACK home page (<http://jackaudio.org>)?
+
+...
+
+2) QjackCtl seem to be a Linux framework to interface JACK with QT with to provide LINUX platform GUI:s for applications using JACK (<https://qjackctl.sourceforge.io>)
+
+==&gt; Consider this example of a program in Faust using JACK and QT to create a simple noise generator application with a GUI to control the noise volume (<http://faust.grame.fr/about/>)?
+
+…
+
+…
+
+Consider to delve deeper into the JACK framework to see what we can use it for and what apps we can leverage using JACK?
+
+...
+
+{% endraw %}

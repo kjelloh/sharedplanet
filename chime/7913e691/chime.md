@@ -1,0 +1,68 @@
+# Todo: Consider a washing machine suitable for an all-electric caravan?
+
+```#7913e691``` *As of 2024-06-29 14:38*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I plan to live in a caravan for 6-8 months while looking for my new home and need a convenient way to wash my clothes while on the road.
+
+1) Consider the "Tiny Wash" RV washing machine for €1200 (machine) + €120 (waste water pump) + €90 (Pressure pump) (<https://www.tinywash.de/en> )?
+
+==&gt; It seems to be able to run with attached hot water for reduced power consumption (<https://www.tinywash.de/_files/ugd/801365_40059fbf6f8f4d58ae160c5dacc24dd3.pdf> )?
+
+> *"**If you also want to wash independently, we recommend that you add hot and cold water to tinyWSH and install a mixer. In this way, with self-sufficient operation and supply of warm fresh water, significant electrical energy can be saved when heating the water. Please note that you will need to switch the mixer back to cold water for drying operation, otherwise the dryer will not work and the laundry will remain wet.**"*
+
+NOTE: It seems to run of 220V AC - so it is not even adapted to RV 12V system!
+
+==&gt; Why should I not install a small 'normal' washing machine?
+
+2) Consider the Swedish article on the "Tiny Wash" RV washing mashine (<https://www.husbilhusvagn.se/nyheter/tvattmaskin-husbilen> )?
+
+==&gt; Is seem "Tiny Wash" RV washing machine I can wash 3,3 kg laundry consuming 12-24 l of water, are able to wash 10 degrees to 90 degres and 0,4 kWh 15 min eco=
+
+> *"*  
+> *Vad får man då för pengarna?
+
+> *  
+> *• En liten tvättcylinder på 17 kilo som är 58,2 centimeter bred och 62,1 centimeter bred. Utrymmet på djupet som behövs för att installera den är 35 centimeter.  
+> *  
+> *• I den går det att tvätta upp till 3,3 kilo tvätt i fem olika tvättprogram. Allt från 10 grader till 90 grader. Men ekotvätt finns bara för 40–60 grader.  
+> *  
+> *• Det går åt 12–14 liter vatten för en snabbtvätt och 18–24 liter för en standardtvätt. Vill man köra en ekotvätt behövs mer vatten, 28–34 liter.  
+> *  
+> *• Energiåtgången är 0,39 kWh för en snabbtvätt på cirka 15 minuter. Den som kör en ekotvätt gör av med mindre än så, 0,33 kWh."*
+
+==&gt; How much energy does "Tiny Wash" require for the most consuming 90 degrees 3,3 kg full wash cycle?
+
+> *As usual the producer makes the physics hidden behind some magic branding language.*
+
+> *But the energy declaration shows it is rated as low-efficiency for 'normal' washing cycle?*
+
+> ![](PastedGraphic-10.png)
+
+> The maximum power consumption is 1500 W.
+
+==&gt; It seems to have very much the same consumption and behaviour as a 'normal' washing machine?
+
+> *"**Hot 95 minutes, Quick 15 minutes, Kids 70 minutes, Small 70 minutes, R+Spin 27 minutes, Drum Clean 66 minutes, Dry 30 - 180 minutes, eco 40-60 2:42 hr**"*
+
+3) Consider a 'normal' washing machine dos not seem to be available in a small enough format?
+
+> *basically, in my quick survey a 'normal' washing machine weighs around 60 kg and measures the standard 60 cm deep, up to 90 cm high and 40 - 60 cm wide (40 cm for top fed models). *
+
+==&gt; Consider Electrolux 600 SensiCare 4 kg Tvättmaskin (<https://www.electrolux.se/laundry/laundry/washing-machines/compact-washing-machine/ew6s540w34/> )?
+
+> *At least it requires only 370 mm depth (but is still 600 mm wide and 850 mm high).*
+
+> *It requires up to 2000W peak when it runs. It seems 100 cycles requires 55 kWh which comes down to 0,55 kWh for one washing cycle (not so bad?)*
+
+> *With a 3000W inverter I can actually run this of a Victron battery system.*
+
+> *BUT: It weighs 55 kg!!*
+
+> *It also requires 35l of water for a washing cycle!*
+
+...
+
+{% endraw %}

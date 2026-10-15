@@ -1,0 +1,32 @@
+﻿What could we imagine to learn, or apply as a Darwinet mechanism if we where able to play a video by playing the history of a MIV stored Image?
+
+1) Consider what design we can imagine to have the Streamed Video be represented as a Delta-stream of a single Image?
+
+	==> Is it possible to turn Streamed Video Messages into Darwin Deltas?
+	==> What would it mean to design a MIV stored Image so that we may encode it as a video using a Delta History Stream?
+
+	==> What can we say about these Image Deltas having date-and-time that are fake (they may or may not reflect the date and time when they where taken)?
+	
+
+2) What other services can we imagine to implement using this Darwinet mechanism of “Delta History playback”?
+
+	==> Can we imagine implementing Time Reporting Tools as playback of Time Reports?
+
+		==> Note that we must allow the Time report to be corrected in retrospect (the final state of actual day-by-day time reports may differ from the Time reports produced by Delta Trail playback)?
+		==> Thus we can’t use the Delta Trail Entries as the final time report (we do not know what entries are corrections to previous entries)?
+
+	==> Can we imagine implementing book-keeping using playback of Verification Entries?
+
+		==> Seems we cant for the same reason as for Time Report example above (the Delta Trail may carry corrections to previous entries and we are unable to detect those)?
+
+
+3) Seems the value of services based on playback mechanism of Delta Trails are restricted to evolution studies rather than a replacement for final state of historical records?
+
+	==> A project progress may be analysed by playing back work and cost estimates through project evolution?
+
+		==> Each historic project state is of interest only to learn, not for use as actual current state data?
+…
+
+
+Consider to delve deeper into this idea of what we can leran from viewing streaming data as a Delta Stream and compare it to Darwinet Delta Streams and its possible applications?
+...

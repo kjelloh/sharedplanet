@@ -1,0 +1,12 @@
+﻿I would like to simulate mechanisms in FreeCad.
+
+1) Consider youtube video "🎬 Animation: Parametric Four-Bar Chain Mechanism in FreeCAD with A2plus Workbench 🚀" (https://youtu.be/azLxATMufc0 <https://youtu.be/azLxATMufc0> )?
+
+
+
+
+
+2) Consider to document what I learned from follow along with the youtube video "🎬 Animation: Parametric Four-Bar Chain Mechanism in FreeCAD with A2plus Workbench 🚀" (https://youtu.be/azLxATMufc0 <https://youtu.be/azLxATMufc0> )?
+
+
+...

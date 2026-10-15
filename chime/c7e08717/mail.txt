@@ -1,0 +1,114 @@
+﻿Consider to elaborate on the patterns we can recognize from studying composition of types using templates in C++?
+
+1) Consider the three layers Type T, Composed type F<T> and the template F?
+
+
+	Layer 1)	Set of one parameter Templates, F being one
+
+	Layer 2)	Set of Objects of Composed Type F<T>
+
+	Layer 3)	Set of objects T
+
+2) Consider examples of such layers using some known one parameter templates?
+
+	==> Consider template std::vector
+
+		Layer 1)	The template std::vector
+
+		Layer 2)	Set of Objects of Composed Type std::vector<T>
+
+		Layer 3)	Set of objects T
+
+	==> Consider template std::optional
+
+		Layer 1)	The template std::optional
+
+		Layer 2)	Set of Objects of Composed Type std::optional<T>
+
+		Layer 3)	Set of objects T
+
+	==> Consider template std::future
+
+		Layer 1)	The template std::future
+
+		Layer 2)	Set of Objects of Composed Type std::future<T>
+
+		Layer 3)	Set of objects T
+
+3) Consider how the elements on each layer corresponds to just one element in the Set in the layer above (and a multiplicity of elements in the Set of the layer below)
+
+	==> Consider each Set in layers one (e.g. The Set of int, bool, std::path…) corresponds to just one Set in layer 2 (std::vector<int or bool or std::path> or std::optional<int or bool or std::path> or std::future<int or bool or std::path>
+
+		Layer 2)	Set of std::vector<int> {{0}, {0,2,16}, {0,1,2,3,4},...}
+		Layer 1)	Set of int  {0,1,2,3,4,5,6,…}
+
+4) Consider the composition layer 2 may actually be repeated to create composition-of-composition, composition-of-composition-of-composition,…
+
+	==> Consider this corresponds to T, TT, TTT?
+
+	==> Consider  std::vector<T>, std::vector<std::vector<T>>, std::vector<std::vector<std::vector<T>>>,…
+	==> Consider std::optional<T>, std::optional<std::optional<T>>, std::optional<std::optional<std::optional<T>>>,…
+	==> Consider std::future<T>, std::future<std::future<T>>, std::future<std::future<std::future<T>>>,…
+
+	==> Consider these composition layers are in fact what the ”Functor” defines?
+
+5) Consider how important it is that the Closed Binary Operations in Layer 3 is preserved in Layer 2?
+
+	==> Consider how nice it becomes if std::vector<int> v1 + std::vector<int> v2 = std::vector<int + int> v3?
+
+		==> Layer 2)	std::vector: {x} + {y} = {z}
+		==> Layer 2)	std::optional: std::optional(x) + std::optional(y) = std::optional(z)
+		==> Layer 2)	std::future: std::future(x) + std::future(y) = std::future(z)
+
+		==> Layer 1)	int:  x + y = z
+
+
+6) Consider the patterns that emerge when we have functions that maps between Sets on the same layer?
+
+	==> Consider the function is_even that maps the set of int to the Set of bool?
+
+		Layer 1)	Set A of int {0,1,2,3,4,…} —> is_even(a) —> Set B of bool {false, true}
+
+	==> Consider how we may compose functions to apply them to compositions of T?
+
+		==> Consider Composition std::vector
+
+		Layer 2)	Set of std::vector<int> —> ??<is_even> —> Set of std::vector<bool>
+		Layer 1)	Set A of int {0,1,2,3,4,…} 	—> is_even(a) —> Set B of bool {false, true}
+
+		==> Consider Composition std::optional
+
+		Layer 2)	Set of std::optional<int> —> ??<is_even> —> Set of std::optional<bool>
+		Layer 1)	Set A of int {0,1,2,3,4,…} 	—> is_even(a) —> Set B of bool {false, true}
+
+		==> Consider Composition std::future
+
+		Layer 2)	Set of std::future<int> —> ??<is_even> —> Set of std::future<bool>
+		Layer 1)	Set A of int {0,1,2,3,4,…} 	—> is_even(a) —> Set B of bool {false, true}
+
+		…
+
+7) Consider how important it is that the function behaves well with the closed operations on both the source and target Sets?
+
+		==> Layer 1) Set A of int {0,1,2,3,4} we have ’+’ and ’*’ so that the result remains in the same Set (the operations are Closed)
+
+			==> 3+7 = 10 is still an int.
+			==> 3*7 = 21 is still an int.
+
+		Layer 1)	Set A of int {0,1,2,3,4,…} 	—> is_even(a) —> Set B of bool {false, true}
+
+			==> is_even(3+7) != is_even(3) + is_even(7) ==> The function may or may not perserve the relations between members of source and target Set (in this case the relation IS NOT perserved) 
+			==> is_even(3*7) != is_even(3) * is_even(7) ==> The function may or may not perserve the relations between members of source and target Set (in this case the relation IS NOT perserved) 
+
+				==> NOTE: The binary operations in Set A and Set B may be totally different (in this case operator+(int,int) and operator*(int,int) ins Set<int> is totally unrelated to operator&&(bool,bool) and operator||(bool, bool) in Set<bool>)
+
+				==> NOTE: We are able to define mapping of the binary operations in Set<int> to the Set<bool> for is_even!
+
+					==> is_even(x + y) == is_even(x) XOR is_even(y)
+					==> is_even(x*y) == is_even(x) OR is_even(y)
+
+…
+
+Consider to elaborate on these patterns more to recognize what patterns are actually the most relevant ones?
+...
+

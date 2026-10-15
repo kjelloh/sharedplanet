@@ -1,0 +1,67 @@
+﻿Just an early hunch but RUST seems to beat C++ by having assignment mean "move", have a built in package manager and macros that are "safe" language aware?
+
+1) Consider the RUST online specification (https://doc.rust-lang.org/book/title-page.html <https://doc.rust-lang.org/book/title-page.html> )?
+
+2) Consider RUST specification on "ownership" (https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html <https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html> )?
+
+	==> It seems what RUST calls "ownership" is in fact more like "single alias mutability" (assignment means the value gets a "new" name)?
+
+"Ownership Rules
+
+First, let’s take a look at the ownership rules. Keep these rules in mind as we work through the examples that illustrate them:
+
+	• Each value in Rust has a variable that’s called its owner.
+	• There can only be one owner at a time.
+	• When the owner goes out of scope, the value will be dropped."
+
+		==> Consider "assignment" is NOT value copy but reference-renaming?
+
+	==> Consider why the RUST specification DOES NOT STRESS that assignment MOVES mutability?
+
+After having identified the core concept of RUST to treat an assignment as a MOVE I am somewhat perplex that the RUST specification does not stress this fact in any clear way?
+
+The specification does also NOT talk about variable aliasing as Sergio Benitez does in youtube video "A Case for Oxidation: The Rust Programming Language" (https://youtu.be/cDFSrVhnZKo?t=1318 <https://youtu.be/cDFSrVhnZKo?t=1318> )?
+
+But I finally found the location where they kind of hide the assign-is-move concept in explaining how a String object aggregates heap references and now assignment becomes a "sahllow copy" which RUST compiler treats as (ownership) move - but what I think is better understood as "value move" (semantically correct although technically RUST implements it as shallow-copy-ownership-move)?
+
+let s1 = String::from("hello");
+let s2 = s1;
+
+println!("{}, world!", s1);
+You’ll get an error like this because Rust prevents you from using the invalidated reference:
+
+
+error[E0382]: use of moved value: `s1`
+ --> src/main.rs:5:28
+  |
+3 |     let s2 = s1;
+  |         -- value moved here
+4 |
+5 |     println!("{}, world!", s1);
+  |                            ^^ value used here after move
+  |
+  = note: move occurs because `s1` has type `std::string::String`, which does
+  not implement the `Copy` trait
+	==> Consider how RUST explains how "simple types" will copy on assignment as them having the Copy Trait?
+
+Rust has a special annotation called the Copy trait that we can place on types like integers that are stored on the stack (we’ll talk more about traits in Chapter 10). If a type has the Copy trait, an older variable is still usable after assignment.
+
+So what types are Copy? You can check the documentation for the given type to be sure, but as a general rule, any group of simple scalar values can be Copy, and nothing that requires allocation or is some form of resource is Copy. Here are some of the types that are Copy:
+
+All the integer types, such as u32.
+The Boolean type, bool, with values true and false.
+All the floating point types, such as f64.
+The character type, char.
+Tuples, if they only contain types that are also Copy.
+
+3) Consider RUST macro language (https://doc.rust-lang.org/book/ch19-06-macros.html <https://doc.rust-lang.org/book/ch19-06-macros.html> )?
+
+4) Consider RUST Cargo package manager manual (https://doc.rust-lang.org/cargo/ <https://doc.rust-lang.org/cargo/> )?
+
+5) Consider the youtube video "A Case for Oxidation: The Rust Programming Language" (https://www.youtube.com/watch?v=cDFSrVhnZKo&t=84s <https://www.youtube.com/watch?v=cDFSrVhnZKo&t=84s> )?
+
+	==> Consider he stresses that assignment-is-move (https://youtu.be/cDFSrVhnZKo?t=1318 <https://youtu.be/cDFSrVhnZKo?t=1318> )?
+
+	
+
+...

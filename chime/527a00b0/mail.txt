@@ -1,0 +1,5 @@
+﻿Tesla finns att hyra i Göteborg.
+
+1) http://www.perpetum.se/Tesla%20Model%20S
+2) http://se.sixt.com/php/fleet/vehicle_group_list?L=9 anger 1850 SEK för två dagar i Lund.
+...

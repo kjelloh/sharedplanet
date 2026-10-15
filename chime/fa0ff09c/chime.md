@@ -1,0 +1,56 @@
+# Todo: Paint Wastewater Treatment - Consider Electro Coagulation (Flocculation) as an alternative to chemical coagulation and flocculation?
+
+```#fa0ff09c``` *As of 2019-05-31 15:00*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems we can also consider electro flocculation as an alternative option to using chemical coagulants and flocculants?
+
+1) Consider this youtube video "Paint industry wastewater treatment with laboratory scale EC equipment" (<https://www.youtube.com/watch?v=Wo5_rGXrthc&t=2s> )
+
+![](<Screenshot 2019-05-31 at 13.14.16.png>)
+
+![](<Screenshot 2019-05-31 at 13.13.49.png>)
+
+![](<Screenshot 2019-05-31 at 13.14.53.png>)
+
+![](<Screenshot 2019-05-31 at 13.15.22.png>)
+
+![](<Screenshot 2019-05-31 at 13.15.54.png>)
+
+![](<Screenshot 2019-05-31 at 13.16.35.png>)
+
+![](<Screenshot 2019-05-31 at 13.17.12.png>)
+
+![](<Screenshot 2019-05-31 at 13.17.36.png>)
+
+2) Consider the wikipedia article on Electrocoagulation (<https://en.wikipedia.org/wiki/Electrocoagulation> )?
+
+> "Electrocoagulation ("electro", meaning to apply an electrical charge to water, and "coagulation", meaning the process of changing the particle surface charge, allowing suspended matter to form an agglomeration)..."
+
+> "*Electrocoagulation has become a rapidly growing area of wastewater treatment due to its ability to remove contaminants that are generally more difficult to remove by filtration or chemical treatment systems, such as emulsified oil, total petroleum hydrocarbons, refractory organics, suspended solids, and heavy metals.*"
+
+==&gt; It seems in Electrocoagulation we insert positive ions into the water by electrically sacrifice material from the anode (I suspect an iron or aluminium anode to get trivalent cations)?
+
+> *"**In the EC process, the coagulant is generated in situ by electrolytic oxidation of an appropriate anode material.**"*
+
+> *"**Electrodes can be made of iron, aluminum, titanium, graphite or other materials,...**"*
+
+3) Consider he is using a Watson-Marlow peristaltic pump 120/DM2 (<http://www.watson-marlow.com/gb-en/range/watson-marlow/100-laboratory-pumps/120dm2/> , <http://www.watson-marlow.com/se-sv/range/watson-marlow/100-laboratory-pumps/120dm2/> )?
+
+![](<Screenshot 2019-05-31 at 13.24.04.png>)
+
+> *"*  
+> *The Watson-Marlow 120S/DM2 and 120U/DM2 pumps comprise a 400DM2 twin-channel pumphead powered by a 120 variable speed or automatic drive. The pumphead accepts 0.8mm wall, three-bridge manifold tubing in sizes from 0.13 to 2.79mm internal diameter. The pump gives flow rates up to 36 ml/min.
+
+> 120 pumps have a compact footprint, saving valuable space in cleanroom, LAF and biosafety cabinet installations.
+
+> *  
+> *• 120U: 0.1-100rpm in 0.1rpm increments. Manual remote control or automatic control via 4-20mA or 0-10V inputs. Speed scrolling, priming and keypad lock.  
+> *  
+> *• 120S: Manual control, 1-100rpm in 1rpm increments. Speed scrolling, priming and keypad lock."*
+
+...
+
+{% endraw %}

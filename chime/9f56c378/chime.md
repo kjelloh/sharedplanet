@@ -1,0 +1,20 @@
+# Todo: Darwinet App for collaborative writing
+
+```#9f56c378``` *As of 2015-07-08 19:28*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to create a Darwinet App for collaborative writing
+
+1) Let the ”book” evolve by allowing branching of edits  
+2) Provide means to auto-map between different editors like Microsoft Word and Mac Pages  
+3) Provide a good user interface to follow the evolution and current best liked (the fittest) ”spcicies” of the book
+
+Be inspired by existing collaborative writing tools.
+
+a) https://en.wikipedia.org/wiki/Collaborative_writing  
+b) http://www.booksprints.net/books/ (See Todo-mail ”12 jan 2015 kl. 10:48 skrev Kjell-Olov Högdahl &lt;kjell-olov.hogdahl@itfied.se&gt;: Subject: Todo: study book sprints”)  
+c) http://en.flossmanuals.net (See Todo-mail 12 jan 2015 kl. 10:48 skrev Kjell-Olov Högdahl &lt;kjell-olov.hogdahl@itfied.se&gt;: Subject: "Todo: study free Floss manuals")
+
+{% endraw %}

@@ -1,0 +1,52 @@
+﻿I continue to search for Type Theory insights that "make sense" and that I can intuitively understand and also apply in the design of Tha and Tha C++.
+
+1) Consider the youtube video "Gabriel Habryn - Type theory in practice | Lambda Days 19" (https://www.youtube.com/watch?v=aW6ZVQwbuak&t=544s <https://www.youtube.com/watch?v=aW6ZVQwbuak&t=544s> )
+
+2) Consider the book "Gentle Introduction to Dependent Types with Idris" by  Boro Sitnikovski (https://www.amazon.com/Gentle-Introduction-Dependent-Types-Idris/dp/1723139416/ref=sr_1_1?qid=1561292819&refinements=p_27%3ABoro+Sitnikovski&s=books&sr=1-1&text=Boro+Sitnikovski <https://www.amazon.com/Gentle-Introduction-Dependent-Types-Idris/dp/1723139416/ref=sr_1_1?qid=1561292819&refinements=p_27:Boro+Sitnikovski&s=books&sr=1-1&text=Boro+Sitnikovski> )? 
+
+	
+
+3) Consider the paper "Type Systems" by Luca Cardelli at Microsoft Research (http://lucacardelli.name/Papers/TypeSystems.pdf <http://lucacardelli.name/Papers/TypeSystems.pdf> )?
+
+"The formalization of type systems requires the development of precise notations and definitions, and the detailed proof of formal properties that give confidence in the appropriateness of the definitions. Sometimes the discipline becomes rather abstract. One should always remem- ber, though, that the basic motivation is pragmatic: the abstractions have arisen out of necessity and can usually be related directly to concrete intuitions. Moreover, formal techniques need not be applied in full in order to be useful and influential. A knowledge of the main principles of type systems can help in avoiding obvious and not so obvious pitfalls, and can inspire regularity and orthogonality in language design."
+
+	
+
+
+	==> It seems Luca Cardelli provides a good notion of names or aliases as "identifiers", their binding location (declaration) and their scope?
+
+"...define the scoping rules of the language, which unambiguously associate occurrences of identifiers to their binding locations (the locations where the identifiers are declared)."
+
+	==> He seems to use ':' to denote "has type"?
+
+"...describe a relation has-type of the form M:A between terms M and types A."
+
+		NOTE: This would imply that ':' in Tha syntax should denote "is of meta" or something along those lines?
+
+		NOTE: In Tha it seems we also need a way to denote "creates defacto" so that we can represent a Meta-Defacto relationship both ways?
+
+	==> He seems to give a good intuitive motivation to the concept of an Environment as the "thing" where names and types are managed (free or bound)?
+
+"The type rules cannot be formalized without first introducing another fundamental ingredient that is not reflected in the syntax of the language: static typing environments. These are used to record the types of free variables during the processing of program fragments; they correspond closely to the symbol table of a compiler during the typechecking phase. The type rules are always formulated with respect to a static environment for the fragment being typechecked. For example, the has-type relation M:A is associated with a static typing environment Γ that contains information about the free variables of M and A. The relation is written in full as Γ ⊢ M:A, meaning that M has type A in environment Γ."
+
+		NOTE: The  '⊢', "turnstile", symbol here seems to mean "yields" (or possibly "entails" although this feels less intuitive)?
+
+	==> He seems to state we also need a "has-value" relationship but the semantics and notation for this is to be defined by the type system we are creating?
+
+"The final step in formalizing a language is to define its semantics as a relation has-value between terms and a collection of results. The form of this relation depends strongly on the style of semantics that is adopted. In any case, the semantics and the type system of a language are interconnected: the types of a term and of its result should be the same (or appropriately related); this is the essence of the soundness theorem."
+
+4) Consider the notion of Free vs bound variables (https://en.wikipedia.org/wiki/Free_variables_and_bound_variables <https://en.wikipedia.org/wiki/Free_variables_and_bound_variables> )?
+
+	==> It seems "free variables" are symbols (names) that may later be bound and undergo some form of substitution in a future context (computation)?
+
+"In mathematics, and in other disciplines involving formal languages, including mathematical logic and computer science, a free variable is a notation (symbol) that specifies places in an expression where substitution may take place..."
+
+"In computer programming, the term free variable refers to variables used in a function that are neither local variables nor parameters of that function."
+
+"A bound variable is a variable that was previously free, but has been bound to a specific value or set of values called domain of discourse or universe."
+
+4) Consider the unicode symbols and semantics for use in type theory and related expressions (https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode <https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode> )?
+
+	==> Consider '⊢' to be named "turnstile" and often read as "yields", "proves", "satisfies" or "entails"?
+
+...

@@ -1,0 +1,22 @@
+# Todo: Consider to what degree we can actually know that "removing the pain" will result in more well being (and vice versa)?
+
+```#34c9a471``` *As of 2020-01-19 11:23*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I have for a while been interested in querying our very basic presumptions about god and bad and the notion that less "bad" is automatically "good" is such a one.
+
+> *So the basic question here is if and in that case how we can know that "less bad" (say less pain) is always the same as "more good" (say more well being)?*
+
+> *Now I think we can be pretty sure that our drive, our emotional response, to "the bad" in general and "pain" in particular is to reduce it in whatever means we can. So this seems to mean that at least evolution has shaped us to have a "truth telling mechanism" that tells us with emotions to act to get rid of such "things". Well, fair enough. But then the question is, if these emotions are correct, why have we also evolved to apply additional reasoning to assess these situations? We should be allowed to suspect that there are cases where our emotions are lying and there are "better" ways to act in the phase of situations we feel are "bad" or "painful".*
+
+> *If we go to stories about how to interact with reality we find in Christianity the saying that "you can't bring down heaven without also bringing up hell". Thus would suggest that we through time has found reasons to suspect that to "much" of the "good" is actually NOT good. Ok, so it is not exactly about removing pain, but somehow along the same line of how to act in presence of what we "want".*
+
+> *From a complex system approach to human society we can argue that not only do we not know how we form the emotions about "bad" and "pain" from our assessment of what is real. We also can suspect that our validation of "the bad" or "the pain" is actually not quantifiable in the way it feels to us to be. We should suspect that if something seems "bad" to us and we act to make it "worse", it could actually turn out to be "better". Either by model reality as behaving as Sam Harris "Moral Landscape" and making things "worse" is to get us through a "valley" to new local maximum that is "higher" that where we came from. But we can also assert that in the fact the "landscape" of "good" and "bad" (wellbeing and pain) is more of the nature of a self organising complex system with a non analytic behaviour meaning it is not a smooth plane at all. Instead when we act our experienced landscape may be able to shift seemingly abrupt and random into a totally new shape. And whether the new shape is better or worse is totally unpredictable from how we felt our action should play out?*
+
+> *At least I highly suspect we have to seriously assert the following when we reason about how to interact with our experienced reality. Our evaluation of "pain" is not in a form that allows us to compare it, nor to compose it, in any quantifiable unit to apply reasoning in some mathematical form. Comparing Pain with Pain and Wellbeing with Wellbeing is probably not a transitive operation! Going from bad to worse can take us to a "better" place. And going from Good to Better can take us to a "worse" place. And our task becomes how to model Good and Bad in a way that still allows us to apply reason to our experienced reality. Just removing "the bad" is not a sufficient reason to act to make it happen. We need a better model of the relation between our actions and how we experience the outcome bot individually and as a collective.*
+
+> *...*
+
+{% endraw %}

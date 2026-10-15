@@ -1,0 +1,48 @@
+﻿Could we imagine it is possible to make a dedicated DAW “computer” that boots really quickly and runs some commercially available DAW and plug ins?
+
+	==> Also see “Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?”
+	==> Also see “Todo: Darwinet Meta Value Model - Consider to implement a MIV in a "include <os>" bootable microservice?"
+
+1) Consider what operating systems we can use for different commercial DAWs?
+
+	==> Consider Windows 10 DAWs?
+	==> Consider MAC OS DAWs?
+
+		==> Consider to try if they run on Hackintosh OS?
+		...
+
+	==> Consider Linux DAWs?
+	...
+
+2) Consider what parts of the operating system we require to run popular commercial DAWs?
+
+	==> Consider some of the Tracktion DAWS (
+
+		==> Consider the free T6 DAW (https://www.tracktion.com/products/t6-daw)?
+		==> Consider the professional WAVEFORM (https://www.tracktion.com/products/waveform)?
+		==> Consider to use Linux versions (their DAWS seem to run MAC OS, Windows and Linux)?
+		...
+
+	==> Consider apple garageband?
+
+		==> Q: Are MAC based DAWs out of the question (as we can’t make MAC OS boot on our own hardware)?
+		==> Q: Or, can we use some available Hackintosh OS (for e.g., Raspberry Pi, Asus Tinkerboard or what have you)?
+		…
+
+3) Consider what Hardware we can imagine to use to build our own dedicated DAW “computer”?
+
+	==> Consider Raspberry Pi boards?
+	==> Consider Latte Panda boards?
+
+		==> Consider the coming Latte Panda Alpha may also run some Hackintosh OS?
+		...
+
+	==> Consider even Arduino Boards (although we should imagine they are actually to small to run commercial OS and DAW)?
+
+	==> Consider PC kit parts (e.g., gamers parts and desktop diy builder parts)?
+
+	…
+
+…
+
+Consider to delve into this idea to try and build a dedicated, fast booting, DAW “computer”?

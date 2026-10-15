@@ -1,0 +1,8 @@
+﻿Sätt samman en community för att börja ranka produkter mot varandra.
+
+* crowd sourced
+* app som från foto rankar produkter (Darwinet service och/eller databas)
+* kvalitetssystem ISO 9000 liknande (iterativ förbättring)
+* börja med likvärdiga produkter (bröd, el, bank, bensin...)
+
+Skickat från min iPhone

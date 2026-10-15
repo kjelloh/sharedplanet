@@ -1,0 +1,12 @@
+﻿It seems there are a lot of interesting discussions and work going on on the C++ language development that we may find by reading published information on 
+
+1) The ISO C++ organization seem to live at this web site (https://isocpp.org)?
+
+2) Consider to attend some C++ user meeting at some nice and warm location?
+
+	==> Next meeting in 2’nd of March seem to be in Florida (https://isocpp.org/blog/2016/03/cpp-user-group-meetings-in-march1)?
+
+…
+
+Consider to read this site for more information and wait for where any fall-meeting for C++ users may be held?
+...

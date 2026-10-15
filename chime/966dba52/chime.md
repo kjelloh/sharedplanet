@@ -1,0 +1,283 @@
+# Todo: Consider to document how I started and used JFrog Artifactory local server for cratchit conan package test?
+
+```#966dba52``` *As of 2025-01-26 19:04*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want to try to package my cratchit application as a conan package.
+
+0) Consider the bottom line experience from making conan package my cratchit app?
+
+==&gt; It seems the binary is actually in the cache?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % ls /Users/kjell-olovhogdahl/.conan2/p/cratcf9bb29b0a5fca/p/bin
+
+> cratchit
+
+
+
+**DAMN IT - HOW DO I GET THE BINARIES INSTALLED?!!!**
+
+> *It is totally opaque to me what conan actually does? I have worked for two days now and believed I successfully uploaded my package to my local Artifactory server. And then I also successfully downloaded it (using the 'conan install' command).*
+
+> *But then what? *  
+> *Where are the binaries? *  
+> *And why does it not build cratchit if the binaries are missing? *  
+> *How do I build the recipe in the cache?*  
+> *And why is my cratchit folder now littered with files that seems to be from conan?*  
+> *Arghh......*
+
+1) Consider the documentation by conan on how to setup a local server (https://docs.conan.io/2/tutorial/conan_repositories/setting_up_conan_remotes/artifactory/artifactory_ce_cpp.html )?
+
+2) Consider how I started the local JFrog Artifactory server to use for conan package up- and download?
+
+==&gt; It seems the 'docker run' command is able to download the docker container is it is not yet locally available?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % docker run --name artifactory -d -p 8081:8081 -p 8082:8082 releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:7.63.12  
+> Unable to find image 'releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:7.63.12' locally  
+> 7.63.12: Pulling from jfrog/artifactory-cpp-ce  
+> 9efb46863019: Download complete  
+> 706c71e90ea8: Download complete  
+> d2cb27346fe7: Download complete  
+> 3b9f8e6b9af7: Download complete  
+> 4f4fb700ef54: Download complete  
+> 71d0d13c52d8: Download complete  
+> fa2a7c683fcf: Download complete  
+> 342ecfd652e7: Download complete  
+> d5b3a1b9c305: Download complete  
+> d209516687a6: Download complete  
+> 4a41f03a2135: Download complete  
+> Digest: sha256:7e81e76ff0994df53c06ee2c27ac8852224f391003bc01511f7d30148e8cb571  
+> Status: Downloaded newer image for releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:7.63.12  
+> 5f8bfd63a39c4f6e92e4b6e3b87ac8f019c1b7a1dae4bc371ebacacea720d039
+
+==&gt; It seems I need to do 'conan remote add' to make conan know about the server?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan remote add artifactory http://localhost:8081/artifactory/api/conan/conan-local  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan remote login artifactory admin -p password  
+> ERROR: Wrong user or password. &#91;Remote: artifactory&#93;
+
+==&gt; It seems conan provides the password for login in the request (bad security)?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan remote login artifactory admin -p cYjnuk-vimxed-3retfu  
+> Changed user of remote 'artifactory' from 'None' (anonymous) to 'admin' (authenticated)  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit %
+
+3) Consider how I can use 'conan upload' to upload my cratchit package to my local server?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan upload cratchit -r=artifactory  
+> Found 1 pkg/version recipes matching cratchit in local cache
+
+> **======== Uploading to remote artifactory ========**
+
+> **-------- Checking server existing packages --------**  
+> cratchit/0.6: Checking which revisions exist in the remote server
+
+> **-------- Preparing artifacts for upload --------**  
+> cratchit/0.6: Compressing conan_sources.tgz  
+> cratchit/0.6:a93d044787578866d220ff2a044cff1b5cc74811: Compressing conan_package.tgz
+
+> **-------- Uploading artifacts --------**  
+> cratchit/0.6: Uploading recipe 'cratchit/0.6#b30bcbc29f0f77618308bf9f2c27ce1f' (1.3MB)  
+> cratchit/0.6: Uploading package 'cratchit/0.6#b30bcbc29f0f77618308bf9f2c27ce1f:a93d044787578866d220ff2a044cff1b5cc74811#36b44190424f697b43c28c2967407300' (581.5KB)  
+> **Upload completed in 0s**
+
+> **-------- Upload summary --------**  
+> **artifactory**  
+> **cratchit/0.6**  
+> **revisions**  
+> **b30bcbc29f0f77618308bf9f2c27ce1f (Uploaded)**  
+> **packages**  
+> **a93d044787578866d220ff2a044cff1b5cc74811**  
+> revisions  
+> **36b44190424f697b43c28c2967407300 (Uploaded)**
+
+4) Consider the conan command to actually download and 'consume' my cratchit package?
+
+==&gt; It seems to actually test that download works I must 'conan remove' anything that is already installed in the cache (https://docs.conan.io/2/tutorial/conan_repositories/uploading_packages.html )?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan --help
+
+> **Consumer commands**  
+> cache Perform file operations in the local cache (of recipes and/or packages).  
+> config Manage the Conan configuration in the Conan home.  
+> graph Compute a dependency graph, without installing or building the binaries.  
+> inspect Inspect a conanfile.py to return its public fields.  
+> install Install the requirements specified in a recipe (conanfile.py or conanfile.txt).  
+> list List existing recipes, revisions, or packages in the cache (by default) or the  
+> remotes.  
+> lock Create or manage lockfiles.  
+> pkglist Several operations over package lists  
+> profile Manage profiles.  
+> remote Manage the remote list and the users authenticated on them.  
+> remove Remove recipes or packages from local cache or a remote.  
+> search Search for package recipes in all the remotes (by default), or a remote.  
+> version Give information about the Conan client version.  
+> workspace Manage Conan workspaces (group of packages in editable mode)
+
+> **Creator commands**  
+> build Install dependencies and call the build() method.  
+> create Create a package.  
+> download Download (without installing) a single conan package from a remote server.  
+> editable Allow working with a package that resides in user folder.  
+> export Export a recipe to the Conan package cache.  
+> export-pkg Create a package directly from pre-compiled binaries.  
+> new Create a new example recipe and source files from a template.  
+> source Call the source() method.  
+> test Test a package from a test_package folder.  
+> upload Upload packages to a remote.
+
+> **Type "conan &lt;command&gt; -h" for help**  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan remove cratchit  
+> Found 1 pkg/version recipes matching cratchit in local cache  
+> Remove the recipe and all the packages of 'cratchit/0.6#7113fb5509bff9ad7867a97412235b80'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#6942926a7deb7193d44676f9868344ee'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#3512590659d9f0bf1e14b768cc16f1cc'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#8e56ec2f6e66663c87395abdc466399d'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#144b22c162413ad43b0fdbb6e282dfd4'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#78d896506a8898705e42b606463da71d'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#11c7fe92f27c7f14cb6853e9bdd79380'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#f9f8f3c5eb9744162ebd086296dcb302'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#793209138829eb84964fa245749af78a'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#3dbb1c4287cb7560e5214e1f58b9255e'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#314aa6c19b623d62a0b0aee55bbe4d19'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#b9b9abb9865c65d3d398c6931e2eac69'? (yes/no): yes  
+> Remove the recipe and all the packages of 'cratchit/0.6#b30bcbc29f0f77618308bf9f2c27ce1f'? (yes/no): yes  
+> Remove summary:  
+> **Local Cache**  
+> **cratchit/0.6#7113fb5509bff9ad7867a97412235b80: Removed recipe and all binaries**  
+> **cratchit/0.6#6942926a7deb7193d44676f9868344ee: Removed recipe and all binaries**  
+> **cratchit/0.6#3512590659d9f0bf1e14b768cc16f1cc: Removed recipe and all binaries**  
+> **cratchit/0.6#8e56ec2f6e66663c87395abdc466399d: Removed recipe and all binaries**  
+> **cratchit/0.6#144b22c162413ad43b0fdbb6e282dfd4: Removed recipe and all binaries**  
+> **cratchit/0.6#78d896506a8898705e42b606463da71d: Removed recipe and all binaries**  
+> **cratchit/0.6#11c7fe92f27c7f14cb6853e9bdd79380: Removed recipe and all binaries**  
+> **cratchit/0.6#f9f8f3c5eb9744162ebd086296dcb302: Removed recipe and all binaries**  
+> **cratchit/0.6#793209138829eb84964fa245749af78a: Removed recipe and all binaries**  
+> **cratchit/0.6#3dbb1c4287cb7560e5214e1f58b9255e: Removed recipe and all binaries**  
+> **cratchit/0.6#314aa6c19b623d62a0b0aee55bbe4d19: Removed recipe and all binaries**  
+> **cratchit/0.6#b9b9abb9865c65d3d398c6931e2eac69: Removed recipe and all binaries**  
+> **cratchit/0.6#b30bcbc29f0f77618308bf9f2c27ce1f: Removed recipe and all binaries**  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan cache path cratchit/0.6  
+> ERROR: Recipe 'cratchit/0.6' not found
+
+==&gt; It seems the command to use is 'conan install' with arguments to what remote server to use.
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan install --requires cratchit/0.6 -r=artifactory
+
+> **======== Input profiles ========**  
+> **Profile host:**  
+> &#91;settings&#93;  
+> arch=armv8  
+> build_type=Release  
+> compiler=apple-clang  
+> compiler.cppstd=gnu17  
+> compiler.libcxx=libc++  
+> compiler.version=16  
+> os=Macos
+
+> **Profile build:**  
+> &#91;settings&#93;  
+> arch=armv8  
+> build_type=Release  
+> compiler=apple-clang  
+> compiler.cppstd=gnu17  
+> compiler.libcxx=libc++  
+> compiler.version=16  
+> os=Macos
+
+> **======== Computing dependency graph ========**  
+> cratchit/0.6: Not found in local cache, looking in remotes...  
+> cratchit/0.6: Checking remote: artifactory  
+> cratchit/0.6: Downloaded recipe revision b30bcbc29f0f77618308bf9f2c27ce1f  
+> **Graph root**  
+> **cli**  
+> **Requirements**  
+> **cratchit/0.6#b30bcbc29f0f77618308bf9f2c27ce1f - Downloaded (artifactory)**  
+> **lua/5.4.4#819e5ca314a59367413e0ba6c9581325 - Cache**
+
+> **======== Computing necessary packages ========**  
+> **Requirements**  
+> **cratchit/0.6#b30bcbc29f0f77618308bf9f2c27ce1f:a93d044787578866d220ff2a044cff1b5cc74811#36b44190424f697b43c28c2967407300 - Download (artifactory)**  
+> **Skipped binaries**  
+> **lua/5.4.4**
+
+> **======== Installing packages ========**
+
+> **-------- Downloading 1 package --------**  
+> cratchit/0.6: Retrieving package a93d044787578866d220ff2a044cff1b5cc74811 from remote 'artifactory'  
+> **cratchit/0.6:** **Package installed a93d044787578866d220ff2a044cff1b5cc74811**  
+> cratchit/0.6: Downloaded package revision 36b44190424f697b43c28c2967407300
+
+> **======== Finalizing install (deploy, generators) ========**  
+> **cli:** **Generating aggregated env files**  
+> cli: Generated aggregated env files: &#91;'conanbuild.sh', 'conanrun.sh'&#93;  
+> **Install finished successfully**  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit %
+
+5) Consider what I get from a conan package server is a 'recipe' that I later need to 'build' (https://docs.conan.io/2/tutorial/conan_repositories/setup_local_recipes_index.html )?
+
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan remove cratchit -c  
+> Found 1 pkg/version recipes matching cratchit in local cache  
+> Remove summary:  
+> **Local Cache**  
+> **cratchit/0.6#b30bcbc29f0f77618308bf9f2c27ce1f: Removed recipe and all binaries**  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan list cratchit  
+> **Local Cache**  
+> **ERROR: Recipe 'cratchit' not found**  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit % conan install --requires cratchit/0.6 -r=artifactory --build=missing
+
+> **======== Input profiles ========**  
+> **Profile host:**  
+> &#91;settings&#93;  
+> arch=armv8  
+> build_type=Release  
+> compiler=apple-clang  
+> compiler.cppstd=gnu17  
+> compiler.libcxx=libc++  
+> compiler.version=16  
+> os=Macos
+
+> **Profile build:**  
+> &#91;settings&#93;  
+> arch=armv8  
+> build_type=Release  
+> compiler=apple-clang  
+> compiler.cppstd=gnu17  
+> compiler.libcxx=libc++  
+> compiler.version=16  
+> os=Macos
+
+> **======== Computing dependency graph ========**  
+> cratchit/0.6: Not found in local cache, looking in remotes...  
+> cratchit/0.6: Checking remote: artifactory  
+> cratchit/0.6: Downloaded recipe revision b30bcbc29f0f77618308bf9f2c27ce1f  
+> **Graph root**  
+> **cli**  
+> **Requirements**  
+> **cratchit/0.6#b30bcbc29f0f77618308bf9f2c27ce1f - Downloaded (artifactory)**  
+> **lua/5.4.4#819e5ca314a59367413e0ba6c9581325 - Cache**
+
+> **======== Computing necessary packages ========**  
+> **Requirements**  
+> **cratchit/0.6#b30bcbc29f0f77618308bf9f2c27ce1f:a93d044787578866d220ff2a044cff1b5cc74811#36b44190424f697b43c28c2967407300 - Download (artifactory)**  
+> **Skipped binaries**  
+> **lua/5.4.4**
+
+> **======== Installing packages ========**
+
+> **-------- Downloading 1 package --------**  
+> cratchit/0.6: Retrieving package a93d044787578866d220ff2a044cff1b5cc74811 from remote 'artifactory'  
+> **cratchit/0.6:** **Package installed a93d044787578866d220ff2a044cff1b5cc74811**  
+> cratchit/0.6: Downloaded package revision 36b44190424f697b43c28c2967407300
+
+> **======== Finalizing install (deploy, generators) ========**  
+> **cli:** **Generating aggregated env files**  
+> cli: Generated aggregated env files: &#91;'conanbuild.sh', 'conanrun.sh'&#93;  
+> **Install finished successfully**  
+> kjell-olovhogdahl@MacBook-Pro ~/Documents/GitHub/cratchit %
+
+...
+
+{% endraw %}

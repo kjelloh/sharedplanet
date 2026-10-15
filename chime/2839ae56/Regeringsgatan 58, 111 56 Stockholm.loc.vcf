@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.9.5//EN
+N:;;;;
+item1.ADR;type=HOME;type=pref:;;Regeringsgatan 58;Stockholm;Stockholms län;111 56;Sverige
+item1.X-ABADR:SE
+item2.URL;type=pref:http://maps.apple.com/?lsp=6489&sll=59.335726\,18.067945&q=59.335726\,18.067945
+item2.X-ABLabel:Kart-URL
+X-ABUID:CECF6D50-76D8-435E-BC8A-A5B21D1E3E3D:ABPerson
+END:VCARD

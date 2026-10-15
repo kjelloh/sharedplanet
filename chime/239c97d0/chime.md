@@ -1,0 +1,38 @@
+# Todo: Meh and Tha Web meta-searching - Consider how I can imagine to infer web search patterns to find similar (or same) products sold on US web sites on European or Scandinavian ones?
+
+```#239c97d0``` *As of 2019-07-17 12:51*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I often have the "problem" of finding alternative sourcing of products from links to US sites where I need to find the same or similar ones "closer to home", i.e., some European or Scandinavian vendor.
+
+1) Consider what I imagine I can do with Meh and Tha to infer a search pattern from a web url to a product and then use that pattern to find the same or similar product else-where?
+
+> *So the idea here is to use the meta-layering and infer operator of the Meh language and Tha model to "read" data from an URL to some product and then infer a search pattern (a meta value stack) to find the same or similar product on other locations on the web. I can imagine two ways of my head to do this.*
+
+> *The first one is to "hard code" what data to look for in the source product data. Things like the product heading (the name and description) and perhaps the list of features and possibly some images of the product? Then infer a structure of data types that capture this data. That is, we want to infer the structure of types and the types themselves in such a way that if you feed the captured data, we can think of this as "the instance" of the product we are searching for, to the constructors we get the product we are looking for. Now, with the inferred types and data structure we will have a way of matching target products by harvesting its data and see if we can instantiate the original product from it. Or to put it another way, is there a way to infer the same types and data structure from the target product as from the source product we are looking for.*
+
+> *If the correlation between the source and target product is high when matching their inferred types and data structure as well as the data (text and images) we feed into it to instantiate the product web page, then we can treat this is as these two product web pages being "similar" products regarding the criteria we are intersted in.*
+
+> *So, for example, let's assume we are looking for a European source of a US Amazon provider of plastic moulds to make cement stacking bricks?*
+
+> ![](<Screenshot 2019-07-17 at 12.05.22.png>)
+
+> *A product add on US Amazon for plastic moulds*
+
+> *I imagine we can hard-code a data structure with the heading, the price, the vendor and the bullet list of features as part of the structure? Now this may be how Amazon web pages for this product looks like. So we should not be concerned with the exact topology of the web page data. More about finding these components. Regardless of whether this kind of product is advertised on Amazon, eBay or Aliexpress we should feel confident that the heading, the price, the vendor and the list of features is there in some form or another?*
+
+> *Secondly I imagine two products are similar, or even the same, if there is a high correlation with the words used in the text between the two products? If we imagine we don't care about common neutral words and just match on the special nouns and verbs that we suspect are used to identify the product, then a simple correlation count of same words used could be enough?*
+
+> *If I manually go to the german Amazon site and search for the heading "9 Plastic Molds for Concrete Plaster Wall Stone Cement Tiles MOULD ABS #W02" I get the result "*Your search "9 Plastic Molds for Concrete Plaster Wall Stone Cement Tiles MOULD ABS #W02" was automatically translated into "9 kunststoffformen für beton putz mauerstein zementfliesen schimmel abs # w02".*". But the listed products that amazon search engine proposes to me does not include the forms I am looking for. Shortening to search for "9 Plastic Molds for Concrete Plaster Wall Stone Cement Tiles" did not help.*
+
+> *...*
+
+> *The second one is to imagine some of deep learning that we feed products we know to correlate and have the network figure out a Tha model we can use to infer search patterns? Now this tangents my other idea to leverage deep learning into the Tha idea of meta layers. So that the network actually trained is inferred in a meta layer stack defined by Tha. So instead of having a deep network "figure out" meta layering itself within a single instance, we actually impose a meta layer structure and apply learning to networks separated by identified separate meta value networks. The idea here is to propose that if we train the network to both identify meta layers (networks about networks) as well as these networks themselves we may get more stability in compartmentalise different learned knowledge and prevent new learning to destroy old ones? *
+
+> *...*
+
+...
+
+{% endraw %}

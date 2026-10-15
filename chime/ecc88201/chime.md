@@ -1,0 +1,64 @@
+# Todo: House Build - Consider a DIY "Steller Solid Hardwood Flooring" by mounting floating wood floor made from ordinary pine or fir boards inter-connected underneath with aluminium U-profiles?
+
+```#ecc88201``` *As of 2019-07-31 22:43*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I saw a youtube video about a product where pure wood floors were made not to crack by having them float but interconnected with a hidden underneath binding system.
+
+1) Consider this youtube video "I was BLOWN AWAY by this innovation in REAL Hardwood Floors!" (<https://www.youtube.com/watch?v=hIqOgqpNLXw> )?
+
+2) This seems to be the home site for US based Steller Solid Hardwood Flooring (<http://www.stellerinnovations.com> )?
+
+3) Consider we can DIY a similar design by routing grooves in plain fir or pine boards for an aluminium U-profile to interconnect boards for a floating floor?
+
+![](IMG_4674.jpeg)
+
+*DIY design for a floating wood floor from U-profile connected boards*
+
+==&gt; Consider it seems hard to find U-profiles of sufficient width (Bauhaus widest are still only 20 mm and then also 20 deep)
+
+> *It seems it may be hard to find aluminium profiles of sufficient width and still not to deep to use for binding the boards together? If I use 15 mm boards I need the profiles to not be deeper than say 7 mm to get optimal grip but still not reduce the integrity of the board too much.*
+
+TODO: Find a way to bind the boards together from the underside as an alternative to U-profiles that does not seem to come in sufficient width and low depth
+
+4) Consider the cost of 10 square meters of a DIY floating wood floor from pine or fir boards (planks)?
+
+==&gt; It seems 10 square meters of 15x95 pine boards would amount to something like 11 piece x 10 m = 3300 SEK (330 SEK per square meter)
+
+![](<Screenshot 2019-07-31 at 21.51.37.png>)
+
+*Example of 15x95 pine boards would amount to *
+
+![](<Screenshot 2019-07-31 at 21.58.07.png>)
+
+*Example of prefab pine flooring for 200 SEK per square meter*
+
+![](<Screenshot 2019-07-31 at 22.04.14.png>)
+
+*Example of using laminated pine wood boards would come to around 210 SEK per square meter (plus work and DIY mounting materials)*
+
+![](<Screenshot 2019-07-31 at 22.06.27.png>)
+
+*Example of using facade fir boards as floor material would amount to 100 SEK per square meter (plus manual planing, routing and mount material)*
+
+NOTE: I suppose we should expect facade boards to be prone to warping (they are cut away from the core of wood and thus have asymmetric fibre rings)?
+
+4) Consider this Swedish article that seems to suggest to put the "core side" up or out when using boards for facade or flooring (<https://www.gysinge.com/article/1055/snickerivirke> )?
+
+![](module__201556-132428-229.jpeg)
+
+*An argument for putting the core side of board up to have it face wear and tear (as it will cup away from the core and the core will stand wear better) (<https://gysinge.blob.core.windows.net/moduleimages/originalsize/module__201556-132428-229.jpg?v=2> )*
+
+> *"På t ex en utomhuspanel skall kärnsidan vara vänd utåt för att skydda panelen mot röta. På ett golv skall den hårda kärnsidan ligga uppåt för att inte golvet skall påverkas för mycket av slitage. Om kärnsidan ligger uppåt kupar sig därtill golvet åt rätt håll och du slipper bräder som skålar sig. Stående årsringar ger samma goda effekt. Sådant är viktigt att säga till om när du t ex beställer virke till dina skurgolv. "*
+
+==&gt; It seems the article argues for flooring fir wood is "best"?
+
+> *"Gran är känsligare för röta och svamp, eftersom virket är ganska poröst. Som golvträ inomhus är det däremot ett ypperligt material som ger ljusa och vackra skurgolv."*
+
+> *"**Furu är motståndskraftigt mot röta, eftersom det innehåller mycket kåda. Kådrik, tätvuxen fura är ett utmärkt material till t ex fönster och andra utsatta delar på ett hus.**"*
+
+...
+
+{% endraw %}

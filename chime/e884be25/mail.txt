@@ -1,0 +1,45 @@
+﻿I stumbled on a refernce to the Codea app in an interview with Sophie Wilson (see below) and it seesm to be worth to follow up on?
+
+1) Consider this interview with Sophie Wilson ”Inventor Sophie Wilson: Schools Shouldn't Be Responsible for Getting More Women Into Tech” on teaching and gender gap in technology (https://www.youtube.com/watch?v=wYNaFKmzpo4)
+
+2) The Codea App seems to live here (https://codea.io)?
+
+		==> It seems to be based on the Lua language (http://www.lua.org/about.html)?
+
+3) Consider how it comes Apple allows this app that runs code on an iPAD (where amusingly Apple do not allow other code than the approved applications may run on the platform)?
+
+	==> This seem to be a resent blog post on an Issue with Codea regarding sharing of interpreted code (https://twolivesleft.com/wordpress/news/codea-and-code-sharing/)?
+
+	==> This seem to be an article on how Codea got approved as programming app on iPad (https://gigaom.com/2012/01/11/ipad-has-potential-as-programming-teaching-tool-if-apple-would-let-it/)?
+
+”Codea did make it through the App Store verification process — Apple somewhat relaxed rules last year that stated apps cannot contain any non-Apple executable code. Now the rule limits only downloadable executable code. Other coding apps have been approved too, like Textastic, For: i and Koder."
+
+	==> Consider this Apple Developers Program clause 3.3.2 ”Sample Apple Developer Program Requirements: APIs and Functionality:” (https://developer.apple.com/programs/information/Apple_Developer_Program_Information_8_12_15.pdf)?
+
+”Except as set forth in the next paragraph, an Application may not download or install executable code. Interpreted code may only be used in an Application if all scripts, code and interpreters are packaged in the Application and not downloaded. ..."
+
+		==> Consider this is a newer (or alternative) document saying the same thing (https://developer.apple.com/programs/ios/information/iOS_Program_Information_4_3_15.pdf)?
+		...
+
+	==> Consider this Blogpost (http://www.gamasutra.com/blogs/KerryJones/20130604/193593/iOS_interpreted_code.php)?
+
+	==> Consider this discussion thread ”New App Store Guidelines about downloading code?” (https://forums.developer.apple.com/thread/52161)?
+
+4) Consider we could take the ”Codea Idiom” to build a C++ IDE on iPad embedding Emscripten to run the code in a web-browser?
+
+	==> Consider this tutorial of the Codea user interface allowing for tough interaction with the source code (https://www.youtube.com/watch?v=gTuzcgf_NyA)?
+	==> Can we do the same for C++ code (setting source code properties like class concepts or click-and-select parameter values for known function calls)?
+	... 
+
+5) Consider what these Apple rules about ”executable code” would mean to Darwinet Distributed Computing abilities?
+
+	==> It is ok if the Darwinet App being invoked only executes pre-compiled functionality (Darwinet composes functionality from Apple approved App functionalities)?
+	==> Still - It seems such compositions still could be redeemed as being ”downloaded code” (as in being provided by the MIV in a Darwinet Domain)?
+	...
+
+…
+
+Consider to learn more about this app and possibly try it out to see what we can learn and possibly re-use for other applications for iOS?
+...
+
+

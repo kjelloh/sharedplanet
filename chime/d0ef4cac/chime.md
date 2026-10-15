@@ -1,0 +1,16 @@
+# Todo: Write about dethroning reasoning as the top continuous process
+
+```#d0ef4cac``` *As of 2015-08-26 00:09*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be that reasoning is in fact a process that occurs in snippets but our consciousness creates the illusion that it is continuos and in charge? Could it be that in the same way we come to be is dividuals our reasoning is also divided up between those dividuals.
+
+1) Could consciousness create an image of the world more similar to how the eye works. We experience we see a large view in focus at all time. But in fact we only see sharp in the focus point and all the rest is created by the brain based on memory and experience. We even have a spot where we are totally blind but we are blind to that spot. What if Consciousness works in the same way. We only think sharp about the thoughts in focus and the brain creates a feel that we cover a larger area.  
+2) Reasoning takes place by each dividual that pops up to relate with the reasoning process. In the switch between dividuals the consciousness is actually black but we are unaware of that. Switching could be when we wait for the unconsciousness to propose a response to our Conscious verdict in the previous reasoning step?  
+3) The process described in another Todo where reasoning takes place as a ping-pong game of unconscious proposal and conscious response may be the one to propose also for reason switching? Could it even be so that the unconscious response actually comes with the consciousness created to deal with the proposal? This is at least a neat model. If consciousness is provided by the brain to deal with current affairs this could be true also for internal affairs? Each time the unconscious requires conscious interaction it actually creates conscious for that very purpose? Neat idea!
+
+Consider to relate this thinking to known science and tests of consciousness?
+
+{% endraw %}

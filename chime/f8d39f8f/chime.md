@@ -1,0 +1,25 @@
+# Todo: Programming - Consider to design the C++11 Protocol Framework to allow for multiple Session and Links?
+
+```#f8d39f8f``` *As of 2016-02-22 12:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Many protocols uses multiple sessions and links (e.g. FTP master and file sessions). For a Protocol Framework to be able to model and implement such protocols the Framework must allow multiple “lower” layers in the stack (e.g. Application uses multiple Session layers and Session layer uses multiple network and link layers)?
+
+1) Consider to study Libtorrent to see how many simultaneous Peer connections each node uses and see what is required to model this in the protocol Framework?
+
+2) Consider to study and try out to build an FTP client to see what is required to handle both the master and the file transfer channels?
+
+3) What would we require to enable a Protocol FSM to act on events from multiple “Downstack” actors?
+
+==&gt; Can we imagine downstack actors to be indexed in an array?  
+==&gt; Do we need to be able to model downstack actors of different types (e.g. FTP command session and file transfer channel)?  
+...
+
+…
+
+Consider to elaborate on this requirement for each Stack actor to allow using multiple lower actors to handle multiple sessions, ratings and connections?  
+...
+
+{% endraw %}

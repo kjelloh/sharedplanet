@@ -1,0 +1,18 @@
+# Todo: Consider we need to start "Mind the Model" in any rational reasoning about human experienced reality?
+
+```#a606d86b``` *As of 2020-01-19 14:07*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+To be able to reason we need to internally represent a model of reality to run the "reasoning" in and thus we need to pay attention to where we get the model from!
+
+> *The basic idea here is that often, if not always, all argumentations I witness just assumes that the observed "facts" or "premises" are just "whats is". But that is not true. To be able to reason you need a model of the thing you reason about. Like to calculate the speed of a car after having accelerated a certain time you need to model reality using the physical laws of location, force and energy and then perform computation as defined by the mathematics to get the quantity of "the speed" and then assert that this quantity maps isomorphically back to our experience of the speed of the car.*
+
+> *Now, I propose we should we should realise what we call "reality" is our experience of whatever is out there and thus any experience we have is a model of some sort of some aspect of what is out there. And this approach is in itself a model of how ourselves as observers making sense of things through these models. But by being aware of the models, "Mind the Models" we can in any discussion about "Truth" also step out at discuss what is "true" about our model and what our model is able to conclude from us mapping reality to the model and reason about reality in this way.*
+
+> *Scott Adams would say that we view reality through a "filter". I would say we experience a model of reality.*
+
+> *...*
+
+{% endraw %}

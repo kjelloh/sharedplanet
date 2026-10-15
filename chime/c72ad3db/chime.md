@@ -1,0 +1,16 @@
+# Todo: For fun, design some miljon citifies in Sweden for free immigration
+
+```#c72ad3db``` *As of 2015-07-27 20:17*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Just as a thought experiment, design a project to build, from scratch, some miljon citizen cities in Sweden for free immigration.
+
+1) How large may a 10 miljon people city occupy? (https://sv.wikipedia.org/wiki/Lista_över_världens_största_storstadsområden lists density for existing large cities from Manila with 11 miljon on 636 square Km to 19 miljon on 17 405 square km.) If we pick 5000 square Km this is 70x70 Km.(http://www.fcl.ethz.ch/tag/high-density-housing/)  
+2) Where may we build it?  
+3) How do we provide for the city (food, energy, waste, goods and services)  
+4) How do we finance this sustainably?  
+5) How do we interface this city to the rest of Sweden?
+
+{% endraw %}

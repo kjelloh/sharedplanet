@@ -1,0 +1,16 @@
+﻿Many protocols uses multiple sessions and links (e.g. FTP master and file sessions). For a Protocol Framework to be able to model and implement such protocols the Framework must allow multiple “lower” layers in the stack (e.g. Application uses multiple Session layers and Session layer uses multiple network and link layers)?
+
+1) Consider to study Libtorrent to see how many simultaneous Peer connections each node uses and see what is required to model this in the protocol Framework?
+
+2) Consider to study and try out to build an FTP client to see what is required to handle both the master and the file transfer channels?
+
+3) What would we require to enable a Protocol FSM to act on events from multiple “Downstack” actors?
+
+	==> Can we imagine downstack actors to be indexed in an array?
+	==> Do we need to be able to model downstack actors of different types (e.g. FTP command session and file transfer channel)?
+	...
+
+…
+
+Consider to elaborate on this requirement for each Stack actor to allow using multiple lower actors to handle multiple sessions, ratings and connections?
+...

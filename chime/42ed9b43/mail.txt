@@ -1,0 +1,6 @@
+﻿
+1) Consider the youtube video "Chris Lattner: The Future of Computing and Programming Languages | Lex Fridman Podcast #131" (https://youtu.be/nWTvXbQHwWs?t=3988 <https://youtu.be/nWTvXbQHwWs?t=3988> )?
+
+2) Consider the seemingly MLIR home at the LLVM site (https://mlir.llvm.org <https://mlir.llvm.org/> )?
+
+...

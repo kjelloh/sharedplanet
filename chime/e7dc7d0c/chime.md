@@ -1,0 +1,22 @@
+# Todo: Write about that total freedom has no meaning
+
+```#e7dc7d0c``` *As of 2015-08-13 00:09*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+We tend to think that the more freedom we have, the happier we will get. This turns out to be totally untrue. What we want is freedom within restrictions.
+
+Think about a very rich person. For this person buying something is no achievement. There are no prioritizing, no sacrifice, no lining and thus no victory when the item is bought. I can still remember how much I treasured my first car, my first little sailing boat, my first synthesizer. Even the piece of chocolate and the comic magazine I bough to celebrate each exam at university. I earned it. I saved money to be able to enjoy these things. That made them mean more.
+
+Also, a soccer game needs rules to restrict what you math or not may do. Scoring within these rules is hard but makes the effort worth while. Things you get easy or does not have to work for does not give you the same pleasure. You need restrictions to feel free. Otherwise freedom has no value.
+
+from this insight one may argue.
+
+1) The restrictions of this planet could actually mean that life in a sustainable way would mean much more to us than life currently does. When we do not see the limits we can’t treasure them. When we don’t treasure them the things we strive for looses meaning. We are wired to treasure and celebrate the good in life when we get it within the restrictions of what is possible and allowed.  
+2) We need to respect and share with others. This is a restriction on what we can and may do. When we can enjoy life within the limits of not harming others our life becomes more meaningful. How wonderful it may be to buy that iPhone it just would feel so much better if we could truly thank those that made the iPhone possible knowing that no-one was harmed and no environment was scarified in the process. But we are left in the void. We know nothing and can than no-one. And on top of that we have the disturbing feeling people and future generations has actually been harmed in the process. And we had no saying in that decision. We are left only with the decision to buy or not buy when it is already to late. The freedom to buy anything we want thus losses very much in value.  
+3) Research shows that freedom to change ones mind reduces the value we put into the things we decide to buy. If we are forced to keep what we buy we actually synthesize happiness for that decision. Thus we should strive to always burn our bridges when we buy things, not looking back to see if we should change our minds. The freedom to change our minds makes our lives loose value.  
+4) Freedom to live alone makes us lonely. The restrictions we must obey to live with others makes us treasure loneliness more. If we can be lonely ot only when we want to but always, this freedom loses value. It is no longer a choice  
+...
+
+{% endraw %}

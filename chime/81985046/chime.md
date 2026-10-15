@@ -1,0 +1,52 @@
+# Todo: Consider to initiate the "Yours Emergence Society" that tries to use acts-in-faiths as forces to make a "better" society emerge?
+
+```#81985046``` *As of 2016-03-07 16:30*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a way forward to try an initiate a community that tries to use attentive acts-in-faiths to have a “better” society emerge?
+
+1) The core idea of this society would be to find believable “truths” that makes us want to act in a way that is sustainable “good” for us?
+
+2) A core idea of this society is that “we are able to have faith in almost any truth we like” and that is the strength of humanity?
+
+==&gt; Consider to point out this correlates with Yuval Harari “work efficiently and in large number in a believed story”
+
+3) The Society should recognise Life contains primarily on Self-orgnaizing Systems driven by more or less constrained random events?
+
+==&gt; We need to recognise that the “will” collective and divine forces (e.g. God, Destiny, The Market, A Company, A State) are in fact our way of interacting with such random driven self-organising systems?
+
+4) Consider to discuss that each “step” to a “better” society may be intransitive
+
+==&gt; See “Todo: Deny that "progress" is the correct word to describe the goal of change of society”
+
+==&gt; See “Larry Temkin on Transitivity” (<http://philosophybites.com/2015/07/larry-temkin-on-transitivity.html>)
+
+*“Larry Temkin questions the assumption that transitivity is a feature of our moral judgements - his challenge has come to be known as 'Temkin's Paradox'. If he's right, then many assumptions that philosophers and others make about rationality need revising, with far-reaching consequences for practical ethics.”*
+
+==&gt; See “Todo: Write how the Super Curious "nomad" understand change in states of existence are not transitive”
+
+==&gt; See “Todo: Write why worse plus worse may end up better”
+
+==&gt; See “Todo: Write about Psychic-paper money transaction relations are not transitive”
+
+==&gt; See “Todo: Write about mathematical problems of iterating society to better state of affairs”
+
+5) Find a catchy name for the movement (community)?
+
+==&gt; "Yours Emergence Society”?
+
+==&gt; “Emsociety Initiative”?
+
+==&gt; “Intransitive Progress Movement”?
+
+...
+
+…
+
+Consider to define the basis of such a community and see if there is a way to make it come to life in a collaborative-culture (synthesis) way?
+
+...
+
+{% endraw %}

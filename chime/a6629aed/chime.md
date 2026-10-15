@@ -1,0 +1,34 @@
+# Todo: Consider to build a DIY Wifi Router based on the PFsense Linux based operating system and suitable SBC hardware?
+
+```#a6629aed``` *As of 2022-02-25 14:33*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Consider this youtube video "Routers Suck. Build Your Own Instead!" (<https://youtu.be/am7xT-zU1Q0> )?
+
+> *It seems though that I kind of should use an old PC to get the easy route to make it into a router?*
+
+> *Trying to use a Raspberry PI basically fails on having the "wrong" CPU and no installer provided by PFsense?*
+
+> *And the video does not seem to point to any resources on how to find a suitable "small" and dedicated hardware to build a low power small form factor routre using the PFsense operating system?*
+
+2) It seems PFsense products lives here (<https://www.pfsense.org> )?
+
+==&gt; It seems pfsense sell ready to go routers with pfsense installed?
+
+> ![](PastedGraphic-1.png)
+
+==&gt; It seems this is the hardware requirements (<https://www.pfsense.org/products/#requirements> )?
+
+> *"...**pfSense is based on FreeBSD...**"*
+
+3) It seems PFsense is aimed for AMD64 and thus is not readily installable on a RAspberry Pi (<https://raspberrytips.com/can-pfsense-run-on-raspberry-pi/> )?
+
+> *Even if FreeBSD runs well on Raspberry Pi and the pfSense source code is available, all pfSense releases are limited to the AMD64 architecture. There is no documentation or workaround to install it on a Raspberry Pi.*
+
+4) This seems to the BSD official hardware support page (<https://www.freebsd.org/releases/12.2R/hardware/> )?
+
+...
+
+{% endraw %}

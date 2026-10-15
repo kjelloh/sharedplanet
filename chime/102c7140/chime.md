@@ -1,0 +1,26 @@
+# Todo: Could we use, or are we already using, computer algorithms to affect what society that emerge from our actions?
+
+```#102c7140``` *As of 2015-12-14 12:10*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+In the face of human history being a second order chaotic system in which society is an emergent state of affairs, could we imagine using computer algorithms to better shape the society for our needs?
+
+1) Human collaboration drives are explained by memetics, post modernism or Game Theory as ideas being like an infectious parasite with no concern about human well fare.  
+2) The conclusion is then that society is the emergence in the second order chaotic system we call society as a result from our act-in-faith to these ideas.  
+3) These ideas infect us regardless of if what they make us do is good for us or not.  
+4) But now we have the internet that enables us to inexact also with computer algorithmic actors.  
+5) What play does the behavior of these computer algorithm actors in the emergence of Social Organisms and society as a whole?  
+6) Could we imagine to actively implement deep learning algorithms participate as actors with the goal to have a better society emerge (one that is actually beneficial to us)?  
+…
+
+Consider to delve deeper into this idea that computer algorithms already are actors in human collaborations and thus affects the mergence of society and Social Organisms? And further, knowing this, how can we deliberately apply computer algorithmic actors that acts in faith to our best (where we humans fail to do so)?
+
+a) What about human freedom (are we in fact more free in a society where we don’t suffer)?  
+b) If our current freedom does not make us act in a way that is beneficial to us - is this then in fact not freedom?  
+c) Current society forces us to labour and consume to be valuable citizens. What is freedom worth if we must choose to act in this narrow way?  
+d) Can Deep Learning Algorithms inject (infect us) with ideas that makes as choose to act-in-faith that is more beneficial to us (causing a better society emerge)?  
+...
+
+{% endraw %}

@@ -1,0 +1,14 @@
+# Todo: Write about that core-less and idea-driven is actually the same thing
+
+```#bb18a96e``` *As of 2015-08-10 08:51*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Any knowledge system we build (being it science, religion, social order or self image) are core-less in the sense that we must always base it on axioms. These axioms defines the boundary to the core-less center of the knowledge. In our own lives this corresponds to the ideas we decide to believe and have guide us. Thus our core-less selves are in fact ”filled” with the ideas we have instead of absolute truths.
+
+These ideas may be that we should follow Gods commands, strive for wealth and freedom, find ourselves, be honest, be good, be kind, fight for liberation or what have you. We simply adopt, trust or even reason ourselves into believing stuff and then apply that stuff in our decisions on what to do with our time here on earth.
+
+Consider to write about this duality between core-less and idea-driven life. Could it be that the empty core should be filled with an Idea about human life that we may actually call the religion of the future?
+
+{% endraw %}

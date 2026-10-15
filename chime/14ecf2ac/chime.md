@@ -1,0 +1,21 @@
+# Todo: Optimus Prime Model-Paths and Instance-Paths
+
+```#14ecf2ac``` *As of 2015-10-10 14:13*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be a good idea to use the terms ”Model Path” and ”Instance Path” for the IDs of M:s and I:s?
+
+1) The Model Path identifies a model node (defines properties and cardinality of instances of that model node)  
+2) The Instance Path identifies an Instance of a model node (e.g. a data type). Thus the Instance refers to the model node using a Model Path.  
+3) It is the Model Path node that defines instance cardinality of the referenced Model Node, not the actual Model Node itself.This is because each Node Pair of a Model Path corresponds to a relation between the actual Model Nodes they refer to. Thus, the Model Path is actually a path in the Model Graph of Model Nodes and Model Node Edges being model relations!  
+4) Thus, We have a Model Graph defining relations (edges) between Model Objects and an Instance Graph defining references (edges) between object instances! The Instance Graph is a ”map” of the current instance of the Model Graph!  
+…
+
+Elaborate on this idea and see if it holds water?
+
+a) Consider to compare this to definition (mode) and instance paths of Swedbank Testbench? Here the ”Model Graph” is the ”Interface” where each node is a Model Object (definition) that uses a Descriptor to define relation (edge) to another Model Object (definition)  
+b) Is there a way to refactor the Testbench ”interface” into Graphs (implemented using Boost Graph Library?) and thus make it into a more general way of defining data structures?
+
+{% endraw %}

@@ -1,0 +1,16 @@
+﻿Would it not be cool to embed ones Shared Planet Citizen id into a led-column that ”prints” the id when scanned with the eye or a camera (panorama mode)
+
+1) The led-column could be 8 leds.
+2) The column then generates each column of the digitized letters and digits of the id at some preferable rate.
+3) This technique is proved to work for commercials i bars. When one flickers the eye past the column the message is imprinted on the retina.
+4) We could imagine to generate the chars and digits so slow that it can be captured by a mobile camera in panorama mode?
+5) Consider to try it out with a Raspery Pi computer?
+6) Could we imagine an App that does the same trick?
+…
+
+Consider to elaborate on this idea and also to bulls this functionality into the SPC-App (hidden feature)?
+
+a) Could we then imagine to build a ”scanner” that is able to read the id when the code is ”swiped” before it?
+b) One could imagine using the camera on a computer screen to ”scan” the SPC-id?
+	==> One ”waves” the mobile running the SPC-app passed the camera of the computer screen and it identifies the id.
+...

@@ -1,0 +1,17 @@
+# Todo: Find out the amount of energy, labour and space required to feed and shelter all humanity
+
+```#241eae2d``` *As of 2015-08-25 14:23*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Is there a way to try and figure out how much energy, how much land how much labour (man hours) that would be required to feed and shelter all of humanity?
+
+a) The Amount of energy, labour and land to produce all the food.  
+b) The amount of land and energy to shelter all humanity.
+
+These figure would give a raw base on what is needed to keep humanity alive is descent conditions. All activities beyond these needs could be argued more or less optional. If all can live secured of food, water and shelter this could in fact be a quite descent life?
+
+This figure also defines in static physical terms in stead of dynamic monetary values what the ”cost” is. In this way we could avoid talking about the cost in monetary terms as such a figure varies depending on supply and demand and is as such not reliable?
+
+{% endraw %}

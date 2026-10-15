@@ -1,0 +1,15 @@
+﻿Could it be a fun idea to arrange and give some C++ Talks addressing interesting aspects for C/C++ developers?
+
+1) Consider a talk about C++ DSL for Protocol Implementation?
+
+2) Consider to talk about better-than-C C++ programming for Payment Terminal Development?
+
+3) Consider to talk about C++ for future multi-core programming using Resumable Co-routines?
+
+4) Consider to talk about C++ programming for run-time test of Payment System Processing?
+
+…
+
+Consider to delve into this idea to see if this would be a fun idea and something meaningful to try?
+…
+

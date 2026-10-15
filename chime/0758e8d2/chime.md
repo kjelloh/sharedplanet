@@ -1,0 +1,37 @@
+# Todo: What would it take to shrink my iPhone Storage to 10 GB?
+
+```#0758e8d2``` *As of 2016-02-21 18:00*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Consider to study what it would take to shrink my iPhone storage to 10 GB?
+
+1) I can’t imagine I access any large part of my 59 GB data on my iPhone?
+
+2) How much is just ripped CD:s?
+
+==&gt; Consider to remove them from my phone as I never listen to purchased music?
+
+3) How much is apps I never use?
+
+==&gt; Consider to uninstall all apps I never use?
+
+4) How much is video on my iPhone?
+
+==&gt; I watch only streamed video on my phone (consider to remove all stored video)?
+
+5) How much can I move to Dropbox and access (download) when I need it?
+
+==&gt; Consider to move images and music to Dropbox (if it is possible)  
+==&gt; What are my options for photos that apple seem to want to treat in their own ineffective echo system (Photo stream and Photo app format)?
+
+6) What other stuff do I have on my phone?
+
+==&gt; How may I remove “other stuff” I never use?  
+…
+
+Consider to look into this matter and also get a chance to get some organisation into my digital stuff (i.e. have an overview and backup)?  
+...
+
+{% endraw %}

@@ -1,0 +1,118 @@
+﻿Would it be a good idea to try and design a Boost C++ library to implement Web-protocols as defined using “RFC-style”?
+
+1) Consider if it is possible to design the library so that protocol implementations “look like” the requirements in corresponding RFC?
+
+2) Consider to use IMAP RFC 3501 as one reference (http://tools.ietf.org/html/rfc3501)?
+
+	“"Session" refers to the sequence of client/server interaction from
+   the time that a mailbox is selected (SELECT or EXAMINE command) until
+   the time that selection ends (SELECT or EXAMINE of another mailbox,
+   CLOSE command, or connection termination).”
+
+	==> Defines a Session as a sub-time-frame of a “Connection”?
+
+	“Characters are 7-bit US-ASCII unless otherwise specified.  Other
+   character sets are indicated using a "CHARSET", as described in
+   [MIME-IMT] and defined in [CHARSET].  CHARSETs have important
+   additional semantics in addition to defining character set; refer to
+   these documents for more detail.”
+
+	==> Suggests encoding aspects of streamed octets?
+	==> Suggests C++ code must express representation transforms in a easy-to-apply manner (e.g. 7-bit-octet-stream —> ASCII —> UTF16)?
+
+	“2.1.    Link Level
+   The IMAP4rev1 protocol assumes a reliable data stream such as that
+   provided by TCP.  When TCP is used, an IMAP4rev1 server listens on
+   port 143."
+
+	==> 2.1 suggests code that defines a data-Link tro use (which in turn suggests a Stack-idiom)?
+	==> In fact - any protocol (at least currently known) use a level of data-stream transmitting bit-streams?
+
+	“2.2.    Commands and Responses
+   An IMAP4rev1 connection consists of the establishment of a
+   client/server network connection, an initial greeting from the
+   server, and client/server interactions.  These client/server
+   interactions consist of a client command, server data, and a server
+   completion result response.”
+
+	==> Suggests a Session-layer of the Stack?
+	==> Suggests Client-server relation of the participants “messaging”?
+	==> Suggests Message-types exchanged.
+
+	“All interactions transmitted by client and server are in the form of
+   lines, that is, strings that end with a CRLF.  The protocol receiver
+   of an IMAP4rev1 client or server is either reading a line, or is
+   reading a sequence of octets with a known count followed by a line.”
+
+	==> Suggests Message encodings as Text-lines (character set undefined)?
+	==> Suggets encoding with ot without octet-count-prefix?
+
+“
+                   +----------------------+
+                   |connection established|
+                   +----------------------+
+                              ||
+                              \/
+            +--------------------------------------+
+            |          server greeting             |
+            +--------------------------------------+
+                      || (1)       || (2)        || (3)
+                      \/           ||            ||
+            +-----------------+    ||            ||
+            |Not Authenticated|    ||            ||
+            +-----------------+    ||            ||
+             || (7)   || (4)       ||            ||
+             ||       \/           \/            ||
+             ||     +----------------+           ||
+             ||     | Authenticated  |<=++       ||
+             ||     +----------------+  ||       ||
+             ||       || (7)   || (5)   || (6)   ||
+             ||       ||       \/       ||       ||
+             ||       ||    +--------+  ||       ||
+             ||       ||    |Selected|==++       ||
+             ||       ||    +--------+           ||
+             ||       ||       || (7)            ||
+             \/       \/       \/                \/
+            +--------------------------------------+
+            |               Logout                 |
+            +--------------------------------------+
+                              ||
+                              \/
+                +-------------------------------+
+                |both sides close the connection|
+                +-------------------------------+
+
+         (1) connection without pre-authentication (OK greeting)
+         (2) pre-authenticated connection (PREAUTH greeting)
+         (3) rejected connection (BYE greeting)
+         (4) successful LOGIN or AUTHENTICATE command
+         (5) successful SELECT or EXAMINE command
+         (6) CLOSE command, or failed SELECT or EXAMINE command
+         (7) LOGOUT command, server shutdown, or connection closed"
+
+		==> Suggests we should be able to define a state machine using this as input (and be able to map the code to this documentation)?
+
+3) Consider to use “IMAP4 Implementation Recommendations” for input to express variants and specialisations of IMAP interaction (http://tools.ietf.org/html/rfc2683)?
+
+	==> How may we express feature-switching and detection in C++ code?
+
+4) Consider to study “Simple Authentication and Security Layer (SASL)” to find how to express this feature as IMAP option in code (http://tools.ietf.org/html/rfc2222)?
+
+	“The Simple Authentication and Security Layer (SASL) is a method for
+   adding authentication support to connection-based protocols.  To use
+   this specification, a protocol includes a command for identifying and
+   authenticating a user to a server and for optionally negotiating a
+   security layer for subsequent protocol interactions.”
+
+		==> Suggests SASL to be a “layer” that may be added to a class of connection-based protocols?
+
+3) Consider C++ Template Expressions to enable defined protocol engines to be code-optimised (statically instantiated) by the compiler?
+
+4) Consider library design to be open to future hardware platforms with cheep large memory capacity and many CPU-Cores (512 or more)?
+
+	==> This is the correct prediction of future computer hardware traits when physical limitations prohibits higher clock frequency?
+
+…
+
+Consider to delve deeper into this idea to enable RFC-defined protocols to be implemented in code that resembles (or can be mapped) to documentation?
+...

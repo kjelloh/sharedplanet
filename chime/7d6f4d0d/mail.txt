@@ -1,0 +1,59 @@
+﻿Could ti be a good idea to try to study, understand and document known or experienced issues with correctly recognizing the actual encoding and character set (script) of raw input of text (string)?
+
+	==> Also see ”Todo: Programming - Consider to investigate what Code Point(s) a character 'Ä' or string "Ä" gets in runtime and compile time scenarios in C++?”
+	==> Also see ”Todo: Programming - Consider the code point and encode aware C++ Text class library to help bridging text encoding to and from the platform API?”
+	==> Also see ”Todo: Programming - Consider to design a Text streaming framework based on Iterator adaptors and Universal 32 bit Code Points?"
+	==> Also see ”Todo: Programming - Consider to implement services to pipe text through platform console commands (process stdin ==> stdout) as a C++ open source library?"
+	==> Also see ”Todo: Programming - Consider mapping of keyboard keys to character code points as a form of Text encoding?"		
+	==> Also see ”Todo: Programming - Consider C++ strings actually lack both a Code Point View and a Meaning View?”
+	==> Also see ”Todo: Programming - Consider the resemblances between Audio Encoded into bit-streams and Spoken Language encoded into character streams (strings)?”
+	==> Also see ”Todo: Programming - Consider to design a String "type" that bridges text "meaning" and text encoding?”
+	==> Also see ”Todo: Programming - Consider to find an enhanced C++ String representation and manipulation with a proper value semantics and view abstraction?”
+	==> Also see ”Todo: Programming - Consider to implement Code Point and Encode aware "strings" as a C++ library?”
+	==> Also see ”Todo: Programming - Consider to implement Encoding Aware String types based on C++ Template runtime zero-overhead Metafunctionality?”
+	==> Also see ”Todo: programming - Consider a printf-design using C++ template "magic" to create lazy-fixed-size range-tree and fully parallelised string-from-variable generators?”
+
+	==> Also see ”Todo: Programming - Consider to write a C++ Standard Proposal for String character-set-and-encode aware semantics?"
+
+1) Consider to study how MacOS tree command piped to text file results in a file that can’t handle Swedish characters?
+
+	==> Consider using tree command to file on the ”Tonsillerna Archive” with Swedish file names?
+
+Kjell-Olovs-MacBook-Air:Tonsillerna Archive kjell-olov$ pwd
+/Users/kjell-olov/BitTorrent Sync/Sync/Tonsillerna_DropBox_Copy/Tonsillerna Archive
+Kjell-Olovs-MacBook-Air:Tonsillerna Archive kjell-olov$ tree -P *.mp3 > mp3_tree_160807.txt
+Kjell-Olovs-MacBook-Air:Tonsillerna Archive kjell-olov$ 
+
+		==> Tree command actually seems to fail to generate correct unicode output of unicode encoded file names?
+
+		
+
+		==> So the resulting file does not ”know” it contains UTF-8 characters?
+
+			==> Pages seem to fail to correctly understand the content?
+
+		
+
+
+2) It seems we may generalize the raw-string problem into what sources of raw string we can identify?
+
+	==> Consider C++ standard Console input/output streams?
+		==> It seems they all share the notion of a ”locale” for text encoding (and formatting)?
+		==> Consider MacOS console input/output streams?
+		==> Consider Windows Console input/Output streams?
+		==> Consider Linux input/output streams?
+	==> Consider the text in Card Payment System Messaging (i.e., ISO-8583, SPDH HISO and more)?
+	==> Consider C++ source code file string literals (using the encoding of the file)?
+		==> Q: Is there a way for C++ compilers to compile-time determine the encoding of the source file (and thus the content of a string literal)?
+		…
+	==> Consider the strings passed to the platform API?
+
+		==> Consider strings passed to windows API functions (char* = UTF-8 or wchar_t* = UTF-16)?
+		==> Consider strings passed to Linux API?
+		==> Consider strings passed to MacOS API?
+		...
+
+…
+
+Consider to delve into more issues with failing to understand what encoding and character set ”raw” strings is using?
+...

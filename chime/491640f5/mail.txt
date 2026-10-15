@@ -1,0 +1,53 @@
+﻿It seems there are free piano samples available made by members that samples pianos themselves and share them on UK based  Pianobook web site?
+
+	==> Also see "Todo: DIY Digital Piano - Consider I can 3D print the parts for the Piano Key Action?"
+	==> Also see "Todo: DIY Digital Piano - Consider to build a digital piano using a Windows 10 board computer and VST instrument?"
+	==> Also see “Todo: Consider to build a digital piano from a micro computer and a VST plug-in digital Piano?”
+	==> Also see “Todo: Piano - Consider to get to the bottom of Transducer (Yamaha Transacousting or Kawai ATX-f) pianos?”
+	==> Also see “Todo: Consider to investigate using electric guitar pickups on piano strings?”
+	==> Also see “Todo: Bygg ett stage-piano “
+	==> Also see “Todo: http://www.pianocenter.se <http://www.pianocenter.se/>”
+
+	==> Also see ”Todo: Consider to check out the music production tools (Juce based) by the company Tracker (Especially their free T6-DAW)?"
+	==> Also see ”Todo: Programming - Consider to delve into the Faust DSP language echo-system from the talk "FAUST DSP language ecosystem meets JUCE" by Stephane Letz?”
+	==> Also see ”Todo: C++ - Consider to check out Juce talks on youtube?”
+	==> Also see ”Todo: Programming - Consider to study the Juce open source C++ audio library for Trudelutt app (multitrack audio recorder and playback)?"
+
+1) Consider this youtube video "The Free Piano Sample Hit Parade + COMPETITION" (https://www.youtube.com/watch?v=cM1TCljo2Eo&t=743s <https://www.youtube.com/watch?v=cM1TCljo2Eo&t=743s> )?
+	
+	==> He seems to rate "The quite piano" as number five?
+
+	
+	== He seems to list the "Nordiska Piano" as entry four?
+
+	
+	==> He places the "Kristiansand Concert Steinway" as entry three?
+
+	
+	==> He places the "The Lounge Piano" as runners up entry two?
+
+	
+	==> He places the "1911 Bechstein Upright" as first place (at least the most downloaded)?
+
+
+2) It seems the pianobook we site is here (https://www.pianobook.co.uk <https://www.pianobook.co.uk/> )?
+
+
+	==> The info and resources for "The Quite Piano" seems to live here (https://www.pianobook.co.uk/library/the-quiet-piano <https://www.pianobook.co.uk/library/the-quiet-piano> )? 
+	==> The download link (zip file) for "The Quite Piano" seems to be this one (http://bit.ly/2V506rp <http://bit.ly/2V506rp> )?
+
+	==> The info and resources for "Nordiska Piano" seems to live here (https://www.pianobook.co.uk/library/nordiska-piano <https://www.pianobook.co.uk/library/nordiska-piano> )? 
+	==> The download link (zip file) for "Nordiska Piano" seems to be this one (bit.ly/2HRfp3Y <http://bit.ly/2HRfp3Y>)?
+
+	==> The info and resources for "Kristiansand Concert Steinway" seems to live here (https://www.pianobook.co.uk/library/kristiansand-concert-steinway <https://www.pianobook.co.uk/library/kristiansand-concert-steinway> )? 
+	==> The download link (zip file) for "Kristiansand Concert Steinway" seems to be this one (http://bit.ly/2uAO39O <http://bit.ly/2uAO39O> )?
+
+	==> The info and resources for "The Lounge Piano" seems to live here (https://www.pianobook.co.uk/library/the-lounge-piano <https://www.pianobook.co.uk/library/the-lounge-piano> )?
+	==> The download link (zip file) for "The Lounge Piano" seems to be this one (http://bit.ly/2THWqKW <http://bit.ly/2THWqKW> )?
+
+	==> The info and resources for "1911 Bechstein Upright" seems to live here (https://www.pianobook.co.uk/library/1911-bechstein-upright <https://www.pianobook.co.uk/library/1911-bechstein-upright> )?
+	==> The download link (zip file) for "1911 Bechstein Upright" seems to be this one (http://bit.ly/2U9dVbV <http://bit.ly/2U9dVbV>)?
+
+...
+
+

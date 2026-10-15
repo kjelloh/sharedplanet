@@ -1,0 +1,82 @@
+﻿So, what could be a good strategy to enable a piece of code to evolve from an idea to a final published member of a C++ library?
+
+1) Consider to scope such piece of code in more and more sobering name spaces?
+
+	==> Consider the level of braced-scope (e.g. class, function, method, anonymous brace)?
+		==> Such code is only accessible locally to the braced-scope { …code visible here ...}
+
+function/method/if/else/for/while…{
+	
+}
+	… this code visible in this scope only ...
+…
+
+{
+	… this code visible in this scope only ...	
+}
+
+	==> Consider the scope of anonymous namespace (http://stackoverflow.com/questions/154469/unnamed-anonymous-namespaces-vs-static-functions)?
+		==> Such code is only visible in the scope of the file (i.e. in code located after the namespace definition)?
+
+<cpp-file>
+	<included file here>
+	<included file here>
+
+	namespace {
+		… code visible in code of this cpp-file below ...
+	}
+<end cpp-file>
+
+	==> Consider the level of “translation unit” (e.g. in cpp-file but possible shared between linked units using header-file or explicit declarations)?
+
+<header-file>
+	<included file here>
+	<included file here>
+
+	
+	… code here visible in following code until end of translation unit …
+
+
+<end header-file>
+
+
+<cpp-file>
+	<included file here>
+	<included file here>
+
+	
+	… code here visible in following code until end of translation unit …
+
+<end cpp-file>
+
+	==> Consider named local namespace?
+
+		==> Consider namespace “local”
+			==> Consider this would make code quite readable?
+
+local::MyClass
+local::MyFunction
+local::MyTemplate
+...
+
+		==> Consider local namespace “incubator” for code that is identified as possible “library stuff"?
+
+incubator::MyClass
+incubator::MyFunction
+incubator::MyTemplate
+...
+
+	==> Consider as member “experimental” of some existing library?
+
+some_lib::experimental::MyClass
+some_lib::experimental::MyFunction
+some_lib::experimental::MyTemplate
+...
+
+	…
+
+…
+
+Consider to elaborate on this idea of having some scope-based-evolution of library-stuff to enable it move from idea to final member of official library in some controlled way?
+...
+	

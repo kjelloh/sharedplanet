@@ -1,0 +1,20 @@
+# Todo: Consider a fastener based on hot glue and an electrically heated plate for attachment and removal?
+
+```#663fa262``` *As of 2024-03-01 10:05*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) Can we imagine to utilise hot glue with a heated plate to create a glue-able fastener that we can attach and remove by applying an electrical current?
+
+> *So, the basic idea is to use hot glue to make a fastener that we can attach and remove as we wish by applying or removing heat. And by incorporating an electrical driven heat plate we can imagine to make this fastener to be melted or made solid "at will"?*
+
+> *If we also add a thermistor or some other form of temperature control we can also optimise the fastener for the melting temperature of the hot glue?*
+
+> *Maybe we can also use a temperature sensor to be able to signal through a LED what state the connector is in (melted to be removed or solid and attached)?*
+
+> *...*
+
+...
+
+{% endraw %}

@@ -1,0 +1,119 @@
+﻿I now have the hunch that FreeCAD may now be capable enough for me to trust it for my design, model and build of my own house.
+
+	==> Also see "Todo: Consider to check out Open Source FreeCAD tool for 3D Design?"
+	==> Also see Todo: Consider to study and try out the Open Source 2D CAD application QCAD (NOT CuteCAD as a companion to 3D CAD FreeCAD)?""
+	
+	==> Also see "Todo: Consider to study and try out the 2D CAD application LibreCAD, a fork of QCAD (as a companion to 3D CAD FreeCAD)?"
+
+
+-1) Consider to document my experience with using FreeCAD for my house build?
+
+	TODO: Try to model some house designs in FreeCAD to see how it performs?
+
+	==> It seems Swedish site Träguiden does provide CAD files but only in DWG-file format?
+
+	
+	Information about the construction of a house wall based on construction lumber beams
+
+
+	==> It seems DWG is the file format developed and used by the "de facto" standard CAD program AutoCAD by Autodesk (https://www.autodesk.com/products/dwg# <https://www.autodesk.com/products/dwg#> )?
+
+"Autodesk created .dwg in 1982 with the very first launch of AutoCAD software. DWG files contain all the information that a user enters in a CAD drawing. This data can include:
+
+	• Designs
+	• Geometric data
+	• Maps and photos
+
+The .dwg file format is one of the most commonly used design data formats, found in nearly every design environment."
+
+	==> It seems FreeCAD can NOT import DWG files that e.g., Swedish  (https://www.freecadweb.org/wiki/FreeCAD_and_DWG_Import <https://www.freecadweb.org/wiki/FreeCAD_and_DWG_Import> )?
+
+"The DWG format is a closed source binary file format that is not directly supported by FreeCAD. It requires an external 3rd party file converter to first convert then import the conversion into FreeCAD for use.
+Note that at this time, it is not possible to import 3D DWG in FreeCAD. 3D data is embedded as binary .SAT (ACIS) data, a proprietary and undocumented format."
+
+		==> Also see Swedish Träguiden provide DWG files like this one (https://www.traguiden.se/konstruktion/konstruktionsexempel/vaggar/barande-yttervagg/konstruktionsvirke-eller-lattreglar/anslutning-mot-betongplatta-pa-mark/ <https://www.traguiden.se/konstruktion/konstruktionsexempel/vaggar/barande-yttervagg/konstruktionsvirke-eller-lattreglar/anslutning-mot-betongplatta-pa-mark/> , https://www.traguiden.se/globalassets/konstruktion/konstruktionsexempel/vaggar/barande-yttervagg/konstruktionsvirke-lattreglar/anslut-betongplatta/c-v114.zip <https://www.traguiden.se/globalassets/konstruktion/konstruktionsexempel/vaggar/barande-yttervagg/konstruktionsvirke-lattreglar/anslut-betongplatta/c-v114.zip> )?
+
+	==> It seems not even Fusion 360 is able to read all of the data in the DWG-file provided by Swedish site Träguiden?
+
+		
+		An example in Fusion 360 of a seemingly crippled (?) model imported from DWG-file provided by Träguiden
+	
+
+1) Consider this youtube video "BIM with FreeCAD - Introduction" that made me think FreeCAD may actyally be capable enough for my needs (https://www.youtube.com/watch?v=rkWOFQ2fGZQ&t=2s <https://www.youtube.com/watch?v=rkWOFQ2fGZQ&t=2s> )?
+
+	==> It seems this video is made by Yorik van Havre that is also one of the main programmers of the FreeCAD software?
+
+	==> Consider the links to more information provided in this video?
+
+A couple of interesting links as mentioned in the video:
+
+- FreeCAD website: http://www.freecadweb.org <https://www.youtube.com/redirect?q=http%3A%2F%2Fwww.freecadweb.org&v=rkWOFQ2fGZQ&redir_token=3cMRz2VLsNQzezTPlDkCt_2_JJF8MTU2MzQ3NjgwMkAxNTYzMzkwNDAy&event=video_description>
+- Shared FreeCAD files shown in this video: https://www.dropbox.com/s/qbke8l8dl3s... <https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fqbke8l8dl3slsdk%2FFreeCAD%2520houses.zip%3Fdl%3D0&v=rkWOFQ2fGZQ&redir_token=3cMRz2VLsNQzezTPlDkCt_2_JJF8MTU2MzQ3NjgwMkAxNTYzMzkwNDAy&event=video_description>
+- Regis's FreeCAD/BIM videos: https://www.youtube.com/user/RegisBBN... <https://www.youtube.com/user/RegisBBNT/videos>
+- The blog article this video is part of: https://yorik.uncreated.net/guestblog... <https://www.youtube.com/redirect?q=https%3A%2F%2Fyorik.uncreated.net%2Fguestblog.php%3F2018%3D445&v=rkWOFQ2fGZQ&redir_token=3cMRz2VLsNQzezTPlDkCt_2_JJF8MTU2MzQ3NjgwMkAxNTYzMzkwNDAy&event=video_description>
+- Support me on Patreon: https://www.patreon.com/yorikvanhavre <https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.patreon.com%2Fyorikvanhavre&v=rkWOFQ2fGZQ&redir_token=3cMRz2VLsNQzezTPlDkCt_2_JJF8MTU2MzQ3NjgwMkAxNTYzMzkwNDAy&event=video_description>
+
+
+	==> Consider to download and import the example files of the houses he shows in this video (https://www.dropbox.com/s/qbke8l8dl3slsdk/FreeCAD%20houses.zip?dl=0 <https://www.dropbox.com/s/qbke8l8dl3slsdk/FreeCAD%20houses.zip?dl=0> )?
+
+
+2) Consider this youtube playlist "BIM with FreeCAD" by Yorik van Havre to get a running start with FreeCAD for house design and model (https://www.youtube.com/playlist?list=PLmKdGVtV5Vnt2cj4IZIv9FM39QHaE1ZaU <https://www.youtube.com/playlist?list=PLmKdGVtV5Vnt2cj4IZIv9FM39QHaE1ZaU> )?
+
+	...
+
+3) Consider this youtube playlist from the youtube recommended by Yorik van Havre (https://www.youtube.com/user/RegisBBNT/videos <https://www.youtube.com/user/RegisBBNT/videos> )?
+
+4) Consider to follow Yorik van Havre blog posts (https://yorik.uncreated.net <https://yorik.uncreated.net/> )?
+
+5) Consider to do a 2 hour proof of concept to get a taste of wether FreeCAD is capable and usable on my Mac Pro 2013 for mu house design and model needs?
+
+	Q: Can I insatll and run it on my Mac Pro 2013?
+
+		==> I downloaded the current 0.18 version from this URL (https://www.freecadweb.org/downloads.php <https://www.freecadweb.org/downloads.php> )
+
+		
+		The FreeCAD download is an Apple package.
+
+		
+		FreeCAD package for Mac OS opens and contains a self contained application (no install scipt)
+
+		
+		FreeCAD application manually draged to Mac OS "Applications" folder
+
+		
+		The opened FreeCAD package needs to be manually ejected (and then manuallt dragged to the Trash Bin that in turn must be manually emptied)
+	
+		
+		FreeCAD downloaded OS X package file manually dragged from "Downloads" to "Trash" and then Trash is manually emptied (to get rid of the downloaded file)
+
+
+	
+		FreeCAD applciation must be right-clicked opened for OS X to accept it
+
+		
+		FreeCAD applciation must be right-clicked opened for OS X to accept it
+
+
+
+		==> YES! FreeCAD seesm to start and run just fine with the "Arch Detail" example I was provided to open from teh start page. SUCCESS!!
+
+		
+		The  "Arch Detail" example provided on the start page of FreeCAD
+
+	Q: Can I design my apartment as a house (using infor from the tutorials available and taking some short cuts)?
+
+	Q: Can I define planes and generate construction drawings with the information I need to provide to apply for a build approval?
+
+	Q: Can I map FreeCAD (or use some export) to a rendering software to produce presentation materials?
+
+	... What more do I need to be able to do to trust FreeCAD as part of my house build?
+
+6) COnsider the Free IFC++ to try out how IFC exports from FreeCAD looks in other standard BIM softwares that interacts with using the IFC format standard (http://ifcquery.com <http://ifcquery.com/> )?
+
+	TODO. Consider to download and try out the IFC++ application on IFC exports from my house design in FreeCAD?
+
+	...
+
+...
+
+

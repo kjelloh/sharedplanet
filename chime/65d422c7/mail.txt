@@ -1,0 +1,47 @@
+﻿Could it be a good idea to try and parse an OASYS SNG-file to understand what requirements we should have on the tag-path based decoding library (that we consider to call musca)?
+
+	==> See “Todo: Programming - Consider to implement the tag-path based encode and decode idiom as a C++ library?"
+
+1) This seem to be a good file to start with?
+
+
+
+2) Consider if it is possible to define the structure of this file using the DLS we imagine to use (swedbank spec. style)?
+
+	==> Consider if there are any encodings in this file that does not map to the model of Element Tree Notation we invented for Swedbank specs.?
+	…
+
+3) This seem to be a tool for viewing content of korg files (http://pcgtools.mkspace.nl <http://pcgtools.mkspace.nl/>)?
+
+	==> It seems it can be downloaded here (http://pcgtools.mkspace.nl/download.php <http://pcgtools.mkspace.nl/download.php>)?
+	==> And the manual seems to be here (http://pcgtools.mkspace.nl/download.php?click_manual=yes <http://pcgtools.mkspace.nl/download.php?click_manual=yes>)?
+
+	==> But there seem to be no source code provided (nor any information about file structure)?
+
+	…
+
+4) The SNG-file seem to be a korg proprietary format (complies to the midi file format) (http://fileinfo.com/extension/sng <http://fileinfo.com/extension/sng>)?
+
+	“Song file used by Korg MIDI-compatible devices, such as some synthesizers; stores musical notes and other audio information in a proprietary format; can be used for playing back songs and music loops on Korg electronic devices; may also be converted to other file formats, such as .MID.”
+
+	==> So, we may be required to convert the SNG-file to a MID file to get a more standard format to read?
+	==> But that would mean we cheat?
+	...
+
+5) This page can possibly provide good leads and information (http://www.tritonhaven.com/downloads/sngs.html <http://www.tritonhaven.com/downloads/sngs.html>)?
+
+	==> Or, may be not (can’t find any descriptions of the file formats)?
+	...
+
+
+6) This seem to be the wikipedia midi format description (https://en.wikipedia.org/wiki/MIDI <https://en.wikipedia.org/wiki/MIDI>)?
+
+	==> But it the kore-files are not midi-files then this is not something we can use?
+	...
+
+…
+
+Consider to elaborate on this idea to use this file as a case-study to see what we can learn about its structure and what a C++ library should be able to do to enable programming of a file decoder into tag-path based elements?
+...
+
+

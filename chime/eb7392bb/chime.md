@@ -1,0 +1,92 @@
+# Todo: Consider to write down ideas thought freely while wandering?
+
+```#eb7392bb``` *As of 2016-06-05 14:15*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, what would the result be if I just writes down thoughts i find interesting while traveling without plan for this day?
+
+&lt;About Card Payments&gt;
+
+The payment device is the acquirer pretense at the point of sale. And the payment device card processing sub-processes are the card brand presence in the payment device.
+
+The payment device configuration is to a large part a representation of the agreement between the merchant and the acquirer to enable the payment device to comply with it. It is in this way the payment device applies amount limits and requirement on offline or online approval acquirement.
+
+For passive cards, e.g., swiped cards, it is the card processing sub-system of the payment device that are to represent the card issuer pretense at the point of sale.
+
+For active cards, e.g. EMV chip cards and contactless EMV chip cards, it is the chip on the card that represents the card issuer pretense at the point of sale. This is way the chip is able to evaluate the cardholder PIN and allow offline approval acquirement. The chip is programmed by the card issuer with rules on what premises it may acquire a transaction approval from the ”issuer on the chip”.
+
+The issuer may allow other parties to issue a traction approval on behalf of the Issuer. This is called Stand In Processing and to the payment device such an approval is just as valid as any other Issuer approval. From a system design point of view any Transaction Approval issued by some other party than the actual Issuer endpoint system.
+
+- The Approval issued by the chip is a ”on behalf of the Issuer” Approval.
+- The Approval issued by the payment device based on card data and Issuer rules is a ”on behalf of the Issuer” Approval.
+- Any approval issued by a node in network processing the online authorization request is a ”on behalf of the Issuer” Approval
+
+The card brands require any ”On behalf of Issuer” approval to be reported to the Issuer as an Advice so that the cardholder account available funds can be updated to reflect approved transactions. The motivation to advice the Issuer about on-behalf-of-Issuer approvals is that they represent an I-owe-you. And until this I-owe-you is either reversed or cleared the funds on the cardholder account must reflect the true value of funds still owned by the cardholder.
+
+The merchant must capture and store all "I-owe-yous" represented by transaction approvals to later present them to the acquirer.
+
+Systems that interfaces downstream one messing systems and upstream two messaging ones must capture both upstream created Approvals and downstream created Approval advices. Understanding that an Approval represents an I-Owe-you from the Issuer to the Merchant on behalf of the cardholder helps understanding one-messing and two-messing systems. In one-messaging systems the capturing and presentment of the Approval is not the responsibility of the point of sale. Instead an intermediate like a Payment Service Provider performs this service on behalf of the Merchant. In two-messaging point of sale systems the Approvals must be locally captured and forwarded to a system that presents them to the acquirer. Both these strategies has both advantages and disadvantages.
+
+In one-messaging point of sales:
+
+- No Approval is locally captured.
+- Unapplied online Approvals must be reversed to delete intermediate captured I-owe-you and to free cardholder reserved amount.
+- Applied locally created Approval must be Advised to enable intermediate capture of the I-owe-you and to enable the Issuer to reserve the amount on cardholder account.
+
+In Two-messaging point of sales:
+
+- Applied Approvals must be locally captured.
+- Unapplied online Approvals must be reversed to free cardholder reserved amount.
+- Applied locally created Approval must be Advised to enable the Issuer to reserve the amount on cardholder account.
+
+Understanding that an Approval represents an I-Owe-You created by the Issuer, on behalf of the cardholder is a good base to understand the rules of card payment messaging. This explains why the I-Owe-You is captured differently in one- and two-messaging networks. It also explains what one-messaging and two-messaging systems are all about.
+
+Any messaging protocol for authorization will have a one-to-one mapping to the elements of the Visa and MasterCard implementation of the ISO-8583 protocol. The same goes for any Approval Presentment protocol exposed by any Acquirer. The reason is that in the end Approval Acquiring and Approval Presentment is performed in a brand flavor of the ISO-8583 mostly more or less following the Visa or MasterCard implementation. The ACI SPDH protocol (approval processing) and ISO-STD for Clearing (Approval Presentment) is an example of this fact although the actual mapping to ISO-8583 is somewhat opaque.
+
+In the payment device the digital representation of the cardholder, the Issuer, the Merchant and the Acquirer ”meet”. The main rules for how this must be done is stated by the Card Brands that requires the Acquirer to ensure all processing is according to the rules. Thus it is the Acquirer that certifies payment devices to ensure they comply to card brand rules. Identifying the stakeholders in the sub-systems of the payment device can get a bit tricky due to how the stakeholders rules are deferred within the processing system. But at the core of the payment device there must always be an Approval Processing Engine in the end complying to card brand rules (deferred to the Acquirer).
+
+&lt;??&gt;
+
+Our rational consciousness are always farthest from the ”action”. It experiences the world only through sensoritory based representation of reality as space-time phenomena; And emotions created to enable us with short-cuts to take direct action. On top of that we may apply conscious reasoning to make some additional sense of it all. From this viewpoint our rational self is unable to ground any truth about reality in anything solid. Instead it is left with the second best of building ”rafts” of circular reasoning to travel the ”sea” of the experienced but never fully knowable. The genius mechanism of experiencing meaningful truths by testing them through acts-of-faith enables us to feel grounded in an ungrounded existence. In this way we treat the existence of space time phenomena like a chair, velocity and time, and of virtual phenomena like our Self, our Sole, The Market or God using the same mechanism. All philosophy through time has been about our rational self failing to accept this and in vain trying to formulate grounded truths using existing or constructed languages.
+
+&lt;??&gt;
+
+Det måste få bli okey att vara nöjd. Det måste få bli ok att bo där man vill utan att behöva byta upp sig; Det måste få bli ok att fortsätta äga den bil man har utan att köpa en ny; Att fortsätta ha samma telefon som man älskar och vet hur man använder; Att jobba mindre för att ha mer fritid. Att inte om och om igen behöva spendera pengar bara på att bli nöjd igen. Kort sagt, det måste få bli ok att stanna upp och njuta av det man har när man äntligen fått det. Hur kommer det sig då att vi lever i ett samhälle där det inte är okey att vara nöjd. Där hjulen i industrin stannar om vi slutar vilja ha nya saker eller nya tjänster hela tiden? Där vi måste tillåta reklam överallt där vi vistas så den kan komma oss med budskapet att vi inte skall vara nöjda med det vi har. Att vi blir lite nöjdare om vu köper det nya. Hur kommer det sig att det inte går att köpa ett kylskåp, en bil eller en TV som håller i 50 år? Hur kommer det sig att det inte lönar sig att tillverkar och sälja produkter och tjänster som tillfredsställer våra behov på ett ekonomiskt och hållbart sätt?
+
+Har du tänkt på att varken de som har lite pengar eller de som är rika får bli nöjda. Rik eller fattig, om du låter pengarna stanna i plånboken eller på banken så förlorar alla vi andra på det. Vårt företag säljer mindre och jag kanske inte längre behövs på jobbet. Om jag äger ett företag måste jag kanske lägga ner det. Om jag har en pensionsfond som äger aktier så kanske värdet på aktierna sjunker och min framtida pension riskerar försvinna.
+
+Är det inte dags att sikta på ett nöjt Sverige? Ett Sverige där vi säger, det räcker nu. Nu har vi jobbat tillräckligt. Sverige har nu en tillräckligt hög kvalité. Nu vill vi att det vi har skall hålla så länge som möjligt med så lite underhåll som möjligt. Nu vill vi ha teknik och ett samhälle som inte nöjer sig med att göra det bekvämt att leva. Nu vill vi ha ett meningsfullt och hållbart liv. Nu är det dags att börja njuta av det vi och tidigare generationer jobbat ihop och skapat? Det är kanske dags för Sverige att leva meningsfullt nu när vi är rika nog att göra det?
+
+Ja, ja, jag vet. Vi blir ju aldrig nöjda. Det vet vi ju. Så är det bara. Vi vill alltid har mer. Vi vill ju följa med i utveckligen. Det är ju kul med framgång. Och det är ju kul med nya tekniska prylar, nya kläder, ny inredning hemma och en ny bil är ju bara sååå niiiice! Det är värt att jobba för dom här sakerna eller hur? Så därför måste vi se till att skapa nya jobb så vi kan få betalt så vi kan köpa alla dom här sakerna som vi tillverkar. Så länge hjulen rullöar är vi alla nöjda. Eller hur? Det är ett bra system så varför inte fortsätta se till att det fortsätter fungera.
+
+Det är bara ett problem ifall du inte tänkt å det redan. Hela idén med välfärd är ju att om möjligt eliminera det trista så vi kan göra det som känns meningsfullt och lyxigt. Dessutom är hela vårt system fokuserat på att allt effektivare tillverka saker. Med maskiner, datorer och allt effektivare processer och teknik så behövs det allt färre som behöver arbeta. Kvar blir en massa jobb där det behövs någon som tänker som bara en människa kan. Eller kroppsarbete där vi ännu inte kunnat göra en maskin som kan göra det. Så nu jobbar vi på kontor. Vi skriver rapporter och räknar i excelark. Vi städar toaletter, kör taxi eller jobbar i hemtjänsten. Ja, en massa saker där en maskin ännu inte är lika bra. Så det kommer alltid att finnas behov av människor som jobbar, eller hur? Annars fungerar det inte. Eller gör det det. Kan vi verkligen vara säkra på att inte en maskin kan städa. Kan vi vara säkra på att vi inte hellre vill klara sig själv när vi blir gamla genom att ha en maskin som tar hand om det man själv inte kan. Är det inte egentligen så att vi vill klara oss själva och alltså inte vill ligga andra till last? Med en maskin som hjälper oss kan vi fortsätta känna oss självständiga även när vår kropp inte längre orkar och ge oss möjlighet och tid att umgås med människor utan att ligga dem till last?
+
+Faktum är väl att vi egentligen inte vill behöva göra en massa tråkiga saker i onödan? Och känns det inte lite som att gå över ån efter vatten om vi först måste göra något trist för att få pengar för att sedan använda dom för att få göra det vi egentligen tycker är meningsfullt. Är det inte till och med så att en massa jobb inte bara känns meningslösa. Dom kostar oss också vår framtid? Dels sliter vi ut oss själva. Dels sliter vi också ut planeten genom att mer eller mindre i onödan förbruka dess resurser? För egentligen, hur mycket olja, järnmalm, mineraler och sand finns det egentligen? Hur mycket tid har vi till förfogande att sitta på ett trist jobb och hur mycket stress och otrygghet tål vi? Säga vad man vill om systemet - Det fokuserar effektivt på att producera det som det kan få oss att vilja konsumera. Men det fokuserar varken på att göra våra liv meningsfulla eller hållbara.
+
+&lt;??&gt;
+
+Det är många som tycker att livet gör ont. Även i rika västerländska samhällen. Och när det gör ont vill man bara att det onda skall försvinna. Samhället ”levererar” inte och det är jobbigt att få det som man vill. Och inte ser framtiden bättre ut. Det gör ont. Och när det gör ont vill man att det onda skall sluta. Det är då man röstar man på Sverigedemokraterna; Eller på Trump. De ger de som lider och känner sig hotade en röst. De säger ”som det är”, nämligen att det som gör ont faktiskt finns. Att det som gör ont kan försvinna. Att, när det som gör ont är borta, så blir livet gott igen. Då kan vi åter känna framtidstro. Då kan vi känna oss stolta och trygga. Man vill ha drömmen om det goda livet tillbaka. Om det betyder att man måste begränsa vilka man delar det med - so be it. Vi kan ju inte hjälpa alla, eller hur?
+
+Men vi kan inte begära att de som lider mest skall tänka ut de bästa lösningarna. Vi kan inte begära att de ens skall kunna se vad lösningen är. Om man lider orkar man inte. Om man lider känner man, då tänker man inte längre än till första bästa svar. Det är ok och förståeligt. Då rationaliserar man de lösningar som verkar rimliga och direkta. Därför måste vi som inte lider lika mycket hjälpa till att tänka. Och vi måste tänka så att lösningen känns bra. Lösningar som känns bra för de som lider. För de som lider och känner sig hotade räcker inte rationella argument. Det måste till känslomässiga argument. Och argumenten måste vara känslomässigt trovärdiga. Och argumenten får inte låta som de som den nuvarande makten slänger sig med. För den nuvarande makten gör ju ont. Det är ju den som skulle kunna ta bort det onda men ändå inte gör det. Anledningen till att makten inte tar bort det onda måste ju bero på att de vill att det onda skall bestå. Eller så beror det på att de vid makten inte bryr sig - utan går sina egna intressen. I värsta fall beror det på att makten helt enkelt är inkompetent. I vilket fall är det den säger inte trovärdigt och den måste ersättas med de som har vett och mod att våra ”ta tag i problemen”.
+
+...
+
+&lt;Synteismens trosbekännelse&gt;
+
+Vi tror på den ständigt nyskapade dividen.
+
+På den grundlösa verkligheten och ett ändligt liv.
+
+Vi tror på allestädes närvarande slump och emergens.
+
+Vi tror på den sanningsbekräftande tanken och handlingen.
+
+Vi bekänner oss som aktörer i nätverk av närvaro.
+
+Vi bekänner oss som sökare av den sanning som i handling skapar emergens av vår utopi om framtiden.
+
+Vi tror på individens död, konkurrensens självmord och utopins livsnödvändighet.
+
+{% endraw %}

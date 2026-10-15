@@ -1,0 +1,23 @@
+# Todo: Consider to define SPC "Declaration of Dependance" to define what we must share to allow everyone to become Deep Rich!
+
+```#d7ecccab``` *As of 2015-08-20 13:21*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+The Declaration of Dependance may be seen as what we require me and others to share for me and others like me to be able to become Deeply Rich!
+
+This could be a strong concept that is also not so hard to communicate?
+
+The Declaration of Dependance may carry entries like.
+
+\*) I depend on others to allow me to engage in love according to my sexual preferences.  
+\*) I depend on food producers to produce food in a sustainable way, enabling sufficient and health food to be produced to the whole world in a fair way.  
+\*) I depend on producers of product and services to produce to a minimum in Deep Costs enabling humanity to maximize its Deep Wealth!  
+\*) I depend on society to allow me to pursue Deep Richness and reduce the Deep Costs.  
+\*) I depend on others to allow me to value a secure future as part of being Deep Rich!  
+\*) I depend on others to allow me to define Deep Richness to include my ability to live where I want.  
+\*) I depend on good advice and guidance for me to choose the best actions in my life to obtain Deep Richness.  
+...
+
+{% endraw %}

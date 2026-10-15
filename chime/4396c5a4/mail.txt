@@ -1,0 +1,38 @@
+﻿So, allowing the MIV to be mutated using non commutative operations means there will be merge failures of inconsistent states. Can we imagine each Darwinet Node to apply some mechanism to try and minimize the frequency of such failures?
+
+1) Consider Darwinet applies the optimistic mutate-now-merge-later idiom?
+
+	==> Consider we then trade fast local mutation for the future risk of failing to merge with external mutations (non commuting mutations fail to later merge)?
+	==> Consider we could measure the risk of future merge failures based on how frequent they have been in the past given some environment properties (e.g., time of day, our swarm friends and so on)?
+	==> Consider how a node can try to reduce the risk if future merge failures by aiming at optimizing its probability to always be in a consistent-enough state (merge required to handle inconsistency and merge failure comes from un-sychnronized non commutative state mutations)
+		...
+
+2) Consider strategies each Darwinet Node may apply to optimize its consistent-enough state (enough to reduce risk of merge failures due to out of synch with external non commutative state changes)?
+
+	==> Consider each node may try to build a friend-node-swarm which are temporary close (will send deltas to us with low latency)? 
+
+		==> Consider ”closeness” in this case means the deltas sent from these swarm friends keeps ourself in a consistent-enough state?
+		==> Consider this may not be the same as being close in time (having low latency) with our swarm friends (we prefer the right deltas often-enough instead of all deltas often)?
+		==> Consider we would like our swarm friends to be those where the non commutative state mutations conflicts with those that occur at our node?
+		…
+
+	…
+
+3) Consider to use small neural networks to learn what swarm friends to choose?
+
+	==> Consider the input parameters to the neural network?
+
+		==> Consider the Global Time (merge failure frequency may vary with user interaction that depends on time of day)?
+		==> Consider a set of swarm friend candidate IDs (Different sub-set of these candidates affects our merge failure frequency)?
+		==> Consider an array of counters of merge failures per hour the last 24 hours (to enable the network to detect frequency variations over time)
+		…more input?
+ 
+	==> Consider to teach the network to predict the frequency failure the coming hour for some sub-set of swarm friends?
+
+	==> Consider we may have to allow the network to differentiate between MIV Members (we like our swarm friends to be the ones where the same MIV parts are mutated)?
+…
+
+Consider to elaborate on this idea that Darwinet must allow inconsistency due to asynchronous non commutative state changes but apply a mechanism to dynamically select its swarm friends to minimize merge failures?
+...
+
+

@@ -1,0 +1,53 @@
+﻿Could we imagine that we can model all human activity on a planetary scale as a Tha and store and synchronise it in a Darwinet P2P network?
+
+1) Consider what Levels of Tha we may require to model human activities on a planetary scale?
+
+	==> Consider we can imagine morphisms between members on each level?
+
+	==> Consider Meta-1 is the actual digital data “existence” as numbers, tex, images, audio-files (anything that exists and interacted with as a kind of “atomic” or “unstructured" data)?
+	==> Consider meta-2 are the types-of-data (number, text, image, audio, …)
+	==> Consider Meta-3 are name or index tagged SUM and Product compositions.
+	==> Consider meta-4 are “Generics” as in compositions that takes other meta-level input and composes argument dependent meta-3 members?
+
+	==> Consider Meta-5 are in fact “Applications” as in compositions of lower levels aimed at providing “applicable operations”?
+
+		==> Consider a complete exetubale computer program as a meta-5 object instance?
+		==> Consider a Meta-5 object defines something with an “internal” composition of process capacity and an “interface” to interact with other meta-5 instances?
+
+		==> Consider a living cell is an example of a meta-5 object instance (it needs physical existence meta-1, categorised types of existing parts meta-2, composition of physical parts meta-3, Generic composition as in DNA guided processing meta-4)?
+
+		…
+
+	==> Consider Meta-6 are in fact “multi-application” compositions (interacting self-executing meta-5 parts)?
+
+		==> Consider multicellular organisms are meta-6 object instances?
+		==> Consider human communities are meta-6 object instances (each human modelled as a meta-5 object)?
+		…
+
+2) Consider what actually comprises a “meta-relation” as in act actually defines a hinger meta-layer?
+
+	==> Consider a higher meta-layer defines SET of objects in the lower layer + morphisms between these SET?
+
+	==> Consider an indication that something is on a higher meta-layer is that objects on the higher layer may “emerge” (model an emergent trait of the system)?
+	…
+
+3) Consider how a Darwinet network may store and synchronise the whole and parts of the Interplanetary Tha model instance (and its state)?
+
+	==> Consider each Emdividual will never be in sync (the same state) as other Emdividuals?
+	==> Consider Darwinet must support continuous merging to enable emdividuals to evolve some form of more-or-less common state (at least interoperable states) of stored Tha data)?
+	==> Consider Darwinet may need to incorporate the notion of “Death” of data that is “old” or not “nurtured” (as in accessed or used)?
+	…
+
+4) Consider some forms of electronic currencies to exchange “value” in return of “work” from emdividuals and digital actors (AI) to keep the Tha instance alive (stored) and evolving (used)?
+
+	==> Consider to study the IPFS FileCoin and its ideas on how to reward emdividuals for storing and/or transferring IPFS data?
+	==> Consider a Currency tied to the actual available human resources like air, water, living space, minerals, gas, oil, solar energy, …
+
+		==> Consider such a coin could have a block-chain stat stores and keeps that of consumption, distribution and power power “life common resources”?
+
+	...
+
+…
+
+Consider to delve deeper into this idea of an interplanetary Tha model of human digital activity using a Darwinet P2P network for storage and synchronisation?
+...

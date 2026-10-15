@@ -1,0 +1,31 @@
+﻿I need to repair my Korg OASYS 88 so that I can select to play "Programs" again.
+
+-1) I ordered 10 switches from Digikey 200523 (23 may 2020)
+
+TODO: Wait for delivery and solder a new switch to repair my KOR OASYS 88
+
+1) It seems I can find service manuals by googling "Korg OASYS 88 Service Manual" (https://www.google.com/search?client=safari&rls=en&q=Korg+OASYS+88+service+manual&ie=UTF-8&oe=UTF-8 <https://www.google.com/search?client=safari&rls=en&q=Korg+OASYS+88+service+manual&ie=UTF-8&oe=UTF-8> )?
+
+2) It seems the KORG OASYS 88 electronics service manual can be downloaded from here (https://elektrotanya.com/korg_oasys_76_oasys_88_sm.pdf/download.html#dl <https://elektrotanya.com/korg_oasys_76_oasys_88_sm.pdf/download.html#dl> )?
+
+
+
+3) It seems the Korg OASYS 88 service manual Part 2 Appendix can be downloaded form here (https://www.manualslib.com/manual/898596/Korg-Oasys-76.html#product-OASYS%2088 <https://www.manualslib.com/manual/898596/Korg-Oasys-76.html#product-OASYS 88> )?
+
+
+
+4) It seems the switch to replace is SW 4 on PCB "KLM-2420"?
+
+
+The switch PCB with SW 4 being the "Program" select switch on Korg OASYS 88
+
+
+5) It seems the switch is a Panasonic EVQ11A09K?
+
+
+Tactile Switch EVQ-11A09K from Digikey (https://www.digikey.se/product-detail/sv/panasonic-electronic-components/EVQ-11A09K/P8073SCT-ND/259558?utm_source=FindChips&utm_medium=buyNow <https://www.digikey.se/product-detail/sv/panasonic-electronic-components/EVQ-11A09K/P8073SCT-ND/259558?utm_source=FindChips&utm_medium=buyNow> )
+
+
+	
+
+...

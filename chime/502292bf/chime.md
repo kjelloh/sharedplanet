@@ -1,0 +1,20 @@
+# Todo: Let Darwinet solve version control of file structure issue
+
+```#502292bf``` *As of 2015-03-03 13:21*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+The Subversion version control system is unable to handle relocation of a file while keeping the file revision history. The moved file is treated as a new file and the old one is deleted. Although the deleted file revision history is kept the connection with the new file is lost. Thus, the user is unable to revert the the relocated file revision history past the move event in time.
+
+Proposal: State as an USP the Darwinet MIV model file version control.
+
+1. Moving the file affects the file structure, not the moved file revision history. The file is “the same” although it is located at a new place in the directory structure.
+2. Renaming a file also keep the file revision history. The file is “the same” although it has a new name.
+
+Issues:
+
+\* It may be a problem to make a good user interface to distinguish between “actual files” and their name and location in the view (directory structure).  
+\* It may be a problem in the user interface if the same file may be located at different locations and with different names. May this be handled by saying that the file shows up in different “roles”, just as a person may show up as different roles in different contexts?
+
+{% endraw %}

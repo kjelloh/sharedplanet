@@ -1,0 +1,68 @@
+# Todo: Community - Consider to initiate an Open Payment community based on Open Source?
+
+```#f5e2d4ee``` *As of 2016-02-13 15:23*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could it be fun and perhaps a way to make a living by initiating a Community the developers Open Source for Electronic Payment Systems?
+
+1) Consider to define Linux as the OS for the System?
+
+2) Consider to define C++11/14/17 and Clang as the development environment for softwares?
+
+3) Consider to implement processing in all known protocols as Open Source Libraries?
+
+4) Consider to implement Authorisation and Presentment systems in Open Source?
+
+5) Consider to plan for how to ge access to Visa and MasterCard networks from these systems?
+
+==&gt; I.e. how to get hold of specifications and to actually Interface with brand networks (Both requires one to be an Acquirer)?  
+==&gt; Make a dela with an existing Acquirer?  
+==&gt; Make and agreement with Brand Organisations for research purposes?
+
+6) Consider to implement also SPDH, PPL, iPOS, EPAS and so on as Open Source systems for Linux?
+
+7) Consider to defines some Open Source Systems to target also Windows Sytems (For Integration with existing Sale System)?
+
+8) Consider to develop Payment Terminal application as Open Source (possibly also develop an Operating System or Port Linux to known Hardware)?
+
+9) Consider to aim at allowing these systems to run in any Cloud Service?
+
+==&gt; What would it require to ensure security without having control of the Hardware not the Network?
+
+10) Consider to develop a Payment Terminal as Open Hardware?
+
+==&gt; Consider to design the hardware based on existing designs made in China?
+
+11) Consider to Initiate a first meeting to start the Community just for fun?
+
+12) Consider to elaborate on possible business opportunities within this Open Source environment?
+
+==&gt; Consider the service to provide and maintain security as one service?  
+==&gt; In the long run existing Acquirers may externalise payment processing to processing and security cooperations?
+
+==&gt; Consider the service of maintenance and support as a business opportunity?
+
+==&gt; Consider “Processing as a Service” as a business opportunity?
+
+…
+
+Consider to elaborate on this idea and find pro and cons to this approach (e.g. will I be banned from working with existing Payment Actors)?  
+…
+
+a) Consider to drop this idea to Gabriel at Zamsos?  
+b) Consider to Discuss this with Lennart Helleberg (although suspect he will only identify why this is not a good idea)?  
+==&gt; Never the less, his input is of value?  
+c) Consider to discuss this idea with Elias Engdashet?  
+d) Consider to try and get a first opinion from Benny Johansson, Stefan Andersson at Swedbank (private opinion)?  
+e) To what part would this idea constitute one that may call for precaution regarding talking about it?  
+==&gt; How do I proceed so that I am true to my philosophy about fee ideas?  
+f) Consider to drop this idea to Roland Swahn?  
+==&gt; Although expect them to be threatened and not seeing it a good idea to give up their software?  
+g) Consider to try and get hold a an existing Payment Terminal hardware free to use to develop ones own software?  
+==&gt; Consider to ask Roland Swahn about buying their hardware to experiment with a Payment Terminal?
+
+...
+
+{% endraw %}

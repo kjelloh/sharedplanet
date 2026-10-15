@@ -1,0 +1,24 @@
+﻿Could it be a fun idea to hold some talks about stuff I know from my Career?
+
+1) Consider a talk about C++ as listed in ”Todo: IRL - Consider to hold some C++ Talks just-for-fun?”
+
+2) Consider to hold a talk about Requirement Communication (e.g. writing specifications)?
+
+	==> See ”Todo: Write about requirement communication and administration”?
+
+3) Consider to talk to developers about the how Card Payment Systems ”work”?
+
+	==> Main actors (Cardholder, Card Acceptor, Acquirer, Card Issuer)
+	==> Authorization (off-line, stand-in, issuer) followed by Presentment-to-acquirer.
+	==> The role of the Card Brands (network and requirements)
+	==> Card Acceptor Environment classes (unattended/unattended, card-holder-present)
+	==> Card-holder-token technology (Key-Entered-PAN, Magnetic stripe, contact chip, contact-less chip/device)
+	==> Tokenized Systems (Electronic Wallets, Apple Pay, Proprietary)
+	==> Physical and Electronic Receipts
+
+	==> The distributed multi-FSM architecture (cardholder-interaction-state, sale-system-state, transaction-state, protocol-messaging-states)
+…
+
+Consider to elaborate on this idea to find talks that would be fun to hold?
+...
+

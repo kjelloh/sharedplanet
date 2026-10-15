@@ -1,0 +1,15 @@
+﻿It is quite irritating that I failed to guess how to zoom the editor in Visual Studio (and had to google for a clue)
+
+1) It seems to "zoom" in visual studio you can use short cuts <ctrl>+<shift>+ '.' and ',' (https://stackoverflow.com/questions/3096600/is-there-a-way-to-zoom-the-visual-studio-text-editor-with-a-keyboard-shortcut <https://stackoverflow.com/questions/3096600/is-there-a-way-to-zoom-the-visual-studio-text-editor-with-a-keyboard-shortcut> )?
+
+	==> It seems there is a drop-down at the lower left corner of the editor window?
+
+	
+
+	==> It seems <ctrl>+<shift> + '.' zooms in and <ctrl>+<shift> + ',' to zoom out?
+
+ctrl+shift+. to Zoom In
+ctrl+shift+, to Zoom Out
+
+
+... 

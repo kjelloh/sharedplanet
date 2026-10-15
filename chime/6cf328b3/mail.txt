@@ -1,0 +1,27 @@
+﻿Would it be a good idea to have a car crumple-zone based on converting the impact energy (deceleration energy) to heat by having water converted to steam?
+
+1) Wikipedia seem to discuss crumple-zone designs here (https://en.wikipedia.org/wiki/Crumple_zone)?
+2) Wikipedia seem to discuss static impact attenuates for road block applications, some based on water, here (https://en.wikipedia.org/wiki/Impact_attenuator)?
+3) Water is a medium with a high  enthalpy of vaporization and thus would allow a small mass to transform large energies into heat?
+4) Now, heat is damaging to humans so maybe this idea is not a good one (may cause har to nearby humans)?
+5) What does a rough calculation of the amount of water needed to put a car to a halt?
+
+	==> Car mass m_c = 2000 Kg
+	==> Car Speed  v= 150 Km/h = 150 000 m/ 3600 s = 1500/36 = close to 50 m/s
+	==> Car velocity energy Ev = 1/2*m_c*v*v = 1/2 * 2000 * 50 * 50 = 2.5 MJ (mega joule)
+	==> Energy to vaporize m_w mass of water Ew = { to vaporize water requires 2260 kJ/kg} = m_w * 2.26 MJ / kg
+	==> Thus if we use the whole car kinetic energy of 2.5 MJ to vaporise water we can vaporise 2.5 / 2.26 = 1.1 kg of water?!!
+
+	==> But then we have not taken into account the energy required to first heat the water to the boiling temperature, i.e., 462 J/(kg K).
+	==> So vaporising m_w mass of water from 20 to 100 degrees (80 K raise) and then also vaporise it would require m_w * ((462 J/(kg K) * 80 ) + 2.26 MJ / kg))...
+
+Ok, so the energy required to heat the water is almost redundant in comparison to turn the water into steam so we can disregard that term it seems.
+
+	==> On the other hand, to ensure NO water is vaporised we need enough water so that it is only heated and NOT turned into steam (safety reasons)?
+
+Let say we want the water to not be heated more than 20 degrees - say from 20 to 40 degrees celsius. Then m_w * 462 J/(kg K) * 20 <= 2.5 MJ. This would require m_w <= 2.5 MJ / 9.24 kJ = 270 kg. So this checks out. If we use water filled absorbers on roads that are filled with more than 270 kg (i.e. litres) they can absorb a crashing car to halt into pure heat. ANd as the water would probably also  gain some kinetic energy we are "safe" from secondary harm from hot water being splashed around?
+
+…
+
+Consider to elaborate on this idea to make car crumble-zones more effective (less mass/size) by using water as momentum-to-heat converter?
+...

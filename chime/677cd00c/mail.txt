@@ -1,0 +1,53 @@
+﻿I want a low maintenance bike and perhaps a friction dampened spring suspension on the fork is possible to get rid of oil and sealing complications?
+
+1) Consider I can imagine a spring suspension with a friction dampening mechanism?
+
+
+
+The main idea here is to use a reliable, and linear, spring as the suspension combined with a friction mechanism to dissipate (dampen) the oscillation energy? 
+
+I imagine we can use off-the-shelf disk brake callipers, pads and disc materials for the friction mechanism. For example spring loading the pads to the disk to regulate the dampening factor?
+
+I also imagine we can use off-the-shelf suspension springs as they come as spare parts or upgrade kits for existing air or spring suspensions?
+
+
+
+The thing to consider is where to put the callipers and where to put the breaking pad.
+
+We can imagine it comes down to weight and we want to put as little as possible on the "springed mass" and the rest on the fixed part of the bike frame?
+
+I imagine we can in fact put the callipers on the top of the fixed fork and have the moving breaking disk attached to the springed wheel fork legs being allowed to move up the side or front of the steering tube?
+
+2) Consider we may be able to rebuild an existing suspension fork with friction dampening?
+
+
+
+The main idea here is that existing forks already have two "bridges". One at the bottom of the steering tube mount and one between the suspended wheel mount legs.
+
+I) It may thus be "easy" to mount a cut piece of a break disc to the moving bridge and a calliper to the fix bridge in such a way that the break disk moves upp and down through the pads of the break calliper when the fork moves up and down?
+
+II) If we then rebuild the tubes to use springs we in fact have a prototype to test?
+
+ 
+
+
+
+
+2) Consider an even fancier electronically controlled dampening system based on a micro controller with an on-board accelerometer?
+
+Here the basic idea is to control the dampening break calliper with a fast servo and have it controlled by a microcontroller trying to keep the acceleration of the bike frame at "zero".
+
+In the simplest case it breaks harder the more the frame is accelerating?
+
+Now this may be too simple but we can always apply a PID algorithm to control the friction dampening of the system.
+
+NOTE: I imagine we will not be able to regulate the suspension spring as this will consume to much energy (that we do not have)? Controlling the friction dampening can in theory be made with in the idea case zero energy by leveraging a small travel distance and hight friction coefficient?
+
+NOTE: being close to the front wheel we can imagine to use a friction wheel to harvest mechanical energy from the wheel rim and put into some pre-tension mechanism for the pad break force. For example, we can imagine two counter balanced tensioned springs with the breaking pad attached at the center. By regulating how "unbalanced" the mechanism is we can control how much pressure the pad is pressed against the damper disk?
+
+
+3) Consider this expired US patent for a friction dampened bicycle front fork (https://patents.google.com/patent/US5951033 <https://patents.google.com/patent/US5951033> )?
+
+
+
+...

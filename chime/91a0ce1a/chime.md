@@ -1,0 +1,45 @@
+# Todo: Programming - Consider to explain integer encodings Base32 and Base64 as just another base encoding of the "known" binary (base 2), decimal (base 10) and hexadecimal (base 16)?
+
+```#91a0ce1a``` *As of 2017-02-11 11:44*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It has never occurred to me before but suddenly I realize that Base32 and Base64 encodings are just another variant of the general base encoding we use for any number?
+
+1) Consider the general case of representing an integer using a sequence of ”digits” each representing the amount of next power of the base?
+
+integer xyz in some base = x\*base^2 + y\*base^1 + z\*base^0
+
+==&gt; Consider base 2
+
+101 = 1\*2^2 + 0\*2^1 + 1\*2^0
+
+==&gt; Consider base 10
+
+101 = 1\*10^2 + 0\*10^1 + 1\*10^0
+
+==&gt; Consider base 16
+
+101 = 1\*16^2 + 0\*16^1 + 1\*16^0
+
+==&gt; Consider base 32
+
+101 = 1\*32^2 + 0\*32^1 + 1\*32^0
+
+2) Consider the issue with Base32 is that the ”alphabet” (the digits used) differs between implementations?
+
+==&gt; Consider the problem of how to represent 32 digits (with the decimal value 0…31)  
+==&gt; Consider this wikipedia page with references to such alphabets (https://en.wikipedia.org/wiki/Base32)?  
+…
+
+3) Consider what C++ libraries there are that allows you to provide a 32 digit alphabet and an integer and get back the Base32 encoding of the value in that alphabet?
+
+...
+
+…
+
+Consider to use this insight somewhere interesting (e.g., in a talk about encodings ro as an ice breaker at some other talk)?  
+...
+
+{% endraw %}

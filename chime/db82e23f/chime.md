@@ -1,0 +1,80 @@
+# Todo: Consider to follow up on leads given by Dan Pettersson after our februari Lunch?
+
+```#db82e23f``` *As of 2017-02-18 14:18*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+> Vidarebefordrat brev:
+
+> **Från: **Dan Pettersson &lt;[dan.pettersson@systemvaruhuset.se](mailto:dan.pettersson@systemvaruhuset.se)&gt;  
+> **Ämne: ****Re: Kjell-Olov skickar lite referenser som vi sa på Lunchen :)**  
+> **Datum: **17 februari 2017 19:43:17 CET  
+> **Till: **Kjell-Olov Högdahl &lt;[kjell-olov.hogdahl@itfied.se](mailto:kjell-olov.hogdahl@itfied.se)&gt;
+
+> Hej Kjell-Olov,  
+> och tack själv! Det var ett tag sedan jag hade en så trevlig lunch. Jag har nog varit för mycket i min bubbla sista tiden och det var skönt att bli påmind om att det finns annat än kod och familjeproblem att prata om. :-)
+
+> 1)  
+> Den med kvinnan som hade lämnat sin liberala bubbla och levt med Trump-supportrarna:  
+> <http://www.npr.org/podcasts/510308/hidden-brain> Episode 59: The Deep Story  
+> (Hidden Brain har många avsnitt som passar att lyssna på när man reser någonstans, t ex 8: Back up plans)  
+> Lite i samma anda som Hidden Brain finns en lite flummigare, lättsam men ibland ändå tänkvärd podd: Invisibilia, <http://www.npr.org/podcasts/510307/invisibilia>
+
+> 2)  
+> Mer om Trump i en mer sansad ton än vad man ofta ser i svensk media  
+> <https://www.thisamericanlife.org/radio-archives/episode/608/the-revolution-starts-at-noon>  
+> (Act One i denna tyckte jag var väldigt fin: <https://www.thisamericanlife.org/radio-archives/episode/597/one-last-thing-before-i-go>)  
+> This American Life är podcast:arnas urmoder, där finns massor av guldkorn inbäddade bland halvintressanta och halvtrista episoder. (Ex 595, 585, 562-3, 565, 547-548, ... )
+
+> 3)  
+> Bok om hur det kommer sig att en del av världen är fattig, men en annan rik:  
+> <https://en.wikipedia.org/wiki/Guns,_Germs,_and_Steel>
+
+> 4)  
+> The Inquiry från BBC:  
+> <http://www.bbc.co.uk/programmes/p04b170p>
+
+> 5)  
+> Betydligt lättviktigare:  
+> <https://www.acast.com/alltduvelatveta> är också bra medan-man-pendlar-lyssning.
+
+> Må helgen skina sin sol på dig!
+
+> /Dan
+
+> Den 17 februari 2017 11:02 skrev Kjell-Olov Högdahl &lt;[kjell-olov.hogdahl@itfied.se](mailto:kjell-olov.hogdahl@itfied.se)&gt;:
+
+> > Tjena Dan!
+
+> > Tack för Lunchen och det inspirerande samtalet!
+
+> > Om du har tid och lust, skicka gärna referenser till dom där Pod-castarna du refererade till :)
+
+> > Här kommer mina referenser du frågade efter:
+
+> > 1) Yuval Hariri
+
+> > ==&gt; T.ex Ett TED Talk han gjort (<http://www.ted.com/talks/yuval_noah_harari_what_explains_the_rise_of_humans>)  
+> > ==&gt; Hans bok ”Sapiens : en kort historik över mänskligheten” (<http://www.bokus.com/bok/9789127140394/sapiens-en-kort-historik-over-manskligheten/>)  
+> > ==&gt; Hans uppföljare ”Homo Deus” (<http://www.bokus.com/bok/9781910701881/homo-deus/>)
+
+> > Och här en referens till en tänkare du inte frågade efter - men som jag håller för den som idag kommer närmast att förklara hur vi som människor skall förstå från vilken plats vi betraktar oss själva och ”verkligheten” och i sin förlängning hur vi egentligen förhåller oss till ”sanning” :)
+
+> > a) Jordan B Peterson
+
+> > ==&gt; T.ex. hans nystartade Podcast med inspelade föreläsningar (<http://jordanbpeterson.com/2016/12/podcasts/>)  
+> > ==&gt; Speciellt ”04 - Religion, Myth, Science, Truth" (<http://www.stitcher.com/podcast/julian-peterson-2/the-jordan-b-peterson-podcast/e/04-religion-myth-science-truth-48678749?autoplay=true>)
+
+> > Nåväl, ser fram emot dina tips tillbaka!
+
+> > Ha en skön Fredag!
+
+> > /Kjell-Olov
+
+> --  
+> Dan Pettersson  
+> Systemvaruhuset i Stockholm AB  
+> +46 (0)73 626 60 28
+
+{% endraw %}

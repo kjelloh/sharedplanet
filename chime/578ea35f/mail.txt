@@ -1,0 +1,19 @@
+﻿It seems my domain with swedish characters causes a lot of problems for mail-clients?
+
+1) This site seem to be a good one to translate URL:s with non-standard characters into actual encoded url (
+
+	==> Using that site i have determined that “högdal.se” is actually encoded as “xn--hgdal-jua.se”
+
+2) Seems I need to use “xn--hgdal-jua.se” instead of “högdal.se” to mace OS X mail client accept the user name?
+
+	==> When creating OS X mail account the first try failed (dialog shows with red error message)
+
+
+
+
+	==> Correcting the dialog to look as above the account was correctly registered.
+
+…
+
+Consider to try and understand how to actually setup OS X mail-accounts to Binero without the hassle it always is?
+...

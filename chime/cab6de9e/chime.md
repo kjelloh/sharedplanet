@@ -1,0 +1,16 @@
+# Todo: Recensera "Andra Vägar, Tio nya Utopier" sammanställd av Redaktör Mats Claesson (jobbar på SF Book Store västerlånggatan 48)
+
+```#cab6de9e``` *As of 2015-11-06 16:20*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Har just köpt "Andra Vägar, Tio nya Utopier" sammanställd av Redaktör Mats Claesson på “SF-Bokhandeln” (Västerlånggatan 48,111 29 Stockholm)
+
+1) Det var Redaktören Maths Claesson som stod i kassan och han berättade att han brann för SF snarare än Utopier (och några i denna bok var snarare Dystopier enligt honom).  
+2) Läser inledningen på några av novellerna och märker hur jag blir irriterad. Vad är det jag känner? Det är som om det känns att författaren ansträngt sig för mycket? Det blir styltigt. Som om jag skrivit det själv och inte borde vara nöjd i så fall? Som om jag känner att de tycker sig vara “clever” och smarta på att på kort tid kick-starta storyn? Eller är jag bara avundsjuk? Fundera på detta och se om det finns någon novell som jag inte känner så inför?  
+==&gt; Vad är ett bra, icke irriterande, sätt att inleda en text?  
+==&gt; Känns som jag vill ha kortare meningar och mer okonstlat rakt på sak?  
+…
+
+{% endraw %}

@@ -1,0 +1,32 @@
+# Todo: Consider the argument to "dress up" a next-paradigm proposal as a "religion" is to be clear it is to replace any existing Religion?
+
+```#30a0e083``` *As of 2016-06-26 17:14*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, the question has been why we should aim at defining a religion-of-the-future a “Religion” as this conflicts with the current notion that any rational person should keep her faith as a private matter and better still consider herself as past any religious beliefs?
+
+1) Consider we should still call it a Religion as this makes it clear it aims at replacing any current communities we call religious?
+
+==&gt; Consider a religion-of-the-future should provide a plug-in replacement for christianity, islam and other recognised “old” religions?  
+…
+
+2) Consider that if we also call Capitalism, feminist, human rights movements, new age and individualism as “Religions” we get an even larger scope if we call for a new religion?
+
+==&gt; Consider this understanding (or stipulation) of what a Religion really is makes a new religion-of-the-future even more potent as a society-chasing idea?  
+…
+
+3) Consider point 1 and 2 above as a starting point of a book to contribute to the talk on the religion-of-the-future?
+
+==&gt; Consider such a book could start of being very clear that “we are still religious”?  
+==&gt; Then follow up with Yuval Hariri idea on “working efficient together in large numbers”?  
+==&gt; Consider to base the introduction on - we are always religious, current religions does not “work” and A better religion is our best option  
+…
+
+…
+
+Consider to delve deeper into arguments why the next “paradigm” should be dressed up as a Religion (we are always religious, current religions does not “work” and A better religion is our best option)?  
+...
+
+{% endraw %}

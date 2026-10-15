@@ -1,0 +1,156 @@
+# Todo: Consider to make VSCode use latest Brew installed g++ on my macOS Monterey on Intel mac Pro "Trashcan"?
+
+```#6115987e``` *As of 2022-11-05 16:07*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I want a stable and trustworthy way to keep my C++ tool chains updated on macOS, Linux and Windows.
+
+1) It seems I already had gcc-11 installed with Brew on macOS so I could just upgrade to the latest gcc?
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % **brew upgrade gcc**  
+> Running \`brew update --auto-update\`...  
+> ==&gt; **Auto-updated Homebrew!**  
+> Updated 2 taps (homebrew/core and homebrew/cask).
+
+> You have **93** outdated formulae installed.  
+> You can upgrade them with **brew upgrade**  
+> or list them with **brew outdated**.
+
+> ==&gt; **Upgrading 1 outdated package:**  
+> **gcc 11.2.0_3 -&gt; 12.2.0**  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/isl/manifests/0.25>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/isl/blobs/sha256:568dd08209728ad3a036cf45287ff8384b9ed821460a216a9a79fa80fdcfbf52>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:568dd08209728ad3a036cf45287ff8384b9ed821460a216a9a79fa80fdcfbf52?se=2022-11-05T14%3A55%3A00Z&sig=c4PETOZmdsLX6SzPDNr7gJKd0%2Bf8TIn4Ig14%2BaD%2BK%2BM%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/mpfr/manifests/4.1.0-p13>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/mpfr/blobs/sha256:1007b284b2bc9825f8aa1f2bf3162ff8d2ca8f5d0c3c9802c8a9be452677648e>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:1007b284b2bc9825f8aa1f2bf3162ff8d2ca8f5d0c3c9802c8a9be452677648e?se=2022-11-05T14%3A55%3A00Z&sig=lnXRzklioWVC2%2FZxmLC%2BySquvDuTjYh0SZR%2FOPPQC9s%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/gcc/manifests/12.2.0-1>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Downloading <https://ghcr.io/v2/homebrew/core/gcc/blobs/sha256:453199069048503be8f072463aaa3cd60fc2764875528f234374872354528564>**  
+> ==&gt; **Downloading from <https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:453199069048503be8f072463aaa3cd60fc2764875528f234374872354528564?se=2022-11-05T14%3A55%3A00Z&sig=Q%2FvlVXvMwpU%2F%2BXGS1f0%2Fu9ixbqSDXGJLjOb3oBWK8Z4%3D&sp=r&spr=https&sr=b&sv=2019-12-12>**  
+> ######################################################################## 100.0%  
+> ==&gt; **Upgrading ****gcc**  
+> **11.2.0_3 -&gt; 12.2.0 **
+
+> ==&gt; **Installing dependencies for gcc: ****isl** **and ****mpfr**  
+> ==&gt; **Installing gcc dependency: ****isl**  
+> ==&gt; **Pouring isl--0.25.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/isl/0.25: 73 files, 7.4MB  
+> ==&gt; **Installing gcc dependency: ****mpfr**  
+> ==&gt; **Pouring mpfr--4.1.0-p13.monterey.bottle.tar.gz**  
+> 🍺 /usr/local/Cellar/mpfr/4.1.0-p13: 30 files, 5.2MB  
+> ==&gt; **Installing ****gcc**  
+> ==&gt; **Pouring gcc--12.2.0.monterey.bottle.1.tar.gz**  
+> 🍺 /usr/local/Cellar/gcc/12.2.0: 1,582 files, 405.2MB  
+> ==&gt; **Running \`brew cleanup gcc\`...**  
+> Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.  
+> Hide these hints with HOMEBREW_NO_ENV_HINTS (see \`man brew\`).  
+> Removing: /usr/local/Cellar/gcc/11.2.0_3... (2,163 files, 459.7MB)  
+> Warning: Use python3.9 instead of deprecated freecad/freecad/python3.9  
+> Error: Could not get runtime dependencies from /usr/local/opt/pyside2/.brew/pyside2.rb!  
+> Error: No available formula with the name "freecad/freecad/shiboken2@5.15.2". Did you mean freecad/freecad/shiboken2@5.15.5 or freecad/freecad/pyside2@5.15.5?  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit %
+
+==&gt; It seems I can query brew for the paths to the gcc I have installed?
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit % **brew list gcc**  
+> /usr/local/Cellar/gcc/12.2.0/bin/c++-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/cpp-12  
+> **/usr/local/Cellar/gcc/12.2.0/bin/g++-12**  
+> /usr/local/Cellar/gcc/12.2.0/bin/gcc-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/gcc-ar-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/gcc-nm-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/gcc-ranlib-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/gcov-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/gcov-dump-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/gcov-tool-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/gfortran  
+> /usr/local/Cellar/gcc/12.2.0/bin/gfortran-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/lto-dump-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/x86_64-apple-darwin21-c++-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/x86_64-apple-darwin21-g++-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/x86_64-apple-darwin21-gcc-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/x86_64-apple-darwin21-gcc-ar-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/x86_64-apple-darwin21-gcc-nm-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/x86_64-apple-darwin21-gcc-ranlib-12  
+> /usr/local/Cellar/gcc/12.2.0/bin/x86_64-apple-darwin21-gfortran-12  
+> /usr/local/Cellar/gcc/12.2.0/include/c++/ (806 files)  
+> /usr/local/Cellar/gcc/12.2.0/lib/gcc/ (719 files)  
+> /usr/local/Cellar/gcc/12.2.0/libexec/gcc/ (14 files)  
+> /usr/local/Cellar/gcc/12.2.0/share/gcc-12/ (4 files)  
+> /usr/local/Cellar/gcc/12.2.0/share/man/ (11 files)  
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro cratchit %
+
+2) It seems I can configure VSCode in the projects tasks.json to provide a build with Brew installed gcc?
+
+> *If I take a copy of an existing build task using gcc on macOS, e.g.,*
+
+> {  
+> "type": "cppbuild",  
+> "label": "macOS C/C++: g++-11 build cratchit",  
+> "command": "/usr/local/bin/g++-11",  
+> "args": &#91;  
+> "--sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",  
+> "-fdiagnostics-color=always",  
+> "-std=c++20",  
+> "-g",  
+> "${file}",  
+> "-o",  
+> "${workspaceFolder}/cratchit.out"  
+> &#93;,  
+> "options": {  
+> "cwd": "${fileDirname}"  
+> },  
+> "problemMatcher": &#91;  
+> "$gcc"  
+> &#93;,  
+> "group": "build",  
+> "detail": "compiler: /usr/local/bin/g++-11"  
+> },
+
+> *...I can now paste it and make it into a new one that engages the upgraded Brew installed gcc?*
+
+> {  
+> "type": "cppbuild",  
+> "label": "macOS C/C++: Brew installed g++-12 build cratchit",  
+> "command": "/usr/local/Cellar/gcc/12.2.0/bin/g++-12",  
+> "args": &#91;  
+> "--sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",  
+> "-fdiagnostics-color=always",  
+> "-std=c++20",  
+> "-g",  
+> "${file}",  
+> "-o",  
+> "${workspaceFolder}/cratchit.out"  
+> &#93;,  
+> "options": {  
+> "cwd": "${fileDirname}"  
+> },  
+> "problemMatcher": &#91;  
+> "$gcc"  
+> &#93;,  
+> "group": "build",  
+> "detail": "compiler: /usr/local/Cellar/gcc/12.2.0/bin/g++-12"  
+> },
+
+> *I can now command VSCode to build using this build task...*
+
+![](PastedGraphic-16.png)
+
+> \* Executing task: macOS C/C++: Brew installed g++-12 build cratchit
+
+> Starting build...  
+> /usr/local/Cellar/gcc/12.2.0/bin/g++-12 --sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fdiagnostics-color=always -std=c++20 -g /Users/kjell-olovhogdal/Documents/Github/cratchit/src/main.cpp -o /Users/kjell-olovhogdal/Documents/Github/cratchit/cratchit.out
+
+> Build finished successfully.  
+> \* Terminal will be reused by tasks, press any key to close it.
+
+...
+
+{% endraw %}

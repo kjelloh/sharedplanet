@@ -1,0 +1,18 @@
+# Todo: Write about - what is behind the Hoffman Reality User Interface?
+
+```#3e526b29``` *As of 2015-07-27 17:25*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Donald Hoffman himself states that his view is that on the other side of the user interface to reality created by our brains are in fact another consciousness. He states he choses this standpoint for two reasons. One, that the tries to bridge physicalistic observations of computation to consciousness is failing to provide any results (even any theory), and secondly because, as he put it, someone needs to search where no one else is searching (in this case trying to bridge consciousness to our experienced physical universe instead of the other way around).
+
+Now this approach is a bold but also a very interesting, not to say intriguing one. One that opens up for a vast field of thoughts creating vertigo just to get near.
+
+I proposed the other side of the user interface should be reality-as-it-is. In itself a quite lame statement as this is self evident in that the user interface is defined to be an interface to just that. But then I proposed that this reality would be something of a network of interactions. Now, I was not imaging that reality-as-it-is should be one or many consciousness. But we may of course speculate that a consciousness is some form of emerging property of a sufficiently complex network activity, although such an assumption seems to be based only on the observation that the brain (being a complex network of interactions) hosts or gives cause of a consciousness
+
+As Unger states it we are groundless however we try to reason. But at least that is some kind of ground, although in-mid-air so to speak.
+
+Consider to continue to discuss what we can say about what-is-behind the user interface and what to believe to best serve the purpose of the religion of the future.
+
+{% endraw %}

@@ -1,0 +1,16 @@
+# Todo: Överväg att föreslå att Sveriges styrelseskick skall bli "maker space"
+
+```#f234eb39``` *As of 2015-09-17 23:40*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Efter samtal med professor Mark T. Smith på DF Trendresa 2014 återträff om hans ”maker spaces” på KTH Kista så föddes idén att stjäla namnet till att beskriva en möjligt politik.
+
+1) Maker Space handlar om att samarbeta kreativt i stället för att målstyra och kontrollera. Det är alltså en bra metafor för att sammarbeta i stället för att konkurrera.  
+2) Vi talade om att nationer upplever immigration som ett hot. Men det är ett hot bara i ett samhälle baserat på paradigmet konkurrens. Ett samhälle under paradigmet samarbete skulle ha lättare att absorbera immigration?  
+3) Överväg att utveckla idén att göra Sverige till ett enda stort ”maker space”? Det har en bra klang (slagkraftigt och tankeväckande). Och det kan också faktiskt sammanfatta vad ett framtida samhälle skall fokusera på. Ett sådant samhälle överger konkurrens som paradigm och anammar samarbete istället.  
+4) Notera hur detta kan vara ett pedagogiskt sätt att förklara flera aspekter som påverkas. Vi kan till exempel också föra in ett följdargument att valutan för arbete skall vara meningsfullhet.  
+...
+
+{% endraw %}

@@ -1,0 +1,18 @@
+# Todo: Try the concept "deeply rich" after Ungers Deep freedom and equality
+
+```#1067d5bf``` *As of 2015-08-17 13:57*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+The super-curious human could opt to strive for deep richness as opposed to the shallow economical risk. This concept could be modeled after Ungers ”deep freedom” and ”deep equality”.
+
+Consider to also call the super-curious to act-in-faith in belief of "deep curiosity”?
+
+1) Deep richness is to be rich in all aspects of what makes the life rich. It should include a secured sustainable future, secured resources to survive (food, water, air and land), meaningful activities and freedom as well as guidance to pursue happiness.  
+2) Deep richness shall be distributed fairly within the limits of each planet share (i.e. respectfully within the limits of our shared commons of resources and social services).  
+3) The definition of Deep Richness (Deep Wealth?) may differ between dividuals. We may have to decide if and how the size and distribution of the Fair Planet Share may differ between citizens? Is it ok if one finds Deep Richness using only s mall Planet Share and may then another one be allowed to consume a larger one?  
+4) May we consider to apply the 1:10-rule about the allowed difference of Deep Richness? We may consider to allow the one with the lowest Deep Richness to have 1/10 of the richest one? Or shall we apply the 1:10-rule only to measurable aspects of Deep Richness, i.e. the economical richness?  
+...
+
+{% endraw %}

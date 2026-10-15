@@ -1,0 +1,30 @@
+﻿Could it be a good metaphor to compare computer languages and programming them them as the tool to create an engine for a car (and our problem os to keep up the design of the engine with the changes to the car)?
+
+1) Consider a programming language is like the building blocks of the engine?
+
+	==> A compiled language is like building all parts of the engine (you build an engine that connects with the actual power line)
+	==> An interpreted language is like building an engine that connects with pre-existing parts of the car (or like designing an engine with pre-existing engine parts)?
+
+	==> WE ALL CREATE ENGINES!
+	==> ALL ENGINES GOES INTO VEHICLES!
+
+2) Consider the target computer is like the target car?
+
+	==> A one core CPU computer is like a one engine car (everything happens on the same power line)
+	==> A four core CPU computer is like an electric car with an engine on each wheel?
+
+	==> Computer languages was designed to make one engine for each car.
+	==> Now we try to use these languages to design four engine cars.
+	==> The architecture and design of distributed computer systems has moved into the computer (multiple engine cars)
+	...
+
+3) Consider a distributed computer system is like a fleet of cars cooperating on a taks on the road?
+
+	==> A fleet of lorries make up a freight company?
+	==> A fleet of tractors make up a farm?
+	…
+
+…
+
+Consider to elaborate on this metaphor of Computers with CPU:s as Cars with Engines?
+...

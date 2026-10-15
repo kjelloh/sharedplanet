@@ -1,0 +1,24 @@
+# Todo: Consider to Edit my Stuff (less i more)?
+
+```#d4a52776``` *As of 2015-12-06 22:48*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I got inspired by the TED talk (<http://www.ted.com/talks/graham_hill_less_stuff_more_happiness>) by Graham Hill about the freedom one gains (economically and time-wise) when having less stuff.
+
+1) He talks about “Edit your stuff”. Consider to Edit my Stuff?
+
+2) Make a list of all the stuff I have so I may decide what to scrap an what to keep (and in what order).
+
+3) Sell the car!
+
+4) Digitise all films and Music?
+
+5) Buy compact living furniture (especially make the Bed go away when not used)?
+
+…
+
+Elaborate more on this idea and especially find a way to get this happen!
+
+{% endraw %}

@@ -1,0 +1,16 @@
+﻿Would it not be interesting to learn what programming in C++ in Linux could provide?
+
+1) Consider to select a good Linix Desktop to use?
+
+	==> Consider to use the existing Ubuntu installation I already have?
+	==> What Linux desktop is the most popular?
+	
+2) Find and learn about good and popular Clang environments and tools for Linux development?
+
+	==> Consider to follow up on existing leads (e.g. ”Todo: Programming - Consider to study contemporary available IDEs for C++ programming?”)
+
+3) Consider to learn Linux basics?
+…
+
+Consider to elaborate and try-out Linux C++  development using Clang environment?
+...

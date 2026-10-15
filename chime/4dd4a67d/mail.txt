@@ -1,0 +1,38 @@
+﻿Consider we may view a user+password login as actually a single password login (where the first part of the password identifies the user)?
+
+1) Consider the simple case User+Password = ”<User>””<Password>”?
+
+	==> If the User is Bob and the password is Nigella, then the password BobNigella would be enough to login Bob?
+	…
+
+2) Consider the idea that each letter in the password is actually a choice in a sequence of steps in an ”access maze”?
+
+	==> Consider the password ”bob123”
+		==> It may actually be seen as a travel in a maze where each junction has [a…z][A…Z][0..9] paths.
+
+	==> Consider a PIN code of four digits like ”1234"
+		==> It may actually be seen as a travel in a maze where each junction has 10 paths (and we take four steps)
+
+	…
+
+3) Consider what alternative user interfaces we may provide as a view of ”maze travel” model of entering a password?
+
+	==> Consider Image Selections for PIN inputs?
+
+		==> Instead of entering a digit the user selects an image (one out of ten images)
+		==> Consider the user is instructed what image to select (like ”select Pete”)?
+		==> Consider only the user knows what Pete looks like?
+		==> We then need a new set of images for each digit (a bystander may otherwise be able to learn what Pete looks like)
+		…
+
+	==> Consider what alternative ”maze” we can imagine to replace character passwords?
+
+		==> Consider an n-character password - It will at each step define k junctions (where k is the number of valid characters to enter at each step)?
+		==> If we replace this with fewer steps of fewer junctions at each step we will weaken the original password?
+		…
+
+…
+
+Consider to delve into this idea of viewing a password as a step-by-step travel in a maze combined with the idea to put the user name into the password?
+...
+	

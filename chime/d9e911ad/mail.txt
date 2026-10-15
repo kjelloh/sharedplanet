@@ -1,0 +1,11 @@
+﻿
+	==> Also see "Todo: Consider the youtube video "Function Composition in Programming Languages - Conor Hoekstra - CppNorth 2023" for function composition intuition?"
+
+1) Consider the comments in youtube video "More Functional C++?" (https://youtu.be/iTEK8SjE0w4 <https://youtu.be/iTEK8SjE0w4> )?
+
+	==> At around 1:20 He seems to show the Björn Fahler talk clip from around 10:30 (https://youtu.be/CVBlYvTenVo?t=634 <https://youtu.be/CVBlYvTenVo?t=634> )?
+	==> At around 6:15 (https://youtu.be/iTEK8SjE0w4?t=378 <https://youtu.be/iTEK8SjE0w4?t=378> ) he seems to show the Björn Fahler talk clip from around 26:35 (https://youtu.be/CVBlYvTenVo?t=1597 <https://youtu.be/CVBlYvTenVo?t=1597> )?
+
+	==> In the comment section he seems to recommend youtube video "Function Composition in Programming Languages - Conor Hoekstra - CppNorth 2023" (https://youtu.be/JELcdZLre3s?t=3 <https://youtu.be/JELcdZLre3s?t=3> )?
+
+...

@@ -1,0 +1,218 @@
+﻿So, it seems I still have not wrapped my head around C++ raw arrays. Especially how we can capture their type for template specialisation and provide wrappers for char[N] stuff!
+
+1) Consider to try out code using raw C++ arrays in a C++ Console Project?
+
+	==> See Synced “/Users/kjell-olovhogdahl/BitTorrent Sync/XCode/MyCppRawArrayPlayground/MyCppRawArrayPlayground”
+	…
+
+2) Consider to understand how the raw array element count template specialisation actually works?
+
+	==> It seems to be based on an obscure C++ syntax for C+ array reference?
+
+template <typename T, size_t N>
+size_t static_element_count(T (&pX)[N])
+{
+  return N;
+}
+
+		==> This seems to mean that static_element_count takes a fixed sized raw C parameter by reference?
+
+	==> Raw arrays always has a static capacity (declared at compile time)
+	==> A raw array T[N] (some type T and element count N) seems to have type signature "T (&pX)[N]”?
+	==> And we can specialise a template function on this type to capture raw array size at compile time
+
+namespace raw_1 {
+  
+  struct A {
+    int x;
+    int y;
+  };
+  
+  void test_and_print() {
+    int i[3];
+    float f[5];
+    A a[7];
+    std::cout << '\n' << "test_and_print output..." << '\n';
+    std::cout << '\n' << "int i[3] \t has capacity for " << static_element_count(i) << " int{} objects";
+    std::cout << '\n' << "float f[5] \t has capacity for " << static_element_count(f) << " float{} objects";
+    std::cout << '\n' << "A a[7] \t\t has capacity for " << static_element_count(a) << " A{} objects";
+    std::cout << '\n' << "\"Hello\"\t\t has capacity for " << static_element_count("Hello") << " char{} objects";
+  }
+  
+}
+
+test_and_print output...
+
+int i[3] 	 has capacity for 3 int{} objects
+float f[5] 	 has capacity for 5 float{} objects
+A a[7] 		 has capacity for 7 A{} objects
+"Hello"		 has capacity for 6 char{} objects
+
+	==> C++ raw arrays are in fact C arrays! 
+
+		==> They don’t support copy semantics but C++ range for loop can iterate over them.
+
+namespace raw_2 {
+
+  void test_and_print() {
+    std::cout << '\n'   << "test_and_print output..." << '\n';
+    int i[3];
+    // int j[3] = i; // Error Array initializer must be an initializer list
+    std::cout << '\n'   << "int i[3];";
+    std::cout << '\n'   << "int j[3] = i; // Error: Array initializer must be an initializer list";
+    std::cout << '\n'   << "C++ range for loop works on C arrays";
+    std::cout << '\n'   << "for (auto e : i) {";
+    for (auto e : i) {
+      std::cout << '\n'   << "\te = " << e;;
+    }
+    std::cout << '\n'   << "}";
+  }
+}
+
+
+test_and_print output...
+
+int i[3];
+int j[3] = i; // Error: Array initializer must be an initializer list
+C++ range for loop works on C arrays
+for (auto e : i) {
+	e = 32767
+	e = 0
+	e = 1
+}
+
+	==> It seems we can actually work with string literals (as long as we know the obscure C++ syntax for const references)?
+
+		==> See const char(&sz2)[6] = "Okey “; below!
+
+namespace raw_3 {
+  void test_and_print() {
+    std::cout << '\n'   << "test_and_print output..." << '\n';
+    std::cout << '\n'   << "C++ range for loop works on string literals";
+    std::cout << '\n'   << "for (auto e : \"Hello\") {";
+    for (auto e : "Hello") {
+      std::cout << '\n'   << "\te = ";
+      if (e >= ' ') std::cout << e; else std::cout << "\\" << std::to_string(e);
+    }
+    std::cout << '\n'   << "}";
+    auto sz = "Ouups"; // sz will be const char*, NOT char(&sz)[6]
+    std::cout << '\n' << "auto sz = \"Ouups\"; // sz decays to const char*, from const char(&sz)[6]";
+    // static_element_count(sz); // Error - No matching function for call to 'static_element_count'
+    std::cout << '\n' << "static_element_count(sz); // Error - No matching function for call to 'static_element_count' ";
+    const char(&sz2)[6] = "Okey "; // Obscure C syntax!
+    std::cout << '\n' << "const char(&sz2)[6] = \"Okey \"; \t has capacity for " << static_element_count(sz2) << " int{} objects";
+  }
+}
+
+test_and_print output...
+
+C++ range for loop works on string literals
+for (auto e : "Hello") {
+	e = H
+	e = e
+	e = l
+	e = l
+	e = o
+	e = \0
+}
+auto sz = "Ouups"; // sz decays to const char*, from const char(&sz)[6]
+static_element_count(sz); // Error - No matching function for call to 'static_element_count' 
+const char(&sz2)[6] = "Okey "; 	 has capacity for 6 int{} objects
+
+	==> We need to beware of raw array decay to pointer!
+
+namespace raw_4 {
+  // Inspired by https://stackoverflow.com/questions/1461432/what-is-array-decaying <https://stackoverflow.com/questions/1461432/what-is-array-decaying>
+
+  // "const T array[]"  same type as "const T* array"
+  template <typename T> void by_value_1(const T* array) {
+    std::cout << '\n' << "template <typename T> void by_value_1(const T* array) called.";
+    std::cout << '\n' << "\tarray is T*, element count unknown";
+    std::cout << '\n' << "\tarray = \"" << array << '\"';
+    //std::cout << '\n' << "static_element_count(array) = " << static_element_count(array); // Error -  No matching function for call to 'static_element_count'
+    std::cout << '\n' << "\tstatic_element_count(array); // Error -  No matching function for call to 'static_element_count'";
+    std::cout << '\n' << "\tsizeof(array) = " << sizeof(array) << " = memory byte count (including allignment)";
+  }
+
+  // "const T array[]"  same type as "const T* array"
+  template <typename T> void by_value_2(const T array[]) {
+    std::cout << '\n' << "template <typename T> void by_value_1(const T* array) called.";
+    std::cout << '\n' << "\tarray is T*, element count unknown";
+    std::cout << '\n' << "\tarray = \"" << array << '\"';
+    //std::cout << '\n' << "static_element_count(array) = " << static_element_count(array); // Error -  No matching function for call to 'static_element_count'
+    std::cout << '\n' << "\tstatic_element_count(array); // Error -  No matching function for call to 'static_element_count'";
+    std::cout << '\n' << "\tsizeof(array) = " << sizeof(array) << " = memory byte count (including allignment)";
+  }
+
+  template <typename T, size_t N> void by_pointer(const T (*array)[N]) {
+    std::cout << '\n' << "\ttemplate <typename T, size_t N> void by_pointer(const T (*array)[N]) called";
+    std::cout << '\n' << "\tarray = \"" << array << '\"';
+    std::cout << '\n' << "\tstatic_element_count(array) = " << static_element_count(array) << " ok";
+  }
+
+  template <typename T, size_t N> void by_reference(const T (&array)[N]) {
+    std::cout << '\n' << "\ttemplate <typename T, size_t N> void by_reference(const T (&array)[N]) called";
+    std::cout << '\n' << "\tarray = \"" << array << '\"';
+    std::cout << '\n' << "\tstatic_element_count(array) = " << static_element_count(array) << " ok";
+  }
+
+  void test_and_print() {
+    std::cout << '\n'   << "test_and_print output..." << '\n';
+    std::cout << '\n'   << "by_value_1(\"Hello\");";
+    by_value_1("Hello");
+    std::cout << '\n'   << "by_value_2(\"Hello\");";
+    by_value_2("Hello");
+    std::cout << '\n'   << "by_pointer(\"Hello\"); // Error - No matching function for call to 'by_pointer'";
+    // by_pointer("Hello"); // Error - No matching function for call to 'by_pointer'
+    std::cout << '\n'   << "by_reference(\"Hello\");";
+    by_reference("Hello");
+  }
+}
+
+test_and_print output...
+
+by_value_1("Hello");
+template <typename T> void by_value_1(const T* array) called.
+	array is T*, element count unknown
+	array = "Hello"
+	static_element_count(array); // Error -  No matching function for call to 'static_element_count'
+	sizeof(array) = 8 = memory byte count (including allignment)
+by_value_2("Hello");
+template <typename T> void by_value_1(const T* array) called.
+	array is T*, element count unknown
+	array = "Hello"
+	static_element_count(array); // Error -  No matching function for call to 'static_element_count'
+	sizeof(array) = 8 = memory byte count (including allignment)
+by_pointer("Hello"); // Error - No matching function for call to 'by_pointer'
+by_reference("Hello");
+	template <typename T, size_t N> void by_reference(const T (&array)[N]) called
+	array = "Hello"
+	static_element_count(array) = 6 ok
+
+	==> The obscure C++ C array reference syntax seems to work for template parameter also?
+
+namespace raw_5 {
+  
+  template <typename T> struct A {T t;};
+  
+  void test_and_print() {
+    std::cout << '\n'   << "test_and_print output..." << '\n';
+    std::cout << '\n' << "template <typename T> struct A {T t;};";
+    A<const char(&)[6]> a{"Okey "};
+    std::cout << '\n' << "A<const char(&)[6]> a{\"Okey \"}; \t a.t has capacity for " << static_element_count(a.t) << " int{} objects";
+  }
+  
+}
+
+test_and_print output...
+
+template <typename T> struct A {T t;};
+A<const char(&)[6]> a{"Okey "}; 	 a.t has capacity for 6 int{} objects
+
+	==> …
+
+…
+
+Consider to complete this study of C arrays in C++?
+...
+

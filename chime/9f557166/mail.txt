@@ -1,0 +1,50 @@
+﻿
+1) Korg seems to list a quite extensive lift of files that goes with the OASYS music workstattion (https://www.korg.com/us/support/download/product/1/167/ <https://www.korg.com/us/support/download/product/1/167/> )?
+
+Manuals
+
+PDF
+OASYS/Introductory Tour2015.01.01 / PDF : 161.4KB
+ <https://www.korg.com/us/support/download/manual/1/167/3412/>
+PDF
+OASYS/Operation Guide2015.06.01 / PDF : 7.5MB
+ <https://www.korg.com/us/support/download/manual/1/167/1634/>
+PDF
+OASYS/Parameter Guide2015.06.01 / PDF : 28.6MB
+ <https://www.korg.com/us/support/download/manual/1/167/1635/>
+PDF
+OASYS/Voice Name List（PRODUCER.PCG)2015.06.01 / PDF : 88.6KB
+ <https://www.korg.com/us/support/download/manual/1/167/1636/>
+PDF
+OASYS/Voice Name List2015.06.01 / PDF : 9.3MB
+ <https://www.korg.com/us/support/download/manual/1/167/1637/>
+PDF
+OASYS/CX-3 EXi Guided Tour2015.06.01 / PDF : 102.2KB
+ <https://www.korg.com/us/support/download/manual/1/167/2198/>
+PDF
+OASYS/software version history2015.06.01 / PDF : 100.1KB
+ <https://www.korg.com/us/support/download/manual/1/167/2199/>
+PDF
+OASYS/Installation Guide2015.06.01 / PDF : 96.0KB
+ <https://www.korg.com/us/support/download/manual/1/167/2200/>
+PDF
+OASYS/FAQ's2015.06.01 / PDF : 712.8KB
+ <https://www.korg.com/us/support/download/manual/1/167/2201/>
+Software
+
+Win
+OASYS/Logic Environment1.02015.01.01 / ZIP : 63.9KB
+ <https://www.korg.com/us/support/download/software/1/167/3413/>
+URL
+OASYS/System Updater 1.33a2015/01/01
+ <https://www.korg.com/us/support/download/link/1/167/3414/>
+Mac / Win
+OASYS/System Updater1.112015.01.01 / ZIP : 82.9MB
+ <https://www.korg.com/us/support/download/software/1/167/3415/>
+
+2) It seems the Korg OASYS Operations Guide states there are two main "manuals" (https://cdn.korg.com/us/support/download/files/c98a409a30468f60b02a1ec968b56466.pdf?response-content-disposition=inline%3Bfilename%2A%3DUTF-8%27%27OASYS_OG_v1_3_E5.pdf&response-content-type=application%2Fpdf%3B) 
+
+
+
+
+...

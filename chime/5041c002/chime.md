@@ -1,0 +1,40 @@
+# Todo: Tha - Consider what Meta Evaluation of programs with Sum and Product types enables us to re-use common patterns already in value semantics?
+
+```#5041c002``` *As of 2017-08-11 21:12*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems we can boil down a lot of special syntax for type and kind semantics if we enable value semantics to be lifted to meta levels and observe the pattern of Sum and Product types?
+
+1) Consider what Sum types in a meta scope evaluation would mean?
+
+==&gt; Consider we model the Union kind as a type constructor: T1 -&gt; T2 -&gt; (T1 + T2)
+
+==&gt; In meta-scope types are interpreted as values and kinds are interpreted as types.  
+==&gt; Thus And-types like struct and Sum-tumes like union are now “types” with defacto types treated as value instances.
+
+==&gt; Thus, if we “imagine” the values are now types we can define ‘\*’ and ‘+’ on values to mean cartesian product and disjoint union?
+
+2) Consider what Product types in meta scope evaluation would mean?
+
+==&gt; Consider to model the Product type constructor: T1 -&gt; T2 -&gt; (T1 x T2)
+
+==&gt; In meta-scope types are interpreted as values and kinds are interpreted as types.  
+==&gt; Thus And-types like struct and Sum-tumes like union are now “types” with defacto types treated as value instances.
+
+…
+
+3) Consider we can re-use product and sum on the sets of Tha to model all special cases of composition in type systems?
+
+==&gt; Consider Declaration = Name x Name is a value declaration (First name is value name and second name is meta-value name)?  
+==&gt; Consider Binding = Declaration x Value is a value definition (A binding triplet name, meta-name, value)?  
+==&gt; Consider Anonymous = Value x Value (a meta-value and a value pair)  
+…
+
+…
+
+Consider to elaborate on this idea of trying to re-use the Set Disjoin and Cartesian Product on Tha objects to enable meta-evaluation to apply value semantics to get Set algebra and thus a powerful programmable type system?  
+...
+
+{% endraw %}

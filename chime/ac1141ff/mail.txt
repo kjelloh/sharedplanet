@@ -1,0 +1,173 @@
+﻿After having a discussion after a C++ meetup over a beer Horvath messaged me and gave some leads he thinks are good for me to follow to understand about how Category Theory may be applied to functional programming in C++.
+
+1) Consider to follow up on leads into understanding Category Theory and Monads as pointed out by Meetup friend Ramon Horvath?
+
+”Hi, I thought after our last conversation that I would call your attention to a list of lectures on youtube that you probably know of but just in case if you don't: Category theory for programmers by Bartosz Milewski, his background is also in physics. The other thing I would like to call your attention to is a book by Saunders MacLane, Categories for the working mathematician. This is arguably the best comprehensive introduction to the subject by one of its founding fathers. You don't even have to buy it, pdfs can be found here and there if you search for it. Best, Ramon"
+
+2) Consider to reda the original paper by Saunders MacLane "Categories for the working mathematician”?
+
+	==> Consider this scanned (but not UCR:ed) (http://www.maths.ed.ac.uk/~aar/papers/maclanecat.pdf)?
+	==> It seems we can’t find an OCR:ed (searchable) copy of this paper on the web)?
+	...
+
+3) Consider this paper as a good  alternative to explain category theory (http://www.cs.ox.ac.uk/people/bob.coecke/ctfwp1_final.pdf)?
+
+	==> Turn raw potato (Set A) into cooked potato (Set B) 				f: A —> B	
+	==> Turn Cooked potato into salted cooked potato					g: B —> C
+	==> Combine cooking and salting									g*f: A —> C
+
+		==> Functions transforms one Object into another one (here set of raw potatotes and cooked potatoes)
+		==> Combining functions is chaining transformations of objects
+
+	==> Do nothing to Vegetable (Category X)							1x: X —> X
+	==> Then Doing nothing combined with any process					1x*f == f*1x == f: X —> Y
+
+		==> The Identity transformation works on all Objects (in our case all objects in the category Vegetables)		
+
+	==> Given Frying a Carrot											h: D —> E
+	==> Then Cook Potato (Set A) and fry Carrot (Set D) at same time			f ⊗ h : A ⊗ D —> B ⊗ E
+
+		==> For our sets this is the cartesian product
+		==> Set A and Set B is transformed to the ”pair” {D, E} as defined by f ⊗ h
+		==> See Category Theory Product (https://en.wikipedia.org/wiki/Product_(category_theory))
+
+			
+
+			==> For us Y is the Set of pairs {A, D} (Raw potatoes and raw carrots)
+			==> f1 is then the transformation f1 : {A, D} —> B (applying Cooking f: A —> B)
+			==> f2 is then the transformation f2 : {A, D} —> E (applying frying h : D —> E)
+
+	==> Now we may turn raw potatoes A and Carrots D into Meal M
+
+		==> Given Peppering the Carrot k : E —> F
+		==> And above Salting the potato g: B —> C
+		==> And given Mash Salted Cooked potatoes and Peppered Fried Carrots x: C ⊗ F —> M
+
+	
+
+		==> A ⊗ D (Set of ”paired” Raw potatoes and raw carrots)
+		==> f ⊗ h (Transform ”paired” Raw potatoes and raw carrots into ”paired” cooked potatoes and fried carrots)
+		==> g ⊗ k (transform ”paired” cooked potatoes and fried carrots into ”paired” Salted Potatoes and Peppered Carrots)
+		==> x then transforms Cooked Salted Potatoes C and Fried Peppered Carrots F into Potato and Carrot Mesh M
+
+		==> The whole transformation may then be combined as x ◦ (g ⊗ k) ◦ (f ⊗ h) : A ⊗ D —> M
+		==> We may read this as (Cook Potatos while fry carrot) and then (Salt the potatoes while Pepper the Carrots) and then Mech
+
+			==> NOTE: The order of operations in the mathematical expression is THE OPPOSITE of the order they are applied.
+
+	==> We note that the order of how we combine the operations does not matter!
+
+		==> Mesh of Salted Potatoes and Peppered Carrots == Salted and Peppered ( Mesh of Cooked Potatoes and Fried Carrots)
+		==> The operations ”Commute”
+		...
+
+4) Consider this talk by Bartosz Milewski "Categories for the working cpp programmer” (https://www.youtube.com/watch?v=GN5IV8mQtMY)?
+
+	==> He seems to define the C++ category of interest to be the Category of Types with functions as transforms between types?
+
+	
+
+		==> He seems to call this Category for ”Set” (Category of types (sets of set of values for each type) and functions to transform between sets of values (types))
+		==> The Objects are the Types (Each object is a set of all values of a type)
+		…
+
+	==> At 21:00 he defines that it is enough if each Type (Object) has an Identity function (we do not need one that works for the whole Category of types)?
+
+	==> At 38:30 he defines compose that chain embellished (semi-lifted diagonal) functions
+
+	
+
+		==> thus compose takes two functions f: A —> Writer<B> and g: B —> Writer<C> and returns compose: A —> Writer<C>
+
+	==> At 42:45 he states that the embellished (modified to ”semi-lifted”) function types form a NEW CATEGORY!
+
+	 
+
+		==> This seems to be what Scott Wlaschin calls ”Diagonal Functions” (See ”Todo: Programming - Consider to understand Monoids and Monads using the "Railway Oriented Programming" model?)”)
+		
+	==> At 44:30 he defines this new Category AND ITS IDENTITY
+
+	
+
+		==> AHA - The Identity does NOT produce A it produce an Embellished A!
+		==> The Identity is the transformation into the new type but without transforming the ”lifted” value!
+		==> Idenity: A —> std::pair<A,std::string>
+
+			==> Compare this with applying diagonal lifting function f: A —> std::pair<B,std::string> (Maps Set A to Set B in the pair)
+		
+		==> This Idenity will compose with f: A —> std::pair<B, std::string>
+
+			==> f ◦ Identity : (A —> std::pair<A, std::string>) —> std::pair<B, std::string> ok
+			==> Identity ◦ f : (A —> std::pair<B, std::string>) —> std::pair<B, std::string> ok
+ 
+			==> NOTE: This works because the ”combinator” itself is defined to glue together Diagonal Functions : A —> std::pair<B,std::string>!
+
+5) Consider in C++ we operate on the Category of Types?
+
+	==> Our functions turns one type into another one (e.g. std::optional<HANDLE> fopen(std::path))
+
+		==> The function fopen : std::path —> std::optional<HANDLE> 
+
+	==> Q: What is our identity (the function that takes ANY TYPE and just returns the same type)?
+
+		==> According to Milewski (above talk at 21:00) it is enough if there is an Identity to be combined for each function that adds no extra effect?
+		==> It seems the confusion is that if we deal with functions that creates type with a new topology (say f: A —> std::pair<B,string>) the Idenity: A —> std::pair<A, string>)?
+		==> NO - It is still unclear what the identity for  fopen : std::path —> std::optional<HANDLE> would be?
+
+		==> Given The function fopen : std::path —> std::optional<HANDLE> 
+		==> And the function readLine: std::optional<HANDLE>  —> std::optional<std::string>
+		==> The combined function readLine ◦ fopen : std::path —> std::optional<std::string>
+		==> The Identtity for fopen would be something that when combined with readLn would have ”no effect”?
+
+			==> OR, Identity: A —> std::optional<A> for any A?
+			==> But then we will be unable to compose with this identity (readLine ◦ Identity will not work as the result of Identity does not compose with readLine)?
+			==> It ssems (See above about composing embellished functions) the trick is to define the compose operation so that it works with the Identity operation?
+
+			==> In this case readLine: std::optional<HANDLE>  —> std::optional<std::string>
+			==> Thus the Identity must be able to provide std::optional<HANDLE> to readLine AND it must be able to accept std::optional<std::string> from readLine?
+			==> Is there such an Identity (And if not, we have defined our Category in the wrong way)?
+
+			==> Consider we apply the Embellished types and Diagonal functions in the Milewski example?
+
+				
+				==> We would have function fopen : std::path —> std::optional<HANDLE> (Diagonal function plain —> embellished type)
+				==> But readLine: HANDLE  —> std::optional<std::string> (Diagonal function plain —> embellished type)
+				==> The combined function readLine ◦ fopen : std::path —> std::optional<std::string> (Diagonal function plain —> embellished type)
+
+				==> Now the Identity<T>: T —> std::optional<T> will work as NO-OP with our combine for diagonal functions!
+				==> fopen ◦ Identity<path>: (path —> optional<path>) —> optional<HANDLE> ok.
+				==> Identity ◦ fopen : (path —> optional<HANDLE>) —> optional<HANDLE> ok.
+				...
+
+
+		==> It seems we have three Categories to define an ”Algerbra” for to make it work?
+
+			==> The plain types and function transforms f: A —> B (Composition is chaining g(f(x))
+			==> Diagonally Embellished types and transforms d<f>: A —> Embellished<B> (Composition by chaining diagonal functions, unwrap and chain to next diagonal function)
+
+				==> NOTE: This is the Monad bind!
+
+			==> Fully lifted Embellished types and transforms map<f>: Embellished<A> —> Embellished<B> (Composition is now plain chaining of fully lifted functions)
+		...
+
+	==> It seems function composition now has value in our C++ program?
+
+		==> Given The function fopen : std::path —> std::optional<HANDLE> 
+		==> And the function readLine: std::optional<HANDLE>  —> std::optional<std::string>
+
+		==> The combined function readLine ◦ fopen : std::path —> std::optional<std::string>
+
+		==> It seems in C++ we are able to do this at run-time by chaining the output value to the input value?
+		==> Q: But are we able to write C++ code to define a new function that we may call with std::path and get an std::string in return?
+		...
+
+	==> Q: How do we define ”Type Multiplication” to have any value in our C++ program?
+
+		==> Consider we look for C++ program pattern f ⊗ h : A ⊗ D —> B ⊗ E
+		==> Then A ⊗ D could be std::pair<A,D> and f ⊗ h : std::pair<A,D> —> std::pair<B,E>
+
+		==> Consider if A and D are THE SAME TYPE (which is ok)?
+		==> Also Consider f and g being TEH SAME FUNCTION (which is ok)?
+		==> Then A ⊗ A = std::pair<A> and f ⊗ h == f ⊗ f : std::pair<A> —> std::pair<B> (where std::pair<B> == std::pair<f A>, i.e. a pair with member transformed by f)?
+		…
+

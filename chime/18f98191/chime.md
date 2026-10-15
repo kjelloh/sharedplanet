@@ -1,0 +1,58 @@
+# Todo: Överväg att lära mig hur man bygger nytt på obebyggd tomt?
+
+```#18f98191``` *As of 2016-03-12 22:38*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Så, vad gäller egentligen om man vill bygga nytt på en obebyggd tomt?
+
+1) Det här verkar vara bra information från Boverket (http://www.boverket.se/sv/byggande/bygga-nytt-om-eller-till/forhandsbesked-for-bygglov/)?
+
+==&gt; Det verkar som om områden kan vara detaljplanerade eller inte.
+
+“Det vanligaste är att söka förhandsbesked för att bygga ett nytt hus på en obebyggd tomt utanför detaljplanerat område”
+
+==&gt; Det verkar vara minst tre steg i den juridiska processen?
+
+“Ett positivt förhandsbesked ger dig rätten att vidta en viss åtgärd på en viss plats, under förutsättning att du ansöker om bygglov inom två år från det att förhandsbeskedet vann laga kraft. Innan du börjar bygga måste du ansöka om och invänta beslut om bygglov och startbesked.”
+
+1. Förhandsbesked (Kan ta upp till 10 veckor att få. Aldrig mer än 20 veckor)
+2. Inom två år, söka bygglov
+3. Startbesked.
+
+==&gt; I detaljplanerat område kan man dessutom behöva Marklov?
+
+“Inom ett område med detaljplan behöver du marklov om du vill ändra tomtens höjdläge avsevärt”
+
+2) Det här verkar vara en bra första guide till lagar om avlopp (http://husagare.avloppsguiden.se/lagar-och-regler.html)?
+
+==&gt; Det här verkar vara en pdf med lagar och regler för enskilt avlopp (http://husagare.avloppsguiden.se/attachments/download/25/Lagar%20och%20regler%20for%20dig%20med%20enskilt%20avlopp_broschyr.pdf)?
+
+“Enskilt avlopp kräver tillstånd från eller skriftlig anmälan till miljökontoret i din kommun."
+
+“Kommunen upprättar verksamhetsområden som visar inom vilka geogra ska områden kommunen ansvarar för vatten och avlopp.”
+
+"Utanför det kommunala verksamhetsområdet ansvarar de boende själva för sin avloppshantering”
+
+==&gt; Ansökan om eget vatten och avlopp ingår i bygglovsansökan
+
+“En grundläggande förutsättning för att få bygglov för ett nytt hus är att det går att ord- na vatten och avlopp. Kan du inte ansluta till kommunalt vatten och avlopp bör du därför söka tillstånd för en enskild avloppsanlägg- ning i samband med bygglovsansökan”
+
+3) vad kostar det att bygga ett hus?
+
+==&gt; MoveHome erbjuder 122 kvm för 2,3 miljoner (nyckelfärdigt) (http://www.movehome.se/byggonline#/byggonline/MOVE101/build)?  
+==&gt; C.a 19 000 / Kvm?
+
+4) Här verkar det stå bra om Pantbrev (https://sv.wikipedia.org/wiki/Pantbrev)
+
+==&gt; En tomt (fastighet) kan pantförskrivas och sedan ”lämnas som pant” för till exempel lån.  
+==&gt; Pantbrev krävs som bevis på att fastighet är registrerad hos lantmäteriet.  
+==&gt; Lantmäteriget tar ut en kostnad på 2% av pantbrevets belopp per år.  
+.  
+…
+
+Överväg att kolla vidare för att se om bygga eget hus är ett alternativ att använda boendekapitalet bättre?  
+...
+
+{% endraw %}

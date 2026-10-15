@@ -1,0 +1,91 @@
+﻿So, what can we say about Reactive Program and its relation to Function Composition and the take on Subroutine, Coroutoine and Goroutine as just different in how they pass messages?
+
+	==> Also see ”Todo: Programming - Consider a "thread" is just message-passing using stack-frames on the same stack (another stack is another thread of stack-frame messaging)?"
+	==> Also see ”Todo: C++ - Consider to understand Reactive Programming from the semantics and design of RxCpp (Reactive Extensions for Cpp)?”
+
+	==> Also see ”Todo: Programming - Consider a Language Semantics where we can use abstractions to model subroutines, coroutines and coroutines as well as how we engage with them?”
+	==> Also see ”Todo: C++ - Consider ways to turn Callback based asynchronous mechanism into a Reactive Observable model?”
+	==> Also see ”Todo: Programming - Consider benefits of a Protocol Library based on immutable data and Functional Reactive Programming?”
+	==> Also see ”Todo: Darwinet - Consider to apply Reactive Functional Programming to synchronize between Darwinet Nodes as well as interfacing local clients (through views)?"
+
+1) Consider this talk ”Functional reactive programming in C++ - Ivan Cukic - Meeting C++ 2016” (https://www.youtube.com/watch?v=a2MmURgc6cU&t=111s <https://www.youtube.com/watch?v=a2MmURgc6cU&t=111s>)?
+
+	==> He seem to propose the definition of Reactive Program as acting on data streams (no returns are ever made)?
+
+
+
+	==> NOTE: The sort IS NOT Reactive (it cant react until the stream ends)
+
+		==> So, this is kind of a bad example, but still...
+ 	
+	==> Consider each transform may still be functional (in-value transformed to out-value)
+	==> Consider how the composition of the stream transformations still is isomorphic with function composition (the in-value is transformed to an out-value)?
+
+	==> It seams the Event Stream is made up of Creators, Processors and Consumers?
+
+		
+
+		==> It seems this kind-of is isomorphic to function composition where Process is the chain-of-transformations, the Create is the initial value and Consume is the actual call?
+
+	==> What can we say for parallel event streams that compose well in Reactive Programming?
+
+	
+
+		==> Can we imagine we can model this as currying of functions taking futures (parallel asynchronous arguments)?
+		==> But then - how do you curry a function that takes two temporally separated arguments (from each input stream)?
+
+		WE ARE HERE...
+		…
+
+
+
+2) Consider in what way Reactive Programming is isomorphic to Function Composition?
+
+	==> There seem to be some isomorphism to be found between the C++ Ranges Proposal (space-distributed value streams) and Reactive Programming transformations (time-distributed event streams)?
+
+	==> For a single value transformation chain of a composed function (e.g. h*f*g(x) = h(g(f(x))) ) a Reactive processing of a value stream would do the same but with ”message passing” instead of ”calls”?
+
+		==> But then - If we look at Subroutines, Coroutines and Goroutines as just different message-passing schemes, then the function composition and Reactive Processing is actual equal?
+
+	==> It seems we may define some "Monad Algebras” that allow function composition also for the Reactive Functions?
+
+		==> In fact, it seems we should be able to ”lift” any pure function to have it applied as Reactive Function applied to temporal distributed values?
+		==> It seems it boils down to defining a Monadic Bind that provides the ”temporal glue” to be able to wait for a future incoming value and the ”react” by calling the lifted transform function?
+		… 
+
+	==> Consider we can ”Monadicly” lift Subroutines, Coroutines and Goroutines to enable then to compose and then do a "second lift" to make them Reactively (temporarily) applied to compose event streams?
+
+3) Consider if we can model Reactive Programming as generalized function compositions lifted in layers from ”plain” subroutine, coroutine and goroutine ”pure” functions?
+
+	==> Consider an ”abstract” program (function invocation mechanism not defined): 
+
+		path -> open -> Handle -> read -> string -> tokenize -> vector<string> -> to_int -> int
+
+	==> Consider in our program we have these functions available in different flavors (sub-routine, co-routine, go-routine)?
+
+		Path -> sub::open -> Handle -> co::read -> string -> go::tokenize -> vector<string> -> sub::to_int -> int
+
+
+	==> Consider we may define a Monad to lift and compose these different types of functions?
+
+		M<Path> —> M<Handle>::bind(sub::open) —> M<Handle> -> M<string>::bind(co::read) -> M<string> —> M<vector<string>>::bind(go::tokenize) —> M<vector<string>> —> M<int>::bind(sub::to_int) —> M<int>
+
+	==> It seems we can now define another Monad to lift these to Reactive transformation on Event Streams?
+
+		R<M<Path>> —> R<M<Handle>>::bind(M<Handle>::bind(sub::open)) —> R<M<Handle>> —> …
+
+	==> It seems we should be able to visualize these lifted layers in one model?
+
+		
+
+		==> Hm… Very hard to show the pattern (but it is there I believe)!
+		==> Consider we can do it by defining different Categories and use Arrows?
+		…
+
+…
+
+Consider to elaborate on this idea of trying to model Reactive Programming, Function Composition and Messaging-indifferent function composition into one model of layers of Monadic bind ”algebra”?
+...
+			
+
+

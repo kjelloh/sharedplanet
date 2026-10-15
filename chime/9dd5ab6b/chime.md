@@ -1,0 +1,49 @@
+# Todo: Darwinet - Consider to compare Darwinet Deltas with OT (Operational Transformations like Google Wave Approach) and Differential Synchronization (e.g., research by Neil Fraser)?
+
+```#9dd5ab6b``` *As of 2017-03-05 23:59*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+So, how does Darwinet compare with Operational Transformation (google Wave approach)
+
+1) Consider the wikipedia page on Operational Transformation (<https://en.wikipedia.org/wiki/Operational_transformation>)?
+
+...
+
+2) Consider this page of FAQ related to OT techniques (<http://www3.ntu.edu.sg/home/czsun/projects/otfaq/>)?
+
+...
+
+3) Consider this paper ”Differential Synchronization” (<https://neil.fraser.name/writing/sync/>)?
+
+==&gt; The actual pdf seems to be available here (<https://neil.fraser.name/writing/sync/eng047-fraser.pdf>)?
+
+> ”  
+> Differential Synchronization
+
+> Neil Fraser Google  
+> 1600 Amphitheatre Parkway Mountain View, CA, 94043
+
+> [fraser@google.com](mailto:fraser@google.com)  
+> "
+
+4) Consider this talk ”Differential Synchronization” (<https://www.youtube.com/watch?v=S2Hp_1jqpY8>)?
+
+…
+
+5) Consider the main difference between Darwinet and OT Applications are that Darwinet allows branching?
+
+==&gt; Consider Darwinet MIV will always branch on conflict while an OT system will always reach consensus?
+
+==&gt; Consider Darwinet aims at ”View Consensus” rather than ”State Consensus” (in that it preserves conflicts as branches and provides merge views for natural-selection)?
+
+...
+
+…
+
+Consider to delve into the research and applications of Operational Transform (OT) and how it relates to Darwinet Deltas (and if and how we would be tempted to base Darwinet Delta Synchronization on OT)?
+
+...
+
+{% endraw %}

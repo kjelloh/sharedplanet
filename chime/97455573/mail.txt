@@ -1,0 +1,33 @@
+﻿It seems I could benefit from documenting resources and information to maintain my Cetus 3D printer?
+
+1) Consider the Facebook group for Cetus 3D printer owners (https://www.facebook.com/groups/1122442167791001/permalink/1248371661864717/ <https://www.facebook.com/groups/1122442167791001/permalink/1248371661864717/>)?
+
+	==> This seems to be the zip file with STL for replaceable Cetus 3D parts (https://www.cetus3d.com/…/file/20170204/1486180208895795.zip <https://www.cetus3d.com/%E2%80%A6/file/20170204/1486180208895795.zip>)?
+
+		
+
+2) Consider to find out and document how to configure and maintain the Cetus 3D wifi connection?
+
+	==> It seems the wifi connection with OS X is a little shaky (I have not yet figured out what I do to make a connection those times when it does not work)?
+
+	1) It seems the printer must be running for the UP application to be able to connect over wifi?
+
+	2) It seems the UP application often crashes on start-up if the printer is not running (or otherwise not present on the wifi network)?
+
+	3) It seem at least one time I fixed a wifi connection problem by Adding the printer again (the UP application seems to treat an USB connected and wifi connected printer as two separate instances)?
+
+		==> THUS: Try “Add Printer” if no Wifi connected printer is listed under the “Printer” tab of the “Settings” dialog
+
+		
+
+					
+
+		
+
+		
+
+		
+
+		
+
+		...

@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red178\green178\blue178;\red133\green0\blue2;\red200\green20\blue201;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 Kjell-Olovs-MacBook-Pro:scratch-www kjell-olovhogdahl$ npm run build\
+\
+> www@1.0.0 build /Users/kjell-olovhogdahl/Documents/GitHub/scratch-www\
+> make build\
+\
+rm -rf ./build\
+rm -rf ./intl\
+mkdir -p build\
+mkdir -p intl\
+./bin/get-localized-urls localized-urls.json\
+(node:34576) [DEP0013] DeprecationWarning: Calling an asynchronous function without callback is deprecated.\
+./bin/build-locales node_modules/scratchr2_translations/www/translations intl\
+Merging translations for about\
+Merging translations for camp\
+Merging translations for cards\
+Merging translations for communityblocks-interviews\
+Merging translations for conference-details-2016\
+Merging translations for conference-expectations-2016\
+Merging translations for conference-index\
+Merging translations for conference-index-2016\
+Merging translations for conference-plan-2016\
+Merging translations for conference-schedule-2016\
+Merging translations for credits\
+Merging translations for developers\
+Merging translations for dmca\
+Merging translations for download\
+Merging translations for educator-landing\
+Merging translations for explore\
+Merging translations for faq\
+Merging translations for guidelines\
+Merging translations for jobs\
+Merging translations for jobs-moderator\
+Merging translations for microworld-art\
+Merging translations for microworld-fashion\
+Merging translations for microworld-hiphop\
+Merging translations for microworld-soccer\
+Merging translations for microworlds-homepage\
+Merging translations for privacypolicy\
+Merging translations for search\
+Merging translations for splash\
+Merging translations for student-complete-registration\
+Merging translations for student-registration\
+Merging translations for teacher-faq\
+Merging translations for teacherregistration\
+Merging translations for teacherwaitingroom\
+Merging translations for terms\
+Merging translations for tips\
+Merging translations for wedo2\
+No translations for camp yum, using english\
+No translations for camp cat, using english\
+No translations for download yum, using english\
+No translations for download cat, using english\
+No translations for tips yum, using english\
+No translations for tips cat, using english\
+./node_modules/.bin/webpack --bail\
+\
+\
+#\
+# Fatal error in ../deps/v8/src/api.cc, line 1200\
+# Check failed: !value_obj->IsJSReceiver() || value_obj->IsTemplateInfo().\
+#\
+\
+==== C stack trace ===============================\
+\
+    0   node                                0x00000001008f0219 v8::base::debug::StackTrace::StackTrace() + 19\
+    1   node                                0x00000001008eef45 V8_Fatal + 233\
+    2   node                                0x0000000100146726 v8::Template::SetPrivate(v8::Local<v8::Private>, v8::Local<v8::Data>, v8::PropertyAttribute) + 0\
+    3   binding.node                        0x00000001082063c7 SassTypes::Boolean::get_constructor() + 355\
+    4   binding.node                        0x0000000108208413 SassTypes::Factory::initExports(v8::Local<v8::Object>) + 407\
+    5   node                                0x0000000100838021 node::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&) + 889\
+    6   node                                0x000000010016e629 v8::internal::FunctionCallbackArguments::Call(void (*)(v8::FunctionCallbackInfo<v8::Value> const&)) + 447\
+    7   node                                0x00000001001bce6a v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments) + 903\
+    8   node                                0x00000001001bc45b v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*) + 281\
+    9   ???                                 0x00001156f4a040bd 0x0 + 19065169002685\
+    10  ???                                 0x00001156f552b994 0x0 + 19065180699028\
+make[1]: *** [webpack] Illegal instruction: 4\
+make: *** [build] Error 2\
+\cf2 \cb0 npm\cf0 \cb1  \cf3 \cb0 ERR!\cf0 \cb1  \cf4 code\cf0  ELIFECYCLE\
+\cf2 \cb0 npm\cf0 \cb1  \cf3 \cb0 ERR!\cf0 \cb1  \cf4 errno\cf0  2\
+\cf2 \cb0 npm\cf0 \cb1  \cf3 \cb0 ERR!\cf0 \cb1  www@1.0.0 build: `make build`\
+\cf2 \cb0 npm\cf0 \cb1  \cf3 \cb0 ERR!\cf0 \cb1  Exit status 2\
+\cf2 \cb0 npm\cf0 \cb1  \cf3 \cb0 ERR!\cf0 \cb1  \
+\cf2 \cb0 npm\cf0 \cb1  \cf3 \cb0 ERR!\cf0 \cb1  Failed at the www@1.0.0 build script.\
+\cf2 \cb0 npm\cf0 \cb1  \cf3 \cb0 ERR!\cf0 \cb1  This is probably not a problem with npm. There is likely additional logging output above.\
+\
+\cf2 \cb0 npm\cf0 \cb1  \cf3 \cb0 ERR!\cf0 \cb1  A complete log of this run can be found in:\
+\cf2 \cb0 npm\cf0 \cb1  \cf3 \cb0 ERR!\cf0 \cb1      /Users/kjell-olovhogdahl/.npm/_logs/2017-08-01T20_35_01_882Z-debug.log\
+Kjell-Olovs-MacBook-Pro:scratch-www kjell-olovhogdahl$\
+}

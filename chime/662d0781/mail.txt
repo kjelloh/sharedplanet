@@ -1,0 +1,20 @@
+﻿
+
+1) Consider youtube video "Chris Lattner: The Future of Computing and Programming Languages | Lex Fridman Podcast #131" where they refer to work by Jeff Dean (https://youtu.be/nWTvXbQHwWs?t=8016 <https://youtu.be/nWTvXbQHwWs?t=8016> )?
+
+2) Consider the wikipedia article on Google AI Chief Jeff Dean (https://en.wikipedia.org/wiki/Jeff_Dean_(computer_scientist) <https://en.wikipedia.org/wiki/Jeff_Dean_(computer_scientist)> )?
+
+3) Consider this article "" on the traits and definition of dense vs. sparse networks (http://www.network-science.org/highly-connected-society-dense-social-complex-networks.html <http://www.network-science.org/highly-connected-society-dense-social-complex-networks.html> )?
+
+"We live in a world that becomes more and more connected. But how does an increasingly connected society effects our social live? How do infectious diseases spread in an increasingly interconnected society and what about the transfer of information in a very transparent society? An answer to this questions can give us the research on networks of higher link density."
+
+Densely connected networks
+
+A dense network is a network in which the number of links of each node is close to the maximal number of nodes. Each node is linked to almost all other nodes. The total connected case in which exactly each node is linked to each other node is called a completely connected network. Examples of higher link density are epidemic spreading, the neural network of the brain and telecommunication networks. 
+
+A sparse network, by contrast, is connected by a low number of links only. A sparse connectivity can be found in networks in which links are more difficult to create. This includes citation networks, friendship-networks, and power-line network. 
+
+To measure the link density (edge density) of a network, we calculate the ratio of existing links m to the total number of possible links. For a network of N nodes, the network link density is D = m / 0.5*N*(N-1)
+The (maximal) link density D of a completely connected network is 1.
+
+...

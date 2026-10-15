@@ -1,0 +1,10 @@
+﻿* Consider to promote that each SPC creates a special social media user = The User spc citizen GUID? 
+* A GUID is 128 bits, 16 bytes = 32 hexadecimal characters. If Base-64 encoded this may be encoded as 128/6 = 21 + 1 = 22 characters. Adding readable ”SPC_” making the total hashtag ”#SPC_1234567890123456789012” 27 characters. 
+
+Twitter. https://dev.twitter.com/overview/api/tweets
+* The tweet API has a count (favorite_count) of how many that favored he tweet. May be used to count ”votes” for published info?
+* tweet may carry ”cards”. May we use those as spc-cards? (knowledge, power action), https://dev.twitter.com/cards/overview.
+  Twitter cards are web-pages marked up with twitter defined card tags. By tweeting the URL of the web-page the tweet will show a ”card” under the tweet with extracted data from the web-page. The twitter card marked page URL need to be approved (validated) by twitter before it can be used.
+* Hosted wordpress blogs may be configured to host twitter cards. See https://dev.twitter.com/cards/cms-integration#wordpress_com 
+* hashtags mate be used and searched for. NOTE: a Tweet is 144 characters. using a GUID-hashtag will reduce available space (e.g. 27 character citizen tag)
+* Having the user = citizen GUID opens up for publishing card GUID with 

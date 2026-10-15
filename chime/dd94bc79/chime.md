@@ -1,0 +1,2438 @@
+# Todo: Programming - Consider to document and understand the basics of Linux OS usage and configuration?
+
+```#dd94bc79``` *As of 2016-07-28 13:37*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems it would be a good idea to learn and document my journey into the Linux world - What exists in the Linux world; How does it work, What OS to use and how do we operate and configure Linux Desktops?
+
+-8) Consider good tools and how to install them on Linux?
+
+==&gt; The Linux “tree” command line tool seems to be a good one to view directory structures
+
+==&gt; It seems to be available using apt on Linux MATE
+
+> kjell-olovhogdahl@ubuntu:~/cpp/MyNakedCMakeConsoleApp$ sudo apt install tree  
+> Reading package lists... Done  
+> Building dependency tree  
+> Reading state information... Done  
+> The following packages were automatically installed and are no longer required:  
+> linux-headers-4.4.0-15 linux-headers-4.4.0-15-generic linux-headers-4.4.0-17  
+> linux-headers-4.4.0-17-generic linux-headers-4.4.0-21 linux-headers-4.4.0-21-generic  
+> linux-headers-4.4.0-22 linux-headers-4.4.0-22-generic linux-image-4.4.0-15-generic  
+> linux-image-4.4.0-17-generic linux-image-4.4.0-21-generic  
+> linux-image-4.4.0-22-generic linux-image-extra-4.4.0-15-generic  
+> linux-image-extra-4.4.0-17-generic linux-image-extra-4.4.0-21-generic  
+> linux-image-extra-4.4.0-22-generic  
+> Use 'sudo apt autoremove' to remove them.  
+> The following NEW packages will be installed:  
+> tree  
+> 0 upgraded, 1 newly installed, 0 to remove and 12 not upgraded.  
+> Need to get 40.6 kB of archives.  
+> After this operation, 138 kB of additional disk space will be used.  
+> Get:1 <http://us.archive.ubuntu.com/ubuntu> xenial/universe amd64 tree amd64 1.7.0-3 &#91;40.6 kB&#93;  
+> Fetched 40.6 kB in 0s (106 kB/s)  
+> Selecting previously unselected package tree.  
+> (Reading database ... 384527 files and directories currently installed.)  
+> Preparing to unpack .../tree_1.7.0-3_amd64.deb ...  
+> Unpacking tree (1.7.0-3) ...  
+> Processing triggers for man-db (2.7.5-1) ...  
+> Setting up tree (1.7.0-3) ...  
+> kjell-olovhogdahl@ubuntu:~/cpp/MyNakedCMakeConsoleApp$
+
+-7) How do we install, upgrade end remove programs in the Linux OS?
+
+==&gt; It seems a cocktail of APT-based tools are the ones to use?
+
+==&gt; Synaptic Package Manager (hight level GUI shell for APT (Advanced Package Tool))
+
+==&gt; command line apt command (successor to older apt-get, apt-chashe…)
+
+==&gt; command line dpkg (low level local package manager without support fro remote repositories)
+
+sudo **apt update** // updates the local knowledge of packages in remote sources
+
+**apt show** | **egrep** "Package|Source" | **more** // lists all known packages and their sources
+
+apt show llvm\* | egrep "Package|Source" | more // lists all known packages named llvm\*
+
+sudo **apt edit-sources** // opens the sources.list file to edit deb-entries for sources (repositories where "apt update" searches for packages)
+
+…
+
+==&gt; It seems clang-3.8 for 16.04 may be installed as “apt install clang”?
+
+==&gt; clang is released as 3.8 into the official xeneal distribution?
+
+==&gt; It seems clang-3.8 for 14.04 must be installed as “apt install clang-3.8”?
+
+==&gt; clang-3.6 is pre-installed with the ubuntu 14.04 iso-image (See blow)?
+
+==&gt; but must be invoked as clang-3.6 (clang command is unbound)
+
+==&gt; Also, the clang package is broken (“sudo apt install clang” fails)
+
+==&gt; It seems sources.list entry “deb <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8 main” (sudo apt edit-sources) + “sudo apt update” enables “sudo apt install clang-3.8”?
+
+==&gt; The deb-entry enables update with the clang-3.8 package at [llvm.org/apt?](http://llvm.org/apt?)
+
+==&gt; It seems sources.list entry “deb <http://llvm.org/apt/trusty/> llvm-toolchain-trusty main” (sudo apt edit-sources) + “sudo apt update” enables “sudo apt install clang-3.9”?
+
+==&gt; It seems [llvm.org/apt](http://llvm.org/apt) repository provides dali builds of 3.9?
+
+...
+
+-7) Consider to understand the recommended local file structure for applications and files downloaded manually (not packaged.managed)?
+
+==&gt; It seems the official distribution of the add-on “git” install to “**/usr/bin/**” on all platforms?
+
+> kjell-olovhogdahl@ubuntu:~/GitHub$ **which** git  
+> /usr/bin/git  
+> kjell-olovhogdahl@ubuntu:~/GitHub$
+
+> kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 ~  
+> $ **which** git  
+> /usr/bin/git
+
+> kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 ~  
+> $
+
+> Kjell-Olovs-MacBook-Pro:~ kjell-olovhogdahl$ **which** git  
+> /usr/bin/git  
+> Kjell-Olovs-MacBook-Pro:~ kjell-olovhogdahl$
+
+==&gt; It seems the root debian recommendations proposes /usr/local or /opt for application locally built from source (<https://www.debian.org/doc/manuals/debian-reference/ch02.en.html>)
+
+==&gt; This contradicts the advice below proposing /opt to allow optional applications in controlled sub-folder names (FSH rule).
+
+==&gt; This contradicts advice below to store software distribution into /usr/local/src?
+
+==&gt; Seems applications downloaded as single runtime directory tress should go into subfolder of /home/usr/opt (See /opt definition below)?
+
+==&gt; In this way /opt folder is for more officially installed applications (known LANANA registered name of distribution)?
+
+==&gt; This seem to be the official definition of the Linux FHS (File Hierarchy Standard) (<http://www.pathname.com/fhs/pub/fhs-2.3.html#OPTADDONAPPLICATIONSOFTWAREPACKAGES>)?
+
+==&gt; Consider this wikipedia page on Linux FHS (Filesystem Hierarchy Standard) (<https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard>)?
+
+> /dev Essential devices, e.g., /dev/null.
+
+> /etc Host-specific system-wide configuration files  
+> /etc/opt Configuration files for add-on packages that are stored in /opt/.  
+> /home Users' home directories, containing saved files, personal settings, etc.
+
+> ==&gt; This seem to be the content of my home folder on MATE machine?
+
+> kjell-olovhogdahl@ubuntu:/usr/local$ **cd /home**  
+> kjell-olovhogdahl@ubuntu:/home$ **ls**  
+> kjell-olovhogdahl  
+> kjell-olovhogdahl@ubuntu:/home$ **cd kjell-olovhogdahl/**  
+> kjell-olovhogdahl@ubuntu:~$ **ls**  
+> Desktop Downloads Music Public Videos  
+> Documents fontconfig Pictures Templates  
+> kjell-olovhogdahl@ubuntu:~$
+
+> /opt Optional application software packages (<http://www.pathname.com/fhs/pub/fhs-2.3.html#OPTADDONAPPLICATIONSOFTWAREPACKAGES>)  
+> “A package to be installed in /opt must locate its static files in a separate /opt/&lt;package&gt; or /opt/&lt;provider&gt; directory tree, where &lt;package&gt; is a name that describes the software package and &lt;provider&gt; is the provider's LANANA registered name”
+
+> /usr Secondary hierarchy for read-only user data; contains the majority of (multi-)user utilities and applications.  
+> “Should be shareable and read-only, cf." (<http://www.pathname.com/fhs/pub/fhs-2.3.html>)  
+> "  
+> /usr/include Standard include files.
+
+> /usr/local Tertiary hierarchy for local data, specific to this host. Typically has further subdirectories, e.g., bin/, lib/, share/  
+> “Historically and strictly according to the standard, /usr/local/ is for data that must be stored on the local host (as opposed to /usr/, which may be mounted across a network). Most of the time /usr/local/ is used for installing software/data that are not part of the standard operating system distribution (in such case, /usr/ would only contain software/data that are part of the standard operating system distribution). It is possible that the FHS standard may in the future be changed to reflect this de facto convention.  
+> "
+
+==&gt; Consider this ask-ubuntu thread on the subject of manual installation to local folders (<http://askubuntu.com/questions/1148/what-is-the-best-place-to-install-user-apps>)?
+
+== Seems download of complete runtime structure trees should go into /opt (global use) or **/home/&lt;user&gt;/opt/** (single user)?
+
+“If you just need to extract a tarball and run directly (e.g. Thunderbird, Firefox) then put it into **/home/&lt;user&gt;/opt/**.
+
+Why? From what I understand, /usr/local/ has a hierarchy that is similar to /usr/. So a program expecting to get "installed" into /usr/ should work fine in /usr/local/. A program that just needs one directory and will get all files/libraries relative to that directory can get one directory for itself in /opt/.”
+
+“Install unstable programs like firefox devel in **/home/&lt;user&gt;/opt/** makes it a lot easier to remove, and no confusion for other users as to what version they should use... So if it is not a program for global use, install it in a subfolder in your home directory"
+
+==&gt; Consider this thread on ask-ubuntu that seem to have good leads to how to do it (<http://unix.stackexchange.com/questions/127076/into-which-directory-should-i-install-programs-in-linux>)?
+
+==&gt; Seems downloaded source code should go into sub-folder of /usr/local/src?
+
+“according to the FHS, source code for locally installed software should be stored in **/usr/local/src**”
+
+==&gt; Seems my MATE machine /usr/local/src is empty?
+
+> > kjell-olovhogdahl@ubuntu:/usr/local/src$ ls
+
+> > kjell-olovhogdahl@ubuntu:/usr/local/src$
+
+==&gt; It seems some schemes are to install locally compiled applications into into existing sub-folder of /usr/local?
+
+“By convention, software compiled and installed manually (not through a package manager, e.g apt, yum, pacman) is installed in /usr/local. Some packages (programs) will create a sub-directory within /usr/local to store all of their relevant files in, such as /usr/local/openssl. Other packages will install their necessary files into existing directories such as /usr/local/sbin and /usr/local/etc”
+
+==&gt; On my MATE machine these folders are present.
+
+> kjell-olovhogdahl@ubuntu:/usr/local$ ls  
+> bin etc games include lib man sbin share src  
+> kjell-olovhogdahl@ubuntu:/usr/local$
+
+...
+
+-6) Consider to understand and interact with Linux environment variables (including windows bash emmulator)?
+
+==&gt; Consider this page about Linux environment variables (<http://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/>)
+
+“ a) **printenv** command – Print all or part of environment.
+
+b) **env** command – Print all exported environment or run a program in a modified environment.
+
+c) **set** command – Print the name and value of each shell variable."
+
+==&gt; It seems “printenv” piped through tools is the preferred way to inspect specific variables?
+
+==&gt; Pipe through grep to find parts of interest
+
+> **printenv** | **grep** foo  
+> **printenv** | **grep** HOME
+
+==&gt; Pipe through sort to get content in order
+
+> **printenv | sort**
+
+==&gt; Seems we may extend (add to) path by assign and self-reference?
+
+==&gt; Adding “~/opt/bin” to end or beginning of existing PATH variable
+
+> PATH=$PATH:~/opt/bin  
+> PATH=~/opt/bin:$PATH
+
+==&gt; It seems to add a path with spaces (or other “unusual” path characters) we should escpape the character to have them not be interpreted as separation mark (<http://stackoverflow.com/questions/12902227/how-to-input-a-path-with-a-white-space>)?
+
+> PATH=$PATH:/C/Program\\ Files\\ \\(x86\\)/Embarcadero/Studio/15.0/bin/
+
+=&gt;= Note: ‘$’ is &lt;Alt&gt;+4 on Mac keyboard (both McOS and Windows virtual machine)
+
+==&gt; Seems we may use the auto-complete feature of cd command to see what escape characters wee need?
+
+> kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c  
+> $ **cd Program\\ Files\\ \\(x86\\)/Embarcadero/Studio/15.0/bin**
+
+> kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Program Files (x86)/Embarcadero/Studio/15.0/bin  
+> $ pwd  
+> /c/Program Files (x86)/Embarcadero/Studio/15.0/bin
+
+> kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/Program Files (x86)/Embarcadero/Studio/15.0/bin  
+> $
+
+==&gt; Consider to save MATE machine variables for future reference?
+
+> kjell-olovhogdahl@ubuntu:~$ **printenv | sort**  
+> CLUTTER_BACKEND=x11  
+> COLORTERM=mate-terminal  
+> COMPIZ_CONFIG_PROFILE=mate  
+> DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Sx5VFisGNo,guid=defad3ba16651b0ef94b4c55570a1603  
+> DEFAULTS_PATH=/usr/share/gconf/mate.default.path  
+> DESKTOP_SESSION=mate  
+> DISPLAY=:0  
+> GDM_LANG=en_US  
+> GDMSESSION=mate  
+> GTK_MODULES=gail:atk-bridge:canberra-gtk-module:topmenu-gtk-module  
+> GTK_OVERLAY_SCROLLING=0  
+> HOME=/home/kjell-olovhogdahl  
+> LANG=en_US.UTF-8  
+> LANGUAGE=en_US:en  
+> LC_ADDRESS=en_US.UTF-8  
+> LC_IDENTIFICATION=en_US.UTF-8  
+> LC_MEASUREMENT=en_US.UTF-8  
+> LC_MONETARY=en_US.UTF-8  
+> LC_NAME=en_US.UTF-8  
+> LC_NUMERIC=en_US.UTF-8  
+> LC_PAPER=en_US.UTF-8  
+> LC_TELEPHONE=en_US.UTF-8  
+> LC_TIME=en_US.UTF-8  
+> LESSCLOSE=/usr/bin/lesspipe %s %s  
+> LESSOPEN=| /usr/bin/lesspipe %s  
+> LOGNAME=kjell-olovhogdahl  
+> LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:\*.tar=01;31:\*.tgz=01;31:\*.arc=01;31:\*.arj=01;31:\*.taz=01;31:\*.lha=01;31:\*.lz4=01;31:\*.lzh=01;31:\*.lzma=01;31:\*.tlz=01;31:\*.txz=01;31:\*.tzo=01;31:\*.t7z=01;31:\*.zip=01;31:\*.z=01;31:\*.Z=01;31:\*.dz=01;31:\*.gz=01;31:\*.lrz=01;31:\*.lz=01;31:\*.lzo=01;31:\*.xz=01;31:\*.bz2=01;31:\*.bz=01;31:\*.tbz=01;31:\*.tbz2=01;31:\*.tz=01;31:\*.deb=01;31:\*.rpm=01;31:\*.jar=01;31:\*.war=01;31:\*.ear=01;31:\*.sar=01;31:\*.rar=01;31:\*.alz=01;31:\*.ace=01;31:\*.zoo=01;31:\*.cpio=01;31:\*.7z=01;31:\*.rz=01;31:\*.cab=01;31:\*.jpg=01;35:\*.jpeg=01;35:\*.gif=01;35:\*.bmp=01;35:\*.pbm=01;35:\*.pgm=01;35:\*.ppm=01;35:\*.tga=01;35:\*.xbm=01;35:\*.xpm=01;35:\*.tif=01;35:\*.tiff=01;35:\*.png=01;35:\*.svg=01;35:\*.svgz=01;35:\*.mng=01;35:\*.pcx=01;35:\*.mov=01;35:\*.mpg=01;35:\*.mpeg=01;35:\*.m2v=01;35:\*.mkv=01;35:\*.webm=01;35:\*.ogm=01;35:\*.mp4=01;35:\*.m4v=01;35:\*.mp4v=01;35:\*.vob=01;35:\*.qt=01;35:\*.nuv=01;35:\*.wmv=01;35:\*.asf=01;35:\*.rm=01;35:\*.rmvb=01;35:\*.flc=01;35:\*.avi=01;35:\*.fli=01;35:\*.flv=01;35:\*.gl=01;35:\*.dl=01;35:\*.xcf=01;35:\*.xwd=01;35:\*.yuv=01;35:\*.cgm=01;35:\*.emf=01;35:\*.ogv=01;35:\*.ogx=01;35:\*.aac=00;36:\*.au=00;36:\*.flac=00;36:\*.m4a=00;36:\*.mid=00;36:\*.midi=00;36:\*.mka=00;36:\*.mp3=00;36:\*.mpc=00;36:\*.ogg=00;36:\*.ra=00;36:\*.wav=00;36:\*.oga=00;36:\*.opus=00;36:\*.spx=00;36:\*.xspf=00;36:  
+> MANDATORY_PATH=/usr/share/gconf/mate.mandatory.path  
+> MATE_DESKTOP_SESSION_ID=this-is-deprecated  
+> PAPERSIZE=letter  
+> PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snaps/bin  
+> PWD=/home/kjell-olovhogdahl  
+> QT_ACCESSIBILITY=1  
+> QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1  
+> QT_STYLE_OVERRIDE=gtk  
+> SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/2042,unix/ubuntu:/tmp/.ICE-unix/2042  
+> SHELL=/bin/bash  
+> SHLVL=1  
+> SSH_AGENT_PID=2108  
+> SSH_AUTH_SOCK=/run/user/1000/keyring/ssh  
+> TERM=xterm  
+> USER=kjell-olovhogdahl  
+> _=/usr/bin/printenv  
+> WINDOWID=73400357  
+> XAUTHORITY=/home/kjell-olovhogdahl/.Xauthority  
+> XDG_CONFIG_DIRS=/etc/xdg/xdg-mate:/etc/xdg  
+> XDG_CURRENT_DESKTOP=MATE  
+> XDG_DATA_DIRS=/usr/share/mate:/usr/share/mate:/usr/local/share/:/usr/share/:/var/lib/snappy/desktop  
+> XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/kjell-olovhogdahl  
+> XDG_RUNTIME_DIR=/run/user/1000  
+> XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0  
+> XDG_SEAT=seat0  
+> XDG_SESSION_DESKTOP=mate  
+> XDG_SESSION_ID=c2  
+> XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0  
+> XDG_SESSION_TYPE=x11  
+> XDG_VTNR=7  
+> kjell-olovhogdahl@ubuntu:~$
+
+==&gt; Seems environment variables may be exported (visible) or not (hidden)?
+
+“The env will only display a list of environment variables that have been exported and it will not show all bash variable”
+
+==&gt; Seems the git-bash window provided by git install on windows 10 machine mimics the same behaviour?
+
+> kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/git/GSL (master)  
+> $ **printenv | sort**  
+> !::=::\\  
+> _=/usr/bin/printenv  
+> ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal  
+> ALLUSERSPROFILE=C:\\ProgramData  
+> APPDATA=C:\\Users\\kjell-olovhogdahl\\AppData\\Roaming  
+> CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files  
+> COMMONPROGRAMFILES=C:\\Program Files\\Common Files  
+> CommonProgramW6432=C:\\Program Files\\Common Files  
+> COMPUTERNAME=KJELL-OLOVHA74E  
+> COMSPEC=C:\\Windows\\system32\\cmd.exe  
+> DISPLAY=needs-to-be-defined  
+> EXEPATH=C:\\Program Files\\Git  
+> FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer  
+> FPS_BROWSER_USER_PROFILE_STRING=Default  
+> HOME=/c/Users/kjell-olovhogdahl  
+> HOMEDRIVE=C:  
+> HOMEPATH=\\Users\\kjell-olovhogdahl  
+> HOSTNAME=KJELL-OLOVHA74E  
+> INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info:  
+> LANG=en_US.UTF-8  
+> LOCALAPPDATA=C:\\Users\\kjell-olovhogdahl\\AppData\\Local  
+> LOGONSERVER=\\\\KJELL-OLOVHA74E  
+> MANPATH=/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man:  
+> MSYSTEM=MINGW64  
+> NUMBER_OF_PROCESSORS=2  
+> OS=Windows_NT  
+> PATH=/c/Users/kjell-olovhogdahl/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/Users/kjell-olovhogdahl/bin:/c/Program Files (x86)/CollabNet:/c/Program Files (x86)/Embarcadero/Studio/15.0/bin:/c/Users/Public/Documents/Embarcadero/Studio/15.0/Bpl:/c/Program Files (x86)/Embarcadero/Studio/15.0/bin64:/c/Users/Public/Documents/Embarcadero/Studio/15.0/Bpl/Win64:/c/Program Files (x86)/Parallels/Parallels Tools/Applications:/c/ProgramData/Oracle/Java/javapath:/c/Program Files (x86)/Embarcadero/Studio/17.0/bin:/c/Users/Public/Documents/Embarcadero/Studio/17.0/Bpl:/c/Program Files (x86)/Embarcadero/Studio/17.0/bin64:/c/Users/Public/Documents/Embarcadero/Studio/17.0/Bpl/Win64:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files/TortoiseSVN/bin:/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit:/c/Program Files (x86)/Embarcadero/HTML5 Builder/6.0/apache-ant-1.8.2/bin:/c/Windows/system32/config/systemprofile/.dnx/bin:/c/Program Files/Microsoft DNX/Dnvm:/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/c/Program Files (x86)/CMake/bin:/c/TDM-GCC-64/bin:/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/c/Program Files/TortoiseGit/bin:/cmd:/usr/bin/vendor_perl:/usr/bin/core_perl  
+> PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC  
+> PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig  
+> PLINK_PROTOCOL=ssh  
+> PRINTER=Officejet Pro 8000 A809  
+> PROCESSOR_ARCHITECTURE=AMD64  
+> PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 70 Stepping 1, GenuineIntel  
+> PROCESSOR_LEVEL=6  
+> PROCESSOR_REVISION=4601  
+> ProgramData=C:\\ProgramData  
+> ProgramFiles(x86)=C:\\Program Files (x86)  
+> PROGRAMFILES=C:\\Program Files  
+> ProgramW6432=C:\\Program Files  
+> PS1=\\&#91;\\033&#93;0;$TITLEPREFIX:${PWD//&#91;^&#91;:ascii:&#93;&#93;/?}\\007\\&#93;\\n\\&#91;\\033&#91;32m\\&#93;\\u@\\h \\&#91;\\033&#91;35m\\&#93;$MSYSTEM \\&#91;\\033&#91;33m\\&#93;\\w\\&#91;\\033&#91;36m\\&#93;\`__git_ps1\`\\&#91;\\033&#91;0m\\&#93;\\n$  
+> PSModulePath=C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules  
+> PUBLIC=C:\\Users\\Public  
+> PWD=/c/git/GSL  
+> SESSIONNAME=Console  
+> SHELL=/usr/bin/bash  
+> SHLVL=1  
+> SSH_ASKPASS=/mingw64/libexec/git-core/git-gui--askpass  
+> SYSTEMDRIVE=C:  
+> SYSTEMROOT=C:\\Windows  
+> TEMP=/tmp  
+> TERM=xterm  
+> TMP=/tmp  
+> TMPDIR=/tmp  
+> USERDOMAIN_ROAMINGPROFILE=KJELL-OLOVHA74E  
+> USERDOMAIN=KJELL-OLOVHA74E  
+> USERNAME=kjell-olovhogdahl  
+> USERPROFILE=C:\\Users\\kjell-olovhogdahl  
+> VS140COMNTOOLS=C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\  
+> WINDIR=C:\\Windows
+
+> kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 /c/git/GSL (master)  
+> $
+
+-5) Consider to understand how to determine what binary Linux executes (i.e., find the actual binary or link)?
+
+==&gt; It seems Linux provide a command **which** for that?
+
+> kjell-olovhogdahl@ubuntu:~/GitHub$ **which** git  
+> /usr/bin/git  
+> kjell-olovhogdahl@ubuntu:~/GitHub$
+
+> kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 ~  
+> $ **which** git  
+> /usr/bin/git
+
+> kjell-olovhogdahl@KJELL-OLOVHA74E MINGW64 ~  
+> $
+
+> Kjell-Olovs-MacBook-Pro:~ kjell-olovhogdahl$ **which** git  
+> /usr/bin/git  
+> Kjell-Olovs-MacBook-Pro:~ kjell-olovhogdahl$
+
+==&gt; It seems **type** has a switch **-a** for that?
+
+==&gt; In my 16.04 MATE machine this becomes:
+
+> > kjell-olovhogdahl@ubuntu:~$ **type -a** clang-3.8
+
+> > clang-3.8 is /usr/bin/clang-3.8
+
+> > kjell-olovhogdahl@ubuntu:~$
+
+> > kjell-olovhogdahl@ubuntu:~$ **type -a** clang
+
+> > clang is /usr/bin/clang
+
+> > kjell-olovhogdahl@ubuntu:~$
+
+==&gt; It seems "ls -F” is a good way to se different “file types” (<http://unix.stackexchange.com/questions/82357/what-do-the-symbols-displayed-by-ls-f-mean>)?
+
+"ls -F appends symbols to filenames. These symbols show useful information about files.
+
+• @ means symbolic link (or that the file has extended attributes).
+
+• \* means executable.
+
+• = means socket.
+
+• | means named pipe.
+
+• &gt; means door.
+
+• / means directory."
+
+==&gt; Seems all clang commands are defined as links (@)?
+
+> kjell-olovhogdahl@ubuntu:/usr/bin$ ls -F clang\* clang@ clang-3.8@ clang-apply-replacements@ clang-check@ clang-cl-3.8@ clang-query-3.8@ clang-tblgen@ clang++@ clang++-3.8@ clang-apply-replacements-3.8@ clang-check-3.8@ clang-query@ clang-rename-3.8@ kjell-olovhogdahl@ubuntu:/usr/bin$
+
+==&gt; It seems ls -la is good for listing any symbol link actual target?
+
+==&gt; On 16.04 MATE system this becomes:
+
+> kjell-olovhogdahl@ubuntu:/usr/bin$ **ls -la clang\***  
+> lrwxrwxrwx 1 root root 25 Feb 12 13:42 clang -&gt; ../lib/llvm-3.8/bin/clang  
+> lrwxrwxrwx 1 root root 27 Feb 12 13:42 clang++ -&gt; ../lib/llvm-3.8/bin/clang++  
+> lrwxrwxrwx 1 root root 25 Mar 8 14:18 clang-3.8 -&gt; ../lib/llvm-3.8/bin/clang  
+> lrwxrwxrwx 1 root root 27 Mar 8 14:18 clang++-3.8 -&gt; ../lib/llvm-3.8/bin/clang++  
+> lrwxrwxrwx 1 root root 44 Feb 12 13:42 clang-apply-replacements -&gt; ../lib/llvm-3.8/bin/clang-apply-replacements  
+> lrwxrwxrwx 1 root root 44 Mar 8 14:18 clang-apply-replacements-3.8 -&gt; ../lib/llvm-3.8/bin/clang-apply-replacements  
+> lrwxrwxrwx 1 root root 31 Feb 12 13:42 clang-check -&gt; ../lib/llvm-3.8/bin/clang-check  
+> lrwxrwxrwx 1 root root 31 Mar 8 14:18 clang-check-3.8 -&gt; ../lib/llvm-3.8/bin/clang-check  
+> lrwxrwxrwx 1 root root 28 Mar 8 14:18 clang-cl-3.8 -&gt; ../lib/llvm-3.8/bin/clang-cl  
+> lrwxrwxrwx 1 root root 31 Feb 12 13:42 clang-query -&gt; ../lib/llvm-3.8/bin/clang-query  
+> lrwxrwxrwx 1 root root 31 Mar 8 14:18 clang-query-3.8 -&gt; ../lib/llvm-3.8/bin/clang-query  
+> lrwxrwxrwx 1 root root 32 Mar 8 14:18 clang-rename-3.8 -&gt; ../lib/llvm-3.8/bin/clang-rename  
+> lrwxrwxrwx 1 root root 32 Feb 12 13:42 clang-tblgen -&gt; ../lib/llvm-3.8/bin/clang-tblgen  
+> kjell-olovhogdahl@ubuntu:/usr/bin$
+
+==&gt; On 14.04 Trusty this becomes:
+
+> parallels@ubuntu:/usr/bin$ ls -la clang\*  
+> lrwxrwxrwx 1 root root 25 Apr 28 2015 clang-3.6 -&gt; ../lib/llvm-3.6/bin/clang  
+> lrwxrwxrwx 1 root root 27 Apr 28 2015 clang++-3.6 -&gt; ../lib/llvm-3.6/bin/clang++  
+> lrwxrwxrwx 1 root root 25 Mar 4 01:38 clang-3.8 -&gt; ../lib/llvm-3.8/bin/clang  
+> lrwxrwxrwx 1 root root 27 Mar 4 01:38 clang++-3.8 -&gt; ../lib/llvm-3.8/bin/clang++  
+> lrwxrwxrwx 1 root root 44 Apr 28 2015 clang-apply-replacements-3.6 -&gt; ../lib/llvm-3.6/bin/clang-apply-replacements  
+> lrwxrwxrwx 1 root root 44 Mar 4 01:38 clang-apply-replacements-3.8 -&gt; ../lib/llvm-3.8/bin/clang-apply-replacements  
+> lrwxrwxrwx 1 root root 31 Apr 28 2015 clang-check-3.6 -&gt; ../lib/llvm-3.6/bin/clang-check  
+> lrwxrwxrwx 1 root root 31 Mar 4 01:38 clang-check-3.8 -&gt; ../lib/llvm-3.8/bin/clang-check  
+> lrwxrwxrwx 1 root root 31 Apr 28 2015 clang-query-3.6 -&gt; ../lib/llvm-3.6/bin/clang-query  
+> lrwxrwxrwx 1 root root 31 Mar 4 01:38 clang-query-3.8 -&gt; ../lib/llvm-3.8/bin/clang-query  
+> lrwxrwxrwx 1 root root 32 Apr 28 2015 clang-rename-3.6 -&gt; ../lib/llvm-3.6/bin/clang-rename  
+> lrwxrwxrwx 1 root root 32 Mar 4 01:38 clang-rename-3.8 -&gt; ../lib/llvm-3.8/bin/clang-rename  
+> lrwxrwxrwx 1 root root 32 Apr 28 2015 clang-tblgen-3.6 -&gt; ../lib/llvm-3.6/bin/clang-tblgen  
+> lrwxrwxrwx 1 root root 30 Apr 28 2015 clang-tidy-3.6 -&gt; ../lib/llvm-3.6/bin/clang-tidy  
+> parallels@ubuntu:/usr/bin$
+
+-4) Consider how to use “apt” from llvm/apt site?
+
+==&gt; It seems we need to retrieve the archive signature to be able to use “apt” from llvm (<http://llvm.org/apt/>)
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ wget -O - <http://llvm.org/apt/llvm-snapshot.gpg.key|sudo> apt-key add -  
+> --2016-04-09 15:43:37-- <http://llvm.org/apt/llvm-snapshot.gpg.key>  
+> Resolving [llvm.org](http://llvm.org) ([llvm.org](http://llvm.org))... 192.17.58.186  
+> Connecting to [llvm.org](http://llvm.org) ([llvm.org](http://llvm.org))|192.17.58.186|:80... connected.  
+> HTTP request sent, awaiting response... 200 OK  
+> Length: 3145 (3.1K) &#91;application/pgp-keys&#93;  
+> Saving to: ‘STDOUT’
+
+> 100%&#91;==================================================================================================================&gt;&#93; 3,145 --.-K/s in 0s
+
+> 2016-04-09 15:43:38 (228 MB/s) - written to stdout &#91;3145/3145&#93;
+
+> OK  
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+==&gt; The apt-key command seem to be capable of administrating apt mechanism archive keys?
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ apt-key  
+> Usage: apt-key &#91;--keyring file&#93; &#91;command&#93; &#91;arguments&#93;
+
+> Manage apt's list of trusted keys
+
+> apt-key add &lt;file&gt; - add the key contained in &lt;file&gt; ('-' for stdin)  
+> apt-key del &lt;keyid&gt; - remove the key &lt;keyid&gt;  
+> apt-key export &lt;keyid&gt; - output the key &lt;keyid&gt;  
+> apt-key exportall - output all trusted keys  
+> apt-key update - update keys using the keyring package  
+> apt-key net-update - update keys using the network  
+> apt-key list - list keys  
+> apt-key finger - list fingerprints  
+> apt-key adv - pass advanced options to gpg (download key)
+
+> If no specific keyring file is given the command applies to all keyring files.  
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+==&gt; The wget command seem to be the GNU command to download file(s) from the web (<https://www.gnu.org/software/wget/manual/wget.html>)?
+
+==&gt; It thus seem llvm instruction “**wget** -O - <http://llvm.org/apt/llvm-snapshot.gpg.key> | sudo **apt-key** add -” (above) means:
+
+==&gt; download the file at provided url and then pipe it to apt-key?
+
+==&gt; It seems one may list current trusted keys and also export specific keys?
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ apt-key list  
+> /etc/apt/trusted.gpg  
+> --------------------  
+> pub 1024D/437D05B5 2004-09-12  
+> uid Ubuntu Archive Automatic Signing Key &lt;[ftpmaster@ubuntu.com](mailto:ftpmaster@ubuntu.com)&gt;  
+> sub 2048g/79164387 2004-09-12
+
+> pub 1024D/FBB75451 2004-12-30  
+> uid Ubuntu CD Image Automatic Signing Key &lt;[cdimage@ubuntu.com](mailto:cdimage@ubuntu.com)&gt;
+
+> pub 4096R/C0B21F32 2012-05-11  
+> uid Ubuntu Archive Automatic Signing Key (2012) &lt;[ftpmaster@ubuntu.com](mailto:ftpmaster@ubuntu.com)&gt;
+
+> pub 4096R/EFE21092 2012-05-11  
+> uid Ubuntu CD Image Automatic Signing Key (2012) &lt;[cdimage@ubuntu.com](mailto:cdimage@ubuntu.com)&gt;
+
+> pub 1024D/3E5C1192 2010-09-20  
+> uid Ubuntu Extras Archive Automatic Signing Key &lt;[ftpmaster@ubuntu.com](mailto:ftpmaster@ubuntu.com)&gt;
+
+> pub 4096R/AF4F7421 2013-03-11  
+> uid Sylvestre Ledru - Debian LLVM packages &lt;[sylvestre@debian.org](mailto:sylvestre@debian.org)&gt;  
+> sub 4096R/AF9463CE 2013-03-11
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+==&gt; Hypothesis: The key we downloaded from llvm/apt is the last one (associated with Sylvestre)?  
+==&gt; It seems the key-id is the text after the ‘/‘ in each “pub” entry of the listing?
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ apt-key export AF4F7421  
+> -----BEGIN PGP PUBLIC KEY BLOCK-----  
+> Version: GnuPG v1
+
+> **mQINBFE9lC**wBEADi0WUAApM/mgHJRU8lVkkw0CHsZNpqaQDNaHefD6Rw3S4LxNmM  
+> EZaOTkhP200XZM8lVdbfUW9xSjA3oPldc1HG26NjbqqCmWpdo2fb+r7VmU2dq3NM  
+> R18ZlKixiLDE6OUfaXWKamZsXb6ITTYmgTO6orQWYrnW6ckYHSeaAkW0wkDAryl2  
+> …  
+> 1GBGvpHvL2WizEwdk+nfk8LtrLzej+9FtIcq3uIrYnsac47Pf7p0otcFeTJTjSq3  
+> krCaoG4Hx0zGQG2ZFpHrSrZTVy6lxvIdfi0beMgY6h78p6M9eYZHQHc02DjFkQXN  
+> bXb5c6gCHESH5PXwPU4jQEE7Ib9J6sbk7ZT2Mw==  
+> **=j+4q**  
+> -----END PGP PUBLIC KEY BLOCK-----  
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+==&gt; Which actually matches the downloaded [llvm.org/apt](http://llvm.org/apt) key?
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ wget -O - <http://llvm.org/apt/llvm-snapshot.gpg.key>  
+> --2016-04-09 16:27:42-- <http://llvm.org/apt/llvm-snapshot.gpg.key>  
+> Resolving [llvm.org](http://llvm.org) ([llvm.org](http://llvm.org))... 192.17.58.186  
+> Connecting to [llvm.org](http://llvm.org) ([llvm.org](http://llvm.org))|192.17.58.186|:80... connected.  
+> HTTP request sent, awaiting response... 200 OK  
+> Length: 3145 (3.1K) &#91;application/pgp-keys&#93;  
+> Saving to: ‘STDOUT’
+
+> 0% &#91; &#93; 0 --.-K/s -----BEGIN PGP PUBLIC KEY BLOCK-----  
+> Version: GnuPG v1.4.12 (GNU/Linux)
+
+> **mQINBFE9lC**wBEADi0WUAApM/mgHJRU8lVkkw0CHsZNpqaQDNaHefD6Rw3S4LxNmM  
+> EZaOTkhP200XZM8lVdbfUW9xSjA3oPldc1HG26NjbqqCmWpdo2fb+r7VmU2dq3NM  
+> R18ZlKixiLDE6OUfaXWKamZsXb6ITTYmgTO6orQWYrnW6ckYHSeaAkW0wkDAryl2  
+> …  
+> 1GBGvpHvL2WizEwdk+nfk8LtrLzej+9FtIcq3uIrYnsac47Pf7p0otcFeTJTjSq3  
+> krCaoG4Hx0zGQG2ZFpHrSrZTVy6lxvIdfi0beMgY6h78p6M9eYZHQHc02DjFkQXN  
+> bXb5c6gCHESH5PXwPU4jQEE7Ib9J6sbk7ZT2Mw==  
+> **=j+4q**  
+> -----END PGP PUBLIC KEY BLOCK-----  
+> 100%&#91;==================================================================================================================&gt;&#93; 3,145 --.-K/s in 0s
+
+> 2016-04-09 16:27:42 (236 MB/s) - written to stdout &#91;3145/3145&#93;
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+==&gt; It seems if we remove the deb-entry to a repository of an installed package, then APT-Sources just refers to local feel system?
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ **apt show clang-3.8**  
+> Package: clang-3.8  
+> Status: install ok installed  
+> Priority: optional  
+> Section: devel  
+> Installed-Size: 66.5 MB  
+> Maintainer: LLVM Packaging Team &lt;[pkg-llvm-team@lists.alioth.debian.org](mailto:pkg-llvm-team@lists.alioth.debian.org)&gt;  
+> Source: llvm-toolchain-3.8  
+> Version: 1:3.8~svn262614-1~exp1  
+> Replaces: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt  
+> Provides: c++-compiler, c-compiler, objc-compiler  
+> Depends: libc6 (&gt;= 2.14), libgcc1 (&gt;= 1:3.4), libllvm3.8, libstdc++6 (&gt;= 4.6), libstdc++-4.8-dev, libgcc-4.8-dev, libobjc-4.8-dev, libclang-common-3.8-dev (= 1:3.8~svn262614-1~exp1), libclang1-3.8 (= 1:3.8~svn262614-1~exp1), libc6-dev, binutils  
+> Recommends: llvm-3.8-dev, python  
+> Suggests: gnustep, gnustep-devel, clang-3.8-doc  
+> Breaks: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt  
+> Homepage: <http://www.llvm.org/>  
+> Download-Size: unknown  
+> APT-Manual-Installed: yes  
+> APT-Sources: **/var/lib/dpkg/status**  
+> Description: C, C++ and Objective-C compiler (LLVM based)  
+> Clang project is a C, C++, Objective C and Objective C++ front-end  
+> for the LLVM compiler. Its goal is to offer a replacement to the GNU Compiler  
+> Collection (GCC).  
+> .  
+> Clang fully implements all published ISO C++ standards including C++11, as  
+> well as the upcoming C++14 standard, and some parts of the fledgling C++1z  
+> standard, and is considered a production-quality C++ compiler.
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+==&gt; And it does not seem to help to just enter the deb-entry (and “apt update" is also required)?
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ **sudo apt edit-sources**  
+> &#91;sudo&#93; password for parallels:
+
+==&gt; Added “deb <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8 main"
+
+> Your '/etc/apt/sources.list' file changed, please run 'apt-get update’.  
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+==&gt; And apt still does not know about the added remote repository?
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ apt show clang-3.8  
+> Package: clang-3.8  
+> Status: install ok installed  
+> Priority: optional  
+> Section: devel  
+> Installed-Size: 66.5 MB  
+> Maintainer: LLVM Packaging Team &lt;[pkg-llvm-team@lists.alioth.debian.org](mailto:pkg-llvm-team@lists.alioth.debian.org)&gt;  
+> Source: llvm-toolchain-3.8  
+> Version: 1:3.8~svn262614-1~exp1  
+> Replaces: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt  
+> Provides: c++-compiler, c-compiler, objc-compiler  
+> Depends: libc6 (&gt;= 2.14), libgcc1 (&gt;= 1:3.4), libllvm3.8, libstdc++6 (&gt;= 4.6), libstdc++-4.8-dev, libgcc-4.8-dev, libobjc-4.8-dev, libclang-common-3.8-dev (= 1:3.8~svn262614-1~exp1), libclang1-3.8 (= 1:3.8~svn262614-1~exp1), libc6-dev, binutils  
+> Recommends: llvm-3.8-dev, python  
+> Suggests: gnustep, gnustep-devel, clang-3.8-doc  
+> Breaks: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt  
+> Homepage: <http://www.llvm.org/>  
+> Download-Size: unknown  
+> APT-Manual-Installed: yes  
+> APT-Sources: /var/lib/dpkg/status  
+> Description: C, C++ and Objective-C compiler (LLVM based)  
+> Clang project is a C, C++, Objective C and Objective C++ front-end  
+> for the LLVM compiler. Its goal is to offer a replacement to the GNU Compiler  
+> Collection (GCC).  
+> .  
+> Clang fully implements all published ISO C++ standards including C++11, as  
+> well as the upcoming C++14 standard, and some parts of the fledgling C++1z  
+> standard, and is considered a production-quality C++ compiler.
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+==&gt; But after update the APT-Resources knows about the remote repository again?
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ sudo apt update  
+> Get:1 <http://security.ubuntu.com> trusty-security InRelease &#91;65.9 kB&#93;  
+> Hit <http://llvm.org> llvm-toolchain-trusty InRelease  
+> **Get:2 <http://llvm.org> llvm-toolchain-trusty-3.8 InRelease &#91;4,222 B&#93; **  
+> Hit <http://llvm.org> llvm-toolchain-trusty/main Sources  
+> Get:3 <http://security.ubuntu.com> trusty-security/main Sources &#91;110 kB&#93;  
+> Hit <http://llvm.org> llvm-toolchain-trusty/main amd64 Packages  
+> Get:4 <http://security.ubuntu.com> trusty-security/restricted Sources &#91;4,035 B&#93;  
+> Hit <http://llvm.org> llvm-toolchain-trusty/main i386 Packages  
+> Get:5 <http://security.ubuntu.com> trusty-security/universe Sources &#91;35.2 kB&#93;  
+> Get:6 <http://security.ubuntu.com> trusty-security/multiverse Sources &#91;2,764 B&#93;  
+> Get:7 <http://security.ubuntu.com> trusty-security/main amd64 Packages &#91;454 kB&#93;  
+> **Get:8 <http://llvm.org> llvm-toolchain-trusty-3.8/main Sources &#91;1,723 B&#93; **  
+> **Get:9 <http://llvm.org> llvm-toolchain-trusty-3.8/main amd64 Packages &#91;6,068 B&#93; **  
+> **Get:10 <http://llvm.org> llvm-toolchain-trusty-3.8/main i386 Packages &#91;6,082 B&#93; **  
+> Ign <http://us.archive.ubuntu.com> trusty InRelease  
+> Get:11 <http://us.archive.ubuntu.com> trusty-updates InRelease &#91;65.9 kB&#93;  
+> Get:12 <http://security.ubuntu.com> trusty-security/restricted amd64 Packages &#91;13.0 kB&#93;  
+> Get:13 <http://security.ubuntu.com> trusty-security/universe amd64 Packages &#91;126 kB&#93;  
+> Get:14 <http://us.archive.ubuntu.com> trusty-backports InRelease &#91;65.9 kB&#93;  
+> Hit <http://us.archive.ubuntu.com> trusty Release.gpg  
+> Get:15 <http://security.ubuntu.com> trusty-security/multiverse amd64 Packages &#91;4,982 B&#93;  
+> Get:16 <http://us.archive.ubuntu.com> trusty-updates/main Sources &#91;270 kB&#93;  
+> Get:17 <http://security.ubuntu.com> trusty-security/main i386 Packages &#91;427 kB&#93;  
+> Get:18 <http://us.archive.ubuntu.com> trusty-updates/restricted Sources &#91;5,352 B&#93;  
+> Get:19 <http://us.archive.ubuntu.com> trusty-updates/universe Sources &#91;152 kB&#93;  
+> Ign <http://llvm.org> llvm-toolchain-trusty/main Translation-en_US  
+> Ign <http://llvm.org> llvm-toolchain-trusty/main Translation-en  
+> Get:20 <http://security.ubuntu.com> trusty-security/restricted i386 Packages &#91;12.7 kB&#93;  
+> **Ign <http://llvm.org> llvm-toolchain-trusty-3.8/main Translation-en_US **  
+> Get:21 <http://security.ubuntu.com> trusty-security/universe i386 Packages &#91;126 kB&#93;  
+> **Ign <http://llvm.org> llvm-toolchain-trusty-3.8/main Translation-en **  
+> Get:22 <http://security.ubuntu.com> trusty-security/multiverse i386 Packages &#91;5,172 B&#93;  
+> Hit <http://security.ubuntu.com> trusty-security/main Translation-en  
+> Get:23 <http://us.archive.ubuntu.com> trusty-updates/multiverse Sources &#91;5,928 B&#93;  
+> Hit <http://security.ubuntu.com> trusty-security/multiverse Translation-en  
+> Get:24 <http://us.archive.ubuntu.com> trusty-updates/main amd64 Packages &#91;750 kB&#93;  
+> Hit <http://security.ubuntu.com> trusty-security/restricted Translation-en  
+> Hit <http://security.ubuntu.com> trusty-security/universe Translation-en  
+> Get:25 <http://us.archive.ubuntu.com> trusty-updates/restricted amd64 Packages &#91;15.9 kB&#93;  
+> Get:26 <http://us.archive.ubuntu.com> trusty-updates/universe amd64 Packages &#91;358 kB&#93;  
+> Get:27 <http://us.archive.ubuntu.com> trusty-updates/multiverse amd64 Packages &#91;13.2 kB&#93;  
+> Get:28 <http://us.archive.ubuntu.com> trusty-updates/main i386 Packages &#91;716 kB&#93;  
+> Get:29 <http://us.archive.ubuntu.com> trusty-updates/restricted i386 Packages &#91;15.6 kB&#93;  
+> Get:30 <http://us.archive.ubuntu.com> trusty-updates/universe i386 Packages &#91;359 kB&#93;  
+> Get:31 <http://us.archive.ubuntu.com> trusty-updates/multiverse i386 Packages &#91;13.6 kB&#93;  
+> Hit <http://us.archive.ubuntu.com> trusty-updates/main Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty-updates/multiverse Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty-updates/restricted Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty-updates/universe Translation-en  
+> Get:32 <http://us.archive.ubuntu.com> trusty-backports/main Sources &#91;8,904 B&#93;  
+> Get:33 <http://us.archive.ubuntu.com> trusty-backports/restricted Sources &#91;28 B&#93;  
+> Get:34 <http://us.archive.ubuntu.com> trusty-backports/universe Sources &#91;34.5 kB&#93;  
+> Get:35 <http://us.archive.ubuntu.com> trusty-backports/multiverse Sources &#91;1,898 B&#93;  
+> Get:36 <http://us.archive.ubuntu.com> trusty-backports/main amd64 Packages &#91;9,967 B&#93;  
+> Get:37 <http://us.archive.ubuntu.com> trusty-backports/restricted amd64 Packages &#91;28 B&#93;  
+> Get:38 <http://us.archive.ubuntu.com> trusty-backports/universe amd64 Packages &#91;41.5 kB&#93;  
+> Get:39 <http://us.archive.ubuntu.com> trusty-backports/multiverse amd64 Packages &#91;1,571 B&#93;  
+> Get:40 <http://us.archive.ubuntu.com> trusty-backports/main i386 Packages &#91;9,986 B&#93;  
+> Get:41 <http://us.archive.ubuntu.com> trusty-backports/restricted i386 Packages &#91;28 B&#93;  
+> Get:42 <http://us.archive.ubuntu.com> trusty-backports/universe i386 Packages &#91;41.5 kB&#93;  
+> Get:43 <http://us.archive.ubuntu.com> trusty-backports/multiverse i386 Packages &#91;1,552 B&#93;  
+> Hit <http://us.archive.ubuntu.com> trusty-backports/main Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty-backports/multiverse Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty-backports/restricted Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty-backports/universe Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty Release  
+> Hit <http://us.archive.ubuntu.com> trusty/main Sources  
+> Hit <http://us.archive.ubuntu.com> trusty/restricted Sources  
+> Hit <http://us.archive.ubuntu.com> trusty/universe Sources  
+> Hit <http://us.archive.ubuntu.com> trusty/multiverse Sources  
+> Hit <http://us.archive.ubuntu.com> trusty/main amd64 Packages  
+> Hit <http://us.archive.ubuntu.com> trusty/restricted amd64 Packages  
+> Hit <http://us.archive.ubuntu.com> trusty/universe amd64 Packages  
+> Hit <http://us.archive.ubuntu.com> trusty/multiverse amd64 Packages  
+> Hit <http://us.archive.ubuntu.com> trusty/main i386 Packages  
+> Hit <http://us.archive.ubuntu.com> trusty/restricted i386 Packages  
+> Hit <http://us.archive.ubuntu.com> trusty/universe i386 Packages  
+> Hit <http://us.archive.ubuntu.com> trusty/multiverse i386 Packages  
+> Hit <http://us.archive.ubuntu.com> trusty/main Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty/multiverse Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty/restricted Translation-en  
+> Hit <http://us.archive.ubuntu.com> trusty/universe Translation-en  
+> Ign <http://us.archive.ubuntu.com> trusty/main Translation-en_US  
+> Ign <http://us.archive.ubuntu.com> trusty/multiverse Translation-en_US  
+> Ign <http://us.archive.ubuntu.com> trusty/restricted Translation-en_US  
+> Ign <http://us.archive.ubuntu.com> trusty/universe Translation-en_US  
+> Fetched 4,363 kB in 14s (300 kB/s)  
+> Reading package lists... Done
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+==&gt; And now it seems APT knows where the repository is again?
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$ **apt show clang-3.8**  
+> Package: clang-3.8  
+> Source: llvm-toolchain-3.8  
+> Version: 1:3.8~svn262614-1~exp1  
+> Maintainer: LLVM Packaging Team &lt;[pkg-llvm-team@lists.alioth.debian.org](mailto:pkg-llvm-team@lists.alioth.debian.org)&gt;  
+> Installed-Size: 66.5 MB  
+> Depends: libc6 (&gt;= 2.14), libgcc1 (&gt;= 1:3.4), libllvm3.8, libstdc++6 (&gt;= 4.6), libstdc++-4.8-dev, libgcc-4.8-dev, libobjc-4.8-dev, libclang-common-3.8-dev (= 1:3.8~svn262614-1~exp1), libclang1-3.8 (= 1:3.8~svn262614-1~exp1), libc6-dev, binutils  
+> Recommends: llvm-3.8-dev, python  
+> Suggests: gnustep, gnustep-devel, clang-3.8-doc  
+> Breaks: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt  
+> Replaces: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt  
+> Provides: c++-compiler, c-compiler, objc-compiler  
+> Homepage: <http://www.llvm.org/>  
+> Priority: optional  
+> Section: devel  
+> Download-Size: 17.9 MB  
+> APT-Manual-Installed: yes  
+> **APT-Sources: <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8/main amd64 Packages**  
+> Description: C, C++ and Objective-C compiler (LLVM based)  
+> Clang project is a C, C++, Objective C and Objective C++ front-end  
+> for the LLVM compiler. Its goal is to offer a replacement to the GNU Compiler  
+> Collection (GCC).  
+> .  
+> Clang fully implements all published ISO C++ standards including C++11, as  
+> well as the upcoming C++14 standard, and some parts of the fledgling C++1z  
+> standard, and is considered a production-quality C++ compiler.
+
+> parallels@ubuntu:/media/psf/Shared/workplace/cross_platform/MyLLVM_AST_PlayGround/build$
+
+...
+
+-3) It seems clang and llvm are provided in the official distribution of Ubuntu Trusty 14.04 and Xeneal 16.04?
+
+==&gt; It seems issuing an unknown command engages Linux to propose a official package to install?
+
+> > parallels@ubuntu:~$ clang -v
+
+> > The program 'clang' can be found in the following packages:
+
+> > \* clang-3.3
+
+> > \* clang-3.4
+
+> > \* clang-3.5
+
+> > Try: sudo apt-get install &lt;selected package&gt;
+
+> > parallels@ubuntu:~$
+
+==&gt; Above is the output of Ubuntu 14.04 when no clang tool is installed.
+
+==&gt; But listing known packages shows many more
+
+> > parallels@ubuntu:~$ apt list clang\*
+
+> > Listing... Done
+
+> > clang/trusty 1:3.4-0ubuntu1 amd64
+
+> > clang-3.3/trusty 1:3.3-16ubuntu1 amd64
+
+> > clang-3.3-doc/trusty 1:3.3-16ubuntu1 all
+
+> > clang-3.3-examples/trusty 1:3.3-16ubuntu1 amd64
+
+> > clang-3.4/trusty 1:3.4-1ubuntu3 amd64
+
+> > clang-3.4-doc/trusty 1:3.4-1ubuntu3 all
+
+> > clang-3.4-examples/trusty 1:3.4-1ubuntu3 amd64
+
+> > clang-3.5/trusty-updates,trusty-security 1:3.5-4ubuntu2~trusty2 amd64
+
+> > clang-3.5-doc/trusty-updates,trusty-security 1:3.5-4ubuntu2~trusty2 all
+
+> > clang-3.5-examples/trusty-updates,trusty-security 1:3.5-4ubuntu2~trusty2 amd64
+
+> > clang-3.6/trusty-updates,now 1:3.6-2ubuntu1~trusty1 amd64 &#91;installed&#93;
+
+> > clang-3.6-doc/trusty-updates 1:3.6-2ubuntu1~trusty1 all
+
+> > clang-3.6-examples/trusty-updates 1:3.6-2ubuntu1~trusty1 amd64
+
+> > clang-3.7/unknown 1:3.7.1~svn253742-1~exp1 amd64
+
+> > clang-3.7-doc/unknown 1:3.7.1~svn253742-1~exp1 all
+
+> > clang-3.7-examples/unknown 1:3.7.1~svn253742-1~exp1 amd64
+
+> > clang-3.8/unknown 1:3.8~svn262614-1~exp1 amd64
+
+> > clang-3.8-doc/unknown 1:3.8~svn262614-1~exp1 all
+
+> > clang-3.8-examples/unknown 1:3.8~svn262614-1~exp1 amd64
+
+> > clang-3.9/unknown 1:3.9~svn265476-1~exp1 amd64
+
+> > clang-3.9-doc/unknown 1:3.9~svn265476-1~exp1 all
+
+> > clang-3.9-examples/unknown 1:3.9~svn265476-1~exp1 amd64
+
+> > clang-format-3.3/trusty 1:3.3-16ubuntu1 amd64
+
+> > clang-format-3.4/trusty 1:3.4-1ubuntu3 amd64
+
+> > clang-format-3.5/trusty-updates,trusty-security 1:3.5-4ubuntu2~trusty2 amd64
+
+> > clang-format-3.6/trusty-updates 1:3.6-2ubuntu1~trusty1 amd64
+
+> > clang-format-3.7/unknown 1:3.7.1~svn253742-1~exp1 amd64
+
+> > clang-format-3.8/unknown 1:3.8~svn262614-1~exp1 amd64
+
+> > clang-format-3.9/unknown 1:3.9~svn265476-1~exp1 amd64
+
+> > clang-modernize-3.4/trusty 1:3.4-1ubuntu3 amd64
+
+> > clang-modernize-3.5/trusty-updates,trusty-security 1:3.5-4ubuntu2~trusty2 amd64
+
+> > clang-modernize-3.6/trusty-updates 1:3.6-2ubuntu1~trusty1 amd64
+
+> > clang-modernize-3.7/unknown 1:3.7.1~svn253742-1~exp1 amd64
+
+> > clang-tidy-3.7/unknown 1:3.7.1~svn253742-1~exp1 amd64
+
+> > clang-tidy-3.8/unknown 1:3.8~svn262614-1~exp1 amd64
+
+> > clang-tidy-3.9/unknown 1:3.9~svn265476-1~exp1 amd64
+
+> > parallels@ubuntu:~$ ^C
+
+==&gt; The clang package seem to be broken on Truty 14.04 (defaults to 3.8 on Xeneal)?
+
+> > parallels@ubuntu:~$ sudo **apt install** clang
+
+> > &#91;sudo&#93; password for parallels:
+
+> > Reading package lists... Done
+
+> > Building dependency tree
+
+> > Reading state information... Done
+
+> > Some packages could not be installed. This may mean that you have
+
+> > requested an impossible situation or if you are using the unstable
+
+> > distribution that some required packages have not yet been created
+
+> > or been moved out of Incoming.
+
+> > The following information may help to resolve the situation:
+
+> > The following packages have unmet dependencies:
+
+> > clang : Depends: clang-3.4 (&gt;= 3.4~rc3-1~) but it is not going to be installed
+
+> > E: Unable to correct problems, you have held broken packages.
+
+==&gt; And stating to install also dependent 3.4 shows that 3.6 is already installed (pre-installed in distributed iso)?
+
+> > parallels@ubuntu:~$ sudo **apt install** clang clang-3.4
+
+> > &#91;sudo&#93; password for parallels:
+
+> > Reading package lists... Done
+
+> > Building dependency tree
+
+> > Reading state information... Done
+
+> > The following extra packages will be installed:
+
+> > libclang-common-3.4-dev libclang1-3.4 llvm-3.4 llvm-3.4-dev llvm-3.4-runtime
+
+> > Suggested packages:
+
+> > llvm-3.4-doc
+
+> > The following packages will be REMOVED:
+
+> > clang-3.6
+
+> > The following NEW packages will be installed:
+
+> > clang clang-3.4 libclang-common-3.4-dev libclang1-3.4 llvm-3.4 llvm-3.4-dev
+
+> > llvm-3.4-runtime
+
+> > 0 upgraded, 7 newly installed, 1 to remove and 14 not upgraded.
+
+> > Need to get 24.0 MB of archives.
+
+> > After this operation, 35.8 MB of additional disk space will be used.
+
+> > Do you want to continue? &#91;Y/n&#93; n
+
+> > Abort.
+
+> > parallels@ubuntu:~$
+
+==&gt; clang-3.6 seems to be
+
+> > parallels@ubuntu:~$ **apt show** clang-3.6
+
+> > Package: clang-3.6
+
+> > Priority: optional
+
+> > Section: universe/devel
+
+> > Installed-Size: 88.4 MB
+
+> > Maintainer: Ubuntu Developers &lt;[ubuntu-devel-discuss@lists.ubuntu.com](mailto:ubuntu-devel-discuss@lists.ubuntu.com)&gt;
+
+> > Original-Maintainer: LLVM Packaging Team &lt;[pkg-llvm-team@lists.alioth.debian.org](mailto:pkg-llvm-team@lists.alioth.debian.org)&gt;
+
+> > Source: llvm-toolchain-3.6
+
+> > Version: 1:3.6-2ubuntu1~trusty1
+
+> > Replaces: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt
+
+> > Provides: c++-compiler, c-compiler, objc-compiler
+
+> > Depends: libc6 (&gt;= 2.15), libclang1-3.6 (= 1:3.6-2ubuntu1~trusty1), libedit2 (&gt;= 2.11-20080614), libgcc1 (&gt;= 1:4.1.1), libllvm3.6, libstdc++6 (&gt;= 4.6), libtinfo5, libstdc++-4.8-dev, libgcc-4.8-dev, libobjc-4.8-dev, libclang-common-3.6-dev (= 1:3.6-2ubuntu1~trusty1), libc6-dev, binutils
+
+> > Recommends: llvm-3.6-dev, python
+
+> > Suggests: gnustep, gnustep-devel, clang-3.6-doc
+
+> > Breaks: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt
+
+> > Download-Size: 24.5 MB
+
+> > Homepage: <http://www.llvm.org/>
+
+> > Bugs: <https://bugs.launchpad.net/ubuntu/+filebug>
+
+> > Origin: Ubuntu
+
+> > APT-Manual-Installed: yes
+
+> > APT-Sources: <http://us.archive.ubuntu.com/ubuntu/> trusty-updates/universe amd64 Packages
+
+> > Description: C, C++ and Objective-C compiler (LLVM based)
+
+> > Clang project is a C, C++, Objective C and Objective C++ front-end
+
+> > for the LLVM compiler. Its goal is to offer a replacement to the GNU Compiler
+
+> > Collection (GCC).
+
+> > .
+
+> > Clang implements all of the ISO C++ 1998 and 2001 standards and also provides
+
+> > a partial support of C++1y.
+
+> > parallels@ubuntu:~$ ^C
+
+==&gt; It seems the APT-source entry refers to file “[http://us.archive.ubuntu.com/ubuntu/dists/trusty-updates/universe/binary-amd64/Packages.gz”?](http://us.archive.ubuntu.com/ubuntu/dists/trusty-updates/universe/binary-amd64/Packages.gz%E2%80%9D?)
+
+==&gt; Hypothesis: APT-Source defines root-url + sub-directory + architecture + packs-listing-file?
+
+==&gt; Hypothesis: “deb” in sources.list implies binary package together with APT-source amd64 tag implies binary-amd64 sub-folder for the “Packages” file?
+
+==&gt; The repository file “Packages” now defines the actual package deb-files (e.g. the clang-3.6 package deb-file for this platform and architecture)?
+
+> > Package: clang-3.6
+
+> > Priority: optional
+
+> > Section: universe/devel
+
+> > Installed-Size: 86309
+
+> > Maintainer: Ubuntu Developers &lt;[ubuntu-devel-discuss@lists.ubuntu.com](mailto:ubuntu-devel-discuss@lists.ubuntu.com)&gt;
+
+> > Original-Maintainer: LLVM Packaging Team &lt;[pkg-llvm-team@lists.alioth.debian.org](mailto:pkg-llvm-team@lists.alioth.debian.org)&gt;
+
+> > Architecture: amd64
+
+> > Source: llvm-toolchain-3.6
+
+> > Version: 1:3.6-2ubuntu1~trusty1
+
+> > Replaces: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt
+
+> > Provides: c++-compiler, c-compiler, objc-compiler
+
+> > Depends: libc6 (&gt;= 2.15), libclang1-3.6 (= 1:3.6-2ubuntu1~trusty1), libedit2 (&gt;= 2.11-20080614), libgcc1 (&gt;= 1:4.1.1), libllvm3.6, libstdc++6 (&gt;= 4.6), libtinfo5, libstdc++-4.8-dev, libgcc-4.8-dev, libobjc-4.8-dev, libclang-common-3.6-dev (= 1:3.6-2ubuntu1~trusty1), libc6-dev, binutils
+
+> > Recommends: llvm-3.6-dev, python
+
+> > Suggests: gnustep, gnustep-devel, clang-3.6-doc
+
+> > Breaks: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt
+
+> > Filename: pool/universe/l/llvm-toolchain-3.6/clang-3.6_3.6-2ubuntu1~trusty1_amd64.deb
+
+> > Size: 24465436
+
+> > MD5sum: d5eb757508e2a158826d45cc6dc88742
+
+> > SHA1: e954b855082a022af0778c8b974f64556fac613d
+
+> > SHA256: 85ca3249c9289261bbe24e7936afc0cd3467f27f5161a31316a02148b94dfaa3
+
+> > Description: C, C++ and Objective-C compiler (LLVM based)
+
+> > Homepage: <http://www.llvm.org/>
+
+> > Description-md5: 7a4488b4af767b7d9d9e5e4349a79fd5
+
+> > Bugs: <https://bugs.launchpad.net/ubuntu/+filebug>
+
+> > Origin: Ubuntu
+
+==&gt; Note how “Version:” matches in the local installed clang-3.6 package and the repository “Packages” file (1:3.6-2ubuntu1~trusty1)?
+
+==&gt; Seems installed clang must be invoked as clang-3.6 (explicit version clang)?
+
+> > parallels@ubuntu:~$ **clang-3.6 -v**
+
+> > Ubuntu clang version 3.6.0-2ubuntu1~trusty1 (tags/RELEASE_360/final) (based on LLVM 3.6.0)
+
+> > Target: x86_64-pc-linux-gnu
+
+> > Thread model: posix
+
+> > Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8
+
+> > Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8.4
+
+> > Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9
+
+> > Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9.3
+
+> > Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.8
+
+> > Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.8.4
+
+> > Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9
+
+> > Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9.3
+
+> > Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8
+
+> > Candidate multilib: .;@m64
+
+> > Selected multilib: .;@m64
+
+> > parallels@ubuntu:~$
+
+==&gt; Seem clang-3.6 also proposes corresponding gcc variant and lists installed and default ones (/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8)?
+
+...
+
+-2) The llvm 3.8 release seem to be published officially here (<http://llvm.org/releases/3.8.0/docs/ReleaseNotes.html>)?
+
+==&gt; It seems apt install clang-3.8 is enough (automatically installed dependent packages)?
+
+> parallels@ubuntu:~$ sudo **apt install clang-3.8**  
+> Reading package lists... Done  
+> Building dependency tree  
+> Reading state information... Done  
+> The following extra packages will be installed:  
+> libclang-common-3.8-dev libclang1-3.8 libjsoncpp0 libllvm3.8 llvm-3.8  
+> llvm-3.8-dev llvm-3.8-runtime  
+> Suggested packages:  
+> gnustep gnustep-devel clang-3.8-doc llvm-3.8-doc  
+> The following NEW packages will be installed:  
+> clang-3.8 libclang-common-3.8-dev libclang1-3.8 libjsoncpp0 libllvm3.8  
+> llvm-3.8 llvm-3.8-dev llvm-3.8-runtime  
+> 0 upgraded, 8 newly installed, 0 to remove and 14 not upgraded.  
+> Need to get 50.0 MB of archives.  
+> After this operation, 256 MB of additional disk space will be used.  
+> Do you want to continue? &#91;Y/n&#93; y  
+> Get:1 <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8/main libllvm3.8 amd64 1:3.8~svn262614-1~exp1 &#91;9,730 kB&#93;  
+> Get:2 <http://us.archive.ubuntu.com/ubuntu/> trusty/universe libjsoncpp0 amd64 0.6.0~rc2-3ubuntu1 &#91;56.5 kB&#93;  
+> Get:3 <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8/main libclang1-3.8 amd64 1:3.8~svn262614-1~exp1 &#91;4,070 kB&#93;  
+> Get:4 <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8/main libclang-common-3.8-dev amd64 1:3.8~svn262614-1~exp1 &#91;1,241 kB&#93;  
+> Get:5 <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8/main clang-3.8 amd64 1:3.8~svn262614-1~exp1 &#91;17.9 MB&#93;  
+> Get:6 <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8/main llvm-3.8-runtime amd64 1:3.8~svn262614-1~exp1 &#91;83.7 kB&#93;  
+> Get:7 <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8/main llvm-3.8 amd64 1:3.8~svn262614-1~exp1 &#91;1,546 kB&#93;  
+> Get:8 <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8/main llvm-3.8-dev amd64 1:3.8~svn262614-1~exp1 &#91;15.4 MB&#93;  
+> Fetched 50.0 MB in 3min 27s (241 kB/s)  
+> Selecting previously unselected package libllvm3.8:amd64.  
+> (Reading database ... 225447 files and directories currently installed.)  
+> Preparing to unpack .../libllvm3.8_1%3a3.8~svn262614-1~exp1_amd64.deb ...  
+> Unpacking libllvm3.8:amd64 (1:3.8~svn262614-1~exp1) ...  
+> Selecting previously unselected package libclang1-3.8:amd64.  
+> Preparing to unpack .../libclang1-3.8_1%3a3.8~svn262614-1~exp1_amd64.deb ...  
+> Unpacking libclang1-3.8:amd64 (1:3.8~svn262614-1~exp1) ...  
+> Selecting previously unselected package libjsoncpp0:amd64.  
+> Preparing to unpack .../libjsoncpp0_0.6.0~rc2-3ubuntu1_amd64.deb ...  
+> Unpacking libjsoncpp0:amd64 (0.6.0~rc2-3ubuntu1) ...  
+> Selecting previously unselected package libclang-common-3.8-dev.  
+> Preparing to unpack .../libclang-common-3.8-dev_1%3a3.8~svn262614-1~exp1_amd64.deb ...  
+> Unpacking libclang-common-3.8-dev (1:3.8~svn262614-1~exp1) ...  
+> Selecting previously unselected package clang-3.8.  
+> Preparing to unpack .../clang-3.8_1%3a3.8~svn262614-1~exp1_amd64.deb ...  
+> Unpacking clang-3.8 (1:3.8~svn262614-1~exp1) ...  
+> Selecting previously unselected package llvm-3.8-runtime.  
+> Preparing to unpack .../llvm-3.8-runtime_1%3a3.8~svn262614-1~exp1_amd64.deb ...  
+> Unpacking llvm-3.8-runtime (1:3.8~svn262614-1~exp1) ...  
+> Selecting previously unselected package llvm-3.8.  
+> Preparing to unpack .../llvm-3.8_1%3a3.8~svn262614-1~exp1_amd64.deb ...  
+> Unpacking llvm-3.8 (1:3.8~svn262614-1~exp1) ...  
+> Selecting previously unselected package llvm-3.8-dev.  
+> Preparing to unpack .../llvm-3.8-dev_1%3a3.8~svn262614-1~exp1_amd64.deb ...  
+> Unpacking llvm-3.8-dev (1:3.8~svn262614-1~exp1) ...  
+> Processing triggers for man-db (2.6.7.1-1ubuntu1) ...  
+> Setting up libllvm3.8:amd64 (1:3.8~svn262614-1~exp1) ...  
+> Setting up libclang1-3.8:amd64 (1:3.8~svn262614-1~exp1) ...  
+> Setting up libjsoncpp0:amd64 (0.6.0~rc2-3ubuntu1) ...  
+> Setting up libclang-common-3.8-dev (1:3.8~svn262614-1~exp1) ...  
+> Setting up clang-3.8 (1:3.8~svn262614-1~exp1) ...  
+> Setting up llvm-3.8-runtime (1:3.8~svn262614-1~exp1) ...  
+> Setting up llvm-3.8 (1:3.8~svn262614-1~exp1) ...  
+> Setting up llvm-3.8-dev (1:3.8~svn262614-1~exp1) ...  
+> Processing triggers for libc-bin (2.19-0ubuntu6.7) ...  
+> parallels@ubuntu:~$
+
+==&gt; Note how URL:s encode ‘:’ as %3a (<http://www.degraeve.com/reference/urlencoding.php>)?
+
+==&gt; The clang-3.8 package file name is thus actually “clang-3.8_1:3.8~svn262614-1~exp1_amd64.deb”
+
+==&gt; Hypothesis: The name-part after ‘:’ defines version (3.8~svn262614-1~exp1) and architecture (amd64)?
+
+==&gt; Seems the clang-3.8 is now installed and recognised by the APT system?
+
+> parallels@ubuntu:~$ **apt show clang-3.8**  
+> Package: clang-3.8  
+> Source: llvm-toolchain-3.8  
+> Version: 1:3.8~svn262614-1~exp1  
+> Maintainer: LLVM Packaging Team &lt;[pkg-llvm-team@lists.alioth.debian.org](mailto:pkg-llvm-team@lists.alioth.debian.org)&gt;  
+> Installed-Size: 66.5 MB  
+> Depends: libc6 (&gt;= 2.14), libgcc1 (&gt;= 1:3.4), libllvm3.8, libstdc++6 (&gt;= 4.6), libstdc++-4.8-dev, libgcc-4.8-dev, libobjc-4.8-dev, libclang-common-3.8-dev (= 1:3.8~svn262614-1~exp1), libclang1-3.8 (= 1:3.8~svn262614-1~exp1), libc6-dev, binutils  
+> Recommends: llvm-3.8-dev, python  
+> Suggests: gnustep, gnustep-devel, clang-3.8-doc  
+> Breaks: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt  
+> Replaces: clang-3.1, clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1), compiler-rt  
+> Provides: c++-compiler, c-compiler, objc-compiler  
+> Homepage: <http://www.llvm.org/>  
+> Priority: optional  
+> Section: devel  
+> Download-Size: 17.9 MB  
+> APT-Manual-Installed: yes  
+> APT-Sources: <http://llvm.org/apt/trusty/> llvm-toolchain-trusty-3.8/main amd64 Packages  
+> Description: C, C++ and Objective-C compiler (LLVM based)  
+> Clang project is a C, C++, Objective C and Objective C++ front-end  
+> for the LLVM compiler. Its goal is to offer a replacement to the GNU Compiler  
+> Collection (GCC).  
+> .  
+> Clang fully implements all published ISO C++ standards including C++11, as  
+> well as the upcoming C++14 standard, and some parts of the fledgling C++1z  
+> standard, and is considered a production-quality C++ compiler.
+
+> parallels@ubuntu:~$
+
+==&gt; “APT-manual-installed: yes” seem to imply the user has used “sudo apt install”?
+
+==&gt; Q: How do we find information on pre-built and available deb-packages to “sudo apt install”?
+
+…
+
+**WE ARE HERE...**
+
+==&gt; CMake seem to be the make-tool to build LLVM from source (<http://llvm.org/releases/3.8.0/docs/CMake.html>)
+
+-1) Visual Studio Code seem to come with install script?
+
+==&gt; Consider this thread on good ways to download locally use Code (<http://askubuntu.com/questions/616075/how-to-install-visual-studio-code-on-ubuntu>)?
+
+0) Most extracted knowledge above. Historic references below.
+
+1) How do we install, upgrade end remove programs in the Linux OS?
+
+==&gt; The command line “apt” seem to be the replacement for previous apt-get (<http://askubuntu.com/questions/445384/what-is-the-difference-between-apt-and-apt-get>)?
+
+==&gt; The APT users manual seem to be published here (<https://www.debian.org/doc/manuals/apt-guide/index.en.html>)?
+
+==&gt; It seems we can use “apt show clang” to get information on from where we have gotten our clang package?
+
+> > kjell-olovhogdahl@ubuntu:/etc/apt$ **apt show clang**
+
+> > Package: clang
+
+> > Version: 1:3.8-33ubuntu3
+
+> > Priority: optional
+
+> > Section: universe/devel
+
+> > Source: llvm-defaults (0.33ubuntu3)
+
+> > Origin: Ubuntu
+
+> > Maintainer: Ubuntu Developers &lt;[ubuntu-devel-discuss@lists.ubuntu.com](mailto:ubuntu-devel-discuss@lists.ubuntu.com)&gt;
+
+> > Original-Maintainer: LLVM Packaging Team &lt;[pkg-llvm-team@lists.alioth.debian.org](mailto:pkg-llvm-team@lists.alioth.debian.org)&gt;
+
+> > Bugs: <https://bugs.launchpad.net/ubuntu/+filebug>
+
+> > Installed-Size: 28.7 kB
+
+> > Depends: clang-3.8 (&gt;= 3.8~)
+
+> > Breaks: clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1)
+
+> > Replaces: clang (&lt;&lt; 3.2-1~exp2), clang-3.2, clang-3.3, clang-3.4 (&lt;&lt; 1:3.4.2-7~exp1), clang-3.5 (&lt;&lt; 1:3.5~+rc1-3~exp1)
+
+> > Supported: 9m
+
+> > Download-Size: 3,210 B
+
+> > APT-Manual-Installed: yes
+
+> > APT-Sources: <http://us.archive.ubuntu.com/ubuntu> xenial/universe amd64 Packages
+
+> > Description: C, C++ and Objective-C compiler (LLVM based)
+
+> > Clang project is a C, C++, Objective C and Objective C++ front-end
+
+> > for the LLVM compiler. Its goal is to offer a replacement to the GNU Compiler
+
+> > Collection (GCC).
+
+> > .
+
+> > Clang implements all of the ISO C++ 1998 and 2001 standards and also provides
+
+> > a partial support of C++1y.
+
+> > .
+
+> > This is a dependency package providing the default clang compiler.
+
+> > kjell-olovhogdahl@ubuntu:/etc/apt$
+
+==&gt; It seems we can list all clang packages with “apt list clang\*”?
+
+> > kjell-olovhogdahl@ubuntu:/etc/apt$ apt list clang\*
+
+> > Listing... Done
+
+> > clang/xenial,now 1:3.8-33ubuntu3 amd64 &#91;installed&#93;
+
+> > clang-3.5/xenial 1:3.5.2-3build2 amd64
+
+> > clang-3.5-doc/xenial,xenial 1:3.5.2-3build2 all
+
+> > clang-3.5-examples/xenial 1:3.5.2-3build2 amd64
+
+> > clang-3.6/xenial 1:3.6.2-3ubuntu1 amd64
+
+> > clang-3.6-doc/xenial,xenial 1:3.6.2-3ubuntu1 all
+
+> > clang-3.6-examples/xenial 1:3.6.2-3ubuntu1 amd64
+
+> > clang-3.7/xenial 1:3.7.1-2ubuntu1 amd64
+
+> > clang-3.7-doc/xenial,xenial 1:3.7.1-2ubuntu1 all
+
+> > clang-3.7-examples/xenial 1:3.7.1-2ubuntu1 amd64
+
+> > clang-3.8/xenial,now 1:3.8-2ubuntu1 amd64 &#91;installed,automatic&#93;
+
+> > clang-3.8-doc/xenial,xenial 1:3.8-2ubuntu1 all
+
+> > clang-3.8-examples/xenial 1:3.8-2ubuntu1 amd64
+
+> > clang-3.9/now 1:3.9~svn265367-1~exp1 amd64 &#91;installed,local&#93;
+
+> > clang-format/xenial 1:3.8-33ubuntu3 amd64
+
+> > clang-format-3.5/xenial 1:3.5.2-3build2 amd64
+
+> > clang-format-3.6/xenial 1:3.6.2-3ubuntu1 amd64
+
+> > clang-format-3.7/xenial 1:3.7.1-2ubuntu1 amd64
+
+> > clang-format-3.8/xenial 1:3.8-2ubuntu1 amd64
+
+> > clang-modernize-3.5/xenial 1:3.5.2-3build2 amd64
+
+> > clang-modernize-3.6/xenial 1:3.6.2-3ubuntu1 amd64
+
+> > clang-modernize-3.7/xenial 1:3.7.1-2ubuntu1 amd64
+
+> > clang-tidy/xenial 1:3.8-33ubuntu3 amd64
+
+> > clang-tidy-3.6/xenial 1:3.6.2-3ubuntu1 amd64
+
+> > clang-tidy-3.7/xenial 1:3.7.1-2ubuntu1 amd64
+
+> > clang-tidy-3.8/xenial 1:3.8-2ubuntu1 amd64
+
+> > kjell-olovhogdahl@ubuntu:/etc/apt$
+
+==&gt; It seems we have some inconsistence in out system (we would like to have 3.8 and 3.9)
+
+Todo: Consider to uninstall all and then install official 3.8 and then 3.9 from llvm (by adding appropriate source entry in sources.list)?
+
+**WE ARE HERE...**
+
+==&gt; Consider this wikipedia page on Debian Linux flavours (<https://en.wikipedia.org/wiki/Debian>)?
+
+> ==&gt; Seems Debian is kind of a base Linux on which other distributions with different Desktops are produced?
+
+> “The Debian Stable Linux distribution is one of the most popular for personal computers and network servers, and has been used as a base for several other distributions."
+
+> “Installation and Live images
+
+> Debian offers DVD and CD images for installation that can be downloaded using **BitTorrent** or **jigdo**. “
+
+> “Desktop environments
+
+> Debian offers CD images specifically built for **GNOME** (the default in Wheezy), **KDE** Software Compilation, **Xfce** and **LXDE**.&#91;29&#93; **MATE** is officially supported,&#91;30&#93; while **Cinnamon** support was added with Debian 8.0 Jessie.&#91;31&#93; Less common window managers such as Enlightenment, Openbox, Fluxbox, IceWM, Window Maker and others are available.&#91;32&#93;”
+
+> “Package management
+
+> Package management operations can be performed with different tools available on Debian, from the lowest level command **dpkg** to graphical front-ends like **Synaptic**. The recommended standard for administering packages on a Debian system is the **apt toolset**.&#91;38&#93;”
+
+> “dpkg provides the low-level infrastructure for package management.&#91;39&#93; The dpkg database contains the list of installed software on the current system. The dpkg command tool does not know about repositories. The command can work with local **.deb package files** as well as information from the dpkg database.&#91;40&#93;”
+
+> “APT tools
+
+> An APT tool allows administration of an installed Debian system for retrieving and resolving package dependencies from repositories. APT tools share dependency information and cached packages.&#91;38&#93;
+
+> • **Aptitude** is a command line tool that also offers a text-based user interface. The program comes with enhancements such as better search on package metadata.&#91;38&#93;
+
+> • **apt-get** (installs and removes packages) and **apt-cache** (searching packages and displaying package information) are command tools of the standard apt package. …”
+
+> “GDebi and other front-ends
+
+> **GDebi** is an APT tool which can be used in command-line and on the GUI.&#91;41&#93; GDebi can install a local .deb file via the command line like the dpkg command, but with access to repositories to resolve dependencies.&#91;42&#93; Other graphical front-ends for APT include **Software Center**,&#91;43&#93; **Synaptic**&#91;44&#93; and **Apper**.&#91;45&#93;”
+
+2) Consider to understand the deb package format?
+
+==&gt; Consider the wikipedia page on deb package format (<https://en.wikipedia.org/wiki/Deb_(file_format))>
+
+“The accepted program for handling these packages is **dpkg**, most commonly via other programs such as **apt**/**aptitude**, the **Ubuntu Software Center**, **Synaptic** or **Gdebi**.”
+
+==&gt; It seems a deb-file contains two tar-archives (tar being the format replacing the ar-format)?
+
+“Debian packages are standard Unix ar archives that include two tar archives optionally compressed with gzip (zlib), Bzip2, lzma, or xz (lzma2): one archive holds the control information and another contains the program data.”
+
+==&gt; It seems ar archives has been deprecated and uses only to create and update static libraries, e.g. deb-archives (<https://en.wikipedia.org/wiki/Ar_(Unix))>
+
+“...has been largely replaced by tar for purposes other than static libraries."
+
+“...modern archives are based on a common format with two main variants, BSD and System V (initially known as COFF, and used as well by GNU, ELF, and Windows.)”
+
+“Debian ".deb" archives use the common format.”
+
+==&gt; It actually seems as if compiler generated .a files are in fact Common Archive ar-Files (although not with tar-file content as for deb-files)?
+
+“Unix linkers, usually invoked through the C compiler cc, can read ar files and extract object files from them, so if libclass.a is an archive containing class1.o, class2.o and class3.o,
+
+then **cc** main.c libclass.a
+
+or (if libclass.a is placed in standard library path, like /usr/local/lib) **cc** main.c -lclass
+
+or (during linking) **ld** ... main.o -lclass …
+
+is the same as: **cc** main.c class1.o class2.o class3.o"
+
+3) Consider to understand how the APT (Advanced Packaging Tool) works?
+
+==&gt; Consider the wikipedia page on the Advanced Packaging Tool (<https://en.wikipedia.org/wiki/Advanced_Packaging_Tool>)?
+
+“APT simplifies the process of managing software on Unix-like computer systems by automating the retrieval, configuration and installation of software packages, either from precompiled files or by compiling source code.”
+
+“The lists of available packages are fetched from the location(s) specified in /etc/apt/sources.list.”
+
+> kjell-olovhogdahl@ubuntu:/etc/apt$ cat sources.list  
+> # deb cdrom:&#91;Ubuntu-MATE 16.04 LTS _Xenial Xerus_ - Beta amd64 (20160323.1)&#93;/ xenial main multiverse restricted universe
+
+> # See <http://help.ubuntu.com/community/UpgradeNotes> for how to upgrade to  
+> # newer versions of the distribution.  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial main restricted  
+> # deb-src <http://us.archive.ubuntu.com/ubuntu/> xenial main restricted
+
+> ## Major bug fix updates produced after the final release of the  
+> ## distribution.  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial-updates main restricted  
+> # deb-src <http://us.archive.ubuntu.com/ubuntu/> xenial-updates main restricted
+
+> ## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu  
+> ## team, and may not be under a free licence. Please satisfy yourself as to  
+> ## your rights to use the software. Also, please note that software in  
+> ## universe WILL NOT receive any review or updates from the Ubuntu security  
+> ## team.  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial universe  
+> # deb-src <http://us.archive.ubuntu.com/ubuntu/> xenial universe  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial-updates universe  
+> # deb-src <http://us.archive.ubuntu.com/ubuntu/> xenial-updates universe
+
+> ## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu  
+> ## team, and may not be under a free licence. Please satisfy yourself as to  
+> ## your rights to use the software. Also, please note that software in  
+> ## multiverse WILL NOT receive any review or updates from the Ubuntu  
+> ## security team.  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial multiverse  
+> # deb-src <http://us.archive.ubuntu.com/ubuntu/> xenial multiverse  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial-updates multiverse  
+> # deb-src <http://us.archive.ubuntu.com/ubuntu/> xenial-updates multiverse
+
+> ## N.B. software from this repository may not have been tested as  
+> ## extensively as that contained in the main release, although it includes  
+> ## newer versions of some applications which may provide useful features.  
+> ## Also, please note that software in backports WILL NOT receive any review  
+> ## or updates from the Ubuntu security team.  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial-backports main restricted universe multiverse  
+> # deb-src <http://us.archive.ubuntu.com/ubuntu/> xenial-backports main restricted universe multiverse
+
+> ## Uncomment the following two lines to add software from Canonical's  
+> ## 'partner' repository.  
+> ## This software is not part of Ubuntu, but is offered by Canonical and the  
+> ## respective vendors as a service to Ubuntu users.  
+> # deb <http://archive.canonical.com/ubuntu> xenial partner  
+> # deb-src <http://archive.canonical.com/ubuntu> xenial partner
+
+> deb <http://security.ubuntu.com/ubuntu> xenial-security main restricted  
+> # deb-src <http://security.ubuntu.com/ubuntu> xenial-security main restricted  
+> deb <http://security.ubuntu.com/ubuntu> xenial-security universe  
+> # deb-src <http://security.ubuntu.com/ubuntu> xenial-security universe  
+> deb <http://security.ubuntu.com/ubuntu> xenial-security multiverse  
+> # deb-src <http://security.ubuntu.com/ubuntu> xenial-security multiverse
+
+> deb <http://llvm.org/apt/xenial/> llvm-toolchain-xenial main  
+> deb-src <http://llvm.org/apt/xenial/> llvm-toolchain-xenial main  
+> # 3.7  
+> deb <http://llvm.org/apt/xenial/> llvm-toolchain-xenial-3.7 main  
+> deb-src <http://llvm.org/apt/xenial/> llvm-toolchain-xenial-3.7 main  
+> # 3.8  
+> deb <http://llvm.org/apt/xenial/> llvm-toolchain-xenial-3.8 main  
+> deb-src <http://llvm.org/apt/xenial/> llvm-toolchain-xenial-3.8 main
+
+> kjell-olovhogdahl@ubuntu:/etc/apt$
+
+==&gt; Deb-entries seems o be defined here (<https://wiki.debian.org/SourcesList>)?
+
+“ deb <http://site.example.com/debian> distribution component1 component2 component3
+
+deb-src <http://site.example.com/debian> distribution component1 component2 component3”
+
+==&gt; Note: The llvm-entries above was entered manually by me but in vain I think (the apt install clang command that worked actually stated looking into source “<http://us.archive.ubuntu.com/ubuntu>”)?
+
+Get:1 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libclang1-3.8 amd64 1:3.8-2ubuntu1 &#91;4,132 kB&#93;
+
+==&gt; seem to correspond to these deb entries?
+
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial main restricted  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial-updates main restricted  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial universe  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial-updates universe  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial multiverse  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial-updates multiverse  
+> deb <http://us.archive.ubuntu.com/ubuntu/> xenial-backports main restricted universe multiverse
+
+==&gt; So, the listing seem to define distributions xenial, xenial-updates, xenial-backports?
+
+3) Consider to understand the structure of a source repository (referenced by URL of a deb-entry in the apt sources list)?
+
+==&gt; Consider this debian page on Repository Format (<https://wiki.debian.org/RepositoryFormat>)?
+
+==&gt; It seems to take of in the deb-entry format of the client sources.list file?
+
+syntax:  deb uri distribution &#91;component1&#93; &#91;component2&#93; &#91;…&#93;
+
+example: deb <http://ftp.debian.org/debian> squeeze main contrib non-free
+
+our list: deb <http://us.archive.ubuntu.com/ubuntu/> xenial main restricted
+
+==&gt; The url seem to be defined to reference the repository root (in the example “<http://ftp.debian.org/debian>”)?
+
+==&gt; The distribution seem to define a subdirectory of the root-url dists folder?
+
+==&gt; This seem to fit the structure of our deb that would yield url <http://us.archive.ubuntu.com/ubuntu/dists/xenial/> ?
+
+![](<Index of ubuntudistsxenial.tiff>)
+
+4) Consider to delve into the Linux dpkg command line tool to understand line package distribution and installation?
+
+==&gt; Consider this wikipedia page (<https://en.wikipedia.org/wiki/Dpkg>)?
+
+==&gt; It seems to be the “base” of all package operations on linux?
+
+“dpkg is the software at the base of the package management system in the free operating system Debian and its numerous derivatives. dpkg is used to install, remove, and provide information about .deb packages.”
+
+==&gt; So, it seems Linux Packages are distributed in the .deb format?
+
+==&gt; The APT (Advanced Packaing Tool) tools seem to be an add-on to handle retrieving remote packages and handle dependencies between packages?
+
+“higher level tools, such as APT, are used to fetch packages from remote locations or deal with complex package relations”
+
+==&gt; It seems dpkg keeps track of installed software but knows nothing about package repositories?
+
+“The dpkg database is located under /var/lib/dpkg; the "status" file contains the list of installed software on the current system. There is no information about repositories in this database.&#91;11&#93;”
+
+kjell-olovhogdahl@ubuntu:/var/lib/dpkg$ **cat** status | **grep** "Package:" | **sort** | **more**
+
+==&gt; Actually seemed to list all “Package:”-entries of the system ok (sorted in alphabetical order).
+
+==&gt; Consider this page on Debian packaging tools (<https://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html>)?
+
+==&gt; Seems we may list the files installed by a package using “dpkg —listfiles” option?
+
+==&gt; On my MATE 16.04 machine this yelled the following result.
+
+> kjell-olovhogdahl@ubuntu:~$ **dpkg --listfiles clang-3.8**  
+> /.  
+> /usr  
+> /usr/bin  
+> /usr/bin/asan_symbolize-3.8  
+> /usr/share  
+> /usr/share/man  
+> /usr/share/man/man1  
+> /usr/share/man/man1/clang-check-3.8.1.gz  
+> /usr/share/man/man1/clang-apply-replacements-3.8.1.gz  
+> /usr/share/man/man1/scan-build-3.8.1.gz  
+> /usr/share/man/man1/scan-view-3.8.1.gz  
+> /usr/share/clang  
+> /usr/share/clang/scan-view-3.8  
+> /usr/share/clang/scan-view-3.8/bin  
+> /usr/share/clang/scan-view-3.8/bin/scan-view  
+> /usr/share/clang/scan-view-3.8/Makefile  
+> /usr/share/clang/scan-view-3.8/CMakeLists.txt  
+> /usr/share/clang/scan-view-3.8/share  
+> /usr/share/clang/scan-view-3.8/share/FileRadar.scpt  
+> /usr/share/clang/scan-view-3.8/share/Reporter.py  
+> /usr/share/clang/scan-view-3.8/share/GetRadarVersion.scpt  
+> /usr/share/clang/scan-view-3.8/share/ScanView.py  
+> /usr/share/clang/scan-view-3.8/share/bugcatcher.ico  
+> /usr/share/clang/scan-view-3.8/share/startfile.py  
+> /usr/share/clang/scan-build-3.8  
+> /usr/share/clang/scan-build-3.8/bin  
+> /usr/share/clang/scan-build-3.8/bin/scan-build  
+> /usr/share/clang/scan-build-3.8/bin/set-xcode-analyzer  
+> /usr/share/clang/scan-build-3.8/bin/scan-build.bat  
+> /usr/share/clang/scan-build-3.8/man  
+> /usr/share/clang/scan-build-3.8/man/scan-build-3.8.1  
+> /usr/share/clang/scan-build-3.8/man/scan-build.1  
+> /usr/share/clang/scan-build-3.8/Makefile  
+> /usr/share/clang/scan-build-3.8/CMakeLists.txt  
+> /usr/share/clang/scan-build-3.8/share  
+> /usr/share/clang/scan-build-3.8/share/scan-build  
+> /usr/share/clang/scan-build-3.8/share/scan-build/scanview.css  
+> /usr/share/clang/scan-build-3.8/share/scan-build/sorttable.js  
+> /usr/share/clang/scan-build-3.8/libexec  
+> /usr/share/clang/scan-build-3.8/libexec/c++-analyzer.bat  
+> /usr/share/clang/scan-build-3.8/libexec/ccc-analyzer  
+> /usr/share/clang/scan-build-3.8/libexec/c++-analyzer  
+> /usr/share/clang/scan-build-3.8/libexec/ccc-analyzer.bat  
+> /usr/share/lintian  
+> /usr/share/lintian/overrides  
+> /usr/share/lintian/overrides/clang-3.8  
+> /usr/share/doc  
+> /usr/share/doc/clang-3.8  
+> /usr/share/doc/clang-3.8/copyright  
+> /usr/share/doc/clang-3.8/TODO.Debian  
+> /usr/lib  
+> /usr/lib/llvm-3.8  
+> /usr/lib/llvm-3.8/bin  
+> /usr/lib/llvm-3.8/bin/modularize  
+> /usr/lib/llvm-3.8/bin/clang-check  
+> /usr/lib/llvm-3.8/bin/scan-view  
+> /usr/lib/llvm-3.8/bin/scan-build  
+> /usr/lib/llvm-3.8/bin/clang  
+> /usr/lib/llvm-3.8/bin/clang-query  
+> /usr/lib/llvm-3.8/bin/sancov  
+> /usr/lib/llvm-3.8/bin/c-index-test  
+> /usr/lib/llvm-3.8/bin/clang-rename  
+> /usr/lib/llvm-3.8/bin/clang-apply-replacements  
+> /usr/lib/llvm-3.8/share  
+> /usr/lib/llvm-3.8/share/scan-view  
+> /usr/lib/llvm-3.8/share/scan-view/FileRadar.scpt  
+> /usr/lib/llvm-3.8/share/scan-view/Reporter.py  
+> /usr/lib/llvm-3.8/share/scan-view/GetRadarVersion.scpt  
+> /usr/lib/llvm-3.8/share/scan-view/ScanView.py  
+> /usr/lib/llvm-3.8/share/scan-view/bugcatcher.ico  
+> /usr/lib/llvm-3.8/share/scan-view/startfile.py  
+> /usr/lib/llvm-3.8/share/man  
+> /usr/lib/llvm-3.8/share/man/man1  
+> /usr/lib/llvm-3.8/share/man/man1/scan-build.1  
+> /usr/lib/llvm-3.8/share/scan-build  
+> /usr/lib/llvm-3.8/share/scan-build/scanview.css  
+> /usr/lib/llvm-3.8/share/scan-build/sorttable.js  
+> /usr/lib/llvm-3.8/share/clang  
+> /usr/lib/llvm-3.8/share/clang/cmake  
+> /usr/lib/llvm-3.8/share/clang/cmake/ClangTargets.cmake  
+> /usr/lib/llvm-3.8/share/clang/cmake/ClangConfig.cmake  
+> /usr/lib/llvm-3.8/share/clang/cmake/ClangTargets-relwithdebinfo.cmake  
+> /usr/lib/llvm-3.8/libexec  
+> /usr/lib/llvm-3.8/libexec/ccc-analyzer  
+> /usr/lib/llvm-3.8/libexec/c++-analyzer  
+> /usr/bin/scan-view-3.8  
+> /usr/bin/clang-rename-3.8  
+> /usr/bin/clang-check-3.8  
+> /usr/bin/modularize-3.8  
+> /usr/bin/scan-build-3.8  
+> /usr/bin/c-index-test-3.8  
+> /usr/bin/clang++-3.8  
+> /usr/bin/clang-query-3.8  
+> /usr/bin/clang-apply-replacements-3.8  
+> /usr/bin/clang-3.8  
+> /usr/bin/clang-cl-3.8  
+> /usr/bin/sancov-3.8  
+> /usr/share/doc/clang-3.8/NEWS.Debian.gz  
+> /usr/share/doc/clang-3.8/changelog.Debian.gz  
+> /usr/lib/llvm-3.8/bin/clang++  
+> /usr/lib/llvm-3.8/bin/clang-cl  
+> kjell-olovhogdahl@ubuntu:~$
+
+==&gt; This is the result for llvm-3.8 package on my MATE 16.04 machine.
+
+> kjell-olovhogdahl@ubuntu:~$ dpkg --listfiles llvm-3.8  
+> /.  
+> /usr  
+> /usr/bin  
+> /usr/share  
+> /usr/share/man  
+> /usr/share/man/man1  
+> /usr/share/man/man1/llvm-objdump-3.8.1.gz  
+> /usr/share/man/man1/llvm-size-3.8.1.gz  
+> /usr/share/man/man1/llvm-bcanalyzer-3.8.1.gz  
+> /usr/share/man/man1/llvm-build-3.8.1.gz  
+> /usr/share/man/man1/lit-3.8.1.gz  
+> /usr/share/man/man1/opt-3.8.1.gz  
+> /usr/share/man/man1/llvm-ar-3.8.1.gz  
+> /usr/share/man/man1/tblgen-3.8.1.gz  
+> /usr/share/man/man1/llvm-dis-3.8.1.gz  
+> /usr/share/man/man1/llvm-symbolizer-3.8.1.gz  
+> /usr/share/man/man1/llvm-readobj-3.8.1.gz  
+> /usr/share/man/man1/llvm-cov-3.8.1.gz  
+> /usr/share/man/man1/llvm-config-3.8.1.gz  
+> /usr/share/man/man1/llvm-nm-3.8.1.gz  
+> /usr/share/man/man1/llvm-rtdyld-3.8.1.gz  
+> /usr/share/man/man1/llvm-dwarfdump-3.8.1.gz  
+> /usr/share/man/man1/llvm-lib-3.8.1.gz  
+> /usr/share/man/man1/llvm-link-3.8.1.gz  
+> /usr/share/man/man1/llvm-extract-3.8.1.gz  
+> /usr/share/man/man1/llvm-mcmarkup-3.8.1.gz  
+> /usr/share/man/man1/llvm-profdata-3.8.1.gz  
+> /usr/share/man/man1/llvm-stress-3.8.1.gz  
+> /usr/share/man/man1/llvm-ranlib-3.8.1.gz  
+> /usr/share/man/man1/llvm-diff-3.8.1.gz  
+> /usr/share/man/man1/llvm-mc-3.8.1.gz  
+> /usr/share/man/man1/FileCheck-3.8.1.gz  
+> /usr/share/man/man1/llvm-as-3.8.1.gz  
+> /usr/share/man/man1/bugpoint-3.8.1.gz  
+> /usr/share/man/man1/llc-3.8.1.gz  
+> /usr/share/lintian  
+> /usr/share/lintian/overrides  
+> /usr/share/lintian/overrides/llvm-3.8  
+> /usr/share/doc  
+> /usr/share/doc/llvm-3.8  
+> /usr/share/doc/llvm-3.8/copyright  
+> /usr/lib  
+> /usr/lib/llvm-3.8  
+> /usr/lib/llvm-3.8/bin  
+> /usr/lib/llvm-3.8/bin/llvm-mc  
+> /usr/lib/llvm-3.8/bin/obj2yaml  
+> /usr/lib/llvm-3.8/bin/llvm-objdump  
+> /usr/lib/llvm-3.8/bin/llvm-config  
+> /usr/lib/llvm-3.8/bin/opt  
+> /usr/lib/llvm-3.8/bin/llc  
+> /usr/lib/llvm-3.8/bin/llvm-lto  
+> /usr/lib/llvm-3.8/bin/bugpoint  
+> /usr/lib/llvm-3.8/bin/llvm-mcmarkup  
+> /usr/lib/llvm-3.8/bin/llvm-nm  
+> /usr/lib/llvm-3.8/bin/llvm-cxxdump  
+> /usr/lib/llvm-3.8/bin/llvm-as  
+> /usr/lib/llvm-3.8/bin/llvm-cov  
+> /usr/lib/llvm-3.8/bin/llvm-extract  
+> /usr/lib/llvm-3.8/bin/llvm-link  
+> /usr/lib/llvm-3.8/bin/llvm-rtdyld  
+> /usr/lib/llvm-3.8/bin/llvm-pdbdump  
+> /usr/lib/llvm-3.8/bin/llvm-symbolizer  
+> /usr/lib/llvm-3.8/bin/llvm-diff  
+> /usr/lib/llvm-3.8/bin/llvm-dis  
+> /usr/lib/llvm-3.8/bin/llvm-dwarfdump  
+> /usr/lib/llvm-3.8/bin/llvm-dwp  
+> /usr/lib/llvm-3.8/bin/llvm-stress  
+> /usr/lib/llvm-3.8/bin/llvm-readobj  
+> /usr/lib/llvm-3.8/bin/llvm-dsymutil  
+> /usr/lib/llvm-3.8/bin/llvm-ar  
+> /usr/lib/llvm-3.8/bin/llvm-split  
+> /usr/lib/llvm-3.8/bin/verify-uselistorder  
+> /usr/lib/llvm-3.8/bin/llvm-c-test  
+> /usr/lib/llvm-3.8/bin/llvm-tblgen  
+> /usr/lib/llvm-3.8/bin/llvm-profdata  
+> /usr/lib/llvm-3.8/bin/llvm-bcanalyzer  
+> /usr/lib/llvm-3.8/bin/llvm-size  
+> /usr/lib/llvm-3.8/bin/yaml2obj  
+> /usr/bin/llc-3.8  
+> /usr/bin/llvm-stress-3.8  
+> /usr/bin/llvm-mcmarkup-3.8  
+> /usr/bin/llvm-profdata-3.8  
+> /usr/bin/llvm-dsymutil-3.8  
+> /usr/bin/opt-3.8  
+> /usr/bin/llvm-rtdyld-3.8  
+> /usr/bin/llvm-config-3.8  
+> /usr/bin/llvm-dis-3.8  
+> /usr/bin/llvm-diff-3.8  
+> /usr/bin/obj2yaml-3.8  
+> /usr/bin/llvm-link-3.8  
+> /usr/bin/llvm-readobj-3.8  
+> /usr/bin/llvm-nm-3.8  
+> /usr/bin/llvm-dwarfdump-3.8  
+> /usr/bin/llvm-mc-3.8  
+> /usr/bin/llvm-bcanalyzer-3.8  
+> /usr/bin/llvm-tblgen-3.8  
+> /usr/bin/llvm-dwp-3.8  
+> /usr/bin/llvm-split-3.8  
+> /usr/bin/llvm-symbolizer-3.8  
+> /usr/bin/llvm-objdump-3.8  
+> /usr/bin/llvm-ar-3.8  
+> /usr/bin/llvm-extract-3.8  
+> /usr/bin/llvm-size-3.8  
+> /usr/bin/yaml2obj-3.8  
+> /usr/bin/llvm-pdbdump-3.8  
+> /usr/bin/llvm-lto-3.8  
+> /usr/bin/verify-uselistorder-3.8  
+> /usr/bin/llvm-as-3.8  
+> /usr/bin/bugpoint-3.8  
+> /usr/bin/llvm-lib-3.8  
+> /usr/bin/llvm-c-test-3.8  
+> /usr/bin/llvm-ranlib-3.8  
+> /usr/bin/llvm-cxxdump-3.8  
+> /usr/bin/llvm-cov-3.8  
+> /usr/share/doc/llvm-3.8/NEWS.Debian.gz  
+> /usr/share/doc/llvm-3.8/changelog.Debian.gz  
+> /usr/lib/llvm-3.8/bin/llvm-lib  
+> /usr/lib/llvm-3.8/bin/llvm-ranlib  
+> kjell-olovhogdahl@ubuntu:~$
+
+...
+
+5) It seems the Debian organisation provides package listings (<https://www.debian.org/distrib/packages>)
+
+“All packages that are included in the official Debian distribution are free according to the Debian Free Software Guidelines.”
+
+==&gt; Seems packages are grouped into &lt;distribution&gt; (stable, testing and unstable) each grouped into a section-tree?
+
+==&gt; The stable distribution seem to be listed here (<https://packages.debian.org/stable/>)?
+
+==&gt; It seems clang is in the stable distribution in section devel/clang (<https://packages.debian.org/stable/devel/clang>)?
+
+“This is a dependency package providing the default clang compiler.”
+
+==&gt; It seems to refer to (be an alias for) package clang-3.5?
+
+“dep: clang-3.5 (&gt;= 3.5~)"
+
+==&gt; The package seem to carry different contents depending on target architecture (
+
+> > File list of package clang in jessie of architecture amd64
+
+> > /usr/bin/asan_symbolize
+
+> > /usr/bin/c-index-test
+
+> > /usr/bin/clang
+
+> > /usr/bin/clang++
+
+> > /usr/bin/clang-apply-replacements
+
+> > /usr/bin/clang-check
+
+> > /usr/bin/clang-query
+
+> > /usr/bin/clang-tblgen
+
+> > /usr/bin/clang-tidy
+
+> > /usr/bin/pp-trace
+
+> > /usr/bin/scan-build
+
+> > /usr/bin/scan-view
+
+> > /usr/share/doc/clang/NEWS.Debian.gz
+
+> > /usr/share/doc/clang/changelog.Debian.gz
+
+> > /usr/share/doc/clang/copyright
+
+==&gt; The debian packages seem to apply tags to parse package contents (<https://packages.debian.org/about/debtags#interface::commandline>)?
+
+6) Consider to understand if it is possible to wrap downloaded applications into deb-packages and install/remove them using apt?
+
+==&gt; Tried the ubuntu-propsed bar-builddeb tool (<http://packaging.ubuntu.com/html/packaging-new-software.html>)
+
+“**bzr-builddeb** includes a plugin to create a new package from a template. The plugin is a wrapper around the **dh_make** command."
+
+==&gt; Installed dh-make and bzr-builddeb
+
+> kjell-olovhogdahl@ubuntu:~/Downloads$ sudo **apt-get install dh-make bzr-builddeb**  
+> &#91;sudo&#93; password for kjell-olovhogdahl:  
+> Reading package lists... Done  
+> Building dependency tree  
+> Reading state information... Done  
+> The following additional packages will be installed:  
+> at autotools-dev bzr dctrl-tools debhelper devscripts dh-strip-nondeterminism diffstat dput gettext hardening-includes intltool-debian  
+> javascript-common libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libapt-pkg-perl libarchive-zip-perl  
+> libasprintf-dev libauthen-sasl-perl libclone-perl libdata-alias-perl libdigest-hmac-perl libdistro-info-perl libemail-valid-perl  
+> libexporter-tiny-perl libfile-stripnondeterminism-perl libgettextpo-dev libgettextpo0 libio-pty-perl libio-socket-inet6-perl  
+> libipc-run-perl libjs-jquery liblist-moreutils-perl libmail-sendmail-perl libmailtools-perl libnet-dns-perl libnet-domain-tld-perl  
+> libnet-ip-perl libnet-smtp-ssl-perl libperlio-gzip-perl libsocket6-perl libsys-hostname-long-perl libtext-levenshtein-perl libunistring0  
+> libxdelta2 libyaml-libyaml-perl lintian patchutils pbzip2 po-debconf pristine-tar python-bzrlib python-distro-info python-gpgme  
+> python-keyring python-launchpadlib python-lazr.restfulclient python-lazr.uri python-oauth python-secretstorage python-simplejson  
+> python-wadllib python3-magic quilt t1utils wdiff xdelta  
+> Suggested packages:  
+> default-mta | mail-transport-agent bzr-doc bzrtools python-bzrlib.tests python-lzma debtags bsd-mailx | mailx build-essential  
+> cvs-buildpackage diffoscope devscripts-el dose-extra gnuplot libterm-size-perl libyaml-syck-perl mozilla-devscripts mutt svn-buildpackage  
+> w3m debian-keyring equivs libsoap-lite-perl mini-dinstall gettext-doc autopoint apache2 | lighttpd | httpd libgssapi-perl  
+> binutils-multiarch libtext-template-perl libmail-box-perl python-bzrlib-dbg python-kerberos python-paramiko python-pycurl python-fs  
+> python-gdata python-kde4 python-keyczar python-testresources python-secretstorage-doc procmail graphviz  
+> The following NEW packages will be installed:  
+> at autotools-dev bzr bzr-builddeb dctrl-tools debhelper devscripts dh-make dh-strip-nondeterminism diffstat dput gettext hardening-includes  
+> intltool-debian javascript-common libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libapt-pkg-perl  
+> libarchive-zip-perl libasprintf-dev libauthen-sasl-perl libclone-perl libdata-alias-perl libdigest-hmac-perl libdistro-info-perl  
+> libemail-valid-perl libexporter-tiny-perl libfile-stripnondeterminism-perl libgettextpo-dev libgettextpo0 libio-pty-perl  
+> libio-socket-inet6-perl libipc-run-perl libjs-jquery liblist-moreutils-perl libmail-sendmail-perl libmailtools-perl libnet-dns-perl  
+> libnet-domain-tld-perl libnet-ip-perl libnet-smtp-ssl-perl libperlio-gzip-perl libsocket6-perl libsys-hostname-long-perl  
+> libtext-levenshtein-perl libunistring0 libxdelta2 libyaml-libyaml-perl lintian patchutils pbzip2 po-debconf pristine-tar python-bzrlib  
+> python-distro-info python-gpgme python-keyring python-launchpadlib python-lazr.restfulclient python-lazr.uri python-oauth  
+> python-secretstorage python-simplejson python-wadllib python3-magic quilt t1utils wdiff xdelta  
+> 0 upgraded, 70 newly installed, 0 to remove and 189 not upgraded.  
+> Need to get 8,154 kB of archives.  
+> After this operation, 33.2 MB of additional disk space will be used.  
+> Do you want to continue? &#91;Y/n&#93; **y**  
+> Get:1 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libunistring0 amd64 0.9.3-5.2ubuntu1 &#91;279 kB&#93;  
+> Get:2 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 at amd64 3.1.18-2ubuntu1 &#91;37.8 kB&#93;  
+> Get:3 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 autotools-dev all 20150820.1 &#91;39.8 kB&#93;  
+> Get:4 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-bzrlib amd64 2.7.0-2ubuntu1 &#91;1,391 kB&#93;  
+> Get:5 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 bzr all 2.7.0-2ubuntu1 &#91;37.2 kB&#93;  
+> Get:6 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 devscripts amd64 2.16.2ubuntu3 &#91;848 kB&#93;  
+> Get:7 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 patchutils amd64 0.3.4-1 &#91;70.1 kB&#93;  
+> Get:8 <http://us.archive.ubuntu.com/ubuntu> xenial/universe amd64 libxdelta2 amd64 1.1.3-9.1ubuntu1 &#91;47.2 kB&#93;  
+> Get:9 <http://us.archive.ubuntu.com/ubuntu> xenial/universe amd64 xdelta amd64 1.1.3-9.1ubuntu1 &#91;24.1 kB&#93;  
+> Get:10 <http://us.archive.ubuntu.com/ubuntu> xenial/universe amd64 pristine-tar amd64 1.33 &#91;102 kB&#93;  
+> Get:11 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 diffstat amd64 1.61-1 &#91;23.6 kB&#93;  
+> Get:12 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 gettext amd64 0.19.7-2ubuntu3 &#91;1,076 kB&#93;  
+> Get:13 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 quilt all 0.63-3 &#91;272 kB&#93;  
+> Get:14 <http://us.archive.ubuntu.com/ubuntu> xenial/universe amd64 bzr-builddeb all 2.8.9 &#91;135 kB&#93;  
+> Get:15 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 dctrl-tools amd64 2.24-2 &#91;59.1 kB&#93;  
+> Get:16 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 intltool-debian all 0.35.0+20060710.4 &#91;24.9 kB&#93;  
+> Get:17 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 po-debconf all 1.0.19 &#91;234 kB&#93;  
+> Get:18 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libarchive-zip-perl all 1.56-2 &#91;84.1 kB&#93;  
+> Get:19 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libfile-stripnondeterminism-perl all 0.015-1 &#91;10.3 kB&#93;  
+> Get:20 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 dh-strip-nondeterminism all 0.015-1 &#91;4,864 B&#93;  
+> Get:21 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 debhelper all 9.20160115ubuntu3 &#91;739 kB&#93;  
+> Get:22 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 dh-make all 2.201604 &#91;32.4 kB&#93;  
+> Get:23 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 dput all 0.9.6.4ubuntu3 &#91;33.1 kB&#93;  
+> Get:24 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 javascript-common all 11 &#91;6,066 B&#93;  
+> Get:25 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libalgorithm-diff-perl all 1.19.03-1 &#91;47.6 kB&#93;  
+> Get:26 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libalgorithm-diff-xs-perl amd64 0.04-4build1 &#91;11.0 kB&#93;  
+> Get:27 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libalgorithm-merge-perl all 0.08-3 &#91;12.0 kB&#93;  
+> Get:28 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libapt-pkg-perl amd64 0.1.29build7 &#91;65.3 kB&#93;  
+> Get:29 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libasprintf-dev amd64 0.19.7-2ubuntu3 &#91;4,734 B&#93;  
+> Get:30 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libclone-perl amd64 0.38-1build1 &#91;10.3 kB&#93;  
+> Get:31 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libdata-alias-perl amd64 1.20-1build1 &#91;33.9 kB&#93;  
+> Get:32 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libdigest-hmac-perl all 1.03+dfsg-1 &#91;12.1 kB&#93;  
+> Get:33 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libdistro-info-perl all 0.14build1 &#91;4,780 B&#93;  
+> Get:34 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libnet-smtp-ssl-perl all 1.03-1 &#91;6,288 B&#93;  
+> Get:35 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libmailtools-perl all 2.13-1 &#91;82.6 kB&#93;  
+> Get:36 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libsocket6-perl amd64 0.25-1build2 &#91;22.8 kB&#93;  
+> Get:37 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libio-socket-inet6-perl all 2.72-2 &#91;13.8 kB&#93;  
+> Get:38 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libnet-ip-perl all 1.26-1 &#91;31.5 kB&#93;  
+> Get:39 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libnet-dns-perl amd64 0.81-2build1 &#91;266 kB&#93;  
+> Get:40 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libnet-domain-tld-perl all 1.73-1 &#91;21.4 kB&#93;  
+> Get:41 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libemail-valid-perl all 1.198-1 &#91;16.5 kB&#93;  
+> Get:42 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libexporter-tiny-perl all 0.042-1 &#91;28.8 kB&#93;  
+> Get:43 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libgettextpo0 amd64 0.19.7-2ubuntu3 &#91;125 kB&#93;  
+> Get:44 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libgettextpo-dev amd64 0.19.7-2ubuntu3 &#91;141 kB&#93;  
+> Get:45 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libio-pty-perl amd64 1:1.08-1.1build1 &#91;30.2 kB&#93;  
+> Get:46 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libipc-run-perl all 0.94-1 &#91;92.2 kB&#93;  
+> Get:47 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libjs-jquery all 1.11.3+dfsg-4 &#91;161 kB&#93;  
+> Get:48 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 liblist-moreutils-perl amd64 0.413-1build1 &#91;67.0 kB&#93;  
+> Get:49 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libsys-hostname-long-perl all 1.5-1 &#91;11.7 kB&#93;  
+> Get:50 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libmail-sendmail-perl all 0.79.16-1 &#91;26.5 kB&#93;  
+> Get:51 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libperlio-gzip-perl amd64 0.19-1build1 &#91;14.2 kB&#93;  
+> Get:52 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libtext-levenshtein-perl all 0.13-1 &#91;9,612 B&#93;  
+> Get:53 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libyaml-libyaml-perl amd64 0.41-6build1 &#91;61.2 kB&#93;  
+> Get:54 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 hardening-includes all 2.7ubuntu2 &#91;13.6 kB&#93;  
+> Get:55 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 t1utils amd64 1.39-2 &#91;53.4 kB&#93;  
+> Get:56 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 lintian all 2.5.43 &#91;626 kB&#93;  
+> Get:57 <http://us.archive.ubuntu.com/ubuntu> xenial/universe amd64 pbzip2 amd64 1.1.9-1 &#91;36.3 kB&#93;  
+> Get:58 <http://us.archive.ubuntu.com/ubuntu> xenial/universe amd64 python-distro-info all 0.14build1 &#91;8,208 B&#93;  
+> Get:59 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-gpgme amd64 0.3-1.1 &#91;24.6 kB&#93;  
+> Get:60 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-keyring all 7.3-1ubuntu1 &#91;43.7 kB&#93;  
+> Get:61 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-lazr.uri all 1.0.3-2build1 &#91;13.6 kB&#93;  
+> Get:62 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-simplejson amd64 3.8.1-1ubuntu2 &#91;60.4 kB&#93;  
+> Get:63 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-wadllib all 1.3.2-3 &#91;28.2 kB&#93;  
+> Get:64 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-oauth all 1.0.1-5 &#91;12.9 kB&#93;  
+> Get:65 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-lazr.restfulclient all 0.13.4-5build1 &#91;50.8 kB&#93;  
+> Get:66 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-launchpadlib all 1.10.3-3 &#91;45.6 kB&#93;  
+> Get:67 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python-secretstorage all 2.1.3-1 &#91;12.3 kB&#93;  
+> Get:68 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 wdiff amd64 1.2.2-1build1 &#91;28.8 kB&#93;  
+> Get:69 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 libauthen-sasl-perl all 2.1600-1 &#91;48.7 kB&#93;  
+> Get:70 <http://us.archive.ubuntu.com/ubuntu> xenial/main amd64 python3-magic all 1:5.25-2ubuntu1 &#91;5,438 B&#93;  
+> Fetched 8,154 kB in 16s (503 kB/s)  
+> Extracting templates from packages: 100%  
+> Selecting previously unselected package libunistring0:amd64.  
+> (Reading database ... 232158 files and directories currently installed.)  
+> Preparing to unpack .../libunistring0_0.9.3-5.2ubuntu1_amd64.deb ...  
+> Unpacking libunistring0:amd64 (0.9.3-5.2ubuntu1) ...  
+> Selecting previously unselected package at.  
+> Preparing to unpack .../at_3.1.18-2ubuntu1_amd64.deb ...  
+> Unpacking at (3.1.18-2ubuntu1) ...  
+> Selecting previously unselected package autotools-dev.  
+> Preparing to unpack .../autotools-dev_20150820.1_all.deb ...  
+> Unpacking autotools-dev (20150820.1) ...  
+> Selecting previously unselected package python-bzrlib.  
+> Preparing to unpack .../python-bzrlib_2.7.0-2ubuntu1_amd64.deb ...  
+> Unpacking python-bzrlib (2.7.0-2ubuntu1) ...  
+> Selecting previously unselected package bzr.  
+> Preparing to unpack .../bzr_2.7.0-2ubuntu1_all.deb ...  
+> Unpacking bzr (2.7.0-2ubuntu1) ...  
+> Selecting previously unselected package devscripts.  
+> Preparing to unpack .../devscripts_2.16.2ubuntu3_amd64.deb ...  
+> Unpacking devscripts (2.16.2ubuntu3) ...  
+> Selecting previously unselected package patchutils.  
+> Preparing to unpack .../patchutils_0.3.4-1_amd64.deb ...  
+> Unpacking patchutils (0.3.4-1) ...  
+> Selecting previously unselected package libxdelta2.  
+> Preparing to unpack .../libxdelta2_1.1.3-9.1ubuntu1_amd64.deb ...  
+> Unpacking libxdelta2 (1.1.3-9.1ubuntu1) ...  
+> Selecting previously unselected package xdelta.  
+> Preparing to unpack .../xdelta_1.1.3-9.1ubuntu1_amd64.deb ...  
+> Unpacking xdelta (1.1.3-9.1ubuntu1) ...  
+> Selecting previously unselected package pristine-tar.  
+> Preparing to unpack .../pristine-tar_1.33_amd64.deb ...  
+> Unpacking pristine-tar (1.33) ...  
+> Selecting previously unselected package diffstat.  
+> Preparing to unpack .../diffstat_1.61-1_amd64.deb ...  
+> Unpacking diffstat (1.61-1) ...  
+> Selecting previously unselected package gettext.  
+> Preparing to unpack .../gettext_0.19.7-2ubuntu3_amd64.deb ...  
+> Unpacking gettext (0.19.7-2ubuntu3) ...  
+> Selecting previously unselected package quilt.  
+> Preparing to unpack .../archives/quilt_0.63-3_all.deb ...  
+> Unpacking quilt (0.63-3) ...  
+> Selecting previously unselected package bzr-builddeb.  
+> Preparing to unpack .../bzr-builddeb_2.8.9_all.deb ...  
+> Unpacking bzr-builddeb (2.8.9) ...  
+> Selecting previously unselected package dctrl-tools.  
+> Preparing to unpack .../dctrl-tools_2.24-2_amd64.deb ...  
+> Unpacking dctrl-tools (2.24-2) ...  
+> Selecting previously unselected package intltool-debian.  
+> Preparing to unpack .../intltool-debian_0.35.0+20060710.4_all.deb ...  
+> Unpacking intltool-debian (0.35.0+20060710.4) ...  
+> Selecting previously unselected package po-debconf.  
+> Preparing to unpack .../po-debconf_1.0.19_all.deb ...  
+> Unpacking po-debconf (1.0.19) ...  
+> Selecting previously unselected package libarchive-zip-perl.  
+> Preparing to unpack .../libarchive-zip-perl_1.56-2_all.deb ...  
+> Unpacking libarchive-zip-perl (1.56-2) ...  
+> Selecting previously unselected package libfile-stripnondeterminism-perl.  
+> Preparing to unpack .../libfile-stripnondeterminism-perl_0.015-1_all.deb ...  
+> Unpacking libfile-stripnondeterminism-perl (0.015-1) ...  
+> Selecting previously unselected package dh-strip-nondeterminism.  
+> Preparing to unpack .../dh-strip-nondeterminism_0.015-1_all.deb ...  
+> Unpacking dh-strip-nondeterminism (0.015-1) ...  
+> Selecting previously unselected package debhelper.  
+> Preparing to unpack .../debhelper_9.20160115ubuntu3_all.deb ...  
+> Unpacking debhelper (9.20160115ubuntu3) ...  
+> Selecting previously unselected package dh-make.  
+> Preparing to unpack .../dh-make_2.201604_all.deb ...  
+> Unpacking dh-make (2.201604) ...  
+> Selecting previously unselected package dput.  
+> Preparing to unpack .../dput_0.9.6.4ubuntu3_all.deb ...  
+> Unpacking dput (0.9.6.4ubuntu3) ...  
+> Selecting previously unselected package javascript-common.  
+> Preparing to unpack .../javascript-common_11_all.deb ...  
+> Unpacking javascript-common (11) ...  
+> Selecting previously unselected package libalgorithm-diff-perl.  
+> Preparing to unpack .../libalgorithm-diff-perl_1.19.03-1_all.deb ...  
+> Unpacking libalgorithm-diff-perl (1.19.03-1) ...  
+> Selecting previously unselected package libalgorithm-diff-xs-perl.  
+> Preparing to unpack .../libalgorithm-diff-xs-perl_0.04-4build1_amd64.deb ...  
+> Unpacking libalgorithm-diff-xs-perl (0.04-4build1) ...  
+> Selecting previously unselected package libalgorithm-merge-perl.  
+> Preparing to unpack .../libalgorithm-merge-perl_0.08-3_all.deb ...  
+> Unpacking libalgorithm-merge-perl (0.08-3) ...  
+> Selecting previously unselected package libapt-pkg-perl.  
+> Preparing to unpack .../libapt-pkg-perl_0.1.29build7_amd64.deb ...  
+> Unpacking libapt-pkg-perl (0.1.29build7) ...  
+> Selecting previously unselected package libasprintf-dev:amd64.  
+> Preparing to unpack .../libasprintf-dev_0.19.7-2ubuntu3_amd64.deb ...  
+> Unpacking libasprintf-dev:amd64 (0.19.7-2ubuntu3) ...  
+> Selecting previously unselected package libclone-perl.  
+> Preparing to unpack .../libclone-perl_0.38-1build1_amd64.deb ...  
+> Unpacking libclone-perl (0.38-1build1) ...  
+> Selecting previously unselected package libdata-alias-perl.  
+> Preparing to unpack .../libdata-alias-perl_1.20-1build1_amd64.deb ...  
+> Unpacking libdata-alias-perl (1.20-1build1) ...  
+> Selecting previously unselected package libdigest-hmac-perl.  
+> Preparing to unpack .../libdigest-hmac-perl_1.03+dfsg-1_all.deb ...  
+> Unpacking libdigest-hmac-perl (1.03+dfsg-1) ...  
+> Selecting previously unselected package libdistro-info-perl.  
+> Preparing to unpack .../libdistro-info-perl_0.14build1_all.deb ...  
+> Unpacking libdistro-info-perl (0.14build1) ...  
+> Selecting previously unselected package libnet-smtp-ssl-perl.  
+> Preparing to unpack .../libnet-smtp-ssl-perl_1.03-1_all.deb ...  
+> Unpacking libnet-smtp-ssl-perl (1.03-1) ...  
+> Selecting previously unselected package libmailtools-perl.  
+> Preparing to unpack .../libmailtools-perl_2.13-1_all.deb ...  
+> Unpacking libmailtools-perl (2.13-1) ...  
+> Selecting previously unselected package libsocket6-perl.  
+> Preparing to unpack .../libsocket6-perl_0.25-1build2_amd64.deb ...  
+> Unpacking libsocket6-perl (0.25-1build2) ...  
+> Selecting previously unselected package libio-socket-inet6-perl.  
+> Preparing to unpack .../libio-socket-inet6-perl_2.72-2_all.deb ...  
+> Unpacking libio-socket-inet6-perl (2.72-2) ...  
+> Selecting previously unselected package libnet-ip-perl.  
+> Preparing to unpack .../libnet-ip-perl_1.26-1_all.deb ...  
+> Unpacking libnet-ip-perl (1.26-1) ...  
+> Selecting previously unselected package libnet-dns-perl.  
+> Preparing to unpack .../libnet-dns-perl_0.81-2build1_amd64.deb ...  
+> Unpacking libnet-dns-perl (0.81-2build1) ...  
+> Selecting previously unselected package libnet-domain-tld-perl.  
+> Preparing to unpack .../libnet-domain-tld-perl_1.73-1_all.deb ...  
+> Unpacking libnet-domain-tld-perl (1.73-1) ...  
+> Selecting previously unselected package libemail-valid-perl.  
+> Preparing to unpack .../libemail-valid-perl_1.198-1_all.deb ...  
+> Unpacking libemail-valid-perl (1.198-1) ...  
+> Selecting previously unselected package libexporter-tiny-perl.  
+> Preparing to unpack .../libexporter-tiny-perl_0.042-1_all.deb ...  
+> Unpacking libexporter-tiny-perl (0.042-1) ...  
+> Selecting previously unselected package libgettextpo0:amd64.  
+> Preparing to unpack .../libgettextpo0_0.19.7-2ubuntu3_amd64.deb ...  
+> Unpacking libgettextpo0:amd64 (0.19.7-2ubuntu3) ...  
+> Selecting previously unselected package libgettextpo-dev:amd64.  
+> Preparing to unpack .../libgettextpo-dev_0.19.7-2ubuntu3_amd64.deb ...  
+> Unpacking libgettextpo-dev:amd64 (0.19.7-2ubuntu3) ...  
+> Selecting previously unselected package libio-pty-perl.  
+> Preparing to unpack .../libio-pty-perl_1%3a1.08-1.1build1_amd64.deb ...  
+> Unpacking libio-pty-perl (1:1.08-1.1build1) ...  
+> Selecting previously unselected package libipc-run-perl.  
+> Preparing to unpack .../libipc-run-perl_0.94-1_all.deb ...  
+> Unpacking libipc-run-perl (0.94-1) ...  
+> Selecting previously unselected package libjs-jquery.  
+> Preparing to unpack .../libjs-jquery_1.11.3+dfsg-4_all.deb ...  
+> Unpacking libjs-jquery (1.11.3+dfsg-4) ...  
+> Selecting previously unselected package liblist-moreutils-perl.  
+> Preparing to unpack .../liblist-moreutils-perl_0.413-1build1_amd64.deb ...  
+> Unpacking liblist-moreutils-perl (0.413-1build1) ...  
+> Selecting previously unselected package libsys-hostname-long-perl.  
+> Preparing to unpack .../libsys-hostname-long-perl_1.5-1_all.deb ...  
+> Unpacking libsys-hostname-long-perl (1.5-1) ...  
+> Selecting previously unselected package libmail-sendmail-perl.  
+> Preparing to unpack .../libmail-sendmail-perl_0.79.16-1_all.deb ...  
+> Unpacking libmail-sendmail-perl (0.79.16-1) ...  
+> Selecting previously unselected package libperlio-gzip-perl.  
+> Preparing to unpack .../libperlio-gzip-perl_0.19-1build1_amd64.deb ...  
+> Unpacking libperlio-gzip-perl (0.19-1build1) ...  
+> Selecting previously unselected package libtext-levenshtein-perl.  
+> Preparing to unpack .../libtext-levenshtein-perl_0.13-1_all.deb ...  
+> Unpacking libtext-levenshtein-perl (0.13-1) ...  
+> Selecting previously unselected package libyaml-libyaml-perl.  
+> Preparing to unpack .../libyaml-libyaml-perl_0.41-6build1_amd64.deb ...  
+> Unpacking libyaml-libyaml-perl (0.41-6build1) ...  
+> Selecting previously unselected package hardening-includes.  
+> Preparing to unpack .../hardening-includes_2.7ubuntu2_all.deb ...  
+> Unpacking hardening-includes (2.7ubuntu2) ...  
+> Selecting previously unselected package t1utils.  
+> Preparing to unpack .../t1utils_1.39-2_amd64.deb ...  
+> Unpacking t1utils (1.39-2) ...  
+> Selecting previously unselected package lintian.  
+> Preparing to unpack .../lintian_2.5.43_all.deb ...  
+> Unpacking lintian (2.5.43) ...  
+> Selecting previously unselected package pbzip2.  
+> Preparing to unpack .../pbzip2_1.1.9-1_amd64.deb ...  
+> Unpacking pbzip2 (1.1.9-1) ...  
+> Selecting previously unselected package python-distro-info.  
+> Preparing to unpack .../python-distro-info_0.14build1_all.deb ...  
+> Unpacking python-distro-info (0.14build1) ...  
+> Selecting previously unselected package python-gpgme.  
+> Preparing to unpack .../python-gpgme_0.3-1.1_amd64.deb ...  
+> Unpacking python-gpgme (0.3-1.1) ...  
+> Selecting previously unselected package python-keyring.  
+> Preparing to unpack .../python-keyring_7.3-1ubuntu1_all.deb ...  
+> Unpacking python-keyring (7.3-1ubuntu1) ...  
+> Selecting previously unselected package python-lazr.uri.  
+> Preparing to unpack .../python-lazr.uri_1.0.3-2build1_all.deb ...  
+> Unpacking python-lazr.uri (1.0.3-2build1) ...  
+> Selecting previously unselected package python-simplejson.  
+> Preparing to unpack .../python-simplejson_3.8.1-1ubuntu2_amd64.deb ...  
+> Unpacking python-simplejson (3.8.1-1ubuntu2) ...  
+> Selecting previously unselected package python-wadllib.  
+> Preparing to unpack .../python-wadllib_1.3.2-3_all.deb ...  
+> Unpacking python-wadllib (1.3.2-3) ...  
+> Selecting previously unselected package python-oauth.  
+> Preparing to unpack .../python-oauth_1.0.1-5_all.deb ...  
+> Unpacking python-oauth (1.0.1-5) ...  
+> Selecting previously unselected package python-lazr.restfulclient.  
+> Preparing to unpack .../python-lazr.restfulclient_0.13.4-5build1_all.deb ...  
+> Unpacking python-lazr.restfulclient (0.13.4-5build1) ...  
+> Selecting previously unselected package python-launchpadlib.  
+> Preparing to unpack .../python-launchpadlib_1.10.3-3_all.deb ...  
+> Unpacking python-launchpadlib (1.10.3-3) ...  
+> Selecting previously unselected package python-secretstorage.  
+> Preparing to unpack .../python-secretstorage_2.1.3-1_all.deb ...  
+> Unpacking python-secretstorage (2.1.3-1) ...  
+> Selecting previously unselected package wdiff.  
+> Preparing to unpack .../wdiff_1.2.2-1build1_amd64.deb ...  
+> Unpacking wdiff (1.2.2-1build1) ...  
+> Selecting previously unselected package libauthen-sasl-perl.  
+> Preparing to unpack .../libauthen-sasl-perl_2.1600-1_all.deb ...  
+> Unpacking libauthen-sasl-perl (2.1600-1) ...  
+> Selecting previously unselected package python3-magic.  
+> Preparing to unpack .../python3-magic_1%3a5.25-2ubuntu1_all.deb ...  
+> Unpacking python3-magic (1:5.25-2ubuntu1) ...  
+> Processing triggers for man-db (2.7.5-1) ...  
+> Processing triggers for systemd (229-3ubuntu2) ...  
+> Processing triggers for ureadahead (0.100.0-19) ...  
+> Processing triggers for install-info (6.1.0.dfsg.1-5) ...  
+> Setting up libunistring0:amd64 (0.9.3-5.2ubuntu1) ...  
+> Setting up at (3.1.18-2ubuntu1) ...  
+> Setting up autotools-dev (20150820.1) ...  
+> Setting up python-bzrlib (2.7.0-2ubuntu1) ...  
+> Setting up bzr (2.7.0-2ubuntu1) ...  
+> Setting up devscripts (2.16.2ubuntu3) ...  
+> Setting up patchutils (0.3.4-1) ...  
+> Setting up libxdelta2 (1.1.3-9.1ubuntu1) ...  
+> Setting up xdelta (1.1.3-9.1ubuntu1) ...  
+> Setting up pristine-tar (1.33) ...  
+> Setting up diffstat (1.61-1) ...  
+> Setting up gettext (0.19.7-2ubuntu3) ...  
+> Setting up quilt (0.63-3) ...  
+> Setting up bzr-builddeb (2.8.9) ...  
+> Setting up dctrl-tools (2.24-2) ...  
+> Setting up intltool-debian (0.35.0+20060710.4) ...  
+> Setting up po-debconf (1.0.19) ...  
+> Setting up libarchive-zip-perl (1.56-2) ...  
+> Setting up libfile-stripnondeterminism-perl (0.015-1) ...  
+> Setting up dput (0.9.6.4ubuntu3) ...  
+> Setting up javascript-common (11) ...  
+> Setting up libalgorithm-diff-perl (1.19.03-1) ...  
+> Setting up libalgorithm-diff-xs-perl (0.04-4build1) ...  
+> Setting up libalgorithm-merge-perl (0.08-3) ...  
+> Setting up libapt-pkg-perl (0.1.29build7) ...  
+> Setting up libasprintf-dev:amd64 (0.19.7-2ubuntu3) ...  
+> Setting up libclone-perl (0.38-1build1) ...  
+> Setting up libdata-alias-perl (1.20-1build1) ...  
+> Setting up libdigest-hmac-perl (1.03+dfsg-1) ...  
+> Setting up libdistro-info-perl (0.14build1) ...  
+> Setting up libnet-smtp-ssl-perl (1.03-1) ...  
+> Setting up libmailtools-perl (2.13-1) ...  
+> Setting up libsocket6-perl (0.25-1build2) ...  
+> Setting up libio-socket-inet6-perl (2.72-2) ...  
+> Setting up libnet-ip-perl (1.26-1) ...  
+> Setting up libnet-dns-perl (0.81-2build1) ...  
+> Setting up libnet-domain-tld-perl (1.73-1) ...  
+> Setting up libemail-valid-perl (1.198-1) ...  
+> Setting up libexporter-tiny-perl (0.042-1) ...  
+> Setting up libgettextpo0:amd64 (0.19.7-2ubuntu3) ...  
+> Setting up libgettextpo-dev:amd64 (0.19.7-2ubuntu3) ...  
+> Setting up libio-pty-perl (1:1.08-1.1build1) ...  
+> Setting up libipc-run-perl (0.94-1) ...  
+> Setting up libjs-jquery (1.11.3+dfsg-4) ...  
+> Setting up liblist-moreutils-perl (0.413-1build1) ...  
+> Setting up libsys-hostname-long-perl (1.5-1) ...  
+> Setting up libmail-sendmail-perl (0.79.16-1) ...  
+> Setting up libperlio-gzip-perl (0.19-1build1) ...  
+> Setting up libtext-levenshtein-perl (0.13-1) ...  
+> Setting up libyaml-libyaml-perl (0.41-6build1) ...  
+> Setting up hardening-includes (2.7ubuntu2) ...  
+> Setting up t1utils (1.39-2) ...  
+> Setting up lintian (2.5.43) ...  
+> Setting up pbzip2 (1.1.9-1) ...  
+> Setting up python-distro-info (0.14build1) ...  
+> Setting up python-gpgme (0.3-1.1) ...  
+> Setting up python-keyring (7.3-1ubuntu1) ...  
+> Setting up python-lazr.uri (1.0.3-2build1) ...  
+> Setting up python-simplejson (3.8.1-1ubuntu2) ...  
+> Setting up python-wadllib (1.3.2-3) ...  
+> Setting up python-oauth (1.0.1-5) ...  
+> Setting up python-lazr.restfulclient (0.13.4-5build1) ...  
+> Setting up python-launchpadlib (1.10.3-3) ...  
+> Setting up python-secretstorage (2.1.3-1) ...  
+> Setting up wdiff (1.2.2-1build1) ...  
+> Setting up libauthen-sasl-perl (2.1600-1) ...  
+> Setting up python3-magic (1:5.25-2ubuntu1) ...  
+> Setting up dh-strip-nondeterminism (0.015-1) ...  
+> Setting up debhelper (9.20160115ubuntu3) ...  
+> Setting up dh-make (2.201604) ...  
+> Processing triggers for libc-bin (2.23-0ubuntu2) ...  
+> Processing triggers for systemd (229-3ubuntu2) ...  
+> Processing triggers for ureadahead (0.100.0-19) ...
+
+> ==&gt; bzr seems to be the bazaar version control tool?
+
+> kjell-olovhogdahl@ubuntu:~/Downloads$ bzr --help  
+> Bazaar 2.7.0 -- a free distributed version-control tool  
+> <http://bazaar.canonical.com/>
+
+> Basic commands:  
+> bzr init makes this directory a versioned branch  
+> bzr branch make a copy of another branch
+
+> bzr add make files or directories versioned  
+> bzr ignore ignore a file or pattern  
+> bzr mv move or rename a versioned file
+
+> bzr status summarize changes in working copy  
+> bzr diff show detailed diffs
+
+> bzr merge pull in changes from another branch  
+> bzr commit save some or all changes  
+> bzr send send changes via email
+
+> bzr log show history of changes  
+> bzr check validate storage
+
+> bzr help init more help on e.g. init command  
+> bzr help commands list all commands  
+> bzr help topics list all help topics
+
+> ==&gt; The packaging-dev package seems to be version 0.8 (and for developing deb-packages)?
+
+> kjell-olovhogdahl@ubuntu:~/Downloads$ apt show packaging-dev  
+> Package: packaging-dev  
+> Version: 0.8  
+> Priority: optional  
+> Section: universe/devel  
+> Origin: Ubuntu  
+> Maintainer: Ubuntu Developers &lt;[ubuntu-devel-discuss@lists.ubuntu.com](mailto:ubuntu-devel-discuss@lists.ubuntu.com)&gt;  
+> Original-Maintainer: Benjamin Drung &lt;[bdrung@debian.org](mailto:bdrung@debian.org)&gt;  
+> Bugs: <https://bugs.launchpad.net/ubuntu/+filebug>  
+> Installed-Size: 26.6 kB  
+> Depends: build-essential, debhelper, devscripts, dput | dput-ng | dupload, lintian, pbuilder | cowbuilder | sbuild, quilt  
+> Recommends: apt-file, autoconf, automake, autopkgtest, autotools-dev, bzr-builddeb, cdbs, cmake, debian-policy, developers-reference | developers-reference-de | developers-reference-fr | developers-reference-ja, dh-autoreconf, dh-make, git-buildpackage, gnome-pkg-tools, gnupg, libtool, piuparts, pkg-kde-tools, svn-buildpackage, lptools, ubuntu-dev-tools, ubuntu-packaging-guide  
+> Suggests: mercurial-buildpackage, kubuntu-dev-tools  
+> Download-Size: 2,668 B  
+> APT-Sources: <http://us.archive.ubuntu.com/ubuntu> xenial/universe amd64 Packages  
+> Description: convenient tools to develop packages  
+> This metapackage depends on common packages useful for the development of  
+> Debian-format packages, including patch management systems, build systems,  
+> packaging macros, helpful scripts for developers, and tools for building and  
+> testing packages.  
+> .  
+> This metapackage provides tools for packaging, rather than the development of  
+> software. No other package should depend or build-depend on this package.
+
+> kjell-olovhogdahl@ubuntu:~/Downloads$
+
+==&gt; It seems we may package an existing zip-file using the bzr command (the bzr-builddeb plugin)
+
+“Run the command providing the package name, version number, and path to the upstream tarsal:”
+
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **ls**  
+> clion-2016.1.1 CLion-2016.1.1.tar.gz  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **bzr dh-make clion-ppa 2016.1.1 CLion-2016.1.1.tar.gz **  
+> Fetching tarball  
+> Looking for a way to retrieve the upstream tarball  
+> Upstream tarball already exists in build directory, using that  
+> bzr: ERROR: Unable to determine your name.  
+> Please, set your name with the 'whoami' command.  
+> E.g. bzr whoami "Your Name &lt;[name@example.com](mailto:name@example.com)&gt;"  
+> kjell-olovhogdahl@ubuntu:~/Downloads$
+
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **bzr whoami "Kjell-Olov Högdahl &lt;[kjell-olov.hogdahl@itfied.se](mailto:kjell-olov.hogdahl@itfied.se)&gt;"**  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **bzr dh-make clion-ppa 2016.1.1 CLion-2016.1.1.tar.gz**  
+> bzr: ERROR: Either run the command from an existing branch of upstream, or move clion-ppa aside and a new branch will be created there.  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **ls**  
+> clion-2016.1.1 CLion-2016.1.1.tar.gz clion-ppa clion-ppa_2016.1.1.orig.tar.gz  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **rm -r clion-ppa**  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **ls**  
+> clion-2016.1.1 CLion-2016.1.1.tar.gz clion-ppa_2016.1.1.orig.tar.gz  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **rm clion-ppa_2016.1.1.orig.tar.gz**  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **ls**  
+> clion-2016.1.1 CLion-2016.1.1.tar.gz
+
+> kjell-olovhogdahl@ubuntu:~/Downloads$ **bzr dh-make clion-ppa 2016.1.1 CLion-2016.1.1.tar.gz**  
+> Fetching tarball  
+> Looking for a way to retrieve the upstream tarball  
+> Upstream tarball already exists in build directory, using that  
+> Type of package: (single, indep, library, python)  
+> &#91;s/i/l/p&#93;?  
+> Email-Address : kjell-olovhogdahl@unknown  
+> License : blank  
+> Package Name : clion-ppa  
+> Maintainer Name : Kjell-Olov Högdahl  
+> Version : 2016.1.1  
+> Package Type : single  
+> Date : Tue, 12 Apr 2016 23:44:35 +0200  
+> Are the details correct? &#91;Y/n/q&#93;  
+> Please respond with "yes" or "no" (or "y" or "n")  
+> Skipping creating ../clion-ppa_2016.1.1.orig.tar.gz because it already exists  
+> Currently there is not top level Makefile. This mayrequire additional tuning  
+> Done. Please edit the files in the debian/ subdirectory now.
+
+> Package prepared in /home/kjell-olovhogdahl/Downloads/clion-ppa  
+> kjell-olovhogdahl@ubuntu:~/Downloads$
+
+==&gt; It seems we now should clean up the debian sub-folder of the created folder?
+
+“Most of the files it adds are only needed for specialist packages (such as Emacs modules) so you can start by removing the optional example files”
+
+> kjell-olovhogdahl@ubuntu:~/Downloads$ ls  
+> clion-2016.1.1 CLion-2016.1.1.tar.gz clion-ppa clion-ppa_2016.1.1.orig.tar.gz  
+> kjell-olovhogdahl@ubuntu:~/Downloads$ cd clion-ppa/  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa$ ls  
+> bin build.txt debian help Install-Linux-tar.txt jre lib license plugins  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa$ cd debian  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ ls  
+> changelog clion-ppa.doc-base.EX control manpage.1.ex menu.ex postrm.ex README.Debian source  
+> clion-ppa.cron.d.ex clion-ppa-docs.docs copyright manpage.sgml.ex outfile preinst.ex README.source watch.ex  
+> clion-ppa.default.ex compat init.d.ex manpage.xml.ex postinst.ex prerm.ex rules  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ rm \*ex \*EX  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ ls  
+> changelog clion-ppa-docs.docs compat control copyright outfile README.Debian README.source rules source  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$
+
+==&gt; Used nano to edit the changelog file
+
+“In debian/changelog change the version number to an Ubuntu version: 2.7-0ubuntu1 (upstream version 2.7, Debian version 0, Ubuntu version 1). Also change unstable to the current development Ubuntu release …” (such as Xenial)
+
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ **cat changelog **  
+> clion-ppa (2016.1.1-1) unstable; urgency=medium
+
+> \* Initial release (Closes: #nnnn) &lt;nnnn is the bug number of your ITP&gt;
+
+> -- Kjell-Olov Högdahl &lt;kjell-olovhogdahl@unknown&gt; Tue, 12 Apr 2016 23:44:35 +0200
+
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ **nano changelog**
+
+> …/\* editing here \*/…
+
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ **cat changelog **  
+> clion-ppa (2016.1.1-0ubuntu1) Xenial; urgency=medium
+
+> \* Initial release (Closes: #nnnn) &lt;nnnn is the bug number of your ITP&gt;
+
+> -- Kjell-Olov Högdahl &lt;kjell-olovhogdahl@unknown&gt; Tue, 12 Apr 2016 23:44:35 +0200  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$
+
+==&gt; Edited the control file as instructed.
+
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ cat control  
+> Source: clion-ppa  
+> Section: unknown  
+> Priority: optional  
+> Maintainer: Kjell-Olov Högdahl &lt;kjell-olovhogdahl@unknown&gt;  
+> Build-Depends: debhelper (&gt;=9)  
+> Standards-Version: 3.9.6  
+> Homepage: &lt;insert the upstream URL, if relevant&gt;  
+> #Vcs-Git: <git://anonscm.debian.org/collab-maint/clion-ppa.git>  
+> #Vcs-Browser: <https://anonscm.debian.org/cgit/collab-maint/clion-ppa.git>
+
+> Package: clion-ppa  
+> Architecture: any  
+> Depends: ${shlibs:Depends}, ${misc:Depends}  
+> Description: &lt;insert up to 60 chars description&gt;  
+> &lt;insert long description, indented with spaces&gt;  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ nano control  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ nano control  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$ cat control  
+> Source: clion-ppa  
+> Section: unknown  
+> Priority: optional  
+> Maintainer: Kjell-Olov Högdahl &lt;kjell-olovhogdahl@unknown&gt;  
+> Build-Depends: debhelper (&gt;=9)  
+> Standards-Version: 3.9.6  
+> Homepage: <https://www.jetbrains.com/clion/>  
+> Package: clion-ppa  
+> Architecture: any  
+> Depends:  
+> Description: Wrapped <https://download.jetbrains.com/cpp/CLion-2016.1.1.tar.gz>  
+> This is CLion 30-day trial wrapped locally into a deb-file for conveniant install/Remove.  
+> kjell-olovhogdahl@ubuntu:~/Downloads/clion-ppa/debian$
+
+**WE ARE HERE…** (Consider to continue leads in <http://packaging.ubuntu.com/html/debian-dir-overview.html>) ?
+
+Q: Are these instructions for source-code-based packages (seems to indicate requirement for make.-file)?
+
+Q: If so, how do we create a simple package that just unzips Clion to the /opt sub-folder and sets a link for execution?
+
+...
+
+…
+
+Consider to continue to update this Todo with information about how to operate Linix?
+
+...
+
+{% endraw %}

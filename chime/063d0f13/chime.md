@@ -1,0 +1,16 @@
+# Todo: Write how the web of scientific truths does not provide answers to the flaws of human existence
+
+```#063d0f13``` *As of 2015-08-29 12:33*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+One way to understand why humans are prepared to believe in scientific ungrounded and partly even refuted knowledge lies in the fact that the scientific web of truths does not contain answers to how we may relate to the flaws of human existence. As Unger puts it, we are immortal, any truths we have are at some level ungrounded and our needs are insatiable.
+
+a) Thus humans adopt to various degrees some web of truth ungrounded in a beliefs that adress these issues in some way. It may be that God exists and that everything in the end is going to be ok. Or we may believe we will never die or get a second chance (live over and over). Or we may try to overcome our flaws by searching for some true inner truth in what light all our suffering goes away.  
+b) Science fails to understand that at a higher level the scientific web of truth is as ungrounded as any other belief system, it’s just that the scientific web works so well to predict the measurable aspects of reality. In this sense the scientific ungrounded truths proves more valuable when asking questions about reality. But they carry almost no value when it comes to provide answers about our existence.  
+c) The Super Curious proposes that an approach forward in the light of all knowledge we now have is to go for the truth webs that provides the most beneficial answers to all our questions. The Super Curious understands that we must accept several more or less related truths webs based on different ungrounded truths. From a scientific approach this fits the current situation well as the cosmological truth web and the newtonian physics truth web are in fact unrelated. Thus accepting yet another one based on spiritually needs just means adding more. The Super Curious scientist may then continue to find the uniting theory of all these webs as well as discussing on the validity of the ungrounded truths on which each of these webs are based.  
+d) Goding for the most beneficial truth webs means we must define what is ”beneficial” to us? The first question to ask is in what way it is beneficial to us to find the truth that is closest to reality-as-it-is. The second one could be to ask why we shall not allow truths of different truth webs to contradict each other? It may be that a beneficial lie about reality in fact serves us better on the whole. And in absence of a more beneficial uniting truths we are better served by applying two contradicting truths, selecting the best one for the current situation and environment at hand (e.g. a scientific one for building machines and a religious one to handle anxiety)?  
+...
+
+{% endraw %}

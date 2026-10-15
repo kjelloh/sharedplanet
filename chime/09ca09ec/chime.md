@@ -1,0 +1,15 @@
+# Todo: Write about electronic money with built in sustainability creating mechanisms
+
+```#09ca09ec``` *As of 2015-07-26 15:22*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+With electronic money like bit coin we may consider to make this money ”smart” by having its value or applicability take into account the boundaries of a sustainable production and consumption.
+
+With the dawn of ever better and faster computer systems with the ability to learn and govern the whole production and consumption framework this may be used to feed back such information to keep the market within the boundaries of what the planet can sustain?
+
+1) One may design an electronic coin so that its value depends on when and who is using it for what. In this way the cost of product and services may adjust itself so that consumption can only be afforded as long as production is sustainable? In the best case scenario the market can only expand by optimizing resource consumption instead of using more resources.  
+2) How do we prevent ”gold diggers” to break the rules and still provide goods and services using forbidden amount of resources? In a market economy the rare but in high demand will be highly valuable and thus profitable! Can we build in incitements into the system that counterfeit this kind of behavior? Should such restrictions be applied by the religion of the future (it is simply not accepted or seen as a good thing to behave like this)? The benefits of being a good and proud citizen outweighs the benefits of illegal profits?
+
+{% endraw %}

@@ -1,0 +1,42 @@
+﻿So, what can be a good name for the ”Meta Lisp” we are designing for Meta Model processing?
+
+1) Consider ”Meh” because it is short, a little ironic and it kind of resembles Meta?
+
+	==> It serves as a good prompt for the Repl!
+
+	Meh>
+
+	==> It is a word that indicates indifference or a kind of Zen way to un-ask a question?
+	==> Thus it is kind of funny and causal to have the Repl respnd with Meh? :)
+
+	An alternative could be to add a question mark?
+
+	Meh?>
+
+	==> But I don’t know, this feels a little provocative and disrespectful?
+	==> Try some other decoration symbols?
+
+	Meh´>
+	Meh^>
+	Meh!>
+	@Meh>
+	Meh@>
+	
+	==> I kind of like Meh´. It feels a little exotic and suggest something is left out (shortened)?
+
+	Meh´>
+
+	…
+
+2) Consider ”Althime” inspired by ”All Things Meta”?
+
+	==> It seems bo be a name (but very few hits on the web)?
+
+	==> Not as good as ”Meh” though :)
+
+	…
+
+…
+
+Consider to elaborate on a good name for our ”Meta Lisp” language?
+...

@@ -1,0 +1,9 @@
+﻿When documenting existing code I find mechanism often cut through may source files and concerns both call-sequences and data declarations (e.g. enumerations, structs)
+
+1) Consider to design some simple way of tagging comments to code to enable extraction into such “mechanism-trails”?
+2) Consider to use the TestBench trail-documentation of iPosLog.dll mechanism and SPDH Messaging trail?
+3) Note that mechanism-trails is something else that method-tagging and documentation (mechanisms are about interaction between code)
+4) Could we consider a mark-up using a mechanism name combined with “start” and “end” markers for the mechanism and possibly “next” and “prev” markers to allow generation to put extracted code-nibbles in preferred order?
+…
+
+Elaborate on this idea to see if it is possible to mark code using comments to enable generation of the “trails” I already created (documented in Todo mails) 

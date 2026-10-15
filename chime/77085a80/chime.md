@@ -1,0 +1,73 @@
+# Todo: Consider so called 'SIP modules' available for my house build in Sweden?
+
+```#77085a80``` *As of 2025-01-23 18:05*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I may consider to design and build a house using so called 'SIP' (Structural Insulated Panels) modules
+
+0) Consider some bottom line thoughts on buying SIP elements in Sweden for my house build?
+
+> *It seems to me that when buying these elements I will pay for possibly to complicated technical solutions? That is, they sell 'advanced' products to consumers that does not have the technical skill to judge if the price motivates the performance.*
+
+> *For me, that want to trade my own time a to not have to pay someone else to do it for me it may NOT be a good idea to buy these products?*
+
+> *Especially if I can use simple and well proven materials and products that performs well enough and also is easier to maintain, have longer lives and less impact on my wallet and the environment?*
+
+> *E.g., try to build my own SIP from straw and OSB or stone wool and tongue and grove panels?*
+
+1) Consider 'NovaSIP' in Halmstad (<https://novasip.se> )?
+
+> ADRESS  
+> Novasip AB  
+> Skallebackavägen 18  
+> 302 41 Halmstad
+
+> KONTAKTA OSS  
+> Tel: 035-21 21 45  
+> Fax: 035-21 21 85
+
+2) Consider this article "" (<https://www.byggahus.se/bygga/bygga-sip-paneler-sandwichpaneler-forskningslaget> )?
+
+==&gt; It seems I should take into account that SIPs may contain unhealthy materials and uses petroleum products?
+
+> *"att de har svagheter ur hälso- och miljöaspekt. De innehåller cancerframkallande och giftiga ämnen såsom styren och formaldehyd, och de innehåller icke förnybara petroleumprodukter"*
+
+3) Consider 'Termo Deck' (<https://termodeck.com/contact/> )?
+
+> TERMODECK AB  
+> Alexander Engström  
+> Managing Director  
+> Box 227, 133 02 Saltsjobaden,  
+> Sweden  
+> Phone: +46 70 643 05 95  
+> Email: [alex@termodeck.com](mailto:alex@termodeck.com)
+
+4) Consider 'Paroc Panels' (<https://www.parocpanels.com/se/sv/> )?
+
+> ![PastedGraphic-2.png](PastedGraphic-2.png)
+
+> ![PastedGraphic-1.png](PastedGraphic-1.png)
+
+5) Consider 'Kingspan' (<https://www.kingspan.com/se/sv/produkter/sandwichelement/vaggpaneler/> )?
+
+> ![PastedGraphic-3.png](PastedGraphic-3.png)
+
+6) Consider (<http://www.prefabark.se> )?
+
+> ![PastedGraphic-4.png](PastedGraphic-4.png)
+
+> Give us a shout!
+
+> We are happy to talk about you ideas and give you a quick price estimate!
+
+> Kenton Knowles 0766320332
+
+> kenton@prefabark.se
+
+> skype kenton_knowles
+
+...
+
+{% endraw %}

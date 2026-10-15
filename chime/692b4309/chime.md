@@ -1,0 +1,23 @@
+# Todo: Design a smartphone connected physical board game
+
+```#692b4309``` *As of 2015-10-01 19:13*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It should be possible to use modern smartphones combined with physical board games?
+
+1) Design a board game that is able to move physical markers on a board.  
+2) One design could be to have a framework under the board with an movable electric magnet.  
+3) By moving the magnet to under a marker and then turn it on and move again one should be able to move the marker from underneath?  
+4) The moving framework could be a simpel xy-battens?  
+5) The board game could provide smartphones to be connected suing wifi or bluetooth?  
+6) The game could in itself be implemented on a phone?
+
+Elaborate on this idea more. The goal is to enable each player to attend through a smart-phone or tablet. So, when playing monopoly the markers are moved by the mechanical framework on commands from the game. Cards and instructions are displayed on each players display.
+
+a) Just a thought - one could design a dice that one throws on the tough display of a pad? The pad runs an app that detects the dice and shows the result of the throw on the display although the actual throw is made with the physical dice?
+
+...
+
+{% endraw %}

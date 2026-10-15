@@ -1,0 +1,38 @@
+# Todo: Consider where the libc++ library files and C++ headers are located on macOS?
+
+```#cdd7eea5``` *As of 2021-11-27 23:08*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+1) It seems after installing llvm with Brew I have both system installed and llvm 13 version of libc++?
+
+> kjell-olovhogdal@Kjell-Olovs-Mac-Pro lib % find /usr -name 'libc++\*'  
+> find: /usr/sbin/authserver: Permission denied  
+> /usr/local/Cellar/llvm/13.0.0_1/lib/libc++abi.1.0.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/lib/libc++.a  
+> /usr/local/Cellar/llvm/13.0.0_1/lib/libc++experimental.a  
+> /usr/local/Cellar/llvm/13.0.0_1/lib/libc++.1.0.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/lib/libc++abi.a  
+> /usr/local/Cellar/llvm/13.0.0_1/lib/libc++.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/lib/libc++.1.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/lib/libc++abi.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/lib/libc++abi.1.dylib
+
+> /usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/libc++abi.1.0.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/libc++.a  
+> /usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/libc++experimental.a  
+> /usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/libc++.1.0.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/libc++abi.a  
+> /usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/libc++.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/libc++.1.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/libc++abi.dylib  
+> /usr/local/Cellar/llvm/13.0.0_1/Toolchains/LLVM13.0.0.xctoolchain/usr/lib/libc++abi.1.dylib
+
+> /usr/lib/libc++.dylib  
+> /usr/lib/libc++.1.dylib  
+> /usr/lib/libc++abi.dylib
+
+...
+
+{% endraw %}

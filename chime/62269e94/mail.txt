@@ -1,0 +1,17 @@
+﻿Could we imagine to define a user interface for touch screen text editors that based on program-language-knowledge enables the user to input text by just moving the finger through a “track” of presented choices?
+
+1) Consider a computer language editor that presents the user with a series of inout choices when touching at a location in the code?
+
+	==> Touch in a C++ code scope and a drop-down list shows execution selectors “if, for, while…”, available calls (code and namespace aware), declaration, expressions (assignment)?
+	==> Each time the user moves the finger to select a “path” the selected token is inserted as text.
+	==> New selections are presented when tokens are inserted.
+	==> The user may travel back and forth in current edit-buffer by selecting “Undo” or “Redo” selections (with some user interface to indicate what will be undone/redone)?
+	…
+
+2) Consider to make an animation to show how this kind of user interface may work for programming?
+
+3) Consider to design a messaging-interface for written language (english or swedish) using this language-aware way-point selection path user interface?
+…
+
+Consider to delve deeper into this idea of language aware text-token way-point-path traveling user interface for touch screen input of text?
+...

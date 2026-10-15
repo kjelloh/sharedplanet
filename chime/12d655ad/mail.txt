@@ -1,0 +1,35 @@
+﻿Would it not be nice to arrange some social get-together with programmers to discuss fun ideas in a worker space set-up?
+
+1) Consider to find a good place to be
+
+	==> A conference center and each attendant shares the cost?
+	==> A one-day cruise to Åland?
+
+2) Consider who to invite?
+
+	==> My programming pals from Systemvaruhuset?
+	==> Momo?
+	==> Umut Kocac?
+	…
+
+3) Co sider what to talk about?
+
+	==> The Post-server area (and possible post-server solutions to social networking)?
+	==> Pro and Cons of Darwinet?
+	==> The ”Best IDE” and build environment?
+	==> Future of cross-platform (and tool-chain) build environments?
+	==> The impact of speed stagnation and core and memory expansion?
+	…
+
+4) What existing forums are there I may join (not having to do this myself)?
+
+	==> Dataföfreningen (https://dfs.se/dataforeningens-sakerhetskryssning-24-25-april-2016/)?
+	
+5) Consider to write a Manifest for ”IT for a shared Planet”?
+
+	==> See ”Todo: Manifets - Consider to write a manifest for ITfied - Smart IT for a Shared Planet?"
+
+…
+
+Consider to invite to a proff-of-concept and then build from there (let the fun evolve the forum)?
+...

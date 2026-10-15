@@ -1,0 +1,52 @@
+# Todo: Consider what has to be true for believing in "God" to be a good thing to do?
+
+```#91bbdb02``` *As of 2019-04-14 11:36*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+In the quest to get a philosophical grip on our human predicament and the actual reality we care about I thought the framing “What has to be true for believing in God to become a good thing” could be an interesting one?
+
+1) Consider we can try and get to what “God” is a model of if we ask what has to be true for believing in “God” to be a good thing?
+
+> *If we ask “What has to be true for believing in “God” to be a good thing?” We may perhaps reverse engineer either what “Believe in God” can possibly mean or, if there are things that are true that makes believing in “God” a good thing.*
+
+> *Not of course we are already in deep semantic problems. We have used the word “good” and “true” which on one hand seems straightforward and self-evidently things we can talk about. But of course we know that we will find it very hard to define something that every one will find “good”. And also we have not specified if we mean good actions, good satte of reality, good people or good food. The lost just goes on and on. And if we want to use the property “true” about anything beyond scientific observable behaviour of nature to comply with some model of nature, we find ourselves in the same problem. What is truly the correlation between how you feel and your actions. Do what you answer when you’re asked about what you want or feel even correlate well with how you then later act?*
+
+2) Consider if human collective activities are socially emergent behaviours then to “believe in “God” at least make very much sense?
+
+> *I would very surprised if there is not a spread acceptance based on verified observations that the activity of humans in large groups show emergent behaviours? Just as ant and bee societies can show intelligent behaviours although each and or bee has no higher knowledge of what is going on. We know that such colonies of actors that are able to interact and thus cause self-referencing in addition to reacting to external signals show self-organising behaviours. The term emergent may be a little too vague to capture this special behaviour of these systems of living organisms. It is a very special form of emergence we like to focus on here. The ability for such social organisms to behave in ways that seems as if they are guided by a central higher will although the collective is in fact self organising based on the individual action “in faith” to individual interpretation of what has to be done?*
+
+> *We can propose that humans are in fact emergent oriented programmers in that we, as conscious creatures capable of self referencing both as individuals and as collectives, can “program” what the emergent social behaviour will turn out to be. If this is true then to “act in faith to the will of God” makes perfectly sense. It enables us to internalise a model of reality with the power to make emergent social structures become stable and also enables them to evolve.*
+
+3) Consider the model of reality we as humans are capable of internalising will rely heavily on observing and explaining internal self and social group “Will”?
+
+> *Even in physics we tend to talk about how things like the electron “knows” things and “decides” to act. We simply can’t resist to talk about dead objects as having a will and finding ways to carry out that will. Two electrons don’t “like” each other and “wants” to repel.*
+
+> *Of course our rational self-reflecting selves “knows” this is not actually true in the same manner as living creates has “will”. But it is still a good model to explain how reality behaves.*
+
+> *Thus there are very good reasons for us to strongly suspect that there is some external “will” out there that we can’t escape to interact with. So who can from this point say that the “Will of God” is not the best model of reality we may use when navigating all the randomness and unknown of our lives? We are creatures that “care” about things. And from that we experience that other humans also “care”, although maybe for the same things or in the same way that we do. So we find ourselves trying to live our individual lives as we “care” in the reality of a society that also “cares” about collective things and thus also directly and indirectly about what we care about.*
+
+> *So in the “caring game” it seems the model of “God” is actually a very reasonable and applicable model to navigate life.*
+
+4) Consider the observation of our own consciousness and the self-evident existence of fellow conscious human beings we can’t rule out a collective consciousness we may know as “God”?
+
+> *Although a weak argument as such, at least the very existence of our own consciousness may prohibit us to cut the head of “God”. We have no clue of what consciousness is, how it can exist or why it exists. We can speculate, but apart from pain, the existence of our own conscious is very hard to explain away. There are thinkers that has swung Occam’s razor over even our own consciousness and firmly concluded that because there is nothing we know that requires consciousness to be explained, then consciousness is an illusion. But few are ready to display such degree of faith in scientism. At least we can observe we have brains and there seems to be very much going on in these brains. Surely this activity must be what causes consciousness to emerge? Just look how correlated consciousness and human brains are!*
+
+> *The put forward the idea that there may be more consciousness present in our close neighbourhood, although we see nothing that resembles anything even closely resembling the complexity of our brains, seems like a much bolder step. Still it is not we know to be false. And although the reasoning may be weak, a leap of faith even, it is not so far behind the faith that the behaviour of nature we observe here on earth should also hold all through the universe and through all time even! *
+
+5) Consider the “what has to be true” approach is in fact a form of Abductive Reasoning (<https://en.wikipedia.org/wiki/Abductive_reasoning> )?
+
+> *“Abductive reasoning (also called abduction,&#91;1&#93; abductive inference,&#91;1&#93; or retroduction&#91;2&#93;) is a form of logical inference which starts with an observation or set of observations then seeks to find the simplest and most likely explanation for the observations. This process, unlike deductive reasoning, yields a plausible conclusion but does not positively verify it. Abductive conclusions are thus qualified as having a remnant of uncertainty or doubt, which is expressed in retreat terms such as "best available" or "most likely". One can understand abductive reasoning as inference to the best explanation,&#91;3&#93; although not all uses of the terms abduction and inference to the best explanation are exactly equiva*lent.&#91;4&#93;&#91;5&#93;*"*
+
+==&gt; Consider inferred truth from assumed truth is perhaps a meta approach where Abductive reasoning is one part?
+
+> *To my understanding Abductive Reasoning is a process where we try to infer a possible model of some observed reality. In so we try to be fully aware that the model we infer can be a candidate out of a set of different models with similar explanatory powers. But when we ask “what has to be true for this and this be a valuable truth” we are taking things a step further? Now we are not only looking for a model that explains some observed outcome, we are trying to evaluate if the outcome itself is valuable?*
+
+> *It seems the question “what has to be true for believing in "God" to be a good thing to do?” Tries to bridge the is-ought gap in that we are looking for a “good thing”? We are NOT looking for an objective truth about how to model reality. We are looking for THE model of reality that will make the most valuable reality for us to emerge?*
+
+> *Could it be that what shines through here is that objective truth is a model for a cause-and-effect prediction while subjective truth is a model for a faith-and-emergence model? The natural laws are ones where we are not part of the outcome but moral and ethics are laws where we ourselves and collectively very much are part of the outcome? The very reason we care about how humans should act and how reality should change is because we have evolved to participate in emergent-oriented-programming? So, a religion, an ideology, in fact any culture with collective truths about practices, traditions, morality and ethics is a model of reality that aims at having the model itself emerge in reality. The key observation here is that the relation between our individual actions and the reality we co-create is emergence. It is NOT the objective short-term cause-and-effect relation between our* *Actions and the outcome that is of most importance. The most important outcome we are aiming for is the emergent social reality!*
+
+...
+
+{% endraw %}

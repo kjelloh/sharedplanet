@@ -1,0 +1,192 @@
+# Todo: paint Wastewater Treatment - Consider to delve deeper into coagulation and flocculation of paint colloids in paint tools wash up waste water?
+
+```#b9f4df60``` *As of 2019-06-12 08:52*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+I am struggling to understand the chemistry but I think I am slowly getting there?
+
+==&gt; Also see "Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+
+==&gt; Also see "Todo: Consider to research how to flocculate water based wall paint to separate paint from waste water (e.g., using bentonite clay or other effective flocculants)?"
+
+==&gt; Also see "Todo: Consider possible waste water logistic solutions for my paint wash up station?"
+
+==&gt; Also see "Todo: Consider tp design and build a prototype of a Micro and Electro Flocculation Rinse Laundring Machine?"
+
+==&gt; Also see "Todo: Consider if it is possible to flocculate french brew coffee (to separate the coffee grinding from the coffee drink)?"
+
+-1) Consider to write my own abstract on what I think I know about coagulation and flocculation of paint colloids in waste water?
+
+> *To me it seems the basics of treating paint waste water is to get the paint to separate and then flocculate to separate it from the water. The paint seems to exist in the water as colloids, very small negatively charged particles, that does not bond to each other due to their electric charge keeping them apart. Thus the first step to get them to "coagulate" meaning we want them to start attaching to each other. ANd we can do this by adding positive ions that will stick to the negatively charged particles and "make them" electrically neutral. Then these new neutral colloids will be able to stick to each other by the van der Waal forces.*
+
+> *The second step is to make the coagulated particles to really form large constellations, so called flocs. We can do this by adding some form of polymer, preferably negatively charged as I have understood it. In any case we want the polymers to stick to the coagulated colloids to build up long compounds and thus form flocs. In beer and wine making they seem to use plain gelatin for this.*
+
+> *Now, question is why Bentonite clay works so well for flocculation of particles in water to make it drinkable?*
+
+1) Consider this youtube video "Removing Water-Based Paint Solids from Rinse Water" (<https://www.youtube.com/watch?v=3YWW20Lxpi4> )?
+
+==&gt; This youtube video seems to be available in article "Removing Water-Based Paint Solids from Rinse Water" (<https://www.justpaint.org/removing-water-based-paint-solids-from-rinse-water/> )?
+
+==&gt; It seems they suggest Aluminium Sulfate for Coagulation and Lime for pH lowering into range 5..9?
+
+> *"*  
+> - A**dd 10 grams of granular aluminum sulfate for each gallon of water.** This is about ½ Tablespoon, well rounded. So, 2½ gallons would require about 25 grams, or 1¼ Tablespoons. Dissolve this material in a small jar with several ounces of water before adding to waste water. Then, add to waste water and stir vigorously.
+> - **Add 9 grams of powdered lime per gallon being processed (a scant ¾ Tablespoon).** Stir in vigorously and observe. The flocculation of solids should start occurring within a couple of minutes. You should start to see a clear layer of water forming as the solids settle to the bottom. If, after several minutes, flocculation has not occurred, repeat steps 1 and 2.
+> - **Check the pH of clear water.** It should be between 5 and 9. If lower, adjust by adding lime. If higher, adjust by adding aluminum sulfate.
+> - **Assemble the filtering equipment as shown.** Use 2 coffee filters at a time. Pour the water through the filters after flocculation has occurred. The water will take several hours (over night) to completely pass through the filter. The resulting filtrate should be clear and should be flushed to a sanitary sewer. The solid filtered residue should be disposed of in a licensed landfill.
+  
+> *"*
+
+==&gt; They seem to suggest that we can buy Aluminium Sulfate and Lime as gardening soil treatment substances?
+
+> *" • Aluminum Sulfate and Hydrated Lime are common soil amendments available from gardening centers."*
+
+==&gt; Consider where I can get the stuff required to perform this form a water treatment on my existing paint wastewater?
+
+**Q: Where can I buy Aluminium Sulfate?**
+
+==&gt; It seems this product for making Hortensias turn blue is in fact 150 g (500 SEK / Kg inc. VAT) Aluminium Sulfate (<http://www.almaregarden.se/sv-SE/shop/3130-Vaextvaard/3179-Hortensia_blaa.aspx> )?
+
+![](<Screenshot 2019-05-31 at 10.27.05.png>)
+
+*Product to turn hortensias blue are in fact Aluminium Sulfate (they lower the pH of the soil)*
+
+*==&gt; **190531, I bought this one** (<https://www.planteramera.se/ovrigt/aluminiumsulfat-hortensia-bla> )*
+
+*==&gt; It seems Sagitta sells Aluminium Sulfate 1 Kg for 660 SEK ex. VAT (<https://www.sagitta.se/artikel.php#.XPE6Ay2Q3UI> )?*
+
+*==&gt; It seems Alega sells Aluminium Sulfate 1 Kg for 630 ex. VAT*
+
+**Q: Here can I buy Lime?**
+
+**Q: Where can I buy pH measuring sticks?**
+
+2) Consider this youtube video "Water Treatment | Coagulation Chemistry Basics" (<https://www.youtube.com/watch?v=g3sTlsNXNHg> )?
+
+==&gt; It seems the basics is to add positive ions to break the barrier around the negative colloids to enable van der Waals force to stick them together?
+
+![](<Screenshot 2019-05-31 at 10.40.37.png>)
+
+*Coagulation and Flocculation are induced by adding positive ion "coagulant" and negative ion plymer "flocculant"*
+
+==&gt; It seems we can choose from Trivalent, Bivalent or monovalent coagulants?
+
+![](<Screenshot 2019-05-31 at 10.43.18.png>)
+
+*Ideally we want the highest "valent" coagulant possible (e.g., a Aluminium or Iron salt)*
+
+![](<Screenshot 2019-05-31 at 10.42.28.png>)
+
+*Aluminium and Iron are trivalent coagulants (e.g., as Aluminium Sulfate, Ferrit Chloride...)*
+
+![](<Screenshot 2019-05-31 at 10.48.29.png>)
+
+*Calcium is a bivalent coagulant and Sodium is a monovalent coagulant*
+
+![](<Screenshot 2019-05-31 at 10.50.28.png>)
+
+Overview of some common coagulants for waste water treatment
+
+3) Consider this youtube video "The Flocculation Process" (<https://www.youtube.com/watch?v=xcHVjX74o0Y> )?
+
+![](<Screenshot 2019-05-31 at 12.11.26.png>)
+
+*Small negatively charged particles called Colloids repel each other in water*
+
+![](<Screenshot 2019-05-31 at 12.11.54.png>)
+
+*Adding positive ions they attract to the colloids and form neutral particles*
+
+![](<Screenshot 2019-05-31 at 12.12.19.png>)
+
+*Microflocs from van der Waals attraction between neutralised colloids*
+
+![](<Screenshot 2019-05-31 at 12.12.55.png>)
+
+*Flocculation by bridging microfloc positive parts with negative plymers*
+
+4) Consider this wikipedia article on Coagulation in water treatment (<https://en.wikipedia.org/wiki/Coagulation_(water_treatment)> )?
+
+> *"**Coagulation is a chemical process that involves neutralization of charge...**"*
+
+5) Consider the wikipedia article on Aluminium Sulfate (<https://en.wikipedia.org/wiki/Aluminium_sulfate> )?
+
+> *"**Aluminium sulfate is a chemical compound with the formula Al2(SO4)3. It is soluble in water and is mainly used as a coagulating agent(promoting particle collision by neutralizing charge) in the purification of drinking water&#91;3&#93;&#91;4&#93; and waste water treatment plants, and also in paper manufacturing.**"*
+
+==&gt; It seems Alum is the same, or at least close, to Aluminium Sulfate?
+
+> "Aluminium sulfate is sometimes called **alum** or **papermaker's alum** in certain industries. However, the name "[alum](https://en.wikipedia.org/wiki/Alum)" is more commonly and properly used for any double sulfate salt with the generic formula ***X***Al(SO4)2·12H2O, where *X* is a [monovalent](<https://en.wikipedia.org/wiki/Valence_(chemistry)>) [cation](https://en.wikipedia.org/wiki/Cation) such as [potassium](https://en.wikipedia.org/wiki/Potassium) or [ammonium](https://en.wikipedia.org/wiki/Ammonium).[&#91;5&#93;](https://en.wikipedia.org/wiki/Aluminium_sulfate#cite_note-shreve84-5)*"*
+
+> *"**Other names: Aluminum sulfate, Aluminium sulphate, Cake alum, Filter alum, Papermaker's alum, Alunogenite, aluminum salt (3:2)**"*
+
+6) Consider the wikipedia article on Lime (<https://en.wikipedia.org/wiki/Lime_(material)> )?
+
+> *"**Lime is a calcium-containing inorganic mineral composed primarily of oxides, and hydroxide, usually calcium oxide and/ or calcium hydroxide. It is also the name for calcium oxide which occurs as a product of coal seam fires and in altered limestone xenoliths in volcanic ejecta.&#91;1&#93; The word lime originates with its earliest use as building mortar and has the sense of sticking or adhering.&#91;2&#93;**"*
+
+==&gt; So "Lime" is basically a calcium
+
+7) Consider the wikipedia article on Oxide (<https://en.wikipedia.org/wiki/Oxide> )?
+
+==&gt; It seems an "-Oxide" is a chemical bond with oxygen?
+
+> *"**An oxide is a chemical compound that contains at least one oxygen atom and one other element&#91;1&#93; in its chemical formula.**"*
+
+8) Consider the wikipedia article on Hydroxide (<https://en.wikipedia.org/wiki/Hydroxide> )?
+
+==&gt; It seems an "-Hydroxide" is a chemical bond with an OH ion?
+
+> *"**Hydroxide is a diatomic anion with chemical formula OH−. It consists of an oxygen and hydrogen atom held together by a covalent bond, and carries a negative electric charge.**"*
+
+89 Consider the wikipedia article on Salts (<https://en.wikipedia.org/wiki/Salt_(chemistry)> )?
+
+==&gt; It seems a Salt is a chemical bond between a basic and an acid creating a neutral substance?
+
+> *"**In chemistry, a salt is an ionic compound that can be formed by the neutralization reaction of an acid and a base.&#91;1&#93; Salts are composed of related numbers of cations (positively charged ions) and anions (negative ions) so that the product is electrically neutral (without a net charge).**"*
+
+10) Consider the wikipedia article on van der Waals force (<https://en.wikipedia.org/wiki/Van_der_Waals_force> )?
+
+> *"**In molecular physics, the van der Waals force, named after Dutch scientist Johannes Diderik van der Waals, is a distance-dependent interaction between atoms or molecules. Unlike ionic or covalent bonds, these attractions do not result from a chemical electronic bond; they are comparatively weak and therefore more susceptible to disturbance. The Van der Waals force quickly vanishes at longer distances between interacting molecules.**"*
+
+11) Consider the wikipedia article on Emulsion (<https://en.wikipedia.org/wiki/Emulsion> )?
+
+> *"Although the terms colloid and emulsion are sometimes used interchangeably, emulsion should be used when both phases, dispersed and continuous, are liquids."*
+
+> *"An emulsion is a mixture of two or more liquids that are normally immiscible (unmixable or unblendable)."*
+
+12) Consider the wikipedia article on Suspensions (<https://en.wikipedia.org/wiki/Suspension_(chemistry)> )?
+
+==&gt; It seems a suspension is a solid mixed with another solid, liquid or gas in such a way that it over time may separate again (not stable)
+
+> *"A suspension is a heterogeneous mixture in which the solute particles do not dissolve, but get suspended throughout the bulk of the solvent, left floating* around freely in the medium.*"*
+
+> *"Suspensions are classified on the basis of the dispersed phase and the dispersion medium, where the former *is essentially solid while the latter may either be a solid, a liquid, or a gas*"*
+
+> *"A suspension of liquid droplets or fine solid particles in a gas is called an aerosol*.*"*
+
+13) Consider the wikipedia article on Sodium Polyacrylate (<https://en.wikipedia.org/wiki/Sodium_polyacrylate> )?
+
+![](<Screenshot 2019-05-31 at 16.08.12.png>)
+
+> *"Sodium polyacrylate, also known as waterlock, is a sodium salt of polyacrylic acid..."*
+
+==&gt; Also see "Polyakrylamid" in "Todo: Rena Penselvatten - Överväg sätt att hemma kunna rena vatten från färgrester efter penseltvätt?"
+
+14) Consider the wikipedia article on Polyacrylamide (<https://en.wikipedia.org/wiki/Polyacrylamide> )?
+
+![](<Screenshot 2019-05-31 at 16.07.56.png>)
+
+> *"Polyacrylamide (IUPAC poly(2-propenamide) or poly(1-carbamoylethylene), abbreviated as PAM) is a polymer (-CH2CHCONH2-) formed from acrylamide subunits."*
+
+> *"One of the largest uses for polyacrylamide is to flocculate solids in a liquid."*
+
+15) Consider this article "Pigment dispersion" on dispersion of paint particles in water (<https://ebooks.byk.com/1/wetting-and-dispersing/steric-stabilization/> )?
+
+![](<Screenshot 2019-06-12 at 08.52.00.png>)
+
+*Dispersing of paint particles in water is about stabilising them to not flocculate*
+
+...
+
+{% endraw %}

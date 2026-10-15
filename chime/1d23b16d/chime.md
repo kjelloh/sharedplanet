@@ -1,0 +1,65 @@
+# Todo: Consider it seems so far neural networks leans heavily on texture recognition as opposed to humans that detect shapes or objects?
+
+```#1d23b16d``` *As of 2019-03-05 23:28*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems interesting that we have reasons to believe that neural networks "think" in terms of textures as opposed to humans that thinks in objects?
+
+1) consider this YouTube video "Do Neural Networks Need To Think Like Humans?" with findings of how to "clean" neural networks from texture-based identification (<https://www.youtube.com/watch?v=YFL-MI5xzgg> )?
+
+> "The paper "ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness " is available here:  
+> [https://openreview.net/forum?id=Bygh9...](https://www.youtube.com/redirect?v=YFL-MI5xzgg&event=video_description&redir_token=nIxifQff5REq1YZCmdhc24P5xkV8MTU1MTkwOTMyM0AxNTUxODIyOTIz&q=https%3A%2F%2Fopenreview.net%2Fforum%3Fid%3DBygh9j09KX)  
+> [https://blog.usejournal.com/why-deep-...](https://www.youtube.com/redirect?v=YFL-MI5xzgg&event=video_description&redir_token=nIxifQff5REq1YZCmdhc24P5xkV8MTU1MTkwOTMyM0AxNTUxODIyOTIz&q=https%3A%2F%2Fblog.usejournal.com%2Fwhy-deep-learning-works-differently-than-we-thought-ec28823bdbc)  
+> [https://github.com/rgeirhos/texture-v...](https://www.youtube.com/redirect?v=YFL-MI5xzgg&event=video_description&redir_token=nIxifQff5REq1YZCmdhc24P5xkV8MTU1MTkwOTMyM0AxNTUxODIyOTIz&q=https%3A%2F%2Fgithub.com%2Frgeirhos%2Ftexture-vs-shape)
+
+> Neural network visualization footage source:  
+> [https://www.youtube.com/watch?v=1zvoh...](https://www.youtube.com/watch?v=1zvohULpe_0)  
+> "
+
+==&gt; Consider how interesting it was that a picture of a cat embossed into elephant skin was identified by the neural network as an elephant?
+
+==&gt; Consider how interesting it was that by re-using previous neural network "style mimic" abilities the researchers seemed to "clean" the texture aspects of the identification process (keeping the shape or object recognition)?
+
+...
+
+2) Consider how we may reflect on the indication of texture biased AI vs our own object-biased world perception?
+
+==&gt; It seems it correlates quite well with the problem we have had so far of getting neural networks to "see" objects (They see textures)?
+
+3) Consider if I should move forward in my own idea of meta-layer-deep-learning to see if I can apply deep-learning inference (up) and matching (down)?
+
+==&gt; Consider to layer neural networks into meta-defacto-relations to see what we can imagine to do?
+
+==&gt; Consider to train the networks to infer patterns from a layer below (in a sense try to abstract from identified patterns)?
+
+==&gt; Consider how the realisation to a pattern below fits into this meta-layering of neural networks (can we train networks also in the direction of pattern creation from things-we-know)?
+
+==&gt; It would seem the pattern of "Houses" can be inferred to be made of "house parts" and then a house can be created by providing "Houses" with "House Parts"?
+
+Houses of House Parts Houses + House Parts
+
+^ |
+
+| Infer | Actualise
+
+| v
+
+House, House, House, House... a House of these House Parts
+
+Hm... There is something going on here (but I am not seeing it clearly yet)?
+
+==&gt; It seems the "Infer" operation is what we have used neural networks for since the beginning (feed House after House after House and infer how "Houses" look)
+
+==&gt; But we have NOT used neural networks to try and learn what parts are required to build a house from house-parts?
+
+==&gt; For one - We have not focused the training to infer the parts of which the house is made (the neural network just feeds "feel" the image and get a sense of its "House-ness")?
+
+==&gt; Can we imagine that we can recurse the neural network that learns "House-ness" to also infer house-parts and evaluates how well it does this by assembling the House from its inferred parts (imagine a House) and compare it to the house observed (in effect do both inference and imagination with the goal to converge the imagined to the observed house)?
+
+==&gt; Consider what research we can find that already does this kind of experiments (is darwinian or evolutionary depp learning something that is somewhat like this infer + imagine
+
+...
+
+{% endraw %}

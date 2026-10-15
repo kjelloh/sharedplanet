@@ -1,0 +1,43 @@
+# Todo: Consider to scrip "What have I learned today" for my Makerspace bootstrap videos?
+
+```#66e9754a``` *As of 2018-09-05 20:57*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+It seems it could be good idea to keep a diary (and do scripts) about what I learn everyday while working on bootstrapping my maker space?
+
+1) 180905 - Rack and pinion work on my Einhell Table saw rip fence
+
+> I learned that The Cetus 3D printer application connects to the printer only when the application starts.  
+> I the application is running when I turn on the printer, then there seems to be no way to connect the application to the printer?
+
+> I learned that when I do things where I lack experience, then the number of solutions I consider to solve a problem is overwhelming.  
+> And I fail to visualise a solution that could work.  
+> I have found that I simply have to start building prototypes.  
+> Once I have something in my hand I am able to think about the problem.
+
+> My current theory is that until I have actually built something physically (gained experience about physical manifestations of ideas)  
+> - I can’t think abstractly about it.
+
+> I learned that I don’t know if I can put a load on the contact between a rack and a pinion?
+
+> My current conclusion is that gears are normally designed to constantly “rest” onto each others teeth.
+
+> The Teeth are designed to ensure the two gears always acts onto each other as two two tangential touching cylinders.
+
+> Such action is called “Conjugate Action” and teeth with an “Involute Profile” creates such an action.
+
+> From this I conclude gear teeth such those on my rack and pinion are designed to be in constant contact.
+
+> ==&gt; I thus can make a design where the rack rests on the pinion.
+
+> I learned I can import cad drawings for bolts and screws into Fusion 360 (With some difficulty and obscure user interface tampering)
+
+> I Learned I can import and use Motedis rack and pinion CAD files into Fusion 360 (with even more confusion and obscure user interface tampering)
+
+> I learned I still think Fusion 360 has a stupid user interface with totally pointless restrictions to how you can interact with the model.
+
+2)
+
+{% endraw %}

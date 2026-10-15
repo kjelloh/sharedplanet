@@ -1,0 +1,21 @@
+﻿Could it be fun to try to blog about the idea of using decltype on overloaded functions to implement Meta Functions?
+
+	==> Also see ”Todo: C++ - Consider to write blog post about meta functions and their ability to process value, type and template parameters?"
+
+1) Consider to write C++ projects to experiment with this concept?
+
+	==> See synced ”/Users/kjell-olovhogdahl/Resilio Sync/XCode/MydecltypeMetaFunctions/MydecltypeMetaFunctions”
+
+2) Consider to write a slide presentation about this concept?
+
+	==> See Keynote ”/Users/kjell-olovhogdahl/Resilio Sync/KeyNote/C++ Decltype(f) Meta Functions/C++ decltype Meta Functions"
+
+3) Consider to publish on Slideshare?
+
+	Posted on (https://www.slideshare.net/KjellOlovHgdahl/c-decltype-meta-functions <https://www.slideshare.net/KjellOlovHgdahl/c-decltype-meta-functions>)
+
+4) Consider the text for the actual blog post?
+
+Posted on (http://emergenceawareprogramming.blogspot.se <http://emergenceawareprogramming.blogspot.se/>)
+
+...

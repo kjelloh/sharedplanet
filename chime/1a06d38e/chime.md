@@ -1,0 +1,41 @@
+# Todo: Consider the concept of "free will" contradicts the existence of a "true self"?
+
+```#1a06d38e``` *As of 2016-06-04 14:09*
+
+[mail plain/text](mail.txt)
+
+{% raw %}
+Could we argue that we either can have ”free will” or a ”true self” but never both at the same time?
+
+1) Consider that having a ”Free will” means we are able to decide differently when faced with the exact same situation twice?
+
+==&gt; Consider that if this is not the definition of free will then our decision is deterministic?  
+…
+
+2) Consider that having a ”True Self” assumes some deterministic trait of how we decide to act?
+
+==&gt; Consider that if our actions did not comply with some deterministic behavior we could not be recognized as having some unchanging traits?  
+…
+
+3) Could we thus conclude that we can either have "Free Will” to decide to act unpredictable or have ”True Self” that can be recognized?
+
+==&gt; Consider if we can imagine ”Free Will” to have just some fuzzy impact to allow enough determinism remaining for others to recognize a deterministic ”True Self”?  
+…
+
+4) Consider that if ”Free Will” is just the feeling of acting in line with ones ”True Self”, then they cancel each other out?
+
+==&gt; If ones ”True Self” always dictates what decision one must use ones ”Free Will” to make, then only the ”True Self” exists (”Free Will” plays no part in ones actions)?  
+==&gt; If the decisions made by ones ”Free Will” defines ones ”True Self”, then only ones ”free Will” exists (The ”True Self” plays no part in ones actions)?  
+…
+
+5) How can we understand ”Free Will” and ”True Self” as act-in-faith propelled ”Truths”?
+
+==&gt; Is the contradiction just a rational one, not one that exists when acting-in-faith to the existence of ”Free Will” and ”True Self”?  
+==&gt; We actually just happily applies the truth best suited for action in the experienced situation and is not concerned about contradicting truths we do not apply?  
+==&gt; Is this in fact a good example of our ability to hold contradicting truths for a beneficial relation to reality-as-we-experience-it?  
+…
+
+Consider to elaborate on the ”existence” of the seeming logical contradiction between ”Free Will” and ”True Self” and the practical act-in-faith application where no contradiction is experienced?  
+...
+
+{% endraw %}
